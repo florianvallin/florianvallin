@@ -718,7 +718,16 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
         </p>
       </div>
 
-      <form class="contact-form" action="#" method="post">
+      <form
+        class="contact-form"
+        action="#"
+        method="post"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="subject" data-remove-prefix value="[%{siteName}] Nouveau message" id="subject" />
+
         <div class="contact-field">
           <label for="email">Votre adresse e-mail</label>
           <input
@@ -744,6 +753,19 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
         <button type="submit" class="contact-submit">
           Envoyer le message
         </button>
+
+        <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function () {
+            const emailInput = document.getElementById('email')
+            const subjectInput = document.getElementById('subject')
+
+            emailInput.addEventListener('input', () => {
+              if (emailInput.value) {
+                subjectInput.value = `Contact ${emailInput.value}`
+              }
+            })
+          })
+        </script>
       </form>
     </div>
   </div>
