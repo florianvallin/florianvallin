@@ -105,16 +105,23 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    const recaptchaField = form.querySelector(
+      'textarea[name="g-recaptcha-response"], input[name="g-recaptcha-response"]'
+    );
+    if (recaptchaField && !String(recaptchaField.value || "").trim()) {
+      showAlert(errorAlert);
+      return;
+    }
+
     setLoading(true);
     hideAlert(successAlert);
     hideAlert(errorAlert);
 
     const formData = new FormData(form);
+    // Netlify AJAX example posts to "/" (not the current pathname)
     const action = form.getAttribute("action");
     const url =
-      action && action.trim() !== ""
-        ? action
-        : window.location.pathname || "/";
+      action && action.trim() !== "" ? action : "/";
 
     fetch(url, {
       method: "POST",
