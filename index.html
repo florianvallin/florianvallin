@@ -703,18 +703,23 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
 
         <p class="contact-intro">
           Vous pouvez me contacter depuis le formulaire ci-dessous ou directement par téléphone :
-          <button
-            type="button"
-            class="phone-reveal-btn"
-            id="revealPhoneBtn"
-            aria-expanded="false"
-            aria-controls="phoneNumber"
+          <span
+            class="protected-content"
+            data-encoded="@X}QjXmPjLWRjnGQj&#92;GP"
+            data-content-type="phone"
           >
-            afficher le numéro
-          </button>
-          <a href="tel:0649922575" id="phoneNumber" class="phone-number hidden-phone">
-            06 49 92 25 75
-          </a>
+            <button
+              type="button"
+              class="phone-reveal-btn protected-trigger"
+              id="revealPhoneBtn"
+              aria-expanded="false"
+            >
+              afficher le numéro
+            </button>
+            <span class="protected-revealed hidden-phone" aria-hidden="true">
+              <span class="protected-content-text"></span>
+            </span>
+          </span>
         </p>
       </div>
 
@@ -742,7 +747,16 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
         <p class="contact-alert__actions">
           <a href="mailto:contact@florianvallin.fr" class="contact-alert__link">contact@florianvallin.fr</a>
           <span class="contact-alert__sep">·</span>
-          <a href="tel:+33649922575" class="contact-alert__link">06 49 92 25 75</a>
+          <span
+            class="protected-content"
+            data-encoded="@X}QjXmPjLWRjnGQj&#92;GP"
+            data-content-type="phone"
+          >
+            <button type="button" class="contact-alert__link protected-trigger">voir le numéro</button>
+            <span class="protected-revealed hidden-phone" aria-hidden="true">
+              <span class="protected-content-text"></span>
+            </span>
+          </span>
         </p>
       </div>
 
@@ -842,6 +856,7 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/protected-phone.js"></script>
 <script type="module" src="js/contact-form.js"></script>
 
 <script type="application/ld+json">
@@ -860,7 +875,6 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
     "postalCode": "34000",
     "addressCountry": "FR"
   },
-  "telephone": "+33649922575",
   "url": "https://florianvallin.fr",
   "sameAs": []
 }

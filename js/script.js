@@ -51,18 +51,6 @@ document.querySelectorAll(".faq-question").forEach(button => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("revealPhoneBtn");
-  const phone = document.getElementById("phoneNumber");
-
-  if (toggle && phone) {
-    toggle.addEventListener("click", function () {
-      phone.classList.remove("hidden-phone");
-      toggle.style.display = "none";
-    });
-  }
-});
-
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
 
