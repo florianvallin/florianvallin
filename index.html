@@ -718,7 +718,37 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
         </p>
       </div>
 
+      <!-- Alertes (masquées par défaut) -->
+      <div
+        id="contact-success-alert"
+        class="contact-alert contact-alert--success hidden"
+        role="status"
+        aria-live="polite"
+      >
+        <p class="contact-alert__title">Message envoyé avec succès !</p>
+        <p class="contact-alert__text">Je vous répondrai dans les plus brefs délais.</p>
+      </div>
+
+      <div
+        id="contact-error-alert"
+        class="contact-alert contact-alert--error hidden"
+        role="alert"
+        aria-live="assertive"
+      >
+        <p class="contact-alert__title">Une erreur s’est produite</p>
+        <p class="contact-alert__text">
+          Veuillez me contacter directement par e-mail ou par téléphone.
+        </p>
+        <p class="contact-alert__actions">
+          <a href="mailto:contact@florianvallin.fr" class="contact-alert__link">contact@florianvallin.fr</a>
+          <span class="contact-alert__sep">·</span>
+          <a href="tel:+33649922575" class="contact-alert__link">06 49 92 25 75</a>
+        </p>
+      </div>
+
       <form
+        id="contact-form"
+        name="contact"
         class="contact-form"
         data-netlify="true"
         data-netlify-recaptcha="true"
@@ -727,46 +757,40 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
         <input type="hidden" name="subject" data-remove-prefix value="[%{siteName}] Nouveau message" id="subject" />
 
         <div class="contact-field">
-          <label for="email">Votre adresse e-mail</label>
+          <label for="email">Email *</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="exemple@email.com"
+            placeholder="votre@email.com"
             required
+            autocomplete="email"
+            aria-describedby="email-error"
           />
+          <span id="email-error" class="sr-only" role="alert" aria-live="polite"></span>
         </div>
 
         <div class="contact-field">
-          <label for="message">Votre message</label>
+          <label for="message">Message *</label>
           <textarea
             id="message"
             name="message"
             rows="7"
-            placeholder="Décrivez brièvement votre demande, votre niveau et vos besoins."
+            placeholder="Décrivez votre demande…"
             required
+            aria-describedby="message-error"
           ></textarea>
+          <span id="message-error" class="sr-only" role="alert" aria-live="polite"></span>
         </div>
 
-        <!-- Recaptcha (hidden by default) -->
-        <div data-netlify-recaptcha="true" class="flex justify-center"></div>
+        <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
 
-        <button type="submit" class="contact-submit">
-          Envoyer le message
-        </button>
-
-        <script type="text/javascript">
-          document.addEventListener('DOMContentLoaded', function () {
-            const emailInput = document.getElementById('email')
-            const subjectInput = document.getElementById('subject')
-
-            emailInput.addEventListener('input', () => {
-              if (emailInput.value) {
-                subjectInput.value = `Contact ${emailInput.value}`
-              }
-            })
-          })
-        </script>
+        <div class="contact-submit-wrap">
+          <button type="submit" class="contact-submit" id="contact-submit-btn">
+            <span id="contact-submit-text">Envoyer le message</span>
+            <span id="contact-submit-spinner" class="contact-submit-spinner" aria-hidden="true"></span>
+          </button>
+        </div>
       </form>
     </div>
   </div>
@@ -817,6 +841,7 @@ L’objectif est de permettre à l’élève de devenir progressivement autonome
 </footer>
 
 <script src="js/script.js"></script>
+<script type="module" src="js/contact-form.js"></script>
 
 <script type="application/ld+json">
 {

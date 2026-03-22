@@ -2689,6 +2689,83 @@ html {
   display: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact-alert {
+  margin: 0 42px 20px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.contact-alert.hidden {
+  display: none;
+}
+
+.contact-alert--success {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #14532d;
+}
+
+.contact-alert--error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #7f1d1d;
+}
+
+.contact-alert__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.contact-alert__text {
+  margin: 8px 0 0;
+}
+
+.contact-alert__actions {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.contact-alert__link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-alert__link:hover {
+  opacity: 0.85;
+}
+
+.contact-alert__sep {
+  margin: 0 0.35em;
+  opacity: 0.5;
+}
+
+.contact-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.contact-submit-wrap {
+  margin-top: 8px;
+}
+
 .contact-form {
   padding: 34px 42px 42px;
 }
@@ -2739,6 +2816,21 @@ html {
   resize: vertical;
 }
 
+.contact-field-error {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #b91c1c;
+}
+
 .contact-submit {
   margin-top: 26px;
   display: inline-flex;
@@ -2768,6 +2860,39 @@ html {
 
 .contact-submit:active {
   transform: translateY(0);
+}
+
+.contact-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  transform: none;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.15);
+}
+
+.contact-submit-spinner {
+  display: none;
+  width: 22px;
+  height: 22px;
+  margin-left: 0;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: contact-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.contact-submit-spinner.is-visible {
+  display: inline-block;
+}
+
+#contact-submit-text.is-hidden {
+  display: none;
+}
+
+@keyframes contact-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -2821,6 +2946,10 @@ html {
     margin-left: 6px;
     margin-top: 4px;
     word-break: break-word;
+  }
+
+  .contact-alert {
+    margin: 0 22px 14px;
   }
 
   .contact-form {
