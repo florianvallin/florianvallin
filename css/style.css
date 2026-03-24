@@ -2332,7 +2332,7 @@ html {
   width: 280px;
   height: 380px;         /* hauteur fixe = rendu éditorial */
   object-fit: cover;
-  object-position: 50% 25%; /* remonte légèrement le cadrage */
+  object-position: 50% 75%; /* descend légèrement le cadrage */
   border-radius: 18px;
 
   filter: saturate(0.96) contrast(1.03);
@@ -4238,12 +4238,13 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 
   width: 44px;
   height: 44px;
   border-radius: 999px;
 
-  border: 1px solid rgba(0,0,0,0.10);
+  border: 1px solid rgba(0,0,0,0.35);
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(8px);
 
