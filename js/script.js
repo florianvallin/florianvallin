@@ -172,16 +172,28 @@ document.addEventListener("DOMContentLoaded", function () {
   // Conseil : garde des extraits courts, lisibles, sans surcharger.
   const reviewsData = [
   {
-    name: "Olivier Le Pioufle",
-    date: "2025-03-01",
-    rating: 5,
-    text: "J’ai suivi des cours en parallèle de mes études de philosophie. Les conseils reçus ont été déterminants pour l’obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux sur la dissertation et les commentaires, avec beaucoup de pédagogie et de patience."
-  },
-  {
     name: "Elodie Jannin",
     date: "2025-02-28",
     rating: 5,
-    text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l’exigence, mais aussi l’envie sincère de faire progresser."
+    text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser."
+  },
+  {
+    name: "Olivier Le Pioufle",
+    date: "2025-03-01",
+    rating: 5,
+    text: "J'ai suivi des cours en parallèle de mes études de philosophie. Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux sur la dissertation et les commentaires, avec beaucoup de pédagogie et de patience."
+  },
+  {
+    name: "Louna Schroetter",
+    date: "2026-03-21",
+    rating: 5,
+    text: "Je recommande vivement si vous êtes en études de philosophie !\nIl est de très bon conseil et très pédagogue. Et ça ce voit qu'il aime se qu'il fait !"
+  },
+  {
+    name: "Marion Wright",
+    date: "2026-03-23",
+    rating: 5,
+    text: "Monsieur Vallin est un professeur attentif, rigoureux à l'écoute. Ses cours sont clairs et répondent bien aux besoins personnels. Il a une grande palette d'outils pour mieux comprendre et structurer la compréhension et la manière de travailler.\nIl m'a beaucoup aidée en parallèle de mes études et grâce à lui j'ai appris des méthodes de travail qui me servent encore aujourd'hui !"
   }
 ];
 
@@ -235,7 +247,8 @@ document.addEventListener("DOMContentLoaded", function () {
     </article>
   `).join("");
 
-  let index = 0;
+  let activeCard = 0;  // Quelle carte est "active"
+  let index = 0;        // Position de scroll calculée
   let perView = 3;
   let stepPx = 0;
   let maxIndex = 0;
@@ -252,15 +265,34 @@ document.addEventListener("DOMContentLoaded", function () {
     else perView = 3;
   }
 
-  const gap = 18;
-  stepPx = (w - (gap * (perView - 1))) / perView + gap;
+  // Mesurer la largeur réelle des cartes plutôt que de la calculer
+  const firstCard = track.querySelector('.review-card');
+  if (firstCard) {
+    const cardWidth = firstCard.offsetWidth;
+    const gap = 18;
+    stepPx = cardWidth + gap;
+  } else {
+    // Fallback au calcul si pas de cartes
+    const gap = 18;
+    stepPx = (w - (gap * (perView - 1))) / perView + gap;
+  }
 
   maxIndex = Math.max(0, reviewsData.length - perView);
 
-  index = Math.min(index, maxIndex);
+  updateIndexFromActiveCard();
   update();
   buildDots();
 }
+
+  // Calcule l'index de scroll basé sur la carte active
+  function updateIndexFromActiveCard() {
+    // Pour afficher la carte active à la bonne position:
+    // activeCard=0 → index=0 (affiche 0,1,2)
+    // activeCard=1 → index=0 (affiche 0,1,2, 1 au centre)
+    // activeCard=2 → index=1 (affiche 1,2,3)
+    // activeCard=3 → index=1 (affiche 1,2,3, 3 à droite)
+    index = Math.max(0, Math.min(maxIndex, activeCard - (perView === 1 ? 0 : 1)));
+  }
 
   function update(){
     track.style.transform = `translateX(${-index * stepPx}px)`;
@@ -268,23 +300,24 @@ document.addEventListener("DOMContentLoaded", function () {
 // Gestion focus actif
 const cards = track.querySelectorAll('.review-card');
 cards.forEach((card, i) => {
-  card.classList.toggle('is-active', i === index);
+  card.classList.toggle('is-active', i === activeCard);
 });
-    if (btnPrev) btnPrev.disabled = (index === 0);
-    if (btnNext) btnNext.disabled = (index === maxIndex);
+    if (btnPrev) btnPrev.disabled = (activeCard === 0);
+    if (btnNext) btnNext.disabled = (activeCard === reviewsData.length - 1);
     updateDots();
   }
 
   function buildDots(){
     if (!dotsWrap) return;
-    const dotsCount = maxIndex + 1;
+    const dotsCount = reviewsData.length;
     dotsWrap.innerHTML = Array.from({ length: dotsCount }).map((_, i) =>
-      `<span class="reviews-dot ${i===index ? 'is-active' : ''}" data-dot="${i}"></span>`
+      `<span class="reviews-dot ${i===activeCard ? 'is-active' : ''}" data-dot="${i}"></span>`
     ).join("");
 
     dotsWrap.querySelectorAll('[data-dot]').forEach(d => {
       d.addEventListener('click', () => {
-        index = Number(d.getAttribute('data-dot')) || 0;
+        activeCard = Number(d.getAttribute('data-dot')) || 0;
+        updateIndexFromActiveCard();
         update();
       });
     });
@@ -293,21 +326,25 @@ cards.forEach((card, i) => {
   function updateDots(){
     if (!dotsWrap) return;
     dotsWrap.querySelectorAll('.reviews-dot').forEach((d, i) => {
-      d.classList.toggle('is-active', i === index);
+      d.classList.toggle('is-active', i === activeCard);
     });
   }
 
   // Buttons
   if (btnPrev) btnPrev.addEventListener('click', () => {
-  if (index <= 0) index = maxIndex;
-  else index--;
+  if (activeCard <= 0) activeCard = reviewsData.length - 1;
+  else activeCard--;
+  updateIndexFromActiveCard();
   update();
+  resetAutoRotate();
 });
 
 if (btnNext) btnNext.addEventListener('click', () => {
-  if (index >= maxIndex) index = 0;
-  else index++;
+  if (activeCard >= reviewsData.length - 1) activeCard = 0;
+  else activeCard++;
+  updateIndexFromActiveCard();
   update();
+  resetAutoRotate();
 });
 
   // Touch swipe (mobile-friendly)
@@ -325,15 +362,41 @@ if (btnNext) btnNext.addEventListener('click', () => {
   viewport.addEventListener('touchend', () => {
     if (Math.abs(dx) < 35) return;
     if (dx < 0){
-    index = (index >= maxIndex) ? 0 : index + 1;
+      activeCard = (activeCard >= reviewsData.length - 1) ? 0 : activeCard + 1;
     } else {
-    index = (index <= 0) ? maxIndex : index - 1;
+      activeCard = (activeCard <= 0) ? reviewsData.length - 1 : activeCard - 1;
     }
+    updateIndexFromActiveCard();
     update();
+    resetAutoRotate();
   });
+
+  // Auto-rotation toutes les 5 secondes
+  let autoRotateInterval;
+
+  function startAutoRotate() {
+    autoRotateInterval = setInterval(() => {
+      activeCard = (activeCard >= reviewsData.length - 1) ? 0 : activeCard + 1;
+      updateIndexFromActiveCard();
+      update();
+    }, 5000);
+  }
+
+  function resetAutoRotate() {
+    clearInterval(autoRotateInterval);
+    startAutoRotate();
+  }
+
+  // Ajouter resetAutoRotate aux clics sur les dots
+  if (dotsWrap) {
+    dotsWrap.addEventListener('click', () => {
+      resetAutoRotate();
+    });
+  }
 
   window.addEventListener('resize', compute);
   compute();
+  startAutoRotate();
 })();
 
 let lastScroll = 0;
