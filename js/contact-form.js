@@ -68,17 +68,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = formEl.querySelector("#email");
     if (email) {
       if (!email.value) {
-        setFieldError("email", "email-error", "Veuillez saisir votre adresse e-mail");
+        setFieldError(
+          "email",
+          "email-error",
+          "Veuillez saisir votre adresse e-mail",
+        );
         ok = false;
       } else if (!email.validity.valid) {
-        setFieldError("email", "email-error", "Veuillez saisir une adresse e-mail valide");
+        setFieldError(
+          "email",
+          "email-error",
+          "Veuillez saisir une adresse e-mail valide",
+        );
         ok = false;
       }
     }
 
     const message = formEl.querySelector("#message");
     if (message && !message.value.trim()) {
-      setFieldError("message", "message-error", "Veuillez saisir votre message");
+      setFieldError(
+        "message",
+        "message-error",
+        "Veuillez saisir votre message",
+      );
       ok = false;
     }
 
@@ -106,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const recaptchaField = form.querySelector(
-      'textarea[name="g-recaptcha-response"], input[name="g-recaptcha-response"]'
+      'textarea[name="g-recaptcha-response"], input[name="g-recaptcha-response"]',
     );
     if (recaptchaField && !String(recaptchaField.value || "").trim()) {
       showAlert(errorAlert);
@@ -120,13 +132,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const formData = new FormData(form);
     // Netlify AJAX example posts to "/" (not the current pathname)
     const action = form.getAttribute("action");
-    const url =
-      action && action.trim() !== "" ? action : "/";
+    const url = action && action.trim() !== "" ? action : "/";
 
     fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
+      body: new URLSearchParams(formData).toString(),
     })
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);

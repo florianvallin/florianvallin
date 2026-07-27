@@ -35,7 +35,7 @@ function initProtectedPhoneBlocks() {
         trigger.setAttribute("aria-expanded", "true");
         element.replaceWith(link);
       },
-      { once: true }
+      { once: true },
     );
   });
 }
