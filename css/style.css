@@ -4533,3 +4533,1879 @@ html {
     background: #000000;
   }
 }
+
+/* =========================================
+   CARTE PHILOSOPHIE AVEC PACKS INTÉGRÉS
+========================================= */
+
+.pricing-card--philo-complete {
+  overflow: hidden;
+  padding: 0;
+}
+
+.pricing-hourly {
+  padding: 38px;
+}
+
+/* Séparation entre le tarif horaire et les packs */
+
+.pricing-pack-separator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 38px;
+  text-align: center;
+}
+
+.pricing-pack-separator::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(28, 28, 40, 0.1);
+}
+
+.pricing-pack-separator span {
+  position: relative;
+  z-index: 1;
+  padding: 0 18px;
+  color: #6e6e80;
+  background: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Zone inférieure intégrée */
+
+.pricing-packs-area {
+  padding: 42px 38px 38px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(108, 99, 255, 0.025) 0%,
+      rgba(108, 99, 255, 0.07) 100%
+    );
+}
+
+.pricing-packs-heading {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.pricing-packs-eyebrow {
+  margin: 0 0 8px;
+  color: #6c63ff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.pricing-packs-heading h3 {
+  margin: 0;
+  color: #1c1c28;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.25;
+}
+
+.pricing-packs-heading > p:last-child {
+  margin: 12px 0 0;
+  color: #6e6e80;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Grille */
+
+.philo-pack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+/* Cartes internes */
+
+.philo-pack-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px 22px;
+  border: 1px solid rgba(28, 28, 40, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 25px rgba(28, 28, 40, 0.05);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.philo-pack-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(108, 99, 255, 0.35);
+  box-shadow: 0 14px 32px rgba(28, 28, 40, 0.09);
+}
+
+.philo-pack-card--featured {
+  border: 2px solid #6c63ff;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(108, 99, 255, 0.14);
+}
+
+.philo-pack-popular {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 6px 15px;
+  border-radius: 0 0 10px 10px;
+  color: #ffffff;
+  background: #6c63ff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.philo-pack-card--featured .philo-pack-top {
+  margin-top: 13px;
+}
+
+.philo-pack-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.philo-pack-label {
+  margin: 0 0 6px;
+  color: #6c63ff;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.philo-pack-title {
+  margin: 0;
+  color: #1c1c28;
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.philo-pack-duration {
+  flex: 0 0 auto;
+  padding: 6px 8px;
+  border-radius: 999px;
+  color: #6c63ff;
+  background: rgba(108, 99, 255, 0.09);
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.philo-pack-description {
+  min-height: 72px;
+  margin: 17px 0 0;
+  color: #6e6e80;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.philo-pack-price {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 18px;
+  color: #1c1c28;
+}
+
+.philo-pack-price-number {
+  font-size: 2.45rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.philo-pack-price-currency {
+  margin: 3px 0 0 4px;
+  color: #6c63ff;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.philo-pack-saving {
+  min-height: 34px;
+  margin: 7px 0 16px;
+  color: #6e6e80;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.philo-pack-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 11px;
+  margin: 0;
+  padding: 18px 0 22px;
+  border-top: 1px solid rgba(28, 28, 40, 0.08);
+  list-style: none;
+}
+
+.philo-pack-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #4a4a5a;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.philo-pack-check {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  border-radius: 50%;
+  color: #6c63ff;
+  background: rgba(108, 99, 255, 0.1);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.philo-pack-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  padding: 11px 15px;
+  border: 1px solid rgba(108, 99, 255, 0.4);
+  border-radius: 999px;
+  color: #6c63ff;
+  background: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.philo-pack-button:hover {
+  color: #ffffff;
+  background: #6c63ff;
+  transform: translateY(-1px);
+}
+
+.philo-pack-button--featured {
+  border-color: #6c63ff;
+  color: #ffffff;
+  background: #6c63ff;
+}
+
+.philo-pack-button--featured:hover {
+  background: #554cdb;
+}
+
+/* Tablette */
+
+@media (max-width: 980px) {
+  .philo-pack-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .philo-pack-description,
+  .philo-pack-saving {
+    min-height: auto;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .pricing-hourly {
+    padding: 28px 20px;
+  }
+
+  .pricing-pack-separator {
+    margin: 0 20px;
+  }
+
+  .pricing-pack-separator span {
+    max-width: 230px;
+    padding: 0 10px;
+    font-size: 0.7rem;
+  }
+
+  .pricing-packs-area {
+    padding: 34px 16px 20px;
+  }
+
+  .philo-pack-card {
+    padding: 23px 19px;
+  }
+
+  .philo-pack-top {
+    flex-direction: column;
+  }
+}
+
+/* =====================================================
+   PACKS PHILOSOPHIE — AJUSTEMENTS ESTHÉTIQUES
+===================================================== */
+
+/* Cartes plus équilibrées et légèrement plus compactes */
+.pricing-card--philo-complete .philo-pack-card {
+  padding: 28px 24px 24px;
+
+  border-radius: 22px;
+  border-color: rgba(28, 28, 40, 0.09);
+
+  box-shadow:
+    0 14px 36px rgba(28, 28, 40, 0.055),
+    0 2px 8px rgba(28, 28, 40, 0.025);
+}
+
+/* Carte mise en avant */
+.pricing-card--philo-complete .philo-pack-card--featured {
+  border: 2px solid var(--primary);
+
+  box-shadow:
+    0 20px 50px rgba(108, 99, 255, 0.14),
+    0 6px 18px rgba(108, 99, 255, 0.08);
+}
+
+/* Badge plus élégant */
+.pricing-card--philo-complete .philo-pack-popular {
+  top: -1px;
+
+  padding: 7px 20px;
+
+  border-radius: 0 0 14px 14px;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+
+  box-shadow:
+    0 6px 16px rgba(108, 99, 255, 0.16);
+}
+
+/* Compense la présence du badge sur la carte choisie */
+.pricing-card--philo-complete
+.philo-pack-card--featured
+.philo-pack-top {
+  margin-top: 18px;
+}
+
+/* En-tête plus propre */
+.pricing-card--philo-complete .philo-pack-top {
+  min-height: 92px;
+
+  gap: 14px;
+}
+
+/* Petit label */
+.pricing-card--philo-complete .philo-pack-label {
+  margin-bottom: 8px;
+
+  font-size: 0.68rem;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+}
+
+/* Titre */
+.pricing-card--philo-complete .philo-pack-title {
+  font-size: 1.22rem;
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+}
+
+/* Badge durée */
+.pricing-card--philo-complete .philo-pack-duration {
+  padding: 7px 11px;
+
+  font-size: 0.72rem;
+}
+
+/* Description plus lisible */
+.pricing-card--philo-complete .philo-pack-description {
+  min-height: 92px;
+
+  margin-top: 12px;
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   PRIX PLUS COMPACT
+===================================================== */
+
+.pricing-card--philo-complete .philo-pack-price {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  min-height: auto;
+
+  margin-top: 6px;
+  padding-top: 0;
+
+  width: fit-content;
+}
+
+/* Supprime la largeur artificielle qui créait un grand espace */
+.pricing-card--philo-complete .philo-pack-price-number {
+  min-width: 0;
+
+  font-size: 3rem;
+  font-weight: 720;
+  line-height: 1;
+
+  letter-spacing: -0.065em;
+
+  font-variant-numeric: tabular-nums;
+}
+
+/* Symbole euro beaucoup plus proche du nombre */
+.pricing-card--philo-complete .philo-pack-price-currency {
+  margin:
+    5px
+    0
+    0
+    3px;
+
+  font-size: 1.08rem;
+  line-height: 1;
+}
+
+/* Ligne sous le prix rapprochée */
+.pricing-card--philo-complete .philo-pack-saving {
+  min-height: auto;
+
+  margin:
+    9px
+    0
+    18px;
+
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+/* =====================================================
+   LISTE PLUS AÉRÉE MAIS MOINS VIDE
+===================================================== */
+
+.pricing-card--philo-complete .philo-pack-list {
+  gap: 12px;
+
+  padding:
+    20px
+    0
+    24px;
+
+  border-top-color: rgba(28, 28, 40, 0.09);
+}
+
+.pricing-card--philo-complete .philo-pack-list li {
+  gap: 10px;
+
+  font-size: 0.82rem;
+  line-height: 1.42;
+}
+
+/* Coche plus nette */
+.pricing-card--philo-complete .philo-pack-check {
+  flex-basis: 20px;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(108, 99, 255, 0.09);
+
+  font-size: 0.72rem;
+}
+
+/* =====================================================
+   BOUTONS
+===================================================== */
+
+.pricing-card--philo-complete .philo-pack-button {
+  min-height: 48px;
+
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+/* Le bouton principal gagne légèrement en profondeur */
+.pricing-card--philo-complete
+.philo-pack-button--featured {
+  box-shadow:
+    0 10px 22px rgba(108, 99, 255, 0.18);
+}
+
+/* Hover */
+.pricing-card--philo-complete
+.philo-pack-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 46px rgba(28, 28, 40, 0.09);
+}
+
+.pricing-card--philo-complete
+.philo-pack-card--featured:hover {
+  box-shadow:
+    0 24px 58px rgba(108, 99, 255, 0.18);
+}
+
+/* =====================================================
+   ALIGNEMENT DES BLOCS
+===================================================== */
+
+@media (min-width: 981px) {
+
+  .pricing-card--philo-complete .philo-pack-card {
+    grid-template-rows:
+      92px
+      92px
+      auto
+      auto
+      1fr
+      auto;
+  }
+
+  .pricing-card--philo-complete .philo-pack-price {
+    align-self: start;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 980px) {
+
+  .pricing-card--philo-complete .philo-pack-card {
+    padding: 26px 22px;
+  }
+
+  .pricing-card--philo-complete .philo-pack-top,
+  .pricing-card--philo-complete .philo-pack-description {
+    min-height: auto;
+  }
+
+  .pricing-card--philo-complete .philo-pack-price {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .pricing-card--philo-complete .philo-pack-price-number {
+    font-size: 2.65rem;
+  }
+
+  .pricing-card--philo-complete .philo-pack-description {
+    font-size: 0.85rem;
+  }
+
+  .pricing-card--philo-complete
+  .philo-pack-card--featured
+  .philo-pack-top {
+    margin-top: 20px;
+  }
+}
+
+/* =====================================================
+   PACKS PHILOSOPHIE — FOND BLANC UNI
+===================================================== */
+
+/* Grande carte philosophie : fond blanc uniforme */
+#philosophie .pricing-card--philo-complete {
+  background: #ffffff !important;
+  background-image: none !important;
+
+  border: 1px solid rgba(28, 28, 40, 0.09);
+  border-radius: 26px;
+
+  box-shadow:
+    0 22px 60px rgba(28, 28, 40, 0.08);
+}
+
+/* Supprime les halos et traits décoratifs hérités
+   de la carte tarifaire générale */
+#philosophie .pricing-card--philo-complete::before,
+#philosophie .pricing-card--philo-complete::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Partie haute à 50 € */
+#philosophie .pricing-card--philo-complete .pricing-hourly {
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Zone qui contient les trois packs */
+#philosophie .pricing-card--philo-complete .pricing-packs-area {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+
+  padding: 42px 38px 44px;
+}
+
+/* Grille elle-même : aucune couleur ni aucun fondu */
+#philosophie .pricing-card--philo-complete .philo-pack-grid {
+  position: relative;
+
+  background: transparent !important;
+  background-image: none !important;
+
+  padding: 4px 0 2px;
+}
+
+/* Cartes blanches */
+#philosophie .pricing-card--philo-complete .philo-pack-card {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+
+  border: 1px solid rgba(28, 28, 40, 0.10);
+
+  box-shadow:
+    0 12px 32px rgba(28, 28, 40, 0.065),
+    0 2px 8px rgba(28, 28, 40, 0.025);
+}
+
+/* Carte principale : fond blanc également */
+#philosophie
+.pricing-card--philo-complete
+.philo-pack-card--featured {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+
+  border: 2px solid var(--primary);
+
+  box-shadow:
+    0 18px 44px rgba(108, 99, 255, 0.13),
+    0 4px 14px rgba(108, 99, 255, 0.07);
+}
+
+/* Ombres plus propres au survol */
+#philosophie
+.pricing-card--philo-complete
+.philo-pack-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 44px rgba(28, 28, 40, 0.10);
+}
+
+#philosophie
+.pricing-card--philo-complete
+.philo-pack-card--featured:hover {
+  box-shadow:
+    0 22px 52px rgba(108, 99, 255, 0.17);
+}
+
+/* Séparateur cohérent avec le fond blanc */
+#philosophie
+.pricing-card--philo-complete
+.pricing-pack-separator span {
+  background: #ffffff !important;
+}
+
+/* Supprime un éventuel halo généré par un pseudo-élément
+   placé sur la zone des packs ou la grille */
+#philosophie
+.pricing-card--philo-complete
+.pricing-packs-area::before,
+#philosophie
+.pricing-card--philo-complete
+.pricing-packs-area::after,
+#philosophie
+.pricing-card--philo-complete
+.philo-pack-grid::before,
+#philosophie
+.pricing-card--philo-complete
+.philo-pack-grid::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #philosophie
+  .pricing-card--philo-complete
+  .pricing-packs-area {
+    padding: 34px 16px 24px;
+  }
+}
+
+/* =====================================================
+   COURS COLLECTIFS — VERSION CORRIGÉE
+===================================================== */
+
+.collective-pricing {
+  position: relative;
+  z-index: 2;
+
+  margin: 32px 38px 38px;
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(108, 99, 255, 0.16);
+  border-radius: 22px;
+
+  box-shadow:
+    0 14px 36px rgba(28, 28, 40, 0.055);
+}
+
+/* =====================================================
+   EN-TÊTE
+===================================================== */
+
+.collective-pricing-header {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  align-items: flex-start;
+  gap: 18px;
+
+  margin-bottom: 26px;
+}
+
+.collective-pricing-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 15px;
+
+  color: var(--primary);
+  background: rgba(108, 99, 255, 0.08);
+}
+
+.collective-pricing-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.collective-pricing-eyebrow {
+  margin: 0 0 6px;
+
+  color: var(--primary);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.11em;
+}
+
+.collective-pricing-title {
+  margin: 0;
+
+  color: var(--text-dark);
+
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.collective-pricing-intro {
+  max-width: 620px;
+
+  margin: 10px 0 0;
+
+  color: var(--text-light);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.collective-pricing-intro strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+/* =====================================================
+   FORMULES
+===================================================== */
+
+.collective-pricing-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.collective-option {
+  min-width: 0;
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(28, 28, 40, 0.10);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 24px rgba(28, 28, 40, 0.04);
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.collective-option:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(108, 99, 255, 0.28);
+
+  box-shadow:
+    0 14px 32px rgba(28, 28, 40, 0.07);
+}
+
+.collective-option--best {
+  border-color: rgba(108, 99, 255, 0.34);
+}
+
+/* Ligne titre + économie */
+
+.collective-option-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.collective-option-size {
+  color: var(--text-dark);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.collective-option-saving {
+  flex: 0 0 auto;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  color: var(--primary);
+  background: rgba(108, 99, 255, 0.08);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+/* =====================================================
+   PRIX
+===================================================== */
+
+.collective-option-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  column-gap: 4px;
+  row-gap: 3px;
+
+  margin-bottom: 14px;
+
+  color: var(--text-dark);
+}
+
+.collective-price-number {
+  color: var(--text-dark);
+
+  font-size: 2.55rem;
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.06em;
+
+  font-variant-numeric: tabular-nums;
+}
+
+.collective-price-currency {
+  margin-left: 1px;
+
+  color: var(--primary);
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+
+  transform: translateY(-8px);
+}
+
+.collective-price-unit {
+  margin-left: 7px;
+
+  color: var(--text-light);
+
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  white-space: nowrap;
+}
+
+/* Texte explicatif */
+
+.collective-option-text {
+  margin: 0;
+
+  color: var(--text-medium);
+
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.collective-option-text strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+/* =====================================================
+   NOTE INFÉRIEURE
+===================================================== */
+
+.collective-pricing-footer {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-top: 20px;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(28, 28, 40, 0.08);
+}
+
+.collective-pricing-footer p {
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.collective-pricing-footer strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.collective-footer-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 20px;
+
+  width: 20px;
+  height: 20px;
+
+  margin-top: 1px;
+
+  border-radius: 50%;
+
+  color: var(--primary);
+  background: rgba(108, 99, 255, 0.09);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+/* =====================================================
+   BOUTON
+===================================================== */
+
+.collective-pricing-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  padding: 12px 20px;
+
+  border: 1px solid rgba(108, 99, 255, 0.34);
+  border-radius: 999px;
+
+  color: var(--primary);
+  background: #ffffff;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.collective-pricing-button:hover {
+  transform: translateY(-1px);
+
+  color: #ffffff;
+  background: var(--primary);
+}
+
+/* =====================================================
+   TABLETTE
+===================================================== */
+
+@media (max-width: 850px) {
+  .collective-pricing {
+    margin: 28px 24px 34px;
+    padding: 26px;
+  }
+
+  .collective-pricing-options {
+    grid-template-columns: 1fr;
+  }
+
+  .collective-option {
+    padding: 22px;
+  }
+
+  .collective-option-price {
+    flex-wrap: nowrap;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .collective-pricing {
+    margin: 24px 16px 30px;
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .collective-pricing-header {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 13px;
+
+    margin-bottom: 22px;
+  }
+
+  .collective-pricing-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+  }
+
+  .collective-pricing-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .collective-pricing-eyebrow {
+    font-size: 0.62rem;
+  }
+
+  .collective-pricing-title {
+    font-size: 1.35rem;
+  }
+
+  .collective-pricing-intro {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .collective-pricing-options {
+    gap: 14px;
+  }
+
+  .collective-option {
+    padding: 20px 18px;
+  }
+
+  .collective-option-top {
+    align-items: center;
+  }
+
+  .collective-option-size {
+    font-size: 0.9rem;
+  }
+
+  .collective-option-price {
+    flex-wrap: wrap;
+  }
+
+  .collective-price-number {
+    font-size: 2.35rem;
+  }
+
+  .collective-price-unit {
+    margin-left: 6px;
+
+    font-size: 0.7rem;
+
+    white-space: nowrap;
+  }
+
+  .collective-pricing-button {
+    width: 100%;
+  }
+}
+
+/* Très petit écran */
+
+@media (max-width: 380px) {
+  .collective-pricing-header {
+    grid-template-columns: 1fr;
+  }
+
+  .collective-option-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .collective-price-unit {
+    width: 100%;
+    margin: 5px 0 0;
+
+    white-space: normal;
+  }
+}
+
+/* =====================================================
+   CORRECTION STRUCTURE COURS COLLECTIFS
+===================================================== */
+
+#philosophie .pricing-card--philo-complete {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Le bloc collectif occupe toute la largeur de la grande carte */
+#philosophie .collective-pricing {
+  display: block;
+
+  width: auto;
+  max-width: none;
+
+  margin: 34px 38px 40px;
+  padding: 30px 32px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(108, 99, 255, 0.16);
+  border-radius: 22px;
+
+  box-shadow:
+    0 14px 36px rgba(28, 28, 40, 0.055);
+}
+
+/* En-tête suffisamment large */
+#philosophie .collective-pricing-header {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+
+  width: 100%;
+
+  gap: 18px;
+  align-items: start;
+}
+
+#philosophie .collective-pricing-heading {
+  min-width: 0;
+}
+
+#philosophie .collective-pricing-title {
+  max-width: none;
+
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+#philosophie .collective-pricing-intro {
+  max-width: 700px;
+}
+
+/* Les deux tarifs occupent équitablement la largeur */
+#philosophie .collective-pricing-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  width: 100%;
+
+  gap: 18px;
+}
+
+/* Évite tout rétrécissement anormal */
+#philosophie .collective-option {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Prix sur une ligne lisible */
+#philosophie .collective-option-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  column-gap: 4px;
+  row-gap: 5px;
+}
+
+#philosophie .collective-price-unit {
+  margin-left: 8px;
+
+  white-space: normal;
+}
+
+/* Tablette */
+@media (max-width: 850px) {
+  #philosophie .collective-pricing {
+    margin: 28px 22px 34px;
+    padding: 26px 24px;
+  }
+
+  #philosophie .collective-pricing-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #philosophie .collective-pricing {
+    margin: 24px 16px 30px;
+    padding: 22px 18px;
+  }
+
+  #philosophie .collective-pricing-header {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  #philosophie .collective-pricing-title {
+    font-size: 1.3rem;
+  }
+
+  #philosophie .collective-option-price {
+    align-items: flex-end;
+  }
+
+  #philosophie .collective-price-unit {
+    width: 100%;
+    margin: 5px 0 0;
+  }
+}
+
+/* Bouton cours collectif centré */
+#philosophie .collective-pricing-button {
+  display: flex;
+  width: fit-content;
+  margin: 22px auto 0;
+}
+
+/* Bouton pleine largeur sur mobile */
+@media (max-width: 600px) {
+  #philosophie .collective-pricing-button {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+}
+
+/* =====================================================
+   CONTACT — MENU DÉROULANT PRESTATION
+===================================================== */
+
+.contact-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Champ select cohérent avec les autres champs */
+.contact-field select {
+  display: block;
+
+  width: 100%;
+  min-height: 56px;
+
+  padding: 16px 52px 16px 18px;
+
+  border: 1px solid rgba(28, 28, 40, 0.10);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text-dark);
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  cursor: pointer;
+
+  /* Supprime la flèche native */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Texte de l'option par défaut */
+.contact-field select:required:invalid {
+  color: var(--text-light);
+}
+
+/* Les vraies options restent foncées */
+.contact-field select option {
+  color: var(--text-dark);
+  background: #ffffff;
+}
+
+/* Focus identique aux autres champs */
+.contact-field select:focus {
+  outline: none;
+
+  border-color: rgba(108, 99, 255, 0.45);
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 4px rgba(108, 99, 255, 0.10);
+}
+
+/* Flèche personnalisée */
+.contact-select-icon {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  color: var(--primary);
+
+  pointer-events: none;
+
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.contact-select-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Petite animation quand le select reçoit le focus */
+.contact-select-wrapper:focus-within .contact-select-icon {
+  transform:
+    translateY(-50%)
+    rotate(180deg);
+}
+
+/* Texte d'aide */
+.contact-field-help {
+  margin: 8px 2px 0;
+
+  color: var(--text-light);
+
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-field select {
+    min-height: 54px;
+
+    padding: 15px 48px 15px 16px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+  }
+
+  .contact-select-icon {
+    right: 15px;
+  }
+
+  .contact-field-help {
+    font-size: 12px;
+  }
+}
+
+/* =====================================================
+   TRANSITION PHILOSOPHIE → MÉTHODOLOGIE
+===================================================== */
+
+/* Les deux sections partagent exactement le même fond */
+#philosophie,
+#methodologie {
+  background-color: var(--background-accent);
+}
+
+/* La section philosophie dispose d'une vraie zone de respiration */
+#philosophie {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+/* La carte ne touche pas visuellement la section suivante */
+#philosophie .pricing-card--philo-complete {
+  margin-bottom: 0;
+}
+
+/* Transition douce et symétrique */
+#philosophie::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+
+  width: min(760px, calc(100% - 80px));
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(108, 99, 255, 0.18) 25%,
+    rgba(108, 99, 255, 0.28) 50%,
+    rgba(108, 99, 255, 0.18) 75%,
+    transparent 100%
+  );
+}
+
+/* On retire l'ancien trait plus dur du bloc méthodologie */
+#methodologie::before {
+  content: none;
+  display: none;
+}
+
+/* Le titre méthodologie commence avec une respiration équilibrée */
+#methodologie {
+  padding-top: 105px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #philosophie {
+    padding-bottom: 90px;
+  }
+
+  #philosophie::after {
+    bottom: 26px;
+    width: calc(100% - 48px);
+  }
+
+  #methodologie {
+    padding-top: 80px;
+  }
+}
+
+/* =====================================================
+   HERO — HIÉRARCHIE DU TITRE
+===================================================== */
+
+.hero-main-title {
+  margin: 0;
+
+  color: #1c1c28;
+
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+
+  text-align: center;
+}
+
+.hero-title-main,
+.hero-title-secondary {
+  display: block;
+}
+
+.hero-title-secondary {
+  margin-top: 2px;
+
+  color: var(--primary);
+
+  /* 70 % de la taille du titre principal */
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-main-title {
+    font-size: clamp(2.5rem, 12vw, 3.25rem);
+    line-height: 1.08;
+  }
+
+  .hero-title-secondary {
+    margin-top: 8px;
+    font-size: 0.7em;
+  }
+}
+
+/* =====================================================
+   HARMONISATION PHILOSOPHIE / MÉTHODOLOGIE
+===================================================== */
+
+/* Titres principaux identiques */
+#philosophie .bloc-3-title,
+#methodologie .bloc-4-title {
+  margin: 0 0 40px;
+
+  color: var(--text-dark);
+
+  font-family: "Inter", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+
+  text-align: center;
+  position: relative;
+}
+
+/* Trait sous les deux titres */
+#philosophie .bloc-3-title::after,
+#methodologie .bloc-4-title::after {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 2px;
+
+  margin: 14px auto 0;
+
+  background: var(--primary);
+}
+
+/* Textes d’introduction identiques */
+#philosophie .bloc3-intro-strong,
+#methodologie .methodologie-intro {
+  max-width: 820px;
+
+  margin: 0 auto 55px;
+
+  color: var(--text-dark);
+
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.2px;
+
+  text-align: center;
+}
+
+/* Gras identique dans les deux introductions */
+#philosophie .bloc3-intro-strong strong,
+#methodologie .methodologie-intro strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+/* On évite que le conteneur méthodologie rajoute
+   un trop grand espace avant le texte */
+#methodologie .methodologie-center {
+  margin-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #philosophie .bloc-3-title,
+  #methodologie .bloc-4-title {
+    font-size: 32px;
+    line-height: 1.22;
+    margin-bottom: 34px;
+  }
+
+  #philosophie .bloc3-intro-strong,
+  #methodologie .methodologie-intro {
+    max-width: 100%;
+
+    margin-bottom: 38px;
+
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: -0.1px;
+  }
+}
+
+@media (max-width: 480px) {
+  #philosophie .bloc-3-title,
+  #methodologie .bloc-4-title {
+    font-size: 28px;
+  }
+
+  #philosophie .bloc3-intro-strong,
+  #methodologie .methodologie-intro {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+}
+
+/* =====================================================
+   FAQ — OUVERTURE PLUS ÉLÉGANTE
+===================================================== */
+
+.faq-item {
+  background: #ffffff;
+}
+
+/* Question */
+.faq-question {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* État ouvert */
+.faq-item.active .faq-question {
+  background: rgba(108, 99, 255, 0.035);
+  border-bottom-color: rgba(108, 99, 255, 0.12);
+}
+
+/* Réponse */
+.faq-answer {
+  background: #ffffff;
+
+  padding-left: 28px;
+  padding-right: 28px;
+
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+}
+
+/* Plus d’air quand la réponse est ouverte */
+.faq-item.active .faq-answer {
+  padding-top: 22px;
+  padding-bottom: 6px;
+}
+
+/* Texte de réponse */
+.faq-answer p {
+  margin: 0;
+  padding: 0 0 22px;
+
+  color: var(--text-medium);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* La carte ouverte gagne légèrement en profondeur */
+.faq-item.active {
+  border-color: rgba(108, 99, 255, 0.2);
+
+  box-shadow:
+    0 14px 36px rgba(108, 99, 255, 0.10),
+    0 0 0 1px rgba(108, 99, 255, 0.06);
+}
+
+/* Icône plus lisible à l’ouverture */
+.faq-item.active .faq-icon {
+  color: var(--primary);
+  transform: rotate(90deg) scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .faq-question {
+    padding: 20px 20px;
+  }
+
+  .faq-answer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding-top: 18px;
+  }
+
+  .faq-answer p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+}
+
+/* =====================================================
+   INFOBULLES — AFFICHAGE AU-DESSUS DE TOUT
+===================================================== */
+
+/* Mot interactif */
+.info-tooltip {
+  display: inline;
+
+  color: var(--primary);
+  font-weight: 600;
+
+  cursor: help;
+
+  border-bottom: 1px dotted rgba(108, 99, 255, 0.55);
+  text-underline-offset: 3px;
+}
+
+/* On désactive les anciennes bulles internes */
+.info-tooltip::before,
+.info-tooltip::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Bulle déplacée directement dans le body */
+.floating-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 99999;
+
+  width: max-content;
+  max-width: min(320px, calc(100vw - 32px));
+
+  padding: 10px 14px;
+
+  border: 1px solid rgba(108, 99, 255, 0.22);
+  border-radius: 11px;
+
+  background: #1c1c28;
+  color: #ffffff;
+
+  box-shadow:
+    0 16px 38px rgba(28, 28, 40, 0.24);
+
+  font-family: "Inter", sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translate(-50%, calc(-100% - 12px)) translateY(4px);
+
+  transition:
+    opacity 0.17s ease,
+    transform 0.17s ease,
+    visibility 0.17s ease;
+}
+
+/* Flèche */
+.floating-tooltip::after {
+  content: "";
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  width: 9px;
+  height: 9px;
+
+  background: #1c1c28;
+
+  transform:
+    translate(-50%, -5px)
+    rotate(45deg);
+}
+
+/* État visible */
+.floating-tooltip.is-visible {
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translate(-50%, calc(-100% - 12px))
+    translateY(0);
+}
+
+/* Bulle affichée sous le mot lorsque l’espace manque en haut */
+.floating-tooltip.is-below {
+  transform:
+    translate(-50%, 12px)
+    translateY(0);
+}
+
+.floating-tooltip.is-below::after {
+  top: auto;
+  bottom: 100%;
+
+  transform:
+    translate(-50%, 5px)
+    rotate(45deg);
+}
+
+/* Focus clavier */
+.info-tooltip:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+
+  box-shadow:
+    0 2px 0 rgba(108, 99, 255, 0.12);
+}
+
+@media (max-width: 600px) {
+  .floating-tooltip {
+    max-width: calc(100vw - 28px);
+
+    padding: 9px 12px;
+
+    font-size: 12px;
+  }
+}

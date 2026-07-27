@@ -400,3 +400,133 @@ if (btnNext) btnNext.addEventListener('click', () => {
 })();
 
 let lastScroll = 0;
+
+/* =====================================================
+   INFOBULLES FLOTTANTES
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tooltipTargets = document.querySelectorAll(".info-tooltip");
+
+  if (!tooltipTargets.length) {
+    return;
+  }
+
+  const floatingTooltip = document.createElement("div");
+
+  floatingTooltip.className = "floating-tooltip";
+  floatingTooltip.setAttribute("role", "tooltip");
+  floatingTooltip.setAttribute("aria-hidden", "true");
+
+  document.body.appendChild(floatingTooltip);
+
+  let activeTarget = null;
+
+  function positionTooltip(target) {
+    const targetRect = target.getBoundingClientRect();
+    const tooltipRect = floatingTooltip.getBoundingClientRect();
+
+    const horizontalMargin = 16;
+    const verticalMargin = 14;
+
+    let left = targetRect.left + targetRect.width / 2;
+    let top = targetRect.top;
+
+    /* Empêche la bulle de sortir à gauche */
+    const minimumLeft =
+      horizontalMargin + tooltipRect.width / 2;
+
+    /* Empêche la bulle de sortir à droite */
+    const maximumLeft =
+      window.innerWidth -
+      horizontalMargin -
+      tooltipRect.width / 2;
+
+    left = Math.max(
+      minimumLeft,
+      Math.min(left, maximumLeft)
+    );
+
+    /*
+     * Si l’espace au-dessus est insuffisant,
+     * la bulle apparaît sous le mot.
+     */
+    const shouldDisplayBelow =
+      targetRect.top <
+      tooltipRect.height + verticalMargin;
+
+    floatingTooltip.classList.toggle(
+      "is-below",
+      shouldDisplayBelow
+    );
+
+    if (shouldDisplayBelow) {
+      top = targetRect.bottom;
+    }
+
+    floatingTooltip.style.left = `${left}px`;
+    floatingTooltip.style.top = `${top}px`;
+  }
+
+  function showTooltip(target) {
+    const tooltipText = target.dataset.tooltip;
+
+    if (!tooltipText) {
+      return;
+    }
+
+    activeTarget = target;
+
+    floatingTooltip.textContent = tooltipText;
+    floatingTooltip.setAttribute("aria-hidden", "false");
+
+    /*
+     * La classe est d’abord ajoutée pour que la bulle
+     * possède ses dimensions avant son positionnement.
+     */
+    floatingTooltip.classList.add("is-visible");
+
+    positionTooltip(target);
+  }
+
+  function hideTooltip() {
+    activeTarget = null;
+
+    floatingTooltip.classList.remove(
+      "is-visible",
+      "is-below"
+    );
+
+    floatingTooltip.setAttribute("aria-hidden", "true");
+  }
+
+  tooltipTargets.forEach((target) => {
+    target.addEventListener("mouseenter", () => {
+      showTooltip(target);
+    });
+
+    target.addEventListener("mouseleave", hideTooltip);
+
+    target.addEventListener("focus", () => {
+      showTooltip(target);
+    });
+
+    target.addEventListener("blur", hideTooltip);
+  });
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (activeTarget) {
+        positionTooltip(activeTarget);
+      }
+    },
+    { passive: true }
+  );
+
+  window.addEventListener("resize", () => {
+    if (activeTarget) {
+      positionTooltip(activeTarget);
+    }
+  });
+});
