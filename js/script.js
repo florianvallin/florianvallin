@@ -1,532 +1,223 @@
-// ===============================
-// Chargement dynamique du header
-// ===============================
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("partials/header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.body.insertAdjacentHTML("afterbegin", data);
-      initNavbar(); // on initialise le menu après insertion
-    });
+(() => {
+  "use strict";
 
-  function initNavbar() {
+  const ready = (callback) => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback, { once: true });
+    } else {
+      callback();
+    }
+  };
+
+  ready(() => {
+    initNavigation();
+    initFaq();
+    initBackToTop();
+    initMethodologyReveal();
+    initReviews();
+    initTooltips();
+  });
+
+  function initNavigation() {
     const navbar = document.querySelector(".navbar");
     const toggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links a");
+    if (!navbar) return;
 
-    if (!navbar || !toggle || !nav) return;
+    const closeMenu = () => {
+      navbar.classList.remove("nav-open");
+      toggle?.setAttribute("aria-expanded", "false");
+    };
 
-    function closeMenu() {
-  navbar.classList.remove("nav-open");
-  toggle.setAttribute("aria-expanded", "false");
-  document.body.classList.remove("menu-open");
-}
-
-function openMenu() {
-  navbar.classList.add("nav-open");
-  toggle.setAttribute("aria-expanded", "true");
-  document.body.classList.add("menu-open");
-}
-
-    toggle.addEventListener("click", () => {
-      const isOpen = navbar.classList.contains("nav-open");
-      isOpen ? closeMenu() : openMenu();
+    toggle?.addEventListener("click", () => {
+      const open = navbar.classList.toggle("nav-open");
+      toggle.setAttribute("aria-expanded", String(open));
     });
 
-    nav.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => closeMenu());
-    });
-
+    links.forEach((link) => link.addEventListener("click", closeMenu));
     window.addEventListener("resize", () => {
       if (window.innerWidth > 860) closeMenu();
     });
-  }
-});
 
-
-document.querySelectorAll(".faq-question").forEach(button => {
-  button.addEventListener("click", () => {
-    const item = button.parentElement;
-    item.classList.toggle("active");
-  });
-});
-
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-
-  if (window.scrollY > 80) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  const scrollY = window.scrollY;
-
-  // Limite à 300px pour éviter un blur excessif
-  const maxScroll = 300;
-  const scrollRatio = Math.min(scrollY / maxScroll, 1);
-
-  // Blur progressif de 6px à 12px
-  const blurValue = 6 + (6 * scrollRatio);
-
-  // Opacité progressive de 0.8 à 0.95
-  const opacityValue = 0.8 + (0.15 * scrollRatio);
-
-  navbar.style.backdropFilter = `blur(${blurValue}px)`;
-  navbar.style.background = `rgba(255, 255, 255, ${opacityValue})`;
-});
-
-// ===============================
-// BACK TO TOP – Scroll fluide
-// ===============================
-
-document.addEventListener("DOMContentLoaded", function () {
-  const backToTop = document.getElementById("backToTop");
-
-  if (!backToTop) return;
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 400) {
-      backToTop.classList.add("visible");
-    } else {
-      backToTop.classList.remove("visible");
-    }
-  });
-
-  backToTop.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-});
-
-// Animation au scroll : étapes méthodologie
-(() => {
-  const steps = document.querySelectorAll('.methodologie-steps-grid .stepper-step');
-  if (!steps.length) return;
-
-  // Si l'utilisateur préfère réduire les animations, on affiche tout directement
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) {
-    steps.forEach(s => s.classList.add('is-visible'));
-    return;
+    const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 70);
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
   }
 
-  const io = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target); // une seule fois
-      }
-    });
-  }, { threshold: 0.18 });
-
-  steps.forEach(s => io.observe(s));
-})();
-
-// ===============================
-// Animation au scroll : bloc "clarification" (2 cartes)
-// ===============================
-(() => {
-  const cards = document.querySelectorAll(
-    '.clarification-grid .before-clarification, .clarification-grid .after-clarification'
-  );
-  if (!cards.length) return;
-
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) {
-    cards.forEach(c => c.classList.add('is-visible'));
-    return;
-  }
-
-  const io = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.18 });
-
-  cards.forEach(c => io.observe(c));
-})();
-
-// ===============================
-// AVIS (Google) — carrousel simple
-// ===============================
-(() => {
-  const root = document.querySelector('[data-carousel]');
-  if (!root) return;
-
-  const track = root.querySelector('[data-track]');
-  const viewport = root.querySelector('[data-viewport]');
-  const btnPrev = root.querySelector('[data-prev]');
-  const btnNext = root.querySelector('[data-next]');
-  const dotsWrap = document.querySelector('[data-dots]');
-
-  // ---- À REMPLACER par tes vrais avis (copier/coller) ----
-  // Conseil : garde des extraits courts, lisibles, sans surcharger.
-  const reviewsData = [
-  {
-    name: "Elodie Jannin",
-    date: "2025-02-28",
-    rating: 5,
-    text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser."
-  },
-  {
-    name: "Olivier Le Pioufle",
-    date: "2025-03-01",
-    rating: 5,
-    text: "J'ai suivi des cours en parallèle de mes études de philosophie. Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux sur la dissertation et les commentaires, avec beaucoup de pédagogie et de patience."
-  },
-  {
-    name: "Louna Schroetter",
-    date: "2026-03-21",
-    rating: 5,
-    text: "Je recommande vivement si vous êtes en études de philosophie !\nIl est de très bon conseil et très pédagogue. Et ça ce voit qu'il aime se qu'il fait !"
-  },
-  {
-    name: "Marion Wright",
-    date: "2026-03-23",
-    rating: 5,
-    text: "Monsieur Vallin est un professeur attentif, rigoureux à l'écoute. Ses cours sont clairs et répondent bien aux besoins personnels. Il a une grande palette d'outils pour mieux comprendre et structurer la compréhension et la manière de travailler.\nIl m'a beaucoup aidée en parallèle de mes études et grâce à lui j'ai appris des méthodes de travail qui me servent encore aujourd'hui !"
-  }
-];
-
-  // ---- Résumé (optionnel) ----
-  const scoreEl = document.getElementById('reviewsScore');
-  const labelEl = document.getElementById('reviewsLabel');
-  const countEl = document.getElementById('reviewsCount');
-  const starsEl = document.getElementById('reviewsStars');
-
-  // Mets tes chiffres réels ici
-  const summary = { score: "5,0", label: "Excellent", count: 19 };
-
-  if (scoreEl) scoreEl.textContent = summary.score;
-  if (labelEl) labelEl.textContent = summary.label;
-  if (countEl) countEl.textContent = `Basé sur ${summary.count} avis`;
-  if (starsEl) starsEl.textContent = "★★★★★";
-
-  function initials(name){
-    const parts = String(name).trim().split(/\s+/).slice(0,2);
-    return parts.map(p => p[0]?.toUpperCase()).join("") || "A";
-  }
-
-  function formatDate(iso){
-    // format neutre : AAAA-MM-JJ → JJ/MM/AAAA
-    const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (!m) return iso;
-    return `${m[3]}/${m[2]}/${m[1]}`;
-  }
-
-  function stars(n){
-    const full = "★★★★★".slice(0, Math.max(0, Math.min(5, n)));
-    const empty = "☆☆☆☆☆".slice(0, 5 - Math.max(0, Math.min(5, n)));
-    return full + empty;
-  }
-
-  // Render cards
-  track.innerHTML = reviewsData.map(r => `
-    <article class="review-card">
-      <div class="review-head">
-        <div class="review-person">
-          <span class="review-avatar" aria-hidden="true">${initials(r.name)}</span>
-          <div style="min-width:0">
-            <div class="review-name">${r.name}</div>
-            <div class="review-date">${formatDate(r.date)}</div>
-          </div>
-        </div>
-        <span class="review-google-mini" aria-hidden="true">G</span>
-      </div>
-      <div class="review-stars" aria-hidden="true">${stars(r.rating)}</div>
-      <p class="review-text">${r.text}</p>
-    </article>
-  `).join("");
-
-  let activeCard = 0;  // Quelle carte est "active"
-  let index = 0;        // Position de scroll calculée
-  let perView = 3;
-  let stepPx = 0;
-  let maxIndex = 0;
-
-  function compute(){
-  const w = viewport.clientWidth;
-
-  // Si moins de 3 avis → 1 carte
-  if (reviewsData.length < 3){
-    perView = 1;
-  } else {
-    if (w <= 620) perView = 1;
-    else if (w <= 980) perView = 2;
-    else perView = 3;
-  }
-
-  // Mesurer la largeur réelle des cartes plutôt que de la calculer
-  const firstCard = track.querySelector('.review-card');
-  if (firstCard) {
-    const cardWidth = firstCard.offsetWidth;
-    const gap = 18;
-    stepPx = cardWidth + gap;
-  } else {
-    // Fallback au calcul si pas de cartes
-    const gap = 18;
-    stepPx = (w - (gap * (perView - 1))) / perView + gap;
-  }
-
-  maxIndex = Math.max(0, reviewsData.length - perView);
-
-  updateIndexFromActiveCard();
-  update();
-  buildDots();
-}
-
-  // Calcule l'index de scroll basé sur la carte active
-  function updateIndexFromActiveCard() {
-    // Pour afficher la carte active à la bonne position:
-    // activeCard=0 → index=0 (affiche 0,1,2)
-    // activeCard=1 → index=0 (affiche 0,1,2, 1 au centre)
-    // activeCard=2 → index=1 (affiche 1,2,3)
-    // activeCard=3 → index=1 (affiche 1,2,3, 3 à droite)
-    index = Math.max(0, Math.min(maxIndex, activeCard - (perView === 1 ? 0 : 1)));
-  }
-
-  function update(){
-    track.style.transform = `translateX(${-index * stepPx}px)`;
-
-// Gestion focus actif
-const cards = track.querySelectorAll('.review-card');
-cards.forEach((card, i) => {
-  card.classList.toggle('is-active', i === activeCard);
-});
-    if (btnPrev) btnPrev.disabled = (activeCard === 0);
-    if (btnNext) btnNext.disabled = (activeCard === reviewsData.length - 1);
-    updateDots();
-  }
-
-  function buildDots(){
-    if (!dotsWrap) return;
-    const dotsCount = reviewsData.length;
-    dotsWrap.innerHTML = Array.from({ length: dotsCount }).map((_, i) =>
-      `<span class="reviews-dot ${i===activeCard ? 'is-active' : ''}" data-dot="${i}"></span>`
-    ).join("");
-
-    dotsWrap.querySelectorAll('[data-dot]').forEach(d => {
-      d.addEventListener('click', () => {
-        activeCard = Number(d.getAttribute('data-dot')) || 0;
-        updateIndexFromActiveCard();
-        update();
+  function initFaq() {
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.setAttribute("aria-expanded", "false");
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        if (!item) return;
+        const open = item.classList.toggle("active");
+        button.setAttribute("aria-expanded", String(open));
       });
     });
   }
 
-  function updateDots(){
-    if (!dotsWrap) return;
-    dotsWrap.querySelectorAll('.reviews-dot').forEach((d, i) => {
-      d.classList.toggle('is-active', i === activeCard);
-    });
-  }
-
-  // Buttons
-  if (btnPrev) btnPrev.addEventListener('click', () => {
-  if (activeCard <= 0) activeCard = reviewsData.length - 1;
-  else activeCard--;
-  updateIndexFromActiveCard();
-  update();
-  resetAutoRotate();
-});
-
-if (btnNext) btnNext.addEventListener('click', () => {
-  if (activeCard >= reviewsData.length - 1) activeCard = 0;
-  else activeCard++;
-  updateIndexFromActiveCard();
-  update();
-  resetAutoRotate();
-});
-
-  // Touch swipe (mobile-friendly)
-  let startX = 0;
-  let dx = 0;
-  viewport.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-    dx = 0;
-  }, { passive: true });
-
-  viewport.addEventListener('touchmove', (e) => {
-    dx = e.touches[0].clientX - startX;
-  }, { passive: true });
-
-  viewport.addEventListener('touchend', () => {
-    if (Math.abs(dx) < 35) return;
-    if (dx < 0){
-      activeCard = (activeCard >= reviewsData.length - 1) ? 0 : activeCard + 1;
-    } else {
-      activeCard = (activeCard <= 0) ? reviewsData.length - 1 : activeCard - 1;
-    }
-    updateIndexFromActiveCard();
+  function initBackToTop() {
+    const button = document.getElementById("backToTop");
+    if (!button) return;
+    const update = () => button.classList.toggle("visible", window.scrollY > 400);
+    window.addEventListener("scroll", update, { passive: true });
+    button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     update();
-    resetAutoRotate();
-  });
-
-  // Auto-rotation toutes les 5 secondes
-  let autoRotateInterval;
-
-  function startAutoRotate() {
-    autoRotateInterval = setInterval(() => {
-      activeCard = (activeCard >= reviewsData.length - 1) ? 0 : activeCard + 1;
-      updateIndexFromActiveCard();
-      update();
-    }, 5000);
   }
 
-  function resetAutoRotate() {
-    clearInterval(autoRotateInterval);
-    startAutoRotate();
-  }
-
-  // Ajouter resetAutoRotate aux clics sur les dots
-  if (dotsWrap) {
-    dotsWrap.addEventListener('click', () => {
-      resetAutoRotate();
-    });
-  }
-
-  window.addEventListener('resize', compute);
-  compute();
-  startAutoRotate();
-})();
-
-let lastScroll = 0;
-
-/* =====================================================
-   INFOBULLES FLOTTANTES
-===================================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-  const tooltipTargets = document.querySelectorAll(".info-tooltip");
-
-  if (!tooltipTargets.length) {
-    return;
-  }
-
-  const floatingTooltip = document.createElement("div");
-
-  floatingTooltip.className = "floating-tooltip";
-  floatingTooltip.setAttribute("role", "tooltip");
-  floatingTooltip.setAttribute("aria-hidden", "true");
-
-  document.body.appendChild(floatingTooltip);
-
-  let activeTarget = null;
-
-  function positionTooltip(target) {
-    const targetRect = target.getBoundingClientRect();
-    const tooltipRect = floatingTooltip.getBoundingClientRect();
-
-    const horizontalMargin = 16;
-    const verticalMargin = 14;
-
-    let left = targetRect.left + targetRect.width / 2;
-    let top = targetRect.top;
-
-    /* Empêche la bulle de sortir à gauche */
-    const minimumLeft =
-      horizontalMargin + tooltipRect.width / 2;
-
-    /* Empêche la bulle de sortir à droite */
-    const maximumLeft =
-      window.innerWidth -
-      horizontalMargin -
-      tooltipRect.width / 2;
-
-    left = Math.max(
-      minimumLeft,
-      Math.min(left, maximumLeft)
-    );
-
-    /*
-     * Si l’espace au-dessus est insuffisant,
-     * la bulle apparaît sous le mot.
-     */
-    const shouldDisplayBelow =
-      targetRect.top <
-      tooltipRect.height + verticalMargin;
-
-    floatingTooltip.classList.toggle(
-      "is-below",
-      shouldDisplayBelow
-    );
-
-    if (shouldDisplayBelow) {
-      top = targetRect.bottom;
-    }
-
-    floatingTooltip.style.left = `${left}px`;
-    floatingTooltip.style.top = `${top}px`;
-  }
-
-  function showTooltip(target) {
-    const tooltipText = target.dataset.tooltip;
-
-    if (!tooltipText) {
+  function initMethodologyReveal() {
+    const steps = [...document.querySelectorAll(".methodologie-steps-grid .stepper-step")];
+    if (!steps.length) return;
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      steps.forEach((step) => step.classList.add("is-visible"));
       return;
     }
-
-    activeTarget = target;
-
-    floatingTooltip.textContent = tooltipText;
-    floatingTooltip.setAttribute("aria-hidden", "false");
-
-    /*
-     * La classe est d’abord ajoutée pour que la bulle
-     * possède ses dimensions avant son positionnement.
-     */
-    floatingTooltip.classList.add("is-visible");
-
-    positionTooltip(target);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    steps.forEach((step) => observer.observe(step));
   }
 
-  function hideTooltip() {
-    activeTarget = null;
+  function initReviews() {
+    const root = document.querySelector("[data-carousel]");
+    if (!root) return;
+    const track = root.querySelector("[data-track]");
+    const viewport = root.querySelector("[data-viewport]");
+    const previous = root.querySelector("[data-prev]");
+    const next = root.querySelector("[data-next]");
+    const dots = document.querySelector("[data-dots]");
+    if (!track || !viewport) return;
 
-    floatingTooltip.classList.remove(
-      "is-visible",
-      "is-below"
-    );
+    const reviews = [
+      { name: "Élodie Jannin", date: "28/02/2025", rating: 5, text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser." },
+      { name: "Olivier Le Pioufle", date: "01/03/2025", rating: 5, text: "Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux, avec beaucoup de pédagogie et de patience." },
+      { name: "Louna Schroetter", date: "21/03/2026", rating: 5, text: "Je recommande vivement pour les études de philosophie. Florian est de très bon conseil, très pédagogue et passionné par son travail." },
+      { name: "Marion Wright", date: "23/03/2026", rating: 5, text: "Un professeur attentif, rigoureux et à l'écoute. Ses cours sont clairs et répondent aux besoins personnels. Les méthodes apprises me servent encore aujourd'hui." }
+    ];
 
-    floatingTooltip.setAttribute("aria-hidden", "true");
+    const initials = (name) => name.split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
+    track.innerHTML = reviews.map((review) => `
+      <article class="review-card">
+        <div class="review-head">
+          <div class="review-person">
+            <span class="review-avatar" aria-hidden="true">${initials(review.name)}</span>
+            <div><div class="review-name">${review.name}</div><div class="review-date">${review.date}</div></div>
+          </div>
+          <span class="review-google-mini" aria-hidden="true">G</span>
+        </div>
+        <div class="review-stars" aria-label="${review.rating} étoiles">${"★".repeat(review.rating)}</div>
+        <p class="review-text">${review.text}</p>
+      </article>`).join("");
+
+    let active = 0;
+    let perView = 3;
+    let timer = null;
+
+    const cards = () => [...track.querySelectorAll(".review-card")];
+    const calculatePerView = () => viewport.clientWidth <= 620 ? 1 : viewport.clientWidth <= 980 ? 2 : 3;
+
+    const renderDots = () => {
+      if (!dots) return;
+      dots.innerHTML = reviews.map((_, index) => `<button type="button" class="reviews-dot${index === active ? " is-active" : ""}" data-review-dot="${index}" aria-label="Afficher l'avis ${index + 1}"></button>`).join("");
+      dots.querySelectorAll("[data-review-dot]").forEach((dot) => dot.addEventListener("click", () => {
+        active = Number(dot.dataset.reviewDot);
+        update();
+        restart();
+      }));
+    };
+
+    const update = () => {
+      perView = calculatePerView();
+      const allCards = cards();
+      const first = allCards[0];
+      const step = first ? first.getBoundingClientRect().width + 18 : 0;
+      const maxStart = Math.max(0, reviews.length - perView);
+      const start = Math.min(maxStart, Math.max(0, active - (perView > 1 ? 1 : 0)));
+      track.style.transform = `translateX(${-start * step}px)`;
+      allCards.forEach((card, index) => card.classList.toggle("is-active", index === active));
+      previous && (previous.disabled = active === 0);
+      next && (next.disabled = active === reviews.length - 1);
+      dots?.querySelectorAll(".reviews-dot").forEach((dot, index) => dot.classList.toggle("is-active", index === active));
+    };
+
+    const go = (direction) => {
+      active = Math.max(0, Math.min(reviews.length - 1, active + direction));
+      update();
+      restart();
+    };
+    previous?.addEventListener("click", () => go(-1));
+    next?.addEventListener("click", () => go(1));
+
+    let startX = 0;
+    viewport.addEventListener("touchstart", (event) => { startX = event.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener("touchend", (event) => {
+      const delta = event.changedTouches[0].clientX - startX;
+      if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+    }, { passive: true });
+
+    const restart = () => {
+      clearInterval(timer);
+      timer = setInterval(() => {
+        active = active >= reviews.length - 1 ? 0 : active + 1;
+        update();
+      }, 6000);
+    };
+
+    renderDots();
+    update();
+    restart();
+    window.addEventListener("resize", update);
   }
 
-  tooltipTargets.forEach((target) => {
-    target.addEventListener("mouseenter", () => {
-      showTooltip(target);
+  function initTooltips() {
+    const targets = [...document.querySelectorAll(".info-tooltip")];
+    if (!targets.length) return;
+    const tooltip = document.createElement("div");
+    tooltip.className = "floating-tooltip";
+    tooltip.setAttribute("role", "tooltip");
+    tooltip.setAttribute("aria-hidden", "true");
+    document.body.appendChild(tooltip);
+    let activeTarget = null;
+
+    const position = (target) => {
+      const targetRect = target.getBoundingClientRect();
+      const tooltipRect = tooltip.getBoundingClientRect();
+      const margin = 14;
+      let left = targetRect.left + targetRect.width / 2;
+      left = Math.max(margin + tooltipRect.width / 2, Math.min(window.innerWidth - margin - tooltipRect.width / 2, left));
+      const below = targetRect.top < tooltipRect.height + 18;
+      tooltip.classList.toggle("is-below", below);
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${below ? targetRect.bottom : targetRect.top}px`;
+    };
+
+    const show = (target) => {
+      const text = target.dataset.tooltip;
+      if (!text) return;
+      activeTarget = target;
+      tooltip.textContent = text;
+      tooltip.classList.add("is-visible");
+      tooltip.setAttribute("aria-hidden", "false");
+      requestAnimationFrame(() => position(target));
+    };
+    const hide = () => {
+      activeTarget = null;
+      tooltip.classList.remove("is-visible", "is-below");
+      tooltip.setAttribute("aria-hidden", "true");
+    };
+
+    targets.forEach((target) => {
+      target.addEventListener("mouseenter", () => show(target));
+      target.addEventListener("mouseleave", hide);
+      target.addEventListener("focus", () => show(target));
+      target.addEventListener("blur", hide);
     });
-
-    target.addEventListener("mouseleave", hideTooltip);
-
-    target.addEventListener("focus", () => {
-      showTooltip(target);
-    });
-
-    target.addEventListener("blur", hideTooltip);
-  });
-
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (activeTarget) {
-        positionTooltip(activeTarget);
-      }
-    },
-    { passive: true }
-  );
-
-  window.addEventListener("resize", () => {
-    if (activeTarget) {
-      positionTooltip(activeTarget);
-    }
-  });
-});
+    window.addEventListener("scroll", () => activeTarget && position(activeTarget), { passive: true });
+    window.addEventListener("resize", () => activeTarget && position(activeTarget));
+  }
+})();
