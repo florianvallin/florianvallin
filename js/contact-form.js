@@ -1,7 +1,10 @@
 /**
- * Formulaire contact (Netlify) — validation, fetch POST, alertes.
+ * Formulaire de contact (Netlify)
+ * Validation personnalisée + notifications flottantes accessibles.
  */
 document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+
   const form = document.getElementById("contact-form");
   if (!form) return;
 
@@ -11,164 +14,233 @@ document.addEventListener("DOMContentLoaded", function () {
   const successAlert = document.getElementById("contact-success-alert");
   const errorAlert = document.getElementById("contact-error-alert");
   const emailInput = document.getElementById("email");
+  const prestationInput = document.getElementById("prestation");
   const messageInput = document.getElementById("message");
   const subjectInput = document.getElementById("subject");
 
-  function hideAlert(el) {
-    if (el) el.classList.add("hidden");
+  let popupTimer = null;
+
+  // Désactive les bulles natives du navigateur afin d'utiliser une validation cohérente avec le site.
+  form.noValidate = true;
+
+  // Les anciennes alertes intégrées restent masquées : la notification flottante les remplace.
+  successAlert?.classList.add("hidden");
+  errorAlert?.classList.add("hidden");
+
+  const popup = createPopup();
+
+  function createPopup() {
+    const root = document.createElement("div");
+    root.className = "form-popup";
+    root.setAttribute("aria-hidden", "true");
+
+    const icon = document.createElement("span");
+    icon.className = "form-popup__icon";
+    icon.setAttribute("aria-hidden", "true");
+
+    const content = document.createElement("div");
+    content.className = "form-popup__content";
+
+    const title = document.createElement("p");
+    title.className = "form-popup__title";
+
+    const message = document.createElement("div");
+    message.className = "form-popup__message";
+
+    const close = document.createElement("button");
+    close.type = "button";
+    close.className = "form-popup__close";
+    close.setAttribute("aria-label", "Fermer la notification");
+    close.textContent = "×";
+    close.addEventListener("click", hidePopup);
+
+    content.append(title, message);
+    root.append(icon, content, close);
+    document.body.appendChild(root);
+
+    return { root, icon, title, message };
   }
 
-  function showAlert(el) {
-    if (!el) return;
-    if (el === successAlert) hideAlert(errorAlert);
-    if (el === errorAlert) hideAlert(successAlert);
-    el.classList.remove("hidden");
-    el.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
+  function showPopup(type, title, messages, duration) {
+    window.clearTimeout(popupTimer);
 
-  function clearFieldErrors() {
-    ["email-error", "message-error"].forEach(function (id) {
-      const err = document.getElementById(id);
-      if (err) {
-        err.textContent = "";
-        err.classList.add("sr-only");
-        err.classList.remove("contact-field-error");
-      }
+    popup.root.classList.remove("form-popup--success", "form-popup--error", "is-visible");
+    popup.root.classList.add(type === "success" ? "form-popup--success" : "form-popup--error");
+    popup.root.setAttribute("role", type === "success" ? "status" : "alert");
+    popup.root.setAttribute("aria-live", type === "success" ? "polite" : "assertive");
+    popup.root.setAttribute("aria-hidden", "false");
+
+    popup.icon.textContent = type === "success" ? "✓" : "!";
+    popup.title.textContent = title;
+    popup.message.replaceChildren();
+
+    if (messages.length === 1) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = messages[0];
+      popup.message.appendChild(paragraph);
+    } else {
+      const intro = document.createElement("p");
+      intro.textContent = "Merci de compléter :";
+
+      const list = document.createElement("ul");
+      messages.forEach(function (text) {
+        const item = document.createElement("li");
+        item.textContent = text;
+        list.appendChild(item);
+      });
+
+      popup.message.append(intro, list);
+    }
+
+    // Deux frames garantissent que la transition d'entrée est toujours jouée.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        popup.root.classList.add("is-visible");
+      });
     });
+
+    popupTimer = window.setTimeout(hidePopup, duration);
   }
 
-  function setFieldError(fieldId, errorId, message) {
-    const field = document.getElementById(fieldId);
-    const errorEl = document.getElementById(errorId);
-    if (field && errorEl) {
-      field.setAttribute("aria-invalid", "true");
-      errorEl.textContent = message;
-      errorEl.classList.remove("sr-only");
-      errorEl.classList.add("contact-field-error");
-    }
+  function hidePopup() {
+    window.clearTimeout(popupTimer);
+    popup.root.classList.remove("is-visible");
+    popup.root.setAttribute("aria-hidden", "true");
   }
 
-  function clearFieldError(fieldId, errorId) {
-    const field = document.getElementById(fieldId);
-    const errorEl = document.getElementById(errorId);
-    if (field && errorEl) {
-      field.removeAttribute("aria-invalid");
-      errorEl.textContent = "";
-      errorEl.classList.add("sr-only");
-      errorEl.classList.remove("contact-field-error");
-    }
+  function clearInvalidState(field) {
+    if (!field) return;
+    field.removeAttribute("aria-invalid");
   }
 
-  function validateForm(formEl) {
-    clearFieldErrors();
-    hideAlert(successAlert);
-    hideAlert(errorAlert);
-    let ok = true;
+  function markInvalid(field) {
+    if (!field) return;
+    field.setAttribute("aria-invalid", "true");
+  }
 
-    const email = formEl.querySelector("#email");
-    if (email) {
-      if (!email.value) {
-        setFieldError(
-          "email",
-          "email-error",
-          "Veuillez saisir votre adresse e-mail",
-        );
-        ok = false;
-      } else if (!email.validity.valid) {
-        setFieldError(
-          "email",
-          "email-error",
-          "Veuillez saisir une adresse e-mail valide",
-        );
-        ok = false;
-      }
+  function clearAllInvalidStates() {
+    [emailInput, prestationInput, messageInput].forEach(clearInvalidState);
+  }
+
+  function validateForm() {
+    clearAllInvalidStates();
+
+    const missing = [];
+    let firstInvalid = null;
+
+    const registerError = function (field, label) {
+      markInvalid(field);
+      missing.push(label);
+      if (!firstInvalid) firstInvalid = field;
+    };
+
+    if (!emailInput || !emailInput.value.trim()) {
+      registerError(emailInput, "Votre adresse e-mail");
+    } else if (!emailInput.validity.valid) {
+      registerError(emailInput, "Une adresse e-mail valide");
     }
 
-    const message = formEl.querySelector("#message");
-    if (message && !message.value.trim()) {
-      setFieldError(
-        "message",
-        "message-error",
-        "Veuillez saisir votre message",
-      );
-      ok = false;
+    if (!prestationInput || !prestationInput.value) {
+      registerError(prestationInput, "Le type d’accompagnement souhaité");
     }
 
-    return ok;
+    if (!messageInput || !messageInput.value.trim()) {
+      registerError(messageInput, "Votre message");
+    }
+
+    return { valid: missing.length === 0, missing, firstInvalid };
   }
 
   function setLoading(loading) {
     if (!submitBtn || !submitText || !submitSpinner) return;
+
     submitBtn.disabled = loading;
-    if (loading) {
-      submitText.classList.add("is-hidden");
-      submitSpinner.classList.add("is-visible");
-    } else {
-      submitText.classList.remove("is-hidden");
-      submitSpinner.classList.remove("is-visible");
-    }
+    submitBtn.setAttribute("aria-busy", String(loading));
+    submitText.classList.toggle("is-hidden", loading);
+    submitSpinner.classList.toggle("is-visible", loading);
   }
 
-  function submitForm(event) {
+  async function submitForm(event) {
     event.preventDefault();
-    if (!validateForm(form)) {
-      const firstInvalid = form.querySelector('[aria-invalid="true"]');
-      if (firstInvalid) firstInvalid.focus();
+    hidePopup();
+
+    const validation = validateForm();
+    if (!validation.valid) {
+      showPopup("error", "Informations manquantes", validation.missing, 6500);
+      validation.firstInvalid?.focus();
       return;
     }
 
     const recaptchaField = form.querySelector(
-      'textarea[name="g-recaptcha-response"], input[name="g-recaptcha-response"]',
+      'textarea[name="g-recaptcha-response"], input[name="g-recaptcha-response"]'
     );
+
     if (recaptchaField && !String(recaptchaField.value || "").trim()) {
-      showAlert(errorAlert);
+      showPopup(
+        "error",
+        "Validation nécessaire",
+        ["Veuillez confirmer que vous n’êtes pas un robot."],
+        6500
+      );
       return;
     }
 
     setLoading(true);
-    hideAlert(successAlert);
-    hideAlert(errorAlert);
 
-    const formData = new FormData(form);
-    // Netlify AJAX example posts to "/" (not the current pathname)
-    const action = form.getAttribute("action");
-    const url = action && action.trim() !== "" ? action : "/";
+    try {
+      const formData = new FormData(form);
+      const action = form.getAttribute("action");
+      const url = action && action.trim() !== "" ? action : "/";
 
-    fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        setLoading(false);
-        showAlert(successAlert);
-        form.reset();
-        clearFieldErrors();
-      })
-      .catch(function (err) {
-        console.error("Error submitting form:", err);
-        setLoading(false);
-        showAlert(errorAlert);
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
       });
+
+      if (!response.ok) {
+        throw new Error("HTTP " + response.status);
+      }
+
+      form.reset();
+      clearAllInvalidStates();
+
+      showPopup(
+        "success",
+        "Message bien envoyé",
+        ["Merci pour votre message. Je vous répondrai dans les plus brefs délais."],
+        5000
+      );
+    } catch (error) {
+      console.error("Erreur lors de l’envoi du formulaire :", error);
+
+      showPopup(
+        "error",
+        "Envoi impossible",
+        ["Le message n’a pas pu être envoyé. Réessayez dans quelques instants ou contactez-moi directement par e-mail."],
+        7000
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   form.addEventListener("submit", submitForm);
 
-  if (emailInput && subjectInput) {
-    emailInput.addEventListener("input", function () {
-      if (emailInput.value) {
-        subjectInput.value = "Contact " + emailInput.value;
-      }
-      if (!emailInput.value.trim() || emailInput.validity.valid) {
-        clearFieldError("email", "email-error");
-      }
-    });
-  }
+  emailInput?.addEventListener("input", function () {
+    clearInvalidState(emailInput);
+    if (subjectInput) {
+      subjectInput.value = emailInput.value.trim()
+        ? "Contact " + emailInput.value.trim()
+        : "[%{siteName}] Nouveau message";
+    }
+  });
 
-  if (messageInput) {
-    messageInput.addEventListener("input", function () {
-      clearFieldError("message", "message-error");
-    });
-  }
+  prestationInput?.addEventListener("change", function () {
+    clearInvalidState(prestationInput);
+  });
+
+  messageInput?.addEventListener("input", function () {
+    clearInvalidState(messageInput);
+  });
 });

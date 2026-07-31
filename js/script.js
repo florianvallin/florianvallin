@@ -39,8 +39,7 @@
       if (window.innerWidth > 860) closeMenu();
     });
 
-    const updateNavbar = () =>
-      navbar.classList.toggle("scrolled", window.scrollY > 70);
+    const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 70);
     window.addEventListener("scroll", updateNavbar, { passive: true });
     updateNavbar();
   }
@@ -60,38 +59,27 @@
   function initBackToTop() {
     const button = document.getElementById("backToTop");
     if (!button) return;
-    const update = () =>
-      button.classList.toggle("visible", window.scrollY > 400);
+    const update = () => button.classList.toggle("visible", window.scrollY > 400);
     window.addEventListener("scroll", update, { passive: true });
-    button.addEventListener("click", () =>
-      window.scrollTo({ top: 0, behavior: "smooth" }),
-    );
+    button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     update();
   }
 
   function initMethodologyReveal() {
-    const steps = [
-      ...document.querySelectorAll(".methodologie-steps-grid .stepper-step"),
-    ];
+    const steps = [...document.querySelectorAll(".methodologie-steps-grid .stepper-step")];
     if (!steps.length) return;
-    if (
-      !("IntersectionObserver" in window) ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       steps.forEach((step) => step.classList.add("is-visible"));
       return;
     }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 },
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
     steps.forEach((step) => observer.observe(step));
   }
 
@@ -106,43 +94,23 @@
     if (!track || !viewport) return;
 
     const reviews = [
-      {
-        name: "Élodie Jannin",
-        date: "28/02/2025",
-        rating: 5,
-        text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser.",
-      },
-      {
-        name: "Olivier Le Pioufle",
-        date: "01/03/2025",
-        rating: 5,
-        text: "Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux, avec beaucoup de pédagogie et de patience.",
-      },
-      {
-        name: "Louna Schroetter",
-        date: "21/03/2026",
-        rating: 5,
-        text: "Je recommande vivement pour les études de philosophie. Florian est de très bon conseil, très pédagogue et passionné par son travail.",
-      },
-      {
-        name: "Marion Wright",
-        date: "23/03/2026",
-        rating: 5,
-        text: "Un professeur attentif, rigoureux et à l'écoute. Ses cours sont clairs et répondent aux besoins personnels. Les méthodes apprises me servent encore aujourd'hui.",
-      },
+      { name: "Élodie Jannin", date: "28/02/2025", rating: 5, text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser." },
+      { name: "Olivier Le Pioufle", date: "01/03/2025", rating: 5, text: "Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux, avec beaucoup de pédagogie et de patience." },
+      { name: "Louna Schroetter", date: "21/03/2026", rating: 5, text: "Je recommande vivement pour les études de philosophie. Florian est de très bon conseil, très pédagogue et passionné par son travail." },
+      { name: "Marion Wright", date: "23/03/2026", rating: 5, text: "Un professeur attentif, rigoureux et à l'écoute. Ses cours sont clairs et répondent aux besoins personnels. Les méthodes apprises me servent encore aujourd'hui." }
     ];
 
-    const initials = (name) =>
-      name
-        .split(/\s+/)
-        .slice(0, 2)
-        .map((part) => part[0])
-        .join("")
-        .toUpperCase();
-    track.innerHTML = reviews
-      .map(
-        (review) => `
-      <article class="review-card">
+    const googleBusinessUrl = "https://share.google/fLWaP9lVpo7r8feO4";
+    const initials = (name) => name.split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
+
+    track.innerHTML = reviews.map((review) => `
+      <a
+        class="review-card"
+        href="${googleBusinessUrl}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Voir l’avis de ${review.name} sur Google"
+      >
         <div class="review-head">
           <div class="review-person">
             <span class="review-avatar" aria-hidden="true">${initials(review.name)}</span>
@@ -152,33 +120,23 @@
         </div>
         <div class="review-stars" aria-label="${review.rating} étoiles">${"★".repeat(review.rating)}</div>
         <p class="review-text">${review.text}</p>
-      </article>`,
-      )
-      .join("");
+      </a>`).join("");
 
     let active = 0;
     let perView = 3;
     let timer = null;
 
     const cards = () => [...track.querySelectorAll(".review-card")];
-    const calculatePerView = () =>
-      viewport.clientWidth <= 620 ? 1 : viewport.clientWidth <= 980 ? 2 : 3;
+    const calculatePerView = () => viewport.clientWidth <= 620 ? 1 : viewport.clientWidth <= 980 ? 2 : 3;
 
     const renderDots = () => {
       if (!dots) return;
-      dots.innerHTML = reviews
-        .map(
-          (_, index) =>
-            `<button type="button" class="reviews-dot${index === active ? " is-active" : ""}" data-review-dot="${index}" aria-label="Afficher l'avis ${index + 1}"></button>`,
-        )
-        .join("");
-      dots.querySelectorAll("[data-review-dot]").forEach((dot) =>
-        dot.addEventListener("click", () => {
-          active = Number(dot.dataset.reviewDot);
-          update();
-          restart();
-        }),
-      );
+      dots.innerHTML = reviews.map((_, index) => `<button type="button" class="reviews-dot${index === active ? " is-active" : ""}" data-review-dot="${index}" aria-label="Afficher l'avis ${index + 1}"></button>`).join("");
+      dots.querySelectorAll("[data-review-dot]").forEach((dot) => dot.addEventListener("click", () => {
+        active = Number(dot.dataset.reviewDot);
+        update();
+        restart();
+      }));
     };
 
     const update = () => {
@@ -187,21 +145,12 @@
       const first = allCards[0];
       const step = first ? first.getBoundingClientRect().width + 18 : 0;
       const maxStart = Math.max(0, reviews.length - perView);
-      const start = Math.min(
-        maxStart,
-        Math.max(0, active - (perView > 1 ? 1 : 0)),
-      );
+      const start = Math.min(maxStart, Math.max(0, active - (perView > 1 ? 1 : 0)));
       track.style.transform = `translateX(${-start * step}px)`;
-      allCards.forEach((card, index) =>
-        card.classList.toggle("is-active", index === active),
-      );
+      allCards.forEach((card, index) => card.classList.toggle("is-active", index === active));
       previous && (previous.disabled = active === 0);
       next && (next.disabled = active === reviews.length - 1);
-      dots
-        ?.querySelectorAll(".reviews-dot")
-        .forEach((dot, index) =>
-          dot.classList.toggle("is-active", index === active),
-        );
+      dots?.querySelectorAll(".reviews-dot").forEach((dot, index) => dot.classList.toggle("is-active", index === active));
     };
 
     const go = (direction) => {
@@ -213,21 +162,11 @@
     next?.addEventListener("click", () => go(1));
 
     let startX = 0;
-    viewport.addEventListener(
-      "touchstart",
-      (event) => {
-        startX = event.touches[0].clientX;
-      },
-      { passive: true },
-    );
-    viewport.addEventListener(
-      "touchend",
-      (event) => {
-        const delta = event.changedTouches[0].clientX - startX;
-        if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
-      },
-      { passive: true },
-    );
+    viewport.addEventListener("touchstart", (event) => { startX = event.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener("touchend", (event) => {
+      const delta = event.changedTouches[0].clientX - startX;
+      if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+    }, { passive: true });
 
     const restart = () => {
       clearInterval(timer);
@@ -258,10 +197,7 @@
       const tooltipRect = tooltip.getBoundingClientRect();
       const margin = 14;
       let left = targetRect.left + targetRect.width / 2;
-      left = Math.max(
-        margin + tooltipRect.width / 2,
-        Math.min(window.innerWidth - margin - tooltipRect.width / 2, left),
-      );
+      left = Math.max(margin + tooltipRect.width / 2, Math.min(window.innerWidth - margin - tooltipRect.width / 2, left));
       const below = targetRect.top < tooltipRect.height + 18;
       tooltip.classList.toggle("is-below", below);
       tooltip.style.left = `${left}px`;
@@ -289,14 +225,7 @@
       target.addEventListener("focus", () => show(target));
       target.addEventListener("blur", hide);
     });
-    window.addEventListener(
-      "scroll",
-      () => activeTarget && position(activeTarget),
-      { passive: true },
-    );
-    window.addEventListener(
-      "resize",
-      () => activeTarget && position(activeTarget),
-    );
+    window.addEventListener("scroll", () => activeTarget && position(activeTarget), { passive: true });
+    window.addEventListener("resize", () => activeTarget && position(activeTarget));
   }
 })();
