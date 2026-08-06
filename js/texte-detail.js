@@ -12,6 +12,8 @@
     target.innerHTML = `<div class="text-detail-inner"><p class="text-breadcrumb"><a href="/textes/">Textes</a></p><h1>Texte introuvable</h1><div class="text-placeholder"><p>Cette référence n’existe pas ou n’est plus disponible.</p></div></div>`;
     return;
   }
+  target.classList.remove("text-detail--philosophie", "text-detail--theologie", "text-detail--autres");
+  target.classList.add(`text-detail--${text.section}`);
   const sectionLabel = window.FV_TEXT_SECTION_LABELS[text.section];
   const sections = text.sections || [text.section];
   const isDualSection = sections.includes("philosophie") && sections.includes("theologie");
@@ -54,7 +56,7 @@
     const glossary = text.glossary || [];
     if (!glossary.length) return html;
     const terms = [...glossary].sort((a, b) => b.term.length - a.term.length);
-    const pattern = new RegExp(`\\b(${terms.map(({ term }) => term.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")).join("|")})\\b`, "giu");
+    const pattern = new RegExp(`(?<![\\p{L}\\p{N}_])(${terms.map(({ term }) => term.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")).join("|")})(?![\\p{L}\\p{N}_])`, "giu");
     return html.split(/(<[^>]+>)/g).map((part) => {
       if (part.startsWith("<")) return part;
       return part.replace(pattern, (match) => {
@@ -162,6 +164,36 @@
   const readingNotes = readingNotesContent
     ? `<section class="text-reading-notes text-disclosure"><button class="text-disclosure-trigger" type="button" aria-expanded="false"><span>Aller encore plus loin</span><i aria-hidden="true"></i></button><div class="text-disclosure-panel"><div class="text-disclosure-panel-inner text-reading-notes-content">${readingNotesContent}</div></div></section>`
     : "";
+  const artworks = text.artworks || [];
+  const artworkGallery = artworks.length ? `<section class="text-art-gallery" data-art-gallery data-direction="next" tabindex="0" aria-labelledby="text-art-gallery-title">
+    <header class="text-art-gallery-heading">
+      <div><span>Iconographie</span><h2 id="text-art-gallery-title">Le mythe de l’androgyne en images</h2></div>
+      <small>Balayez ou utilisez les flèches</small>
+    </header>
+    <span class="text-art-gallery-progress" aria-hidden="true"><i data-art-progress></i></span>
+    <div class="text-art-gallery-stage">
+      <span class="text-art-gallery-count" data-art-count aria-live="polite">01 / ${String(artworks.length).padStart(2, "0")}</span>
+      ${artworks.map((artwork, index) => `<figure class="text-art-slide${index === 0 ? " is-active" : ""}" data-art-slide aria-hidden="${index === 0 ? "false" : "true"}"${index === 0 ? "" : " inert"}>
+        <button class="text-art-zoom" type="button" data-art-zoom="${index}" aria-label="Agrandir : ${escapeAttribute(artwork.title)}">
+          <span class="text-art-image-wrap"><img src="${escapeAttribute(artwork.src)}" alt="${escapeAttribute(artwork.alt)}" ${index === 0 ? 'loading="eager"' : 'loading="lazy"'} decoding="async"></span>
+          <span class="text-art-zoom-hint" aria-hidden="true"><i></i>Agrandir</span>
+        </button>
+        <figcaption><strong>${artwork.title}</strong><span>${artwork.details || ""}</span></figcaption>
+      </figure>`).join("")}
+    </div>
+    <div class="text-art-gallery-controls">
+      <button type="button" class="text-art-gallery-arrow text-art-gallery-arrow--previous" data-art-previous aria-label="Voir l’œuvre précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button>
+      <div class="text-art-gallery-thumbnails" role="group" aria-label="Choisir une œuvre">${artworks.map((artwork, index) => `<button type="button" data-art-dot="${index}" aria-label="Afficher l’œuvre ${index + 1} : ${escapeAttribute(artwork.title)}"${index === 0 ? ' class="is-active" aria-current="true"' : ""}><img src="${escapeAttribute(artwork.src)}" alt="" loading="lazy" decoding="async"><span>${String(index + 1).padStart(2, "0")}</span></button>`).join("")}</div>
+      <button type="button" class="text-art-gallery-arrow text-art-gallery-arrow--next" data-art-next aria-label="Voir l’œuvre suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+    </div>
+    <dialog class="text-art-lightbox" data-art-lightbox aria-label="Œuvre agrandie">
+      <button type="button" class="text-art-lightbox-close" data-art-close aria-label="Fermer l’image agrandie">×</button>
+      <button type="button" class="text-art-lightbox-arrow text-art-lightbox-arrow--previous" data-art-lightbox-previous aria-label="Œuvre précédente"><span aria-hidden="true">←</span></button>
+      <button type="button" class="text-art-lightbox-arrow text-art-lightbox-arrow--next" data-art-lightbox-next aria-label="Œuvre suivante"><span aria-hidden="true">→</span></button>
+      <div class="text-art-lightbox-viewport"><img class="text-art-lightbox-image" data-art-lightbox-image alt=""></div>
+      <footer class="text-art-lightbox-footer"><p class="text-art-lightbox-caption" data-art-lightbox-caption></p><a class="text-art-lightbox-original" data-art-lightbox-original href="#" target="_blank" rel="noopener">Ouvrir l’image seule <span aria-hidden="true">↗</span></a></footer>
+    </dialog>
+  </section>` : "";
   const relationInfo = {
     suite: { label:"Dans le même dialogue" },
     identique: { label:"Même thèse" },
@@ -210,13 +242,14 @@
   description.content = text.description;
   target.innerHTML = `<div class="text-detail-inner">
     <p class="text-breadcrumb"><a class="text-back-results" href="${returnUrl}"><span aria-hidden="true">←</span> Retour aux résultats</a><span aria-hidden="true">·</span><a href="/textes/${text.section}/">${sectionLabel}</a></p>
-    <p class="text-detail-section${isDualSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
+    <p class="text-detail-section text-detail-section--${text.section}${isDualSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
     <h1>${text.title}${text.familiarIdea ? ` <span class="text-detail-familiar-idea">(${text.familiarIdea})</span>` : ""}</h1>
     <p class="text-detail-author"><a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${text.author}">${text.author}</a>${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}</p>
     <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>
     ${firstContext}
     ${related}
     ${readingSections}
+    ${artworkGallery}
     ${readingNotes}
     ${pathNavigation}
     <aside class="text-detail-cta" aria-label="Accompagnement sur ce texte">
@@ -228,6 +261,85 @@
       <a class="text-detail-cta-link" href="/#contact">Travailler ce texte avec moi <span aria-hidden="true">→</span></a>
     </aside>
   </div>`;
+  const artworkGalleryElement = target.querySelector("[data-art-gallery]");
+  if (artworkGalleryElement) {
+    const slides = [...artworkGalleryElement.querySelectorAll("[data-art-slide]")];
+    const dots = [...artworkGalleryElement.querySelectorAll("[data-art-dot]")];
+    const counter = artworkGalleryElement.querySelector("[data-art-count]");
+    const progress = artworkGalleryElement.querySelector("[data-art-progress]");
+    const stage = artworkGalleryElement.querySelector(".text-art-gallery-stage");
+    const lightbox = artworkGalleryElement.querySelector("[data-art-lightbox]");
+    const lightboxImage = artworkGalleryElement.querySelector("[data-art-lightbox-image]");
+    const lightboxCaption = artworkGalleryElement.querySelector("[data-art-lightbox-caption]");
+    const lightboxOriginal = artworkGalleryElement.querySelector("[data-art-lightbox-original]");
+    let activeArtwork = 0;
+    const showArtwork = (nextIndex) => {
+      const normalizedIndex = (nextIndex + slides.length) % slides.length;
+      if (normalizedIndex !== activeArtwork) artworkGalleryElement.dataset.direction = nextIndex < activeArtwork ? "previous" : "next";
+      activeArtwork = normalizedIndex;
+      slides.forEach((slide, index) => {
+        const isActive = index === activeArtwork;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", String(!isActive));
+        if (isActive) slide.removeAttribute("inert");
+        else slide.setAttribute("inert", "");
+      });
+      dots.forEach((dot, index) => {
+        const isActive = index === activeArtwork;
+        dot.classList.toggle("is-active", isActive);
+        if (isActive) dot.setAttribute("aria-current", "true");
+        else dot.removeAttribute("aria-current");
+      });
+      if (counter) counter.textContent = `${String(activeArtwork + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+      if (progress) progress.style.width = `${((activeArtwork + 1) / slides.length) * 100}%`;
+    };
+    showArtwork(0);
+    artworkGalleryElement.querySelector("[data-art-previous]")?.addEventListener("click", () => showArtwork(activeArtwork - 1));
+    artworkGalleryElement.querySelector("[data-art-next]")?.addEventListener("click", () => showArtwork(activeArtwork + 1));
+    dots.forEach((dot, index) => dot.addEventListener("click", () => showArtwork(index)));
+    artworkGalleryElement.addEventListener("keydown", (event) => {
+      if (lightbox?.open) return;
+      if (event.key === "ArrowLeft") { event.preventDefault(); showArtwork(activeArtwork - 1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); showArtwork(activeArtwork + 1); }
+    });
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let lastSwipeAt = 0;
+    stage?.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches[0]?.clientX || 0;
+      touchStartY = event.changedTouches[0]?.clientY || 0;
+    }, { passive:true });
+    stage?.addEventListener("touchend", (event) => {
+      const deltaX = (event.changedTouches[0]?.clientX || 0) - touchStartX;
+      const deltaY = (event.changedTouches[0]?.clientY || 0) - touchStartY;
+      if (Math.abs(deltaX) < 45 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+      lastSwipeAt = Date.now();
+      showArtwork(activeArtwork + (deltaX < 0 ? 1 : -1));
+    }, { passive:true });
+    const setLightboxArtwork = (index) => {
+      const artwork = artworks[(index + artworks.length) % artworks.length];
+      if (!artwork || !lightboxImage || !lightboxCaption || !lightboxOriginal) return;
+      showArtwork((index + artworks.length) % artworks.length);
+      lightboxImage.src = artwork.src;
+      lightboxImage.alt = artwork.alt;
+      lightboxCaption.innerHTML = `<strong>${artwork.title}</strong><span>${artwork.details || ""}</span>`;
+      lightboxOriginal.href = artwork.src;
+    };
+    artworkGalleryElement.querySelectorAll("[data-art-zoom]").forEach((button) => button.addEventListener("click", () => {
+      if (Date.now() - lastSwipeAt < 500 || !lightbox) return;
+      setLightboxArtwork(Number.parseInt(button.dataset.artZoom, 10) || 0);
+      if (typeof lightbox.showModal === "function") lightbox.showModal();
+      else lightbox.setAttribute("open", "");
+    }));
+    artworkGalleryElement.querySelector("[data-art-lightbox-previous]")?.addEventListener("click", () => setLightboxArtwork(activeArtwork - 1));
+    artworkGalleryElement.querySelector("[data-art-lightbox-next]")?.addEventListener("click", () => setLightboxArtwork(activeArtwork + 1));
+    artworkGalleryElement.querySelector("[data-art-close]")?.addEventListener("click", () => lightbox?.close());
+    lightbox?.addEventListener("click", (event) => { if (event.target === lightbox) lightbox.close(); });
+    lightbox?.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") { event.preventDefault(); setLightboxArtwork(activeArtwork - 1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); setLightboxArtwork(activeArtwork + 1); }
+    });
+  }
   target.querySelectorAll(".text-disclosure").forEach((disclosure, index) => {
     const trigger = disclosure.querySelector(":scope > .text-disclosure-trigger");
     const panel = disclosure.querySelector(":scope > .text-disclosure-panel");

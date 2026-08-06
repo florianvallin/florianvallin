@@ -450,7 +450,13 @@ button { color: inherit; }
 @media (max-width: 620px) {
   .container { width:min(100% - 28px,1100px); }
   .hero { padding:125px 16px 76px; }
-  .hero-socrate { display:none; }
+  .hero-socrate {
+    display:block;
+    top:94px;
+    right:-112px;
+    width:292px;
+    opacity:.12;
+  }
   .hero-main-title { font-size:clamp(2.45rem,12vw,3.25rem); }
   .hero-description {
     margin-top: 24px;
@@ -487,7 +493,10 @@ button { color: inherit; }
   .philo-pack-top { flex-direction:column; }
   .methodologie-steps-grid { gap:18px; }
   .about-card { padding:26px 20px; }
-  .about-photo img { height:300px; }
+  .about-photo img {
+    height:300px;
+    object-position:center top;
+  }
   .about-text p { font-size:14px; }
   .faq-question { padding:19px 19px; }
   .faq-answer { padding-inline:20px; }

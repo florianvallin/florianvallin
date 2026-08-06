@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conditions générales de vente | Florian Vallin</title>
 
-  <link rel="stylesheet" href="css/style.css?v=20260731-1" />
+  <link rel="stylesheet" href="css/style.css?v=20260806-1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 
 <header class="navbar" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="index.html#top" aria-label="Retour à la page d’accueil">Florian <strong>Vallin</strong></a>
+    <a class="nav-brand" href="/" aria-label="Retour à la page d’accueil">Florian <strong>Vallin</strong></a>
 
     <button
       class="nav-toggle"
@@ -27,10 +27,11 @@
     </button>
 
     <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a href="index.html#philosophie">Prestations</a>
-      <a href="index.html#quisuisje">Qui suis-je ?</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contact">Contactez-moi</a>
+      <a class="nav-texts-link" href="/textes/">Textes</a>
+      <a href="/#philosophie">Prestations</a>
+      <a href="/#quisuisje">Qui suis-je ?</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Contactez-moi</a>
     </nav>
   </div>
 </header>
@@ -278,28 +279,31 @@
   <footer class="site-footer">
     <div class="footer-container">
 
-      <div class="footer-column">
-        <p class="footer-title">Prestations</p>
+      <div class="footer-column footer-prestations">
+        <p class="footer-title"><a href="/#philosophie">Prestations</a></p>
         <ul class="footer-list">
-          <li><a href="index.html#philosophie">Cours de Philosophie</a></li>
-          <li><a href="index.html#methodologie">Cours de méthodologie</a></li>
+          <li><a href="/#philosophie">Cours de Philosophie</a></li>
+          <li><a href="/#methodologie">Cours de méthodologie</a></li>
         </ul>
 
-        <!-- Ajout CGV (voir étape 2 pour le style) -->
-        <a class="footer-title footer-title-link" href="cgv.html">Conditions générales de vente</a>
+        <p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p>
       </div>
 
       <div class="footer-column">
-        <p class="footer-title">Informations</p>
+        <p class="footer-title"><a href="/#quisuisje">Informations</a></p>
         <ul class="footer-list">
-          <li><a href="index.html#quisuisje">Qui suis-je ?</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="index.html#contact">Contactez-moi</a></li>
+          <li><a href="/#quisuisje">Qui suis-je ?</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#contact">Contactez-moi</a></li>
         </ul>
+      </div>
+
+      <div class="footer-column footer-textes">
+        <p class="footer-title"><a href="/textes/">Textes</a></p>
       </div>
 
       <div class="footer-column footer-right">
-        <p class="footer-copyright">© 2026 Florian VALLIN</p>
+        <a href="#top" class="footer-copyright">© 2026 Florian Vallin</a>
       </div>
 
     </div>
@@ -310,6 +314,6 @@
     </div>
   </footer>
 
-  <script src="js/script.js?v=20260731-1" defer></script>
+  <script src="js/script.js?v=20260805-3" defer></script>
 </body>
 </html>

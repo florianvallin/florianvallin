@@ -29,7 +29,7 @@
       ],
       relatedTexts:[
         { id:"schopenhauer-bien-etre-negation", kind:"proche", label:"Schopenhauer — Le bien-être ne se ressent qu’après sa perte", relation:"Le même auteur approfondit l’idée que la douleur est positive, tandis que le bien-être demeure presque imperceptible." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Le plaisir, mesure de la vie heureuse", relation:"Le plaisir bien compris vise l’absence de trouble, non l’intensité des jouissances." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Le plaisir bien compris vise l’absence de trouble, non l’intensité des jouissances." },
         { id:"freud-bonheur-episodique", kind:"proche", label:"Freud — Aucun bien ne rend durablement heureux", relation:"Freud rejoint Schopenhauer en donnant plus de poids à la souffrance qu’aux satisfactions durables." }
       ],
       paragraphs:[
@@ -53,7 +53,7 @@
       ],
       relatedTexts:[
         { id:"schopenhauer-bonheur-absence-souffrance", kind:"proche", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Le même auteur en tire directement une règle de vie : préférer l’évitement des douleurs à la recherche des jouissances." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Le plaisir, mesure de la vie heureuse", relation:"Le plaisir y est aussi défini par l’absence de douleur et de trouble." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Le plaisir y est aussi défini par l’absence de douleur et de trouble." },
         { id:"pascal-bonheur-avenir", kind:"proche", label:"Pascal — Espérer le bonheur, c’est se condamner à ne jamais l’obtenir", relation:"Les deux textes montrent que notre rapport au temps nous empêche de reconnaître le bonheur présent." }
       ],
       paragraphs:[
@@ -79,7 +79,7 @@
       ],
       relatedTexts:[
         { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès fait de l’expansion des désirs et de l’absence de frein la vraie liberté." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Le plaisir, mesure de la vie heureuse", relation:"Comme le stoïcien, Épicure invite à examiner et hiérarchiser ses désirs." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Comme le stoïcien, Épicure invite à examiner et hiérarchiser ses désirs." },
         { id:"descartes-changer-desirs", kind:"proche", label:"Descartes — Pour être heureux, il faut changer ses désirs", relation:"Descartes reprend la distinction stoïcienne entre ce qui dépend de nous et ce qui échappe à notre pouvoir." }
       ],
       paragraphs:[
@@ -93,30 +93,304 @@
     {
       id:"epicure-plaisir-vie-heureuse", section:"philosophie",
       cardMeta:"Épicurisme",
-      title:"Le plaisir, mesure de la vie heureuse", author:"Épicure", authorTag:"Épicure",
+      title:"Hiérarchiser ses désirs pour vivre heureux", author:"Épicure", authorTag:"Épicure",
+      cardHighlight:"Hiérarchiser ses désirs",
       cardIdea:"L’ataraxie épicurienne",
-      authorMeta:"(341–270 av. J.-C.) · fondateur de l’épicurisme", themes:["Bonheur", "Désir"], work:"Lettre à Ménécée", publication:"IIIe s. av. J.-C., trad. O. Hamelin",
-      description:"Le plaisir suffit-il à définir le bonheur, et comment faut-il le choisir ?",
-      context:"Pour Épicure, le <strong>plaisir</strong> n’est pas la recherche sans limite des jouissances : il désigne l’équilibre du corps et l’<em>ataraxie</em>, c’est-à-dire l’absence de trouble de l’âme.",
+      authorMeta:"(341–270 av. J.-C.) · fondateur de l’épicurisme", themes:["Bonheur", "Désir", "Raison"], work:"Lettre à Ménécée", publication:"IIIe s. av. J.-C., trad. M. Solovine, Hermann, 1987, p. 100–102",
+      description:"Comment distinguer les désirs et calculer les plaisirs qui conduisent réellement à la vie heureuse ?",
+      context:"Épicure ne recommande pas de satisfaire tous les désirs. Il faut les <strong>classer</strong>, puis comparer les conséquences des plaisirs et des douleurs afin d’atteindre l’<em>ataraxie</em>, la tranquillité de l’âme.",
       readingQuestions:[
+        "Quels sont les différents types de <strong>désirs</strong>, et lesquels sont véritablement nécessaires ?",
+        "Pourquoi la tranquillité de l’âme et la santé du corps constituent-elles la perfection de la vie heureuse ?",
         "Pourquoi Épicure peut-il dire que le <strong>plaisir</strong> est le commencement et la fin de la vie heureuse ?",
-        "Pourquoi faut-il parfois refuser un plaisir ou accepter une <strong>douleur</strong> ?"
+        "À quelles conditions faut-il renoncer à un plaisir ou accepter une <strong>douleur</strong> ?",
+        "Pourquoi le choix pratique dépend-il finalement de la distinction entre l’utile et le nuisible ?"
+      ],
+      glossary:[
+        { term:"désirs vains", definition:"Désirs qui ne répondent à aucun besoin naturel et n’ont pas de limite intrinsèque, comme la recherche indéfinie de richesse ou de gloire." },
+        { term:"ataraxie", definition:"Absence de trouble et d’agitation de l’âme ; elle constitue, avec l’absence de douleur corporelle, l’état stable recherché par Épicure." },
+        { term:"bien principal", definition:"Bien premier à partir duquel les autres choix sont évalués. Pour Épicure, il s’agit du plaisir correctement compris." }
       ],
       readingNotes:[
-        { type:"concept", term:"Épicurisme", definition:"École matérialiste : le plaisir sobre et stable est le principe de la vie heureuse. Il ne s’agit pas d’accumuler les jouissances, mais de choisir rationnellement ses désirs." },
+        { type:"concept", term:"Épicurisme", badge:"école matérialiste", definition:"Le plaisir sobre et stable est le principe de la vie heureuse. Il ne s’agit pas d’accumuler les jouissances, mais de choisir rationnellement ses désirs." },
         { type:"opposition", left:{ term:"<em>ataraxia</em>", definition:"Absence de trouble de l’âme." }, right:{ term:"<em>aponia</em>", definition:"Absence de douleur du corps." }, conclusion:"Ensemble, elles définissent le plaisir stable recherché par Épicure." },
-        { type:"concept", term:"Hiérarchie des désirs", definition:"Les désirs naturels et nécessaires doivent être satisfaits ; les désirs naturels mais non nécessaires sont à mesurer ; les désirs vains entretiennent l’inquiétude." },
-        { type:"concept", term:"<em>Tétrapharmakon</em>", definition:"Le « quadruple remède ». On trouve notamment :", items:["les dieux ne sont pas à craindre ;", "la mort n’est rien pour nous ;", "le bonheur est accessible ;", "la douleur est supportable."] }
+        { type:"analysis", term:"La hiérarchie des désirs", definition:"Épicure distingue trois catégories.", items:["Les désirs <strong>naturels et nécessaires</strong> — <em>physikaì kaì anankaîai</em> (φυσικαὶ καὶ ἀναγκαῖαι) — répondent aux exigences de la vie, de la tranquillité du corps ou du bonheur.", "Les désirs <strong>seulement naturels</strong> — <em>physikaì mónon</em> (φυσικαὶ μόνον) — procurent un agrément dont on peut se passer.", "Les désirs <strong>vains</strong> — <em>kenaí</em> (κεναί) — sont produits par l’opinion, sans limite naturelle, et entretiennent l’inquiétude."] },
+        { type:"opposition", left:{ term:"En théorie", definition:"Tout plaisir est un bien et toute douleur est un mal par leur nature propre." }, right:{ term:"En pratique", definition:"Un plaisir peut produire davantage de souffrance et une douleur peut conduire à un plaisir supérieur." }, conclusion:"Le plaisir n’est pas une consigne aveugle : chaque choix exige un calcul de ses conséquences." },
+        { type:"concept", term:"Calcul des plaisirs — <em>nḗphōn logismós</em> (νήφων λογισμός)", definition:"Ce « raisonnement sobre » compare les avantages et les dommages à venir. Il peut conduire à refuser un plaisir nuisible ou à accepter une peine momentanée en vue d’un bien plus grand." },
+        { type:"analysis", term:"Le mouvement du texte", definition:"L’argumentation progresse de la classification des désirs vers une règle de décision concrète.", items:["Distinguer les désirs naturels, nécessaires et vains.", "Définir le bonheur par la tranquillité de l’âme et du corps.", "Faire du plaisir le principe de l’évaluation.", "Comparer enfin l’utile et le nuisible dans chaque situation."] }
       ],
       relatedTexts:[
         { id:"schopenhauer-bonheur-absence-souffrance", kind:"proche", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Tous deux refusent d’identifier le bonheur à l’accumulation des jouissances." },
         { id:"platon-socrate-temperance", kind:"proche", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Une vie heureuse suppose de ne pas être esclave de désirs sans fin." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"adverse", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Épicure cherche à apaiser le manque en limitant les désirs ; Rousseau soutient au contraire que le plaisir de désirer est indispensable à une existence heureuse." },
         { id:"seneque-vie-vertueuse", kind:"adverse", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Sénèque refuse de faire du plaisir le souverain bien et lui oppose la vertu, stable et autosuffisante." }
       ],
       paragraphs:[
-        "Une théorie non erronée des désirs doit rapporter tout choix et toute aversion à la santé du corps et à l'ataraxie de l'âme, puisque c'est là la perfection même de la vie heureuse. Car nous faisons tout afin d'éviter la douleur physique et le trouble de l'âme. Lorsqu'une fois nous y avons réussi, toute l'agitation de l'âme tombe, l'être vivant n'ayant plus à s'acheminer vers quelque chose qui lui manque, ni à chercher autre chose pour parfaire le bien-être de l'âme et celui du corps.",
-        "Nous n'avons en effet besoin du plaisir que quand, par suite de son absence, nous éprouvons de la douleur ; et quand nous n'éprouvons pas de douleur nous n'avons plus besoin du plaisir. C'est pourquoi nous disons que le plaisir est le commencement et la fin de la vie heureuse. En effet, d'une part, le plaisir est reconnu par nous comme le bien primitif et conforme à notre nature, et c'est de lui que nous partons pour déterminer ce qu'il faut choisir et ce qu'il faut éviter ; d'autre part, c'est toujours à lui que nous aboutissons, puisque ce sont nos affections qui nous servent de règle pour mesurer et apprécier tout bien quelconque, si complexe qu'il soit.",
-        "Mais, précisément parce que le plaisir est le bien primitif et conforme à notre nature, nous ne recherchons pas tout plaisir, et il y a des cas où nous passons par-dessus beaucoup de plaisirs, savoir lorsqu'ils doivent avoir pour suite des peines qui les surpassent ; et, d'autre part, il y a des douleurs que nous estimons valoir mieux que des plaisirs, savoir lorsque après avoir longtemps supporté les douleurs, il doit résulter de là pour nous un plaisir qui les surpasse."
+        "Il faut se rendre compte que parmi nos désirs les uns sont naturels, les autres vains, et que parmi les premiers il y en a qui sont nécessaires et d’autres qui sont seulement naturels. Parmi les nécessaires, il y en a qui le sont pour le bonheur, d’autres pour la tranquillité continue du corps, d’autres enfin pour la vie même.",
+        "Une théorie non erronée de ces désirs sait en effet rapporter toute préférence et toute aversion à la santé du corps et à la tranquillité de l’âme puisque c’est là la perfection même de la vie heureuse. Car tous nos actes visent à écarter de nous la souffrance et la peur. Lorsqu’une fois nous y sommes parvenus, la tempête de l’âme s’apaise, l’être vivant n’ayant plus besoin de s’acheminer vers quelque chose qui lui manque, ni de chercher autre chose pour parfaire le bien-être de l’âme et celui du corps.",
+        "C’est alors en effet que nous éprouvons le besoin du plaisir quand, par suite de son absence, nous éprouvons de la douleur ; mais quand nous ne souffrons pas, nous n’éprouvons plus le besoin du plaisir.",
+        "Et c’est pourquoi nous disons que le plaisir est le commencement et la fin de la vie heureuse. C’est lui en effet que nous avons reconnu comme bien principal et conforme à notre nature, c’est de lui que nous partons pour déterminer ce qu’il faut choisir et ce qu’il faut éviter, et c’est à lui que nous avons finalement recours lorsque nous nous servons de la sensation comme d’une règle pour apprécier tout bien qui s’offre.",
+        "Or, précisément parce que le plaisir est notre bien principal et inné, nous ne cherchons pas tout plaisir ; il y a des cas où nous passons par-dessus beaucoup de plaisirs s’il en résulte pour nous de l’ennui. Et nous jugeons beaucoup de douleurs préférables aux plaisirs lorsque, des souffrances que nous avons endurées pendant longtemps, il résulte pour nous un plaisir plus élevé. Tout plaisir est ainsi, de par sa nature propre, un bien, mais tout plaisir ne doit pas être recherché ; pareillement, toute douleur est un mal, mais toute douleur ne doit pas être évitée à tout prix.",
+        "En tout cas, il convient de décider de tout cela en comparant et en examinant attentivement ce qui est utile et ce qui est nuisible, car nous en usons parfois avec le bien comme s’il était le mal, et avec le mal comme s’il était le bien."
+      ]
+    },
+    {
+      id:"rousseau-desir-imagination-bonheur", section:"philosophie",
+      cardMeta:"Philosophie des Lumières",
+      title:"Le bonheur se nourrit de ce que nous espérons", author:"Jean-Jacques Rousseau", authorTag:"Rousseau",
+      cardHighlight:"se nourrit de ce que nous espérons",
+      authorMeta:"(1712–1778) · philosophe des Lumières", themes:["Désir", "Bonheur", "Imagination"], work:"La Nouvelle Héloïse", publication:"1761, lettre VIII, Gallimard, 1993, p. 333",
+      description:"Pourquoi l’attente et l’imagination procurent-elles davantage de bonheur que la possession de l’objet désiré ?",
+      context:"Rousseau renverse l’idée selon laquelle le bonheur commencerait avec la satisfaction du <strong>désir</strong>. L’<strong>imagination</strong> embellit l’objet absent ; sa possession dissipe ce prestige, si bien que l’espérance peut être plus heureuse que la jouissance.",
+      readingQuestions:[
+        "Pourquoi l’espérance de l’objet procure-t-elle davantage de plaisir que sa possession ?",
+        "Comment l’imagination transforme-t-elle l’objet réel en un objet idéal ?",
+        "Pourquoi « le pays des chimères » est-il le seul digne d’être habité ?",
+        "En quel sens une vie sans peine ni désir cesserait-elle d’être véritablement humaine ?"
+      ],
+      glossary:[
+        { term:"avide", definition:"Animé par un désir intense et toujours renaissant." },
+        { term:"borné", definition:"Limité dans ses facultés et dans ce qu’il peut réellement obtenir." },
+        { term:"pays des chimères", definition:"Monde des objets idéalisés par l’imagination, plus séduisants que les choses telles qu’elles existent réellement." },
+        { term:"Être existant par lui-même", definition:"Périphrase désignant Dieu, seul être supposé se suffire pleinement à lui-même et ne manquer de rien." }
+      ],
+      readingNotes:[
+        { type:"opposition", left:{ term:"Objet espéré", definition:"Absent, il peut être rapproché, transformé et embelli librement par l’imagination." }, right:{ term:"Objet possédé", definition:"Sa présence réelle met fin au prestige, à l’illusion et au travail idéalisant de l’imagination." }, conclusion:"Le plaisir dépend moins de la chose elle-même que de la représentation que le désir en construit." },
+        { type:"concept", term:"Jouissance", definition:"Plaisir lié à la possession effective d’un bien. Sa durée est limitée, car la présence de l’objet fait disparaître l’attente qui l’embellissait." },
+        { type:"concept", term:"Ré-jouissance", definition:"Plaisir pris à espérer et à imaginer une satisfaction future. Elle peut surpasser la jouissance parce qu’elle demeure ouverte aux transformations de l’imagination." },
+        { type:"analysis", term:"Le paradoxe du bonheur", definition:"On croit désirer pour posséder, mais la possession détruit une part du plaisir que le désir produisait. L’être humain est donc heureux « avant d’être heureux », lorsque le possible reste encore ouvert." },
+        { type:"analysis", term:"Le désir comme condition de la vie humaine", definition:"L’homme est limité et ne peut tout posséder. Cette imperfection n’est pourtant pas seulement un mal : elle entretient l’élan du désir. Une existence sans manque, sans peine et sans attente serait immobile, donc semblable à la mort." },
+        { type:"plain", definition:"Rousseau ne soutient pas que toute frustration rend heureuse. Il affirme que le mouvement du désir, lorsqu’il est soutenu par l’imagination, appartient positivement au bonheur humain." }
+      ],
+      relatedTexts:[
+        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Dans les deux textes, le désir naît d’une absence et porte l’être humain vers ce qui pourrait lui rendre une forme de plénitude." },
+        { id:"kant-desir-raison-imagination", kind:"proche", label:"Kant — Le désir naît de la raison et de l’imagination", relation:"Kant et Rousseau montrent que l’imagination intensifie l’inclination lorsque l’objet est soustrait aux sens." },
+        { id:"schopenhauer-bien-etre-negation", kind:"proche", label:"Schopenhauer — Le bien-être ne se ressent qu’après sa perte", relation:"Tous deux constatent que la possession et la satisfaction perdent rapidement leur intensité sensible, mais Rousseau valorise davantage le plaisir de l’attente." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure recherche l’apaisement du manque ; Rousseau fait du désir lui-même une composante indispensable du bonheur humain." }
+      ],
+      paragraphs:[
+        "Malheur à qui n’a plus rien à désirer ! Il perd pour ainsi dire tout ce qu’il possède. On jouit moins de ce qu’on obtient que de ce qu’on espère, et l’on n’est heureux qu’avant d’être heureux. En effet, l’homme avide et borné, fait pour tout vouloir et peu obtenir, a reçu du ciel une force consolante qui rapproche de lui tout ce qu’il désire, qui le soumet à son imagination, qui le lui rend présent et sensible, qui le lui livre en quelque sorte, et pour lui rendre cette imaginaire propriété plus douce, le modifie au gré de sa passion. Mais tout ce prestige disparaît devant l’objet même ; rien n’embellit plus cet objet aux yeux du possesseur ; on ne se figure point ce qu’on voit ; l’imagination ne pare plus rien de ce qu’on possède, l’illusion cesse où commence la jouissance. Le pays des chimères est en ce monde le seul digne d’être habité et tel est le néant des choses humaines, qu’hors l’Être existant par lui-même, il n’y a rien de beau que ce qui n’est pas.",
+        "Si cet effet n’a pas toujours lieu sur les objets particuliers de nos passions, il est infaillible dans le sentiment commun qui les comprend toutes. Vivre sans peine n’est pas un état d’homme ; vivre ainsi c’est être mort. Celui qui pourrait tout sans être Dieu, serait une misérable créature ; il serait privé du plaisir de désirer ; toute autre privation serait plus supportable."
+      ]
+    },
+    {
+      id:"schopenhauer-desir-souffrance-ennui", section:"philosophie",
+      cardMeta:"Pessimisme moderne",
+      title:"Le désir condamne la vie à osciller entre souffrance et ennui", author:"Arthur Schopenhauer", authorTag:"Schopenhauer",
+      cardHighlight:"osciller entre souffrance et ennui",
+      cardIdea:"le pendule du désir",
+      authorMeta:"(1788–1860) · pessimisme moderne", themes:["Désir", "Bonheur"], work:"Le Monde comme volonté et comme représentation", publication:"1819, § 57, trad. A. Burdeau, PUF, 2003, p. 394–395",
+      description:"Pourquoi la satisfaction de nos désirs ne met-elle pas fin à la souffrance ?",
+      context:"Schopenhauer décrit une existence prise dans un mouvement sans repos : le <strong>manque</strong> fait souffrir, mais la satisfaction ne délivre que provisoirement du désir avant de conduire à la satiété ou à l’<strong>ennui</strong>.",
+      readingQuestions:[
+        "Pourquoi le désir est-il inséparable du <strong>manque</strong> et de la souffrance ?",
+        "Comment la satisfaction transforme-t-elle la souffrance du désir en <strong>ennui</strong> ?",
+        "Que montre l’image du <strong>pendule</strong> sur la possibilité d’un bonheur durable ?"
+      ],
+      glossary:[
+        { term:"prompte", definition:"Rapide, presque immédiate." },
+        { term:"vouloir", definition:"Manifestation particulière de la Volonté : élan par lequel un être tend vers ce qui lui manque." },
+        { term:"satiété", definition:"État de celui qui, ayant obtenu ce qu’il désirait, n’éprouve plus d’attrait pour cet objet." }
+      ],
+      readingNotes:[
+        { type:"plain", definition:"Pour Schopenhauer, la souffrance n’est pas un accident que l’on pourrait éliminer définitivement : elle découle de la structure même du vouloir, toujours tendu vers ce qui lui manque." },
+        { type:"analysis", term:"Le cycle du désir", definition:"Le désir ne progresse pas vers une satisfaction définitive.", items:["Le <strong>besoin</strong> manifeste un manque et produit la douleur.", "La <strong>satisfaction</strong> supprime provisoirement ce manque, mais fait perdre à l’objet son attrait.", "Le sujet tombe dans l’<strong>ennui</strong> ou voit naître un nouveau désir, et le cycle recommence."] },
+        { type:"opposition", left:{ term:"Souffrance", definition:"Présence douloureuse d’un besoin qui n’est pas satisfait." }, right:{ term:"Ennui", definition:"Vide éprouvé lorsque plus aucun objet ne mobilise momentanément le vouloir." }, conclusion:"Ces états paraissent opposés, mais ils sont les deux issues d’un même vouloir incapable de trouver un repos durable." },
+        { type:"analysis", term:"La métaphore du pendule", definition:"Comme un pendule revient continuellement d’un côté à l’autre, l’existence passe du manque à l’ennui sans atteindre un bonheur stable. L’image insiste à la fois sur la répétition et sur l’absence de véritable progrès." },
+        { type:"plain", definition:"Schopenhauer ne dit pas seulement que certains désirs nous font souffrir. Sa thèse est plus radicale : tout désir, parce qu’il naît d’un manque, contient déjà une douleur, tandis que sa satisfaction demeure fragile et provisoire." }
+      ],
+      relatedTexts:[
+        { id:"schopenhauer-bien-etre-negation", kind:"proche", label:"Schopenhauer — Le bien-être ne se ressent qu’après sa perte", relation:"Le même auteur explique pourquoi la douleur se signale positivement à la conscience, tandis que sa disparition devient presque imperceptible." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"adverse", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Rousseau reconnaît que la possession déçoit, mais il attribue au mouvement même du désir une valeur heureuse que Schopenhauer lui refuse." },
+        { id:"spinoza-desir-puissance-exister", kind:"adverse", label:"Spinoza — Le désir exprime notre puissance d’exister", relation:"Chez Spinoza, le désir est l’affirmation positive par laquelle un être persévère ; chez Schopenhauer, il révèle d’abord un manque douloureux." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure partage le diagnostic des désirs sans limite, mais pense qu’un choix rationnel permet d’atteindre un plaisir stable." }
+      ],
+      paragraphs:[
+        "Tout vouloir a pour principe un besoin, un manque, donc une douleur ; c’est par nature, nécessairement, qu’ils doivent devenir la proie de la douleur. Mais que la volonté vienne à manquer d’objet, qu’une prompte satisfaction vienne à lui enlever tout motif de désirer, et les voilà tombés dans un vide épouvantable, dans l’ennui ; leur nature, leur existence leur pèse d’un poids intolérable. La vie donc oscille, comme un pendule, de droite à gauche, de la souffrance à l’ennui ; ce sont là les deux éléments dont elle est faite, en somme. De là ce fait bien significatif par son étrangeté même : les hommes ayant placé toutes les douleurs, toutes les souffrances dans l’enfer, pour remplir le ciel n’ont plus trouvé que l’ennui. […]",
+        "Entre les désirs et leurs réalisations s’écoule toute la vie humaine. Le désir, de sa nature, est souffrance ; la satisfaction engendre bien vite la satiété ; le but était illusoire ; la possession lui enlève son attrait ; le désir renaît sous une forme nouvelle, et avec lui le besoin ; sinon, c’est le dégoût, le vide, l’ennui, ennemis plus rudes encore que le besoin."
+      ]
+    },
+    {
+      id:"spinoza-desir-puissance-exister", section:"philosophie",
+      cardMeta:"Rationalisme moderne",
+      title:"Le désir exprime notre puissance d’exister", author:"Baruch Spinoza", authorTag:"Spinoza",
+      cardHighlight:"notre puissance d’exister",
+      cardIdea:"le conatus",
+      authorMeta:"(1632–1677) · rationalisme moderne", themes:["Désir", "Nature", "Conscience"], work:"Éthique", publication:"livre III, propositions VI–VII et scolie de la proposition IX, trad. Ch. Appuhn, GF, 1965, p. 142–143 et 144–145",
+      description:"Désirons-nous une chose parce qu’elle est bonne, ou la jugeons-nous bonne parce que nous la désirons ?",
+      context:"Spinoza rapporte le désir au <strong>conatus</strong>, l’effort par lequel chaque être persévère dans son existence. Le désir n’est donc pas d’abord un manque : il est l’expression consciente de notre <strong>puissance d’agir</strong>.",
+      readingQuestions:[
+        "Comment le <strong>conatus</strong> permet-il de définir l’essence de chaque être ?",
+        "Quelle différence Spinoza établit-il entre la volonté, l’<strong>appétit</strong> et le désir ?",
+        "Pourquoi jugeons-nous une chose bonne parce que nous la désirons, et non l’inverse ?"
+      ],
+      glossary:[
+        { term:"conatus", definition:"Mot latin signifiant « effort » : tendance par laquelle chaque chose s’efforce de persévérer dans son être." },
+        { term:"appétit", definition:"Effort de conservation rapporté à la fois à l’âme et au corps ; il constitue l’essence même de l’être humain." },
+        { term:"appéter", definition:"Tendre vers une chose sous l’effet de l’appétit ; la rechercher comme favorable à sa conservation." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Conatus", badge:"effort de persévérance", definition:"Toute chose tend, autant qu’elle le peut, à maintenir et à déployer son existence. Cet effort n’est pas une propriété secondaire : il constitue son essence actuelle." },
+        { type:"analysis", term:"Trois noms d’un même effort", definition:"La dénomination change selon la manière dont l’effort est considéré.", items:["Rapporté à l’<strong>âme seule</strong>, il est appelé <strong>volonté</strong>.", "Rapporté ensemble à l’<strong>âme et au corps</strong>, il est appelé <strong>appétit</strong>.", "Lorsque l’être humain a <strong>conscience</strong> de cet appétit, celui-ci est appelé <strong>désir</strong>."] },
+        { type:"opposition", left:{ term:"Désir comme manque", definition:"Le sujet désirerait parce qu’un bien reconnu comme tel lui fait défaut." }, right:{ term:"Désir comme puissance", definition:"Le sujet tend activement à persévérer et détermine ainsi ce qui lui apparaît comme bon." }, conclusion:"Spinoza inverse l’explication ordinaire : la valeur de l’objet procède de notre tendance vers lui." },
+        { type:"concept", term:"Le bon", definition:"Ce n’est pas une qualité absolue de l’objet qui commanderait mécaniquement le désir. Nous appelons « bonne » la chose vers laquelle notre puissance nous porte et qui semble favoriser notre conservation." },
+        { type:"plain", definition:"La conscience ne crée pas le désir : elle nous rend seulement conscients d’un appétit déjà à l’œuvre dans l’unité de l’âme et du corps." }
+      ],
+      relatedTexts:[
+        { id:"schopenhauer-desir-souffrance-ennui", kind:"adverse", label:"Schopenhauer — Le désir condamne la vie à osciller entre souffrance et ennui", relation:"Schopenhauer interprète le désir à partir du manque et de la douleur ; Spinoza y voit l’affirmation de la puissance propre à chaque être." },
+        { id:"platon-mythe-androgyne-desir", kind:"adverse", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Le mythe platonicien rapporte le désir à une totalité perdue, tandis que Spinoza le fonde sur l’effort positif de persévérer." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Les deux textes accordent au désir une valeur positive, mais Rousseau insiste sur l’imagination quand Spinoza l’enracine dans la puissance d’exister." },
+        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès confond puissance et satisfaction illimitée ; Spinoza définit la puissance par la persévérance de l’être, non par l’accumulation des plaisirs." }
+      ],
+      paragraphs:[
+        "Chaque chose, autant qu’il est en elle, s’efforce de persévérer dans son être. […]",
+        "Cet effort, quand il se rapporte à l’Âme seule, est appelé Volonté ; mais, quand il se rapporte à la fois à l’Âme et au Corps, est appelé Appétit ; l’appétit n’est par là rien d’autre que l’essence même de l’homme, de la nature de laquelle suit nécessairement ce qui sert à sa conservation ; et l’homme est ainsi déterminé à le faire. De plus, il n’y a nulle différence entre l’Appétit et le Désir, sinon que le Désir se rapporte généralement aux hommes, en tant qu’ils ont conscience de leurs appétits, et peut, pour cette raison, se définir ainsi : le Désir est l’Appétit avec conscience de lui-même. Il est donc établi par tout cela que nous ne nous efforçons à rien, ne voulons, n’appétons ni ne désirons aucune chose, parce que nous la jugeons bonne ; mais, au contraire, nous jugeons qu’une chose est bonne parce que nous nous efforçons vers elle, la voulons, appétons et désirons."
+      ]
+    },
+    {
+      id:"levinas-caresse-desir-invisible", section:"philosophie",
+      cardMeta:"Phénoménologie contemporaine",
+      title:"La caresse désire au-delà de ce qu’elle touche", author:"Emmanuel Lévinas", authorTag:"Lévinas",
+      cardHighlight:"au-delà de ce qu’elle touche",
+      cardIdea:"la marche à l’invisible",
+      authorMeta:"(1906–1995) · phénoménologie contemporaine", themes:["Désir", "Amour", "Autrui"], work:"Totalité et Infini", publication:"1974, Nijhoff, p. 235",
+      description:"Pourquoi la caresse ne cherche-t-elle pas à saisir un objet, mais ce qui échappe encore au sensible ?",
+      context:"Lévinas distingue la <strong>caresse</strong> d’un simple contact. Elle touche un être sensible, mais ne cherche ni à le connaître complètement ni à le posséder : elle se porte vers l’<strong>invisible</strong>, vers une altérité qui demeure toujours à venir.",
+      readingQuestions:[
+        "Pourquoi la caresse peut-elle être sensible tout en <strong>transcendant</strong> le sensible ?",
+        "En quoi l’<strong>intentionnalité de recherche</strong> se distingue-t-elle d’une volonté de dévoiler et de saisir ?",
+        "Comment la caresse exprime-t-elle un <strong>désir</strong> que la satisfaction ne peut épuiser ?"
+      ],
+      glossary:[
+        { term:"transcende", definition:"Dépasse : la caresse part du sensible, mais se dirige vers ce qui ne peut être réduit à une sensation ou à un objet saisi." },
+        { term:"intentionnalité", definition:"Fait, pour la conscience, de se rapporter à quelque chose et de le viser." },
+        { term:"étant", definition:"Une réalité déterminée qui existe et peut être identifiée comme telle." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Phénoménologie", badge:"courant philosophique", definition:"Elle décrit la manière dont les choses et autrui apparaissent à la conscience. Lévinas transforme cette démarche en montrant que la rencontre d’autrui excède ce que la conscience peut constituer ou connaître entièrement." },
+        { type:"opposition", left:{ term:"Le contact", definition:"Il rencontre une surface sensible présente et peut fournir une sensation déterminée." }, right:{ term:"La caresse", definition:"Elle touche, mais sollicite ce qui se dérobe à toute prise et demeure encore à venir." }, conclusion:"La caresse ne quitte pas le sensible ; elle découvre en lui une altérité qui ne se laisse pas enfermer dans la sensation." },
+        { type:"opposition", left:{ term:"Dévoilement", definition:"Visée qui rend un phénomène présent, identifiable et disponible à la connaissance." }, right:{ term:"Recherche", definition:"Mouvement qui reste ouvert à ce qui échappe et ne prétend pas posséder son terme." }, conclusion:"La « marche à l’invisible » n’est pas une connaissance inachevée : elle constitue une autre manière d’entrer en relation avec autrui." },
+        { type:"analysis", term:"Une faim qui se nourrit d’elle-même", definition:"Le paradoxe de la faim indique un désir qui s’accroît au lieu de disparaître. La caresse ne consomme pas son objet : la proximité d’autrui approfondit encore la recherche de ce qui ne peut être saisi." },
+        { type:"concept", term:"L’invisible", definition:"Ce n’est pas un objet caché que l’on pourrait finir par découvrir. Il désigne la dimension d’autrui qui excède ses contours visibles et résiste à toute réduction à une chose connue." },
+        { type:"plain", definition:"Pour Lévinas, la caresse exprime ainsi l’amour sans pouvoir l’enfermer dans un geste ou dans des mots définitifs : elle vise l’autre comme avenir, non comme possession présente." }
+      ],
+      relatedTexts:[
+        { id:"stendhal-cristallisation-amour", kind:"proche", label:"Stendhal — La cristallisation pare l’être aimé de nouvelles perfections", relation:"Les deux textes décrivent un désir qui dépasse ce qui est immédiatement donné : Lévinas l’oriente vers l’altérité insaisissable, Stendhal vers les perfections produites par l’imagination." },
+        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Platon et Lévinas pensent tous deux un amour qui dépasse la possession, mais le premier vise une unité retrouvée quand le second maintient l’irréductible altérité d’autrui." },
+        { id:"aristote-amour-amitie-veritable", kind:"proche", label:"Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même", relation:"Comme Aristote, Lévinas refuse de réduire l’autre à son utilité ou au plaisir qu’il procure ; il insiste toutefois davantage sur ce qui, en lui, échappe à notre compréhension." },
+        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès conçoit le désir comme un appétit à combler ; chez Lévinas, le désir véritable s’approfondit dans la relation et ne s’achève pas par une satisfaction." }
+      ],
+      paragraphs:[
+        "La caresse comme le contact est sensibilité. Mais la caresse transcende le sensible. Non pas qu’elle sente au-delà du senti, plus loin que les sens, qu’elle se saisisse d’une nourriture sublime, tout en conservant, dans sa relation avec ce senti ultime, une intention de faim qui va sur la nourriture qui se promet et se donne à cette faim, la creuse, comme si la caresse se nourrissait de sa propre faim.",
+        "La caresse consiste à ne se saisir de rien, à solliciter ce qui s’échappe sans cesse de sa forme vers un avenir — jamais assez avenir — à solliciter ce qui se dérobe comme s’il <em>n’était pas encore</em>. Elle <em>cherche</em>, elle fouille. Ce n’est pas une intentionnalité de dévoilement, mais de recherche : marche à l’invisible.",
+        "Dans un certain sens elle <em>exprime</em> l’amour, mais souffre d’une incapacité de le dire. Elle a faim de cette expression même, dans un incessant accroissement de faim. Elle va donc plus loin qu’à son terme, elle vise au-delà d’un étant, même futur qui, comme <em>étant</em> précisément, frappe déjà à la porte de l’être."
+      ]
+    },
+    {
+      id:"stendhal-cristallisation-amour", section:"autres",
+      cardMeta:"Littérature",
+      title:"La cristallisation pare l’être aimé de nouvelles perfections", author:"Stendhal", authorTag:"Stendhal",
+      cardHighlight:"pare l’être aimé",
+      cardIdea:"la cristallisation amoureuse",
+      authorMeta:"(1783–1842) · littérature", themes:["Amour", "Désir", "Imagination"], work:"De l’amour", publication:"1819, Gallimard, 2007, p. 31",
+      description:"Comment l’imagination amoureuse transforme-t-elle une personne réelle en un être couvert de perfections ?",
+      context:"Stendhal nomme <strong>cristallisation</strong> le travail par lequel l’esprit amoureux embellit continuellement l’être désiré. L’image du rameau couvert de sel montre comment l’<strong>imagination</strong> métamorphose son objet jusqu’à le rendre presque méconnaissable.",
+      readingQuestions:[
+        "Comment l’image du rameau couvert de cristaux explique-t-elle la transformation de l’<strong>être aimé</strong> ?",
+        "Pourquoi la cristallisation est-elle une opération active de l’<strong>esprit</strong> plutôt qu’une simple perception ?",
+        "L’idéalisation révèle-t-elle les qualités de l’être aimé ou risque-t-elle de masquer sa réalité ?"
+      ],
+      glossary:[
+        { term:"cristallisation", definition:"Opération par laquelle l’imagination amoureuse attribue sans cesse de nouvelles perfections à l’être aimé." },
+        { term:"rameau", definition:"Petite branche d’arbre ; elle représente, dans la comparaison, la personne réelle avant son idéalisation." },
+        { term:"mines de sel de Salzbourg", definition:"Anciennes mines autrichiennes dont Stendhal tire l’image d’un rameau recouvert de cristaux après avoir été plongé dans un milieu salin." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Littérature", badge:"essai sur l’amour", definition:"Stendhal associe ici l’observation psychologique à une image concrète et mémorable. La métaphore ne décore pas seulement l’idée : elle donne à voir le mécanisme même de l’idéalisation amoureuse." },
+        { type:"analysis", term:"La métaphore du rameau", definition:"Les éléments de la mine correspondent aux étapes de l’expérience amoureuse.", items:["Le <strong>rameau primitif</strong> représente l’être aimé tel qu’il est d’abord rencontré.", "Le séjour dans la mine figure le <strong>travail intérieur</strong> et prolongé de l’imagination.", "Les <strong>cristaux</strong> représentent les qualités nouvelles dont l’esprit pare progressivement l’être aimé."] },
+        { type:"opposition", left:{ term:"L’être réel", definition:"Personne singulière, avec des qualités et des limites qui lui appartiennent effectivement." }, right:{ term:"L’être cristallisé", definition:"Figure embellie par les attentes, les espoirs et les interprétations de l’amant." }, conclusion:"Le désir ne se contente pas d’enregistrer la réalité : il produit une représentation idéale qui se superpose à elle." },
+        { type:"concept", term:"Idéalisation", definition:"Transformation mentale par laquelle certaines qualités sont amplifiées et chaque détail devient la preuve d’une perfection nouvelle." },
+        { type:"analysis", term:"Une métamorphose ambivalente", definition:"La cristallisation intensifie l’amour en rendant l’être aimé éblouissant. Mais le rameau devenu méconnaissable suggère aussi un risque : aimer l’image créée par son esprit davantage que la personne elle-même." }
+      ],
+      relatedTexts:[
+        { id:"levinas-caresse-desir-invisible", kind:"proche", label:"Lévinas — La caresse désire au-delà de ce qu’elle touche", relation:"Les deux textes montrent que l’amour dépasse l’apparence immédiatement sensible, mais Lévinas préserve l’altérité d’autrui là où Stendhal analyse sa transformation par l’imagination." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Chez Rousseau comme chez Stendhal, l’imagination embellit l’objet absent et peut rendre l’attente plus heureuse que la possession." },
+        { id:"kant-desir-raison-imagination", kind:"proche", label:"Kant — Le désir naît de la raison et de l’imagination", relation:"Kant explique philosophiquement comment l’imagination amplifie une inclination ; la cristallisation stendhalienne en offre une image littéraire." },
+        { id:"aristote-amour-amitie-veritable", kind:"adverse", label:"Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même", relation:"L’idéalisation risque de substituer une image à la personne réelle, tandis qu’Aristote fait de la reconnaissance lucide du caractère de l’autre le fondement de l’amitié véritable." }
+      ],
+      paragraphs:[
+        "Laissez travailler la tête d’un amant pendant vingt-quatre heures, et voici ce que vous trouverez :",
+        "Aux mines de sel de Salzbourg, on jette, dans les profondeurs abandonnées de la mine, un rameau d’arbre effeuillé par l’hiver ; deux ou trois mois après on le retire couvert de cristallisations brillantes : les plus petites branches, celles qui ne sont pas plus grosses que la patte d’une mésange, sont garnies d’une infinité de diamants, mobiles et éblouissants ; on ne peut plus reconnaître le rameau primitif.",
+        "Ce que j’appelle cristallisation, c’est l’opération de l’esprit, qui tire de tout ce qui se présente la découverte que l’objet aimé a de nouvelles perfections."
+      ]
+    },
+    {
+      id:"platon-mythe-androgyne-desir", section:"philosophie",
+      cardMeta:"Antiquité grecque",
+      title:"Le désir amoureux poursuit l’unité perdue", author:"Platon", authorTag:"Platon",
+      cardHighlight:"poursuit l’unité perdue",
+      familiarIdea:"le mythe des êtres sphériques",
+      authorMeta:"(v. 428–v. 348 av. J.-C.)", themes:["Désir", "Amour", "Nature"], work:"Le Banquet", publication:"IVe s. av. J.-C., 189d–193d, trad. E. Chambry, GF, 1993, p. 49–52",
+      description:"Pourquoi le désir amoureux prend-il la forme d’un manque et d’une recherche de l’unité perdue ?",
+      context:"Dans <cite>Le Banquet</cite>, plusieurs convives font l’éloge d’Éros. Aristophane, poète comique mis en scène par Platon, raconte ici le <strong>mythe des êtres sphériques</strong> : séparé par Zeus, chaque être humain chercherait depuis lors sa moitié perdue.",
+      readingQuestions:[
+        "Pourquoi Aristophane fait-il du <strong>désir</strong> la conséquence d’une séparation originelle ?",
+        "En quel sens l’être aimé apparaît-il moins comme un objet à posséder que comme une partie de soi à retrouver ?",
+        "Pourquoi l’union des corps ne suffit-elle pas à reconstituer définitivement la totalité perdue ?",
+        "Que permet au mythe d’expliquer la diversité des orientations amoureuses ?"
+      ],
+      glossary:[
+        { term:"androgyne", definition:"Être originel qui réunit, dans le récit d’Aristophane, les caractères du mâle et de la femelle." },
+        { term:"tessère d’hospitalité", definition:"Morceau de poterie brisé en deux et partagé entre deux hôtes ; le rapprochement des fragments permettait de reconnaître leur alliance." },
+        { term:"soles", definition:"Poissons plats dont les deux yeux se trouvent du même côté de la tête ; l’image souligne la division et l’aplatissement des êtres primitifs." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Désir comme manque", definition:"Le désir naît d’une privation : parce que l’être humain a été séparé de son unité première, il éprouve l’absence d’une part de lui-même et cherche à la retrouver." },
+        { type:"opposition", left:{ term:"Posséder un objet", definition:"S’approprier une chose extérieure susceptible de procurer une satisfaction." }, right:{ term:"Retrouver sa moitié", definition:"Reconquérir, à travers l’autre, une unité qui semble appartenir à notre propre être." }, conclusion:"Le mythe décrit le désir amoureux comme une quête de soi et de totalité, non comme la simple consommation d’un objet." },
+        { type:"concept", term:"Amour", definition:"Il est « le désir et la poursuite du tout » : un mouvement par lequel deux êtres voudraient abolir leur séparation et recomposer l’ancienne nature humaine." },
+        { type:"analysis", term:"Une réparation impossible", definition:"Les deux moitiés peuvent s’enlacer, mais la coupure demeure. Comme une tessère recollée conserve la marque de sa cassure, l’union amoureuse tend vers une totalité qu’elle ne peut restaurer parfaitement." },
+        { type:"analysis", term:"La portée du mythe", definition:"Le récit donne une origine commune à plusieurs orientations du désir : chaque être recherche le sexe correspondant à la composition de l’être dont il provient. Aristophane explique ainsi la diversité de la sexualité humaine sans la réduire à un modèle unique." },
+        { type:"plain", definition:"Cette conception est formulée par Aristophane, personnage du dialogue. Elle contribue à la réflexion de Platon sur l’amour, mais ne doit pas être confondue sans nuance avec la doctrine que Socrate exposera ensuite au nom de Diotime." }
+      ],
+      relatedTexts:[
+        { id:"kant-desir-raison-imagination", kind:"proche", label:"Kant — Le désir naît de la raison et de l’imagination", relation:"Les deux textes montrent que le désir dépasse le besoin immédiat : chez Platon, il vise une unité absente ; chez Kant, l’imagination intensifie l’inclination en soustrayant son objet aux sens." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Platon et Rousseau font naître le désir de l’absence : le premier l’explique par la perte d’une unité originelle, le second par le pouvoir d’idéalisation de l’imagination." },
+        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès pense le désir comme une passion à assouvir ; Aristophane l’interprète comme le signe d’une séparation que la possession ne suffit pas à réparer." },
+        { id:"aristote-amour-amitie-veritable", kind:"proche", label:"Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même", relation:"Aristote prolonge l’idée d’un lien qui ne réduit pas l’autre à un objet de jouissance, tout en fondant l’amitié sur la vertu plutôt que sur une unité originelle." }
+      ],
+      artworks:[
+        {
+          src:"/images/textes/platon-mythe-androgyne/maier-soleil-lune.jpg",
+          alt:"Le Soleil et la Lune personnifiés, debout près d’un coq et d’une poule dans un paysage gravé.",
+          title:"Le soleil a besoin de la lune, comme le coq de la poule",
+          details:"Michael Maier, <cite>Atalanta Fugiens</cite>, emblème XXX, gravure de Matthäus Merian, 1617."
+        },
+        {
+          src:"/images/textes/platon-mythe-androgyne/livre-sainte-trinite-androgyne.jpg",
+          alt:"Figure androgyne ailée à deux visages, couronnée, tenant des attributs symboliques et dominant un dragon.",
+          title:"L’androgyne",
+          details:"<cite>Livre de la Sainte Trinité</cite>, manuscrit alchimique, XVe siècle."
+        },
+        {
+          src:"/images/textes/platon-mythe-androgyne/stolcius-hermes-complexio.jpg",
+          alt:"Hermès Trismégiste contemple un soleil et une lune réunis dans un feu rayonnant.",
+          title:"Hermès Trismégiste et le feu divin du <em>complexio oppositorum</em> qui unit les polarités",
+          details:"Gravure de Daniel Stolcius von Stolcenberg, <cite>Viridarium chymicum</cite>, Francfort, 1624."
+        },
+        {
+          src:"/images/textes/platon-mythe-androgyne/rebis-alchimique.png",
+          alt:"Rebis alchimique à deux têtes, masculine et féminine, debout sur un dragon et une sphère ailée.",
+          title:"Rebis — Androgyne alchimique",
+          details:"Figure hermaphrodite symbolisant l’union des principes opposés dans l’alchimie."
+        }
+      ],
+      paragraphs:[
+        "ARISTOPHANE. — Jadis notre nature n’était pas ce qu’elle est à présent, elle était bien différente. D’abord il y avait trois espèces d’hommes, et non deux, comme aujourd’hui : le mâle, la femelle et […] l’espèce androgyne qui avait la forme et le nom des deux autres, […] et comme ils avaient de grands courages, ils attaquèrent les dieux […].",
+        "Alors Zeus délibéra avec les autres dieux sur le parti à prendre : « […] Je vais immédiatement les couper en deux l’un après l’autre ; nous obtiendrons ainsi le double résultat de les affaiblir et de tirer d’eux davantage, puisqu’ils seront plus nombreux. […] » Ayant ainsi parlé, il coupa les hommes en deux […].",
+        "Or, quand le corps eut été ainsi divisé, chacun, regrettant sa moitié, allait à elle ; et, s’embrassant et s’enlaçant les uns les autres avec le désir de se fondre ensemble, les hommes mouraient de faim et d’inaction […]. Alors Zeus, touché de pitié, […] plaça donc les organes sur le devant et par là fit que les hommes engendrèrent les uns dans les autres, c’est-à-dire le mâle dans la femelle. Cette disposition était à deux fins : si l’étreinte avait lieu entre un homme et une femme, ils enfanteraient pour perpétuer la race, et, si elle avait lieu entre un mâle et un mâle, la satiété les séparerait pour un temps, ils se mettraient au travail et pourvoiraient à tous les besoins de l’existence.",
+        "C’est de ce moment que date l’amour inné des hommes les uns pour les autres : l’amour recompose l’antique nature, s’efforce de fondre deux êtres en un seul, et de guérir la nature humaine.",
+        "Chacun de nous est donc comme une tessère d’hospitalité, puisque nous avons été coupés comme des soles et que d’un nous sommes devenus deux ; aussi chacun cherche sa moitié. […]",
+        "Quand donc un homme, qu’il soit porté pour les garçons ou pour les femmes, rencontre celui-là même qui est sa moitié, c’est un prodige que les transports de tendresse, de confiance et d’amour dont ils sont saisis ; ils ne voudraient plus se séparer, ne fût-ce qu’un instant. […] Et la raison en est que notre ancienne nature était telle et que nous étions un tout complet : c’est le désir et la poursuite de ce tout qui s’appelle amour."
       ]
     },
     {
@@ -140,7 +414,7 @@
       ],
       relatedTexts:[
         { id:"platon-callicles-desirs", kind:"suite", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Le passage précédent : Socrate répond ici point par point à la thèse de Calliclès." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Le plaisir, mesure de la vie heureuse", relation:"Épicure aussi refuse que le bonheur soit la poursuite indéfinie des plaisirs." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure aussi refuse que le bonheur soit la poursuite indéfinie des plaisirs." },
         { id:"seneque-vie-vertueuse", kind:"proche", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Sénèque défend lui aussi qu’une vie heureuse dépend de la vertu plutôt que de la poursuite des plaisirs." },
         { id:"augustin-dieu-bonheur", kind:"proche", label:"Saint Augustin — Dieu seul peut garantir notre bonheur", relation:"Augustin reprend l’idée d’un ordre intérieur et d’une juste mesure, mais en place le fondement ultime en Dieu." }
       ],
@@ -204,7 +478,7 @@
         { id:"platon-socrate-temperance", kind:"proche", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Socrate et Sénèque subordonnent tous deux le plaisir à l’ordre moral de l’âme et à la vertu." },
         { id:"augustin-dieu-bonheur", kind:"proche", label:"Saint Augustin — Dieu seul peut garantir notre bonheur", relation:"Augustin recherche lui aussi un bien stable et une juste mesure de l’esprit, tout en les rapportant à Dieu." },
         { id:"descartes-trois-regles-bonheur", kind:"proche", label:"Descartes — Chacun peut se rendre heureux en observant trois règles", relation:"Descartes commente précisément le traité de Sénèque et redéfinit la vertu comme résolution à suivre la raison." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Le plaisir, mesure de la vie heureuse", relation:"Épicure fait du plaisir bien compris le principe et la fin de la vie heureuse ; Sénèque refuse cette identification." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure fait du plaisir bien compris le principe et la fin de la vie heureuse ; Sénèque refuse cette identification." },
         { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès identifie la vie réussie à l’assouvissement des passions, à l’inverse de l’idéal stoïcien de vertu." }
       ],
       paragraphs:[
@@ -678,6 +952,50 @@
       ]
     },
     {
+      id:"kant-desir-raison-imagination", section:"philosophie",
+      cardMeta:"Philosophie critique",
+      title:"Le désir naît de la raison et de l’imagination", author:"Emmanuel Kant", authorTag:"Kant",
+      cardHighlight:"raison et de l’imagination", cardHeight:"compact",
+      authorMeta:"(1724–1804) · philosophie critique", themes:["Désir", "Nature"], work:"Conjectures sur les débuts de l’histoire humaine", publication:"1786, dans <em>Opuscules sur l’histoire</em>, trad. S. Piobetta, G.F., 1990, p. 151",
+      description:"Comment la raison transforme-t-elle les besoins naturels en désirs toujours plus nombreux ?",
+      context:"Kant montre comment la <strong>raison</strong>, soutenue par l’<strong>imagination</strong>, libère l’être humain de la conduite toute tracée par l’instinct. Cette émancipation multiplie les désirs, transforme l’attirance en amour, fait naître le goût du beau et ouvre la conscience à l’avenir.",
+      readingQuestions:[
+        "En quoi un désir fabriqué par l’imagination se distingue-t-il d’un besoin naturel ?",
+        "Pourquoi la multiplication des désirs est-elle à la fois une libération et un risque ?",
+        "Comment l’absence de l’objet peut-elle intensifier le désir au lieu de l’éteindre ?",
+        "Quel rôle le refus et la pudeur jouent-ils dans le passage de l’attirance à l’amour ?",
+        "Pourquoi la capacité d’anticiper l’avenir constitue-t-elle, selon Kant, un progrès de la raison ?"
+      ],
+      glossary:[
+        { term:"fondements", definition:"Ici, le mot désigne les raisons qui justifieraient l’existence d’un désir. Il ne faut pas le confondre avec son origine, c’est-à-dire la manière dont ce désir apparaît." },
+        { term:"instinct", definition:"Mode de conduite largement inné qui adapte l’animal à son milieu et l’oriente directement vers la satisfaction de ses besoins." },
+        { term:"désirs artificiels", definition:"Désirs produits par la raison et l’imagination plutôt que dictés par une nécessité biologique immédiate." },
+        { term:"feuille de figuier", definition:"Allusion à Adam et Ève dans la Genèse (3,7) : prenant conscience de leur nudité, ils se couvrent. Kant donne à cet épisode une interprétation philosophique." },
+        { term:"excitations idéales", definition:"Désirs dont l’objet est représenté par l’esprit : sa signification et la valeur qu’on lui prête comptent davantage que sa présence sensible." },
+        { term:"attente réfléchie", definition:"Capacité de rendre présent par la pensée un avenir parfois lointain et d’orienter sa conduite en fonction de lui." }
+      ],
+      readingNotes:[
+        { type:"opposition", left:{ term:"Besoin", definition:"Nécessité vitale qui appelle une satisfaction déterminée et immédiate." }, right:{ term:"Désir", definition:"Élan façonné par des représentations : l’être humain peut inventer son objet, le différer et lui attribuer une valeur." }, conclusion:"Le besoin renvoie d’abord à la conservation ; le désir ouvre un champ potentiellement sans limite." },
+        { type:"opposition", left:{ term:"Rapport immédiat", definition:"L’objet présent déclenche directement l’impulsion et sa consommation conduit à la satiété." }, right:{ term:"Rapport médiatisé", definition:"L’imagination place une représentation entre l’impulsion et son objet ; l’absence peut alors entretenir le désir." }, conclusion:"Chez Kant, la distance n’affaiblit pas nécessairement l’inclination : elle peut la rendre plus durable." },
+        { type:"opposition", left:{ term:"Objet réel", definition:"Il existe indépendamment du sujet et peut être perçu ou consommé." }, right:{ term:"Objet idéalisé", definition:"Il est investi de significations, de promesses et de valeurs produites par le sujet." }, conclusion:"On ne désire donc jamais seulement une chose : on désire aussi ce que l’on imagine à travers elle." },
+        { type:"analysis", term:"Le mouvement du texte", definition:"Kant décrit trois progrès successifs de la raison.", items:["Elle déborde l’instinct et rend possibles des choix nombreux.", "Elle soustrait l’objet aux sens : le refus, la pudeur et l’imagination transforment l’impulsion en amour puis en goût du beau.", "Elle permet d’anticiper un avenir lointain et de régler le présent sur ce qui n’existe pas encore."] },
+        { type:"analysis", term:"Le paradoxe central", definition:"La raison rend l’être humain plus libre en l’affranchissant de l’instinct, mais cette liberté fait également proliférer des penchants superflus. Le progrès n’est donc pas présenté comme un bonheur simple : il agrandit à la fois notre autonomie et notre insatisfaction." },
+        { type:"concept", term:"Du désir à l’amour", definition:"Le refus introduit une distance. L’autre n’est plus seulement l’objet présent d’une impulsion : il peut être imaginé, attendu et admiré. C’est ce déplacement qui prépare, dans le raisonnement de Kant, l’amour et le sentiment du beau." }
+      ],
+      relatedTexts:[
+        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Chez Aristophane comme chez Kant, l’absence nourrit le désir ; le premier l’explique par une séparation originelle, le second par le travail de la raison et de l’imagination." },
+        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Rousseau rejoint Kant sur le pouvoir de l’imagination : l’objet absent et représenté peut susciter davantage de plaisir que l’objet réellement possédé." },
+        { id:"platon-callicles-desirs", kind:"proche", label:"Platon — Les désirs ne doivent pas être sans mesure", relation:"Kant comme Platon interroge la multiplication des désirs ; Kant en explique la source dans la raison et l’imagination." },
+        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure cherche à limiter les désirs vains ; Kant décrit le pouvoir humain de les créer et de les étendre indéfiniment." },
+        { id:"kant-quietude-inaccessible", kind:"proche", label:"Kant — La quiétude est inaccessible à l’homme", relation:"Les deux textes montrent que l’être humain ne demeure pas dans un état de repos : ses facultés et ses désirs le portent au-delà de la simple satisfaction." }
+      ],
+      paragraphs:[
+        "Une propriété de la raison consiste à pouvoir, avec l’appui de l’imagination, créer artificiellement des désirs, non seulement sans fondements établis sur un instinct naturel, mais même en opposition avec lui ; ces désirs, au début, favorisent peu à peu l’éclosion de tout un essaim de penchants superflus et, qui plus est, contraires à la nature, sous l’appellation de « sensualité ». […] Le fait de s’être rendu compte que sa raison avait le pouvoir de franchir les bornes dans lesquelles sont maintenus tous les animaux fut, chez l’homme, capital et décisif pour la conduite de sa vie. […] Il découvrit en lui un pouvoir de se choisir à lui-même sa propre conduite, et de ne pas être lié comme les autres animaux à une conduite unique. […] En dehors des objets de son désir que l’instinct jusque-là lui avait indiqués, une infinité d’autres lui étaient offerts, au milieu desquels il ne savait encore comment choisir […].",
+        "L’excitation sexuelle, qui, chez les animaux, repose seulement sur une impulsion passagère et la plupart du temps périodique, était susceptible pour lui de se prolonger et même de s’accroître sous l’effet de l’imagination, […] de façon d’autant plus durable et plus uniforme que l’objet est soustrait aux sens, ce qui évite la satiété qu’entraîne avec soi la satisfaction d’un désir purement animal. La feuille de figuier fut donc le résultat d’une manifestation de la raison bien plus importante que toutes celles qui étaient survenues antérieurement au tout premier stade de son développement. Car le fait de rendre une inclination plus forte et plus durable, en retirant son objet aux sens, dénote déjà une certaine suprématie consciente de la raison sur les inclinations et non plus seulement, comme au degré inférieur, un pouvoir de les servir sur une plus ou moins grande échelle. Le refus fut l’habile artifice qui conduisit l’homme des excitations purement sensuelles vers les excitations idéales, et peu à peu du désir purement animal à l’amour. Et, avec l’amour, le sentiment de ce qui est purement agréable devint le goût du beau, découvert d’abord seulement dans l’homme, puis aussi dans la nature. […]",
+        "Le troisième progrès accompli par la raison, après qu’elle se fut mêlée des premiers besoins immédiats et sensibles, ce fut l’attente réfléchie de l’avenir. Ce pouvoir de ne pas jouir seulement de l’instant présent, mais de se représenter d’une façon actuelle l’avenir souvent très lointain, est le signe distinctif le plus caractéristique de la supériorité de l’homme […]."
+      ]
+    },
+    {
       id:"kant-quietude-inaccessible", section:"philosophie",
       cardMeta:"Philosophie critique",
       title:"La quiétude est inaccessible à l’homme", author:"Emmanuel Kant", authorTag:"Kant",
@@ -719,6 +1037,8 @@
         "platon-callicles-desirs",
         "platon-socrate-temperance",
         "epicure-plaisir-vie-heureuse",
+        "rousseau-desir-imagination-bonheur",
+        "spinoza-desir-puissance-exister",
         "seneque-vie-vertueuse",
         "epictete-depend-nous",
         "descartes-changer-desirs",
@@ -728,6 +1048,7 @@
         "freud-bonheur-episodique",
         "krishnamurti-bonheur-sans-recherche",
         "pascal-bonheur-avenir",
+        "schopenhauer-desir-souffrance-ennui",
         "schopenhauer-bien-etre-negation",
         "schopenhauer-bonheur-absence-souffrance",
         "augustin-dieu-bonheur"
@@ -735,14 +1056,25 @@
     },
     {
       id:"amour",
-      label:"L’amour : attirance, bienveillance et amitié véritable",
+      label:"L’amour : désir, imagination, caresse et amitié",
       texts:[
+        "platon-mythe-androgyne-desir",
+        "levinas-caresse-desir-invisible",
+        "stendhal-cristallisation-amour",
         "aristote-amour-amitie-veritable"
       ]
     }
   ];
 
   const LINKED_TEXT_SETS = [
+    {
+      id:"levinas-stendhal-echo",
+      kind:"echo",
+      label:"Texte écho",
+      title:"Lévinas et Stendhal : au-delà de l’être sensible",
+      description:"Une analyse philosophique de la caresse, prolongée par la cristallisation littéraire.",
+      texts:["levinas-caresse-desir-invisible", "stendhal-cristallisation-amour"]
+    },
     {
       id:"gorgias-dialogue",
       kind:"sequence",
