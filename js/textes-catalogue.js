@@ -1151,7 +1151,7 @@
 
   if (tools && summary && !root.querySelector(".texts-course-cta")) {
     summary.insertAdjacentHTML("beforebegin", `
-      <aside class="texts-course-cta" aria-label="Accompagnement en cours particulier">
+      <aside class="texts-course-cta" aria-label="Accompagnement sur un texte">
         <div class="texts-course-cta-copy">
           <strong>Un texte vous résiste&nbsp;?</strong>
           <span>Je vous aide à le comprendre et à construire une explication solide.</span>
@@ -1359,12 +1359,44 @@
     }
   });
 
-  pagination.addEventListener("click", (event) => {
+  let pageTransition = null;
+  pagination.addEventListener("click", async (event) => {
     const pageButton = event.target.closest("[data-text-page]");
     if (!pageButton) return;
-    currentPage = Number.parseInt(pageButton.dataset.textPage, 10) || 1;
+    const nextPage = Number.parseInt(pageButton.dataset.textPage, 10) || 1;
+    if (nextPage === currentPage || pageTransition) return;
+
+    grid.classList.add("is-page-switching");
+    pagination.classList.add("is-page-switching");
+    summary?.scrollIntoView({ behavior:"smooth", block:"start" });
+
+    const outAnimation = grid.animate(
+      [
+        { opacity:1, transform:"translateY(0)" },
+        { opacity:0, transform:"translateY(12px)" }
+      ],
+      { duration:380, easing:"cubic-bezier(.4,0,.2,1)", fill:"forwards" }
+    );
+    pageTransition = outAnimation;
+    try { await outAnimation.finished; } catch (_) {}
+
+    currentPage = nextPage;
     render();
-    summary?.scrollIntoView({ behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"start" });
+
+    const inAnimation = grid.animate(
+      [
+        { opacity:0, transform:"translateY(12px)" },
+        { opacity:1, transform:"translateY(0)" }
+      ],
+      { duration:480, easing:"cubic-bezier(.16,1,.3,1)", fill:"forwards" }
+    );
+    pageTransition = inAnimation;
+    try { await inAnimation.finished; } catch (_) {}
+
+    grid.getAnimations().forEach((animation) => animation.cancel());
+    grid.classList.remove("is-page-switching");
+    pagination.classList.remove("is-page-switching");
+    pageTransition = null;
   });
 
   [search,section,theme,author].filter(Boolean).forEach((control) => control.addEventListener(control === search ? "input" : "change", () => {

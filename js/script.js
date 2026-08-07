@@ -10,6 +10,7 @@
   };
 
   ready(() => {
+    ensureBlogLinks();
     initNavigation();
     initFaq();
     initBackToTop();
@@ -17,6 +18,23 @@
     initReviews();
     initTooltips();
   });
+
+  function ensureBlogLinks() {
+    const textsLink = document.querySelector(".nav-links .nav-texts-link");
+    if (textsLink && !document.querySelector(".nav-links .nav-blog-link")) {
+      const blogLink = document.createElement("a");
+      blogLink.className = "nav-blog-link";
+      blogLink.href = "/blog/";
+      blogLink.textContent = "Blog";
+      if (window.location.pathname.startsWith("/blog")) blogLink.setAttribute("aria-current", "page");
+      textsLink.insertAdjacentElement("afterend", blogLink);
+    }
+
+    const footerTexts = document.querySelector(".footer-container .footer-textes");
+    if (footerTexts && !footerTexts.querySelector(".footer-blog-link")) {
+      footerTexts.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
+    }
+  }
 
   function initNavigation() {
     const navbar = document.querySelector(".navbar");

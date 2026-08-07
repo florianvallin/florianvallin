@@ -214,6 +214,17 @@
     return `<section class="text-relation-group text-relation-group--${kind} text-disclosure"><button class="text-relation-group-heading text-disclosure-trigger" type="button" aria-expanded="false"><i class="text-relation-kind-icon" aria-hidden="true"></i><strong>${relation.label}</strong><i class="text-relation-toggle" aria-hidden="true"></i></button><div class="text-disclosure-panel"><div class="text-disclosure-panel-inner"><ul>${links}</ul></div></div></section>`;
   }).join("");
   const related = relatedGroups ? `<aside class="text-relations" aria-label="Parcours de lecture associé"><span class="text-relations-heading">Poursuivre la réflexion</span>${relatedGroups}</aside>` : "";
+  const blogGuide = {
+    category:"Fiche de référence",
+    title:"Les repères conceptuels en philosophie",
+    description:"La liste complète et des définitions courtes pour retrouver la distinction utile à ce texte.",
+    href:"/blog/reperes-conceptuels-philosophie-terminale/"
+  };
+  const blogBridge = `<aside class="text-blog-bridge" aria-label="Billet de blog complémentaire">
+    <span class="text-blog-bridge-mark" aria-hidden="true">B</span>
+    <div><span class="text-blog-bridge-eyebrow">${blogGuide.category}</span><strong>${blogGuide.title}</strong><p>${blogGuide.description}</p></div>
+    <a href="${blogGuide.href}">Lire <span aria-hidden="true">→</span></a>
+  </aside>`;
   const readingPath = (window.FV_TEXT_PATHS || []).find((path) => path.texts.includes(text.id));
   const pathIndex = readingPath ? readingPath.texts.indexOf(text.id) : -1;
   const nextText = readingPath && pathIndex < readingPath.texts.length - 1
@@ -247,6 +258,7 @@
     <p class="text-detail-author"><a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${text.author}">${text.author}</a>${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}</p>
     <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>
     ${firstContext}
+    ${blogBridge}
     ${related}
     ${readingSections}
     ${artworkGallery}
