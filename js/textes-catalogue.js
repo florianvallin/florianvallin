@@ -360,28 +360,36 @@
       ],
       artworks:[
         {
-          src:"/images/textes/platon-mythe-androgyne/maier-soleil-lune.jpg",
+          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1200",
+          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1600",
+          source:"https://commons.wikimedia.org/wiki/File:Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg",
           alt:"Le Soleil et la Lune personnifiés, debout près d’un coq et d’une poule dans un paysage gravé.",
           title:"Le soleil a besoin de la lune, comme le coq de la poule",
-          details:"Michael Maier, <cite>Atalanta Fugiens</cite>, emblème XXX, gravure de Matthäus Merian, 1617."
+          details:"Michael Maier, <cite>Atalanta Fugiens</cite>, emblème XXX, 1617."
         },
         {
-          src:"/images/textes/platon-mythe-androgyne/livre-sainte-trinite-androgyne.jpg",
-          alt:"Figure androgyne ailée à deux visages, couronnée, tenant des attributs symboliques et dominant un dragon.",
+          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1200",
+          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1800",
+          source:"https://commons.wikimedia.org/wiki/File:Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg",
+          alt:"Figure androgyne ailée à deux visages, couronnée, tenant un disque spiralé et un calice aux serpents.",
           title:"L’androgyne",
-          details:"<cite>Livre de la Sainte Trinité</cite>, manuscrit alchimique, XVe siècle."
+          details:"<cite>Das Buch der Heiligen Dreifaltigkeit</cite>, Constance, 1416–1419, Wellcome Collection."
         },
         {
-          src:"/images/textes/platon-mythe-androgyne/stolcius-hermes-complexio.jpg",
+          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1200",
+          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1600",
+          source:"https://commons.wikimedia.org/wiki/File:Trismegistos.jpg",
           alt:"Hermès Trismégiste contemple un soleil et une lune réunis dans un feu rayonnant.",
           title:"Hermès Trismégiste et le feu divin du <em>complexio oppositorum</em> qui unit les polarités",
-          details:"Gravure de Daniel Stolcius von Stolcenberg, <cite>Viridarium chymicum</cite>, Francfort, 1624."
+          details:"Daniel Stolcius von Stolcenberg, <cite>Viridarium chymicum</cite>, Francfort, 1624."
         },
         {
-          src:"/images/textes/platon-mythe-androgyne/rebis-alchimique.png",
-          alt:"Rebis alchimique à deux têtes, masculine et féminine, debout sur un dragon et une sphère ailée.",
+          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1200",
+          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1600",
+          source:"https://commons.wikimedia.org/wiki/File:Androgynous_Rebis.jpg",
+          alt:"Rebis alchimique androgyne réunissant les principes masculin et féminin.",
           title:"Rebis — Androgyne alchimique",
-          details:"Figure hermaphrodite symbolisant l’union des principes opposés dans l’alchimie."
+          details:"<cite>Rosarium Philosophorum</cite>, figure alchimique de l’union des principes opposés."
         }
       ],
       paragraphs:[
@@ -417,6 +425,17 @@
         { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure aussi refuse que le bonheur soit la poursuite indéfinie des plaisirs." },
         { id:"seneque-vie-vertueuse", kind:"proche", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Sénèque défend lui aussi qu’une vie heureuse dépend de la vertu plutôt que de la poursuite des plaisirs." },
         { id:"augustin-dieu-bonheur", kind:"proche", label:"Saint Augustin — Dieu seul peut garantir notre bonheur", relation:"Augustin reprend l’idée d’un ordre intérieur et d’une juste mesure, mais en place le fondement ultime en Dieu." }
+      ],
+      artworksTitle:"Les Danaïdes : l’image d’un désir sans fin",
+      artworks:[
+        {
+          title:"Les Danaïdes",
+          alt:"John William Waterhouse représente les Danaïdes condamnées à remplir sans fin un récipient qui fuit.",
+          details:"John William Waterhouse, <cite>Les Danaïdes</cite>, 1904, huile sur toile, collection particulière.", description:"Les Danaïdes versent sans fin de l’eau dans un récipient qui ne peut la retenir : l’image rend visible la satisfaction toujours recommencée dont parle Socrate.",
+          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John_William_Waterhouse_-_The_Danaides_(1904).jpg?width=1400",
+          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John_William_Waterhouse_-_The_Danaides_(1904).jpg?width=2400",
+          source:"https://commons.wikimedia.org/wiki/File:John_William_Waterhouse_-_The_Danaides_(1904).jpg"
+        }
       ],
       paragraphs:[
         "SOCRATE. Regarde bien si ce que tu veux dire, quand tu parles de ces deux genres de vie, une vie d'ordre et une vie de dérèglement, ne ressemble pas à la situation suivante. Suppose qu'il y ait deux hommes qui possèdent, chacun, un grand nombre de tonneaux. Les tonneaux de l'un sont sains, remplis de vin, de miel, de lait, et cet homme a encore bien d'autres tonneaux, remplis de toutes sortes de choses. Chaque tonneau est donc plein de ces denrées liquides qui sont rares, difficiles à recueillir et qu'on n'obtient qu'au terme de maints travaux pénibles. Mais, au moins, une fois que cet homme a rempli ses tonneaux, il n'a plus à y reverser quoi que ce soit ni à s'occuper d’eux ; au contraire, quand il pense à ses tonneaux, il est tranquille.",
@@ -852,19 +871,17 @@
       ]
     },
     {
-      id:"genese-naissance-du-monde", section:"theologie",
+      id:"genese-naissance-du-monde", section:"theologie", bible:true,
       cardMeta:"Récit biblique",
-      title:"La naissance du monde", author:"Livre de la Genèse", authorTag:"Genèse",
+      title:"La naissance du monde", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 1–2",
       cardHighlight:"la naissance du monde",
       authorMeta:"Bible hébraïque · Pentateuque",
-      themes:["Nature", "Religion", "Autrui"], work:"Genèse", publication:"1.1–2.4 et 2.7–25",
+      themes:["Nature", "Religion", "Autrui"], work:"Genèse 1–2", publication:"1,1–2,4 et 2,7–25",
       description:"Que signifient les deux récits de la création du monde et de l’être humain placés au commencement de la Genèse ?",
       context:"Le début de la Genèse ne cherche pas à remplacer l’explication scientifique de la naissance des astres, des plantes, des animaux et des hommes. À travers des images conformes aux représentations de son époque et une <strong>poésie liturgique</strong>, il interroge le sens de l’univers et de l’existence humaine : d’où viennent-ils, vers quoi vont-ils et pourquoi existent-ils ? La Parole de Dieu suscite et ordonne le monde ; Dieu en est le cœur et en rend l’existence intelligible.",
-      readingQuestions:[
-        "Comment la <strong>Parole de Dieu</strong> fait-elle passer le monde de l’informe à un ordre différencié ?",
-        "Pourquoi le premier récit répartit-il la Création dans le cadre symbolique d’une semaine ?",
-        "Que dit le second récit de la double condition humaine, à la fois issue de la terre et animée par le souffle de Dieu ?",
-        "Pourquoi la création de la femme répond-elle à l’impossibilité, pour l’être humain, de vivre seul ?"
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes <strong>au tout début de la Bible</strong>, en Genèse 1–2, juste avant la Chute de Genèse 3. Deux récits de création se succèdent : le premier embrasse le monde entier, le second se concentre sur l’être humain et le jardin d’Éden." },
+        { label:"Piste philosophique", text:"Le passage interroge le <strong>sens du monde et la place de l’être humain</strong> : ordre de la nature, dignité humaine, travail, relation à autrui et différence entre expliquer comment le monde fonctionne et demander pourquoi il existe." }
       ],
       readingNotes:[
         { type:"opposition", left:{ term:"La science", definition:"Elle cherche à expliquer à partir de quoi et comment sont apparus les astres, les plantes, les animaux et les êtres humains." }, right:{ term:"Le récit de la Genèse", definition:"Il demande pourquoi l’univers et l’humanité existent, vers quoi ils vont et quel sens possède leur histoire." }, conclusion:"L’introduction de l’édition distingue ainsi l’explication des phénomènes et l’interrogation sur leur sens." },
@@ -873,7 +890,7 @@
       ],
       readingBlocks:[
         { type:"heading", text:"Premier récit — la Création en sept jours" },
-        { type:"verse", marker:"GENÈSE 1.1", aria:"Genèse 1, verset 1", text:"Au commencement, Dieu créa le ciel et la terre." },
+        { type:"movementStart", title:"Le monde s’ordonne", range:"1,1–13", marker:"1", aria:"Genèse 1, verset 1", text:"Au commencement, Dieu créa le ciel et la terre." },
         { type:"verse", marker:"2", aria:"Genèse 1, verset 2", text:"La terre était informe et vide, les ténèbres étaient au-dessus de l’abîme et le souffle de Dieu planait au-dessus des eaux." },
         { type:"verse", marker:"3", aria:"Genèse 1, verset 3", text:"Dieu dit : « Que la lumière soit. » Et la lumière fut." },
         { type:"verse", marker:"4", aria:"Genèse 1, verset 4", text:"Dieu vit que la lumière était bonne, et Dieu sépara la lumière des ténèbres." },
@@ -886,7 +903,7 @@
         { type:"verse", marker:"11", aria:"Genèse 1, verset 11", text:"Dieu dit : « Que la terre produise l’herbe, la plante qui porte sa semence, et l’arbre à fruit qui donne, selon son espèce, le fruit qui porte sa semence. » Et ce fut ainsi." },
         { type:"verse", marker:"12", aria:"Genèse 1, verset 12", text:"La terre produisit l’herbe, la plante qui porte sa semence, selon son espèce, et l’arbre qui donne, selon son espèce, le fruit qui porte sa semence. Et Dieu vit que cela était bon." },
         { type:"verse", marker:"13", aria:"Genèse 1, verset 13", text:"Il y eut un soir, il y eut un matin : ce fut le troisième jour." },
-        { type:"verse", marker:"14", aria:"Genèse 1, verset 14", text:"Et Dieu dit : « Qu’il y ait des luminaires au firmament du ciel, pour séparer le jour de la nuit ; qu’ils servent de signes pour marquer les fêtes, les jours et les années ;" },
+        { type:"movementStart", title:"Le ciel et les vivants", range:"1,14–25", marker:"14", aria:"Genèse 1, verset 14", text:"Et Dieu dit : « Qu’il y ait des luminaires au firmament du ciel, pour séparer le jour de la nuit ; qu’ils servent de signes pour marquer les fêtes, les jours et les années ;" },
         { type:"verse", marker:"15", aria:"Genèse 1, verset 15", text:"et qu’ils soient, au firmament du ciel, des luminaires pour éclairer la terre. » Et ce fut ainsi." },
         { type:"verse", marker:"16", aria:"Genèse 1, verset 16", text:"Dieu fit les deux grands luminaires : le plus grand pour régner sur le jour, le plus petit pour régner sur la nuit ; il fit aussi les étoiles." },
         { type:"verse", marker:"17", aria:"Genèse 1, verset 17", text:"Dieu les plaça au firmament du ciel pour éclairer la terre," },
@@ -898,20 +915,28 @@
         { type:"verse", marker:"23", aria:"Genèse 1, verset 23", text:"Il y eut un soir, il y eut un matin : ce fut le cinquième jour." },
         { type:"verse", marker:"24", aria:"Genèse 1, verset 24", text:"Et Dieu dit : « Que la terre produise des êtres vivants selon leur espèce, bestiaux, bestioles et bêtes sauvages selon leur espèce. » Et ce fut ainsi." },
         { type:"verse", marker:"25", aria:"Genèse 1, verset 25", text:"Dieu fit les bêtes sauvages selon leur espèce, les bestiaux selon leur espèce, et toutes les bestioles de la terre selon leur espèce. Et Dieu vit que cela était bon." },
-        { type:"verse", marker:"26", aria:"Genèse 1, verset 26", text:"Dieu dit : « Faisons l’homme à notre image, selon notre ressemblance. Qu’il soit le maître des poissons de la mer, des oiseaux du ciel, des bestiaux, de toutes les bêtes sauvages, et de toutes les bestioles qui vont et viennent sur la terre. »" },
+        { type:"movementStart", title:"L’être humain", range:"1,26–31", marker:"26", aria:"Genèse 1, verset 26", text:"Dieu dit : « Faisons l’homme à notre image, selon notre ressemblance. Qu’il soit le maître des poissons de la mer, des oiseaux du ciel, des bestiaux, de toutes les bêtes sauvages, et de toutes les bestioles qui vont et viennent sur la terre. »" },
         { type:"verse", marker:"27", aria:"Genèse 1, verset 27", text:"Dieu créa l’homme à son image, à l’image de Dieu il le créa, il les créa homme et femme." },
         { type:"pause", reference:"PSAUME 8", title:"La dignité du mortel", text:"Qu’est-donc un mortel pour que tu t’en souviennes, et un fils d’homme pour que tu le visites ?" },
         { type:"verse", marker:"28", aria:"Genèse 1, verset 28", text:"Dieu les bénit et leur dit : « Soyez féconds et multipliez-vous, remplissez la terre et soumettez-la. Soyez les maîtres des poissons de la mer, des oiseaux du ciel, et de tous les animaux qui vont et viennent sur la terre. »" },
         { type:"verse", marker:"29", aria:"Genèse 1, verset 29", text:"Dieu dit encore : « Je vous donne toute plante qui porte sa semence sur toute la surface de la terre, et tout arbre dont le fruit porte sa semence : telle sera votre nourriture." },
         { type:"verse", marker:"30", aria:"Genèse 1, verset 30", text:"Aux bêtes sauvages, aux oiseaux du ciel, à tout ce qui va et vient sur la terre et qui a souffle de vie, je donne comme nourriture toute herbe verte. » Et ce fut ainsi." },
         { type:"verse", marker:"31", aria:"Genèse 1, verset 31", text:"Et Dieu vit tout ce qu’il avait fait : c’était très bon. Il y eut un soir, il y eut un matin : ce fut le sixième jour." },
+        { type:"gallery", title:"La Création du monde en images", artworks:[
+          { title:"La Création", alt:"Les volets fermés du Jardin des délices de Jérôme Bosch représentant la Création du monde.", details:"Jérôme Bosch, v. 1480–1490, musée du Prado.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Hieronymus_Bosch_-_The_Garden_of_Earthly_Delights_-_The_exterior_%28shutters%29.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Hieronymus_Bosch_-_The_Garden_of_Earthly_Delights_-_The_exterior_%28shutters%29.jpg?width=2200", source:"https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch_-_The_Garden_of_Earthly_Delights_-_The_exterior_%28shutters%29.jpg" },
+          { title:"Dieu créant le ciel et la terre", alt:"Gravure de Jan Harmensz. Muller montrant Dieu créant le ciel et la terre.", details:"Jan Harmensz. Muller, d’après Hendrick Goltzius, 1589, The Metropolitan Museum of Art.", src:"https://collectionapi.metmuseum.org/api/collection/v1/iiif/373999/776407/main-image", original:"https://collectionapi.metmuseum.org/api/collection/v1/iiif/373999/776407/main-image", source:"https://www.metmuseum.org/art/collection/search/373999" },
+          { title:"La Création des animaux", alt:"Fresque de Raphaël représentant Dieu entouré des animaux qu’il vient de créer.", details:"Raphaël, 1518, Loggias du Vatican.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Loggia_di_raffaello_02.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Loggia_di_raffaello_02.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Loggia_di_raffaello_02.jpg" },
+          { title:"La Création des animaux", alt:"Peinture du Tintoret représentant Dieu au milieu des oiseaux, poissons et animaux terrestres.", details:"Le Tintoret, 1551–1552, Gallerie dell’Accademia, Venise.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tintoretto%2C_Jacopo_-_Creation_of_the_Animals_-_1551-52.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tintoretto%2C_Jacopo_-_Creation_of_the_Animals_-_1551-52.jpg?width=1920", source:"https://commons.wikimedia.org/wiki/File:Tintoretto%2C_Jacopo_-_Creation_of_the_Animals_-_1551-52.jpg" },
+          { title:"La Création du monde", alt:"Peinture attribuée à Johann Melchior Bocksberger représentant la création du monde et des animaux.", details:"Attribué à Johann Melchior Bocksberger, XVIe siècle, Musée des Beaux-Arts de Strasbourg.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Johann_Melchior_Bocksberger_-_La_Cr%C3%A9ation_du_monde_-_Mus%C3%A9e_des_Beaux-Arts_de_Strasbourg_MNR_366.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Johann_Melchior_Bocksberger_-_La_Cr%C3%A9ation_du_monde_-_Mus%C3%A9e_des_Beaux-Arts_de_Strasbourg_MNR_366.jpg?width=1900", source:"https://commons.wikimedia.org/wiki/File:Johann_Melchior_Bocksberger_-_La_Cr%C3%A9ation_du_monde_-_Mus%C3%A9e_des_Beaux-Arts_de_Strasbourg_MNR_366.jpg" },
+          { title:"La Création dans une Bible enluminée", alt:"Page enluminée médiévale montrant en plusieurs scènes la Création, Adam et Ève et les premiers épisodes de la Genèse.", details:"Bible de Saint-Jean-d’Acre, v. 1250–1254, Bibliothèque de l’Arsenal (BnF), ms. 5211, fol. 3v.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Biblioth%C3%A8que_de_l%27Arsenal%2C_5211_-_Genesis_frontispiece.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Biblioth%C3%A8que_de_l%27Arsenal%2C_5211_-_Genesis_frontispiece.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_de_l%27Arsenal%2C_5211_-_Genesis_frontispiece.jpg" }
+        ] },
         { type:"divider" },
-        { type:"verse", marker:"GENÈSE 2.1", aria:"Genèse 2, verset 1", text:"Ainsi furent achevés le ciel et la terre, et tout leur déploiement." },
+        { type:"movementStart", title:"Le repos de Dieu", range:"2,1–4", marker:"1", aria:"Genèse 2, verset 1", text:"Ainsi furent achevés le ciel et la terre, et tout leur déploiement." },
         { type:"verse", marker:"2", aria:"Genèse 2, verset 2", text:"Le septième jour, Dieu avait achevé l’œuvre qu’il avait faite. Il se reposa, le septième jour, de toute l’œuvre qu’il avait faite." },
         { type:"verse", marker:"3", aria:"Genèse 2, verset 3", text:"Et Dieu bénit le septième jour : il en fit un jour sacré parce que, ce jour-là, il s’était reposé de toute l’œuvre de création qu’il avait faite." },
         { type:"verse", marker:"4", aria:"Genèse 2, verset 4", text:"Telle fut l’origine du ciel et de la terre lorsqu’ils furent créés." },
         { type:"heading", text:"Second récit — la création de l’être humain" },
-        { type:"verse", marker:"GENÈSE 2.7", aria:"Genèse 2, verset 7", text:"Alors le Seigneur Dieu modela l’homme avec la poussière tirée du sol ; il insuffla dans ses narines le souffle de vie, et l’homme devint un être vivant." },
+        { type:"movementStart", title:"L’homme et le jardin", range:"2,7–17", marker:"7", aria:"Genèse 2, verset 7", text:"Alors le Seigneur Dieu modela l’homme avec la poussière tirée du sol ; il insuffla dans ses narines le souffle de vie, et l’homme devint un être vivant." },
         { type:"pause", reference:"PSAUME 138", title:"L’être humain, œuvre merveilleuse", text:"Je te célébrerai pour tes terribles merveilles ; merveilles, que tes œuvres ! Mon âme, tu la connaissais bien." },
         { type:"pause", reference:"PSAUME 103", title:"Poussière et grâce", text:"Yahvé sait, lui, de quoi nous sommes formés, il se souvient que nous sommes poussière. Mais la grâce de Yahvé dure d’éternité en éternité pour ceux qui le craignent…" },
         { type:"verse", marker:"8", aria:"Genèse 2, verset 8", text:"Le Seigneur Dieu planta un jardin en Éden, à l’orient, et y plaça l’homme qu’il avait modelé." },
@@ -920,15 +945,26 @@
         { type:"verse", marker:"15", aria:"Genèse 2, verset 15", text:"Le Seigneur Dieu prit l’homme et le conduisit dans le jardin de l’Éden pour qu’il le travaille et le garde." },
         { type:"verse", marker:"16", aria:"Genèse 2, verset 16", text:"Le Seigneur Dieu fit à l’homme cette interdiction : « Tu peux manger les fruits de tous les arbres du jardin ;" },
         { type:"verse", marker:"17", aria:"Genèse 2, verset 17", text:"mais quant à l’arbre de la connaissance du bien et du mal, tu n’en mangeras pas ; car, le jour où tu en mangeras, tu seras condamné à mourir. »" },
-        { type:"verse", marker:"18", aria:"Genèse 2, verset 18", text:"Le Seigneur Dieu dit : « Il n’est pas bon que l’homme soit seul. Je vais lui faire une aide qui lui correspondra. »" },
+        { type:"movementStart", title:"La recherche d’une aide", range:"2,18–20", marker:"18", aria:"Genèse 2, verset 18", text:"Le Seigneur Dieu dit : « Il n’est pas bon que l’homme soit seul. Je vais lui faire une aide qui lui correspondra. »" },
         { type:"verse", marker:"19", aria:"Genèse 2, verset 19", text:"Avec de la terre, le Seigneur Dieu façonna toutes les bêtes des champs et tous les oiseaux du ciel, et il les amena vers l’homme pour voir quels noms il leur donnerait. C’étaient des êtres vivants, et l’homme donna un nom à chacun." },
         { type:"verse", marker:"20", aria:"Genèse 2, verset 20", text:"L’homme donna donc leurs noms à tous les animaux, aux oiseaux du ciel et à toutes les bêtes des champs. Mais il ne trouva aucune aide qui lui corresponde." },
-        { type:"verse", marker:"21", aria:"Genèse 2, verset 21", text:"Alors le Seigneur Dieu fit tomber sur lui un sommeil mystérieux, et l’homme s’endormit. Le Seigneur Dieu prit de la chair dans son côté, puis il referma." },
+        { type:"movementStart", title:"La femme et l’union", range:"2,21–25", marker:"21", aria:"Genèse 2, verset 21", text:"Alors le Seigneur Dieu fit tomber sur lui un sommeil mystérieux, et l’homme s’endormit. Le Seigneur Dieu prit de la chair dans son côté, puis il referma." },
         { type:"verse", marker:"22", aria:"Genèse 2, verset 22", text:"Avec ce qu’il avait pris à l’homme, il forma une femme et il l’amena vers l’homme." },
         { type:"verse", marker:"23", aria:"Genèse 2, verset 23", text:"L’homme dit alors : « Cette fois-ci, voilà l’os de mes os et la chair de ma chair ! on l’appellera : ‘femme’. »" },
         { type:"verse", marker:"24", aria:"Genèse 2, verset 24", text:"À cause de cela, l’homme quittera son père et sa mère, il s’attachera à sa femme, et tous deux ne feront plus qu’un." },
         { type:"pause", reference:"MATTHIEU 19", title:"La reprise par le Christ", intro:"Le Christ, un jour, reprendra le texte de la Genèse :", text:"N’avez-vous pas lu que le Créateur, au commencement, homme et femme il les fit et qu’il dit : À cause de cela, l’homme quittera père et mère, et il s’attachera à sa femme, et les deux ne seront qu’une seule chair. Ainsi donc, ils ne sont plus deux mais une seule chair. Et bien ! ce que Dieu a uni, que l’homme ne le sépare pas." },
         { type:"verse", marker:"25", aria:"Genèse 2, verset 25", text:"Tous les deux, l’homme et sa femme, étaient nus, et ils n’en éprouvaient aucune honte l’un devant l’autre." },
+        { type:"gallery", title:"L’être humain et le jardin d’Éden", artworks:[
+          { title:"La Création d’Adam", alt:"Fresque de Michel-Ange représentant Dieu donnant vie à Adam.", details:"Michel-Ange, 1508–1512, chapelle Sixtine, Vatican.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Creaci%C3%B3n_de_Ad%C3%A1n.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Creaci%C3%B3n_de_Ad%C3%A1n.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg" },
+          { title:"Adam et Ève au paradis terrestre", alt:"Peinture de Johann Wenzel Peter représentant Adam et Ève au milieu des animaux du jardin d’Éden.", details:"Johann Wenzel Peter, fin XVIIIe–début XIXe siècle, Pinacothèque vaticane.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg" },
+          { title:"Le Jardin des délices", alt:"Triptyque de Jérôme Bosch montrant le jardin d’Éden, le monde terrestre et l’enfer.", details:"Jérôme Bosch, v. 1480–1505, musée du Prado.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg" },
+          { title:"La Terre ou le paradis terrestre", alt:"Paysage de Jan Brueghel l’Ancien représentant un paradis peuplé d’animaux.", details:"Jan Brueghel l’Ancien, XVIIe siècle, musée du Louvre.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_brueghel_il_vecchio%2C_la_terra_o_paradiso_terrestre%2C_1607-1608.JPG?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_brueghel_il_vecchio%2C_la_terra_o_paradiso_terrestre%2C_1607-1608.JPG?width=2400", source:"https://commons.wikimedia.org/wiki/File:Jan_brueghel_il_vecchio%2C_la_terra_o_paradiso_terrestre%2C_1607-1608.JPG" },
+          { title:"Adam et Ève au paradis terrestre", alt:"Miniature représentant Adam et Ève au paradis terrestre dans une tradition islamique.", details:"Miniature tirée de La fine fleur des histoires de Louqman, 1583, Türk ve İslam Eserleri Müzesi, Istanbul.", src:"https://assets-mid.lls.fr/pages/52313190/f6.5.4.tex.coran-paradis.webp", original:"https://assets-mid.lls.fr/pages/52313190/f6.5.4.tex.coran-paradis.webp", source:"https://www.lelivrescolaire.fr/page/15762527" },
+          { title:"Adam et Ève au jardin d’Éden", alt:"Vitrail représentant Adam et Ève au jardin d’Éden.", details:"Vitrail de l’église Saint-Vaast, Béthune.", src:"https://eglisesduconfluent.fr/imagesAT/AT-AdamEve/ATAdamEve_62Bethunes_EgliseStVaast-Vitrail1.jpg", original:"https://eglisesduconfluent.fr/imagesAT/AT-AdamEve/ATAdamEve_62Bethunes_EgliseStVaast-Vitrail1.jpg", source:"https://www.eglisesduconfluent.fr/Pages/AT-Genese-AdamEve.php" },
+          { title:"Le paradis terrestre", alt:"Enluminure représentant Adam et Ève dans le paradis terrestre.", details:"Enluminure conservée à la Bibliothèque nationale de France.", src:"https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/ej42bLks/uploads/media/image/20210706164952000000_20201204061949000000_can_263.jpg", original:"https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/ej42bLks/uploads/media/image/20210706164952000000_20201204061949000000_can_263.jpg", source:"https://essentiels.bnf.fr/fr/article/7d6606b6-f27e-4db5-ae91-74825d32e19d-sources-lutopie" },
+          { title:"La création d’Ève", alt:"Mosaïque médiévale représentant la création d’Ève à partir d’Adam.", details:"Mosaïque du XIIIe siècle, narthex de la basilique Saint-Marc, Venise.", src:"https://1oeuvre-1histoire.com/creation-adam-eve-3.jpg", original:"https://1oeuvre-1histoire.com/creation-adam-eve-3.jpg", source:"https://1oeuvre-1histoire.com/creation-adam-eve.html" },
+          { title:"Adam et Ève", alt:"Représentation artistique d’Adam et Ève.", details:"", src:"https://cdn.prod.website-files.com/5ed7bf5384079963115358b8/670e1e731056bd91b44556a0_5f083235697e96469589596c_7026707189_30eb229578_b%2520copie.jpeg", original:"https://cdn.prod.website-files.com/5ed7bf5384079963115358b8/670e1e731056bd91b44556a0_5f083235697e96469589596c_7026707189_30eb229578_b%2520copie.jpeg" }
+        ] },
       ],
       paragraphs:[
         "<strong>Premier récit — la Création en sept jours</strong>",
@@ -949,6 +985,124 @@
         "Alors le Seigneur Dieu fit tomber sur lui un sommeil mystérieux, et l’homme s’endormit. Le Seigneur Dieu prit de la chair dans son côté, puis il referma. Avec ce qu’il avait pris à l’homme, il forma une femme et il l’amena vers l’homme. L’homme dit alors : « Cette fois-ci, voilà l’os de mes os et la chair de ma chair ! on l’appellera : ‘femme’. »",
         "À cause de cela, l’homme quittera son père et sa mère, il s’attachera à sa femme, et tous deux ne feront plus qu’un.",
         "Tous les deux, l’homme et sa femme, étaient nus, et ils n’en éprouvaient aucune honte l’un devant l’autre."
+      ]
+    },
+    {
+      id:"genese-la-chute", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"La Chute", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 3",
+      cardHighlight:"la Chute",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Liberté", "Conscience", "Religion", "Travail", "Désir"], work:"Genèse 3", publication:"3,1–24",
+      description:"Comment le récit de la Chute met-il en scène la tentation, la faute, la honte et les ruptures qui en découlent ?",
+      context:"Le récit de Genèse 3 met en scène l’entrée du mal dans l’expérience humaine : l’interdit, la tentation, la transgression, puis la honte et les ruptures qui en découlent. Il ouvre des problèmes philosophiques majeurs autour de la liberté, de la responsabilité, du désir de savoir et des conséquences de nos actes.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes au <strong>chapitre 3 de la Genèse</strong>, juste après les deux récits de la Création et l’installation de l’homme et de la femme dans le jardin d’Éden (Genèse 1–2). Le chapitre raconte la transgression de l’interdit puis ses conséquences, jusqu’à l’expulsion du jardin. Le récit suivant sera celui de <strong>Caïn et Abel</strong> en Genèse 4." },
+        { label:"Piste philosophique", text:"Le récit met en scène plusieurs problèmes : pourquoi l’être humain transgresse-t-il un interdit qu’il connaît ? La <strong>liberté</strong> rend-elle possible le mal ? Quel rapport existe entre désir, connaissance, honte et responsabilité ? La Chute permet ainsi de réfléchir à la faute sans la réduire à une simple ignorance du bien." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Une rupture en cascade", definition:"La transgression ne produit pas une seule conséquence. Le récit fait apparaître successivement la honte devant soi-même, la peur devant Dieu, l’accusation de l’autre, l’hostilité du monde et, enfin, la mortalité." },
+        { type:"opposition", left:{ term:"La promesse du serpent", definition:"Les yeux vont s’ouvrir et l’être humain accédera à la connaissance du bien et du mal." }, right:{ term:"Ce qui est effectivement découvert", definition:"Les yeux s’ouvrent, mais la première expérience est celle de la nudité, de la honte et de la peur." }, conclusion:"Le récit distingue ainsi l’acquisition d’une connaissance et l’idée d’un progrès moral ou d’un bonheur qui en découlerait automatiquement." },
+        { type:"concept", term:"Le déplacement de la responsabilité", definition:"Après la faute, l’homme accuse la femme et la femme accuse le serpent. Chacun reconnaît avoir mangé tout en cherchant ailleurs la cause de son acte : le récit met ainsi en scène la difficulté à assumer pleinement sa propre responsabilité." },
+        { type:"concept", term:"Travail, souffrance et mortalité", definition:"Le sol, l’enfantement, les rapports entre les êtres humains et le retour à la poussière sont désormais décrits sous le signe de la peine. Le texte relie la faute à une transformation globale de la condition humaine, sans réduire celle-ci à une simple punition ponctuelle." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La tentation", range:"3,1–5", marker:"1", aria:"Genèse 3, verset 1", text:"Le serpent était le plus rusé de tous les animaux des champs que le Seigneur Dieu avait faits. Il dit à la femme : « Alors, Dieu vous a dit : ‘Vous ne mangerez le fruit d’aucun arbre du jardin’ ? »" },
+        { type:"verse", marker:"2", aria:"Genèse 3, verset 2", text:"La femme répondit au serpent : « Nous mangeons les fruits des arbres du jardin." },
+        { type:"verse", marker:"3", aria:"Genèse 3, verset 3", text:"Mais, pour celui qui est au milieu du jardin, Dieu a dit : ‘Vous n’en mangerez pas, vous n’y toucherez pas, sinon vous mourrez.’ »" },
+        { type:"verse", marker:"4", aria:"Genèse 3, verset 4", text:"Le serpent dit à la femme : « Pas du tout ! Vous ne mourrez pas !" },
+        { type:"verse", marker:"5", aria:"Genèse 3, verset 5", text:"Mais Dieu sait que, le jour où vous en mangerez, vos yeux s’ouvriront, et vous serez comme des dieux, connaissant le bien et le mal. »" },
+
+        { type:"movementStart", title:"La transgression", range:"3,6–7", marker:"6", aria:"Genèse 3, verset 6", text:"La femme s’aperçut que le fruit de l’arbre devait être savoureux, qu’il avait un aspect agréable et qu’il était désirable, puisqu’il donnait l’intelligence. Elle prit de ce fruit, et en mangea. Elle en donna aussi à son mari, et il en mangea." },
+        { type:"verse", marker:"7", aria:"Genèse 3, verset 7", text:"Alors leurs yeux à tous deux s’ouvrirent et ils connurent qu’ils étaient nus. Ils attachèrent les unes aux autres des feuilles de figuier, et ils s’en firent des pagnes." },
+        { type:"gallery", title:"Éden et la Chute en images", artworks:[
+          { title:"Le jardin d’Éden", alt:"Adam et Ève dans le jardin d’Éden au milieu des animaux.", details:"Johann Wenzel Peter, fin XVIIIe–début XIXe siècle, Pinacothèque vaticane.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Adam_et_%C3%88ve_au_Paradis_Terrestre.jpg" },
+          { title:"Le Jardin des délices", alt:"Le triptyque de Jérôme Bosch, dont le panneau gauche représente le jardin d’Éden.", details:"Jérôme Bosch, v. 1480–1505, musée du Prado.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg" },
+          { title:"Le Jardin d’Éden et la Chute de l’homme", alt:"Adam et Ève auprès de l’arbre de la connaissance dans un paradis rempli d’animaux.", details:"Jan Brueghel l’Ancien et Pierre Paul Rubens, 1615, Mauritshuis, La Haye.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Jan_Brueghel_de_Oude_en_Peter_Paul_Rubens_-_Het_aards_paradijs_met_de_zondeval_van_Adam_en_Eva.jpg" }
+        ] },
+        { type:"pause", reference:"ROMAINS 7", title:"La division intérieure", intro:"Pécheurs, nous sommes intérieurement déchirés :", text:"Le bien que je veux, je ne le fais pas, mais le mal que je ne veux pas, je le commets. Car je prends plaisir à la loi de Dieu selon l’homme intérieur ; mais je vois dans mes membres une autre loi qui lutte contre la loi de ma raison et me tient captif sous la loi du péché. Malheureux homme que je suis ! Qui me délivrera ?" },
+
+        { type:"movementStart", title:"La confrontation", range:"3,8–13", marker:"8", aria:"Genèse 3, verset 8", text:"Ils entendirent le Seigneur Dieu qui se promenait dans le jardin à la brise du jour. L’homme et la femme allèrent se cacher aux regards du Seigneur Dieu parmi les arbres du jardin." },
+        { type:"verse", marker:"9", aria:"Genèse 3, verset 9", text:"Le Seigneur Dieu appela l’homme et lui dit : « Où es-tu donc ? »" },
+        { type:"verse", marker:"10", aria:"Genèse 3, verset 10", text:"L’homme répondit : « Je t’ai entendu dans le jardin, j’ai pris peur parce que je suis nu, et je me suis caché. »" },
+        { type:"verse", marker:"11", aria:"Genèse 3, verset 11", text:"Le Seigneur reprit : « Qui donc t’a dit que tu étais nu ? Je t’avais interdit de manger du fruit de l’arbre ; en aurais-tu mangé ? »" },
+        { type:"verse", marker:"12", aria:"Genèse 3, verset 12", text:"L’homme répondit : « La femme que tu m’as donnée, c’est elle qui m’a donné du fruit de l’arbre, et j’en ai mangé. »" },
+        { type:"verse", marker:"13", aria:"Genèse 3, verset 13", text:"Le Seigneur Dieu dit à la femme : « Qu’as-tu fait là ? » La femme répondit : « Le serpent m’a trompée, et j’ai mangé. »" },
+        { type:"pause", reference:"ESDRAS 9", title:"Honte et culpabilité", text:"Mon Dieu, j’ai trop de honte et de confusion pour lever vers toi mon visage, ô mon Dieu ; car nos fautes se sont multipliées jusqu’à dépasser nos têtes, et notre culpabilité a grandi jusqu’au ciel. Depuis les jours de nos pères jusqu’à ce jour, nous sommes grandement coupables, et à cause de nos fautes nous avons été livrés, nous, nos rois et nos prêtres, aux mains des rois des pays, au glaive, à la captivité, au pillage et à la honte du visage, comme (il en est) en ce jour." },
+
+        { type:"movementStart", title:"Les conséquences", range:"3,14–19", marker:"14", aria:"Genèse 3, verset 14", text:"Alors le Seigneur Dieu dit au serpent : « Parce que tu as fait cela, tu seras maudit parmi tous les animaux et toutes les bêtes des champs. Tu ramperas sur le ventre et tu mangeras de la poussière tous les jours de ta vie." },
+        { type:"verse", marker:"15", aria:"Genèse 3, verset 15", text:"Je mettrai une hostilité entre la femme et toi, entre sa descendance et ta descendance : sa descendance te meurtrira la tête, et toi, tu lui meurtriras le talon. »" },
+        { type:"verse", marker:"16", aria:"Genèse 3, verset 16", text:"Le Seigneur Dieu dit ensuite à la femme : « J’aggraverai tes souffrances et tes grossesses ; c’est dans la souffrance que tu enfanteras des fils. Le désir te portera vers ton mari, et celui-ci dominera sur toi. »" },
+        { type:"verse", marker:"17", aria:"Genèse 3, verset 17", text:"Il dit enfin à l’homme : « Parce que tu as écouté la voix de ta femme, et que tu as mangé le fruit de l’arbre que je t’avais interdit de manger : maudit soit le sol à cause de toi ! C’est dans la souffrance que tu en tireras ta nourriture, tous les jours de ta vie." },
+        { type:"verse", marker:"18", aria:"Genèse 3, verset 18", text:"De lui-même, il te donnera épines et chardons, mais tu auras ta nourriture en cultivant les champs." },
+        { type:"verse", marker:"19", aria:"Genèse 3, verset 19", text:"C’est à la sueur de ton visage que tu gagneras ton pain, jusqu’à ce que tu retournes à la terre dont tu proviens ; car tu es poussière, et tu retourneras à la poussière. »" },
+        { type:"pause", reference:"OSÉE 10", title:"Le mal porte ses fruits", text:"Vous avez labouré la méchanceté,<br>vous avez moissonné l’injustice…<br>Tu t’es confié à tes chars,<br>dans la multitude de tes guerriers.<br>Toutes les forteresses seront dévastées." },
+
+        { type:"movementStart", title:"L’expulsion d’Éden", range:"3,20–24", marker:"20", aria:"Genèse 3, verset 20", text:"L’homme appela sa femme Ève (c’est-à-dire : la vivante), parce qu’elle fut la mère de tous les vivants." },
+        { type:"verse", marker:"21", aria:"Genèse 3, verset 21", text:"Le Seigneur Dieu fit à l’homme et à sa femme des tuniques de peau et les en revêtit." },
+        { type:"verse", marker:"22", aria:"Genèse 3, verset 22", text:"Puis le Seigneur Dieu déclara : « Voilà que l’homme est devenu comme l’un de nous par la connaissance du bien et du mal ! Maintenant, ne permettons pas qu’il avance la main, qu’il cueille aussi le fruit de l’arbre de vie, qu’il en mange et vive éternellement ! »" },
+        { type:"verse", marker:"23", aria:"Genèse 3, verset 23", text:"Alors le Seigneur Dieu le renvoya du jardin d’Éden, pour qu’il travaille la terre d’où il avait été tiré." },
+        { type:"verse", marker:"24", aria:"Genèse 3, verset 24", text:"Il expulsa l’homme, et il posta, à l’orient du jardin d’Éden, les Kéroubim, armés d’un glaive fulgurant, pour garder l’accès de l’arbre de vie." },
+        { type:"gallery", title:"La faute, le jugement et l’expulsion", artworks:[
+          { title:"Dieu réprimandant Adam et Ève", alt:"Le Dominiquin représente Dieu interrogeant Adam et Ève après la faute.", details:"Le Dominiquin, v. 1623–1625, musée de Grenoble.", src:"https://upload.wikimedia.org/wikipedia/commons/f/f3/Dieu_r%C3%A9primandant_Adam_et_%C3%88ve%2C_par_Le_Dominiquin.jpg", original:"https://upload.wikimedia.org/wikipedia/commons/f/f3/Dieu_r%C3%A9primandant_Adam_et_%C3%88ve%2C_par_Le_Dominiquin.jpg", source:"https://commons.wikimedia.org/wiki/File:Dieu_r%C3%A9primandant_Adam_et_%C3%88ve%2C_par_Le_Dominiquin.jpg" },
+          { title:"Le Jugement dernier — Adam et Ève chassés du paradis", alt:"Panneau de Jérôme Bosch associant le paradis, la faute et le jugement.", details:"Jérôme Bosch, Le Jugement dernier, panneau de gauche, 1504, Gemäldegalerie der Bildenden Künste, Vienne.", src:"https://assets-mid.lls.fr/pages/52313190/f6.5.4.tex.bosch-jugement.webp", original:"https://assets-mid.lls.fr/pages/52313190/f6.5.4.tex.bosch-jugement.webp", source:"https://www.lelivrescolaire.fr/page/15762527" },
+          { title:"Adam et Ève chassés du jardin d’Éden", alt:"Gravure de Gustave Doré représentant un ange chassant Adam et Ève du jardin d’Éden.", details:"Gustave Doré, illustration de la Bible de Doré, 1866.", src:"https://www.meisterdrucke.fr/kunstwerke/1260px/Gustave_Dore_-_Adam_and_Eve_banished_from_the_Garden_of_Eden_by_an_angel_Illustration_from_the_-_%28MeisterDrucke-1488673%29.jpg", original:"https://www.meisterdrucke.fr/kunstwerke/1260px/Gustave_Dore_-_Adam_and_Eve_banished_from_the_Garden_of_Eden_by_an_angel_Illustration_from_the_-_%28MeisterDrucke-1488673%29.jpg", source:"https://www.meisterdrucke.fr/fine-art-prints/Gustave-Dore/1488673/Adam-et-%C3%88ve-chass%C3%A9s-du-Jardin-d%27%C3%89den-par-un-ange%2C-Illustration-de-la-Bible-de-Dor%C3%A9.html" },
+          { title:"Adam et Ève quittant le paradis", alt:"Gravure de Gustave Doré représentant Adam et Ève chassés du paradis.", details:"Gustave Doré, illustration du Paradis perdu de John Milton, gravure, 1866.", src:"https://www.meisterdrucke.fr/kunstwerke/1260px/Gustave_Dore_-_Adam_and_Eve_are_hunting_from_Paradise_Illustration_by_Gustave_Dore_for_Paradise_-_%28MeisterDrucke-1508079%29.jpg", original:"https://www.meisterdrucke.fr/kunstwerke/1260px/Gustave_Dore_-_Adam_and_Eve_are_hunting_from_Paradise_Illustration_by_Gustave_Dore_for_Paradise_-_%28MeisterDrucke-1508079%29.jpg", source:"https://www.meisterdrucke.ie/fine-art-prints/Gustave-Dore/1508079/Adam-and-Eve-are-hunting-from-Paradise.-Illustration-by-Gustave-Dore-for-%25E2%2580%259CParadise-Lost%25E2%2580%259D-by-John-Milton.-Engraving-from-1866.-Private-Collection.html" }
+        ] },
+        { type:"pause", reference:"PSAUME 130", title:"Des profondeurs à la grâce", text:"Des profondeurs je t’appelle, Yahvé ;<br>Si tu prends garde aux fautes, Yahvé,<br>Seigneur qui subsistera ?<br>Mon âme attend le Seigneur<br>plus que veilleurs le matin<br>car près de Yahvé est la grâce<br>et près de lui abonde le rachat." }
+      ]
+    },
+
+    {
+      id:"genese-cain-abel", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Caïn et Abel", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 4",
+      cardHighlight:"Caïn et Abel",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Justice", "Liberté", "Autrui", "Religion"], work:"Genèse 4", publication:"4,1–15",
+      description:"Comment la jalousie transforme-t-elle le frère en rival, et que signifie être responsable de l’autre ?",
+      context:"Juste après la Chute, la Genèse raconte la première violence entre deux frères. Caïn et Abel présentent chacun une offrande ; la différence du regard porté sur elles fait naître chez Caïn l’irritation, puis le meurtre. Le récit enchaîne alors trois questions : peut-on dominer la violence qui monte en soi ? Sommes-nous responsables de notre frère ? Et comment rendre justice sans laisser la vengeance se multiplier ?",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 4</strong>, juste après l’expulsion d’Adam et Ève du jardin d’Éden (Genèse 3). Caïn et Abel sont leurs fils : le récit raconte le premier meurtre de la Bible, avant la descendance de Caïn puis, plus loin, l’histoire de Noé." },
+        { label:"Piste philosophique", text:"Le passage interroge la <strong>responsabilité envers autrui</strong>, la jalousie, la rivalité et la violence. La question « Suis-je le gardien de mon frère ? » ouvre aussi une réflexion sur la justice : punir le coupable suffit-il, ou faut-il encore empêcher la vengeance de produire une nouvelle violence ?" }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Le péché « accroupi à la porte »", definition:"Avant le meurtre, Caïn est averti : la violence n’est pas présentée comme inévitable. Le récit met en scène un moment où l’être humain peut encore agir autrement et « dominer » ce qui le pousse au mal." },
+        { type:"concept", term:"« Suis-je le gardien de mon frère ? »", definition:"La réponse de Caïn cherche à nier toute responsabilité envers Abel. La question devient pourtant le centre du récit : jusqu’où sommes-nous responsables de la vie et du sort des autres ?" },
+        { type:"concept", term:"Le signe de Caïn", definition:"Caïn est condamné à l’errance, mais Dieu le protège aussi contre celui qui voudrait le tuer. La sanction ne se transforme donc pas en permission de se venger : le récit pose déjà une limite à l’escalade de la violence." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Deux frères, deux offrandes", range:"4,1–5", marker:"1", aria:"Genèse 4, verset 1", text:"L’homme s’unit à Ève, sa femme ; elle conçut, et elle mit au monde Caïn. Elle dit alors : « J’ai donné la vie à un homme avec l’aide du Seigneur ! »" },
+        { type:"verse", marker:"2", aria:"Genèse 4, verset 2", text:"Dans la suite, elle mit au monde Abel, frère de Caïn. Abel devint berger, et Caïn cultivait la terre." },
+        { type:"verse", marker:"3", aria:"Genèse 4, verset 3", text:"À l’époque habituelle, Caïn présenta des produits de la terre en offrande au Seigneur." },
+        { type:"verse", marker:"4", aria:"Genèse 4, verset 4", text:"De son côté, Abel présenta les premiers-nés de son troupeau, en offrant les morceaux les meilleurs. Le Seigneur tourna son regard vers Abel et son offrande," },
+        { type:"verse", marker:"5", aria:"Genèse 4, verset 5", text:"mais il détourna son regard de Caïn et de son offrande. Caïn en fut très irrité et montra un visage accablé." },
+
+        { type:"movementStart", title:"La jalousie à la porte", range:"4,6–7", marker:"6", aria:"Genèse 4, verset 6", text:"Le Seigneur dit à Caïn : « Pourquoi es-tu irrité, pourquoi ce visage accablé ?" },
+        { type:"verse", marker:"7", aria:"Genèse 4, verset 7", text:"Si tu agis bien, tu pourras relever ton visage. Mais si tu n’agis pas bien, le péché est accroupi à ta porte. Il est à l’affût, mais tu dois le dominer ! »" },
+        { type:"pause", reference:"JACQUES 4", title:"Des passions à la guerre", text:"D’où viennent les guerres, d’où viennent les batailles parmi vous ? N’est-ce pas de ceci : vos passions qui combattent dans vos membres ? Vous convoitez, et vous n’avez pas ; vous tuez, vous jalousez, et vous ne pouvez obtenir ; vous bataillez et faites la guerre." },
+
+        { type:"movementStart", title:"Le meurtre d’Abel", range:"4,8", marker:"8", aria:"Genèse 4, verset 8", text:"Caïn dit à son frère Abel : « Sortons dans les champs. » Et, quand ils furent dans la campagne, Caïn se jeta sur son frère Abel et le tua." },
+        { type:"gallery", title:"Caïn et Abel en images", artworks:[
+          { title:"Caïn et Abel", alt:"Représentation de Caïn et Abel autour du thème de la fraternité, du sacrifice et de la rivalité.", details:"", src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNECI-TDx9WjrA4CJamJKuC__xN4qb9t-grc_kGXm2koFF0mgkFT8bNE&s=10", original:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNECI-TDx9WjrA4CJamJKuC__xN4qb9t-grc_kGXm2koFF0mgkFT8bNE&s=10" },
+          { title:"Les sacrifices de Caïn et d’Abel", alt:"Wilhelm Ebbinghaus représente les deux offrandes, celle de Caïn et celle d’Abel.", details:"Wilhelm Ebbinghaus, lithographie en couleurs.", src:"https://www.meisterdrucke.fr/kunstwerke/1260px/Wilhelm_Ebbinghaus_-_Sacrifices_of_Cain_and_Abel_%28colour_litho%29_-_%28MeisterDrucke-1406805%29.jpg", original:"https://www.meisterdrucke.fr/kunstwerke/1260px/Wilhelm_Ebbinghaus_-_Sacrifices_of_Cain_and_Abel_%28colour_litho%29_-_%28MeisterDrucke-1406805%29.jpg", source:"https://www.meisterdrucke.fr/kunstwerke/1260px/Wilhelm_Ebbinghaus_-_Sacrifices_of_Cain_and_Abel_%28colour_litho%29_-_%28MeisterDrucke-1406805%29.jpg" },
+          { title:"Caïn", alt:"Représentation de Caïn après le meurtre de son frère.", details:"Œuvre reproduite par Arts Mythologica.", src:"https://arts.mythologica.fr/artist-c/pic/crespid_cain.jpg", original:"https://arts.mythologica.fr/artist-c/pic/crespid_cain.jpg", source:"https://arts.mythologica.fr/artist-c/pic/crespid_cain.jpg" },
+          { title:"Caïn", alt:"Autre représentation de Caïn, habitée par la faute, la violence ou le remords.", details:"Œuvre reproduite par Arts Mythologica.", src:"https://arts.mythologica.fr/artist-f/pic/ferretti_cain.jpg", original:"https://arts.mythologica.fr/artist-f/pic/ferretti_cain.jpg", source:"https://arts.mythologica.fr/artist-f/pic/ferretti_cain.jpg" },
+          { title:"Le meurtre d’Abel", alt:"Scène illustrant le meurtre d’Abel par Caïn.", details:"", src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyimaMS8iVjqyGSgoBYPF3Hn8q9vd_iZwQxpaNOMR-Jbb_wN2qizsdRUOL&s=10", original:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyimaMS8iVjqyGSgoBYPF3Hn8q9vd_iZwQxpaNOMR-Jbb_wN2qizsdRUOL&s=10" },
+          { title:"Caïn", alt:"Fernand Cormon représente Caïn dans l’errance, après la faute.", details:"Fernand Cormon, XIXe siècle.", src:"https://histoire-image.org/sites/default/files/2021-11/cormon-cain.jpg", original:"https://histoire-image.org/sites/default/files/2021-11/cormon-cain.jpg", source:"https://histoire-image.org/sites/default/files/2021-11/cormon-cain.jpg" },
+          { title:"Caïn et Abel", alt:"Interprétation artistique du récit de Caïn et Abel.", details:"", src:"https://images.navigart.fr/1000/5C/98/5C98702.jpg", original:"https://images.navigart.fr/1000/5C/98/5C98702.jpg", source:"https://images.navigart.fr/1000/5C/98/5C98702.jpg" }
+        ] },
+
+        { type:"movementStart", title:"« Où est ton frère ? »", range:"4,9–12", marker:"9", aria:"Genèse 4, verset 9", text:"Le Seigneur dit à Caïn : « Où est ton frère Abel ? » Caïn répondit : « Je ne sais pas. Est-ce que je suis le gardien de mon frère ? »" },
+        { type:"pause", reference:"MATTHIEU 25", title:"Le frère comme prochain", intro:"Jésus dit :", text:"Chaque fois que vous l’avez fait au moindre de mes frères que voici, c’est à moi que vous l’avez fait." },
+        { type:"verse", marker:"10", aria:"Genèse 4, verset 10", text:"Le Seigneur reprit : « Qu’as-tu fait ? La voix du sang de ton frère crie de la terre vers moi !" },
+        { type:"verse", marker:"11", aria:"Genèse 4, verset 11", text:"Maintenant donc, sois maudit et chassé loin de cette terre qui a ouvert la bouche pour boire le sang de ton frère, versé par ta main." },
+        { type:"verse", marker:"12", aria:"Genèse 4, verset 12", text:"Tu auras beau cultiver la terre, elle ne produira plus rien pour toi. Tu seras un errant, un vagabond à travers le monde. »" },
+
+        { type:"movementStart", title:"Le châtiment et le signe", range:"4,13–15", marker:"13", aria:"Genèse 4, verset 13", text:"Alors Caïn dit au Seigneur : « Ce châtiment est au-dessus de mes forces !" },
+        { type:"verse", marker:"14", aria:"Genèse 4, verset 14", text:"Voici qu’aujourd’hui tu m’as chassé de ma terre. Je dois me cacher loin de toi, je serai un errant, un vagabond à travers le monde, et le premier venu me tuera. »" },
+        { type:"verse", marker:"15", aria:"Genèse 4, verset 15", text:"Le Seigneur lui répondit : « Si quelqu’un tue Caïn, Caïn sera vengé sept fois. » Et le Seigneur mit un signe sur Caïn pour le préserver d’être tué par le premier venu." },
+        { type:"pause", reference:"JEAN 8", title:"La vengeance retenue", intro:"Mais il dit aussi :", text:"Que celui d’entre vous qui est sans péché lui jette la première pierre." }
       ]
     },
     {
@@ -1119,7 +1273,9 @@
   const normalize = (value) => value.toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   const collator = new Intl.Collator("fr", { sensitivity:"base" });
   const alphabeticalThemes = (items) => [...items].sort((a,b) => collator.compare(a,b));
-  const authorTag = (text) => text.authorTag || text.author.split(/\s+/).slice(-1)[0];
+  const authorTag = (text) => text.authorTag || (text.author || "").split(/\s+/).slice(-1)[0];
+  const sourceTag = (text) => text.sourceTag || text.source || "";
+  const textCredit = (text) => text.author || text.source || "";
   const textThemes = (text) => text.themes || (text.theme ? [text.theme] : []);
   const textSections = (text) => text.sections || [text.section];
 
@@ -1132,7 +1288,9 @@
   const search = root.querySelector("[data-text-search]");
   const section = root.querySelector("[data-text-section]");
   const theme = root.querySelector("[data-text-theme]");
+  const multiThemeEnabled = (fixedSection === "philosophie" || fixedSection === "theologie" || fixedSection === "autres" || fixedSection === "all") && !!theme;
   const author = root.querySelector("[data-text-author]");
+  const source = root.querySelector("[data-text-source]");
   const reset = root.querySelector("[data-text-reset]");
   const tools = root.querySelector(".texts-tools");
   const summary = root.querySelector(".texts-summary");
@@ -1161,7 +1319,9 @@
   }
 
   const sectionTexts = fixedSection === "all" ? TEXTS : TEXTS.filter((text) => textSections(text).includes(fixedSection));
-  const authors = [...new Map(sectionTexts.map((text) => [text.author, { value:text.author, label:authorTag(text) }])).values()]
+  const authors = [...new Map(sectionTexts.filter((text) => text.author).map((text) => [text.author, { value:text.author, label:authorTag(text) }])).values()]
+    .sort((a,b) => collator.compare(a.label,b.label));
+  const sources = [...new Map(sectionTexts.filter((text) => text.source).map((text) => [text.source, { value:text.source, label:sourceTag(text) }])).values()]
     .sort((a,b) => collator.compare(a.label,b.label));
   const catalogThemes = alphabeticalThemes(new Set(sectionTexts.flatMap(textThemes)));
   const programThemes = catalogThemes.filter((item) => CURRENT_PROGRAM_THEMES.includes(item));
@@ -1181,6 +1341,137 @@
       ${complementaryThemes.length ? `<optgroup label="Thèmes complémentaires">${themeOptions(complementaryThemes)}</optgroup>` : ""}`;
   }
   if (author) author.innerHTML = `<option value="all">Tous les auteurs</option>${authors.map((item) => `<option value="${item.value}">${item.label}</option>`).join("")}`;
+  if (source) source.innerHTML = `<option value="all">Tous les corpus</option>${sources.map((item) => `<option value="${item.value}">${item.label}</option>`).join("")}`;
+
+  let selectedThemes = [];
+  let themeMulti = null;
+  let themeMultiTrigger = null;
+  let themeMultiMenu = null;
+  let themeMultiSummary = null;
+  let themeMultiCount = null;
+  let themeMultiSelected = null;
+
+  const closeThemeMulti = () => {
+    if (!themeMulti || !themeMultiTrigger || !themeMultiMenu) return;
+    themeMulti.classList.remove("is-open");
+    themeMultiTrigger.setAttribute("aria-expanded", "false");
+    themeMultiMenu.hidden = true;
+  };
+
+  const openThemeMulti = () => {
+    if (!themeMulti || !themeMultiTrigger || !themeMultiMenu) return;
+    themeMulti.classList.add("is-open");
+    themeMultiTrigger.setAttribute("aria-expanded", "true");
+    themeMultiMenu.hidden = false;
+  };
+
+  const updateThemeMultiUi = () => {
+    if (!multiThemeEnabled || !themeMulti) return;
+    const countThemes = selectedThemes.length;
+    if (themeMultiSummary) {
+      themeMultiSummary.textContent = countThemes === 0
+        ? "Tous les thèmes"
+        : selectedThemes.join(" + ");
+    }
+    if (themeMultiCount) {
+      themeMultiCount.hidden = countThemes === 0;
+      themeMultiCount.textContent = `${countThemes}/2 thèmes`;
+    }
+    if (themeMultiSelected) {
+      themeMultiSelected.hidden = countThemes === 0;
+      themeMultiSelected.innerHTML = selectedThemes.map((themeName) => `
+        <button class="texts-theme-multi-chip" type="button" data-theme-remove="${themeName}" aria-label="Retirer le thème ${themeName}">
+          <span>${themeName}</span><i aria-hidden="true">×</i>
+        </button>`).join("");
+    }
+    themeMulti.querySelectorAll("[data-theme-value]").forEach((input) => {
+      const isSelected = selectedThemes.includes(input.dataset.themeValue);
+      input.checked = isSelected;
+      input.disabled = countThemes >= 2 && !isSelected;
+      input.closest(".texts-theme-multi-option")?.classList.toggle("is-selected", isSelected);
+    });
+    if (theme) theme.value = countThemes === 1 ? selectedThemes[0] : "all";
+  };
+
+  if (multiThemeEnabled) {
+    theme.hidden = true;
+    theme.tabIndex = -1;
+    theme.setAttribute("aria-hidden", "true");
+    const themeLabel = root.querySelector(`label[for="${theme.id}"]`);
+    if (themeLabel && !themeLabel.id) themeLabel.id = `${theme.id}-label`;
+    const optionGroup = (label, items) => items.length ? `
+      <section class="texts-theme-multi-group" aria-label="${label}">
+        <p class="texts-theme-multi-group-title">${label}</p>
+        ${items.map((item) => `
+          <label class="texts-theme-multi-option">
+            <input type="checkbox" value="${item}" data-theme-value="${item}">
+            <span>${item}</span>
+          </label>`).join("")}
+      </section>` : "";
+
+    themeMulti = document.createElement("div");
+    themeMulti.className = "texts-theme-multi";
+    themeMulti.innerHTML = `
+      <button class="texts-theme-multi-trigger" type="button" aria-expanded="false" aria-controls="${theme.id}-menu"${themeLabel ? ` aria-labelledby="${themeLabel.id} ${theme.id}-summary"` : ""}>
+        <span class="texts-theme-multi-summary" id="${theme.id}-summary" data-theme-multi-summary>Tous les thèmes</span>
+        <span class="texts-theme-multi-count" data-theme-multi-count hidden>0/2</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="texts-theme-multi-menu" id="${theme.id}-menu" data-theme-multi-menu hidden>
+        <div class="texts-theme-multi-selected" data-theme-multi-selected hidden></div>
+        ${optionGroup("Notions au programme de Terminale", programThemes)}
+        ${optionGroup("Thèmes complémentaires", complementaryThemes)}
+        <p class="texts-theme-multi-hint">Sélectionnez jusqu’à 2 thèmes · les résultats doivent correspondre aux deux.</p>
+      </div>`;
+    theme.insertAdjacentElement("afterend", themeMulti);
+    themeMultiTrigger = themeMulti.querySelector(".texts-theme-multi-trigger");
+    themeMultiMenu = themeMulti.querySelector("[data-theme-multi-menu]");
+    themeMultiSummary = themeMulti.querySelector("[data-theme-multi-summary]");
+    themeMultiCount = themeMulti.querySelector("[data-theme-multi-count]");
+    themeMultiSelected = themeMulti.querySelector("[data-theme-multi-selected]");
+
+    themeMultiTrigger?.addEventListener("click", () => {
+      if (themeMultiMenu?.hidden) openThemeMulti();
+      else closeThemeMulti();
+    });
+    themeLabel?.addEventListener("click", (event) => {
+      event.preventDefault();
+      themeMultiTrigger?.focus();
+      openThemeMulti();
+    });
+    themeMulti.addEventListener("change", (event) => {
+      const input = event.target.closest("[data-theme-value]");
+      if (!input) return;
+      const value = input.dataset.themeValue;
+      if (input.checked) {
+        if (!selectedThemes.includes(value) && selectedThemes.length < 2) selectedThemes.push(value);
+      } else {
+        selectedThemes = selectedThemes.filter((item) => item !== value);
+      }
+      currentPage = 1;
+      updateThemeMultiUi();
+      render();
+    });
+    themeMulti.addEventListener("click", (event) => {
+      const remove = event.target.closest("[data-theme-remove]");
+      if (!remove) return;
+      event.preventDefault();
+      event.stopPropagation();
+      selectedThemes = selectedThemes.filter((item) => item !== remove.dataset.themeRemove);
+      currentPage = 1;
+      updateThemeMultiUi();
+      render();
+    });
+    document.addEventListener("click", (event) => {
+      if (themeMulti && !themeMulti.contains(event.target)) closeThemeMulti();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && themeMulti?.classList.contains("is-open")) {
+        closeThemeMulti();
+        themeMultiTrigger?.focus();
+      }
+    });
+  }
 
   const params = new URLSearchParams(window.location.search);
   const PAGE_SIZE = 20;
@@ -1191,8 +1482,17 @@
     if (match) control.value = match.value;
   };
   if (fixedSection === "all") setFromQuery(section, params.get("section"));
-  setFromQuery(theme, params.get("theme"));
+  if (multiThemeEnabled) {
+    selectedThemes = params.getAll("theme")
+      .map((value) => catalogThemes.find((item) => normalize(item) === normalize(value)))
+      .filter((value, index, values) => value && values.indexOf(value) === index)
+      .slice(0, 2);
+    updateThemeMultiUi();
+  } else {
+    setFromQuery(theme, params.get("theme"));
+  }
   setFromQuery(author, params.get("auteur"));
+  setFromQuery(source, params.get("source"));
   if (search && params.get("recherche")) search.value = params.get("recherche");
 
   const catalogUrl = (key, value) => `/textes/?${key}=${encodeURIComponent(value)}`;
@@ -1228,10 +1528,12 @@
     const sectionMeta = isDualSection ? "Philosophie & théologie" : (text.cardMeta || SECTION_LABELS[text.section]);
     return `
     <article class="text-card text-card--${text.section}${isDualSection ? " text-card--dual" : ""}${cardModifiers ? ` ${cardModifiers}` : ""}">
-      <a class="text-card-cover-link" href="${destination}" data-text-link aria-label="Lire : ${text.title}, ${text.author}"></a>
+      <a class="text-card-cover-link" href="${destination}" data-text-link aria-label="Lire : ${escapeHtml(text.title)}${textCredit(text) ? `, ${escapeHtml(textCredit(text))}` : ""}"></a>
       <p class="text-card-section">${sectionSymbols}<span aria-hidden="true">•</span><span>${escapeHtml(sectionMeta)}</span></p>
       <h2>${title}</h2>
-      <p class="text-card-author"><a href="${catalogUrl("auteur", text.author)}" data-filter-author="${escapeHtml(text.author)}" aria-label="Afficher les textes de ${escapeHtml(text.author)}">${text.author}</a> · <cite>${text.work}</cite></p>
+      <p class="text-card-author">${text.author
+        ? `<a href="${catalogUrl("auteur", text.author)}" data-filter-author="${escapeHtml(text.author)}" aria-label="Afficher les textes de ${escapeHtml(text.author)}">${text.author}</a>`
+        : `<a href="/textes/theologie/?source=${encodeURIComponent(text.source)}" data-filter-source="${escapeHtml(text.source || "")}" aria-label="Afficher les textes du corpus ${escapeHtml(text.source || "")}">${escapeHtml(text.source || "")}</a>`} · <cite>${text.work}</cite></p>
       <p class="text-card-description">${text.description}</p>
       <span class="text-card-arrow" aria-hidden="true">→</span>
       <div class="text-card-tags">
@@ -1274,11 +1576,12 @@
       </div>
     </section>`;
 
-  const syncFiltersInUrl = (selectedSection, selectedTheme, selectedAuthor) => {
+  const syncFiltersInUrl = (selectedSection, selectedThemeValues, selectedAuthor, selectedSource) => {
     const nextParams = new URLSearchParams();
     if (fixedSection === "all" && selectedSection !== "all") nextParams.set("section", selectedSection);
-    if (selectedTheme !== "all") nextParams.set("theme", selectedTheme);
+    selectedThemeValues.forEach((themeName) => nextParams.append("theme", themeName));
     if (selectedAuthor !== "all") nextParams.set("auteur", selectedAuthor);
+    if (selectedSource !== "all") nextParams.set("source", selectedSource);
     const searchValue = search?.value.trim();
     if (searchValue) nextParams.set("recherche", searchValue);
     if (currentPage > 1) nextParams.set("page", String(currentPage));
@@ -1289,14 +1592,18 @@
   const render = () => {
     const query = normalize(search?.value.trim() || "");
     const selectedSection = fixedSection === "all" ? (section?.value || "all") : fixedSection;
-    const selectedTheme = theme?.value || "all";
+    const selectedThemeValues = multiThemeEnabled
+      ? [...selectedThemes]
+      : (theme?.value && theme.value !== "all" ? [theme.value] : []);
     const selectedAuthor = author?.value || "all";
+    const selectedSource = source?.value || "all";
     const matchesFilters = (text) => {
       const themes = textThemes(text);
-      const searchable = normalize(`${text.title} ${text.familiarIdea || ""} ${text.author} ${themes.join(" ")} ${text.work} ${text.publication} ${text.description} ${(text.readingNotes || []).map((note) => `${note.term} ${note.definition}`).join(" ")}`);
+      const searchable = normalize(`${text.title} ${text.familiarIdea || ""} ${text.author || ""} ${text.source || ""} ${themes.join(" ")} ${text.work} ${text.publication} ${text.description} ${(text.readingNotes || []).map((note) => `${note.term || ""} ${note.definition || ""}`).join(" ")}`);
       return (selectedSection === "all" || textSections(text).includes(selectedSection))
-        && (selectedTheme === "all" || themes.includes(selectedTheme))
+        && selectedThemeValues.every((themeName) => themes.includes(themeName))
         && (selectedAuthor === "all" || text.author === selectedAuthor)
+        && (selectedSource === "all" || text.source === selectedSource)
         && (!query || searchable.includes(query));
     };
 
@@ -1307,7 +1614,8 @@
       if (set.texts.some((id) => directIds.has(id))) {
         set.texts.forEach((id) => {
           const companion = TEXTS.find((text) => text.id === id);
-          if (companion && (selectedSection === "all" || textSections(companion).includes(selectedSection))) expandedIds.add(id);
+          const companionMatchesThemes = companion && selectedThemeValues.every((themeName) => textThemes(companion).includes(themeName));
+          if (companion && companionMatchesThemes && (selectedSection === "all" || textSections(companion).includes(selectedSection))) expandedIds.add(id);
         });
       }
     });
@@ -1315,7 +1623,7 @@
     const results = TEXTS.filter((text) => expandedIds.has(text.id));
     const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
     currentPage = Math.min(currentPage, totalPages);
-    syncFiltersInUrl(selectedSection, selectedTheme, selectedAuthor);
+    syncFiltersInUrl(selectedSection, selectedThemeValues, selectedAuthor, selectedSource);
     const pageStart = (currentPage - 1) * PAGE_SIZE;
     const pageResults = results.slice(pageStart, pageStart + PAGE_SIZE);
     const pageIds = new Set(pageResults.map((text) => text.id));
@@ -1328,7 +1636,7 @@
     });
     const standalone = pageResults
       .filter((text) => !groupedIds.has(text.id))
-      .sort((a,b) => collator.compare(SECTION_LABELS[a.section],SECTION_LABELS[b.section]) || collator.compare(a.author,b.author) || collator.compare(a.title,b.title));
+      .sort((a,b) => collator.compare(SECTION_LABELS[a.section],SECTION_LABELS[b.section]) || collator.compare(textCredit(a),textCredit(b)) || collator.compare(a.title,b.title));
     const linkedCompanions = results.length - directMatches.length;
     const linkedNote = linkedCompanions > 0 ? ` <span class="texts-count-linked">dont ${linkedCompanions} texte${linkedCompanions > 1 ? "s" : ""} lié${linkedCompanions > 1 ? "s" : ""}</span>` : "";
 
@@ -1349,6 +1657,15 @@
       currentPage = 1;
       render();
       author.focus({ preventScroll:true });
+      return;
+    }
+    const sourceLink = event.target.closest("[data-filter-source]");
+    if (sourceLink && source) {
+      event.preventDefault();
+      setFromQuery(source, sourceLink.dataset.filterSource);
+      currentPage = 1;
+      render();
+      source.focus({ preventScroll:true });
       return;
     }
     const textLink = event.target.closest("[data-text-link]");
@@ -1399,13 +1716,18 @@
     pageTransition = null;
   });
 
-  [search,section,theme,author].filter(Boolean).forEach((control) => control.addEventListener(control === search ? "input" : "change", () => {
+  [search,section,...(multiThemeEnabled ? [] : [theme]),author,source].filter(Boolean).forEach((control) => control.addEventListener(control === search ? "input" : "change", () => {
     currentPage = 1;
     render();
   }));
   reset?.addEventListener("click", () => {
     if (search) search.value = "";
-    [section,theme,author].filter(Boolean).forEach((control) => { control.value = "all"; });
+    [section,theme,author,source].filter(Boolean).forEach((control) => { control.value = "all"; });
+    if (multiThemeEnabled) {
+      selectedThemes = [];
+      updateThemeMultiUi();
+      closeThemeMulti();
+    }
     currentPage = 1;
     render();
     search?.focus();
