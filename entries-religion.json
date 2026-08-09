@@ -1,0 +1,732 @@
+[
+  {
+    "id": "critias-dieu-invention-controle",
+    "section": "philosophie",
+    "cardMeta": "Religion · origine sociale de Dieu",
+    "title": "L’idée de Dieu est une invention destinée à contrôler les hommes",
+    "author": "Critias",
+    "authorTag": "Critias",
+    "cardHighlight": "invention destinée à contrôler les hommes",
+    "authorMeta": "(v. 460–403 av. J.-C.) · sophistique / athéisme antique",
+    "themes": [
+      "Religion",
+      "État",
+      "Justice"
+    ],
+    "work": "Fragment rapporté par Sextus Empiricus, Contre les mathématiciens",
+    "publication": "IIe–IIIe s., IX, 54, recueilli dans Les Sophistes, dans Les Présocratiques, trad. J.-L. Poirier, Gallimard, « Bibliothèque de la Pléiade », 1988, p. 1145–1146",
+    "description": "L’idée de Dieu pourrait-elle avoir été inventée pour prolonger la loi jusque dans les pensées et les actes cachés ?",
+    "context": "Le fragment attribué à <strong>Critias</strong>, transmis par Sextus Empiricus, propose une généalogie politique de la religion : les lois punissent les crimes visibles, tandis que la fiction d’un dieu omniscient étend la surveillance jusque dans le secret de la conscience.",
+    "readingQuestions": [
+      "Pourquoi les lois humaines ne suffisent-elles pas, selon Critias, à empêcher toutes les fautes ?",
+      "Quelle fonction politique remplit la croyance en un dieu qui voit et entend tout ?",
+      "En quoi cette explication fait-elle de la religion un prolongement de l’ordre social ?"
+    ],
+    "glossary": [
+      {
+        "term": "athéisme",
+        "definition": "Doctrine ou position qui nie l’existence des dieux ou de Dieu."
+      },
+      {
+        "term": "fiction politique",
+        "definition": "Représentation produite ou entretenue afin d’orienter les conduites et de stabiliser un ordre collectif."
+      },
+      {
+        "term": "omniscience",
+        "definition": "Attribut d’un être qui connaîtrait absolument tout, y compris ce qui demeure caché aux autres humains."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Une généalogie de la religion",
+        "definition": "Critias ne cherche pas d’abord à savoir si Dieu existe : il demande à quoi sert socialement l’idée de Dieu et dans quelles circonstances elle aurait pu apparaître."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "robespierre-sentiment-religieux-morale-sociale",
+        "kind": "adverse",
+        "label": "Robespierre — Le sentiment religieux maintient la morale sociale",
+        "relation": "Critias et Robespierre attribuent tous deux une fonction sociale à la religion, mais l’un y voit une invention de contrôle tandis que l’autre veut conserver son efficacité morale."
+      },
+      {
+        "id": "freud-dieu-protection-paternelle",
+        "kind": "proche",
+        "label": "Freud — À travers Dieu, l’homme recherche une protection paternelle",
+        "relation": "Freud propose lui aussi une explication de l’origine de la croyance qui part des besoins humains plutôt que d’une preuve de l’existence divine."
+      }
+    ],
+    "paragraphs": [
+      "Et Critias, un de ceux qui furent tyrans à Athènes, semble appartenir au groupe des athées ; il déclare que les anciens législateurs ont fabriqué la fiction de Dieu, définie comme une puissance qui porterait son regard sur les actions justes et les fautes des hommes, afin que personne ne portât tort en cachette à son prochain, ayant toujours à se garder du châtiment des dieux. Voici comment il formule cette idée :",
+      "[…] [L]es hommes, je le crois, ont pour punir,<br>Institué des lois, pour que régnât le droit<br>Et que […] la démesure soit maintenue asservie.<br>Alors on put châtier ceux qui avaient fauté.<br>Mais, puisque par les lois ils étaient empêchés<br>Par la force, au grand jour, d’accomplir leurs forfaits,<br>Mais qu’ils les commettaient à l’abri de la nuit,<br>Alors […] un homme à la pensée astucieuse et sage<br>Inventa la crainte des dieux pour les mortels,<br>Afin que les méchants ne cessassent de craindre<br>D’avoir des comptes à rendre de ce qu’ils auraient fait,<br>Dit, ou encor pensé, même dans le secret :<br>Aussi introduit-il la pensée du divin.<br>« C’était, leur disait-il, comme un démon vivant<br>D’une vie éternelle. Son intellect entend<br>Et voit tout en tout lieu. Il dirige les choses<br>De par sa volonté. Sa nature est divine.<br>Par elle, il entendra toute parole d’homme,<br>Et par elle il verra tout ce qui se commet.<br>[…] Il racontait ainsi que les dieux habitaient<br>Un céleste séjour qui par tous ses aspects,<br>Ne pouvait qu’effrayer les malheureux mortels.<br>Car il savait fort bien d’où vient pour les humains<br>La crainte, et ce qui peut secourir dans le malheur. »"
+    ]
+  },
+  {
+    "id": "freud-dieu-protection-paternelle",
+    "section": "philosophie",
+    "cardMeta": "Religion · illusion et père",
+    "title": "À travers Dieu, l’homme recherche une protection paternelle",
+    "author": "Sigmund Freud",
+    "authorTag": "Freud",
+    "cardHighlight": "protection paternelle",
+    "authorMeta": "(1856–1939) · psychanalyse",
+    "themes": [
+      "Religion",
+      "Inconscient",
+      "Désir"
+    ],
+    "work": "L’Avenir d’une illusion",
+    "publication": "1927, trad. M. Bonaparte, PUF, 1973, p. 43",
+    "description": "La croyance religieuse provient-elle de preuves, ou de désirs humains anciens liés au besoin de protection ?",
+    "context": "Freud interprète les représentations religieuses comme des <strong>illusions</strong> : elles ne sont pas nécessairement des erreurs, mais des croyances dont la force vient d’un désir. L’image de Dieu prolongerait le besoin infantile d’un père protecteur face à la détresse et aux dangers de l’existence.",
+    "readingQuestions": [
+      "Pourquoi Freud refuse-t-il de faire des idées religieuses le résultat final d’une réflexion ?",
+      "Quel lien établit-il entre détresse infantile et représentation d’un Père divin ?",
+      "Pourquoi la religion répond-elle aussi au désir de justice et de prolongation de l’existence ?"
+    ],
+    "glossary": [
+      {
+        "term": "illusion",
+        "definition": "Chez Freud, croyance principalement motivée par la réalisation d’un désir ; une illusion n’est donc pas définie simplement par sa fausseté."
+      },
+      {
+        "term": "détresse infantile",
+        "definition": "Situation de dépendance profonde de l’enfant, dont le besoin de protection fournit à Freud un modèle pour comprendre certaines représentations religieuses."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "concept",
+        "term": "Le désir à l’origine de la croyance",
+        "definition": "La question de Freud porte moins sur la vérité théologique de la religion que sur la source psychique de son pouvoir de conviction."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "critias-dieu-invention-controle",
+        "kind": "proche",
+        "label": "Critias — L’idée de Dieu est une invention destinée à contrôler les hommes",
+        "relation": "Critias propose une origine sociale et politique ; Freud une origine psychique liée au désir de protection."
+      },
+      {
+        "id": "pascal-solitude-misere-recherche-dieu",
+        "kind": "adverse",
+        "label": "Pascal — La solitude et la misère de l’homme le poussent à chercher Dieu",
+        "relation": "Pascal part lui aussi de la détresse humaine mais y voit une invitation à chercher Dieu plutôt qu’une explication réductrice de la croyance."
+      }
+    ],
+    "paragraphs": [
+      "Les idées religieuses […] ne sont pas le résidu de l’expérience ou le résultat final de la réflexion : elles sont des illusions, la réalisation des désirs les plus anciens, les plus forts, les plus pressants de l’humanité ; le secret de leur force est la force de ces désirs. Nous le savons déjà : l’impression terrifiante de la détresse infantile avait éveillé le besoin d’être protégé — protégé en étant aimé — besoin auquel le père a satisfait ; la reconnaissance du fait que cette détresse dure toute la vie a fait que l’homme s’est cramponné à un père, à un père cette fois plus puissant. L’angoisse humaine en face des dangers de la vie s’apaise à la pensée du règne bienveillant de la Providence divine, l’institution d’un ordre moral de l’univers assure la réalisation des exigences de la justice, si souvent demeurées irréalisées dans les civilisations humaines, et la prolongation de l’existence terrestre par une existence future fournit les cadres du temps et le lieu où ces désirs se réaliseront. […] C’est un énorme allègement pour l’âme individuelle que de voir les conflits de l’enfance […] lui être pour ainsi dire enlevés et recevoir une solution acceptée de tous."
+    ]
+  },
+  {
+    "id": "pascal-solitude-misere-recherche-dieu",
+    "section": "philosophie",
+    "cardMeta": "Religion · misère et quête de sens",
+    "title": "La solitude et la misère de l’homme le poussent à chercher Dieu",
+    "author": "Blaise Pascal",
+    "authorTag": "Pascal",
+    "cardHighlight": "chercher Dieu",
+    "authorMeta": "(1623–1662) · philosophie moderne / jansénisme",
+    "themes": [
+      "Religion",
+      "Bonheur",
+      "Raison"
+    ],
+    "work": "Pensées",
+    "publication": "1670 posth., éd. L. Brunschvicg, 693 (Lafuma 198), dans Pensées et opuscules, Hachette, 1967, p. 646",
+    "description": "Face au silence de l’univers et à sa propre misère, l’être humain peut-il se satisfaire du divertissement ou doit-il chercher un sens au-delà du monde ?",
+    "context": "Pascal décrit l’être humain comme perdu dans un univers silencieux, ignorant son origine et sa destination. Le <strong>divertissement</strong> permet de détourner le regard de cette condition ; la recherche de Dieu naît au contraire du refus de s’en satisfaire.",
+    "readingQuestions": [
+      "Pourquoi l’univers silencieux et l’incertitude sur la mort produisent-ils l’effroi ?",
+      "Pourquoi Pascal juge-t-il les divertissements ordinaires incapables de résoudre la misère humaine ?",
+      "Quel raisonnement le conduit à chercher si Dieu a laissé quelque marque de lui ?"
+    ],
+    "glossary": [
+      {
+        "term": "divertissement",
+        "definition": "Chez Pascal, tout ce qui détourne l’être humain de la pensée de sa condition, de sa misère et de sa mortalité."
+      },
+      {
+        "term": "misère",
+        "definition": "Fragilité de la condition humaine : ignorance, dépendance, mortalité et incapacité à se donner par soi-même un sens assuré."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "De l’effroi à la recherche",
+        "definition": "Le texte ne part pas d’une preuve de Dieu mais d’une expérience existentielle : ne pas savoir d’où l’on vient, où l’on va et pourquoi l’on est là."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "freud-dieu-protection-paternelle",
+        "kind": "adverse",
+        "label": "Freud — À travers Dieu, l’homme recherche une protection paternelle",
+        "relation": "La même détresse humaine reçoit deux interprétations opposées : symptôme du désir chez Freud, appel à la recherche de Dieu chez Pascal."
+      },
+      {
+        "id": "pascal-divertissement-condition",
+        "kind": "same-author",
+        "label": "Pascal — Le divertissement nous détourne de notre condition",
+        "relation": "Les deux passages décrivent le divertissement comme la manière ordinaire d’éviter la pensée de notre condition."
+      }
+    ],
+    "paragraphs": [
+      "En voyant l’aveuglement et la misère de l’homme, en regardant tout l’univers muet, et l’homme sans lumière, abandonné à lui-même, et comme égaré dans ce recoin de l’univers, sans savoir qui l’y a mis, ce qu’il y est venu faire, ce qu’il deviendra en mourant, incapable de toute connaissance, j’entre en effroi comme un homme qu’on aurait porté endormi dans une île déserte et effroyable, et qui s’éveillerait sans connaître où il est et sans moyen d’en sortir. Et sur cela j’admire comment on n’entre point en désespoir d’un si misérable état. Je vois d’autres personnes auprès de moi, d’une semblable nature : je leur demande s’ils sont mieux instruits que moi, ils me disent que non ; et sur cela, ces misérables égarés, ayant regardé autour d’eux et ayant vu quelques objets plaisants, s’y sont donnés et s’y sont attachés.",
+      "Pour moi, je n’ai pu y prendre d’attache, et considérant combien il y a plus d’apparence qu’il y a autre chose que ce que je vois, j’ai recherché si ce Dieu dont tout le monde parle n’aurait point laissé quelque marque de soi."
+    ]
+  },
+  {
+    "id": "anselme-preuve-ontologique-dieu",
+    "section": "philosophie",
+    "cardMeta": "Religion · preuve ontologique",
+    "title": "Dieu existe en vertu même de sa définition",
+    "author": "Saint Anselme de Cantorbéry",
+    "authorTag": "Saint-Anselme",
+    "cardHighlight": "existe en vertu même de sa définition",
+    "authorMeta": "(1033–1109) · scolastique",
+    "themes": [
+      "Religion",
+      "Démonstration",
+      "Raison"
+    ],
+    "work": "Proslogion",
+    "publication": "chap. II–III, trad. A. Koyré, Vrin, 1967, p. 13–15",
+    "description": "Peut-on montrer que Dieu existe à partir de l’idée même d’un être dont on ne peut rien concevoir de plus grand ?",
+    "context": "Anselme formule ce qui sera appelé plus tard la <strong>preuve ontologique</strong>. Le point de départ est la définition de Dieu comme « ce dont on ne peut rien concevoir de plus grand » : si cet être n’existait que dans l’intelligence, on pourrait concevoir quelque chose de plus grand, à savoir le même être existant aussi en réalité.",
+    "readingQuestions": [
+      "Pourquoi même celui qui nie Dieu comprend-il l’expression « ce dont on ne peut rien concevoir de plus grand » ?",
+      "Pourquoi Anselme distingue-t-il l’existence dans l’intelligence et l’existence dans la réalité ?",
+      "Où se trouve le passage décisif de la définition de Dieu à l’affirmation de son existence ?"
+    ],
+    "glossary": [
+      {
+        "term": "preuve ontologique",
+        "definition": "Argument qui cherche à établir l’existence de Dieu à partir de son concept ou de son essence, sans partir d’une observation du monde."
+      },
+      {
+        "term": "concevoir",
+        "definition": "Former dans l’intelligence une représentation ou un concept."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Fides quaerens intellectum",
+        "definition": "La démarche d’Anselme est celle d’une foi qui cherche l’intelligence : il ne prétend pas produire une foi sans présupposé, mais penser rationnellement ce qu’elle affirme."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "kant-existence-pas-predicat",
+        "kind": "adverse",
+        "label": "Kant — Les attributs sont démontrables, mais pas l’existence",
+        "relation": "Kant vise directement le type de raisonnement qui prétend passer du concept de Dieu à son existence réelle."
+      },
+      {
+        "id": "pascal-coeur-raison-foi",
+        "kind": "adverse",
+        "label": "Pascal — La raison ne peut comprendre la foi",
+        "relation": "Anselme cherche une intelligence rationnelle de la foi ; Pascal insiste sur des premiers principes et une foi qui ne sont pas produits par la raison discursive."
+      }
+    ],
+    "paragraphs": [
+      "Seigneur, toi qui donnes l’intelligence à la foi, accorde-moi de comprendre, autant que tu le trouves bon, que tu es, comme nous le croyons, et que tu es tel que nous le croyons. Or, nous croyons que tu es quelque chose dont on ne peut rien concevoir de plus grand. Est-ce qu’une nature pareille n’existe pas, parce que l’insensé a dit dans son cœur : Dieu n’est pas ? Mais certainement ce même insensé, lorsqu’il entend ce que je dis « quelque chose dont on ne peut concevoir de plus grand », comprend ce qu’il entend, et ce qu’il comprend est dans son intelligence, même s’il ne comprend pas que cela existe. En effet, avoir une chose dans la pensée n’est pas la même chose que comprendre que cette chose existe. Ainsi, lorsque le peintre réfléchit au tableau qu’il va faire, il l’a dans la pensée ; mais il ne pense pas encore qu’il existe, parce qu’il ne l’a pas encore fait. Mais lorsqu’il l’a déjà peint, il l’a dans l’intelligence et comprend aussi que ce qu’il a fait existe. Or donc, l’insensé lui-même doit convenir qu’il y a dans l’intelligence quelque chose dont on ne peut rien concevoir de plus grand […]. Et certainement ce dont on ne peut rien concevoir de plus grand ne peut être dans l’intellect seul. En effet, s’il n’était que dans l’intellect, on aurait pu penser qu’il soit aussi en réalité : ce qui est plus. Or donc, si l’être dont on ne peut concevoir de plus grand est dans l’intelligence seule, cette même entité, dont on ne peut rien concevoir de plus grand, est quelque chose dont on peut concevoir quelque chose de plus grand : mais certainement ceci est impossible. Par conséquent, il n’y a aucun doute que quelque chose dont on ne peut rien concevoir de plus grand existe et dans l’intelligence et dans la réalité.",
+      "Et il est si véritablement que l’on ne peut même pas penser qu’il n’est pas. En effet, on peut concevoir quelque chose qu’on ne saurait concevoir comme non existant, ce qui est plus grand que ce que l’on peut concevoir comme non existant. Ainsi donc, si ce dont on ne peut rien concevoir de plus grand peut être conçu comme n’existant pas, ce même être dont on ne peut rien concevoir de plus grand n’est pas cet être dont on ne peut pas concevoir de plus grand : ce qui est contradictoire. Ainsi donc, cet être dont on ne peut pas concevoir de plus grand est d’une manière tellement véritable que l’on ne peut pas penser qu’il n’est pas."
+    ]
+  },
+  {
+    "id": "hume-mal-monde-imparfait",
+    "section": "philosophie",
+    "cardMeta": "Religion · mal et preuve de Dieu",
+    "title": "L’existence du mal naturel montre que le monde n’est pas parfait",
+    "author": "David Hume",
+    "authorTag": "Hume",
+    "cardHighlight": "le monde n’est pas parfait",
+    "authorMeta": "(1711–1776) · empirisme / scepticisme",
+    "themes": [
+      "Religion",
+      "Raison",
+      "Nature"
+    ],
+    "work": "Dialogues sur la religion naturelle",
+    "publication": "1779, onzième partie, trad. M. Malherbe, Vrin, 1987, p. 134–140",
+    "description": "L’ordre du monde permet-il vraiment d’inférer l’existence d’un créateur parfaitement puissant et bienveillant quand la nature contient tant de souffrance ?",
+    "context": "Dans les <em>Dialogues sur la religion naturelle</em>, Hume fait parler Philon, le sceptique. Il attaque l’argument qui infère les attributs divins à partir de l’ordre du monde : les imperfections, douleurs et catastrophes rendent au minimum cette inférence indécidable.",
+    "readingQuestions": [
+      "Pourquoi l’analogie du palais mal construit fragilise-t-elle l’argument d’un architecte divin parfait ?",
+      "Pourquoi la compatibilité du monde avec l’existence de Dieu ne suffit-elle pas à prouver cette existence ?",
+      "Comment le mal naturel renforce-t-il le doute sur les attributs que l’on prête à Dieu ?"
+    ],
+    "glossary": [
+      {
+        "term": "preuve cosmologique",
+        "definition": "Famille d’arguments qui remontent du monde, de son ordre ou de sa contingence à l’existence d’un principe ou d’un créateur."
+      },
+      {
+        "term": "agnosticisme",
+        "definition": "Position qui suspend le jugement sur l’existence de Dieu lorsqu’elle est tenue pour indémontrable ou inconnaissable."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Ordre du monde",
+          "definition": "Peut sembler suggérer une intelligence organisatrice."
+        },
+        "right": {
+          "term": "Mal et imperfections",
+          "definition": "Interdisent de conclure facilement à un créateur infiniment bon et puissant."
+        },
+        "conclusion": "Hume ne déduit pas la non-existence de Dieu : il montre l’insuffisance de l’inférence à partir du monde observé."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "leibniz-meilleur-mondes-possibles",
+        "kind": "adverse",
+        "label": "Leibniz — Dieu a créé le meilleur des mondes possibles",
+        "relation": "Hume et Leibniz prennent des positions opposées sur ce que les imperfections du monde permettent de conclure sur la bonté divine."
+      },
+      {
+        "id": "anselme-preuve-ontologique-dieu",
+        "kind": "adverse",
+        "label": "Saint Anselme — Dieu existe en vertu même de sa définition",
+        "relation": "Anselme raisonne à partir du concept de Dieu ; Hume critique les preuves qui prétendent partir du monde et de son ordre."
+      }
+    ],
+    "paragraphs": [
+      "PHILON. — Si je vous montrais une maison ou un palais où il n’y eût pas d’appartement commode et agréable, […] vous en blâmeriez certainement l’organisation, sans autre examen. En vain l’architecte ferait-il montre de sa subtilité et vous prouverait-il que, si cette porte ou cette fenêtre était modifiée, il s’ensuivrait de plus grands maux. Ce qu’il dit peut être parfaitement vrai : il est possible que les altérations d’un détail, tandis que les autres parties du bâtiment demeurent en l’état, ne fassent qu’augmenter les incommodités. Mais vous continueriez d’affirmer de façon générale que, si l’architecte avait eu de l’habileté et de bonnes intentions, il aurait pu concevoir un tel plan du tout, et ajuster les parties de telle manière qu’eût été portée remède à la totalité ou à la plupart des incommodités. Son ignorance, ou même votre propre ignorance d’un tel plan, ne vous convaincra jamais de son impossibilité.",
+      "[…] [L]e monde, considéré en général, et tel qu’il nous apparaît dans cette vie, est-il différent de ce qu’un homme, ou un être limité comparable, attendrait à l’avance d’une Divinité très puissante, très sage et très bienveillante ? Il faut un étrange préjugé pour affirmer le contraire. Et de là je conclus que, si compatible que le monde puisse être, au prix de certaines suppositions et conjectures, avec l’idée d’une telle Divinité, il ne nous fournira jamais d’inférence en faveur de son existence.",
+      "[…] [L]es douleurs, aussi bien que les plaisirs, servent à exciter à l’action toutes les créatures et à les rendre vigilantes dans la grande œuvre qu’est la préservation de soi. Or le plaisir seul, avec ses divers degrés, semble à l’entendement humain suffire pour ce but. Tous les animaux pourraient demeurer constamment dans un état de jouissance ; lorsqu’ils seraient pressés par quelqu’une des nécessités de la nature, telle que la soif, la faim, la fatigue, ils pourraient, au lieu de la douleur, ressentir une diminution de plaisir, par quoi ils seraient incités à rechercher l’objet qui est nécessaire à leur subsistance.",
+      "[…] Il faut reconnaître qu’il y a peu de parties de l’univers qui ne semblent pas servir à quelque but […]. Mais en même temps, il faut observer qu’aucune de ces parties ou principes, malgré toute leur utilité, ne sont assez précisément ajustés pour se maintenir exactement à l’intérieur des limites où cette utilité réside […]. [L]es vents sont indispensables pour chasser les nuées sur la surface du globe et pour assister les hommes dans la navigation ; mais que de fois, s’élevant en tempêtes et en cyclones, deviennent-ils funestes ! […] Il n’y a rien de si avantageux dans l’univers qui ne devienne souvent pernicieux par excès ou par défaut."
+    ]
+  },
+  {
+    "id": "leibniz-meilleur-mondes-possibles",
+    "section": "philosophie",
+    "cardMeta": "Religion · théodicée",
+    "title": "Dieu a créé le meilleur des mondes possibles",
+    "author": "Gottfried Wilhelm Leibniz",
+    "authorTag": "Leibniz",
+    "cardHighlight": "meilleur des mondes possibles",
+    "authorMeta": "(1646–1716) · rationalisme",
+    "themes": [
+      "Religion",
+      "Raison",
+      "Justice"
+    ],
+    "work": "De la production originelle des choses prise à sa racine",
+    "publication": "1697, dans Opuscules philosophiques choisis, trad. P. Schrecker, Vrin, 1969, p. 89–91",
+    "description": "Comment défendre la bonté et la sagesse de Dieu alors que le monde contient souffrances, injustices et désordre ?",
+    "context": "Leibniz propose une <strong>théodicée</strong> : si Dieu est parfait, il choisit nécessairement le meilleur des mondes possibles. Ce qui nous apparaît comme un mal ou une dissonance peut prendre un autre sens à l’échelle de la totalité, que notre point de vue limité ne saisit pas.",
+    "readingQuestions": [
+      "Pourquoi l’existence du mal paraît-elle d’abord incompatible avec la bonté divine ?",
+      "Quelle erreur Leibniz attribue-t-il à notre jugement lorsque nous évaluons le monde à partir d’une partie minuscule ?",
+      "Comment les analogies du tableau et de la musique soutiennent-elles sa thèse ?"
+    ],
+    "glossary": [
+      {
+        "term": "théodicée",
+        "definition": "Tentative de justifier la bonté et la justice de Dieu malgré l’existence du mal dans le monde."
+      },
+      {
+        "term": "possible / nécessaire / contingent",
+        "definition": "Le contingent aurait pu être autrement ; le nécessaire ne peut pas ne pas être. Leibniz pense que Dieu choisit librement, parmi les mondes possibles, celui qui possède la plus grande perfection d’ensemble."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Le point de vue de la totalité",
+        "definition": "Leibniz refuse de juger le plan divin à partir d’un fragment de l’histoire ou du monde : un défaut local peut contribuer à une perfection globale inaccessible à notre perspective."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "hume-mal-monde-imparfait",
+        "kind": "adverse",
+        "label": "Hume — Le mal naturel montre que le monde n’est pas parfait",
+        "relation": "Hume conteste précisément que l’ordre et les maux du monde autorisent à conclure à un créateur parfaitement bon et puissant."
+      },
+      {
+        "id": "augustin-dieu-bonheur",
+        "kind": "proche",
+        "label": "Augustin — Dieu comme accomplissement du bonheur",
+        "relation": "Deux manières très différentes d’inscrire Dieu dans une conception de l’ordre du monde et du bien humain."
+      }
+    ],
+    "paragraphs": [
+      "[Dieu] ne manifeste pas seulement sa grandeur ou puissance dans la machine de l’univers déjà construite, mais aussi sa bonté ou sagesse dans le plan de la construction.",
+      "[…] Mais, dira-t-on, c’est le contraire que nous constatons dans le monde : c’est pour le meilleur, bien souvent, que les choses vont le plus mal, ce ne sont pas seulement des bêtes innocentes, mais encore des hommes innocents qui sont accablés de maux, tués parfois même avec une extrême cruauté, si bien que le monde, surtout si l’on considère le gouvernement du genre humain, ressemble plutôt à un chaos confus qu’à l’œuvre bien ordonnée d’une sagesse suprême. Que telle soit la première apparence, je l’accorde. Mais dès qu’on examine les choses de plus près, l’opinion contraire s’impose. Il est a priori certain, par les arguments mêmes qui ont été exposés, que toutes choses et à plus forte raison les esprits reçoivent la plus grande perfection possible.",
+      "Il est en effet injuste, comme le disent les juristes, de juger avant d’avoir examiné la loi tout entière. Nous ne connaissons qu’une partie infime de l’éternité qui se prolonge dans l’immensité ; car les quelques milliers d’années dont l’histoire nous a conservé la mémoire sont très peu de chose. Et cependant, c’est d’après cette expérience minime que nous jugeons témérairement de l’immensité et de l’éternité, semblables à des hommes qui, nés et élevés dans une prison […], croiraient qu’il n’y a pas dans le monde d’autre lumière que la méchante lampe, à peine suffisante pour diriger leurs pas. Regardons un très beau tableau, et couvrons-le ensuite de manière à n’en apercevoir qu’une minuscule partie : que verrons-nous dans celle-ci, même en l’examinant de très près et surtout même quand nous nous en rapprochons de plus en plus, sinon un amas confus de couleurs, fait sans choix et sans art ? Et cependant, en écartant le voile et en regardant le tableau tout entier de la distance convenable, on comprendra que ce qui avait l’air d’une tache faite au hasard sur la toile, est l’effet de l’art consommé du peintre. Ce qui arrive à l’œil dans la peinture, arrive également à l’oreille dans la musique. Les plus grands compositeurs entremêlent très souvent les accords de dissonances, pour exciter ou pour inquiéter l’auditeur qui, anxieux du dénouement, éprouve d’autant plus de joie, lorsque tout rentre dans l’ordre. […] C’est la loi même du plaisir, qu’il ne se maintient pas au même degré, car il engendre la satiété, il nous engourdit au lieu de nous réjouir."
+    ]
+  },
+  {
+    "id": "pascal-coeur-raison-foi",
+    "section": "philosophie",
+    "cardMeta": "Religion · foi et raison",
+    "title": "La raison ne peut comprendre la foi",
+    "author": "Blaise Pascal",
+    "authorTag": "Pascal",
+    "cardHighlight": "la raison ne peut comprendre la foi",
+    "authorMeta": "(1623–1662) · jansénisme",
+    "themes": [
+      "Religion",
+      "Raison",
+      "Vérité"
+    ],
+    "work": "Pensées",
+    "publication": "1670 posth., éd. L. Brunschvicg, 282 (Lafuma 110), dans Pensées et opuscules, Hachette, 1967, p. 459–460",
+    "description": "La raison peut-elle démontrer les premiers principes dont elle dépend elle-même, et peut-elle produire la foi religieuse ?",
+    "context": "Pascal distingue la connaissance <strong>discursive</strong> de la raison et une connaissance immédiate par le <strong>cœur</strong>. Les premiers principes ne sont pas démontrés mais sentis ; de même, la foi véritable n’est pas le simple résultat d’une chaîne de raisonnements.",
+    "readingQuestions": [
+      "Pourquoi Pascal affirme-t-il que les premiers principes sont connus par le cœur ?",
+      "Comment la raison dépend-elle de connaissances qu’elle ne démontre pas elle-même ?",
+      "Pourquoi la foi donnée par sentiment du cœur se distingue-t-elle d’une foi obtenue par raisonnement ?"
+    ],
+    "glossary": [
+      {
+        "term": "intuitif / discursif",
+        "definition": "Une connaissance intuitive saisit immédiatement ; une connaissance discursive procède par étapes et raisonnements."
+      },
+      {
+        "term": "cœur",
+        "definition": "Chez Pascal, faculté de connaissance immédiate des premiers principes et, dans l’ordre religieux, du sentiment de la foi ; il ne s’agit pas simplement de l’émotion."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Le cœur",
+          "definition": "Saisit ou sent les premiers principes sans démonstration."
+        },
+        "right": {
+          "term": "La raison",
+          "definition": "Démontre des conséquences à partir de principes qu’elle reçoit déjà."
+        },
+        "conclusion": "Pascal ne supprime pas la raison ; il en fixe les limites et lui interdit de se prendre pour la source de toutes nos certitudes."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "pascal-principes-demonstration-indemontrables",
+        "kind": "same-author",
+        "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+        "relation": "Les deux textes montrent que la raison démonstrative repose sur des points de départ qu’elle ne produit pas elle-même."
+      },
+      {
+        "id": "anselme-preuve-ontologique-dieu",
+        "kind": "adverse",
+        "label": "Saint Anselme — Dieu existe en vertu même de sa définition",
+        "relation": "Anselme met la raison au service de l’intelligence de la foi ; Pascal insiste davantage sur ce qui échappe à la démonstration."
+      }
+    ],
+    "paragraphs": [
+      "Nous connaissons la vérité, non seulement par la raison, mais encore par le cœur ; c’est de cette dernière sorte que nous connaissons les premiers principes et c’est en vain que le raisonnement, qui n’y a point de part, essaye de les combattre. Les pyrrhoniens, qui n’ont que cela pour objet, y travaillent inutilement. Nous savons que nous ne rêvons point ; quelque impuissance où nous soyons de le prouver par raison, cette impuissance ne conclut autre chose que la faiblesse de notre raison, mais non pas l’incertitude de toutes nos connaissances, comme ils le prétendent. Car la connaissance des premiers principes, comme qu’il y a espace, temps, mouvement, nombres, [est] aussi ferme qu’aucune de celles que nos raisonnements nous donnent. Et c’est sur ces connaissances du cœur et de l’instinct qu’il faut que la raison s’appuie, et qu’elle y fonde tout son discours. (Le cœur sent qu’il y a trois dimensions dans l’espace, et que les nombres sont infinis : et la raison démontre ensuite qu’il n’y a point deux nombres carrés dont l’un soit double de l’autre.) Les principes se sentent, les propositions se concluent ; et le tout avec certitude, quoique par différentes voies. Et il est aussi inutile et aussi ridicule que la raison demande au cœur des preuves de ses premiers principes, pour vouloir y consentir, qu’il serait ridicule que le cœur demandât à la raison un sentiment de toutes les propositions qu’elle démontre, pour vouloir les recevoir.",
+      "Cette impuissance ne doit donc servir qu’à humilier la raison, qui voudrait juger de tout, mais non pas à combattre notre certitude, comme s’il n’y avait que la raison capable de nous instruire. Plût à Dieu que nous n’en eussions au contraire jamais besoin, et que nous connussions toutes choses par instinct et par sentiment ! Mais la nature nous a refusé ce bien ; elle ne nous a donné au contraire que très peu de connaissances de cette sorte ; toutes les autres ne peuvent être acquises que par raisonnement.",
+      "Et c’est pourquoi ceux à qui Dieu a donné la religion par sentiment de cœur sont bien heureux et bien légitimement persuadés. Mais ceux qui ne l’ont pas nous ne pouvons la [leur] donner que par raisonnement, en attendant que Dieu la leur donne par sentiment de cœur, sans quoi la foi n’est qu’humaine et inutile pour le salut."
+    ]
+  },
+  {
+    "id": "robespierre-sentiment-religieux-morale-sociale",
+    "section": "philosophie",
+    "cardMeta": "Religion · morale sociale",
+    "title": "Le sentiment religieux maintient la morale sociale",
+    "author": "Maximilien Robespierre",
+    "authorTag": "Robespierre",
+    "cardHighlight": "maintient la morale sociale",
+    "authorMeta": "(1758–1794) · philosophie politique révolutionnaire",
+    "themes": [
+      "Religion",
+      "Devoir",
+      "État"
+    ],
+    "work": "Sur les rapports des idées religieuses et morales avec les principes républicains et les fêtes nationales",
+    "publication": "18 floréal de l’an II (7 mai 1794), Prévot, 1831, p. 18–20",
+    "description": "Une société politique peut-elle supprimer brutalement les croyances religieuses sans fragiliser les motifs moraux qui soutiennent les conduites ?",
+    "context": "Robespierre ne défend pas ici une religion révélée particulière. Il soutient qu’une croyance en l’Être suprême et en l’immortalité peut fonctionner comme <strong>sanction morale</strong> et comme lien social lorsque l’autorité humaine ne suffit pas à garantir les conduites.",
+    "readingQuestions": [
+      "Pourquoi la raison individuelle ne suffit-elle pas toujours, selon Robespierre, à garantir la conduite morale ?",
+      "Quel rôle le sentiment religieux joue-t-il comme sanction de la morale ?",
+      "Pourquoi veut-il éviter une suppression brusque des croyances traditionnelles ?"
+    ],
+    "glossary": [
+      {
+        "term": "tolérance",
+        "definition": "Principe permettant la coexistence de confessions ou convictions différentes sans leur donner le pouvoir de dominer la sphère politique."
+      },
+      {
+        "term": "sanction morale",
+        "definition": "Motif de récompense ou de punition qui renforce l’autorité pratique d’une règle morale."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Religion, morale et République",
+        "definition": "Robespierre défend moins la vérité théorique d’un dogme qu’une fonction pratique du religieux dans l’ordre civique."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "critias-dieu-invention-controle",
+        "kind": "adverse",
+        "label": "Critias — L’idée de Dieu est une invention destinée à contrôler les hommes",
+        "relation": "Les deux textes reconnaissent une fonction sociale à la croyance ; Critias la présente comme invention de contrôle, Robespierre comme soutien moral qu’il serait dangereux d’abolir sans remplacement."
+      },
+      {
+        "id": "marx-religion-opium-peuple",
+        "kind": "adverse",
+        "label": "Marx — La religion est l’opium du peuple",
+        "relation": "Marx voit dans la religion l’expression et le maintien indirect d’une détresse sociale qu’il faut transformer réellement."
+      }
+    ],
+    "paragraphs": [
+      "L’idée de l’Être suprême et de l’immortalité de l’âme est un rappel continuel à la justice ; elle est donc sociale et républicaine. […] Le chef-d’œuvre de la société serait de créer en lui, pour les choses morales, un instinct rapide qui, sans le secours tardif du raisonnement, le portât à faire le bien et à éviter le mal ; car la raison particulière de chaque homme égaré par ses passions, n’est souvent qu’un sophiste qui plaide leur cause, et l’autorité de l’homme peut toujours être attaquée par l’amour-propre de l’homme. Or ce qui produit ou remplace cet instinct précieux, ce qui supplée à l’insuffisance de l’autorité humaine, c’est le sentiment religieux qu’imprime dans les âmes l’idée d’une sanction donnée aux préceptes de la morale par une puissance supérieure à l’homme. Aussi je ne sache pas qu’aucun législateur se soit jamais avisé de nationaliser l’athéisme. Je sais que les plus sages même d’entre eux se sont permis de mêler à la vérité quelques fictions, soit pour frapper l’imagination des peuples ignorants, soit pour les attacher plus fortement à leurs institutions. Lycurgue et Solon eurent recours à l’autorité des oracles […].",
+      "Vous ne conclurez pas de là sans doute qu’il faille tromper les hommes pour les instruire ; mais seulement que vous êtes heureux de vivre dans un siècle et dans un pays dont les lumières ne vous laissent d’autre tâche à remplir que de rappeler les hommes à la nature et à la vérité.",
+      "Vous vous garderez bien de briser le lien sacré qui les unit à l’auteur de leur être. Il suffit même que cette opinion ait régné chez un peuple, pour qu’il soit dangereux de la détruire. Car les motifs des devoirs et les bases de la moralité s’étant nécessairement liés à cette idée, l’effacer, c’est démoraliser le peuple. Il résulte du même principe, qu’on ne doit jamais attaquer un culte établi qu’avec prudence et avec une certaine délicatesse, de peur qu’un changement subit et violent ne paraisse une atteinte portée à la morale, et une dispense de la probité même. Au reste, celui qui peut remplacer la divinité dans le système de la vie sociale, est à mes yeux un prodige de génie ; celui qui, sans l’avoir remplacée, ne songe qu’à la bannir de l’esprit des hommes, me paraît un prodige de stupidité ou de perversité."
+    ]
+  },
+  {
+    "id": "marx-religion-opium-peuple",
+    "section": "philosophie",
+    "cardMeta": "Religion · critique sociale",
+    "title": "La religion est « l’opium » qui tient le peuple asservi",
+    "author": "Karl Marx",
+    "authorTag": "Marx",
+    "cardHighlight": "l’opium du peuple",
+    "authorMeta": "(1818–1883) · matérialisme historique",
+    "themes": [
+      "Religion",
+      "État",
+      "Travail"
+    ],
+    "work": "Critique de la philosophie du droit de Hegel",
+    "publication": "1843, dans Marx et Engels, Sur la religion, Éd. Sociales, trad. Badia et alii, 1972, p. 40–41",
+    "description": "La religion est-elle seulement une illusion imposée d’en haut, ou aussi l’expression réelle d’une détresse sociale qu’elle rend supportable ?",
+    "context": "Marx soutient que la religion est produite par l’être humain dans un monde social où celui-ci ne s’est pas encore réalisé. Elle est à la fois <strong>expression de la détresse</strong> et protestation contre elle : l’abolir réellement suppose donc de transformer les conditions qui rendent cette consolation nécessaire.",
+    "readingQuestions": [
+      "Pourquoi Marx affirme-t-il que « c’est l’homme qui fait la religion » ?",
+      "Comment la religion peut-elle être à la fois expression de la détresse et protestation contre cette détresse ?",
+      "Pourquoi la critique de la religion conduit-elle à la critique du monde social qui en a besoin ?"
+    ],
+    "glossary": [
+      {
+        "term": "opium du peuple",
+        "definition": "Métaphore par laquelle Marx désigne une consolation qui apaise une souffrance réelle sans supprimer les conditions qui la produisent."
+      },
+      {
+        "term": "aliénation",
+        "definition": "Situation dans laquelle l’être humain voit ses propres puissances ou productions se dresser face à lui comme des réalités étrangères et dominantes."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Critiquer les conditions, pas seulement l’illusion",
+        "definition": "La thèse ne se réduit pas à dire que la religion trompe : elle explique aussi pourquoi cette illusion répond à une souffrance réelle."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "freud-dieu-protection-paternelle",
+        "kind": "proche",
+        "label": "Freud — À travers Dieu, l’homme recherche une protection paternelle",
+        "relation": "Freud et Marx expliquent la croyance à partir d’un besoin humain, psychique chez l’un, socio-historique chez l’autre."
+      },
+      {
+        "id": "gauchet-religion-lien-social",
+        "kind": "proche",
+        "label": "Gauchet — Même sans religion, le lien social conserve une dimension de religiosité",
+        "relation": "Gauchet interroge ce qui subsiste du religieux dans des sociétés qui se sont institutionnellement sécularisées."
+      }
+    ],
+    "paragraphs": [
+      "[C]’est l’homme qui fait la religion, ce n’est pas la religion qui fait l’homme. Certes, la religion est la conscience de soi et le sentiment de soi qu’a l’homme qui ne s’est pas encore trouvé lui-même, ou bien s’est déjà reperdu. […] La religion […] est la réalisation fantastique de l’être humain, parce que l’être humain ne possède pas de vraie réalité. Lutter contre la religion, c’est donc indirectement lutter contre ce monde-là, dont la religion est l’arôme spirituel.",
+      "La détresse religieuse est, pour une part, l’expression de la détresse réelle et, pour une autre, la protestation contre la détresse réelle. La religion est le soupir de la créature opprimée, l’âme d’un monde sans cœur, comme elle est l’esprit de conditions sociales d’où l’esprit est exclu. Elle est l’opium du peuple.",
+      "L’abolition de la religion en tant que bonheur illusoire du peuple est l’exigence que formule son bonheur réel. Exiger qu’il renonce aux illusions sur sa situation c’est exiger qu’il renonce à une situation qui a besoin d’illusions. La critique de la religion est donc en germe la critique de cette vallée de larmes dont la religion est l’auréole."
+    ]
+  },
+  {
+    "id": "nietzsche-dieu-mort-valeurs",
+    "section": "philosophie",
+    "cardMeta": "Religion · mort de Dieu et valeurs",
+    "title": "« Dieu est mort » mais les valeurs survivent à la destruction de la croyance",
+    "author": "Friedrich Nietzsche",
+    "authorTag": "Nietzsche",
+    "cardHighlight": "Dieu est mort",
+    "authorMeta": "(1844–1900) · généalogie / critique des valeurs",
+    "themes": [
+      "Religion",
+      "Vérité",
+      "Devoir"
+    ],
+    "work": "Le Gai Savoir",
+    "publication": "1882, § 343, trad. P. Klossowski, Gallimard, 1982, p. 237",
+    "description": "La disparition de la croyance chrétienne suffit-elle à faire disparaître les valeurs, habitudes et institutions qui se sont construites autour d’elle ?",
+    "context": "Nietzsche présente la <strong>mort de Dieu</strong> comme un événement culturel dont les conséquences sont encore à venir. Une croyance peut s’effondrer tandis que les valeurs, pratiques et institutions qu’elle a façonnées continuent longtemps à organiser la vie européenne.",
+    "readingQuestions": [
+      "Pourquoi la nouvelle de la mort de Dieu ne se fait-elle pas immédiatement entendre ?",
+      "Comment une croyance disparue peut-elle continuer à agir à travers des valeurs et des institutions ?",
+      "Pourquoi Nietzsche cite-t-il la morale européenne comme exemple de cette survivance ?"
+    ],
+    "glossary": [
+      {
+        "term": "mort de Dieu",
+        "definition": "Formule nietzschéenne désignant la perte de crédibilité du Dieu chrétien et, plus largement, l’effondrement du fondement transcendant traditionnel des valeurs."
+      },
+      {
+        "term": "valeur",
+        "definition": "Ce par quoi nous hiérarchisons, préférons et jugeons ; Nietzsche cherche à interroger l’histoire et la provenance de nos valeurs."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Un événement encore inachevé",
+        "definition": "Pour Nietzsche, la fin explicite d’une croyance ne supprime pas immédiatement les manières de penser qui ont été construites sur elle."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "sartre-homme-prendre-place-dieu",
+        "kind": "proche",
+        "label": "Sartre — L’homme doit prendre la place de Dieu comme créateur de valeurs",
+        "relation": "Sartre tire de l’absence de Dieu une responsabilité humaine radicale dans la création des valeurs."
+      },
+      {
+        "id": "marx-religion-opium-peuple",
+        "kind": "proche",
+        "label": "Marx — La religion est l’opium du peuple",
+        "relation": "Deux critiques de la religion, mais l’une met l’accent sur les conditions sociales et l’autre sur la généalogie des valeurs."
+      }
+    ],
+    "paragraphs": [
+      "343. Ce qu’il en est de notre gaieté. — Le plus grand événement récent — à savoir que « Dieu est mort », que la croyance au Dieu chrétien est tombée en discrédit — commence dès maintenant à étendre son ombre sur l’Europe. […] Mais sous le rapport essentiel on peut dire : l’événement en soi est beaucoup trop considérable, trop lointain, trop au-delà de la faculté conceptuelle du grand nombre pour que l’on puisse prétendre que la nouvelle en soit déjà parvenue, à bien moins encore, que d’aucuns se rendent compte de ce qui s’est réellement passé — comme de tout ce qui doit désormais s’effondrer, une fois ruinée cette croyance, pour avoir été fondée et bâtie sur elle, et pour ainsi dire, enchevêtrée en elle : par exemple notre morale européenne dans sa totalité."
+    ]
+  },
+  {
+    "id": "gauchet-religion-lien-social",
+    "section": "philosophie",
+    "cardMeta": "Religion · sécularisation et lien social",
+    "title": "Même sans religion, le lien social a besoin de religiosité pour subsister",
+    "author": "Marcel Gauchet",
+    "authorTag": "Gauchet",
+    "cardHighlight": "le lien social a besoin de religiosité",
+    "authorMeta": "(né en 1946) · philosophie politique contemporaine",
+    "themes": [
+      "Religion",
+      "État",
+      "Devoir"
+    ],
+    "work": "Le Désenchantement du monde",
+    "publication": "Gallimard, 1985, p. 133–134",
+    "description": "La sortie institutionnelle de la religion signifie-t-elle la disparition complète de toute expérience religieuse ou symbolique ?",
+    "context": "Gauchet distingue la baisse de croyance personnelle de la <strong>sortie de la religion</strong> comme principe d’organisation collective. La religion a historiquement structuré ensemble vie matérielle, sociale et mentale ; même après cette sortie, des formes de foi ou d’expérience religieuse peuvent subsister.",
+    "readingQuestions": [
+      "Pourquoi la fin de la croyance en Dieu ne signifie-t-elle pas nécessairement la fin de la religion ?",
+      "Que veut dire Gauchet lorsqu’il affirme que la religion était une « économie générale du fait humain » ?",
+      "Peut-il subsister une expérience religieuse dans une société dégagée de l’emprise structurante de la croyance ?"
+    ],
+    "glossary": [
+      {
+        "term": "sécularisation",
+        "definition": "Processus par lequel des institutions, valeurs ou pratiques se détachent de leur encadrement religieux et s’organisent selon des logiques autonomes."
+      },
+      {
+        "term": "sortie de la religion",
+        "definition": "Chez Gauchet, transformation historique par laquelle la religion cesse d’organiser structurellement l’ensemble de la vie collective, même si des croyances individuelles subsistent."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Croyance individuelle et structure sociale",
+        "definition": "Le critère décisif n’est pas seulement ce que les individus croient intérieurement, mais la manière dont la société organise ses institutions et ses pratiques."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "marx-religion-opium-peuple",
+        "kind": "proche",
+        "label": "Marx — La religion est l’opium du peuple",
+        "relation": "Marx rattache la religion à un monde social aliéné ; Gauchet décrit historiquement le passage à des sociétés dont l’organisation n’est plus structurée par la religion."
+      },
+      {
+        "id": "robespierre-sentiment-religieux-morale-sociale",
+        "kind": "adverse",
+        "label": "Robespierre — Le sentiment religieux maintient la morale sociale",
+        "relation": "Robespierre pense le religieux comme soutien nécessaire de la moralité civique ; Gauchet analyse des sociétés où le lien social s’autonomise structurellement de la religion."
+      }
+    ],
+    "paragraphs": [
+      "S’il y a sens ainsi à parler de quelque chose comme une « fin » ou comme une « sortie » de la religion, ce n’est pas tant du point de vue de la conscience des acteurs que du point de vue de l’articulation de leur pratique. Le critère n’est pas ce que pensent et croient à titre personnel les membres d’une société donnée. Ce qui compte et décide, en la matière, c’est l’ordre de leurs opérations de pensée, c’est le mode de leur coexistence, ce sont la forme de leur insertion dans l’être et la dynamique de leur activité. On peut concevoir, à la limite, une société qui ne comprendrait que des croyants et qui n’en serait pas moins une société d’au-delà du religieux. Car la religion, ce fut d’abord une économie générale du fait humain, structurant indissolublement la vie matérielle, la vie sociale et la vie mentale. […] Et c’est proprement en cela que nous avons d’ores et déjà basculé hors de l’âge des religions. Non parce que l’influence des Églises, le nombre des fidèles et l’intensité de la foi auraient diminué assez pour qu’on les décrète dépourvus dorénavant de signification, voire pour qu’on puisse prédire leur prochaine disparition. Mais beaucoup plus sûrement parce que la logique conservatrice de l’intégration dans l’être et de la solidarité avec le donné naturel ou culturel s’est renversée, parce que la nécessité de l’attache hiérarchique s’est dissoute, parce que les contraintes à concevoir le monde en tout point uni à ses origines (pensée mythique) et partout correspondant à lui-même (pensée symbolique) se sont défaites.",
+      "Hors cela, ce procès de décomposition/recomposition du cadre humain-social mené à son terme, rien n’interdit d’envisager la survivance indéfinie de libres sociétés de croyance et de pensée à l’intérieur d’une société entièrement dégagée de l’emprise structurante de la croyance. Et à supposer même que vienne à s’évanouir toute espèce de dogme constitué, que disparaisse toute manière de sociabilité à base de foi partagée et de culte à célébrer en commun, il est possible que doive à jamais subsister la faculté d’une expérience de type religieux pour les individus."
+    ]
+  },
+  {
+    "id": "sartre-homme-prendre-place-dieu",
+    "section": "philosophie",
+    "cardMeta": "Religion · athéisme et création des valeurs",
+    "title": "C’est l’homme qui, comme créateur, va prendre la place de Dieu",
+    "author": "Jean-Paul Sartre",
+    "authorTag": "Sartre",
+    "cardHighlight": "prendre la place de Dieu",
+    "authorMeta": "(1905–1980) · existentialisme",
+    "themes": [
+      "Religion",
+      "Liberté",
+      "Devoir"
+    ],
+    "work": "L’existentialisme est un humanisme",
+    "publication": "1946, Gallimard, 1996, p. 39–40 et 73–74",
+    "description": "Si Dieu n’existe pas et qu’aucune valeur n’est donnée d’avance, l’être humain doit-il inventer lui-même le sens et les valeurs de son existence ?",
+    "context": "Sartre tire les conséquences de l’<strong>existentialisme athée</strong> : il n’existe ni nature humaine prédéfinie ni valeurs transcendantes auxquelles se référer. L’être humain est donc libre, sans excuses, et responsable de la signification qu’il donne à sa vie.",
+    "readingQuestions": [
+      "Pourquoi l’absence de Dieu signifie-t-elle pour Sartre qu’aucune valeur n’est donnée à l’avance ?",
+      "Comment « l’existence précède l’essence » conduit-elle à la liberté et à la responsabilité ?",
+      "Pourquoi inventer des valeurs ne signifie-t-il pas que toutes se valent arbitrairement ?"
+    ],
+    "glossary": [
+      {
+        "term": "transcendant / immanent",
+        "definition": "Une valeur transcendante serait donnée au-delà de l’existence humaine ; une valeur immanente est produite dans l’existence et les choix eux-mêmes."
+      },
+      {
+        "term": "condamné à être libre",
+        "definition": "Formule de Sartre : nous n’avons pas choisi d’exister, mais une fois dans le monde nous devons choisir et répondre de ce que nous faisons."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Après Dieu, la responsabilité",
+        "definition": "La suppression d’un fondement divin n’abolit pas la morale chez Sartre : elle rend au contraire l’être humain responsable de la création et du choix des valeurs."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "nietzsche-dieu-mort-valeurs",
+        "kind": "proche",
+        "label": "Nietzsche — « Dieu est mort » mais les valeurs survivent",
+        "relation": "Nietzsche diagnostique la persistance des anciennes valeurs après la mort de Dieu ; Sartre insiste sur la nécessité d’assumer la création humaine de nouvelles valeurs."
+      },
+      {
+        "id": "sartre-existence-precede-essence",
+        "kind": "same-author",
+        "label": "Sartre — L’existence précède l’essence",
+        "relation": "Le texte déjà présent développe le principe ontologique qui fonde ici l’athéisme existentialiste et la responsabilité."
+      }
+    ],
+    "paragraphs": [
+      "Dostoïevski avait écrit : « Si Dieu n’existait pas, tout serait permis. » C’est là le point de départ de l’existentialisme. En effet, tout est permis si Dieu n’existe pas, et par conséquent l’homme est délaissé, parce qu’il ne trouve ni en lui, ni hors de lui une possibilité de s’accrocher. Il ne trouve d’abord pas d’excuses. Si, en effet, l’existence précède l’essence, on ne pourra jamais expliquer par référence à une nature humaine donnée et figée ; autrement dit, il n’y a pas de déterminisme, l’homme est libre, l’homme est liberté. Si, d’autre part, Dieu n’existe pas, nous ne trouvons pas en face de nous des valeurs ou des ordres qui légitimeront notre conduite. Ainsi, nous n’avons ni derrière nous, ni devant nous, dans le domaine lumineux des valeurs, des justifications ou des excuses. Nous sommes seuls sans excuses. C’est ce que j’exprimerai en disant que l’homme est condamné à être libre. Condamné, parce qu’il ne s’est pas créé lui-même, et par ailleurs cependant libre, parce qu’une fois jeté dans le monde, il est responsable de ce qu’il fait. […] L’Existentialiste ne pensera pas […] que l’homme peut trouver un secours dans un signe donné, sur terre, qui l’orientera ; car il pense que l’homme déchiffre lui-même le signe comme il lui plaît. Il pense donc que l’homme, sans aucun appui et sans aucun secours, est condamné à chaque instant à inventer l’homme. […]",
+      "Si j’ai supprimé Dieu le père, il faut bien quelqu’un pour inventer les valeurs. Il faut prendre les choses comme elles sont. Et par ailleurs, dire que nous inventons les valeurs ne signifie pas autre chose que ceci : la vie n’a pas de sens a priori. Avant que vous ne la viviez, la vie, elle, n’est rien, mais c’est à vous de lui donner un sens, et la valeur n’est pas autre chose que ce sens que vous choisissez."
+    ]
+  }
+]

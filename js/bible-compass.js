@@ -496,7 +496,58 @@
 
 
   // ------------------------------------------------------------
-  // Glossaire approfondi : recherche locale, variantes et synonymes.
+  // Navigation mobile de la boussole : lisible en tête de page, puis
+  // transformée en rail d’icônes discret quand on continue la lecture.
+  // ------------------------------------------------------------
+  const jumpWrap = document.querySelector("[data-bible-jump-wrap]");
+  const jumpNav = jumpWrap?.querySelector(".bible-compass-jump");
+  if (jumpWrap && jumpNav) {
+    const mobileMq = window.matchMedia("(max-width: 700px)");
+    let wrapHeight = 0;
+
+    const measureJump = () => {
+      if (!mobileMq.matches) {
+        jumpNav.classList.remove("is-floating");
+        jumpWrap.style.removeProperty("height");
+        return;
+      }
+      const wasFloating = jumpNav.classList.contains("is-floating");
+      if (wasFloating) jumpNav.classList.remove("is-floating");
+      wrapHeight = Math.ceil(jumpNav.getBoundingClientRect().height);
+      jumpWrap.style.height = `${wrapHeight}px`;
+      if (wasFloating) jumpNav.classList.add("is-floating");
+    };
+
+    const updateFloatingJump = () => {
+      if (!mobileMq.matches) {
+        jumpNav.classList.remove("is-floating");
+        jumpWrap.style.removeProperty("height");
+        return;
+      }
+      if (!wrapHeight) measureJump();
+      const siteHeader = document.getElementById("site-header");
+      const headerHeight = siteHeader?.getBoundingClientRect().height || 68;
+      const rect = jumpWrap.getBoundingClientRect();
+      jumpNav.classList.toggle("is-floating", rect.top <= headerHeight + 8);
+    };
+
+    jumpNav.querySelectorAll("a").forEach(link => {
+      const label = link.querySelector(".bible-jump-copy strong")?.textContent?.trim();
+      if (label) {
+        link.setAttribute("aria-label", label);
+        link.dataset.floatingLabel = label;
+      }
+    });
+
+    measureJump();
+    updateFloatingJump();
+    window.addEventListener("scroll", updateFloatingJump, { passive:true });
+    window.addEventListener("resize", () => { measureJump(); updateFloatingJump(); });
+    mobileMq.addEventListener?.("change", () => { measureJump(); updateFloatingJump(); });
+  }
+
+  // ------------------------------------------------------------
+  // Dictionnaire biblique : recherche, familles et navigation croisée.
   // ------------------------------------------------------------
   const glossaryRoot = document.querySelector("[data-bible-glossary]");
   const GLOSSARY = Array.isArray(window.BIBLE_GLOSSARY) ? window.BIBLE_GLOSSARY : [];
@@ -505,6 +556,8 @@
     const results = glossaryRoot.querySelector("[data-glossary-results]");
     const starters = glossaryRoot.querySelector("[data-glossary-starters]");
     const count = glossaryRoot.querySelector("[data-glossary-count]");
+    const groupNav = glossaryRoot.querySelector("[data-glossary-groups]");
+    const groupButtons = [...glossaryRoot.querySelectorAll("[data-glossary-group]")];
     const detail = glossaryRoot.querySelector("[data-glossary-detail]");
     const empty = glossaryRoot.querySelector("[data-glossary-empty]");
     const content = glossaryRoot.querySelector("[data-glossary-content]");
@@ -513,9 +566,31 @@
     const origin = glossaryRoot.querySelector("[data-glossary-origin]");
     const definition = glossaryRoot.querySelector("[data-glossary-definition]");
     const context = glossaryRoot.querySelector("[data-glossary-context]");
+    const history = glossaryRoot.querySelector("[data-glossary-history]");
+    const historySection = glossaryRoot.querySelector("[data-glossary-history-section]");
+    const literary = glossaryRoot.querySelector("[data-glossary-literary]");
+    const literarySection = glossaryRoot.querySelector("[data-glossary-literary-section]");
+    const theology = glossaryRoot.querySelector("[data-glossary-theology]");
+    const theologySection = glossaryRoot.querySelector("[data-glossary-theology-section]");
     const nuance = glossaryRoot.querySelector("[data-glossary-nuance]");
     const references = glossaryRoot.querySelector("[data-glossary-references]");
     const related = glossaryRoot.querySelector("[data-glossary-related]");
+    const siteSection = glossaryRoot.querySelector("[data-glossary-site-section]");
+    const siteLinks = glossaryRoot.querySelector("[data-glossary-site-links]");
+    const philosophySection = glossaryRoot.querySelector("[data-glossary-philosophy-section]");
+    const philosophyText = glossaryRoot.querySelector("[data-glossary-philosophy]");
+    const philosophyLinks = glossaryRoot.querySelector("[data-glossary-philosophy-links]");
+
+    const GROUP_LABELS = {
+      all: "entrées",
+      personnes: "personnes",
+      lieux: "lieux",
+      histoire: "repères historiques",
+      notions: "notions",
+      vocabulaire: "mots & pratiques",
+      expressions: "expressions"
+    };
+    let activeGroup = "all";
     let activeResult = -1;
     let currentMatches = [];
 
@@ -527,9 +602,37 @@
       .replace(/\s+/g," ").trim();
 
     GLOSSARY.forEach(entry => {
-      entry._search = normalize([entry.term, ...(entry.aliases || []), entry.category].join(" "));
+      const aliases = Array.isArray(entry.aliases) ? entry.aliases : [];
+      entry.related = Array.isArray(entry.related)
+        ? entry.related
+        : String(entry.related || "").split(/[;|]/).map(item => item.trim()).filter(Boolean);
+      entry._search = normalize([
+        entry.term,
+        ...aliases,
+        entry.category,
+        entry.origin,
+        entry.definition
+      ].filter(Boolean).join(" "));
     });
-    if (count) count.textContent = `${GLOSSARY.length} entrées`;
+
+    const entriesForGroup = group => group === "all"
+      ? GLOSSARY
+      : GLOSSARY.filter(entry => entry.group === group);
+
+    const updateCount = () => {
+      if (!count) return;
+      const total = entriesForGroup(activeGroup).length;
+      count.textContent = `${total} ${GROUP_LABELS[activeGroup] || "entrées"}`;
+    };
+
+    const updateGroupButtons = () => {
+      groupButtons.forEach(button => {
+        const active = button.dataset.glossaryGroup === activeGroup;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+      updateCount();
+    };
 
     const scoreEntry = (entry, query) => {
       const term = normalize(entry.term);
@@ -545,11 +648,16 @@
 
     const findMatches = value => {
       const query = normalize(value);
-      if (!query) return [];
-      return GLOSSARY.map(entry => [entry, scoreEntry(entry,query)])
+      const pool = entriesForGroup(activeGroup);
+      if (!query) {
+        return activeGroup === "all"
+          ? []
+          : [...pool].sort((a,b) => a.term.localeCompare(b.term,"fr")).slice(0,12);
+      }
+      return pool.map(entry => [entry, scoreEntry(entry,query)])
         .filter(([,score]) => score > 0)
         .sort((a,b) => b[1]-a[1] || a[0].term.localeCompare(b[0].term,"fr"))
-        .slice(0,8).map(([entry]) => entry);
+        .slice(0,10).map(([entry]) => entry);
     };
 
     const closeResults = () => {
@@ -558,37 +666,68 @@
       activeResult = -1;
     };
 
+    const hideDetail = () => {
+      if (detail) detail.hidden = true;
+      if (content) content.hidden = true;
+    };
+
     const paintActive = () => {
-      results.querySelectorAll("button").forEach((button,index) => {
+      results.querySelectorAll("button[role='option']").forEach((button,index) => {
         const active = index === activeResult;
         button.classList.toggle("is-active",active);
         button.setAttribute("aria-selected",active ? "true" : "false");
       });
     };
 
+    const renderLinks = (container, links=[]) => {
+      if (!container) return;
+      container.innerHTML = "";
+      links.forEach(link => {
+        if (!link?.href || !link?.label) return;
+        const anchor = document.createElement("a");
+        anchor.href = link.href;
+        anchor.textContent = link.label;
+        container.append(anchor);
+      });
+    };
+
+    const renderBridges = entry => {
+      const localLinks = Array.isArray(entry.siteLinks) ? entry.siteLinks : [];
+      renderLinks(siteLinks, localLinks);
+      if (siteSection) siteSection.hidden = localLinks.length === 0;
+
+      const philoLinks = Array.isArray(entry.philosophyLinks) ? entry.philosophyLinks : [];
+      if (philosophyText) philosophyText.textContent = entry.philosophy || "";
+      renderLinks(philosophyLinks, philoLinks);
+      if (philosophySection) philosophySection.hidden = !(entry.philosophy || philoLinks.length);
+    };
+
+    const resolveRelatedTarget = term => {
+      const normalized = normalize(term);
+      const exact = GLOSSARY.find(entry => normalize(entry.term) === normalized)
+        || GLOSSARY.find(entry => (entry.aliases || []).some(alias => normalize(alias) === normalized));
+      if (exact) return exact;
+      return GLOSSARY.map(entry => [entry, scoreEntry(entry,normalized)])
+        .filter(([,score]) => score > 0)
+        .sort((a,b) => b[1]-a[1] || a[0].term.localeCompare(b[0].term,"fr"))[0]?.[0] || null;
+    };
+
     const renderRelated = terms => {
       related.innerHTML = "";
-      (terms || []).slice(0,7).forEach(term => {
+      (Array.isArray(terms) ? terms : []).slice(0,7).forEach(term => {
+        const target = resolveRelatedTarget(term);
+        if (!target) return;
         const button = document.createElement("button");
         button.type = "button";
         button.textContent = term;
-        button.addEventListener("click",() => {
-          const target = GLOSSARY.find(entry => entry.term === term) || GLOSSARY.find(entry => normalize(entry.term) === normalize(term));
-          if (target) selectEntry(target);
-          else {
-            search.value = term;
-            renderResults(findMatches(term));
-            search.focus();
-          }
-        });
+        button.addEventListener("click",() => selectEntry(target));
         related.append(button);
       });
     };
 
     const renderEntry = (entry,{close=true,updateSearch=true}={}) => {
       if (!entry) {
-        if (detail) detail.hidden = true;
-        content.hidden = true;
+        hideDetail();
         return;
       }
       if (updateSearch) search.value = entry.term;
@@ -596,11 +735,24 @@
       category.textContent = entry.category;
       origin.textContent = entry.origin || "";
       origin.hidden = !entry.origin;
-      definition.textContent = entry.definition;
-      context.textContent = entry.context;
-      nuance.textContent = entry.nuance;
-      references.textContent = entry.refs;
+      definition.textContent = entry.definition || "";
+      context.textContent = entry.context || "";
+      if (history && historySection) {
+        history.textContent = entry.history || "";
+        historySection.hidden = !entry.history;
+      }
+      if (literary && literarySection) {
+        literary.textContent = entry.literary || "";
+        literarySection.hidden = !entry.literary;
+      }
+      if (theology && theologySection) {
+        theology.textContent = entry.theology || "";
+        theologySection.hidden = !entry.theology;
+      }
+      nuance.textContent = entry.nuance || "";
+      references.textContent = entry.refs || "";
       renderRelated(entry.related);
+      renderBridges(entry);
       if (empty) empty.hidden = true;
       if (detail) detail.hidden = false;
       content.hidden = false;
@@ -618,14 +770,29 @@
       activeResult = -1;
       results.innerHTML = "";
       if (!matches.length) {
-        results.innerHTML = '<div class="bible-glossary-no-result">Aucune entrée trouvée. Essayez un mot plus court ou un synonyme.</div>';
+        const noResult = document.createElement("div");
+        noResult.className = "bible-glossary-no-result";
+        noResult.textContent = activeGroup === "all"
+          ? "Aucune entrée trouvée. Essayez un mot plus court ou un synonyme."
+          : `Aucune entrée trouvée dans « ${GROUP_LABELS[activeGroup]} ». Essayez une autre famille.`;
+        results.append(noResult);
       } else {
         matches.forEach((entry,index) => {
           const button = document.createElement("button");
           button.type = "button";
           button.role = "option";
           button.dataset.glossaryIndex = String(index);
-          button.innerHTML = `<span><strong>${entry.term}</strong><small>${entry.category}</small></span><i aria-hidden="true">→</i>`;
+          button.setAttribute("aria-selected","false");
+          const copy = document.createElement("span");
+          const strong = document.createElement("strong");
+          const small = document.createElement("small");
+          const arrow = document.createElement("i");
+          strong.textContent = entry.term;
+          small.textContent = entry.category;
+          arrow.setAttribute("aria-hidden","true");
+          arrow.textContent = "→";
+          copy.append(strong,small);
+          button.append(copy,arrow);
           button.addEventListener("mousedown",event => event.preventDefault());
           button.addEventListener("click",() => selectEntry(entry));
           results.append(button);
@@ -635,27 +802,37 @@
       search.setAttribute("aria-expanded","true");
     };
 
-    search.addEventListener("input",() => {
+    const refreshFromControls = ({preview=true}={}) => {
       const value = search.value.trim();
-      if (!value) {
+      if (!value && activeGroup === "all") {
         closeResults();
-        if (detail) detail.hidden = true;
-        content.hidden = true;
+        hideDetail();
         return;
       }
       const matches = findMatches(value);
       renderResults(matches);
-      if (matches[0]) renderEntry(matches[0],{close:false,updateSearch:false});
-      else {
-        if (detail) detail.hidden = true;
-        content.hidden = true;
-      }
+      if (preview && value && matches[0]) renderEntry(matches[0],{close:false,updateSearch:false});
+      else if (value) hideDetail();
+    };
+
+    groupButtons.forEach(button => {
+      button.addEventListener("click",() => {
+        activeGroup = button.dataset.glossaryGroup || "all";
+        search.value = "";
+        updateGroupButtons();
+        hideDetail();
+        refreshFromControls({preview:false});
+        if (activeGroup !== "all") search.focus({preventScroll:true});
+      });
     });
+
+    search.addEventListener("input",() => refreshFromControls({preview:true}));
     search.addEventListener("focus",() => {
-      if (search.value.trim()) renderResults(findMatches(search.value));
+      const value = search.value.trim();
+      if (value || activeGroup !== "all") renderResults(findMatches(value));
     });
     search.addEventListener("keydown",event => {
-      const buttons = [...results.querySelectorAll("button")];
+      const buttons = [...results.querySelectorAll("button[role='option']")];
       if (event.key === "ArrowDown" && buttons.length) {
         event.preventDefault();
         activeResult = Math.min(activeResult + 1,buttons.length - 1);
@@ -674,10 +851,16 @@
 
     starters?.querySelectorAll("[data-glossary-term]").forEach(button => {
       button.addEventListener("click",() => {
-        const entry = GLOSSARY.find(item => item.term === button.dataset.glossaryTerm);
-        if (entry) selectEntry(entry);
+        const entry = GLOSSARY.find(item => item.term === button.dataset.glossaryTerm)
+          || GLOSSARY.find(item => normalize(item.term) === normalize(button.dataset.glossaryTerm));
+        if (!entry) return;
+        activeGroup = entry.group || "all";
+        updateGroupButtons();
+        selectEntry(entry);
       });
     });
+
+    updateGroupButtons();
     document.addEventListener("click",event => { if (!glossaryRoot.contains(event.target)) closeResults(); });
     document.addEventListener("keydown",event => {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {

@@ -1,0 +1,334 @@
+[
+  {
+    "id": "hume-causalite-experience-induction",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · causalité et induction",
+    "title": "Les lois du réel sont seulement induites à partir de notre expérience",
+    "author": "David Hume",
+    "authorTag": "Hume",
+    "cardHighlight": "induites à partir de notre expérience",
+    "authorMeta": "(1711–1776) · empirisme",
+    "themes": [
+      "Science",
+      "Théorie et expérience"
+    ],
+    "work": "Enquête sur l’entendement humain",
+    "publication": "1748, section IV, trad. A. Leroy, GF, 2006, p. 85–89",
+    "description": "La relation de cause à effet peut-elle être connue par la raison seule, ou ne vient-elle que de l’expérience et de l’habitude ?",
+    "context": "Hume montre qu’aucune contradiction logique n’empêche d’imaginer que les événements se produisent autrement qu’à l’ordinaire. Le lien causal n’est donc pas découvert a priori : nous l’apprenons par l’expérience répétée et la coutume.",
+    "readingQuestions": [
+      "Pourquoi le contraire d’un fait reste-t-il toujours concevable sans contradiction ?",
+      "Pourquoi la relation de cause à effet ne peut-elle pas être connue par un raisonnement a priori ?",
+      "Que montre l’exemple des billes de billard sur le rôle de la coutume dans notre croyance à la causalité ?"
+    ],
+    "glossary": [
+      {
+        "term": "a priori",
+        "definition": "Ce qui est établi indépendamment de l’expérience sensible."
+      },
+      {
+        "term": "induction",
+        "definition": "Raisonnement qui généralise à partir d’observations particulières répétées."
+      },
+      {
+        "term": "causalité",
+        "definition": "Relation selon laquelle un événement est tenu pour la cause d’un autre ; Hume soutient que cette relation est apprise par l’expérience plutôt que déduite par la raison seule."
+      }
+    ],
+    "paragraphs": [
+      "Le contraire d’un fait quelconque est toujours possible, car il n’implique pas contradiction et l’esprit le conçoit aussi facilement et aussi distinctement que s’il concordait pleinement avec la réalité. Le soleil ne se lèvera pas demain, cette proposition n’est pas moins intelligible et elle n’implique pas plus contradiction que l’affirmation : il se lèvera. Nous tenterions donc en vain d’en démontrer la fausseté. Si elle était démonstrativement fausse, elle impliquerait contradiction et l’esprit ne pourrait jamais la concevoir distinctement. […]",
+      "Tous les raisonnements sur les faits paraissent se fonder sur la relation de la cause à l’effet. […] J’oserai affirmer, comme une proposition générale qui n’admet pas d’exception, que la connaissance de cette relation ne s’obtient, en aucun cas, par des raisonnements a priori ; mais qu’elle naît entièrement de l’expérience, quand nous trouvons que des objets particuliers sont en conjonction constante l’un avec l’autre. […]",
+      "Nous imaginons que, si nous étions subitement introduits dans ce monde, nous pourrions dès l’abord inférer qu’une bille de billard communique du mouvement à une autre par impulsion, et que nous n’aurions nul besoin d’attendre la réalisation de cet événement pour prononcer avec certitude à son sujet. Telle est l’influence de la coutume que, là où elle est la plus forte, elle ne masque pas seulement notre ignorance naturelle, mais elle se cache elle-même et semble ne pas intervenir, uniquement parce qu’elle intervient au suprême degré.",
+      "[…] Le mouvement de la seconde bille de billard est un événement absolument distinct du mouvement de la première ; il n’y a rien dans l’un qui suggère la plus petite indication sur l’autre. […] Quand je vois, par exemple, une bille de billard qui se meut en ligne droite vers une autre, à supposer même que le mouvement de la seconde bille me soit accidentellement suggéré comme résultat de leur contact ou de l’impulsion, ne puis-je pas concevoir que cent événements différents pourraient aussi bien suivre de cette cause ? Les billes ne peuvent-elles toutes deux rester en repos absolu ? La première bille ne peut-elle retourner en ligne droite ou rebondir de la seconde dans une ligne ou une direction quelconque ? Toutes ces suppositions sont cohérentes et concevables. Alors, pourquoi donner la préférence à l’une d’elles qui n’est ni plus cohérente ni plus concevable que les autres ? Tous nos raisonnements a priori ne seront jamais capables de nous montrer le fondement de cette préférence."
+    ]
+  },
+  {
+    "id": "kant-connaissance-experience-a-priori",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · empirique et a priori",
+    "title": "La connaissance commence avec l’expérience, mais n’en dérive pas tout entière",
+    "author": "Emmanuel Kant",
+    "authorTag": "Kant",
+    "cardHighlight": "commence avec l’expérience",
+    "authorMeta": "(1724–1804) · philosophie critique",
+    "themes": [
+      "Raison",
+      "Théorie et expérience"
+    ],
+    "work": "Critique de la raison pure",
+    "publication": "1781–1787, Introduction, trad. A. Tremesaygues et B. Pacaud, PUF, 1986, p. 31–33",
+    "description": "L’expérience est-elle seulement l’origine chronologique de notre connaissance, ou suffit-elle aussi à en expliquer le contenu et l’universalité ?",
+    "context": "Kant distingue le fait que toute connaissance commence avec l’expérience de la thèse selon laquelle elle en dériverait entièrement. Certaines formes de connaissance, notamment les jugements strictement universels, renvoient selon lui à des conditions a priori.",
+    "readingQuestions": [
+      "Pourquoi Kant affirme-t-il que toute connaissance commence avec l’expérience ?",
+      "Pourquoi cela ne prouve-t-il pas que toute connaissance dérive de l’expérience ?",
+      "En quoi la stricte universalité d’un jugement signale-t-elle une source a priori ?"
+    ],
+    "glossary": [
+      {
+        "term": "empirique",
+        "definition": "Relatif à ce qui provient de l’expérience sensible."
+      },
+      {
+        "term": "a priori",
+        "definition": "Ce qui vaut indépendamment de l’expérience et rend possible une connaissance universelle ou nécessaire."
+      },
+      {
+        "term": "universalité",
+        "definition": "Validité d’un jugement pour tous les cas ; Kant oppose l’universalité relative de l’induction à l’universalité stricte."
+      }
+    ],
+    "paragraphs": [
+      "De la différence de la connaissance pure et de la connaissance empirique. Que toute notre connaissance commence avec l’expérience, cela ne soulève aucun doute. En effet, par quoi notre pouvoir de connaître […] pourrait-il être éveillé et mis en action […] si ce n’est par des objets qui frappent nos sens et qui, d’une part, produisent par eux-mêmes des représentations et d’autre part, mettent en mouvement notre faculté intellectuelle, afin qu’elle compare, lie ou sépare ces représentations, et travaille ainsi la matière brute des impressions sensibles pour en tirer une connaissance des objets, celle qu’on nomme l’expérience ? Ainsi, chronologiquement […], aucune connaissance ne précède en nous l’expérience et c’est avec elle que toutes commencent.",
+      "Mais si toute notre connaissance débute AVEC l’expérience, cela ne prouve pas qu’elle dérive toute DE l’expérience, car il se pourrait bien que même notre connaissance par expérience fût un composé de ce que nous recevons des impressions sensibles et de ce que notre propre pouvoir de connaître (simplement excité par des impressions sensibles) produit de lui-même : addition que nous ne distinguons pas de la matière première jusqu’à ce que notre attention y ait été portée par un long exercice qui nous ait appris à l’en séparer […].",
+      "[…] L’expérience ne donne jamais à ses jugements une véritable et stricte universalité, mais seulement une universalité supposée et relative (par induction) […]. Par conséquent, un jugement pensé avec une stricte universalité, c’est-à-dire de telle sorte qu’aucune exception n’est admise comme possible, ne dérive point de l’expérience, mais est valable absolument a priori. L’universalité empirique n’est donc qu’une élévation arbitraire de la valeur : on fait d’une règle valable dans la plupart des cas une loi qui s’applique à tous, comme, par exemple, dans la proposition : Tous les corps sont pesants. Quand, au contraire, un jugement possède essentiellement une stricte universalité, on connaît à cela qu’il provient d’une source particulière de la connaissance d’un pouvoir de connaissance a priori."
+    ]
+  },
+  {
+    "id": "claude-bernard-methode-experimentale",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · méthode expérimentale",
+    "title": "Une expérience scientifique obéit à la méthode expérimentale",
+    "author": "Claude Bernard",
+    "authorTag": "Claude Bernard",
+    "cardHighlight": "méthode expérimentale",
+    "authorMeta": "(1813–1878) · médecine expérimentale",
+    "themes": [
+      "Science",
+      "Théorie et expérience"
+    ],
+    "work": "Introduction à l’étude de la médecine expérimentale",
+    "publication": "1865, Flammarion, 2008, p. 65–66",
+    "description": "Comment observation, hypothèse, raisonnement et expérimentation s’articulent-ils dans une véritable enquête scientifique ?",
+    "context": "Claude Bernard décrit une méthode hypothético-expérimentale : une idée anticipée naît de l’observation, le raisonnement en déduit des conséquences, puis l’expérience vient contrôler l’hypothèse.",
+    "readingQuestions": [
+      "Pourquoi une expérience scientifique ne commence-t-elle pas par une observation totalement dépourvue d’idée ?",
+      "Quels risques opposés Claude Bernard associe-t-il à l’expérimentation sans hypothèse et à l’observation guidée par des idées préconçues ?",
+      "Comment l’expérimentation permet-elle de contrôler une hypothèse sur la cause d’un phénomène ?"
+    ],
+    "glossary": [
+      {
+        "term": "hypothèse",
+        "definition": "Proposition anticipée destinée à expliquer un phénomène et à être soumise à l’épreuve."
+      },
+      {
+        "term": "expérimentation",
+        "definition": "Mise à l’épreuve contrôlée d’une hypothèse au moyen d’une expérience provoquée."
+      },
+      {
+        "term": "induction",
+        "definition": "Raisonnement qui remonte d’observations particulières vers une proposition plus générale."
+      }
+    ],
+    "paragraphs": [
+      "[L]a méthode expérimentale s’appuie successivement sur le sentiment, la raison et l’expérience. Le sentiment engendre l’idée ou l’hypothèse expérimentale, c’est-à-dire l’interprétation anticipée des phénomènes de la nature. Toute l’initiative expérimentale est dans l’idée, car c’est elle qui provoque l’expérience. La raison ou le raisonnement ne servent qu’à déduire les conséquences de cette idée et à les soumettre à l’expérience.",
+      "Une idée anticipée ou une hypothèse est donc le point de départ nécessaire de tout raisonnement expérimental. Sans cela on ne saurait faire aucune investigation ni s’instruire ; on ne pourrait qu’entasser des observations stériles. Si l’on expérimentait sans idée préconçue, on irait à l’aventure ; mais d’un autre côté, ainsi que nous l’avons dit ailleurs, si l’on observait avec des idées préconçues, on ferait de mauvaises observations et l’on serait exposé à prendre les conceptions de son esprit pour la réalité.",
+      "[…] Toute la connaissance humaine se borne à remonter des effets observés à leur cause. À la suite d’une observation, une idée relative à la cause du phénomène observé se présente à l’esprit ; puis on introduit cette idée anticipée dans un raisonnement en vertu duquel on fait des expériences pour la contrôler."
+    ]
+  },
+  {
+    "id": "einstein-theorie-modele-realite",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · modèle scientifique",
+    "title": "Une théorie scientifique est un modèle de la réalité",
+    "author": "Albert Einstein",
+    "authorTag": "Einstein",
+    "cardHighlight": "modèle de la réalité",
+    "authorMeta": "(1879–1955) · physique contemporaine",
+    "themes": [
+      "Science",
+      "Théorie et expérience"
+    ],
+    "work": "L’Évolution des idées en physique",
+    "publication": "avec Leopold Infeld, 1938, Payot, 1974, p. 34–35",
+    "description": "Une théorie scientifique copie-t-elle le réel, ou construit-elle une représentation qui permet de l’expliquer ?",
+    "context": "Einstein et Infeld comparent le savant à quelqu’un qui observe une montre fermée. Les concepts scientifiques sont des constructions de l’esprit : leur valeur tient à leur pouvoir explicatif, non à une ressemblance directement vérifiable avec un mécanisme caché.",
+    "readingQuestions": [
+      "Pourquoi les concepts scientifiques sont-ils décrits comme des créations libres de l’esprit humain ?",
+      "Que montre l’image de la montre fermée sur le rapport entre théorie et réalité ?",
+      "Pourquoi plusieurs modèles peuvent-ils expliquer les mêmes observations sans qu’on puisse les comparer directement au réel ?"
+    ],
+    "glossary": [
+      {
+        "term": "théorie",
+        "definition": "Ensemble organisé de propositions et de principes visant à expliquer des phénomènes."
+      },
+      {
+        "term": "modèle",
+        "definition": "Représentation simplifiée construite pour rendre intelligibles certains aspects du réel."
+      },
+      {
+        "term": "vérité objective",
+        "definition": "Idéal d’une connaissance qui rendrait compte de la réalité indépendamment de nos représentations particulières."
+      }
+    ],
+    "paragraphs": [
+      "Les concepts physiques sont des créations libres de l’esprit humain et ne sont pas, comme on pourrait le croire, uniquement déterminés par le monde extérieur. Dans l’effort que nous faisons pour comprendre le monde, nous ressemblons quelque peu à l’homme qui essaie de comprendre le mécanisme d’une montre fermée. Il voit le cadran et les aiguilles en mouvement, il entend le tic-tac, mais il n’a aucun moyen d’ouvrir le boîtier. S’il est ingénieux il pourra se former quelque image du mécanisme, qu’il rendra responsable de tout ce qu’il observe, mais il ne sera jamais sûr que son image soit la seule capable d’expliquer ses observations. Il ne sera jamais en état de comparer son image avec le mécanisme réel, et il ne peut même pas se représenter la possibilité ou la signification d’une telle comparaison. Mais le chercheur croit certainement qu’à mesure que ses connaissances s’accroîtront, son image de la réalité deviendra de plus en plus simple et expliquera des domaines de plus en plus étendus de ses impressions sensibles. Il pourra aussi croire à l’existence d’une limite idéale de la connaissance que l’esprit humain peut atteindre. Il pourra appeler cette limite idéale la vérité objective."
+    ]
+  },
+  {
+    "id": "bachelard-experience-theorie-materialisee",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · phénoménotechnique",
+    "title": "Une expérience scientifique est une théorie matérialisée",
+    "author": "Gaston Bachelard",
+    "authorTag": "Bachelard",
+    "cardHighlight": "théorie matérialisée",
+    "authorMeta": "(1884–1962) · épistémologie",
+    "themes": [
+      "Science",
+      "Théorie et expérience"
+    ],
+    "work": "Le Nouvel Esprit scientifique",
+    "publication": "1934, introduction, PUF, 1995, p. 16",
+    "description": "L’observation scientifique révèle-t-elle simplement un donné, ou construit-elle les phénomènes à partir de concepts et d’instruments ?",
+    "context": "Bachelard refuse l’idée d’une observation scientifique naïve et immédiate. Toute expérimentation est orientée par une théorie et par des instruments qui matérialisent cette théorie : la science construit les phénomènes qu’elle étudie.",
+    "readingQuestions": [
+      "Pourquoi la première observation n’est-elle jamais, selon Bachelard, la bonne observation scientifique ?",
+      "En quoi l’expérimentation scientifique est-elle plus polémique encore que l’observation ?",
+      "Pourquoi les instruments scientifiques peuvent-ils être qualifiés de théories matérialisées ?"
+    ],
+    "glossary": [
+      {
+        "term": "phénoménotechnique",
+        "definition": "Chez Bachelard, production artificielle et contrôlée de phénomènes scientifiques à partir de dispositifs théoriques et instrumentaux."
+      },
+      {
+        "term": "rupture épistémologique",
+        "definition": "Rupture avec les évidences du sens commun et les préjugés qui empêchent la construction scientifique de l’objet."
+      },
+      {
+        "term": "instrument",
+        "definition": "Dispositif de mesure ou d’expérimentation qui incorpore des choix théoriques et rend certains phénomènes observables."
+      }
+    ],
+    "paragraphs": [
+      "[L’]observation a besoin d’un corps de précautions qui conduisent à réfléchir avant de regarder, qui réforment du moins la première vision, de sorte que ce n’est jamais la première observation qui est la bonne. L’observation scientifique est toujours une observation polémique ; elle confirme ou infirme une théorie antérieure, un schéma préalable, un plan d’observation ; elle montre en démontrant ; elle hiérarchise les apparences ; elle transcende l’immédiat ; elle reconstruit le réel après avoir reconstruit ses schémas. Naturellement, dès qu’on passe de l’observation à l’expérimentation, le caractère polémique de la connaissance devient plus net encore. Alors il faut que le phénomène soit trié, filtré, épuré, coulé dans le moule des instruments, produit sur le plan des instruments. Or les instruments ne sont que des théories matérialisées. Il en sort des phénomènes qui portent de toutes parts la marque théorique."
+    ]
+  },
+  {
+    "id": "popper-theorie-falsifiable",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · falsifiabilité",
+    "title": "Une théorie scientifique est avant tout une théorie falsifiable",
+    "author": "Karl R. Popper",
+    "authorTag": "Popper",
+    "cardHighlight": "théorie falsifiable",
+    "authorMeta": "(1902–1994) · épistémologie critique",
+    "themes": [
+      "Science",
+      "Théorie et expérience"
+    ],
+    "work": "Conjectures et Réfutations",
+    "publication": "1953, trad. M. Irène et M. B. de Launay, Payot, 2006, p. 377–378",
+    "description": "Qu’est-ce qui distingue une théorie scientifique d’une proposition qui échappe à toute mise à l’épreuve ?",
+    "context": "Popper propose la falsifiabilité comme critère de démarcation : une théorie est scientifique si elle prend le risque d’être contredite par l’expérience. La confirmation n’est jamais définitive ; elle résulte de tests exigeants auxquels la théorie a résisté.",
+    "readingQuestions": [
+      "Pourquoi une théorie doit-elle pouvoir entrer en conflit avec certaines observations pour être scientifique ?",
+      "Pourquoi la confirmation expérimentale ne vaut-elle pas comme preuve définitive ?",
+      "En quoi une théorie plus précise et plus facilement réfutable peut-elle être scientifiquement plus intéressante ?"
+    ],
+    "glossary": [
+      {
+        "term": "falsifiabilité",
+        "definition": "Propriété d’une théorie qui peut être mise à l’épreuve par des observations susceptibles de la réfuter."
+      },
+      {
+        "term": "corroboration",
+        "definition": "Degré auquel une théorie a résisté à des tests sérieux sans être réfutée."
+      },
+      {
+        "term": "démarcation",
+        "definition": "Critère permettant de distinguer les énoncés scientifiques de ceux qui ne peuvent pas être soumis à une épreuve empirique."
+      }
+    ],
+    "paragraphs": [
+      "[U]n système doit être tenu pour scientifique seulement s’il formule des assertions pouvant entrer en conflit avec certaines observations. Les tentatives pour provoquer des conflits de ce type, c’est-à-dire pour réfuter ce système permettent en fait de le tester. Pouvoir être testé, c’est pouvoir être réfuté, et cette propriété peut donc servir, de la même manière, de critère de démarcation.",
+      "Cette conception voit dans la démarche critique la caractéristique essentielle de la science. Le savant doit donc étudier les théories sous l’angle de leur aptitude à être examinées de manière critique […]. La théorie de Newton, par exemple, prédisait certains écarts par rapport aux lois de Kepler (en raison des interactions entre planètes), alors que ceux-ci n’avaient pas été observés. Elle s’exposait en conséquence à des tentatives de réfutation dont l’échec allait signifier le succès de cette théorie. La théorie einsteinienne a été testée de manière analogue. Et de fait, tous les tests effectifs constituent des tentatives de réfutation. Ce n’est que lorsqu’une théorie est parvenue à supporter les contraintes de ce genre d’efforts qu’on pourra affirmer qu’elle se trouve confirmée ou corroborée par l’expérience.",
+      "Il existe en outre (comme je m’en suis avisé par la suite) divers degrés d’assujettissement aux tests : certaines théories s’exposent avec plus d’intrépidité que d’autres aux éventuelles réfutations. […] Une théorie plus précise et qui se prête plus aisément à être réfutée est aussi celle qui est la plus intéressante. Et comme elle est la plus audacieuse, elle est également la moins probable. Or, elle se prête mieux aux tests, parce que nous pouvons la soumettre à des tests plus précis et plus rigoureux. Et si elle se révèle résister à ces tests, elle sera ou mieux confirmée ou mieux attestée par ceux-ci. L’aptitude à être confirmée (attestée ou corroborée) croît donc nécessairement avec l’assujettissement aux tests.",
+      "Ces considérations indiquent que le critère de démarcation ne saurait être parfaitement tranché et qu’il admettra différents degrés. Parmi les théories, certaines pourront être très bien testées, d’autres se prêteront très difficilement à être testées, d’autres encore seront impossibles à tester. Les dernières n’intéressent pas les chercheurs des sciences empiriques."
+    ]
+  },
+  {
+    "id": "bergson-experience-vecue-indicible",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · expérience vécue et langage",
+    "title": "L’expérience vécue est indicible",
+    "author": "Henri Bergson",
+    "authorTag": "Bergson",
+    "cardHighlight": "expérience vécue est indicible",
+    "authorMeta": "(1859–1941) · durée et intuition",
+    "themes": [
+      "Conscience",
+      "Théorie et expérience"
+    ],
+    "work": "Essai sur les données immédiates de la conscience",
+    "publication": "1889, PUF, 2010, p. 98–99",
+    "description": "Le langage peut-il exprimer fidèlement la singularité mouvante de nos sensations et de nos sentiments ?",
+    "context": "Bergson oppose la fluidité singulière de l’expérience vécue aux mots, qui fixent des catégories communes et stables. Nommer notre vécu risque ainsi de substituer à sa continuité une représentation impersonnelle et découpée.",
+    "readingQuestions": [
+      "Comment le langage modifie-t-il la manière dont nous percevons nos propres sensations ?",
+      "Pourquoi les mots tendent-ils à stabiliser et impersonnaliser une expérience pourtant mouvante ?",
+      "Que montre l’exemple de l’amour ou de la mélancolie sur la difficulté d’analyser un sentiment vécu ?"
+    ],
+    "glossary": [
+      {
+        "term": "expérience vécue",
+        "definition": "Dimension subjective et immédiate de ce qui est éprouvé par une conscience singulière."
+      },
+      {
+        "term": "durée",
+        "definition": "Chez Bergson, continuité qualitative et mouvante de l’expérience intérieure, irréductible à une succession d’unités homogènes."
+      },
+      {
+        "term": "indicible",
+        "definition": "Ce qui résiste à une expression verbale adéquate sans pour autant être inexistant ou dépourvu de contenu."
+      }
+    ],
+    "paragraphs": [
+      "Ce qu’il faut dire, c’est que toute sensation se modifie en se répétant, et que si elle ne me paraît pas changer du jour au lendemain, c’est parce que je l’aperçois maintenant à travers l’objet qui en est cause, à travers le mot qui la traduit. Cette influence du langage sur la sensation est plus profonde qu’on ne le pense généralement. Non seulement le langage nous fait croire à l’invariabilité de nos sensations, mais il nous trompera parfois sur le caractère de la sensation éprouvée. Ainsi, quand je mange d’un mets réputé exquis, le nom qu’il porte, gros de l’approbation qu’on lui donne, s’interpose entre ma sensation et ma conscience ; je pourrai croire que la saveur me plaît, alors qu’un léger effort d’attention me prouverait le contraire. Bref, le mot aux contours bien arrêtés, le mot brutal, qui emmagasine ce qu’il y a de stable, de commun et par conséquent d’impersonnel dans les impressions de l’humanité, écrase ou tout au moins recouvre les impressions délicates et fugitives de notre conscience individuelle. Pour lutter à armes égales, celles-ci devraient s’exprimer par des mots précis ; mais ces mots, à peine formés, se retourneraient contre la sensation qui leur donna naissance, et inventés pour témoigner que la sensation est instable, ils lui imposeraient leur propre stabilité.",
+      "[…] Un amour violent, une mélancolie profonde envahissent notre âme : ce sont mille éléments divers qui se fondent, qui se pénètrent, sans contours précis, sans la moindre tendance à s’extérioriser les uns par rapport aux autres […]. Déjà ils se déforment quand nous démêlons dans leur masse confuse une multiplicité numérique […]. Tout à l’heure chacun d’eux empruntait une indéfinissable coloration au milieu où il était placé : le voici décoloré, et tout prêt à recevoir un nom. Le sentiment lui-même est un être qui vit, qui se développe, qui change par conséquent sans cesse ; sinon, on ne comprendrait pas qu’il nous acheminât peu à peu à une résolution […]. Nous voici donc en présence de l’ombre de nous-mêmes : nous croyons avoir analysé notre sentiment, nous lui avons substitué en réalité une juxtaposition d’états inertes, traduisibles en mots, et qui constituent chacun l’élément commun, le résidu par conséquent impersonnel, des impressions ressenties dans un cas donné par la société entière."
+    ]
+  },
+  {
+    "id": "hegel-experience-vecue-mots",
+    "section": "philosophie",
+    "cardMeta": "Théorie et expérience · pensée et langage",
+    "title": "L’expérience vécue doit pouvoir être énoncée par des mots",
+    "author": "Georg Wilhelm Friedrich Hegel",
+    "authorTag": "Hegel",
+    "cardHighlight": "énoncée par des mots",
+    "authorMeta": "(1770–1831) · idéalisme allemand",
+    "themes": [
+      "Langage",
+      "Théorie et expérience"
+    ],
+    "work": "Philosophie de l’esprit",
+    "publication": "1827, Addition au § 462, trad. B. Bourgeois, Vrin, 1988, p. 560–561",
+    "description": "Une pensée inexprimable est-elle plus profonde que les mots, ou n’acquiert-elle sa détermination qu’en se formulant ?",
+    "context": "Hegel refuse le mythe d’une pensée authentique qui existerait avant ou au-delà des mots. La pensée devient objective et déterminée en prenant forme dans le langage ; l’inexprimable lui paraît au contraire indéterminé et confus.",
+    "readingQuestions": [
+      "Pourquoi Hegel soutient-il qu’une pensée déterminée doit recevoir une forme objective dans le mot ?",
+      "Pourquoi l’inexprimable n’est-il pas, selon lui, le signe d’une profondeur supérieure ?",
+      "Comment le langage permet-il à la pensée d’accéder à la nature de la chose ?"
+    ],
+    "glossary": [
+      {
+        "term": "objectivité",
+        "definition": "Forme sous laquelle une pensée se donne comme quelque chose de déterminé, extérieur à la pure intériorité subjective."
+      },
+      {
+        "term": "mot",
+        "definition": "Pour Hegel, forme sensible et articulée grâce à laquelle une pensée acquiert un être déterminé et partageable."
+      },
+      {
+        "term": "inexprimable",
+        "definition": "Ce qui ne peut être clairement formulé ; Hegel l’associe non à une profondeur supérieure, mais à une pensée encore trouble et indéterminée."
+      }
+    ],
+    "paragraphs": [
+      "Nous n’avons savoir de nos pensées – nous n’avons des pensées déterminées, effectives – que quand nous leur donnons la forme de l’ob-jectivité, de l’être-différencié d’avec notre intériorité, donc la figure de l’extériorité, et, à la vérité, d’une extériorité telle qu’elle porte, en même temps, l’empreinte de la suprême intériorité. Un extérieur ainsi intérieur, seul l’est le son articulé, le mot. C’est pourquoi vouloir penser sans mots – comme Mesmer l’a tenté une fois – apparaît comme une déraison, qui avait conduit cet homme, d’après ce qu’il assura, presque à la manie délirante. Mais il est également risible de regarder le fait, pour la pensée, d’être liée au mot, comme un défaut de la première et comme une infortune ; car, bien que l’on soit d’avis ordinairement que l’inexprimable est précisément ce qui est le plus excellent, cet avis cultivé par la vanité n’a pourtant pas le moindre fondement, puisque l’inexprimable est, en vérité, seulement quelque chose de trouble, en fermentation, qui n’acquiert de la clarté que lorsqu’il peut accéder à la parole.",
+      "Le mot donne, par suite, aux pensées, leur être-là le plus digne et le plus vrai. Assurément, on peut aussi – sans se saisir de la Chose – se battre avec les mots. Cependant, ce n’est pas là la faute du mot, mais celle d’une pensée défectueuse, indéterminée, sans teneur. De même que la pensée vraie est la Chose, de même le mot l’est aussi, lorsqu’il est employé par la pensée vraie. C’est pourquoi, en se remplissant du mot, l’intelligence accueille en elle la nature de la Chose."
+    ]
+  }
+]

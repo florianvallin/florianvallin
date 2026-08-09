@@ -1,0 +1,744 @@
+[
+  {
+    "id": "aristote-demonstration-syllogisme-scientifique",
+    "section": "philosophie",
+    "cardMeta": "Démonstration · syllogisme scientifique",
+    "title": "Seul ce qui obéit aux règles formelles du raisonnement constitue une démonstration",
+    "author": "Aristote",
+    "authorTag": "Aristote",
+    "cardHighlight": "règles formelles du raisonnement",
+    "authorMeta": "(384–322 av. J.-C.) · aristotélisme",
+    "themes": [
+      "Vérité",
+      "Démonstration",
+      "Raison"
+    ],
+    "work": "Seconds Analytiques",
+    "publication": "IVe s. av. J.-C., I, 2, 71b 16, trad. J. Tricot, Vrin, 2000, p. 8–9",
+    "description": "Quelles conditions les prémisses doivent-elles remplir pour qu’un raisonnement constitue une véritable démonstration scientifique ?",
+    "context": "Dans les <em>Seconds Analytiques</em>, Aristote définit la <strong>démonstration</strong> comme un syllogisme qui produit une connaissance scientifique. Il ne suffit pas que la conclusion découle formellement des prémisses : celles-ci doivent être vraies, premières, indémontrables, antérieures et causes de la conclusion.",
+    "readingQuestions": [
+      "Pourquoi un syllogisme valide n’est-il pas nécessairement une <strong>démonstration scientifique</strong> ?",
+      "Pourquoi les prémisses doivent-elles être <strong>premières et indémontrables</strong> ?",
+      "Quel lien Aristote établit-il entre connaître une chose et en connaître la <strong>cause</strong> ?"
+    ],
+    "glossary": [
+      {
+        "term": "syllogisme",
+        "definition": "Raisonnement dans lequel une conclusion découle nécessairement de prémisses données."
+      },
+      {
+        "term": "prémisse",
+        "definition": "Proposition placée au point de départ d’un raisonnement et à partir de laquelle une conclusion est établie."
+      },
+      {
+        "term": "principe",
+        "definition": "Proposition première qui ne dépend pas elle-même d’une démonstration antérieure et sert de fondement à d’autres propositions."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Validité et science",
+        "definition": "Un raisonnement peut être formellement correct sans produire de science si ses prémisses ne sont pas vraies ou ne donnent pas la cause de ce qui est conclu."
+      },
+      {
+        "type": "concept",
+        "term": "La connaissance par les causes",
+        "definition": "Pour Aristote, savoir véritablement ne consiste pas seulement à constater qu’une chose est, mais à connaître pourquoi elle est ainsi."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "pascal-principes-demonstration-indemontrables",
+        "kind": "proche",
+        "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+        "relation": "Pascal retrouve le problème du point de départ : toute démonstration suppose des termes et des vérités qui ne peuvent être eux-mêmes entièrement démontrés."
+      },
+      {
+        "id": "zenon-mouvement-demonstration-absurde",
+        "kind": "adverse",
+        "label": "Zénon — Il est possible de démontrer des choses absurdes",
+        "relation": "Les paradoxes de Zénon obligent à distinguer la cohérence d’un raisonnement de la vérité de ce qu’il affirme sur le réel."
+      },
+      {
+        "id": "sextus-empiricus-verite-hors-portee",
+        "kind": "adverse",
+        "label": "Sextus Empiricus — La vérité est hors de notre portée",
+        "relation": "Le scepticisme attaque précisément la possibilité d’établir des principes ultimes capables de garantir une démonstration."
+      }
+    ],
+    "paragraphs": [
+      "Par démonstration, j’entends le syllogisme scientifique. […] [L]es prémisses doivent être vraies, car on ne peut pas connaître ce qui n’est pas, par exemple la commensurabilité de la diagonale. Elles doivent être premières et indémontrables, car autrement on ne pourrait les connaître faute d’en avoir la démonstration, puisque la science des choses qui sont démontrables, s’il ne s’agit pas d’une science accidentelle, n’est pas autre chose que d’en posséder la démonstration. Elles doivent être les causes de la conclusion, être plus connues qu’elle, et antérieures à elle : causes, puisque nous n’avons la science d’une chose qu’au moment où nous en avons connu la cause ; antérieures, puisqu’elles sont les causes ; antérieures aussi au point de vue de la connaissance, cette préconnaissance ne consistant pas seulement à comprendre de la seconde façon que nous avons indiquée, mais encore à savoir que la chose est."
+    ]
+  },
+  {
+    "id": "pascal-principes-demonstration-indemontrables",
+    "section": "philosophie",
+    "cardMeta": "Démonstration · principes",
+    "title": "Les principes de la démonstration ne sont pas démontrables",
+    "author": "Blaise Pascal",
+    "authorTag": "Pascal",
+    "cardHighlight": "principes de la démonstration",
+    "authorMeta": "(1623–1662) · philosophie moderne",
+    "themes": [
+      "Vérité",
+      "Démonstration",
+      "Raison"
+    ],
+    "work": "De l’esprit géométrique",
+    "publication": "1776 posth., section I, dans Pensées et opuscules, Hachette, 1967, p. 164–167",
+    "description": "Une méthode parfaite pourrait-elle tout définir et tout démontrer sans jamais rencontrer un premier terme ou une première vérité ?",
+    "context": "Pascal imagine l’idéal d’une méthode qui définirait tous les termes et démontrerait toutes les propositions. Il montre aussitôt qu’un tel programme est impossible : toute définition et toute preuve présupposent des éléments antérieurs. La démonstration doit donc s’appuyer sur des <strong>principes</strong> admis sans démonstration.",
+    "readingQuestions": [
+      "Pourquoi la méthode démonstrative parfaite décrite par Pascal est-elle <strong>impossible</strong> ?",
+      "Pourquoi une définition suppose-t-elle toujours des termes déjà compris ?",
+      "En quoi ce texte montre-t-il une limite interne à l’idéal de tout démontrer ?"
+    ],
+    "glossary": [
+      {
+        "term": "axiome",
+        "definition": "Principe tenu pour évident et utilisé comme point de départ d’une démonstration."
+      },
+      {
+        "term": "postulat",
+        "definition": "Proposition admise sans preuve afin de rendre possible une construction ou un raisonnement."
+      },
+      {
+        "term": "régression à l’infini",
+        "definition": "Enchaînement sans terme où chaque preuve ou définition exige une preuve ou une définition antérieure."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Idéal démonstratif",
+          "definition": "Définir tous les termes et démontrer toutes les propositions."
+        },
+        "right": {
+          "term": "Limite réelle",
+          "definition": "Les premiers termes et premières propositions ne peuvent être définis ou prouvés sans supposer quelque chose d’antérieur."
+        },
+        "conclusion": "La rigueur ne consiste donc pas à tout démontrer, mais à reconnaître clairement les principes à partir desquels la démonstration devient possible."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "aristote-demonstration-syllogisme-scientifique",
+        "kind": "proche",
+        "label": "Aristote — Le syllogisme scientifique repose sur des prémisses premières",
+        "relation": "Aristote et Pascal reconnaissent tous deux que la démonstration doit s’appuyer sur des principes qui ne sont pas eux-mêmes démontrés."
+      },
+      {
+        "id": "sextus-empiricus-verite-hors-portee",
+        "kind": "adverse",
+        "label": "Sextus Empiricus — La vérité est hors de notre portée",
+        "relation": "Le sceptique transforme la régression des justifications en argument pour suspendre l’assentiment."
+      }
+    ],
+    "paragraphs": [
+      "[I]l faut […] que je donne l’idée d’une méthode encore plus éminente et plus accomplie, mais où les hommes ne sauraient jamais arriver : car ce que passe la géométrie nous surpasse ; et néanmoins il est nécessaire d’en dire quelque chose, quoiqu’il soit impossible de la pratiquer. Cette véritable méthode, qui formerait les démonstrations dans la plus haute excellence, s’il était possible d’y arriver, consisterait en deux choses principales : l’une, de n’employer aucun terme dont on n’eût auparavant expliqué nettement le sens ; l’autre, de n’avancer jamais aucune proposition qu’on ne démontrât par des vérités déjà connues ; c’est-à-dire, en un mot, à définir tous les termes et à prouver toutes les propositions. […] Certainement cette méthode serait belle, mais elle est absolument impossible : car il est évident que les premiers termes qu’on voudrait définir en supposeraient de précédents pour servir à leur explication, et que de même les premières propositions qu’on voudrait prouver en supposeraient d’autres qui les précédassent."
+    ]
+  },
+  {
+    "id": "kant-existence-pas-predicat",
+    "section": "philosophie",
+    "cardMeta": "Démonstration · existence",
+    "title": "Les attributs des choses sont démontrables, mais pas leur existence",
+    "author": "Emmanuel Kant",
+    "authorTag": "Kant",
+    "cardHighlight": "pas leur existence",
+    "authorMeta": "(1724–1804) · philosophie critique",
+    "themes": [
+      "Vérité",
+      "Démonstration",
+      "Religion"
+    ],
+    "work": "Critique de la raison pure",
+    "publication": "1781–1787, Dialectique transcendantale, chap. III, section IV, trad. A. Tremesaygues et B. Pacaud, PUF, 2001, p. 429–430",
+    "description": "Peut-on démontrer qu’une chose existe en ajoutant simplement l’existence à son concept ?",
+    "context": "Kant critique les preuves qui prétendent déduire l’existence d’un être à partir de son concept. Dire qu’une chose <strong>existe</strong> n’ajoute pas une propriété à sa définition : l’existence est la position effective de l’objet lui-même. Cette thèse vise notamment l’argument ontologique de l’existence de Dieu.",
+    "readingQuestions": [
+      "Pourquoi Kant affirme-t-il que l’<strong>être</strong> n’est pas un prédicat réel ?",
+      "Pourquoi cent thalers réels ne contiennent-ils pas davantage de propriétés que cent thalers possibles ?",
+      "En quoi cette thèse limite-t-elle la possibilité d’une démonstration purement conceptuelle de l’existence ?"
+    ],
+    "glossary": [
+      {
+        "term": "prédicat",
+        "definition": "Dans une proposition, ce qui est attribué au sujet. Kant soutient que l’existence n’est pas un prédicat qui augmenterait le contenu d’un concept."
+      },
+      {
+        "term": "possible / réel",
+        "definition": "Le possible désigne ce qui n’est pas contradictoire ; le réel suppose en plus que l’objet soit effectivement donné ou posé."
+      },
+      {
+        "term": "analytique / synthétique",
+        "definition": "Un jugement analytique explicite ce qui est déjà contenu dans un concept ; un jugement synthétique ajoute une détermination qui n’y était pas déjà incluse."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "concept",
+        "term": "« Être » n’ajoute rien au concept",
+        "definition": "Le concept d’une chose reste le même qu’on la pense comme possible ou qu’on affirme qu’elle existe. Ce qui change n’est pas son contenu conceptuel, mais son rapport à la réalité."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "kant-verite-correspondance-diallele",
+        "kind": "proche",
+        "label": "Kant — La correspondance ne suffit pas à définir la vérité",
+        "relation": "Dans les deux cas Kant met en évidence une difficulté à passer du concept ou de la connaissance à l’objet réel."
+      },
+      {
+        "id": "aristote-verite-correspondance-reel",
+        "kind": "adverse",
+        "label": "Aristote — La vérité est la correspondance entre ce qui est pensé et ce qui est",
+        "relation": "Aristote formule la conception classique de la vérité comme accord avec l’être ; Kant montre ici que l’existence ne peut être tirée du seul concept."
+      }
+    ],
+    "paragraphs": [
+      "Être n’est évidemment pas un prédicat réel, c’est-à-dire un concept de quelque chose qui puisse s’ajouter au concept d’une chose. C’est simplement la position d’une chose ou de certaines déterminations en soi. Dans l’usage logique, ce n’est que la copule d’un jugement. Cette proposition : Dieu est tout-puissant, renferme deux concepts qui ont leurs objets : Dieu et toute-puissance ; le petit mot est n’est pas du tout encore par lui-même un prédicat, c’est seulement ce qui met le prédicat en relation avec le sujet. Or, si je prends le sujet (Dieu) avec tous ses prédicats (dont la toute-puissance fait aussi partie) et que je dise : Dieu est, ou il est un Dieu, je n’ajoute aucun nouveau prédicat au concept de Dieu, mais je ne fais que poser le sujet en lui-même avec tous ses prédicats, et en même temps, il est vrai, l’objet qui correspond à mon concept. Tous deux doivent exactement renfermer la même chose et, par conséquent, rien de plus ne peut s’ajouter au concept qui exprime simplement la possibilité, par le simple fait que je conçois (par l’expression : il est) l’objet de ce concept comme donné absolument. Et ainsi, le réel ne contient rien de plus que le simple possible. Cent thalers réels ne contiennent rien de plus que cent thalers possibles. Car, comme les thalers possibles expriment le concept et les thalers réels, l’objet et sa position en lui-même, au cas où celui-ci contiendrait plus que celui-là, mon concept n’exprimerait pas l’objet tout entier et, par conséquent, il n’en serait pas, non plus, le concept adéquat. Mais je suis plus riche avec cent thalers réels qu’avec leur simple concept (c’est-à-dire qu’avec leur possibilité). Dans la réalité, en effet, l’objet n’est pas simplement contenu analytiquement dans mon concept, mais il s’ajoute synthétiquement à mon concept (qui est une détermination de mon état), sans que, par cette existence en dehors de mon concept, ces cent thalers conçus soient le moins du monde augmentés.",
+      "Quand donc je conçois une chose, quels que soient et si nombreux que soient les prédicats par lesquels je la pense (même dans la détermination complète), en ajoutant, de plus, que cette chose existe, je n’ajoute absolument rien à cette chose. Car autrement, ce qui existerait ne serait pas exactement ce que j’avais conçu dans mon concept, mais bien quelque chose de plus, et je ne pourrais pas dire que c’est précisément l’objet de mon concept qui existe."
+    ]
+  },
+  {
+    "id": "zenon-mouvement-demonstration-absurde",
+    "section": "philosophie",
+    "cardMeta": "Démonstration · paradoxe",
+    "title": "Il est possible de démontrer des choses absurdes",
+    "author": "Zénon d’Élée",
+    "authorTag": "Zénon",
+    "cardHighlight": "démontrer des choses absurdes",
+    "authorMeta": "(v. 480–v. 420 av. J.-C.) · éléatisme",
+    "themes": [
+      "Vérité",
+      "Démonstration",
+      "Raison"
+    ],
+    "work": "Arguments contre le mouvement",
+    "publication": "présentés par Victor Brochard, Études de philosophie ancienne et de philosophie moderne, Vrin, 1954, p. 5–6",
+    "description": "Un raisonnement rigoureux peut-il conduire à nier ce que l’expérience semble pourtant rendre évident, comme l’existence du mouvement ?",
+    "context": "Les paradoxes attribués à Zénon d’Élée cherchent à défendre l’éléatisme en montrant les contradictions auxquelles conduit l’idée de mouvement lorsque l’espace et le temps sont supposés divisibles à l’infini. Le texte est ici transmis sous la forme d’une présentation de Victor Brochard.",
+    "readingQuestions": [
+      "Pourquoi la <strong>Dichotomie</strong> semble-t-elle empêcher tout mouvement de commencer ?",
+      "Comment le paradoxe d’<strong>Achille</strong> transforme-t-il une poursuite ordinaire en série infinie ?",
+      "Pourquoi la <strong>Flèche</strong> paraît-elle immobile si le temps est composé d’instants ?"
+    ],
+    "glossary": [
+      {
+        "term": "raisonnement par l’absurde",
+        "definition": "Procédé qui suppose une thèse afin d’en tirer une contradiction, ce qui conduit à rejeter cette thèse."
+      },
+      {
+        "term": "dichotomie",
+        "definition": "Division en deux ; chez Zénon, le trajet doit toujours être divisé en une moitié à parcourir avant la suivante."
+      },
+      {
+        "term": "validité / vérité",
+        "definition": "Un raisonnement peut être cohérent dans sa forme sans que sa conclusion décrive correctement la réalité."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Théorie",
+          "definition": "Les arguments semblent rendre le mouvement contradictoire à partir de certaines hypothèses sur le continu."
+        },
+        "right": {
+          "term": "Pratique / expérience",
+          "definition": "Nous constatons pourtant quotidiennement que les corps se déplacent."
+        },
+        "conclusion": "Le paradoxe met à l’épreuve la relation entre cohérence logique et vérité du réel."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "aristote-demonstration-syllogisme-scientifique",
+        "kind": "adverse",
+        "label": "Aristote — La démonstration scientifique exige des prémisses vraies",
+        "relation": "Aristote donne précisément les conditions qui permettent de distinguer un raisonnement valide d’une véritable science."
+      },
+      {
+        "id": "nietzsche-logique-survie-verite",
+        "kind": "proche",
+        "label": "Nietzsche — La logique n’a pas la vérité pour but, mais la survie",
+        "relation": "Nietzsche interroge à son tour le rapport entre les formes logiques et la structure mouvante du réel."
+      }
+    ],
+    "paragraphs": [
+      "I. — On suppose que l’espace et le temps sont divisibles à l’infini. À la vérité, les textes ne mentionnent pas explicitement cette supposition ; mais elle est visiblement impliquée dans la teneur des deux premiers arguments.",
+      "1° La Dichotomie. — « Il n’y a point de mouvement, car il faut que le mobile arrive au milieu de son parcours avant d’atteindre la fin. » Et il devra parcourir la moitié de la moitié avant d’atteindre le milieu, et ainsi de suite à l’infini.",
+      "2° L’Achille. — « Le plus lent ne sera jamais atteint par le plus rapide, car il faut auparavant que celui qui poursuit soit parvenu au point d’où est parti celui qui fuit, de sorte que le plus lent aura toujours nécessairement quelque avance. » Achille aux pieds légers n’atteindra jamais la tortue. Et s’il est impossible d’atteindre un but, il n’y a point de mouvement.",
+      "II. — On suppose le continu formé d’éléments indivisibles. Aristote nous dit expressément, au moins pour le troisième argument, que le temps est supposé formé d’instants […].",
+      "3° La Flèche. […] « Une chose est en repos, ou en mouvement, lorsqu’elle est dans un espace égal à elle-même. La flèche qui vole est toujours ek tô nun, dans l’instant. Elle est donc toujours immobile. »",
+      "Voici comment nous interprétons ce texte. — Il est rigoureusement impossible que la flèche se meuve dans l’instant (supposé indivisible), car, si elle changeait de position, l’instant se retrouverait aussitôt divisé. Or le mobile, dans l’instant, est en repos ou en mouvement : comme il n’est pas en mouvement, il est en repos, et comme le temps, par hypothèse, est formé d’instants, le mobile est toujours en repos."
+    ]
+  },
+  {
+    "id": "nietzsche-logique-survie-verite",
+    "section": "philosophie",
+    "cardMeta": "Vérité · critique de la logique",
+    "title": "La logique n’a pas la vérité pour but, mais la survie",
+    "author": "Friedrich Nietzsche",
+    "authorTag": "Nietzsche",
+    "cardHighlight": "pas la vérité pour but",
+    "authorMeta": "(1844–1900) · philosophie contemporaine",
+    "themes": [
+      "Vérité",
+      "Raison",
+      "Langage"
+    ],
+    "work": "Le Gai Savoir",
+    "publication": "1882, § 111, trad. P. Klossowski, Gallimard, p. 141–142",
+    "description": "Et si les catégories de la logique n’avaient pas été sélectionnées parce qu’elles sont vraies, mais parce qu’elles sont utiles à la vie ?",
+    "context": "Nietzsche propose une généalogie de la logique : les habitudes de pensée qui identifient, classent et stabilisent le réel auraient été sélectionnées parce qu’elles permettent d’agir et de survivre. La logique ne serait donc pas un miroir neutre du monde, mais une simplification devenue indispensable.",
+    "readingQuestions": [
+      "Pourquoi la capacité à traiter des choses différentes comme <strong>identiques</strong> aurait-elle favorisé la survie ?",
+      "En quoi la logique suppose-t-elle une stabilisation de ce qui est en réalité <strong>mouvant</strong> ?",
+      "Que devient la prétention de la logique à atteindre une vérité désintéressée ?"
+    ],
+    "glossary": [
+      {
+        "term": "identité",
+        "definition": "Principe logique selon lequel une chose est identique à elle-même ; Nietzsche soupçonne que cette identité stricte ne se rencontre pas dans le devenir réel."
+      },
+      {
+        "term": "substance",
+        "definition": "Ce qui est pensé comme support stable de propriétés changeantes ; Nietzsche y voit une construction logique utile."
+      },
+      {
+        "term": "généalogie",
+        "definition": "Méthode qui cherche l’origine historique, pratique ou vitale d’une valeur ou d’une manière de penser."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "concept",
+        "term": "Une logique sélectionnée par la vie",
+        "definition": "Les formes de pensée les plus prudentes et sceptiques auraient pu être plus proches d’un réel mouvant, mais moins efficaces pour décider et agir rapidement."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "zenon-mouvement-demonstration-absurde",
+        "kind": "proche",
+        "label": "Zénon — Il est possible de démontrer des choses absurdes",
+        "relation": "Les paradoxes de Zénon montrent déjà que la cohérence logique et l’évidence du mouvement peuvent entrer en tension."
+      },
+      {
+        "id": "bergson-verite-action-pragmatisme",
+        "kind": "proche",
+        "label": "Bergson — La vérité nous donne prise sur le réel",
+        "relation": "Bergson relie lui aussi la vérité à l’action, mais sans réduire la pensée à une simple fiction de survie."
+      },
+      {
+        "id": "cassirer-langage-reel-construction",
+        "kind": "proche",
+        "label": "Cassirer — Le langage ne reproduit pas le réel",
+        "relation": "Le langage et la logique peuvent être lus comme des formes de construction plutôt que comme de simples copies du réel."
+      }
+    ],
+    "paragraphs": [
+      "« Origine de la logique. — D’où la logique est-elle née dans la tête des hommes ? Certainement de l’illogisme dont le domaine a dû être immense à l’origine. Mais d’innombrables êtres, qui concluaient autrement que nous ne le faisons maintenant, dépérirent : il se pourrait que ce fût encore plus vrai qu’on ne pense ! Qui, par exemple, ne savait discerner assez souvent l’« identique », quant à la nourriture ou quant aux animaux dangereux pour lui, qui par conséquent était trop lent à classer, trop circonspect dans le classement, avait moins de chances de survivre que celui qui tombait immédiatement sur l’identique parmi toutes sortes de réalités semblables. Mais la tendance prédominante à considérer le semblable comme l’identique — tendance illogique, car il n’y a rien qui fût en soi identique — cette tendance a créé le fondement même de la logique. Il fallait de même, pour que pût se développer la notion de substance qui est indispensable à la logique, encore que rien de réel ne lui corresponde au sens le plus rigoureux — que durant fort longtemps la mutabilité des choses restât inaperçue et ne fût pas appréhendée : les êtres non doués d’une vue précise avaient une avance sur ceux qui percevaient toutes choses comme prises « dans un flux perpétuel ». Toute extrême circonspection à conclure, toute tendance sceptique constituent à elles seules un grand danger pour la vie. Nul être vivant ne se serait conservé, si la tendance contraire à affirmer plutôt qu’à suspendre le jugement, à errer et à imaginer plutôt qu’à attendre, à approuver plutôt qu’à nier, à juger plutôt qu’à être équitable — n’avait été stimulée de façon extraordinairement forte. Le processus des pensées et des conclusions logiques dans notre cerveau actuel répond à un processus et à une lutte d’impulsions qui par elles-mêmes sont toutes fort illogiques et iniques : l’antique mécanisme se déroule à présent en nous de façon si rapide et si dissimulée que nous ne nous apercevons jamais que du résultat de la lutte. »"
+    ]
+  },
+  {
+    "id": "bergson-verite-action-pragmatisme",
+    "section": "philosophie",
+    "cardMeta": "Vérité · pragmatisme",
+    "title": "La vérité nous donne prise sur le réel et guide l’action",
+    "author": "Henri Bergson",
+    "authorTag": "Bergson",
+    "cardHighlight": "donne prise sur le réel",
+    "authorMeta": "(1859–1941) · philosophie contemporaine",
+    "themes": [
+      "Vérité",
+      "Science",
+      "Raison"
+    ],
+    "work": "Sur le pragmatisme de William James, dans La Pensée et le Mouvant",
+    "publication": "1938, PUF, 2009, p. 244–246",
+    "description": "Une affirmation vraie copie-t-elle le réel, ou vaut-elle surtout par la prise qu’elle nous donne sur une réalité mouvante ?",
+    "context": "En discutant le pragmatisme de William James, Bergson critique l’image d’une vérité qui serait une simple copie du réel. Les affirmations scientifiques sont générales, tandis que le réel concret est singulier et changeant. Une vérité se reconnaît plutôt à la manière dont elle nous permet de prévoir, de nous orienter et d’agir.",
+    "readingQuestions": [
+      "Pourquoi Bergson juge-t-il insuffisante la définition de la vérité comme <strong>copie</strong> du réel ?",
+      "Pourquoi une loi générale ne peut-elle reproduire exactement un fait singulier ?",
+      "Comment l’<strong>expérience</strong> transforme-t-elle la vérité en instrument d’action et de prévision ?"
+    ],
+    "glossary": [
+      {
+        "term": "pragmatisme",
+        "definition": "Courant qui insiste sur les effets pratiques de nos idées et sur la manière dont une croyance vraie permet de s’orienter dans l’expérience."
+      },
+      {
+        "term": "singulier",
+        "definition": "Ce qui n’existe qu’en un cas déterminé, à un lieu et un moment précis."
+      },
+      {
+        "term": "expérience",
+        "definition": "Ensemble des données et épreuves par lesquelles nos affirmations sont confrontées au réel et peuvent guider de nouvelles actions."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Vérité-copie",
+          "definition": "L’énoncé vrai reproduirait le réel comme un portrait reproduit son modèle."
+        },
+        "right": {
+          "term": "Vérité-action",
+          "definition": "L’énoncé vrai organise l’expérience, permet de prévoir et donne une prise pratique sur ce qui arrive."
+        },
+        "conclusion": "Bergson ne supprime pas la réalité ; il refuse simplement d’en faire un objet statique que le discours pourrait dupliquer."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "aristote-verite-correspondance-reel",
+        "kind": "adverse",
+        "label": "Aristote — La vérité est la correspondance entre la pensée et ce qui est",
+        "relation": "Aristote donne la formulation classique de la vérité-correspondance que Bergson cherche ici à compliquer."
+      },
+      {
+        "id": "nietzsche-logique-survie-verite",
+        "kind": "proche",
+        "label": "Nietzsche — La logique n’a pas la vérité pour but, mais la survie",
+        "relation": "Les deux textes lient la pensée à notre capacité d’agir, mais Nietzsche en propose une généalogie plus radicalement critique."
+      }
+    ],
+    "paragraphs": [
+      "Qu’est-ce qu’un jugement vrai ? Nous appelons vraie l’affirmation qui concorde avec la réalité. Mais en quoi peut consister cette concordance ? Nous aimons à y voir quelque chose comme la ressemblance du portrait au modèle : l’affirmation vraie serait celle qui copierait la réalité. Réfléchissons-y cependant : nous verrons que c’est seulement dans des cas rares, exceptionnels, que cette définition du vrai trouve son application. Ce qui est réel, c’est tel ou tel fait déterminé s’accomplissant en tel ou tel point de l’espace et du temps, c’est du singulier, c’est du changeant. Au contraire, la plupart de nos affirmations sont générales et impliquent une certaine stabilité de leur objet. Prenons une vérité aussi voisine que possible de l’expérience, celle-ci par exemple : « la chaleur dilate les corps ». De quoi pourrait-elle bien être la copie ? Il est possible, en un certain sens, de copier la dilatation d’un corps déterminé à des moments déterminés, en la photographiant dans ses diverses phases. […] Mais une vérité qui s’applique à tous les corps, sans concerner spécialement aucun de ceux que j’ai vus, ne copie rien, ne reproduit rien. […]",
+      "Cette conception de la vérité est naturelle à notre esprit et naturelle aussi à la philosophie, parce qu’il est naturel de se représenter la réalité comme un tout parfaitement cohérent et systématique, que soutient une armature logique. Cette armature serait la vérité même ; notre science ne ferait que la retrouver. Mais l’expérience pure et simple ne nous dit rien de semblable, et James s’en tient à l’expérience. L’expérience nous présente un flux de phénomènes : si telle ou telle affirmation relative à l’un d’eux nous permet de maîtriser ceux qui le suivront ou même simplement de les prévoir, nous disons de cette affirmation qu’elle est vraie. Une proposition telle que « la chaleur dilate les corps », proposition suggérée par la vue de la dilatation d’un certain corps, fait que nous prévoyons comment d’autres corps se comporteront en présence de la chaleur ; elle nous aide à passer d’une expérience ancienne à des expériences nouvelles ; c’est un fil conducteur, rien de plus. La réalité coule ; nous coulons avec elle ; et nous appelons vraie toute affirmation qui, en nous dirigeant à travers la réalité mouvante, nous donne prise sur elle et nous place dans de meilleures conditions pour agir."
+    ]
+  },
+  {
+    "id": "sextus-empiricus-verite-hors-portee",
+    "section": "philosophie",
+    "cardMeta": "Scepticisme",
+    "title": "La vérité est hors de notre portée",
+    "author": "Sextus Empiricus",
+    "authorTag": "Sextus Empiricus",
+    "cardHighlight": "hors de notre portée",
+    "authorMeta": "(IIe–IIIe s.) · scepticisme",
+    "themes": [
+      "Vérité",
+      "Démonstration",
+      "Raison"
+    ],
+    "work": "Esquisses pyrrhoniennes",
+    "publication": "I, 15, trad. P. Pellegrin, Le Seuil, 1997, p. 142–143",
+    "description": "Existe-t-il un moyen de justifier définitivement une affirmation sans tomber dans le désaccord, la régression à l’infini ou le cercle vicieux ?",
+    "context": "Sextus Empiricus expose cinq modes sceptiques destinés à conduire à la <strong>suspension du jugement</strong>. Chacun montre une difficulté de justification : désaccord, régression infinie, relativité, hypothèse non démontrée ou cercle logique.",
+    "readingQuestions": [
+      "Pourquoi le <strong>désaccord</strong> empêche-t-il de choisir immédiatement entre deux thèses ?",
+      "Comment la <strong>régression à l’infini</strong> menace-t-elle toute justification ?",
+      "Quelle différence y a-t-il entre partir d’une <strong>hypothèse</strong> et tomber dans un <strong>diallèle</strong> ?"
+    ],
+    "glossary": [
+      {
+        "term": "épochè",
+        "definition": "Suspension du jugement : attitude sceptique qui consiste à ne pas affirmer définitivement lorsqu’aucune justification décisive n’est disponible."
+      },
+      {
+        "term": "trope / mode",
+        "definition": "Type d’argument sceptique servant à mettre en difficulté une prétention à la connaissance."
+      },
+      {
+        "term": "diallèle",
+        "definition": "Cercle vicieux où une proposition A est justifiée par B tandis que B dépend à son tour de A."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Cinq obstacles à la fondation",
+        "definition": "Le sceptique ne cherche pas nécessairement à prouver que toute vérité est impossible ; il montre que les prétentions dogmatiques à une justification ultime rencontrent des difficultés récurrentes."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "pascal-principes-demonstration-indemontrables",
+        "kind": "proche",
+        "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+        "relation": "Pascal admet une limite de la démonstration sans en tirer la suspension sceptique de tout jugement."
+      },
+      {
+        "id": "kant-verite-correspondance-diallele",
+        "kind": "proche",
+        "label": "Kant — La correspondance ne suffit pas à définir la vérité",
+        "relation": "Kant reprend explicitement le problème du cercle dans la définition de la vérité."
+      },
+      {
+        "id": "platon-doute-haine-raison",
+        "kind": "adverse",
+        "label": "Platon — Le doute illimité peut conduire à la haine de la raison",
+        "relation": "Platon met en garde contre la généralisation du doute après avoir découvert que certaines opinions sont réfutables."
+      }
+    ],
+    "paragraphs": [
+      "Les sceptiques plus récents nous ont transmis cinq modes de la suspension de l’assentiment : le premier qui part du désaccord, le second, selon lequel on est renvoyé à l’infini, le troisième selon le relatif, le quatrième est l’hypothétique, le cinquième le diallèle.",
+      "Celui qui part du désaccord est celui par lequel nous découvrons qu’à propos de la chose examinée il s’est trouvé, aussi bien dans la vie quotidienne que parmi les philosophes, une dissension indécidable qui nous empêche de choisir quelque chose ou de le rejeter, nous menant finalement à la suspension de l’assentiment.",
+      "Celui qui s’appuie sur la régression à l’infini est celui dans lequel nous disons que ce qui est fourni en vue d’emporter la conviction sur la chose proposée à l’examen a besoin d’une autre garantie, et celle-ci d’une autre, et cela à l’infini, de sorte que, n’ayant rien à partir de quoi nous pourrions commencer d’établir quelque chose, la suspension de l’assentiment s’ensuit.",
+      "Le mode selon le relatif, comme nous l’avons dit plus haut, est celui dans lequel l’objet réel apparaît tel ou tel relativement à ce qui le juge et à ce qui est observé conjointement, et sur ce qu’il en est selon la nature nous suspendons notre assentiment.",
+      "Nous avons le mode qui part d’une hypothèse quand les dogmatiques étant renvoyés à l’infini, ils partent de quelque chose qu’ils n’établissent pas mais jugent bon de prendre simplement et sans démonstration, par simple consentement et sans recherche.",
+      "Le mode du diallèle arrive quand ce qui sert à assurer la chose sur laquelle porte la recherche a besoin de cette chose pour emporter la conviction ; alors n’étant pas capables de prendre l’un pour établir l’autre, nous suspendons notre assentiment sur les deux."
+    ]
+  },
+  {
+    "id": "aristote-verite-correspondance-reel",
+    "section": "philosophie",
+    "cardMeta": "Vérité · correspondance",
+    "title": "La vérité est la correspondance entre ce qui est pensé et ce qui est",
+    "author": "Aristote",
+    "authorTag": "Aristote",
+    "cardHighlight": "correspondance entre ce qui est pensé et ce qui est",
+    "authorMeta": "(384–322 av. J.-C.) · aristotélisme",
+    "themes": [
+      "Vérité",
+      "Raison"
+    ],
+    "work": "Métaphysique",
+    "publication": "IVe s. av. J.-C., livre thêta (9), chap. 10, trad. J. Tricot, Vrin, 1991, p. 54–55",
+    "description": "Une pensée est-elle vraie parce qu’elle produit le réel, ou parce qu’elle affirme les choses telles qu’elles sont ?",
+    "context": "Aristote formule ici une conception classique de la <strong>vérité-correspondance</strong> : être dans le vrai consiste à unir dans la pensée ce qui est uni dans le réel et à séparer ce qui est séparé. La vérité dépend donc de l’état de l’objet, non de notre simple manière de penser.",
+    "readingQuestions": [
+      "Quel critère permet de distinguer le <strong>vrai</strong> du <strong>faux</strong> ?",
+      "Pourquoi penser « d’une manière vraie » ne suffit-il pas à rendre une chose telle qu’on la pense ?",
+      "Quelle priorité le texte accorde-t-il au réel sur la pensée ?"
+    ],
+    "glossary": [
+      {
+        "term": "correspondance",
+        "definition": "Accord entre ce qu’une pensée ou une proposition affirme et la manière dont les choses sont effectivement."
+      },
+      {
+        "term": "validité",
+        "definition": "Correction formelle d’un raisonnement ; elle ne garantit pas à elle seule la vérité de ses prémisses ou de sa conclusion."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Vrai",
+          "definition": "Penser uni ce qui est uni et séparé ce qui est séparé."
+        },
+        "right": {
+          "term": "Faux",
+          "definition": "Attribuer au réel une union ou une séparation contraire à ce qui est."
+        },
+        "conclusion": "La vérité dépend du côté de l’objet : ce n’est pas notre pensée qui crée le fait qu’une chose est telle."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "kant-verite-correspondance-diallele",
+        "kind": "adverse",
+        "label": "Kant — La vérité n’est pas simplement la correspondance du discours à ce qui est",
+        "relation": "Kant ne nie pas l’idée d’accord avec l’objet, mais montre la difficulté d’en faire un critère utilisable sans cercle."
+      },
+      {
+        "id": "bergson-verite-action-pragmatisme",
+        "kind": "adverse",
+        "label": "Bergson — La vérité nous donne prise sur le réel",
+        "relation": "Bergson critique le modèle trop simple d’une vérité conçue comme copie ou ressemblance avec le réel."
+      }
+    ],
+    "paragraphs": [
+      "La vérité ou la fausseté des choses dépend, du côté des objets, de leur union ou de leur séparation. Par conséquent, être dans le vrai, c’est penser que ce qui est séparé est séparé et que ce qui est uni est uni ; être dans le faux, c’est penser contrairement à la nature des objets. Quand donc y a-t-il ou n’y a-t-il pas ce qu’on appelle vrai ou faux ? Il faut en effet considérer la signification de ces termes. Ce n’est pas parce que nous pensons d’une manière vraie que tu es blanc, que tu es blanc, mais c’est parce que tu es blanc, qu’en disant que tu l’es, nous disons la vérité."
+    ]
+  },
+  {
+    "id": "kant-verite-correspondance-diallele",
+    "section": "philosophie",
+    "cardMeta": "Vérité · critère",
+    "title": "La correspondance ne suffit pas à définir la vérité",
+    "author": "Emmanuel Kant",
+    "authorTag": "Kant",
+    "cardHighlight": "ne suffit pas à définir la vérité",
+    "authorMeta": "(1724–1804) · philosophie critique",
+    "themes": [
+      "Vérité",
+      "Raison",
+      "Démonstration"
+    ],
+    "work": "Logique",
+    "publication": "1800, introduction VIII, trad. L. Guillermit, Vrin, 1989, p. 54–55",
+    "description": "Si la vérité est l’accord de la connaissance avec l’objet, comment vérifier cet accord sans comparer l’objet à travers cette même connaissance ?",
+    "context": "Kant reprend la définition classique de la vérité comme accord avec l’objet, puis montre qu’elle ne fournit pas immédiatement un <strong>critère</strong>. Pour comparer ma connaissance à l’objet, je ne dispose encore que de ma connaissance de l’objet : le contrôle risque donc de tourner en cercle.",
+    "readingQuestions": [
+      "Pourquoi la définition de la vérité comme accord avec l’objet conduit-elle à un <strong>cercle</strong> ?",
+      "Que montre l’exemple du <strong>témoin</strong> inconnu ?",
+      "Faut-il distinguer une définition générale de la vérité et un critère concret pour la reconnaître ?"
+    ],
+    "glossary": [
+      {
+        "term": "diallèle",
+        "definition": "Cercle logique dans lequel A est justifié par B alors que B dépend à son tour de A."
+      },
+      {
+        "term": "critère de vérité",
+        "definition": "Moyen permettant de reconnaître qu’une proposition ou une connaissance est effectivement vraie."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "analysis",
+        "term": "Une définition sans test immédiat",
+        "definition": "Dire que le vrai est l’accord avec l’objet peut être correct comme définition générale, mais cela ne donne pas encore une procédure permettant de vérifier cet accord."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "aristote-verite-correspondance-reel",
+        "kind": "adverse",
+        "label": "Aristote — La vérité est la correspondance entre la pensée et ce qui est",
+        "relation": "Kant part de la définition classique associée à Aristote, puis souligne la difficulté de l’utiliser comme critère."
+      },
+      {
+        "id": "sextus-empiricus-verite-hors-portee",
+        "kind": "proche",
+        "label": "Sextus Empiricus — La vérité est hors de notre portée",
+        "relation": "Le problème du diallèle appartient précisément à l’arsenal sceptique exposé par Sextus."
+      }
+    ],
+    "paragraphs": [
+      "La vérité, dit-on, consiste dans l’accord de la connaissance avec l’objet. Selon cette simple définition de mot, ma connaissance doit donc s’accorder avec l’objet pour avoir valeur de vérité. Or le seul moyen que j’ai de comparer l’objet avec ma connaissance c’est que je le connaisse. Ainsi ma connaissance doit se confirmer elle-même ; mais c’est bien loin de suffire à la vérité. Car puisque l’objet est hors de moi et que la connaissance est en moi, tout ce que je puis apprécier c’est si ma connaissance de l’objet s’accorde avec ma connaissance de l’objet. Les anciens appelaient diallèle un tel cercle dans la définition. Et effectivement, c’est cette faute que les sceptiques n’ont cessé de reprocher aux logiciens ; ils remarquaient qu’il en est de cette définition de la vérité comme d’un homme qui ferait une déposition au tribunal et invoquerait comme témoin quelqu’un que personne ne connaît, mais qui voudrait être cru en affirmant que celui qu’il invoque comme témoin est un honnête homme. Reproche absolument fondé, mais la solution du problème en question est totalement impossible, pour tout le monde."
+    ]
+  },
+  {
+    "id": "platon-doute-haine-raison",
+    "section": "philosophie",
+    "cardMeta": "Vérité · doute et raison",
+    "title": "Le doute illimité peut conduire à la haine de la raison",
+    "author": "Platon",
+    "authorTag": "Platon",
+    "cardHighlight": "haine de la raison",
+    "authorMeta": "(v. 427–347 av. J.-C.) · platonisme",
+    "themes": [
+      "Vérité",
+      "Raison"
+    ],
+    "work": "La République",
+    "publication": "livre VII, 538a–539a, trad. G. Leroux, GF, 2002, p. 396",
+    "description": "Découvrir que certaines opinions sont réfutables doit-il conduire à examiner mieux, ou à ne plus croire en rien ?",
+    "context": "Dans la <em>République</em>, Socrate avertit contre la <strong>misologie</strong>, la haine du raisonnement. Une initiation trop brutale à la réfutation peut détruire les convictions reçues sans donner encore de critères solides pour les remplacer.",
+    "readingQuestions": [
+      "Pourquoi la réfutation répétée des croyances traditionnelles peut-elle provoquer une crise de confiance ?",
+      "Quelle différence y a-t-il entre <strong>critique rationnelle</strong> et refus généralisé de toute vérité ?",
+      "Comment éviter que le doute ne se transforme en misologie ?"
+    ],
+    "glossary": [
+      {
+        "term": "misologie",
+        "definition": "Haine du discours et du raisonnement, née notamment de déceptions répétées à l’égard des arguments."
+      },
+      {
+        "term": "doxa",
+        "definition": "Opinion tenue pour vraie sans justification rationnelle suffisante."
+      },
+      {
+        "term": "épistémè",
+        "definition": "Savoir capable de rendre raison de ce qu’il affirme."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "concept",
+        "term": "Le danger d’un scepticisme adolescent",
+        "definition": "Le texte ne condamne pas l’examen critique ; il condamne le passage trop rapide de la découverte de quelques erreurs à l’idée que toute raison et toute valeur sont trompeuses."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "sextus-empiricus-verite-hors-portee",
+        "kind": "adverse",
+        "label": "Sextus Empiricus — La vérité est hors de notre portée",
+        "relation": "Sextus systématise la suspension sceptique ; Platon met en garde contre la haine du raisonnement qui peut naître d’un doute mal conduit."
+      },
+      {
+        "id": "epictete-pratique-avant-demonstration",
+        "kind": "proche",
+        "label": "Épictète — Il y a des choses plus urgentes que la recherche de la vérité",
+        "relation": "Épictète critique une autre dérive : accumuler des démonstrations sans commencer par vivre conformément aux principes reconnus."
+      }
+    ],
+    "paragraphs": [
+      "SOCRATE. — [Q]u’arrivera-t-il si on vient poser la question suivante à quelqu’un qui se trouve dans cette situation : « Qu’est-ce que le beau ? » Qu’arrivera-t-il si, ayant répondu ce qu’il a entendu de la bouche du législateur, sa parole se trouve réfutée et si, en ne cessant de le réfuter de mille manières, on le renvoie à l’opinion que ce qu’il a nommé tel n’est aucunement plus beau qu’il n’est honteux ; et si ensuite on fait de même pour ce qui est juste, pour ce qui est bon, et pour ce qu’il tenait le plus en estime, après cela, crois-tu que son attitude à l’égard de ces valeurs sera faite de vénération et de soumission respectueuse ?",
+      "GLAUCON. — Il est fatal, dit-il, qu’il ne les vénérera, ni ne leur obéira plus autant.",
+      "SOCRATE. — Mais alors, dis-je, lorsqu’il en sera venu à penser que ces choses ne sont plus vénérables ni constitutives de son patrimoine comme auparavant, sans qu’il ait découvert les choses qui sont véritables, est-il vraisemblable qu’il s’orientera vers quelque autre forme de vie que celle qui le flatte ?",
+      "GLAUCON. — Non, ce n’est guère vraisemblable, dit-il."
+    ]
+  },
+  {
+    "id": "epictete-pratique-avant-demonstration",
+    "section": "philosophie",
+    "cardMeta": "Vérité · théorie et pratique",
+    "title": "Il y a des choses plus urgentes que la recherche de la vérité",
+    "author": "Épictète",
+    "authorTag": "Épictète",
+    "cardHighlight": "plus urgentes que la recherche de la vérité",
+    "authorMeta": "(v. 50–v. 125) · stoïcisme",
+    "themes": [
+      "Vérité",
+      "Devoir",
+      "Raison"
+    ],
+    "work": "Manuel",
+    "publication": "L. III, trad. M. Meunier, GF, 1964, p. 208",
+    "description": "À quoi sert de savoir démontrer qu’il ne faut pas mentir si nous continuons pourtant à mentir ?",
+    "context": "Épictète hiérarchise les tâches philosophiques. Les démonstrations sont nécessaires, mais elles restent secondes : la première exigence est de <strong>mettre en pratique</strong> les maximes reconnues. La philosophie ne doit pas devenir une virtuosité théorique déconnectée de la conduite.",
+    "readingQuestions": [
+      "Quelle hiérarchie Épictète établit-il entre <strong>pratique</strong>, démonstration et théorie de la démonstration ?",
+      "Pourquoi la troisième partie de la philosophie peut-elle devenir un piège ?",
+      "Que révèle l’exemple du mensonge sur le rapport entre savoir et volonté ?"
+    ],
+    "glossary": [
+      {
+        "term": "akrasie",
+        "definition": "Faiblesse de la volonté : savoir ce qu’il faudrait faire sans parvenir à agir conformément à ce savoir."
+      },
+      {
+        "term": "maxime",
+        "definition": "Règle pratique de conduite que l’on tient pour valable."
+      }
+    ],
+    "readingNotes": [
+      {
+        "type": "opposition",
+        "left": {
+          "term": "Savoir démontrer",
+          "definition": "Être capable d’établir rationnellement pourquoi une maxime est vraie."
+        },
+        "right": {
+          "term": "Vivre selon la maxime",
+          "definition": "Transformer effectivement sa conduite conformément à ce que l’on reconnaît comme vrai."
+        },
+        "conclusion": "Pour Épictète, la preuve n’a de sens philosophique que si elle reste au service d’une transformation de la vie."
+      }
+    ],
+    "relatedTexts": [
+      {
+        "id": "aristote-demonstration-syllogisme-scientifique",
+        "kind": "proche",
+        "label": "Aristote — La démonstration scientifique exige des règles précises",
+        "relation": "Aristote étudie la structure de la démonstration ; Épictète rappelle qu’en philosophie pratique cette étude ne doit pas devenir une fin en soi."
+      },
+      {
+        "id": "platon-doute-haine-raison",
+        "kind": "proche",
+        "label": "Platon — Le doute illimité peut conduire à la haine de la raison",
+        "relation": "Les deux textes interrogent les mauvais usages possibles de l’exercice rationnel."
+      }
+    ],
+    "paragraphs": [
+      "1. — La première et la plus importante partie de la philosophie est de mettre les maximes en pratique, par exemple : « Qu’il ne faut pas mentir. » La deuxième est la démonstration des maximes, par exemple : « D’où vient qu’il ne faut pas mentir ? » La troisième est celle qui confirme et explique ces démonstrations, par exemple : « D’où vient que c’est une démonstration ? Qu’est-ce que c’est qu’une démonstration, qu’une conséquence, qu’une opposition, que le vrai, que le faux ? »",
+      "2. — Ainsi donc, la troisième partie est nécessaire à cause de la seconde ; la seconde, à cause de la première. Mais la plus nécessaire, celle sur laquelle il faut se reposer, c’est la première. Nous, nous agissons à l’inverse. Nous nous attardons dans la troisième partie, toute notre sollicitude est pour elle, et nous négligeons absolument la première. Nous mentons en effet, mais nous sommes prêts à démontrer qu’il ne faut pas mentir."
+    ]
+  }
+]

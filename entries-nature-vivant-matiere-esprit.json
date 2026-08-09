@@ -1,0 +1,415 @@
+[
+  {
+    "id": "aristote-vie-matiere-ame",
+    "section": "philosophie",
+    "cardMeta": "Nature · vivant, matière et âme",
+    "title": "La vie se définit par la matière, mais aussi par la possession d’une âme",
+    "author": "Aristote",
+    "authorTag": "Aristote",
+    "cardHighlight": "matière et âme",
+    "authorMeta": "(384–322 av. J.-C.) · philosophie de l’Antiquité",
+    "themes": [
+      "Nature",
+      "Conscience"
+    ],
+    "work": "De l’âme",
+    "publication": "IVe s. av. J.-C., II, 2, trad. R. Bodéüs, GF, 1993, p. 135–136 et 141–143",
+    "description": "Qu’est-ce qui distingue un corps vivant d’un corps inanimé, et quel rôle l’âme joue-t-elle dans cette définition ?",
+    "context": "Aristote refuse de penser l’âme comme une chose simplement ajoutée au corps. Elle est la forme et le principe des fonctions par lesquelles un vivant se nourrit, sent, se meut ou pense.",
+    "readingQuestions": [
+      "Pourquoi le corps vivant ne peut-il pas être identifié à l’âme ?",
+      "Que signifie définir l’âme comme forme d’un corps naturel ayant la vie en puissance ?",
+      "Quelles fonctions permettent à Aristote de distinguer différents degrés de vie ?"
+    ],
+    "glossary": [
+      {
+        "term": "hylémorphisme",
+        "definition": "Doctrine aristotélicienne selon laquelle un être concret s’explique par l’union d’une matière et d’une forme."
+      },
+      {
+        "term": "âme",
+        "definition": "Chez Aristote, principe formel et fonctionnel du vivant : ce par quoi un corps vivant accomplit ses opérations propres."
+      },
+      {
+        "term": "en puissance / en acte",
+        "definition": "Distinction entre ce qu’un être peut devenir ou accomplir et la réalisation effective de cette possibilité."
+      }
+    ],
+    "paragraphs": [
+      "[P]armi les corps naturels, les uns ont la vie, cependant que les autres ne l’ont pas ; et par vie, nous voulons dire la propriété de par soi-même se nourrir, croître et dépérir. Si bien que tout corps naturel, ayant la vie en partage, peut être substance, une substance, cependant, comme on l’a dit, composée. Mais, puisque c’est précisément un corps qui a cette propriété, c’est-à-dire, possède la vie, le corps ne saurait être l’âme. Le corps, en effet, ne se range pas dans les réalités qui se disent d’un sujet, mais se présente plutôt comme sujet ou matière.",
+      "Il faut donc nécessairement que l’âme soit substance comme forme d’un corps naturel qui a potentiellement la vie. […]",
+      "Disons donc, en guise de point de départ de l’examen, que l’animé se distingue de l’inanimé par le fait qu’il est en vie. Mais, comme le fait de vivre s’entend de plusieurs façons, nous prétendons qu’il y a vie là où se trouve ne serait-ce qu’une seule quelconque des manifestations telles que l’intelligence, la sensation, le mouvement local et le repos, ou encore le mouvement nutritif, dépérissement et croissance. C’est pourquoi l’on considère que tous les êtres qui se développent ont également la vie, car, visiblement, ils ont en eux-mêmes la sorte de puissance ou de principe qui leur permet de suivre, dans leur croissance et leur dépérissement, des directions contraires. […]",
+      "Et, pour l’instant, on se bornera simplement à dire que l’âme est principe des manifestations qu’on vient d’évoquer et qu’elle se définit par les fonctions nutritive, sensitive, cogitative et par le mouvement."
+    ]
+  },
+  {
+    "id": "diderot-vie-phenomene-materiel",
+    "section": "philosophie",
+    "cardMeta": "Nature · matérialisme et vivant",
+    "title": "La vie est un phénomène matériel",
+    "author": "Denis Diderot",
+    "authorTag": "Diderot",
+    "cardHighlight": "phénomène matériel",
+    "authorMeta": "(1713–1784) · matérialisme",
+    "themes": [
+      "Nature",
+      "Science"
+    ],
+    "work": "Entretien entre D’Alembert et Diderot",
+    "publication": "1769, in Œuvres philosophiques, Garnier, 1998, p. 274–277",
+    "description": "Faut-il supposer un principe immatériel pour expliquer le passage de la matière inerte à la sensibilité et à la vie ?",
+    "context": "Diderot prend le développement de l’œuf comme modèle d’une explication matérialiste du vivant. Il refuse d’introduire un principe spirituel extérieur lorsque l’organisation de la matière peut rendre compte de l’apparition de la sensibilité.",
+    "readingQuestions": [
+      "Pourquoi l’exemple de l’œuf met-il en difficulté une explication dualiste du vivant ?",
+      "Quels sont les deux partis que Diderot laisse à son interlocuteur ?",
+      "Pourquoi l’hypothèse d’un principe immatériel lui paraît-elle produire davantage de mystères qu’elle n’en résout ?"
+    ],
+    "glossary": [
+      {
+        "term": "matérialisme",
+        "definition": "Conception selon laquelle les phénomènes, y compris vitaux et mentaux, doivent être expliqués à partir de la matière et de son organisation."
+      },
+      {
+        "term": "génération",
+        "definition": "Processus par lequel un être vivant se forme et se développe."
+      },
+      {
+        "term": "réductionnisme",
+        "definition": "Démarche qui cherche à expliquer un niveau de réalité par des propriétés ou mécanismes d’un niveau plus élémentaire."
+      }
+    ],
+    "paragraphs": [
+      "Voyez-vous cet œuf ? C’est avec cela qu’on renverse toutes les écoles de théologie et tous les temples de la terre. Qu’est-ce que cet œuf ? une masse insensible avant que le germe y soit introduit ; et après que le germe y est introduit, qu’est-ce encore ? une masse insensible, car ce germe n’est lui-même qu’un fluide inerte et grossier. Comment cette masse passera-t-elle à une autre organisation, à la sensibilité, à la vie ? par la chaleur. Qu’y produira la chaleur ? le mouvement. Quels seront les effets successifs du mouvement ? Au lieu de me répondre, asseyez-vous, et suivons-les de l’œil de moment en moment. D’abord c’est un point qui oscille, un filet qui s’étend et qui se colore ; de la chair qui se forme ; un bec, des bouts d’ailes, des yeux, des pattes qui paraissent ; une matière jaunâtre qui se dévide et produit des intestins ; c’est un animal. Cet animal se meut, s’agite, crie ; j’entends ses cris à travers la coque ; il se couvre de duvet ; il voit. La pesanteur de sa tête, qui oscille, porte sans cesse son bec contre la paroi intérieure de sa prison ; la voilà brisée ; il en sort, il marche, il vole, il s’irrite, il fuit, il approche, il se plaint, il souffre, il aime, il désire, il jouit ; il a toutes vos affections ; toutes vos actions, il les fait. Prétendrez-vous, avec Descartes, que c’est une pure machine imitative ? Mais les petits enfants se moqueront de vous, et les philosophes vous répliqueront que si c’est là une machine, vous en êtes une autre. […] Il ne vous reste qu’un de ces deux partis à prendre ; c’est d’imaginer dans la masse inerte de l’œuf un élément caché qui en attendait le développement pour manifester sa présence, ou de supposer que cet élément imperceptible s’y est insinué à travers la coque dans un instant déterminé du développement. Mais qu’est-ce que cet élément ? Occupait-il de l’espace, ou n’en occupait-il point ? Comment est-il venu, ou s’est-il échappé, sans se mouvoir ? Où était-il ? Que faisait-il là ou ailleurs ? A-t-il été créé à l’instant du besoin ? Existait-il ? Attendait-il un domicile ? Était-il homogène ou hétérogène à ce domicile ? Homogène, il était matériel ; hétérogène, on ne conçoit ni son inertie avant le développement, ni son énergie dans l’animal développé […]. [P]our ne pas admettre une supposition simple qui explique tout, la sensibilité, propriété générale de la matière, ou produit de l’organisation, vous renoncez au sens commun, et vous précipitez dans un abîme de mystères, de contradictions et d’absurdités."
+    ]
+  },
+  {
+    "id": "descartes-organisme-machine",
+    "section": "philosophie",
+    "cardMeta": "Nature · organisme et machine",
+    "title": "La machine est un modèle pour comprendre les organismes vivants",
+    "author": "René Descartes",
+    "authorTag": "Descartes",
+    "cardHighlight": "organisme comme machine",
+    "authorMeta": "(1596–1650) · rationalisme",
+    "themes": [
+      "Nature",
+      "Technique",
+      "Conscience"
+    ],
+    "work": "Discours de la méthode",
+    "publication": "1637, Ve partie, in Œuvres et lettres, Gallimard, « Bibliothèque de la Pléiade », 1953, p. 164–165",
+    "description": "Jusqu’où peut-on comprendre le vivant sur le modèle d’un automate, et qu’est-ce qui distingue encore l’être humain de la machine ?",
+    "context": "Descartes assimile le corps animal à une machine extrêmement complexe. Il réserve toutefois à l’être humain deux signes distinctifs : l’usage indéfiniment adaptable du langage et la raison comme instrument universel.",
+    "readingQuestions": [
+      "Pourquoi le corps vivant peut-il être comparé à une machine ?",
+      "Quels critères permettent à Descartes de distinguer un automate d’un véritable être humain ?",
+      "Pourquoi la raison est-elle dite « instrument universel » ?"
+    ],
+    "glossary": [
+      {
+        "term": "automate",
+        "definition": "Machine capable d’exécuter des mouvements réglés sans intervention continue d’un agent extérieur."
+      },
+      {
+        "term": "dualisme",
+        "definition": "Chez Descartes, distinction entre substance étendue, corporelle, et substance pensante."
+      },
+      {
+        "term": "raison",
+        "definition": "Faculté universelle qui permet à l’être humain d’adapter sa conduite à une diversité indéfinie de situations."
+      }
+    ],
+    "paragraphs": [
+      "[C]eux qui, sachant combien de divers automates, ou machines mouvantes, l’industrie des hommes peut faire, sans y employer que fort peu de pièces, à comparaison de la grande multitude des os, des muscles, des nerfs, des artères, des veines, et de toutes les autres parties qui sont dans le corps de chaque animal, considéreront ce corps comme une machine qui, ayant été faite des mains de Dieu, est incomparablement mieux ordonnée et a en soi des mouvements plus admirables qu’aucune de celles qui peuvent être inventées par les hommes. […], [S]’il y avait de telles machines qui eussent les organes et la figure extérieure d’un singe ou de quelque autre animal sans raison, nous n’aurions aucun moyen pour reconnaître qu’elles ne seraient pas en tout de même nature que ces animaux ; au lieu que, s’il y en avait qui eussent la ressemblance de nos corps, et imitassent autant nos actions que moralement il serait possible, nous aurions toujours deux moyens très certains pour reconnaître qu’elles ne seraient point pour cela de vrais hommes. Dont le premier est que jamais elles ne pourraient user de paroles ni d’autres signes en les composant, comme nous faisons pour déclarer aux autres nos pensées. Car on peut bien concevoir qu’une machine soit tellement faite qu’elle profère des paroles, et même qu’elle en profère quelques-unes à propos des actions corporelles qui causeront quelque changement en ses organes ; comme si on la touche en quelque endroit, qu’elle demande ce qu’on lui veut dire, si en un autre, qu’elle crie qu’on lui fait mal, et choses semblables ; mais non pas qu’elle les arrange diversement pour répondre au sens de tout ce qui se dira en sa présence, ainsi que les hommes les plus hébétés peuvent faire. Et le second est que, bien qu’elles fissent plusieurs choses aussi bien ou peut-être mieux qu’aucun de nous, elles manqueraient infailliblement en quelques autres, par lesquelles on découvrirait qu’elles n’agiraient pas par connaissance, mais seulement par la disposition de leurs organes. Car, au lieu que la raison est un instrument universel qui peut servir en toutes sortes de rencontres, ces organes ont besoin de quelque particulière disposition pour chaque action particulière ; d’où vient qu’il est moralement impossible qu’il y en ait assez de divers en une machine, pour la faire agir en toutes les occurrences de la vie de même façon que notre raison nous fait agir."
+    ]
+  },
+  {
+    "id": "kant-machine-modele-insuffisant-vivant",
+    "section": "philosophie",
+    "cardMeta": "Nature · organisme et finalité",
+    "title": "La machine est un modèle insuffisant pour penser le vivant",
+    "author": "Emmanuel Kant",
+    "authorTag": "Kant",
+    "cardHighlight": "force formatrice",
+    "authorMeta": "(1724–1804) · philosophie critique",
+    "themes": [
+      "Nature",
+      "Technique",
+      "Science"
+    ],
+    "work": "Critique de la faculté de juger",
+    "publication": "1790, § 65, éd. et trad. M. Buhot de Launay, Gallimard, 1985, p. 337–338",
+    "description": "Qu’est-ce qu’un organisme possède qu’une machine, même très complexe, ne peut pas expliquer ?",
+    "context": "Kant distingue l’organisation vivante du simple mécanisme. Dans un organisme, les parties ne font pas que transmettre un mouvement : elles participent à la production, à l’entretien et à la réparation du tout.",
+    "readingQuestions": [
+      "Pourquoi un rouage ne produit-il pas les autres rouages d’une montre ?",
+      "Que signifie l’idée de « force formatrice » ?",
+      "Pourquoi l’autoréparation et l’auto-organisation du vivant résistent-elles au modèle mécanique ?"
+    ],
+    "glossary": [
+      {
+        "term": "cause efficiente",
+        "definition": "Cause qui produit effectivement un effet."
+      },
+      {
+        "term": "finalité",
+        "definition": "Organisation d’un processus ou d’un être en fonction d’une fin."
+      },
+      {
+        "term": "organisme",
+        "definition": "Totalité vivante dont les parties concourent à la formation et au maintien du tout."
+      }
+    ],
+    "paragraphs": [
+      "Dans une montre, une partie est l’instrument du mouvement des autres, mais un rouage n’est pas la cause efficiente de la production d’un autre rouage ; une partie est certes là pour l’autre, mais elle n’est pas là par cette autre partie. […] C’est la raison pour laquelle également, dans une montre, un rouage ne peut en produire un autre, pas plus qu’une montre ne peut produire d’autres montres, en utilisant (en organisant) pour cela d’autres matières ; c’est aussi la raison pour laquelle elle ne remplace pas non plus d’elle-même les parties qui lui ont été enlevées, ni ne compense leur défaut dans la première formation en faisant intervenir les autres parties, ni ne se répare elle-même lorsqu’elle est déréglée […]. Un être organisé n’est donc pas une simple machine, car celle-ci dispose exclusivement d’une force motrice ; mais l’être organisé possède en soi une force formatrice qu’il communique aux matériaux qui n’en disposent pas (il les organise), force motrice qui se transmet donc et qui n’est pas explicable par le simple pouvoir du mouvement (le mécanisme)."
+    ]
+  },
+  {
+    "id": "darwin-evolution-vivant-techniques",
+    "section": "philosophie",
+    "cardMeta": "Nature · évolution et technique",
+    "title": "On ne peut pas assimiler l’évolution du vivant et l’histoire des techniques",
+    "author": "Charles Darwin",
+    "authorTag": "Darwin",
+    "cardHighlight": "sélection naturelle",
+    "authorMeta": "(1809–1882) · évolutionnisme",
+    "themes": [
+      "Nature",
+      "Science",
+      "Technique"
+    ],
+    "work": "L’Origine des espèces",
+    "publication": "1859, chap. IV, éd. et trad. D. Becquemont et E. Barbier, GF, 2008, p. 241",
+    "description": "Pourquoi l’analogie entre l’œil et un instrument fabriqué peut-elle induire en erreur sur l’origine des formes vivantes ?",
+    "context": "Darwin récuse l’idée que la complexité d’un organe implique un artisan ou un projet préalable. Les variations héréditaires et la sélection naturelle permettent d’expliquer une formation progressive sans modèle conçu d’avance.",
+    "readingQuestions": [
+      "Quel est le fondement de la comparaison entre l’œil et le télescope ?",
+      "Pourquoi cette analogie devient-elle présomptueuse selon Darwin ?",
+      "Comment variation, reproduction et sélection naturelle expliquent-elles autrement la formation d’un organe complexe ?"
+    ],
+    "glossary": [
+      {
+        "term": "sélection naturelle",
+        "definition": "Processus par lequel des variations héréditaires avantageuses tendent à se conserver et à se diffuser dans une population."
+      },
+      {
+        "term": "variation",
+        "definition": "Différence entre individus susceptible d’être transmise et sur laquelle peut agir la sélection."
+      },
+      {
+        "term": "analogie",
+        "definition": "Rapprochement entre deux réalités à partir de ressemblances de structure ou de fonction."
+      }
+    ],
+    "paragraphs": [
+      "La comparaison entre l’œil et le télescope se présente naturellement à l’esprit. Nous savons que ce dernier instrument a été perfectionné par les efforts continus et prolongés des plus hautes intelligences humaines, et nous en concluons naturellement que l’œil a dû se former par un procédé analogue. Mais cette conclusion n’est-elle pas présomptueuse ? […] Dans les corps vivants, la variation cause les modifications légères, la reproduction les multiplie presque à l’infini, et la sélection naturelle s’empare de chaque amélioration avec une sûreté infaillible. Admettons, enfin, que cette marche se continue pendant des millions d’années et s’applique pendant chacune à des millions d’individus : ne pouvons-nous pas admettre alors qu’il ait pu se former ainsi un instrument optique vivant, aussi supérieur à un appareil de verre que les œuvres du Créateur sont supérieures à celles de l’homme ?"
+    ]
+  },
+  {
+    "id": "claude-bernard-experimentation-animale",
+    "section": "philosophie",
+    "cardMeta": "Nature · expérimentation animale",
+    "title": "Il est légitime d’expérimenter sur les animaux",
+    "author": "Claude Bernard",
+    "authorTag": "Bernard",
+    "cardHighlight": "expérimenter sur les animaux",
+    "authorMeta": "(1813–1878) · médecine expérimentale",
+    "themes": [
+      "Nature",
+      "Science",
+      "Devoir"
+    ],
+    "work": "Introduction à l’étude de la médecine expérimentale",
+    "publication": "1865, GF, 1966, p. 153",
+    "description": "L’utilité scientifique et médicale suffit-elle à justifier l’expérimentation animale ?",
+    "context": "Claude Bernard défend la vivisection et l’expérimentation animale au nom de la constitution d’une science du vivant et de la protection des malades humains. Le texte permet d’interroger la différence entre efficacité scientifique et légitimité morale.",
+    "readingQuestions": [
+      "Quel argument Claude Bernard tire-t-il des autres usages humains des animaux ?",
+      "Pourquoi oppose-t-il l’expérimentation sur l’animal à l’expérimentation dangereuse sur le malade ?",
+      "L’utilité pour l’être humain suffit-elle à fonder moralement cette pratique ?"
+    ],
+    "glossary": [
+      {
+        "term": "vivisection",
+        "definition": "Dissection ou intervention expérimentale pratiquée sur un animal vivant."
+      },
+      {
+        "term": "expérimentation",
+        "definition": "Procédure contrôlée destinée à produire des observations permettant de tester une hypothèse."
+      },
+      {
+        "term": "bioéthique",
+        "definition": "Réflexion morale sur les pratiques médicales et biologiques affectant des êtres vivants."
+      }
+    ],
+    "paragraphs": [
+      "A-t-on le droit de faire des expériences et des vivisections sur les animaux ? Quant à moi, je pense qu’on a ce droit d’une manière entière et absolue. Il serait bien étrange, en effet, qu’on reconnût que l’homme a le droit de se servir des animaux pour tous les usages de la vie, pour ses services domestiques, pour son alimentation, et qu’on lui défendît de s’en servir pour s’instruire dans une des sciences les plus utiles à l’humanité. Il n’y a pas à hésiter ; la science de la vie ne peut se constituer que par des expériences, et l’on ne peut sauver de la mort des êtres vivants qu’après en avoir sacrifié d’autres […]. Je n’admets pas qu’il soit moral d’essayer sur les malades dans les hôpitaux des remèdes plus ou moins dangereux ou actifs, sans qu’on les ait préalablement expérimentés sur des chiens ; car je prouverai plus loin que tout ce que l’on obtient chez les animaux peut parfaitement être concluant pour l’homme quand on sait bien expérimenter. Donc, s’il est immoral de faire sur un homme une expérience dès qu’elle est dangereuse pour lui, quoique le résultat puisse être utile aux autres, il est essentiellement moral de faire sur un animal des expériences, quoique douloureuses et dangereuses pour lui, dès qu’elles peuvent être utiles pour l’homme."
+    ]
+  },
+  {
+    "id": "bentham-sensibilite-respect-animaux",
+    "section": "philosophie",
+    "cardMeta": "Nature · sensibilité animale",
+    "title": "Tout être sensible doit être respecté",
+    "author": "Jérémy Bentham",
+    "authorTag": "Bentham",
+    "cardHighlight": "peuvent-ils souffrir ?",
+    "authorMeta": "(1748–1832) · utilitarisme",
+    "themes": [
+      "Nature",
+      "Devoir",
+      "Justice"
+    ],
+    "work": "Introduction aux principes de morale et de législation",
+    "publication": "1789, ch. XVII, trad. Vrin, 2011, p. 325",
+    "description": "La capacité de souffrir, plutôt que la raison ou le langage, doit-elle déterminer l’étendue de notre considération morale ?",
+    "context": "Bentham déplace le critère moral : la question décisive n’est pas de savoir si un être raisonne ou parle, mais s’il peut souffrir. Ce déplacement ouvre la considération morale à l’ensemble des êtres sensibles.",
+    "readingQuestions": [
+      "Pourquoi Bentham compare-t-il la condition animale aux exclusions humaines fondées sur des différences arbitraires ?",
+      "Pourquoi la raison et le langage ne sont-ils pas des critères satisfaisants ?",
+      "Que change le critère de la sensibilité pour notre rapport moral aux animaux ?"
+    ],
+    "glossary": [
+      {
+        "term": "sensibilité",
+        "definition": "Capacité d’éprouver des sensations, notamment le plaisir et la douleur."
+      },
+      {
+        "term": "utilitarisme",
+        "definition": "Doctrine morale évaluant les actions d’après leurs conséquences sur le bien-être des êtres concernés."
+      },
+      {
+        "term": "considération morale",
+        "definition": "Fait de reconnaître qu’un être et ses intérêts doivent compter dans le jugement moral."
+      }
+    ],
+    "paragraphs": [
+      "Le jour arrivera peut-être où le reste de la création animale acquerra les droits que seule une main tyrannique a pu leur retirer. Les Français ont déjà découvert que la noirceur de la peau n’était pas une raison pour abandonner un homme au caprice de ses persécuteurs sans lui laisser aucun recours. Peut-être admettra-t-il un jour que le nombre de pattes, la pilosité […] sont des raisons tout aussi insuffisantes d’abandonner un être sentant à ce même sort. Quel autre critère doit permettre d’établir une distinction tranchée ? Est-ce la faculté de raisonner, ou peut-être la faculté de parler ? Mais un cheval ou un chien adulte est un être incomparablement plus rationnel qu’un nourrisson âgé d’un jour, d’une semaine ou même d’un mois – il a aussi plus de conversation. Mais à supposer qu’il n’en soit pas ainsi, qu’en résulterait-il ? La question n’est pas : « peuvent-ils raisonner ? », ni « peuvent-ils parler ? », mais « peuvent-ils souffrir ? »."
+    ]
+  },
+  {
+    "id": "uexkull-animal-monde-propre",
+    "section": "philosophie",
+    "cardMeta": "Nature · monde animal",
+    "title": "L’animal n’est pas qu’un objet : il possède un monde propre",
+    "author": "Jakob von Uexküll",
+    "authorTag": "Uexküll",
+    "cardHighlight": "un monde propre",
+    "authorMeta": "(1864–1944) · biologie et philosophie du vivant",
+    "themes": [
+      "Nature",
+      "Science"
+    ],
+    "work": "Mondes animaux et monde humain",
+    "publication": "1923, Pocket, 1965, p. 25–26 et 29–30",
+    "description": "Chaque animal habite-t-il le même monde objectif, ou sélectionne-t-il un milieu propre à partir de ses capacités perceptives et actives ?",
+    "context": "Uexküll montre, à partir de la tique, que l’animal ne reçoit pas passivement un monde déjà constitué. Son milieu se compose des signaux auxquels son organisation biologique lui permet de répondre.",
+    "readingQuestions": [
+      "Comment trois excitations suffisent-elles à constituer le milieu de la tique ?",
+      "Pourquoi la pauvreté du milieu peut-elle augmenter la sûreté de l’action ?",
+      "Que remet en cause l’idée selon laquelle chaque sujet « tisse » son propre réseau de relations ?"
+    ],
+    "glossary": [
+      {
+        "term": "Umwelt",
+        "definition": "« Monde environnant » propre à un vivant, constitué par les éléments qui ont effectivement une signification perceptive et pratique pour lui."
+      },
+      {
+        "term": "signal perceptif",
+        "definition": "Excitation sélectionnée par les capacités sensorielles d’un organisme et qui prend sens dans son milieu."
+      },
+      {
+        "term": "milieu",
+        "definition": "Ensemble de relations significatives qu’un vivant entretient avec certains éléments de son environnement."
+      }
+    ],
+    "paragraphs": [
+      "La tique reste suspendue sans mouvement à une pointe de branche dans une clairière. Sa position lui offre la possibilité de tomber sur un mammifère qui viendrait à passer. De tout l’entourage aucune excitation ne lui parvient. Mais voilà que s’approche un mammifère dont le sang est indispensable à la procréation de ses descendants.",
+      "C’est à ce moment que se produit quelque chose d’étonnant : de tous les effets dégagés par le corps du mammifère, il n’y en a que trois, et dans un certain ordre, qui deviennent des excitations. Dans le monde gigantesque qui entoure la tique trois stimulants brillent comme des signaux lumineux dans les ténèbres et lui servent de poteaux indicateurs qui la conduiront au but sans défaillance. Pour cela, la tique est pourvue, en dehors de son corps avec ses récepteurs et ses effecteurs, de trois signaux perceptifs qu’elle peut transformer en caractères perceptifs. Et le déroulement des actes de la tique est si fortement prescrit par ces caractères perceptifs qu’elle ne peut produire que des caractères actifs bien déterminés.",
+      "La richesse du monde qui entoure la tique disparaît et se réduit à une forme pauvre qui consiste pour l’essentiel en trois caractères perceptifs et trois caractères actifs – son milieu. Mais la pauvreté du milieu conditionne la sûreté de l’action, et la sûreté est plus importante que la richesse. […]",
+      "Tout sujet tisse ses relations comme autant de fils d’araignée avec certaines caractéristiques des choses et les entrelace pour faire un réseau qui porte son existence. […]",
+      "Trop souvent nous nous imaginons que les relations qu’un sujet d’un autre milieu entretient avec les choses de son milieu prennent place dans le même espace et dans le même temps que ceux qui nous relient aux choses de notre monde humain. Cette illusion repose sur la croyance en un monde unique dans lequel s’emboîteraient tous les êtres vivants. […] Ce n’est que ces dernières années que les physiciens en sont venus à douter d’un univers ne comprenant qu’un seul espace valable pour tous les êtres."
+    ]
+  },
+  {
+    "id": "lucrece-ame-esprit-corporels",
+    "section": "philosophie",
+    "cardMeta": "Nature · matière et esprit",
+    "title": "L’âme et l’esprit sont corporels",
+    "author": "Lucrèce",
+    "authorTag": "Lucrèce",
+    "cardHighlight": "nature corporelle",
+    "authorMeta": "(v. 99–55 av. J.-C.) · épicurisme / atomisme",
+    "themes": [
+      "Nature",
+      "Conscience"
+    ],
+    "work": "De la nature (De Rerum Natura)",
+    "publication": "Ier s. av. J.-C., chant III, v. 137–176, trad. J. Kany-Turpin, GF, 1997, p. 189–191",
+    "description": "Les interactions entre l’esprit et le corps permettent-elles de montrer que l’âme elle-même est matérielle ?",
+    "context": "Lucrèce reprend l’atomisme épicurien : âme et esprit sont matériels, même s’ils ont des fonctions différentes. Leur capacité à agir sur le corps et à subir ses blessures constitue pour lui une preuve de leur corporéité.",
+    "readingQuestions": [
+      "Pourquoi Lucrèce distingue-t-il l’esprit et l’âme tout en les réunissant dans une même nature ?",
+      "Comment les effets corporels de la peur servent-ils son argument ?",
+      "Pourquoi l’action réciproque entre esprit et corps implique-t-elle, selon lui, un contact matériel ?"
+    ],
+    "glossary": [
+      {
+        "term": "atomisme",
+        "definition": "Doctrine selon laquelle toute réalité est composée d’atomes et de vide."
+      },
+      {
+        "term": "âme",
+        "definition": "Chez Lucrèce, principe corporel diffus dans le corps vivant et lié à la sensation et aux mouvements vitaux."
+      },
+      {
+        "term": "esprit",
+        "definition": "Partie directrice de l’âme, siège du raisonnement et de la décision, elle-même matérielle."
+      }
+    ],
+    "paragraphs": [
+      "Maintenant je dis que l’esprit et l’âme se tiennent conjoints et ne forment qu’une seule nature ; mais ce conseil que nous nommons esprit, intelligence, en est comme le chef et règne sur tout le corps. Son siège est fixé au centre de la poitrine ; c’est la région où tressaillent l’effroi et la peur, où la joie nous caresse, où règne donc l’esprit. L’autre partie de l’âme éparse dans tout le corps obéit, se mouvant par l’impulsion de l’esprit. Lui raisonne tout seul, et se réjouit tout seul, sans que rien n’émeuve ni l’âme ni le corps. De même que la tête, ou l’œil de douleur assailli, peut souffrir en nous sans que tout notre corps partage ce tourment, de même l’esprit peut être seul à souffrir, à s’épanouir de joie, quand l’autre partie de l’âme dans tout le corps ne subit aucune impulsion nouvelle. Mais quand l’esprit est agité d’une crainte plus vive, nous voyons toute l’âme compatir dans les membres, les sueurs et la pâleur sortent sur tout le corps, la langue s’embarrasse et la voix disparaît, les yeux se voilent, les oreilles sifflent, les membres défaillent ; souvent enfin nous voyons des hommes succomber à leur terreur mentale, preuve accessible à tous de l’union de l’âme avec l’esprit puisque par l’esprit l’âme frappée pousse le corps et le meut à son tour. La même raison prouve la nature corporelle de l’âme et de l’esprit : ils poussent nos membres, les arrachent au sommeil, changent notre expression, bref, c’est l’homme tout entier qu’ils paraissent régir. On le voit, sans contact rien de tel n’est possible, et sans corps nul contact. Ne faut-il pas admettre la nature corporelle de l’âme et de l’esprit ? Et puis, tu le vois bien : l’esprit avec le corps pâtit, à l’intérieur du corps il partage nos sensations. Que s’abatte la force horrible d’une arme, brisant os et tendons, même sans atteinte à la vie, s’ensuit une langueur, une douce attirance de la terre, puis un trouble submerge l’esprit, et parfois naît un vague désir de ressurgir. Il faut donc que l’esprit soit de nature corporelle puisqu’il souffre des coups et blessures du corps."
+    ]
+  },
+  {
+    "id": "bergson-pensee-cerveau",
+    "section": "philosophie",
+    "cardMeta": "Conscience · esprit et cerveau",
+    "title": "On ne peut pas réduire la pensée au cerveau",
+    "author": "Henri Bergson",
+    "authorTag": "Bergson",
+    "cardHighlight": "pensée indépendante du cerveau",
+    "authorMeta": "(1859–1941) · spiritualisme",
+    "themes": [
+      "Conscience",
+      "Nature",
+      "Science"
+    ],
+    "work": "L’Âme et le Corps",
+    "publication": "1912, in L’Énergie spirituelle, PUF, 1999, p. 42–43",
+    "description": "Même avec une connaissance parfaite du cerveau, pourrait-on déduire l’intégralité de la vie consciente ?",
+    "context": "Bergson admet que le cerveau conditionne l’expression corporelle de la pensée, mais refuse d’en conclure que la pensée y est intégralement contenue. Ses analogies du théâtre et du tableau distinguent corrélation cérébrale et réduction de l’esprit au cerveau.",
+    "readingQuestions": [
+      "Que permettrait de connaître une science parfaite du cerveau selon Bergson ?",
+      "Pourquoi l’analogie du théâtre montre-t-elle que les gestes n’épuisent pas le sens de la pensée ?",
+      "Comment l’image du cadre et du tableau permet-elle de penser une dépendance sans réduction ?"
+    ],
+    "glossary": [
+      {
+        "term": "spiritualisme",
+        "definition": "Conception selon laquelle l’esprit possède une réalité irréductible à la matière."
+      },
+      {
+        "term": "parallélisme psychophysique",
+        "definition": "Thèse selon laquelle à chaque état mental correspondrait un état cérébral déterminé et réciproquement."
+      },
+      {
+        "term": "état d’âme",
+        "definition": "Expérience vécue qualitative : pensée, sentiment ou disposition intérieure."
+      }
+    ],
+    "paragraphs": [
+      "Celui qui pourrait regarder à l’intérieur d’un cerveau en pleine activité, suivre le va-et-vient des atomes et interpréter tout ce qu’ils font, celui-là saurait sans doute quelque chose de ce qui se passe dans l’esprit, mais il n’en saurait que peu de chose. Il en connaîtrait tout juste ce qui est exprimable en gestes, attitudes et mouvements du corps, ce que l’état d’âme contient d’action en voie d’accomplissement, ou simplement naissante : le reste lui échapperait. Il serait, vis-à-vis des pensées et des sentiments qui se déroulent à l’intérieur de la conscience, dans la situation du spectateur qui voit distinctement tout ce que les acteurs font sur la scène, mais n’entend pas un mot de ce qu’ils disent. Sans doute, le va-et-vient des acteurs, leurs gestes et leurs attitudes, ont leur raison d’être dans la pièce qu’ils jouent ; et si nous connaissons le texte, nous pouvons prévoir à peu près le geste ; mais la réciproque n’est pas vraie, et la connaissance des gestes ne nous renseigne que fort peu sur la pièce, parce qu’il y a beaucoup plus dans une fine comédie que les mouvements par lesquels on la scande. Ainsi, je crois que si notre science du mécanisme cérébral était parfaite, et parfaite aussi notre psychologie, nous pourrions deviner ce qui se passe dans le cerveau pour un état d’âme déterminé ; mais l’opération inverse serait impossible, parce que nous aurions le choix, pour un même état du cerveau, entre une foule d’états d’âme différents, également appropriés. Je ne dis pas, notez-le bien, qu’un état d’âme quelconque puisse correspondre à un état cérébral donné : posez le cadre, vous n’y placerez pas n’importe quel tableau : le cadre détermine quelque chose du tableau en éliminant par avance tous ceux qui n’ont pas la même forme et la même dimension ; mais, pourvu que la forme et la dimension y soient, le tableau entrera dans le cadre. Ainsi pour le cerveau et la conscience. Pourvu que les actions relativement simples – gestes, attitudes, mouvements – en lesquelles se dégraderait un état d’âme complexe, soient bien celles que le cerveau prépare, l’état mental s’insérera exactement dans l’état cérébral ; mais il y a une multitude de tableaux différents qui tiendraient aussi bien dans ce cadre ; et par conséquent le cerveau ne détermine pas la pensée ; et par conséquent la pensée, en grande partie du moins, est indépendante du cerveau."
+    ]
+  }
+]

@@ -10,10 +10,3964 @@
   const COMPLEMENTARY_THEMES = [
     "Amour", "Autrui", "Culture", "Démonstration", "Désir", "Existence et temps", "Histoire",
     "Interprétation", "Justice et droit", "Matière et esprit", "Politique",
-    "Raison et réel", "Société", "Travail et technique", "Vivant"
+    "Raison et réel", "Société", "Théorie et expérience", "Travail et technique", "Vivant"
   ];
 
   const TEXTS = [
+{
+  "id": "hume-causalite-experience-induction",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · causalité et induction",
+  "title": "Les lois du réel sont seulement induites à partir de notre expérience",
+  "author": "David Hume",
+  "authorTag": "Hume",
+  "cardHighlight": "induites à partir de notre expérience",
+  "familiarIdea": "le problème de l’induction",
+  "authorMeta": "(1711–1776) · empirisme",
+  "themes": [
+    "Science",
+    "Théorie et expérience"
+  ],
+  "work": "Enquête sur l’entendement humain",
+  "publication": "1748, section IV, trad. A. Leroy, GF, 2006, p. 85–89",
+  "description": "La relation de cause à effet peut-elle être connue par la raison seule, ou ne vient-elle que de l’expérience et de l’habitude ?",
+  "context": "Hume montre que l’expérience ne nous donne jamais une nécessité logique entre une cause et son effet. Nous apprenons à attendre certains événements parce qu’ils se sont souvent produits ensemble : notre connaissance du réel repose donc sur l’<strong>expérience</strong> et la coutume, non sur une démonstration <em>a priori</em>.",
+  "readingQuestions": [
+    "Pourquoi l’observation d’une cause ne permet-elle pas de déduire logiquement son effet ?",
+    "Quel rôle l’<strong>expérience</strong> répétée et la coutume jouent-elles dans notre croyance aux relations de cause à effet ?",
+    "Pourquoi l’induction ne peut-elle jamais donner aux lois du réel la certitude d’une démonstration ?"
+  ],
+  "glossary": [
+    {
+      "term": "a priori",
+      "definition": "Ce qui est établi indépendamment de l’expérience sensible."
+    },
+    {
+      "term": "induction",
+      "definition": "Raisonnement qui généralise à partir d’observations particulières répétées."
+    },
+    {
+      "term": "causalité",
+      "definition": "Relation selon laquelle un événement est tenu pour la cause d’un autre ; Hume soutient que cette relation est apprise par l’expérience plutôt que déduite par la raison seule."
+    }
+  ],
+  "paragraphs": [
+    "Le contraire d’un fait quelconque est toujours possible, car il n’implique pas contradiction et l’esprit le conçoit aussi facilement et aussi distinctement que s’il concordait pleinement avec la réalité. Le soleil ne se lèvera pas demain, cette proposition n’est pas moins intelligible et elle n’implique pas plus contradiction que l’affirmation : il se lèvera. Nous tenterions donc en vain d’en démontrer la fausseté. Si elle était démonstrativement fausse, elle impliquerait contradiction et l’esprit ne pourrait jamais la concevoir distinctement. […]",
+    "Tous les raisonnements sur les faits paraissent se fonder sur la relation de la cause à l’effet. […] J’oserai affirmer, comme une proposition générale qui n’admet pas d’exception, que la connaissance de cette relation ne s’obtient, en aucun cas, par des raisonnements a priori ; mais qu’elle naît entièrement de l’expérience, quand nous trouvons que des objets particuliers sont en conjonction constante l’un avec l’autre. […]",
+    "Nous imaginons que, si nous étions subitement introduits dans ce monde, nous pourrions dès l’abord inférer qu’une bille de billard communique du mouvement à une autre par impulsion, et que nous n’aurions nul besoin d’attendre la réalisation de cet événement pour prononcer avec certitude à son sujet. Telle est l’influence de la coutume que, là où elle est la plus forte, elle ne masque pas seulement notre ignorance naturelle, mais elle se cache elle-même et semble ne pas intervenir, uniquement parce qu’elle intervient au suprême degré.",
+    "[…] Le mouvement de la seconde bille de billard est un événement absolument distinct du mouvement de la première ; il n’y a rien dans l’un qui suggère la plus petite indication sur l’autre. […] Quand je vois, par exemple, une bille de billard qui se meut en ligne droite vers une autre, à supposer même que le mouvement de la seconde bille me soit accidentellement suggéré comme résultat de leur contact ou de l’impulsion, ne puis-je pas concevoir que cent événements différents pourraient aussi bien suivre de cette cause ? Les billes ne peuvent-elles toutes deux rester en repos absolu ? La première bille ne peut-elle retourner en ligne droite ou rebondir de la seconde dans une ligne ou une direction quelconque ? Toutes ces suppositions sont cohérentes et concevables. Alors, pourquoi donner la préférence à l’une d’elles qui n’est ni plus cohérente ni plus concevable que les autres ? Tous nos raisonnements a priori ne seront jamais capables de nous montrer le fondement de cette préférence."
+  ]
+},
+    {
+  "id": "kant-connaissance-experience-a-priori",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · empirique et a priori",
+  "title": "La connaissance commence avec l’expérience, mais n’en dérive pas tout entière",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "commence avec l’expérience",
+  "familiarIdea": "l’<em>a priori</em> kantien",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Raison",
+    "Théorie et expérience"
+  ],
+  "work": "Critique de la raison pure",
+  "publication": "1781–1787, Introduction, trad. A. Tremesaygues et B. Pacaud, PUF, 1986, p. 31–33",
+  "description": "L’expérience est-elle seulement l’origine chronologique de notre connaissance, ou suffit-elle aussi à en expliquer le contenu et l’universalité ?",
+  "context": "Kant distingue deux idées : toute connaissance commence avec l’<strong>expérience</strong>, mais toute connaissance n’en provient pas. Certaines formes universelles et nécessaires doivent donc avoir une origine <em>a priori</em> et rendre l’expérience elle-même possible.",
+  "readingQuestions": [
+    "Pourquoi Kant affirme-t-il que toute connaissance commence avec l’<strong>expérience</strong> ?",
+    "Pourquoi cela ne signifie-t-il pas que toute connaissance dérive de l’expérience ?",
+    "Comment l’universalité et la nécessité de certains jugements indiquent-elles une origine <em>a priori</em> ?"
+  ],
+  "glossary": [
+    {
+      "term": "empirique",
+      "definition": "Relatif à ce qui provient de l’expérience sensible."
+    },
+    {
+      "term": "a priori",
+      "definition": "Ce qui vaut indépendamment de l’expérience et rend possible une connaissance universelle ou nécessaire."
+    },
+    {
+      "term": "universalité",
+      "definition": "Validité d’un jugement pour tous les cas ; Kant oppose l’universalité relative de l’induction à l’universalité stricte."
+    }
+  ],
+  "paragraphs": [
+    "De la différence de la connaissance pure et de la connaissance empirique. Que toute notre connaissance commence avec l’expérience, cela ne soulève aucun doute. En effet, par quoi notre pouvoir de connaître […] pourrait-il être éveillé et mis en action […] si ce n’est par des objets qui frappent nos sens et qui, d’une part, produisent par eux-mêmes des représentations et d’autre part, mettent en mouvement notre faculté intellectuelle, afin qu’elle compare, lie ou sépare ces représentations, et travaille ainsi la matière brute des impressions sensibles pour en tirer une connaissance des objets, celle qu’on nomme l’expérience ? Ainsi, chronologiquement […], aucune connaissance ne précède en nous l’expérience et c’est avec elle que toutes commencent.",
+    "Mais si toute notre connaissance débute AVEC l’expérience, cela ne prouve pas qu’elle dérive toute DE l’expérience, car il se pourrait bien que même notre connaissance par expérience fût un composé de ce que nous recevons des impressions sensibles et de ce que notre propre pouvoir de connaître (simplement excité par des impressions sensibles) produit de lui-même : addition que nous ne distinguons pas de la matière première jusqu’à ce que notre attention y ait été portée par un long exercice qui nous ait appris à l’en séparer […].",
+    "[…] L’expérience ne donne jamais à ses jugements une véritable et stricte universalité, mais seulement une universalité supposée et relative (par induction) […]. Par conséquent, un jugement pensé avec une stricte universalité, c’est-à-dire de telle sorte qu’aucune exception n’est admise comme possible, ne dérive point de l’expérience, mais est valable absolument a priori. L’universalité empirique n’est donc qu’une élévation arbitraire de la valeur : on fait d’une règle valable dans la plupart des cas une loi qui s’applique à tous, comme, par exemple, dans la proposition : Tous les corps sont pesants. Quand, au contraire, un jugement possède essentiellement une stricte universalité, on connaît à cela qu’il provient d’une source particulière de la connaissance d’un pouvoir de connaissance a priori."
+  ]
+},
+    {
+  "id": "claude-bernard-methode-experimentale",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · méthode expérimentale",
+  "title": "Une expérience scientifique obéit à la méthode expérimentale",
+  "author": "Claude Bernard",
+  "authorTag": "Claude Bernard",
+  "cardHighlight": "méthode expérimentale",
+  "familiarIdea": "la méthode expérimentale",
+  "authorMeta": "(1813–1878) · médecine expérimentale",
+  "themes": [
+    "Science",
+    "Théorie et expérience"
+  ],
+  "work": "Introduction à l’étude de la médecine expérimentale",
+  "publication": "1865, Flammarion, 2008, p. 65–66",
+  "description": "Comment observation, hypothèse, raisonnement et expérimentation s’articulent-ils dans une véritable enquête scientifique ?",
+  "context": "Claude Bernard montre que l’<strong>expérience</strong> scientifique n’est ni une observation passive ni une vérification improvisée. Le savant observe, formule une hypothèse, en déduit des conséquences puis organise une expérience capable de mettre cette idée à l’épreuve.",
+  "readingQuestions": [
+    "Quelles étapes composent la méthode expérimentale décrite par Claude Bernard ?",
+    "Pourquoi le savant doit-il formuler une hypothèse sans la transformer en idée préconçue ?",
+    "Comment l’<strong>expérience</strong> permet-elle de mettre une hypothèse à l’épreuve des faits ?"
+  ],
+  "glossary": [
+    {
+      "term": "hypothèse",
+      "definition": "Proposition anticipée destinée à expliquer un phénomène et à être soumise à l’épreuve."
+    },
+    {
+      "term": "expérimentation",
+      "definition": "Mise à l’épreuve contrôlée d’une hypothèse au moyen d’une expérience provoquée."
+    },
+    {
+      "term": "induction",
+      "definition": "Raisonnement qui remonte d’observations particulières vers une proposition plus générale."
+    }
+  ],
+  "paragraphs": [
+    "[L]a méthode expérimentale s’appuie successivement sur le sentiment, la raison et l’expérience. Le sentiment engendre l’idée ou l’hypothèse expérimentale, c’est-à-dire l’interprétation anticipée des phénomènes de la nature. Toute l’initiative expérimentale est dans l’idée, car c’est elle qui provoque l’expérience. La raison ou le raisonnement ne servent qu’à déduire les conséquences de cette idée et à les soumettre à l’expérience.",
+    "Une idée anticipée ou une hypothèse est donc le point de départ nécessaire de tout raisonnement expérimental. Sans cela on ne saurait faire aucune investigation ni s’instruire ; on ne pourrait qu’entasser des observations stériles. Si l’on expérimentait sans idée préconçue, on irait à l’aventure ; mais d’un autre côté, ainsi que nous l’avons dit ailleurs, si l’on observait avec des idées préconçues, on ferait de mauvaises observations et l’on serait exposé à prendre les conceptions de son esprit pour la réalité.",
+    "[…] Toute la connaissance humaine se borne à remonter des effets observés à leur cause. À la suite d’une observation, une idée relative à la cause du phénomène observé se présente à l’esprit ; puis on introduit cette idée anticipée dans un raisonnement en vertu duquel on fait des expériences pour la contrôler."
+  ]
+},
+    {
+  "id": "einstein-theorie-modele-realite",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · modèle scientifique",
+  "title": "Une théorie scientifique est un modèle de la réalité",
+  "author": "Albert Einstein",
+  "authorTag": "Einstein",
+  "cardHighlight": "modèle de la réalité",
+  "authorMeta": "(1879–1955) · physique contemporaine",
+  "themes": [
+    "Science",
+    "Théorie et expérience"
+  ],
+  "work": "L’Évolution des idées en physique",
+  "publication": "avec Leopold Infeld, 1938, Payot, 1974, p. 34–35",
+  "description": "Une théorie scientifique copie-t-elle le réel, ou construit-elle une représentation qui permet de l’expliquer ?",
+  "context": "Einstein et Infeld comparent le savant à quelqu’un qui cherche à comprendre le mécanisme d’une montre fermée. Une <strong>théorie</strong> scientifique est donc une construction de l’esprit qui ordonne les observations ; elle peut être très efficace sans reproduire directement la réalité telle qu’elle est en elle-même.",
+  "readingQuestions": [
+    "Pourquoi le savant est-il comparé à quelqu’un qui cherche à comprendre une montre fermée ?",
+    "Pourquoi une <strong>théorie</strong> scientifique est-elle une construction de l’esprit plutôt qu’une simple copie du réel ?",
+    "Que devient notre rapport à la réalité si plusieurs modèles peuvent expliquer les mêmes observations ?"
+  ],
+  "glossary": [
+    {
+      "term": "théorie",
+      "definition": "Ensemble organisé de propositions et de principes visant à expliquer des phénomènes."
+    },
+    {
+      "term": "modèle",
+      "definition": "Représentation simplifiée construite pour rendre intelligibles certains aspects du réel."
+    },
+    {
+      "term": "vérité objective",
+      "definition": "Idéal d’une connaissance qui rendrait compte de la réalité indépendamment de nos représentations particulières."
+    }
+  ],
+  "paragraphs": [
+    "Les concepts physiques sont des créations libres de l’esprit humain et ne sont pas, comme on pourrait le croire, uniquement déterminés par le monde extérieur. Dans l’effort que nous faisons pour comprendre le monde, nous ressemblons quelque peu à l’homme qui essaie de comprendre le mécanisme d’une montre fermée. Il voit le cadran et les aiguilles en mouvement, il entend le tic-tac, mais il n’a aucun moyen d’ouvrir le boîtier. S’il est ingénieux il pourra se former quelque image du mécanisme, qu’il rendra responsable de tout ce qu’il observe, mais il ne sera jamais sûr que son image soit la seule capable d’expliquer ses observations. Il ne sera jamais en état de comparer son image avec le mécanisme réel, et il ne peut même pas se représenter la possibilité ou la signification d’une telle comparaison. Mais le chercheur croit certainement qu’à mesure que ses connaissances s’accroîtront, son image de la réalité deviendra de plus en plus simple et expliquera des domaines de plus en plus étendus de ses impressions sensibles. Il pourra aussi croire à l’existence d’une limite idéale de la connaissance que l’esprit humain peut atteindre. Il pourra appeler cette limite idéale la vérité objective."
+  ]
+},
+    {
+  "id": "bachelard-experience-theorie-materialisee",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · phénoménotechnique",
+  "title": "Une expérience scientifique est une théorie matérialisée",
+  "author": "Gaston Bachelard",
+  "authorTag": "Bachelard",
+  "cardHighlight": "théorie matérialisée",
+  "authorMeta": "(1884–1962) · épistémologie",
+  "themes": [
+    "Science",
+    "Théorie et expérience"
+  ],
+  "work": "Le Nouvel Esprit scientifique",
+  "publication": "1934, introduction, PUF, 1995, p. 16",
+  "description": "L’observation scientifique révèle-t-elle simplement un donné, ou construit-elle les phénomènes à partir de concepts et d’instruments ?",
+  "context": "Bachelard refuse l’idée d’une science qui commencerait par regarder simplement les faits. L’<strong>expérience</strong> scientifique est préparée par des concepts, une hypothèse et des instruments : le phénomène observé est en partie construit par la théorie qui permet de le faire apparaître.",
+  "readingQuestions": [
+    "Pourquoi une observation scientifique doit-elle être préparée plutôt que simplement enregistrée ?",
+    "En quoi une <strong>expérience</strong> scientifique construit-elle le phénomène qu’elle étudie ?",
+    "Que signifie l’idée selon laquelle les instruments sont des « théories matérialisées » ?"
+  ],
+  "glossary": [
+    {
+      "term": "phénoménotechnique",
+      "definition": "Chez Bachelard, production artificielle et contrôlée de phénomènes scientifiques à partir de dispositifs théoriques et instrumentaux."
+    },
+    {
+      "term": "rupture épistémologique",
+      "definition": "Rupture avec les évidences du sens commun et les préjugés qui empêchent la construction scientifique de l’objet."
+    },
+    {
+      "term": "instrument",
+      "definition": "Dispositif de mesure ou d’expérimentation qui incorpore des choix théoriques et rend certains phénomènes observables."
+    }
+  ],
+  "paragraphs": [
+    "[L’]observation a besoin d’un corps de précautions qui conduisent à réfléchir avant de regarder, qui réforment du moins la première vision, de sorte que ce n’est jamais la première observation qui est la bonne. L’observation scientifique est toujours une observation polémique ; elle confirme ou infirme une théorie antérieure, un schéma préalable, un plan d’observation ; elle montre en démontrant ; elle hiérarchise les apparences ; elle transcende l’immédiat ; elle reconstruit le réel après avoir reconstruit ses schémas. Naturellement, dès qu’on passe de l’observation à l’expérimentation, le caractère polémique de la connaissance devient plus net encore. Alors il faut que le phénomène soit trié, filtré, épuré, coulé dans le moule des instruments, produit sur le plan des instruments. Or les instruments ne sont que des théories matérialisées. Il en sort des phénomènes qui portent de toutes parts la marque théorique."
+  ],
+  "familiarIdea": "la théorie matérialisée"
+},
+    {
+  "id": "popper-theorie-falsifiable",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · falsifiabilité",
+  "title": "Une théorie scientifique est avant tout une théorie falsifiable",
+  "author": "Karl R. Popper",
+  "authorTag": "Popper",
+  "cardHighlight": "théorie falsifiable",
+  "familiarIdea": "le critère de falsifiabilité",
+  "authorMeta": "(1902–1994) · épistémologie critique",
+  "themes": [
+    "Science",
+    "Théorie et expérience"
+  ],
+  "work": "Conjectures et Réfutations",
+  "publication": "1953, trad. M. Irène et M. B. de Launay, Payot, 2006, p. 377–378",
+  "description": "Qu’est-ce qui distingue une théorie scientifique d’une proposition qui échappe à toute mise à l’épreuve ?",
+  "context": "Popper propose la <strong>falsifiabilité</strong> comme critère du caractère scientifique d’une théorie. Une théorie est scientifique lorsqu’elle prend le risque d’être contredite par l’expérience ; résister à des tests sévères la renforce, mais ne la transforme jamais en vérité définitivement prouvée.",
+  "readingQuestions": [
+    "Que doit pouvoir subir une théorie pour être véritablement falsifiable ?",
+    "Pourquoi des observations favorables ne suffisent-elles jamais à prouver définitivement une théorie ?",
+    "Pourquoi une théorie qui prend davantage le risque d’être réfutée peut-elle être scientifiquement plus intéressante ?"
+  ],
+  "glossary": [
+    {
+      "term": "falsifiabilité",
+      "definition": "Propriété d’une théorie qui peut être mise à l’épreuve par des observations susceptibles de la réfuter."
+    },
+    {
+      "term": "corroboration",
+      "definition": "Degré auquel une théorie a résisté à des tests sérieux sans être réfutée."
+    },
+    {
+      "term": "démarcation",
+      "definition": "Critère permettant de distinguer les énoncés scientifiques de ceux qui ne peuvent pas être soumis à une épreuve empirique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "popper-psychanalyse-non-scientifique",
+      "kind": "identique",
+      "label": "Popper — Pourquoi la psychanalyse échappe à la réfutation",
+      "relation": "Un cas concret d’application du critère de falsifiabilité aux théories de Freud et d’Adler."
+    },
+    {
+      "id": "bachelard-experience-theorie-materialisee",
+      "kind": "proche",
+      "label": "Bachelard — L’expérience scientifique est construite",
+      "relation": "Les deux textes refusent de réduire la science à l’accumulation d’observations confirmatives."
+    }
+  ],
+  "paragraphs": [
+    "[U]n système doit être tenu pour scientifique seulement s’il formule des assertions pouvant entrer en conflit avec certaines observations. Les tentatives pour provoquer des conflits de ce type, c’est-à-dire pour réfuter ce système permettent en fait de le tester. Pouvoir être testé, c’est pouvoir être réfuté, et cette propriété peut donc servir, de la même manière, de critère de démarcation.",
+    "Cette conception voit dans la démarche critique la caractéristique essentielle de la science. Le savant doit donc étudier les théories sous l’angle de leur aptitude à être examinées de manière critique […]. La théorie de Newton, par exemple, prédisait certains écarts par rapport aux lois de Kepler (en raison des interactions entre planètes), alors que ceux-ci n’avaient pas été observés. Elle s’exposait en conséquence à des tentatives de réfutation dont l’échec allait signifier le succès de cette théorie. La théorie einsteinienne a été testée de manière analogue. Et de fait, tous les tests effectifs constituent des tentatives de réfutation. Ce n’est que lorsqu’une théorie est parvenue à supporter les contraintes de ce genre d’efforts qu’on pourra affirmer qu’elle se trouve confirmée ou corroborée par l’expérience.",
+    "Il existe en outre (comme je m’en suis avisé par la suite) divers degrés d’assujettissement aux tests : certaines théories s’exposent avec plus d’intrépidité que d’autres aux éventuelles réfutations. […] Une théorie plus précise et qui se prête plus aisément à être réfutée est aussi celle qui est la plus intéressante. Et comme elle est la plus audacieuse, elle est également la moins probable. Or, elle se prête mieux aux tests, parce que nous pouvons la soumettre à des tests plus précis et plus rigoureux. Et si elle se révèle résister à ces tests, elle sera ou mieux confirmée ou mieux attestée par ceux-ci. L’aptitude à être confirmée (attestée ou corroborée) croît donc nécessairement avec l’assujettissement aux tests.",
+    "Ces considérations indiquent que le critère de démarcation ne saurait être parfaitement tranché et qu’il admettra différents degrés. Parmi les théories, certaines pourront être très bien testées, d’autres se prêteront très difficilement à être testées, d’autres encore seront impossibles à tester. Les dernières n’intéressent pas les chercheurs des sciences empiriques."
+  ]
+},
+    {
+  "id": "bergson-experience-vecue-indicible",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · expérience vécue et langage",
+  "title": "L’expérience vécue est indicible",
+  "author": "Henri Bergson",
+  "authorTag": "Bergson",
+  "cardHighlight": "expérience vécue est indicible",
+  "authorMeta": "(1859–1941) · durée et intuition",
+  "themes": [
+    "Conscience",
+    "Théorie et expérience"
+  ],
+  "work": "Essai sur les données immédiates de la conscience",
+  "publication": "1889, PUF, 2010, p. 98–99",
+  "description": "Le langage peut-il exprimer fidèlement la singularité mouvante de nos sensations et de nos sentiments ?",
+  "context": "Bergson souligne l’écart entre la singularité mouvante de notre <strong>expérience</strong> vécue et les mots, qui utilisent des catégories communes et stables. Nommer un sentiment permet de le communiquer, mais risque aussi de simplifier ce que nous vivons intérieurement.",
+  "readingQuestions": [
+    "Quelle différence Bergson établit-il entre notre expérience vécue et les mots qui la désignent ?",
+    "Pourquoi le <strong>langage</strong> tend-il à simplifier et à rendre impersonnels nos sentiments ?",
+    "Peut-on exprimer fidèlement par des mots ce qu’il y a de singulier dans une expérience intérieure ?"
+  ],
+  "glossary": [
+    {
+      "term": "expérience vécue",
+      "definition": "Dimension subjective et immédiate de ce qui est éprouvé par une conscience singulière."
+    },
+    {
+      "term": "durée",
+      "definition": "Chez Bergson, continuité qualitative et mouvante de l’expérience intérieure, irréductible à une succession d’unités homogènes."
+    },
+    {
+      "term": "indicible",
+      "definition": "Ce qui résiste à une expression verbale adéquate sans pour autant être inexistant ou dépourvu de contenu."
+    }
+  ],
+  "paragraphs": [
+    "Ce qu’il faut dire, c’est que toute sensation se modifie en se répétant, et que si elle ne me paraît pas changer du jour au lendemain, c’est parce que je l’aperçois maintenant à travers l’objet qui en est cause, à travers le mot qui la traduit. Cette influence du langage sur la sensation est plus profonde qu’on ne le pense généralement. Non seulement le langage nous fait croire à l’invariabilité de nos sensations, mais il nous trompera parfois sur le caractère de la sensation éprouvée. Ainsi, quand je mange d’un mets réputé exquis, le nom qu’il porte, gros de l’approbation qu’on lui donne, s’interpose entre ma sensation et ma conscience ; je pourrai croire que la saveur me plaît, alors qu’un léger effort d’attention me prouverait le contraire. Bref, le mot aux contours bien arrêtés, le mot brutal, qui emmagasine ce qu’il y a de stable, de commun et par conséquent d’impersonnel dans les impressions de l’humanité, écrase ou tout au moins recouvre les impressions délicates et fugitives de notre conscience individuelle. Pour lutter à armes égales, celles-ci devraient s’exprimer par des mots précis ; mais ces mots, à peine formés, se retourneraient contre la sensation qui leur donna naissance, et inventés pour témoigner que la sensation est instable, ils lui imposeraient leur propre stabilité.",
+    "[…] Un amour violent, une mélancolie profonde envahissent notre âme : ce sont mille éléments divers qui se fondent, qui se pénètrent, sans contours précis, sans la moindre tendance à s’extérioriser les uns par rapport aux autres […]. Déjà ils se déforment quand nous démêlons dans leur masse confuse une multiplicité numérique […]. Tout à l’heure chacun d’eux empruntait une indéfinissable coloration au milieu où il était placé : le voici décoloré, et tout prêt à recevoir un nom. Le sentiment lui-même est un être qui vit, qui se développe, qui change par conséquent sans cesse ; sinon, on ne comprendrait pas qu’il nous acheminât peu à peu à une résolution […]. Nous voici donc en présence de l’ombre de nous-mêmes : nous croyons avoir analysé notre sentiment, nous lui avons substitué en réalité une juxtaposition d’états inertes, traduisibles en mots, et qui constituent chacun l’élément commun, le résidu par conséquent impersonnel, des impressions ressenties dans un cas donné par la société entière."
+  ]
+},
+    {
+  "id": "hegel-experience-vecue-mots",
+  "section": "philosophie",
+  "cardMeta": "Théorie et expérience · pensée et langage",
+  "title": "L’expérience vécue doit pouvoir être énoncée par des mots",
+  "author": "Georg Wilhelm Friedrich Hegel",
+  "authorTag": "Hegel",
+  "cardHighlight": "énoncée par des mots",
+  "authorMeta": "(1770–1831) · idéalisme allemand",
+  "themes": [
+    "Langage",
+    "Théorie et expérience"
+  ],
+  "work": "Philosophie de l’esprit",
+  "publication": "1827, Addition au § 462, trad. B. Bourgeois, Vrin, 1988, p. 560–561",
+  "description": "Une pensée inexprimable est-elle plus profonde que les mots, ou n’acquiert-elle sa détermination qu’en se formulant ?",
+  "context": "Hegel refuse de faire de l’indicible le signe d’une pensée plus profonde. Une expérience intérieure ne devient pensée déterminée qu’en prenant une forme partageable dans le <strong>langage</strong> : les mots ne viennent donc pas seulement après la pensée, ils contribuent à la former.",
+  "readingQuestions": [
+    "Pourquoi un sentiment simplement éprouvé ne constitue-t-il pas encore une pensée claire ?",
+    "Quel rôle les mots jouent-ils dans la détermination de ce que nous pensons ?",
+    "Une vérité absolument <strong>indicible</strong> peut-elle encore être une pensée déterminée ?"
+  ],
+  "glossary": [
+    {
+      "term": "objectivité",
+      "definition": "Forme sous laquelle une pensée se donne comme quelque chose de déterminé, extérieur à la pure intériorité subjective."
+    },
+    {
+      "term": "mot",
+      "definition": "Pour Hegel, forme sensible et articulée grâce à laquelle une pensée acquiert un être déterminé et partageable."
+    },
+    {
+      "term": "inexprimable",
+      "definition": "Ce qui ne peut être clairement formulé ; Hegel l’associe non à une profondeur supérieure, mais à une pensée encore trouble et indéterminée."
+    }
+  ],
+  "paragraphs": [
+    "Nous n’avons savoir de nos pensées – nous n’avons des pensées déterminées, effectives – que quand nous leur donnons la forme de l’ob-jectivité, de l’être-différencié d’avec notre intériorité, donc la figure de l’extériorité, et, à la vérité, d’une extériorité telle qu’elle porte, en même temps, l’empreinte de la suprême intériorité. Un extérieur ainsi intérieur, seul l’est le son articulé, le mot. C’est pourquoi vouloir penser sans mots – comme Mesmer l’a tenté une fois – apparaît comme une déraison, qui avait conduit cet homme, d’après ce qu’il assura, presque à la manie délirante. Mais il est également risible de regarder le fait, pour la pensée, d’être liée au mot, comme un défaut de la première et comme une infortune ; car, bien que l’on soit d’avis ordinairement que l’inexprimable est précisément ce qui est le plus excellent, cet avis cultivé par la vanité n’a pourtant pas le moindre fondement, puisque l’inexprimable est, en vérité, seulement quelque chose de trouble, en fermentation, qui n’acquiert de la clarté que lorsqu’il peut accéder à la parole.",
+    "Le mot donne, par suite, aux pensées, leur être-là le plus digne et le plus vrai. Assurément, on peut aussi – sans se saisir de la Chose – se battre avec les mots. Cependant, ce n’est pas là la faute du mot, mais celle d’une pensée défectueuse, indéterminée, sans teneur. De même que la pensée vraie est la Chose, de même le mot l’est aussi, lorsqu’il est employé par la pensée vraie. C’est pourquoi, en se remplissant du mot, l’intelligence accueille en elle la nature de la Chose."
+  ]
+},
+    {
+  "id": "aristote-vie-matiere-ame",
+  "section": "philosophie",
+  "cardMeta": "Nature · vivant, matière et âme",
+  "title": "La vie se définit par la matière, mais aussi par la possession d’une âme",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "matière et âme",
+  "authorMeta": "(384–322 av. J.-C.) · philosophie de l’Antiquité",
+  "themes": [
+    "Nature",
+    "Conscience"
+  ],
+  "work": "De l’âme",
+  "publication": "IVe s. av. J.-C., II, 2, trad. R. Bodéüs, GF, 1993, p. 135–136 et 141–143",
+  "description": "Qu’est-ce qui distingue un corps vivant d’un corps inanimé, et quel rôle l’âme joue-t-elle dans cette définition ?",
+  "context": "Aristote refuse de penser l’âme comme une chose simplement ajoutée au corps. Elle est la forme et le principe des fonctions par lesquelles un vivant se nourrit, sent, se meut ou pense.",
+  "readingQuestions": [
+    "Pourquoi le corps vivant ne peut-il pas être identifié à l’âme ?",
+    "Que signifie définir l’âme comme forme d’un corps naturel ayant la vie en puissance ?",
+    "Quelles fonctions permettent à Aristote de distinguer différents degrés de vie ?"
+  ],
+  "glossary": [
+    {
+      "term": "hylémorphisme",
+      "definition": "Doctrine aristotélicienne selon laquelle un être concret s’explique par l’union d’une matière et d’une forme."
+    },
+    {
+      "term": "âme",
+      "definition": "Chez Aristote, principe formel et fonctionnel du vivant : ce par quoi un corps vivant accomplit ses opérations propres."
+    },
+    {
+      "term": "en puissance / en acte",
+      "definition": "Distinction entre ce qu’un être peut devenir ou accomplir et la réalisation effective de cette possibilité."
+    }
+  ],
+  "paragraphs": [
+    "[P]armi les corps naturels, les uns ont la vie, cependant que les autres ne l’ont pas ; et par vie, nous voulons dire la propriété de par soi-même se nourrir, croître et dépérir. Si bien que tout corps naturel, ayant la vie en partage, peut être substance, une substance, cependant, comme on l’a dit, composée. Mais, puisque c’est précisément un corps qui a cette propriété, c’est-à-dire, possède la vie, le corps ne saurait être l’âme. Le corps, en effet, ne se range pas dans les réalités qui se disent d’un sujet, mais se présente plutôt comme sujet ou matière.",
+    "Il faut donc nécessairement que l’âme soit substance comme forme d’un corps naturel qui a potentiellement la vie. […]",
+    "Disons donc, en guise de point de départ de l’examen, que l’animé se distingue de l’inanimé par le fait qu’il est en vie. Mais, comme le fait de vivre s’entend de plusieurs façons, nous prétendons qu’il y a vie là où se trouve ne serait-ce qu’une seule quelconque des manifestations telles que l’intelligence, la sensation, le mouvement local et le repos, ou encore le mouvement nutritif, dépérissement et croissance. C’est pourquoi l’on considère que tous les êtres qui se développent ont également la vie, car, visiblement, ils ont en eux-mêmes la sorte de puissance ou de principe qui leur permet de suivre, dans leur croissance et leur dépérissement, des directions contraires. […]",
+    "Et, pour l’instant, on se bornera simplement à dire que l’âme est principe des manifestations qu’on vient d’évoquer et qu’elle se définit par les fonctions nutritive, sensitive, cogitative et par le mouvement."
+  ]
+},
+    {
+  "id": "diderot-vie-phenomene-materiel",
+  "section": "philosophie",
+  "cardMeta": "Nature · matérialisme et vivant",
+  "title": "La vie est un phénomène matériel",
+  "author": "Denis Diderot",
+  "authorTag": "Diderot",
+  "cardHighlight": "phénomène matériel",
+  "authorMeta": "(1713–1784) · matérialisme",
+  "themes": [
+    "Nature",
+    "Science"
+  ],
+  "work": "Entretien entre D’Alembert et Diderot",
+  "publication": "1769, in Œuvres philosophiques, Garnier, 1998, p. 274–277",
+  "description": "Faut-il supposer un principe immatériel pour expliquer le passage de la matière inerte à la sensibilité et à la vie ?",
+  "context": "Diderot prend le développement de l’œuf comme modèle d’une explication matérialiste du vivant. Il refuse d’introduire un principe spirituel extérieur lorsque l’organisation de la matière peut rendre compte de l’apparition de la sensibilité.",
+  "readingQuestions": [
+    "Pourquoi l’exemple de l’œuf met-il en difficulté une explication dualiste du vivant ?",
+    "Quels sont les deux partis que Diderot laisse à son interlocuteur ?",
+    "Pourquoi l’hypothèse d’un principe immatériel lui paraît-elle produire davantage de mystères qu’elle n’en résout ?"
+  ],
+  "glossary": [
+    {
+      "term": "matérialisme",
+      "definition": "Conception selon laquelle les phénomènes, y compris vitaux et mentaux, doivent être expliqués à partir de la matière et de son organisation."
+    },
+    {
+      "term": "génération",
+      "definition": "Processus par lequel un être vivant se forme et se développe."
+    },
+    {
+      "term": "réductionnisme",
+      "definition": "Démarche qui cherche à expliquer un niveau de réalité par des propriétés ou mécanismes d’un niveau plus élémentaire."
+    }
+  ],
+  "paragraphs": [
+    "Voyez-vous cet œuf ? C’est avec cela qu’on renverse toutes les écoles de théologie et tous les temples de la terre. Qu’est-ce que cet œuf ? une masse insensible avant que le germe y soit introduit ; et après que le germe y est introduit, qu’est-ce encore ? une masse insensible, car ce germe n’est lui-même qu’un fluide inerte et grossier. Comment cette masse passera-t-elle à une autre organisation, à la sensibilité, à la vie ? par la chaleur. Qu’y produira la chaleur ? le mouvement. Quels seront les effets successifs du mouvement ? Au lieu de me répondre, asseyez-vous, et suivons-les de l’œil de moment en moment. D’abord c’est un point qui oscille, un filet qui s’étend et qui se colore ; de la chair qui se forme ; un bec, des bouts d’ailes, des yeux, des pattes qui paraissent ; une matière jaunâtre qui se dévide et produit des intestins ; c’est un animal. Cet animal se meut, s’agite, crie ; j’entends ses cris à travers la coque ; il se couvre de duvet ; il voit. La pesanteur de sa tête, qui oscille, porte sans cesse son bec contre la paroi intérieure de sa prison ; la voilà brisée ; il en sort, il marche, il vole, il s’irrite, il fuit, il approche, il se plaint, il souffre, il aime, il désire, il jouit ; il a toutes vos affections ; toutes vos actions, il les fait. Prétendrez-vous, avec Descartes, que c’est une pure machine imitative ? Mais les petits enfants se moqueront de vous, et les philosophes vous répliqueront que si c’est là une machine, vous en êtes une autre. […] Il ne vous reste qu’un de ces deux partis à prendre ; c’est d’imaginer dans la masse inerte de l’œuf un élément caché qui en attendait le développement pour manifester sa présence, ou de supposer que cet élément imperceptible s’y est insinué à travers la coque dans un instant déterminé du développement. Mais qu’est-ce que cet élément ? Occupait-il de l’espace, ou n’en occupait-il point ? Comment est-il venu, ou s’est-il échappé, sans se mouvoir ? Où était-il ? Que faisait-il là ou ailleurs ? A-t-il été créé à l’instant du besoin ? Existait-il ? Attendait-il un domicile ? Était-il homogène ou hétérogène à ce domicile ? Homogène, il était matériel ; hétérogène, on ne conçoit ni son inertie avant le développement, ni son énergie dans l’animal développé […]. [P]our ne pas admettre une supposition simple qui explique tout, la sensibilité, propriété générale de la matière, ou produit de l’organisation, vous renoncez au sens commun, et vous précipitez dans un abîme de mystères, de contradictions et d’absurdités."
+  ]
+},
+    {
+  "id": "descartes-organisme-machine",
+  "section": "philosophie",
+  "cardMeta": "Nature · organisme et machine",
+  "title": "La machine est un modèle pour comprendre les organismes vivants",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "organisme comme machine",
+  "familiarIdea": "l’animal-machine",
+  "authorMeta": "(1596–1650) · rationalisme",
+  "themes": [
+    "Nature",
+    "Technique",
+    "Conscience"
+  ],
+  "work": "Discours de la méthode",
+  "publication": "1637, Ve partie, in Œuvres et lettres, Gallimard, « Bibliothèque de la Pléiade », 1953, p. 164–165",
+  "description": "Jusqu’où peut-on comprendre le vivant sur le modèle d’un automate, et qu’est-ce qui distingue encore l’être humain de la machine ?",
+  "context": "Descartes assimile le corps animal à une machine extrêmement complexe. Il réserve toutefois à l’être humain deux signes distinctifs : l’usage indéfiniment adaptable du langage et la raison comme instrument universel.",
+  "readingQuestions": [
+    "Pourquoi le corps vivant peut-il être comparé à une machine ?",
+    "Quels critères permettent à Descartes de distinguer un automate d’un véritable être humain ?",
+    "Pourquoi la raison est-elle dite « instrument universel » ?"
+  ],
+  "glossary": [
+    {
+      "term": "automate",
+      "definition": "Machine capable d’exécuter des mouvements réglés sans intervention continue d’un agent extérieur."
+    },
+    {
+      "term": "dualisme",
+      "definition": "Chez Descartes, distinction entre substance étendue, corporelle, et substance pensante."
+    },
+    {
+      "term": "raison",
+      "definition": "Faculté universelle qui permet à l’être humain d’adapter sa conduite à une diversité indéfinie de situations."
+    }
+  ],
+  "paragraphs": [
+    "[C]eux qui, sachant combien de divers automates, ou machines mouvantes, l’industrie des hommes peut faire, sans y employer que fort peu de pièces, à comparaison de la grande multitude des os, des muscles, des nerfs, des artères, des veines, et de toutes les autres parties qui sont dans le corps de chaque animal, considéreront ce corps comme une machine qui, ayant été faite des mains de Dieu, est incomparablement mieux ordonnée et a en soi des mouvements plus admirables qu’aucune de celles qui peuvent être inventées par les hommes. […], [S]’il y avait de telles machines qui eussent les organes et la figure extérieure d’un singe ou de quelque autre animal sans raison, nous n’aurions aucun moyen pour reconnaître qu’elles ne seraient pas en tout de même nature que ces animaux ; au lieu que, s’il y en avait qui eussent la ressemblance de nos corps, et imitassent autant nos actions que moralement il serait possible, nous aurions toujours deux moyens très certains pour reconnaître qu’elles ne seraient point pour cela de vrais hommes. Dont le premier est que jamais elles ne pourraient user de paroles ni d’autres signes en les composant, comme nous faisons pour déclarer aux autres nos pensées. Car on peut bien concevoir qu’une machine soit tellement faite qu’elle profère des paroles, et même qu’elle en profère quelques-unes à propos des actions corporelles qui causeront quelque changement en ses organes ; comme si on la touche en quelque endroit, qu’elle demande ce qu’on lui veut dire, si en un autre, qu’elle crie qu’on lui fait mal, et choses semblables ; mais non pas qu’elle les arrange diversement pour répondre au sens de tout ce qui se dira en sa présence, ainsi que les hommes les plus hébétés peuvent faire. Et le second est que, bien qu’elles fissent plusieurs choses aussi bien ou peut-être mieux qu’aucun de nous, elles manqueraient infailliblement en quelques autres, par lesquelles on découvrirait qu’elles n’agiraient pas par connaissance, mais seulement par la disposition de leurs organes. Car, au lieu que la raison est un instrument universel qui peut servir en toutes sortes de rencontres, ces organes ont besoin de quelque particulière disposition pour chaque action particulière ; d’où vient qu’il est moralement impossible qu’il y en ait assez de divers en une machine, pour la faire agir en toutes les occurrences de la vie de même façon que notre raison nous fait agir."
+  ]
+},
+    {
+  "id": "kant-machine-modele-insuffisant-vivant",
+  "section": "philosophie",
+  "cardMeta": "Nature · organisme et finalité",
+  "title": "La machine est un modèle insuffisant pour penser le vivant",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "force formatrice",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Nature",
+    "Technique",
+    "Science"
+  ],
+  "work": "Critique de la faculté de juger",
+  "publication": "1790, § 65, éd. et trad. M. Buhot de Launay, Gallimard, 1985, p. 337–338",
+  "description": "Qu’est-ce qu’un organisme possède qu’une machine, même très complexe, ne peut pas expliquer ?",
+  "context": "Kant distingue l’organisation vivante du simple mécanisme. Dans un organisme, les parties ne font pas que transmettre un mouvement : elles participent à la production, à l’entretien et à la réparation du tout.",
+  "readingQuestions": [
+    "Pourquoi un rouage ne produit-il pas les autres rouages d’une montre ?",
+    "Que signifie l’idée de « force formatrice » ?",
+    "Pourquoi l’autoréparation et l’auto-organisation du vivant résistent-elles au modèle mécanique ?"
+  ],
+  "glossary": [
+    {
+      "term": "cause efficiente",
+      "definition": "Cause qui produit effectivement un effet."
+    },
+    {
+      "term": "finalité",
+      "definition": "Organisation d’un processus ou d’un être en fonction d’une fin."
+    },
+    {
+      "term": "organisme",
+      "definition": "Totalité vivante dont les parties concourent à la formation et au maintien du tout."
+    }
+  ],
+  "paragraphs": [
+    "Dans une montre, une partie est l’instrument du mouvement des autres, mais un rouage n’est pas la cause efficiente de la production d’un autre rouage ; une partie est certes là pour l’autre, mais elle n’est pas là par cette autre partie. […] C’est la raison pour laquelle également, dans une montre, un rouage ne peut en produire un autre, pas plus qu’une montre ne peut produire d’autres montres, en utilisant (en organisant) pour cela d’autres matières ; c’est aussi la raison pour laquelle elle ne remplace pas non plus d’elle-même les parties qui lui ont été enlevées, ni ne compense leur défaut dans la première formation en faisant intervenir les autres parties, ni ne se répare elle-même lorsqu’elle est déréglée […]. Un être organisé n’est donc pas une simple machine, car celle-ci dispose exclusivement d’une force motrice ; mais l’être organisé possède en soi une force formatrice qu’il communique aux matériaux qui n’en disposent pas (il les organise), force motrice qui se transmet donc et qui n’est pas explicable par le simple pouvoir du mouvement (le mécanisme)."
+  ]
+},
+    {
+  "id": "darwin-evolution-vivant-techniques",
+  "section": "philosophie",
+  "cardMeta": "Nature · évolution et technique",
+  "title": "On ne peut pas assimiler l’évolution du vivant et l’histoire des techniques",
+  "author": "Charles Darwin",
+  "authorTag": "Darwin",
+  "cardHighlight": "sélection naturelle",
+  "familiarIdea": "la sélection naturelle",
+  "authorMeta": "(1809–1882) · évolutionnisme",
+  "themes": [
+    "Nature",
+    "Science",
+    "Technique"
+  ],
+  "work": "L’Origine des espèces",
+  "publication": "1859, chap. IV, éd. et trad. D. Becquemont et E. Barbier, GF, 2008, p. 241",
+  "description": "Pourquoi l’analogie entre l’œil et un instrument fabriqué peut-elle induire en erreur sur l’origine des formes vivantes ?",
+  "context": "Darwin récuse l’idée que la complexité d’un organe implique un artisan ou un projet préalable. Les variations héréditaires et la sélection naturelle permettent d’expliquer une formation progressive sans modèle conçu d’avance.",
+  "readingQuestions": [
+    "Quel est le fondement de la comparaison entre l’œil et le télescope ?",
+    "Pourquoi cette analogie devient-elle présomptueuse selon Darwin ?",
+    "Comment variation, reproduction et sélection naturelle expliquent-elles autrement la formation d’un organe complexe ?"
+  ],
+  "glossary": [
+    {
+      "term": "sélection naturelle",
+      "definition": "Processus par lequel des variations héréditaires avantageuses tendent à se conserver et à se diffuser dans une population."
+    },
+    {
+      "term": "variation",
+      "definition": "Différence entre individus susceptible d’être transmise et sur laquelle peut agir la sélection."
+    },
+    {
+      "term": "analogie",
+      "definition": "Rapprochement entre deux réalités à partir de ressemblances de structure ou de fonction."
+    }
+  ],
+  "paragraphs": [
+    "La comparaison entre l’œil et le télescope se présente naturellement à l’esprit. Nous savons que ce dernier instrument a été perfectionné par les efforts continus et prolongés des plus hautes intelligences humaines, et nous en concluons naturellement que l’œil a dû se former par un procédé analogue. Mais cette conclusion n’est-elle pas présomptueuse ? […] Dans les corps vivants, la variation cause les modifications légères, la reproduction les multiplie presque à l’infini, et la sélection naturelle s’empare de chaque amélioration avec une sûreté infaillible. Admettons, enfin, que cette marche se continue pendant des millions d’années et s’applique pendant chacune à des millions d’individus : ne pouvons-nous pas admettre alors qu’il ait pu se former ainsi un instrument optique vivant, aussi supérieur à un appareil de verre que les œuvres du Créateur sont supérieures à celles de l’homme ?"
+  ]
+},
+    {
+  "id": "claude-bernard-experimentation-animale",
+  "section": "philosophie",
+  "cardMeta": "Nature · expérimentation animale",
+  "title": "Il est légitime d’expérimenter sur les animaux",
+  "author": "Claude Bernard",
+  "authorTag": "Bernard",
+  "cardHighlight": "expérimenter sur les animaux",
+  "authorMeta": "(1813–1878) · médecine expérimentale",
+  "themes": [
+    "Nature",
+    "Science",
+    "Devoir"
+  ],
+  "work": "Introduction à l’étude de la médecine expérimentale",
+  "publication": "1865, GF, 1966, p. 153",
+  "description": "L’utilité scientifique et médicale suffit-elle à justifier l’expérimentation animale ?",
+  "context": "Claude Bernard défend l’expérimentation animale au nom de la connaissance du vivant et du soin des malades. Son raisonnement oblige à distinguer l’<strong>utilité</strong> scientifique d’une pratique et sa <strong>légitimité morale</strong>.",
+  "readingQuestions": [
+    "Pourquoi Claude Bernard estime-t-il nécessaire d’expérimenter sur les animaux ?",
+    "Pourquoi refuse-t-il en revanche d’exposer directement un malade à une expérience dangereuse ?",
+    "L’<strong>utilité</strong> pour l’être humain suffit-elle à rendre moralement légitime l’expérimentation animale ?"
+  ],
+  "glossary": [
+    {
+      "term": "vivisection",
+      "definition": "Dissection ou intervention expérimentale pratiquée sur un animal vivant."
+    },
+    {
+      "term": "expérimentation",
+      "definition": "Procédure contrôlée destinée à produire des observations permettant de tester une hypothèse."
+    },
+    {
+      "term": "bioéthique",
+      "definition": "Réflexion morale sur les pratiques médicales et biologiques affectant des êtres vivants."
+    }
+  ],
+  "paragraphs": [
+    "A-t-on le droit de faire des expériences et des vivisections sur les animaux ? Quant à moi, je pense qu’on a ce droit d’une manière entière et absolue. Il serait bien étrange, en effet, qu’on reconnût que l’homme a le droit de se servir des animaux pour tous les usages de la vie, pour ses services domestiques, pour son alimentation, et qu’on lui défendît de s’en servir pour s’instruire dans une des sciences les plus utiles à l’humanité. Il n’y a pas à hésiter ; la science de la vie ne peut se constituer que par des expériences, et l’on ne peut sauver de la mort des êtres vivants qu’après en avoir sacrifié d’autres […]. Je n’admets pas qu’il soit moral d’essayer sur les malades dans les hôpitaux des remèdes plus ou moins dangereux ou actifs, sans qu’on les ait préalablement expérimentés sur des chiens ; car je prouverai plus loin que tout ce que l’on obtient chez les animaux peut parfaitement être concluant pour l’homme quand on sait bien expérimenter. Donc, s’il est immoral de faire sur un homme une expérience dès qu’elle est dangereuse pour lui, quoique le résultat puisse être utile aux autres, il est essentiellement moral de faire sur un animal des expériences, quoique douloureuses et dangereuses pour lui, dès qu’elles peuvent être utiles pour l’homme."
+  ]
+},
+    {
+  "id": "bentham-sensibilite-respect-animaux",
+  "section": "philosophie",
+  "cardMeta": "Nature · sensibilité animale",
+  "title": "Tout être sensible doit être respecté",
+  "author": "Jérémy Bentham",
+  "authorTag": "Bentham",
+  "cardHighlight": "peuvent-ils souffrir ?",
+  "familiarIdea": "« Peuvent-ils souffrir ? »",
+  "authorMeta": "(1748–1832) · utilitarisme",
+  "themes": [
+    "Nature",
+    "Devoir",
+    "Justice"
+  ],
+  "work": "Introduction aux principes de morale et de législation",
+  "publication": "1789, ch. XVII, trad. Vrin, 2011, p. 325",
+  "description": "La capacité de souffrir, plutôt que la raison ou le langage, doit-elle déterminer l’étendue de notre considération morale ?",
+  "context": "Bentham déplace le critère de la considération morale : ce qui compte n’est pas d’abord de savoir si un être parle ou raisonne, mais s’il peut <strong>souffrir</strong>. La sensibilité devient ainsi le point de départ d’un devoir de justice envers les animaux.",
+  "readingQuestions": [
+    "Pourquoi Bentham refuse-t-il de faire de la raison ou du langage les critères du respect moral ?",
+    "Pourquoi la capacité à souffrir devient-elle le critère décisif ?",
+    "Comment ce critère transforme-t-il les limites de la <strong>communauté morale</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "sensibilité",
+      "definition": "Capacité d’éprouver des sensations, notamment le plaisir et la douleur."
+    },
+    {
+      "term": "utilitarisme",
+      "definition": "Doctrine morale évaluant les actions d’après leurs conséquences sur le bien-être des êtres concernés."
+    },
+    {
+      "term": "considération morale",
+      "definition": "Fait de reconnaître qu’un être et ses intérêts doivent compter dans le jugement moral."
+    }
+  ],
+  "paragraphs": [
+    "Le jour arrivera peut-être où le reste de la création animale acquerra les droits que seule une main tyrannique a pu leur retirer. Les Français ont déjà découvert que la noirceur de la peau n’était pas une raison pour abandonner un homme au caprice de ses persécuteurs sans lui laisser aucun recours. Peut-être admettra-t-il un jour que le nombre de pattes, la pilosité […] sont des raisons tout aussi insuffisantes d’abandonner un être sentant à ce même sort. Quel autre critère doit permettre d’établir une distinction tranchée ? Est-ce la faculté de raisonner, ou peut-être la faculté de parler ? Mais un cheval ou un chien adulte est un être incomparablement plus rationnel qu’un nourrisson âgé d’un jour, d’une semaine ou même d’un mois – il a aussi plus de conversation. Mais à supposer qu’il n’en soit pas ainsi, qu’en résulterait-il ? La question n’est pas : « peuvent-ils raisonner ? », ni « peuvent-ils parler ? », mais « peuvent-ils souffrir ? »."
+  ]
+},
+    {
+  "id": "uexkull-animal-monde-propre",
+  "section": "philosophie",
+  "cardMeta": "Nature · monde animal",
+  "title": "L’animal n’est pas qu’un objet : il possède un monde propre",
+  "author": "Jakob von Uexküll",
+  "authorTag": "Uexküll",
+  "cardHighlight": "un monde propre",
+  "familiarIdea": "l’<em>Umwelt</em>",
+  "authorMeta": "(1864–1944) · biologie et philosophie du vivant",
+  "themes": [
+    "Nature",
+    "Science"
+  ],
+  "work": "Mondes animaux et monde humain",
+  "publication": "1923, Pocket, 1965, p. 25–26 et 29–30",
+  "description": "Chaque animal habite-t-il le même monde objectif, ou sélectionne-t-il un milieu propre à partir de ses capacités perceptives et actives ?",
+  "context": "À partir de la tique, Uexküll montre qu’un animal ne reçoit pas passivement le même monde que nous. Chaque espèce sélectionne les signes auxquels elle peut répondre et constitue ainsi son propre <em>Umwelt</em>, son « monde propre ».",
+  "readingQuestions": [
+    "Quels signaux du milieu ont réellement une signification pour la tique ?",
+    "Pourquoi le milieu physique ne se confond-il pas avec l’<em>Umwelt</em> de l’animal ?",
+    "Que change cette idée dans notre manière de penser le rapport entre un vivant et son <strong>environnement</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "Umwelt",
+      "definition": "« Monde environnant » propre à un vivant, constitué par les éléments qui ont effectivement une signification perceptive et pratique pour lui."
+    },
+    {
+      "term": "signal perceptif",
+      "definition": "Excitation sélectionnée par les capacités sensorielles d’un organisme et qui prend sens dans son milieu."
+    },
+    {
+      "term": "milieu",
+      "definition": "Ensemble de relations significatives qu’un vivant entretient avec certains éléments de son environnement."
+    }
+  ],
+  "paragraphs": [
+    "La tique reste suspendue sans mouvement à une pointe de branche dans une clairière. Sa position lui offre la possibilité de tomber sur un mammifère qui viendrait à passer. De tout l’entourage aucune excitation ne lui parvient. Mais voilà que s’approche un mammifère dont le sang est indispensable à la procréation de ses descendants.",
+    "C’est à ce moment que se produit quelque chose d’étonnant : de tous les effets dégagés par le corps du mammifère, il n’y en a que trois, et dans un certain ordre, qui deviennent des excitations. Dans le monde gigantesque qui entoure la tique trois stimulants brillent comme des signaux lumineux dans les ténèbres et lui servent de poteaux indicateurs qui la conduiront au but sans défaillance. Pour cela, la tique est pourvue, en dehors de son corps avec ses récepteurs et ses effecteurs, de trois signaux perceptifs qu’elle peut transformer en caractères perceptifs. Et le déroulement des actes de la tique est si fortement prescrit par ces caractères perceptifs qu’elle ne peut produire que des caractères actifs bien déterminés.",
+    "La richesse du monde qui entoure la tique disparaît et se réduit à une forme pauvre qui consiste pour l’essentiel en trois caractères perceptifs et trois caractères actifs – son milieu. Mais la pauvreté du milieu conditionne la sûreté de l’action, et la sûreté est plus importante que la richesse. […]",
+    "Tout sujet tisse ses relations comme autant de fils d’araignée avec certaines caractéristiques des choses et les entrelace pour faire un réseau qui porte son existence. […]",
+    "Trop souvent nous nous imaginons que les relations qu’un sujet d’un autre milieu entretient avec les choses de son milieu prennent place dans le même espace et dans le même temps que ceux qui nous relient aux choses de notre monde humain. Cette illusion repose sur la croyance en un monde unique dans lequel s’emboîteraient tous les êtres vivants. […] Ce n’est que ces dernières années que les physiciens en sont venus à douter d’un univers ne comprenant qu’un seul espace valable pour tous les êtres."
+  ]
+},
+    {
+  "id": "lucrece-ame-esprit-corporels",
+  "section": "philosophie",
+  "cardMeta": "Nature · matière et esprit",
+  "title": "L’âme et l’esprit sont corporels",
+  "author": "Lucrèce",
+  "authorTag": "Lucrèce",
+  "cardHighlight": "nature corporelle",
+  "authorMeta": "(v. 99–55 av. J.-C.) · épicurisme / atomisme",
+  "themes": [
+    "Nature",
+    "Conscience"
+  ],
+  "work": "De la nature (De Rerum Natura)",
+  "publication": "Ier s. av. J.-C., chant III, v. 137–176, trad. J. Kany-Turpin, GF, 1997, p. 189–191",
+  "description": "Les interactions entre l’esprit et le corps permettent-elles de montrer que l’âme elle-même est matérielle ?",
+  "context": "Lucrèce reprend l’atomisme épicurien : âme et esprit sont matériels, même s’ils ont des fonctions différentes. Leur capacité à agir sur le corps et à subir ses blessures constitue pour lui une preuve de leur corporéité.",
+  "readingQuestions": [
+    "Pourquoi Lucrèce distingue-t-il l’esprit et l’âme tout en les réunissant dans une même nature ?",
+    "Comment les effets corporels de la peur servent-ils son argument ?",
+    "Pourquoi l’action réciproque entre esprit et corps implique-t-elle, selon lui, un contact matériel ?"
+  ],
+  "glossary": [
+    {
+      "term": "atomisme",
+      "definition": "Doctrine selon laquelle toute réalité est composée d’atomes et de vide."
+    },
+    {
+      "term": "âme",
+      "definition": "Chez Lucrèce, principe corporel diffus dans le corps vivant et lié à la sensation et aux mouvements vitaux."
+    },
+    {
+      "term": "esprit",
+      "definition": "Partie directrice de l’âme, siège du raisonnement et de la décision, elle-même matérielle."
+    }
+  ],
+  "paragraphs": [
+    "Maintenant je dis que l’esprit et l’âme se tiennent conjoints et ne forment qu’une seule nature ; mais ce conseil que nous nommons esprit, intelligence, en est comme le chef et règne sur tout le corps. Son siège est fixé au centre de la poitrine ; c’est la région où tressaillent l’effroi et la peur, où la joie nous caresse, où règne donc l’esprit. L’autre partie de l’âme éparse dans tout le corps obéit, se mouvant par l’impulsion de l’esprit. Lui raisonne tout seul, et se réjouit tout seul, sans que rien n’émeuve ni l’âme ni le corps. De même que la tête, ou l’œil de douleur assailli, peut souffrir en nous sans que tout notre corps partage ce tourment, de même l’esprit peut être seul à souffrir, à s’épanouir de joie, quand l’autre partie de l’âme dans tout le corps ne subit aucune impulsion nouvelle. Mais quand l’esprit est agité d’une crainte plus vive, nous voyons toute l’âme compatir dans les membres, les sueurs et la pâleur sortent sur tout le corps, la langue s’embarrasse et la voix disparaît, les yeux se voilent, les oreilles sifflent, les membres défaillent ; souvent enfin nous voyons des hommes succomber à leur terreur mentale, preuve accessible à tous de l’union de l’âme avec l’esprit puisque par l’esprit l’âme frappée pousse le corps et le meut à son tour. La même raison prouve la nature corporelle de l’âme et de l’esprit : ils poussent nos membres, les arrachent au sommeil, changent notre expression, bref, c’est l’homme tout entier qu’ils paraissent régir. On le voit, sans contact rien de tel n’est possible, et sans corps nul contact. Ne faut-il pas admettre la nature corporelle de l’âme et de l’esprit ? Et puis, tu le vois bien : l’esprit avec le corps pâtit, à l’intérieur du corps il partage nos sensations. Que s’abatte la force horrible d’une arme, brisant os et tendons, même sans atteinte à la vie, s’ensuit une langueur, une douce attirance de la terre, puis un trouble submerge l’esprit, et parfois naît un vague désir de ressurgir. Il faut donc que l’esprit soit de nature corporelle puisqu’il souffre des coups et blessures du corps."
+  ]
+},
+    {
+  "id": "bergson-pensee-cerveau",
+  "section": "philosophie",
+  "cardMeta": "Conscience · esprit et cerveau",
+  "title": "On ne peut pas réduire la pensée au cerveau",
+  "author": "Henri Bergson",
+  "authorTag": "Bergson",
+  "cardHighlight": "pensée indépendante du cerveau",
+  "authorMeta": "(1859–1941) · spiritualisme",
+  "themes": [
+    "Conscience",
+    "Nature",
+    "Science"
+  ],
+  "work": "L’Âme et le Corps",
+  "publication": "1912, in L’Énergie spirituelle, PUF, 1999, p. 42–43",
+  "description": "Même avec une connaissance parfaite du cerveau, pourrait-on déduire l’intégralité de la vie consciente ?",
+  "context": "Bergson admet que le cerveau conditionne l’expression corporelle de la pensée, mais refuse d’en conclure que la pensée y est intégralement contenue. Ses analogies du théâtre et du tableau distinguent corrélation cérébrale et réduction de l’esprit au cerveau.",
+  "readingQuestions": [
+    "Que permettrait de connaître une science parfaite du cerveau selon Bergson ?",
+    "Pourquoi l’analogie du théâtre montre-t-elle que les gestes n’épuisent pas le sens de la pensée ?",
+    "Comment l’image du cadre et du tableau permet-elle de penser une dépendance sans réduction ?"
+  ],
+  "glossary": [
+    {
+      "term": "spiritualisme",
+      "definition": "Conception selon laquelle l’esprit possède une réalité irréductible à la matière."
+    },
+    {
+      "term": "parallélisme psychophysique",
+      "definition": "Thèse selon laquelle à chaque état mental correspondrait un état cérébral déterminé et réciproquement."
+    },
+    {
+      "term": "état d’âme",
+      "definition": "Expérience vécue qualitative : pensée, sentiment ou disposition intérieure."
+    }
+  ],
+  "paragraphs": [
+    "Celui qui pourrait regarder à l’intérieur d’un cerveau en pleine activité, suivre le va-et-vient des atomes et interpréter tout ce qu’ils font, celui-là saurait sans doute quelque chose de ce qui se passe dans l’esprit, mais il n’en saurait que peu de chose. Il en connaîtrait tout juste ce qui est exprimable en gestes, attitudes et mouvements du corps, ce que l’état d’âme contient d’action en voie d’accomplissement, ou simplement naissante : le reste lui échapperait. Il serait, vis-à-vis des pensées et des sentiments qui se déroulent à l’intérieur de la conscience, dans la situation du spectateur qui voit distinctement tout ce que les acteurs font sur la scène, mais n’entend pas un mot de ce qu’ils disent. Sans doute, le va-et-vient des acteurs, leurs gestes et leurs attitudes, ont leur raison d’être dans la pièce qu’ils jouent ; et si nous connaissons le texte, nous pouvons prévoir à peu près le geste ; mais la réciproque n’est pas vraie, et la connaissance des gestes ne nous renseigne que fort peu sur la pièce, parce qu’il y a beaucoup plus dans une fine comédie que les mouvements par lesquels on la scande. Ainsi, je crois que si notre science du mécanisme cérébral était parfaite, et parfaite aussi notre psychologie, nous pourrions deviner ce qui se passe dans le cerveau pour un état d’âme déterminé ; mais l’opération inverse serait impossible, parce que nous aurions le choix, pour un même état du cerveau, entre une foule d’états d’âme différents, également appropriés. Je ne dis pas, notez-le bien, qu’un état d’âme quelconque puisse correspondre à un état cérébral donné : posez le cadre, vous n’y placerez pas n’importe quel tableau : le cadre détermine quelque chose du tableau en éliminant par avance tous ceux qui n’ont pas la même forme et la même dimension ; mais, pourvu que la forme et la dimension y soient, le tableau entrera dans le cadre. Ainsi pour le cerveau et la conscience. Pourvu que les actions relativement simples – gestes, attitudes, mouvements – en lesquelles se dégraderait un état d’âme complexe, soient bien celles que le cerveau prépare, l’état mental s’insérera exactement dans l’état cérébral ; mais il y a une multitude de tableaux différents qui tiendraient aussi bien dans ce cadre ; et par conséquent le cerveau ne détermine pas la pensée ; et par conséquent la pensée, en grande partie du moins, est indépendante du cerveau."
+  ]
+},
+    {
+  "id": "aristote-main-outil-intelligence",
+  "section": "philosophie",
+  "cardMeta": "Technique · main et instrument",
+  "title": "La technique n’est pas l’usage d’organes, mais la manipulation d’instruments",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "la main est un outil",
+  "familiarIdea": "la main, instrument des instruments",
+  "authorMeta": "(384–322 av. J.-C.) · philosophie de l’Antiquité",
+  "themes": [
+    "Technique",
+    "Nature",
+    "Travail"
+  ],
+  "work": "Les Parties des animaux",
+  "publication": "IVe s. av. J.-C., § 10, 687b, trad. P. Louis modifiée, Belles Lettres, 2003, p. 136–138",
+  "description": "L’homme est-il intelligent parce qu’il possède des mains, ou possède-t-il des mains parce qu’il est intelligent ?",
+  "context": "Aristote inverse l’explication d’Anaxagore : la main n’explique pas l’intelligence humaine ; elle est l’organe polyvalent donné à l’être capable d’acquérir et d’utiliser de nombreuses techniques.",
+  "readingQuestions": [
+    "Pourquoi Aristote inverse-t-il le raisonnement d’Anaxagore ?",
+    "En quel sens la main est-elle un « outil qui tient lieu des autres » ?",
+    "Pourquoi la polyvalence de la main fait-elle de l’homme un être techniquement ouvert ?"
+  ],
+  "glossary": [
+    {
+      "term": "organe",
+      "definition": "Partie d’un vivant accomplissant une fonction déterminée."
+    },
+    {
+      "term": "instrument",
+      "definition": "Objet ou moyen mobilisé en vue d’une fin ; ici, il peut être changé selon l’usage."
+    },
+    {
+      "term": "finalité",
+      "definition": "Rapport par lequel une chose est comprise à partir de la fin ou de la fonction qu’elle réalise."
+    }
+  ],
+  "paragraphs": [
+    "Anaxagore prétend que c’est parce qu’il a des mains que l’homme est le plus intelligent des animaux. Ce qui est rationnel, plutôt, c’est de dire qu’il a des mains parce qu’il est le plus intelligent. Car la main est un outil ; or la nature attribue toujours, comme le ferait un homme sage, chaque organe à qui est capable de s’en servir. Ce qui convient, en effet, c’est de donner des flûtes au flûtiste, plutôt que d’apprendre à jouer à qui possède des flûtes. […] Si donc cette façon de faire est préférable, si la nature réalise parmi les possibles celui qui est le meilleur, ce n’est pas parce qu’il a des mains que l’homme est le plus intelligent des êtres, mais c’est parce qu’il est le plus intelligent qu’il a des mains.",
+    "En effet, l’être le plus intelligent est celui qui est capable de bien utiliser le plus grand nombre d’outils : or, la main semble bien être non pas un outil, mais plusieurs. Car elle est pour ainsi dire un outil qui tient lieu des autres. C’est donc à l’être capable d’acquérir le plus grand nombre de techniques que la nature a donné l’outil de loin le plus utile, la main.",
+    "Aussi, ceux qui disent que l’homme n’est pas bien constitué et qu’il est le moins bien partagé des animaux (parce que, dit-on, il est sans chaussures, il est nu et n’a pas d’armes pour combattre) sont dans l’erreur. Car les autres animaux n’ont chacun qu’un seul moyen de défense et il ne leur est pas possible de le changer pour faire n’importe quoi d’autre, et ne doivent jamais déposer l’armure qu’ils ont autour de leur corps ni changer l’arme qu’ils ont reçue en partage. L’homme, au contraire, possède de nombreux moyens de défense, et il lui est toujours loisible d’en changer et même d’avoir l’arme qu’il veut et quand il le veut. Car la main devient griffe, serre, corne, ou lance, ou épée, ou toute autre arme ou outil. Elle peut-être tout cela, parce qu’elle est capable de tout saisir et de tout tenir.",
+    "La forme même que la nature a imaginée pour la main est adaptée à cette fonction. Elle est, en effet, divisée en plusieurs parties. Et le fait que ces parties peuvent s’écarter implique aussi pour elles la faculté de se réunir, tandis que la réciproque n’est pas vraie. Il est possible de s’en servir comme d’un organe unique, double ou multiple."
+  ]
+},
+    {
+  "id": "mauss-corps-instrument-naturel",
+  "section": "philosophie",
+  "cardMeta": "Technique · techniques du corps",
+  "title": "Le corps est l’instrument le plus naturel de l’homme",
+  "author": "Marcel Mauss",
+  "authorTag": "Mauss",
+  "cardHighlight": "premier et plus naturel instrument",
+  "familiarIdea": "les techniques du corps",
+  "authorMeta": "(1872–1950) · sociologie / anthropologie",
+  "themes": [
+    "Technique",
+    "Culture",
+    "Travail"
+  ],
+  "work": "Les techniques du corps",
+  "publication": "1936, dans Sociologie et Anthropologie, PUF, 1968, p. 371–372",
+  "description": "Une technique suppose-t-elle toujours un outil extérieur au corps ?",
+  "context": "Mauss montre que des gestes qui paraissent naturels sont en réalité <strong>appris</strong> et transmis par une société. Le corps est notre premier moyen technique : marcher, nager ou se tenir sont déjà des manières culturellement réglées d’agir.",
+  "readingQuestions": [
+    "Pourquoi Mauss refuse-t-il de considérer nos gestes corporels comme purement <strong>naturels</strong> ?",
+    "En quel sens le corps peut-il être notre premier <strong>instrument technique</strong> ?",
+    "Que révèlent les techniques du corps sur le rôle de la <strong>culture</strong> dans nos comportements les plus ordinaires ?"
+  ],
+  "glossary": [
+    {
+      "term": "tradition",
+      "definition": "Ensemble de pratiques et représentations transmises au sein d’un groupe."
+    },
+    {
+      "term": "technique du corps",
+      "definition": "Manière traditionnelle et efficace dont les humains se servent de leur corps."
+    }
+  ],
+  "paragraphs": [
+    "J’appelle technique un acte traditionnel efficace (et vous voyez qu’en ceci il n’est pas différent de l’acte magique, religieux, symbolique). Il faut qu’il soit traditionnel et efficace. Il n’y a pas de technique et pas de transmission, s’il n’y a pas de tradition. C’est en quoi l’homme se distingue avant tout des animaux : par la transmission de ses techniques et très probablement par leur transmission orale.",
+    "Donnez-moi donc la permission de considérer que vous adoptez mes définitions. Mais quelle est la différence entre l’acte traditionnel efficace de la religion, l’acte traditionnel efficace, symbolique, juridique, les actes de la vie en commun, les actes moraux d’une part, et l’acte traditionnel des techniques d’autre part ? C’est que celui-ci est senti par l’auteur comme un acte d’ordre mécanique, physique ou physico-chimique et qu’il est poursuivi dans ce but.",
+    "Dans ces conditions, il faut dire tout simplement : nous avons affaire à des techniques du corps. Le corps est le premier et le plus naturel instrument de l’homme. Ou plus exactement, sans parler d’instrument, le premier et le plus naturel objet technique, et en même temps moyen technique, de l’homme, c’est son corps. […] Avant les techniques à instruments, il y a l’ensemble des techniques du corps. […] Cette adaptation constante à un but physique, mécanique, chimique (par exemple quand nous buvons) est poursuivie dans une série d’actes montés, et montés chez l’individu non pas simplement par lui-même, mais par toute son éducation, par toute la société dont il fait partie, à la place qu’il y occupe.",
+    "Je n’en finirais plus si je voulais vous montrer tous les faits que nous pourrions énumérer pour faire voir ce concours du corps et des symboles moraux ou intellectuels. Regardons-nous en ce moment nous-mêmes. Tout en nous tous se commande. Je suis en conférencier avec vous ; vous le voyez à ma posture assise et à ma voix, et vous m’écoutez assis et en silence. Nous avons un ensemble d’attitudes permises ou non, naturelles ou non. Ainsi nous attribuerons des valeurs différentes au fait de regarder fixement : symbole de politesse à l’armée, et d’impolitesse dans la vie courante."
+  ]
+},
+    {
+  "id": "marx-alienation-travail-ouvrier",
+  "section": "philosophie",
+  "cardMeta": "Technique · travail aliéné",
+  "title": "Le progrès technique peut devenir une cause d’aliénation du travail ouvrier",
+  "author": "Karl Marx",
+  "authorTag": "Marx",
+  "cardHighlight": "aliénation du travail",
+  "familiarIdea": "l’aliénation du travail",
+  "authorMeta": "(1818–1883) · matérialisme dialectique",
+  "themes": [
+    "Technique",
+    "Travail",
+    "Liberté"
+  ],
+  "work": "Manuscrits de 1844",
+  "publication": "1932 posth. pour la première publication, premier manuscrit, XIII, trad. J.-P. Gougeon, GF, 1996, p. 112–113",
+  "description": "Comment le travail peut-il devenir extérieur au travailleur et l’éloigner de lui-même ?",
+  "context": "Marx décrit l’aliénation comme une séparation du travailleur d’avec son activité, son produit et lui-même. La division technique du travail industriel peut rendre cette extériorité particulièrement manifeste.",
+  "readingQuestions": [
+    "Pourquoi le travail aliéné est-il vécu comme extérieur au travailleur ?",
+    "En quoi le travail cesse-t-il d’être une activité propre ?",
+    "Pourquoi Marx parle-t-il d’un renversement entre fonctions humaines et fonctions animales ?"
+  ],
+  "glossary": [
+    {
+      "term": "aliénation",
+      "definition": "Situation dans laquelle une activité ou son produit deviennent étrangers à celui qui les accomplit."
+    },
+    {
+      "term": "travail extérieur",
+      "definition": "Travail qui n’est pas éprouvé comme expression de soi mais comme contrainte imposée."
+    }
+  ],
+  "paragraphs": [
+    "En quoi consiste l’aliénation du travail ? D’abord dans le fait que le travail est extérieur à l’ouvrier, c’est-à-dire qu’il n’appartient pas à son essence, que donc, dans son travail, l’ouvrier ne s’affirme pas, mais se nie, ne se sent pas à l’aise, mais malheureux ; il n’y déploie pas une libre activité physique et intellectuelle, mais mortifie son corps et ruine son esprit. En conséquence, l’ouvrier ne se sent lui-même qu’en dehors du travail et dans le travail il se sent extérieur à lui-même. Il est à l’aise quand il ne travaille pas et, quand il travaille, il ne se sent pas à l’aise. Son travail n’est donc pas volontaire, mais contraint, c’est du travail forcé. Il n’est donc pas la satisfaction d’un besoin, mais seulement un moyen de satisfaire des besoins en dehors du travail. Le caractère du travail apparaît nettement dans le fait que, dès qu’il n’existe pas de contrainte physique ou autre, le travail est fui comme la peste. Le travail extérieur à l’homme, dans lequel il se dépouille, est un travail de sacrifice de soi, de mortification. Enfin le caractère extérieur à l’ouvrier du travail apparaît dans le fait qu’il n’est pas son bien propre, mais celui d’un autre, qu’il ne lui appartient pas, que dans le travail l’ouvrier ne s’appartient pas lui-même, mais appartient à un autre. De même que, dans la religion, l’activité propre de l’imagination humaine, du cerveau humain et du cœur humain, agit sur l’individu indépendamment de lui, c’est-à-dire comme une activité étrangère, divine ou diabolique, de même l’activité de l’ouvrier n’est pas son activité propre. Elle appartient à un autre, elle est la perte de soi-même.",
+    "On en vient donc à ce résultat que l’homme (l’ouvrier) se sent agir librement seulement dans ses fonctions animales : manger, boire et procréer, ou encore, tout au plus, dans le choix de sa maison, de son habillement, etc. ; en revanche, il se sent animal dans ses fonctions proprement humaines. Ce qui est animal devient humain, et ce qui est humain devient animal.",
+    "Manger, boire, procréer, etc., sont certes aussi des fonctions authentiquement humaines. Mais séparées abstraitement du reste du champ des activités humaines et devenues ainsi la fin dernière et unique, elles ne sont plus que des fonctions animales."
+  ]
+},
+    {
+  "id": "simondon-harmonie-homme-machine",
+  "section": "philosophie",
+  "cardMeta": "Technique · homme et machine",
+  "title": "L’homme peut vivre en harmonie avec la machine",
+  "author": "Gilbert Simondon",
+  "authorTag": "Simondon",
+  "cardHighlight": "harmonie avec la machine",
+  "authorMeta": "(1924–1989) · philosophie contemporaine",
+  "themes": [
+    "Technique",
+    "Culture",
+    "Travail"
+  ],
+  "work": "Du mode d’existence des objets techniques",
+  "publication": "1958, Aubier, 2012, p. 9–11",
+  "description": "La machine est-elle réellement l’ennemie de l’homme, ou cette opposition vient-elle d’une mauvaise compréhension de la technique ?",
+  "context": "Simondon refuse l’opposition simple entre <strong>culture</strong> et technique. La machine contient du savoir et du travail humains : le véritable enjeu est donc d’apprendre à la comprendre pour construire avec elle une relation moins étrangère et moins passive.",
+  "readingQuestions": [
+    "Pourquoi Simondon refuse-t-il d’opposer simplement l’être humain et la machine ?",
+    "En quel sens l’objet technique contient-il du savoir et du <strong>travail humain</strong> ?",
+    "Pourquoi comprendre les machines peut-il transformer notre rapport à la <strong>culture</strong> et à la technique ?"
+  ],
+  "glossary": [
+    {
+      "term": "technophobie",
+      "definition": "Rejet ou peur de la technique et des machines."
+    },
+    {
+      "term": "automatisme",
+      "definition": "Fonctionnement réglé limitant l’indétermination ; Simondon refuse d’en faire le critère ultime du progrès technique."
+    }
+  ],
+  "paragraphs": [
+    "L’opposition dressée entre la culture et la technique, entre l’homme et la machine, est fausse et sans fondement ; elle ne recouvre qu’ignorance ou ressentiment. Elle masque derrière un facile humanisme une réalité riche en efforts humains et en forces naturelles, et qui constitue le monde des objets techniques, médiateurs entre la nature et l’homme. La culture se conduit envers l’objet technique comme l’homme envers l’étranger quand il se laisse emporter par la xénophobie primitive. Le misonéisme orienté contre les machines n’est pas tant haine du nouveau que refus de la réalité étrangère. Or, cet être étranger est encore humain, et la culture complète est ce qui permet de découvrir l’étranger comme humain. De même, la machine est l’étranger ; c’est l’étranger en laquelle est enfermé de l’humain, méconnu, matérialisé, asservi, mais restant pourtant de l’humain. La plus forte cause d’aliénation dans le monde contemporain réside dans cette méconnaissance de la machine, qui n’est pas une aliénation causée par la machine, mais par la non-connaissance de sa nature et de son essence, par son absence du monde des significations, et par son omission dans la table des valeurs et des concepts faisant partie de la culture. […]",
+    "En fait, cette contradiction inhérente à la culture provient de l’ambiguïté des idées relatives à l’automatisme, en lesquelles se cache une véritable faute logique. Les idolâtres de la machine présentent en général le degré de perfection d’une machine comme proportionnel au degré d’automatisme. Dépassant ce que l’expérience montre, ils supposent que, par un accroissement et un perfectionnement de l’automatisme on arriverait à réunir et à interconnecter toutes les machines entre elles, de manière à constituer une machine de toutes les machines.",
+    "Or, en fait, l’automatisme est un assez bas degré de perfection technique. […] Le véritable perfectionnement des machines, celui dont on peut dire qu’il élève le degré de technicité, correspond non pas à un accroissement de l’automatisme, mais au contraire au fait que le fonctionnement d’une machine recèle une certaine marge d’indétermination. […] Loin d’être le surveillant d’une troupe d’esclaves, l’homme est l’organisateur permanent d’une société des objets techniques qui ont besoin de lui comme les musiciens ont besoin du chef d’orchestre."
+  ]
+},
+    {
+  "id": "aristote-travail-manuel-esclave",
+  "section": "philosophie",
+  "cardMeta": "Travail · esclavage et liberté",
+  "title": "Le travail manuel est réservé à l’esclave, le travail de l’esprit à l’homme libre",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "être commandés / commander",
+  "familiarIdea": "l’esclavage naturel",
+  "authorMeta": "(384–322 av. J.-C.) · philosophie de l’Antiquité",
+  "themes": [
+    "Travail",
+    "Liberté",
+    "Technique"
+  ],
+  "work": "Les Politiques",
+  "publication": "IVe s. av. J.-C., livre I, chap. 4, 1254ab, trad. P. Pellegrin, GF, 1990, p. 99–102",
+  "description": "Aristote peut-il fonder dans la nature la séparation entre ceux qui commandent et ceux qui travaillent corporellement ?",
+  "context": "Aristote relie ici la <strong>liberté politique</strong> à la possibilité d’être délivré du travail corporel. Il présente cette hiérarchie comme naturelle : le texte permet donc d’interroger directement le rapport entre <strong>nature, travail et domination</strong>.",
+  "readingQuestions": [
+    "Pourquoi Aristote associe-t-il le travail corporel à la condition de l’<strong>esclave</strong> ?",
+    "Quel rôle joue l’opposition entre le corps et la raison dans cette hiérarchie ?",
+    "Peut-on passer de différences naturelles à une justification de la <strong>domination sociale</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "fonction propre",
+      "definition": "Activité spécifique attribuée à un être ou à une partie selon sa nature."
+    },
+    {
+      "term": "esclave par nature",
+      "definition": "Thèse aristotélicienne selon laquelle certains seraient naturellement destinés à être commandés ; thèse historiquement et philosophiquement contestable."
+    }
+  ],
+  "paragraphs": [
+    "[C]ommander et être commandé font partie non seulement des choses indispensables, mais aussi des choses avantageuses. Et c’est dès leur naissance qu’une distinction a été opérée chez certains, les uns devant être commandés, les autres commander. […] [Ceux qui sont aussi éloignés des autres hommes qu’un corps l’est d’une âme et une bête sauvage d’un homme (et sont ainsi faits ceux dont l’activité consiste à se servir de leurs corps, et dont c’est le meilleur [parti] que l’on puisse tirer), ceux-là sont par nature esclaves, et il est meilleur pour eux d’être soumis à cette autorité [magistrale] A […]. Est, en effet, esclave par nature celui qui, en puissance, appartient à un autre (et c’est pourquoi il [appartient de fait] à un autre) et qui n’a la raison en partage que dans la mesure où il la perçoit [chez les autres] mais ne la possède pas [lui-même], car les animaux ne perçoivent aucune raison, mais sont asservis à des impressions B. […]",
+    "[Et la nature veut marquer dans les corps la différence entre hommes libres et esclaves] ceux des seconds sont robustes, aptes aux [travaux] indispensables, ceux des premiers sont droits et inaptes à de telles besognes, mais adaptés à la vie politique […]."
+  ]
+},
+    {
+  "id": "marx-royaume-liberte-travail",
+  "section": "philosophie",
+  "cardMeta": "Travail · nécessité et liberté",
+  "title": "Le travail rend libre s’il n’est pas contraint",
+  "author": "Karl Marx",
+  "authorTag": "Marx",
+  "cardHighlight": "royaume de la liberté",
+  "familiarIdea": "le royaume de la liberté",
+  "authorMeta": "(1818–1883) · matérialisme dialectique",
+  "themes": [
+    "Travail",
+    "Liberté",
+    "Technique"
+  ],
+  "work": "Le Capital",
+  "publication": "1867, livre III, chap. 48, trad. A. Cohen-Solal et G. Badia, Éditions Sociales, 1976, p. 740–742",
+  "description": "La liberté commence-t-elle par la suppression du travail ou par la réduction de sa part nécessaire ?",
+  "context": "Marx distingue le <strong>royaume de la nécessité</strong>, où nous devons produire pour satisfaire nos besoins, du <strong>royaume de la liberté</strong>. La liberté ne supprime pas toute nécessité : elle commence lorsque nous organisons collectivement le travail et réduisons le temps qu’il exige.",
+  "readingQuestions": [
+    "Pourquoi une part du travail appartient-elle toujours au <strong>royaume de la nécessité</strong> ?",
+    "Que signifie organiser rationnellement et collectivement notre rapport à la nature ?",
+    "Pourquoi la réduction du <strong>temps de travail</strong> devient-elle une condition de la liberté ?"
+  ],
+  "glossary": [
+    {
+      "term": "nécessité",
+      "definition": "Ce dont on ne peut se passer ; ici, le travail requis pour reproduire les conditions matérielles de l’existence."
+    },
+    {
+      "term": "royaume de la liberté",
+      "definition": "Domaine de l’activité qui devient possible au-delà du travail imposé par la nécessité matérielle."
+    }
+  ],
+  "paragraphs": [
+    "En fait, le royaume de la liberté commence seulement là où l’on cesse de travailler par nécessité et opportunité imposée de l’extérieur […]. De même que l’homme primitif doit lutter contre la nature pour pourvoir à ses besoins, se maintenir en vie et se reproduire, l’homme civilisé est forcé, lui aussi, de le faire et de le faire quels que soient la structure de la société et le mode de la production. […] Dans ce domaine, la seule liberté possible est que l’homme social, les producteurs associés règlent rationnellement leurs échanges avec la nature, qu’ils la contrôlent ensemble au lieu d’être dominés par sa puissance aveugle et qu’ils accomplissent ces échanges en dépensant le minimum de force et dans les conditions les plus dignes, les plus conformes à leur nature humaine. Mais cette activité constituera toujours le royaume de la nécessité. C’est au-delà que commence […] le véritable royaume de la liberté qui ne peut s’épanouir qu’en se fondant sur l’autre royaume, sur l’autre base, celle de la nécessité. La condition essentielle de cet épanouissement est la réduction de la journée de travail."
+  ]
+},
+    {
+  "id": "nietzsche-travail-jeu-creation",
+  "section": "philosophie",
+  "cardMeta": "Travail · ennui, jeu et création",
+  "title": "Ce n’est pas le jeu qui nous sauve du travail, mais la création",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "travaille au-delà / invente le jeu",
+  "authorMeta": "(1844–1900) · philosophie contemporaine",
+  "themes": [
+    "Travail",
+    "Technique",
+    "Art"
+  ],
+  "work": "Humain, trop humain",
+  "publication": "1878, § 611, trad. R. Rovini, Gallimard, 1988, p. 320",
+  "description": "Que devient l’activité humaine lorsque le besoin matériel est satisfait mais que demeure l’ennui ?",
+  "context": "Nietzsche part d’un paradoxe : le travail, d’abord imposé par le besoin, devient lui-même une habitude dont l’absence produit l’ennui. Le jeu reste encore une réponse à ce besoin d’activité ; artistes et philosophes cherchent un « troisième état », une activité heureuse qui ne soit plus commandée par la nécessité.",
+  "readingQuestions": [
+    "Pourquoi l’arrêt du travail fait-il naître l’ennui ?",
+    "Pourquoi Nietzsche présente-t-il le jeu comme un « travail » qui ne satisfait plus aucun besoin extérieur ?",
+    "Que désigne le « troisième état » recherché par les artistes et les philosophes, et en quoi dépasse-t-il à la fois le travail et le jeu ?"
+  ],
+  "glossary": [
+    {
+      "term": "ennui",
+      "definition": "État de manque ou de vide éprouvé lorsque l’activité habituelle cesse."
+    },
+    {
+      "term": "jeu",
+      "definition": "Chez Nietzsche dans ce passage, activité inventée pour satisfaire le besoin d’activité lui-même, au-delà des besoins matériels."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Du besoin à la création",
+      "definition": "Nietzsche distingue trois régimes d’activité.",
+      "items": [
+        "Le Travail répond d’abord à la nécessité.",
+        "Le jeu satisfait encore un besoin né de l’habitude de travailler.",
+        "La création vise un état où l’activité vaut par elle-même."
+      ]
+    },
+    {
+      "type": "plain",
+      "definition": "Le texte ne célèbre donc pas simplement le loisir : il cherche une activité qui échappe à la logique du besoin."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "arendt-loisirs-monde-travail",
+      "kind": "proche",
+      "label": "Arendt — Le loisir reste pris dans le monde du travail",
+      "relation": "Nietzsche et Arendt refusent tous deux d’identifier le loisir à une véritable libération du Travail."
+    },
+    {
+      "id": "nietzsche-culte-genie",
+      "kind": "proche",
+      "label": "Nietzsche — Aucune création n’est un miracle",
+      "relation": "Le même auteur prolonge la question de la création en montrant qu’elle naît d’un travail de combinaison plutôt que d’une inspiration miraculeuse."
+    }
+  ],
+  "paragraphs": [
+    "L’ennui et le jeu. Le besoin nous contraint à un travail dont le produit sert à satisfaire le besoin ; la renaissance perpétuelle des besoins nous accoutume au travail. Mais dans les intervalles où les besoins sont satisfaits et pour ainsi dire endormis, c’est l’ennui qui nous prend. Qu’est-ce que l’ennui ? L’habitude du travail elle-même, qui se fait maintenant sentir sous forme de besoin nouveau et surajouté ; il sera d’autant plus fort que sera plus forte l’habitude de travailler, qu’aura peut-être été plus forte aussi la souffrance causée par les besoins. Pour échapper à l’ennui, l’homme, ou bien travaille au-delà de ce qu’exigent ses besoins normaux, ou bien il invente le jeu, c’est-à-dire le travail qui n’est plus destiné à satisfaire aucun autre besoin que celui du travail pour lui-même. Celui que le jeu finit par blaser et qui n’a aucune raison de travailler, du fait de besoins nouveaux, il arrive que le désir le saisisse d’un troisième état qui serait au jeu ce que planer est à danser, ce que danser est à marcher, un état de félicité tranquille dans le mouvement : c’est la vision que se font artistes et philosophes du bonheur."
+  ]
+},
+    {
+  "id": "arendt-loisirs-monde-travail",
+  "section": "philosophie",
+  "cardMeta": "Travail · loisirs et consommation",
+  "title": "Même nos loisirs sont sous l’emprise du monde du travail",
+  "author": "Hannah Arendt",
+  "authorTag": "Arendt",
+  "cardHighlight": "loisirs sous l’emprise du travail",
+  "authorMeta": "(1906–1975) · philosophie contemporaine",
+  "themes": [
+    "Travail",
+    "Technique",
+    "Culture"
+  ],
+  "work": "La Crise de la culture",
+  "publication": "1961–1968, trad. P. Lévy, Gallimard, 1989, p. 263–264",
+  "description": "Le temps de loisir nous libère-t-il réellement du cycle du travail et de la consommation ?",
+  "context": "Arendt montre que le <strong>loisir</strong> ne nous fait pas nécessairement sortir du monde du travail. S’il ne sert qu’à récupérer ou à consommer, il reste soumis au même cycle du besoin ; la culture exige une autre manière d’habiter le temps libre.",
+  "readingQuestions": [
+    "Pourquoi le <strong>loisir</strong> peut-il rester dépendant du monde du travail ?",
+    "Quelle différence Arendt établit-elle entre loisir de consommation et véritable disponibilité pour la culture ?",
+    "Être libéré du travail suffit-il à devenir réellement <strong>libre</strong> dans son temps ?"
+  ],
+  "glossary": [
+    {
+      "term": "loisir",
+      "definition": "Temps de repos encadré par le travail et souvent consacré à la consommation."
+    },
+    {
+      "term": "oisiveté",
+      "definition": "Temps libéré des nécessités de production et de consommation, disponible pour le monde et la culture."
+    }
+  ],
+  "paragraphs": [
+    "Les produits nécessaires aux loisirs servent le processus vital de la société, même s’ils ne sont peut-être pas aussi nécessaires à sa vie que le pain et la viande. Ils servent, comme on dit, à passer le temps, et le temps vide qui est ainsi passé n’est pas, à proprement parler, le temps de l’oisiveté — c’est-à-dire le temps où nous sommes libres de tout souci et activité nécessaires de par le processus vital et, par là, libres pour le monde et sa culture ; c’est bien plutôt le temps de reste, encore biologiquement déterminé dans la nature, qui reste après que le travail et le sommeil ont reçu leur dû. Le temps vide que les loisirs sont supposés remplir est un hiatus dans le cycle biologiquement conditionné du travail dans le « métabolisme de l’homme avec la nature », comme dit Marx.",
+    "[Avec les conditions de vie moderne, ce hiatus s’accroît constamment ; il y a de plus en plus de temps libéré à remplir avec les loisirs, mais ce gigantesque accroissement de temps vide ne change pas la nature du temps. Les loisirs, tout comme le travail et le sommeil, font irrévocablement partie du procès biologique de la vie. Et la vie biologique est toujours, au travail ou au repos, engagée dans la consommation ou dans la réceptivité passive de la distraction, un métabolisme qui se nourrit des choses en les dévorant. Les commodités qu’offre l’industrie des loisirs ne sont pas des « choses », des objets culturels, dont l’excellence se mesure à leur capacité de soutenir le processus vital et de devenir des appartenances permanentes du monde, et on ne doit pas les juger d’après ces critères ; ce ne sont pas davantage des valeurs qui existent pour être utilisées et échangées ; ce sont des biens de consommation, destinés à être usés jusqu’à épuisement, juste comme n’importe quel autre bien de consommation.",
+    "Panis et circenses s’entr’appartiennent vraiment ; tous deux sont nécessaires à la vie, à sa conservation et à sa régénération, et tous deux doivent être constamment produits à nouveau, et présentés à nouveau, faute de quoi le procès s’éteint complètement."
+  ]
+},
+    {
+  "id": "kierkegaard-oisivete-ennui-travail",
+  "section": "philosophie",
+  "cardMeta": "Travail · oisiveté et ennui",
+  "title": "Le travail nous sauve de l’ennui, mais l’oisiveté est le seul bien véritable",
+  "author": "Søren Kierkegaard",
+  "authorTag": "Kierkegaard",
+  "cardHighlight": "oisiveté / ennui",
+  "authorMeta": "(1813–1855) · philosophie moderne / existentialisme",
+  "themes": [
+    "Travail",
+    "Liberté",
+    "Bonheur"
+  ],
+  "work": "Ou bien… ou bien",
+  "publication": "trad. P.-H. Tisseau, dans Œuvres, Robert Laffont, 1993, p. 250–251",
+  "description": "Le travail est-il un bien en lui-même ou seulement un remède à l’ennui ?",
+  "context": "Kierkegaard distingue l’<strong>oisiveté</strong> de l’ennui. Le travail peut nous protéger de l’ennui, mais il ne constitue pas pour autant le bien suprême : une vie libre suppose de pouvoir habiter le temps sans avoir besoin de le remplir sans cesse.",
+  "readingQuestions": [
+    "Pourquoi Kierkegaard distingue-t-il l’<strong>oisiveté</strong> de l’ennui ?",
+    "Pourquoi le travail n’est-il pour lui qu’un remède possible contre l’ennui ?",
+    "Que faudrait-il pour être libre sans devoir remplir constamment son temps par une activité ?"
+  ],
+  "glossary": [
+    {
+      "term": "oisiveté",
+      "definition": "État de celui qui ne travaille pas ; ici, condition potentielle d’une vie supérieure si elle n’est pas envahie par l’ennui."
+    },
+    {
+      "term": "ennui",
+      "definition": "Désoeuvrement qui transforme l’absence d’activité en malaise."
+    }
+  ],
+  "paragraphs": [
+    "L’oisiveté, a-t-on coutume de dire, est la mère de tous les maux, contre lesquels on préconise le travail. On voit bien, à la crainte plébéienne du dicton, l’origine de ce remède. L’oisiveté, comme telle, n’est pas du tout la mère de tous les maux ; elle est au contraire une vie véritablement divine, à condition de ne pas s’y ennuyer. Elle peut même amener la perte de la fortune, etc., mais une âme bien née ne craint rien d’autre que l’ennui. Dans l’Olympe, les dieux ne s’ennuyaient pas ; ils menaient joyeuse vie au sein d’une heureuse oisiveté. […] Loin d’être la mère de tous les maux, l’oisiveté est plutôt le vrai bien. La source de tout mal, c’est l’ennui, et c’est lui qu’il faut écarter. L’oisiveté n’est pas mauvaise ; il faut même dire que tout homme qui n’en a pas le sens montre qu’il ne s’est pas élevé jusqu’au plan humain. Il y a une activité infatigable où l’homme se bannit du monde de l’esprit et se ravale au rang des animaux que l’instinct condamne au mouvement continuel. Il y a des gens remarquablement doués pour voir en tout une affaire ; la vie entière est pour eux une affaire ; ils deviennent amoureux et se marient ; ils écoutent un bon mot et admirent un tour de force avec le même empressement dont ils témoignent à leur travail au bureau."
+  ]
+},
+    {
+  "id": "critias-dieu-invention-controle",
+  "section": "philosophie",
+  "cardMeta": "Religion · origine sociale de Dieu",
+  "title": "L’idée de Dieu est une invention destinée à contrôler les hommes",
+  "author": "Critias",
+  "authorTag": "Critias",
+  "cardHighlight": "invention destinée à contrôler les hommes",
+  "authorMeta": "(v. 460–403 av. J.-C.) · sophistique / athéisme antique",
+  "themes": [
+    "Religion",
+    "État",
+    "Justice"
+  ],
+  "work": "Fragment rapporté par Sextus Empiricus, Contre les mathématiciens",
+  "publication": "IIe–IIIe s., IX, 54, recueilli dans Les Sophistes, dans Les Présocratiques, trad. J.-L. Poirier, Gallimard, « Bibliothèque de la Pléiade », 1988, p. 1145–1146",
+  "description": "L’idée de Dieu pourrait-elle avoir été inventée pour prolonger la loi jusque dans les pensées et les actes cachés ?",
+  "context": "Critias propose une explication politique de la religion : les <strong>lois</strong> peuvent punir les fautes visibles, mais elles ne contrôlent pas ce qui reste caché. La croyance en un dieu qui voit tout permettrait alors d’étendre la surveillance jusque dans le secret des conduites.",
+  "readingQuestions": [
+    "Pourquoi les lois humaines ne suffisent-elles pas à empêcher toutes les injustices ?",
+    "Quel rôle joue la croyance en un dieu qui voit et entend tout ?",
+    "En quoi cette explication fait-elle de la <strong>religion</strong> un instrument de l’ordre politique ?"
+  ],
+  "glossary": [
+    {
+      "term": "athéisme",
+      "definition": "Doctrine ou position qui nie l’existence des dieux ou de Dieu."
+    },
+    {
+      "term": "fiction politique",
+      "definition": "Représentation produite ou entretenue afin d’orienter les conduites et de stabiliser un ordre collectif."
+    },
+    {
+      "term": "omniscience",
+      "definition": "Attribut d’un être qui connaîtrait absolument tout, y compris ce qui demeure caché aux autres humains."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Une généalogie de la religion",
+      "definition": "Critias ne cherche pas d’abord à savoir si Dieu existe : il demande à quoi sert socialement l’idée de Dieu et dans quelles circonstances elle aurait pu apparaître."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "robespierre-sentiment-religieux-morale-sociale",
+      "kind": "adverse",
+      "label": "Robespierre — Le sentiment religieux maintient la morale sociale",
+      "relation": "Critias et Robespierre attribuent tous deux une fonction sociale à la religion, mais l’un y voit une invention de contrôle tandis que l’autre veut conserver son efficacité morale."
+    },
+    {
+      "id": "freud-dieu-protection-paternelle",
+      "kind": "proche",
+      "label": "Freud — À travers Dieu, l’homme recherche une protection paternelle",
+      "relation": "Freud propose lui aussi une explication de l’origine de la croyance qui part des besoins humains plutôt que d’une preuve de l’existence divine."
+    }
+  ],
+  "paragraphs": [
+    "Et Critias, un de ceux qui furent tyrans à Athènes, semble appartenir au groupe des athées ; il déclare que les anciens législateurs ont fabriqué la fiction de Dieu, définie comme une puissance qui porterait son regard sur les actions justes et les fautes des hommes, afin que personne ne portât tort en cachette à son prochain, ayant toujours à se garder du châtiment des dieux. Voici comment il formule cette idée :",
+    "[…] [L]es hommes, je le crois, ont pour punir,<br>Institué des lois, pour que régnât le droit<br>Et que […] la démesure soit maintenue asservie.<br>Alors on put châtier ceux qui avaient fauté.<br>Mais, puisque par les lois ils étaient empêchés<br>Par la force, au grand jour, d’accomplir leurs forfaits,<br>Mais qu’ils les commettaient à l’abri de la nuit,<br>Alors […] un homme à la pensée astucieuse et sage<br>Inventa la crainte des dieux pour les mortels,<br>Afin que les méchants ne cessassent de craindre<br>D’avoir des comptes à rendre de ce qu’ils auraient fait,<br>Dit, ou encor pensé, même dans le secret :<br>Aussi introduit-il la pensée du divin.<br>« C’était, leur disait-il, comme un démon vivant<br>D’une vie éternelle. Son intellect entend<br>Et voit tout en tout lieu. Il dirige les choses<br>De par sa volonté. Sa nature est divine.<br>Par elle, il entendra toute parole d’homme,<br>Et par elle il verra tout ce qui se commet.<br>[…] Il racontait ainsi que les dieux habitaient<br>Un céleste séjour qui par tous ses aspects,<br>Ne pouvait qu’effrayer les malheureux mortels.<br>Car il savait fort bien d’où vient pour les humains<br>La crainte, et ce qui peut secourir dans le malheur. »"
+  ]
+},
+    {
+  "id": "freud-dieu-protection-paternelle",
+  "section": "philosophie",
+  "cardMeta": "Religion · illusion et père",
+  "title": "À travers Dieu, l’homme recherche une protection paternelle",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "protection paternelle",
+  "familiarIdea": "l’illusion religieuse",
+  "authorMeta": "(1856–1939) · psychanalyse",
+  "themes": [
+    "Religion",
+    "Inconscient",
+    "Désir"
+  ],
+  "work": "L’Avenir d’une illusion",
+  "publication": "1927, trad. M. Bonaparte, PUF, 1973, p. 43",
+  "description": "La croyance religieuse provient-elle de preuves, ou de désirs humains anciens liés au besoin de protection ?",
+  "context": "Freud interprète la croyance religieuse comme une <strong>illusion</strong> : sa force ne vient pas d’abord d’une preuve, mais de désirs très anciens. Dieu prolonge la figure du père protecteur face à la détresse, tout en répondant au besoin de justice et d’ordre.",
+  "readingQuestions": [
+    "Pourquoi Freud qualifie-t-il les idées religieuses d’<strong>illusions</strong> plutôt que de simples erreurs ?",
+    "Quel lien établit-il entre la détresse infantile et la représentation d’un Père divin ?",
+    "Comment la religion répond-elle à la fois au besoin de protection et au désir de justice ?"
+  ],
+  "glossary": [
+    {
+      "term": "illusion",
+      "definition": "Chez Freud, croyance principalement motivée par la réalisation d’un désir ; une illusion n’est donc pas définie simplement par sa fausseté."
+    },
+    {
+      "term": "détresse infantile",
+      "definition": "Situation de dépendance profonde de l’enfant, dont le besoin de protection fournit à Freud un modèle pour comprendre certaines représentations religieuses."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Le désir à l’origine de la croyance",
+      "definition": "La question de Freud porte moins sur la vérité théologique de la religion que sur la source psychique de son pouvoir de conviction."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "critias-dieu-invention-controle",
+      "kind": "proche",
+      "label": "Critias — L’idée de Dieu est une invention destinée à contrôler les hommes",
+      "relation": "Critias propose une origine sociale et politique ; Freud une origine psychique liée au désir de protection."
+    },
+    {
+      "id": "pascal-solitude-misere-recherche-dieu",
+      "kind": "adverse",
+      "label": "Pascal — La solitude et la misère de l’homme le poussent à chercher Dieu",
+      "relation": "Pascal part lui aussi de la détresse humaine mais y voit une invitation à chercher Dieu plutôt qu’une explication réductrice de la croyance."
+    }
+  ],
+  "paragraphs": [
+    "Les idées religieuses […] ne sont pas le résidu de l’expérience ou le résultat final de la réflexion : elles sont des illusions, la réalisation des désirs les plus anciens, les plus forts, les plus pressants de l’humanité ; le secret de leur force est la force de ces désirs. Nous le savons déjà : l’impression terrifiante de la détresse infantile avait éveillé le besoin d’être protégé — protégé en étant aimé — besoin auquel le père a satisfait ; la reconnaissance du fait que cette détresse dure toute la vie a fait que l’homme s’est cramponné à un père, à un père cette fois plus puissant. L’angoisse humaine en face des dangers de la vie s’apaise à la pensée du règne bienveillant de la Providence divine, l’institution d’un ordre moral de l’univers assure la réalisation des exigences de la justice, si souvent demeurées irréalisées dans les civilisations humaines, et la prolongation de l’existence terrestre par une existence future fournit les cadres du temps et le lieu où ces désirs se réaliseront. […] C’est un énorme allègement pour l’âme individuelle que de voir les conflits de l’enfance […] lui être pour ainsi dire enlevés et recevoir une solution acceptée de tous."
+  ]
+},
+    {
+  "id": "pascal-solitude-misere-recherche-dieu",
+  "section": "philosophie",
+  "cardMeta": "Religion · misère et quête de sens",
+  "title": "La solitude et la misère de l’homme le poussent à chercher Dieu",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "chercher Dieu",
+  "authorMeta": "(1623–1662) · philosophie moderne / jansénisme",
+  "themes": [
+    "Religion",
+    "Bonheur",
+    "Raison"
+  ],
+  "work": "Pensées",
+  "publication": "1670 posth., éd. L. Brunschvicg, 693 (Lafuma 198), dans Pensées et opuscules, Hachette, 1967, p. 646",
+  "description": "Face au silence de l’univers et à sa propre misère, l’être humain peut-il se satisfaire du divertissement ou doit-il chercher un sens au-delà du monde ?",
+  "context": "Pascal décrit l’être humain comme perdu dans un univers silencieux, ignorant son origine et sa destination. Le <strong>divertissement</strong> permet de détourner le regard de cette condition ; la recherche de Dieu naît au contraire du refus de s’en satisfaire.",
+  "readingQuestions": [
+    "Pourquoi l’univers silencieux et l’incertitude sur la mort produisent-ils l’effroi ?",
+    "Pourquoi Pascal juge-t-il les divertissements ordinaires incapables de résoudre la misère humaine ?",
+    "Quel raisonnement le conduit à chercher si Dieu a laissé quelque marque de lui ?"
+  ],
+  "glossary": [
+    {
+      "term": "divertissement",
+      "definition": "Chez Pascal, tout ce qui détourne l’être humain de la pensée de sa condition, de sa misère et de sa mortalité."
+    },
+    {
+      "term": "misère",
+      "definition": "Fragilité de la condition humaine : ignorance, dépendance, mortalité et incapacité à se donner par soi-même un sens assuré."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "De l’effroi à la recherche",
+      "definition": "Le texte ne part pas d’une preuve de Dieu mais d’une expérience existentielle : ne pas savoir d’où l’on vient, où l’on va et pourquoi l’on est là."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-dieu-protection-paternelle",
+      "kind": "adverse",
+      "label": "Freud — À travers Dieu, l’homme recherche une protection paternelle",
+      "relation": "La même détresse humaine reçoit deux interprétations opposées : symptôme du désir chez Freud, appel à la recherche de Dieu chez Pascal."
+    },
+    {
+      "id": "pascal-divertissement-condition",
+      "kind": "same-author",
+      "label": "Pascal — Le divertissement nous détourne de notre condition",
+      "relation": "Les deux passages décrivent le divertissement comme la manière ordinaire d’éviter la pensée de notre condition."
+    }
+  ],
+  "paragraphs": [
+    "En voyant l’aveuglement et la misère de l’homme, en regardant tout l’univers muet, et l’homme sans lumière, abandonné à lui-même, et comme égaré dans ce recoin de l’univers, sans savoir qui l’y a mis, ce qu’il y est venu faire, ce qu’il deviendra en mourant, incapable de toute connaissance, j’entre en effroi comme un homme qu’on aurait porté endormi dans une île déserte et effroyable, et qui s’éveillerait sans connaître où il est et sans moyen d’en sortir. Et sur cela j’admire comment on n’entre point en désespoir d’un si misérable état. Je vois d’autres personnes auprès de moi, d’une semblable nature : je leur demande s’ils sont mieux instruits que moi, ils me disent que non ; et sur cela, ces misérables égarés, ayant regardé autour d’eux et ayant vu quelques objets plaisants, s’y sont donnés et s’y sont attachés.",
+    "Pour moi, je n’ai pu y prendre d’attache, et considérant combien il y a plus d’apparence qu’il y a autre chose que ce que je vois, j’ai recherché si ce Dieu dont tout le monde parle n’aurait point laissé quelque marque de soi."
+  ]
+},
+    {
+  "id": "anselme-preuve-ontologique-dieu",
+  "section": "philosophie",
+  "cardMeta": "Religion · preuve ontologique",
+  "title": "Dieu existe en vertu même de sa définition",
+  "author": "Saint Anselme de Cantorbéry",
+  "authorTag": "Saint-Anselme",
+  "cardHighlight": "existe en vertu même de sa définition",
+  "familiarIdea": "la preuve ontologique",
+  "authorMeta": "(1033–1109) · scolastique",
+  "themes": [
+    "Religion",
+    "Démonstration",
+    "Raison"
+  ],
+  "work": "Proslogion",
+  "publication": "chap. II–III, trad. A. Koyré, Vrin, 1967, p. 13–15",
+  "description": "Peut-on montrer que Dieu existe à partir de l’idée même d’un être dont on ne peut rien concevoir de plus grand ?",
+  "context": "Anselme part de la définition de Dieu comme « ce dont on ne peut rien concevoir de plus grand ». Son raisonnement cherche ensuite à montrer qu’un tel être ne peut pas exister seulement dans l’esprit : l’<strong>existence</strong> réelle doit appartenir à ce que nous concevons comme absolument suprême.",
+  "readingQuestions": [
+    "Quelle définition de Dieu sert de point de départ au raisonnement d’Anselme ?",
+    "Pourquoi distingue-t-il exister seulement dans l’intelligence et exister aussi dans la réalité ?",
+    "Le passage d’une <strong>définition</strong> à une affirmation d’existence constitue-t-il réellement une démonstration ?"
+  ],
+  "glossary": [
+    {
+      "term": "preuve ontologique",
+      "definition": "Argument qui cherche à établir l’existence de Dieu à partir de son concept ou de son essence, sans partir d’une observation du monde."
+    },
+    {
+      "term": "concevoir",
+      "definition": "Former dans l’intelligence une représentation ou un concept."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Fides quaerens intellectum",
+      "definition": "La démarche d’Anselme est celle d’une foi qui cherche l’intelligence : il ne prétend pas produire une foi sans présupposé, mais penser rationnellement ce qu’elle affirme."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-existence-pas-predicat",
+      "kind": "adverse",
+      "label": "Kant — Les attributs sont démontrables, mais pas l’existence",
+      "relation": "Kant vise directement le type de raisonnement qui prétend passer du concept de Dieu à son existence réelle."
+    },
+    {
+      "id": "pascal-coeur-raison-foi",
+      "kind": "adverse",
+      "label": "Pascal — La raison ne peut comprendre la foi",
+      "relation": "Anselme cherche une intelligence rationnelle de la foi ; Pascal insiste sur des premiers principes et une foi qui ne sont pas produits par la raison discursive."
+    }
+  ],
+  "paragraphs": [
+    "Seigneur, toi qui donnes l’intelligence à la foi, accorde-moi de comprendre, autant que tu le trouves bon, que tu es, comme nous le croyons, et que tu es tel que nous le croyons. Or, nous croyons que tu es quelque chose dont on ne peut rien concevoir de plus grand. Est-ce qu’une nature pareille n’existe pas, parce que l’insensé a dit dans son cœur : Dieu n’est pas ? Mais certainement ce même insensé, lorsqu’il entend ce que je dis « quelque chose dont on ne peut concevoir de plus grand », comprend ce qu’il entend, et ce qu’il comprend est dans son intelligence, même s’il ne comprend pas que cela existe. En effet, avoir une chose dans la pensée n’est pas la même chose que comprendre que cette chose existe. Ainsi, lorsque le peintre réfléchit au tableau qu’il va faire, il l’a dans la pensée ; mais il ne pense pas encore qu’il existe, parce qu’il ne l’a pas encore fait. Mais lorsqu’il l’a déjà peint, il l’a dans l’intelligence et comprend aussi que ce qu’il a fait existe. Or donc, l’insensé lui-même doit convenir qu’il y a dans l’intelligence quelque chose dont on ne peut rien concevoir de plus grand […]. Et certainement ce dont on ne peut rien concevoir de plus grand ne peut être dans l’intellect seul. En effet, s’il n’était que dans l’intellect, on aurait pu penser qu’il soit aussi en réalité : ce qui est plus. Or donc, si l’être dont on ne peut concevoir de plus grand est dans l’intelligence seule, cette même entité, dont on ne peut rien concevoir de plus grand, est quelque chose dont on peut concevoir quelque chose de plus grand : mais certainement ceci est impossible. Par conséquent, il n’y a aucun doute que quelque chose dont on ne peut rien concevoir de plus grand existe et dans l’intelligence et dans la réalité.",
+    "Et il est si véritablement que l’on ne peut même pas penser qu’il n’est pas. En effet, on peut concevoir quelque chose qu’on ne saurait concevoir comme non existant, ce qui est plus grand que ce que l’on peut concevoir comme non existant. Ainsi donc, si ce dont on ne peut rien concevoir de plus grand peut être conçu comme n’existant pas, ce même être dont on ne peut rien concevoir de plus grand n’est pas cet être dont on ne peut pas concevoir de plus grand : ce qui est contradictoire. Ainsi donc, cet être dont on ne peut pas concevoir de plus grand est d’une manière tellement véritable que l’on ne peut pas penser qu’il n’est pas."
+  ]
+},
+    {
+  "id": "hume-mal-monde-imparfait",
+  "section": "philosophie",
+  "cardMeta": "Religion · mal et preuve de Dieu",
+  "title": "L’existence du mal naturel montre que le monde n’est pas parfait",
+  "author": "David Hume",
+  "authorTag": "Hume",
+  "cardHighlight": "le monde n’est pas parfait",
+  "authorMeta": "(1711–1776) · empirisme / scepticisme",
+  "themes": [
+    "Religion",
+    "Raison",
+    "Nature"
+  ],
+  "work": "Dialogues sur la religion naturelle",
+  "publication": "1779, onzième partie, trad. M. Malherbe, Vrin, 1987, p. 134–140",
+  "description": "L’ordre du monde permet-il vraiment d’inférer l’existence d’un créateur parfaitement puissant et bienveillant quand la nature contient tant de souffrance ?",
+  "context": "Hume confronte l’idée d’un Dieu parfaitement bon et puissant à l’existence du <strong>mal</strong> dans le monde. Les souffrances et les désordres naturels ne prouvent pas que Dieu n’existe pas, mais ils fragilisent l’argument qui prétend déduire ses attributs à partir de l’ordre du monde.",
+  "readingQuestions": [
+    "Pourquoi l’analogie du palais mal construit fragilise-t-elle l’argument d’un architecte divin parfait ?",
+    "Pourquoi la compatibilité du monde avec l’existence de Dieu ne suffit-elle pas à prouver cette existence ?",
+    "Comment le mal naturel renforce-t-il le doute sur les attributs que l’on prête à Dieu ?"
+  ],
+  "glossary": [
+    {
+      "term": "preuve cosmologique",
+      "definition": "Famille d’arguments qui remontent du monde, de son ordre ou de sa contingence à l’existence d’un principe ou d’un créateur."
+    },
+    {
+      "term": "agnosticisme",
+      "definition": "Position qui suspend le jugement sur l’existence de Dieu lorsqu’elle est tenue pour indémontrable ou inconnaissable."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Ordre du monde",
+        "definition": "Peut sembler suggérer une intelligence organisatrice."
+      },
+      "right": {
+        "term": "Mal et imperfections",
+        "definition": "Interdisent de conclure facilement à un créateur infiniment bon et puissant."
+      },
+      "conclusion": "Hume ne déduit pas la non-existence de Dieu : il montre l’insuffisance de l’inférence à partir du monde observé."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "leibniz-meilleur-mondes-possibles",
+      "kind": "adverse",
+      "label": "Leibniz — Dieu a créé le meilleur des mondes possibles",
+      "relation": "Hume et Leibniz prennent des positions opposées sur ce que les imperfections du monde permettent de conclure sur la bonté divine."
+    },
+    {
+      "id": "anselme-preuve-ontologique-dieu",
+      "kind": "adverse",
+      "label": "Saint Anselme — Dieu existe en vertu même de sa définition",
+      "relation": "Anselme raisonne à partir du concept de Dieu ; Hume critique les preuves qui prétendent partir du monde et de son ordre."
+    }
+  ],
+  "paragraphs": [
+    "PHILON. — Si je vous montrais une maison ou un palais où il n’y eût pas d’appartement commode et agréable, […] vous en blâmeriez certainement l’organisation, sans autre examen. En vain l’architecte ferait-il montre de sa subtilité et vous prouverait-il que, si cette porte ou cette fenêtre était modifiée, il s’ensuivrait de plus grands maux. Ce qu’il dit peut être parfaitement vrai : il est possible que les altérations d’un détail, tandis que les autres parties du bâtiment demeurent en l’état, ne fassent qu’augmenter les incommodités. Mais vous continueriez d’affirmer de façon générale que, si l’architecte avait eu de l’habileté et de bonnes intentions, il aurait pu concevoir un tel plan du tout, et ajuster les parties de telle manière qu’eût été portée remède à la totalité ou à la plupart des incommodités. Son ignorance, ou même votre propre ignorance d’un tel plan, ne vous convaincra jamais de son impossibilité.",
+    "[…] [L]e monde, considéré en général, et tel qu’il nous apparaît dans cette vie, est-il différent de ce qu’un homme, ou un être limité comparable, attendrait à l’avance d’une Divinité très puissante, très sage et très bienveillante ? Il faut un étrange préjugé pour affirmer le contraire. Et de là je conclus que, si compatible que le monde puisse être, au prix de certaines suppositions et conjectures, avec l’idée d’une telle Divinité, il ne nous fournira jamais d’inférence en faveur de son existence.",
+    "[…] [L]es douleurs, aussi bien que les plaisirs, servent à exciter à l’action toutes les créatures et à les rendre vigilantes dans la grande œuvre qu’est la préservation de soi. Or le plaisir seul, avec ses divers degrés, semble à l’entendement humain suffire pour ce but. Tous les animaux pourraient demeurer constamment dans un état de jouissance ; lorsqu’ils seraient pressés par quelqu’une des nécessités de la nature, telle que la soif, la faim, la fatigue, ils pourraient, au lieu de la douleur, ressentir une diminution de plaisir, par quoi ils seraient incités à rechercher l’objet qui est nécessaire à leur subsistance.",
+    "[…] Il faut reconnaître qu’il y a peu de parties de l’univers qui ne semblent pas servir à quelque but […]. Mais en même temps, il faut observer qu’aucune de ces parties ou principes, malgré toute leur utilité, ne sont assez précisément ajustés pour se maintenir exactement à l’intérieur des limites où cette utilité réside […]. [L]es vents sont indispensables pour chasser les nuées sur la surface du globe et pour assister les hommes dans la navigation ; mais que de fois, s’élevant en tempêtes et en cyclones, deviennent-ils funestes ! […] Il n’y a rien de si avantageux dans l’univers qui ne devienne souvent pernicieux par excès ou par défaut."
+  ],
+  "familiarIdea": "le problème du mal"
+},
+    {
+  "id": "leibniz-meilleur-mondes-possibles",
+  "section": "philosophie",
+  "cardMeta": "Religion · théodicée",
+  "title": "Dieu a créé le meilleur des mondes possibles",
+  "author": "Gottfried Wilhelm Leibniz",
+  "authorTag": "Leibniz",
+  "cardHighlight": "meilleur des mondes possibles",
+  "familiarIdea": "le meilleur des mondes possibles",
+  "authorMeta": "(1646–1716) · rationalisme",
+  "themes": [
+    "Religion",
+    "Raison",
+    "Justice"
+  ],
+  "work": "De la production originelle des choses prise à sa racine",
+  "publication": "1697, dans Opuscules philosophiques choisis, trad. P. Schrecker, Vrin, 1969, p. 89–91",
+  "description": "Comment défendre la bonté et la sagesse de Dieu alors que le monde contient souffrances, injustices et désordre ?",
+  "context": "Leibniz cherche à concilier l’existence du mal avec la perfection divine. Si Dieu choisit nécessairement le meilleur, ce qui nous paraît mauvais depuis notre point de vue limité peut participer à l’ordre d’un ensemble que nous ne saisissons pas entièrement.",
+  "readingQuestions": [
+    "Pourquoi l’existence du mal semble-t-elle d’abord contredire la bonté de Dieu ?",
+    "Pourquoi Leibniz juge-t-il notre point de vue trop limité pour évaluer l’ensemble du monde ?",
+    "Que signifie exactement l’idée du <strong>meilleur des mondes possibles</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "théodicée",
+      "definition": "Tentative de justifier la bonté et la justice de Dieu malgré l’existence du mal dans le monde."
+    },
+    {
+      "term": "possible / nécessaire / contingent",
+      "definition": "Le contingent aurait pu être autrement ; le nécessaire ne peut pas ne pas être. Leibniz pense que Dieu choisit librement, parmi les mondes possibles, celui qui possède la plus grande perfection d’ensemble."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Le point de vue de la totalité",
+      "definition": "Leibniz refuse de juger le plan divin à partir d’un fragment de l’histoire ou du monde : un défaut local peut contribuer à une perfection globale inaccessible à notre perspective."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "leibniz-petites-perceptions",
+      "kind": "proche",
+      "label": "Leibniz — Les petites perceptions",
+      "relation": "Un autre texte de Leibniz, consacré cette fois aux perceptions qui agissent sans devenir aperçues."
+    },
+    {
+      "id": "hume-mal-monde-imparfait",
+      "kind": "adverse",
+      "label": "Hume — Le mal contre l’optimisme théologique",
+      "relation": "Hume conteste l’inférence optimiste que Leibniz défend à propos de l’ordre du monde."
+    }
+  ],
+  "paragraphs": [
+    "[Dieu] ne manifeste pas seulement sa grandeur ou puissance dans la machine de l’univers déjà construite, mais aussi sa bonté ou sagesse dans le plan de la construction.",
+    "[…] Mais, dira-t-on, c’est le contraire que nous constatons dans le monde : c’est pour le meilleur, bien souvent, que les choses vont le plus mal, ce ne sont pas seulement des bêtes innocentes, mais encore des hommes innocents qui sont accablés de maux, tués parfois même avec une extrême cruauté, si bien que le monde, surtout si l’on considère le gouvernement du genre humain, ressemble plutôt à un chaos confus qu’à l’œuvre bien ordonnée d’une sagesse suprême. Que telle soit la première apparence, je l’accorde. Mais dès qu’on examine les choses de plus près, l’opinion contraire s’impose. Il est a priori certain, par les arguments mêmes qui ont été exposés, que toutes choses et à plus forte raison les esprits reçoivent la plus grande perfection possible.",
+    "Il est en effet injuste, comme le disent les juristes, de juger avant d’avoir examiné la loi tout entière. Nous ne connaissons qu’une partie infime de l’éternité qui se prolonge dans l’immensité ; car les quelques milliers d’années dont l’histoire nous a conservé la mémoire sont très peu de chose. Et cependant, c’est d’après cette expérience minime que nous jugeons témérairement de l’immensité et de l’éternité, semblables à des hommes qui, nés et élevés dans une prison […], croiraient qu’il n’y a pas dans le monde d’autre lumière que la méchante lampe, à peine suffisante pour diriger leurs pas. Regardons un très beau tableau, et couvrons-le ensuite de manière à n’en apercevoir qu’une minuscule partie : que verrons-nous dans celle-ci, même en l’examinant de très près et surtout même quand nous nous en rapprochons de plus en plus, sinon un amas confus de couleurs, fait sans choix et sans art ? Et cependant, en écartant le voile et en regardant le tableau tout entier de la distance convenable, on comprendra que ce qui avait l’air d’une tache faite au hasard sur la toile, est l’effet de l’art consommé du peintre. Ce qui arrive à l’œil dans la peinture, arrive également à l’oreille dans la musique. Les plus grands compositeurs entremêlent très souvent les accords de dissonances, pour exciter ou pour inquiéter l’auditeur qui, anxieux du dénouement, éprouve d’autant plus de joie, lorsque tout rentre dans l’ordre. […] C’est la loi même du plaisir, qu’il ne se maintient pas au même degré, car il engendre la satiété, il nous engourdit au lieu de nous réjouir."
+  ]
+},
+    {
+  "id": "pascal-coeur-raison-foi",
+  "section": "philosophie",
+  "cardMeta": "Religion · foi et raison",
+  "title": "La raison ne peut comprendre la foi",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "la raison ne peut comprendre la foi",
+  "familiarIdea": "« le cœur a ses raisons »",
+  "authorMeta": "(1623–1662) · jansénisme",
+  "themes": [
+    "Religion",
+    "Raison",
+    "Vérité"
+  ],
+  "work": "Pensées",
+  "publication": "1670 posth., éd. L. Brunschvicg, 282 (Lafuma 110), dans Pensées et opuscules, Hachette, 1967, p. 459–460",
+  "description": "La raison peut-elle démontrer les premiers principes dont elle dépend elle-même, et peut-elle produire la foi religieuse ?",
+  "context": "Pascal distingue la connaissance <strong>discursive</strong> de la raison et une connaissance immédiate par le <strong>cœur</strong>. Les premiers principes ne sont pas démontrés mais sentis ; de même, la foi véritable n’est pas le simple résultat d’une chaîne de raisonnements.",
+  "readingQuestions": [
+    "Pourquoi Pascal affirme-t-il que les premiers principes sont connus par le cœur ?",
+    "Comment la raison dépend-elle de connaissances qu’elle ne démontre pas elle-même ?",
+    "Pourquoi la foi donnée par sentiment du cœur se distingue-t-elle d’une foi obtenue par raisonnement ?"
+  ],
+  "glossary": [
+    {
+      "term": "intuitif / discursif",
+      "definition": "Une connaissance intuitive saisit immédiatement ; une connaissance discursive procède par étapes et raisonnements."
+    },
+    {
+      "term": "cœur",
+      "definition": "Chez Pascal, faculté de connaissance immédiate des premiers principes et, dans l’ordre religieux, du sentiment de la foi ; il ne s’agit pas simplement de l’émotion."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Le cœur",
+        "definition": "Saisit ou sent les premiers principes sans démonstration."
+      },
+      "right": {
+        "term": "La raison",
+        "definition": "Démontre des conséquences à partir de principes qu’elle reçoit déjà."
+      },
+      "conclusion": "Pascal ne supprime pas la raison ; il en fixe les limites et lui interdit de se prendre pour la source de toutes nos certitudes."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "pascal-principes-demonstration-indemontrables",
+      "kind": "same-author",
+      "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+      "relation": "Les deux textes montrent que la raison démonstrative repose sur des points de départ qu’elle ne produit pas elle-même."
+    },
+    {
+      "id": "anselme-preuve-ontologique-dieu",
+      "kind": "adverse",
+      "label": "Saint Anselme — Dieu existe en vertu même de sa définition",
+      "relation": "Anselme met la raison au service de l’intelligence de la foi ; Pascal insiste davantage sur ce qui échappe à la démonstration."
+    }
+  ],
+  "paragraphs": [
+    "Nous connaissons la vérité, non seulement par la raison, mais encore par le cœur ; c’est de cette dernière sorte que nous connaissons les premiers principes et c’est en vain que le raisonnement, qui n’y a point de part, essaye de les combattre. Les pyrrhoniens, qui n’ont que cela pour objet, y travaillent inutilement. Nous savons que nous ne rêvons point ; quelque impuissance où nous soyons de le prouver par raison, cette impuissance ne conclut autre chose que la faiblesse de notre raison, mais non pas l’incertitude de toutes nos connaissances, comme ils le prétendent. Car la connaissance des premiers principes, comme qu’il y a espace, temps, mouvement, nombres, [est] aussi ferme qu’aucune de celles que nos raisonnements nous donnent. Et c’est sur ces connaissances du cœur et de l’instinct qu’il faut que la raison s’appuie, et qu’elle y fonde tout son discours. (Le cœur sent qu’il y a trois dimensions dans l’espace, et que les nombres sont infinis : et la raison démontre ensuite qu’il n’y a point deux nombres carrés dont l’un soit double de l’autre.) Les principes se sentent, les propositions se concluent ; et le tout avec certitude, quoique par différentes voies. Et il est aussi inutile et aussi ridicule que la raison demande au cœur des preuves de ses premiers principes, pour vouloir y consentir, qu’il serait ridicule que le cœur demandât à la raison un sentiment de toutes les propositions qu’elle démontre, pour vouloir les recevoir.",
+    "Cette impuissance ne doit donc servir qu’à humilier la raison, qui voudrait juger de tout, mais non pas à combattre notre certitude, comme s’il n’y avait que la raison capable de nous instruire. Plût à Dieu que nous n’en eussions au contraire jamais besoin, et que nous connussions toutes choses par instinct et par sentiment ! Mais la nature nous a refusé ce bien ; elle ne nous a donné au contraire que très peu de connaissances de cette sorte ; toutes les autres ne peuvent être acquises que par raisonnement.",
+    "Et c’est pourquoi ceux à qui Dieu a donné la religion par sentiment de cœur sont bien heureux et bien légitimement persuadés. Mais ceux qui ne l’ont pas nous ne pouvons la [leur] donner que par raisonnement, en attendant que Dieu la leur donne par sentiment de cœur, sans quoi la foi n’est qu’humaine et inutile pour le salut."
+  ]
+},
+    {
+  "id": "robespierre-sentiment-religieux-morale-sociale",
+  "section": "philosophie",
+  "cardMeta": "Religion · morale sociale",
+  "title": "Le sentiment religieux maintient la morale sociale",
+  "author": "Maximilien Robespierre",
+  "authorTag": "Robespierre",
+  "cardHighlight": "maintient la morale sociale",
+  "authorMeta": "(1758–1794) · philosophie politique révolutionnaire",
+  "themes": [
+    "Religion",
+    "Devoir",
+    "État"
+  ],
+  "work": "Sur les rapports des idées religieuses et morales avec les principes républicains et les fêtes nationales",
+  "publication": "18 floréal de l’an II (7 mai 1794), Prévot, 1831, p. 18–20",
+  "description": "Une société politique peut-elle supprimer brutalement les croyances religieuses sans fragiliser les motifs moraux qui soutiennent les conduites ?",
+  "context": "Robespierre ne défend pas ici une religion particulière : il attribue au <strong>sentiment religieux</strong> une fonction morale et politique. La croyance en un ordre supérieur peut, selon lui, soutenir les devoirs lorsque la seule autorité humaine ne suffit plus.",
+  "readingQuestions": [
+    "Pourquoi l’autorité humaine ne suffit-elle pas toujours à faire respecter la morale ?",
+    "Quel rôle la croyance en Dieu et en l’immortalité peut-elle jouer dans la conduite des citoyens ?",
+    "Pourquoi Robespierre juge-t-il le sentiment religieux utile à la <strong>société</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "tolérance",
+      "definition": "Principe permettant la coexistence de confessions ou convictions différentes sans leur donner le pouvoir de dominer la sphère politique."
+    },
+    {
+      "term": "sanction morale",
+      "definition": "Motif de récompense ou de punition qui renforce l’autorité pratique d’une règle morale."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Religion, morale et République",
+      "definition": "Robespierre défend moins la vérité théorique d’un dogme qu’une fonction pratique du religieux dans l’ordre civique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "critias-dieu-invention-controle",
+      "kind": "adverse",
+      "label": "Critias — L’idée de Dieu est une invention destinée à contrôler les hommes",
+      "relation": "Les deux textes reconnaissent une fonction sociale à la croyance ; Critias la présente comme invention de contrôle, Robespierre comme soutien moral qu’il serait dangereux d’abolir sans remplacement."
+    },
+    {
+      "id": "marx-religion-opium-peuple",
+      "kind": "adverse",
+      "label": "Marx — La religion est l’opium du peuple",
+      "relation": "Marx voit dans la religion l’expression et le maintien indirect d’une détresse sociale qu’il faut transformer réellement."
+    }
+  ],
+  "paragraphs": [
+    "L’idée de l’Être suprême et de l’immortalité de l’âme est un rappel continuel à la justice ; elle est donc sociale et républicaine. […] Le chef-d’œuvre de la société serait de créer en lui, pour les choses morales, un instinct rapide qui, sans le secours tardif du raisonnement, le portât à faire le bien et à éviter le mal ; car la raison particulière de chaque homme égaré par ses passions, n’est souvent qu’un sophiste qui plaide leur cause, et l’autorité de l’homme peut toujours être attaquée par l’amour-propre de l’homme. Or ce qui produit ou remplace cet instinct précieux, ce qui supplée à l’insuffisance de l’autorité humaine, c’est le sentiment religieux qu’imprime dans les âmes l’idée d’une sanction donnée aux préceptes de la morale par une puissance supérieure à l’homme. Aussi je ne sache pas qu’aucun législateur se soit jamais avisé de nationaliser l’athéisme. Je sais que les plus sages même d’entre eux se sont permis de mêler à la vérité quelques fictions, soit pour frapper l’imagination des peuples ignorants, soit pour les attacher plus fortement à leurs institutions. Lycurgue et Solon eurent recours à l’autorité des oracles […].",
+    "Vous ne conclurez pas de là sans doute qu’il faille tromper les hommes pour les instruire ; mais seulement que vous êtes heureux de vivre dans un siècle et dans un pays dont les lumières ne vous laissent d’autre tâche à remplir que de rappeler les hommes à la nature et à la vérité.",
+    "Vous vous garderez bien de briser le lien sacré qui les unit à l’auteur de leur être. Il suffit même que cette opinion ait régné chez un peuple, pour qu’il soit dangereux de la détruire. Car les motifs des devoirs et les bases de la moralité s’étant nécessairement liés à cette idée, l’effacer, c’est démoraliser le peuple. Il résulte du même principe, qu’on ne doit jamais attaquer un culte établi qu’avec prudence et avec une certaine délicatesse, de peur qu’un changement subit et violent ne paraisse une atteinte portée à la morale, et une dispense de la probité même. Au reste, celui qui peut remplacer la divinité dans le système de la vie sociale, est à mes yeux un prodige de génie ; celui qui, sans l’avoir remplacée, ne songe qu’à la bannir de l’esprit des hommes, me paraît un prodige de stupidité ou de perversité."
+  ]
+},
+    {
+  "id": "marx-religion-opium-peuple",
+  "section": "philosophie",
+  "cardMeta": "Religion · critique sociale",
+  "title": "La religion est « l’opium » qui tient le peuple asservi",
+  "author": "Karl Marx",
+  "authorTag": "Marx",
+  "cardHighlight": "l’opium du peuple",
+  "familiarIdea": "« la religion, opium du peuple »",
+  "authorMeta": "(1818–1883) · matérialisme historique",
+  "themes": [
+    "Religion",
+    "État",
+    "Travail"
+  ],
+  "work": "Critique de la philosophie du droit de Hegel",
+  "publication": "1843, dans Marx et Engels, Sur la religion, Éd. Sociales, trad. Badia et alii, 1972, p. 40–41",
+  "description": "La religion est-elle seulement une illusion imposée d’en haut, ou aussi l’expression réelle d’une détresse sociale qu’elle rend supportable ?",
+  "context": "Marx présente la religion à la fois comme une <strong>consolation</strong> face à la détresse et comme le symptôme d’un monde social qui produit cette détresse. Critiquer la religion ne suffit donc pas : il faut transformer les conditions réelles qui rendent cette consolation nécessaire.",
+  "readingQuestions": [
+    "Pourquoi Marx affirme-t-il que c’est l’être humain qui produit la religion ?",
+    "Comment la religion peut-elle être à la fois une consolation et l’expression d’une souffrance réelle ?",
+    "Pourquoi la critique de la religion conduit-elle à une critique de la <strong>société</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "opium du peuple",
+      "definition": "Métaphore par laquelle Marx désigne une consolation qui apaise une souffrance réelle sans supprimer les conditions qui la produisent."
+    },
+    {
+      "term": "aliénation",
+      "definition": "Situation dans laquelle l’être humain voit ses propres puissances ou productions se dresser face à lui comme des réalités étrangères et dominantes."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Critiquer les conditions, pas seulement l’illusion",
+      "definition": "La thèse ne se réduit pas à dire que la religion trompe : elle explique aussi pourquoi cette illusion répond à une souffrance réelle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "marx-conscience-vie-materielle",
+      "kind": "proche",
+      "label": "Marx — La vie détermine la conscience",
+      "relation": "L’Idéologie allemande fournit le cadre matérialiste général de la critique des représentations religieuses."
+    },
+    {
+      "id": "nietzsche-dieu-mort-valeurs",
+      "kind": "proche",
+      "label": "Nietzsche — La mort de Dieu et la création des valeurs",
+      "relation": "Deux critiques modernes de la religion qui n’en donnent ni le même diagnostic ni les mêmes conséquences."
+    }
+  ],
+  "paragraphs": [
+    "[C]’est l’homme qui fait la religion, ce n’est pas la religion qui fait l’homme. Certes, la religion est la conscience de soi et le sentiment de soi qu’a l’homme qui ne s’est pas encore trouvé lui-même, ou bien s’est déjà reperdu. […] La religion […] est la réalisation fantastique de l’être humain, parce que l’être humain ne possède pas de vraie réalité. Lutter contre la religion, c’est donc indirectement lutter contre ce monde-là, dont la religion est l’arôme spirituel.",
+    "La détresse religieuse est, pour une part, l’expression de la détresse réelle et, pour une autre, la protestation contre la détresse réelle. La religion est le soupir de la créature opprimée, l’âme d’un monde sans cœur, comme elle est l’esprit de conditions sociales d’où l’esprit est exclu. Elle est l’opium du peuple.",
+    "L’abolition de la religion en tant que bonheur illusoire du peuple est l’exigence que formule son bonheur réel. Exiger qu’il renonce aux illusions sur sa situation c’est exiger qu’il renonce à une situation qui a besoin d’illusions. La critique de la religion est donc en germe la critique de cette vallée de larmes dont la religion est l’auréole."
+  ]
+},
+    {
+  "id": "nietzsche-dieu-mort-valeurs",
+  "section": "philosophie",
+  "cardMeta": "Religion · mort de Dieu et valeurs",
+  "title": "« Dieu est mort » mais les valeurs survivent à la destruction de la croyance",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "Dieu est mort",
+  "familiarIdea": "la mort de Dieu",
+  "authorMeta": "(1844–1900) · généalogie / critique des valeurs",
+  "themes": [
+    "Religion",
+    "Vérité",
+    "Devoir"
+  ],
+  "work": "Le Gai Savoir",
+  "publication": "1882, § 343, trad. P. Klossowski, Gallimard, 1982, p. 237",
+  "description": "La disparition de la croyance chrétienne suffit-elle à faire disparaître les valeurs, habitudes et institutions qui se sont construites autour d’elle ?",
+  "context": "Nietzsche présente la <strong>mort de Dieu</strong> comme un événement culturel dont les conséquences sont encore à venir. Une croyance peut s’effondrer tandis que les valeurs, pratiques et institutions qu’elle a façonnées continuent longtemps à organiser nos manières de vivre.",
+  "readingQuestions": [
+    "Pourquoi la « mort de Dieu » ne produit-elle pas immédiatement tous ses effets ?",
+    "Comment une croyance disparue peut-elle continuer à agir à travers des valeurs et des institutions ?",
+    "Pourquoi la morale constitue-t-elle, pour Nietzsche, un exemple majeur de cette survivance ?"
+  ],
+  "glossary": [
+    {
+      "term": "mort de Dieu",
+      "definition": "Formule nietzschéenne désignant la perte de crédibilité du Dieu chrétien et, plus largement, l’effondrement du fondement transcendant traditionnel des valeurs."
+    },
+    {
+      "term": "valeur",
+      "definition": "Ce par quoi nous hiérarchisons, préférons et jugeons ; Nietzsche cherche à interroger l’histoire et la provenance de nos valeurs."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Un événement encore inachevé",
+      "definition": "Pour Nietzsche, la fin explicite d’une croyance ne supprime pas immédiatement les manières de penser qui ont été construites sur elle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sartre-homme-prendre-place-dieu",
+      "kind": "proche",
+      "label": "Sartre — L’homme doit prendre la place de Dieu comme créateur de valeurs",
+      "relation": "Sartre tire de l’absence de Dieu une responsabilité humaine radicale dans la création des valeurs."
+    },
+    {
+      "id": "marx-religion-opium-peuple",
+      "kind": "proche",
+      "label": "Marx — La religion est l’opium du peuple",
+      "relation": "Deux critiques de la religion, mais l’une met l’accent sur les conditions sociales et l’autre sur la généalogie des valeurs."
+    }
+  ],
+  "paragraphs": [
+    "343. Ce qu’il en est de notre gaieté. — Le plus grand événement récent — à savoir que « Dieu est mort », que la croyance au Dieu chrétien est tombée en discrédit — commence dès maintenant à étendre son ombre sur l’Europe. […] Mais sous le rapport essentiel on peut dire : l’événement en soi est beaucoup trop considérable, trop lointain, trop au-delà de la faculté conceptuelle du grand nombre pour que l’on puisse prétendre que la nouvelle en soit déjà parvenue, à bien moins encore, que d’aucuns se rendent compte de ce qui s’est réellement passé — comme de tout ce qui doit désormais s’effondrer, une fois ruinée cette croyance, pour avoir été fondée et bâtie sur elle, et pour ainsi dire, enchevêtrée en elle : par exemple notre morale européenne dans sa totalité."
+  ]
+},
+    {
+  "id": "gauchet-religion-lien-social",
+  "section": "philosophie",
+  "cardMeta": "Religion · sécularisation et lien social",
+  "title": "Même sans religion, le lien social a besoin de religiosité pour subsister",
+  "author": "Marcel Gauchet",
+  "authorTag": "Gauchet",
+  "cardHighlight": "le lien social a besoin de religiosité",
+  "familiarIdea": "la sortie de la religion",
+  "authorMeta": "(né en 1946) · philosophie politique contemporaine",
+  "themes": [
+    "Religion",
+    "État",
+    "Devoir"
+  ],
+  "work": "Le Désenchantement du monde",
+  "publication": "Gallimard, 1985, p. 133–134",
+  "description": "La sortie institutionnelle de la religion signifie-t-elle la disparition complète de toute expérience religieuse ou symbolique ?",
+  "context": "Gauchet distingue la disparition des croyances de la <strong>sortie de la religion</strong> comme principe d’organisation de la société. Une société peut donc devenir politiquement autonome à l’égard du religieux tout en conservant des croyances, des rites et des formes de religiosité.",
+  "readingQuestions": [
+    "Pourquoi la baisse de la croyance ne signifie-t-elle pas à elle seule la disparition de la religion ?",
+    "Que signifie l’idée qu’une société peut « sortir de la religion » ?",
+    "Que peut-il rester du religieux dans une société devenue politiquement autonome ?"
+  ],
+  "glossary": [
+    {
+      "term": "sécularisation",
+      "definition": "Processus par lequel des institutions, valeurs ou pratiques se détachent de leur encadrement religieux et s’organisent selon des logiques autonomes."
+    },
+    {
+      "term": "sortie de la religion",
+      "definition": "Chez Gauchet, transformation historique par laquelle la religion cesse d’organiser structurellement l’ensemble de la vie collective, même si des croyances individuelles subsistent."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Croyance individuelle et structure sociale",
+      "definition": "Le critère décisif n’est pas seulement ce que les individus croient intérieurement, mais la manière dont la société organise ses institutions et ses pratiques."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "marx-religion-opium-peuple",
+      "kind": "proche",
+      "label": "Marx — La religion est l’opium du peuple",
+      "relation": "Marx rattache la religion à un monde social aliéné ; Gauchet décrit historiquement le passage à des sociétés dont l’organisation n’est plus structurée par la religion."
+    },
+    {
+      "id": "robespierre-sentiment-religieux-morale-sociale",
+      "kind": "adverse",
+      "label": "Robespierre — Le sentiment religieux maintient la morale sociale",
+      "relation": "Robespierre pense le religieux comme soutien nécessaire de la moralité civique ; Gauchet analyse des sociétés où le lien social s’autonomise structurellement de la religion."
+    }
+  ],
+  "paragraphs": [
+    "S’il y a sens ainsi à parler de quelque chose comme une « fin » ou comme une « sortie » de la religion, ce n’est pas tant du point de vue de la conscience des acteurs que du point de vue de l’articulation de leur pratique. Le critère n’est pas ce que pensent et croient à titre personnel les membres d’une société donnée. Ce qui compte et décide, en la matière, c’est l’ordre de leurs opérations de pensée, c’est le mode de leur coexistence, ce sont la forme de leur insertion dans l’être et la dynamique de leur activité. On peut concevoir, à la limite, une société qui ne comprendrait que des croyants et qui n’en serait pas moins une société d’au-delà du religieux. Car la religion, ce fut d’abord une économie générale du fait humain, structurant indissolublement la vie matérielle, la vie sociale et la vie mentale. […] Et c’est proprement en cela que nous avons d’ores et déjà basculé hors de l’âge des religions. Non parce que l’influence des Églises, le nombre des fidèles et l’intensité de la foi auraient diminué assez pour qu’on les décrète dépourvus dorénavant de signification, voire pour qu’on puisse prédire leur prochaine disparition. Mais beaucoup plus sûrement parce que la logique conservatrice de l’intégration dans l’être et de la solidarité avec le donné naturel ou culturel s’est renversée, parce que la nécessité de l’attache hiérarchique s’est dissoute, parce que les contraintes à concevoir le monde en tout point uni à ses origines (pensée mythique) et partout correspondant à lui-même (pensée symbolique) se sont défaites.",
+    "Hors cela, ce procès de décomposition/recomposition du cadre humain-social mené à son terme, rien n’interdit d’envisager la survivance indéfinie de libres sociétés de croyance et de pensée à l’intérieur d’une société entièrement dégagée de l’emprise structurante de la croyance. Et à supposer même que vienne à s’évanouir toute espèce de dogme constitué, que disparaisse toute manière de sociabilité à base de foi partagée et de culte à célébrer en commun, il est possible que doive à jamais subsister la faculté d’une expérience de type religieux pour les individus."
+  ]
+},
+    {
+  "id": "sartre-homme-prendre-place-dieu",
+  "section": "philosophie",
+  "cardMeta": "Religion · athéisme et création des valeurs",
+  "title": "C’est l’homme qui, comme créateur, va prendre la place de Dieu",
+  "author": "Jean-Paul Sartre",
+  "authorTag": "Sartre",
+  "cardHighlight": "prendre la place de Dieu",
+  "authorMeta": "(1905–1980) · existentialisme",
+  "themes": [
+    "Religion",
+    "Liberté",
+    "Devoir"
+  ],
+  "work": "L’existentialisme est un humanisme",
+  "publication": "1946, Gallimard, 1996, p. 39–40 et 73–74",
+  "description": "Si Dieu n’existe pas et qu’aucune valeur n’est donnée d’avance, l’être humain doit-il inventer lui-même le sens et les valeurs de son existence ?",
+  "context": "Sartre tire les conséquences de l’<strong>existentialisme athée</strong> : si aucune nature humaine ni aucune valeur ne sont données d’avance, l’être humain doit se définir par ses choix. Sa liberté l’expose ainsi à une responsabilité sans recours à un ordre transcendant.",
+  "readingQuestions": [
+    "Pourquoi l’absence de Dieu signifie-t-elle qu’aucune valeur n’est donnée à l’avance ?",
+    "Comment « l’existence précède l’essence » conduit-elle à faire de l’homme l’auteur de ses choix ?",
+    "Pourquoi cette liberté implique-t-elle une <strong>responsabilité</strong> plutôt qu’un simple arbitraire ?"
+  ],
+  "glossary": [
+    {
+      "term": "transcendant / immanent",
+      "definition": "Une valeur transcendante serait donnée au-delà de l’existence humaine ; une valeur immanente est produite dans l’existence et les choix eux-mêmes."
+    },
+    {
+      "term": "condamné à être libre",
+      "definition": "Formule de Sartre : nous n’avons pas choisi d’exister, mais une fois dans le monde nous devons choisir et répondre de ce que nous faisons."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Après Dieu, la responsabilité",
+      "definition": "La suppression d’un fondement divin n’abolit pas la morale chez Sartre : elle rend au contraire l’être humain responsable de la création et du choix des valeurs."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "nietzsche-dieu-mort-valeurs",
+      "kind": "proche",
+      "label": "Nietzsche — « Dieu est mort » mais les valeurs survivent",
+      "relation": "Nietzsche diagnostique la persistance des anciennes valeurs après la mort de Dieu ; Sartre insiste sur la nécessité d’assumer la création humaine de nouvelles valeurs."
+    },
+    {
+      "id": "sartre-existence-precede-essence",
+      "kind": "same-author",
+      "label": "Sartre — L’existence précède l’essence",
+      "relation": "Le texte déjà présent développe le principe ontologique qui fonde ici l’athéisme existentialiste et la responsabilité."
+    }
+  ],
+  "paragraphs": [
+    "Dostoïevski avait écrit : « Si Dieu n’existait pas, tout serait permis. » C’est là le point de départ de l’existentialisme. En effet, tout est permis si Dieu n’existe pas, et par conséquent l’homme est délaissé, parce qu’il ne trouve ni en lui, ni hors de lui une possibilité de s’accrocher. Il ne trouve d’abord pas d’excuses. Si, en effet, l’existence précède l’essence, on ne pourra jamais expliquer par référence à une nature humaine donnée et figée ; autrement dit, il n’y a pas de déterminisme, l’homme est libre, l’homme est liberté. Si, d’autre part, Dieu n’existe pas, nous ne trouvons pas en face de nous des valeurs ou des ordres qui légitimeront notre conduite. Ainsi, nous n’avons ni derrière nous, ni devant nous, dans le domaine lumineux des valeurs, des justifications ou des excuses. Nous sommes seuls sans excuses. C’est ce que j’exprimerai en disant que l’homme est condamné à être libre. Condamné, parce qu’il ne s’est pas créé lui-même, et par ailleurs cependant libre, parce qu’une fois jeté dans le monde, il est responsable de ce qu’il fait. […] L’Existentialiste ne pensera pas […] que l’homme peut trouver un secours dans un signe donné, sur terre, qui l’orientera ; car il pense que l’homme déchiffre lui-même le signe comme il lui plaît. Il pense donc que l’homme, sans aucun appui et sans aucun secours, est condamné à chaque instant à inventer l’homme. […]",
+    "Si j’ai supprimé Dieu le père, il faut bien quelqu’un pour inventer les valeurs. Il faut prendre les choses comme elles sont. Et par ailleurs, dire que nous inventons les valeurs ne signifie pas autre chose que ceci : la vie n’a pas de sens a priori. Avant que vous ne la viviez, la vie, elle, n’est rien, mais c’est à vous de lui donner un sens, et la valeur n’est pas autre chose que ce sens que vous choisissez."
+  ],
+  "familiarIdea": "l’existence précède l’essence"
+},
+    {
+  "id": "aristote-demonstration-syllogisme-scientifique",
+  "section": "philosophie",
+  "cardMeta": "Démonstration · syllogisme scientifique",
+  "title": "Seul ce qui obéit aux règles formelles du raisonnement constitue une démonstration",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "règles formelles du raisonnement",
+  "authorMeta": "(384–322 av. J.-C.) · aristotélisme",
+  "themes": [
+    "Vérité",
+    "Démonstration",
+    "Raison"
+  ],
+  "work": "Seconds Analytiques",
+  "publication": "IVe s. av. J.-C., I, 2, 71b 16, trad. J. Tricot, Vrin, 2000, p. 8–9",
+  "description": "Quelles conditions les prémisses doivent-elles remplir pour qu’un raisonnement constitue une véritable démonstration scientifique ?",
+  "context": "Aristote distingue un raisonnement simplement valide d’une véritable <strong>démonstration scientifique</strong>. Démontrer, ce n’est pas seulement tirer correctement une conclusion : il faut partir de principes vrais et connaître par eux la <strong>cause</strong> de ce que l’on affirme.",
+  "readingQuestions": [
+    "Pourquoi un raisonnement valide n’est-il pas encore une <strong>démonstration scientifique</strong> ?",
+    "Quelles qualités doivent posséder les principes dont part la démonstration ?",
+    "Pourquoi savoir véritablement suppose-t-il, pour Aristote, de connaître la <strong>cause</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "syllogisme",
+      "definition": "Raisonnement dans lequel une conclusion découle nécessairement de prémisses données."
+    },
+    {
+      "term": "prémisse",
+      "definition": "Proposition placée au point de départ d’un raisonnement et à partir de laquelle une conclusion est établie."
+    },
+    {
+      "term": "principe",
+      "definition": "Proposition première qui ne dépend pas elle-même d’une démonstration antérieure et sert de fondement à d’autres propositions."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Validité et science",
+      "definition": "Un raisonnement peut être formellement correct sans produire de science si ses prémisses ne sont pas vraies ou ne donnent pas la cause de ce qui est conclu."
+    },
+    {
+      "type": "concept",
+      "term": "La connaissance par les causes",
+      "definition": "Pour Aristote, savoir véritablement ne consiste pas seulement à constater qu’une chose est, mais à connaître pourquoi elle est ainsi."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "pascal-principes-demonstration-indemontrables",
+      "kind": "proche",
+      "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+      "relation": "Pascal retrouve le problème du point de départ : toute démonstration suppose des termes et des vérités qui ne peuvent être eux-mêmes entièrement démontrés."
+    },
+    {
+      "id": "zenon-mouvement-demonstration-absurde",
+      "kind": "adverse",
+      "label": "Zénon — Il est possible de démontrer des choses absurdes",
+      "relation": "Les paradoxes de Zénon obligent à distinguer la cohérence d’un raisonnement de la vérité de ce qu’il affirme sur le réel."
+    },
+    {
+      "id": "sextus-empiricus-verite-hors-portee",
+      "kind": "adverse",
+      "label": "Sextus Empiricus — La vérité est hors de notre portée",
+      "relation": "Le scepticisme attaque précisément la possibilité d’établir des principes ultimes capables de garantir une démonstration."
+    }
+  ],
+  "paragraphs": [
+    "Par démonstration, j’entends le syllogisme scientifique. […] [L]es prémisses doivent être vraies, car on ne peut pas connaître ce qui n’est pas, par exemple la commensurabilité de la diagonale. Elles doivent être premières et indémontrables, car autrement on ne pourrait les connaître faute d’en avoir la démonstration, puisque la science des choses qui sont démontrables, s’il ne s’agit pas d’une science accidentelle, n’est pas autre chose que d’en posséder la démonstration. Elles doivent être les causes de la conclusion, être plus connues qu’elle, et antérieures à elle : causes, puisque nous n’avons la science d’une chose qu’au moment où nous en avons connu la cause ; antérieures, puisqu’elles sont les causes ; antérieures aussi au point de vue de la connaissance, cette préconnaissance ne consistant pas seulement à comprendre de la seconde façon que nous avons indiquée, mais encore à savoir que la chose est."
+  ]
+},
+    {
+  "id": "pascal-principes-demonstration-indemontrables",
+  "section": "philosophie",
+  "cardMeta": "Démonstration · principes",
+  "title": "Les principes de la démonstration ne sont pas démontrables",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "principes de la démonstration",
+  "authorMeta": "(1623–1662) · philosophie moderne",
+  "themes": [
+    "Vérité",
+    "Démonstration",
+    "Raison"
+  ],
+  "work": "De l’esprit géométrique",
+  "publication": "1776 posth., section I, dans Pensées et opuscules, Hachette, 1967, p. 164–167",
+  "description": "Une méthode parfaite pourrait-elle tout définir et tout démontrer sans jamais rencontrer un premier terme ou une première vérité ?",
+  "context": "Pascal rappelle qu’on ne peut ni tout définir ni tout démontrer. Toute démonstration doit déjà s’appuyer sur des termes compris et sur des <strong>principes</strong> admis sans preuve : la raison démonstrative possède donc des conditions qu’elle ne peut elle-même démontrer.",
+  "readingQuestions": [
+    "Pourquoi est-il impossible de tout définir et de tout démontrer ?",
+    "Sur quels <strong>principes</strong> une démonstration doit-elle nécessairement s’appuyer ?",
+    "Que nous apprend cette limite sur les pouvoirs de la <strong>raison</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "axiome",
+      "definition": "Principe tenu pour évident et utilisé comme point de départ d’une démonstration."
+    },
+    {
+      "term": "postulat",
+      "definition": "Proposition admise sans preuve afin de rendre possible une construction ou un raisonnement."
+    },
+    {
+      "term": "régression à l’infini",
+      "definition": "Enchaînement sans terme où chaque preuve ou définition exige une preuve ou une définition antérieure."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Idéal démonstratif",
+        "definition": "Définir tous les termes et démontrer toutes les propositions."
+      },
+      "right": {
+        "term": "Limite réelle",
+        "definition": "Les premiers termes et premières propositions ne peuvent être définis ou prouvés sans supposer quelque chose d’antérieur."
+      },
+      "conclusion": "La rigueur ne consiste donc pas à tout démontrer, mais à reconnaître clairement les principes à partir desquels la démonstration devient possible."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-demonstration-syllogisme-scientifique",
+      "kind": "proche",
+      "label": "Aristote — Le syllogisme scientifique repose sur des prémisses premières",
+      "relation": "Aristote et Pascal reconnaissent tous deux que la démonstration doit s’appuyer sur des principes qui ne sont pas eux-mêmes démontrés."
+    },
+    {
+      "id": "sextus-empiricus-verite-hors-portee",
+      "kind": "adverse",
+      "label": "Sextus Empiricus — La vérité est hors de notre portée",
+      "relation": "Le sceptique transforme la régression des justifications en argument pour suspendre l’assentiment."
+    }
+  ],
+  "paragraphs": [
+    "[I]l faut […] que je donne l’idée d’une méthode encore plus éminente et plus accomplie, mais où les hommes ne sauraient jamais arriver : car ce que passe la géométrie nous surpasse ; et néanmoins il est nécessaire d’en dire quelque chose, quoiqu’il soit impossible de la pratiquer. Cette véritable méthode, qui formerait les démonstrations dans la plus haute excellence, s’il était possible d’y arriver, consisterait en deux choses principales : l’une, de n’employer aucun terme dont on n’eût auparavant expliqué nettement le sens ; l’autre, de n’avancer jamais aucune proposition qu’on ne démontrât par des vérités déjà connues ; c’est-à-dire, en un mot, à définir tous les termes et à prouver toutes les propositions. […] Certainement cette méthode serait belle, mais elle est absolument impossible : car il est évident que les premiers termes qu’on voudrait définir en supposeraient de précédents pour servir à leur explication, et que de même les premières propositions qu’on voudrait prouver en supposeraient d’autres qui les précédassent."
+  ]
+},
+    {
+  "id": "kant-existence-pas-predicat",
+  "section": "philosophie",
+  "cardMeta": "Démonstration · existence",
+  "title": "Les attributs des choses sont démontrables, mais pas leur existence",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "pas leur existence",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Vérité",
+    "Démonstration",
+    "Religion"
+  ],
+  "work": "Critique de la raison pure",
+  "publication": "1781–1787, Dialectique transcendantale, chap. III, section IV, trad. A. Tremesaygues et B. Pacaud, PUF, 2001, p. 429–430",
+  "description": "Peut-on démontrer qu’une chose existe en ajoutant simplement l’existence à son concept ?",
+  "context": "Kant critique l’idée qu’on puisse déduire l’existence d’une chose à partir de son seul concept. Dire qu’une chose <strong>existe</strong> n’ajoute aucune propriété à sa définition : cela pose l’objet lui-même. L’argument vise directement la preuve ontologique de Dieu.",
+  "readingQuestions": [
+    "Pourquoi Kant affirme-t-il que l’<strong>existence</strong> n’est pas une propriété supplémentaire d’une chose ?",
+    "Que montre l’exemple des cent thalers possibles et réels ?",
+    "Pourquoi cette distinction met-elle en échec une démonstration de l’existence fondée sur le seul <strong>concept</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "prédicat",
+      "definition": "Dans une proposition, ce qui est attribué au sujet. Kant soutient que l’existence n’est pas un prédicat qui augmenterait le contenu d’un concept."
+    },
+    {
+      "term": "possible / réel",
+      "definition": "Le possible désigne ce qui n’est pas contradictoire ; le réel suppose en plus que l’objet soit effectivement donné ou posé."
+    },
+    {
+      "term": "analytique / synthétique",
+      "definition": "Un jugement analytique explicite ce qui est déjà contenu dans un concept ; un jugement synthétique ajoute une détermination qui n’y était pas déjà incluse."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "« Être » n’ajoute rien au concept",
+      "definition": "Le concept d’une chose reste le même qu’on la pense comme possible ou qu’on affirme qu’elle existe. Ce qui change n’est pas son contenu conceptuel, mais son rapport à la réalité."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-verite-correspondance-diallele",
+      "kind": "proche",
+      "label": "Kant — La correspondance ne suffit pas à définir la vérité",
+      "relation": "Dans les deux cas Kant met en évidence une difficulté à passer du concept ou de la connaissance à l’objet réel."
+    },
+    {
+      "id": "aristote-verite-correspondance-reel",
+      "kind": "adverse",
+      "label": "Aristote — La vérité est la correspondance entre ce qui est pensé et ce qui est",
+      "relation": "Aristote formule la conception classique de la vérité comme accord avec l’être ; Kant montre ici que l’existence ne peut être tirée du seul concept."
+    }
+  ],
+  "paragraphs": [
+    "Être n’est évidemment pas un prédicat réel, c’est-à-dire un concept de quelque chose qui puisse s’ajouter au concept d’une chose. C’est simplement la position d’une chose ou de certaines déterminations en soi. Dans l’usage logique, ce n’est que la copule d’un jugement. Cette proposition : Dieu est tout-puissant, renferme deux concepts qui ont leurs objets : Dieu et toute-puissance ; le petit mot est n’est pas du tout encore par lui-même un prédicat, c’est seulement ce qui met le prédicat en relation avec le sujet. Or, si je prends le sujet (Dieu) avec tous ses prédicats (dont la toute-puissance fait aussi partie) et que je dise : Dieu est, ou il est un Dieu, je n’ajoute aucun nouveau prédicat au concept de Dieu, mais je ne fais que poser le sujet en lui-même avec tous ses prédicats, et en même temps, il est vrai, l’objet qui correspond à mon concept. Tous deux doivent exactement renfermer la même chose et, par conséquent, rien de plus ne peut s’ajouter au concept qui exprime simplement la possibilité, par le simple fait que je conçois (par l’expression : il est) l’objet de ce concept comme donné absolument. Et ainsi, le réel ne contient rien de plus que le simple possible. Cent thalers réels ne contiennent rien de plus que cent thalers possibles. Car, comme les thalers possibles expriment le concept et les thalers réels, l’objet et sa position en lui-même, au cas où celui-ci contiendrait plus que celui-là, mon concept n’exprimerait pas l’objet tout entier et, par conséquent, il n’en serait pas, non plus, le concept adéquat. Mais je suis plus riche avec cent thalers réels qu’avec leur simple concept (c’est-à-dire qu’avec leur possibilité). Dans la réalité, en effet, l’objet n’est pas simplement contenu analytiquement dans mon concept, mais il s’ajoute synthétiquement à mon concept (qui est une détermination de mon état), sans que, par cette existence en dehors de mon concept, ces cent thalers conçus soient le moins du monde augmentés.",
+    "Quand donc je conçois une chose, quels que soient et si nombreux que soient les prédicats par lesquels je la pense (même dans la détermination complète), en ajoutant, de plus, que cette chose existe, je n’ajoute absolument rien à cette chose. Car autrement, ce qui existerait ne serait pas exactement ce que j’avais conçu dans mon concept, mais bien quelque chose de plus, et je ne pourrais pas dire que c’est précisément l’objet de mon concept qui existe."
+  ],
+  "familiarIdea": "« l’existence n’est pas un prédicat »"
+},
+    {
+  "id": "zenon-mouvement-demonstration-absurde",
+  "section": "philosophie",
+  "cardMeta": "Démonstration · paradoxe",
+  "title": "Il est possible de démontrer des choses absurdes",
+  "author": "Zénon d’Élée",
+  "authorTag": "Zénon",
+  "cardHighlight": "démontrer des choses absurdes",
+  "familiarIdea": "les paradoxes de Zénon",
+  "authorMeta": "(v. 480–v. 420 av. J.-C.) · éléatisme",
+  "themes": [
+    "Vérité",
+    "Démonstration",
+    "Raison"
+  ],
+  "work": "Arguments contre le mouvement",
+  "publication": "présentés par Victor Brochard, Études de philosophie ancienne et de philosophie moderne, Vrin, 1954, p. 5–6",
+  "description": "Un raisonnement rigoureux peut-il conduire à nier ce que l’expérience semble pourtant rendre évident, comme l’existence du mouvement ?",
+  "context": "Les paradoxes de Zénon montrent comment un raisonnement apparemment rigoureux peut conduire à nier ce que l’expérience semble rendre évident : le <strong>mouvement</strong>. Ils obligent ainsi à interroger nos concepts d’espace, de temps, d’infini et la portée d’une démonstration.",
+  "readingQuestions": [
+    "Pourquoi la Dichotomie et Achille semblent-ils rendre le <strong>mouvement</strong> impossible ?",
+    "Quel rôle joue la division à l’infini de l’espace ou du temps dans ces paradoxes ?",
+    "Que montrent les paradoxes de Zénon sur le rapport entre <strong>démonstration</strong> et expérience ?"
+  ],
+  "glossary": [
+    {
+      "term": "raisonnement par l’absurde",
+      "definition": "Procédé qui suppose une thèse afin d’en tirer une contradiction, ce qui conduit à rejeter cette thèse."
+    },
+    {
+      "term": "dichotomie",
+      "definition": "Division en deux ; chez Zénon, le trajet doit toujours être divisé en une moitié à parcourir avant la suivante."
+    },
+    {
+      "term": "validité / vérité",
+      "definition": "Un raisonnement peut être cohérent dans sa forme sans que sa conclusion décrive correctement la réalité."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Théorie",
+        "definition": "Les arguments semblent rendre le mouvement contradictoire à partir de certaines hypothèses sur le continu."
+      },
+      "right": {
+        "term": "Pratique / expérience",
+        "definition": "Nous constatons pourtant quotidiennement que les corps se déplacent."
+      },
+      "conclusion": "Le paradoxe met à l’épreuve la relation entre cohérence logique et vérité du réel."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-demonstration-syllogisme-scientifique",
+      "kind": "adverse",
+      "label": "Aristote — La démonstration scientifique exige des prémisses vraies",
+      "relation": "Aristote donne précisément les conditions qui permettent de distinguer un raisonnement valide d’une véritable science."
+    },
+    {
+      "id": "nietzsche-logique-survie-verite",
+      "kind": "proche",
+      "label": "Nietzsche — La logique n’a pas la vérité pour but, mais la survie",
+      "relation": "Nietzsche interroge à son tour le rapport entre les formes logiques et la structure mouvante du réel."
+    }
+  ],
+  "paragraphs": [
+    "I. — On suppose que l’espace et le temps sont divisibles à l’infini. À la vérité, les textes ne mentionnent pas explicitement cette supposition ; mais elle est visiblement impliquée dans la teneur des deux premiers arguments.",
+    "1° La Dichotomie. — « Il n’y a point de mouvement, car il faut que le mobile arrive au milieu de son parcours avant d’atteindre la fin. » Et il devra parcourir la moitié de la moitié avant d’atteindre le milieu, et ainsi de suite à l’infini.",
+    "2° L’Achille. — « Le plus lent ne sera jamais atteint par le plus rapide, car il faut auparavant que celui qui poursuit soit parvenu au point d’où est parti celui qui fuit, de sorte que le plus lent aura toujours nécessairement quelque avance. » Achille aux pieds légers n’atteindra jamais la tortue. Et s’il est impossible d’atteindre un but, il n’y a point de mouvement.",
+    "II. — On suppose le continu formé d’éléments indivisibles. Aristote nous dit expressément, au moins pour le troisième argument, que le temps est supposé formé d’instants […].",
+    "3° La Flèche. […] « Une chose est en repos, ou en mouvement, lorsqu’elle est dans un espace égal à elle-même. La flèche qui vole est toujours ek tô nun, dans l’instant. Elle est donc toujours immobile. »",
+    "Voici comment nous interprétons ce texte. — Il est rigoureusement impossible que la flèche se meuve dans l’instant (supposé indivisible), car, si elle changeait de position, l’instant se retrouverait aussitôt divisé. Or le mobile, dans l’instant, est en repos ou en mouvement : comme il n’est pas en mouvement, il est en repos, et comme le temps, par hypothèse, est formé d’instants, le mobile est toujours en repos."
+  ]
+},
+    {
+  "id": "nietzsche-logique-survie-verite",
+  "section": "philosophie",
+  "cardMeta": "Vérité · critique de la logique",
+  "title": "La logique n’a pas la vérité pour but, mais la survie",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "pas la vérité pour but",
+  "authorMeta": "(1844–1900) · philosophie contemporaine",
+  "themes": [
+    "Vérité",
+    "Raison",
+    "Langage"
+  ],
+  "work": "Le Gai Savoir",
+  "publication": "1882, § 111, trad. P. Klossowski, Gallimard, p. 141–142",
+  "description": "Et si les catégories de la logique n’avaient pas été sélectionnées parce qu’elles sont vraies, mais parce qu’elles sont utiles à la vie ?",
+  "context": "Nietzsche demande d’où vient notre confiance dans la logique. Identifier, classer et simplifier le réel aurait d’abord servi à <strong>agir et survivre</strong> : la logique pourrait ainsi être une construction utile avant d’être un miroir fidèle de la réalité.",
+  "readingQuestions": [
+    "Pourquoi la logique nous conduit-elle à traiter comme identiques des choses qui ne le sont jamais parfaitement ?",
+    "En quoi cette simplification peut-elle être utile à la <strong>survie</strong> et à l’action ?",
+    "Si la logique vient d’abord d’un besoin pratique, peut-elle encore prétendre exprimer la <strong>vérité</strong> du réel ?"
+  ],
+  "glossary": [
+    {
+      "term": "identité",
+      "definition": "Principe logique selon lequel une chose est identique à elle-même ; Nietzsche soupçonne que cette identité stricte ne se rencontre pas dans le devenir réel."
+    },
+    {
+      "term": "substance",
+      "definition": "Ce qui est pensé comme support stable de propriétés changeantes ; Nietzsche y voit une construction logique utile."
+    },
+    {
+      "term": "généalogie",
+      "definition": "Méthode qui cherche l’origine historique, pratique ou vitale d’une valeur ou d’une manière de penser."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Une logique sélectionnée par la vie",
+      "definition": "Les formes de pensée les plus prudentes et sceptiques auraient pu être plus proches d’un réel mouvant, mais moins efficaces pour décider et agir rapidement."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "zenon-mouvement-demonstration-absurde",
+      "kind": "proche",
+      "label": "Zénon — Il est possible de démontrer des choses absurdes",
+      "relation": "Les paradoxes de Zénon montrent déjà que la cohérence logique et l’évidence du mouvement peuvent entrer en tension."
+    },
+    {
+      "id": "bergson-verite-action-pragmatisme",
+      "kind": "proche",
+      "label": "Bergson — La vérité nous donne prise sur le réel",
+      "relation": "Bergson relie lui aussi la vérité à l’action, mais sans réduire la pensée à une simple fiction de survie."
+    },
+    {
+      "id": "cassirer-langage-reel-construction",
+      "kind": "proche",
+      "label": "Cassirer — Le langage ne reproduit pas le réel",
+      "relation": "Le langage et la logique peuvent être lus comme des formes de construction plutôt que comme de simples copies du réel."
+    }
+  ],
+  "paragraphs": [
+    "« Origine de la logique. — D’où la logique est-elle née dans la tête des hommes ? Certainement de l’illogisme dont le domaine a dû être immense à l’origine. Mais d’innombrables êtres, qui concluaient autrement que nous ne le faisons maintenant, dépérirent : il se pourrait que ce fût encore plus vrai qu’on ne pense ! Qui, par exemple, ne savait discerner assez souvent l’« identique », quant à la nourriture ou quant aux animaux dangereux pour lui, qui par conséquent était trop lent à classer, trop circonspect dans le classement, avait moins de chances de survivre que celui qui tombait immédiatement sur l’identique parmi toutes sortes de réalités semblables. Mais la tendance prédominante à considérer le semblable comme l’identique — tendance illogique, car il n’y a rien qui fût en soi identique — cette tendance a créé le fondement même de la logique. Il fallait de même, pour que pût se développer la notion de substance qui est indispensable à la logique, encore que rien de réel ne lui corresponde au sens le plus rigoureux — que durant fort longtemps la mutabilité des choses restât inaperçue et ne fût pas appréhendée : les êtres non doués d’une vue précise avaient une avance sur ceux qui percevaient toutes choses comme prises « dans un flux perpétuel ». Toute extrême circonspection à conclure, toute tendance sceptique constituent à elles seules un grand danger pour la vie. Nul être vivant ne se serait conservé, si la tendance contraire à affirmer plutôt qu’à suspendre le jugement, à errer et à imaginer plutôt qu’à attendre, à approuver plutôt qu’à nier, à juger plutôt qu’à être équitable — n’avait été stimulée de façon extraordinairement forte. Le processus des pensées et des conclusions logiques dans notre cerveau actuel répond à un processus et à une lutte d’impulsions qui par elles-mêmes sont toutes fort illogiques et iniques : l’antique mécanisme se déroule à présent en nous de façon si rapide et si dissimulée que nous ne nous apercevons jamais que du résultat de la lutte. »"
+  ]
+},
+    {
+  "id": "bergson-verite-action-pragmatisme",
+  "section": "philosophie",
+  "cardMeta": "Vérité · pragmatisme",
+  "title": "La vérité nous donne prise sur le réel et guide l’action",
+  "author": "Henri Bergson",
+  "authorTag": "Bergson",
+  "cardHighlight": "donne prise sur le réel",
+  "authorMeta": "(1859–1941) · philosophie contemporaine",
+  "themes": [
+    "Vérité",
+    "Science",
+    "Raison"
+  ],
+  "work": "Sur le pragmatisme de William James, dans La Pensée et le Mouvant",
+  "publication": "1938, PUF, 2009, p. 244–246",
+  "description": "Une affirmation vraie copie-t-elle le réel, ou vaut-elle surtout par la prise qu’elle nous donne sur une réalité mouvante ?",
+  "context": "Bergson refuse de réduire la vérité à une simple <strong>copie du réel</strong>. Une vérité scientifique généralise et simplifie ; sa valeur se manifeste aussi dans sa capacité à nous orienter, à prévoir et à agir efficacement.",
+  "readingQuestions": [
+    "Pourquoi la vérité ne peut-elle pas être une simple <strong>copie</strong> du réel ?",
+    "Pourquoi une loi générale ne reproduit-elle jamais exactement un événement singulier ?",
+    "En quel sens une vérité peut-elle se mesurer aussi à ce qu’elle nous permet de <strong>prévoir et d’agir</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "pragmatisme",
+      "definition": "Courant qui insiste sur les effets pratiques de nos idées et sur la manière dont une croyance vraie permet de s’orienter dans l’expérience."
+    },
+    {
+      "term": "singulier",
+      "definition": "Ce qui n’existe qu’en un cas déterminé, à un lieu et un moment précis."
+    },
+    {
+      "term": "expérience",
+      "definition": "Ensemble des données et épreuves par lesquelles nos affirmations sont confrontées au réel et peuvent guider de nouvelles actions."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Vérité-copie",
+        "definition": "L’énoncé vrai reproduirait le réel comme un portrait reproduit son modèle."
+      },
+      "right": {
+        "term": "Vérité-action",
+        "definition": "L’énoncé vrai organise l’expérience, permet de prévoir et donne une prise pratique sur ce qui arrive."
+      },
+      "conclusion": "Bergson ne supprime pas la réalité ; il refuse simplement d’en faire un objet statique que le discours pourrait dupliquer."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-verite-correspondance-reel",
+      "kind": "adverse",
+      "label": "Aristote — La vérité est la correspondance entre la pensée et ce qui est",
+      "relation": "Aristote donne la formulation classique de la vérité-correspondance que Bergson cherche ici à compliquer."
+    },
+    {
+      "id": "nietzsche-logique-survie-verite",
+      "kind": "proche",
+      "label": "Nietzsche — La logique n’a pas la vérité pour but, mais la survie",
+      "relation": "Les deux textes lient la pensée à notre capacité d’agir, mais Nietzsche en propose une généalogie plus radicalement critique."
+    }
+  ],
+  "paragraphs": [
+    "Qu’est-ce qu’un jugement vrai ? Nous appelons vraie l’affirmation qui concorde avec la réalité. Mais en quoi peut consister cette concordance ? Nous aimons à y voir quelque chose comme la ressemblance du portrait au modèle : l’affirmation vraie serait celle qui copierait la réalité. Réfléchissons-y cependant : nous verrons que c’est seulement dans des cas rares, exceptionnels, que cette définition du vrai trouve son application. Ce qui est réel, c’est tel ou tel fait déterminé s’accomplissant en tel ou tel point de l’espace et du temps, c’est du singulier, c’est du changeant. Au contraire, la plupart de nos affirmations sont générales et impliquent une certaine stabilité de leur objet. Prenons une vérité aussi voisine que possible de l’expérience, celle-ci par exemple : « la chaleur dilate les corps ». De quoi pourrait-elle bien être la copie ? Il est possible, en un certain sens, de copier la dilatation d’un corps déterminé à des moments déterminés, en la photographiant dans ses diverses phases. […] Mais une vérité qui s’applique à tous les corps, sans concerner spécialement aucun de ceux que j’ai vus, ne copie rien, ne reproduit rien. […]",
+    "Cette conception de la vérité est naturelle à notre esprit et naturelle aussi à la philosophie, parce qu’il est naturel de se représenter la réalité comme un tout parfaitement cohérent et systématique, que soutient une armature logique. Cette armature serait la vérité même ; notre science ne ferait que la retrouver. Mais l’expérience pure et simple ne nous dit rien de semblable, et James s’en tient à l’expérience. L’expérience nous présente un flux de phénomènes : si telle ou telle affirmation relative à l’un d’eux nous permet de maîtriser ceux qui le suivront ou même simplement de les prévoir, nous disons de cette affirmation qu’elle est vraie. Une proposition telle que « la chaleur dilate les corps », proposition suggérée par la vue de la dilatation d’un certain corps, fait que nous prévoyons comment d’autres corps se comporteront en présence de la chaleur ; elle nous aide à passer d’une expérience ancienne à des expériences nouvelles ; c’est un fil conducteur, rien de plus. La réalité coule ; nous coulons avec elle ; et nous appelons vraie toute affirmation qui, en nous dirigeant à travers la réalité mouvante, nous donne prise sur elle et nous place dans de meilleures conditions pour agir."
+  ]
+},
+    {
+  "id": "sextus-empiricus-verite-hors-portee",
+  "section": "philosophie",
+  "cardMeta": "Scepticisme",
+  "title": "La vérité est hors de notre portée",
+  "author": "Sextus Empiricus",
+  "authorTag": "Sextus Empiricus",
+  "cardHighlight": "hors de notre portée",
+  "familiarIdea": "les cinq modes d’Agrippa",
+  "authorMeta": "(IIe–IIIe s.) · scepticisme",
+  "themes": [
+    "Vérité",
+    "Démonstration",
+    "Raison"
+  ],
+  "work": "Esquisses pyrrhoniennes",
+  "publication": "I, 15, trad. P. Pellegrin, Le Seuil, 1997, p. 142–143",
+  "description": "Existe-t-il un moyen de justifier définitivement une affirmation sans tomber dans le désaccord, la régression à l’infini ou le cercle vicieux ?",
+  "context": "Sextus Empiricus rassemble plusieurs façons de mettre en difficulté toute prétention à une justification définitive. Désaccord, régression à l’infini, hypothèse ou cercle conduisent le sceptique à suspendre son jugement plutôt qu’à affirmer posséder la <strong>vérité</strong>.",
+  "readingQuestions": [
+    "Pourquoi le <strong>désaccord</strong> empêche-t-il de choisir immédiatement entre deux affirmations ?",
+    "Comment la régression à l’infini et le cercle menacent-ils toute justification définitive ?",
+    "Pourquoi ces difficultés conduisent-elles le sceptique à la <strong>suspension du jugement</strong> plutôt qu’à une nouvelle vérité ?"
+  ],
+  "glossary": [
+    {
+      "term": "épochè",
+      "definition": "Suspension du jugement : attitude sceptique qui consiste à ne pas affirmer définitivement lorsqu’aucune justification décisive n’est disponible."
+    },
+    {
+      "term": "trope / mode",
+      "definition": "Type d’argument sceptique servant à mettre en difficulté une prétention à la connaissance."
+    },
+    {
+      "term": "diallèle",
+      "definition": "Cercle vicieux où une proposition A est justifiée par B tandis que B dépend à son tour de A."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Cinq obstacles à la fondation",
+      "definition": "Le sceptique ne cherche pas nécessairement à prouver que toute vérité est impossible ; il montre que les prétentions dogmatiques à une justification ultime rencontrent des difficultés récurrentes."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "pascal-principes-demonstration-indemontrables",
+      "kind": "proche",
+      "label": "Pascal — Les principes de la démonstration ne sont pas démontrables",
+      "relation": "Pascal admet une limite de la démonstration sans en tirer la suspension sceptique de tout jugement."
+    },
+    {
+      "id": "kant-verite-correspondance-diallele",
+      "kind": "proche",
+      "label": "Kant — La correspondance ne suffit pas à définir la vérité",
+      "relation": "Kant reprend explicitement le problème du cercle dans la définition de la vérité."
+    },
+    {
+      "id": "platon-doute-haine-raison",
+      "kind": "adverse",
+      "label": "Platon — Le doute illimité peut conduire à la haine de la raison",
+      "relation": "Platon met en garde contre la généralisation du doute après avoir découvert que certaines opinions sont réfutables."
+    }
+  ],
+  "paragraphs": [
+    "Les sceptiques plus récents nous ont transmis cinq modes de la suspension de l’assentiment : le premier qui part du désaccord, le second, selon lequel on est renvoyé à l’infini, le troisième selon le relatif, le quatrième est l’hypothétique, le cinquième le diallèle.",
+    "Celui qui part du désaccord est celui par lequel nous découvrons qu’à propos de la chose examinée il s’est trouvé, aussi bien dans la vie quotidienne que parmi les philosophes, une dissension indécidable qui nous empêche de choisir quelque chose ou de le rejeter, nous menant finalement à la suspension de l’assentiment.",
+    "Celui qui s’appuie sur la régression à l’infini est celui dans lequel nous disons que ce qui est fourni en vue d’emporter la conviction sur la chose proposée à l’examen a besoin d’une autre garantie, et celle-ci d’une autre, et cela à l’infini, de sorte que, n’ayant rien à partir de quoi nous pourrions commencer d’établir quelque chose, la suspension de l’assentiment s’ensuit.",
+    "Le mode selon le relatif, comme nous l’avons dit plus haut, est celui dans lequel l’objet réel apparaît tel ou tel relativement à ce qui le juge et à ce qui est observé conjointement, et sur ce qu’il en est selon la nature nous suspendons notre assentiment.",
+    "Nous avons le mode qui part d’une hypothèse quand les dogmatiques étant renvoyés à l’infini, ils partent de quelque chose qu’ils n’établissent pas mais jugent bon de prendre simplement et sans démonstration, par simple consentement et sans recherche.",
+    "Le mode du diallèle arrive quand ce qui sert à assurer la chose sur laquelle porte la recherche a besoin de cette chose pour emporter la conviction ; alors n’étant pas capables de prendre l’un pour établir l’autre, nous suspendons notre assentiment sur les deux."
+  ]
+},
+    {
+  "id": "aristote-verite-correspondance-reel",
+  "section": "philosophie",
+  "cardMeta": "Vérité · correspondance",
+  "title": "La vérité est la correspondance entre ce qui est pensé et ce qui est",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "correspondance entre ce qui est pensé et ce qui est",
+  "familiarIdea": "la vérité comme correspondance",
+  "authorMeta": "(384–322 av. J.-C.) · aristotélisme",
+  "themes": [
+    "Vérité",
+    "Raison"
+  ],
+  "work": "Métaphysique",
+  "publication": "IVe s. av. J.-C., livre thêta (9), chap. 10, trad. J. Tricot, Vrin, 1991, p. 54–55",
+  "description": "Une pensée est-elle vraie parce qu’elle produit le réel, ou parce qu’elle affirme les choses telles qu’elles sont ?",
+  "context": "Aristote formule ici une conception classique de la <strong>vérité-correspondance</strong> : être dans le vrai consiste à unir dans la pensée ce qui est uni dans le réel et à séparer ce qui est séparé. La vérité dépend donc de l’état de l’objet, non de notre simple manière de penser.",
+  "readingQuestions": [
+    "Quel critère permet de distinguer le <strong>vrai</strong> du <strong>faux</strong> ?",
+    "Pourquoi penser « d’une manière vraie » ne suffit-il pas à rendre une chose telle qu’on la pense ?",
+    "Quelle priorité le texte accorde-t-il au réel sur la pensée ?"
+  ],
+  "glossary": [
+    {
+      "term": "correspondance",
+      "definition": "Accord entre ce qu’une pensée ou une proposition affirme et la manière dont les choses sont effectivement."
+    },
+    {
+      "term": "validité",
+      "definition": "Correction formelle d’un raisonnement ; elle ne garantit pas à elle seule la vérité de ses prémisses ou de sa conclusion."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Vrai",
+        "definition": "Penser uni ce qui est uni et séparé ce qui est séparé."
+      },
+      "right": {
+        "term": "Faux",
+        "definition": "Attribuer au réel une union ou une séparation contraire à ce qui est."
+      },
+      "conclusion": "La vérité dépend du côté de l’objet : ce n’est pas notre pensée qui crée le fait qu’une chose est telle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-verite-correspondance-diallele",
+      "kind": "adverse",
+      "label": "Kant — La vérité n’est pas simplement la correspondance du discours à ce qui est",
+      "relation": "Kant ne nie pas l’idée d’accord avec l’objet, mais montre la difficulté d’en faire un critère utilisable sans cercle."
+    },
+    {
+      "id": "bergson-verite-action-pragmatisme",
+      "kind": "adverse",
+      "label": "Bergson — La vérité nous donne prise sur le réel",
+      "relation": "Bergson critique le modèle trop simple d’une vérité conçue comme copie ou ressemblance avec le réel."
+    }
+  ],
+  "paragraphs": [
+    "La vérité ou la fausseté des choses dépend, du côté des objets, de leur union ou de leur séparation. Par conséquent, être dans le vrai, c’est penser que ce qui est séparé est séparé et que ce qui est uni est uni ; être dans le faux, c’est penser contrairement à la nature des objets. Quand donc y a-t-il ou n’y a-t-il pas ce qu’on appelle vrai ou faux ? Il faut en effet considérer la signification de ces termes. Ce n’est pas parce que nous pensons d’une manière vraie que tu es blanc, que tu es blanc, mais c’est parce que tu es blanc, qu’en disant que tu l’es, nous disons la vérité."
+  ]
+},
+    {
+  "id": "kant-verite-correspondance-diallele",
+  "section": "philosophie",
+  "cardMeta": "Vérité · critère",
+  "title": "La correspondance ne suffit pas à définir la vérité",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "ne suffit pas à définir la vérité",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Vérité",
+    "Raison",
+    "Démonstration"
+  ],
+  "work": "Logique",
+  "publication": "1800, introduction VIII, trad. L. Guillermit, Vrin, 1989, p. 54–55",
+  "description": "Si la vérité est l’accord de la connaissance avec l’objet, comment vérifier cet accord sans comparer l’objet à travers cette même connaissance ?",
+  "context": "Kant accepte la définition classique de la <strong>vérité</strong> comme accord d’une connaissance avec son objet, mais il distingue cette définition d’un critère permettant de reconnaître le vrai. Vérifier l’accord semble en effet exiger que nous connaissions déjà l’objet auquel nous comparons notre jugement.",
+  "readingQuestions": [
+    "Que signifie définir la <strong>vérité</strong> comme accord d’une connaissance avec son objet ?",
+    "Pourquoi est-il difficile de vérifier cet accord sans tourner en cercle ?",
+    "Pourquoi faut-il distinguer une définition de la vérité d’un <strong>critère universel</strong> permettant de la reconnaître ?"
+  ],
+  "glossary": [
+    {
+      "term": "diallèle",
+      "definition": "Cercle logique dans lequel A est justifié par B alors que B dépend à son tour de A."
+    },
+    {
+      "term": "critère de vérité",
+      "definition": "Moyen permettant de reconnaître qu’une proposition ou une connaissance est effectivement vraie."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Une définition sans test immédiat",
+      "definition": "Dire que le vrai est l’accord avec l’objet peut être correct comme définition générale, mais cela ne donne pas encore une procédure permettant de vérifier cet accord."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-verite-correspondance-reel",
+      "kind": "adverse",
+      "label": "Aristote — La vérité est la correspondance entre la pensée et ce qui est",
+      "relation": "Kant part de la définition classique associée à Aristote, puis souligne la difficulté de l’utiliser comme critère."
+    },
+    {
+      "id": "sextus-empiricus-verite-hors-portee",
+      "kind": "proche",
+      "label": "Sextus Empiricus — La vérité est hors de notre portée",
+      "relation": "Le problème du diallèle appartient précisément à l’arsenal sceptique exposé par Sextus."
+    }
+  ],
+  "paragraphs": [
+    "La vérité, dit-on, consiste dans l’accord de la connaissance avec l’objet. Selon cette simple définition de mot, ma connaissance doit donc s’accorder avec l’objet pour avoir valeur de vérité. Or le seul moyen que j’ai de comparer l’objet avec ma connaissance c’est que je le connaisse. Ainsi ma connaissance doit se confirmer elle-même ; mais c’est bien loin de suffire à la vérité. Car puisque l’objet est hors de moi et que la connaissance est en moi, tout ce que je puis apprécier c’est si ma connaissance de l’objet s’accorde avec ma connaissance de l’objet. Les anciens appelaient diallèle un tel cercle dans la définition. Et effectivement, c’est cette faute que les sceptiques n’ont cessé de reprocher aux logiciens ; ils remarquaient qu’il en est de cette définition de la vérité comme d’un homme qui ferait une déposition au tribunal et invoquerait comme témoin quelqu’un que personne ne connaît, mais qui voudrait être cru en affirmant que celui qu’il invoque comme témoin est un honnête homme. Reproche absolument fondé, mais la solution du problème en question est totalement impossible, pour tout le monde."
+  ]
+},
+    {
+  "id": "platon-doute-haine-raison",
+  "section": "philosophie",
+  "cardMeta": "Vérité · doute et raison",
+  "title": "Le doute illimité peut conduire à la haine de la raison",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "haine de la raison",
+  "familiarIdea": "la misologie",
+  "authorMeta": "(v. 427–347 av. J.-C.) · platonisme",
+  "themes": [
+    "Vérité",
+    "Raison"
+  ],
+  "work": "La République",
+  "publication": "livre VII, 538a–539a, trad. G. Leroux, GF, 2002, p. 396",
+  "description": "Découvrir que certaines opinions sont réfutables doit-il conduire à examiner mieux, ou à ne plus croire en rien ?",
+  "context": "Platon met en garde contre la <strong>misologie</strong>, la haine du raisonnement. Être réfuté à répétition peut conduire non pas à mieux penser, mais à conclure que tout raisonnement se vaut et qu’aucune vérité n’est accessible.",
+  "readingQuestions": [
+    "Pourquoi des réfutations répétées peuvent-elles faire perdre confiance dans le <strong>raisonnement</strong> ?",
+    "Quelle différence y a-t-il entre apprendre à douter et conclure que toutes les opinions se valent ?",
+    "Comment exercer la critique sans tomber dans la <strong>misologie</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "misologie",
+      "definition": "Haine du discours et du raisonnement, née notamment de déceptions répétées à l’égard des arguments."
+    },
+    {
+      "term": "doxa",
+      "definition": "Opinion tenue pour vraie sans justification rationnelle suffisante."
+    },
+    {
+      "term": "épistémè",
+      "definition": "Savoir capable de rendre raison de ce qu’il affirme."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Le danger d’un scepticisme adolescent",
+      "definition": "Le texte ne condamne pas l’examen critique ; il condamne le passage trop rapide de la découverte de quelques erreurs à l’idée que toute raison et toute valeur sont trompeuses."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sextus-empiricus-verite-hors-portee",
+      "kind": "adverse",
+      "label": "Sextus Empiricus — La vérité est hors de notre portée",
+      "relation": "Sextus systématise la suspension sceptique ; Platon met en garde contre la haine du raisonnement qui peut naître d’un doute mal conduit."
+    },
+    {
+      "id": "epictete-pratique-avant-demonstration",
+      "kind": "proche",
+      "label": "Épictète — Il y a des choses plus urgentes que la recherche de la vérité",
+      "relation": "Épictète critique une autre dérive : accumuler des démonstrations sans commencer par vivre conformément aux principes reconnus."
+    }
+  ],
+  "paragraphs": [
+    "SOCRATE. — [Q]u’arrivera-t-il si on vient poser la question suivante à quelqu’un qui se trouve dans cette situation : « Qu’est-ce que le beau ? » Qu’arrivera-t-il si, ayant répondu ce qu’il a entendu de la bouche du législateur, sa parole se trouve réfutée et si, en ne cessant de le réfuter de mille manières, on le renvoie à l’opinion que ce qu’il a nommé tel n’est aucunement plus beau qu’il n’est honteux ; et si ensuite on fait de même pour ce qui est juste, pour ce qui est bon, et pour ce qu’il tenait le plus en estime, après cela, crois-tu que son attitude à l’égard de ces valeurs sera faite de vénération et de soumission respectueuse ?",
+    "GLAUCON. — Il est fatal, dit-il, qu’il ne les vénérera, ni ne leur obéira plus autant.",
+    "SOCRATE. — Mais alors, dis-je, lorsqu’il en sera venu à penser que ces choses ne sont plus vénérables ni constitutives de son patrimoine comme auparavant, sans qu’il ait découvert les choses qui sont véritables, est-il vraisemblable qu’il s’orientera vers quelque autre forme de vie que celle qui le flatte ?",
+    "GLAUCON. — Non, ce n’est guère vraisemblable, dit-il."
+  ]
+},
+    {
+  "id": "epictete-pratique-avant-demonstration",
+  "section": "philosophie",
+  "cardMeta": "Vérité · théorie et pratique",
+  "title": "Il y a des choses plus urgentes que la recherche de la vérité",
+  "author": "Épictète",
+  "authorTag": "Épictète",
+  "cardHighlight": "plus urgentes que la recherche de la vérité",
+  "authorMeta": "(v. 50–v. 125) · stoïcisme",
+  "themes": [
+    "Vérité",
+    "Devoir",
+    "Raison"
+  ],
+  "work": "Manuel",
+  "publication": "L. III, trad. M. Meunier, GF, 1964, p. 208",
+  "description": "À quoi sert de savoir démontrer qu’il ne faut pas mentir si nous continuons pourtant à mentir ?",
+  "context": "Épictète rappelle que la philosophie n’a pas d’abord pour but de produire de belles démonstrations, mais de transformer notre manière de vivre. <strong>Savoir</strong> une maxime ne suffit pas : l’essentiel est de la <strong>mettre en pratique</strong>.",
+  "readingQuestions": [
+    "Quelles tâches Épictète distingue-t-il dans l’apprentissage philosophique ?",
+    "Pourquoi la <strong>pratique</strong> doit-elle passer avant la démonstration ?",
+    "À quoi sert un raisonnement vrai s’il ne transforme pas notre manière d’<strong>agir</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "akrasie",
+      "definition": "Faiblesse de la volonté : savoir ce qu’il faudrait faire sans parvenir à agir conformément à ce savoir."
+    },
+    {
+      "term": "maxime",
+      "definition": "Règle pratique de conduite que l’on tient pour valable."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Savoir démontrer",
+        "definition": "Être capable d’établir rationnellement pourquoi une maxime est vraie."
+      },
+      "right": {
+        "term": "Vivre selon la maxime",
+        "definition": "Transformer effectivement sa conduite conformément à ce que l’on reconnaît comme vrai."
+      },
+      "conclusion": "Pour Épictète, la preuve n’a de sens philosophique que si elle reste au service d’une transformation de la vie."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-demonstration-syllogisme-scientifique",
+      "kind": "proche",
+      "label": "Aristote — La démonstration scientifique exige des règles précises",
+      "relation": "Aristote étudie la structure de la démonstration ; Épictète rappelle qu’en philosophie pratique cette étude ne doit pas devenir une fin en soi."
+    },
+    {
+      "id": "platon-doute-haine-raison",
+      "kind": "proche",
+      "label": "Platon — Le doute illimité peut conduire à la haine de la raison",
+      "relation": "Les deux textes interrogent les mauvais usages possibles de l’exercice rationnel."
+    }
+  ],
+  "paragraphs": [
+    "1. — La première et la plus importante partie de la philosophie est de mettre les maximes en pratique, par exemple : « Qu’il ne faut pas mentir. » La deuxième est la démonstration des maximes, par exemple : « D’où vient qu’il ne faut pas mentir ? » La troisième est celle qui confirme et explique ces démonstrations, par exemple : « D’où vient que c’est une démonstration ? Qu’est-ce que c’est qu’une démonstration, qu’une conséquence, qu’une opposition, que le vrai, que le faux ? »",
+    "2. — Ainsi donc, la troisième partie est nécessaire à cause de la seconde ; la seconde, à cause de la première. Mais la plus nécessaire, celle sur laquelle il faut se reposer, c’est la première. Nous, nous agissons à l’inverse. Nous nous attardons dans la troisième partie, toute notre sollicitude est pour elle, et nous négligeons absolument la première. Nous mentons en effet, mais nous sommes prêts à démontrer qu’il ne faut pas mentir."
+  ]
+},
+    {
+  "id": "platon-callicles-loi-nature-justice",
+  "section": "philosophie",
+  "cardMeta": "Justice · nature et convention",
+  "title": "Nous n’obéissons à la loi que par convention",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "loi que par convention",
+  "authorMeta": "(v. 427–347 av. J.-C.) · Calliclès dans le Gorgias",
+  "themes": [
+    "Justice",
+    "Nature",
+    "État"
+  ],
+  "work": "Gorgias",
+  "publication": "IVe s. av. J.-C., 482e–484a, trad. M. Canto, GF, 1987, p. 214–215",
+  "description": "La loi protège-t-elle réellement la justice, ou n’est-elle qu’une convention inventée par les plus faibles contre les plus forts ?",
+  "context": "Dans le <em>Gorgias</em>, Calliclès oppose la <strong>loi</strong>, fabriquée selon lui par les faibles, à la <strong>nature</strong>, qui consacrerait la supériorité des plus puissants. Le texte met ainsi en question le fondement même de ce que nous appelons juste.",
+  "readingQuestions": [
+    "Comment Calliclès oppose-t-il la loi à la nature ?",
+    "Pourquoi affirme-t-il que les lois sont faites par les plus faibles ?",
+    "La supériorité de fait du plus fort peut-elle vraiment fonder un <strong>droit</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "loi instituée",
+      "definition": "Règle établie par une communauté politique ; elle relève ici de la convention humaine et s’oppose à ce que Calliclès présente comme le droit de la nature."
+    },
+    {
+      "term": "droit de la nature",
+      "definition": "Dans l’argument de Calliclès, prétendue norme naturelle selon laquelle le meilleur et le plus fort devraient avoir davantage que le plus faible."
+    },
+    {
+      "term": "convention",
+      "definition": "Règle ou norme qui vaut parce qu’un groupe humain l’a instituée, non parce qu’elle serait inscrite dans la nature."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Selon la loi",
+        "definition": "La justice consiste à empêcher les plus forts de prendre davantage et à maintenir l’égalité."
+      },
+      "right": {
+        "term": "Selon la nature",
+        "definition": "Calliclès affirme que le meilleur et le plus fort devraient dominer et posséder davantage."
+      },
+      "conclusion": "Tout l’enjeu est de savoir si un fait naturel ou un rapport de force peut réellement produire une norme de justice."
+    },
+    {
+      "type": "analysis",
+      "term": "Un sophisme naturaliste",
+      "definition": "Le texte passe de ce qui serait observé dans la nature à ce qui devrait être tenu pour juste. Ce passage du fait à la norme constitue précisément le point problématique de l’argument."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sophocle-antigone-lois-non-ecrites",
+      "kind": "adverse",
+      "label": "Sophocle — Il existe des lois non écrites supérieures aux lois humaines",
+      "relation": "Antigone oppose elle aussi loi humaine et loi supérieure, mais cette fois pour défendre une exigence morale et religieuse contre le pouvoir."
+    },
+    {
+      "id": "pascal-force-justice",
+      "kind": "proche",
+      "label": "Pascal — La justice et la force doivent être mises ensemble",
+      "relation": "Pascal interroge lui aussi le rapport entre justice instituée et puissance effective."
+    },
+    {
+      "id": "pascal-coutumes-conventions-justice",
+      "kind": "proche",
+      "label": "Pascal — Les mœurs et les coutumes sont des conventions",
+      "relation": "Les deux textes mettent en cause l’évidence des normes établies, mais selon des perspectives différentes."
+    }
+  ],
+  "paragraphs": [
+    "CALLICLÈS. — Nature et loi, le plus souvent, se contredisent. […] En effet, dans l’ordre de la nature, le plus vilain est aussi le plus mauvais : c’est subir l’injustice ; en revanche, selon la loi, c’est la commettre. L’homme qui se trouve dans la situation de devoir subir l’injustice n’est pas un Homme, c’est un esclave, pour qui mourir est mieux que vivre s’il n’est même pas capable de se porter assistance à lui-même, ou aux êtres qui lui sont chers, quand on lui fait du tort injuste ou qu’on l’outrage.",
+    "Certes, ce sont les faibles, la masse des gens qui établissent les lois, j’en suis sûr. C’est donc en fonction d’eux-mêmes et de leur intérêt personnel que les faibles font les lois, qu’ils attribuent des louanges, qu’ils répartissent des blâmes. Ils veulent faire peur aux hommes plus forts qu’eux et qui peuvent leur être supérieurs. C’est pour empêcher que ces hommes ne leur soient supérieurs qu’ils disent que c’est vilain, que c’est injuste, d’avoir plus que les autres et que l’injustice consiste justement à en avoir plus. Car, ce qui plaît aux faibles, c’est d’avoir l’air d’être égaux à de tels hommes, alors qu’ils leur sont inférieurs.",
+    "Et quand on dit qu’il est injuste, qu’il est vilain, de vouloir avoir plus que la plupart des gens, on s’exprime en se référant à la loi. Or, au contraire, il est évident, selon moi, que la justice consiste en ce que le meilleur ait plus que le moins bon et le plus fort plus que le moins fort. Partout il en est ainsi, c’est ce que la nature enseigne, chez toutes les espèces animales, chez toutes les races humaines et dans toutes les cités ! Si le plus fort domine le moins fort et s’il est supérieur à lui, c’est le signe de ce qui est juste.",
+    "[…] Mais, j’en suis sûr, s’il arrivait qu’un homme eût la nature qu’il faut pour secouer tout ce fatras, le réduire en miettes et s’en délivrer, si cet homme pouvait fouler aux pieds nos grimoires, nos tours de magie, nos enchantements, et aussi toutes nos lois qui sont contraires à la nature – si cet homme qui était un esclave, se redressant et nous apparaissait comme un maître, alors, à ce moment-là, le droit de la nature brillerait de tout son éclat."
+  ]
+},
+    {
+  "id": "sophocle-antigone-lois-non-ecrites",
+  "section": "philosophie",
+  "cardMeta": "Justice · droit naturel et droit positif",
+  "title": "Il existe des lois non écrites supérieures aux lois humaines",
+  "author": "Sophocle",
+  "authorTag": "Sophocle",
+  "cardHighlight": "lois non écrites",
+  "familiarIdea": "les lois non écrites d’Antigone",
+  "authorMeta": "(v. 495–406 av. J.-C.) · tragédie grecque",
+  "themes": [
+    "Justice",
+    "Devoir",
+    "Religion"
+  ],
+  "work": "Antigone",
+  "publication": "v. 442 av. J.-C., trad. P. Mazon, Belles Lettres, 1962, p. 102–104",
+  "description": "Une loi politique peut-elle obliger lorsqu’elle contredit une loi tenue pour plus ancienne, divine et inébranlable ?",
+  "context": "Dans <em>Antigone</em>, l’ordre de Créon entre en conflit avec des <strong>lois non écrites</strong> qu’Antigone juge plus anciennes et plus légitimes que tout décret humain. Le texte pose directement la question des limites de l’obéissance à l’État.",
+  "readingQuestions": [
+    "Pourquoi Antigone refuse-t-elle d’obéir au décret de Créon ?",
+    "Qu’est-ce qui donne, selon elle, une autorité supérieure aux lois non écrites ?",
+    "Une exigence de <strong>justice</strong> peut-elle rendre légitime la désobéissance à la loi politique ?"
+  ],
+  "glossary": [
+    {
+      "term": "droit naturel",
+      "definition": "Idée selon laquelle certaines normes de justice valent indépendamment des lois historiques instituées par les sociétés."
+    },
+    {
+      "term": "droit positif",
+      "definition": "Ensemble des lois effectivement établies et reconnues dans une société donnée."
+    },
+    {
+      "term": "lois non écrites",
+      "definition": "Dans la tragédie, normes divines et immémoriales dont Antigone affirme qu’elles ne dépendent d’aucun décret humain."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Loi de Créon",
+        "definition": "Décision politique datée, formulée par un souverain et applicable dans la cité."
+      },
+      "right": {
+        "term": "Lois non écrites",
+        "definition": "Normes divines, immémoriales et présentées comme inébranlables."
+      },
+      "conclusion": "Le texte pose directement la question de la différence entre légalité et légitimité."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-desobeissance-loi-inconditionnelle",
+      "kind": "adverse",
+      "label": "Kant — L’obéissance à la loi doit être inconditionnelle",
+      "relation": "Kant refuse au sujet le droit de renverser juridiquement le pouvoir établi, même lorsqu’il le juge injuste."
+    },
+    {
+      "id": "thoreau-desobeir-lois-injustes",
+      "kind": "proche",
+      "label": "Thoreau — Il est parfois légitime de désobéir aux lois",
+      "relation": "Thoreau donne une formulation moderne de la désobéissance à une loi injuste."
+    },
+    {
+      "id": "platon-callicles-loi-nature-justice",
+      "kind": "adverse",
+      "label": "Calliclès — Nous n’obéissons à la loi que par convention",
+      "relation": "Les deux textes invoquent une norme supérieure à la loi positive, mais dans des directions morales presque opposées."
+    }
+  ],
+  "paragraphs": [
+    "CRÉON. — […] Connaissais-tu la défense que j’avais fait proclamer ?",
+    "ANTIGONE. — Oui, je la connaissais ; pouvais-je l’ignorer ? Elle était des plus claires.",
+    "CRÉON. — Ainsi tu as osé passer outre à ma loi ?",
+    "ANTIGONE. — Oui, car ce n’est pas Zeus qui l’avait proclamée ! ce n’est pas la Justice, assise aux côtés des dieux infernaux ; non, ce ne sont pas là les lois qu’ils ont jamais fixées aux hommes, et je ne pensais pas que tes interdictions à toi fussent assez puissantes pour permettre à un mortel de passer outre à d’autres lois, aux lois non écrites, inébranlables, des dieux ! Elles ne datent, celles-là, ni d’aujourd’hui ni d’hier, et nul ne sait le jour où elles ont paru. Ces lois-là, pouvais-je donc, par crainte de qui que ce fût, m’exposer à leur vengeance chez les dieux ? Que je dusse mourir, ne le savais-je pas ? et cela, quand bien même tu n’aurais rien défendu."
+  ]
+},
+    {
+  "id": "pascal-force-justice",
+  "section": "philosophie",
+  "cardMeta": "Justice · force et institution",
+  "title": "La justice et la force doivent être mises ensemble",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "justice et la force",
+  "familiarIdea": "justice et force",
+  "authorMeta": "(1623–1662) · philosophie moderne",
+  "themes": [
+    "Justice",
+    "État"
+  ],
+  "work": "Pensées",
+  "publication": "posth., Lafuma 103 et 81 (Br. 298–299), Le Seuil, 1962, p. 63–64 et 57",
+  "description": "La justice peut-elle s’imposer sans force, et que devient la force lorsqu’elle se présente elle-même comme juste ?",
+  "context": "Pascal met en tension deux réalités politiques : la <strong>justice</strong>, qui peut être contestée, et la <strong>force</strong>, qui s’impose immédiatement. Un ordre stable doit les réunir, mais il risque alors de présenter comme juste ce qui n’est d’abord que puissant.",
+  "readingQuestions": [
+    "Pourquoi la justice sans force reste-t-elle impuissante ?",
+    "Pourquoi la force sans justice devient-elle tyrannique ?",
+    "Que veut dire Pascal lorsqu’il conclut qu’on a fini par « justifier la force » ?"
+  ],
+  "glossary": [
+    {
+      "term": "force",
+      "definition": "Puissance effective capable de contraindre et de se faire obéir."
+    },
+    {
+      "term": "justice",
+      "definition": "Exigence normative de ce qui est dû ou légitime ; Pascal souligne ici qu’elle demeure sujette à dispute."
+    },
+    {
+      "term": "tyrannie",
+      "definition": "Exercice de la puissance qui ne peut se justifier par une règle de justice et s’impose par la seule force."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Justice sans force",
+        "definition": "Elle peut être juste en principe mais reste incapable de s’imposer."
+      },
+      "right": {
+        "term": "Force sans justice",
+        "definition": "Elle s’impose effectivement mais devient tyrannique."
+      },
+      "conclusion": "L’ordre politique doit articuler norme et puissance ; Pascal montre cependant que cette articulation peut se renverser en légitimation de la force."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-callicles-loi-nature-justice",
+      "kind": "proche",
+      "label": "Calliclès — Nous n’obéissons à la loi que par convention",
+      "relation": "Calliclès identifie la nature au droit du plus fort ; Pascal distingue au contraire force et justice avant d’analyser leur entremêlement."
+    },
+    {
+      "id": "pascal-coutumes-conventions-justice",
+      "kind": "proche",
+      "label": "Pascal — Les mœurs et les coutumes sont des conventions",
+      "relation": "Les deux fragments examinent la fragilité des fondements humains de la justice."
+    },
+    {
+      "id": "kant-justice-instituee-imparfaite",
+      "kind": "proche",
+      "label": "Kant — La justice instituée ne peut pas être parfaite",
+      "relation": "Kant pose à son tour la difficulté d’instituer une justice publique avec des êtres humains imparfaits."
+    }
+  ],
+  "paragraphs": [
+    "Il est juste que ce qui est juste soit suivi ; il est nécessaire que ce qui est le plus fort soit suivi.",
+    "La justice sans la force est impuissante, la force sans la justice est tyrannique. La justice sans force est contredite, parce qu’il y a toujours des méchants. La force sans la justice est accusée. Il faut donc mettre ensemble la justice et la force, et pour cela faire que ce qui est juste soit fort ou que ce qui est fort soit juste.",
+    "La justice est sujette à dispute. La force est très reconnaissable et sans dispute. Ainsi on n’a pu donner la force à la justice, parce que la force a contredit la justice et a dit qu’elle était injuste, et a dit que c’était elle qui était juste.",
+    "Et ainsi ne pouvant faire que ce qui est juste fût fort, on a fait que ce qui est fort fût juste […]. Ne pouvant fortifier la justice, on a justifié la force."
+  ]
+},
+    {
+  "id": "kant-justice-instituee-imparfaite",
+  "section": "philosophie",
+  "cardMeta": "Justice · gouvernement et nature humaine",
+  "title": "La justice instituée ne peut pas être parfaite",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "justice instituée",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Justice",
+    "État",
+    "Nature"
+  ],
+  "work": "Idée d’une histoire universelle d’un point de vue cosmopolitique",
+  "publication": "1784, proposition VI, dans Opuscules sur l’histoire, trad. S. Piobetta, GF, p. 77–78",
+  "description": "Comment instituer un pouvoir juste si celui qui doit faire respecter la loi est lui-même un être humain capable d’abuser de sa liberté ?",
+  "context": "Kant montre la difficulté propre à toute institution politique : l’être humain a besoin d’une autorité qui limite son arbitraire, mais cette autorité est elle-même exercée par des êtres humains imparfaits. L’ordre juste est donc nécessaire sans pouvoir devenir parfaitement juste.",
+  "readingQuestions": [
+    "Pourquoi l’être humain a-t-il besoin d’un maître, selon Kant ?",
+    "Pourquoi le maître lui-même pose-t-il aussitôt un nouveau problème ?",
+    "Que signifie l’image du <strong>bois noueux</strong> pour la possibilité d’un État parfaitement juste ?"
+  ],
+  "glossary": [
+    {
+      "term": "justice instituée",
+      "definition": "Justice rendue possible par des règles, des institutions et un pouvoir politique commun."
+    },
+    {
+      "term": "gouvernement",
+      "definition": "Pouvoir chargé d’appliquer les lois et d’organiser la vie politique commune."
+    },
+    {
+      "term": "volonté universellement valable",
+      "definition": "Règle commune qui limite les volontés particulières de telle sorte que la liberté de chacun puisse coexister avec celle des autres."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Le problème du maître",
+      "definition": "Celui qui impose la loi doit lui-même être soumis à une loi. La justice politique rencontre donc une difficulté de régression : qui contraindra le contraignant ?"
+    },
+    {
+      "type": "concept",
+      "term": "Le bois noueux",
+      "definition": "Métaphore de l’imperfection humaine : une institution raisonnable est possible, mais aucune construction politique ne peut supprimer totalement les penchants humains à l’égoïsme et à l’abus de pouvoir."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-societe-nations-justice",
+      "kind": "proche",
+      "label": "Kant — Une instance juridique internationale doit garantir la justice",
+      "relation": "Le problème de l’ordre juste réapparaît à l’échelle des relations entre États."
+    },
+    {
+      "id": "rawls-justice-equite-inegalites",
+      "kind": "proche",
+      "label": "Rawls — La justice parfaite n’exclut pas l’existence de l’inégalité",
+      "relation": "Rawls construit une autre expérience de pensée visant à définir les principes d’institutions justes."
+    },
+    {
+      "id": "thomas-more-utopie-egalite",
+      "kind": "adverse",
+      "label": "Thomas More — La justice parfaite suppose l’égalité",
+      "relation": "More imagine une organisation égalitaire ; Kant insiste sur l’impossibilité d’une perfection institutionnelle totale."
+    }
+  ],
+  "paragraphs": [
+    "La difficulté […] la voici : l’homme est un animal qui, du moment où il vit parmi d’autres individus de son espèce, a besoin d’un maître. Car il abuse à coup sûr de sa liberté à l’égard de ses semblables ; et, quoique, en tant que créature raisonnable, il souhaite une loi qui limite la liberté de tous, son penchant animal à l’égoïsme l’incite toutefois à se réserver dans toute la mesure du possible un régime d’exception pour lui-même. Il lui faut donc un maître, qui batte en brèche sa volonté particulière et le force à obéir à une volonté universellement valable, grâce à laquelle chacun puisse être libre. Mais où va-t-il trouver ce maître ? Nulle part ailleurs que dans l’espèce humaine. Or ce maître, à son tour, est tout comme lui un animal qui a besoin d’un maître. De quelque façon qu’il s’y prenne, on ne conçoit vraiment pas comment il pourrait se procurer pour établir la justice publique un chef juste par lui-même : soit qu’il choisisse à cet effet une personne unique, soit qu’il adresse à une élite de personnes triées au sein d’une société. Car chacune d’elles abusera toujours de la liberté si elle n’a personne au-dessus d’elle pour imposer vis-à-vis d’elle-même l’autorité des lois. Or le chef suprême doit être juste pour lui-même, et cependant être un homme. Cette tâche est par conséquent la plus difficile à remplir de toutes ; à vrai dire sa solution parfaite est impossible ; le bois dont l’homme est fait est si noueux qu’on ne peut y tailler des poutres bien droites."
+  ],
+  "familiarIdea": "le bois noueux de l’humanité"
+},
+    {
+  "id": "thomas-more-utopie-egalite",
+  "section": "philosophie",
+  "cardMeta": "Justice · égalité et utopie",
+  "title": "La justice parfaite ne pourrait exister que si l’égalité était assurée",
+  "author": "Thomas More",
+  "authorTag": "Thomas More",
+  "cardHighlight": "égalité était assurée",
+  "authorMeta": "(1478–1535) · humanisme de la Renaissance",
+  "themes": [
+    "Justice",
+    "État",
+    "Travail"
+  ],
+  "work": "L’Utopie",
+  "publication": "1516, livre second, trad. M. Delcourt, GF, 1987, p. 139–147",
+  "description": "Une société plus juste suppose-t-elle de supprimer la propriété privée et d’organiser collectivement le travail et les conditions de vie ?",
+  "context": "Dans <em>L’Utopie</em>, Thomas More imagine une société sans propriété privée, organisée autour du partage des tâches et d’une forte égalité. Cette fiction permet de demander ce que la <strong>justice sociale</strong> exige, mais aussi ce qu’une égalité très organisée peut coûter à la liberté.",
+  "readingQuestions": [
+    "Pourquoi la suppression de la propriété privée est-elle centrale dans l’organisation d’Utopie ?",
+    "Comment cette organisation cherche-t-elle à garantir l’égalité entre les citoyens ?",
+    "Une société plus égalitaire peut-elle devenir trop contraignante pour la <strong>liberté individuelle</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "utopie",
+      "definition": "Du grec ou-topos, « lieu qui n’existe nulle part », avec le jeu possible sur eu-topos, « bon lieu ». Une utopie décrit une société imaginaire permettant de critiquer indirectement les institutions réelles."
+    },
+    {
+      "term": "égalité",
+      "definition": "Principe selon lequel les individus doivent être traités de manière égale selon un critère déterminé ; l’égalité juridique ne se confond pas nécessairement avec l’identité des conditions."
+    },
+    {
+      "term": "propriété privée",
+      "definition": "Droit reconnu à un individu ou un groupe de posséder exclusivement un bien et d’en disposer."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Égalité",
+        "definition": "Les conditions, tâches et ressources sont organisées de manière à limiter fortement les différences entre citoyens."
+      },
+      "right": {
+        "term": "Liberté individuelle",
+        "definition": "Le cadre collectif peut aussi restreindre les choix privés, ce qui ouvre une difficulté propre aux modèles utopiques."
+      },
+      "conclusion": "More fait de l’organisation sociale elle-même un moyen de produire la justice, au prix d’une forte réglementation de la vie commune."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "rawls-justice-equite-inegalites",
+      "kind": "adverse",
+      "label": "Rawls — La justice parfaite n’exclut pas l’existence de l’inégalité",
+      "relation": "Rawls soutient que certaines inégalités peuvent être justes si elles améliorent la situation des moins favorisés."
+    },
+    {
+      "id": "kant-justice-instituee-imparfaite",
+      "kind": "adverse",
+      "label": "Kant — La justice instituée ne peut pas être parfaite",
+      "relation": "Kant insiste sur l’imperfection inévitable des institutions humaines."
+    }
+  ],
+  "paragraphs": [
+    "Les champs sont si bien répartis entre les cités que chacune a au moins douze milles de terrain à cultiver tout autour d’elle et parfois davantage, si la distance est plus grande entre elle et la voisine. Aucune ne cherche à étendre son territoire, car les habitants s’en considèrent comme les fermiers plutôt que comme les propriétaires.",
+    "Ils ont à la campagne, au milieu des champs, des demeures bien situées dans des lieux choisis, équipées de tous les instruments aratoires. Les citadins y viennent habiter à tour de rôle. Un ménage agricole se compose d’au moins quarante personnes […]. Dans chaque ménage, vingt personnes chaque année retournent en ville après avoir passé deux ans à la campagne. Elles sont remplacées par autant de citadins. Ceux-ci sont instruits par les colons installés depuis un an et déjà au courant des choses de la terre. Ils serviront à leur tour d’instructeurs l’année suivante, car le ravitaillement ne doit pas souffrir de l’inexpérience des nouveaux venus. Ce roulement a été érigé en règle pour n’obliger personne à mener trop longtemps, contre son gré, une existence trop dure. Beaucoup cependant demandent à rester davantage parce qu’ils aiment la vie des champs […]. […] Sur l’île d’Utopie, les maisons s’ouvrent d’une poussée de main, et se referment de même, laissant entrer le premier venu. Il n’est rien là qui constitue un domaine privé. Ces maisons en effet changent d’habitants, par tirage au sort, tous les dix ans […].",
+    "Une seule industrie leur est commune à tous, hommes et femmes, c’est l’agriculture, que personne ne peut ignorer. Tous l’apprennent dès l’enfance, par un enseignement donné à l’école et par la pratique, dans les champs voisins de la ville où les écoliers sont conduits en manière de récréation. Ils ne se bornent pas à regarder ; ils travaillent aussi et c’est pour eux une bonne gymnastique. […] [C]hacun apprend le métier qui lui plaît et qui sera le sien. C’est surtout le tissage de la laine ou du lin, le travail du maçon, ou du forgeron, ou du charpentier. Les autres métiers occupent des ouvriers si peu nombreux que ce n’est guère la peine d’en parler. Chaque ménage en effet confectionne lui-même ses vêtements, dont la forme est la même pour toute l’île – ils ne diffèrent que pour distinguer les femmes des hommes, les gens mariés des célibataires – et d’un modèle qui n’a pas varié depuis des siècles, plaisant à voir, bien adapté aux mouvements du corps et calculé pour protéger également du froid et de la chaleur."
+  ]
+},
+    {
+  "id": "kant-societe-nations-justice",
+  "section": "philosophie",
+  "cardMeta": "Justice · cosmopolitisme et droit international",
+  "title": "Une instance juridique internationale doit garantir la justice",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "instance juridique internationale",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Justice",
+    "État",
+    "Histoire"
+  ],
+  "work": "Idée d’une histoire universelle d’un point de vue cosmopolitique",
+  "publication": "1784, proposition VII, dans Opuscules sur l’histoire, trad. S. Piobetta, GF, 1990, p. 79–80",
+  "description": "La justice entre les États peut-elle être garantie tant que chacun demeure souverain et libre d’entrer en conflit avec les autres ?",
+  "context": "Kant transpose aux <strong>États</strong> le problème qui conduisait les individus à entrer dans un ordre civil. Tant qu’aucune loi commune ne règle leurs rapports, ils restent exposés à la guerre ; l’<strong>histoire</strong> peut alors être comprise comme un processus conflictuel qui pousse progressivement vers un ordre juridique commun.",
+  "readingQuestions": [
+    "Pourquoi les <strong>États</strong> se trouvent-ils entre eux dans une situation comparable à l’état de nature des individus ?",
+    "Comment les guerres peuvent-elles, selon Kant, pousser malgré elles les États vers une Société des Nations ?",
+    "En quel sens l’<strong>histoire</strong> peut-elle alors être comprise comme un progrès possible vers un ordre juridique universel ?"
+  ],
+  "glossary": [
+    {
+      "term": "cosmopolitisme",
+      "definition": "Idéal politique et juridique qui pense les êtres humains et les États dans un ordre commun dépassant les seules frontières nationales."
+    },
+    {
+      "term": "Société des Nations",
+      "definition": "Dans ce texte, idée d’une association juridique des États capable de garantir sécurité et droits par des règles communes."
+    },
+    {
+      "term": "téléologie",
+      "definition": "Lecture des événements à partir d’une finalité ou d’une orientation vers une fin."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "De l’état de nature au droit international",
+      "definition": "De même que les individus ont besoin d’un ordre civil, les États doivent sortir de rapports gouvernés par la seule puissance pour entrer dans des relations juridiques."
+    },
+    {
+      "type": "concept",
+      "term": "Ruse de la nature",
+      "definition": "Kant interprète les conflits comme un mécanisme historique qui contraint progressivement les sociétés à produire des institutions que la raison aurait pu recommander directement."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-justice-instituee-imparfaite",
+      "kind": "proche",
+      "label": "Kant — La justice instituée ne peut pas être parfaite",
+      "relation": "Les propositions VI et VII se répondent : institution du droit à l’intérieur, puis entre les États."
+    },
+    {
+      "id": "rawls-justice-equite-inegalites",
+      "kind": "proche",
+      "label": "Rawls — La justice parfaite n’exclut pas l’existence de l’inégalité",
+      "relation": "Rawls déplace la question vers les principes d’institutions justes choisis de manière impartiale."
+    }
+  ],
+  "paragraphs": [
+    "Le problème de l’établissement d’une constitution civile parfaite est lié au problème de l’établissement de relations régulières entre les États, et ne peut pas être résolu indépendamment de ce dernier. […] La même insociabilité qui contraignait les hommes à s’unir est à son tour la cause d’où il résulte que chaque communauté, dans les relations extérieures, c’est-à-dire dans ses rapports avec les autres États, jouit d’une liberté sans contrainte ; par suite chaque État doit s’attendre à subir de la part des autres exactement les mêmes maux qui pesaient sur les hommes et les contraignaient à entrer dans un État civil régi par des lois. La nature a donc utilisé une fois de plus l’incompatibilité des hommes et même l’incompatibilité entre grandes sociétés et corps politiques auxquels se prête cette sorte de créatures, comme un moyen de forger au sein de leur inévitable antagonisme un état de calme et de sécurité. Ainsi, par le moyen des guerres, des préparatifs excessifs et incessants en vue des guerres et de la misère qui s’ensuit intérieurement pour chaque État, même en temps de paix, la nature, dans des tentatives d’abord imparfaites, puis finalement, après bien des ruines, bien des naufrages, après même un épuisement intérieur radical de leurs forces, pousse les États à faire ce que la raison aurait aussi bien pu leur apprendre sans qu’il leur en coûtât d’aussi tristes épreuves, c’est-à-dire sortir de l’état anarchique de la sauvagerie, pour entrer dans une Société des Nations. Là, chacun, y compris le plus petit État, pourrait attendre la garantie de sa sécurité et de ses droits non pas de sa propre puissance ou de la propre appréciation de son droit, mais uniquement de cette grande Société des Nations […]. Toutes les guerres sont de ce fait autant de tentatives (non pas bien entendu dans l’intention des hommes, mais dans celle de la nature) pour réaliser de nouvelles relations entre les États, et, par leur destruction, ou du moins par leur démembrement général, pour former de nouveaux corps ; ceux-ci, à leur tour, soit dans leurs rapports internes, soit dans leurs relations mutuelles, ne peuvent se maintenir, et par conséquent doivent subir d’autres révolutions analogues. Un jour enfin, en partie par l’établissement le plus adéquat de la constitution civile sur le plan intérieur, en partie sur le plan extérieur par une convention et une législation communes, un état de choses s’établira qui, telle une communauté civile universelle, pourra se maintenir par lui-même comme un automate."
+  ]
+},
+    {
+  "id": "rawls-justice-equite-inegalites",
+  "section": "philosophie",
+  "cardMeta": "Justice · équité et inégalités",
+  "title": "La justice parfaite n’exclut pas l’existence de l’inégalité",
+  "author": "John Rawls",
+  "authorTag": "Rawls",
+  "cardHighlight": "n’exclut pas l’existence de l’inégalité",
+  "familiarIdea": "le voile d’ignorance",
+  "authorMeta": "(1921–2002) · philosophie politique contemporaine",
+  "themes": [
+    "Justice",
+    "État"
+  ],
+  "work": "Théorie de la justice",
+  "publication": "1971, trad. C. Audard, Le Seuil, 1987, p. 38 et 41",
+  "description": "Des inégalités peuvent-elles être justes si les principes qui les autorisent ont été choisis impartialement et bénéficient aux plus défavorisés ?",
+  "context": "Rawls imagine une <strong>position originelle</strong> dans laquelle chacun choisit les principes de justice sans connaître sa future place dans la société. Le <strong>voile d’ignorance</strong> doit ainsi empêcher chacun de construire les règles à son avantage.",
+  "readingQuestions": [
+    "Pourquoi les individus placés derrière le voile d’ignorance ignorent-ils leur situation future ?",
+    "Comment cette ignorance rend-elle leur choix plus impartial ?",
+    "À quelles conditions une <strong>inégalité</strong> peut-elle malgré tout être juste selon Rawls ?"
+  ],
+  "glossary": [
+    {
+      "term": "voile d’ignorance",
+      "definition": "Expérience de pensée où chacun choisit les règles sociales sans connaître sa future position, ses avantages naturels ni ses conceptions particulières du bien."
+    },
+    {
+      "term": "équité",
+      "definition": "Chez Rawls, propriété de principes choisis dans des conditions impartiales et acceptables pour tous."
+    },
+    {
+      "term": "principe de différence",
+      "definition": "Principe selon lequel certaines inégalités ne sont justifiées que si elles améliorent la situation des membres les plus désavantagés."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Égalité stricte",
+        "definition": "Toutes les positions et ressources seraient réparties uniformément."
+      },
+      "right": {
+        "term": "Équité rawlsienne",
+        "definition": "Des inégalités peuvent être admises si les libertés fondamentales sont garanties et si elles profitent aux plus défavorisés."
+      },
+      "conclusion": "Rawls distingue donc justice et égalité matérielle absolue."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "thomas-more-utopie-egalite",
+      "kind": "adverse",
+      "label": "Thomas More — La justice parfaite suppose l’égalité",
+      "relation": "More tend vers l’égalité des conditions ; Rawls admet certaines inégalités sous conditions."
+    },
+    {
+      "id": "kant-justice-instituee-imparfaite",
+      "kind": "proche",
+      "label": "Kant — La justice instituée ne peut pas être parfaite",
+      "relation": "Les deux auteurs pensent les conditions de possibilité d’institutions justes."
+    },
+    {
+      "id": "mill-qualite-plaisirs-morale",
+      "kind": "adverse",
+      "label": "Mill — La morale interroge la qualité de notre bonheur",
+      "relation": "Rawls critique l’utilitarisme lorsqu’il permet de sacrifier certains individus au bien total du plus grand nombre."
+    }
+  ],
+  "paragraphs": [
+    "Dans la théorie de la justice comme équité, la position originelle d’égalité correspond à l’état de nature dans la théorie traditionnelle du contrat social. Cette position originelle n’est pas conçue, bien sûr, comme étant une situation historique réelle, encore moins une forme primitive de la culture. Il faut la comprendre comme étant une situation purement hypothétique, définie de manière à conduire à une certaine conception de la justice. Parmi les traits essentiels de cette situation, il y a le fait que personne ne connaît sa place dans la société, sa position de classe ou son statut social, pas plus que personne ne connaît le sort qui lui est réservé dans la répartition des capacités et des dons naturels, par exemple l’intelligence, la force, etc. J’irai même jusqu’à poser que les partenaires ignorent leurs propres conceptions du bien ou leurs tendances psychologiques particulières. Les principes de la justice sont choisis derrière un voile d’ignorance. Ceci garantit que personne n’est avantagé ou désavantagé dans le choix des principes par le hasard naturel ou par la contingence des circonstances sociales. Comme tous ont une situation comparable et qu’aucun ne peut formuler des principes favorisant sa condition particulière, les principes de la justice sont le résultat d’un accord ou d’une négociation équitables. Car, étant donné les circonstances de la position originelle, c’est-à-dire la symétrie des relations entre les partenaires, cette situation initiale est équitable à l’égard des sujets moraux, c’est-à-dire d’êtres rationnels ayant leurs propres systèmes de fins et capables, selon moi, d’un sens de la justice. […]",
+    "[J]e soutiendrai que les personnes placées dans la situation initiale choisiraient deux principes assez différents. Le premier exige l’égalité dans l’attribution des droits et des devoirs de base. Le second, lui, pose que des inégalités socio-économiques, prenons par exemple des inégalités de richesse et d’autorité, sont justes si et seulement si elles produisent, en compensation, des avantages pour chacun et, en particulier, pour les membres les plus désavantagés de la société. Ces principes excluent la justification d’institutions par l’argument selon lequel les épreuves endurées par certains peuvent être contrebalancées par un plus grand bien, au total. Il peut être opportun, dans certains cas, que certains possèdent moins afin que d’autres prospèrent, mais ceci n’est pas juste. Par contre, il n’y a pas d’injustice dans le fait qu’un petit nombre obtienne des avantages supérieurs à la moyenne, à condition que soit par là même améliorée la situation des moins favorisés."
+  ]
+},
+    {
+  "id": "kant-desobeissance-loi-inconditionnelle",
+  "section": "philosophie",
+  "cardMeta": "Justice · droit et obéissance",
+  "title": "L’obéissance à la loi doit être inconditionnelle",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "obéissance à la loi",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Justice",
+    "État",
+    "Devoir"
+  ],
+  "work": "Sur l’expression courante : il se peut que cela soit juste en théorie, mais en pratique cela ne vaut rien",
+  "publication": "1793, trad. L. Guillermit, Vrin, 1967, p. 42–43",
+  "description": "Peut-on reconnaître juridiquement un droit de rébellion contre un pouvoir injuste sans détruire le principe même d’un ordre juridique commun ?",
+  "context": "Kant refuse de reconnaître un <strong>droit de résistance</strong> à l’intérieur d’un ordre juridique déjà constitué. Même lorsqu’un pouvoir est injuste, autoriser chacun à lui opposer la force détruirait, selon lui, l’autorité commune dont dépend la possibilité même du droit.",
+  "readingQuestions": [
+    "Pourquoi Kant condamne-t-il la rébellion contre le pouvoir établi ?",
+    "Pourquoi le peuple ne peut-il pas être à la fois partie au conflit et juge de ce conflit ?",
+    "Peut-on maintenir un devoir d’<strong>obéissance</strong> face à un pouvoir manifestement injuste ?"
+  ],
+  "glossary": [
+    {
+      "term": "droit de résistance",
+      "definition": "Prétendu droit d’un sujet ou d’un peuple à employer la force contre le pouvoir politique établi."
+    },
+    {
+      "term": "droit de nécessité",
+      "definition": "Justification exceptionnelle qui invoquerait une situation extrême pour autoriser une infraction au droit."
+    },
+    {
+      "term": "constitution civile",
+      "definition": "Ordre juridique commun qui institue les autorités, les lois et les rapports de droit entre citoyens."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Critiquer le pouvoir",
+        "definition": "On peut juger une politique ou une institution injuste en théorie."
+      },
+      "right": {
+        "term": "Résister juridiquement par la force",
+        "definition": "Kant refuse d’en faire un droit, car l’autorité du droit serait alors dissoute au moment même où chacun s’autoriserait à juger souverainement."
+      },
+      "conclusion": "Le texte ne dit pas que tout gouvernement est juste ; il refuse qu’un droit de désobéissance violente puisse être inscrit dans l’ordre juridique lui-même."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "thoreau-desobeir-lois-injustes",
+      "kind": "adverse",
+      "label": "Thoreau — Il est parfois légitime de désobéir aux lois",
+      "relation": "Thoreau fait de la non-coopération avec l’injustice un devoir personnel, à l’opposé de la position kantienne."
+    },
+    {
+      "id": "sophocle-antigone-lois-non-ecrites",
+      "kind": "adverse",
+      "label": "Sophocle — Il existe des lois non écrites supérieures aux lois humaines",
+      "relation": "Antigone assume la désobéissance au nom d’une norme supérieure."
+    }
+  ],
+  "paragraphs": [
+    "[T]oute opposition au pouvoir législatif suprême, toute révolte destinée à traduire en actes le mécontentement des sujets, tout soulèvement qui éclate en rébellion est, dans une république, le crime le plus grave et le plus condamnable, car il en ruine le fondement même. Et cette interdiction est inconditionnelle, au point que quand bien même ce pouvoir ou son agent, le chef de l’État, ont violé jusqu’au contrat originaire et se sont par là destitués, aux yeux du sujet, de leur droit à être législateurs, puisqu’ils ont donné licence au gouvernement de procéder de manière tout à fait violente (tyrannique), il n’en demeure pas moins qu’il n’est absolument pas permis au sujet de résister en opposant la violence à la violence. En voici la raison : c’est que dans une constitution civile déjà existante le peuple n’a plus le droit de continuer à statuer sur la façon dont cette constitution doit être gouvernée. Car, supposé qu’il en ait le droit, et justement le droit de s’opposer à la décision du chef réel de l’État, qui doit décider de quel côté est le droit ? Ce ne peut être aucun des deux, car il serait juge dans sa propre cause. Il faudrait donc qu’il y eût un chef au-dessus du chef pour trancher entre ce dernier et le peuple, ce qui se contredit. […] Il ne peut faire non plus qu’intervienne en ce cas un droit de nécessité […], qui d’ailleurs au titre de droit prétendu de faire infraction au droit […] dans l’extrême détresse (physique) est un non-sens […], ni qu’il fournisse la clé qui permettrait de lever la barrière limitant le pouvoir du peuple. Car le chef de l’État peut tout aussi bien, pour justifier la dureté de son procédé à l’égard des sujets, arguer de leur insoumission que ces derniers peuvent justifier leur révolte en se plaignant de subir un traitement qu’ils n’ont pas mérité, et qui tranchera en ce cas ? Celui qui se trouve en possession de l’administration suprême de la justice, et c’est précisément le chef de l’État, est seul à pouvoir le faire ; et il n’est par conséquent personne dans la république qui puisse avoir le droit de lui contester cette possession."
+  ]
+},
+    {
+  "id": "thoreau-desobeir-lois-injustes",
+  "section": "philosophie",
+  "cardMeta": "Justice · désobéissance civile",
+  "title": "Il est parfois légitime de désobéir aux lois",
+  "author": "Henry David Thoreau",
+  "authorTag": "Thoreau",
+  "cardHighlight": "légitime de désobéir",
+  "familiarIdea": "la désobéissance civile",
+  "authorMeta": "(1817–1862) · transcendantalisme américain",
+  "themes": [
+    "Justice",
+    "État",
+    "Liberté"
+  ],
+  "work": "La Désobéissance civile",
+  "publication": "1849, trad. G. Villeneuve, Mille et une nuits, 1997, p. 23–24 et 28–29",
+  "description": "Que doit faire un individu lorsqu’obéir à la loi revient à devenir personnellement l’agent d’une injustice ?",
+  "context": "Thoreau soutient qu’un citoyen ne doit pas devenir l’instrument d’une injustice qu’il condamne. Lorsque la loi nous oblige à participer directement au mal, la <strong>désobéissance civile</strong> consiste à retirer concrètement sa coopération à l’État.",
+  "readingQuestions": [
+    "À quel moment Thoreau estime-t-il qu’il faut cesser d’obéir à la loi ?",
+    "Que signifie sa comparaison de l’État avec une machine ?",
+    "Comment une minorité qui refuse de coopérer peut-elle acquérir une véritable <strong>force politique</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "désobéissance civile",
+      "definition": "Refus public et conscient d’obéir à une loi ou à une décision politique jugée injuste, généralement sans recours à la violence."
+    },
+    {
+      "term": "légal / légitime",
+      "definition": "Est légal ce qui est conforme au droit positif ; est légitime ce qui peut être justifié par des principes de justice. Les deux peuvent entrer en conflit."
+    },
+    {
+      "term": "allégeance",
+      "definition": "Lien de fidélité et d’obéissance envers une autorité politique."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Le contre-frottement",
+      "definition": "Thoreau décrit l’État comme une machine : tant que l’injustice n’est qu’un défaut marginal, elle peut être tolérée ; mais lorsque l’individu devient lui-même l’engrenage qui produit le mal, il doit bloquer la machine par son refus."
+    },
+    {
+      "type": "concept",
+      "term": "Une minorité irrésistible",
+      "definition": "Une minorité qui cesse réellement de coopérer peut acquérir une puissance politique supérieure à son nombre, précisément parce qu’elle retire à l’État les actes et ressources dont il dépend."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-desobeissance-loi-inconditionnelle",
+      "kind": "adverse",
+      "label": "Kant — L’obéissance à la loi doit être inconditionnelle",
+      "relation": "Les deux textes forment une opposition directe sur le droit et le devoir de résistance."
+    },
+    {
+      "id": "sophocle-antigone-lois-non-ecrites",
+      "kind": "proche",
+      "label": "Sophocle — Il existe des lois non écrites supérieures aux lois humaines",
+      "relation": "Antigone et Thoreau refusent chacun une obéissance inconditionnelle lorsque la loi contredit une exigence supérieure de justice."
+    }
+  ],
+  "paragraphs": [
+    "Des lois injustes existent : nous satisferons-nous de leur obéir ou tâcherons-nous de les amender, de leur obéir jusqu’à ce que nous y ayons réussi, ou les transgresserons-nous sur-le-champ ? Les hommes, sous un gouvernement comme le nôtre, estiment en général qu’ils doivent attendre d’avoir persuadé la majorité de les altérer. Ils pensent que s’ils résistent, le remède serait pire que le mal. […]",
+    "Si l’injustice fait partie des frottements nécessaires de la machine du gouvernement, alors qu’on la permette ; elle s’estompera peut-être – en tout cas, la machine tombera en panne. Si l’injustice a un ressort, une poulie ou une corde, voire une manivelle qui lui soient spécifiques, on peut alors se demander si la volonté de correction ne sera pas pire que le mal ; mais si elle est d’une telle nature qu’elle fasse de vous l’agent de l’injustice vis-à-vis d’autrui alors je déclare qu’il faut enfreindre la loi. Que votre vie devienne un contre-frottement pour arrêter la machine. Ce à quoi je dois veiller, à tout le moins, c’est à ne pas me prêter au mal que je condamne.",
+    "Quant à adopter les pratiques prévues par l’État pour remédier au mal, je ne les connais pas. Elles réclament trop de temps et la vie d’un homme n’y suffit pas. […]",
+    "Une minorité est impuissante tant qu’elle se conforme à la majorité ; ce n’est du reste plus une minorité ; mais elle devient irrésistible quand elle la bloque de tout son poids. Si l’alternative était de mettre tous les justes en prison ou renoncer à la guerre et à l’esclavage, l’État ne balancerait pas dans son choix. Si un millier d’hommes refusaient de payer leurs impôts cette année, ce ne serait pas une mesure violente et sanguinaire, comme le fait de les payer et permettre par là à l’État de commettre la violence et de verser le sang innocent. Telle est, en fait, la définition d’une révolution paisible, si semblable chose est possible. Si le percepteur, ou tout autre fonctionnaire, me demande, comme a fait l’un d’eux : « Mais que voulez-vous que je fasse ? », ma réponse est : « Si vous voulez vraiment faire quelque chose, démissionnez. » Une fois que le sujet a refusé son allégeance et que le fonctionnaire a démissionné, la révolution est accomplie."
+  ]
+},
+    {
+  "id": "platon-glaucon-devoir-contrainte",
+  "section": "philosophie",
+  "cardMeta": "Justice et nature humaine",
+  "title": "Si nous le pouvions, nous désobéirions sans cesse au devoir",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "désobéirions sans cesse au devoir",
+  "authorMeta": "(v. 427–347 av. J.-C.) · Glaucon dans La République",
+  "themes": [
+    "Devoir",
+    "Justice"
+  ],
+  "work": "La République",
+  "publication": "livre II, 359b–360d, trad. G. Leroux, GF, p. 123–125",
+  "description": "Sommes-nous justes par choix moral ou seulement parce que la loi nous empêche de commettre l’injustice impunément ?",
+  "context": "Glaucon imagine l’<strong>anneau de Gygès</strong>, qui rend son possesseur invisible, pour tester la solidité de notre attachement à la justice. Si toute sanction disparaissait, continuerions-nous à être justes ou découvririons-nous que nous n’obéissons que par contrainte ?",
+  "readingQuestions": [
+    "Que permettrait de faire l’anneau de Gygès à celui qui le possède ?",
+    "Pourquoi Glaucon pense-t-il que l’impunité ferait disparaître la conduite juste ?",
+    "Peut-on être juste <strong>pour la justice elle-même</strong>, indépendamment de toute sanction ?"
+  ],
+  "glossary": [
+    {
+      "term": "contrainte",
+      "definition": "Pression extérieure qui force une conduite indépendamment du consentement de l’agent."
+    },
+    {
+      "term": "obligation",
+      "definition": "Règle reconnue par un sujet comme devant guider son action ; elle peut être suivie même en l’absence de contrainte extérieure."
+    },
+    {
+      "term": "anneau de Gygès",
+      "definition": "Objet légendaire rendant invisible celui qui le porte. Glaucon l’utilise comme expérience de pensée pour demander ce que deviendrait la conduite morale sans risque de sanction."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Justice par contrainte",
+        "definition": "On respecte la loi parce qu’on craint la sanction ou parce qu’on ne peut pas agir autrement."
+      },
+      "right": {
+        "term": "Justice par devoir",
+        "definition": "On agit justement parce qu’on reconnaît que l’action est moralement requise."
+      },
+      "conclusion": "Le texte met en crise l’idée que le simple respect extérieur de la loi prouve une véritable moralité."
+    },
+    {
+      "type": "analysis",
+      "term": "Une expérience de pensée",
+      "definition": "L’invisibilité supprime les conséquences sociales ordinaires de l’injustice. Elle isole ainsi la question suivante : que ferions-nous si rien ne pouvait nous punir ni nous démasquer ?"
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-agir-par-devoir",
+      "kind": "adverse",
+      "label": "Kant — Agir par devoir donne sa valeur morale à l’action",
+      "relation": "Kant distingue précisément l’action seulement conforme au devoir de l’action accomplie par devoir."
+    },
+    {
+      "id": "pascal-coutumes-conventions-justice",
+      "kind": "proche",
+      "label": "Pascal — Les mœurs et les coutumes sont des conventions",
+      "relation": "Les deux textes interrogent la force de la loi et le rapport entre justice, conventions et conduite effective."
+    }
+  ],
+  "paragraphs": [
+    "Glaucon. — Que ceux qui pratiquent la justice le fassent contre leur gré et par impuissance à commettre l’injustice, nous le saisirions très bien si nous nous représentions en pensée la situation suivante. Accordons à l’homme juste et à l’homme injuste un même pouvoir de faire ce qu’ils souhaitent ; ensuite, accompagnons-les et regardons où le désir de chacun va les guider. Nous trouverions l’homme juste s’engageant à découvert sur le même chemin que l’homme injuste, mû par son appétit du gain, cela même que toute la nature poursuit naturellement comme un bien, mais qui se voit ramené par la force de la loi au respect de l’équité.",
+    "Pour que le pouvoir dont je parle soit porté à sa limite, il faudrait leur donner à tous deux les capacités qui autrefois, selon ce qu’on rapporte, étaient échues à l’ancêtre de Gygès le Lydien. Celui-ci était un berger au service de celui qui régnait alors sur la Lydie. Après un gros orage et un tremblement de terre, le sol s’était fissuré et une crevasse s’était formée à l’endroit où il faisait paître son troupeau. […] Il aperçut un cadavre, qui était apparemment celui d’un géant. Ce mort n’avait rien sur lui, si ce n’est un anneau d’or à la main, qu’il prit avant de remonter. […] S’il tournait le chaton vers l’intérieur, il devenait invisible ; s’il le tournait vers l’extérieur, il devenait visible. Fort de cette observation, il s’arrangea aussitôt pour faire partie des messagers délégués auprès du roi et parvenu au palais, il séduisit la reine. Avec sa complicité, il tua le roi et s’empara ce faisant du pouvoir.",
+    "Supposons à présent qu’il existe deux anneaux de ce genre, l’un au doigt du juste, l’autre au doigt de l’injuste : il n’y aurait personne, semble-t-il, d’assez résistant pour se maintenir dans la justice et avoir la force de ne pas attenter aux biens d’autrui et de ne pas y toucher, alors qu’il aurait le pouvoir de pénétrer dans les maisons pour s’unir à qui lui plairait, et de tuer les uns, libérer les autres […]. On pourrait alors affirmer qu’on ne tient là une preuve de poids que personne n’est juste de son plein gré, mais en y étant contraint, compte tenu du fait qu’on ne l’est pas personnellement en vue d’un bien : partout, en effet, où chacun croit possible pour lui de commettre l’injustice, il le fait. Car tout homme croit que l’injustice lui est beaucoup plus avantageuse individuellement que la justice, et c’est à juste titre que chacun le pense […]."
+  ],
+  "familiarIdea": "l’anneau de Gygès"
+},
+    {
+  "id": "kant-agir-par-devoir",
+  "section": "philosophie",
+  "cardMeta": "Morale déontologique",
+  "title": "Agir conformément au devoir est une contrainte ; agir par devoir est une obligation",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "agir par devoir",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Devoir",
+    "Raison"
+  ],
+  "work": "Fondements de la métaphysique des mœurs",
+  "publication": "1785, 1re section, trad. V. Delbos, Delagrave, 1999, p. 36",
+  "description": "Une action bonne en apparence possède-t-elle une véritable valeur morale si elle est accomplie par inclination plutôt que par devoir ?",
+  "context": "Kant distingue l’action simplement <strong>conforme au devoir</strong> de l’action accomplie <strong>par devoir</strong>. Deux conduites extérieurement identiques peuvent donc avoir une valeur morale différente selon le motif qui les fait agir.",
+  "readingQuestions": [
+    "Quelle différence Kant établit-il entre agir <strong>conformément au devoir</strong> et agir <strong>par devoir</strong> ?",
+    "Pourquoi l’exemple du philanthrope privé de sympathie permet-il de faire apparaître cette différence ?",
+    "Pourquoi la valeur morale dépend-elle du <strong>motif</strong> de l’action plutôt que de son seul résultat ?"
+  ],
+  "glossary": [
+    {
+      "term": "inclination",
+      "definition": "Penchant sensible ou affectif qui nous porte spontanément vers une action."
+    },
+    {
+      "term": "conforme au devoir",
+      "definition": "Action extérieurement conforme à ce que prescrit la morale, mais qui peut être motivée par l’intérêt ou l’inclination."
+    },
+    {
+      "term": "par devoir",
+      "definition": "Action accomplie parce que l’agent reconnaît la loi morale comme raison suffisante d’agir."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Conforme au devoir",
+        "definition": "L’action correspond à ce qui est moralement demandé, mais son motif peut rester intéressé ou affectif."
+      },
+      "right": {
+        "term": "Par devoir",
+        "definition": "L’action est accomplie par respect pour la loi morale, indépendamment de l’intérêt ou de l’inclination."
+      },
+      "conclusion": "La valeur morale ne dépend donc pas seulement de ce qui est fait, mais du principe qui détermine la volonté."
+    },
+    {
+      "type": "concept",
+      "term": "Valeur morale",
+      "definition": "Pour Kant, elle apparaît lorsque la volonté agit à partir du devoir lui-même et non parce que l’action procure du plaisir, de l’estime ou un avantage."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-glaucon-devoir-contrainte",
+      "kind": "adverse",
+      "label": "Platon — Si nous le pouvions, nous désobéirions sans cesse au devoir",
+      "relation": "Glaucon soupçonne la conduite juste d’être imposée par la contrainte ; Kant cherche au contraire ce qui constitue une obligation morale véritable."
+    },
+    {
+      "id": "schopenhauer-pitie-fondement-morale",
+      "kind": "adverse",
+      "label": "Schopenhauer — La pitié est la racine de la moralité",
+      "relation": "Schopenhauer fonde la morale sur la compassion immédiate, là où Kant refuse de faire dépendre sa valeur d’un sentiment."
+    },
+    {
+      "id": "kant-humanite-fin-en-soi",
+      "kind": "proche",
+      "label": "Kant — L’humanité doit toujours être traitée comme une fin",
+      "relation": "Le second texte explicite une formulation majeure de la loi morale kantienne."
+    }
+  ],
+  "paragraphs": [
+    "Être bienfaisant, quand on le peut, est un devoir, et de plus il y a de certaines âmes si portées à la sympathie, que même sans un autre motif de vanité ou d’intérêt, elles éprouvent une satisfaction intime à répandre la joie autour d’elles et qu’elles peuvent jouir du contentement d’autrui, en tant qu’il est leur œuvre. Mais je prétends que dans ce cas une telle action, si conforme au devoir, si aimable qu’elle soit, n’a pas cependant de valeur morale véritable, qu’elle va de pair avec d’autres inclinations, avec l’ambition par exemple qui, lorsqu’elle tombe heureusement sur ce qui est réellement en accord avec l’intérêt public et le devoir, sur ce qui par conséquent est honorable, mérite louange et encouragement, mais non respect ; car il manque à la maxime la valeur morale, c’est-à-dire que ces actions soient faites, non par inclination, mais par devoir.",
+    "Supposez donc que l’âme de ce philanthrope soit assombrie par un de ces chagrins personnels qui étouffent toute sympathie pour le sort d’autrui, qu’il ait toujours encore le pouvoir de faire du bien à d’autres malheureux, mais qu’il ne soit pas touché de l’infortune des autres, étant trop absorbé par la sienne propre, et que, dans ces conditions, tandis qu’aucune inclination ne l’y pousse plus, il s’arrache néanmoins à cette insensibilité mortelle et qu’il agisse, sans que ce soit sous l’influence d’une inclination, uniquement par devoir, alors seulement son action a une véritable valeur morale."
+  ],
+  "familiarIdea": "agir par devoir"
+},
+    {
+  "id": "pascal-coutumes-conventions-justice",
+  "section": "philosophie",
+  "cardMeta": "Relativité des coutumes",
+  "title": "Les mœurs et les coutumes sont des conventions",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "coutumes sont des conventions",
+  "authorMeta": "(1623–1662) · philosophie moderne",
+  "themes": [
+    "Devoir",
+    "Justice"
+  ],
+  "work": "Pensées",
+  "publication": "1669 posth., fragment 294 (Brunschvicg), Hachette, 1967, p. 465–467",
+  "description": "Les règles morales et juridiques expriment-elles une justice universelle ou seulement les coutumes variables d’un lieu et d’une époque ?",
+  "context": "Pascal souligne la diversité historique et géographique des lois : ce qui paraît juste ici peut être tenu pour injuste ailleurs. Il met ainsi en question notre capacité à reconnaître immédiatement une <strong>justice universelle</strong> derrière les coutumes particulières.",
+  "readingQuestions": [
+    "Que montre la diversité des lois et des coutumes d’un pays à l’autre ?",
+    "Que signifie la formule « Plaisante justice qu’une rivière borne » ?",
+    "La diversité du droit prouve-t-elle qu’il n’existe aucune <strong>justice universelle</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "en fait / en droit",
+      "definition": "Distinction entre ce qui existe effectivement et ce qui devrait être valable légitimement ou universellement."
+    },
+    {
+      "term": "coutume",
+      "definition": "Usage collectif transmis et répété, qui acquiert une force normative sans nécessairement reposer sur un principe rationnel universel."
+    },
+    {
+      "term": "relatif / absolu",
+      "definition": "Est relatif ce qui dépend d’un lieu, d’une époque ou d’un point de vue ; est absolu ce qui prétend valoir sans condition."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Justice relative",
+        "definition": "Normes variables selon les pays, les époques et les habitudes sociales."
+      },
+      "right": {
+        "term": "Justice absolue",
+        "definition": "Principe qui vaudrait en tout lieu et en tout temps, indépendamment des coutumes."
+      },
+      "conclusion": "Pascal met en évidence le décalage entre l’exigence d’une justice universelle et la diversité effective des règles humaines."
+    },
+    {
+      "type": "analysis",
+      "term": "La force de la coutume",
+      "definition": "Une règle reçue depuis longtemps peut apparaître comme naturellement juste alors qu’elle doit son évidence à l’habitude et à l’autorité qui la maintiennent."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-humanite-fin-en-soi",
+      "kind": "adverse",
+      "label": "Kant — L’humanité doit toujours être traitée comme une fin",
+      "relation": "Kant cherche précisément un principe moral universel et inconditionnel, à l’opposé de la relativité mise en évidence par Pascal."
+    },
+    {
+      "id": "platon-glaucon-devoir-contrainte",
+      "kind": "proche",
+      "label": "Platon — Si nous le pouvions, nous désobéirions sans cesse au devoir",
+      "relation": "Les deux textes interrogent le rôle de la loi et la fragilité d’une justice qui dépend de contraintes ou de conventions."
+    }
+  ],
+  "paragraphs": [
+    "L’éclat de la véritable équité aurait assujetti tous les peuples, et les législateurs n’auraient pas pris pour modèle, au lieu de cette justice constante, les fantaisies et les caprices des Perses et Allemands. On la verrait plantée par tous les États du monde, et dans tous les temps, au lieu qu’on ne voit rien de juste ou d’injuste qui ne change de qualité en changeant de climat. Trois degrés d’élévation du pôle renversent toute la jurisprudence ; un méridien décide de la vérité ; en peu d’années de possession, les lois fondamentales changent ; le droit a ses époques, l’entrée de Saturne au Lion nous marque l’origine d’un tel crime. Plaisante justice qu’une rivière borne. Vérité au-deçà des Pyrénées, erreur au-delà.",
+    "Ils confessent que la justice n’est pas dans ces coutumes, mais qu’elle réside dans les lois naturelles connues en tout pays. Certainement ils le soutiendraient opiniâtrement, si la témérité du hasard qui a semé les lois humaines en avait rencontré au moins une qui fût universelle ; mais la plaisanterie est telle que le caprice des hommes s’est si bien diversifié, qu’il n’y en a point.",
+    "Le larcin, l’inceste, le meurtre des enfants et des pères, tout a eu sa place entre les actions vertueuses. Se peut-il rien de plus plaisant qu’un homme ait droit de me tuer parce qu’il demeure au-delà de l’eau, et que son prince a querelle contre le mien, quoique je n’en aie aucune avec lui ?",
+    "[…] De cette confusion arrive que l’un dit que l’essence de la justice est l’autorité du législateur, l’autre la commodité du souverain, l’autre la coutume présente ; et c’est le plus sûr : rien suivant la seule raison n’est juste de soi ; tout branle avec le temps. La coutume fait toute l’équité, par cette seule raison qu’elle est reçue ; c’est le fondement mystique de son autorité. Qui la ramène à son principe l’anéantit."
+  ]
+},
+    {
+  "id": "kant-humanite-fin-en-soi",
+  "section": "philosophie",
+  "cardMeta": "Morale déontologique",
+  "title": "Tout être rationnel doit reconnaître la validité de la loi morale",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "comme fin en soi",
+  "familiarIdea": "l’humanité comme fin en soi",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Devoir",
+    "Autrui",
+    "Raison"
+  ],
+  "work": "Fondements de la métaphysique des mœurs",
+  "publication": "1785, 2e section, trad. V. Delbos, Nathan, 1989, p. 56–60",
+  "description": "Pourquoi une personne ne peut-elle jamais être traitée seulement comme un moyen au service d’une autre fin ?",
+  "context": "Kant distingue les choses, qui ont une valeur relative à nos usages, des <strong>personnes</strong>, qui doivent être respectées pour elles-mêmes. Traiter l’humanité comme une fin signifie donc ne jamais réduire autrui à un simple instrument de nos propres projets.",
+  "readingQuestions": [
+    "Pourquoi Kant distingue-t-il les <strong>personnes</strong> des choses ?",
+    "Que signifie traiter autrui comme une <strong>fin</strong> et non simplement comme un moyen ?",
+    "Pourquoi cette exigence vaut-elle indépendamment de l’utilité ou des avantages que l’autre peut nous apporter ?"
+  ],
+  "glossary": [
+    {
+      "term": "fin en soi",
+      "definition": "Être ou réalité qui possède une valeur propre et ne peut légitimement être réduit au statut d’instrument."
+    },
+    {
+      "term": "personne",
+      "definition": "Sujet moral raisonnable, capable de se donner des fins et digne de respect."
+    },
+    {
+      "term": "impératif catégorique",
+      "definition": "Principe moral inconditionnel qui vaut indépendamment des désirs et des intérêts particuliers."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Chose / moyen",
+        "definition": "Possède une valeur relative : elle vaut en fonction de l’usage que l’on peut en faire."
+      },
+      "right": {
+        "term": "Personne / fin en soi",
+        "definition": "Possède une valeur inconditionnelle et impose une limite morale à l’action d’autrui."
+      },
+      "conclusion": "La morale kantienne fait du respect de la personne une exigence universelle."
+    },
+    {
+      "type": "concept",
+      "term": "Formule de l’humanité",
+      "definition": "« Agis de telle sorte que tu traites l’humanité […] toujours en même temps comme une fin, et jamais simplement comme un moyen. »"
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-agir-par-devoir",
+      "kind": "proche",
+      "label": "Kant — Agir conformément au devoir est une contrainte ; agir par devoir est une obligation",
+      "relation": "Ce texte précise le motif moral ; celui-ci formule ensuite une règle universelle concernant le respect des personnes."
+    },
+    {
+      "id": "levinas-parler-esclave-egal",
+      "kind": "proche",
+      "label": "Lévinas — Même quand on parle à un esclave, on parle à un égal",
+      "relation": "Lévinas donne une autre formulation de l’irréductibilité éthique d’autrui."
+    },
+    {
+      "id": "pascal-coutumes-conventions-justice",
+      "kind": "adverse",
+      "label": "Pascal — Les mœurs et les coutumes sont des conventions",
+      "relation": "Pascal insiste sur la diversité des normes ; Kant cherche un principe qui puisse valoir inconditionnellement."
+    }
+  ],
+  "paragraphs": [
+    "L’homme, et en général tout être raisonnable, existe comme fin en soi, et non pas simplement comme moyen dont telle ou telle volonté puisse user à son gré ; dans toutes ses actions, aussi bien dans celles qui le concernent lui-même que dans celles qui concernent d’autres êtres raisonnables, il doit toujours être considéré en même temps comme fin.",
+    "Tous les objets des inclinations n’ont qu’une valeur conditionnelle ; car si les inclinations et les besoins qui en dérivent n’existaient pas, leur objet serait sans valeur. Mais les inclinations mêmes, comme sources du besoin, ont si peu une valeur absolue qui leur donne le droit d’être désirées pour elles-mêmes, que, bien plutôt, en être pleinement affranchi doit être le souhait universel de tout être raisonnable. Ainsi la valeur de tous les objets à acquérir par notre action est toujours conditionnelle.",
+    "Les êtres dont l’existence dépend, à vrai dire, non pas de notre volonté, mais de la nature, n’ont cependant, quand ce sont des êtres dépourvus de raison, qu’une valeur relative, celle de moyens, et voilà pourquoi on les nomme des choses ; au contraire, les êtres raisonnables sont appelés des personnes, parce que leur nature les désigne déjà comme des fins en soi, c’est-à-dire comme quelque chose qui ne peut pas être employé simplement comme moyen, quelque chose qui par suite limite d’autant toute faculté d’agir comme bon nous semble (et qui est un objet de respect). Ce ne sont donc pas là des fins simplement subjectives, dont l’existence, comme effet de notre action, a une valeur pour nous : ce sont des fins objectives, c’est-à-dire des choses dont l’existence est une fin en elle-même, et même une fin telle qu’elle ne peut être remplacée par aucune autre au service de laquelle les fins objectives devraient se mettre, simplement comme moyens.",
+    "[…] L’impératif sera donc celui-ci : agis de telle sorte que tu traites l’humanité aussi bien dans ta personne que dans la personne de tout autre toujours en même temps comme une fin, et jamais simplement comme un moyen."
+  ]
+},
+    {
+  "id": "schopenhauer-pitie-fondement-morale",
+  "section": "philosophie",
+  "cardMeta": "Éthique de la compassion",
+  "title": "La pitié est la racine de la moralité",
+  "author": "Arthur Schopenhauer",
+  "authorTag": "Schopenhauer",
+  "cardHighlight": "pitié est la racine",
+  "authorMeta": "(1788–1860) · pessimisme philosophique",
+  "themes": [
+    "Devoir",
+    "Autrui"
+  ],
+  "work": "Le Fondement de la morale",
+  "publication": "1841, § 16, trad. A. Burdeau modifiée, Le Livre de poche, p. 155–156",
+  "description": "Qu’est-ce qui peut nous conduire à vouloir directement le bien d’autrui plutôt que notre propre intérêt ?",
+  "context": "Schopenhauer cherche comment le bien d’<strong>autrui</strong> peut devenir un motif direct de mon action. La pitié rend cela possible : sans calcul d’intérêt, je prends part à sa souffrance au point de vouloir réellement son bien comme je veux habituellement le mien.",
+  "readingQuestions": [
+    "Comment le bien d’<strong>autrui</strong> peut-il devenir un motif direct de mon action ?",
+    "Quel rôle la <strong>pitié</strong> joue-t-elle dans ce déplacement hors de l’égoïsme ?",
+    "Pourquoi une action motivée par mon propre intérêt perd-elle, selon Schopenhauer, sa véritable valeur morale ?"
+  ],
+  "glossary": [
+    {
+      "term": "pitié",
+      "definition": "Participation immédiate à la souffrance d’autrui, qui fait de son bien ou de son mal un motif direct pour ma volonté."
+    },
+    {
+      "term": "égoïsme",
+      "definition": "Disposition à poursuivre prioritairement son propre intérêt et son propre bien."
+    },
+    {
+      "term": "altruisme",
+      "definition": "Disposition à prendre en compte le bien d’autrui et à agir en sa faveur."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Morale rationnelle",
+        "definition": "La conduite est fondée sur une règle ou un devoir reconnu par la raison."
+      },
+      "right": {
+        "term": "Morale de la compassion",
+        "definition": "La conduite naît d’une participation immédiate à la souffrance d’autrui."
+      },
+      "conclusion": "Schopenhauer déplace le fondement de la moralité de la loi vers une expérience affective de l’autre."
+    },
+    {
+      "type": "concept",
+      "term": "Identification à autrui",
+      "definition": "La pitié suspend momentanément la séparation égoïste : la souffrance de l’autre est éprouvée comme suffisamment proche pour devenir un motif de ma propre action."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-agir-par-devoir",
+      "kind": "adverse",
+      "label": "Kant — Agir par devoir donne sa valeur morale à l’action",
+      "relation": "Kant situe la valeur morale dans le respect de la loi plutôt que dans la sympathie ou la compassion."
+    },
+    {
+      "id": "kant-humanite-fin-en-soi",
+      "kind": "proche",
+      "label": "Kant — L’humanité doit toujours être traitée comme une fin",
+      "relation": "Les deux philosophies conduisent à prendre autrui au sérieux, mais à partir de fondements très différents."
+    },
+    {
+      "id": "levinas-caresse-desir-invisible",
+      "kind": "proche",
+      "label": "Lévinas — La caresse désire l’invisible",
+      "relation": "Une autre manière de penser autrui comme ce qui ne se réduit pas à mon intérêt ou à ma possession."
+    }
+  ],
+  "paragraphs": [
+    "Pour que mon action soit faite uniquement en vue d’un autre, il faut que le bien de cet autre soit pour moi, et directement, un motif, au même titre où mon bien à moi l’est d’ordinaire. De là une façon plus précise de poser le problème : comment donc le bien et le mal d’un autre peuvent-ils bien déterminer ma volonté directement, à la façon dont seul à l’ordinaire agit mon propre bien ? […] Évidemment, il faut que cet autre devienne la fin dernière de mon acte, comme je la suis moi-même en toute autre circonstance : il faut donc que je veuille son bien et que je ne veuille pas son mal, comme je fais d’ordinaire pour mon propre bien et mon propre mal. À cet effet, il est nécessaire que je compatisse à son mal à lui, et comme tel ; que je sente son mal, ainsi que je fais d’ordinaire le mien. Or, c’est supposer que par un moyen quelconque je suis identifié avec lui, que toute différence entre moi et autrui est détruite, au moins jusqu’à un certain point, car c’est sur cette différence que repose justement mon égoïsme.",
+    "Mais je ne peux me glisser dans la peau d’autrui : le seul moyen auquel je puisse recourir, c’est donc d’utiliser la connaissance que j’ai de cet autre, la représentation que je me fais de lui dans ma tête, afin de m’identifier à lui, assez pour traiter, dans ma conduite, cette différence comme si elle n’existait pas. Toute cette série de pensées, dont voilà l’analyse, je ne l’ai pas rêvée, je ne l’affirme pas en l’air ; elle est fort réelle, même elle n’est point rare ; c’est là le phénomène quotidien de la pitié, de cette participation tout immédiate, sans aucune arrière-pensée, d’abord aux douleurs d’autrui, puis et par suite à la cessation, ou à la suppression de ces maux, car c’est là le dernier fond de tout bien-être et de tout bonheur.",
+    "Cette pitié, voilà le seul principe réel de toute justice spontanée et de toute vraie charité. Si une action a une valeur morale, c’est dans la mesure où elle en vient : dès qu’elle a une autre origine, elle ne vaut plus rien."
+  ]
+},
+    {
+  "id": "kant-raison-volonte-bonne",
+  "section": "philosophie",
+  "cardMeta": "Morale déontologique",
+  "title": "La morale doit être fondée sur la raison",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "fondée sur la raison",
+  "familiarIdea": "la bonne volonté",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Devoir",
+    "Raison",
+    "Bonheur"
+  ],
+  "work": "Fondements de la métaphysique des mœurs",
+  "publication": "1785, 1re section, trad. V. Delbos, Nathan, 1989, p. 31–32",
+  "description": "Si la raison nous rend parfois moins heureux, quelle peut être sa véritable fonction pratique ?",
+  "context": "Kant part d’un paradoxe : la <strong>raison</strong> n’est pas le meilleur moyen d’atteindre le bonheur. Si elle nous a pourtant été donnée comme faculté pratique, sa destination doit être ailleurs : produire une <strong>bonne volonté</strong>, bonne en elle-même.",
+  "readingQuestions": [
+    "Pourquoi la raison paraît-elle mal adaptée à la recherche du <strong>bonheur</strong> ?",
+    "Qu’est-ce qu’une <strong>bonne volonté</strong> qui vaut par elle-même ?",
+    "Pourquoi le concept de <strong>devoir</strong> permet-il de faire apparaître plus clairement cette valeur morale ?"
+  ],
+  "glossary": [
+    {
+      "term": "raison pratique",
+      "definition": "Usage de la raison qui ne vise pas seulement à connaître, mais à déterminer la volonté et l’action."
+    },
+    {
+      "term": "volonté bonne",
+      "definition": "Volonté estimable en elle-même, indépendamment des avantages ou du bonheur qu’elle produit."
+    },
+    {
+      "term": "devoir",
+      "definition": "Nécessité d’une action par respect pour une loi morale reconnue comme valable."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Bonheur",
+        "definition": "Fin conditionnée par des besoins, des inclinations et des circonstances variables."
+      },
+      "right": {
+        "term": "Bonne volonté",
+        "definition": "Valeur morale qui ne dépend pas de la réussite extérieure ni de la satisfaction sensible."
+      },
+      "conclusion": "La raison pratique reçoit chez Kant une destination morale plutôt qu’un rôle d’instrument du bonheur."
+    },
+    {
+      "type": "analysis",
+      "term": "Pourquoi partir du devoir ?",
+      "definition": "Kant estime que le concept de bonne volonté est déjà présent dans le jugement moral ordinaire. Le devoir permet d’en faire ressortir le principe en le distinguant des inclinations concurrentes."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-agir-par-devoir",
+      "kind": "proche",
+      "label": "Kant — Agir par devoir donne sa valeur morale à l’action",
+      "relation": "Le texte suivant précise comment reconnaître une volonté déterminée par le devoir plutôt que par l’inclination."
+    },
+    {
+      "id": "schopenhauer-pitie-fondement-morale",
+      "kind": "adverse",
+      "label": "Schopenhauer — La pitié est la racine de la moralité",
+      "relation": "Schopenhauer conteste implicitement l’idée qu’une loi rationnelle constitue le fondement concret de la morale."
+    },
+    {
+      "id": "mill-qualite-plaisirs-morale",
+      "kind": "adverse",
+      "label": "Mill — La morale interroge la qualité de notre bonheur",
+      "relation": "Mill assume au contraire une morale orientée vers le bonheur et les conséquences."
+    }
+  ],
+  "paragraphs": [
+    "Puisque, en effet, la raison n’est pas suffisamment capable de gouverner sûrement la volonté à l’égard de ses objets et de la satisfaction de tous nos besoins (qu’elle-même multiplie pour une part), et qu’à cette fin un instinct naturel inné l’aurait plus sûrement conduite ; puisque néanmoins la raison nous a été départie comme puissance pratique, c’est-à-dire comme puissance qui doit avoir de l’influence sur la volonté, il faut que sa vraie destination soit de produire une volonté bonne, non pas comme moyen en vue de quelque autre fin, mais bonne en soi-même ; c’est par là qu’une raison était absolument nécessaire, du moment que partout ailleurs la nature, dans la répartition de ses propriétés, a procédé suivant des fins.",
+    "Il se peut ainsi que cette volonté ne soit pas l’unique bien, le bien tout entier ; mais elle est néanmoins nécessairement le bien suprême, condition dont dépend tout autre bien, même toute aspiration au bonheur. Dans ce cas, il est parfaitement possible d’accorder avec la sagesse de la nature le fait que la culture de la raison, indispensable pour la première de ces fins qui est inconditionnée, quand il s’agit de la seconde, le bonheur, qui est toujours conditionnée, en limite de bien des manières et même peut en réduire à rien, au moins dans cette vie, la réalisation.",
+    "En cela la nature n’agit pas contre toute finalité ; car la raison qui reconnaît sa plus haute destination pratique et se fonde une bonne volonté, ne peut trouver dans l’accomplissement de ce dessein qu’une satisfaction qui lui convienne, c’est-à-dire qui résulte de la réalisation d’une fin que seule encore une fois elle détermine, cela même ne dût-il pas aller sans quelque préjudice porté aux fins de l’inclination.",
+    "Il faut donc développer le concept d’une volonté souverainement estimable en elle-même, d’une volonté bonne indépendamment de toute intention ultérieure, tel qu’il est inhérent déjà à l’intelligence naturelle saine, objet non pas tant d’un enseignement que d’une simple explication indispensable, ce concept qui tient toujours la plus haute place dans l’appréciation de la valeur complète de nos actions et qui constitue la condition de tout le reste ; pour cela nous allons examiner le concept du DEVOIR, qui contient celui d’une bonne volonté, avec certaines restrictions, il est vrai, et certaines entraves subjectives, mais qui, bien loin de le dissimuler et de le rendre méconnaissable, le font plutôt ressortir par contraste et le rendent d’autant plus éclatant."
+  ]
+},
+    {
+  "id": "mill-qualite-plaisirs-morale",
+  "section": "philosophie",
+  "cardMeta": "Utilitarisme",
+  "title": "La morale interroge la qualité de notre bonheur, non sa quantité",
+  "author": "John Stuart Mill",
+  "authorTag": "Mill",
+  "cardHighlight": "qualité de notre bonheur",
+  "familiarIdea": "« Socrate insatisfait plutôt qu’un imbécile satisfait »",
+  "authorMeta": "(1806–1873) · utilitarisme",
+  "themes": [
+    "Devoir",
+    "Bonheur"
+  ],
+  "work": "L’Utilitarisme",
+  "publication": "1863, trad. P. L. Le Monnier, Alcan, 1889, p. 16–18",
+  "description": "Tous les plaisirs se valent-ils, ou faut-il distinguer leur qualité pour penser le bonheur moral ?",
+  "context": "Mill défend l’<strong>utilitarisme</strong>, mais refuse de réduire le bonheur à une simple quantité de plaisirs. Certains plaisirs valent davantage parce qu’ils engagent des facultés humaines plus élevées, même s’ils rendent parfois moins facilement satisfait.",
+  "readingQuestions": [
+    "Pourquoi Mill distingue-t-il des plaisirs de <strong>qualité</strong> différente ?",
+    "Pourquoi le <strong>bonheur</strong> ne se réduit-il pas au simple contentement ?",
+    "Que signifie la formule selon laquelle il vaut mieux être « Socrate insatisfait » qu’un imbécile satisfait ?"
+  ],
+  "glossary": [
+    {
+      "term": "utilitarisme",
+      "definition": "Doctrine morale qui évalue les actions notamment par leurs conséquences sur le bonheur ou le bien-être."
+    },
+    {
+      "term": "qualité",
+      "definition": "Différence de nature ou de valeur entre des plaisirs, irréductible à leur seule intensité ou durée."
+    },
+    {
+      "term": "contentement",
+      "definition": "Satisfaction effective des désirs ; Mill la distingue du bonheur d’un être dont les facultés sont plus développées."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Quantité de plaisir",
+        "definition": "Mesure des plaisirs par leur intensité, leur durée ou leur nombre."
+      },
+      "right": {
+        "term": "Qualité des plaisirs",
+        "definition": "Hiérarchie fondée sur le type de facultés et de vie auxquels les plaisirs sont liés."
+      },
+      "conclusion": "Mill complexifie l’hédonisme : le bonheur humain ne se réduit pas au maximum de sensations agréables."
+    },
+    {
+      "type": "concept",
+      "term": "Dignité des facultés supérieures",
+      "definition": "Un être capable d’activités intellectuelles, morales et affectives plus riches peut préférer une satisfaction moins complète à l’abandon de ces capacités."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-morale-dignite-bonheur",
+      "kind": "adverse",
+      "label": "Kant — La morale n’a pas le bonheur pour but",
+      "relation": "Kant refuse de faire du bonheur le principe de la morale, tandis que Mill en fait son horizon tout en distinguant la qualité des plaisirs."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "proche",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Épicure et Mill refusent tous deux une compréhension simplement quantitative ou immédiate du plaisir."
+    },
+    {
+      "id": "seneque-vie-vertueuse",
+      "kind": "adverse",
+      "label": "Sénèque — La vie vertueuse suffit à la vie heureuse",
+      "relation": "Sénèque fait de la vertu le principe du bonheur, là où Mill maintient une morale conséquentialiste du bien-être."
+    }
+  ],
+  "paragraphs": [
+    "Il serait absurde de ne considérer que la quantité lorsqu’il s’agit d’évaluer les plaisirs. Si l’on me demande ce que j’entends par différence de qualité dans les plaisirs, ou comment la valeur d’un plaisir comparé à un autre peut être connue autrement que par un rapport de quantité, je ne vois qu’une seule réponse possible. Si entre deux plaisirs, tous ou presque tous ceux qui les ont expérimentés choisissent l’un des deux […], celui-là sera le plaisir le plus désirable. Si l’un de ces deux plaisirs est placé par les gens compétents très au-dessus de l’autre quoiqu’il soit difficile à atteindre, si on refuse d’abandonner sa poursuite pour la possession de l’autre, on peut assurer que le premier plaisir est bien supérieur au second en qualité quoiqu’il soit moindre peut-être en quantité.",
+    "Il est un fait indiscutable : ceux qui connaissent et apprécient deux sortes de manière de vivre donnent une préférence marquée à celle qui emploiera leurs facultés les plus élevées. Peu de créatures humaines accepteraient d’être changées en animaux les plus bas si on leur promettait la complète jouissance des plaisirs des bêtes ; aucun homme intelligent ne consentirait à devenir imbécile, aucune personne instruite à devenir ignorant, aucune personne de cœur et de conscience à devenir égoïste et basse, même si on leur persuadait que l’imbécile, l’ignorant, l’égoïste sont plus satisfaits de leurs lots qu’elles des leurs. Elles ne se résigneraient pas à abandonner ce qu’elles possèdent en plus de ces êtres pour la complète satisfaction de tous les désirs qu’elles ont en commun avec eux. […] Celui qui suppose que […] l’être supérieur n’est pas plus heureux que l’être inférieur, confond les deux idées très différentes du bonheur et du contentement.",
+    "On ne peut nier que l’être dont les capacités de jouissance sont inférieures a les plus grandes chances de les voir pleinement satisfaites, et que l’être doué supérieurement sentira toujours l’imperfection des plaisirs qu’il désire.",
+    "Mais cet être supérieur peut apprendre à supporter cette imperfection ; elle ne le rendra pas jaloux de l’être qui n’a pas conscience de cette imperfection, parce qu’il n’entrevoit pas l’excellence que fait entrevoir toute imperfection. Il vaut mieux être un homme malheureux qu’un porc satisfait, être Socrate mécontent plutôt qu’un imbécile heureux."
+  ]
+},
+    {
+  "id": "kant-morale-dignite-bonheur",
+  "section": "philosophie",
+  "cardMeta": "Morale déontologique",
+  "title": "La morale n’a pas le bonheur pour but",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "pas le bonheur pour but",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Devoir",
+    "Bonheur",
+    "Religion"
+  ],
+  "work": "Critique de la raison pratique",
+  "publication": "1788, trad. F. Picavet, PUF, 1997, p. 139–140",
+  "description": "La morale doit-elle nous apprendre à être heureux, ou seulement à nous rendre dignes du bonheur ?",
+  "context": "Kant refuse de faire du bonheur le but de la morale. La loi morale nous demande d’abord d’accomplir notre <strong>devoir</strong> ; le bonheur n’intervient qu’ensuite, dans l’idée d’un accord possible entre vertu et bonheur.",
+  "readingQuestions": [
+    "Quelle différence Kant établit-il entre être heureux et être <strong>digne du bonheur</strong> ?",
+    "Pourquoi la morale ne peut-elle pas être un simple moyen d’obtenir le bonheur ?",
+    "Pourquoi l’idée d’un accord final entre vertu et bonheur conduit-elle Kant vers la <strong>religion</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "souverain bien",
+      "definition": "Chez Kant, union du bonheur et de la moralité selon un ordre où la vertu demeure la condition première."
+    },
+    {
+      "term": "dignité du bonheur",
+      "definition": "Condition morale qui rend un sujet digne de participer au bonheur, sans que la morale garantisse elle-même sa réalisation."
+    },
+    {
+      "term": "condition sine qua non",
+      "definition": "Condition sans laquelle une chose ne peut pas être possible."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Doctrine du bonheur",
+        "definition": "Ensemble de conseils visant à obtenir la satisfaction ou le bien-être."
+      },
+      "right": {
+        "term": "Doctrine morale",
+        "definition": "Détermine ce que nous devons faire indépendamment de la recherche du bonheur."
+      },
+      "conclusion": "La moralité ne tire pas sa valeur de ses effets heureux ; elle constitue la condition rationnelle de la dignité au bonheur."
+    },
+    {
+      "type": "concept",
+      "term": "Souverain bien",
+      "definition": "Le souverain bien associe la vertu et le bonheur, mais sans subordonner la première au second : la moralité reste la condition fondamentale."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "mill-qualite-plaisirs-morale",
+      "kind": "adverse",
+      "label": "Mill — La morale interroge la qualité de notre bonheur",
+      "relation": "Mill place le bonheur au cœur de l’évaluation morale ; Kant refuse d’en faire le principe déterminant de l’action."
+    },
+    {
+      "id": "kant-raison-volonte-bonne",
+      "kind": "proche",
+      "label": "Kant — La morale doit être fondée sur la raison",
+      "relation": "Le fondement rationnel de la bonne volonté explique pourquoi la morale ne peut être subordonnée au bonheur."
+    },
+    {
+      "id": "augustin-dieu-bonheur",
+      "kind": "proche",
+      "label": "Augustin — Le bonheur véritable se trouve en Dieu",
+      "relation": "Le rapprochement éclaire deux manières très différentes d’articuler bonheur et religion."
+    }
+  ],
+  "paragraphs": [
+    "La morale n’est donc pas à proprement parler la doctrine qui nous enseigne comment nous devons nous rendre heureux, mais comment nous devons nous rendre dignes du bonheur. C’est seulement lorsque la religion s’y ajoute, qu’entre en nous l’espérance de participer un jour au bonheur dans la mesure où nous avons essayé de n’en être pas indignes.",
+    "Quelqu’un est digne de posséder une chose ou un état, quand le fait qu’il la possède est en harmonie avec le souverain bien. On peut maintenant voir facilement que tout ce qui nous donne la dignité dépend de la conduite morale, parce que celle-ci constitue dans le concept du souverain bien la condition du reste (et ce qui appartient à l’état de la personne), à savoir la condition de la participation au bonheur. Il suit donc de là qu’on ne doit jamais traiter la morale en soi comme une doctrine du bonheur, c’est-à-dire comme une doctrine qui nous apprendrait comment devenir heureux, car elle n’a exclusivement affaire qu’à la condition rationnelle du bonheur et non à un moyen de l’obtenir.",
+    "Mais quand elle a été exposée complètement (elle qui impose simplement des devoirs et ne donne pas de règles à des désirs intéressés), quand s’est éveillé le désir moral, qui se fonde sur une loi, de travailler au souverain bien (de nous procurer le royaume de Dieu), désir qui n’a pu auparavant naître dans une âme intéressée, quand, pour venir en aide à ce désir, le premier pas vers la religion a été fait, alors seulement cette doctrine morale peut être appelée aussi doctrine du bonheur, parce que l’espoir d’obtenir ce bonheur ne commence qu’avec la religion."
+  ]
+},
     {
       id:"schopenhauer-bonheur-absence-souffrance", section:"philosophie",
       cardMeta:"Pessimisme moderne",
@@ -39,140 +3993,348 @@
       ]
     },
     {
-      id:"schopenhauer-bien-etre-negation", section:"philosophie",
-      cardMeta:"Pessimisme moderne",
-      title:"Le bien-être ne se ressent qu’après sa perte", author:"Arthur Schopenhauer", authorTag:"Schopenhauer",
-      cardHighlight:"après sa perte",
-      authorMeta:"(1788–1860) · pessimisme moderne",
-      themes:["Bonheur", "Temps"], work:"Le Monde comme volonté et comme représentation", publication:"1819, trad. A. Burdeau",
-      description:"Pourquoi ressentons-nous vivement la douleur, tandis que le bien-être demeure presque invisible ?",
-      context:"Schopenhauer examine l’asymétrie entre <strong>douleur</strong> et <strong>plaisir</strong>, puis montre comment elle transforme notre expérience du <em>temps</em>.",
-      readingQuestions:[
-        "Pourquoi le <strong>bien-être</strong> n’est-il perçu qu’au moment où il disparaît ?",
-        "Que révèle l’expérience du <em>temps</em> sur la différence entre plaisir et souffrance ?"
-      ],
-      relatedTexts:[
-        { id:"schopenhauer-bonheur-absence-souffrance", kind:"proche", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Le même auteur en tire directement une règle de vie : préférer l’évitement des douleurs à la recherche des jouissances." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Le plaisir y est aussi défini par l’absence de douleur et de trouble." },
-        { id:"pascal-bonheur-avenir", kind:"proche", label:"Pascal — Espérer le bonheur, c’est se condamner à ne jamais l’obtenir", relation:"Les deux textes montrent que notre rapport au temps nous empêche de reconnaître le bonheur présent." }
-      ],
-      paragraphs:[
-        "Nous sentons la douleur, mais non l'absence de douleur ; le souci, mais non l'absence de souci ; la crainte, mais non la sécurité. Nous ressentons le désir, comme nous ressentons la faim et la soif ; mais le désir est-il rempli, aussitôt il en advient de lui comme de ces morceaux goûtés par nous et qui cessent d'exister pour notre sensibilité, dès le moment où nous les avalons.",
-        "Nous remarquons douloureusement l'absence des jouissances et des joies, et nous les regrettons aussitôt ; au contraire, la disparition de la douleur, quand même elle ne nous quitte qu'après longtemps, n'est pas immédiatement sentie, mais tout au plus y pense-t-on parce qu'on veut y penser, par le moyen de la réflexion. Seules, en effet, la douleur et la privation peuvent produire une impression positive et par là se dénoncer d'elles-mêmes : le bien-être, au contraire, n'est que pure négation.",
-        "Aussi n'apprécions-nous pas les trois plus grands biens de la vie, la santé, la jeunesse et la liberté, tant que nous les possédons ; pour en comprendre la valeur, il faut que nous les ayons perdus, car ils sont aussi négatifs. Que notre vie était heureuse, c'est ce dont nous ne nous apercevons qu'au moment où ces jours heureux ont fait place à des jours malheureux.",
-        "Autant les jouissances augmentent, autant diminue l'aptitude à les goûter : le plaisir devenu habitude n'est plus éprouvé comme tel. Mais par là même grandit la faculté de ressentir la souffrance ; car la disparition d'un plaisir habituel cause une impression douloureuse. Ainsi la possession accroît la mesure de nos besoins, et du même coup la capacité de ressentir la douleur.",
-        "Le cours des heures est d'autant plus rapide qu'elles sont plus agréables, d'autant plus lent qu'elles sont plus pénibles ; car le chagrin, et non le plaisir, est l'élément positif, dont la présence se fait remarquer. De même, nous avons conscience du temps dans les moments d'ennui, non dans les instants agréables. Ces deux faits prouvent que la partie la plus heureuse de notre existence est celle où nous la sentons le moins ; d'où il suit qu'il vaudrait mieux pour nous ne pas la posséder.",
-        "Une grande, une vive joie ne se peut absolument concevoir qu'à la suite d'un grand besoin passé ; car peut-il s'ajouter rien d'autre à un état de contentement durable qu'un peu d'agrément ou quelque satisfaction de vanité ? Aussi tous les poètes sont-ils contraints de placer leurs héros dans des situations douloureuses et pénibles, pour les en pouvoir ensuite tirer ; le drame et l'épopée ne peignent généralement, en conséquence, que des hommes en proie aux luttes, aux souffrances, aux tourments, et chaque roman est un vrai panorama, où l'on contemple les spasmes et les convulsions du cœur humain angoissé."
+  "id": "schopenhauer-bien-etre-negation",
+  "section": "philosophie",
+  "cardMeta": "Pessimisme moderne",
+  "title": "Le bien-être ne se ressent qu’après sa perte",
+  "author": "Arthur Schopenhauer",
+  "authorTag": "Schopenhauer",
+  "cardHighlight": "après sa perte",
+  "authorMeta": "(1788–1860) · pessimisme moderne",
+  "themes": [
+    "Bonheur",
+    "Temps"
+  ],
+  "work": "Le Monde comme volonté et comme représentation",
+  "publication": "1819, trad. A. Burdeau",
+  "description": "Pourquoi ressentons-nous vivement la douleur, tandis que le bien-être demeure presque invisible ?",
+  "context": "Schopenhauer souligne une asymétrie : la <strong>douleur</strong> se fait immédiatement sentir, tandis que le bien-être passe souvent inaperçu. Notre rapport au <strong>temps</strong> révèle cette différence, car l’ennui et la souffrance modifient profondément la manière dont nous éprouvons sa durée.",
+  "readingQuestions": [
+    "Pourquoi le <strong>bien-être</strong> passe-t-il souvent inaperçu tant qu’il dure ?",
+    "Pourquoi la douleur et l’ennui rendent-ils au contraire le <strong>temps</strong> si sensible ?",
+    "Que révèle cette différence sur la manière dont Schopenhauer pense le plaisir et la souffrance ?"
+  ],
+  "relatedTexts": [
+    {
+      "id": "schopenhauer-bonheur-absence-souffrance",
+      "kind": "proche",
+      "label": "Schopenhauer — Le bonheur comme absence de souffrance",
+      "relation": "Le même auteur en tire directement une règle de vie : préférer l’évitement des douleurs à la recherche des jouissances."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "proche",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Le plaisir y est aussi défini par l’absence de douleur et de trouble."
+    },
+    {
+      "id": "pascal-bonheur-avenir",
+      "kind": "proche",
+      "label": "Pascal — Espérer le bonheur, c’est se condamner à ne jamais l’obtenir",
+      "relation": "Les deux textes montrent que notre rapport au temps nous empêche de reconnaître le bonheur présent."
+    }
+  ],
+  "paragraphs": [
+    "Nous sentons la douleur, mais non l'absence de douleur ; le souci, mais non l'absence de souci ; la crainte, mais non la sécurité. Nous ressentons le désir, comme nous ressentons la faim et la soif ; mais le désir est-il rempli, aussitôt il en advient de lui comme de ces morceaux goûtés par nous et qui cessent d'exister pour notre sensibilité, dès le moment où nous les avalons.",
+    "Nous remarquons douloureusement l'absence des jouissances et des joies, et nous les regrettons aussitôt ; au contraire, la disparition de la douleur, quand même elle ne nous quitte qu'après longtemps, n'est pas immédiatement sentie, mais tout au plus y pense-t-on parce qu'on veut y penser, par le moyen de la réflexion. Seules, en effet, la douleur et la privation peuvent produire une impression positive et par là se dénoncer d'elles-mêmes : le bien-être, au contraire, n'est que pure négation.",
+    "Aussi n'apprécions-nous pas les trois plus grands biens de la vie, la santé, la jeunesse et la liberté, tant que nous les possédons ; pour en comprendre la valeur, il faut que nous les ayons perdus, car ils sont aussi négatifs. Que notre vie était heureuse, c'est ce dont nous ne nous apercevons qu'au moment où ces jours heureux ont fait place à des jours malheureux.",
+    "Autant les jouissances augmentent, autant diminue l'aptitude à les goûter : le plaisir devenu habitude n'est plus éprouvé comme tel. Mais par là même grandit la faculté de ressentir la souffrance ; car la disparition d'un plaisir habituel cause une impression douloureuse. Ainsi la possession accroît la mesure de nos besoins, et du même coup la capacité de ressentir la douleur.",
+    "Le cours des heures est d'autant plus rapide qu'elles sont plus agréables, d'autant plus lent qu'elles sont plus pénibles ; car le chagrin, et non le plaisir, est l'élément positif, dont la présence se fait remarquer. De même, nous avons conscience du temps dans les moments d'ennui, non dans les instants agréables. Ces deux faits prouvent que la partie la plus heureuse de notre existence est celle où nous la sentons le moins ; d'où il suit qu'il vaudrait mieux pour nous ne pas la posséder.",
+    "Une grande, une vive joie ne se peut absolument concevoir qu'à la suite d'un grand besoin passé ; car peut-il s'ajouter rien d'autre à un état de contentement durable qu'un peu d'agrément ou quelque satisfaction de vanité ? Aussi tous les poètes sont-ils contraints de placer leurs héros dans des situations douloureuses et pénibles, pour les en pouvoir ensuite tirer ; le drame et l'épopée ne peignent généralement, en conséquence, que des hommes en proie aux luttes, aux souffrances, aux tourments, et chaque roman est un vrai panorama, où l'on contemple les spasmes et les convulsions du cœur humain angoissé."
+  ]
+},
+    {
+  "id": "epictete-depend-nous",
+  "section": "philosophie",
+  "cardMeta": "Stoïcisme",
+  "title": "La liberté commence par ce qui dépend de nous",
+  "author": "Épictète",
+  "authorTag": "Épictète",
+  "cardHighlight": "ce qui dépend de nous",
+  "familiarIdea": "ce qui dépend de nous",
+  "authorMeta": "(v. 50–v. 135) · stoïcien",
+  "themes": [
+    "Liberté",
+    "Désir"
+  ],
+  "work": "Manuel",
+  "publication": "IIe s. apr. J.-C.",
+  "description": "Comment préserver sa liberté intérieure face à ce qui échappe à notre pouvoir ?",
+  "context": "Épictète sépare ce qui relève de notre <strong>jugement</strong> et de notre <strong>désir</strong> de ce qui dépend des circonstances. La liberté se joue d’abord dans cette distinction.",
+  "readingQuestions": [
+    "Pourquoi le <strong>corps</strong>, la richesse ou la considération d’autrui ne dépendent-ils pas de nous ?",
+    "Comment la maîtrise de nos jugements permet-elle d’être plus <strong>libre</strong> ?"
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès fait de l’expansion des désirs et de l’absence de frein la vraie liberté."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "proche",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Comme le stoïcien, Épicure invite à examiner et hiérarchiser ses désirs."
+    },
+    {
+      "id": "descartes-changer-desirs",
+      "kind": "proche",
+      "label": "Descartes — Pour être heureux, il faut changer ses désirs",
+      "relation": "Descartes reprend la distinction stoïcienne entre ce qui dépend de nous et ce qui échappe à notre pouvoir."
+    }
+  ],
+  "paragraphs": [
+    "Des choses les unes dépendent de nous, les autres ne dépendent pas de nous. Ce qui dépend de nous, ce sont nos jugements, nos tendances, nos désirs, nos aversions, en un mot tout ce qui est opération de notre âme ; ce qui ne dépend pas de nous, c'est le corps, la fortune, les témoignages de considération, les charges publiques, en un mot tout ce qui n'est pas opération de notre âme.",
+    "Ce qui dépend de nous est, de sa nature, libre, sans empêchement, sans contrariété ; ce qui ne dépend pas de nous est inconsistant, esclave, sujet à empêchement, étranger.",
+    "Souviens-toi donc que si tu regardes comme libre ce qui de sa nature est esclave, et comme étant à toi ce qui est à autrui, tu seras contrarié, tu seras dans le deuil, tu seras troublé, tu t'en prendras et aux dieux et aux hommes ; mais si tu ne regardes comme étant à toi que ce qui est à toi, et si tu regardes comme étant à autrui ce qui, en effet, est à autrui, personne ne te contraindra jamais, personne ne t'empêchera, tu ne t'en prendras à personne, tu n'accuseras personne, tu ne feras absolument rien contre ton gré, personne ne te nuira ; tu n'auras pas d'ennemi, car tu ne souffriras rien de nuisible.",
+    "Aspirant à de si grands biens, songe qu'il ne faut pas te porter mollement à les rechercher, qu'il faut renoncer entièrement à certaines choses et en ajourner d'autres quant au présent. Mais si outre ces biens tu veux encore le pouvoir et la richesse, peut-être n'obtiendras-tu même pas ces avantages parce que tu aspires en même temps aux autres biens, et, en tout cas, ce qu'il y a de certain, c'est que tu manqueras les biens qui peuvent seuls nous procurer la liberté et le bonheur.",
+    "Ainsi, à toute idée rude, exerce-toi à dire aussitôt : « Tu es une idée, et tu n'es pas tout à fait ce que tu représentes. » Puis examine-la, applique les règles que tu sais, et d'abord et avant toutes les autres celle qui fait reconnaître si quelque chose dépend ou ne dépend pas de nous ; et si l'idée est relative à quelque chose qui ne dépend pas de nous, sois prêt à dire : « Cela ne me regarde pas. »"
+  ]
+},
+    {
+  "id": "epicure-plaisir-vie-heureuse",
+  "section": "philosophie",
+  "cardMeta": "Épicurisme",
+  "title": "Hiérarchiser ses désirs pour vivre heureux",
+  "author": "Épicure",
+  "authorTag": "Épicure",
+  "cardHighlight": "Hiérarchiser ses désirs",
+  "familiarIdea": "la classification des désirs",
+  "cardIdea": "L’ataraxie épicurienne",
+  "authorMeta": "(341–270 av. J.-C.) · fondateur de l’épicurisme",
+  "themes": [
+    "Bonheur",
+    "Désir",
+    "Raison"
+  ],
+  "work": "Lettre à Ménécée",
+  "publication": "IIIe s. av. J.-C., trad. M. Solovine, Hermann, 1987, p. 100–102",
+  "description": "Comment distinguer les désirs et calculer les plaisirs qui conduisent réellement à la vie heureuse ?",
+  "context": "Épicure ne recommande pas de satisfaire tous les désirs. Il faut les <strong>classer</strong>, puis comparer les conséquences des plaisirs et des douleurs afin d’atteindre l’<em>ataraxie</em>, la tranquillité de l’âme.",
+  "readingQuestions": [
+    "Quels désirs Épicure distingue-t-il, et lesquels sont réellement nécessaires ?",
+    "Pourquoi le <strong>plaisir</strong> est-il le principe de la vie heureuse sans qu’il faille rechercher tous les plaisirs ?",
+    "Pourquoi faut-il parfois refuser un plaisir ou accepter une douleur pour atteindre l’<em>ataraxie</em> ?"
+  ],
+  "glossary": [
+    {
+      "term": "désirs vains",
+      "definition": "Désirs qui ne répondent à aucun besoin naturel et n’ont pas de limite intrinsèque, comme la recherche indéfinie de richesse ou de gloire."
+    },
+    {
+      "term": "ataraxie",
+      "definition": "Absence de trouble et d’agitation de l’âme ; elle constitue, avec l’absence de douleur corporelle, l’état stable recherché par Épicure."
+    },
+    {
+      "term": "bien principal",
+      "definition": "Bien premier à partir duquel les autres choix sont évalués. Pour Épicure, il s’agit du plaisir correctement compris."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Épicurisme",
+      "badge": "école matérialiste",
+      "definition": "Le plaisir sobre et stable est le principe de la vie heureuse. Il ne s’agit pas d’accumuler les jouissances, mais de choisir rationnellement ses désirs."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "<em>ataraxia</em>",
+        "definition": "Absence de trouble de l’âme."
+      },
+      "right": {
+        "term": "<em>aponia</em>",
+        "definition": "Absence de douleur du corps."
+      },
+      "conclusion": "Ensemble, elles définissent le plaisir stable recherché par Épicure."
+    },
+    {
+      "type": "analysis",
+      "term": "La hiérarchie des désirs",
+      "definition": "Épicure distingue trois catégories.",
+      "items": [
+        "Les désirs <strong>naturels et nécessaires</strong> — <em>physikaì kaì anankaîai</em> (φυσικαὶ καὶ ἀναγκαῖαι) — répondent aux exigences de la vie, de la tranquillité du corps ou du bonheur.",
+        "Les désirs <strong>seulement naturels</strong> — <em>physikaì mónon</em> (φυσικαὶ μόνον) — procurent un agrément dont on peut se passer.",
+        "Les désirs <strong>vains</strong> — <em>kenaí</em> (κεναί) — sont produits par l’opinion, sans limite naturelle, et entretiennent l’inquiétude."
       ]
     },
     {
-      id:"epictete-depend-nous", section:"philosophie",
-      cardMeta:"Stoïcisme",
-      title:"La liberté commence par ce qui dépend de nous", author:"Épictète", authorTag:"Épictète",
-      cardHighlight:"ce qui dépend de nous",
-      authorMeta:"(v. 50–v. 135) · stoïcien", themes:["Liberté", "Désir"], work:"Manuel", publication:"IIe s. apr. J.-C.",
-      description:"Comment préserver sa liberté intérieure face à ce qui échappe à notre pouvoir ?",
-      context:"Épictète sépare ce qui relève de notre <strong>jugement</strong> et de notre <strong>désir</strong> de ce qui dépend des circonstances. La liberté se joue d’abord dans cette distinction.",
-      readingQuestions:[
-        "Pourquoi le <strong>corps</strong>, la richesse ou la considération d’autrui ne dépendent-ils pas de nous ?",
-        "Comment la maîtrise de nos jugements permet-elle d’être plus <strong>libre</strong> ?"
-      ],
-      relatedTexts:[
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès fait de l’expansion des désirs et de l’absence de frein la vraie liberté." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"proche", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Comme le stoïcien, Épicure invite à examiner et hiérarchiser ses désirs." },
-        { id:"descartes-changer-desirs", kind:"proche", label:"Descartes — Pour être heureux, il faut changer ses désirs", relation:"Descartes reprend la distinction stoïcienne entre ce qui dépend de nous et ce qui échappe à notre pouvoir." }
-      ],
-      paragraphs:[
-        "Des choses les unes dépendent de nous, les autres ne dépendent pas de nous. Ce qui dépend de nous, ce sont nos jugements, nos tendances, nos désirs, nos aversions, en un mot tout ce qui est opération de notre âme ; ce qui ne dépend pas de nous, c'est le corps, la fortune, les témoignages de considération, les charges publiques, en un mot tout ce qui n'est pas opération de notre âme.",
-        "Ce qui dépend de nous est, de sa nature, libre, sans empêchement, sans contrariété ; ce qui ne dépend pas de nous est inconsistant, esclave, sujet à empêchement, étranger.",
-        "Souviens-toi donc que si tu regardes comme libre ce qui de sa nature est esclave, et comme étant à toi ce qui est à autrui, tu seras contrarié, tu seras dans le deuil, tu seras troublé, tu t'en prendras et aux dieux et aux hommes ; mais si tu ne regardes comme étant à toi que ce qui est à toi, et si tu regardes comme étant à autrui ce qui, en effet, est à autrui, personne ne te contraindra jamais, personne ne t'empêchera, tu ne t'en prendras à personne, tu n'accuseras personne, tu ne feras absolument rien contre ton gré, personne ne te nuira ; tu n'auras pas d'ennemi, car tu ne souffriras rien de nuisible.",
-        "Aspirant à de si grands biens, songe qu'il ne faut pas te porter mollement à les rechercher, qu'il faut renoncer entièrement à certaines choses et en ajourner d'autres quant au présent. Mais si outre ces biens tu veux encore le pouvoir et la richesse, peut-être n'obtiendras-tu même pas ces avantages parce que tu aspires en même temps aux autres biens, et, en tout cas, ce qu'il y a de certain, c'est que tu manqueras les biens qui peuvent seuls nous procurer la liberté et le bonheur.",
-        "Ainsi, à toute idée rude, exerce-toi à dire aussitôt : « Tu es une idée, et tu n'es pas tout à fait ce que tu représentes. » Puis examine-la, applique les règles que tu sais, et d'abord et avant toutes les autres celle qui fait reconnaître si quelque chose dépend ou ne dépend pas de nous ; et si l'idée est relative à quelque chose qui ne dépend pas de nous, sois prêt à dire : « Cela ne me regarde pas. »"
-      ]
+      "type": "opposition",
+      "left": {
+        "term": "En théorie",
+        "definition": "Tout plaisir est un bien et toute douleur est un mal par leur nature propre."
+      },
+      "right": {
+        "term": "En pratique",
+        "definition": "Un plaisir peut produire davantage de souffrance et une douleur peut conduire à un plaisir supérieur."
+      },
+      "conclusion": "Le plaisir n’est pas une consigne aveugle : chaque choix exige un calcul de ses conséquences."
     },
     {
-      id:"epicure-plaisir-vie-heureuse", section:"philosophie",
-      cardMeta:"Épicurisme",
-      title:"Hiérarchiser ses désirs pour vivre heureux", author:"Épicure", authorTag:"Épicure",
-      cardHighlight:"Hiérarchiser ses désirs",
-      cardIdea:"L’ataraxie épicurienne",
-      authorMeta:"(341–270 av. J.-C.) · fondateur de l’épicurisme", themes:["Bonheur", "Désir", "Raison"], work:"Lettre à Ménécée", publication:"IIIe s. av. J.-C., trad. M. Solovine, Hermann, 1987, p. 100–102",
-      description:"Comment distinguer les désirs et calculer les plaisirs qui conduisent réellement à la vie heureuse ?",
-      context:"Épicure ne recommande pas de satisfaire tous les désirs. Il faut les <strong>classer</strong>, puis comparer les conséquences des plaisirs et des douleurs afin d’atteindre l’<em>ataraxie</em>, la tranquillité de l’âme.",
-      readingQuestions:[
-        "Quels sont les différents types de <strong>désirs</strong>, et lesquels sont véritablement nécessaires ?",
-        "Pourquoi la tranquillité de l’âme et la santé du corps constituent-elles la perfection de la vie heureuse ?",
-        "Pourquoi Épicure peut-il dire que le <strong>plaisir</strong> est le commencement et la fin de la vie heureuse ?",
-        "À quelles conditions faut-il renoncer à un plaisir ou accepter une <strong>douleur</strong> ?",
-        "Pourquoi le choix pratique dépend-il finalement de la distinction entre l’utile et le nuisible ?"
-      ],
-      glossary:[
-        { term:"désirs vains", definition:"Désirs qui ne répondent à aucun besoin naturel et n’ont pas de limite intrinsèque, comme la recherche indéfinie de richesse ou de gloire." },
-        { term:"ataraxie", definition:"Absence de trouble et d’agitation de l’âme ; elle constitue, avec l’absence de douleur corporelle, l’état stable recherché par Épicure." },
-        { term:"bien principal", definition:"Bien premier à partir duquel les autres choix sont évalués. Pour Épicure, il s’agit du plaisir correctement compris." }
-      ],
-      readingNotes:[
-        { type:"concept", term:"Épicurisme", badge:"école matérialiste", definition:"Le plaisir sobre et stable est le principe de la vie heureuse. Il ne s’agit pas d’accumuler les jouissances, mais de choisir rationnellement ses désirs." },
-        { type:"opposition", left:{ term:"<em>ataraxia</em>", definition:"Absence de trouble de l’âme." }, right:{ term:"<em>aponia</em>", definition:"Absence de douleur du corps." }, conclusion:"Ensemble, elles définissent le plaisir stable recherché par Épicure." },
-        { type:"analysis", term:"La hiérarchie des désirs", definition:"Épicure distingue trois catégories.", items:["Les désirs <strong>naturels et nécessaires</strong> — <em>physikaì kaì anankaîai</em> (φυσικαὶ καὶ ἀναγκαῖαι) — répondent aux exigences de la vie, de la tranquillité du corps ou du bonheur.", "Les désirs <strong>seulement naturels</strong> — <em>physikaì mónon</em> (φυσικαὶ μόνον) — procurent un agrément dont on peut se passer.", "Les désirs <strong>vains</strong> — <em>kenaí</em> (κεναί) — sont produits par l’opinion, sans limite naturelle, et entretiennent l’inquiétude."] },
-        { type:"opposition", left:{ term:"En théorie", definition:"Tout plaisir est un bien et toute douleur est un mal par leur nature propre." }, right:{ term:"En pratique", definition:"Un plaisir peut produire davantage de souffrance et une douleur peut conduire à un plaisir supérieur." }, conclusion:"Le plaisir n’est pas une consigne aveugle : chaque choix exige un calcul de ses conséquences." },
-        { type:"concept", term:"Calcul des plaisirs — <em>nḗphōn logismós</em> (νήφων λογισμός)", definition:"Ce « raisonnement sobre » compare les avantages et les dommages à venir. Il peut conduire à refuser un plaisir nuisible ou à accepter une peine momentanée en vue d’un bien plus grand." },
-        { type:"analysis", term:"Le mouvement du texte", definition:"L’argumentation progresse de la classification des désirs vers une règle de décision concrète.", items:["Distinguer les désirs naturels, nécessaires et vains.", "Définir le bonheur par la tranquillité de l’âme et du corps.", "Faire du plaisir le principe de l’évaluation.", "Comparer enfin l’utile et le nuisible dans chaque situation."] }
-      ],
-      relatedTexts:[
-        { id:"schopenhauer-bonheur-absence-souffrance", kind:"proche", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Tous deux refusent d’identifier le bonheur à l’accumulation des jouissances." },
-        { id:"platon-socrate-temperance", kind:"proche", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Une vie heureuse suppose de ne pas être esclave de désirs sans fin." },
-        { id:"rousseau-desir-imagination-bonheur", kind:"adverse", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Épicure cherche à apaiser le manque en limitant les désirs ; Rousseau soutient au contraire que le plaisir de désirer est indispensable à une existence heureuse." },
-        { id:"seneque-vie-vertueuse", kind:"adverse", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Sénèque refuse de faire du plaisir le souverain bien et lui oppose la vertu, stable et autosuffisante." }
-      ],
-      paragraphs:[
-        "Il faut se rendre compte que parmi nos désirs les uns sont naturels, les autres vains, et que parmi les premiers il y en a qui sont nécessaires et d’autres qui sont seulement naturels. Parmi les nécessaires, il y en a qui le sont pour le bonheur, d’autres pour la tranquillité continue du corps, d’autres enfin pour la vie même.",
-        "Une théorie non erronée de ces désirs sait en effet rapporter toute préférence et toute aversion à la santé du corps et à la tranquillité de l’âme puisque c’est là la perfection même de la vie heureuse. Car tous nos actes visent à écarter de nous la souffrance et la peur. Lorsqu’une fois nous y sommes parvenus, la tempête de l’âme s’apaise, l’être vivant n’ayant plus besoin de s’acheminer vers quelque chose qui lui manque, ni de chercher autre chose pour parfaire le bien-être de l’âme et celui du corps.",
-        "C’est alors en effet que nous éprouvons le besoin du plaisir quand, par suite de son absence, nous éprouvons de la douleur ; mais quand nous ne souffrons pas, nous n’éprouvons plus le besoin du plaisir.",
-        "Et c’est pourquoi nous disons que le plaisir est le commencement et la fin de la vie heureuse. C’est lui en effet que nous avons reconnu comme bien principal et conforme à notre nature, c’est de lui que nous partons pour déterminer ce qu’il faut choisir et ce qu’il faut éviter, et c’est à lui que nous avons finalement recours lorsque nous nous servons de la sensation comme d’une règle pour apprécier tout bien qui s’offre.",
-        "Or, précisément parce que le plaisir est notre bien principal et inné, nous ne cherchons pas tout plaisir ; il y a des cas où nous passons par-dessus beaucoup de plaisirs s’il en résulte pour nous de l’ennui. Et nous jugeons beaucoup de douleurs préférables aux plaisirs lorsque, des souffrances que nous avons endurées pendant longtemps, il résulte pour nous un plaisir plus élevé. Tout plaisir est ainsi, de par sa nature propre, un bien, mais tout plaisir ne doit pas être recherché ; pareillement, toute douleur est un mal, mais toute douleur ne doit pas être évitée à tout prix.",
-        "En tout cas, il convient de décider de tout cela en comparant et en examinant attentivement ce qui est utile et ce qui est nuisible, car nous en usons parfois avec le bien comme s’il était le mal, et avec le mal comme s’il était le bien."
-      ]
+      "type": "concept",
+      "term": "Calcul des plaisirs — <em>nḗphōn logismós</em> (νήφων λογισμός)",
+      "definition": "Ce « raisonnement sobre » compare les avantages et les dommages à venir. Il peut conduire à refuser un plaisir nuisible ou à accepter une peine momentanée en vue d’un bien plus grand."
     },
     {
-      id:"rousseau-desir-imagination-bonheur", section:"philosophie",
-      cardMeta:"Philosophie des Lumières",
-      title:"Le bonheur se nourrit de ce que nous espérons", author:"Jean-Jacques Rousseau", authorTag:"Rousseau",
-      cardHighlight:"se nourrit de ce que nous espérons",
-      authorMeta:"(1712–1778) · philosophe des Lumières", themes:["Désir", "Bonheur", "Imagination"], work:"La Nouvelle Héloïse", publication:"1761, lettre VIII, Gallimard, 1993, p. 333",
-      description:"Pourquoi l’attente et l’imagination procurent-elles davantage de bonheur que la possession de l’objet désiré ?",
-      context:"Rousseau renverse l’idée selon laquelle le bonheur commencerait avec la satisfaction du <strong>désir</strong>. L’<strong>imagination</strong> embellit l’objet absent ; sa possession dissipe ce prestige, si bien que l’espérance peut être plus heureuse que la jouissance.",
-      readingQuestions:[
-        "Pourquoi l’espérance de l’objet procure-t-elle davantage de plaisir que sa possession ?",
-        "Comment l’imagination transforme-t-elle l’objet réel en un objet idéal ?",
-        "Pourquoi « le pays des chimères » est-il le seul digne d’être habité ?",
-        "En quel sens une vie sans peine ni désir cesserait-elle d’être véritablement humaine ?"
-      ],
-      glossary:[
-        { term:"avide", definition:"Animé par un désir intense et toujours renaissant." },
-        { term:"borné", definition:"Limité dans ses facultés et dans ce qu’il peut réellement obtenir." },
-        { term:"pays des chimères", definition:"Monde des objets idéalisés par l’imagination, plus séduisants que les choses telles qu’elles existent réellement." },
-        { term:"Être existant par lui-même", definition:"Périphrase désignant Dieu, seul être supposé se suffire pleinement à lui-même et ne manquer de rien." }
-      ],
-      readingNotes:[
-        { type:"opposition", left:{ term:"Objet espéré", definition:"Absent, il peut être rapproché, transformé et embelli librement par l’imagination." }, right:{ term:"Objet possédé", definition:"Sa présence réelle met fin au prestige, à l’illusion et au travail idéalisant de l’imagination." }, conclusion:"Le plaisir dépend moins de la chose elle-même que de la représentation que le désir en construit." },
-        { type:"concept", term:"Jouissance", definition:"Plaisir lié à la possession effective d’un bien. Sa durée est limitée, car la présence de l’objet fait disparaître l’attente qui l’embellissait." },
-        { type:"concept", term:"Ré-jouissance", definition:"Plaisir pris à espérer et à imaginer une satisfaction future. Elle peut surpasser la jouissance parce qu’elle demeure ouverte aux transformations de l’imagination." },
-        { type:"analysis", term:"Le paradoxe du bonheur", definition:"On croit désirer pour posséder, mais la possession détruit une part du plaisir que le désir produisait. L’être humain est donc heureux « avant d’être heureux », lorsque le possible reste encore ouvert." },
-        { type:"analysis", term:"Le désir comme condition de la vie humaine", definition:"L’homme est limité et ne peut tout posséder. Cette imperfection n’est pourtant pas seulement un mal : elle entretient l’élan du désir. Une existence sans manque, sans peine et sans attente serait immobile, donc semblable à la mort." },
-        { type:"plain", definition:"Rousseau ne soutient pas que toute frustration rend heureuse. Il affirme que le mouvement du désir, lorsqu’il est soutenu par l’imagination, appartient positivement au bonheur humain." }
-      ],
-      relatedTexts:[
-        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Dans les deux textes, le désir naît d’une absence et porte l’être humain vers ce qui pourrait lui rendre une forme de plénitude." },
-        { id:"kant-desir-raison-imagination", kind:"proche", label:"Kant — Le désir naît de la raison et de l’imagination", relation:"Kant et Rousseau montrent que l’imagination intensifie l’inclination lorsque l’objet est soustrait aux sens." },
-        { id:"schopenhauer-bien-etre-negation", kind:"proche", label:"Schopenhauer — Le bien-être ne se ressent qu’après sa perte", relation:"Tous deux constatent que la possession et la satisfaction perdent rapidement leur intensité sensible, mais Rousseau valorise davantage le plaisir de l’attente." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure recherche l’apaisement du manque ; Rousseau fait du désir lui-même une composante indispensable du bonheur humain." }
-      ],
-      paragraphs:[
-        "Malheur à qui n’a plus rien à désirer ! Il perd pour ainsi dire tout ce qu’il possède. On jouit moins de ce qu’on obtient que de ce qu’on espère, et l’on n’est heureux qu’avant d’être heureux. En effet, l’homme avide et borné, fait pour tout vouloir et peu obtenir, a reçu du ciel une force consolante qui rapproche de lui tout ce qu’il désire, qui le soumet à son imagination, qui le lui rend présent et sensible, qui le lui livre en quelque sorte, et pour lui rendre cette imaginaire propriété plus douce, le modifie au gré de sa passion. Mais tout ce prestige disparaît devant l’objet même ; rien n’embellit plus cet objet aux yeux du possesseur ; on ne se figure point ce qu’on voit ; l’imagination ne pare plus rien de ce qu’on possède, l’illusion cesse où commence la jouissance. Le pays des chimères est en ce monde le seul digne d’être habité et tel est le néant des choses humaines, qu’hors l’Être existant par lui-même, il n’y a rien de beau que ce qui n’est pas.",
-        "Si cet effet n’a pas toujours lieu sur les objets particuliers de nos passions, il est infaillible dans le sentiment commun qui les comprend toutes. Vivre sans peine n’est pas un état d’homme ; vivre ainsi c’est être mort. Celui qui pourrait tout sans être Dieu, serait une misérable créature ; il serait privé du plaisir de désirer ; toute autre privation serait plus supportable."
+      "type": "analysis",
+      "term": "Le mouvement du texte",
+      "definition": "L’argumentation progresse de la classification des désirs vers une règle de décision concrète.",
+      "items": [
+        "Distinguer les désirs naturels, nécessaires et vains.",
+        "Définir le bonheur par la tranquillité de l’âme et du corps.",
+        "Faire du plaisir le principe de l’évaluation.",
+        "Comparer enfin l’utile et le nuisible dans chaque situation."
       ]
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "schopenhauer-bonheur-absence-souffrance",
+      "kind": "proche",
+      "label": "Schopenhauer — Le bonheur comme absence de souffrance",
+      "relation": "Tous deux refusent d’identifier le bonheur à l’accumulation des jouissances."
     },
+    {
+      "id": "platon-socrate-temperance",
+      "kind": "proche",
+      "label": "Platon, Socrate — Le bonheur de la tempérance",
+      "relation": "Une vie heureuse suppose de ne pas être esclave de désirs sans fin."
+    },
+    {
+      "id": "rousseau-desir-imagination-bonheur",
+      "kind": "adverse",
+      "label": "Rousseau — Le bonheur se nourrit de ce que nous espérons",
+      "relation": "Épicure cherche à apaiser le manque en limitant les désirs ; Rousseau soutient au contraire que le plaisir de désirer est indispensable à une existence heureuse."
+    },
+    {
+      "id": "seneque-vie-vertueuse",
+      "kind": "adverse",
+      "label": "Sénèque — La vie heureuse est la vie vertueuse",
+      "relation": "Sénèque refuse de faire du plaisir le souverain bien et lui oppose la vertu, stable et autosuffisante."
+    }
+  ],
+  "paragraphs": [
+    "Il faut se rendre compte que parmi nos désirs les uns sont naturels, les autres vains, et que parmi les premiers il y en a qui sont nécessaires et d’autres qui sont seulement naturels. Parmi les nécessaires, il y en a qui le sont pour le bonheur, d’autres pour la tranquillité continue du corps, d’autres enfin pour la vie même.",
+    "Une théorie non erronée de ces désirs sait en effet rapporter toute préférence et toute aversion à la santé du corps et à la tranquillité de l’âme puisque c’est là la perfection même de la vie heureuse. Car tous nos actes visent à écarter de nous la souffrance et la peur. Lorsqu’une fois nous y sommes parvenus, la tempête de l’âme s’apaise, l’être vivant n’ayant plus besoin de s’acheminer vers quelque chose qui lui manque, ni de chercher autre chose pour parfaire le bien-être de l’âme et celui du corps.",
+    "C’est alors en effet que nous éprouvons le besoin du plaisir quand, par suite de son absence, nous éprouvons de la douleur ; mais quand nous ne souffrons pas, nous n’éprouvons plus le besoin du plaisir.",
+    "Et c’est pourquoi nous disons que le plaisir est le commencement et la fin de la vie heureuse. C’est lui en effet que nous avons reconnu comme bien principal et conforme à notre nature, c’est de lui que nous partons pour déterminer ce qu’il faut choisir et ce qu’il faut éviter, et c’est à lui que nous avons finalement recours lorsque nous nous servons de la sensation comme d’une règle pour apprécier tout bien qui s’offre.",
+    "Or, précisément parce que le plaisir est notre bien principal et inné, nous ne cherchons pas tout plaisir ; il y a des cas où nous passons par-dessus beaucoup de plaisirs s’il en résulte pour nous de l’ennui. Et nous jugeons beaucoup de douleurs préférables aux plaisirs lorsque, des souffrances que nous avons endurées pendant longtemps, il résulte pour nous un plaisir plus élevé. Tout plaisir est ainsi, de par sa nature propre, un bien, mais tout plaisir ne doit pas être recherché ; pareillement, toute douleur est un mal, mais toute douleur ne doit pas être évitée à tout prix.",
+    "En tout cas, il convient de décider de tout cela en comparant et en examinant attentivement ce qui est utile et ce qui est nuisible, car nous en usons parfois avec le bien comme s’il était le mal, et avec le mal comme s’il était le bien."
+  ]
+},
+    {
+  "id": "rousseau-desir-imagination-bonheur",
+  "section": "philosophie",
+  "cardMeta": "Philosophie des Lumières",
+  "title": "Le bonheur se nourrit de ce que nous espérons",
+  "author": "Jean-Jacques Rousseau",
+  "authorTag": "Rousseau",
+  "cardHighlight": "se nourrit de ce que nous espérons",
+  "authorMeta": "(1712–1778) · philosophe des Lumières",
+  "themes": [
+    "Désir",
+    "Bonheur",
+    "Imagination"
+  ],
+  "work": "La Nouvelle Héloïse",
+  "publication": "1761, lettre VIII, Gallimard, 1993, p. 333",
+  "description": "Pourquoi l’attente et l’imagination procurent-elles davantage de bonheur que la possession de l’objet désiré ?",
+  "context": "Rousseau montre que le <strong>désir</strong> tient une grande part de son pouvoir à l’<strong>imagination</strong> : avant la possession, elle embellit l’objet absent et le rend presque présent. Une fois l’objet obtenu, ce prestige disparaît ; le bonheur peut ainsi se trouver davantage dans l’espérance que dans la jouissance.",
+  "readingQuestions": [
+    "Pourquoi l’objet désiré paraît-il plus séduisant avant d’être possédé ?",
+    "Quel rôle l’<strong>imagination</strong> joue-t-elle dans le plaisir d’espérer ?",
+    "Le <strong>bonheur</strong> dépend-il alors davantage de ce que nous imaginons que de ce que nous possédons réellement ?"
+  ],
+  "glossary": [
+    {
+      "term": "avide",
+      "definition": "Animé par un désir intense et toujours renaissant."
+    },
+    {
+      "term": "borné",
+      "definition": "Limité dans ses facultés et dans ce qu’il peut réellement obtenir."
+    },
+    {
+      "term": "pays des chimères",
+      "definition": "Monde des objets idéalisés par l’imagination, plus séduisants que les choses telles qu’elles existent réellement."
+    },
+    {
+      "term": "Être existant par lui-même",
+      "definition": "Périphrase désignant Dieu, seul être supposé se suffire pleinement à lui-même et ne manquer de rien."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Objet espéré",
+        "definition": "Absent, il peut être rapproché, transformé et embelli librement par l’imagination."
+      },
+      "right": {
+        "term": "Objet possédé",
+        "definition": "Sa présence réelle met fin au prestige, à l’illusion et au travail idéalisant de l’imagination."
+      },
+      "conclusion": "Le plaisir dépend moins de la chose elle-même que de la représentation que le désir en construit."
+    },
+    {
+      "type": "concept",
+      "term": "Jouissance",
+      "definition": "Plaisir lié à la possession effective d’un bien. Sa durée est limitée, car la présence de l’objet fait disparaître l’attente qui l’embellissait."
+    },
+    {
+      "type": "concept",
+      "term": "Ré-jouissance",
+      "definition": "Plaisir pris à espérer et à imaginer une satisfaction future. Elle peut surpasser la jouissance parce qu’elle demeure ouverte aux transformations de l’imagination."
+    },
+    {
+      "type": "analysis",
+      "term": "Le paradoxe du bonheur",
+      "definition": "On croit désirer pour posséder, mais la possession détruit une part du plaisir que le désir produisait. L’être humain est donc heureux « avant d’être heureux », lorsque le possible reste encore ouvert."
+    },
+    {
+      "type": "analysis",
+      "term": "Le désir comme condition de la vie humaine",
+      "definition": "L’homme est limité et ne peut tout posséder. Cette imperfection n’est pourtant pas seulement un mal : elle entretient l’élan du désir. Une existence sans manque, sans peine et sans attente serait immobile, donc semblable à la mort."
+    },
+    {
+      "type": "plain",
+      "definition": "Rousseau ne soutient pas que toute frustration rend heureuse. Il affirme que le mouvement du désir, lorsqu’il est soutenu par l’imagination, appartient positivement au bonheur humain."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-mythe-androgyne-desir",
+      "kind": "proche",
+      "label": "Platon, Aristophane — Le désir amoureux poursuit l’unité perdue",
+      "relation": "Dans les deux textes, le désir naît d’une absence et porte l’être humain vers ce qui pourrait lui rendre une forme de plénitude."
+    },
+    {
+      "id": "kant-desir-raison-imagination",
+      "kind": "proche",
+      "label": "Kant — Le désir naît de la raison et de l’imagination",
+      "relation": "Kant et Rousseau montrent que l’imagination intensifie l’inclination lorsque l’objet est soustrait aux sens."
+    },
+    {
+      "id": "schopenhauer-bien-etre-negation",
+      "kind": "proche",
+      "label": "Schopenhauer — Le bien-être ne se ressent qu’après sa perte",
+      "relation": "Tous deux constatent que la possession et la satisfaction perdent rapidement leur intensité sensible, mais Rousseau valorise davantage le plaisir de l’attente."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "adverse",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Épicure recherche l’apaisement du manque ; Rousseau fait du désir lui-même une composante indispensable du bonheur humain."
+    }
+  ],
+  "paragraphs": [
+    "Malheur à qui n’a plus rien à désirer ! Il perd pour ainsi dire tout ce qu’il possède. On jouit moins de ce qu’on obtient que de ce qu’on espère, et l’on n’est heureux qu’avant d’être heureux. En effet, l’homme avide et borné, fait pour tout vouloir et peu obtenir, a reçu du ciel une force consolante qui rapproche de lui tout ce qu’il désire, qui le soumet à son imagination, qui le lui rend présent et sensible, qui le lui livre en quelque sorte, et pour lui rendre cette imaginaire propriété plus douce, le modifie au gré de sa passion. Mais tout ce prestige disparaît devant l’objet même ; rien n’embellit plus cet objet aux yeux du possesseur ; on ne se figure point ce qu’on voit ; l’imagination ne pare plus rien de ce qu’on possède, l’illusion cesse où commence la jouissance. Le pays des chimères est en ce monde le seul digne d’être habité et tel est le néant des choses humaines, qu’hors l’Être existant par lui-même, il n’y a rien de beau que ce qui n’est pas.",
+    "Si cet effet n’a pas toujours lieu sur les objets particuliers de nos passions, il est infaillible dans le sentiment commun qui les comprend toutes. Vivre sans peine n’est pas un état d’homme ; vivre ainsi c’est être mort. Celui qui pourrait tout sans être Dieu, serait une misérable créature ; il serait privé du plaisir de désirer ; toute autre privation serait plus supportable."
+  ]
+},
     {
       id:"schopenhauer-desir-souffrance-ennui", section:"philosophie",
       cardMeta:"Pessimisme moderne",
@@ -211,81 +4373,229 @@
       ]
     },
     {
-      id:"spinoza-desir-puissance-exister", section:"philosophie",
-      cardMeta:"Rationalisme moderne",
-      title:"Le désir exprime notre puissance d’exister", author:"Baruch Spinoza", authorTag:"Spinoza",
-      cardHighlight:"notre puissance d’exister",
-      cardIdea:"le conatus",
-      authorMeta:"(1632–1677) · rationalisme moderne", themes:["Désir", "Nature", "Conscience"], work:"Éthique", publication:"livre III, propositions VI–VII et scolie de la proposition IX, trad. Ch. Appuhn, GF, 1965, p. 142–143 et 144–145",
-      description:"Désirons-nous une chose parce qu’elle est bonne, ou la jugeons-nous bonne parce que nous la désirons ?",
-      context:"Spinoza rapporte le désir au <strong>conatus</strong>, l’effort par lequel chaque être persévère dans son existence. Le désir n’est donc pas d’abord un manque : il est l’expression consciente de notre <strong>puissance d’agir</strong>.",
-      readingQuestions:[
-        "Comment le <strong>conatus</strong> permet-il de définir l’essence de chaque être ?",
-        "Quelle différence Spinoza établit-il entre la volonté, l’<strong>appétit</strong> et le désir ?",
-        "Pourquoi jugeons-nous une chose bonne parce que nous la désirons, et non l’inverse ?"
-      ],
-      glossary:[
-        { term:"conatus", definition:"Mot latin signifiant « effort » : tendance par laquelle chaque chose s’efforce de persévérer dans son être." },
-        { term:"appétit", definition:"Effort de conservation rapporté à la fois à l’âme et au corps ; il constitue l’essence même de l’être humain." },
-        { term:"appéter", definition:"Tendre vers une chose sous l’effet de l’appétit ; la rechercher comme favorable à sa conservation." }
-      ],
-      readingNotes:[
-        { type:"concept", term:"Conatus", badge:"effort de persévérance", definition:"Toute chose tend, autant qu’elle le peut, à maintenir et à déployer son existence. Cet effort n’est pas une propriété secondaire : il constitue son essence actuelle." },
-        { type:"analysis", term:"Trois noms d’un même effort", definition:"La dénomination change selon la manière dont l’effort est considéré.", items:["Rapporté à l’<strong>âme seule</strong>, il est appelé <strong>volonté</strong>.", "Rapporté ensemble à l’<strong>âme et au corps</strong>, il est appelé <strong>appétit</strong>.", "Lorsque l’être humain a <strong>conscience</strong> de cet appétit, celui-ci est appelé <strong>désir</strong>."] },
-        { type:"opposition", left:{ term:"Désir comme manque", definition:"Le sujet désirerait parce qu’un bien reconnu comme tel lui fait défaut." }, right:{ term:"Désir comme puissance", definition:"Le sujet tend activement à persévérer et détermine ainsi ce qui lui apparaît comme bon." }, conclusion:"Spinoza inverse l’explication ordinaire : la valeur de l’objet procède de notre tendance vers lui." },
-        { type:"concept", term:"Le bon", definition:"Ce n’est pas une qualité absolue de l’objet qui commanderait mécaniquement le désir. Nous appelons « bonne » la chose vers laquelle notre puissance nous porte et qui semble favoriser notre conservation." },
-        { type:"plain", definition:"La conscience ne crée pas le désir : elle nous rend seulement conscients d’un appétit déjà à l’œuvre dans l’unité de l’âme et du corps." }
-      ],
-      relatedTexts:[
-        { id:"schopenhauer-desir-souffrance-ennui", kind:"adverse", label:"Schopenhauer — Le désir condamne la vie à osciller entre souffrance et ennui", relation:"Schopenhauer interprète le désir à partir du manque et de la douleur ; Spinoza y voit l’affirmation de la puissance propre à chaque être." },
-        { id:"platon-mythe-androgyne-desir", kind:"adverse", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Le mythe platonicien rapporte le désir à une totalité perdue, tandis que Spinoza le fonde sur l’effort positif de persévérer." },
-        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Les deux textes accordent au désir une valeur positive, mais Rousseau insiste sur l’imagination quand Spinoza l’enracine dans la puissance d’exister." },
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès confond puissance et satisfaction illimitée ; Spinoza définit la puissance par la persévérance de l’être, non par l’accumulation des plaisirs." }
-      ],
-      paragraphs:[
-        "Chaque chose, autant qu’il est en elle, s’efforce de persévérer dans son être. […]",
-        "Cet effort, quand il se rapporte à l’Âme seule, est appelé Volonté ; mais, quand il se rapporte à la fois à l’Âme et au Corps, est appelé Appétit ; l’appétit n’est par là rien d’autre que l’essence même de l’homme, de la nature de laquelle suit nécessairement ce qui sert à sa conservation ; et l’homme est ainsi déterminé à le faire. De plus, il n’y a nulle différence entre l’Appétit et le Désir, sinon que le Désir se rapporte généralement aux hommes, en tant qu’ils ont conscience de leurs appétits, et peut, pour cette raison, se définir ainsi : le Désir est l’Appétit avec conscience de lui-même. Il est donc établi par tout cela que nous ne nous efforçons à rien, ne voulons, n’appétons ni ne désirons aucune chose, parce que nous la jugeons bonne ; mais, au contraire, nous jugeons qu’une chose est bonne parce que nous nous efforçons vers elle, la voulons, appétons et désirons."
+  "id": "spinoza-desir-puissance-exister",
+  "section": "philosophie",
+  "cardMeta": "Rationalisme moderne",
+  "title": "Le désir exprime notre puissance d’exister",
+  "author": "Baruch Spinoza",
+  "authorTag": "Spinoza",
+  "cardHighlight": "notre puissance d’exister",
+  "cardIdea": "le conatus",
+  "authorMeta": "(1632–1677) · rationalisme moderne",
+  "themes": [
+    "Désir",
+    "Nature",
+    "Conscience"
+  ],
+  "work": "Éthique",
+  "publication": "livre III, propositions VI–VII et scolie de la proposition IX, trad. Ch. Appuhn, GF, 1965, p. 142–143 et 144–145",
+  "description": "Désirons-nous une chose parce qu’elle est bonne, ou la jugeons-nous bonne parce que nous la désirons ?",
+  "context": "Spinoza rapporte le désir au <strong><em>conatus</em></strong>, l’effort par lequel chaque être persévère dans son existence. Le désir n’est donc pas d’abord un manque : il est l’expression consciente de notre <strong>puissance d’agir</strong>.",
+  "readingQuestions": [
+    "Comment le <strong><em>conatus</em></strong> permet-il de définir l’essence de chaque être ?",
+    "Quelle différence Spinoza établit-il entre la volonté, l’<strong>appétit</strong> et le désir ?",
+    "Pourquoi jugeons-nous une chose bonne parce que nous la désirons, et non l’inverse ?"
+  ],
+  "glossary": [
+    {
+      "term": "conatus",
+      "definition": "Mot latin signifiant « effort » : tendance par laquelle chaque chose s’efforce de persévérer dans son être."
+    },
+    {
+      "term": "appétit",
+      "definition": "Effort de conservation rapporté à la fois à l’âme et au corps ; il constitue l’essence même de l’être humain."
+    },
+    {
+      "term": "appéter",
+      "definition": "Tendre vers une chose sous l’effet de l’appétit ; la rechercher comme favorable à sa conservation."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Conatus",
+      "badge": "effort de persévérance",
+      "definition": "Toute chose tend, autant qu’elle le peut, à maintenir et à déployer son existence. Cet effort n’est pas une propriété secondaire : il constitue son essence actuelle."
+    },
+    {
+      "type": "analysis",
+      "term": "Trois noms d’un même effort",
+      "definition": "La dénomination change selon la manière dont l’effort est considéré.",
+      "items": [
+        "Rapporté à l’<strong>âme seule</strong>, il est appelé <strong>volonté</strong>.",
+        "Rapporté ensemble à l’<strong>âme et au corps</strong>, il est appelé <strong>appétit</strong>.",
+        "Lorsque l’être humain a <strong>conscience</strong> de cet appétit, celui-ci est appelé <strong>désir</strong>."
       ]
     },
     {
-      id:"levinas-caresse-desir-invisible", section:"philosophie",
-      cardMeta:"Phénoménologie contemporaine",
-      title:"La caresse désire au-delà de ce qu’elle touche", author:"Emmanuel Lévinas", authorTag:"Lévinas",
-      cardHighlight:"au-delà de ce qu’elle touche",
-      cardIdea:"la marche à l’invisible",
-      authorMeta:"(1906–1995) · phénoménologie contemporaine", themes:["Désir", "Amour", "Autrui"], work:"Totalité et Infini", publication:"1974, Nijhoff, p. 235",
-      description:"Pourquoi la caresse ne cherche-t-elle pas à saisir un objet, mais ce qui échappe encore au sensible ?",
-      context:"Lévinas distingue la <strong>caresse</strong> d’un simple contact. Elle touche un être sensible, mais ne cherche ni à le connaître complètement ni à le posséder : elle se porte vers l’<strong>invisible</strong>, vers une altérité qui demeure toujours à venir.",
-      readingQuestions:[
-        "Pourquoi la caresse peut-elle être sensible tout en <strong>transcendant</strong> le sensible ?",
-        "En quoi l’<strong>intentionnalité de recherche</strong> se distingue-t-elle d’une volonté de dévoiler et de saisir ?",
-        "Comment la caresse exprime-t-elle un <strong>désir</strong> que la satisfaction ne peut épuiser ?"
-      ],
-      glossary:[
-        { term:"transcende", definition:"Dépasse : la caresse part du sensible, mais se dirige vers ce qui ne peut être réduit à une sensation ou à un objet saisi." },
-        { term:"intentionnalité", definition:"Fait, pour la conscience, de se rapporter à quelque chose et de le viser." },
-        { term:"étant", definition:"Une réalité déterminée qui existe et peut être identifiée comme telle." }
-      ],
-      readingNotes:[
-        { type:"concept", term:"Phénoménologie", badge:"courant philosophique", definition:"Elle décrit la manière dont les choses et autrui apparaissent à la conscience. Lévinas transforme cette démarche en montrant que la rencontre d’autrui excède ce que la conscience peut constituer ou connaître entièrement." },
-        { type:"opposition", left:{ term:"Le contact", definition:"Il rencontre une surface sensible présente et peut fournir une sensation déterminée." }, right:{ term:"La caresse", definition:"Elle touche, mais sollicite ce qui se dérobe à toute prise et demeure encore à venir." }, conclusion:"La caresse ne quitte pas le sensible ; elle découvre en lui une altérité qui ne se laisse pas enfermer dans la sensation." },
-        { type:"opposition", left:{ term:"Dévoilement", definition:"Visée qui rend un phénomène présent, identifiable et disponible à la connaissance." }, right:{ term:"Recherche", definition:"Mouvement qui reste ouvert à ce qui échappe et ne prétend pas posséder son terme." }, conclusion:"La « marche à l’invisible » n’est pas une connaissance inachevée : elle constitue une autre manière d’entrer en relation avec autrui." },
-        { type:"analysis", term:"Une faim qui se nourrit d’elle-même", definition:"Le paradoxe de la faim indique un désir qui s’accroît au lieu de disparaître. La caresse ne consomme pas son objet : la proximité d’autrui approfondit encore la recherche de ce qui ne peut être saisi." },
-        { type:"concept", term:"L’invisible", definition:"Ce n’est pas un objet caché que l’on pourrait finir par découvrir. Il désigne la dimension d’autrui qui excède ses contours visibles et résiste à toute réduction à une chose connue." },
-        { type:"plain", definition:"Pour Lévinas, la caresse exprime ainsi l’amour sans pouvoir l’enfermer dans un geste ou dans des mots définitifs : elle vise l’autre comme avenir, non comme possession présente." }
-      ],
-      relatedTexts:[
-        { id:"stendhal-cristallisation-amour", kind:"proche", label:"Stendhal — La cristallisation pare l’être aimé de nouvelles perfections", relation:"Les deux textes décrivent un désir qui dépasse ce qui est immédiatement donné : Lévinas l’oriente vers l’altérité insaisissable, Stendhal vers les perfections produites par l’imagination." },
-        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Platon et Lévinas pensent tous deux un amour qui dépasse la possession, mais le premier vise une unité retrouvée quand le second maintient l’irréductible altérité d’autrui." },
-        { id:"aristote-amour-amitie-veritable", kind:"proche", label:"Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même", relation:"Comme Aristote, Lévinas refuse de réduire l’autre à son utilité ou au plaisir qu’il procure ; il insiste toutefois davantage sur ce qui, en lui, échappe à notre compréhension." },
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès conçoit le désir comme un appétit à combler ; chez Lévinas, le désir véritable s’approfondit dans la relation et ne s’achève pas par une satisfaction." }
-      ],
-      paragraphs:[
-        "La caresse comme le contact est sensibilité. Mais la caresse transcende le sensible. Non pas qu’elle sente au-delà du senti, plus loin que les sens, qu’elle se saisisse d’une nourriture sublime, tout en conservant, dans sa relation avec ce senti ultime, une intention de faim qui va sur la nourriture qui se promet et se donne à cette faim, la creuse, comme si la caresse se nourrissait de sa propre faim.",
-        "La caresse consiste à ne se saisir de rien, à solliciter ce qui s’échappe sans cesse de sa forme vers un avenir — jamais assez avenir — à solliciter ce qui se dérobe comme s’il <em>n’était pas encore</em>. Elle <em>cherche</em>, elle fouille. Ce n’est pas une intentionnalité de dévoilement, mais de recherche : marche à l’invisible.",
-        "Dans un certain sens elle <em>exprime</em> l’amour, mais souffre d’une incapacité de le dire. Elle a faim de cette expression même, dans un incessant accroissement de faim. Elle va donc plus loin qu’à son terme, elle vise au-delà d’un étant, même futur qui, comme <em>étant</em> précisément, frappe déjà à la porte de l’être."
-      ]
+      "type": "opposition",
+      "left": {
+        "term": "Désir comme manque",
+        "definition": "Le sujet désirerait parce qu’un bien reconnu comme tel lui fait défaut."
+      },
+      "right": {
+        "term": "Désir comme puissance",
+        "definition": "Le sujet tend activement à persévérer et détermine ainsi ce qui lui apparaît comme bon."
+      },
+      "conclusion": "Spinoza inverse l’explication ordinaire : la valeur de l’objet procède de notre tendance vers lui."
     },
+    {
+      "type": "concept",
+      "term": "Le bon",
+      "definition": "Ce n’est pas une qualité absolue de l’objet qui commanderait mécaniquement le désir. Nous appelons « bonne » la chose vers laquelle notre puissance nous porte et qui semble favoriser notre conservation."
+    },
+    {
+      "type": "plain",
+      "definition": "La conscience ne crée pas le désir : elle nous rend seulement conscients d’un appétit déjà à l’œuvre dans l’unité de l’âme et du corps."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "schopenhauer-desir-souffrance-ennui",
+      "kind": "adverse",
+      "label": "Schopenhauer — Le désir condamne la vie à osciller entre souffrance et ennui",
+      "relation": "Schopenhauer interprète le désir à partir du manque et de la douleur ; Spinoza y voit l’affirmation de la puissance propre à chaque être."
+    },
+    {
+      "id": "platon-mythe-androgyne-desir",
+      "kind": "adverse",
+      "label": "Platon, Aristophane — Le désir amoureux poursuit l’unité perdue",
+      "relation": "Le mythe platonicien rapporte le désir à une totalité perdue, tandis que Spinoza le fonde sur l’effort positif de persévérer."
+    },
+    {
+      "id": "rousseau-desir-imagination-bonheur",
+      "kind": "proche",
+      "label": "Rousseau — Le bonheur se nourrit de ce que nous espérons",
+      "relation": "Les deux textes accordent au désir une valeur positive, mais Rousseau insiste sur l’imagination quand Spinoza l’enracine dans la puissance d’exister."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès confond puissance et satisfaction illimitée ; Spinoza définit la puissance par la persévérance de l’être, non par l’accumulation des plaisirs."
+    }
+  ],
+  "paragraphs": [
+    "Chaque chose, autant qu’il est en elle, s’efforce de persévérer dans son être. […]",
+    "Cet effort, quand il se rapporte à l’Âme seule, est appelé Volonté ; mais, quand il se rapporte à la fois à l’Âme et au Corps, est appelé Appétit ; l’appétit n’est par là rien d’autre que l’essence même de l’homme, de la nature de laquelle suit nécessairement ce qui sert à sa conservation ; et l’homme est ainsi déterminé à le faire. De plus, il n’y a nulle différence entre l’Appétit et le Désir, sinon que le Désir se rapporte généralement aux hommes, en tant qu’ils ont conscience de leurs appétits, et peut, pour cette raison, se définir ainsi : le Désir est l’Appétit avec conscience de lui-même. Il est donc établi par tout cela que nous ne nous efforçons à rien, ne voulons, n’appétons ni ne désirons aucune chose, parce que nous la jugeons bonne ; mais, au contraire, nous jugeons qu’une chose est bonne parce que nous nous efforçons vers elle, la voulons, appétons et désirons."
+  ]
+},
+    {
+  "id": "levinas-caresse-desir-invisible",
+  "section": "philosophie",
+  "cardMeta": "Phénoménologie contemporaine",
+  "title": "La caresse désire au-delà de ce qu’elle touche",
+  "author": "Emmanuel Lévinas",
+  "authorTag": "Lévinas",
+  "cardHighlight": "au-delà de ce qu’elle touche",
+  "cardIdea": "la marche à l’invisible",
+  "authorMeta": "(1906–1995) · phénoménologie contemporaine",
+  "themes": [
+    "Désir",
+    "Amour",
+    "Autrui"
+  ],
+  "work": "Totalité et Infini",
+  "publication": "1974, Nijhoff, p. 235",
+  "description": "Pourquoi la caresse ne cherche-t-elle pas à saisir un objet, mais ce qui échappe encore au sensible ?",
+  "context": "Lévinas distingue la <strong>caresse</strong> d’un geste qui saisirait ou posséderait son objet. Elle touche autrui tout en se portant vers ce qui en lui échappe encore : le désir amoureux reste ainsi ouvert à une altérité qu’aucune possession ne peut épuiser.",
+  "readingQuestions": [
+    "Pourquoi la caresse ne cherche-t-elle pas simplement à <strong>saisir</strong> ce qu’elle touche ?",
+    "En quoi le désir amoureux vise-t-il chez Lévinas ce qui demeure invisible ou encore à venir ?",
+    "Que devient l’<strong>amour</strong> si autrui ne peut jamais être totalement connu ni possédé ?"
+  ],
+  "glossary": [
+    {
+      "term": "transcende",
+      "definition": "Dépasse : la caresse part du sensible, mais se dirige vers ce qui ne peut être réduit à une sensation ou à un objet saisi."
+    },
+    {
+      "term": "intentionnalité",
+      "definition": "Fait, pour la conscience, de se rapporter à quelque chose et de le viser."
+    },
+    {
+      "term": "étant",
+      "definition": "Une réalité déterminée qui existe et peut être identifiée comme telle."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Phénoménologie",
+      "badge": "courant philosophique",
+      "definition": "Elle décrit la manière dont les choses et autrui apparaissent à la conscience. Lévinas transforme cette démarche en montrant que la rencontre d’autrui excède ce que la conscience peut constituer ou connaître entièrement."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Le contact",
+        "definition": "Il rencontre une surface sensible présente et peut fournir une sensation déterminée."
+      },
+      "right": {
+        "term": "La caresse",
+        "definition": "Elle touche, mais sollicite ce qui se dérobe à toute prise et demeure encore à venir."
+      },
+      "conclusion": "La caresse ne quitte pas le sensible ; elle découvre en lui une altérité qui ne se laisse pas enfermer dans la sensation."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Dévoilement",
+        "definition": "Visée qui rend un phénomène présent, identifiable et disponible à la connaissance."
+      },
+      "right": {
+        "term": "Recherche",
+        "definition": "Mouvement qui reste ouvert à ce qui échappe et ne prétend pas posséder son terme."
+      },
+      "conclusion": "La « marche à l’invisible » n’est pas une connaissance inachevée : elle constitue une autre manière d’entrer en relation avec autrui."
+    },
+    {
+      "type": "analysis",
+      "term": "Une faim qui se nourrit d’elle-même",
+      "definition": "Le paradoxe de la faim indique un désir qui s’accroît au lieu de disparaître. La caresse ne consomme pas son objet : la proximité d’autrui approfondit encore la recherche de ce qui ne peut être saisi."
+    },
+    {
+      "type": "concept",
+      "term": "L’invisible",
+      "definition": "Ce n’est pas un objet caché que l’on pourrait finir par découvrir. Il désigne la dimension d’autrui qui excède ses contours visibles et résiste à toute réduction à une chose connue."
+    },
+    {
+      "type": "plain",
+      "definition": "Pour Lévinas, la caresse exprime ainsi l’amour sans pouvoir l’enfermer dans un geste ou dans des mots définitifs : elle vise l’autre comme avenir, non comme possession présente."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "stendhal-cristallisation-amour",
+      "kind": "proche",
+      "label": "Stendhal — La cristallisation pare l’être aimé de nouvelles perfections",
+      "relation": "Les deux textes décrivent un désir qui dépasse ce qui est immédiatement donné : Lévinas l’oriente vers l’altérité insaisissable, Stendhal vers les perfections produites par l’imagination."
+    },
+    {
+      "id": "platon-mythe-androgyne-desir",
+      "kind": "proche",
+      "label": "Platon, Aristophane — Le désir amoureux poursuit l’unité perdue",
+      "relation": "Platon et Lévinas pensent tous deux un amour qui dépasse la possession, mais le premier vise une unité retrouvée quand le second maintient l’irréductible altérité d’autrui."
+    },
+    {
+      "id": "aristote-amour-amitie-veritable",
+      "kind": "proche",
+      "label": "Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même",
+      "relation": "Comme Aristote, Lévinas refuse de réduire l’autre à son utilité ou au plaisir qu’il procure ; il insiste toutefois davantage sur ce qui, en lui, échappe à notre compréhension."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès conçoit le désir comme un appétit à combler ; chez Lévinas, le désir véritable s’approfondit dans la relation et ne s’achève pas par une satisfaction."
+    }
+  ],
+  "paragraphs": [
+    "La caresse comme le contact est sensibilité. Mais la caresse transcende le sensible. Non pas qu’elle sente au-delà du senti, plus loin que les sens, qu’elle se saisisse d’une nourriture sublime, tout en conservant, dans sa relation avec ce senti ultime, une intention de faim qui va sur la nourriture qui se promet et se donne à cette faim, la creuse, comme si la caresse se nourrissait de sa propre faim.",
+    "La caresse consiste à ne se saisir de rien, à solliciter ce qui s’échappe sans cesse de sa forme vers un avenir — jamais assez avenir — à solliciter ce qui se dérobe comme s’il <em>n’était pas encore</em>. Elle <em>cherche</em>, elle fouille. Ce n’est pas une intentionnalité de dévoilement, mais de recherche : marche à l’invisible.",
+    "Dans un certain sens elle <em>exprime</em> l’amour, mais souffre d’une incapacité de le dire. Elle a faim de cette expression même, dans un incessant accroissement de faim. Elle va donc plus loin qu’à son terme, elle vise au-delà d’un étant, même futur qui, comme <em>étant</em> précisément, frappe déjà à la porte de l’être."
+  ]
+},
     {
       id:"stendhal-cristallisation-amour", section:"autres",
       cardMeta:"Littérature",
@@ -325,82 +4635,150 @@
       ]
     },
     {
-      id:"platon-mythe-androgyne-desir", section:"philosophie",
-      cardMeta:"Antiquité grecque",
-      title:"Le désir amoureux poursuit l’unité perdue", author:"Platon", authorTag:"Platon",
-      cardHighlight:"poursuit l’unité perdue",
-      familiarIdea:"le mythe des êtres sphériques",
-      authorMeta:"(v. 428–v. 348 av. J.-C.)", themes:["Désir", "Amour", "Nature"], work:"Le Banquet", publication:"IVe s. av. J.-C., 189d–193d, trad. E. Chambry, GF, 1993, p. 49–52",
-      description:"Pourquoi le désir amoureux prend-il la forme d’un manque et d’une recherche de l’unité perdue ?",
-      context:"Dans <cite>Le Banquet</cite>, plusieurs convives font l’éloge d’Éros. Aristophane, poète comique mis en scène par Platon, raconte ici le <strong>mythe des êtres sphériques</strong> : séparé par Zeus, chaque être humain chercherait depuis lors sa moitié perdue.",
-      readingQuestions:[
-        "Pourquoi Aristophane fait-il du <strong>désir</strong> la conséquence d’une séparation originelle ?",
-        "En quel sens l’être aimé apparaît-il moins comme un objet à posséder que comme une partie de soi à retrouver ?",
-        "Pourquoi l’union des corps ne suffit-elle pas à reconstituer définitivement la totalité perdue ?",
-        "Que permet au mythe d’expliquer la diversité des orientations amoureuses ?"
-      ],
-      glossary:[
-        { term:"androgyne", definition:"Être originel qui réunit, dans le récit d’Aristophane, les caractères du mâle et de la femelle." },
-        { term:"tessère d’hospitalité", definition:"Morceau de poterie brisé en deux et partagé entre deux hôtes ; le rapprochement des fragments permettait de reconnaître leur alliance." },
-        { term:"soles", definition:"Poissons plats dont les deux yeux se trouvent du même côté de la tête ; l’image souligne la division et l’aplatissement des êtres primitifs." }
-      ],
-      readingNotes:[
-        { type:"concept", term:"Désir comme manque", definition:"Le désir naît d’une privation : parce que l’être humain a été séparé de son unité première, il éprouve l’absence d’une part de lui-même et cherche à la retrouver." },
-        { type:"opposition", left:{ term:"Posséder un objet", definition:"S’approprier une chose extérieure susceptible de procurer une satisfaction." }, right:{ term:"Retrouver sa moitié", definition:"Reconquérir, à travers l’autre, une unité qui semble appartenir à notre propre être." }, conclusion:"Le mythe décrit le désir amoureux comme une quête de soi et de totalité, non comme la simple consommation d’un objet." },
-        { type:"concept", term:"Amour", definition:"Il est « le désir et la poursuite du tout » : un mouvement par lequel deux êtres voudraient abolir leur séparation et recomposer l’ancienne nature humaine." },
-        { type:"analysis", term:"Une réparation impossible", definition:"Les deux moitiés peuvent s’enlacer, mais la coupure demeure. Comme une tessère recollée conserve la marque de sa cassure, l’union amoureuse tend vers une totalité qu’elle ne peut restaurer parfaitement." },
-        { type:"analysis", term:"La portée du mythe", definition:"Le récit donne une origine commune à plusieurs orientations du désir : chaque être recherche le sexe correspondant à la composition de l’être dont il provient. Aristophane explique ainsi la diversité de la sexualité humaine sans la réduire à un modèle unique." },
-        { type:"plain", definition:"Cette conception est formulée par Aristophane, personnage du dialogue. Elle contribue à la réflexion de Platon sur l’amour, mais ne doit pas être confondue sans nuance avec la doctrine que Socrate exposera ensuite au nom de Diotime." }
-      ],
-      relatedTexts:[
-        { id:"kant-desir-raison-imagination", kind:"proche", label:"Kant — Le désir naît de la raison et de l’imagination", relation:"Les deux textes montrent que le désir dépasse le besoin immédiat : chez Platon, il vise une unité absente ; chez Kant, l’imagination intensifie l’inclination en soustrayant son objet aux sens." },
-        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Platon et Rousseau font naître le désir de l’absence : le premier l’explique par la perte d’une unité originelle, le second par le pouvoir d’idéalisation de l’imagination." },
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès pense le désir comme une passion à assouvir ; Aristophane l’interprète comme le signe d’une séparation que la possession ne suffit pas à réparer." },
-        { id:"aristote-amour-amitie-veritable", kind:"proche", label:"Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même", relation:"Aristote prolonge l’idée d’un lien qui ne réduit pas l’autre à un objet de jouissance, tout en fondant l’amitié sur la vertu plutôt que sur une unité originelle." }
-      ],
-      artworks:[
-        {
-          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1200",
-          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1600",
-          source:"https://commons.wikimedia.org/wiki/File:Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg",
-          alt:"Le Soleil et la Lune personnifiés, debout près d’un coq et d’une poule dans un paysage gravé.",
-          title:"Le soleil a besoin de la lune, comme le coq de la poule",
-          details:"Michael Maier, <cite>Atalanta Fugiens</cite>, emblème XXX, 1617."
-        },
-        {
-          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1200",
-          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1800",
-          source:"https://commons.wikimedia.org/wiki/File:Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg",
-          alt:"Figure androgyne ailée à deux visages, couronnée, tenant un disque spiralé et un calice aux serpents.",
-          title:"L’androgyne",
-          details:"<cite>Das Buch der Heiligen Dreifaltigkeit</cite>, Constance, 1416–1419, Wellcome Collection."
-        },
-        {
-          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1200",
-          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1600",
-          source:"https://commons.wikimedia.org/wiki/File:Trismegistos.jpg",
-          alt:"Hermès Trismégiste contemple un soleil et une lune réunis dans un feu rayonnant.",
-          title:"Hermès Trismégiste et le feu divin du <em>complexio oppositorum</em> qui unit les polarités",
-          details:"Daniel Stolcius von Stolcenberg, <cite>Viridarium chymicum</cite>, Francfort, 1624."
-        },
-        {
-          src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1200",
-          original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1600",
-          source:"https://commons.wikimedia.org/wiki/File:Androgynous_Rebis.jpg",
-          alt:"Rebis alchimique androgyne réunissant les principes masculin et féminin.",
-          title:"Rebis — Androgyne alchimique",
-          details:"<cite>Rosarium Philosophorum</cite>, figure alchimique de l’union des principes opposés."
-        }
-      ],
-      paragraphs:[
-        "ARISTOPHANE. — Jadis notre nature n’était pas ce qu’elle est à présent, elle était bien différente. D’abord il y avait trois espèces d’hommes, et non deux, comme aujourd’hui : le mâle, la femelle et […] l’espèce androgyne qui avait la forme et le nom des deux autres, […] et comme ils avaient de grands courages, ils attaquèrent les dieux […].",
-        "Alors Zeus délibéra avec les autres dieux sur le parti à prendre : « […] Je vais immédiatement les couper en deux l’un après l’autre ; nous obtiendrons ainsi le double résultat de les affaiblir et de tirer d’eux davantage, puisqu’ils seront plus nombreux. […] » Ayant ainsi parlé, il coupa les hommes en deux […].",
-        "Or, quand le corps eut été ainsi divisé, chacun, regrettant sa moitié, allait à elle ; et, s’embrassant et s’enlaçant les uns les autres avec le désir de se fondre ensemble, les hommes mouraient de faim et d’inaction […]. Alors Zeus, touché de pitié, […] plaça donc les organes sur le devant et par là fit que les hommes engendrèrent les uns dans les autres, c’est-à-dire le mâle dans la femelle. Cette disposition était à deux fins : si l’étreinte avait lieu entre un homme et une femme, ils enfanteraient pour perpétuer la race, et, si elle avait lieu entre un mâle et un mâle, la satiété les séparerait pour un temps, ils se mettraient au travail et pourvoiraient à tous les besoins de l’existence.",
-        "C’est de ce moment que date l’amour inné des hommes les uns pour les autres : l’amour recompose l’antique nature, s’efforce de fondre deux êtres en un seul, et de guérir la nature humaine.",
-        "Chacun de nous est donc comme une tessère d’hospitalité, puisque nous avons été coupés comme des soles et que d’un nous sommes devenus deux ; aussi chacun cherche sa moitié. […]",
-        "Quand donc un homme, qu’il soit porté pour les garçons ou pour les femmes, rencontre celui-là même qui est sa moitié, c’est un prodige que les transports de tendresse, de confiance et d’amour dont ils sont saisis ; ils ne voudraient plus se séparer, ne fût-ce qu’un instant. […] Et la raison en est que notre ancienne nature était telle et que nous étions un tout complet : c’est le désir et la poursuite de ce tout qui s’appelle amour."
-      ]
+  "id": "platon-mythe-androgyne-desir",
+  "section": "philosophie",
+  "cardMeta": "Antiquité grecque",
+  "title": "Le désir amoureux poursuit l’unité perdue",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "poursuit l’unité perdue",
+  "familiarIdea": "le mythe de l’androgyne",
+  "authorMeta": "(v. 428–v. 348 av. J.-C.)",
+  "themes": [
+    "Désir",
+    "Amour",
+    "Nature"
+  ],
+  "work": "Le Banquet",
+  "publication": "IVe s. av. J.-C., 189d–193d, trad. E. Chambry, GF, 1993, p. 49–52",
+  "description": "Pourquoi le désir amoureux prend-il la forme d’un manque et d’une recherche de l’unité perdue ?",
+  "context": "Dans <em>Le Banquet</em>, Aristophane raconte que les êtres humains auraient été coupés en deux et chercheraient depuis leur moitié perdue. Le mythe fait ainsi de l’<strong>amour</strong> le désir de retrouver une unité dont nous éprouvons le manque.",
+  "readingQuestions": [
+    "Pourquoi le mythe fait-il naître le <strong>désir amoureux</strong> d’une séparation originelle ?",
+    "Pourquoi l’être aimé apparaît-il comme celui qui pourrait nous rendre notre unité perdue ?",
+    "Aimer revient-il alors à chercher réellement autrui, ou à chercher en lui ce qui nous <strong>complète</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "androgyne",
+      "definition": "Être originel qui réunit, dans le récit d’Aristophane, les caractères du mâle et de la femelle."
     },
+    {
+      "term": "tessère d’hospitalité",
+      "definition": "Morceau de poterie brisé en deux et partagé entre deux hôtes ; le rapprochement des fragments permettait de reconnaître leur alliance."
+    },
+    {
+      "term": "soles",
+      "definition": "Poissons plats dont les deux yeux se trouvent du même côté de la tête ; l’image souligne la division et l’aplatissement des êtres primitifs."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Désir comme manque",
+      "definition": "Le désir naît d’une privation : parce que l’être humain a été séparé de son unité première, il éprouve l’absence d’une part de lui-même et cherche à la retrouver."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Posséder un objet",
+        "definition": "S’approprier une chose extérieure susceptible de procurer une satisfaction."
+      },
+      "right": {
+        "term": "Retrouver sa moitié",
+        "definition": "Reconquérir, à travers l’autre, une unité qui semble appartenir à notre propre être."
+      },
+      "conclusion": "Le mythe décrit le désir amoureux comme une quête de soi et de totalité, non comme la simple consommation d’un objet."
+    },
+    {
+      "type": "concept",
+      "term": "Amour",
+      "definition": "Il est « le désir et la poursuite du tout » : un mouvement par lequel deux êtres voudraient abolir leur séparation et recomposer l’ancienne nature humaine."
+    },
+    {
+      "type": "analysis",
+      "term": "Une réparation impossible",
+      "definition": "Les deux moitiés peuvent s’enlacer, mais la coupure demeure. Comme une tessère recollée conserve la marque de sa cassure, l’union amoureuse tend vers une totalité qu’elle ne peut restaurer parfaitement."
+    },
+    {
+      "type": "analysis",
+      "term": "La portée du mythe",
+      "definition": "Le récit donne une origine commune à plusieurs orientations du désir : chaque être recherche le sexe correspondant à la composition de l’être dont il provient. Aristophane explique ainsi la diversité de la sexualité humaine sans la réduire à un modèle unique."
+    },
+    {
+      "type": "plain",
+      "definition": "Cette conception est formulée par Aristophane, personnage du dialogue. Elle contribue à la réflexion de Platon sur l’amour, mais ne doit pas être confondue sans nuance avec la doctrine que Socrate exposera ensuite au nom de Diotime."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-desir-raison-imagination",
+      "kind": "proche",
+      "label": "Kant — Le désir naît de la raison et de l’imagination",
+      "relation": "Les deux textes montrent que le désir dépasse le besoin immédiat : chez Platon, il vise une unité absente ; chez Kant, l’imagination intensifie l’inclination en soustrayant son objet aux sens."
+    },
+    {
+      "id": "rousseau-desir-imagination-bonheur",
+      "kind": "proche",
+      "label": "Rousseau — Le bonheur se nourrit de ce que nous espérons",
+      "relation": "Platon et Rousseau font naître le désir de l’absence : le premier l’explique par la perte d’une unité originelle, le second par le pouvoir d’idéalisation de l’imagination."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès pense le désir comme une passion à assouvir ; Aristophane l’interprète comme le signe d’une séparation que la possession ne suffit pas à réparer."
+    },
+    {
+      "id": "aristote-amour-amitie-veritable",
+      "kind": "proche",
+      "label": "Aristote — L’amitié véritable consiste à aimer l’autre pour lui-même",
+      "relation": "Aristote prolonge l’idée d’un lien qui ne réduit pas l’autre à un objet de jouissance, tout en fondant l’amitié sur la vertu plutôt que sur une unité originelle."
+    }
+  ],
+  "artworks": [
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1200",
+      "original": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg?width=1600",
+      "source": "https://commons.wikimedia.org/wiki/File:Michael_Maier_Atalanta_Fugiens_Emblem_30.jpeg",
+      "alt": "Le Soleil et la Lune personnifiés, debout près d’un coq et d’une poule dans un paysage gravé.",
+      "title": "Le soleil a besoin de la lune, comme le coq de la poule",
+      "details": "Michael Maier, <cite>Atalanta Fugiens</cite>, emblème XXX, 1617."
+    },
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1200",
+      "original": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg?width=1800",
+      "source": "https://commons.wikimedia.org/wiki/File:Androgyne_holding_snake_and_chalice_Wellcome_L0015224.jpg",
+      "alt": "Figure androgyne ailée à deux visages, couronnée, tenant un disque spiralé et un calice aux serpents.",
+      "title": "L’androgyne",
+      "details": "<cite>Das Buch der Heiligen Dreifaltigkeit</cite>, Constance, 1416–1419, Wellcome Collection."
+    },
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1200",
+      "original": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Trismegistos.jpg?width=1600",
+      "source": "https://commons.wikimedia.org/wiki/File:Trismegistos.jpg",
+      "alt": "Hermès Trismégiste contemple un soleil et une lune réunis dans un feu rayonnant.",
+      "title": "Hermès Trismégiste et le feu divin du <em>complexio oppositorum</em> qui unit les polarités",
+      "details": "Daniel Stolcius von Stolcenberg, <cite>Viridarium chymicum</cite>, Francfort, 1624."
+    },
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1200",
+      "original": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Androgynous_Rebis.jpg?width=1600",
+      "source": "https://commons.wikimedia.org/wiki/File:Androgynous_Rebis.jpg",
+      "alt": "Rebis alchimique androgyne réunissant les principes masculin et féminin.",
+      "title": "Rebis — Androgyne alchimique",
+      "details": "<cite>Rosarium Philosophorum</cite>, figure alchimique de l’union des principes opposés."
+    }
+  ],
+  "paragraphs": [
+    "ARISTOPHANE. — Jadis notre nature n’était pas ce qu’elle est à présent, elle était bien différente. D’abord il y avait trois espèces d’hommes, et non deux, comme aujourd’hui : le mâle, la femelle et […] l’espèce androgyne qui avait la forme et le nom des deux autres, […] et comme ils avaient de grands courages, ils attaquèrent les dieux […].",
+    "Alors Zeus délibéra avec les autres dieux sur le parti à prendre : « […] Je vais immédiatement les couper en deux l’un après l’autre ; nous obtiendrons ainsi le double résultat de les affaiblir et de tirer d’eux davantage, puisqu’ils seront plus nombreux. […] » Ayant ainsi parlé, il coupa les hommes en deux […].",
+    "Or, quand le corps eut été ainsi divisé, chacun, regrettant sa moitié, allait à elle ; et, s’embrassant et s’enlaçant les uns les autres avec le désir de se fondre ensemble, les hommes mouraient de faim et d’inaction […]. Alors Zeus, touché de pitié, […] plaça donc les organes sur le devant et par là fit que les hommes engendrèrent les uns dans les autres, c’est-à-dire le mâle dans la femelle. Cette disposition était à deux fins : si l’étreinte avait lieu entre un homme et une femme, ils enfanteraient pour perpétuer la race, et, si elle avait lieu entre un mâle et un mâle, la satiété les séparerait pour un temps, ils se mettraient au travail et pourvoiraient à tous les besoins de l’existence.",
+    "C’est de ce moment que date l’amour inné des hommes les uns pour les autres : l’amour recompose l’antique nature, s’efforce de fondre deux êtres en un seul, et de guérir la nature humaine.",
+    "Chacun de nous est donc comme une tessère d’hospitalité, puisque nous avons été coupés comme des soles et que d’un nous sommes devenus deux ; aussi chacun cherche sa moitié. […]",
+    "Quand donc un homme, qu’il soit porté pour les garçons ou pour les femmes, rencontre celui-là même qui est sa moitié, c’est un prodige que les transports de tendresse, de confiance et d’amour dont ils sont saisis ; ils ne voudraient plus se séparer, ne fût-ce qu’un instant. […] Et la raison en est que notre ancienne nature était telle et que nous étions un tout complet : c’est le désir et la poursuite de ce tout qui s’appelle amour."
+  ]
+},
     {
       id:"platon-socrate-temperance", section:"philosophie",
       cardMeta:"Antiquité grecque",
@@ -445,228 +4823,605 @@
       ]
     },
     {
-      id:"platon-callicles-desirs", section:"philosophie",
-      cardMeta:"Antiquité grecque",
-      title:"Le bonheur comme libre satisfaction des désirs", author:"Platon", authorTag:"Platon",
-      cardHighlight:"libre satisfaction des désirs",
-      authorMeta:"(v. 428–v. 348 av. J.-C.)", themes:["Bonheur", "Liberté"], work:"Gorgias", publication:"IVe s. av. J.-C., 491e–492c, trad. M. Canto",
-      description:"Le bonheur appartient-il à celui qui satisfait toutes ses passions sans rencontrer d’obstacle ?",
-      context:"Calliclès défend une conception radicale de la <strong>liberté</strong> : l’homme fort devrait pouvoir suivre et assouvir ses désirs, sans se soumettre aux normes de la majorité.",
-      readingQuestions:[
-        "Pourquoi Calliclès présente-t-il la <strong>tempérance</strong> comme une morale inventée par les faibles ?",
-        "En quel sens la liberté de satisfaire tous ses <strong>désirs</strong> entre-t-elle en tension avec la justice ?"
-      ],
-      readingNotes:[
-        { type:"opposition", left:{ term:"<em>physis</em>", definition:"La nature, dont Calliclès se réclame." }, right:{ term:"<em>nomos</em>", definition:"La loi ou la convention humaine, imposée selon lui par la majorité." } },
-        { type:"opposition", left:{ term:"Nature comme lutte", definition:"Pour Calliclès, un chaos de forces où le plus fort doit dominer." }, right:{ term:"Nature comme <em>kosmos</em>", definition:"Pour d’autres Grecs, un tout ordonné dont l’équilibre sert de norme." } },
-        { type:"opposition", left:{ term:"<em>hēdonē</em>", definition:"Le plaisir : Calliclès en fait le critère du bonheur." }, right:{ term:"<em>aretē</em>", definition:"L’excellence ou la vertu : Platon soutient qu’elle rend heureux." } },
-        { type:"concept", term:"Hédonisme", definition:"Doctrine qui identifie le bonheur au plaisir. Calliclès défend ici un hédonisme de l’intensité et de l’expansion illimitée des désirs." },
-        { type:"concept", term:"Intellectualisme moral", definition:"À l’opposé, Socrate et Platon soutiennent que la connaissance du bien permet d’agir vertueusement et que la vertu conduit au bonheur." }
-      ],
-      relatedTexts:[
-        { id:"platon-socrate-temperance", kind:"suite", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Le passage qui suit immédiatement : Socrate répond à Calliclès par l’image des tonneaux." },
-        { id:"epictete-depend-nous", kind:"adverse", label:"Épictète — La liberté commence par ce qui dépend de nous", relation:"Pour le stoïcien, être libre ne consiste pas à satisfaire ses désirs, mais à ne pas dépendre de ce qui nous échappe." },
-        { id:"seneque-vie-vertueuse", kind:"adverse", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Sénèque sépare radicalement la vertu du plaisir et fait de la première le seul fondement du bonheur." }
-      ],
-      paragraphs:[
-        "CALLICLES. Car comment un homme pourrait-il être heureux s'il est esclave de quelqu'un d’autre ? Veux-tu savoir ce que sont le beau et le juste selon la nature ? Eh bien, je vais te le dire franchement ! Voici, si l'on veut vivre comme il faut, on doit laisser aller ses propres passions, si grandes soient-elles, et ne pas les réprimer. Au contraire, il faut être capable de mettre son courage et son intelligence au service de si grandes passions et de les assouvir avec tout ce qu'elles peuvent désirer.",
-        "Seulement, tout le monde n'est pas capable, j'imagine, de vivre comme cela. C'est pourquoi la masse des gens blâme les hommes qui vivent ainsi, gênée qu'elle est de devoir dissimuler sa propre incapacité à le faire. La masse déclare donc bien haut que le dérèglement est une vilaine chose. C'est ainsi qu'elle réduit à l'état d'esclaves les hommes dotés d'une plus forte nature que celle des hommes de la masse ; et ces derniers, qui sont eux-mêmes incapables de se procurer les plaisirs qui les combleraient, font la louange de la tempérance et de la justice à cause du manque de courage de leur âme.",
-        "Car, bien sûr, les hommes qui, dès le départ, se trouvent dans la situation d'exercer le pouvoir, sont des hommes qui peuvent jouir de leurs biens, sans que personne y fasse obstacle, et ils se mettraient eux-mêmes un maître sur le dos, en supportant les lois, les formules et les blâmes de la masse des hommes ! Comment pourraient-ils éviter, grâce à ce beau dont tu dis qu'il est fait de justice et de tempérance, d'en être réduits au malheur, s'ils ne peuvent pas, lors d'un partage, donner à leurs amis une plus grosse part qu'à leurs ennemis, et cela, dans leurs propres cités, où eux-mêmes exercent le pouvoir !",
-        "Écoute, Socrate, tu prétends que tu poursuis la vérité, eh bien, voici la vérité : si la facilité de la vie, le dérèglement, la liberté de faire ce qu'on veut, demeurent dans l'impunité, ils font la vertu et le bonheur ! Tout le reste, ce ne sont que des manières, des conventions, faites par les hommes, à l'encontre de la nature. Rien que des paroles en l'air, qui ne valent rien !"
+  "id": "platon-callicles-desirs",
+  "section": "philosophie",
+  "cardMeta": "Antiquité grecque",
+  "title": "Le bonheur comme libre satisfaction des désirs",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "libre satisfaction des désirs",
+  "authorMeta": "(v. 428–v. 348 av. J.-C.)",
+  "themes": [
+    "Bonheur",
+    "Liberté"
+  ],
+  "work": "Gorgias",
+  "publication": "IVe s. av. J.-C., 491e–492c, trad. M. Canto",
+  "description": "Le bonheur appartient-il à celui qui satisfait toutes ses passions sans rencontrer d’obstacle ?",
+  "context": "Calliclès défend une conception radicale de la <strong>liberté</strong> : l’homme fort devrait pouvoir suivre et assouvir ses désirs, sans se soumettre aux normes de la majorité.",
+  "readingQuestions": [
+    "Pourquoi Calliclès présente-t-il la <strong>tempérance</strong> comme une morale inventée par les faibles ?",
+    "En quel sens la liberté de satisfaire tous ses <strong>désirs</strong> entre-t-elle en tension avec la justice ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "<em>physis</em>",
+        "definition": "La nature, dont Calliclès se réclame."
+      },
+      "right": {
+        "term": "<em>nomos</em>",
+        "definition": "La loi ou la convention humaine, imposée selon lui par la majorité."
+      }
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Nature comme lutte",
+        "definition": "Pour Calliclès, un chaos de forces où le plus fort doit dominer."
+      },
+      "right": {
+        "term": "Nature comme <em>kosmos</em>",
+        "definition": "Pour d’autres Grecs, un tout ordonné dont l’équilibre sert de norme."
+      }
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "<em>hēdonē</em>",
+        "definition": "Le plaisir : Calliclès en fait le critère du bonheur."
+      },
+      "right": {
+        "term": "<em>aretē</em>",
+        "definition": "L’excellence ou la vertu : Platon soutient qu’elle rend heureux."
+      }
+    },
+    {
+      "type": "concept",
+      "term": "Hédonisme",
+      "definition": "Doctrine qui identifie le bonheur au plaisir. Calliclès défend ici un hédonisme de l’intensité et de l’expansion illimitée des désirs."
+    },
+    {
+      "type": "concept",
+      "term": "Intellectualisme moral",
+      "definition": "À l’opposé, Socrate et Platon soutiennent que la connaissance du bien permet d’agir vertueusement et que la vertu conduit au bonheur."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-socrate-temperance",
+      "kind": "suite",
+      "label": "Platon, Socrate — Le bonheur de la tempérance",
+      "relation": "Le passage qui suit immédiatement : Socrate répond à Calliclès par l’image des tonneaux."
+    },
+    {
+      "id": "epictete-depend-nous",
+      "kind": "adverse",
+      "label": "Épictète — La liberté commence par ce qui dépend de nous",
+      "relation": "Pour le stoïcien, être libre ne consiste pas à satisfaire ses désirs, mais à ne pas dépendre de ce qui nous échappe."
+    },
+    {
+      "id": "seneque-vie-vertueuse",
+      "kind": "adverse",
+      "label": "Sénèque — La vie heureuse est la vie vertueuse",
+      "relation": "Sénèque sépare radicalement la vertu du plaisir et fait de la première le seul fondement du bonheur."
+    }
+  ],
+  "paragraphs": [
+    "CALLICLES. Car comment un homme pourrait-il être heureux s'il est esclave de quelqu'un d’autre ? Veux-tu savoir ce que sont le beau et le juste selon la nature ? Eh bien, je vais te le dire franchement ! Voici, si l'on veut vivre comme il faut, on doit laisser aller ses propres passions, si grandes soient-elles, et ne pas les réprimer. Au contraire, il faut être capable de mettre son courage et son intelligence au service de si grandes passions et de les assouvir avec tout ce qu'elles peuvent désirer.",
+    "Seulement, tout le monde n'est pas capable, j'imagine, de vivre comme cela. C'est pourquoi la masse des gens blâme les hommes qui vivent ainsi, gênée qu'elle est de devoir dissimuler sa propre incapacité à le faire. La masse déclare donc bien haut que le dérèglement est une vilaine chose. C'est ainsi qu'elle réduit à l'état d'esclaves les hommes dotés d'une plus forte nature que celle des hommes de la masse ; et ces derniers, qui sont eux-mêmes incapables de se procurer les plaisirs qui les combleraient, font la louange de la tempérance et de la justice à cause du manque de courage de leur âme.",
+    "Car, bien sûr, les hommes qui, dès le départ, se trouvent dans la situation d'exercer le pouvoir, sont des hommes qui peuvent jouir de leurs biens, sans que personne y fasse obstacle, et ils se mettraient eux-mêmes un maître sur le dos, en supportant les lois, les formules et les blâmes de la masse des hommes ! Comment pourraient-ils éviter, grâce à ce beau dont tu dis qu'il est fait de justice et de tempérance, d'en être réduits au malheur, s'ils ne peuvent pas, lors d'un partage, donner à leurs amis une plus grosse part qu'à leurs ennemis, et cela, dans leurs propres cités, où eux-mêmes exercent le pouvoir !",
+    "Écoute, Socrate, tu prétends que tu poursuis la vérité, eh bien, voici la vérité : si la facilité de la vie, le dérèglement, la liberté de faire ce qu'on veut, demeurent dans l'impunité, ils font la vertu et le bonheur ! Tout le reste, ce ne sont que des manières, des conventions, faites par les hommes, à l'encontre de la nature. Rien que des paroles en l'air, qui ne valent rien !"
+  ]
+},
+    {
+  "id": "seneque-vie-vertueuse",
+  "section": "philosophie",
+  "cardMeta": "Stoïcisme",
+  "title": "La vie heureuse est la vie vertueuse",
+  "author": "Sénèque",
+  "authorTag": "Sénèque",
+  "cardHighlight": "vie vertueuse",
+  "cardHeight": "compact",
+  "authorMeta": "(v. 4 av. J.-C.–65 apr. J.-C.) · stoïcien",
+  "themes": [
+    "Bonheur",
+    "Devoir"
+  ],
+  "work": "La Vie heureuse",
+  "publication": "vers 58, ch. VII, trad. J. Kany-Turpin, GF, 2005, p. 56–58",
+  "description": "Le plaisir peut-il constituer le souverain bien s’il accompagne aussi les vies les plus honteuses ?",
+  "context": "Sénèque sépare nettement le <strong>plaisir</strong> de la <strong>vertu</strong>. Le plaisir est fragile, passager et parfois immoral ; la vertu, stable et indépendante des circonstances, peut seule constituer le souverain bien.",
+  "readingQuestions": [
+    "Pourquoi l’existence de plaisirs immoraux suffit-elle à distinguer le <strong>plaisir</strong> de la <strong>vertu</strong> ?",
+    "Pourquoi la fragilité et le caractère passager du plaisir l’empêchent-ils d’être le souverain bien ?",
+    "En quoi la stabilité de la vertu permet-elle à Sénèque d’en faire le fondement d’une vie heureuse ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "school",
+      "term": "Stoïcisme",
+      "definition": "École hellénistique pour laquelle le bonheur dépend de la vertu et de l’usage droit de la raison, non des biens extérieurs ni des plaisirs."
+    },
+    {
+      "type": "definition",
+      "term": "Souverain bien",
+      "definition": "Le <em>summum bonum</em> est le bien recherché pour lui-même et auquel tous les autres biens sont subordonnés. Pour les stoïciens, il réside dans la vertu."
+    },
+    {
+      "type": "definition",
+      "term": "Vertu",
+      "definition": "La <em>virtus</em> latine traduit notamment l’<em>aretē</em> grecque : l’excellence morale d’une âme gouvernée par la raison et conforme à la nature."
+    },
+    {
+      "type": "prose",
+      "term": "Plaisir",
+      "definition": "Sénèque ne nie pas qu’il puisse accompagner une vie vertueuse ; il refuse qu’il en soit le principe ou le critère, puisqu’il est instable et peut accompagner le vice."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-socrate-temperance",
+      "kind": "proche",
+      "label": "Platon, Socrate — Le bonheur de la tempérance",
+      "relation": "Socrate et Sénèque subordonnent tous deux le plaisir à l’ordre moral de l’âme et à la vertu."
+    },
+    {
+      "id": "augustin-dieu-bonheur",
+      "kind": "proche",
+      "label": "Saint Augustin — Dieu seul peut garantir notre bonheur",
+      "relation": "Augustin recherche lui aussi un bien stable et une juste mesure de l’esprit, tout en les rapportant à Dieu."
+    },
+    {
+      "id": "descartes-trois-regles-bonheur",
+      "kind": "proche",
+      "label": "Descartes — Chacun peut se rendre heureux en observant trois règles",
+      "relation": "Descartes commente précisément le traité de Sénèque et redéfinit la vertu comme résolution à suivre la raison."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "adverse",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Épicure fait du plaisir bien compris le principe et la fin de la vie heureuse ; Sénèque refuse cette identification."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès identifie la vie réussie à l’assouvissement des passions, à l’inverse de l’idéal stoïcien de vertu."
+    }
+  ],
+  "paragraphs": [
+    "Pourquoi, je vous prie, ne pourrait-on pas séparer le plaisir de la vertu ? Est-ce à dire que du fait que tout principe des biens réside dans la vertu, c'est aussi de ses racines que sort ce que vous aimez et que vous recherchez ? Mais si la vertu et le plaisir n'étaient pas séparés, on ne verrait pas certaines choses agréables mais immorales, d'autres morales, assurément, mais pénibles et que l'on accomplit en souffrant.",
+    "Ajoute maintenant que le plaisir aboutit aussi à la vie la plus honteuse, alors que la vertu n'admet pas de mauvaise vie, et que certains sont malheureux non pas parce qu'ils sont privés de plaisir mais bien plutôt du fait du plaisir lui-même, ce qui n'arriverait pas si le plaisir était intimement mêlé à la vertu, plaisir dont elle est privée, mais qui ne lui manque jamais. Pourquoi mettre ensemble ces choses différentes et même opposées ? La vertu est quelque chose d'élevé, de noble et même de royal, d'invincible, d'infatigable, le plaisir quelque chose de bas, de servile, de faible, de fragile qui séjourne comme chez lui dans les bordels et les tavernes. […]",
+    "Le souverain bien est immortel, il est incapable de nous quitter, il n'a ni satiété ni regret. Jamais, en effet, l'esprit droit ne change ni ne se prend en aversion, et d'ailleurs rien de ce qui est parfait n'a jamais changé. Le plaisir, en revanche, au moment où on en jouit le plus, s’éteint ; il n'a pas beaucoup de place, c'est pourquoi il la remplit vite, il inspire de la répugnance et il se fane au premier élan. Et nulle chose n'est jamais assurée, quand sa nature réside dans le mouvement. Il ne peut non plus exister, à coup sûr, une essence propre de ce qui arrive et passe très vite, devant périr dans son exercice même. Il arrive, en effet, à son but là où il cesse et à peine commence-t-il qu'il voit sa fin."
+  ]
+},
+    {
+  "id": "augustin-dieu-bonheur",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
+  "cardMeta": "Antiquité tardive",
+  "title": "Dieu seul peut garantir notre bonheur",
+  "author": "Saint Augustin",
+  "authorTag": "Augustin",
+  "cardHighlight": "Dieu seul",
+  "cardHeight": "compact",
+  "authorMeta": "(354–430) · Père de l’Église",
+  "themes": [
+    "Bonheur",
+    "Religion"
+  ],
+  "work": "La Vie heureuse",
+  "publication": "IVe s., conclusion, §§ 33–36, trad. S. Dupuy-Trudelle, Gallimard, 1998, p. 112–114",
+  "description": "Pourquoi la sagesse ne conduit-elle pleinement au bonheur qu’en rattachant l’esprit à Dieu ?",
+  "context": "Augustin définit la <strong>sagesse</strong> comme la juste mesure de l’esprit : elle le protège à la fois de l’excès et du manque. Cette mesure n’est pleinement assurée que par le rapport à <strong>Dieu</strong>.",
+  "readingQuestions": [
+    "Comment la sagesse maintient-elle l’esprit entre l’<strong>excès</strong> et l’<strong>indigence</strong> ?",
+    "Pourquoi la connaissance de Dieu constitue-t-elle, selon Augustin, la pleine satiété de l’âme ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Sagesse et mesure",
+      "definition": "La sagesse est la <em>mesure de l’esprit</em> : elle empêche aussi bien la démesure des désirs que l’appauvrissement intérieur produit par la crainte et le chagrin."
+    },
+    {
+      "type": "analysis",
+      "term": "Vie heureuse",
+      "definition": "La <em>beata vita</em> n’est pas une simple satisfaction sensible : elle est la plénitude spirituelle de l’âme qui connaît la vérité et demeure attachée à Dieu."
+    },
+    {
+      "type": "analysis",
+      "term": "Héritage néoplatonicien",
+      "definition": "Augustin reprend la distinction entre le <em>monde intelligible</em>, stable, éternel et accessible à l’esprit, et le <em>monde sensible</em>, changeant et soumis aux apparences. Les biens sensibles ne peuvent donc combler durablement l’âme ; elle trouve son accomplissement dans la vérité intelligible, qui est Dieu."
+    },
+    {
+      "type": "concept",
+      "term": "Dieu trinitaire",
+      "definition": "Augustin se distingue de Platon en identifiant le principe intelligible à un Dieu personnel, unique et existant en trois personnes :",
+      "items": [
+        "le Père : créateur du monde, source qui conduit l’être humain vers la vérité ;",
+        "le Fils : Jésus-Christ, vérité de Dieu manifestée aux hommes ;",
+        "le Saint-Esprit : l’Amour qui unit et l’intermédiaire par lequel nous sommes rattachés à Dieu."
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "inanité",
+      "definition": "Ce qui est vain, vide ou sans véritable valeur."
+    },
+    {
+      "term": "simulacres",
+      "definition": "Des apparences trompeuses qui se donnent pour la réalité."
+    },
+    {
+      "term": "indigence",
+      "definition": "Le manque de ce qui est nécessaire."
+    },
+    {
+      "term": "satiété",
+      "definition": "La satisfaction complète d’un besoin ou d’un désir."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-socrate-temperance",
+      "kind": "proche",
+      "label": "Platon, Socrate — Le bonheur de la tempérance",
+      "relation": "Les deux textes lient le bonheur à un ordre intérieur qui délivre l’âme de la démesure des désirs."
+    },
+    {
+      "id": "seneque-vie-vertueuse",
+      "kind": "proche",
+      "label": "Sénèque — La vie heureuse est la vie vertueuse",
+      "relation": "Augustin comme Sénèque cherche un bien stable, supérieur aux plaisirs fragiles et aux biens extérieurs."
+    },
+    {
+      "id": "pascal-bonheur-avenir",
+      "kind": "proche",
+      "label": "Pascal — Espérer le bonheur, c’est se condamner à ne jamais l’obtenir",
+      "relation": "Pascal prolonge le diagnostic chrétien d’une âme qui cherche sa satisfaction dans des réalités temporelles incapables de la combler."
+    }
+  ],
+  "paragraphs": [
+    "[S]i vous demandez ce qu'est la sagesse […], elle n'est rien d'autre que la mesure de l'esprit, c'est-à-dire ce par quoi l'esprit s'équilibre de sorte qu'il ne coure pas à l'excès sans pour autant se rabougrir en deçà de la plénitude. Or, il court à tout ce qui est luxure, pouvoir, orgueil, et toutes choses de ce genre, par quoi intempérants et malheureux pensent se procurer joie et jouissance. Or, il se rabougrit par les vilénies, par les craintes, par le chagrin, par la convoitise et par toutes choses de ce genre […].",
+    "Mais, lorsque après avoir trouvé la sagesse, il la contemple ; lorsque […] il s'y tient et, n'étant plus ébranlé par cette inanité, ne se tourne plus vers ces simulacres trompeurs dont la masse une fois étreinte le fait tomber de son Dieu et disparaître englouti, alors il ne craint ni l'absence de mesure non plus que l'indigence, ni donc le malheur. Ainsi a sa propre mesure, c'est-à-dire la sagesse, tout être qui est heureux. […]",
+    "Telle est donc cette pleine satiété spirituelle qui est la vie heureuse même : connaître pieusement et parfaitement par qui nous sommes conduits à la vérité, de quelle vérité nous jouissons, par quel intermédiaire nous sommes rattachés à la mesure suprême. Les trois, pour ceux qui comprennent, une fois écartées les vanités diverses de la superstition, expriment un seul Dieu et une seule substance."
+  ]
+},
+    {
+  "id": "pascal-bonheur-avenir",
+  "section": "philosophie",
+  "cardMeta": "XVIIe siècle",
+  "title": "Espérer le bonheur, c’est se condamner à ne jamais l’obtenir",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardTitle": "Ainsi nous ne vivons jamais, mais nous espérons vivre",
+  "cardHighlight": "mais nous espérons vivre",
+  "cardStyle": "quote",
+  "authorMeta": "(1623–1662) · moraliste chrétien",
+  "themes": [
+    "Bonheur",
+    "Temps"
+  ],
+  "work": "Pensées",
+  "publication": "1670, publication posthume, Laf. 47 (Br. 172), Le Seuil, 1962, p. 47–48",
+  "description": "Pourquoi notre attente d’un bonheur futur nous empêche-t-elle de vivre le seul temps qui nous appartient ?",
+  "context": "Pascal montre que la conscience humaine se détourne presque constamment du <strong>présent</strong>. En faisant de l’avenir la fin de notre existence, nous repoussons indéfiniment le moment d’être heureux.",
+  "readingQuestions": [
+    "De quelle manière la conscience du <strong>temps</strong> détourne-t-elle du présent ?",
+    "Pourquoi ne parvenons-nous pas à nous en tenir au présent, même lorsqu’il est agréable ?",
+    "En quel sens la recherche du <strong>bonheur</strong> rend-elle son acquisition impossible ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Le présent comme moyen",
+      "definition": "Nous ne faisons presque jamais du présent une fin : nous l’utilisons pour préparer un avenir auquel nous confions notre bonheur."
+    },
+    {
+      "type": "analysis",
+      "term": "Espérer de vivre",
+      "definition": "En français classique, « espérer de » signifie attendre un bien désiré. La formule souligne que la vie réelle est sans cesse ajournée au profit d’une vie imaginée."
+    },
+    {
+      "type": "analysis",
+      "term": "Condition humaine",
+      "definition": "Pour Pascal, l’être humain fuit ce qui le blesse et cherche hors du présent une satisfaction toujours différée : son imagination le rend incapable d’habiter pleinement sa vie."
+    },
+    {
+      "type": "analysis",
+      "term": "À rapprocher du divertissement",
+      "definition": "Dans les <em>Pensées</em>, le divertissement désigne tout ce qui nous détourne de nous-mêmes et de notre condition. La fuite temporelle décrite ici en est une forme essentielle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "pascal-divertissement-condition",
+      "kind": "proche",
+      "label": "Pascal — Le divertissement nous détourne de notre condition",
+      "relation": "Les deux fragments décrivent une fuite du présent : par l’attente de l’avenir ici, par l’agitation du divertissement dans l’autre texte."
+    },
+    {
+      "id": "schopenhauer-bien-etre-negation",
+      "kind": "proche",
+      "label": "Schopenhauer — Le bien-être ne se ressent qu’après sa perte",
+      "relation": "Tous deux analysent une conscience du temps qui rend le bonheur présent presque imperceptible."
+    },
+    {
+      "id": "augustin-dieu-bonheur",
+      "kind": "proche",
+      "label": "Saint Augustin — Dieu seul peut garantir notre bonheur",
+      "relation": "Augustin explique pourquoi les réalités temporelles ne suffisent pas à combler durablement l’âme."
+    }
+  ],
+  "paragraphs": [
+    "Nous ne nous tenons jamais au temps présent. Nous rappelons le passé ; nous anticipons l'avenir comme trop lent à venir, comme pour hâter son cours, ou nous rappelons le passé pour l'arrêter comme trop prompt, si imprudents que nous errons dans les temps qui ne sont point nôtres, et ne pensons point au seul qui nous appartient, et si vains que nous songeons à ceux qui ne sont rien, et échappons sans réflexion le seul qui subsiste.",
+    "C'est que le présent d'ordinaire nous blesse. Nous le cachons à notre vue parce qu'il nous afflige, et s'il nous est agréable nous regrettons de le voir échapper. Nous tâchons de le soutenir par l'avenir, et pensons à disposer les choses qui ne sont pas en notre puissance pour un temps où nous n'avons aucune assurance d'arriver.",
+    "Que chacun examine ses pensées. Il les trouvera toutes occupées au passé ou à l'avenir. Nous ne pensons presque point au présent, et si nous y pensons ce n'est que pour en prendre la lumière pour disposer de l'avenir. Le présent n'est jamais notre fin. Le passé et le présent sont nos moyens ; le seul avenir est notre fin.",
+    "Ainsi nous ne vivons jamais, mais nous espérons de vivre, et nous disposant toujours à être heureux il est inévitable que nous ne le soyons jamais."
+  ]
+},
+    {
+  "id": "freud-bonheur-episodique",
+  "section": "philosophie",
+  "cardMeta": "Psychanalyse",
+  "title": "Il n’y a aucun des biens de ce monde qui puisse rendre heureux durablement",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "durablement",
+  "authorMeta": "(1856–1939) · fondateur de la psychanalyse",
+  "themes": [
+    "Bonheur",
+    "Désir",
+    "Inconscient"
+  ],
+  "work": "Le Malaise dans la culture",
+  "publication": "1929, trad. P. Cotet et al., chap. II, PUF, 2004, p. 18–19",
+  "description": "Pourquoi le bonheur intense ne peut-il être qu’épisodique, alors que la souffrance nous menace continuellement ?",
+  "context": "Freud montre que le <strong>bonheur</strong> ne peut être qu’épisodique : une satisfaction durable perd vite son intensité, tandis que le corps, le monde extérieur et surtout les relations avec autrui nous exposent sans cesse à la souffrance.",
+  "readingQuestions": [
+    "Pourquoi une satisfaction qui dure finit-elle par perdre son intensité ?",
+    "Quelles sont les trois grandes sources de souffrance distinguées par Freud ?",
+    "Pourquoi cette structure de l’existence rend-elle impossible un <strong>bonheur durable</strong> ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Principe de plaisir",
+      "definition": "Tendance de l’appareil psychique à rechercher la satisfaction et à réduire les tensions déplaisantes. Le bonheur strict correspond ici à la décharge soudaine d’un besoin fortement retenu."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Principe de plaisir",
+        "definition": "Il tend vers la satisfaction immédiate des besoins et l’évitement du déplaisir."
+      },
+      "right": {
+        "term": "Principe de réalité",
+        "definition": "Il contraint le désir à différer, modifier ou renoncer à certaines satisfactions afin de tenir compte des conditions du monde extérieur et de la vie avec autrui."
+      },
+      "conclusion": "Le principe de réalité ne supprime pas le désir : il en règle la satisfaction selon ce qui est possible."
+    },
+    {
+      "type": "concept",
+      "term": "Bonheur épisodique",
+      "definition": "Le plaisir intense naît d’un contraste : lorsqu’une satisfaction devient un état stable, elle s’affaiblit et se transforme en simple bien-être."
+    },
+    {
+      "type": "concept",
+      "term": "Trois sources de souffrance",
+      "definition": "La souffrance menace l’être humain de trois côtés :",
+      "items": [
+        "son propre corps, voué à la déchéance ;",
+        "le monde extérieur et ses forces destructrices ;",
+        "ses relations avec les autres êtres humains."
       ]
     },
     {
-      id:"seneque-vie-vertueuse", section:"philosophie",
-      cardMeta:"Stoïcisme",
-      title:"La vie heureuse est la vie vertueuse", author:"Sénèque", authorTag:"Sénèque",
-      cardHighlight:"vie vertueuse", cardHeight:"compact",
-      authorMeta:"(v. 4 av. J.-C.–65 apr. J.-C.) · stoïcien", themes:["Bonheur", "Devoir"], work:"La Vie heureuse", publication:"vers 58, ch. VII, trad. J. Kany-Turpin, GF, 2005, p. 56–58",
-      description:"Le plaisir peut-il constituer le souverain bien s’il accompagne aussi les vies les plus honteuses ?",
-      context:"Sénèque distingue radicalement le <strong>plaisir</strong> de la <strong>vertu</strong>. Le premier est fragile et passager ; la seconde donne à la vie heureuse sa stabilité et sa valeur morale.",
-      readingQuestions:[
-        "Pourquoi l’existence de plaisirs immoraux suffit-elle à séparer le <strong>plaisir</strong> de la <strong>vertu</strong> ?",
-        "En quoi la stabilité de la vertu permet-elle d’en faire le <strong>souverain bien</strong> ?"
-      ],
-      readingNotes:[
-        { type:"school", term:"Stoïcisme", definition:"École hellénistique pour laquelle le bonheur dépend de la vertu et de l’usage droit de la raison, non des biens extérieurs ni des plaisirs." },
-        { type:"definition", term:"Souverain bien", definition:"Le <em>summum bonum</em> est le bien recherché pour lui-même et auquel tous les autres biens sont subordonnés. Pour les stoïciens, il réside dans la vertu." },
-        { type:"definition", term:"Vertu", definition:"La <em>virtus</em> latine traduit notamment l’<em>aretē</em> grecque : l’excellence morale d’une âme gouvernée par la raison et conforme à la nature." },
-        { type:"prose", term:"Plaisir", definition:"Sénèque ne nie pas qu’il puisse accompagner une vie vertueuse ; il refuse qu’il en soit le principe ou le critère, puisqu’il est instable et peut accompagner le vice." }
-      ],
-      relatedTexts:[
-        { id:"platon-socrate-temperance", kind:"proche", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Socrate et Sénèque subordonnent tous deux le plaisir à l’ordre moral de l’âme et à la vertu." },
-        { id:"augustin-dieu-bonheur", kind:"proche", label:"Saint Augustin — Dieu seul peut garantir notre bonheur", relation:"Augustin recherche lui aussi un bien stable et une juste mesure de l’esprit, tout en les rapportant à Dieu." },
-        { id:"descartes-trois-regles-bonheur", kind:"proche", label:"Descartes — Chacun peut se rendre heureux en observant trois règles", relation:"Descartes commente précisément le traité de Sénèque et redéfinit la vertu comme résolution à suivre la raison." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure fait du plaisir bien compris le principe et la fin de la vie heureuse ; Sénèque refuse cette identification." },
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès identifie la vie réussie à l’assouvissement des passions, à l’inverse de l’idéal stoïcien de vertu." }
-      ],
-      paragraphs:[
-        "Pourquoi, je vous prie, ne pourrait-on pas séparer le plaisir de la vertu ? Est-ce à dire que du fait que tout principe des biens réside dans la vertu, c'est aussi de ses racines que sort ce que vous aimez et que vous recherchez ? Mais si la vertu et le plaisir n'étaient pas séparés, on ne verrait pas certaines choses agréables mais immorales, d'autres morales, assurément, mais pénibles et que l'on accomplit en souffrant.",
-        "Ajoute maintenant que le plaisir aboutit aussi à la vie la plus honteuse, alors que la vertu n'admet pas de mauvaise vie, et que certains sont malheureux non pas parce qu'ils sont privés de plaisir mais bien plutôt du fait du plaisir lui-même, ce qui n'arriverait pas si le plaisir était intimement mêlé à la vertu, plaisir dont elle est privée, mais qui ne lui manque jamais. Pourquoi mettre ensemble ces choses différentes et même opposées ? La vertu est quelque chose d'élevé, de noble et même de royal, d'invincible, d'infatigable, le plaisir quelque chose de bas, de servile, de faible, de fragile qui séjourne comme chez lui dans les bordels et les tavernes. […]",
-        "Le souverain bien est immortel, il est incapable de nous quitter, il n'a ni satiété ni regret. Jamais, en effet, l'esprit droit ne change ni ne se prend en aversion, et d'ailleurs rien de ce qui est parfait n'a jamais changé. Le plaisir, en revanche, au moment où on en jouit le plus, s’éteint ; il n'a pas beaucoup de place, c'est pourquoi il la remplit vite, il inspire de la répugnance et il se fane au premier élan. Et nulle chose n'est jamais assurée, quand sa nature réside dans le mouvement. Il ne peut non plus exister, à coup sûr, une essence propre de ce qui arrive et passe très vite, devant périr dans son exercice même. Il arrive, en effet, à son but là où il cesse et à peine commence-t-il qu'il voit sa fin."
+      "type": "concept",
+      "term": "Malaise dans la culture",
+      "definition": "La vie collective protège partiellement l’être humain, mais elle exige aussi des renoncements pulsionnels et rend les relations avec autrui inséparables de conflits et de frustrations."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-quietude-inaccessible",
+      "kind": "proche",
+      "label": "Kant — La quiétude est inaccessible à l’homme",
+      "relation": "Kant et Freud refusent tous deux l’idée d’une satisfaction humaine complète et durable."
+    },
+    {
+      "id": "schopenhauer-bonheur-absence-souffrance",
+      "kind": "proche",
+      "label": "Schopenhauer — Le bonheur comme absence de souffrance",
+      "relation": "Schopenhauer accorde lui aussi davantage de réalité à la souffrance qu’au plaisir."
+    },
+    {
+      "id": "alain-bonheur-agir",
+      "kind": "adverse",
+      "label": "Alain — Le vrai bonheur est le bonheur d’agir",
+      "relation": "Alain déplace la question : le bonheur véritable ne réside pas dans un état satisfait, mais dans l’action elle-même."
+    }
+  ],
+  "paragraphs": [
+    "Ce qu'on appelle bonheur au sens le plus strict découle de la satisfaction plutôt subite de besoins fortement mis en stase et, d'après sa nature, n'est possible que comme phénomène épisodique. Toute persistance d'une situation désirée par le principe de plaisir ne donne qu'un sentiment d'aise assez tiède ; nos dispositifs sont tels que nous ne pouvons jouir intensément que de ce qui est contraste, et ne pouvons jouir que très peu de ce qui est état. Ainsi donc nos possibilités de bonheur sont limitées déjà par notre constitution.",
+    "Il y a beaucoup moins de difficultés à faire l'expérience du malheur. La souffrance menace de trois côtés, en provenance du corps propre qui, voué à la déchéance et à la dissolution, ne peut même pas se passer de la douleur et de l'angoisse comme signaux d'alarme, en provenance du monde extérieur qui peut faire rage contre nous avec des forces surpuissantes, inexorables et destructrices, et finalement à partir des relations avec d'autres hommes.",
+    "La souffrance issue de cette source, nous la ressentons peut-être plus douloureusement que toute autre ; nous sommes enclins à voir en elle un ingrédient en quelque sorte superflu, même si, en termes de destin, elle n'est peut-être pas moins inéluctable que la souffrance d'une autre provenance."
+  ]
+},
+    {
+  "id": "descartes-changer-desirs",
+  "section": "philosophie",
+  "cardMeta": "Rationalisme",
+  "title": "Pour être heureux, il faut changer ses désirs",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "changer ses désirs",
+  "authorMeta": "(1596–1650) · rationalisme classique",
+  "themes": [
+    "Bonheur",
+    "Désir",
+    "Liberté"
+  ],
+  "work": "Discours de la méthode",
+  "publication": "1637, troisième partie, GF, 1966, p. 53–54",
+  "description": "Comment devenir heureux en réglant nos désirs sur ce qui dépend réellement de nous ?",
+  "context": "Dans la troisième maxime de sa <strong>morale par provision</strong>, Descartes reprend un geste stoïcien : agir autant que possible sur le monde, puis cesser de désirer ce qui échappe à notre pouvoir.",
+  "readingQuestions": [
+    "Pourquoi est-il plus raisonnable de se <strong>vaincre soi-même</strong> que de vouloir vaincre la fortune ?",
+    "Comment la distinction entre le possible et l’impossible peut-elle supprimer le <strong>regret</strong> ?",
+    "Pourquoi cette manière de penser exige-t-elle un long <strong>exercice</strong> ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Morale par provision",
+      "definition": "Ensemble de règles pratiques adoptées par Descartes pour pouvoir agir pendant qu’il poursuit la recherche méthodique de la vérité."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Ce qui dépend de nous",
+        "definition": "Nos pensées, nos jugements et la manière dont nous réglons nos désirs."
+      },
+      "right": {
+        "term": "Ce qui n’en dépend pas",
+        "definition": "Les biens extérieurs, les événements et les effets de la fortune."
+      },
+      "conclusion": "Le contentement exige de concentrer sa volonté sur le premier domaine."
+    },
+    {
+      "type": "concept",
+      "term": "Faire de nécessité vertu",
+      "definition": "Transformer l’acceptation de ce qui ne peut être changé en une disposition volontaire et raisonnable, plutôt que le subir dans le regret."
+    },
+    {
+      "type": "concept",
+      "term": "Exercice spirituel",
+      "definition": "La maîtrise des désirs n’est pas une décision instantanée : elle s’acquiert par une méditation souvent répétée jusqu’à devenir une manière stable de juger."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-trois-regles-bonheur",
+      "kind": "identique",
+      "label": "Descartes — Chacun peut se rendre heureux en observant trois règles",
+      "relation": "Dans la lettre à Élisabeth, Descartes reprend et développe les trois règles morales annoncées dans le Discours de la méthode."
+    },
+    {
+      "id": "epictete-depend-nous",
+      "kind": "proche",
+      "label": "Épictète — La liberté commence par ce qui dépend de nous",
+      "relation": "Descartes reconnaît explicitement l’héritage stoïcien de la distinction entre ce qui dépend de nous et ce qui n’en dépend pas."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon, Calliclès — Le bonheur comme libre satisfaction des désirs",
+      "relation": "Calliclès mesure au contraire la liberté à l’expansion et à la satisfaction des désirs."
+    }
+  ],
+  "paragraphs": [
+    "Ma troisième maxime était de tâcher toujours plutôt à me vaincre que la fortune et à changer mes désirs que l'ordre du monde ; et généralement, de m'accoutumer à croire qu'il n'y a rien qui soit entièrement en notre pouvoir, que nos pensées, en sorte qu'après que nous avons fait notre mieux, touchant les choses qui nous sont extérieures, tout ce qui manque de nous réussir est au regard de nous absolument impossible.",
+    "Et ceci seul me semblait être suffisant pour m'empêcher de rien désirer à l'avenir que je n'acquisse, et ainsi pour me rendre content. Car notre volonté ne se portant naturellement à désirer que les choses que notre entendement lui représente en quelque façon comme possibles, il est certain que si nous considérons tous les biens qui sont hors de nous comme également éloignés de notre pouvoir, nous n'aurons pas plus de regrets de manquer de ceux qui semblent être dus à notre naissance, lorsque nous en serons privés sans notre faute, que nous avons de ne posséder pas les royaumes de la Chine ou du Mexique ; et que, faisant, comme on dit, de nécessité vertu, nous ne désirerons pas davantage d'être sains, étant malades, ou d'être libres, étant en prison, que nous faisons maintenant d'avoir des corps d'une matière aussi peu corruptible que les diamants, ou des ailes pour voler comme les oiseaux.",
+    "Mais j'avoue qu'il est besoin d'un long exercice, et d'une méditation souvent réitérée, pour s'accoutumer à regarder de ce biais toutes les choses ; et je crois que c'est principalement en ceci que consistait le secret de ces philosophes, qui ont pu autrefois se soustraire de l'empire de la fortune et, malgré les douleurs et la pauvreté, disputer de la félicité avec leurs dieux. Car, s'occupant sans cesse à considérer les bornes qui leur étaient prescrites par la nature, ils se persuadaient si parfaitement que rien n'était en leur pouvoir que leurs pensées, que cela seul était suffisant pour les empêcher d'avoir aucune affection pour d'autres choses ; et ils disposaient d'elles si absolument qu'ils avaient en cela quelque raison de s'estimer plus riches, et plus puissants, et plus libres, et plus heureux qu'aucun des autres hommes, qui, n'ayant point cette philosophie, tant favorisés de la nature et de la fortune qu'ils puissent être, ne disposent jamais ainsi de tout ce qu'ils veulent."
+  ],
+  "familiarIdea": "la morale par provision"
+},
+    {
+  "id": "descartes-trois-regles-bonheur",
+  "section": "philosophie",
+  "cardMeta": "Rationalisme",
+  "title": "Chacun peut se rendre heureux en observant trois règles de morale",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "trois règles de morale",
+  "authorMeta": "(1596–1650) · rationalisme classique",
+  "themes": [
+    "Bonheur",
+    "Liberté",
+    "Raison"
+  ],
+  "work": "Lettre à Élisabeth du 4 août 1645",
+  "publication": "1645",
+  "description": "Quelles règles permettent d’atteindre un contentement intérieur indépendant de la fortune ?",
+  "context": "Descartes distingue l’<strong>heur</strong>, qui dépend de la fortune, de la <strong>béatitude</strong>, contentement intérieur accessible par l’usage de la raison, la résolution et la maîtrise des désirs.",
+  "readingQuestions": [
+    "Pourquoi le <strong>contentement</strong> d’un être humain pauvre ou malade peut-il être aussi complet que celui d’un homme favorisé par la fortune ?",
+    "Comment les trois règles articulent-elles la <strong>raison</strong>, la volonté et le désir ?",
+    "Pourquoi une décision raisonnable peut-elle ne donner aucun sujet de <strong>repentir</strong>, même si son résultat est mauvais ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Heur",
+        "definition": "Bonheur reçu des circonstances extérieures et de la fortune."
+      },
+      "right": {
+        "term": "Béatitude",
+        "definition": "Parfait contentement de l’esprit et satisfaction intérieure acquis par le sage."
+      },
+      "conclusion": "La philosophie ne garantit pas tous les biens extérieurs, mais elle peut rendre notre contentement indépendant d’eux."
+    },
+    {
+      "type": "concept",
+      "term": "Trois règles de morale",
+      "definition": "Chacun peut se rendre content de soi-même à trois conditions :",
+      "items": [
+        "employer au mieux son esprit pour connaître ce qu’il faut faire ;",
+        "prendre la résolution ferme d’exécuter ce que conseille la raison ;",
+        "ne pas désirer les biens qui demeurent hors de son pouvoir."
       ]
     },
     {
-      id:"augustin-dieu-bonheur", section:"philosophie", sections:["philosophie", "theologie"],
-      cardMeta:"Antiquité tardive",
-      title:"Dieu seul peut garantir notre bonheur", author:"Saint Augustin", authorTag:"Augustin",
-      cardHighlight:"Dieu seul", cardHeight:"compact",
-      authorMeta:"(354–430) · Père de l’Église", themes:["Bonheur", "Religion"], work:"La Vie heureuse", publication:"IVe s., conclusion, §§ 33–36, trad. S. Dupuy-Trudelle, Gallimard, 1998, p. 112–114",
-      description:"Pourquoi la sagesse ne conduit-elle pleinement au bonheur qu’en rattachant l’esprit à Dieu ?",
-      context:"Augustin définit la <strong>sagesse</strong> comme la juste mesure de l’esprit : elle le protège à la fois de l’excès et du manque. Cette mesure n’est pleinement assurée que par le rapport à <strong>Dieu</strong>.",
-      readingQuestions:[
-        "Comment la sagesse maintient-elle l’esprit entre l’<strong>excès</strong> et l’<strong>indigence</strong> ?",
-        "Pourquoi la connaissance de Dieu constitue-t-elle, selon Augustin, la pleine satiété de l’âme ?"
-      ],
-      readingNotes:[
-        { type:"analysis", term:"Sagesse et mesure", definition:"La sagesse est la <em>mesure de l’esprit</em> : elle empêche aussi bien la démesure des désirs que l’appauvrissement intérieur produit par la crainte et le chagrin." },
-        { type:"analysis", term:"Vie heureuse", definition:"La <em>beata vita</em> n’est pas une simple satisfaction sensible : elle est la plénitude spirituelle de l’âme qui connaît la vérité et demeure attachée à Dieu." },
-        { type:"analysis", term:"Héritage néoplatonicien", definition:"Augustin reprend la distinction entre le <em>monde intelligible</em>, stable, éternel et accessible à l’esprit, et le <em>monde sensible</em>, changeant et soumis aux apparences. Les biens sensibles ne peuvent donc combler durablement l’âme ; elle trouve son accomplissement dans la vérité intelligible, qui est Dieu." },
-        { type:"concept", term:"Dieu trinitaire", definition:"Augustin se distingue de Platon en identifiant le principe intelligible à un Dieu personnel, unique et existant en trois personnes :", items:["le Père : créateur du monde, source qui conduit l’être humain vers la vérité ;", "le Fils : Jésus-Christ, vérité de Dieu manifestée aux hommes ;", "le Saint-Esprit : l’Amour qui unit et l’intermédiaire par lequel nous sommes rattachés à Dieu."] }
-      ],
-      glossary:[
-        { term:"inanité", definition:"Ce qui est vain, vide ou sans véritable valeur." },
-        { term:"simulacres", definition:"Des apparences trompeuses qui se donnent pour la réalité." },
-        { term:"indigence", definition:"Le manque de ce qui est nécessaire." },
-        { term:"satiété", definition:"La satisfaction complète d’un besoin ou d’un désir." }
-      ],
-      relatedTexts:[
-        { id:"platon-socrate-temperance", kind:"proche", label:"Platon, Socrate — Le bonheur de la tempérance", relation:"Les deux textes lient le bonheur à un ordre intérieur qui délivre l’âme de la démesure des désirs." },
-        { id:"seneque-vie-vertueuse", kind:"proche", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Augustin comme Sénèque cherche un bien stable, supérieur aux plaisirs fragiles et aux biens extérieurs." },
-        { id:"pascal-bonheur-avenir", kind:"proche", label:"Pascal — Espérer le bonheur, c’est se condamner à ne jamais l’obtenir", relation:"Pascal prolonge le diagnostic chrétien d’une âme qui cherche sa satisfaction dans des réalités temporelles incapables de la combler." }
-      ],
-      paragraphs:[
-        "[S]i vous demandez ce qu'est la sagesse […], elle n'est rien d'autre que la mesure de l'esprit, c'est-à-dire ce par quoi l'esprit s'équilibre de sorte qu'il ne coure pas à l'excès sans pour autant se rabougrir en deçà de la plénitude. Or, il court à tout ce qui est luxure, pouvoir, orgueil, et toutes choses de ce genre, par quoi intempérants et malheureux pensent se procurer joie et jouissance. Or, il se rabougrit par les vilénies, par les craintes, par le chagrin, par la convoitise et par toutes choses de ce genre […].",
-        "Mais, lorsque après avoir trouvé la sagesse, il la contemple ; lorsque […] il s'y tient et, n'étant plus ébranlé par cette inanité, ne se tourne plus vers ces simulacres trompeurs dont la masse une fois étreinte le fait tomber de son Dieu et disparaître englouti, alors il ne craint ni l'absence de mesure non plus que l'indigence, ni donc le malheur. Ainsi a sa propre mesure, c'est-à-dire la sagesse, tout être qui est heureux. […]",
-        "Telle est donc cette pleine satiété spirituelle qui est la vie heureuse même : connaître pieusement et parfaitement par qui nous sommes conduits à la vérité, de quelle vérité nous jouissons, par quel intermédiaire nous sommes rattachés à la mesure suprême. Les trois, pour ceux qui comprennent, une fois écartées les vanités diverses de la superstition, expriment un seul Dieu et une seule substance."
-      ]
+      "type": "concept",
+      "term": "Vertu",
+      "definition": "Descartes la définit ici comme la fermeté et la constance de la résolution à suivre ce que la raison juge être le meilleur."
     },
     {
-      id:"pascal-bonheur-avenir", section:"philosophie",
-      cardMeta:"XVIIe siècle",
-      title:"Espérer le bonheur, c’est se condamner à ne jamais l’obtenir", author:"Blaise Pascal", authorTag:"Pascal",
-      cardTitle:"Ainsi nous ne vivons jamais, mais nous espérons vivre",
-      cardHighlight:"mais nous espérons vivre", cardStyle:"quote",
-      authorMeta:"(1623–1662) · moraliste chrétien", themes:["Bonheur", "Temps"], work:"Pensées", publication:"1670, publication posthume, Laf. 47 (Br. 172), Le Seuil, 1962, p. 47–48",
-      description:"Pourquoi notre attente d’un bonheur futur nous empêche-t-elle de vivre le seul temps qui nous appartient ?",
-      context:"Pascal montre que la conscience humaine se détourne presque constamment du <strong>présent</strong>. En faisant de l’avenir la fin de notre existence, nous repoussons indéfiniment le moment d’être heureux.",
-      readingQuestions:[
-        "De quelle manière la conscience du <strong>temps</strong> détourne-t-elle du présent ?",
-        "Pourquoi ne parvenons-nous pas à nous en tenir au présent, même lorsqu’il est agréable ?",
-        "En quel sens la recherche du <strong>bonheur</strong> rend-elle son acquisition impossible ?"
-      ],
-      readingNotes:[
-        { type:"analysis", term:"Le présent comme moyen", definition:"Nous ne faisons presque jamais du présent une fin : nous l’utilisons pour préparer un avenir auquel nous confions notre bonheur." },
-        { type:"analysis", term:"Espérer de vivre", definition:"En français classique, « espérer de » signifie attendre un bien désiré. La formule souligne que la vie réelle est sans cesse ajournée au profit d’une vie imaginée." },
-        { type:"analysis", term:"Condition humaine", definition:"Pour Pascal, l’être humain fuit ce qui le blesse et cherche hors du présent une satisfaction toujours différée : son imagination le rend incapable d’habiter pleinement sa vie." },
-        { type:"analysis", term:"À rapprocher du divertissement", definition:"Dans les <em>Pensées</em>, le divertissement désigne tout ce qui nous détourne de nous-mêmes et de notre condition. La fuite temporelle décrite ici en est une forme essentielle." }
-      ],
-      relatedTexts:[
-        { id:"schopenhauer-bien-etre-negation", kind:"proche", label:"Schopenhauer — Le bien-être ne se ressent qu’après sa perte", relation:"Tous deux analysent une conscience du temps qui rend le bonheur présent presque imperceptible." },
-        { id:"augustin-dieu-bonheur", kind:"proche", label:"Saint Augustin — Dieu seul peut garantir notre bonheur", relation:"Augustin explique pourquoi les réalités temporelles ne suffisent pas à combler durablement l’âme." }
-      ],
-      paragraphs:[
-        "Nous ne nous tenons jamais au temps présent. Nous rappelons le passé ; nous anticipons l'avenir comme trop lent à venir, comme pour hâter son cours, ou nous rappelons le passé pour l'arrêter comme trop prompt, si imprudents que nous errons dans les temps qui ne sont point nôtres, et ne pensons point au seul qui nous appartient, et si vains que nous songeons à ceux qui ne sont rien, et échappons sans réflexion le seul qui subsiste.",
-        "C'est que le présent d'ordinaire nous blesse. Nous le cachons à notre vue parce qu'il nous afflige, et s'il nous est agréable nous regrettons de le voir échapper. Nous tâchons de le soutenir par l'avenir, et pensons à disposer les choses qui ne sont pas en notre puissance pour un temps où nous n'avons aucune assurance d'arriver.",
-        "Que chacun examine ses pensées. Il les trouvera toutes occupées au passé ou à l'avenir. Nous ne pensons presque point au présent, et si nous y pensons ce n'est que pour en prendre la lumière pour disposer de l'avenir. Le présent n'est jamais notre fin. Le passé et le présent sont nos moyens ; le seul avenir est notre fin.",
-        "Ainsi nous ne vivons jamais, mais nous espérons de vivre, et nous disposant toujours à être heureux il est inévitable que nous ne le soyons jamais."
-      ]
+      "type": "concept",
+      "term": "Comparaison des vaisseaux",
+      "definition": "Un petit vaisseau peut être aussi plein qu’un grand : le contentement est complet lorsque les désirs réglés par la raison sont accomplis, même si les biens possédés sont moins nombreux."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-changer-desirs",
+      "kind": "identique",
+      "label": "Descartes — Pour être heureux, il faut changer ses désirs",
+      "relation": "Cette lettre reprend et développe la morale exposée dans la troisième partie du Discours de la méthode."
     },
     {
-      id:"freud-bonheur-episodique", section:"philosophie",
-      cardMeta:"Psychanalyse",
-      title:"Il n’y a aucun des biens de ce monde qui puisse rendre heureux durablement", author:"Sigmund Freud", authorTag:"Freud",
-      cardHighlight:"durablement",
-      authorMeta:"(1856–1939) · fondateur de la psychanalyse", themes:["Bonheur", "Désir", "Inconscient"], work:"Le Malaise dans la culture", publication:"1929, trad. P. Cotet et al., chap. II, PUF, 2004, p. 18–19",
-      description:"Pourquoi le bonheur intense ne peut-il être qu’épisodique, alors que la souffrance nous menace continuellement ?",
-      context:"Freud oppose le <strong>principe de plaisir</strong>, qui pousse à chercher une satisfaction immédiate, au <strong>principe de réalité</strong>, qui oblige à composer avec le monde extérieur, le corps et les autres. Même satisfaite, une situation durable perd son intensité.",
-      readingQuestions:[
-        "Pourquoi une satisfaction qui se prolonge ne produit-elle plus qu’un sentiment d’aise assez <strong>tiède</strong> ?",
-        "En quoi les trois sources de souffrance rendent-elles le <strong>bonheur durable</strong> particulièrement difficile ?",
-        "Pourquoi la souffrance causée par <strong>autrui</strong> paraît-elle plus douloureuse que les autres ?"
-      ],
-      readingNotes:[
-        { type:"concept", term:"Principe de plaisir", definition:"Tendance de l’appareil psychique à rechercher la satisfaction et à réduire les tensions déplaisantes. Le bonheur strict correspond ici à la décharge soudaine d’un besoin fortement retenu." },
-        { type:"opposition", left:{ term:"Principe de plaisir", definition:"Il tend vers la satisfaction immédiate des besoins et l’évitement du déplaisir." }, right:{ term:"Principe de réalité", definition:"Il contraint le désir à différer, modifier ou renoncer à certaines satisfactions afin de tenir compte des conditions du monde extérieur et de la vie avec autrui." }, conclusion:"Le principe de réalité ne supprime pas le désir : il en règle la satisfaction selon ce qui est possible." },
-        { type:"concept", term:"Bonheur épisodique", definition:"Le plaisir intense naît d’un contraste : lorsqu’une satisfaction devient un état stable, elle s’affaiblit et se transforme en simple bien-être." },
-        { type:"concept", term:"Trois sources de souffrance", definition:"La souffrance menace l’être humain de trois côtés :", items:["son propre corps, voué à la déchéance ;", "le monde extérieur et ses forces destructrices ;", "ses relations avec les autres êtres humains."] },
-        { type:"concept", term:"Malaise dans la culture", definition:"La vie collective protège partiellement l’être humain, mais elle exige aussi des renoncements pulsionnels et rend les relations avec autrui inséparables de conflits et de frustrations." }
-      ],
-      relatedTexts:[
-        { id:"kant-quietude-inaccessible", kind:"proche", label:"Kant — La quiétude est inaccessible à l’homme", relation:"Kant et Freud refusent tous deux l’idée d’une satisfaction humaine complète et durable." },
-        { id:"schopenhauer-bonheur-absence-souffrance", kind:"proche", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Schopenhauer accorde lui aussi davantage de réalité à la souffrance qu’au plaisir." },
-        { id:"alain-bonheur-agir", kind:"adverse", label:"Alain — Le vrai bonheur est le bonheur d’agir", relation:"Alain déplace la question : le bonheur véritable ne réside pas dans un état satisfait, mais dans l’action elle-même." }
-      ],
-      paragraphs:[
-        "Ce qu'on appelle bonheur au sens le plus strict découle de la satisfaction plutôt subite de besoins fortement mis en stase et, d'après sa nature, n'est possible que comme phénomène épisodique. Toute persistance d'une situation désirée par le principe de plaisir ne donne qu'un sentiment d'aise assez tiède ; nos dispositifs sont tels que nous ne pouvons jouir intensément que de ce qui est contraste, et ne pouvons jouir que très peu de ce qui est état. Ainsi donc nos possibilités de bonheur sont limitées déjà par notre constitution.",
-        "Il y a beaucoup moins de difficultés à faire l'expérience du malheur. La souffrance menace de trois côtés, en provenance du corps propre qui, voué à la déchéance et à la dissolution, ne peut même pas se passer de la douleur et de l'angoisse comme signaux d'alarme, en provenance du monde extérieur qui peut faire rage contre nous avec des forces surpuissantes, inexorables et destructrices, et finalement à partir des relations avec d'autres hommes.",
-        "La souffrance issue de cette source, nous la ressentons peut-être plus douloureusement que toute autre ; nous sommes enclins à voir en elle un ingrédient en quelque sorte superflu, même si, en termes de destin, elle n'est peut-être pas moins inéluctable que la souffrance d'une autre provenance."
-      ]
+      "id": "epictete-depend-nous",
+      "kind": "proche",
+      "label": "Épictète — La liberté commence par ce qui dépend de nous",
+      "relation": "La troisième règle reformule la distinction stoïcienne entre ce qui dépend de nous et ce qui n’en dépend pas."
     },
     {
-      id:"descartes-changer-desirs", section:"philosophie",
-      cardMeta:"Rationalisme",
-      title:"Pour être heureux, il faut changer ses désirs", author:"René Descartes", authorTag:"Descartes",
-      cardHighlight:"changer ses désirs",
-      authorMeta:"(1596–1650) · rationalisme classique", themes:["Bonheur", "Désir", "Liberté"], work:"Discours de la méthode", publication:"1637, troisième partie, GF, 1966, p. 53–54",
-      description:"Comment devenir heureux en réglant nos désirs sur ce qui dépend réellement de nous ?",
-      context:"Dans la troisième maxime de sa <strong>morale par provision</strong>, Descartes reprend un geste stoïcien : agir autant que possible sur le monde, puis cesser de désirer ce qui échappe à notre pouvoir.",
-      readingQuestions:[
-        "Pourquoi est-il plus raisonnable de se <strong>vaincre soi-même</strong> que de vouloir vaincre la fortune ?",
-        "Comment la distinction entre le possible et l’impossible peut-elle supprimer le <strong>regret</strong> ?",
-        "Pourquoi cette manière de penser exige-t-elle un long <strong>exercice</strong> ?"
-      ],
-      readingNotes:[
-        { type:"concept", term:"Morale par provision", definition:"Ensemble de règles pratiques adoptées par Descartes pour pouvoir agir pendant qu’il poursuit la recherche méthodique de la vérité." },
-        { type:"opposition", left:{ term:"Ce qui dépend de nous", definition:"Nos pensées, nos jugements et la manière dont nous réglons nos désirs." }, right:{ term:"Ce qui n’en dépend pas", definition:"Les biens extérieurs, les événements et les effets de la fortune." }, conclusion:"Le contentement exige de concentrer sa volonté sur le premier domaine." },
-        { type:"concept", term:"Faire de nécessité vertu", definition:"Transformer l’acceptation de ce qui ne peut être changé en une disposition volontaire et raisonnable, plutôt que le subir dans le regret." },
-        { type:"concept", term:"Exercice spirituel", definition:"La maîtrise des désirs n’est pas une décision instantanée : elle s’acquiert par une méditation souvent répétée jusqu’à devenir une manière stable de juger." }
-      ],
-      relatedTexts:[
-        { id:"descartes-trois-regles-bonheur", kind:"identique", label:"Descartes — Chacun peut se rendre heureux en observant trois règles", relation:"Dans la lettre à Élisabeth, Descartes reprend et développe les trois règles morales annoncées dans le Discours de la méthode." },
-        { id:"epictete-depend-nous", kind:"proche", label:"Épictète — La liberté commence par ce qui dépend de nous", relation:"Descartes reconnaît explicitement l’héritage stoïcien de la distinction entre ce qui dépend de nous et ce qui n’en dépend pas." },
-        { id:"platon-callicles-desirs", kind:"adverse", label:"Platon, Calliclès — Le bonheur comme libre satisfaction des désirs", relation:"Calliclès mesure au contraire la liberté à l’expansion et à la satisfaction des désirs." }
-      ],
-      paragraphs:[
-        "Ma troisième maxime était de tâcher toujours plutôt à me vaincre que la fortune et à changer mes désirs que l'ordre du monde ; et généralement, de m'accoutumer à croire qu'il n'y a rien qui soit entièrement en notre pouvoir, que nos pensées, en sorte qu'après que nous avons fait notre mieux, touchant les choses qui nous sont extérieures, tout ce qui manque de nous réussir est au regard de nous absolument impossible.",
-        "Et ceci seul me semblait être suffisant pour m'empêcher de rien désirer à l'avenir que je n'acquisse, et ainsi pour me rendre content. Car notre volonté ne se portant naturellement à désirer que les choses que notre entendement lui représente en quelque façon comme possibles, il est certain que si nous considérons tous les biens qui sont hors de nous comme également éloignés de notre pouvoir, nous n'aurons pas plus de regrets de manquer de ceux qui semblent être dus à notre naissance, lorsque nous en serons privés sans notre faute, que nous avons de ne posséder pas les royaumes de la Chine ou du Mexique ; et que, faisant, comme on dit, de nécessité vertu, nous ne désirerons pas davantage d'être sains, étant malades, ou d'être libres, étant en prison, que nous faisons maintenant d'avoir des corps d'une matière aussi peu corruptible que les diamants, ou des ailes pour voler comme les oiseaux.",
-        "Mais j'avoue qu'il est besoin d'un long exercice, et d'une méditation souvent réitérée, pour s'accoutumer à regarder de ce biais toutes les choses ; et je crois que c'est principalement en ceci que consistait le secret de ces philosophes, qui ont pu autrefois se soustraire de l'empire de la fortune et, malgré les douleurs et la pauvreté, disputer de la félicité avec leurs dieux. Car, s'occupant sans cesse à considérer les bornes qui leur étaient prescrites par la nature, ils se persuadaient si parfaitement que rien n'était en leur pouvoir que leurs pensées, que cela seul était suffisant pour les empêcher d'avoir aucune affection pour d'autres choses ; et ils disposaient d'elles si absolument qu'ils avaient en cela quelque raison de s'estimer plus riches, et plus puissants, et plus libres, et plus heureux qu'aucun des autres hommes, qui, n'ayant point cette philosophie, tant favorisés de la nature et de la fortune qu'ils puissent être, ne disposent jamais ainsi de tout ce qu'ils veulent."
-      ]
-    },
-    {
-      id:"descartes-trois-regles-bonheur", section:"philosophie",
-      cardMeta:"Rationalisme",
-      title:"Chacun peut se rendre heureux en observant trois règles de morale", author:"René Descartes", authorTag:"Descartes",
-      cardHighlight:"trois règles de morale",
-      authorMeta:"(1596–1650) · rationalisme classique", themes:["Bonheur", "Liberté", "Raison"], work:"Lettre à Élisabeth du 4 août 1645", publication:"1645",
-      description:"Quelles règles permettent d’atteindre un contentement intérieur indépendant de la fortune ?",
-      context:"Descartes distingue l’<strong>heur</strong>, qui dépend de la fortune, de la <strong>béatitude</strong>, contentement intérieur accessible par l’usage de la raison, la résolution et la maîtrise des désirs.",
-      readingQuestions:[
-        "Pourquoi le <strong>contentement</strong> d’un être humain pauvre ou malade peut-il être aussi complet que celui d’un homme favorisé par la fortune ?",
-        "Comment les trois règles articulent-elles la <strong>raison</strong>, la volonté et le désir ?",
-        "Pourquoi une décision raisonnable peut-elle ne donner aucun sujet de <strong>repentir</strong>, même si son résultat est mauvais ?"
-      ],
-      readingNotes:[
-        { type:"opposition", left:{ term:"Heur", definition:"Bonheur reçu des circonstances extérieures et de la fortune." }, right:{ term:"Béatitude", definition:"Parfait contentement de l’esprit et satisfaction intérieure acquis par le sage." }, conclusion:"La philosophie ne garantit pas tous les biens extérieurs, mais elle peut rendre notre contentement indépendant d’eux." },
-        { type:"concept", term:"Trois règles de morale", definition:"Chacun peut se rendre content de soi-même à trois conditions :", items:["employer au mieux son esprit pour connaître ce qu’il faut faire ;", "prendre la résolution ferme d’exécuter ce que conseille la raison ;", "ne pas désirer les biens qui demeurent hors de son pouvoir."] },
-        { type:"concept", term:"Vertu", definition:"Descartes la définit ici comme la fermeté et la constance de la résolution à suivre ce que la raison juge être le meilleur." },
-        { type:"concept", term:"Comparaison des vaisseaux", definition:"Un petit vaisseau peut être aussi plein qu’un grand : le contentement est complet lorsque les désirs réglés par la raison sont accomplis, même si les biens possédés sont moins nombreux." }
-      ],
-      relatedTexts:[
-        { id:"descartes-changer-desirs", kind:"identique", label:"Descartes — Pour être heureux, il faut changer ses désirs", relation:"Cette lettre reprend et développe la morale exposée dans la troisième partie du Discours de la méthode." },
-        { id:"epictete-depend-nous", kind:"proche", label:"Épictète — La liberté commence par ce qui dépend de nous", relation:"La troisième règle reformule la distinction stoïcienne entre ce qui dépend de nous et ce qui n’en dépend pas." },
-        { id:"seneque-vie-vertueuse", kind:"proche", label:"Sénèque — La vie heureuse est la vie vertueuse", relation:"Descartes discute ici le traité de Sénèque et conserve l’idée qu’une vie heureuse repose d’abord sur la vertu." }
-      ],
-      paragraphs:[
-        "Lorsque j’ai choisi le livre de Sénèque <cite>De vita beata</cite>, pour le proposer à Votre Altesse comme un entretien qui lui pourrait être agréable, j’ai eu seulement égard à la réputation de l’auteur et à la dignité de la matière, sans penser à la façon dont il la traite, laquelle ayant depuis considérée, je ne la trouve pas assez exacte pour mériter d’être suivie. Mais, afin que Votre Altesse en puisse juger plus aisément, je tâcherai ici d’expliquer en quelle sorte il me semble que cette matière eût dû être traitée par un philosophe tel que lui, qui, n’étant point éclairé de la foi, n’avait que la raison naturelle pour guide.",
-        "Il dit fort bien, au commencement, que <em>vivere omnes beate volunt, sed ad pervidendum quid sit quod beatam vitam efficiat, caligant</em>. Mais il est besoin de savoir ce que c’est que <em>vivere beate</em> ; je dirais en français vivre heureusement, sinon qu’il y a de la différence entre l’heur et la béatitude, en ce que l’heur ne dépend que des choses qui sont hors de nous, d’où vient que ceux-là sont estimés plus heureux que sages, auxquels il est arrivé quelque bien qu’ils ne se sont point procuré, au lieu que la béatitude consiste, ce me semble, en un parfait contentement d’esprit et une satisfaction intérieure, que n’ont pas ordinairement ceux qui sont le plus favorisés de la fortune, et que les sages acquièrent sans elle. Ainsi <em>vivere beate</em>, vivre en béatitude, ce n’est autre chose qu’avoir l’esprit parfaitement content et satisfait.",
-        "Considérant, après cela, ce que c’est <em>quod beatam vitam efficiat</em>, c’est-à-dire quelles sont les choses qui nous peuvent donner ce souverain contentement, je remarque qu’il y en a de deux sortes : à savoir, de celles qui dépendent de nous, comme la vertu et la sagesse, et de celles qui n’en dépendent point, comme les honneurs, les richesses et la santé. Car il est certain qu’un homme bien né, qui n’est point malade, qui ne manque de rien, et qui avec cela est aussi sage et aussi vertueux qu’un autre qui est pauvre, malsain et contrefait, peut jouir d’un plus parfait contentement que lui.",
-        "Toutefois, comme un petit vaisseau peut être aussi plein qu’un plus grand, encore qu’il contienne moins de liqueur, ainsi, prenant le contentement d’un chacun pour la plénitude et l’accomplissement de ses désirs réglés selon la raison, je ne doute point que les plus pauvres et les plus disgraciés de la fortune ou de la nature ne puissent être entièrement contents et satisfaits, aussi bien que les autres, encore qu’ils ne jouissent pas de tant de biens. Et ce n’est que de cette sorte de contentement, de laquelle il est ici question ; car puisque l’autre n’est aucunement en notre pouvoir, la recherche en serait superflue. Or il me semble qu’un chacun se peut rendre content de soi-même et sans rien attendre d’ailleurs, pourvu seulement qu’il observe trois choses, auxquelles se rapportent les trois règles de morale, que j’ai mises dans le <cite>Discours de la méthode</cite>.",
-        "La première est, qu’il tâche toujours de se servir, le mieux qu’il lui est possible, de son esprit, pour connaître ce qu’il doit faire ou ne pas faire en toutes les occurrences de la vie. La seconde, qu’il ait une ferme et constante résolution d’exécuter tout ce que la raison lui conseillera, sans que ses passions ou ses appétits l’en détournent ; et c’est la fermeté de cette résolution, que je crois devoir être prise pour la vertu, bien que je ne sache point que personne l’ait jamais ainsi expliquée ; mais on l’a divisée en plusieurs espèces, auxquelles on a donné divers noms, à cause des divers objets auxquels elle s’étend.",
-        "La troisième, qu’il considère que, pendant qu’il se conduit ainsi, autant qu’il peut, selon la raison, tous les biens qu’il ne possède point sont aussi entièrement hors de son pouvoir les uns que les autres, et que, par ce moyen, il s’accoutume à ne les point désirer ; car il n’y a rien que le désir, et le regret ou le repentir, qui nous puissent empêcher d’être contents : mais si nous faisons toujours tout ce que nous dicte notre raison, nous n’aurons jamais aucun sujet de nous repentir, encore que les événements nous fissent voir, par après, que nous nous sommes trompés, pour ce que ce n’est point par notre faute.",
-        "Et ce qui fait que nous ne désirons point d’avoir, par exemple, plus de bras ou plus de langues que nous n’en avons, mais que nous désirons bien d’avoir plus de santé ou plus de richesses, c’est seulement que nous imaginons que ces choses-ci pourraient être acquises par notre conduite, ou bien qu’elles sont dues à notre nature, et que ce n’est pas le même des autres : de laquelle opinion nous pourrons nous dépouiller, en considérant que, puisque nous avons toujours suivi le conseil de notre raison, nous n’avons rien omis de ce qui était en notre pouvoir, et que les maladies et les infortunes ne sont pas moins naturelles à l’homme, que les prospérités et la santé."
-      ]
-    },
+      "id": "seneque-vie-vertueuse",
+      "kind": "proche",
+      "label": "Sénèque — La vie heureuse est la vie vertueuse",
+      "relation": "Descartes discute ici le traité de Sénèque et conserve l’idée qu’une vie heureuse repose d’abord sur la vertu."
+    }
+  ],
+  "paragraphs": [
+    "Lorsque j’ai choisi le livre de Sénèque <cite>De vita beata</cite>, pour le proposer à Votre Altesse comme un entretien qui lui pourrait être agréable, j’ai eu seulement égard à la réputation de l’auteur et à la dignité de la matière, sans penser à la façon dont il la traite, laquelle ayant depuis considérée, je ne la trouve pas assez exacte pour mériter d’être suivie. Mais, afin que Votre Altesse en puisse juger plus aisément, je tâcherai ici d’expliquer en quelle sorte il me semble que cette matière eût dû être traitée par un philosophe tel que lui, qui, n’étant point éclairé de la foi, n’avait que la raison naturelle pour guide.",
+    "Il dit fort bien, au commencement, que <em>vivere omnes beate volunt, sed ad pervidendum quid sit quod beatam vitam efficiat, caligant</em>. Mais il est besoin de savoir ce que c’est que <em>vivere beate</em> ; je dirais en français vivre heureusement, sinon qu’il y a de la différence entre l’heur et la béatitude, en ce que l’heur ne dépend que des choses qui sont hors de nous, d’où vient que ceux-là sont estimés plus heureux que sages, auxquels il est arrivé quelque bien qu’ils ne se sont point procuré, au lieu que la béatitude consiste, ce me semble, en un parfait contentement d’esprit et une satisfaction intérieure, que n’ont pas ordinairement ceux qui sont le plus favorisés de la fortune, et que les sages acquièrent sans elle. Ainsi <em>vivere beate</em>, vivre en béatitude, ce n’est autre chose qu’avoir l’esprit parfaitement content et satisfait.",
+    "Considérant, après cela, ce que c’est <em>quod beatam vitam efficiat</em>, c’est-à-dire quelles sont les choses qui nous peuvent donner ce souverain contentement, je remarque qu’il y en a de deux sortes : à savoir, de celles qui dépendent de nous, comme la vertu et la sagesse, et de celles qui n’en dépendent point, comme les honneurs, les richesses et la santé. Car il est certain qu’un homme bien né, qui n’est point malade, qui ne manque de rien, et qui avec cela est aussi sage et aussi vertueux qu’un autre qui est pauvre, malsain et contrefait, peut jouir d’un plus parfait contentement que lui.",
+    "Toutefois, comme un petit vaisseau peut être aussi plein qu’un plus grand, encore qu’il contienne moins de liqueur, ainsi, prenant le contentement d’un chacun pour la plénitude et l’accomplissement de ses désirs réglés selon la raison, je ne doute point que les plus pauvres et les plus disgraciés de la fortune ou de la nature ne puissent être entièrement contents et satisfaits, aussi bien que les autres, encore qu’ils ne jouissent pas de tant de biens. Et ce n’est que de cette sorte de contentement, de laquelle il est ici question ; car puisque l’autre n’est aucunement en notre pouvoir, la recherche en serait superflue. Or il me semble qu’un chacun se peut rendre content de soi-même et sans rien attendre d’ailleurs, pourvu seulement qu’il observe trois choses, auxquelles se rapportent les trois règles de morale, que j’ai mises dans le <cite>Discours de la méthode</cite>.",
+    "La première est, qu’il tâche toujours de se servir, le mieux qu’il lui est possible, de son esprit, pour connaître ce qu’il doit faire ou ne pas faire en toutes les occurrences de la vie. La seconde, qu’il ait une ferme et constante résolution d’exécuter tout ce que la raison lui conseillera, sans que ses passions ou ses appétits l’en détournent ; et c’est la fermeté de cette résolution, que je crois devoir être prise pour la vertu, bien que je ne sache point que personne l’ait jamais ainsi expliquée ; mais on l’a divisée en plusieurs espèces, auxquelles on a donné divers noms, à cause des divers objets auxquels elle s’étend.",
+    "La troisième, qu’il considère que, pendant qu’il se conduit ainsi, autant qu’il peut, selon la raison, tous les biens qu’il ne possède point sont aussi entièrement hors de son pouvoir les uns que les autres, et que, par ce moyen, il s’accoutume à ne les point désirer ; car il n’y a rien que le désir, et le regret ou le repentir, qui nous puissent empêcher d’être contents : mais si nous faisons toujours tout ce que nous dicte notre raison, nous n’aurons jamais aucun sujet de nous repentir, encore que les événements nous fissent voir, par après, que nous nous sommes trompés, pour ce que ce n’est point par notre faute.",
+    "Et ce qui fait que nous ne désirons point d’avoir, par exemple, plus de bras ou plus de langues que nous n’en avons, mais que nous désirons bien d’avoir plus de santé ou plus de richesses, c’est seulement que nous imaginons que ces choses-ci pourraient être acquises par notre conduite, ou bien qu’elles sont dues à notre nature, et que ce n’est pas le même des autres : de laquelle opinion nous pourrons nous dépouiller, en considérant que, puisque nous avons toujours suivi le conseil de notre raison, nous n’avons rien omis de ce qui était en notre pouvoir, et que les maladies et les infortunes ne sont pas moins naturelles à l’homme, que les prospérités et la santé."
+  ]
+},
     {
       id:"alain-bonheur-agir", section:"philosophie",
       cardMeta:"Philosophie de l’action",
@@ -697,37 +5452,70 @@
       ]
     },
     {
-      id:"foucault-commentaire-exces-sens", section:"philosophie",
-      cardMeta:"XXe siècle · philosophie du langage",
-      title:"Tout discours dit plus que ce qu’il dit en apparence", author:"Michel Foucault", authorTag:"Foucault",
-      cardHighlight:"plus que ce qu’il dit",
-      authorMeta:"(1926–1984) · philosophie contemporaine", themes:["Interprétation", "Langage", "Histoire"], work:"Naissance de la clinique", publication:"1963, préface, PUF, 2003, p. XII",
-      description:"Pourquoi tout commentaire suppose-t-il que le langage contient toujours plus de sens qu’il n’en exprime ?",
-      context:"Foucault analyse l’acte de <strong>commenter</strong> : il consiste à reprendre un discours pour faire entendre le sens qui paraît y demeurer implicite. Mais cette recherche ne peut jamais s’achever, car le <strong>signifié</strong> comme le <strong>signifiant</strong> semblent toujours excéder ce qui a déjà été dit.",
-      readingQuestions:[
-        "Pourquoi le commentaire cherche-t-il à redire ce qui n’a jamais été explicitement prononcé ?",
-        "Comment comprendre l’idée d’un <strong>excès du signifié sur le signifiant</strong> ?",
-        "Pourquoi cette conception du langage voue-t-elle l’interprétation à une tâche <strong>infinie</strong> ?"
-      ],
-      readingNotes:[
-        { type:"definition", term:"Signifié / signifiant", definition:"Le signifié est le sens auquel renvoie un signe ; le signifiant est sa forme matérielle, par exemple les sons d’un mot ou les lettres qui le composent." },
-        { type:"concept", term:"Commentaire", definition:"Reprise d’un discours qui cherche à en faire surgir le sens latent. Il ne se contente pas de répéter : il prétend dire ce que le premier discours contenait sans le formuler entièrement." },
-        { type:"analysis", term:"Double pléthore", definition:"Le sens semble toujours déborder ce qui a été dit, tandis que les mots eux-mêmes restent assez riches pour appeler de nouvelles interprétations. C’est ce double excès qui rend le commentaire indéfiniment recommençable." }
-      ],
-      glossary:[
-        { term:"archaïque", definition:"Qui appartient à un temps très ancien ou aux commencements." },
-        { term:"pléthore", definition:"Une quantité surabondante, un excès." }
-      ],
-      relatedTexts:[
-        { id:"averroes-interpreter-revelation", kind:"proche", label:"Averroès — Pour le philosophe, il y a lieu d’interpréter les textes religieux", relation:"Les deux textes pensent l’interprétation à partir d’un sens qui ne s’épuise pas dans l’énoncé immédiat ; Averroès la règle toutefois par l’accord entre Révélation et démonstration." }
-      ],
-      paragraphs:[
-        "Dans les paroles sans nombre prononcées par les hommes — qu’elles soient raisonnables, insensées, démonstratives ou poétiques — un sens a pris corps qui nous surplombe, conduit notre aveuglement, mais attend dans l’obscurité notre prise de conscience pour venir à jour et se mettre à parler. Nous sommes voués historiquement à l’histoire, à la patiente construction de discours sur les discours, à la tâche d’entendre ce qui a été déjà dit.",
-        "Est-il fatal pour autant que nous ne connaissions d’autre usage de la parole que celui du commentaire ? Ce dernier, à vrai dire, interroge le discours sur ce qu’il dit et a voulu dire ; il cherche à faire surgir ce double fond de la parole, où elle se retrouve en une identité à elle-même qu’on suppose plus proche de sa vérité ; il s’agit, en énonçant ce qui a été dit, de redire ce qui n’a jamais été prononcé.",
-        "Dans cette activité de commentaire qui cherche à faire passer un discours resserré, ancien et comme silencieux à lui-même dans un autre plus bavard, à la fois plus archaïque et plus contemporain, se cache une étrange attitude à l’égard du langage : commenter, c’est admettre par définition un excès du signifié sur le signifiant, un reste nécessairement non formulé de la pensée que le langage a laissé dans l’ombre, résidu qui en est l’essence elle-même, poussée hors de son secret ; mais commenter suppose aussi que ce non-parlé dort dans la parole, et que, par une surabondance propre au signifiant, on peut, en l’interrogeant, faire parler un contenu qui n’était pas explicitement signifié.",
-        "Cette double pléthore, en ouvrant la possibilité du commentaire, nous voue à une tâche infinie que rien ne peut limiter : il y a toujours du signifié qui demeure et auquel il faut encore donner la parole ; quant au signifiant, il est toujours offert en une richesse qui nous interroge malgré tout sur ce qu’il « veut dire ».",
-      ]
+  "id": "foucault-commentaire-exces-sens",
+  "section": "philosophie",
+  "cardMeta": "XXe siècle · philosophie du langage",
+  "title": "Tout discours dit plus que ce qu’il dit en apparence",
+  "author": "Michel Foucault",
+  "authorTag": "Foucault",
+  "cardHighlight": "plus que ce qu’il dit",
+  "authorMeta": "(1926–1984) · philosophie contemporaine",
+  "themes": [
+    "Interprétation",
+    "Langage",
+    "Histoire"
+  ],
+  "work": "Naissance de la clinique",
+  "publication": "1963, préface, PUF, 2003, p. XII",
+  "description": "Pourquoi tout commentaire suppose-t-il que le langage contient toujours plus de sens qu’il n’en exprime ?",
+  "context": "Foucault analyse le <strong>commentaire</strong> comme une parole qui revient sur un discours déjà donné pour y faire apparaître davantage de sens. Parce qu’un texte semble toujours pouvoir dire autre chose que ce qu’il énonce immédiatement, l’<strong>interprétation</strong> peut se prolonger sans terme définitif.",
+  "readingQuestions": [
+    "Qu’est-ce qu’un commentaire cherche à faire apparaître dans un discours déjà prononcé ?",
+    "Pourquoi un texte semble-t-il toujours pouvoir contenir davantage de <strong>sens</strong> que ce qu’il dit explicitement ?",
+    "Pourquoi l’<strong>interprétation</strong> risque-t-elle alors de ne jamais pouvoir s’achever ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "definition",
+      "term": "Signifié / signifiant",
+      "definition": "Le signifié est le sens auquel renvoie un signe ; le signifiant est sa forme matérielle, par exemple les sons d’un mot ou les lettres qui le composent."
     },
+    {
+      "type": "concept",
+      "term": "Commentaire",
+      "definition": "Reprise d’un discours qui cherche à en faire surgir le sens latent. Il ne se contente pas de répéter : il prétend dire ce que le premier discours contenait sans le formuler entièrement."
+    },
+    {
+      "type": "analysis",
+      "term": "Double pléthore",
+      "definition": "Le sens semble toujours déborder ce qui a été dit, tandis que les mots eux-mêmes restent assez riches pour appeler de nouvelles interprétations. C’est ce double excès qui rend le commentaire indéfiniment recommençable."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "archaïque",
+      "definition": "Qui appartient à un temps très ancien ou aux commencements."
+    },
+    {
+      "term": "pléthore",
+      "definition": "Une quantité surabondante, un excès."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "averroes-interpreter-revelation",
+      "kind": "proche",
+      "label": "Averroès — Pour le philosophe, il y a lieu d’interpréter les textes religieux",
+      "relation": "Les deux textes pensent l’interprétation à partir d’un sens qui ne s’épuise pas dans l’énoncé immédiat ; Averroès la règle toutefois par l’accord entre Révélation et démonstration."
+    }
+  ],
+  "paragraphs": [
+    "Dans les paroles sans nombre prononcées par les hommes — qu’elles soient raisonnables, insensées, démonstratives ou poétiques — un sens a pris corps qui nous surplombe, conduit notre aveuglement, mais attend dans l’obscurité notre prise de conscience pour venir à jour et se mettre à parler. Nous sommes voués historiquement à l’histoire, à la patiente construction de discours sur les discours, à la tâche d’entendre ce qui a été déjà dit.",
+    "Est-il fatal pour autant que nous ne connaissions d’autre usage de la parole que celui du commentaire ? Ce dernier, à vrai dire, interroge le discours sur ce qu’il dit et a voulu dire ; il cherche à faire surgir ce double fond de la parole, où elle se retrouve en une identité à elle-même qu’on suppose plus proche de sa vérité ; il s’agit, en énonçant ce qui a été dit, de redire ce qui n’a jamais été prononcé.",
+    "Dans cette activité de commentaire qui cherche à faire passer un discours resserré, ancien et comme silencieux à lui-même dans un autre plus bavard, à la fois plus archaïque et plus contemporain, se cache une étrange attitude à l’égard du langage : commenter, c’est admettre par définition un excès du signifié sur le signifiant, un reste nécessairement non formulé de la pensée que le langage a laissé dans l’ombre, résidu qui en est l’essence elle-même, poussée hors de son secret ; mais commenter suppose aussi que ce non-parlé dort dans la parole, et que, par une surabondance propre au signifiant, on peut, en l’interrogeant, faire parler un contenu qui n’était pas explicitement signifié.",
+    "Cette double pléthore, en ouvrant la possibilité du commentaire, nous voue à une tâche infinie que rien ne peut limiter : il y a toujours du signifié qui demeure et auquel il faut encore donner la parole ; quant au signifiant, il est toujours offert en une richesse qui nous interroge malgré tout sur ce qu’il « veut dire »."
+  ]
+},
     {
       id:"averroes-interpreter-revelation", section:"theologie", sections:["philosophie", "theologie"],
       cardMeta:"Moyen Âge · philosophie arabe",
@@ -771,105 +5559,230 @@
       ]
     },
     {
-      id:"krishnamurti-bonheur-sans-recherche", section:"philosophie",
-      cardMeta:"Philosophie de l’Inde",
-      title:"Le bonheur vient lorsqu’on cesse de le rechercher", author:"Jiddu Krishnamurti", authorTag:"Krishnamurti",
-      cardHighlight:"cesse de le rechercher",
-      authorMeta:"(1895–1986) · penseur indien", themes:["Bonheur", "Désir", "Vérité"], work:"Le Sens du bonheur", publication:"trad. C. Joyeux, Stock, 2006, p. 43–44",
-      description:"Le bonheur peut-il apparaître tant que nous en faisons l’objet d’un effort et d’une recherche ?",
-      context:"Krishnamurti soutient que le <strong>bonheur</strong> ne se conquiert pas comme un but. Il surgit lorsque l’esprit cesse de vouloir devenir autre chose et se libère de la peur.",
-      readingQuestions:[
-        "Pourquoi la recherche volontaire du <strong>bonheur</strong> risque-t-elle de l’empêcher ?",
-        "Quel lien Krishnamurti établit-il entre le <strong>silence de l’esprit</strong>, l’absence de peur et la vérité ?"
-      ],
-      readingNotes:[
-        { type:"concept", badge:false, term:"Un bonheur sans effort", definition:"L’effort suppose un manque et tend l’esprit vers un résultat futur. Le bonheur apparaît au contraire lorsque cette tension cesse et que l’attention devient disponible à ce qui est." },
-        { type:"concept", badge:false, term:"Se libérer du devenir", definition:"Ne plus chercher à « devenir quelqu’un » ne signifie pas renoncer à agir, mais cesser de faire dépendre sa valeur et son bonheur d’une identité idéale à atteindre." },
-        { type:"plain", definition:"La <u>peur</u> du jugement, de l’échec ou du manque maintient l’esprit dans l’anticipation. Tant qu’elle le domine, il ne peut accueillir pleinement ce qui se présente." }
-      ],
-      relatedTexts:[
-        { id:"alain-bonheur-agir", kind:"proche", label:"Alain — Le vrai bonheur est le bonheur d’agir", relation:"Chez Alain comme chez Krishnamurti, le bonheur se trouve sans être directement recherché ; Alain insiste cependant sur l’action, Krishnamurti sur la fin de l’effort intérieur." },
-        { id:"pascal-bonheur-avenir", kind:"proche", label:"Pascal — Espérer le bonheur, c’est ne jamais l’obtenir", relation:"Tous deux montrent que projeter le bonheur dans un état futur nous détourne de sa possibilité présente." },
-        { id:"descartes-changer-desirs", kind:"adverse", label:"Descartes — Pour être heureux, il faut changer ses désirs", relation:"Descartes propose un long exercice de maîtrise des désirs ; Krishnamurti se méfie de l’effort même par lequel l’esprit cherche à atteindre le bonheur." }
-      ],
-      paragraphs:[
-        "Le bonheur ne vient pas lorsqu'on le recherche — là est le plus grand secret — mais c'est facile à dire… Je peux expliquer les choses en quelques mots très simples, mais vous contenter de m'écouter et de répéter ce que vous avez entendu ne va pas vous rendre heureux. Le bonheur est étrange, il vient sans qu'on le recherche. Lorsque vous ne faites pas d'efforts pour être heureux, alors, mystérieusement, sans qu'on s'y attende, le bonheur est là […]. La vérité naît lorsque votre esprit et votre cœur sont exempts de toute sensation d'effort et que vous n'essayez pas de devenir quelqu'un ; la vérité est là lorsque l'esprit est très silencieux, qu'il écoute à l'infini tout ce qui se passe. Vous pouvez écouter les mots prononcés ici, mais pour que le bonheur soit, vous devez découvrir comment libérer l'esprit de toute peur. Tant que vous avez peur de quelqu'un ou de quelque chose, le bonheur est exclu. Tant que vous avez peur de vos parents, de l'échec aux examens, peur de ne pas progresser, de ne pas être plus proche du maître, plus près de la vérité, peur du désaveu, du manque de sollicitude — le bonheur est exclu. Mais si vous n'avez vraiment peur de rien, alors vous découvrirez un beau matin au réveil, ou au cours d'une promenade solitaire, que soudain quelque chose d'étrange se produit : sans qu'on l'ait cherché, ni sollicité, ni appelé de ses vœux, ce qu'on peut appeler l'amour, la vérité, le bonheur est là soudain."
+  "id": "krishnamurti-bonheur-sans-recherche",
+  "section": "philosophie",
+  "cardMeta": "Philosophie de l’Inde",
+  "title": "Le bonheur vient lorsqu’on cesse de le rechercher",
+  "author": "Jiddu Krishnamurti",
+  "authorTag": "Krishnamurti",
+  "cardHighlight": "cesse de le rechercher",
+  "authorMeta": "(1895–1986) · penseur indien",
+  "themes": [
+    "Bonheur",
+    "Désir",
+    "Vérité"
+  ],
+  "work": "Le Sens du bonheur",
+  "publication": "trad. C. Joyeux, Stock, 2006, p. 43–44",
+  "description": "Le bonheur peut-il apparaître tant que nous en faisons l’objet d’un effort et d’une recherche ?",
+  "context": "Krishnamurti soutient que le <strong>bonheur</strong> ne se conquiert pas comme un but. Il surgit lorsque l’esprit cesse de vouloir devenir autre chose et se libère de la peur.",
+  "readingQuestions": [
+    "Pourquoi la recherche volontaire du <strong>bonheur</strong> risque-t-elle de l’empêcher ?",
+    "Quel lien Krishnamurti établit-il entre le <strong>silence de l’esprit</strong>, l’absence de peur et la vérité ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "badge": false,
+      "term": "Un bonheur sans effort",
+      "definition": "L’effort suppose un manque et tend l’esprit vers un résultat futur. Le bonheur apparaît au contraire lorsque cette tension cesse et que l’attention devient disponible à ce qui est."
+    },
+    {
+      "type": "concept",
+      "badge": false,
+      "term": "Se libérer du devenir",
+      "definition": "Ne plus chercher à « devenir quelqu’un » ne signifie pas renoncer à agir, mais cesser de faire dépendre sa valeur et son bonheur d’une identité idéale à atteindre."
+    },
+    {
+      "type": "plain",
+      "definition": "La <u>peur</u> du jugement, de l’échec ou du manque maintient l’esprit dans l’anticipation. Tant qu’elle le domine, il ne peut accueillir pleinement ce qui se présente."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "alain-bonheur-agir",
+      "kind": "proche",
+      "label": "Alain — Le vrai bonheur est le bonheur d’agir",
+      "relation": "Chez Alain comme chez Krishnamurti, le bonheur se trouve sans être directement recherché ; Alain insiste cependant sur l’action, Krishnamurti sur la fin de l’effort intérieur."
+    },
+    {
+      "id": "pascal-bonheur-avenir",
+      "kind": "proche",
+      "label": "Pascal — Espérer le bonheur, c’est ne jamais l’obtenir",
+      "relation": "Tous deux montrent que projeter le bonheur dans un état futur nous détourne de sa possibilité présente."
+    },
+    {
+      "id": "descartes-changer-desirs",
+      "kind": "adverse",
+      "label": "Descartes — Pour être heureux, il faut changer ses désirs",
+      "relation": "Descartes propose un long exercice de maîtrise des désirs ; Krishnamurti se méfie de l’effort même par lequel l’esprit cherche à atteindre le bonheur."
+    }
+  ],
+  "paragraphs": [
+    "Le bonheur ne vient pas lorsqu'on le recherche — là est le plus grand secret — mais c'est facile à dire… Je peux expliquer les choses en quelques mots très simples, mais vous contenter de m'écouter et de répéter ce que vous avez entendu ne va pas vous rendre heureux. Le bonheur est étrange, il vient sans qu'on le recherche. Lorsque vous ne faites pas d'efforts pour être heureux, alors, mystérieusement, sans qu'on s'y attende, le bonheur est là […]. La vérité naît lorsque votre esprit et votre cœur sont exempts de toute sensation d'effort et que vous n'essayez pas de devenir quelqu'un ; la vérité est là lorsque l'esprit est très silencieux, qu'il écoute à l'infini tout ce qui se passe. Vous pouvez écouter les mots prononcés ici, mais pour que le bonheur soit, vous devez découvrir comment libérer l'esprit de toute peur. Tant que vous avez peur de quelqu'un ou de quelque chose, le bonheur est exclu. Tant que vous avez peur de vos parents, de l'échec aux examens, peur de ne pas progresser, de ne pas être plus proche du maître, plus près de la vérité, peur du désaveu, du manque de sollicitude — le bonheur est exclu. Mais si vous n'avez vraiment peur de rien, alors vous découvrirez un beau matin au réveil, ou au cours d'une promenade solitaire, que soudain quelque chose d'étrange se produit : sans qu'on l'ait cherché, ni sollicité, ni appelé de ses vœux, ce qu'on peut appeler l'amour, la vérité, le bonheur est là soudain."
+  ]
+},
+    {
+  "id": "freud-interpretations-delirantes",
+  "section": "philosophie",
+  "cardMeta": "Psychanalyse",
+  "title": "Il y a des interprétations délirantes",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "interprétations délirantes",
+  "authorMeta": "(1856–1939) · fondateur de la psychanalyse",
+  "themes": [
+    "Interprétation",
+    "Inconscient",
+    "Raison"
+  ],
+  "work": "Psychopathologie de la vie quotidienne",
+  "publication": "1901, trad. S. Jankélévitch, Payot, 1967, p. 292–294",
+  "description": "L’interprétation devient-elle délirante lorsqu’elle refuse toute place à l’accidentel ?",
+  "context": "Freud montre que le délire paranoïaque repose lui aussi sur une activité d’<strong>interprétation</strong> : le sujet refuse de voir de simples coïncidences dans certains détails. L’erreur commence lorsqu’il projette sur le monde extérieur une signification qui appartient en réalité à sa propre vie psychique.",
+  "readingQuestions": [
+    "Pourquoi le paranoïaque donne-t-il un sens à des détails que les autres jugent accidentels ?",
+    "Pourquoi Freud rapproche-t-il cette démarche de l’<strong>interprétation</strong> psychanalytique ?",
+    "Qu’est-ce qui distingue alors une interprétation éclairante d’une interprétation délirante ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "definition",
+      "term": "Acte manqué",
+      "definition": "Geste, oubli ou erreur qui paraît fortuit au sujet conscient, mais dans lequel la psychanalyse reconnaît l’expression détournée d’un désir inconscient."
+    },
+    {
+      "type": "analysis",
+      "term": "Exemples d’actes manqués",
+      "definition": "Ils prennent notamment les formes suivantes :",
+      "items": [
+        "un <strong>lapsus</strong> qui laisse échapper un mot révélateur ;",
+        "un <strong>oubli</strong> significatif, par exemple celui d’un rendez-vous que l’on redoute ;",
+        "la <strong>perte</strong> ou le rangement « introuvable » d’un objet chargé affectivement ;",
+        "une <strong>erreur de lecture, d’écriture ou d’adresse</strong> qui dévie vers une pensée refoulée."
       ]
     },
     {
-      id:"freud-interpretations-delirantes", section:"philosophie",
-      cardMeta:"Psychanalyse",
-      title:"Il y a des interprétations délirantes", author:"Sigmund Freud", authorTag:"Freud",
-      cardHighlight:"interprétations délirantes",
-      authorMeta:"(1856–1939) · fondateur de la psychanalyse", themes:["Interprétation", "Inconscient", "Raison"], work:"Psychopathologie de la vie quotidienne", publication:"1901, trad. S. Jankélévitch, Payot, 1967, p. 292–294",
-      description:"L’interprétation devient-elle délirante lorsqu’elle refuse toute place à l’accidentel ?",
-      context:"Freud compare l’interprétation <strong>paranoïaque</strong> et l’interprétation psychanalytique. Le paranoïaque perçoit parfois une détermination réelle, mais la projette abusivement sur les autres.",
-      readingQuestions:[
-        "Pourquoi le paranoïaque accorde-t-il une portée immense à des détails apparemment insignifiants ?",
-        "En quel sens Freud peut-il dire que sa vision est plus pénétrante, tout en refusant toute valeur à sa conclusion ?"
-      ],
-      readingNotes:[
-        { type:"definition", term:"Acte manqué", definition:"Geste, oubli ou erreur qui paraît fortuit au sujet conscient, mais dans lequel la psychanalyse reconnaît l’expression détournée d’un désir inconscient." },
-        { type:"analysis", term:"Exemples d’actes manqués", definition:"Ils prennent notamment les formes suivantes :", items:["un <strong>lapsus</strong> qui laisse échapper un mot révélateur ;", "un <strong>oubli</strong> significatif, par exemple celui d’un rendez-vous que l’on redoute ;", "la <strong>perte</strong> ou le rangement « introuvable » d’un objet chargé affectivement ;", "une <strong>erreur de lecture, d’écriture ou d’adresse</strong> qui dévie vers une pensée refoulée."] },
-        { type:"definition", term:"Névrosé", definition:"Sujet dont le trouble psychique résulte d’un conflit inconscient, sans rupture complète avec la réalité." },
-        { type:"analysis", term:"La part juste et l’erreur", definition:"Le paranoïaque pressent que certains actes apparemment accidentels ont un sens inconscient. Son erreur consiste à généraliser cette découverte et à lire chez tous les autres ce qui n’est réel qu’en lui." }
-      ],
-      glossary:[
-        { term:"psychiques", definition:"Relatifs à la vie de l’esprit." },
-        { term:"actes manqués", definition:"Actes apparemment involontaires dans lesquels peut s’exprimer un désir inconscient." },
-        { term:"névrosé", definition:"Personne affectée par un conflit psychique inconscient sans rupture avec la réalité." }
-      ],
-      relatedTexts:[
-        { id:"foucault-commentaire-exces-sens", kind:"adverse", label:"Foucault — Tout discours dit plus qu’il ne dit en apparence", relation:"Foucault met en lumière l’excès de sens qui rend le commentaire possible ; Freud montre ici le risque d’une interprétation qui transforme tout détail en signe." },
-        { id:"freud-bonheur-episodique", kind:"same-author", label:"Freud — Aucun bien ne rend durablement heureux", relation:"Un autre texte de Freud, consacré cette fois aux limites constitutionnelles du bonheur et au conflit entre plaisir et réalité." }
-      ],
-      paragraphs:[
-        "Les paranoïaques présentent dans leur attitude ce trait frappant et généralement connu, qu'ils attachent la plus grande importance aux détails les plus insignifiants, échappant généralement aux hommes normaux, qu'ils observent dans la conduite des autres ; ils interprètent ces détails et en tirent des conclusions d'une vaste portée. Le dernier paranoïaque que j'ai vu, par exemple, a conclu à l'existence d'un complot dans son entourage, car lors de son départ de la gare des gens ont fait un certain mouvement de la main. Un autre a noté la manière dont les gens marchent dans la rue, font des moulinets avec leur canne, etc.",
-        "Alors que l'homme normal admet une catégorie d'actes accidentels n'ayant pas besoin de motivation, catégorie dans laquelle il range une partie de ses propres manifestations psychiques et actes manqués, le paranoïaque refuse aux manifestations psychiques d'autrui tout élément accidentel. Tout ce qu'il observe sur les autres est significatif, donc susceptible d'interprétation.",
-        "D'où lui vient cette manière de voir ? Ici, comme dans beaucoup d'autres cas analogues, il projette probablement dans la vie psychique d'autrui ce qui existe dans sa propre vie à l'état inconscient. Tant de choses se pressent dans la conscience du paranoïaque qui, chez l'homme normal et chez le névrosé, n'existent que dans l'inconscient, où leur présence est révélée par la psychanalyse.",
-        "Sur ce point, le paranoïaque a donc, dans une certaine mesure, raison : il voit quelque chose qui échappe à l'homme normal, sa vision est plus pénétrante que celle de la pensée normale ; mais ce qui enlève à sa connaissance toute valeur, c'est l'extension à d'autres de l'état de choses qui n'est réel qu'en ce qui le concerne lui-même."
-      ]
+      "type": "definition",
+      "term": "Névrosé",
+      "definition": "Sujet dont le trouble psychique résulte d’un conflit inconscient, sans rupture complète avec la réalité."
     },
     {
-      id:"aristote-amour-amitie-veritable", section:"philosophie",
-      cardMeta:"Antiquité grecque",
-      title:"De l’amour à l’amitié véritable", author:"Aristote", authorTag:"Aristote",
-      cardHighlight:"l’amitié véritable",
-      authorMeta:"(384–322 av. J.-C.)", themes:["Amour", "Autrui", "Bonheur", "Devoir"], work:"Éthique à Nicomaque", publication:"livres VIII et IX, trad. Jules Tricot, Vrin",
-      description:"Comment l’intensité de l’amour et la bienveillance peuvent-elles conduire à une amitié véritable ?",
-      readingNotes:[
-        { type:"analysis", term:"1. Une relation rare et singulière", definition:"L’amour est un excès dirigé vers une seule personne, tandis que l’amitié parfaite ne peut s’étendre à une multitude. Elle demande du temps, une expérience partagée et une véritable intimité." },
-        { type:"analysis", term:"2. Aimer l’autre pour lui-même", definition:"L’ami véritable souhaite le bien de l’autre sans rechercher d’abord un plaisir, un service ou un avantage personnel. L’amitié d’utilité reste intéressée ; l’amitié de plaisir est plus proche de l’amitié véritable, mais demeure liée à une satisfaction qui peut disparaître." },
-        { type:"analysis", term:"3. Transformer la bienveillance en engagement", definition:"La bienveillance n’est encore qu’une « amitié paresseuse » lorsqu’elle se contente de souhaiter du bien. Elle devient amitié véritable lorsque l’on accepte d’agir, de seconder l’autre, de prendre soin de lui et de se donner du tracas à son sujet." },
-        { type:"analysis", term:"4. Les qualités de l’ami véritable", definition:"Il se caractérise par :", items:["la <strong>réciprocité</strong> et la joie mutuelle ;", "la <strong>générosité</strong> et le désintéressement ;", "la <strong>fidélité dans le temps</strong> ;", "la <strong>présence concrète</strong> et la volonté d’agir pour le bien de l’autre."] }
-      ],
-      parts:[
-        {
-          context:"Aristote distingue l’<strong>amitié parfaite</strong>, fondée sur la qualité morale des amis, des liens recherchés pour le plaisir ou l’utilité. L’amour se caractérise ici par son intensité et son exclusivité.",
-          readingQuestions:[
-            "Pourquoi l’amitié parfaite exige-t-elle du temps, de l’expérience et une véritable intimité ?",
-            "En quoi les amitiés de plaisir et d’utilité se distinguent-elles de l’amour porté à une personne singulière ?"
-          ],
-          paragraphs:[
-            "On ne peut pas être un ami pour plusieurs personnes, dans l’amitié parfaite, pas plus qu’on ne peut être amoureux de plusieurs personnes en même temps (car l’amour est une sorte d’excès, et un état de ce genre n’est naturellement ressenti qu’envers un seul) ; et peut-être même n’est-il pas aisé de trouver un grand nombre de gens de bien. On doit aussi acquérir quelque expérience de son ami et entrer dans son intimité, ce qui est d’une extrême difficulté. Par contre, si on recherche l’utilité ou le plaisir, il est possible de plaire à beaucoup de personnes, car nombreux sont les gens de cette sorte, et les services qu’on en reçoit ne se font pas attendre longtemps. De ces deux dernières formes d’amitié celle qui repose sur le plaisir ressemble davantage à la véritable amitié, quand les deux parties retirent à la fois les mêmes satisfactions l’une de l’autre et qu’elles ressentent une joie mutuelle ou se plaisent aux mêmes choses : telles sont les amitiés entre jeunes gens, car il y a en elles plus de générosité ; au contraire, l’amitié basée sur l’utilité est celle d’âmes mercantiles."
-          ],
-          work:"Éthique à Nicomaque",
-          publication:"livre VIII, 7, 1158a10–1158a, trad. Jules Tricot, Vrin, 1994, p. 398–399"
-        },
-        {
-          context:"La <strong>bienveillance</strong> est une disposition favorable, mais encore inactive. Elle ne devient amitié véritable qu’avec le temps, l’intimité et l’engagement concret envers l’autre.",
-          readingQuestions:[
-            "Pourquoi la bienveillance n’est-elle encore qu’une « amitié paresseuse » ?",
-            "Comment distinguer le souhait véritable du bien d’autrui d’une sollicitude intéressée ?"
-          ],
-          paragraphs:[
-            "La bienveillance semble […] un commencement d'amitié, tout comme le plaisir causé par la vue de l'être aimé est le commencement de l'amour : nul en effet n'est amoureux sans avoir été auparavant charmé par l'extérieur de la personne aimée, mais celui qui éprouve du plaisir à l'aspect d'un autre n'est pas pour autant amoureux, mais c'est seulement quand on regrette son absence et qu'on désire passionnément sa présence. Ainsi également, il n'est pas possible d'être amis sans avoir d'abord éprouvé de la bienveillance l'un pour l'autre, tandis que les gens bienveillants ne sont pas pour autant liés d'amitié : car ils se contentent de souhaiter du bien à ceux qui sont l'objet de leur bienveillance, et ne voudraient les seconder en rien ni se donner du tracas à leur sujet. Aussi pourrait-on dire, en étendant le sens du terme amitié, que la bienveillance est une amitié paresseuse, mais avec le temps et une fois parvenue à une certaine intimité, elle devient amitié, « amitié véritable », et non pas cette sorte d'amitié basée sur l'utilité ou le plaisir, car la bienveillance non plus ne prend pas naissance sur ces bases. L'homme qui, en effet, a reçu un bienfait, et qui, en échange des faveurs dont il a été gratifié, répond par de la bienveillance, ne fait là que ce qui est juste, et d'autre part, celui qui souhaite la prospérité d'autrui dans l'espoir d'en tirer amplement profit, paraît bien avoir de la bienveillance, non pas pour cet autre, mais plutôt pour lui-même, pas plus qu'on n'est ami de quelqu'un si les soins dont on l'entoure s'expliquent par quelque motif intéressé."
-          ],
-          work:"Éthique à Nicomaque",
-          publication:"livre IX, 5, 1167a3–1167a18, trad. Jules Tricot, Vrin, p. 448–449"
-        }
-      ]
+      "type": "analysis",
+      "term": "La part juste et l’erreur",
+      "definition": "Le paranoïaque pressent que certains actes apparemment accidentels ont un sens inconscient. Son erreur consiste à généraliser cette découverte et à lire chez tous les autres ce qui n’est réel qu’en lui."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "psychiques",
+      "definition": "Relatifs à la vie de l’esprit."
     },
+    {
+      "term": "actes manqués",
+      "definition": "Actes apparemment involontaires dans lesquels peut s’exprimer un désir inconscient."
+    },
+    {
+      "term": "névrosé",
+      "definition": "Personne affectée par un conflit psychique inconscient sans rupture avec la réalité."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "proche",
+      "label": "Freud — L’inconscient comme hypothèse nécessaire",
+      "relation": "Ce texte explicite le cadre théorique qui rend possible l’interprétation des actes apparemment insignifiants."
+    },
+    {
+      "id": "wittgenstein-inconscient-mythe",
+      "kind": "adverse",
+      "label": "Wittgenstein — La critique des explications freudiennes",
+      "relation": "Wittgenstein interroge précisément le pouvoir de séduction et le statut explicatif des interprétations freudiennes."
+    }
+  ],
+  "paragraphs": [
+    "Les paranoïaques présentent dans leur attitude ce trait frappant et généralement connu, qu'ils attachent la plus grande importance aux détails les plus insignifiants, échappant généralement aux hommes normaux, qu'ils observent dans la conduite des autres ; ils interprètent ces détails et en tirent des conclusions d'une vaste portée. Le dernier paranoïaque que j'ai vu, par exemple, a conclu à l'existence d'un complot dans son entourage, car lors de son départ de la gare des gens ont fait un certain mouvement de la main. Un autre a noté la manière dont les gens marchent dans la rue, font des moulinets avec leur canne, etc.",
+    "Alors que l'homme normal admet une catégorie d'actes accidentels n'ayant pas besoin de motivation, catégorie dans laquelle il range une partie de ses propres manifestations psychiques et actes manqués, le paranoïaque refuse aux manifestations psychiques d'autrui tout élément accidentel. Tout ce qu'il observe sur les autres est significatif, donc susceptible d'interprétation.",
+    "D'où lui vient cette manière de voir ? Ici, comme dans beaucoup d'autres cas analogues, il projette probablement dans la vie psychique d'autrui ce qui existe dans sa propre vie à l'état inconscient. Tant de choses se pressent dans la conscience du paranoïaque qui, chez l'homme normal et chez le névrosé, n'existent que dans l'inconscient, où leur présence est révélée par la psychanalyse.",
+    "Sur ce point, le paranoïaque a donc, dans une certaine mesure, raison : il voit quelque chose qui échappe à l'homme normal, sa vision est plus pénétrante que celle de la pensée normale ; mais ce qui enlève à sa connaissance toute valeur, c'est l'extension à d'autres de l'état de choses qui n'est réel qu'en ce qui le concerne lui-même."
+  ]
+},
+    {
+  "id": "aristote-amour-amitie-veritable",
+  "section": "philosophie",
+  "cardMeta": "Antiquité grecque",
+  "title": "De l’amour à l’amitié véritable",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "l’amitié véritable",
+  "authorMeta": "(384–322 av. J.-C.)",
+  "themes": [
+    "Amour",
+    "Autrui",
+    "Bonheur",
+    "Devoir"
+  ],
+  "work": "Éthique à Nicomaque",
+  "publication": "livres VIII et IX, trad. Jules Tricot, Vrin",
+  "description": "Comment l’intensité de l’amour et la bienveillance peuvent-elles conduire à une amitié véritable ?",
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "1. Une relation rare et singulière",
+      "definition": "L’amour est un excès dirigé vers une seule personne, tandis que l’amitié parfaite ne peut s’étendre à une multitude. Elle demande du temps, une expérience partagée et une véritable intimité."
+    },
+    {
+      "type": "analysis",
+      "term": "2. Aimer l’autre pour lui-même",
+      "definition": "L’ami véritable souhaite le bien de l’autre sans rechercher d’abord un plaisir, un service ou un avantage personnel. L’amitié d’utilité reste intéressée ; l’amitié de plaisir est plus proche de l’amitié véritable, mais demeure liée à une satisfaction qui peut disparaître."
+    },
+    {
+      "type": "analysis",
+      "term": "3. Transformer la bienveillance en engagement",
+      "definition": "La bienveillance n’est encore qu’une « amitié paresseuse » lorsqu’elle se contente de souhaiter du bien. Elle devient amitié véritable lorsque l’on accepte d’agir, de seconder l’autre, de prendre soin de lui et de se donner du tracas à son sujet."
+    },
+    {
+      "type": "analysis",
+      "term": "4. Les qualités de l’ami véritable",
+      "definition": "Il se caractérise par :",
+      "items": [
+        "la <strong>réciprocité</strong> et la joie mutuelle ;",
+        "la <strong>générosité</strong> et le désintéressement ;",
+        "la <strong>fidélité dans le temps</strong> ;",
+        "la <strong>présence concrète</strong> et la volonté d’agir pour le bien de l’autre."
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "context": "Aristote distingue l’<strong>amitié parfaite</strong> des relations fondées seulement sur le plaisir ou l’utilité. Une véritable amitié suppose de connaître l’autre, de partager du temps avec lui et de l’aimer pour ce qu’il est, non seulement pour ce qu’il nous apporte.",
+      "readingQuestions": [
+        "Pourquoi l’amitié parfaite ne peut-elle pas s’étendre à un très grand nombre de personnes ?",
+        "Pourquoi l’amitié de plaisir ressemble-t-elle davantage à l’amitié véritable que l’amitié d’utilité ?",
+        "Qu’est-ce qui distingue finalement aimer <strong>autrui pour lui-même</strong> et aimer ce qu’il nous apporte ?"
+      ],
+      "paragraphs": [
+        "On ne peut pas être un ami pour plusieurs personnes, dans l’amitié parfaite, pas plus qu’on ne peut être amoureux de plusieurs personnes en même temps (car l’amour est une sorte d’excès, et un état de ce genre n’est naturellement ressenti qu’envers un seul) ; et peut-être même n’est-il pas aisé de trouver un grand nombre de gens de bien. On doit aussi acquérir quelque expérience de son ami et entrer dans son intimité, ce qui est d’une extrême difficulté. Par contre, si on recherche l’utilité ou le plaisir, il est possible de plaire à beaucoup de personnes, car nombreux sont les gens de cette sorte, et les services qu’on en reçoit ne se font pas attendre longtemps. De ces deux dernières formes d’amitié celle qui repose sur le plaisir ressemble davantage à la véritable amitié, quand les deux parties retirent à la fois les mêmes satisfactions l’une de l’autre et qu’elles ressentent une joie mutuelle ou se plaisent aux mêmes choses : telles sont les amitiés entre jeunes gens, car il y a en elles plus de générosité ; au contraire, l’amitié basée sur l’utilité est celle d’âmes mercantiles."
+      ],
+      "work": "Éthique à Nicomaque",
+      "publication": "livre VIII, 7, 1158a10–1158a, trad. Jules Tricot, Vrin, 1994, p. 398–399"
+    },
+    {
+      "context": "La <strong>bienveillance</strong> est pour Aristote un commencement d’amitié, mais elle ne suffit pas. Souhaiter le bien d’autrui doit devenir une relation vécue : l’amitié véritable demande du temps, de l’intimité et la volonté d’agir concrètement pour l’autre.",
+      "readingQuestions": [
+        "Pourquoi souhaiter le bien de quelqu’un ne suffit-il pas encore à être son ami ?",
+        "Pourquoi Aristote qualifie-t-il la simple bienveillance d’« amitié paresseuse » ?",
+        "À quelles conditions la bienveillance devient-elle une véritable relation d’<strong>amitié</strong> ?"
+      ],
+      "paragraphs": [
+        "La bienveillance semble […] un commencement d'amitié, tout comme le plaisir causé par la vue de l'être aimé est le commencement de l'amour : nul en effet n'est amoureux sans avoir été auparavant charmé par l'extérieur de la personne aimée, mais celui qui éprouve du plaisir à l'aspect d'un autre n'est pas pour autant amoureux, mais c'est seulement quand on regrette son absence et qu'on désire passionnément sa présence. Ainsi également, il n'est pas possible d'être amis sans avoir d'abord éprouvé de la bienveillance l'un pour l'autre, tandis que les gens bienveillants ne sont pas pour autant liés d'amitié : car ils se contentent de souhaiter du bien à ceux qui sont l'objet de leur bienveillance, et ne voudraient les seconder en rien ni se donner du tracas à leur sujet. Aussi pourrait-on dire, en étendant le sens du terme amitié, que la bienveillance est une amitié paresseuse, mais avec le temps et une fois parvenue à une certaine intimité, elle devient amitié, « amitié véritable », et non pas cette sorte d'amitié basée sur l'utilité ou le plaisir, car la bienveillance non plus ne prend pas naissance sur ces bases. L'homme qui, en effet, a reçu un bienfait, et qui, en échange des faveurs dont il a été gratifié, répond par de la bienveillance, ne fait là que ce qui est juste, et d'autre part, celui qui souhaite la prospérité d'autrui dans l'espoir d'en tirer amplement profit, paraît bien avoir de la bienveillance, non pas pour cet autre, mais plutôt pour lui-même, pas plus qu'on n'est ami de quelqu'un si les soins dont on l'entoure s'expliquent par quelque motif intéressé."
+      ],
+      "work": "Éthique à Nicomaque",
+      "publication": "livre IX, 5, 1167a3–1167a18, trad. Jules Tricot, Vrin, p. 448–449"
+    }
+  ]
+},
     {
       id:"genese-naissance-du-monde", section:"theologie", bible:true,
       cardMeta:"Récit biblique",
@@ -1106,84 +6019,3362 @@
       ]
     },
     {
-      id:"kant-desir-raison-imagination", section:"philosophie",
-      cardMeta:"Philosophie critique",
-      title:"Le désir naît de la raison et de l’imagination", author:"Emmanuel Kant", authorTag:"Kant",
-      cardHighlight:"raison et de l’imagination", cardHeight:"compact",
-      authorMeta:"(1724–1804) · philosophie critique", themes:["Désir", "Nature"], work:"Conjectures sur les débuts de l’histoire humaine", publication:"1786, dans <em>Opuscules sur l’histoire</em>, trad. S. Piobetta, G.F., 1990, p. 151",
-      description:"Comment la raison transforme-t-elle les besoins naturels en désirs toujours plus nombreux ?",
-      context:"Kant montre comment la <strong>raison</strong>, soutenue par l’<strong>imagination</strong>, libère l’être humain de la conduite toute tracée par l’instinct. Cette émancipation multiplie les désirs, transforme l’attirance en amour, fait naître le goût du beau et ouvre la conscience à l’avenir.",
-      readingQuestions:[
-        "En quoi un désir fabriqué par l’imagination se distingue-t-il d’un besoin naturel ?",
-        "Pourquoi la multiplication des désirs est-elle à la fois une libération et un risque ?",
-        "Comment l’absence de l’objet peut-elle intensifier le désir au lieu de l’éteindre ?",
-        "Quel rôle le refus et la pudeur jouent-ils dans le passage de l’attirance à l’amour ?",
-        "Pourquoi la capacité d’anticiper l’avenir constitue-t-elle, selon Kant, un progrès de la raison ?"
-      ],
-      glossary:[
-        { term:"fondements", definition:"Ici, le mot désigne les raisons qui justifieraient l’existence d’un désir. Il ne faut pas le confondre avec son origine, c’est-à-dire la manière dont ce désir apparaît." },
-        { term:"instinct", definition:"Mode de conduite largement inné qui adapte l’animal à son milieu et l’oriente directement vers la satisfaction de ses besoins." },
-        { term:"désirs artificiels", definition:"Désirs produits par la raison et l’imagination plutôt que dictés par une nécessité biologique immédiate." },
-        { term:"feuille de figuier", definition:"Allusion à Adam et Ève dans la Genèse (3,7) : prenant conscience de leur nudité, ils se couvrent. Kant donne à cet épisode une interprétation philosophique." },
-        { term:"excitations idéales", definition:"Désirs dont l’objet est représenté par l’esprit : sa signification et la valeur qu’on lui prête comptent davantage que sa présence sensible." },
-        { term:"attente réfléchie", definition:"Capacité de rendre présent par la pensée un avenir parfois lointain et d’orienter sa conduite en fonction de lui." }
-      ],
-      readingNotes:[
-        { type:"opposition", left:{ term:"Besoin", definition:"Nécessité vitale qui appelle une satisfaction déterminée et immédiate." }, right:{ term:"Désir", definition:"Élan façonné par des représentations : l’être humain peut inventer son objet, le différer et lui attribuer une valeur." }, conclusion:"Le besoin renvoie d’abord à la conservation ; le désir ouvre un champ potentiellement sans limite." },
-        { type:"opposition", left:{ term:"Rapport immédiat", definition:"L’objet présent déclenche directement l’impulsion et sa consommation conduit à la satiété." }, right:{ term:"Rapport médiatisé", definition:"L’imagination place une représentation entre l’impulsion et son objet ; l’absence peut alors entretenir le désir." }, conclusion:"Chez Kant, la distance n’affaiblit pas nécessairement l’inclination : elle peut la rendre plus durable." },
-        { type:"opposition", left:{ term:"Objet réel", definition:"Il existe indépendamment du sujet et peut être perçu ou consommé." }, right:{ term:"Objet idéalisé", definition:"Il est investi de significations, de promesses et de valeurs produites par le sujet." }, conclusion:"On ne désire donc jamais seulement une chose : on désire aussi ce que l’on imagine à travers elle." },
-        { type:"analysis", term:"Le mouvement du texte", definition:"Kant décrit trois progrès successifs de la raison.", items:["Elle déborde l’instinct et rend possibles des choix nombreux.", "Elle soustrait l’objet aux sens : le refus, la pudeur et l’imagination transforment l’impulsion en amour puis en goût du beau.", "Elle permet d’anticiper un avenir lointain et de régler le présent sur ce qui n’existe pas encore."] },
-        { type:"analysis", term:"Le paradoxe central", definition:"La raison rend l’être humain plus libre en l’affranchissant de l’instinct, mais cette liberté fait également proliférer des penchants superflus. Le progrès n’est donc pas présenté comme un bonheur simple : il agrandit à la fois notre autonomie et notre insatisfaction." },
-        { type:"concept", term:"Du désir à l’amour", definition:"Le refus introduit une distance. L’autre n’est plus seulement l’objet présent d’une impulsion : il peut être imaginé, attendu et admiré. C’est ce déplacement qui prépare, dans le raisonnement de Kant, l’amour et le sentiment du beau." }
-      ],
-      relatedTexts:[
-        { id:"platon-mythe-androgyne-desir", kind:"proche", label:"Platon, Aristophane — Le désir amoureux poursuit l’unité perdue", relation:"Chez Aristophane comme chez Kant, l’absence nourrit le désir ; le premier l’explique par une séparation originelle, le second par le travail de la raison et de l’imagination." },
-        { id:"rousseau-desir-imagination-bonheur", kind:"proche", label:"Rousseau — Le bonheur se nourrit de ce que nous espérons", relation:"Rousseau rejoint Kant sur le pouvoir de l’imagination : l’objet absent et représenté peut susciter davantage de plaisir que l’objet réellement possédé." },
-        { id:"platon-callicles-desirs", kind:"proche", label:"Platon — Les désirs ne doivent pas être sans mesure", relation:"Kant comme Platon interroge la multiplication des désirs ; Kant en explique la source dans la raison et l’imagination." },
-        { id:"epicure-plaisir-vie-heureuse", kind:"adverse", label:"Épicure — Hiérarchiser ses désirs pour vivre heureux", relation:"Épicure cherche à limiter les désirs vains ; Kant décrit le pouvoir humain de les créer et de les étendre indéfiniment." },
-        { id:"kant-quietude-inaccessible", kind:"proche", label:"Kant — La quiétude est inaccessible à l’homme", relation:"Les deux textes montrent que l’être humain ne demeure pas dans un état de repos : ses facultés et ses désirs le portent au-delà de la simple satisfaction." }
-      ],
-      paragraphs:[
-        "Une propriété de la raison consiste à pouvoir, avec l’appui de l’imagination, créer artificiellement des désirs, non seulement sans fondements établis sur un instinct naturel, mais même en opposition avec lui ; ces désirs, au début, favorisent peu à peu l’éclosion de tout un essaim de penchants superflus et, qui plus est, contraires à la nature, sous l’appellation de « sensualité ». […] Le fait de s’être rendu compte que sa raison avait le pouvoir de franchir les bornes dans lesquelles sont maintenus tous les animaux fut, chez l’homme, capital et décisif pour la conduite de sa vie. […] Il découvrit en lui un pouvoir de se choisir à lui-même sa propre conduite, et de ne pas être lié comme les autres animaux à une conduite unique. […] En dehors des objets de son désir que l’instinct jusque-là lui avait indiqués, une infinité d’autres lui étaient offerts, au milieu desquels il ne savait encore comment choisir […].",
-        "L’excitation sexuelle, qui, chez les animaux, repose seulement sur une impulsion passagère et la plupart du temps périodique, était susceptible pour lui de se prolonger et même de s’accroître sous l’effet de l’imagination, […] de façon d’autant plus durable et plus uniforme que l’objet est soustrait aux sens, ce qui évite la satiété qu’entraîne avec soi la satisfaction d’un désir purement animal. La feuille de figuier fut donc le résultat d’une manifestation de la raison bien plus importante que toutes celles qui étaient survenues antérieurement au tout premier stade de son développement. Car le fait de rendre une inclination plus forte et plus durable, en retirant son objet aux sens, dénote déjà une certaine suprématie consciente de la raison sur les inclinations et non plus seulement, comme au degré inférieur, un pouvoir de les servir sur une plus ou moins grande échelle. Le refus fut l’habile artifice qui conduisit l’homme des excitations purement sensuelles vers les excitations idéales, et peu à peu du désir purement animal à l’amour. Et, avec l’amour, le sentiment de ce qui est purement agréable devint le goût du beau, découvert d’abord seulement dans l’homme, puis aussi dans la nature. […]",
-        "Le troisième progrès accompli par la raison, après qu’elle se fut mêlée des premiers besoins immédiats et sensibles, ce fut l’attente réfléchie de l’avenir. Ce pouvoir de ne pas jouir seulement de l’instant présent, mais de se représenter d’une façon actuelle l’avenir souvent très lointain, est le signe distinctif le plus caractéristique de la supériorité de l’homme […]."
+  "id": "kant-desir-raison-imagination",
+  "section": "philosophie",
+  "cardMeta": "Philosophie critique",
+  "title": "Le désir naît de la raison et de l’imagination",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "raison et de l’imagination",
+  "cardHeight": "compact",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Désir",
+    "Nature"
+  ],
+  "work": "Conjectures sur les débuts de l’histoire humaine",
+  "publication": "1786, dans <em>Opuscules sur l’histoire</em>, trad. S. Piobetta, G.F., 1990, p. 151",
+  "description": "Comment la raison transforme-t-elle les besoins naturels en désirs toujours plus nombreux ?",
+  "context": "Kant montre comment la <strong>raison</strong>, soutenue par l’<strong>imagination</strong>, libère l’être humain de la conduite toute tracée par l’instinct. Cette émancipation multiplie les désirs, transforme l’attirance en amour, fait naître le goût du beau et ouvre la conscience à l’avenir.",
+  "readingQuestions": [
+    "Comment l’<strong>imagination</strong> transforme-t-elle un besoin naturel en désir proprement humain ?",
+    "Pourquoi la multiplication des désirs est-elle à la fois une libération et une nouvelle source de dépendance ?",
+    "En quoi cette transformation du désir manifeste-t-elle le développement de la <strong>raison</strong> et de la liberté humaines ?"
+  ],
+  "glossary": [
+    {
+      "term": "fondements",
+      "definition": "Ici, le mot désigne les raisons qui justifieraient l’existence d’un désir. Il ne faut pas le confondre avec son origine, c’est-à-dire la manière dont ce désir apparaît."
+    },
+    {
+      "term": "instinct",
+      "definition": "Mode de conduite largement inné qui adapte l’animal à son milieu et l’oriente directement vers la satisfaction de ses besoins."
+    },
+    {
+      "term": "désirs artificiels",
+      "definition": "Désirs produits par la raison et l’imagination plutôt que dictés par une nécessité biologique immédiate."
+    },
+    {
+      "term": "feuille de figuier",
+      "definition": "Allusion à Adam et Ève dans la Genèse (3,7) : prenant conscience de leur nudité, ils se couvrent. Kant donne à cet épisode une interprétation philosophique."
+    },
+    {
+      "term": "excitations idéales",
+      "definition": "Désirs dont l’objet est représenté par l’esprit : sa signification et la valeur qu’on lui prête comptent davantage que sa présence sensible."
+    },
+    {
+      "term": "attente réfléchie",
+      "definition": "Capacité de rendre présent par la pensée un avenir parfois lointain et d’orienter sa conduite en fonction de lui."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Besoin",
+        "definition": "Nécessité vitale qui appelle une satisfaction déterminée et immédiate."
+      },
+      "right": {
+        "term": "Désir",
+        "definition": "Élan façonné par des représentations : l’être humain peut inventer son objet, le différer et lui attribuer une valeur."
+      },
+      "conclusion": "Le besoin renvoie d’abord à la conservation ; le désir ouvre un champ potentiellement sans limite."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Rapport immédiat",
+        "definition": "L’objet présent déclenche directement l’impulsion et sa consommation conduit à la satiété."
+      },
+      "right": {
+        "term": "Rapport médiatisé",
+        "definition": "L’imagination place une représentation entre l’impulsion et son objet ; l’absence peut alors entretenir le désir."
+      },
+      "conclusion": "Chez Kant, la distance n’affaiblit pas nécessairement l’inclination : elle peut la rendre plus durable."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Objet réel",
+        "definition": "Il existe indépendamment du sujet et peut être perçu ou consommé."
+      },
+      "right": {
+        "term": "Objet idéalisé",
+        "definition": "Il est investi de significations, de promesses et de valeurs produites par le sujet."
+      },
+      "conclusion": "On ne désire donc jamais seulement une chose : on désire aussi ce que l’on imagine à travers elle."
+    },
+    {
+      "type": "analysis",
+      "term": "Le mouvement du texte",
+      "definition": "Kant décrit trois progrès successifs de la raison.",
+      "items": [
+        "Elle déborde l’instinct et rend possibles des choix nombreux.",
+        "Elle soustrait l’objet aux sens : le refus, la pudeur et l’imagination transforment l’impulsion en amour puis en goût du beau.",
+        "Elle permet d’anticiper un avenir lointain et de régler le présent sur ce qui n’existe pas encore."
       ]
     },
     {
-      id:"kant-quietude-inaccessible", section:"philosophie",
-      cardMeta:"Philosophie critique",
-      title:"La quiétude est inaccessible à l’homme", author:"Emmanuel Kant", authorTag:"Kant",
-      cardHighlight:"inaccessible à l’homme", cardHeight:"compact",
-      authorMeta:"(1724–1804) · philosophie critique", themes:["Bonheur", "Nature"], work:"Anthropologie d’un point de vue pragmatique", publication:"1798, § 61",
-      description:"Pourquoi une satisfaction absolue serait-elle incompatible avec l’activité et la vie humaines ?",
-      context:"Kant ne présente pas la <strong>douleur</strong> comme un simple mal : la nature en fait un stimulant qui relance constamment l’activité humaine et le progrès vers le mieux.",
-      readingQuestions:[
-        "Pourquoi la satisfaction absolue n’est-elle accessible ni moralement ni pragmatiquement ?",
-        "En quel sens la <strong>douleur</strong> stimule-t-elle l’activité et le progrès ?",
-        "Pourquoi le repos absolu serait-il incompatible avec la <strong>vie intellectuelle</strong> ?"
+      "type": "analysis",
+      "term": "Le paradoxe central",
+      "definition": "La raison rend l’être humain plus libre en l’affranchissant de l’instinct, mais cette liberté fait également proliférer des penchants superflus. Le progrès n’est donc pas présenté comme un bonheur simple : il agrandit à la fois notre autonomie et notre insatisfaction."
+    },
+    {
+      "type": "concept",
+      "term": "Du désir à l’amour",
+      "definition": "Le refus introduit une distance. L’autre n’est plus seulement l’objet présent d’une impulsion : il peut être imaginé, attendu et admiré. C’est ce déplacement qui prépare, dans le raisonnement de Kant, l’amour et le sentiment du beau."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-mythe-androgyne-desir",
+      "kind": "proche",
+      "label": "Platon, Aristophane — Le désir amoureux poursuit l’unité perdue",
+      "relation": "Chez Aristophane comme chez Kant, l’absence nourrit le désir ; le premier l’explique par une séparation originelle, le second par le travail de la raison et de l’imagination."
+    },
+    {
+      "id": "rousseau-desir-imagination-bonheur",
+      "kind": "proche",
+      "label": "Rousseau — Le bonheur se nourrit de ce que nous espérons",
+      "relation": "Rousseau rejoint Kant sur le pouvoir de l’imagination : l’objet absent et représenté peut susciter davantage de plaisir que l’objet réellement possédé."
+    },
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "proche",
+      "label": "Platon — Les désirs ne doivent pas être sans mesure",
+      "relation": "Kant comme Platon interroge la multiplication des désirs ; Kant en explique la source dans la raison et l’imagination."
+    },
+    {
+      "id": "epicure-plaisir-vie-heureuse",
+      "kind": "adverse",
+      "label": "Épicure — Hiérarchiser ses désirs pour vivre heureux",
+      "relation": "Épicure cherche à limiter les désirs vains ; Kant décrit le pouvoir humain de les créer et de les étendre indéfiniment."
+    },
+    {
+      "id": "kant-quietude-inaccessible",
+      "kind": "proche",
+      "label": "Kant — La quiétude est inaccessible à l’homme",
+      "relation": "Les deux textes montrent que l’être humain ne demeure pas dans un état de repos : ses facultés et ses désirs le portent au-delà de la simple satisfaction."
+    }
+  ],
+  "paragraphs": [
+    "Une propriété de la raison consiste à pouvoir, avec l’appui de l’imagination, créer artificiellement des désirs, non seulement sans fondements établis sur un instinct naturel, mais même en opposition avec lui ; ces désirs, au début, favorisent peu à peu l’éclosion de tout un essaim de penchants superflus et, qui plus est, contraires à la nature, sous l’appellation de « sensualité ». […] Le fait de s’être rendu compte que sa raison avait le pouvoir de franchir les bornes dans lesquelles sont maintenus tous les animaux fut, chez l’homme, capital et décisif pour la conduite de sa vie. […] Il découvrit en lui un pouvoir de se choisir à lui-même sa propre conduite, et de ne pas être lié comme les autres animaux à une conduite unique. […] En dehors des objets de son désir que l’instinct jusque-là lui avait indiqués, une infinité d’autres lui étaient offerts, au milieu desquels il ne savait encore comment choisir […].",
+    "L’excitation sexuelle, qui, chez les animaux, repose seulement sur une impulsion passagère et la plupart du temps périodique, était susceptible pour lui de se prolonger et même de s’accroître sous l’effet de l’imagination, […] de façon d’autant plus durable et plus uniforme que l’objet est soustrait aux sens, ce qui évite la satiété qu’entraîne avec soi la satisfaction d’un désir purement animal. La feuille de figuier fut donc le résultat d’une manifestation de la raison bien plus importante que toutes celles qui étaient survenues antérieurement au tout premier stade de son développement. Car le fait de rendre une inclination plus forte et plus durable, en retirant son objet aux sens, dénote déjà une certaine suprématie consciente de la raison sur les inclinations et non plus seulement, comme au degré inférieur, un pouvoir de les servir sur une plus ou moins grande échelle. Le refus fut l’habile artifice qui conduisit l’homme des excitations purement sensuelles vers les excitations idéales, et peu à peu du désir purement animal à l’amour. Et, avec l’amour, le sentiment de ce qui est purement agréable devint le goût du beau, découvert d’abord seulement dans l’homme, puis aussi dans la nature. […]",
+    "Le troisième progrès accompli par la raison, après qu’elle se fut mêlée des premiers besoins immédiats et sensibles, ce fut l’attente réfléchie de l’avenir. Ce pouvoir de ne pas jouir seulement de l’instant présent, mais de se représenter d’une façon actuelle l’avenir souvent très lointain, est le signe distinctif le plus caractéristique de la supériorité de l’homme […]."
+  ]
+},
+    {
+  "id": "kant-quietude-inaccessible",
+  "section": "philosophie",
+  "cardMeta": "Philosophie critique",
+  "title": "La quiétude est inaccessible à l’homme",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "inaccessible à l’homme",
+  "cardHeight": "compact",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Bonheur",
+    "Nature"
+  ],
+  "work": "Anthropologie d’un point de vue pragmatique",
+  "publication": "1798, § 61",
+  "description": "Pourquoi une satisfaction absolue serait-elle incompatible avec l’activité et la vie humaines ?",
+  "context": "Kant ne présente pas la <strong>douleur</strong> comme un simple mal : la nature en fait un stimulant qui relance constamment l’activité humaine et le progrès vers le mieux.",
+  "readingQuestions": [
+    "Pourquoi la satisfaction absolue n’est-elle accessible ni moralement ni pragmatiquement ?",
+    "En quel sens la <strong>douleur</strong> stimule-t-elle l’activité et le progrès ?",
+    "Pourquoi le repos absolu serait-il incompatible avec la <strong>vie intellectuelle</strong> ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "<em>Acquiescentia</em>",
+      "definition": "Satisfaction ou approbation complète. Kant soutient qu’elle ne peut jamais être absolue pendant la vie humaine."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Satisfaction relative",
+        "definition": "Jugement partiel obtenu en comparant notre vie à celle des autres ou à nos propres états antérieurs."
+      },
+      "right": {
+        "term": "Satisfaction absolue",
+        "definition": "État sans manque, sans douleur et sans nouveau mobile d’action ; il demeure inaccessible à l’être humain vivant."
+      }
+    },
+    {
+      "type": "concept",
+      "term": "Douleur comme aiguillon",
+      "definition": "La douleur signale un manque et met les facultés en mouvement. Elle empêche l’engourdissement et pousse l’être humain à progresser vers le mieux."
+    },
+    {
+      "type": "concept",
+      "term": "Analogie organique",
+      "definition": "Une vie intellectuelle entièrement immobile serait comparable à un cœur qui cesse de battre : sans nouvelle excitation, l’arrêt de l’activité conduit à la mort."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "alain-bonheur-agir",
+      "kind": "proche",
+      "label": "Alain — Le vrai bonheur est le bonheur d’agir",
+      "relation": "Les deux textes refusent d’identifier le bonheur à un repos sans activité."
+    },
+    {
+      "id": "freud-bonheur-episodique",
+      "kind": "proche",
+      "label": "Freud — Aucun bien ne rend durablement heureux",
+      "relation": "Freud explique lui aussi pourquoi une satisfaction devenue stable perd son intensité."
+    },
+    {
+      "id": "schopenhauer-bonheur-absence-souffrance",
+      "kind": "adverse",
+      "label": "Schopenhauer — Le bonheur comme absence de souffrance",
+      "relation": "Schopenhauer mesure le bonheur à l’absence de douleur ; Kant voit dans la douleur un stimulant nécessaire de l’activité."
+    }
+  ],
+  "paragraphs": [
+    "Qu’en est-il de la satisfaction (<em>acquiescentia</em>) pendant la vie ? — Elle n’est pas accessible à l’homme : ni dans un sens moral (être satisfait de soi-même pour sa bonne volonté), ni dans un sens pragmatique (être satisfait du bien-être qu’on pense pouvoir se procurer par l’habileté et l’intelligence).",
+    "La nature a placé en l’homme, comme stimulant de l’activité, la douleur à laquelle il ne peut se soustraire afin que le progrès s’accomplisse toujours vers le mieux ; et même à l’instant suprême, on ne peut se dire satisfait de la dernière partie de sa vie que d’une manière relative — en partie par comparaison avec le lot des autres, en partie par comparaison avec nous-mêmes ; mais on ne l’est jamais purement ni absolument.",
+    "Dans la vie, être satisfait absolument, ce serait, hors de toute activité, le repos et l’inertie des mobiles, ou l’engourdissement des sensations et de l’activité qui leur est liée. Un tel état est tout aussi incompatible avec la vie intellectuelle de l’homme que l’immobilité du cœur dans un organisme animal, immobilité à laquelle, si ne survient aucune nouvelle excitation par la douleur, la mort fait suite inévitablement."
+  ]
+},
+    {
+  "id": "aristote-temps-nombre-mouvement",
+  "section": "philosophie",
+  "cardMeta": "Antiquité grecque",
+  "title": "Le temps est le nombre du mouvement",
+  "author": "Aristote",
+  "authorTag": "Aristote",
+  "cardHighlight": "nombre du mouvement",
+  "authorMeta": "(384–322 av. J.-C.) · aristotélisme",
+  "themes": [
+    "Temps",
+    "Nature"
+  ],
+  "work": "Physique",
+  "publication": "IVe s. av. J.-C., livre IV, 219b sqq., trad. P. Pellegrin, GF, 2000, p. 252–253",
+  "description": "Le temps est-il une réalité indépendante, ou ce par quoi nous nombrons l’avant et l’après dans le mouvement ?",
+  "context": "Aristote distingue le <strong>temps</strong> du mouvement lui-même. Le temps est ce par quoi nous pouvons compter un <strong>avant</strong> et un <strong>après</strong> dans le changement : il dépend du mouvement sans se confondre avec lui.",
+  "readingQuestions": [
+    "Pourquoi Aristote refuse-t-il d’identifier directement le <strong>temps</strong> au mouvement ?",
+    "Comment le « maintenant » permet-il de distinguer un <strong>avant</strong> et un <strong>après</strong> ?",
+    "Que signifie finalement définir le temps comme un « <strong>nombre du mouvement</strong> » ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Nombre du mouvement",
+      "badge": false,
+      "definition": "Le temps n’est pas le mouvement lui-même : il est le nombre du mouvement selon l’antérieur et le postérieur, c’est-à-dire ce qui permet d’en ordonner et d’en mesurer la succession."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Mouvement",
+        "definition": "Le changement qui se produit dans les choses."
+      },
+      "right": {
+        "term": "Temps",
+        "definition": "Ce par quoi le mouvement est nombré selon un avant et un après."
+      }
+    },
+    {
+      "type": "concept",
+      "term": "Le maintenant",
+      "badge": false,
+      "definition": "Le présent joue le rôle d’une limite : il distingue un antérieur d’un postérieur tout en appartenant à la continuité du temps."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-temps-forme-a-priori",
+      "kind": "adverse",
+      "label": "Kant — Le temps est une forme a priori de la sensibilité",
+      "relation": "Kant déplace la question : le temps n’est plus d’abord pensé à partir du mouvement, mais comme une condition préalable de toute expérience des phénomènes."
+    },
+    {
+      "id": "bergson-duree-espace",
+      "kind": "adverse",
+      "label": "Bergson — La durée vécue ne se laisse pas réduire à une ligne",
+      "relation": "Bergson critique précisément la tendance à représenter le temps sur le modèle d’une grandeur mesurable et spatialisée."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "nombré",
+      "definition": "Ce qui reçoit un nombre ou peut être compté."
+    },
+    {
+      "term": "nombrons",
+      "definition": "L’acte par lequel nous comptons ou attribuons un nombre."
+    }
+  ],
+  "paragraphs": [
+    "Donc le temps n'est pas un mouvement mais ce par quoi le mouvement a un nombre. En voici un signe : nous distinguons le plus et le moins par le nombre, le plus et le moins de mouvement par le temps. Donc le temps est un certain nombre. Mais puisque le nombre se prend en deux sens (en effet nous appelons « nombre » ce qui est nombré et ce qui est nombrable, ainsi que ce par quoi nous nombrons), le temps est ce qui est nombré et non ce par quoi nous nombrons. Car ce par quoi nous nombrons et ce qui est nombré sont [des choses] différentes.",
+    "Et comme le mouvement est sans cesse autre, de même en est-il du temps, bien que tout « maintenant » soit le même (en effet ce qui fait qu'il y avait un « maintenant » est le même, mais son essence est différente), or le « maintenant » mesure le temps, en tant qu'il délimite un antérieur et un postérieur."
+  ],
+  "familiarIdea": "le temps, « nombre du mouvement »"
+},
+    {
+  "id": "kant-temps-forme-a-priori",
+  "section": "philosophie",
+  "cardMeta": "Philosophie critique",
+  "title": "Le temps est une forme a priori de la sensibilité",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "forme a priori",
+  "authorMeta": "(1724–1804) · philosophie critique",
+  "themes": [
+    "Temps",
+    "Raison"
+  ],
+  "work": "Critique de la raison pure",
+  "publication": "1781–1787, section 2, trad. A. Tremesaygues et B. Pacaud, PUF, 1975",
+  "description": "Le temps vient-il de l’expérience, ou faut-il déjà le présupposer pour pouvoir percevoir une succession ?",
+  "context": "Pour Kant, le <strong>temps</strong> ne vient pas de l’expérience : toute expérience d’une succession ou d’une simultanéité le suppose déjà. Il est donc une <strong>forme <em>a priori</em> de la sensibilité</strong>, c’est-à-dire une condition de notre manière de recevoir les phénomènes.",
+  "readingQuestions": [
+    "Pourquoi toute expérience d’une succession suppose-t-elle déjà le <strong>temps</strong> ?",
+    "Que signifie dire que le temps est une forme <strong><em>a priori</em></strong> de la sensibilité ?",
+    "Le temps appartient-il alors aux choses elles-mêmes ou à notre manière de les percevoir ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "A priori",
+      "definition": "Ce qui ne dérive pas de l’expérience mais constitue une condition qui la rend possible."
+    },
+    {
+      "type": "concept",
+      "term": "Forme de la sensibilité",
+      "definition": "Cadre dans lequel les phénomènes peuvent nous apparaître. Pour Kant, le temps structure nécessairement notre expérience intérieure et toute succession."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Concept empirique",
+        "definition": "Une représentation obtenue à partir de l’expérience."
+      },
+      "right": {
+        "term": "Représentation a priori",
+        "definition": "Une représentation présupposée par l’expérience elle-même et qui ne peut donc en être dérivée."
+      }
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-temps-nombre-mouvement",
+      "kind": "adverse",
+      "label": "Aristote — Le temps est le nombre du mouvement",
+      "relation": "Aristote pense le temps à partir du mouvement ; Kant le pense comme condition de possibilité de l’expérience du mouvement et de la succession."
+    },
+    {
+      "id": "bergson-duree-espace",
+      "kind": "proche",
+      "label": "Bergson — La durée vécue ne se laisse pas réduire à une ligne",
+      "relation": "Kant comme Bergson refusent de faire du temps une simple chose extérieure, mais ils n’en donnent pas le même statut philosophique."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "empirique",
+      "definition": "Qui provient de l’expérience sensible."
+    },
+    {
+      "term": "a priori",
+      "definition": "Indépendant de l’expérience et conditionnant sa possibilité."
+    },
+    {
+      "term": "intuitions",
+      "definition": "Chez Kant, représentations immédiates par lesquelles un objet nous est donné dans la sensibilité."
+    },
+    {
+      "term": "phénomènes",
+      "definition": "Les choses telles qu’elles nous apparaissent dans les formes de notre sensibilité."
+    }
+  ],
+  "paragraphs": [
+    "1. Le temps n'est pas un concept empirique qui dérive d'une expérience quelconque. En effet, la simultanéité ou succession ne tomberait pas elle-même sous la perception, si la représentation du temps ne lui servait a priori de fondement. Ce n'est que sous cette supposition que l'on peut se représenter qu'une chose existe en même temps qu'une autre (simultanément) ou dans des temps différents (successivement).",
+    "2. Le temps est une représentation nécessaire qui sert de fondement à toutes les intuitions. On ne saurait exclure le temps lui-même par rapport aux phénomènes en général, quoiqu'on puisse fort bien faire abstraction des phénomènes dans le temps. Le temps est donc donné a priori. En lui seul est possible toute réalité des phénomènes. Ceux-ci peuvent bien disparaître tous ensemble, mais le temps lui-même (comme condition générale de leur possibilité) ne peut être supprimé."
+  ],
+  "familiarIdea": "le temps, forme <em>a priori</em> de la sensibilité"
+},
+    {
+  "id": "bergson-duree-espace",
+  "section": "philosophie",
+  "cardMeta": "Philosophie de la durée",
+  "title": "La durée vécue ne se laisse pas réduire à une ligne",
+  "author": "Henri Bergson",
+  "authorTag": "Bergson",
+  "cardHighlight": "durée vécue",
+  "familiarIdea": "la durée pure",
+  "authorMeta": "(1859–1941) · durée et intuition",
+  "themes": [
+    "Temps",
+    "Conscience"
+  ],
+  "work": "Essai sur les données immédiates de la conscience",
+  "publication": "1889, PUF, 2010, p. 74–75",
+  "description": "Que perdons-nous lorsque nous représentons le temps comme une suite de points juxtaposés dans l’espace ?",
+  "context": "Bergson oppose la <strong>durée pure</strong>, continuité qualitative de nos états de conscience, au temps homogène que nous représentons comme une ligne. Mesurer le temps revient alors à le <strong>spatialiser</strong>.",
+  "readingQuestions": [
+    "Pourquoi une mélodie donne-t-elle un meilleur modèle de la <strong>durée</strong> qu’une suite de points ?",
+    "En quel sens nos états de conscience se <strong>pénètrent-ils</strong> au lieu de se juxtaposer ?",
+    "Pourquoi Bergson affirme-t-il que nous projetons le <strong>temps dans l’espace</strong> ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Durée pure",
+        "definition": "Continuité vécue dans laquelle les états de conscience s’organisent et se pénètrent mutuellement."
+      },
+      "right": {
+        "term": "Temps spatialisé",
+        "definition": "Représentation abstraite de la succession comme une série de positions juxtaposées, comparables aux points d’une ligne."
+      }
+    },
+    {
+      "type": "concept",
+      "term": "La mélodie",
+      "definition": "Une mélodie ne se réduit pas à des notes isolées : chaque note retient les précédentes et modifie l’ensemble. Elle fournit à Bergson une image de la continuité vécue."
+    },
+    {
+      "type": "concept",
+      "term": "Spatialisation",
+      "definition": "Opération par laquelle nous transformons une succession qualitative en éléments distincts et mesurables, placés les uns à côté des autres."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "aristote-temps-nombre-mouvement",
+      "kind": "adverse",
+      "label": "Aristote — Le temps est le nombre du mouvement",
+      "relation": "Aristote met l’accent sur le temps nombrable ; Bergson distingue ce temps mesuré de la durée telle qu’elle est vécue."
+    },
+    {
+      "id": "kant-temps-forme-a-priori",
+      "kind": "proche",
+      "label": "Kant — Le temps est une forme a priori de la sensibilité",
+      "relation": "Kant comme Bergson refusent de faire du temps une simple chose extérieure, mais ils n’en donnent pas le même statut philosophique."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "durée",
+      "definition": "Chez Bergson, continuité qualitative et vécue des états de conscience."
+    },
+    {
+      "term": "subrepticement",
+      "definition": "D’une manière discrète, presque à notre insu."
+    },
+    {
+      "term": "juxtapose",
+      "definition": "Place des éléments les uns à côté des autres comme s’ils étaient séparés."
+    }
+  ],
+  "paragraphs": [
+    "Il y a […] deux conceptions possibles de la durée, l'une pure de tout mélange, l'autre où intervient subrepticement l'idée d'espace. La durée toute pure est la forme que prend la succession de nos états de conscience quand notre moi se laisse vivre, quand il s'abstient d'établir une séparation entre l'état présent et les états antérieurs. Il n'a pas besoin, pour cela, de s'absorber tout entier dans la sensation ou l'idée qui passe, car alors, au contraire, il cesserait de durer. Il n'a pas besoin non plus d'oublier les états antérieurs : il suffit qu'en se rappelant ces états, il ne les juxtapose pas à l'état actuel comme un point à un autre point, mais les organise avec lui, comme il arrive quand nous nous rappelons, fondues pour ainsi dire ensemble, les notes d'une mélodie. […]",
+    "On peut donc concevoir la succession sans la distinction, et comme une pénétration mutuelle, une solidarité, une organisation intime d'éléments, dont chacun, représentatif du tout, ne s'en distingue et ne s'en isole que pour une pensée capable d'abstraire. Telle est sans aucun doute la représentation que se ferait de la durée un être à la fois identique et changeant, qui n'aurait aucune idée de l'espace. Mais familiarisés avec cette dernière idée, obsédés même par elle, nous l'introduisons à notre insu dans notre représentation de la succession pure ; nous juxtaposons nos états de conscience de manière à les apercevoir simultanément, non plus l'un dans l'autre, mais l'un à côté de l'autre ; bref, nous projetons le temps dans l'espace, nous exprimons la durée en étendue, et la succession prend pour nous la forme d'une ligne continue ou d'une chaîne, dont les parties se touchent sans se pénétrer."
+  ]
+},
+
+    {
+  "id": "pascal-divertissement-condition",
+  "section": "philosophie",
+  "cardMeta": "XVIIe siècle",
+  "title": "Le divertissement nous détourne de notre condition",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "nous détourne",
+  "familiarIdea": "le divertissement pascalien",
+  "authorMeta": "(1623–1662) · moraliste chrétien",
+  "themes": [
+    "Temps",
+    "Bonheur"
+  ],
+  "work": "Pensées",
+  "publication": "1670, publication posthume, Br. 139, Laf. 136, Hachette, 1967, p. 390–391 et 394",
+  "description": "Pourquoi cherchons-nous sans cesse l’agitation alors même que nous prétendons désirer le repos ?",
+  "context": "Chez Pascal, le <strong>divertissement</strong> ne désigne pas seulement les loisirs. Il désigne tout ce qui nous détourne de la pensée de notre <strong>condition fragile et mortelle</strong>. Nous recherchons le repos, mais le repos nous expose précisément à ce que nous cherchons à oublier.",
+  "readingQuestions": [
+    "Pourquoi le simple fait de demeurer <strong>en repos</strong> peut-il rendre l’être humain malheureux ?",
+    "Que recherchons-nous réellement dans le jeu, la guerre ou les grands emplois : leur objet ou le <strong>tracas</strong> qu’ils produisent ?",
+    "Pourquoi l’<strong>ennui</strong> réapparaît-il une fois les obstacles surmontés ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Divertissement",
+      "definition": "Du latin <em>divertere</em>, détourner. Chez Pascal, ensemble des occupations qui nous détournent de nous-mêmes, de notre mortalité et de la misère de notre condition."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Repos recherché",
+        "definition": "Nous prétendons vouloir atteindre une situation stable où les obstacles ont disparu."
+      },
+      "right": {
+        "term": "Repos insupportable",
+        "definition": "Une fois l’agitation cessée, la pensée revient vers notre fragilité, l’ennui, la maladie et la mort."
+      }
+    },
+    {
+      "type": "concept",
+      "term": "Le tracas",
+      "badge": false,
+      "definition": "Ce n’est pas tant l’objet poursuivi qui nous attire que l’agitation de la poursuite elle-même, parce qu’elle nous empêche de penser à notre condition."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "pascal-bonheur-avenir",
+      "kind": "proche",
+      "label": "Pascal — Nous ne vivons jamais, mais nous espérons vivre",
+      "relation": "Les deux fragments décrivent une fuite du présent : par l’agitation ici, par l’attente de l’avenir dans l’autre texte."
+    },
+    {
+      "id": "schopenhauer-desir-souffrance-ennui",
+      "kind": "proche",
+      "label": "Schopenhauer — La vie oscille entre souffrance et ennui",
+      "relation": "Pascal et Schopenhauer font de l’ennui une expérience révélatrice de l’insatisfaction humaine."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "divertissement",
+      "definition": "Ce qui détourne l’être humain de la pensée de lui-même et de sa condition."
+    },
+    {
+      "term": "béatitude",
+      "definition": "Bonheur parfait ; dans le vocabulaire chrétien, félicité ultime liée au salut."
+    },
+    {
+      "term": "mol",
+      "definition": "Ancienne graphie de « mou » : doux, sans effort ni agitation."
+    }
+  ],
+  "paragraphs": [
+    "Divertissement. — Quand je m'y suis mis quelquefois à considérer les diverses agitations des hommes, et les périls et les peines où ils s'exposent, dans la cour, dans la guerre, d'où naissent tant de querelles, de passions, d'entreprises hardies et souvent mauvaises, etc., j'ai découvert que tout le malheur des hommes vient d'une seule chose, qui est de ne savoir pas demeurer en repos, dans une chambre. […]",
+    "Mais quand j'ai pensé de plus près, et qu'après avoir trouvé la cause de tous nos malheurs, j'ai voulu en découvrir la raison, j'ai trouvé qu'il y en a une bien effective, qui consiste dans le malheur naturel de notre condition faible et mortelle, et si misérable, que rien ne peut nous consoler, lorsque nous y pensons de près.",
+    "Quelque condition qu'on se figure, si on assemble tous les biens qui peuvent nous appartenir, la royauté est le plus beau poste du monde, et cependant qu'on s'en imagine un, accompagné de toutes les satisfactions qui peuvent le toucher. S'il est sans divertissement, et qu'on le laisse considérer et faire réflexion sur ce qu'il est, cette félicité languissante ne le soutiendra point, il tombera par nécessité dans les vues qui le menacent, des révoltes qui peuvent arriver, et enfin de la mort et des maladies qui sont inévitables ; de sorte que, s'il est sans ce qu'on appelle divertissement, le voilà malheureux, et plus malheureux que le moindre de ses sujets, qui joue et qui se divertit.",
+    "De là vient que le jeu et la conversation des femmes, la guerre, les grands emplois sont si recherchés. Ce n'est pas qu'il y ait en effet du bonheur, ni qu'on s'imagine que la vraie béatitude soit d'avoir l'argent qu'on peut gagner au jeu, ou dans le lièvre qu'on court : on n'en voudrait pas, s'il était offert. Ce n'est pas cet usage mol et paisible, et qui nous laisse penser à notre malheureuse condition, qu'on recherche, ni les dangers de la guerre, ni la peine des emplois, mais c'est le tracas qui nous détourne d'y penser et nous divertit. […]",
+    "Ainsi s'écoule toute la vie. On cherche le repos en combattant quelques obstacles ; et si on les a surmontés, le repos devient insupportable ; car, ou l'on pense aux misères qu'on a, ou à celles qui nous menacent. Et quand on se verrait même assez à l'abri de toutes parts, l'ennui, de son autorité privée, ne laisserait pas de sortir du fond du cœur, où il a des racines naturelles, et de remplir l'esprit de son venin."
+  ]
+},
+
+    {
+  "id": "sartre-existence-precede-essence",
+  "section": "philosophie",
+  "cardMeta": "Existentialisme",
+  "title": "L’existence précède l’essence",
+  "author": "Jean-Paul Sartre",
+  "authorTag": "Sartre",
+  "cardHighlight": "précède l’essence",
+  "authorMeta": "(1905–1980) · existentialisme",
+  "themes": [
+    "Temps",
+    "Liberté"
+  ],
+  "work": "L’Existentialisme est un humanisme",
+  "publication": "1946, Gallimard, 1996, p. 26–30",
+  "description": "Si aucune nature humaine n’est donnée d’avance, qu’est-ce qui détermine ce que nous sommes ?",
+  "context": "Sartre oppose l’objet fabriqué, défini avant d’exister, à l’être humain. Si aucune nature humaine n’est fixée d’avance, alors nous <strong>existons d’abord</strong> et nous nous définissons ensuite par nos choix, nos actes et nos projets.",
+  "readingQuestions": [
+    "Pourquoi l’<strong>essence</strong> d’un objet fabriqué précède-t-elle son existence ?",
+    "Que signifie la formule « l’<strong>existence précède l’essence</strong> » pour l’être humain ?",
+    "Pourquoi cette thèse rend-elle chacun responsable de ce qu’il devient ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Objet fabriqué",
+        "definition": "Sa définition, son usage et son mode de fabrication sont conçus avant qu’il existe effectivement."
+      },
+      "right": {
+        "term": "Être humain",
+        "definition": "Il n’a pas d’essence prédéfinie : il existe d’abord et se définit progressivement par sa manière de vivre et d’agir."
+      }
+    },
+    {
+      "type": "current",
+      "term": "Existence précède l’essence",
+      "badge": "courant philosophique",
+      "href": "/textes/philosophie/boussole/#courant-existentialisme",
+      "definition": "Il n’existe pas de nature humaine donnée une fois pour toutes avant les individus : chacun devient ce qu’il est à travers son existence."
+    },
+    {
+      "type": "concept",
+      "term": "Projet",
+      "badge": false,
+      "definition": "L’être humain est orienté vers l’avenir : il se dépasse constamment vers des possibilités et se définit à travers ce qu’il fait de sa situation."
+    },
+    {
+      "type": "comparison",
+      "title": "Existentialisme / essentialisme",
+      "note": "Comparaison pédagogique : « essentialisme » désigne ici le schéma auquel Sartre oppose l’existentialisme, et non une école philosophique unique.",
+      "columns": [
+        "Existentialisme",
+        "Essentialisme"
       ],
-      readingNotes:[
-        { type:"concept", term:"<em>Acquiescentia</em>", definition:"Satisfaction ou approbation complète. Kant soutient qu’elle ne peut jamais être absolue pendant la vie humaine." },
-        { type:"opposition", left:{ term:"Satisfaction relative", definition:"Jugement partiel obtenu en comparant notre vie à celle des autres ou à nos propres états antérieurs." }, right:{ term:"Satisfaction absolue", definition:"État sans manque, sans douleur et sans nouveau mobile d’action ; il demeure inaccessible à l’être humain vivant." } },
-        { type:"concept", term:"Douleur comme aiguillon", definition:"La douleur signale un manque et met les facultés en mouvement. Elle empêche l’engourdissement et pousse l’être humain à progresser vers le mieux." },
-        { type:"concept", term:"Analogie organique", definition:"Une vie intellectuelle entièrement immobile serait comparable à un cœur qui cesse de battre : sans nouvelle excitation, l’arrêt de l’activité conduit à la mort." }
-      ],
-      relatedTexts:[
-        { id:"alain-bonheur-agir", kind:"proche", label:"Alain — Le vrai bonheur est le bonheur d’agir", relation:"Les deux textes refusent d’identifier le bonheur à un repos sans activité." },
-        { id:"freud-bonheur-episodique", kind:"proche", label:"Freud — Aucun bien ne rend durablement heureux", relation:"Freud explique lui aussi pourquoi une satisfaction devenue stable perd son intensité." },
-        { id:"schopenhauer-bonheur-absence-souffrance", kind:"adverse", label:"Schopenhauer — Le bonheur comme absence de souffrance", relation:"Schopenhauer mesure le bonheur à l’absence de douleur ; Kant voit dans la douleur un stimulant nécessaire de l’activité." }
-      ],
-      paragraphs:[
-        "Qu’en est-il de la satisfaction (<em>acquiescentia</em>) pendant la vie ? — Elle n’est pas accessible à l’homme : ni dans un sens moral (être satisfait de soi-même pour sa bonne volonté), ni dans un sens pragmatique (être satisfait du bien-être qu’on pense pouvoir se procurer par l’habileté et l’intelligence).",
-        "La nature a placé en l’homme, comme stimulant de l’activité, la douleur à laquelle il ne peut se soustraire afin que le progrès s’accomplisse toujours vers le mieux ; et même à l’instant suprême, on ne peut se dire satisfait de la dernière partie de sa vie que d’une manière relative — en partie par comparaison avec le lot des autres, en partie par comparaison avec nous-mêmes ; mais on ne l’est jamais purement ni absolument.",
-        "Dans la vie, être satisfait absolument, ce serait, hors de toute activité, le repos et l’inertie des mobiles, ou l’engourdissement des sensations et de l’activité qui leur est liée. Un tel état est tout aussi incompatible avec la vie intellectuelle de l’homme que l’immobilité du cœur dans un organisme animal, immobilité à laquelle, si ne survient aucune nouvelle excitation par la douleur, la mort fait suite inévitablement."
+      "rows": [
+        [
+          "L’existence précède l’essence",
+          "L’essence précède l’existence"
+        ],
+        [
+          "L’être humain n’a pas de nature fixée d’avance : il se définit par ses choix et ses actes.",
+          "Ce qu’est un être est déterminé par une nature, une définition ou une essence antérieure à son existence concrète."
+        ],
+        [
+          "La liberté et la responsabilité sont centrales : chacun fait quelque chose de sa situation.",
+          "L’existence particulière se comprend à partir de propriétés ou d’une finalité déjà définies."
+        ]
       ]
     }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sartre-inconscient-mauvaise-foi",
+      "kind": "proche",
+      "label": "Sartre — La critique de l’inconscient",
+      "relation": "La thèse de la liberté et de la responsabilité éclaire le refus sartrien d’un sujet déterminé par une instance psychique autonome."
+    },
+    {
+      "id": "marx-conscience-vie-materielle",
+      "kind": "adverse",
+      "label": "Marx — La conscience est conditionnée par la vie matérielle",
+      "relation": "Marx met l’accent sur des déterminations historiques et matérielles là où Sartre insiste sur la responsabilité du sujet."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "essence",
+      "definition": "Ce qu’est une chose : l’ensemble des propriétés qui permettent de la définir."
+    },
+    {
+      "term": "existence",
+      "definition": "Le fait d’être effectivement là, dans une situation concrète."
+    },
+    {
+      "term": "existentialisme",
+      "definition": "Courant philosophique qui place au premier plan l’existence singulière, la liberté, la situation et la responsabilité."
+    },
+    {
+      "term": "projet",
+      "definition": "Orientation de l’existence vers des possibilités futures à travers lesquelles un individu se définit."
+    }
+  ],
+  "paragraphs": [
+    "Lorsqu'on considère un objet fabriqué, comme par exemple un livre ou un coupe-papier, cet objet a été fabriqué par un artisan qui s'est inspiré d'un concept ; il s'est référé au concept de coupe-papier, et également à une technique de production préalable qui fait partie du concept, et qui est au fond une recette. […] Nous dirons donc que, pour le coupe-papier, l'essence — c'est-à-dire l'ensemble des recettes et des qualités qui permettent de le produire et de le définir — précède l'existence ; et ainsi la présence, en face de moi, de tel coupe-papier ou de tel livre est déterminée. Nous avons donc là une vision technique du monde, dans laquelle on peut dire que la production précède l'existence. […]",
+    "L'existentialisme athée, que je représente, est plus cohérent. Il déclare que si Dieu n'existe pas, il y a au moins un être chez qui l'existence précède l'essence, un être qui existe avant de pouvoir être défini par aucun concept, et que cet être c'est l'homme ou, comme dit Heidegger, la réalité humaine. Qu'est-ce que signifie que l'existence précède l'essence ? Cela signifie que l'homme existe d'abord, se rencontre, surgit dans le monde, et qu'il se définit après. L'homme, tel que le conçoit l'existentialiste, s'il n'est pas définissable, c'est qu'il n'est d'abord rien. Il ne sera qu'ensuite, et il sera tel qu'il se sera fait. Ainsi, il n'y a pas de nature humaine, puisqu'il n'y a pas de Dieu pour la concevoir. L'homme est non seulement tel qu'il se conçoit, mais tel qu'il se veut, et comme il se conçoit après l'existence, comme il se veut après cet élan vers l'existence, l'homme n'est rien d'autre que ce qu'il se fait. […]",
+    "[N]ous voulons dire que l'homme existe d'abord, c'est-à-dire que l'homme est d'abord ce qui se jette vers un avenir, et ce qui est conscient de se projeter dans l'avenir. L'homme est d'abord un projet qui se vit subjectivement, au lieu d'être une mousse, une pourriture ou un chou-fleur ; rien n'existe préalablement à ce projet ; rien n'est au ciel intelligible, et l'homme sera d'abord ce qu'il aura projeté d'être. Non pas ce qu'il voudra être. Car ce que nous entendons ordinairement par vouloir, c'est une décision consciente, et qui est pour la plupart d'entre nous postérieure à ce qu'il s'est fait lui-même."
+  ],
+  "familiarIdea": "« l’existence précède l’essence »"
+},
+    {
+  "id": "nietzsche-eternel-retour",
+  "section": "philosophie",
+  "cardMeta": "Critique des valeurs",
+  "title": "Voudrais-tu revivre cette vie d’innombrables fois ?",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardTitle": "Le poids le plus lourd",
+  "cardHighlight": "poids le plus lourd",
+  "familiarIdea": "l’éternel retour",
+  "cardStyle": "quote",
+  "authorMeta": "(1844–1900) · critique des valeurs",
+  "themes": [
+    "Temps",
+    "Existence"
+  ],
+  "work": "Le Gai Savoir",
+  "publication": "1882, § 341, trad. P. Klossowski, Gallimard, 1982, p. 232",
+  "description": "Que deviendrait notre manière de vivre si chaque instant devait revenir exactement de la même façon ?",
+  "context": "Nietzsche ne présente pas ici l’<strong>éternel retour</strong> comme une théorie à démontrer, mais comme une épreuve adressée à notre <strong>existence</strong>. Imaginer que chaque instant revienne à l’identique permet de mesurer notre rapport à notre vie : la subirions-nous comme un poids, ou pourrions-nous vouloir qu’elle recommence éternellement ?",
+  "readingQuestions": [
+    "Quelle expérience de pensée le démon propose-t-il ?",
+    "Pourquoi la même annonce peut-elle être vécue comme le « <strong>poids le plus lourd</strong> » ou comme une parole divine ?",
+    "Que signifierait vivre de façon à pouvoir vouloir chaque instant « encore une fois et d’innombrables fois » ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Éternel retour",
+      "definition": "Ici, Nietzsche met en scène l’hypothèse d’un retour identique de chaque instant afin d’éprouver la valeur que nous accordons à notre propre existence."
+    },
+    {
+      "type": "analysis",
+      "term": "Une épreuve existentielle",
+      "definition": "La question n’est pas seulement de savoir si le retour est vrai : l’aphorisme demande ce que cette pensée ferait à celui qui la reçoit et à sa manière d’agir."
+    },
+    {
+      "type": "concept",
+      "term": "Affirmation de la vie",
+      "definition": "Pouvoir vouloir le retour de son existence entière signifie ne plus réserver son assentiment aux seuls moments agréables, mais assumer le devenir dans son ensemble."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "bouddha-sortir-cycle-renaissances",
+      "kind": "adverse",
+      "label": "Bouddha — Se libérer du cycle des renaissances",
+      "relation": "Le contraste est radical : le texte bouddhique présente la fin des renaissances comme délivrance, tandis que Nietzsche demande si l’on pourrait vouloir le retour indéfini de cette vie."
+    },
+    {
+      "id": "sartre-existence-precede-essence",
+      "kind": "proche",
+      "label": "Sartre — L’existence précède l’essence",
+      "relation": "Chez l’un comme chez l’autre, l’existence n’est pas une donnée neutre : la manière de l’assumer engage ce que nous devenons."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "éternel sablier",
+      "definition": "Image du retour indéfini de la même succession d’événements."
+    },
+    {
+      "term": "sanction",
+      "definition": "Ici, confirmation définitive, comme si l’existence recevait notre assentiment une dernière fois et pour toujours."
+    }
+  ],
+  "paragraphs": [
+    "Le poids le plus lourd. — Que dirais-tu si un jour, si une nuit, un démon se glissait jusque dans ta solitude la plus reculée et te dise : « Cette vie telle que tu la vis maintenant et que tu l’as vécue, tu devras la vivre encore une fois et d’innombrables fois ; et il n’y aura rien de nouveau en elle, si ce n’est que chaque douleur et chaque plaisir, chaque pensée et chaque gémissement et tout ce qu’il y a d’indiciblement petit et grand dans ta vie devront revenir pour toi, et le tout dans le même ordre et la même succession — cette araignée-là également, et ce clair de lune entre les arbres, et cet instant-ci et moi-même. L’éternel sablier de l’existence ne cesse d’être renversé à nouveau — et toi avec lui, ô grain de poussière de la poussière ! »",
+    "Ne te jetterais-tu pas sur le sol, grinçant des dents et maudissant le démon qui te parlerait de la sorte ? Ou bien te serait-il arrivé de vivre un instant formidable où tu aurais pu lui répondre : « Tu es un dieu, et jamais je n’entendis choses plus divines ! »",
+    "Si cette pensée exerçait sur toi son empire, elle te transformerait, faisant de toi, tel que tu es, un autre, te broyant peut-être : la question posée à propos de tout, et de chaque chose : « Voudrais-tu ceci encore une fois et d’innombrables fois ? » pèserait comme le poids le plus lourd sur ton action ! Ou combien ne te faudrait-il pas témoigner de bienveillance envers toi-même et la vie, pour ne désirer plus rien que cette dernière, éternelle confirmation, cette dernière, éternelle sanction !"
+  ]
+},
+    {
+  "id": "bouddha-sortir-cycle-renaissances",
+  "section": "philosophie",
+  "cardMeta": "Philosophie indienne",
+  "title": "Se libérer du cycle des renaissances",
+  "author": "Siddhartha Gautama, dit Bouddha",
+  "authorTag": "Bouddha",
+  "cardHighlight": "cycle des renaissances",
+  "authorMeta": "(v. 500–v. 420 av. J.-C.) · bouddhisme",
+  "themes": [
+    "Temps",
+    "Religion"
+  ],
+  "work": "Dhammapada, les stances de la loi",
+  "publication": "VIe s. av. J.-C., trad. J.-P. Osier, Flammarion, 1999, p. 126–128",
+  "description": "En quel sens la délivrance consiste-t-elle à se détacher des désirs, des liens et du cycle des renaissances ?",
+  "context": "Le <em>Dhammapada</em> décrit ici le sage libéré du <strong><em>saṃsāra</em></strong>, le cycle des renaissances. Le mot « brahmane » ne désigne pas simplement une appartenance sociale : le texte en fait le nom de celui qui a rompu l’<strong>attachement</strong> et atteint la délivrance.",
+  "readingQuestions": [
+    "Pourquoi le <strong>détachement</strong> porte-t-il à la fois sur les plaisirs, les liens humains et les renaissances ?",
+    "En quel sens le sage est-il dit « <strong>bienheureux</strong> » alors même qu’il a abandonné plaisir et déplaisir ?",
+    "Pourquoi la fin des renaissances peut-elle être comprise comme une sortie du <strong>temps cyclique</strong> ?"
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Saṃsāra",
+      "definition": "Cycle des existences, des morts et des renaissances auquel les êtres restent attachés tant que les causes de l’attachement ne sont pas éteintes."
+    },
+    {
+      "type": "concept",
+      "term": "Brahmane",
+      "definition": "Dans ce passage, le terme est réinterprété : le véritable brahmane est le sage délivré, purifié de l’attachement et du cycle des renaissances."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Attachement",
+        "definition": "Désirs, possessions et liens auxquels l’existence s’accroche et qui entretiennent le cycle des renaissances."
+      },
+      "right": {
+        "term": "Délivrance",
+        "definition": "Extinction de l’attachement et fin des renaissances ; le texte la présente comme un état de détachement et d’éveil."
+      }
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "nietzsche-eternel-retour",
+      "kind": "adverse",
+      "label": "Nietzsche — Voudrais-tu revivre cette vie d’innombrables fois ?",
+      "relation": "Le texte bouddhique valorise la fin des renaissances ; Nietzsche transforme au contraire le retour indéfini en épreuve d’affirmation de l’existence."
+    },
+    {
+      "id": "schopenhauer-desir-souffrance-ennui",
+      "kind": "proche",
+      "label": "Schopenhauer — Le désir entretient la souffrance",
+      "relation": "Les deux textes associent l’attachement du désir à la souffrance et envisagent une forme de délivrance par le détachement."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "brahmane",
+      "definition": "Dans ce passage bouddhique, sage délivré du cycle des renaissances ; le terme est détaché de son seul sens social ou rituel."
+    },
+    {
+      "term": "transmigration",
+      "definition": "Passage d’une existence à une autre dans le cycle des renaissances."
+    },
+    {
+      "term": "gandharva",
+      "definition": "Divinités secondaires de la tradition indienne."
+    },
+    {
+      "term": "arhant",
+      "definition": "Être délivré du saṃsāra et parvenu à l’éveil."
+    },
+    {
+      "term": "ascète",
+      "definition": "Celui qui pratique le détachement et une discipline visant la libération des désirs corporels."
+    }
+  ],
+  "paragraphs": [
+    "En lui pas d'espoirs en ce monde et dans l'autre ; il n'a point d'aspirations, il est détaché : c'est lui que j'appelle le brahmane. En lui point d'adhésions, point de doutes grâce à la science ; il est immergé dans l'immortalité qu'il a atteinte : c'est lui que j'appelle le brahmane.",
+    "Ici-bas, il a laissé derrière lui le bien comme le mal, le double attachement, il n'a plus de chagrin, il est immaculé, pur : c'est lui que j'appelle le brahmane.",
+    "Immaculé comme l'astre lunaire, pur, clair, exempt de souillure, il a éteint toute existence et toute joie : c'est lui que j'appelle le brahmane.",
+    "Cet obstacle, la route difficile, la transmigration, l'égarement, il l'a laissé derrière lui ; il a traversé, il a atteint l'autre rive, lui le méditatif, sans désirs ni doutes, lui l'inconditionnellement éteint : c'est lui que j'appelle le brahmane. […]",
+    "Il a renoncé ici-bas au désir, sans maison il erre, toute existence et tout désir éteints : c'est lui que j'appelle le brahmane.",
+    "Il a abandonné les liens avec les humains, laissé derrière lui les liens avec les dieux, il est totalement détaché de tout lien : c'est lui que j'appelle le brahmane.",
+    "Il a abandonné plaisir et déplaisir, refroidi, dépourvu d'acquisitions, lui, le héros, vainqueur de tous les mondes : c'est lui que j'appelle le brahmane.",
+    "De toutes les créatures il connaît la chute et la renaissance sous tous leurs aspects, il n'a plus d'attachement, il est bienheureux, éveillé : c'est lui que j'appelle le brahmane.",
+    "Sa destinée, ne la connaissent ni les dieux, ni les gandharva, ni les hommes, il a détruit les souillures, lui l'arhant : c'est lui que j'appelle le brahmane.",
+    "Avant, après, entre les deux, il n'a rien, il ne possède rien, ne prend rien : c'est lui que j'appelle le brahmane.",
+    "Taureau excellent, héros, grand sage, vainqueur, sans désir, étudiant accompli, éveillé, c'est lui que j'appelle le brahmane.",
+    "Son existence antérieure, il la connaît ; le ciel et l'enfer, il les voit, il en a fini avec les renaissances, il maîtrise les connaissances spéciales, lui l'ascète, c'est lui, l'omniscient, que j'appelle le brahmane."
+  ],
+  "familiarIdea": "le <em>saṃsāra</em>"
+},
+      {
+  "id": "descartes-langage-pensee",
+  "section": "philosophie",
+  "cardMeta": "Rationalisme moderne",
+  "title": "Seul le langage humain exprime des pensées",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "exprime des pensées",
+  "authorMeta": "(1596–1650) · rationalisme moderne",
+  "themes": [
+    "Langage",
+    "Conscience"
+  ],
+  "work": "Lettre du 23 novembre 1646 au marquis de Newcastle",
+  "publication": "1646, in Œuvres et lettres, Gallimard, « Bibliothèque de la Pléiade », 1953, p. 1255–1266",
+  "description": "La parole permet-elle de distinguer une pensée véritable d’un simple comportement appris ou passionnel ?",
+  "context": "Descartes cherche ce qui distingue véritablement l’être humain de l’animal. Le <strong>langage</strong> ne se réduit pas à produire des sons : il suppose de pouvoir combiner des signes pour exprimer librement une pensée adaptée à des situations toujours nouvelles.",
+  "readingQuestions": [
+    "Pourquoi le simple fait de produire des sons ne suffit-il pas à parler ?",
+    "Quelle différence Descartes établit-il entre un signe exprimant une passion et un signe exprimant une pensée ?",
+    "Pourquoi le langage devient-il pour Descartes un indice privilégié de la <strong>pensée</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "prolation",
+      "definition": "Acte d’émettre ou de prononcer des paroles."
+    },
+    {
+      "term": "passion",
+      "definition": "Chez Descartes, état ou mouvement subi par l’âme, notamment sous l’effet du corps ; ici, réaction affective qui peut provoquer un comportement sans pensée discursive."
+    },
+    {
+      "term": "signe",
+      "definition": "Geste, son ou marque qui renvoie à autre chose. Pour Descartes, le signe proprement humain est utilisé à propos pour exprimer une pensée."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Langage et pensée",
+      "definition": "Le langage humain ne se définit pas par la simple émission de sons, mais par la capacité de composer des signes adaptés à des situations nouvelles pour manifester une pensée."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Réaction animale",
+        "definition": "Comportement provoqué par la crainte, l’espérance, la joie ou un apprentissage."
+      },
+      "right": {
+        "term": "Parole humaine",
+        "definition": "Usage ouvert de signes permettant d’exprimer des pensées à propos de ce qui se présente."
+      },
+      "conclusion": "Le critère décisif n’est pas la complexité extérieure du comportement, mais le rapport du signe à une pensée."
+    },
+    {
+      "type": "analysis",
+      "term": "Un argument anthropologique",
+      "definition": "Descartes mobilise le langage pour soutenir une différence de nature entre l’être humain et l’animal.",
+      "items": [
+        "Les animaux peuvent apprendre des comportements et produire des sons.",
+        "Mais ils ne composent pas librement des signes pour exprimer des pensées nouvelles.",
+        "À l’inverse, tout être humain, même privé de parole vocale, peut inventer un système de signes."
+      ]
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "proche",
+      "label": "Descartes — Le cogito et la chose qui pense",
+      "relation": "Ce texte donne le fondement métaphysique du sujet pensant auquel le langage humain sert de signe extérieur."
+    },
+    {
+      "id": "benveniste-communication-animale-langage-humain",
+      "kind": "proche",
+      "label": "Benveniste — Communication animale et langage humain",
+      "relation": "Deux manières de distinguer la parole humaine des systèmes de communication animale."
+    }
+  ],
+  "paragraphs": [
+    "[Il] n'y a aucune de nos actions extérieures, qui puisse assurer ceux qui les examinent, que notre corps n'est pas seulement une machine qui se remue de soi-même, mais qu'il y a aussi en lui une âme qui a des pensées, excepté les paroles, ou autres signes faits à propos des sujets qui se présentent, sans se rapporter à aucune passion. Je dis les paroles ou autres signes, parce que les muets se servent de signes en même façon que nous de la voix ; et que ces signes soient à propos, pour exclure le parler des perroquets, sans exclure celui des fous, qui ne laisse pas d'être à propos des sujets qui se présentent, bien qu'il ne suive pas la raison ; et j'ajoute que ces paroles ou signes ne se doivent rapporter à aucune passion, pour exclure non seulement les cris de joie ou de tristesse, et semblables, mais aussi tout ce qui peut être enseigné par artifice aux animaux ; car si on apprend à une pie à dire bonjour à sa maîtresse lorsqu'elle la voit arriver, ce ne peut être qu'en faisant que la prolation de cette parole devienne le mouvement de quelqu'une de ses passions ; à savoir, ce sera un mouvement de l'espérance qu'elle a de manger, si l'on a toujours accoutumé de lui donner quelque friandise lorsqu'elle l'a dit ; et ainsi toutes les choses qu'on fait faire aux chiens, aux chevaux et aux singes, ne sont que des mouvements de leur crainte, de leur espérance, ou de leur joie, en sorte qu'ils les peuvent faire sans aucune pensée.",
+    "Or il est, ce me semble, fort remarquable que la parole, étant ainsi définie, ne convient qu'à l'homme seul. Car, bien que Montaigne et Charron aient dit qu'il y a plus de différence d'homme à homme, que d'homme à bête, il ne s'est toutefois jamais trouvé aucune bête si parfaite, qu'elle ait usé de quelque signe, pour faire entendre à d'autres animaux quelque chose qui n'eût point de rapport à ses passions ; et il n'y a point d'homme si imparfait, qu'il n'en use ; en sorte que ceux qui sont sourds et muets, inventent des signes particuliers, par lesquels ils expriment leurs pensées. Ce qui me semble un très fort argument pour prouver que ce qui fait que les bêtes ne parlent point comme nous, est qu'elles n'ont aucune pensée, et non point que les organes leur manquent. Et on ne peut dire qu'elles parlent entre elles, mais que nous ne les entendons pas ; car, comme les chiens et quelques autres animaux nous expriment leurs passions, ils nous exprimeraient aussi bien leurs pensées, s'ils en avaient."
+  ]
+},
+      {
+  "id": "benveniste-communication-animale-langage-humain",
+  "section": "philosophie",
+  "cardMeta": "Linguistique structurale",
+  "title": "Les animaux communiquent par signaux, mais ne peuvent pas dialoguer",
+  "author": "Émile Benveniste",
+  "authorTag": "Benveniste",
+  "cardHighlight": "ne peuvent pas dialoguer",
+  "authorMeta": "(1902–1976) · linguistique structurale",
+  "themes": [
+    "Langage",
+    "Nature"
+  ],
+  "work": "« Communication animale et langage humain », Problèmes de linguistique générale",
+  "publication": "1966, t. I, Gallimard, p. 59–61",
+  "description": "La communication des abeilles possède-t-elle les propriétés qui font du langage humain un véritable langage ?",
+  "context": "Benveniste reconnaît à la communication des abeilles une organisation remarquable, mais refuse d’y voir un langage humain. La différence décisive tient notamment au <strong>dialogue</strong> : un locuteur humain peut répondre à un message par un nouveau message et transmettre ce qu’il n’a pas lui-même vécu.",
+  "readingQuestions": [
+    "Qu’est-ce qui rapproche la communication des abeilles d’un système de signes ?",
+    "Pourquoi l’absence de dialogue marque-t-elle une limite décisive ?",
+    "Qu’est-ce que le langage humain permet de transmettre que le signal animal ne permet pas ?"
+  ],
+  "glossary": [
+    {
+      "term": "signal",
+      "definition": "Signe dont la fonction principale est de déclencher ou d’orienter un comportement déterminé."
+    },
+    {
+      "term": "symboliser",
+      "definition": "Transposer une donnée ou une expérience dans un système de signes qui peut la représenter en son absence."
+    },
+    {
+      "term": "dialogue",
+      "definition": "Échange dans lequel un énoncé peut recevoir une réponse linguistique et devenir lui-même la matière d’un nouvel énoncé."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Symbolisation",
+      "definition": "Les abeilles ne réagissent pas seulement à un stimulus immédiat : elles codent des informations de position et de distance dans une conduite qui vaut comme signe."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Communication animale",
+        "definition": "Transmission d’une donnée objective conduisant à une action déterminée."
+      },
+      "right": {
+        "term": "Langage humain",
+        "definition": "Échange ouvert où un message peut devenir l’objet d’un autre message, être repris, discuté et transmis."
+      },
+      "conclusion": "Benveniste situe la spécificité humaine moins dans le fait de communiquer que dans la récursivité du dialogue et la transmissibilité indéfinie des signes."
+    },
+    {
+      "type": "analysis",
+      "term": "La tradition linguistique",
+      "definition": "Parce qu’une expérience peut être remplacée par un signe puis transmise à ceux qui ne l’ont pas vécue, le langage permet l’accumulation d’un monde commun de récits, de savoirs et de règles."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-langage-pensee",
+      "kind": "proche",
+      "label": "Descartes — Seul le langage humain exprime des pensées",
+      "relation": "Descartes et Benveniste distinguent l’humain de l’animal par le langage, mais ils ne mobilisent pas le même critère : pensée chez l’un, dialogue et transmission chez l’autre."
+    },
+    {
+      "id": "saussure-signe-linguistique-arbitraire",
+      "kind": "proche",
+      "label": "Saussure — Le signe linguistique est arbitraire",
+      "relation": "Benveniste hérite de la linguistique structurale, qui pense le langage comme un système de signes organisés."
+    }
+  ],
+  "paragraphs": [
+    "Les abeilles apparaissent capables de produire et de comprendre un véritable message, qui enferme plusieurs données. Elles peuvent donc enregistrer des relations de position et de distance ; elles peuvent les conserver en « mémoire » ; elles peuvent les communiquer en les symbolisant par divers comportements somatiques. Le fait remarquable est d'abord qu'elles manifestent une aptitude à symboliser : il y a bien une correspondance « conventionnelle » entre leur comportement et la donnée qu'il traduit. Ce rapport est perçu par les autres abeilles dans les termes où il leur est transmis et devient moteur d'action. Jusqu'ici nous trouvons, chez les abeilles, les conditions mêmes sans lesquelles aucun langage n'est possible, la capacité de formuler et d'interpréter un « signe » qui renvoie à une certaine « réalité », la mémoire de l'expérience et l'aptitude à la décomposer.",
+    "[…] On voit ici plusieurs points de ressemblance au langage humain. […] Mais les différences sont considérables et elles aident à prendre conscience de ce qui caractérise en propre le langage humain. […]",
+    "Le message des abeilles n'appelle aucune réponse de l'entourage, sinon une certaine conduite, qui n'est pas une réponse. Cela signifie que les abeilles ne connaissent pas le dialogue, qui est la condition du langage humain. Nous parlons à d'autres qui parlent, telle est la réalité humaine. Parce qu'il n'y a pas de dialogue pour les abeilles, la communication se réfère seulement à une certaine donnée objective. Il ne peut y avoir de communication relative à une donnée « linguistique » ; déjà parce qu'il n'y a pas de réponse, la réponse étant une réaction linguistique à une manifestation linguistique ; mais aussi en ce sens que le message d'une abeille ne peut être reproduit par une autre qui n'aurait pas vu elle-même les choses que la première annonce. On n'a pas constaté qu'une abeille aille par exemple porter dans une autre ruche le message qu'elle a reçu dans la sienne, ce qui serait une manière de transmission ou de relais. On voit la différence avec le langage humain, où, dans le dialogue, la référence à l'expérience objective et la réaction à la manifestation linguistique s'entremêlent librement et à l'infini.",
+    "L'abeille ne construit pas de message à partir d'un autre message. Chacune de celles qui, alertées par la danse de la butineuse, sortent et vont se nourrir à l'endroit indiqué, reproduit quand elle rentre la même information, non d'après le message premier, mais d'après la réalité qu'elle vient de constater. Or le caractère du langage est de procurer un substitut de l'expérience apte à être transmis sans fin dans le temps et l'espace, ce qui est le propre de notre symbolisme et le fondement de la tradition linguistique."
+  ]
+},
+      {
+  "id": "saussure-signe-linguistique-arbitraire",
+  "section": "philosophie",
+  "cardMeta": "Linguistique structurale",
+  "title": "Le signe linguistique est arbitraire",
+  "author": "Ferdinand de Saussure",
+  "authorTag": "Saussure",
+  "cardHighlight": "signe linguistique est arbitraire",
+  "familiarIdea": "l’arbitraire du signe",
+  "authorMeta": "(1857–1913) · linguistique structurale",
+  "themes": [
+    "Langage",
+    "Culture"
+  ],
+  "work": "Cours de linguistique générale",
+  "publication": "1916, Payot, 1996, p. 99–101",
+  "description": "Pourquoi n’existe-t-il pas de lien naturel entre le son d’un mot et le concept qu’il désigne ?",
+  "context": "Saussure définit le <strong>signe linguistique</strong> comme l’union d’un signifiant et d’un signifié. Leur lien est arbitraire : rien, dans une idée, n’impose naturellement le mot qui la désigne ; chaque langue repose donc sur des conventions collectives.",
+  "readingQuestions": [
+    "Quelle différence faut-il faire entre <strong>signifiant</strong>, signifié et signe ?",
+    "Pourquoi leur relation est-elle dite arbitraire ?",
+    "Comment l’arbitraire du signe montre-t-il que le <strong>langage</strong> est aussi une institution culturelle ?"
+  ],
+  "glossary": [
+    {
+      "term": "signifiant",
+      "definition": "Face sensible du signe : non la chose elle-même, mais l’image acoustique ou la forme perceptible du mot."
+    },
+    {
+      "term": "signifié",
+      "definition": "Concept associé au signifiant dans un système linguistique."
+    },
+    {
+      "term": "arbitraire",
+      "definition": "Absence de lien naturel nécessaire entre un signifiant et son signifié ; le rapport dépend d’une convention instituée dans une langue."
+    },
+    {
+      "term": "symbole",
+      "definition": "Chez Saussure, signe qui conserve un reste de lien motivé avec ce qu’il représente ; la balance pour la justice n’est donc pas arbitraire au même degré qu’un mot."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Signe linguistique",
+      "definition": "Le signe n’est ni le son seul ni le concept seul : il est l’association des deux faces, signifiant et signifié."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Signe arbitraire",
+        "definition": "Le lien entre ses deux faces n’est fondé par aucune ressemblance naturelle."
+      },
+      "right": {
+        "term": "Symbole motivé",
+        "definition": "Il conserve un rapport perceptible ou culturel avec ce qu’il représente."
+      },
+      "conclusion": "La langue fonctionne parce qu’une communauté stabilise des différences conventionnelles, non parce que les mots ressemblent naturellement aux choses."
+    },
+    {
+      "type": "plain",
+      "definition": "L’arbitraire est social plutôt qu’individuel : une fois le signe installé dans la langue, le locuteur ne peut pas le modifier à volonté sans cesser d’être compris."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "cassirer-langage-reel-construction",
+      "kind": "proche",
+      "label": "Cassirer — Le langage ne reproduit pas le réel",
+      "relation": "Cassirer prolonge l’idée que les mots ne copient pas naturellement les choses : ils sélectionnent et organisent l’expérience."
+    },
+    {
+      "id": "nietzsche-langue-conception-monde",
+      "kind": "proche",
+      "label": "Nietzsche — La langue nous enferme dans une conception du monde",
+      "relation": "Nietzsche radicalise la question en montrant comment les formes grammaticales peuvent installer des schèmes métaphysiques."
+    },
+    {
+      "id": "benveniste-communication-animale-langage-humain",
+      "kind": "proche",
+      "label": "Benveniste — Les animaux communiquent par signaux, mais ne peuvent pas dialoguer",
+      "relation": "Benveniste travaille à l’intérieur de l’héritage structural tout en insistant sur l’énonciation et le dialogue."
+    }
+  ],
+  "paragraphs": [
+    "Nous appelons signe la combinaison du concept et de l'image acoustique ; mais dans l'usage courant ce terme désigne généralement l'image acoustique seule, par exemple un mot (arbor, etc.). On oublie que si arbor est appelé signe, ce n'est qu'en tant qu'il porte le concept « arbre », de telle sorte que l'idée de la partie sensorielle implique celle du total.",
+    "L'ambiguïté disparaîtrait si l'on désignait les trois notions ici en présence par des noms qui s'appellent les uns les autres tout en s'opposant. Nous proposons de conserver le mot signe pour désigner le total, et de remplacer concept et image acoustique respectivement par signifié et signifiant. […]",
+    "Le lien unissant le signifiant et le signifié est arbitraire, ou encore, puisque nous entendons par signe le total résultant de l'association d'un signifiant à un signifié, nous pouvons dire plus simplement : le signe linguistique est arbitraire.",
+    "Ainsi l'idée de « sœur » n'est liée par aucun rapport intérieur avec la suite de sons s-ö-r qui lui sert de signifiant ; il pourrait être aussi bien représenté par n'importe quelle autre : à preuve les différences entre les langues et l'existence même de langues différentes. […]",
+    "[T]out moyen d'expression reçu dans une société repose en principe sur une habitude collective ou, ce qui revient au même, sur la convention. Les signes de politesse, par exemple, doués souvent d'une certaine expressivité naturelle (qu'on pense au Chinois qui salue son empereur en se prosternant neuf fois jusqu'à terre), n'en sont pas moins fixés par une règle ; c'est cette règle qui oblige à les employer, non leur valeur intrinsèque. […]",
+    "On s'est servi du mot symbole pour désigner le signe linguistique, ou plus exactement ce que nous appelons le signifiant. Il y a des inconvénients à l'admettre, justement à cause de notre premier principe. Le symbole a pour caractère de n'être jamais tout à fait arbitraire ; il n'est pas vide, il y a un rudiment de lien naturel entre le signifiant et le signifié. Le symbole de la justice, la balance, ne pourrait pas être remplacé par n'importe quoi, un char, par exemple. […]",
+    "Le mot arbitraire appelle aussi une remarque. Il ne doit pas donner l'idée que le signifiant dépend du libre choix du sujet parlant (on verra plus bas qu'il n'est pas au pouvoir de l'individu de changer en rien un signe une fois établi dans un groupe linguistique) ; nous voulons dire qu'il est immotivé, c'est-à-dire arbitraire par rapport au signifié, avec lequel il n'a aucune attache naturelle dans la réalité."
+  ]
+},
+      {
+  "id": "cassirer-langage-reel-construction",
+  "section": "philosophie",
+  "cardMeta": "Philosophie des formes symboliques",
+  "title": "Le langage ne reproduit pas le réel",
+  "author": "Ernst Cassirer",
+  "authorTag": "Cassirer",
+  "cardHighlight": "ne reproduit pas le réel",
+  "authorMeta": "(1874–1945) · néokantisme et formes symboliques",
+  "themes": [
+    "Langage",
+    "Raison"
+  ],
+  "work": "Essai sur l’homme",
+  "publication": "1944, chap. 8 « Le langage », Minuit, 1975, p. 193",
+  "description": "Les mots copient-ils les choses, ou construisent-ils une manière déterminée de les voir ?",
+  "context": "Cassirer refuse de voir dans les mots une simple copie des choses. Le langage <strong>sélectionne</strong> certains traits de l’expérience, organise notre attention et construit déjà une manière de saisir le réel avant même l’élaboration des concepts scientifiques.",
+  "readingQuestions": [
+    "Pourquoi un mot ne peut-il reproduire toute la richesse de la chose qu’il désigne ?",
+    "Comment le langage sélectionne-t-il certains aspects du réel ?",
+    "Le langage nous éloigne-t-il du réel ou constitue-t-il au contraire une condition pour le <strong>penser</strong> ?"
+  ],
+  "glossary": [
+    {
+      "term": "ens reale",
+      "definition": "Expression latine : « être réel », chose considérée comme existant indépendamment de la pensée."
+    },
+    {
+      "term": "ens rationis",
+      "definition": "Expression latine : « être de raison », objet ou détermination construit par l’activité intellectuelle."
+    },
+    {
+      "term": "forme symbolique",
+      "definition": "Chez Cassirer, manière organisée par laquelle l’être humain donne forme à son expérience — le langage en est une forme fondamentale."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Nommer, c’est sélectionner",
+      "definition": "Un mot ne reproduit pas l’objet dans toute sa richesse : il retient un aspect pertinent et stabilise une manière de l’identifier."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Copie du réel",
+        "definition": "Conception selon laquelle les mots refléteraient naturellement des choses déjà entièrement déterminées."
+      },
+      "right": {
+        "term": "Construction symbolique",
+        "definition": "Le langage organise l’expérience en choisissant des traits, des différences et des centres de perception."
+      },
+      "conclusion": "Le langage ne nous sépare pas simplement du réel : il rend possible une première objectivation du monde."
+    },
+    {
+      "type": "plain",
+      "definition": "Pour Cassirer, la science ne naît pas contre tout langage : elle radicalise et rectifie un travail de conceptualisation que la dénomination ordinaire a déjà commencé."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "saussure-signe-linguistique-arbitraire",
+      "kind": "proche",
+      "label": "Saussure — Le signe linguistique est arbitraire",
+      "relation": "Saussure et Cassirer refusent tous deux un lien naturel simple entre mots et choses, mais Cassirer insiste davantage sur la fonction cognitive et symbolique du langage."
+    },
+    {
+      "id": "nietzsche-langue-conception-monde",
+      "kind": "adverse",
+      "label": "Nietzsche — La langue nous enferme dans une conception du monde",
+      "relation": "Cassirer voit dans la médiation symbolique une condition constructive de la pensée ; Nietzsche insiste davantage sur les illusions que la grammaire peut figer."
+    }
+  ],
+  "paragraphs": [
+    "Le nom d'un objet n'en revendique pas d'être sa nature ; il ne se propose pas d'être physéi on, de nous donner la vérité d'une chose, il ne met l'accent que sur un aspect particulier, et c'est précisément sur cette restriction et sur cette limitation que repose la valeur du nom. La fonction du nom n'est pas de désigner exhaustivement une situation concrète, mais simplement de remarquer et de souligner un certain aspect. Isoler cet aspect n'est pas un acte négatif mais positif. Dans l'acte de dénomination, en effet, nous choisissons, parmi les données des sens multiples et dispersées, certains centres de perception fixes. Ces centres ne sont pas identiques à ceux de la pensée logique et scientifique. Les termes du langage courant ne doivent pas être jugés selon les mêmes critères que ceux requis pour l'expression des concepts scientifiques. Comparés à la terminologie scientifique, les mots du langage courant présentent toujours une certaine imprécision ; ils sont, presque sans exception, si indistincts et si mal définis qu'ils ne supportent pas l'épreuve de l'analyse logique.",
+    "Mais, nonobstant ce défaut inéluctable et inhérent, les termes et les noms d'usage courant sont les jalons de la route qui mène aux concepts scientifiques ; c'est dans ces termes que se forme notre première représentation objective et théorique du monde. Une telle représentation n'est pas simplement « donnée » ; elle est le résultat d'un effort intellectuel de construction qui, sans l'aide constante du langage, ne pourrait parvenir à sa fin."
+  ]
+},
+      {
+  "id": "nietzsche-langue-conception-monde",
+  "section": "philosophie",
+  "cardMeta": "Critique des valeurs",
+  "title": "La langue nous enferme dans une conception du monde",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "conception du monde",
+  "authorMeta": "(1844–1900) · généalogie et critique des valeurs",
+  "themes": [
+    "Langage",
+    "Liberté"
+  ],
+  "work": "La Généalogie de la morale",
+  "publication": "1887, I, § 13, trad. P. Wotling, Le Livre de poche, p. 96–100",
+  "description": "La grammaire nous conduit-elle à croire à des sujets, des causes et une liberté qui n’existent peut-être pas comme nous l’imaginons ?",
+  "context": "Nietzsche soupçonne la <strong>grammaire</strong> de nous faire prendre une structure de phrase pour une structure du réel. Parce que nous séparons un sujet et son action, nous imaginons facilement derrière tout agir un agent stable et responsable qui aurait pu agir autrement.",
+  "readingQuestions": [
+    "Pourquoi Nietzsche prend-il l’exemple de la foudre et de son éclat ?",
+    "Comment la grammaire nous conduit-elle à imaginer un sujet derrière l’action ?",
+    "En quoi une habitude de <strong>langage</strong> peut-elle ainsi produire une croyance métaphysique et morale ?"
+  ],
+  "glossary": [
+    {
+      "term": "substrat",
+      "definition": "Support supposé stable derrière un changement ou une action. Nietzsche critique ici l’idée d’un sujet-substrat séparé de l’agir."
+    },
+    {
+      "term": "sujet",
+      "definition": "Dans la structure grammaticale, terme auquel on attribue une action ; Nietzsche met en question le passage de cette fonction linguistique à une substance métaphysique."
+    },
+    {
+      "term": "imputer",
+      "definition": "Attribuer une action à quelqu’un en le rendant responsable de ce qu’il a fait."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Une métaphysique dans la grammaire",
+      "definition": "Le schéma sujet–verbe–attribut pousse à imaginer une chose stable qui existerait d’abord puis produirait ensuite ses actes."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "« L’agent agit »",
+        "definition": "Lecture grammaticale qui dédouble l’événement en une cause supposée et son effet."
+      },
+      "right": {
+        "term": "« L’agir est tout »",
+        "definition": "Nietzsche refuse d’ajouter derrière l’action un sujet indépendant qui existerait avant elle."
+      },
+      "conclusion": "La critique du langage devient une critique de la responsabilité conçue comme pouvoir absolu d’agir ou de ne pas agir."
+    },
+    {
+      "type": "plain",
+      "definition": "La thèse ne consiste pas simplement à dire que les mots sont trompeurs : certains schèmes linguistiques peuvent rendre intuitives des distinctions métaphysiques qui devraient pourtant être interrogées."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "saussure-signe-linguistique-arbitraire",
+      "kind": "proche",
+      "label": "Saussure — Le signe linguistique est arbitraire",
+      "relation": "Saussure montre que les signes sont conventionnels ; Nietzsche s’intéresse à la manière dont leur organisation grammaticale peut orienter la pensée."
+    },
+    {
+      "id": "cassirer-langage-reel-construction",
+      "kind": "adverse",
+      "label": "Cassirer — Le langage ne reproduit pas le réel",
+      "relation": "Les deux textes font du langage une médiation active, mais Cassirer insiste sur sa fonction constructive quand Nietzsche souligne ses effets d’illusion."
+    },
+    {
+      "id": "sartre-langage-poesie-fin",
+      "kind": "proche",
+      "label": "Sartre — Le langage, en poésie, est une fin et non un moyen",
+      "relation": "Sartre montre lui aussi que notre rapport aux mots peut changer radicalement selon l’usage que nous en faisons."
+    }
+  ],
+  "paragraphs": [
+    "Exiger de la vigueur qu'elle ne s'extériorise pas sous forme de vigueur […] c'est un non-sens exactement au même titre qu'exiger de la faiblesse qu'elle s'extériorise comme vigueur. […] [E]t il ne peut paraître en aller autrement qu'à la faveur de la séduction trompeuse du langage (et des erreurs fondamentales de la raison qui y sont pétrifiées), lequel comprend, et comprend de travers, toute production d'effets comme conditionnée par une chose qui exerce des effets, par un « sujet ». De même, en effet, que le peuple sépare la foudre de sa lueur et considère cette dernière comme agir, comme effet exercé par un sujet qui s'appelle foudre, de même la morale du peuple sépare également la vigueur des extériorisations de cette vigueur comme s'il y avait derrière le vigoureux un substrat indifférent auquel il appartiendrait en toute liberté d'extérioriser ou non sa vigueur. Mais un tel substrat n'existe pas ; il n'y a pas d'« être » derrière l'agir, la production d'effets, le devenir ; « l'agent » est purement et simplement ajouté de manière imaginative à l'agir — l'agir est tout. Fondamentalement, le peuple dédouble l'agir, quand il fait luire la foudre, c'est un agir d'agir ; il pose le même événement d'abord comme cause et encore une fois ensuite comme son effet.",
+    "[…] [Q]uoi d'étonnant si les affects rentrés de vengeance et de haine, couvant en secret, exploitent à leur profit cette croyance et si même, fondamentalement, il n'est pas de croyance qu'ils mettent plus d'ardeur à conforter que celle qui veut que le fort ait toute liberté d'être faible, et l'oiseau de proie d'être agneau : — ils s'attribuent ainsi le droit d'imputer à l'oiseau de proie la responsabilité d'être oiseau de proie […].",
+    "[…] Cette espèce d'homme a besoin de la croyance au « sujet » indifférent, libre de se déterminer, du fait d'un instinct d'autoconservation, d'auto-acquiescement par lequel tout mensonge a coutume de se sanctifier. Le sujet (ou pour le dire de manière plus populaire, l'âme) a peut-être été de ce fait le meilleur article de foi que la terre ait connu jusqu'à présent parce qu'il a permis à l'immense majorité des mortels, aux faibles et aux opprimés en tout genre cette sublime tromperie de soi qui interprète la faiblesse elle-même comme liberté, sa manière d'être particulière comme mérite."
+  ]
+},
+      {
+  "id": "zamenhof-esperanto-langue-artificielle",
+  "section": "philosophie",
+  "cardMeta": "Espérantisme",
+  "title": "Une langue artificielle peut-elle devenir une langue commune ?",
+  "author": "Ludwik Zamenhof",
+  "authorTag": "Zamenhof",
+  "cardHighlight": "langue artificielle",
+  "authorMeta": "(1859–1917) · espérantisme",
+  "themes": [
+    "Langage",
+    "Politique"
+  ],
+  "work": "Déclaration sur l’essence de l’espérantisme",
+  "publication": "1905, Congrès universel d’Espéranto de Boulogne-sur-Mer, août 1905",
+  "description": "Une langue construite peut-elle être neutre, collective et suffisamment vivante pour relier des locuteurs de langues différentes ?",
+  "context": "Zamenhof imagine l’espéranto comme une langue internationale commune qui ne remplace aucune langue nationale. Son projet fait du <strong>langage</strong> un problème politique : comment permettre à tous de communiquer sans donner à un peuple l’avantage d’imposer sa propre langue aux autres ?",
+  "readingQuestions": [
+    "Pourquoi Zamenhof souhaite-t-il créer une langue internationale neutre ?",
+    "Pourquoi cette langue commune ne doit-elle pas remplacer les langues nationales ?",
+    "Une langue commune peut-elle faciliter les relations entre les peuples sans devenir elle-même un instrument de domination ?"
+  ],
+  "glossary": [
+    {
+      "term": "espérantisme",
+      "definition": "Mouvement visant à diffuser l’Espéranto comme langue internationale auxiliaire, sans remplacer les langues existantes."
+    },
+    {
+      "term": "langue artificielle",
+      "definition": "Langue créée intentionnellement selon un projet explicite, par opposition aux langues historiques formées progressivement dans des communautés."
+    },
+    {
+      "term": "Fundamento de Esperanto",
+      "definition": "Ouvrage de référence fixé comme base commune de l’Espéranto, destiné à garantir l’unité de la langue."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Neutralité linguistique",
+      "definition": "Le projet vise à offrir un moyen commun de communication qui n’accorde pas, en principe, de privilège politique ou culturel à la langue d’une nation particulière."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Langue nationale",
+        "definition": "Langue héritée d’une histoire et liée à une communauté déterminée."
+      },
+      "right": {
+        "term": "Langue auxiliaire internationale",
+        "definition": "Langue commune ajoutée aux langues existantes pour faciliter la communication entre groupes linguistiques."
+      },
+      "conclusion": "Zamenhof ne présente pas l’Espéranto comme un remplacement, mais comme une médiation supplémentaire."
+    },
+    {
+      "type": "analysis",
+      "term": "Une langue sans propriétaire",
+      "definition": "En renonçant à ses droits personnels, Zamenhof cherche à transformer un projet individuel en institution collective : la langue ne doit pas dépendre de la volonté continue de son inventeur."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "saussure-signe-linguistique-arbitraire",
+      "kind": "proche",
+      "label": "Saussure — Le signe linguistique est arbitraire",
+      "relation": "L’Espéranto montre concrètement qu’un système de signes peut être conventionnel tout en devenant une pratique collective stabilisée."
+    },
+    {
+      "id": "cassirer-langage-reel-construction",
+      "kind": "proche",
+      "label": "Cassirer — Le langage ne reproduit pas le réel",
+      "relation": "Le projet d’une langue commune pose aussi la question de ce que chaque langue sélectionne et organise dans notre expérience."
+    },
+    {
+      "id": "levinas-parler-esclave-egal",
+      "kind": "proche",
+      "label": "Lévinas — Même quand on parle à un esclave, on parle à un égal",
+      "relation": "Les deux textes donnent à la communication une portée politique ou éthique qui dépasse la simple transmission d’informations."
+    }
+  ],
+  "paragraphs": [
+    "1 — L'espérantisme est l'effort fait pour répandre dans le monde entier l'usage d'une langue neutre, qui, ne s'imposant pas dans la vie intérieure des peuples et n'ayant aucunement pour but de remplacer les langues existantes, donnerait aux hommes des diverses nations la possibilité de se comprendre entre eux, qui pourrait servir pour les institutions publiques dans les pays où se trouvent des rivalités de langues, et dans laquelle pourraient être publiés les ouvrages qui ont un égal intérêt pour tous les peuples. Toute autre idée que tel ou tel Espérantiste pourrait lier à l'espérantisme est une affaire purement privée dont l'espérantisme n'a pas à répondre.",
+    "2 — Comme actuellement aucun chercheur au monde ne doute qu'une langue internationale ne peut être qu'une langue artificielle, et comme tous les essais depuis deux siècles n'ont présenté que des projets théoriques et que la seule langue effectivement terminée et s'étant montrée apte à toutes les relations est la langue Espéranto, les partisans de l'idée d'une langue internationale, ayant conscience qu'une dispute théorique n'aboutirait à rien, et que le but ne peut être atteint que par un travail pratique, se sont groupés depuis longtemps autour de la seule langue Espéranto et travaillent pour sa diffusion et l'enrichissement de sa littérature.",
+    "3 — L'auteur de l'Espéranto ayant dès le début et une fois pour toutes renoncé à tout droit et privilège personnels relatifs à cette langue, l'Espéranto n'est la propriété de personne, ni au point de vue matériel ni au point de vue moral. Le Maître de la langue est le monde entier et chacun peut éditer en cette langue ou sur elle tous les ouvrages qu'il désire et l'employer pour tous les buts possibles.",
+    "4 — L'Espéranto ne dépend d'aucun homme en particulier qui aurait le droit de légiférer. Toutes les opinions et tous les ouvrages du créateur de l'Espéranto, comme des autres Espérantistes ont un caractère absolument privé. Le seul livre que tous les Espérantistes doivent reconnaître une fois pour toutes est le « Fundamento de Esperanto », dans lequel personne n'a le droit de faire même le plus petit changement. Les idées qui ne peuvent s'exprimer commodément à l'aide des matériaux qu'on y trouve peuvent être rendues par tout Espérantiste de la manière qu'il trouve la plus juste, comme en toute autre langue. Mais, pour plus d'unité, il est recommandé à tous les Espérantistes d'imiter le plus possible le style des ouvrages du créateur de l'Espéranto.",
+    "5 — Est nommé espérantiste celui qui sait et emploie la langue Espéranto, pour quelque but que ce soit. L'adhésion à une société espérantiste est recommandable, mais non obligatoire."
+  ]
+},
+      {
+  "id": "sartre-langage-poesie-fin",
+  "section": "philosophie",
+  "cardMeta": "Existentialisme et littérature",
+  "title": "Le langage, en poésie, est une fin et non un moyen",
+  "author": "Jean-Paul Sartre",
+  "authorTag": "Sartre",
+  "cardHighlight": "une fin et non un moyen",
+  "authorMeta": "(1905–1980) · existentialisme",
+  "themes": [
+    "Langage",
+    "Art"
+  ],
+  "work": "Qu’est-ce que la littérature ?",
+  "publication": "1948, Gallimard, p. 17–19",
+  "description": "Le poète utilise-t-il les mots comme des instruments, ou les traite-t-il comme des choses dotées d’une présence propre ?",
+  "context": "Sartre oppose l’usage ordinaire du langage, où les mots servent de <strong>signes</strong>, au rapport poétique aux mots. Le poète ne traverse plus le mot pour atteindre directement la chose : il en fait une matière sonore et signifiante qui vaut aussi pour elle-même.",
+  "readingQuestions": [
+    "Pourquoi, dans l’usage ordinaire, les mots fonctionnent-ils comme des instruments ?",
+    "Que change le poète lorsqu’il considère les mots comme des choses ?",
+    "Comment le poème peut-il encore produire du <strong>sens</strong> si les mots ne sont plus de simples moyens de désigner ?"
+  ],
+  "glossary": [
+    {
+      "term": "nomination",
+      "definition": "Acte par lequel un mot désigne un objet ou une réalité afin d’y renvoyer."
+    },
+    {
+      "term": "signe",
+      "definition": "Élément utilisé pour renvoyer au-delà de lui-même vers une signification ou un objet."
+    },
+    {
+      "term": "transcendance",
+      "definition": "Ici, mouvement par lequel la conscience dépasse le signe présent pour viser ce qu’il signifie."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Langage-instrument",
+        "definition": "Les mots servent à viser un objet, informer ou agir."
+      },
+      "right": {
+        "term": "Langage poétique",
+        "definition": "Les mots deviennent eux-mêmes une matière sonore et signifiante."
+      },
+      "conclusion": "La poésie ne détruit pas le sens : elle le rend inséparable de la matérialité du mot."
+    },
+    {
+      "type": "analysis",
+      "term": "Le mot comme chose",
+      "definition": "Le poète cesse de traiter le mot comme une vitre transparente et s’attarde sur sa présence propre."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "austin-mots-accomplir-actions",
+      "kind": "adverse",
+      "label": "Austin — Parler, c’est parfois agir",
+      "relation": "Austin étudie un Langage qui accomplit des actions ; Sartre isole au contraire le cas poétique où le mot cesse d’être un simple instrument."
+    },
+    {
+      "id": "arendt-oeuvre-art-duree-monde",
+      "kind": "proche",
+      "label": "Arendt — L’œuvre d’art échappe à l’usage",
+      "relation": "Chez Sartre comme chez Arendt, l’Art se distingue d’un objet ou d’un signe défini seulement par sa fonction."
+    }
+  ],
+  "paragraphs": [
+    "Les poètes sont des hommes qui refusent d'utiliser le langage. Or, comme c'est dans et par le langage conçu comme une certaine espèce d'instrument que s'opère la recherche de la vérité, il ne faut pas s'imaginer qu'ils visent à discerner le vrai ni à l'exposer. Ils ne nomment pas non plus le monde et, à vrai dire, ils ne nomment rien du tout, car la nomination implique un perpétuel sacrifice du nom à l'objet nommé ou, pour parler comme Hegel, le nom s'y révèle l'inessentiel, en face de la chose qui est essentielle. […] En fait, le poète s'est retiré d'un seul coup du langage-instrument ; il a choisi une fois pour toutes l'attitude poétique qui considère les mots comme des choses et non comme des signes.",
+    "Car l'ambiguïté du signe implique qu'on puisse à son gré le traverser comme une vitre et poursuivre à travers lui la chose signifiée ou tourner son regard vers sa réalité et le considérer comme objet. L'homme qui parle est au-delà des mots, près de l'objet ; le poète est en deçà. Pour le premier, ils sont domestiques ; pour le second, ils restent à l'état sauvage. Pour celui-ci, ce sont des conventions utiles, des outils qui s'usent peu à peu et qu'on jette quand ils ne peuvent plus servir ; pour le second, ce sont des choses naturelles qui croissent naturellement sur la terre comme l'herbe et les arbres.",
+    "Mais s'il s'arrête aux mots, comme le peintre fait aux couleurs et le musicien aux sons, cela ne veut pas dire qu'ils aient perdu toute signification à ses yeux ; en effet, c'est la signification seule qui peut donner aux mots leur unité verbale ; sans elle ils s'éparpilleraient en sons ou en traits de plume. Seulement elle devient naturelle, elle n'est plus le but toujours hors d'atteinte et toujours visé par la transcendance humaine ; elle est une propriété de chaque terme, analogue à l'expression d'un visage, au petit sens triste ou gai des sons et des couleurs. Coulée dans le mot, absorbée par sa sonorité ou par son aspect visuel, épaissie, dégradée, elle est chose, elle aussi, incréée, éternelle ; pour le poète, le langage est une structure du monde extérieur. Le parleur est en situation dans le langage, investi par les mots ; ce sont les prolongements de ses sens, ses pinces, ses antennes, ses lunettes […].",
+    "Le poète est hors du langage, il voit les mots à l'envers […]."
+  ]
+},
+      {
+  "id": "austin-mots-accomplir-actions",
+  "section": "philosophie",
+  "cardMeta": "Philosophie du langage ordinaire",
+  "title": "Avec des mots, on peut accomplir des actions",
+  "author": "John Langshaw Austin",
+  "authorTag": "Austin",
+  "cardHighlight": "accomplir des actions",
+  "familiarIdea": "les énoncés performatifs",
+  "authorMeta": "(1911–1960) · philosophie du langage ordinaire",
+  "themes": [
+    "Langage",
+    "Vérité"
+  ],
+  "work": "« Performatif-constatif », La Philosophie analytique",
+  "publication": "1962 [posth.], trad. L. Aubert et A. L. Hacker, Minuit, p. 271–273",
+  "description": "Tous les énoncés servent-ils à décrire le monde, ou certains accomplissent-ils une action au moment même où ils sont prononcés ?",
+  "context": "Austin montre que parler ne consiste pas toujours à décrire le monde. Certains énoncés accomplissent une <strong>action</strong> au moment même où ils sont prononcés : promettre, baptiser, s’excuser ou déclarer quelque chose suppose alors des conditions précises de réussite.",
+  "readingQuestions": [
+    "Pourquoi certains énoncés ne peuvent-ils pas être simplement dits vrais ou faux ?",
+    "Dans quelles conditions une parole accomplit-elle réellement l’action qu’elle annonce ?",
+    "Que révèle l’existence des <strong>énoncés performatifs</strong> sur le pouvoir du langage ?"
+  ],
+  "glossary": [
+    {
+      "term": "constatif",
+      "definition": "Énoncé qui présente un état de choses et peut, en première approximation, être évalué comme vrai ou faux."
+    },
+    {
+      "term": "performatif",
+      "definition": "Énoncé dont l’énonciation accomplit conventionnellement une action dans certaines conditions : promettre, baptiser, s’excuser, etc."
+    },
+    {
+      "term": "assertion",
+      "definition": "Énoncé qui se présente comme affirmant quelque chose de vrai."
+    },
+    {
+      "term": "malheureux",
+      "definition": "Traduction d’un terme d’Austin désignant l’échec d’un acte de langage lorsque les conditions de réussite ne sont pas remplies."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Constatif",
+        "definition": "Décrit ou affirme quelque chose ; la question de la vérité y est centrale."
+      },
+      "right": {
+        "term": "Performatif",
+        "definition": "Accomplit une action en étant énoncé ; sa réussite dépend de conditions de félicité."
+      },
+      "conclusion": "Austin montre que la fonction du langage ne se réduit pas à représenter le monde : parler peut modifier une situation sociale."
+    },
+    {
+      "type": "analysis",
+      "term": "Trois manières d’échouer",
+      "definition": "Un performatif peut être critiqué autrement qu’en termes de vrai et de faux.",
+      "items": [
+        "Il peut être <strong>nul ou sans effet</strong> si la situation ou l’autorité requise manque.",
+        "Il peut être <strong>insincère</strong> si le locuteur accomplit la formule sans l’intention correspondante.",
+        "Il peut conduire à une <strong>rupture d’engagement</strong> si la conduite ultérieure contredit l’acte accompli."
+      ]
+    },
+    {
+      "type": "plain",
+      "definition": "La théorie des actes de langage déplace l’analyse philosophique : il faut examiner non seulement ce que les phrases signifient, mais ce que les locuteurs font en les prononçant dans des institutions et des situations déterminées."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-rhetorique-puissance-dialogue",
+      "kind": "proche",
+      "label": "Platon — La rhétorique est un dangereux instrument de puissance",
+      "relation": "Platon étudie le pouvoir de persuasion de la parole ; Austin permet de préciser une autre manière dont le langage agit effectivement."
+    },
+    {
+      "id": "levinas-parler-esclave-egal",
+      "kind": "proche",
+      "label": "Lévinas — Même quand on parle à un esclave, on parle à un égal",
+      "relation": "Lévinas pense aussi la parole comme une action relationnelle : elle institue un rapport à autrui et appelle une réponse."
+    },
+    {
+      "id": "sartre-langage-poesie-fin",
+      "kind": "adverse",
+      "label": "Sartre — Le langage, en poésie, est une fin et non un moyen",
+      "relation": "Austin analyse la force pratique des énoncés ordinaires, tandis que Sartre décrit un usage poétique où les mots cessent d’être de simples instruments."
+    }
+  ],
+  "paragraphs": [
+    "L'énoncé constatif a, sous le nom d'assertion, si chère aux philosophes, la propriété d'être vrai ou faux. Au contraire, l'énoncé performatif ne peut jamais être ni l'un ni l'autre : il a sa propre fonction à lui, il sert à effectuer une action. Formuler un tel énoncé, c'est effectuer l'action, action, peut-être, qu'on ne pourrait guère accomplir, au moins avec une telle précision, d'aucune autre façon. En voici des exemples : Je baptise ce vaisseau « Liberté ». / Je m'excuse. / Je vous souhaite la bienvenue. / Je vous conseille de le faire.",
+    "De tels énoncés sont assez fréquents […]. Évidemment, beaucoup d'entre eux ne sont pas sans intérêt pour les philosophes : dire « je promets de… », formuler, comme on dit, cet énoncé performatif, c'est là l'acte même de faire la promesse ; acte, on le voit, assez non-mystérieux. Et on croit vite voir qu'un tel énoncé ne peut pas être vrai ou faux — ne peut pas l'être, dis-je, puisqu'il peut très bien impliquer que d'autres propositions sont vraies ou fausses, ce qui, si je ne me trompe, est tout autre chose.",
+    "Cependant, l'énoncé performatif n'est pas exempt de toute critique. On peut très bien le critiquer, mais dans une dimension tout à fait différente de celle du vrai et du faux. Il faut que le performatif soit publié dans une situation qui soit en tout point appropriée à l'acte dont il est question : si l'auteur n'est pas dans les conditions requises pour agir (et il y a une quantité de ces conditions), alors son énoncé sera, comme nous le nommons en général, « malheureux ». […].",
+    "D'abord, notre performatif, comme tout autre rite ou cérémonie, peut-être « nul ou sans effet », comme le disent les hommes de loi. Si, par exemple, l'auteur n'est pas en position d'effectuer un tel acte, ou si l'objet à l'égard duquel il prétend l'effectuer n'est pas propre à le subir […] je n'arriverai guère à baptiser des pingouins, créatures peu susceptibles de cet exploit.",
+    "Deuxièmement, l'énoncé performatif, bien qu'il ne soit pas nul, peut être « malheureux » d'une autre façon, c'est-à-dire si on le formule sans sincérité. Si je dis, « je promets de… », sans avoir la moindre intention d'accomplir cette action promise, peut-être même sans penser qu'il soit en mon pouvoir de l'accomplir, la promesse est creuse […].",
+    "Supposons maintenant que notre acte ait été effectué : tout s'est passé normalement, et aussi, si vous le voulez, sincèrement. […]. [S]i j'ai dit, « je vous souhaite la bienvenue », je ne serai pas en règle si je me mets à vous traiter en ennemi ou en intrus. C'est ainsi que nous disons que, même quand le performatif a pris effet, il existe toujours une troisième espèce de malheur, que nous nommons « rupture d'engagement »."
+  ]
+},
+      {
+  "id": "platon-rhetorique-puissance-dialogue",
+  "section": "philosophie",
+  "cardMeta": "Antiquité grecque",
+  "title": "La rhétorique est un dangereux instrument de puissance",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "instrument de puissance",
+  "authorMeta": "(v. 428–348 av. J.-C.) · platonisme",
+  "themes": [
+    "Langage",
+    "Politique"
+  ],
+  "work": "Gorgias",
+  "publication": "IVe s. av. J.-C., 456b–458a, trad. M. Canto modifiée, GF, 1993, p. 145–148",
+  "description": "La puissance de persuader suffit-elle à faire de la rhétorique un art légitime, ou faut-il subordonner la parole à la recherche du vrai ?",
+  "context": "Dans le <em>Gorgias</em>, la rhétorique apparaît comme une puissance de <strong>persuasion</strong> capable d’agir dans la cité même sans véritable savoir. Socrate oppose à cette puissance le dialogue et la réfutation : parler ne doit pas seulement permettre de l’emporter, mais aider à rechercher le vrai et le juste.",
+  "readingQuestions": [
+    "Pourquoi Gorgias présente-t-il la rhétorique comme une puissance particulièrement grande ?",
+    "Quelle différence Socrate introduit-il entre persuader quelqu’un et rechercher la <strong>vérité</strong> avec lui ?",
+    "À quelles conditions la puissance politique de la parole peut-elle être légitime ?"
+  ],
+  "glossary": [
+    {
+      "term": "rhétorique",
+      "definition": "Art de parler en public et de maîtriser des procédés capables de produire la persuasion."
+    },
+    {
+      "term": "dialectique",
+      "definition": "Chez Socrate et Platon, pratique réglée du questionnement et de la réponse visant à examiner une thèse et à progresser vers le vrai."
+    },
+    {
+      "term": "persuader",
+      "definition": "Obtenir l’adhésion d’un interlocuteur ; la persuasion peut être efficace sans que la thèse défendue soit vraie."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Rhétorique",
+        "definition": "Puissance de persuasion qui permet à l’orateur de l’emporter devant un public, même face au spécialiste."
+      },
+      "right": {
+        "term": "Dialogue philosophique",
+        "definition": "Échange où les interlocuteurs acceptent les objections et la réfutation afin de clarifier le problème et de rechercher le vrai."
+      },
+      "conclusion": "Le désaccord porte moins sur l’efficacité de la parole que sur la fin à laquelle cette efficacité doit être subordonnée."
+    },
+    {
+      "type": "concept",
+      "term": "Le pouvoir du non-savoir",
+      "definition": "Gorgias souligne un paradoxe : celui qui ne possède pas le savoir technique peut néanmoins l’emporter publiquement s’il maîtrise mieux les ressorts de la persuasion."
+    },
+    {
+      "type": "plain",
+      "definition": "Socrate introduit une norme morale de la discussion : un échange philosophique suppose que chacun préfère corriger son erreur à préserver son prestige."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "austin-mots-accomplir-actions",
+      "kind": "proche",
+      "label": "Austin — Avec des mots, on peut accomplir des actions",
+      "relation": "Austin analyse la force pratique de certains énoncés ; Platon montre comment la parole peut aussi agir sur les croyances et les décisions d’un public."
+    },
+    {
+      "id": "levinas-parler-esclave-egal",
+      "kind": "proche",
+      "label": "Lévinas — Même quand on parle à un esclave, on parle à un égal",
+      "relation": "Socrate et Lévinas font tous deux dépendre la valeur de la parole du rapport institué avec l’interlocuteur."
+    },
+    {
+      "id": "descartes-langage-pensee",
+      "kind": "proche",
+      "label": "Descartes — Seul le langage humain exprime des pensées",
+      "relation": "Descartes définit le langage par l’expression de la pensée ; Platon en examine ici la puissance sociale et le bon usage."
+    }
+  ],
+  "paragraphs": [
+    "GORGIAS. — Ah, si au moins tu savais tout, Socrate, et en particulier que la rhétorique, laquelle contient, pour ainsi dire, toutes les capacités humaines, les maintient sous son contrôle ! Je vais t'en donner une preuve frappante. Voici. Je suis allé, souvent déjà, avec mon frère, avec d'autres médecins, visiter des malades qui ne consentaient ni à boire leur remède ni à se laisser saigner ou cautériser par le médecin. Et là où ce médecin était impuissant à les convaincre, moi, j'y parvenais, sans autre art que la rhétorique, à les convaincre. Venons-en à la Cité, suppose qu'un orateur et qu'un médecin se rendent dans la cité que tu voudras, et qu'il faille organiser, à l'Assemblée ou dans une autre réunion, une confrontation entre le médecin et l'orateur pour savoir lequel des deux on doit choisir comme médecin. Eh bien, j'affirme que le médecin aurait l'air de n'être rien du tout, et que l'homme qui sait parler serait choisi s'il le voulait. Suppose encore que la confrontation se fasse avec n'importe quel autre spécialiste, c'est toujours l'orateur qui, mieux que personne, saurait convaincre qu'on le choisît. Car il n'y a rien dont l'orateur ne puisse parler, en public, avec une plus grande force de persuasion que celle de n'importe quel spécialiste. Ah, si grande est la puissance de cet art rhétorique ! […]",
+    "SOCRATE. — J'imagine, Gorgias, que tu as eu, comme moi, l'expérience d'un bon nombre d'entretiens. Et, au cours de ces entretiens, sans doute auras-tu remarqué la chose suivante : les interlocuteurs ont du mal à définir les sujets dont ils ont commencé de discuter et à conclure leur discussion après s'être l'un et l'autre mutuellement instruits. Au contraire, s'il arrive qu'ils soient en désaccord sur quelque chose, si l'un déclare que l'autre se trompe ou parle de façon confuse, ils s'irritent l'un contre l'autre, et chacun d'eux estime que son interlocuteur s'exprime avec mauvaise foi, pour avoir le dernier mot, sans chercher à savoir ce qui est au fond de la discussion. Il arrive même, parfois, qu'on se sépare de façon lamentable : on s'injurie, on lance les mêmes insultes qu'on reçoit, tant et si bien que les auditeurs s'en veulent d'être venus écouter pareils individus. Te demandes-tu pourquoi je parle de cela ? […] [Parce que] j'ai peur de te réfuter, j'ai peur que tu ne penses que l'ardeur qui m'anime vise, non pas à rendre parfaitement clair le sujet de notre discussion, mais bien à te critiquer. Alors, écoute, si tu es comme moi, j'aurais plaisir à te poser des questions, sinon, j'y renoncerais.",
+    "Veux-tu savoir quel type d'homme je suis ? Eh bien, je suis quelqu'un qui est content d'être réfuté, quand ce que je dis est faux, quelqu'un qui a plaisir aussi à réfuter quand ce qu'on me dit n'est pas vrai, mais auquel il ne plaît pas moins d'être réfuté que de réfuter."
+  ]
+},
+      {
+  "id": "levinas-parler-esclave-egal",
+  "section": "philosophie",
+  "cardMeta": "Phénoménologie et éthique",
+  "title": "Même quand on parle à un esclave, on parle à un égal",
+  "author": "Emmanuel Lévinas",
+  "authorTag": "Lévinas",
+  "cardHighlight": "on parle à un égal",
+  "authorMeta": "(1906–1995) · phénoménologie et éthique",
+  "themes": [
+    "Langage",
+    "Autrui"
+  ],
+  "work": "Difficile Liberté",
+  "publication": "1952, Albin Michel, 1976, p. 21",
+  "description": "La conversation peut-elle instaurer une égalité morale avant même que nous connaissions vraiment notre interlocuteur ?",
+  "context": "Pour Lévinas, adresser la parole à quelqu’un, c’est déjà le reconnaître comme un <strong>interlocuteur</strong> capable de répondre. Même au cœur d’un rapport de domination, le dialogue introduit donc une égalité fondamentale qui empêche de réduire totalement autrui à une chose.",
+  "readingQuestions": [
+    "Qu’est-ce qui distingue parler à quelqu’un d’agir simplement sur lui ?",
+    "Pourquoi attendre une <strong>réponse</strong> revient-il déjà à reconnaître autrui comme un interlocuteur ?",
+    "En quoi le langage introduit-il une limite à la <strong>domination</strong> et à la violence ?"
+  ],
+  "glossary": [
+    {
+      "term": "nominatif",
+      "definition": "Cas grammatical du sujet ; philosophiquement, Lévinas l’associe ici au fait de parler d’autrui comme d’un objet identifié."
+    },
+    {
+      "term": "vocatif",
+      "definition": "Forme de l’interpellation directe : appeler quelqu’un, c’est déjà se tourner vers lui comme interlocuteur."
+    },
+    {
+      "term": "visage",
+      "definition": "Chez Lévinas, non pas simple ensemble de traits physiques, mais manière dont autrui se présente comme irréductible à ce que je peux connaître ou posséder de lui."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Nommer autrui",
+        "definition": "Le rapporter à un concept, le décrire comme quelque chose que je connais."
+      },
+      "right": {
+        "term": "Invoquer autrui",
+        "definition": "S’adresser à lui directement et reconnaître qu’il peut me répondre, me contredire et m’obliger."
+      },
+      "conclusion": "La parole ne se réduit pas à une connaissance sur autrui : elle est d’abord une relation avec lui."
+    },
+    {
+      "type": "concept",
+      "term": "Conversation et non-violence",
+      "definition": "Le locuteur ne peut plus exercer une souveraineté absolue dès lors qu’il s’expose à la réponse de l’autre. Parler implique donc une forme de renoncement à la domination."
+    },
+    {
+      "type": "concept",
+      "term": "Égalité de l’interlocution",
+      "definition": "Même une relation sociale inégale ne peut supprimer complètement l’égalité instaurée par le fait de s’adresser à quelqu’un et d’attendre sa réponse."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-rhetorique-puissance-dialogue",
+      "kind": "proche",
+      "label": "Platon — La rhétorique est un dangereux instrument de puissance",
+      "relation": "Socrate et Lévinas opposent tous deux au langage de domination une parole qui reconnaît l’interlocuteur et accepte la réponse."
+    },
+    {
+      "id": "austin-mots-accomplir-actions",
+      "kind": "proche",
+      "label": "Austin — Avec des mots, on peut accomplir des actions",
+      "relation": "Austin montre que parler peut accomplir un acte ; Lévinas analyse l’acte relationnel et moral impliqué par l’adresse à autrui."
+    },
+    {
+      "id": "descartes-langage-pensee",
+      "kind": "proche",
+      "label": "Descartes — Seul le langage humain exprime des pensées",
+      "relation": "Descartes relie parole et pensée ; Lévinas montre que le langage engage aussi une relation éthique avec celui à qui l’on parle."
+    }
+  ],
+  "paragraphs": [
+    "Le fait banal de la conversation quitte, par un côté, l'ordre de la violence. Ce fait banal est la merveille des merveilles.",
+    "Parler, c'est en même temps que connaître autrui se faire connaître à lui. Autrui n'est pas seulement connu, il est salué. Il n'est pas seulement nommé, mais aussi invoqué. Pour le dire en termes de grammaire, autrui n'apparaît pas au nominatif, mais au vocatif. Je ne pense pas seulement à ce qu'il est pour moi, mais aussi et à la fois, et même avant, je suis pour lui. En lui appliquant un concept, en l'appelant ceci ou cela, déjà j'en appelle à lui. Je ne connais pas seulement, mais je suis en société. Ce commerce que la parole implique est précisément l'action sans violence : l'agent, au moment même de son action, a renoncé à toute domination, à toute souveraineté, s'expose déjà à l'action d'autrui dans l'attente de la réponse. Parler et écouter ne font qu'un, ils ne se succèdent pas. Parler institue ainsi le rapport moral d'égalité et par conséquent reconnaît la justice. Même quand on parle à un esclave, on parle à un égal. Ce que l'on dit, le contenu communiqué n'est possible que grâce à ce rapport de face à face où autrui compte comme interlocuteur avant même d'être connu. On regarde un regard. Regarder un regard, c'est regarder ce qui ne s'abandonne pas, ne se livre pas, mais qui vous vise : c'est regarder le visage."
+  ]
+},
+    {
+  "id": "popper-psychanalyse-non-scientifique",
+  "section": "philosophie",
+  "cardMeta": "Inconscient · science et réfutabilité",
+  "title": "La psychanalyse semble tout expliquer parce que rien ne peut la réfuter",
+  "author": "Karl R. Popper",
+  "authorTag": "Popper",
+  "cardHighlight": "rien ne peut la réfuter",
+  "authorMeta": "(1902–1994) · philosophie des sciences",
+  "themes": [
+    "Inconscient",
+    "Science"
+  ],
+  "work": "Conjectures et Réfutations",
+  "publication": "1953, trad. M.I.B. et M. de Launay, Payot, 2006, p. 61–63",
+  "description": "Une théorie est-elle vraiment scientifique si tout comportement imaginable peut toujours être interprété comme une confirmation ?",
+  "context": "Popper remarque qu’une théorie capable d’interpréter après coup presque n’importe quel comportement semble toujours confirmée. Or une théorie scientifique doit prendre le risque d’être contredite : c’est le problème du <strong>critère de démarcation</strong> entre science et non-science.",
+  "readingQuestions": [
+    "Pourquoi des comportements opposés peuvent-ils être interprétés dans un même cadre psychanalytique ?",
+    "Que révèle cette capacité à expliquer presque tous les cas possibles ?",
+    "Pourquoi une théorie qui ne peut jamais être <strong>réfutée</strong> devient-elle scientifiquement suspecte pour Popper ?"
+  ],
+  "glossary": [
+    {
+      "term": "sublimation",
+      "definition": "Transformation d’une énergie pulsionnelle en une activité socialement valorisée."
+    },
+    {
+      "term": "refoulement",
+      "definition": "Processus par lequel une représentation ou une pulsion est maintenue hors de la conscience."
+    },
+    {
+      "term": "complexe d’Œdipe",
+      "definition": "Dans la théorie freudienne, ensemble de désirs et de conflits affectifs infantiles organisés autour des figures parentales."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Réfutabilité",
+      "definition": "La force scientifique d’une théorie ne vient pas de ce qu’elle peut tout confirmer, mais de ce qu’elle accepte le risque d’être mise en défaut par certains faits."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "popper-theorie-falsifiable",
+      "kind": "identique",
+      "label": "Popper — Une théorie doit pouvoir être réfutée",
+      "relation": "Ce texte formule positivement le critère de falsifiabilité qui sous-tend ici la critique de la psychanalyse."
+    },
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "adverse",
+      "label": "Freud — L’inconscient est une hypothèse nécessaire",
+      "relation": "Freud défend la légitimité de l’hypothèse inconsciente là où Popper interroge son statut scientifique."
+    }
+  ],
+  "paragraphs": [
+    "[Les théories de Marx, Freud et Adler] semblaient aptes à rendre compte de la quasi-totalité des phénomènes qui se produisaient dans leurs domaines d’attribution respectifs. […] Les analystes freudiens insistaient sur le fait que leurs théories se trouvaient continuellement vérifiées par leurs « observations cliniques ». Quant à Adler, une expérience qu’il m’a été donné de faire m’a vivement marqué. Je lui rapportai, en 1919, un cas qui ne me semblait pas particulièrement adlérien, mais qu’il n’eut aucune difficulté à analyser à l’aide de sa théorie des sentiments d’infériorité, sans même avoir vu l’enfant. Quelque peu choqué, je lui demandai comment il pouvait être si affirmatif. Il me répondit : « grâce aux mille facettes de mon expérience » ; alors je ne pus m’empêcher de rétorquer : « avec ce nouveau cas, je présume que votre expérience en comporte désormais mille et une » […].",
+    "Que confirmait en réalité l’observation ? Rien de plus que le fait qu’un cas peut être interprété à la lumière de la théorie.",
+    "Or je remarquai que cela n’avait pas grand sens, étant donné que tous les cas imaginables pouvaient recevoir une interprétation dans le cadre de la théorie adlérienne ou, tout aussi bien, dans le cadre freudien. J’illustrerai ceci à l’aide de deux exemples, très différents, de comportement : celui de quelqu’un qui pousse à l’eau un enfant dans l’intention de le noyer, et celui d’un individu qui ferait le sacrifice de sa vie pour tenter de sauver l’enfant. […] Pour Freud, le premier individu souffre d’un refoulement (affectant, par exemple, l’une des composantes de son complexe d’Œdipe), tandis que, chez le second, la sublimation est réussie. Selon Adler, le premier souffre de sentiments d’infériorité (qui font peut-être naître en lui le besoin de se prouver à lui-même qu’il peut oser commettre un crime), tout comme le second (qui éprouve le besoin de se prouver qu’il ose sauver l’enfant). Je ne suis pas parvenu à trouver de comportement humain qui ne se laisse interpréter selon l’une et l’autre de ces théories. Or c’est précisément cette propriété – la théorie opérait dans tous les cas et se trouvait toujours confirmée – qui constituait, aux yeux des admirateurs de Freud et d’Adler, l’argument le plus convaincant en faveur de leurs théories. Et je commençais à soupçonner que cette force apparente représentait en réalité leur point faible."
+  ],
+  "familiarIdea": "le critère de démarcation"
+},
+    {
+  "id": "sartre-inconscient-mauvaise-foi",
+  "section": "philosophie",
+  "cardMeta": "Inconscient · liberté et mauvaise foi",
+  "title": "L’inconscient reconduit le problème de la mauvaise foi",
+  "author": "Jean-Paul Sartre",
+  "authorTag": "Sartre",
+  "cardHighlight": "mauvaise foi",
+  "familiarIdea": "la mauvaise foi",
+  "authorMeta": "(1905–1980) · existentialisme",
+  "themes": [
+    "Inconscient",
+    "Liberté"
+  ],
+  "work": "L’Être et le Néant",
+  "publication": "1943, chap. III, « La mauvaise foi », Gallimard, 1976, p. 88 et 91–92",
+  "description": "L’hypothèse d’une censure inconsciente explique-t-elle vraiment le refoulement, ou déplace-t-elle simplement le problème de la conscience qui se dissimule à elle-même ?",
+  "context": "Sartre critique l’idée d’une censure inconsciente : pour trier ce qu’elle laisse passer et ce qu’elle refoule, elle doit déjà reconnaître ce qu’elle écarte. La psychanalyse déplacerait donc la contradiction au lieu de la résoudre ; Sartre la ramène au problème de la <strong>mauvaise foi</strong>.",
+  "readingQuestions": [
+    "Que doit savoir la censure pour distinguer ce qu’elle laisse passer de ce qu’elle refoule ?",
+    "Pourquoi est-il contradictoire de dire qu’elle connaît une tendance tout en l’ignorant ?",
+    "En quoi la <strong>mauvaise foi</strong> permet-elle à Sartre de penser autrement ce que Freud attribue à l’inconscient ?"
+  ],
+  "glossary": [
+    {
+      "term": "censure",
+      "definition": "Dans la théorie psychanalytique, fonction qui empêche certaines représentations ou pulsions d’accéder directement à la conscience."
+    },
+    {
+      "term": "refoulement",
+      "definition": "Mise à l’écart de représentations ou de désirs incompatibles avec la conscience."
+    },
+    {
+      "term": "mauvaise foi",
+      "definition": "Chez Sartre, manière pour une conscience de se masquer à elle-même sa liberté tout en demeurant impliquée dans ce qu’elle cherche à fuir."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Censure inconsciente",
+        "definition": "Elle est supposée sélectionner les contenus à refouler sans devenir consciente."
+      },
+      "right": {
+        "term": "Conscience de mauvaise foi",
+        "definition": "Elle sait d’une certaine manière ce qu’elle cherche précisément à ne pas reconnaître."
+      },
+      "conclusion": "Pour Sartre, la première notion finit par reproduire le paradoxe de la seconde."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "adverse",
+      "label": "Freud — L’inconscient est nécessaire et légitime",
+      "relation": "Freud défend l’hypothèse que Sartre conteste ici au nom de la structure même de la conscience."
+    },
+    {
+      "id": "sartre-existence-precede-essence",
+      "kind": "proche",
+      "label": "Sartre — L’existence précède l’essence",
+      "relation": "La critique de l’inconscient s’inscrit dans une philosophie qui insiste sur la liberté et la responsabilité du sujet."
+    }
+  ],
+  "paragraphs": [
+    "Dans l’interprétation psychanalytique, par exemple, on utilisera l’hypothèse d’une censure, conçue comme une ligne de démarcation avec douane, services de passeports, contrôle des devises, etc., pour rétablir la dualité du trompeur et du trompé. […]",
+    "[L]a censure, pour appliquer son activité avec discernement, doit connaître ce qu’elle refoule. Si nous renonçons en effet à toutes les métaphores représentant le refoulement comme un choc de forces aveugles, force est bien d’admettre que la censure doit choisir et, pour choisir, se représenter. D’où viendrait, autrement, qu’elle laisse passer les impulsions sexuelles licites, qu’elle tolère que les besoins (faim, soif, sommeil) s’expriment dans la claire conscience ? Et comment expliquer qu’elle peut relâcher sa surveillance, qu’elle peut même être trompée par les déguisements de l’instinct ? Mais il ne suffit pas qu’elle discerne les tendances maudites, il faut encore qu’elle les saisisse comme à refouler, ce qui implique chez elle à tout le moins une représentation de sa propre activité. En un mot, comment la censure discernerait-elle les impulsions refoulables sans avoir conscience de les discerner ? Peut-on concevoir un savoir qui serait ignorance de soi ? Savoir, c’est savoir qu’on sait, disait Alain. Disons plutôt tout savoir est conscience de savoir. Ainsi les résistances du malade impliquent au niveau de la censure une représentation du refoulé en tant que tel, une compréhension du but vers quoi tendent les questions du psychanalyste et un acte de liaison synthétique par lequel elle compare la vérité du complexe refoulé à l’hypothèse psychanalytique qui le vise. Et ces différentes opérations à leur tour impliquent que la censure est conscience (de) soi. Mais de quel type peut être la conscience (de) soi de la censure ? Il faut qu’elle soit conscience (d’)être conscience de la tendance à refouler, mais précisément pour n’en être pas conscience. Qu’est-ce à dire sinon que la censure doit être de mauvaise foi ? La psychanalyse ne nous a rien fait gagner puisque, pour supprimer la mauvaise foi, elle a établi entre l’inconscient et la conscience une conscience autonome et de mauvaise foi."
+  ]
+},
+    {
+  "id": "wittgenstein-inconscient-mythe",
+  "section": "philosophie",
+  "cardMeta": "Inconscient · critique de l’interprétation",
+  "title": "L’inconscient freudien fonctionne comme une explication mythologique",
+  "author": "Ludwig Wittgenstein",
+  "authorTag": "Wittgenstein",
+  "cardHighlight": "explication mythologique",
+  "authorMeta": "(1889–1951) · philosophie analytique",
+  "themes": [
+    "Inconscient",
+    "Interprétation"
+  ],
+  "work": "« Conversations sur Freud », in Leçons et conversations",
+  "publication": "1966 posth., trad. J. Fauve, Gallimard, 1992, p. 89–91, 99",
+  "description": "Une interprétation séduisante du rêve ou de l’inconscient est-elle pour autant une explication comparable à une loi scientifique ?",
+  "context": "Wittgenstein critique la prétention de certaines explications freudiennes à fonctionner comme des lois scientifiques. L’<strong>interprétation</strong> des rêves peut être éclairante et séduisante sans constituer un décodage objectif : il n’existe pas de règle permettant de traduire mécaniquement une image de rêve en pensée.",
+  "readingQuestions": [
+    "Que reproche Wittgenstein à la manière dont Freud explique les phénomènes psychiques ?",
+    "Pourquoi l’interprétation d’un rêve ne fonctionne-t-elle pas comme le décodage objectif d’un langage ?",
+    "Comment une interprétation peut-elle être convaincante sans constituer pour autant une explication scientifique ?"
+  ],
+  "glossary": [
+    {
+      "term": "déterminisme",
+      "definition": "Thèse selon laquelle les phénomènes sont soumis à des causes ou à des lois nécessaires."
+    },
+    {
+      "term": "expérimentations",
+      "definition": "Épreuves réglées destinées à mettre à l’épreuve une hypothèse par des observations contrôlées."
+    },
+    {
+      "term": "mythologiques",
+      "definition": "Qui donnent une forme narrative et fortement signifiante à des phénomènes sans constituer pour autant une démonstration expérimentale."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Explication et séduction",
+      "definition": "Wittgenstein ne nie pas que Freud fasse voir quelque chose ; il conteste que l’attrait explicatif d’un schéma suffise à lui donner le statut d’une loi scientifique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-reve-rebus",
+      "kind": "adverse",
+      "label": "Freud — Le rêve est un rébus à traduire",
+      "relation": "Freud soutient précisément l’analogie interprétative que Wittgenstein met ici à l’épreuve."
+    },
+    {
+      "id": "popper-psychanalyse-non-scientifique",
+      "kind": "proche",
+      "label": "Popper — Une théorie qui explique tout ne se laisse plus tester",
+      "relation": "Les deux critiques distinguent la puissance interprétative de la validation scientifique."
+    }
+  ],
+  "paragraphs": [
+    "« Le déterminisme s’applique à l’esprit avec autant de vérité qu’aux choses de la physique. » Ceci est obscur parce que, lorsque nous pensons à des causes pour les choses de la physique, nous pensons à des expérimentations. Nous n’avons rien de la sorte qui soit lié aux sentiments ou à la motivation. Et cependant les psychologues tiennent à dire : « Il doit y avoir une loi » — bien qu’on n’en ait trouvé aucune. (Freud : « votre intention est-elle de dire, Messieurs, que c’est le hasard qui gouverne les changements dans les phénomènes mentaux ? ») Quant à moi, ce qui me paraît important c’est le fait qu’il n’y a effectivement aucune loi de ce genre, […].",
+    "Avec son analyse, Freud fournit des explications que nombre de gens sont enclins à accepter. Il souligne qu’ils n’y sont pas enclins. Mais si l’explication est telle que les gens ne sont pas enclins à l’accepter, il est hautement probable que c’est aussi un genre d’explication qu’ils sont enclins à accepter. Et c’est là ce que Freud a en fait mis en lumière. Voyez l’idée de Freud selon laquelle l’anxiété est toujours, d’une façon ou d’une autre, une répétition de l’anxiété que nous avons éprouvée à la naissance. Il ne l’établit pas en se référant à une preuve — comment le pourrait-il ? Mais voilà une idée qui a un caractère attrayant prononcé. Elle est attrayante comme le sont les explications mythologiques, ces explications qui disent que tout est répétition de quelque chose qui est arrivé antérieurement. […] Il en va de même de la notion de l’inconscient. Freud prétend en trouver la preuve dans les souvenirs que l’analyse amène au jour. Mais, à un certain stade, on ne voit pas clairement dans quelle mesure de tels souvenirs ne doivent pas leur existence à l’analyste. […]",
+    "Supposez que vous considériez le rêve comme un type de langage. Une façon de dire ou de symboliser quelque chose. Ce symbolisme pourrait être régulier, sinon nécessairement alphabétique ; il pourrait être comme le chinois. Alors nous pourrions trouver un moyen de transposer ce symbolisme dans le langage que nous parlons ou que nous pensons communément. Mais la transposition devrait pouvoir se faire dans les deux sens. Il devrait être possible, en employant la même technique, de transposer des pensées ordinaires dans le langage du rêve. Freud le reconnaît, cela ne s’est jamais fait et ne se peut faire. De telle sorte que nous pourrions douter si le rêve est une façon de penser quelque chose, s’il est même un langage."
+  ]
+},
+    {
+  "id": "freud-inconscient-hypothese",
+  "section": "philosophie",
+  "cardMeta": "Inconscient · hypothèse psychanalytique",
+  "title": "L’hypothèse de l’inconscient est nécessaire et légitime",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "nécessaire et légitime",
+  "familiarIdea": "l’hypothèse de l’inconscient",
+  "authorMeta": "(1856–1939) · psychanalyse",
+  "themes": [
+    "Inconscient",
+    "Conscience"
+  ],
+  "work": "L’Inconscient, in Métapsychologie",
+  "publication": "1915, trad. J. Laplanche et J.-B. Pontalis, Gallimard, 1943, p. 66–67",
+  "description": "Pourquoi admettre des processus psychiques inconscients si la conscience ne les perçoit pas directement ?",
+  "context": "Freud part des lacunes de la conscience : rêves, actes manqués, symptômes et pensées dont l’origine nous échappe restent obscurs si l’on suppose que tout le psychisme est conscient. L’hypothèse de l’<strong>inconscient</strong> devient alors nécessaire parce qu’elle redonne sens et cohérence à ces phénomènes.",
+  "readingQuestions": [
+    "Quels phénomènes montrent que la conscience ne suffit pas à rendre compte de toute la vie psychique ?",
+    "Pourquoi l’hypothèse de l’<strong>inconscient</strong> permet-elle de relier des faits jusque-là incohérents ?",
+    "À quelles conditions Freud estime-t-il cette hypothèse non seulement nécessaire, mais aussi légitime ?"
+  ],
+  "glossary": [
+    {
+      "term": "hypothèse",
+      "definition": "Proposition tenue provisoirement pour vraie afin d’expliquer des faits et d’orienter la recherche."
+    },
+    {
+      "term": "actes manqués",
+      "definition": "Actes involontaires, comme certains lapsus ou oublis, auxquels Freud attribue un sens inconscient."
+    },
+    {
+      "term": "interpolons",
+      "definition": "Introduisons entre deux éléments observés un terme non directement donné afin de rendre leur relation intelligible."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Nécessité de l’inconscient",
+      "definition": "L’inconscient est posé parce que la seule conscience laisse des phénomènes psychiques incohérents ou inexpliqués."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "popper-psychanalyse-non-scientifique",
+      "kind": "adverse",
+      "label": "Popper — La psychanalyse est-elle testable ?",
+      "relation": "Popper conteste le statut scientifique du type de confirmation que Freud invoque ici."
+    },
+    {
+      "id": "sartre-inconscient-mauvaise-foi",
+      "kind": "adverse",
+      "label": "Sartre — L’inconscient reconduit la mauvaise foi",
+      "relation": "Sartre critique la cohérence philosophique de la censure et du refoulement inconscients."
+    }
+  ],
+  "paragraphs": [
+    "On nous conteste de tous côtés le droit d’admettre un psychisme inconscient et de travailler scientifiquement avec cette hypothèse. Nous pouvons répondre à cela que l’hypothèse de l’inconscient est nécessaire et légitime, et que nous possédons de multiples preuves de l’existence de l’inconscient. Elle est nécessaire parce que les données de la conscience sont extrêmement lacunaires ; aussi bien chez l’homme sain que chez le malade, il se produit fréquemment des actes psychiques qui, pour être expliqués, présupposent d’autres actes qui, eux, ne bénéficient pas du témoignage de la conscience. Ces actes ne sont pas seulement les actes manqués et les rêves, chez l’homme sain, et tout ce qu’on appelle symptômes psychiques et phénomènes compulsionnels chez le malade ; notre expérience quotidienne la plus personnelle nous met en présence d’idées qui nous viennent sans que nous en connaissions l’origine, et de résultats de pensée dont l’élaboration nous est demeurée cachée. Tous ces actes conscients demeurent incohérents et incompréhensibles si nous nous obstinons à prétendre qu’il faut bien percevoir par la conscience tout ce qui se passe en nous en fait d’actes psychiques ; mais ils s’ordonnent dans un ensemble dont on peut montrer la cohérence, si nous interpolons les actes inconscients inférés. Or, nous trouvons dans ce gain de sens et de cohérence une raison, pleinement justifiée, d’aller au-delà de l’expérience immédiate. Et s’il s’avère de plus que nous pouvons fonder sur l’hypothèse de l’inconscient une pratique couronnée de succès, par laquelle nous influençons, conformément à un but donné, le cours des processus conscients, nous aurons acquis, avec ce succès, une preuve incontestable de l’existence de ce dont nous avons fait l’hypothèse. L’on doit donc se ranger à l’avis que ce n’est qu’au prix d’une prétention intenable que l’on peut exiger que tout ce qui se produit dans le domaine psychique doive aussi être connu de la conscience."
+  ]
+},
+    {
+  "id": "freud-reve-rebus",
+  "section": "philosophie",
+  "cardMeta": "Inconscient · rêve et interprétation",
+  "title": "Le rêve est un rébus à traduire",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "rébus à traduire",
+  "familiarIdea": "contenu manifeste et contenu latent",
+  "authorMeta": "(1856–1939) · psychanalyse",
+  "themes": [
+    "Inconscient",
+    "Interprétation"
+  ],
+  "work": "L’Interprétation des rêves",
+  "publication": "1900, trad. I. Meyerson, PUF, 1967, p. 241",
+  "description": "Le rêve doit-il être lu comme une image absurde, ou traduit comme l’expression déformée de pensées latentes ?",
+  "context": "Freud distingue le <strong>contenu manifeste</strong> du rêve, dont nous nous souvenons, et les pensées latentes que l’analyse cherche à retrouver. Le rêve ressemble à un rébus : ses images sont des signes qu’il faut <strong>interpréter</strong>, et non des scènes à comprendre littéralement.",
+  "readingQuestions": [
+    "Quelle différence Freud établit-il entre le contenu manifeste du rêve et ses pensées latentes ?",
+    "Pourquoi compare-t-il le rêve à un <strong>rébus</strong> plutôt qu’à une scène à prendre au pied de la lettre ?",
+    "En quoi cette comparaison permet-elle de comprendre le travail de l’<strong>interprétation</strong> psychanalytique ?"
+  ],
+  "glossary": [
+    {
+      "term": "contenu latent",
+      "definition": "Pensées du rêve que l’interprétation cherche à reconstruire derrière le contenu immédiatement raconté."
+    },
+    {
+      "term": "contenu manifeste",
+      "definition": "Forme du rêve telle qu’elle est vécue ou racontée, avec ses scènes, personnages et images."
+    },
+    {
+      "term": "rébus",
+      "definition": "Jeu dans lequel des images ou signes doivent être remplacés par des sons, syllabes ou mots pour former une expression intelligible."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Contenu manifeste",
+        "definition": "Le rêve tel qu’il apparaît et se raconte."
+      },
+      "right": {
+        "term": "Contenu latent",
+        "definition": "Les pensées inconscientes reconstruites par l’interprétation."
+      },
+      "conclusion": "L’analyse consiste à traduire le premier dans le langage du second."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "wittgenstein-inconscient-mythe",
+      "kind": "adverse",
+      "label": "Wittgenstein — Le rêve est-il vraiment un langage ?",
+      "relation": "Wittgenstein reprend précisément cette analogie pour en examiner les limites."
+    },
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "proche",
+      "label": "Freud — Pourquoi poser l’inconscient ?",
+      "relation": "Le travail du rêve fournit l’un des phénomènes qui motivent l’hypothèse de processus psychiques inconscients."
+    }
+  ],
+  "paragraphs": [
+    "[P]our nous, entre le contenu du rêve et les résultats auxquels parvient notre étude, il faut insérer un nouveau matériel psychique, le contenu latent ou les pensées du rêve, que met en évidence notre procédé d’analyse. C’est à partir de ces pensées latentes et non à partir du contenu manifeste que nous cherchons la solution. De là vient qu’un nouveau travail s’impose à nous. Nous devons rechercher quelles sont les relations entre le contenu manifeste du rêve et les pensées latentes et examiner le processus par lequel celles-ci ont produit celui-là. Les pensées du rêve et le contenu du rêve nous apparaissent comme deux exposés des mêmes faits en deux langues différentes ; ou mieux, le contenu du rêve nous apparaît comme une transcription des pensées du rêve dans un autre mode d’expression, dont nous ne pourrons connaître les signes et les règles que quand nous aurons comparé la traduction et l’original. Nous comprenons les pensées du rêve d’une manière immédiate dès qu’elles nous apparaissent. Le contenu du rêve nous est donné sous forme d’hiéroglyphes, dont les signes doivent être successivement traduits dans la langue des pensées du rêve. On se trompera évidemment si on veut lire ces signes comme des images et non selon leur signification conventionnelle. Supposons que je regarde un rébus : il représente une maison sur le toit de laquelle on voit un canot, puis une lettre isolée, un personnage sans tête qui court, etc. Je pourrais déclarer que ni cet ensemble, ni ses diverses parties n’ont de sens. Un canot ne doit pas se trouver sur le toit d’une maison et une personne qui n’a pas de tête ne peut pas courir ; de plus, la personne est plus grande que la maison, et, en admettant que le tout doive représenter un paysage, il ne convient pas d’y introduire des lettres isolées, qui ne sauraient apparaître dans la nature. Je ne jugerai exactement le rébus que lorsque je renoncerai à apprécier ainsi le tout et les parties, mais m’efforcerai de remplacer chaque image par une syllabe ou par un mot qui, pour une raison quelconque, peut être représenté par cette image. Ainsi réunis, les mots ne seront plus dépourvus de sens, mais pourront former quelque belle et profonde parole. Le rêve est un rébus, nos prédécesseurs ont commis la faute de vouloir l’interpréter en tant que dessin. C’est pourquoi il leur a paru absurde et sans valeur."
+  ]
+},
+    {
+  "id": "leibniz-petites-perceptions",
+  "section": "philosophie",
+  "cardMeta": "Conscience · petites perceptions",
+  "title": "La plupart de nos perceptions échappent à la conscience",
+  "author": "Gottfried Wilhelm Leibniz",
+  "authorTag": "Leibniz",
+  "cardHighlight": "échappent à la conscience",
+  "familiarIdea": "les petites perceptions",
+  "authorMeta": "(1646–1716) · rationalisme",
+  "themes": [
+    "Conscience",
+    "Inconscient"
+  ],
+  "work": "Nouveaux essais sur l’entendement humain",
+  "publication": "1765 posth., préface, trad. J. Brunschwig, GF, 1990, p. 41–42",
+  "description": "Tout ce qui affecte notre âme devient-il conscient, ou une multitude de perceptions demeure-t-elle en dessous du seuil de l’aperception ?",
+  "context": "Leibniz distingue la <strong>perception</strong> de l’<strong>aperception</strong>, c’est-à-dire de la perception devenue consciente. L’exemple du bruit de la mer montre qu’une perception claire peut être composée d’une multitude de petites perceptions trop faibles pour être remarquées séparément.",
+  "readingQuestions": [
+    "Pourquoi certaines perceptions restent-elles trop faibles pour parvenir à la conscience ?",
+    "Quelle différence Leibniz établit-il entre <strong>perception</strong> et <strong>aperception</strong> ?",
+    "Comment l’exemple du bruit de la mer montre-t-il que notre vie perceptive dépasse ce dont nous avons conscience ?"
+  ],
+  "glossary": [
+    {
+      "term": "aperception",
+      "definition": "Perception accompagnée d’une prise de conscience réfléchie."
+    },
+    {
+      "term": "petites perceptions",
+      "definition": "Perceptions trop faibles, trop nombreuses ou trop indistinctes pour être aperçues séparément."
+    },
+    {
+      "term": "coutume",
+      "definition": "Habitude qui diminue l’attention portée à des impressions devenues familières."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Perception",
+        "definition": "Modification effective de l’âme, même lorsqu’elle n’est pas remarquée."
+      },
+      "right": {
+        "term": "Aperception",
+        "definition": "Prise de conscience d’une perception."
+      },
+      "conclusion": "La conscience ne coïncide donc pas avec l’ensemble de la vie perceptive."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "proche",
+      "label": "Freud — Une vie psychique au-delà de la conscience",
+      "relation": "Les deux textes refusent d’identifier toute la vie mentale à ce qui est immédiatement conscient, mais selon des modèles très différents."
+    },
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "adverse",
+      "label": "Descartes — La pensée se saisit dans la conscience",
+      "relation": "Leibniz complique l’image d’un sujet dont toute pensée serait immédiatement transparente à elle-même."
+    }
+  ],
+  "paragraphs": [
+    "[Il] y a mille marques qui font juger qu’il y a à tout moment une infinité de perceptions en nous, mais sans aperception et sans réflexion, c’est-à-dire des changements dans l’âme même dont nous ne nous apercevons pas, parce que ces impressions sont ou trop petites et en trop grand nombre ou trop unies, en sorte qu’elles n’ont rien d’assez distinguant à part, mais jointes à d’autres, elles ne laissent pas de faire leur effet et de se faire sentir au moins confusément dans l’assemblage. C’est ainsi que la coutume fait que nous ne prenons pas garde au mouvement d’un moulin ou à une chute d’eau, quand nous avons habité tout auprès depuis quelque temps. Ce n’est pas que ce mouvement ne frappe toujours nos organes […] mais les impressions qui sont dans l’âme et dans le corps, destituées des attraits de la nouveauté, ne sont pas assez fortes pour s’attirer notre attention et notre mémoire, qui ne s’attachent qu’à des objets plus occupants. […] Mais si quelqu’un nous en avertit incontinent et nous fait remarquer par exemple quelque bruit qu’on vient d’entendre, nous nous en souvenons et nous nous apercevons d’en avoir eu tantôt quelque sentiment. Ainsi c’étaient des perceptions dont nous ne nous étions pas aperçus incontinent, l’aperception ne venant dans ce cas d’avertissement qu’après quelque intervalle, pour petit qu’il soit. Et pour juger encore mieux des petites perceptions que nous ne saurions distinguer dans la foule, j’ai coutume de me servir de l’exemple du mugissement ou du bruit de la mer dont on est frappé quand on est au rivage. Pour entendre ce bruit comme l’on fait, il faut bien qu’on entende les parties qui composent ce tout, c’est-à-dire les bruits de chaque vague, quoique chacun de ces petits bruits ne se fasse connaître que dans l’assemblage confus de tous les autres ensemble, et qu’il ne se remarquerait pas si cette vague qui le fait était seule. Car il faut qu’on en soit affecté un peu par le mouvement de cette vague, et qu’on ait quelque perception de chacun de ces bruits, quelque petits qu’ils soient ; autrement, on n’aurait pas celle de cent mille vagues, puisque cent mille riens ne sauraient faire quelque chose."
+  ]
+},
+    {
+  "id": "pascal-moi-introuvable",
+  "section": "philosophie",
+  "cardMeta": "Conscience · identité du moi",
+  "title": "Le « moi » est une réalité introuvable",
+  "author": "Blaise Pascal",
+  "authorTag": "Pascal",
+  "cardHighlight": "réalité introuvable",
+  "familiarIdea": "« Qu’est-ce que le moi ? »",
+  "authorMeta": "(1623–1662) · philosophie moderne",
+  "themes": [
+    "Conscience",
+    "Autrui"
+  ],
+  "work": "Pensées",
+  "publication": "1670 posth., Br. 323 (Laf. 688), Hachette, 1967, p. 478–479",
+  "description": "Qu’aimons-nous réellement chez une personne si son corps, sa mémoire, son jugement et toutes ses qualités peuvent changer ?",
+  "context": "Pascal cherche ce que nous aimons réellement lorsque nous disons aimer une <strong>personne</strong>. Les qualités physiques ou morales peuvent changer ou disparaître : si l’amour porte seulement sur elles, alors le « moi » lui-même semble devenir impossible à saisir.",
+  "readingQuestions": [
+    "Pourquoi la beauté, le jugement ou la mémoire ne suffisent-ils pas à définir le « <strong>moi</strong> » ?",
+    "Qu’aimons-nous alors lorsque nous aimons une personne pour ses qualités ?",
+    "Peut-on aimer <strong>autrui lui-même</strong> si ce qu’il est semble toujours se dérober derrière ses qualités ?"
+  ],
+  "glossary": [
+    {
+      "term": "moi",
+      "definition": "Ce qui ferait l’identité propre et permanente d’une personne au-delà de ses propriétés changeantes."
+    },
+    {
+      "term": "substance",
+      "definition": "Ce qui demeure identique à soi tandis que ses qualités ou accidents peuvent changer."
+    },
+    {
+      "term": "qualités empruntées",
+      "definition": "Propriétés ou statuts qui peuvent être acquis, perdus ou remplacés sans constituer une identité permanente."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Le moi introuvable",
+      "definition": "À mesure que Pascal retire au moi ses propriétés corporelles, psychologiques et sociales, aucun noyau stable ne se laisse isoler."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "locke-identite-conscience-memoire",
+      "kind": "adverse",
+      "label": "Locke — La conscience fait l’identité personnelle",
+      "relation": "Locke propose un critère positif de continuité personnelle là où Pascal montre la difficulté à localiser le moi."
+    },
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "adverse",
+      "label": "Descartes — Le sujet se découvre comme chose qui pense",
+      "relation": "Descartes trouve dans l’acte de penser une certitude du sujet que Pascal rend ici beaucoup plus difficile à déterminer."
+    }
+  ],
+  "paragraphs": [
+    "Qu’est-ce que le moi ? Un homme qui se met à la fenêtre pour voir les passants ; si je passe par là, puis-je dire qu’il s’est mis là pour me voir ? Non ; car il ne pense pas à moi en particulier. Mais celui qui aime quelqu’un à cause de sa beauté, l’aime-t-il ? Non : car la petite vérole, qui tuera la beauté sans tuer la personne, fera qu’il ne l’aimera plus.",
+    "Et si on m’aime pour mon jugement, pour ma mémoire, m’aime-t-on moi ? Non, car je puis perdre ces qualités sans me perdre moi-même. Où est donc ce moi, s’il n’est ni dans le corps, ni dans l’âme ? et comment aimer le corps ou l’âme, sinon pour ces qualités, qui ne sont point ce qui fait le moi, puisqu’elles sont périssables ? car aimerait-on la substance de l’âme d’une personne, abstraitement, et quelques qualités qui y fussent ? Cela ne se peut, et serait injuste. On n’aime donc jamais personne, mais seulement des qualités.",
+    "Qu’on ne se moque donc plus de ceux qui se font honorer pour des charges et des offices, car on n’aime personne que pour des qualités empruntées."
+  ]
+},
+    {
+  "id": "marx-conscience-vie-materielle",
+  "section": "philosophie",
+  "cardMeta": "Conscience · matérialisme et idéologie",
+  "title": "Ce n’est pas la conscience qui détermine la vie",
+  "author": "Karl Marx",
+  "credit": "Karl Marx et Friedrich Engels",
+  "authorTag": "Marx",
+  "cardHighlight": "la conscience",
+  "familiarIdea": "la vie détermine la conscience",
+  "authorMeta": "(1818–1883) · matérialisme historique",
+  "themes": [
+    "Conscience",
+    "Société"
+  ],
+  "work": "L’Idéologie allemande",
+  "publication": "1846, trad. G. Badia, Éditions Sociales, 1966, p. 35–37",
+  "description": "Les idées et la conscience ont-elles une existence autonome, ou sont-elles produites à partir de la vie matérielle et sociale des hommes ?",
+  "context": "Marx et Engels renversent la perspective idéaliste : les idées ne constituent pas un monde autonome qui commanderait la vie réelle. La <strong>conscience</strong> se forme à partir de l’activité matérielle, des rapports sociaux et des conditions historiques dans lesquelles les individus vivent concrètement.",
+  "readingQuestions": [
+    "Pourquoi Marx et Engels partent-ils de l’activité matérielle et des conditions réelles de vie des individus ?",
+    "Que signifie leur volonté de partir « de la terre au ciel » plutôt que des idées vers la réalité ?",
+    "Quelles conséquences l’idée que la vie sociale détermine la <strong>conscience</strong> a-t-elle pour notre manière de comprendre les idées d’une époque ?"
+  ],
+  "glossary": [
+    {
+      "term": "forces productives",
+      "definition": "Moyens matériels, techniques et humains par lesquels une société produit les conditions de son existence."
+    },
+    {
+      "term": "idéologie",
+      "definition": "Ensemble de représentations et de formes de conscience liées à des conditions matérielles et sociales déterminées."
+    },
+    {
+      "term": "émanation",
+      "definition": "Ce qui procède directement d’une autre réalité ; ici, les représentations apparaissent d’abord comme issues de la vie matérielle."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Idéalisme",
+        "definition": "Partir des idées, de la conscience ou des représentations pour expliquer la réalité."
+      },
+      "right": {
+        "term": "Matérialisme",
+        "definition": "Partir de l’activité réelle et des conditions matérielles pour expliquer la production des idées."
+      },
+      "conclusion": "Le texte formule ce renversement dans la phrase : « Ce n’est pas la conscience qui détermine la vie, mais la vie qui détermine la conscience. »"
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "adverse",
+      "label": "Descartes — Le sujet se saisit comme chose qui pense",
+      "relation": "Marx renverse le primat du sujet pensant en rapportant la conscience à une vie matérielle et sociale préalable."
+    },
+    {
+      "id": "marx-religion-opium-peuple",
+      "kind": "proche",
+      "label": "Marx — La religion comme expression d’un monde social",
+      "relation": "La critique de la religion prolonge l’idée que les formes de conscience s’enracinent dans des conditions historiques et sociales."
+    }
+  ],
+  "paragraphs": [
+    "La production des idées, des représentations et de la conscience est d’abord directement et intimement mêlée à l’activité matérielle et au commerce matériel des hommes, elle est le langage de la vie réelle. Les représentations, la pensée, le commerce intellectuel des hommes apparaissent ici encore comme l’émanation directe de leur comportement matériel. […] Ce sont les hommes qui sont les producteurs de leurs représentations, de leurs idées, etc., mais les hommes réels, agissants, tels qu’ils sont conditionnés par un développement déterminé de leurs forces productives et des rapports qui y correspondent, y compris les formes les plus larges que ceux-ci peuvent prendre […].",
+    "À l’encontre de la philosophie allemande qui descend du ciel sur la terre, c’est de la terre au ciel que l’on monte ici. Autrement dit, on ne part pas de ce que les hommes disent, s’imaginent, se représentent, ni non plus de ce qu’ils sont dans les paroles, la pensée, l’imagination et la représentation d’autrui, pour aboutir ensuite aux hommes en chair et en os ; non, on part des hommes dans leur activité réelle, c’est à partir de leur processus de vie réel que l’on représente aussi le développement des reflets et des échos idéologiques de ce processus vital. Et même les fantasmagories dans le cerveau humain sont des sublimations résultant nécessairement du processus de leur vie matérielle que l’on peut constater empiriquement et qui repose sur des bases matérielles. De ce fait, la morale, la religion, la métaphysique et tout le reste de l’idéologie, ainsi que les formes de conscience qui leur correspondent, perdent aussitôt toute apparence d’autonomie. […] Ce n’est pas la conscience qui détermine la vie, mais la vie qui détermine la conscience."
+  ]
+},
+    {
+  "id": "locke-identite-conscience-memoire",
+  "section": "philosophie",
+  "cardMeta": "Conscience · identité personnelle",
+  "title": "La conscience et la mémoire font l’identité personnelle",
+  "author": "John Locke",
+  "authorTag": "Locke",
+  "cardHighlight": "l’identité personnelle",
+  "authorMeta": "(1632–1704) · empirisme",
+  "themes": [
+    "Conscience",
+    "Temps"
+  ],
+  "work": "Identité et différence (Essai philosophique concernant l’entendement humain)",
+  "publication": "1690–1694, II, XXVII, trad. É. Balibar, revue par G. Brykman, Le Seuil, 1998, p. 165–167",
+  "description": "Qu’est-ce qui fait qu’une personne demeure la même à travers le temps si son corps et sa substance peuvent changer ?",
+  "context": "Locke distingue l’identité de la <strong>personne</strong> de celle du corps ou d’une substance. Ce qui fait le même soi à travers le temps, c’est la continuité d’une conscience capable de reconnaître comme siennes des pensées et des actions passées ; la mémoire devient ainsi décisive pour l’identité personnelle.",
+  "readingQuestions": [
+    "Pourquoi l’exemple du petit doigt amputé montre-t-il que la personne ne s’identifie pas simplement à son corps ?",
+    "Comment la conscience et la mémoire permettent-elles de rester la même personne à travers le temps ?",
+    "Pourquoi cette conception de l’identité personnelle engage-t-elle aussi la question de la responsabilité ?"
+  ],
+  "glossary": [
+    {
+      "term": "identité personnelle",
+      "definition": "Continuité par laquelle un sujet peut se reconnaître comme la même personne à travers différents moments de son existence."
+    },
+    {
+      "term": "conscience",
+      "definition": "Pour Locke, ce par quoi une chose pensante se rapporte à elle-même et peut s’attribuer ses pensées et ses actions."
+    },
+    {
+      "term": "substance",
+      "definition": "Support supposé des propriétés d’une chose ; Locke refuse d’en faire le critère décisif de l’identité personnelle."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Identité de conscience",
+      "definition": "La même personne s’étend aussi loin que peut s’étendre la conscience qui reconnaît et s’attribue des actions passées."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "proche",
+      "label": "Descartes — Le sujet comme chose qui pense",
+      "relation": "Descartes établit la certitude du sujet pensant ; Locke déplace la question vers la continuité de la personne dans le temps."
+    },
+    {
+      "id": "pascal-moi-introuvable",
+      "kind": "adverse",
+      "label": "Pascal — Où est donc le moi ?",
+      "relation": "Pascal met en difficulté toute localisation stable du moi là où Locke propose la continuité de conscience comme critère."
+    }
+  ],
+  "paragraphs": [
+    "§ 17. Le soi dépend de la conscience. Soi est cette chose qui pense consciente (de quelque substance, spirituelle ou matérielle, simple ou composée, qu’elle soit faite, peu importe) qui est sensible, ou consciente du plaisir et de la douleur, capable de bonheur et de malheur, et qui dès lors se soucie de soi dans toute la mesure où s’étend cette conscience. Chacun trouve ainsi que son petit doigt, tant qu’il entre dans cette conscience, est une partie de soi autant que ce qui lui est le plus essentiel. Ce petit doigt étant amputé, si la conscience s’en allait avec lui et se séparait du reste du corps, il est clair que c’est le petit doigt qui serait la personne, la même personne ; et soi n’aurait alors rien à voir avec le reste du corps. De même que dans ce cas c’est la conscience qui accompagne la substance, lorsqu’une partie est séparée d’une autre, qui fait la même personne, et constitue ce soi indivisible, de même en va-t-il par rapport à des substances éloignées dans le temps. Celle avec qui peut se joindre la conscience de la chose pensante actuelle fait la même personne, elle forme un seul soi avec elle, et avec rien d’autre ; elle s’attribue ainsi et avoue toutes les actions de cette chose, qui n’appartiennent qu’à elle seule aussi loin que s’étend cette conscience (mais pas plus loin), comme le comprendra quiconque y pensera. […]",
+    "§ 19. Ceci peut nous faire voir en quoi consiste l’identité personnelle : non dans l’identité de substance mais, comme je l’ai dit, dans l’identité de conscience, en sorte que si Socrate et l’actuel maire de Quinborough en conviennent, ils sont la même personne, tandis que si le même Socrate éveillé et endormi ne partagent pas la même conscience, Socrate éveillé et Socrate dormant n’est pas la même personne. Et punir Socrate l’éveillé pour ce que Socrate le dormant a pu penser, et dont Socrate l’éveillé n’a jamais eu conscience, ne serait pas plus juste que de punir un jumeau pour les actes de son frère jumeau et dont il n’a rien su, sous prétexte que leur forme extérieure est si semblable qu’ils sont indiscernables (or on a vu de tels jumeaux)."
+  ]
+},
+    {
+  "id": "descartes-cogito-chose-pense",
+  "section": "philosophie",
+  "cardMeta": "Conscience · certitude du sujet",
+  "title": "Je suis, j’existe : le sujet se découvre comme chose qui pense",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "Je suis, j’existe",
+  "familiarIdea": "le cogito cartésien",
+  "authorMeta": "(1596–1650) · rationalisme",
+  "themes": [
+    "Conscience",
+    "Raison"
+  ],
+  "work": "Méditations métaphysiques",
+  "publication": "1641, 2e méditation, Gallimard, « Bibliothèque de la Pléiade », 1953, p. 274–277",
+  "description": "Que reste-t-il absolument certain lorsque le doute porte sur le monde, le corps et jusqu’à l’existence des choses extérieures ?",
+  "context": "Descartes pousse le doute jusqu’à chercher une certitude qui résiste même à l’hypothèse d’un trompeur tout-puissant. Or, pour douter ou être trompé, il faut encore penser : au moment même où il doute de tout, le sujet découvre donc qu’il ne peut pas douter de sa propre existence.",
+  "readingQuestions": [
+    "Qu’est-ce qui reste certain lorsque Descartes suppose que tout ce qu’il croit pourrait être faux ?",
+    "Pourquoi le fait même d’être trompé ou de douter prouve-t-il que le sujet existe ?",
+    "Pourquoi le <strong>cogito</strong> établit-il d’abord que je suis, avant de déterminer précisément ce que je suis ?"
+  ],
+  "glossary": [
+    {
+      "term": "indubitable",
+      "definition": "Ce dont on ne peut raisonnablement douter."
+    },
+    {
+      "term": "trompeur",
+      "definition": "Figure hypothétique du doute radical : même une puissance qui tromperait le sujet ne pourrait supprimer le fait qu’il pense."
+    },
+    {
+      "term": "chose qui pense",
+      "definition": "Définition minimale du sujet que Descartes peut maintenir avec certitude : un esprit, un entendement ou une raison en acte de penser."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Cogito",
+      "definition": "La certitude « Je suis, j’existe » vaut chaque fois que le sujet la pense : l’acte même de pensée atteste l’existence de celui qui pense."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "locke-identite-conscience-memoire",
+      "kind": "proche",
+      "label": "Locke — L’identité personnelle par la conscience",
+      "relation": "Locke reprend le rôle central de la conscience mais l’applique à la continuité de la personne à travers le temps."
+    },
+    {
+      "id": "marx-conscience-vie-materielle",
+      "kind": "adverse",
+      "label": "Marx — La vie détermine la conscience",
+      "relation": "Marx renverse le primat du sujet pensant en rapportant les représentations aux conditions matérielles d’existence."
+    }
+  ],
+  "paragraphs": [
+    "[J]’aurai droit de concevoir de hautes espérances, si je suis assez heureux pour trouver seulement une chose qui soit certaine et indubitable.",
+    "[…] Mais je me suis persuadé qu’il n’y avait rien du tout dans le monde, qu’il n’y avait aucun ciel, aucune terre, aucuns esprits, ni aucuns corps ; ne me suis-je donc pas aussi persuadé que je n’étais point ? Non certes, j’étais sans doute, si je me suis persuadé, ou seulement si j’ai pensé quelque chose. Mais il y a un je ne sais quel trompeur très puissant et très rusé, qui emploie toute son industrie à me tromper toujours. Il n’y a donc point de doute que je suis, s’il me trompe ; et qu’il me trompe tant qu’il voudra, il ne saurait jamais faire que je ne sois rien, tant que je penserai être quelque chose. De sorte qu’après y avoir bien pensé, et avoir soigneusement examiné toutes choses, enfin il faut conclure, et tenir pour constant que cette proposition : Je suis, j’existe est nécessairement vraie, toutes les fois que je la prononce, ou que je la conçois en mon esprit.",
+    "Mais je ne connais pas encore assez clairement ce que je suis, moi qui suis certain que je suis ; de sorte que désormais il faut que je prenne soigneusement garde de ne prendre pas imprudemment quelque autre chose pour moi, et ainsi de ne me point méprendre dans cette connaissance, que je soutiens être plus certaine et plus évidente que toutes celles que j’ai eues auparavant.",
+    "[…] Je suis, j’existe : cela est certain ; mais combien de temps ? À savoir, autant de temps que je pense ; car peut-être se pourrait-il faire, si je cessais de penser, que je cesserais en même temps d’être ou d’exister. Je n’admets maintenant rien qui ne soit nécessairement vrai : je ne suis donc, précisément parlant, qu’une chose qui pense, c’est-à-dire un esprit, un entendement ou une raison, qui sont des termes dont la signification m’était auparavant inconnue. Or je suis une chose vraie, et vraiment existante ; mais quelle chose ? Je l’ai dit : une chose qui pense."
+  ]
+},
+{
+  "id": "platon-connais-toi-toi-meme",
+  "section": "philosophie",
+  "cardMeta": "Conscience · connaissance de soi",
+  "title": "« Connais-toi toi-même » : l’âme se connaît dans le miroir d’une autre âme",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "Connais-toi toi-même",
+  "familiarIdea": "« Connais-toi toi-même »",
+  "authorMeta": "(v. 427–347 av. J.-C.) · philosophie antique",
+  "themes": [
+    "Conscience",
+    "Autrui"
+  ],
+  "work": "Alcibiade majeur",
+  "publication": "[IVe s. av. J.-C.], 132c–133e, trad. C. Marboeuf et J.-F. Pradeau, GF, 2000, p. 179–184",
+  "description": "Peut-on se connaître directement, ou la connaissance de soi exige-t-elle le détour par une autre âme et par ce qu’il y a de plus divin en elle ?",
+  "context": "Socrate compare l’âme à un œil qui ne peut se voir qu’en rencontrant un autre œil. De même, la <strong>connaissance de soi</strong> passe par le rapport à autrui et par ce qui, dans une autre âme, pense et réfléchit.",
+  "readingQuestions": [
+    "Pourquoi Socrate compare-t-il l’âme à un œil qui cherche à se voir lui-même ?",
+    "Pourquoi la <strong>connaissance de soi</strong> passe-t-elle par une autre âme ?",
+    "Que révèle ce détour par autrui sur le caractère relationnel de la conscience de soi ?"
+  ],
+  "glossary": [
+    {
+      "term": "gnôthi seauton",
+      "definition": "Formule grecque signifiant « connais-toi toi-même », inscrite selon la tradition au temple d’Apollon à Delphes."
+    },
+    {
+      "term": "âme",
+      "definition": "Dans ce passage, principe capable de pensée, de réflexion et de savoir ; c’est elle qui doit apprendre à se connaître."
+    },
+    {
+      "term": "divin",
+      "definition": "Ce qui, dans l’âme, est rapporté à la pensée, à la réflexion et au savoir, et constitue le point privilégié à partir duquel elle peut se connaître."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analogy",
+      "term": "Le miroir de l’âme",
+      "definition": "L’œil ne se voit qu’en regardant un autre œil, dans la partie où réside la vision. De même, l’âme doit se regarder dans une autre âme, au lieu où se trouvent pensée et savoir."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "schopenhauer-sujet-inconnaissable",
+      "kind": "adverse",
+      "label": "Schopenhauer — Le sujet connaît tout mais n’est jamais connu",
+      "relation": "Platon rend possible une connaissance de soi par le détour d’une autre âme ; Schopenhauer soutient que le sujet connaissant ne peut jamais devenir lui-même objet de connaissance."
+    },
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "proche",
+      "label": "Descartes — Le sujet se découvre comme chose qui pense",
+      "relation": "Platon et Descartes cherchent tous deux ce qui permet au sujet de se saisir lui-même, mais l’un passe par le miroir d’une autre âme, l’autre par la certitude du cogito."
+    }
+  ],
+  "paragraphs": [
+    "SOCRATE. — Comment pourrions-nous maintenant savoir le plus clairement possible ce qu’est « soi-même » ? Il semble que lorsque nous le saurons, nous nous connaîtrons nous-mêmes. Mais par les dieux, cette heureuse parole de l’inscription delphique que nous rappelions à l’instant, ne la comprenons-nous pas ? […] [S]i l’œil veut se voir lui-même, il doit regarder un œil et porter son regard sur cet endroit où se trouve l’excellence de l’œil. Et cet endroit de l’œil, n’est-ce pas la pupille ?",
+    "ALCIBIADE. — C’est cela.",
+    "SOCRATE. — Eh bien alors, mon cher Alcibiade, l’âme aussi, si elle veut se connaître elle-même, doit porter son regard sur une âme et avant tout sur cet endroit de l’âme où se trouve l’excellence de l’âme, le savoir, ou sur une autre chose à laquelle cet endroit de l’âme est semblable. […] Or, peut-on dire qu’il y a en l’âme quelque chose de plus divin que ce qui a trait à la pensée et à la réflexion ?",
+    "ALCIBIADE. — Nous ne le pouvons pas.",
+    "SOCRATE. — C’est donc au divin que ressemble ce lieu de l’âme, et quand on porte le regard sur lui et que l’on connaît l’ensemble du divin, le dieu et la réflexion, on serait alors au plus près de se connaître soi-même. […] Mais quiconque ignore les choses qui lui sont propres ignore aussi bien celles qui sont propres aux autres.",
+    "ALCIBIADE. — Sans doute.",
+    "SOCRATE. — Et s’il ignore les choses qui sont propres aux autres, il ignore aussi celles qui sont propres à la cité.",
+    "ALCIBIADE. — Nécessairement.",
+    "SOCRATE. — Il ne pourrait donc pas devenir un homme politique."
+  ]
+},
+{
+  "id": "schopenhauer-sujet-inconnaissable",
+  "section": "philosophie",
+  "cardMeta": "Conscience · sujet et connaissance",
+  "title": "Le sujet connaît tout mais n’est jamais connu",
+  "author": "Arthur Schopenhauer",
+  "authorTag": "Schopenhauer",
+  "cardHighlight": "n’est jamais connu",
+  "authorMeta": "(1788–1860) · philosophie moderne",
+  "themes": [
+    "Conscience"
+  ],
+  "work": "Le Monde comme volonté et représentation",
+  "publication": "[1819], § 2, t. I, trad. C. Sommer, V. Stanek et M. Dautrey, Gallimard, 2009, p. 80–81",
+  "description": "Le sujet peut-il devenir pour lui-même un objet de connaissance, ou toute connaissance suppose-t-elle déjà ce sujet sans jamais pouvoir le saisir ?",
+  "context": "Schopenhauer distingue le <strong>sujet</strong>, qui connaît, de tous les objets qu’il peut connaître. Même le corps appartient déjà au monde de la représentation ; le sujet, lui, est toujours présupposé par la connaissance et ne peut donc jamais apparaître comme un objet parmi les autres.",
+  "readingQuestions": [
+    "Quelle différence Schopenhauer établit-il entre le <strong>sujet</strong> qui connaît et les objets connus ?",
+    "Pourquoi notre propre corps est-il déjà, du point de vue de la connaissance, un objet parmi les autres ?",
+    "Pourquoi le sujet ne peut-il pas se connaître lui-même de la même manière qu’il connaît le monde ?"
+  ],
+  "glossary": [
+    {
+      "term": "sujet",
+      "definition": "Ce qui connaît et constitue la condition de possibilité de tout objet connu."
+    },
+    {
+      "term": "représentation",
+      "definition": "Objet tel qu’il apparaît pour un sujet connaissant ; le corps lui-même appartient à ce monde des objets représentés."
+    },
+    {
+      "term": "objet",
+      "definition": "Ce qui est connu par un sujet et se trouve soumis aux formes de la connaissance, notamment le temps et l’espace."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Sujet",
+        "definition": "Ce qui connaît et présuppose toute connaissance."
+      },
+      "right": {
+        "term": "Objet",
+        "definition": "Ce qui est connu et apparaît dans les formes de la représentation."
+      },
+      "conclusion": "Le sujet ne peut pas être transformé en objet sans cesser d’être précisément ce qui rend l’objet connaissable."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-connais-toi-toi-meme",
+      "kind": "adverse",
+      "label": "Platon — « Connais-toi toi-même »",
+      "relation": "Platon cherche une voie de connaissance de soi ; Schopenhauer radicalise la difficulté en soutenant que le sujet connaissant ne peut jamais être lui-même objet de connaissance."
+    },
+    {
+      "id": "pascal-moi-introuvable",
+      "kind": "proche",
+      "label": "Pascal — Le « moi » est une réalité introuvable",
+      "relation": "Pascal et Schopenhauer mettent tous deux en difficulté l’idée qu’on pourrait isoler le sujet ou le moi comme une chose connaissable parmi les autres."
+    }
+  ],
+  "paragraphs": [
+    "Ce qui connaît tout et n’est connu par personne, c’est le SUJET. C’est par suite le support du monde, la condition générale, toujours présupposée, de tout ce qui se manifeste, de tout objet : car ce qui existe n’existe jamais que pour un sujet. Chacun se trouve être soi-même ce sujet, mais seulement en tant qu’il connaît, et non pas en tant qu’objet de connaissance. Objet, son corps l’est déjà, que nous nommons donc, de ce point de vue, représentation. Car le corps est un objet parmi les objets, soumis aux lois des objets, bien qu’il soit un objet immédiat. Comme tous les objets de l’intuition, il réside dans les formes de toute connaissance, dans le temps et l’espace, conditions d’existence de la multiplicité. Mais le sujet, ce qui connaît, mais n’est jamais connu, ne réside pas même dans ces formes, qui, au contraire, le présupposent toujours déjà. Ni la multiplicité ni l’unité, son contraire, ne s’appliquent à lui. Nous ne le connaissons jamais, mais il est justement ce qui connaît, là où il n’en va que de la connaissance."
+  ]
+},
+{
+  "id": "nietzsche-conscience-communication-gregaire",
+  "section": "philosophie",
+  "cardMeta": "Conscience · communication et société",
+  "title": "La conscience grégaire : elle naît du besoin de communiquer",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "besoin de communiquer",
+  "familiarIdea": "la conscience grégaire",
+  "authorMeta": "(1844–1900) · philosophie contemporaine",
+  "themes": [
+    "Conscience",
+    "Langage"
+  ],
+  "work": "Le Gai Savoir",
+  "publication": "[1882], § 354, trad. P. Klossowski, Gallimard, 1967, p. 253–254",
+  "description": "La conscience exprime-t-elle notre individualité la plus profonde, ou n’est-elle qu’une couche superficielle formée par les besoins de communication de la vie sociale ?",
+  "context": "Nietzsche refuse de faire de la conscience le centre de toute pensée. Elle se serait surtout développée parce que l’être humain, animal social et vulnérable, devait <strong>communiquer</strong> ses besoins : devient conscient ce qui peut être traduit dans les signes communs du groupe.",
+  "readingQuestions": [
+    "Pourquoi Nietzsche relie-t-il le développement de la conscience au besoin de communiquer ?",
+    "Pourquoi la pensée consciente n’est-elle qu’une petite partie de notre activité mentale ?",
+    "En quoi le langage commun rend-il notre pensée consciente plus <strong>grégaire</strong> et moins singulière ?"
+  ],
+  "glossary": [
+    {
+      "term": "grégaire",
+      "definition": "Qui relève de la vie en groupe ou en troupeau ; Nietzsche rattache la conscience aux besoins communs de l’espèce plutôt qu’à la singularité de l’individu."
+    },
+    {
+      "term": "communication",
+      "definition": "Mise en commun de besoins, d’états ou de pensées au moyen de signes compréhensibles par d’autres."
+    },
+    {
+      "term": "génie de l’espèce",
+      "definition": "Expression par laquelle Nietzsche désigne ce qui, dans la conscience, traduit l’individuel dans la perspective commune du troupeau."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Pensée individuelle",
+        "definition": "Activité singulière, personnelle et largement inconsciente dans sa profondeur."
+      },
+      "right": {
+        "term": "Pensée consciente",
+        "definition": "Partie traduite en paroles et en signes communs, donc adaptée aux exigences de la communication sociale."
+      },
+      "conclusion": "La conscience ne révèle pas l’individu dans sa singularité : elle le retraduit dans le langage du groupe."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "marx-conscience-vie-materielle",
+      "kind": "proche",
+      "label": "Marx — La vie détermine la conscience",
+      "relation": "Nietzsche et Marx refusent tous deux d’isoler la conscience de ses conditions de formation : communication et vie grégaire chez l’un, activité matérielle et rapports sociaux chez l’autre."
+    },
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "adverse",
+      "label": "Descartes — Le sujet se saisit comme chose qui pense",
+      "relation": "Descartes fait de la pensée consciente le point de départ assuré du sujet ; Nietzsche la réduit à une couche tardive, superficielle et socialement formée."
+    }
+  ],
+  "paragraphs": [
+    "[L]a conscience, en général, n’a pu se développer que sous la pression du besoin de communication — dès le début ce n’était que dans les rapports d’homme à homme, particulièrement entre celui qui commande et celui qui obéit, que la conscience était nécessaire, utile, et qu’en fonction du degré de cette utilité elle arrivait à se développer. La conscience n’est en somme qu’un réseau de liens entre les hommes, et ce n’est qu’en tant que telle qu’elle a dû se développer : à vivre isolé, telle une bête féroce, l’homme aurait pu fort bien s’en passer. Le fait que nos actes, nos pensées, nos sentiments, nos mouvements mêmes nous deviennent conscients — tout au moins une partie de ceux-ci — n’est que le résultat du règne effroyablement long qu’un « tu dois » a exercé sur l’homme ; il avait besoin, lui, l’animal le plus menacé, d’aide, de protection, il avait besoin de son semblable, il fallait qu’il sût se rendre intelligible pour exprimer sa détresse — et pour tout ceci il avait tout d’abord besoin de « conscience », donc même pour « savoir » ce qui lui faisait défaut, pour « savoir » ce qu’il éprouvait, pour « savoir » ce qu’il pensait. Car pour le dire encore une fois : l’homme, comme toute créature vivante, pense sans cesse, mais il l’ignore ; la pensée qui devient consciente n’est qu’une infime partie disons : la plus superficielle, la plus médiocre : — car seule cette pensée consciente se produit en paroles, c’est-à-dire dans des signes de communication par quoi se révèle d’elle-même l’origine de la conscience. […] Ma pensée, comme on le voit, est que la conscience n’appartient pas au fond à l’existence individuelle de l’homme, bien plutôt à tout ce qui fait de lui une nature communautaire et grégaire ; que la conscience, par conséquent, ne s’est subtilement développée que sous le rapport de l’utilité communautaire et grégaire, et que, chacun de nous, nécessairement, en dépit de la meilleure volonté pour se comprendre aussi individuellement que possible, pour « se connaître soi-même », ne fera pourtant jamais autre chose que d’amener à sa conscience du non-individuel, ce qui est « moyen » ; — que notre pensée même, constamment, se voit pour ainsi dire majorée par le caractère de la conscience — par le « génie de l’espèce », qui règne en elle — et retraduite dans la perspective du troupeau. Nos actes, dans le fond, sont intégralement et incomparablement personnels, uniques, individuels en un sens illimité, cela est hors de doute ; mais sitôt que nous les retraduisons dans la conscience, ils cessent de le paraître…"
+  ]
+},
+{
+  "id": "freud-trois-blessures-narcissiques",
+  "section": "philosophie",
+  "cardMeta": "Conscience · inconscient et décentrement du sujet",
+  "title": "Les trois blessures narcissiques : le moi n’est pas maître dans sa propre maison",
+  "author": "Sigmund Freud",
+  "authorTag": "Freud",
+  "cardHighlight": "pas maître dans sa propre maison",
+  "familiarIdea": "les trois blessures narcissiques",
+  "authorMeta": "(1856–1939) · psychanalyse",
+  "themes": [
+    "Conscience",
+    "Inconscient"
+  ],
+  "work": "Introduction à la psychanalyse",
+  "publication": "[1916], IIe partie, chap. 18, trad. S. Jankélévitch, Payot, 2001, p. 343–344",
+  "description": "Après Copernic et Darwin, la psychanalyse inflige-t-elle à l’être humain une troisième blessure en montrant que le moi ne gouverne pas entièrement sa propre vie psychique ?",
+  "context": "Freud présente la psychanalyse comme le troisième grand décentrement de l’être humain : Copernic retire à la Terre sa place centrale, Darwin replace l’homme dans le règne animal, puis l’<strong>inconscient</strong> retire au moi conscient sa souveraineté sur sa propre vie psychique.",
+  "readingQuestions": [
+    "Quelles illusions sur la place de l’être humain Copernic et Darwin ont-ils successivement détruites ?",
+    "Pourquoi la découverte de l’<strong>inconscient</strong> constitue-t-elle une troisième blessure narcissique ?",
+    "Que signifie exactement la formule selon laquelle le moi « n’est pas maître dans sa propre maison » ?"
+  ],
+  "glossary": [
+    {
+      "term": "mégalomanie",
+      "definition": "Tendance à se surestimer et à s’attribuer une place ou une puissance excessives."
+    },
+    {
+      "term": "anthropocentrisme",
+      "definition": "Manière de considérer l’être humain comme centre ou référence privilégiée du réel."
+    },
+    {
+      "term": "psychisme",
+      "definition": "Ensemble de la vie mentale, comprenant pour Freud des processus conscients et inconscients."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Les trois blessures narcissiques",
+      "definition": "Freud rassemble trois décentrements : Copernic retire à la Terre sa centralité cosmique, Darwin retire à l’homme sa séparation privilégiée d’avec l’animal, et la psychanalyse retire au moi conscient la souveraineté sur sa propre vie psychique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "freud-inconscient-hypothese",
+      "kind": "proche",
+      "label": "Freud — L’inconscient est une hypothèse nécessaire",
+      "relation": "Le texte sur les blessures narcissiques formule le décentrement général du moi ; celui-ci expose plus précisément pourquoi Freud juge nécessaire de poser des processus psychiques inconscients."
+    },
+    {
+      "id": "descartes-cogito-chose-pense",
+      "kind": "adverse",
+      "label": "Descartes — Le sujet se découvre comme chose qui pense",
+      "relation": "Le cogito donne au sujet pensant une certitude première ; Freud montre au contraire que la conscience n’épuise pas la vie psychique et n’en maîtrise pas tous les processus."
+    }
+  ],
+  "paragraphs": [
+    "Dans le cours des siècles, la science a infligé à l’égoïsme naïf de l’humanité deux graves démentis. La première fois, ce fut lorsqu’elle a montré que la Terre, loin d’être le centre de l’univers, ne forme qu’une parcelle insignifiante du système cosmique dont nous pouvons à peine nous représenter la grandeur. Cette première démonstration se rattache pour nous au nom de Copernic, bien que la science alexandrine ait déjà annoncé quelque chose de semblable. Le second démenti fut infligé à l’humanité par la recherche biologique, lorsqu’elle a réduit à rien les prétentions de l’homme à une place privilégiée dans l’ordre de la création, en établissant sa descendance du règne animal et en montrant l’indestructibilité de sa nature animale. Cette dernière révolution s’est accomplie de nos jours, à la suite des travaux de Ch. Darwin, de Wallace et de leurs prédécesseurs, travaux qui ont provoqué la résistance la plus acharnée des contemporains. Un troisième démenti sera infligé à la mégalomanie humaine par la recherche psychologique de nos jours qui se propose de montrer au moi qu’il n’est seulement pas maître dans sa propre maison, qu’il en est réduit à se contenter de renseignements rares et fragmentaires sur ce qui se passe, en dehors de sa conscience, dans sa vie psychique. Les psychanalystes ne sont ni les premiers ni les seuls qui aient lancé cet appel à la modestie et au recueillement, mais c’est à eux que semble échoir la mission d’étendre cette manière de voir avec le plus d’ardeur et de produire à son appui des matériaux empruntés à l’expérience et accessibles à tous. D’où la levée générale de boucliers contre notre science, l’oubli de toutes les règles de politesse académique, le déchaînement d’une opposition qui secoue toutes les entraves d’une logique impartiale."
+  ]
+},
+{
+  "id": "arendt-oeuvre-art-duree-monde",
+  "section": "philosophie",
+  "cardMeta": "Art · œuvre, objet et durée",
+  "title": "L’œuvre d’art n’est pas une simple chose : elle est faite pour durer",
+  "author": "Hannah Arendt",
+  "authorTag": "Arendt",
+  "cardHighlight": "les seules choses à n’avoir aucune fonction",
+  "authorMeta": "(1906–1975) · philosophie contemporaine",
+  "themes": [
+    "Art",
+    "Technique"
+  ],
+  "work": "La Crise de la culture",
+  "publication": "[1961–1968], trad. P. Lévy, Gallimard, 1989, p. 267–268",
+  "description": "Qu’est-ce qui distingue l’œuvre d’art des objets d’usage, des biens de consommation et des produits de l’action ?",
+  "context": "Arendt distingue trois destins des productions humaines : les biens de consommation disparaissent, les objets d’usage s’usent, tandis que l’œuvre d’art est faite pour durer. Soustraite au besoin et à l’utilité, elle contribue ainsi à la permanence du monde commun et rend possible la culture.",
+  "readingQuestions": [
+    "Qu’est-ce qui distingue une œuvre d’art d’un bien de consommation et d’un objet d’usage ?",
+    "Pourquoi la <strong>durée</strong> est-elle essentielle à l’œuvre d’art chez Arendt ?",
+    "En quoi le fait d’être soustraite à l’utilité permet-il à l’œuvre d’appartenir au monde commun et à la culture ?"
+  ],
+  "glossary": [
+    {
+      "term": "objet d’usage",
+      "definition": "Objet fabriqué pour servir durablement à une fonction pratique."
+    },
+    {
+      "term": "œuvre d’art",
+      "definition": "Chez Arendt, chose fabriquée qui n’est ni consommée ni usée et qui acquiert une permanence propre dans le monde."
+    },
+    {
+      "term": "durée",
+      "definition": "Capacité d’une chose à demeurer dans le monde au-delà du cycle immédiat des besoins et de la consommation."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Trois régimes de durée",
+      "definition": "Arendt classe les productions humaines selon leur rapport au temps.",
+      "items": [
+        "Consommation : la chose disparaît en satisfaisant un besoin.",
+        "Usage : l’objet dure, mais s’use en servant.",
+        "Œuvre : elle est conservée pour elle-même et peut survivre aux générations."
+      ]
+    },
+    {
+      "type": "analysis",
+      "term": "Pourquoi l’œuvre est « mondaine »",
+      "definition": "Elle est destinée au monde commun plutôt qu’au seul entretien de la vie individuelle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "heidegger-art-devoile-verite-souliers",
+      "kind": "proche",
+      "label": "Heidegger — L’œuvre révèle plus que l’usage",
+      "relation": "Arendt et Heidegger pensent l’Art au-delà de la fonction pratique immédiate de l’objet."
+    },
+    {
+      "id": "sartre-langage-poesie-fin",
+      "kind": "proche",
+      "label": "Sartre — En poésie, le mot cesse d’être un moyen",
+      "relation": "Les deux textes définissent l’Art par un retrait de l’utilité : l’œuvre ou le mot ne valent plus seulement comme instruments."
+    }
+  ],
+  "paragraphs": [
+    "Parmi les choses qu’on ne rencontre pas dans la nature, mais seulement dans le monde fabriqué par l’homme, on distingue entre objets d’usage et œuvres d’art; tous deux possèdent une certaine permanence qui va de la durée ordinaire à une immortalité potentielle dans le cas de l’œuvre d’art. En tant que tels, ils se distinguent d’une part des produits de consommation, dont la durée au monde excède à peine le temps nécessaire à les préparer, et d’autre part, des produits de l’action, comme les événements, les actes et les mots, tous en eux-mêmes si transitoires qu’ils survivraient à peine à l’heure ou au jour où ils apparaissent au monde, s’ils n’étaient conservés d’abord par la mémoire de l’homme, qui les tisse en récits, et puis par ses facultés de fabrication. Du point de vue de la durée pure, les œuvres d’art sont clairement supérieures à toutes les autres choses; comme elles durent plus longtemps au monde que n’importe quoi d’autre, elles sont les plus mondaines des choses. Davantage, elles sont les seules choses à n’avoir aucune fonction dans le processus vital de la société; à proprement parler, elles ne sont pas fabriquées pour les hommes, mais pour le monde, qui est destiné à survivre à la vie limitée des mortels, au va-et-vient des générations. Non seulement elles ne sont pas consommées comme des biens de consommation, ni usées comme des objets d’usage: mais elles sont délibérément écartées des procès de consommation et d’utilisation, et isolées loin de la sphère des nécessités de la vie humaine. Cette mise à distance peut se réaliser par une infinité de voies. Et c’est seulement quand elle est accomplie que la culture, au sens spécifique du terme, vient à l’être."
+  ]
+},
+{
+  "id": "alain-artiste-artisan-idee-oeuvre",
+  "section": "philosophie",
+  "cardMeta": "Art · artiste et artisan",
+  "title": "L’idée vient à l’artiste à mesure qu’il fait",
+  "author": "Alain",
+  "authorTag": "Alain",
+  "cardHighlight": "l’idée lui vient à mesure qu’il fait",
+  "authorMeta": "(1868–1951) · philosophie contemporaine",
+  "themes": [
+    "Art",
+    "Technique"
+  ],
+  "work": "Système des Beaux-Arts",
+  "publication": "[1920], livre I, chap. VII, Gallimard, « Bibliothèque de la Pléiade », 1958, p. 239–240",
+  "description": "L’artiste applique-t-il une idée déjà formée, ou découvre-t-il l’œuvre et sa règle dans le geste même de créer ?",
+  "context": "Alain oppose l’artisan, qui exécute une idée déjà déterminée, à l’artiste, dont l’idée se précise au cours même du travail. Créer, c’est donc découvrir l’œuvre en la faisant : l’artiste devient aussi le spectateur de ce qui naît sous ses mains.",
+  "readingQuestions": [
+    "Qu’est-ce qui distingue d’abord le travail de l’<strong>artisan</strong> de celui de l’<strong>artiste</strong> ?",
+    "Pourquoi Alain dit-il que l’artiste devient « spectateur » de son œuvre ?",
+    "Pourquoi la règle d’une œuvre d’art ne peut-elle pas être formulée à l’avance puis appliquée à une autre œuvre ?"
+  ],
+  "glossary": [
+    {
+      "term": "artisan",
+      "definition": "Celui qui fabrique selon une idée, un projet ou une règle qui peut être formulée avant l’exécution."
+    },
+    {
+      "term": "artiste",
+      "definition": "Chez Alain, créateur dont l’idée se précise dans l’acte même de faire et ne précède pas complètement l’œuvre."
+    },
+    {
+      "term": "canon",
+      "definition": "Modèle ou règle servant à guider une fabrication ou un jugement esthétique."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Artisan",
+        "definition": "Il peut exécuter un projet dont l’idée et les règles sont déjà déterminées."
+      },
+      "right": {
+        "term": "Artiste",
+        "definition": "Il découvre ce qu’il fait en le faisant et devient aussi spectateur de l’œuvre qui naît."
+      },
+      "conclusion": "La différence porte sur le rapport entre l’idée et l’exécution, non sur l’habileté manuelle."
+    },
+    {
+      "type": "analysis",
+      "term": "Une règle immanente",
+      "definition": "La règle de l’œuvre apparaît dans sa réalisation même ; elle ne peut pas être séparée de l’œuvre comme une recette réutilisable."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-genie-regles-art",
+      "kind": "proche",
+      "label": "Kant — Le génie donne ses règles à l’art",
+      "relation": "Alain et Kant refusent tous deux de réduire l’Art à l’application mécanique de règles connues d’avance."
+    },
+    {
+      "id": "nietzsche-culte-genie",
+      "kind": "proche",
+      "label": "Nietzsche — La création a une genèse",
+      "relation": "Alain et Nietzsche ramènent l’attention vers le faire et le devenir réel de l’œuvre plutôt que vers une idée toute faite de la création."
+    }
+  ],
+  "paragraphs": [
+    "Il reste à dire maintenant en quoi l’artiste diffère de l’artisan. Toutes les fois que l’idée précède et règle l’exécution, c’est industrie. Et encore est-il vrai que l’œuvre souvent, même dans l’industrie, redresse l’idée en ce sens que l’artisan trouve mieux qu’il n’avait pensé dès qu’il essaye; en cela il est artiste, mais par éclairs. Toujours est-il que la représentation d’une idée dans une chose, je dis même d’une idée bien définie comme le dessin d’une maison, est une œuvre mécanique seulement, en ce sens qu’une machine bien réglée d’abord ferait l’œuvre à mille exemplaires. Pensons maintenant au travail du peintre de portrait; il est clair qu’il ne peut avoir le projet de toutes les couleurs qu’il emploiera à l’œuvre qu’il commence; l’idée lui vient à mesure qu’il fait; il serait même rigoureux de dire que l’idée lui vient ensuite, comme à un spectateur, et qu’il est spectateur aussi de son œuvre en train de naître. Et c’est là le propre de l’artiste. Il faut que le génie ait la grâce de la nature et s’étonne lui-même. Un beau vers n’est pas d’abord en projet, et ensuite fait; mais il se montre beau au poète; et la belle statue se montre belle au sculpteur à mesure qu’il la fait; et le portrait naît sous le pinceau. […] Ainsi la règle du Beau n’apparaît que dans l’œuvre, et y reste prise, en sorte qu’elle ne peut servir jamais, d’aucune manière, à faire une autre œuvre."
+  ]
+},
+{
+  "id": "kant-genie-regles-art",
+  "section": "philosophie",
+  "cardMeta": "Art · génie et règles",
+  "title": "Le génie donne ses règles à l’art",
+  "author": "Emmanuel Kant",
+  "authorTag": "Kant",
+  "cardHighlight": "la nature donne à l’art ses règles",
+  "authorMeta": "(1724–1804) · philosophie moderne",
+  "themes": [
+    "Art",
+    "Nature"
+  ],
+  "work": "Critique de la faculté de juger",
+  "publication": "[1790], § 46, trad. J.-M. Vaysse, Gallimard, 1985, p. 261–262",
+  "description": "Comment une œuvre peut-elle obéir à des règles si aucune règle déterminée ne peut être donnée avant sa création ?",
+  "context": "Kant définit le <strong>génie</strong> comme le talent naturel par lequel la nature donne ses règles à l’art. Une œuvre de génie doit être originale, mais aussi exemplaire : elle ouvre une voie que d’autres peuvent suivre sans qu’on puisse réduire sa création à une méthode enseignable.",
+  "readingQuestions": [
+    "Pourquoi l’art a-t-il besoin de règles alors que le génie ne peut pas les apprendre comme une méthode ?",
+    "Pourquoi l’<strong>originalité</strong> ne suffit-elle pas à faire le génie ?",
+    "Comment une œuvre peut-elle être <strong>exemplaire</strong> pour d’autres sans être elle-même produite par imitation ?"
+  ],
+  "glossary": [
+    {
+      "term": "génie",
+      "definition": "Talent naturel par lequel la nature donne à l’art ses règles."
+    },
+    {
+      "term": "originalité",
+      "definition": "Capacité de produire ce qui ne résulte pas de l’application d’une règle déjà donnée."
+    },
+    {
+      "term": "exemplarité",
+      "definition": "Caractère d’une œuvre originale qui peut servir de modèle ou de critère aux autres sans fournir une recette de fabrication."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Originalité et exemplarité",
+      "definition": "Kant impose deux exigences à l’œuvre de génie.",
+      "items": [
+        "Originalité : elle ne procède pas de l’imitation d’une règle déjà disponible.",
+        "Exemplarité : elle peut pourtant servir de modèle ou de critère à d’autres."
+      ]
+    },
+    {
+      "type": "analysis",
+      "term": "<em>ingenium</em>",
+      "definition": "Le terme latin insiste sur le don naturel : la règle de l’Art se manifeste dans la production au lieu d’être apprise avant elle."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "nietzsche-culte-genie",
+      "kind": "adverse",
+      "label": "Nietzsche — Le culte du génie",
+      "relation": "Kant insiste sur un talent naturel irréductible à une recette ; Nietzsche réinscrit au contraire la création dans le Travail, l’apprentissage et la genèse."
+    },
+    {
+      "id": "alain-artiste-artisan-idee-oeuvre",
+      "kind": "proche",
+      "label": "Alain — L’idée vient en faisant",
+      "relation": "Kant et Alain refusent tous deux qu’une œuvre d’Art soit l’exécution mécanique d’un plan entièrement donné d’avance."
+    }
+  ],
+  "paragraphs": [
+    "Le génie est le talent (le don naturel) qui permet de donner à l’art ses règles. Puisque le talent, en tant que faculté productive innée de l’artiste, ressortit lui-même à la nature, on pourrait formuler ainsi la définition: le génie est la disposition innée de l’esprit (ingenium) par le truchement de laquelle la nature donne à l’art ses règles. […]",
+    "En effet, tout art suppose des règles, et c’est d’abord sur le fondement qu’elles constituent qu’une production, si elle doit être artistique, sera représentée comme possible. Mais le concept des beaux-arts ne permet pas de déduire le jugement portant sur la beauté de leurs productions d’une quelconque règle qui ait un concept comme principe déterminant, par conséquent se fonde sur un concept de la manière dont ces productions sont possibles. Donc, les beaux-arts ne peuvent eux-mêmes concevoir la règle à laquelle devra obéir la réalisation de leur production. Or, puisque, sans règle préalable, aucune production ne peut jamais être qualifiée d’art, il faut que la nature donne à l’art ses règles dans le sujet (à travers l’accord de ses facultés); autrement dit, les beaux-arts ne sont possibles qu’en tant que production du génie.",
+    "Il en ressort: 1° que le génie est un talent qui consiste à produire ce pour quoi on ne saurait donner de règle déterminée; il n’est pas une aptitude à quoi que ce soit qui pourrait être appris d’après une règle quelconque; par conséquent, sa première caractéristique doit être l’originalité; 2° que, dans la mesure où l’absurde peut être lui aussi original, les productions du génie doivent être également des modèles, c’est-à-dire être exemplaires; sans être elles-mêmes créées par imitation, elles doivent être proposées à l’imitation des autres, c’est-à-dire servir de critère ou de règle au jugement; 3° que le génie n’est pas lui-même en mesure de décrire ou de montrer scientifiquement comment il crée ses productions et qu’au contraire c’est en tant que nature qu’il donne les règles de ses créations; par conséquent, le créateur d’un produit qu’il doit à son génie ignore lui-même comment et d’où lui viennent les idées de ses créations; il n’a pas non plus le pouvoir de concevoir ces idées à volonté ou d’après un plan, ni de les communiquer à d’autres sous forme de préceptes qui leur permettraient de créer de semblables productions (c’est sans doute la raison pour laquelle le mot génie vient de genius qui désigne l’esprit que reçoit en propre un homme à sa naissance pour le protéger et le guider, et qui est la source d’inspiration dont proviennent ces idées originales); 4° qu’à travers le génie la nature prescrit ses règles non à la science, mais à l’art, et dans le cas seulement où il s’agit des beaux-arts."
+  ]
+},
+{
+  "id": "nietzsche-culte-genie",
+  "section": "philosophie",
+  "cardMeta": "Art · génie et création",
+  "title": "Le culte du génie : aucune création n’est un miracle",
+  "author": "Friedrich Nietzsche",
+  "authorTag": "Nietzsche",
+  "cardHighlight": "aucune n’est un « miracle »",
+  "familiarIdea": "le culte du génie",
+  "authorMeta": "(1844–1900) · philosophie contemporaine",
+  "themes": [
+    "Art",
+    "Technique"
+  ],
+  "work": "Humain, trop humain",
+  "publication": "[1878], § 162, trad. R. Rovini, Gallimard, 1988, p. 142–143",
+  "description": "Le génie est-il une grâce exceptionnelle, ou le résultat d’un long travail dont l’œuvre achevée efface la genèse ?",
+  "context": "Nietzsche attaque le <strong>culte du génie</strong>, qui transforme la création en miracle et cache le travail qui l’a rendue possible. Le génie ne crée pas à partir de rien : il observe, combine, trie et retravaille des matériaux comme toute autre activité inventive.",
+  "readingQuestions": [
+    "Pourquoi avons-nous tendance, selon Nietzsche, à faire du génie un « miracle » ?",
+    "Quelles activités ordinaires de travail et de combinaison Nietzsche retrouve-t-il derrière la création géniale ?",
+    "En quoi le <strong>culte du génie</strong> fausse-t-il notre manière de comprendre et d’admirer l’œuvre achevée ?"
+  ],
+  "glossary": [
+    {
+      "term": "culte du génie",
+      "definition": "Admiration qui transforme la création en prodige exceptionnel et fait oublier les conditions concrètes de son élaboration."
+    },
+    {
+      "term": "genèse",
+      "definition": "Processus de formation d’une œuvre, fait d’essais, d’influences, de matériaux et de travail."
+    },
+    {
+      "term": "perfection",
+      "definition": "État achevé d’une œuvre qui peut masquer son devenir et les opérations ayant conduit à sa forme finale."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Culte du génie",
+        "definition": "L’œuvre paraît jaillir d’un don exceptionnel, sans travail ni médiations."
+      },
+      "right": {
+        "term": "Genèse de l’œuvre",
+        "definition": "L’artiste observe, sélectionne, combine des matériaux et apprend à orienter sa pensée."
+      },
+      "conclusion": "Nietzsche remplace le miracle de l’inspiration par l’analyse d’un processus."
+    },
+    {
+      "type": "analysis",
+      "term": "<em>miraculum</em>",
+      "definition": "Le mot latin pour « miracle » nomme précisément l’illusion que Nietzsche veut dissiper : aucune activité humaine n’échappe totalement à une genèse."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "kant-genie-regles-art",
+      "kind": "adverse",
+      "label": "Kant — Le génie donne ses règles à l’art",
+      "relation": "Nietzsche désenchante le génie en insistant sur le Travail et l’apprentissage là où Kant souligne un talent naturel non réductible à une recette."
+    },
+    {
+      "id": "alain-artiste-artisan-idee-oeuvre",
+      "kind": "proche",
+      "label": "Alain — L’œuvre naît dans le faire",
+      "relation": "Alain et Nietzsche invitent à regarder la création en train de se faire plutôt qu’à imaginer une œuvre déjà présente dans l’esprit de l’artiste."
+    }
+  ],
+  "paragraphs": [
+    "Culte du génie par vanité. Comme nous avons bonne opinion de nous-mêmes, mais sans aller jusqu’à nous attendre à jamais pouvoir faire même l’ébauche d’une toile de Raphaël ou une scène comparable à celles d’un drame de Shakespeare, nous nous persuadons que pareilles facultés tiennent d’un prodige vraiment au-dessus de la moyenne, représentent un hasard extrêmement rare, ou, si nous avons encore des sentiments religieux, une grâce d’en haut. C’est ainsi notre vanité, notre amour-propre qui nous poussent au culte du génie: car il nous faut l’imaginer très loin de nous, en vrai miraculum, pour qu’il ne nous blesse pas. Mais, compte non tenu de ces insinuations de notre vanité, l’activité du génie ne paraît vraiment pas quelque chose de foncièrement différent de l’activité de l’inventeur mécanicien, du savant astronome ou historien, du maître en tactique. Toutes ces activités s’expliquent si l’on se représente des hommes dont la pensée s’exerce dans une seule direction, à qui toutes choses servent de matière, qui observent toujours avec la même diligence leur vie intérieure et celle des autres, qui voient partout des modèles, des incitations, qui ne se lassent pas de combiner leurs moyens. Le génie ne fait rien non plus que d’apprendre d’abord à poser des pierres, puis à bâtir, que de chercher toujours des matériaux et de toujours les travailler. Toute activité de l’homme est une merveille de complication, pas seulement celle du génie: mais aucune n’est un « miracle ». D’où vient alors cette croyance qu’il n’y a de génie que chez l’artiste, l’orateur et le philosophe? Qu’eux seuls ont de l’« intuition »? (ce qui revient à leur attribuer une sorte de lorgnette merveilleuse qui leur permet de voir directement dans l’« être »!). Manifestement, les hommes ne parlent de génie que là où ils trouvent le plus de plaisir aux effets d’une grande intelligence et où, d’autre part, ils ne veulent pas éprouver d’envie. Dire quelqu’un « divin » signifie: « Ici, nous n’avons pas à rivaliser. » Autre chose: on admire tout ce qui est achevé, parfait, on sous-estime toute chose en train de se faire. Or, personne ne peut voir dans l’œuvre de l’artiste comment elle s’est faite; c’est là son avantage, car partout où l’on peut observer une genèse, on est quelque peu refroidi. L’art achevé de l’expression écarte toute idée de devenir; c’est la tyrannie de la perfection présente. Voilà pourquoi ce sont surtout les artistes de l’expression qui passent pour géniaux, et non pas les hommes de science. En vérité, cette appréciation et cette dépréciation ne sont qu’un enfantillage de la raison."
+  ]
+},
+{
+  "id": "hegel-art-imitation-nature",
+  "section": "philosophie",
+  "cardMeta": "Art · imitation et nature",
+  "title": "Imiter la nature est une entreprise impossible et futile",
+  "author": "Georg Wilhelm Friedrich Hegel",
+  "authorTag": "Hegel",
+  "cardHighlight": "l’art restera toujours au-dessous de la nature",
+  "authorMeta": "(1770–1831) · philosophie moderne",
+  "themes": [
+    "Art",
+    "Nature"
+  ],
+  "work": "Esthétique",
+  "publication": "[1835–1837 posth.], t. I, introduction, trad. S. Jankélévitch, Flammarion, 1979, p. 34–37",
+  "description": "Si l’art se contente de copier la nature, ne devient-il pas une répétition inférieure, oiseuse et sans véritable fin artistique ?",
+  "context": "Hegel refuse de faire de l’imitation fidèle de la nature la fin de l’art. Copier ce qui existe déjà n’ajoute qu’une apparence inférieure au vivant ; même le trompe-l’œil le plus habile ne suffit donc pas à définir la valeur d’une œuvre.",
+  "readingQuestions": [
+    "Pourquoi l’imitation de la nature donne-t-elle à l’art un but « purement formel » ?",
+    "Que montrent les exemples du <strong>trompe-l’œil</strong> sur les limites d’une imitation réussie ?",
+    "Si l’art ne vaut pas par la copie fidèle du réel, que doit-il chercher au-delà de l’imitation ?"
+  ],
+  "glossary": [
+    {
+      "term": "mimèsis",
+      "definition": "Imitation ou représentation du réel par l’art."
+    },
+    {
+      "term": "imitation",
+      "definition": "Reproduction d’un objet naturel tel qu’il apparaît, prise ici comme fin possible de l’art."
+    },
+    {
+      "term": "caricature de la vie",
+      "definition": "Expression par laquelle Hegel souligne que la copie artistique ne peut produire la présence vivante de ce qu’elle imite."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "<em>mimèsis</em>",
+      "definition": "Le terme grec signifie « imitation ». Hegel ne rejette pas toute ressemblance, mais refuse d’en faire la fin essentielle de l’Art."
+    },
+    {
+      "type": "analysis",
+      "term": "Le trompe-l’œil",
+      "definition": "Sa réussite montre la limite de l’imitation : même quand la copie trompe, elle ne fait que reproduire une apparence déjà donnée."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "wilde-nature-imite-art",
+      "kind": "proche",
+      "label": "Wilde — La nature imite l’art",
+      "relation": "Hegel refuse que l’Art copie la Nature ; Wilde radicalise ce refus en soutenant que l’Art forme aussi notre manière de voir la Nature."
+    },
+    {
+      "id": "platon-art-imitation-eloigne-vrai",
+      "kind": "proche",
+      "label": "Platon — L’imitation est éloignée du vrai",
+      "relation": "Platon et Hegel critiquent tous deux l’Art réduit à l’imitation de l’apparence, mais Hegel ne condamne pas l’Art comme tel."
+    }
+  ],
+  "paragraphs": [
+    "C’est un vieux précepte que l’art doit imiter la nature; on le trouve déjà chez Aristote. Quand la réflexion n’en était encore qu’à ses débuts, on pouvait bien se contenter d’une idée pareille; elle contient toujours quelque chose qui se justifie par de bonnes raisons et qui se révélera à nous comme un des moments de l’idée ayant, dans son développement, sa place comme tant d’autres moments. D’après cette conception, le but essentiel de l’art consisterait dans l’imitation, autrement dit dans la reproduction habile d’objets tels qu’ils existent dans la nature, et la nécessité d’une pareille reproduction faite en conformité avec la nature serait une source de plaisirs. Cette définition assigne à l’art un but purement formel, celui de refaire une seconde fois, avec les moyens dont l’homme dispose, ce qui existe dans le monde extérieur, et tel qu’il y existe. Mais cette répétition peut apparaître comme une occupation oiseuse et superflue, car quel besoin avons-nous de revoir dans des tableaux ou sur la scène, des animaux, des paysages ou des événements humains, que nous connaissons déjà pour les avoir vus ou pour les voir dans nos jardins, dans nos intérieurs ou, dans certains cas, pour en avoir entendu parler par des personnes de nos connaissances? On peut même dire que ces efforts inutiles se réduisent à un jeu présomptueux dont les résultats restent toujours inférieurs à ce que nous offre la nature. C’est que l’art, limité dans ses moyens d’expression, ne peut produire que des illusions unilatérales, offrir l’apparence de la réalité à un seul de nos sens; et, en fait, lorsqu’il ne va pas au-delà de la simple imitation, il est incapable de nous donner l’impression d’une réalité vivante ou d’une vie réelle: tout ce qu’il peut nous offrir, c’est une caricature de la vie.",
+    "[…] C’est ainsi que Zeuxis peignait des raisins qui avaient une apparence tellement naturelle que les pigeons s’y trompaient et venaient les picorer, et Praxeas peignit un rideau qui trompa un homme, le peintre lui-même. […]",
+    "On peut dire d’une façon générale qu’en voulant rivaliser avec la nature par l’imitation, l’art restera toujours au-dessous de la nature et pourra être comparé à un ver faisant des efforts pour égaler un éléphant. Il y a des hommes qui savent imiter les trilles du rossignol, et Kant a dit à ce propos que, dès que nous nous apercevons que c’est un homme qui chante ainsi, et non un rossignol, nous trouvons ce chant insipide. Nous y voyons un simple artifice, non une libre production de la nature ou une œuvre d’art. Le chant du rossignol nous réjouit naturellement, parce que nous entendons un animal, dans son inconscience naturelle, émettre des sons qui ressemblent à l’expression de sentiments humains. Ce qui nous réjouit donc ici, c’est l’imitation de l’humain par la nature."
+  ]
+},
+{
+  "id": "wilde-nature-imite-art",
+  "section": "philosophie",
+  "cardMeta": "Art · nature et perception",
+  "title": "La nature imite l’art",
+  "author": "Oscar Wilde",
+  "authorTag": "Wilde",
+  "cardHighlight": "La Nature devient absolument moderne",
+  "familiarIdea": "la nature imite l’art",
+  "authorMeta": "(1854–1900) · littérature contemporaine",
+  "themes": [
+    "Art",
+    "Nature"
+  ],
+  "work": "Le Déclin du mensonge",
+  "publication": "in Intentions [1891], trad. H. Rebell, Allia, 1998, p. 55–56",
+  "description": "Voyons-nous d’abord la nature pour ensuite la représenter, ou l’art transforme-t-il ce que nous sommes capables d’y voir ?",
+  "context": "Wilde renverse l’idée selon laquelle l’art imite la nature : les arts forment notre regard et nous apprennent à voir certains effets du monde. La « nature » que nous percevons est donc déjà en partie façonnée par des œuvres, des styles et des habitudes de vision.",
+  "readingQuestions": [
+    "Pourquoi Wilde distingue-t-il « voir » et « regarder » ?",
+    "Comment les artistes peuvent-ils nous apprendre à percevoir des phénomènes qui existaient déjà ?",
+    "Que signifie exactement la formule paradoxale « <strong>la nature imite l’art</strong> » ?"
+  ],
+  "glossary": [
+    {
+      "term": "esthétisme",
+      "definition": "Courant qui affirme l’autonomie de l’art et valorise l’expérience esthétique indépendamment d’une fonction morale ou utilitaire."
+    },
+    {
+      "term": "maniérisme",
+      "definition": "Emploi répétitif et affecté de procédés stylistiques devenus conventionnels."
+    },
+    {
+      "term": "réalisme",
+      "definition": "Recherche artistique d’une représentation fidèle du réel ; Wilde en renverse ici la priorité en soulignant la puissance créatrice du regard artistique."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Regarder",
+        "definition": "Recevoir simplement ce qui se présente à la vue."
+      },
+      "right": {
+        "term": "Voir",
+        "definition": "Percevoir un effet déjà formé par des habitudes, des œuvres et une culture du regard."
+      },
+      "conclusion": "Pour Wilde, l’Art transforme la perception avant même toute imitation."
+    },
+    {
+      "type": "current",
+      "term": "Esthétisme",
+      "definition": "Courant auquel Wilde est associé : l’Art y affirme son autonomie et sa puissance propre plutôt qu’une simple fonction de reproduction du réel."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "hegel-art-imitation-nature",
+      "kind": "proche",
+      "label": "Hegel — L’art ne se réduit pas à imiter la nature",
+      "relation": "Hegel et Wilde refusent tous deux de définir l’Art par la copie de la Nature ; Wilde renverse ensuite le rapport en faisant de l’Art un éducateur du regard."
+    },
+    {
+      "id": "heidegger-art-devoile-verite-souliers",
+      "kind": "proche",
+      "label": "Heidegger — L’œuvre fait apparaître une vérité",
+      "relation": "Wilde et Heidegger attribuent à l’Art une puissance de révélation : l’œuvre modifie ce que nous sommes capables de voir dans le réel."
+    }
+  ],
+  "paragraphs": [
+    "Qu’est-ce donc que la Nature? Elle n’est pas la Mère qui nous enfanta. Elle est notre création. C’est dans notre cerveau qu’elle s’éveille à la vie. Les choses sont parce que nous les voyons, et ce que nous voyons, et comment nous le voyons, dépend des arts qui nous ont influencés. Regarder une chose et la voir sont deux actes très différents. On ne voit quelque chose que si l’on en voit la beauté. Alors, et alors seulement, elle vient à l’existence. À présent, les gens voient des brouillards, non parce qu’il y en a, mais parce que des poètes et des peintres leur ont enseigné la mystérieuse beauté de ces effets. Des brouillards ont pu exister pendant des siècles à Londres. J’ose même dire qu’il y en eut. Mais personne ne les a vus et, ainsi, nous ne savons rien d’eux. Ils n’existent qu’au jour où l’art les inventa. Maintenant, il faut l’avouer, nous en avons à l’excès. Ils sont devenus le pur maniérisme d’une clique, et le réalisme exagéré de leur méthode donne la bronchite aux gens stupides. Là où l’homme cultivé saisit un effet, l’homme d’esprit inculte attrape un rhume. Soyons donc humains et prions l’Art de tourner ailleurs ses admirables yeux. Il l’a déjà fait, du reste. Cette blanche et frissonnante lumière que l’on voit maintenant en France, avec ses étranges granulations mauves et ses mouvantes ombres violettes, est sa dernière fantaisie et la Nature, en somme, la produit d’admirable façon. Là où elle nous donnait des Corot ou des Daubigny, elle nous donne maintenant des Monet exquis et des Pissarro enchanteurs. En vérité, il y a des moments, rares il est vrai, mais qu’on peut cependant observer de temps à autre, où la Nature devient absolument moderne. Il ne faut pas évidemment s’y fier toujours. Le fait est qu’elle se trouve dans une malheureuse position. L’Art crée un effet incomparable et unique et puis il passe à autre chose. La Nature, elle, oubliant que l’imitation peut devenir la forme la plus sincère de l’inculte, se met à répéter cet effet jusqu’à ce que nous en devenions absolument las. Il n’est personne, aujourd’hui, de vraiment cultivé, pour parler de la beauté d’un coucher de soleil. Les couchers de soleil sont tout à fait passés de mode. Ils appartiennent au temps où Turner était le dernier mot de l’art. Les admirer est un signe marquant de provincialisme."
+  ]
+},
+{
+  "id": "platon-art-imitation-eloigne-vrai",
+  "section": "philosophie",
+  "cardMeta": "Art · imitation et vérité",
+  "title": "L’art d’imitation est éloigné du vrai",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "L’art de l’imitation est donc bien éloigné du vrai",
+  "authorMeta": "(v. 427–347 av. J.-C.) · philosophie antique",
+  "themes": [
+    "Art",
+    "Vérité"
+  ],
+  "work": "La République",
+  "publication": "[IVe s. av. J.-C.], livre X, 598bd, trad. G. Leroux, GF, 2002, p. 486–487",
+  "description": "L’artiste connaît-il réellement ce qu’il représente, ou produit-il seulement une apparence capable de tromper ?",
+  "context": "Dans la <em>République</em>, Platon juge l’art d’imitation à partir de son rapport à la vérité. Le peintre ne connaît pas nécessairement ce qu’il représente : il reproduit l’apparence d’une chose et peut ainsi donner l’illusion d’un savoir qu’il ne possède pas.",
+  "readingQuestions": [
+    "Pourquoi Platon dit-il que l’artiste d’imitation ne reproduit qu’une <strong>apparence</strong> ?",
+    "Comment l’imitateur peut-il donner l’impression de connaître des techniques qu’il ne maîtrise pas ?",
+    "Pourquoi cette puissance d’apparence fait-elle de la <em>mimèsis</em> un obstacle possible à la recherche de la vérité ?"
+  ],
+  "glossary": [
+    {
+      "term": "mimèsis",
+      "definition": "Imitation ou représentation ; chez Platon, elle produit une apparence éloignée de la réalité véritable."
+    },
+    {
+      "term": "simulacre",
+      "definition": "Apparence qui ressemble à une chose sans en posséder la réalité ni le savoir."
+    },
+    {
+      "term": "expert universel",
+      "definition": "Figure trompeuse de celui qui paraît tout savoir parce qu’il sait produire des représentations convaincantes."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "<em>mimèsis</em>",
+      "definition": "Chez Platon, l’imitation artistique porte ici sur l’apparence sensible et non sur la connaissance de ce qu’est réellement la chose."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Savoir",
+        "definition": "Connaître ce qu’est une chose et maîtriser l’activité qui la produit."
+      },
+      "right": {
+        "term": "Imitation",
+        "definition": "Produire une apparence convaincante sans posséder cette connaissance."
+      },
+      "conclusion": "Le danger de l’Art vient de la confusion possible entre ressemblance et compétence."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "heidegger-art-devoile-verite-souliers",
+      "kind": "adverse",
+      "label": "Heidegger — L’art dévoile la vérité",
+      "relation": "Platon soupçonne l’Art d’éloigner de la Vérité par l’apparence ; Heidegger soutient au contraire que l’œuvre peut faire paraître une Vérité de la chose."
+    },
+    {
+      "id": "hegel-art-imitation-nature",
+      "kind": "proche",
+      "label": "Hegel — L’imitation reste insuffisante",
+      "relation": "Platon et Hegel refusent tous deux de confondre l’Art avec une simple copie réussie du réel, même si leurs conclusions sur l’Art diffèrent."
+    }
+  ],
+  "paragraphs": [
+    "SOCRATE. — Dans quel but l’art de la peinture a-t-il été créé pour chaque objet? Est-ce en vue de représenter imitativement, pour chaque être, ce qu’il est, ou pour chaque apparence, de représenter comme elle apparaît? La peinture est-elle une imitation de l’apparence ou de la vérité?",
+    "GLAUCON. — De l’apparence.",
+    "SOCRATE. — L’art de l’imitation est donc bien éloigné du vrai, et c’est apparemment pour cette raison qu’il peut façonner toutes choses; pour chacune, en effet, il n’atteint qu’une petite partie, et cette partie n’est elle-même qu’un simulacre. C’est ainsi, par exemple, que nous dirons que le peintre peut nous peindre un cordonnier, un menuisier, et tous les autres artisans, sans rien maîtriser de leur art. Et s’il est bon peintre, il trompera les enfants et les gens qui n’ont pas toutes leurs facultés en leur montrant de loin le dessin qu’il a réalisé d’un menuisier, parce que ce dessin leur semblera le menuisier réel.",
+    "GLAUCON. — Oui, assurément.",
+    "SOCRATE. — Mais voici, mon ami, je présume, ce qu’il faut penser dans ces cas-là. Quand quelqu’un vient nous annoncer qu’il est tombé sur une personne qui possède la connaissance de toutes les techniques artisanales et qui est au courant de tous les détails concernant chacune, un homme qui possède une connaissance telle qu’il ne connaît rien avec moins de précision que n’importe quel expert, il faut lui rétorquer qu’il est naïf et qu’apparemment il est tombé sur un enchanteur ou sur quelque imitateur qui l’a dupé au point de se faire passer pour un expert universel, en raison de son inaptitude propre à distinguer ce en quoi consistent la science, l’ignorance et l’imitation."
+  ]
+},
+{
+  "id": "heidegger-art-devoile-verite-souliers",
+  "section": "philosophie",
+  "cardMeta": "Art · œuvre et vérité",
+  "title": "Les souliers de Van Gogh : l’art dévoile la vérité",
+  "author": "Martin Heidegger",
+  "authorTag": "Heidegger",
+  "cardHighlight": "L’œuvre d’art nous a fait savoir ce qu’est en vérité la paire de souliers",
+  "familiarIdea": "les souliers de Van Gogh",
+  "authorMeta": "(1889–1976) · phénoménologie",
+  "themes": [
+    "Art",
+    "Vérité"
+  ],
+  "work": "L’Origine de l’œuvre d’art",
+  "publication": "[1935], in Chemins qui ne mènent nulle part [1949], trad. W. Brokmeier, Gallimard, 1962, p. 33–34 et 36",
+  "description": "Une œuvre se contente-t-elle de représenter une chose, ou peut-elle faire apparaître ce qu’est cette chose en vérité ?",
+  "context": "Heidegger refuse de réduire l’œuvre à la représentation d’un objet utile. Dans le tableau de Van Gogh, les souliers font apparaître tout un monde de travail, de fatigue et de rapport à la terre : l’œuvre dévoile ainsi une vérité que l’usage quotidien laisse cachée.",
+  "readingQuestions": [
+    "Pourquoi les souliers ne révèlent-ils presque rien d’eux-mêmes lorsqu’on les considère seulement comme un objet utile ?",
+    "Qu’est-ce que le tableau de Van Gogh fait apparaître à travers ces souliers ?",
+    "En quel sens Heidegger peut-il dire que l’œuvre d’art « fait arriver » la <strong>vérité</strong> plutôt qu’elle ne se contente de représenter le réel ?"
+  ],
+  "glossary": [
+    {
+      "term": "être-produit",
+      "definition": "Le produit considéré dans ce qu’il est en lui-même, au-delà de sa seule fonction utilitaire."
+    },
+    {
+      "term": "alètheia",
+      "definition": "Terme grec signifiant dévoilement ou sortie de l’oubli ; Heidegger l’emploie pour penser la vérité comme ce qui vient au paraître."
+    },
+    {
+      "term": "monde",
+      "definition": "Ensemble de significations et de rapports dans lequel une chose prend sens pour une existence humaine."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Être-produit",
+      "definition": "Il ne s’agit pas seulement de la forme ou de l’usage des souliers, mais de ce qu’ils sont au sein d’un monde de pratiques et d’existence."
+    },
+    {
+      "type": "analysis",
+      "term": "<em>alètheia</em>",
+      "definition": "Le mot grec pour « vérité » signifie ici dévoilement : l’œuvre fait paraître quelque chose que l’usage quotidien laisse en retrait."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-art-imitation-eloigne-vrai",
+      "kind": "adverse",
+      "label": "Platon — L’art d’imitation est éloigné du vrai",
+      "relation": "Platon voit dans l’Art une apparence qui éloigne de la Vérité ; Heidegger lui attribue au contraire une puissance de dévoilement."
+    },
+    {
+      "id": "arendt-oeuvre-art-duree-monde",
+      "kind": "proche",
+      "label": "Arendt — L’œuvre est destinée au monde",
+      "relation": "Arendt et Heidegger pensent l’œuvre d’Art au-delà de l’usage immédiat et la rapportent à un monde qui excède la fonction pratique de l’objet."
+    }
+  ],
+  "paragraphs": [
+    "[T]ant que nous nous contenterons de nous représenter une paire de souliers « comme ça », « en général », tant que nous nous contenterons de regarder sur un tableau de simples souliers vides, qui sont là sans être utilisés — nous n’apprendrons jamais ce qu’est en vérité l’être-produit du produit. D’après la toile de Van Gogh, nous ne pouvons même pas établir où se trouvent ces souliers. Autour de cette paire de souliers de paysan, il n’y a rigoureusement rien où ils puissent prendre place: rien qu’un espace vague. Même pas une motte de terre provenant du champ ou du sentier, ce qui pourrait au moins indiquer leur usage. Une paire de souliers de paysan, et rien de plus. Et pourtant…",
+    "Dans l’obscure intimité du creux de la chaussure est inscrite la fatigue des pas du labeur. Dans la rude et solide pesanteur du soulier est affermie la lente et opiniâtre foulée à travers champs, le long des sillons toujours semblables, s’étendant au loin sous la bise. […] À travers ce produit repasse la muette inquiétude pour la sûreté du pain, la joie silencieuse de survivre à nouveau au besoin, l’angoisse de la naissance imminente, le frémissement sous la mort qui menace. Ce produit appartient à la terre, et il est à l’abri dans le monde de la paysanne. Au sein de cette appartenance protégée, le produit repose en lui-même.",
+    "Tout cela, peut-être ne le lisons-nous que sur les souliers du tableau. La paysanne, par contre, porte tout simplement les souliers. Mais ce « tout simplement » est-il si simple? Quand, tard au soir, la paysanne bien fatiguée, met de côté ses chaussures; quand chaque matin à l’aube elle les cherche, ou quand, au jour de repos, elle passe à côté d’elles, elle sait tout cela, sans qu’elle ait besoin d’observer ou de considérer quoi que ce soit. […]",
+    "L’œuvre d’art nous a fait savoir ce qu’est en vérité la paire de souliers. Ce serait la pire des illusions que de croire que c’est notre description, en tant qu’activité subjective, qui a tout dépeint ainsi pour l’introduire ensuite dans le tableau. Si quelque chose doit ici faire question, c’est que nous n’ayons appris que trop peu à proximité de l’œuvre, et que nous ne l’ayons énoncé que trop grossièrement et trop immédiatement. Mais avant tout, l’œuvre n’a nullement servi, comme il pourrait sembler d’abord, à mieux illustrer ce qu’est un produit. C’est bien plus l’être-produit du produit qui arrive, seulement par l’œuvre et seulement dans l’œuvre, à son paraître."
+  ]
+},
+{
+      "id": "kant-antinomie-gout",
+      "section": "philosophie",
+      "cardMeta": "Art · jugement de goût",
+      "title": "L’antinomie du goût : on peut discuter sans disputer",
+      "author": "Emmanuel Kant",
+      "authorTag": "Kant",
+      "cardHighlight": "on peut discuter du goût",
+      "familiarIdea": "l’antinomie du goût",
+      "authorMeta": "(1724–1804) · philosophie moderne",
+      "themes": [
+            "Art"
+      ],
+      "work": "Critique de la faculté de juger",
+      "publication": "[1790], § 56, trad. J.-M. Vaysse, Gallimard, 1985, p. 298–299",
+      "description": "Si le goût est subjectif, comment peut-on néanmoins discuter et attendre des autres qu’ils puissent s’accorder avec nous ?",
+      "context": "Kant part de deux idées courantes : « chacun a son goût » et « on ne dispute pas des goûts ». Pourtant, si nous discutons réellement du beau, c’est que nous attendons plus qu’une préférence privée : le jugement de goût vise un accord universel sans pouvoir être démontré par des concepts.",
+      "readingQuestions": [
+            "Pourquoi le jugement de goût ne peut-il pas être prouvé comme un jugement de connaissance ?",
+            "Quelle différence Kant établit-il entre <strong>discuter</strong> et <strong>disputer</strong> du goût ?",
+            "Pourquoi cette discussion conduit-elle à une <strong>antinomie</strong> entre subjectivité du goût et prétention à l’accord universel ?"
+      ],
+      "glossary": [
+            {
+                  "term": "goût",
+                  "definition": "Faculté de juger esthétiquement à partir d’un plaisir ou d’un déplaisir sans réduire ce jugement à une préférence arbitraire."
+            },
+            {
+                  "term": "antinomie",
+                  "definition": "Opposition entre deux thèses qui paraissent également nécessaires et pourtant contradictoires."
+            },
+            {
+                  "term": "discuter",
+                  "definition": "Chercher un accord sur un jugement sans prétendre le démontrer par des preuves conceptuelles déterminées."
+            }
+      ],
+      "readingNotes": [
+            {
+                  "type": "opposition",
+                  "left": {
+                        "term": "Disputer",
+                        "definition": "Chercher à décider par des preuves et des concepts objectifs."
+                  },
+                  "right": {
+                        "term": "Discuter",
+                        "definition": "Chercher un accord sans disposer d’une démonstration conceptuelle décisive."
+                  },
+                  "conclusion": "Le jugement de goût peut être débattu, mais non prouvé comme un énoncé scientifique."
+            },
+            {
+                  "type": "analysis",
+                  "term": "L’antinomie du goût",
+                  "definition": "Kant fait apparaître deux exigences opposées.",
+                  "items": [
+                        "Le goût ne se fonde pas sur des concepts déterminés, sinon on pourrait le démontrer.",
+                        "Il doit pourtant avoir un fondement partageable, sinon aucune discussion ne viserait l’accord."
+                  ]
+            }
+      ],
+      "relatedTexts": [
+            {
+                  "id": "hume-norme-gout-delicatesse",
+                  "kind": "proche",
+                  "label": "Hume — La norme du goût",
+                  "relation": "Kant et Hume cherchent tous deux à expliquer comment le goût peut dépasser la préférence privée sans devenir une démonstration objective."
+            },
+            {
+                  "id": "kant-genie-regles-art",
+                  "kind": "proche",
+                  "label": "Kant — Le génie donne ses règles à l’art",
+                  "relation": "Dans les deux textes, Kant pense l’Art sans le réduire à l’application d’un concept ou d’une règle déterminée à l’avance."
+            }
+      ],
+      "paragraphs": [
+            "Le premier lieu commun du goût réside dans la proposition par laquelle ceux qui n’ont pas de goût pensent se protéger du blâme: tout un chacun a son propre goût. Cela veut tout aussi bien dire: le fondement de détermination de ce jugement est purement subjectif (plaisir ou douleur); et ce jugement n’a aucun droit à l’approbation nécessaire d’autrui. Le second lieu commun du goût, qui est également utilisé par ceux qui acceptent, pour le jugement de goût, le droit d’émettre des jugements valables pour tous, est: on ne dispute pas sur le goût. Cela veut tout aussi bien dire: le fondement de détermination d’un jugement de goût peut certes être objectif, mais ne se laisse pas ramener à des concepts déterminés; donc, sur le jugement lui-même, rien ne peut être décidé par des preuves, bien que l’on puisse parfaitement et légitimement en discuter. Discuter et disputer sont identiques, en ce sens que par une résistance réciproque aux jugements on cherche à produire l’unanimité, mais sont différents en ce sens qu’en disputant on espère produire cet accord selon des concepts déterminés comme fondements de preuve et que par conséquent on admet des concepts objectifs comme fondements du jugement. Mais là où cela est considéré comme infaisable, alors la dispute est également considérée comme impossible.",
+            "On voit aisément qu’entre ces deux lieux communs manque une proposition, qui certes n’est pas un proverbe en cours, mais qui se prouve dans le sens commun: on peut discuter du goût (bien qu’on ne puisse en disputer). Mais cette proposition contient le contraire de la première proposition. Car là où il doit être permis de discuter, il faut aussi avoir l’espoir de s’accorder; donc on doit pouvoir compter sur des fondements du jugement qui n’ont pas seulement une valeur personnelle et ne sont pas simplement subjectifs; à quoi est justement opposé le principe: tout un chacun a son propre goût.",
+            "Ainsi, par rapport au principe du goût, se révèle l’antinomie suivante:",
+            "1° Thèse. Le jugement de goût ne se fonde pas sur des concepts; car, sinon, on pourrait en disputer (décider par des preuves).",
+            "2° Antithèse. Le jugement de goût se fonde sur des concepts; car, sinon, on ne pourrait même pas, en dépit de la diversité contenue dans ce jugement, en discuter (élever la prétention à l’unanimité nécessaire pour ce jugement)."
+      ]
+},
+{
+      "id": "hume-norme-gout-delicatesse",
+      "section": "philosophie",
+      "cardMeta": "Art · goût et norme",
+      "title": "La norme du goût : la délicatesse de l’imagination",
+      "author": "David Hume",
+      "authorTag": "Hume",
+      "cardHighlight": "délicatesse de l’imagination",
+      "familiarIdea": "la norme du goût",
+      "authorMeta": "(1711–1776) · empirisme",
+      "themes": [
+            "Art"
+      ],
+      "work": "De la norme du goût",
+      "publication": "in Essais moraux, littéraires et politique [1777], trad. J.-P. Jackson, Alive, 1999, p. 288–289",
+      "description": "Si la beauté dépend du sentiment, pourquoi certains jugements de goût peuvent-ils être plus fins et plus fiables que d’autres ?",
+      "context": "Hume admet que la beauté dépend du sentiment, mais refuse d’en conclure que tous les goûts se valent. Comme un palais exercé distingue mieux les saveurs, une imagination délicate et expérimentée perçoit plus finement les qualités d’une œuvre.",
+      "readingQuestions": [
+            "Pourquoi le caractère subjectif du goût ne suffit-il pas à rendre tous les jugements équivalents ?",
+            "Que montre l’histoire de la clé et de la lanière de cuir sur la « délicatesse » du jugement ?",
+            "Comment Hume peut-il défendre une <strong>norme du goût</strong> sans transformer la beauté en propriété purement objective ?"
+      ],
+      "glossary": [
+            {
+                  "term": "norme du goût",
+                  "definition": "Critère permettant de distinguer des jugements esthétiques plus exercés, fins et fiables que d’autres."
+            },
+            {
+                  "term": "délicatesse de l’imagination",
+                  "definition": "Capacité affinée à percevoir et distinguer des qualités sensibles très fines dans une composition."
+            },
+            {
+                  "term": "sentiment",
+                  "definition": "Impression subjective de plaisir, de beauté ou de laideur à partir de laquelle se forme le jugement de goût."
+            }
+      ],
+      "readingNotes": [
+            {
+                  "type": "analysis",
+                  "term": "Subjectif ≠ arbitraire",
+                  "definition": "Le jugement naît d’un sentiment, mais l’expérience et la finesse de la perception permettent de hiérarchiser les jugements de goût."
+            },
+            {
+                  "type": "analysis",
+                  "term": "La délicatesse de l’imagination",
+                  "definition": "Elle désigne la capacité à percevoir des différences très fines dans une œuvre ou une composition, comme un palais exercé distingue les saveurs."
+            }
+      ],
+      "relatedTexts": [
+            {
+                  "id": "kant-antinomie-gout",
+                  "kind": "proche",
+                  "label": "Kant — L’antinomie du goût",
+                  "relation": "Hume et Kant refusent tous deux de conclure que tous les jugements de goût se valent, même s’ils n’expliquent pas de la même façon leur portée commune."
+            },
+            {
+                  "id": "wilde-nature-imite-art",
+                  "kind": "proche",
+                  "label": "Wilde — L’art éduque notre regard",
+                  "relation": "Hume montre que la sensibilité se raffine par l’expérience ; Wilde souligne de son côté que l’Art transforme ce que nous sommes capables de voir."
+            }
+      ],
+      "paragraphs": [
+            "Une cause évidente du fait que beaucoup ne sont pas sensibles au vrai sentiment de la beauté, c’est le manque de cette délicatesse de l’imagination nécessaire pour amener la sensibilité à ces émotions plus raffinées. À cette délicatesse chacun y prétend, chacun en parle et réduirait toute sorte de goût ou d’opinion à sa propre norme. […]",
+            "Pour ne point tirer notre philosophie d’une source trop profonde, nous aurons recours à une histoire célèbre de Don Quichotte.",
+            "« C’est à bon droit, déclara Sancho à l’écuyer au long nez, que je prétends savoir juger d’un vin: c’est une qualité héréditaire dans la famille. On demanda une fois à deux de mes parents de donner leur opinion sur une barrique supposée être excellente, étant vieille et d’un bon cru. Un des hommes la goûte, la considère et après mûre réflexion déclare le vin bon, à l’exception d’un léger goût de cuir qu’il avait remarqué. L’autre, en usant des mêmes précautions, délivre aussi un verdict favorable au vin, mais en émettant une réserve au sujet d’un goût de fer qu’il avait nettement distingué. Vous ne pouvez imaginer à quel point tous deux furent moqués pour leur jugement. Mais qui rit le dernier? En vidant la barrique, on trouva au fond une vieille clé à laquelle était attachée une lanière de cuir. »",
+            "La grande ressemblance entre le goût intellectuel et le goût corporel nous apprendra aisément à mettre cette histoire en pratique.",
+            "Bien qu’il soit certain que la beauté et la laideur ne soient pas, davantage encore que la douceur et l’amertume, des qualités des objets mais proviennent entièrement du sentiment interne ou externe, on doit reconnaître qu’il existe certaines qualités dans les objets qui sont conçues par nature pour produire ces impressions particulières. Comme on peut trouver ces qualités à un faible degré ou bien mélangées ou confondues les unes avec les autres, il arrive souvent que le goût ne soit point affecté avec des qualités aussi menues ou ne soit pas capable de distinguer toutes les saveurs particulières dans le désordre au sein duquel elles sont présentées. Là où les organes sont si raffinés qu’ils permettent que rien ne leur échappe, et en même temps si précis qu’ils perçoivent chaque ingrédient de la composition, nous nommerons cela délicatesse de goût […]."
+      ]
+}
   ];
 
   const SECTION_LABELS = { philosophie:"Philosophie", theologie:"Théologie", autres:"Autres" };
   const SECTION_SYMBOLS = { philosophie:"φ", theologie:"✦", autres:"—" };
   const READING_PATHS = [
+    {
+      id:"art",
+      label:"L’art : œuvre, création, imitation, vérité et goût",
+      texts:[
+        "arendt-oeuvre-art-duree-monde",
+        "alain-artiste-artisan-idee-oeuvre",
+        "kant-genie-regles-art",
+        "nietzsche-culte-genie",
+        "hegel-art-imitation-nature",
+        "wilde-nature-imite-art",
+        "platon-art-imitation-eloigne-vrai",
+        "heidegger-art-devoile-verite-souliers",
+        "kant-antinomie-gout",
+        "hume-norme-gout-delicatesse"
+      ]
+    },
     {
       id:"bonheur",
       label:"Le bonheur : désirs, plaisir, action et limites",
@@ -1217,16 +9408,200 @@
         "stendhal-cristallisation-amour",
         "aristote-amour-amitie-veritable"
       ]
+    },
+    {
+      id:"temps",
+      label:"Le temps : mesure, durée, existence et délivrance",
+      texts:[
+        "aristote-temps-nombre-mouvement",
+        "kant-temps-forme-a-priori",
+        "bergson-duree-espace",
+        "pascal-divertissement-condition",
+        "pascal-bonheur-avenir",
+        "sartre-existence-precede-essence",
+        "nietzsche-eternel-retour",
+        "bouddha-sortir-cycle-renaissances"
+      ]
+    },
+    {
+      id:"langage",
+      label:"Le langage : pensée, signes, monde, action et dialogue",
+      texts:[
+        "descartes-langage-pensee",
+        "benveniste-communication-animale-langage-humain",
+        "saussure-signe-linguistique-arbitraire",
+        "cassirer-langage-reel-construction",
+        "nietzsche-langue-conception-monde",
+        "zamenhof-esperanto-langue-artificielle",
+        "sartre-langage-poesie-fin",
+        "austin-mots-accomplir-actions",
+        "platon-rhetorique-puissance-dialogue",
+        "levinas-parler-esclave-egal"
+      ]
+    }
+    ,
+    {
+      id:"devoir",
+      label:"Le devoir : contrainte, obligation, fondement et bonheur",
+      texts:[
+        "platon-glaucon-devoir-contrainte",
+        "pascal-coutumes-conventions-justice",
+        "kant-raison-volonte-bonne",
+        "kant-agir-par-devoir",
+        "kant-humanite-fin-en-soi",
+        "schopenhauer-pitie-fondement-morale",
+        "mill-qualite-plaisirs-morale",
+        "kant-morale-dignite-bonheur",
+        "seneque-vie-vertueuse"
+      ]
+    }
+    ,
+    {
+      id:"justice",
+      label:"La justice : nature, loi, égalité et désobéissance",
+      texts:[
+        "platon-callicles-loi-nature-justice",
+        "sophocle-antigone-lois-non-ecrites",
+        "pascal-force-justice",
+        "kant-justice-instituee-imparfaite",
+        "thomas-more-utopie-egalite",
+        "kant-societe-nations-justice",
+        "rawls-justice-equite-inegalites",
+        "kant-desobeissance-loi-inconditionnelle",
+        "thoreau-desobeir-lois-injustes",
+        "pascal-coutumes-conventions-justice",
+        "platon-glaucon-devoir-contrainte"
+      ]
+    }
+    ,
+    {
+      id:"verite",
+      label:"La vérité : démonstration, réel, scepticisme et pratique",
+      texts:[
+        "aristote-demonstration-syllogisme-scientifique",
+        "pascal-principes-demonstration-indemontrables",
+        "zenon-mouvement-demonstration-absurde",
+        "kant-existence-pas-predicat",
+        "aristote-verite-correspondance-reel",
+        "kant-verite-correspondance-diallele",
+        "sextus-empiricus-verite-hors-portee",
+        "nietzsche-logique-survie-verite",
+        "bergson-verite-action-pragmatisme",
+        "platon-doute-haine-raison",
+        "epictete-pratique-avant-demonstration",
+        "krishnamurti-bonheur-sans-recherche"
+      ]
+    }
+    ,
+    {
+      id:"conscience",
+      label:"La conscience : connaissance de soi, identité et déterminations",
+      texts:[
+        "platon-connais-toi-toi-meme",
+        "schopenhauer-sujet-inconnaissable",
+        "descartes-cogito-chose-pense",
+        "locke-identite-conscience-memoire",
+        "pascal-moi-introuvable",
+        "leibniz-petites-perceptions",
+        "nietzsche-conscience-communication-gregaire",
+        "marx-conscience-vie-materielle",
+        "freud-trois-blessures-narcissiques",
+        "freud-inconscient-hypothese"
+      ]
+    },
+    {
+      id:"inconscient",
+      label:"L’inconscient : hypothèse, décentrement, interprétation et critiques",
+      texts:[
+        "leibniz-petites-perceptions",
+        "freud-trois-blessures-narcissiques",
+        "freud-reve-rebus",
+        "freud-inconscient-hypothese",
+        "sartre-inconscient-mauvaise-foi",
+        "wittgenstein-inconscient-mythe",
+        "popper-psychanalyse-non-scientifique"
+      ]
     }
   ];
 
   const LINKED_TEXT_SETS = [
+    {id:"art-objet-creation",kind:"dialogue",label:"Grande controverse",title:"L’œuvre d’art est-elle un objet technique ?",description:"Usage ou création.",texts:["arendt-oeuvre-art-duree-monde","alain-artiste-artisan-idee-oeuvre"]},
+    {id:"art-genie-regles",kind:"dialogue",label:"Grande controverse",title:"Le génie obéit-il à des règles ?",description:"Nature ou travail.",texts:["kant-genie-regles-art","nietzsche-culte-genie"]},
+    {id:"art-nature-imitation",kind:"dialogue",label:"Grande controverse",title:"L’art doit-il imiter la nature ?",description:"Copie ou regard créateur.",texts:["hegel-art-imitation-nature","wilde-nature-imite-art"]},
+    {id:"art-verite",kind:"dialogue",label:"Grande controverse",title:"L’art éloigne-t-il du vrai ou le dévoile-t-il ?",description:"Simulacre ou dévoilement.",texts:["platon-art-imitation-eloigne-vrai","heidegger-art-devoile-verite-souliers"]},
+    {id:"art-gout",kind:"dialogue",label:"Grande controverse",title:"Peut-on discuter des goûts ?",description:"Accord ou finesse du jugement.",texts:["kant-antinomie-gout","hume-norme-gout-delicatesse"]},
+    {id:"identite-sujet",kind:"dialogue",label:"Grande controverse",title:"Qu’est-ce qui fait l’identité du sujet ?",description:"Connaissance de soi, cogito, mémoire et moi.",texts:["platon-connais-toi-toi-meme","schopenhauer-sujet-inconnaissable","descartes-cogito-chose-pense","locke-identite-conscience-memoire","pascal-moi-introuvable","marx-conscience-vie-materielle"]},
+    {id:"existence-inconscient",kind:"dialogue",label:"Grande controverse",title:"Peut-on prouver l’existence de l’inconscient ?",description:"Hypothèse, critique et réfutabilité.",texts:["freud-inconscient-hypothese","sartre-inconscient-mauvaise-foi","wittgenstein-inconscient-mythe","popper-psychanalyse-non-scientifique"]},
+    {id:"freud-reve-inconscient",kind:"same-author",label:"Même auteur",title:"Freud : rêve, moi et inconscient",description:"Rêve, décentrement du moi et inconscient.",texts:["freud-reve-rebus","freud-trois-blessures-narcissiques","freud-inconscient-hypothese"]},
+    {id:"conscience-sociale",kind:"dialogue",label:"Grande controverse",title:"La conscience est-elle vraiment individuelle ?",description:"Communication, société et conscience.",texts:["nietzsche-conscience-communication-gregaire","marx-conscience-vie-materielle"]},
+    {id:"connaissance-soi",kind:"dialogue",label:"Grande controverse",title:"Peut-on vraiment se connaître soi-même ?",description:"Miroir de l’âme et sujet connaissant.",texts:["platon-connais-toi-toi-meme","schopenhauer-sujet-inconnaissable"]},
+    {id:"vivant-machine",kind:"dialogue",label:"Grande controverse",title:"Le vivant peut-il être compris comme une machine ?",description:"Mécanisme, organisation et évolution.",texts:["descartes-organisme-machine","kant-machine-modele-insuffisant-vivant","darwin-evolution-vivant-techniques"]},
+    {id:"animal-science-morale",kind:"dialogue",label:"Grande controverse",title:"L’animal est-il seulement un objet de connaissance et d’usage ?",description:"Science, souffrance et monde animal.",texts:["claude-bernard-experimentation-animale","bentham-sensibilite-respect-animaux","uexkull-animal-monde-propre"]},
+    {id:"matiere-ame-esprit",kind:"dialogue",label:"Grande controverse",title:"La vie et l’esprit sont-ils réductibles à la matière ?",description:"Matière, vie et pensée.",texts:["aristote-vie-matiere-ame","diderot-vie-phenomene-materiel","lucrece-ame-esprit-corporels","bergson-pensee-cerveau"]},
+    {id:"technique-homme-machine",kind:"dialogue",label:"Grande controverse",title:"La technique prolonge-t-elle l’homme ou l’aliène-t-elle ?",description:"Outil, machine et aliénation.",texts:["aristote-main-outil-intelligence","mauss-corps-instrument-naturel","marx-alienation-travail-ouvrier","simondon-harmonie-homme-machine"]},
+    {id:"travail-liberte",kind:"dialogue",label:"Grande controverse",title:"Faut-il travailler pour être libre ?",description:"Servitude, liberté et temps libéré.",texts:["aristote-travail-manuel-esclave","marx-royaume-liberte-travail","kierkegaard-oisivete-ennui-travail","nietzsche-travail-jeu-creation","arendt-loisirs-monde-travail"]},
+    {
+      id:"pascal-religion-foi",
+      kind:"same-author",
+      label:"Même auteur",
+      title:"Pascal : misère humaine, cœur et foi",
+      description:"Misère humaine, cœur et foi.",
+      texts:["pascal-solitude-misere-recherche-dieu","pascal-coeur-raison-foi"]
+    },
+    {
+      id:"religion-mal-theodicee",
+      kind:"dialogue",
+      label:"Grande controverse",
+      title:"Le mal réfute-t-il la bonté de Dieu ?",
+      description:"Théodicée et problème du mal.",
+      texts:["leibniz-meilleur-mondes-possibles","hume-mal-monde-imparfait"]
+    },
+    {
+      id:"religion-critique-moderne",
+      kind:"dialogue",
+      label:"Grande controverse",
+      title:"Que devient la religion dans la modernité ?",
+      description:"Critique et sortie du religieux.",
+      texts:["marx-religion-opium-peuple","nietzsche-dieu-mort-valeurs","gauchet-religion-lien-social","sartre-homme-prendre-place-dieu"]
+    },
+    {
+      id:"aristote-verite-demonstration",
+      kind:"same-author",
+      label:"Même auteur",
+      title:"Aristote : démonstration et vérité",
+      description:"Démontrer et dire le vrai.",
+      texts:["aristote-demonstration-syllogisme-scientifique","aristote-verite-correspondance-reel"]
+    },
+    {
+      id:"kant-verite-demonstration",
+      kind:"same-author",
+      label:"Même auteur",
+      title:"Kant : limites de la démonstration et critère de vérité",
+      description:"Existence et critère de vérité.",
+      texts:["kant-existence-pas-predicat","kant-verite-correspondance-diallele"]
+    },
+    {
+      id:"kant-justice-trois-textes",
+      kind:"same-author",
+      label:"Même auteur",
+      title:"Kant : droit et justice politique",
+      description:"Justice, États et résistance.",
+      texts:["kant-justice-instituee-imparfaite","kant-societe-nations-justice","kant-desobeissance-loi-inconditionnelle"]
+    },
+    {
+      id:"kant-devoir-quatre-textes",
+      kind:"same-author",
+      label:"Même auteur",
+      title:"Kant : comprendre le devoir",
+      description:"Volonté, devoir et dignité.",
+      texts:["kant-raison-volonte-bonne","kant-agir-par-devoir","kant-humanite-fin-en-soi","kant-morale-dignite-bonheur"]
+    },
     {
       id:"levinas-stendhal-echo",
       kind:"echo",
       label:"Texte écho",
       title:"Lévinas et Stendhal : au-delà de l’être sensible",
-      description:"Une analyse philosophique de la caresse, prolongée par la cristallisation littéraire.",
+      description:"Altérité et idéalisation.",
       texts:["levinas-caresse-desir-invisible", "stendhal-cristallisation-amour"]
     },
     {
@@ -1234,7 +9609,7 @@
       kind:"sequence",
       label:"Dialogue continu",
       title:"Calliclès puis Socrate",
-      description:"Deux passages consécutifs du Gorgias : une thèse, puis sa réponse.",
+      description:"Une thèse, puis sa réponse.",
       texts:["platon-callicles-desirs", "platon-socrate-temperance"]
     },
     {
@@ -1242,7 +9617,7 @@
       kind:"debate",
       label:"Controverse",
       title:"Épicure face à Sénèque",
-      description:"Le plaisir ou la vertu comme principe de la vie heureuse.",
+      description:"Plaisir ou vertu ?",
       texts:["epicure-plaisir-vie-heureuse", "seneque-vie-vertueuse"]
     },
     {
@@ -1250,7 +9625,7 @@
       kind:"same-author",
       label:"Même auteur",
       title:"Le diptyque de Schopenhauer",
-      description:"Deux formulations complémentaires d’une même conception du bonheur.",
+      description:"Deux faces d’un même pessimisme.",
       texts:["schopenhauer-bien-etre-negation", "schopenhauer-bonheur-absence-souffrance"]
     },
     {
@@ -1258,8 +9633,16 @@
       kind:"same-author",
       label:"Même auteur",
       title:"La morale de Descartes en deux textes",
-      description:"La troisième maxime du Discours, puis son développement dans la lettre à Élisabeth.",
+      description:"Maîtriser ses désirs.",
       texts:["descartes-changer-desirs", "descartes-trois-regles-bonheur"]
+    },
+    {
+      id:"temps-existence",
+      kind:"debate",
+      label:"Deux rapports au retour",
+      title:"Nietzsche face à Bouddha",
+      description:"Revenir ou sortir du cycle.",
+      texts:["nietzsche-eternel-retour", "bouddha-sortir-cycle-renaissances"]
     }
   ];
   const textUrl = (textOrId) => `/textes/${encodeURIComponent(typeof textOrId === "string" ? textOrId : textOrId.id)}/`;
@@ -1275,7 +9658,7 @@
   const alphabeticalThemes = (items) => [...items].sort((a,b) => collator.compare(a,b));
   const authorTag = (text) => text.authorTag || (text.author || "").split(/\s+/).slice(-1)[0];
   const sourceTag = (text) => text.sourceTag || text.source || "";
-  const textCredit = (text) => text.author || text.source || "";
+  const textCredit = (text) => text.credit || text.author || text.source || "";
   const textThemes = (text) => text.themes || (text.theme ? [text.theme] : []);
   const textSections = (text) => text.sections || [text.section];
 
@@ -1289,6 +9672,7 @@
   const section = root.querySelector("[data-text-section]");
   const theme = root.querySelector("[data-text-theme]");
   const multiThemeEnabled = (fixedSection === "philosophie" || fixedSection === "theologie" || fixedSection === "autres" || fixedSection === "all") && !!theme;
+  const MAX_SELECTED_THEMES = fixedSection === "philosophie" || fixedSection === "theologie" ? 3 : 2;
   const author = root.querySelector("[data-text-author]");
   const source = root.querySelector("[data-text-source]");
   const reset = root.querySelector("[data-text-reset]");
@@ -1350,6 +9734,7 @@
   let themeMultiSummary = null;
   let themeMultiCount = null;
   let themeMultiSelected = null;
+  let themeMultiHint = null;
 
   const closeThemeMulti = () => {
     if (!themeMulti || !themeMultiTrigger || !themeMultiMenu) return;
@@ -1365,6 +9750,28 @@
     themeMultiMenu.hidden = false;
   };
 
+  const themeCandidateHasResults = (candidateTheme) => {
+    const candidateThemes = selectedThemes.includes(candidateTheme)
+      ? [...selectedThemes]
+      : [...selectedThemes, candidateTheme];
+    if (candidateThemes.length > MAX_SELECTED_THEMES) return false;
+
+    const query = normalize(search?.value.trim() || "");
+    const selectedSection = fixedSection === "all" ? (section?.value || "all") : fixedSection;
+    const selectedAuthor = author?.value || "all";
+    const selectedSource = source?.value || "all";
+
+    return TEXTS.some((text) => {
+      const themes = textThemes(text);
+      const searchable = normalize(`${text.title} ${text.familiarIdea || ""} ${text.author || ""} ${text.source || ""} ${themes.join(" ")} ${text.work} ${text.publication} ${text.description} ${(text.readingNotes || []).map((note) => `${note.term || ""} ${note.definition || ""}`).join(" ")}`);
+      return (selectedSection === "all" || textSections(text).includes(selectedSection))
+        && candidateThemes.every((themeName) => themes.includes(themeName))
+        && (selectedAuthor === "all" || text.author === selectedAuthor)
+        && (selectedSource === "all" || text.source === selectedSource)
+        && (!query || searchable.includes(query));
+    });
+  };
+
   const updateThemeMultiUi = () => {
     if (!multiThemeEnabled || !themeMulti) return;
     const countThemes = selectedThemes.length;
@@ -1375,7 +9782,7 @@
     }
     if (themeMultiCount) {
       themeMultiCount.hidden = countThemes === 0;
-      themeMultiCount.textContent = `${countThemes}/2 thèmes`;
+      themeMultiCount.textContent = `${countThemes}/${MAX_SELECTED_THEMES} thèmes`;
     }
     if (themeMultiSelected) {
       themeMultiSelected.hidden = countThemes === 0;
@@ -1384,12 +9791,30 @@
           <span>${themeName}</span><i aria-hidden="true">×</i>
         </button>`).join("");
     }
+
     themeMulti.querySelectorAll("[data-theme-value]").forEach((input) => {
-      const isSelected = selectedThemes.includes(input.dataset.themeValue);
+      const value = input.dataset.themeValue;
+      const isSelected = selectedThemes.includes(value);
+      const isAvailable = isSelected || (countThemes < MAX_SELECTED_THEMES && themeCandidateHasResults(value));
       input.checked = isSelected;
-      input.disabled = countThemes >= 2 && !isSelected;
-      input.closest(".texts-theme-multi-option")?.classList.toggle("is-selected", isSelected);
+      input.disabled = !isAvailable;
+      const option = input.closest(".texts-theme-multi-option");
+      if (option) {
+        option.hidden = !isAvailable;
+        option.classList.toggle("is-selected", isSelected);
+      }
     });
+
+    themeMulti.querySelectorAll(".texts-theme-multi-group").forEach((group) => {
+      const hasVisibleOption = [...group.querySelectorAll(".texts-theme-multi-option")].some((option) => !option.hidden);
+      group.hidden = !hasVisibleOption;
+    });
+
+    if (themeMultiHint) {
+      themeMultiHint.textContent = countThemes >= MAX_SELECTED_THEMES
+        ? `${MAX_SELECTED_THEMES} thèmes sélectionnés · retirez-en un pour en choisir un autre.`
+        : `Sélectionnez jusqu’à ${MAX_SELECTED_THEMES} thèmes · seuls les thèmes compatibles restent proposés.`;
+    }
     if (theme) theme.value = countThemes === 1 ? selectedThemes[0] : "all";
   };
 
@@ -1414,14 +9839,14 @@
     themeMulti.innerHTML = `
       <button class="texts-theme-multi-trigger" type="button" aria-expanded="false" aria-controls="${theme.id}-menu"${themeLabel ? ` aria-labelledby="${themeLabel.id} ${theme.id}-summary"` : ""}>
         <span class="texts-theme-multi-summary" id="${theme.id}-summary" data-theme-multi-summary>Tous les thèmes</span>
-        <span class="texts-theme-multi-count" data-theme-multi-count hidden>0/2</span>
+        <span class="texts-theme-multi-count" data-theme-multi-count hidden>0/${MAX_SELECTED_THEMES}</span>
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="texts-theme-multi-menu" id="${theme.id}-menu" data-theme-multi-menu hidden>
         <div class="texts-theme-multi-selected" data-theme-multi-selected hidden></div>
         ${optionGroup("Notions au programme de Terminale", programThemes)}
         ${optionGroup("Thèmes complémentaires", complementaryThemes)}
-        <p class="texts-theme-multi-hint">Sélectionnez jusqu’à 2 thèmes · les résultats doivent correspondre aux deux.</p>
+        <p class="texts-theme-multi-hint" data-theme-multi-hint>Sélectionnez jusqu’à ${MAX_SELECTED_THEMES} thèmes · seuls les thèmes compatibles restent proposés.</p>
       </div>`;
     theme.insertAdjacentElement("afterend", themeMulti);
     themeMultiTrigger = themeMulti.querySelector(".texts-theme-multi-trigger");
@@ -1429,6 +9854,7 @@
     themeMultiSummary = themeMulti.querySelector("[data-theme-multi-summary]");
     themeMultiCount = themeMulti.querySelector("[data-theme-multi-count]");
     themeMultiSelected = themeMulti.querySelector("[data-theme-multi-selected]");
+    themeMultiHint = themeMulti.querySelector("[data-theme-multi-hint]");
 
     themeMultiTrigger?.addEventListener("click", () => {
       if (themeMultiMenu?.hidden) openThemeMulti();
@@ -1444,7 +9870,7 @@
       if (!input) return;
       const value = input.dataset.themeValue;
       if (input.checked) {
-        if (!selectedThemes.includes(value) && selectedThemes.length < 2) selectedThemes.push(value);
+        if (!selectedThemes.includes(value) && selectedThemes.length < MAX_SELECTED_THEMES && themeCandidateHasResults(value)) selectedThemes.push(value);
       } else {
         selectedThemes = selectedThemes.filter((item) => item !== value);
       }
@@ -1486,7 +9912,7 @@
     selectedThemes = params.getAll("theme")
       .map((value) => catalogThemes.find((item) => normalize(item) === normalize(value)))
       .filter((value, index, values) => value && values.indexOf(value) === index)
-      .slice(0, 2);
+      .slice(0, MAX_SELECTED_THEMES);
     updateThemeMultiUi();
   } else {
     setFromQuery(theme, params.get("theme"));
@@ -1532,7 +9958,7 @@
       <p class="text-card-section">${sectionSymbols}<span aria-hidden="true">•</span><span>${escapeHtml(sectionMeta)}</span></p>
       <h2>${title}</h2>
       <p class="text-card-author">${text.author
-        ? `<a href="${catalogUrl("auteur", text.author)}" data-filter-author="${escapeHtml(text.author)}" aria-label="Afficher les textes de ${escapeHtml(text.author)}">${text.author}</a>`
+        ? `<a href="${catalogUrl("auteur", text.author)}" data-filter-author="${escapeHtml(text.author)}" aria-label="Afficher les textes de ${escapeHtml(text.author)}">${escapeHtml(text.credit || text.author)}</a>`
         : `<a href="/textes/theologie/?source=${encodeURIComponent(text.source)}" data-filter-source="${escapeHtml(text.source || "")}" aria-label="Afficher les textes du corpus ${escapeHtml(text.source || "")}">${escapeHtml(text.source || "")}</a>`} · <cite>${text.work}</cite></p>
       <p class="text-card-description">${text.description}</p>
       <span class="text-card-arrow" aria-hidden="true">→</span>
@@ -1590,6 +10016,7 @@
   };
 
   const render = () => {
+    if (multiThemeEnabled) updateThemeMultiUi();
     const query = normalize(search?.value.trim() || "");
     const selectedSection = fixedSection === "all" ? (section?.value || "all") : fixedSection;
     const selectedThemeValues = multiThemeEnabled
@@ -1610,15 +10037,20 @@
     const directMatches = TEXTS.filter(matchesFilters);
     const directIds = new Set(directMatches.map((text) => text.id));
     const expandedIds = new Set(directIds);
+    const MAX_LINKED_COMPANIONS = 1;
+    const linkedCompanionIds = [];
     LINKED_TEXT_SETS.forEach((set) => {
-      if (set.texts.some((id) => directIds.has(id))) {
-        set.texts.forEach((id) => {
-          const companion = TEXTS.find((text) => text.id === id);
-          const companionMatchesThemes = companion && selectedThemeValues.every((themeName) => textThemes(companion).includes(themeName));
-          if (companion && companionMatchesThemes && (selectedSection === "all" || textSections(companion).includes(selectedSection))) expandedIds.add(id);
-        });
-      }
+      if (!set.texts.some((id) => directIds.has(id))) return;
+      set.texts.forEach((id) => {
+        if (linkedCompanionIds.length >= MAX_LINKED_COMPANIONS || directIds.has(id) || linkedCompanionIds.includes(id)) return;
+        const companion = TEXTS.find((text) => text.id === id);
+        const companionMatchesThemes = companion && selectedThemeValues.every((themeName) => textThemes(companion).includes(themeName));
+        if (companion && companionMatchesThemes && (selectedSection === "all" || textSections(companion).includes(selectedSection))) {
+          linkedCompanionIds.push(id);
+        }
+      });
     });
+    linkedCompanionIds.forEach((id) => expandedIds.add(id));
 
     const results = TEXTS.filter((text) => expandedIds.has(text.id));
     const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
@@ -1629,7 +10061,16 @@
     const pageIds = new Set(pageResults.map((text) => text.id));
     const groupedIds = new Set();
     const renderedSets = LINKED_TEXT_SETS.flatMap((set) => {
-      const texts = set.texts.map((id) => TEXTS.find((text) => text.id === id)).filter((text) => text && pageIds.has(text.id));
+      const availableTexts = set.texts
+        .map((id) => TEXTS.find((text) => text.id === id))
+        .filter((text) => text && pageIds.has(text.id));
+      if (availableTexts.length < 2) return [];
+
+      const texts = [
+        ...availableTexts.filter((text) => directIds.has(text.id)),
+        ...availableTexts.filter((text) => !directIds.has(text.id))
+      ].filter((text, index, items) => items.findIndex((item) => item.id === text.id) === index).slice(0, 2);
+
       if (texts.length < 2) return [];
       texts.forEach((text) => groupedIds.add(text.id));
       return [linkedSet(set, texts)];

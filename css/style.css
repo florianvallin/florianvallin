@@ -872,3 +872,17 @@ button { color: inherit; }
     height: 54px;
   }
 }
+
+/* Accueil — les mots repères de la carte de philosophie sont de vrais liens. */
+.info-tooltip-link {
+  color:var(--primary);
+  font-weight:600;
+  cursor:pointer;
+  text-decoration:none;
+  border-bottom:1px dotted rgba(108,99,255,.55);
+}
+.info-tooltip-link:hover,.info-tooltip-link:focus-visible {
+  color:var(--primary-dark);
+  outline:none;
+  border-bottom-style:solid;
+}

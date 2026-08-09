@@ -22,7 +22,7 @@
   const sectionMark = sections.map((section) => `<span class="text-detail-section-symbol text-detail-section-symbol--${section}">${sectionSymbols[section] || ""}</span>`).join("");
   const textUrl = window.FV_TEXT_URL || ((item) => `/textes/${encodeURIComponent(typeof item === "string" ? item : item.id)}/`);
   const cleanTextUrl = textUrl(text);
-  const textCredit = (item) => item.author || item.source || "";
+  const textCredit = (item) => item.credit || item.author || item.source || "";
   if (window.location.pathname.includes("/textes/lire/")) window.history.replaceState({}, "", cleanTextUrl);
 
   let returnUrl = "/textes/";
@@ -100,23 +100,30 @@
     work:text.work,
     publication:text.publication
   }];
+  const compassLinks = (() => {
+    const links = [];
+    if (sections.includes("philosophie")) {
+      links.push(`<a class="text-context-philo-compass" href="/textes/philosophie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole philosophique</strong><span class="text-context-philo-compass-meta">Époques · cartes · parcours</span></a>`);
+    }
+    if (text.bible) {
+      links.push(`<a class="text-context-bible-compass" href="/textes/bible/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole biblique</strong><span class="text-context-bible-compass-meta">Chronologie · livres · lieux · contexte</span></a>`);
+    }
+    return links.length ? `<div class="text-context-compasses">${links.join("")}</div>` : "";
+  })();
   const renderContext = (part) => {
     const guide = part.readingGuide || [];
     if (guide.length) {
       const isReligiousText = sections.includes("theologie");
-      const bibleCompass = text.bible
-        ? `<a class="text-context-bible-compass" href="/textes/bible/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole biblique</strong><span class="text-context-bible-compass-meta">Chronologie · livres · lieux · contexte</span></a>`
-        : "";
       return `<aside class="text-context" aria-label="Repères de lecture"><span class="text-context-label">Repères de lecture</span><ul class="text-context-guide">${guide.map((item) => {
         const withTextLinks = linkReferencedTextsInHtml(item.text || "");
         const content = isReligiousText && item.label === "Où sommes-nous ?" ? withTextLinks : linkThemesInHtml(withTextLinks);
         return `<li><strong>${item.label}</strong><span>${content}</span></li>`;
-      }).join("")}</ul>${bibleCompass}</aside>`;
+      }).join("")}</ul>${compassLinks}</aside>`;
     }
     const questions = (part.readingQuestions || []).length
       ? `<div class="text-context-questions"><span>Questions directrices</span><ul>${part.readingQuestions.map((question) => `<li>${linkThemesInHtml(question)}</li>`).join("")}</ul></div>`
       : "";
-    return part.context ? `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}</aside>` : "";
+    return part.context ? `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${compassLinks}</aside>` : "";
   };
   const firstContext = renderContext(readingParts[0]);
   let gallerySerial = 0;
@@ -240,6 +247,11 @@
     if (type === "opposition") {
       return `<section class="text-note text-note--opposition"><div class="text-note-poles"><div><strong>${note.left.term}</strong><p>${linkThemesInHtml(note.left.definition)}</p></div><div><strong>${note.right.term}</strong><p>${linkThemesInHtml(note.right.definition)}</p></div></div>${note.conclusion ? `<p class="text-note-conclusion">${linkThemesInHtml(note.conclusion)}</p>` : ""}</section>`;
     }
+    if (type === "comparison") {
+      const columns = note.columns || ["Position A", "Position B"];
+      const rows = (note.rows || []).map((row) => `<tr><td>${linkThemesInHtml(row[0] || "")}</td><td>${linkThemesInHtml(row[1] || "")}</td></tr>`).join("");
+      return `<section class="text-note text-note--comparison">${note.title ? `<strong class="text-note-comparison-title">${note.title}</strong>` : ""}<div class="text-note-comparison-wrap"><table><thead><tr><th>${columns[0]}</th><th>${columns[1]}</th></tr></thead><tbody>${rows}</tbody></table></div>${note.note ? `<p class="text-note-comparison-note">${linkThemesInHtml(note.note)}</p>` : ""}</section>`;
+    }
     if (type === "plain") {
       return `<p class="text-note-prose">${linkThemesInHtml(note.definition || "")}</p>`;
     }
@@ -248,13 +260,14 @@
       : "";
     const hideGenesisConceptBadge = text.id.startsWith("genese-") && type === "concept";
     const badge = hideGenesisConceptBadge || note.badge === false ? "" : (note.badge || noteBadges[type] || "");
-    const content = `<strong>${note.term}${badge ? ` <span>(${badge})</span>` : ""}</strong> : ${linkThemesInHtml(note.definition || "")}${items}`;
+    const termLabel = note.href ? `<a class="text-note-term-link" href="${note.href}">${note.term}</a>` : note.term;
+    const content = `<strong>${termLabel}${badge ? ` <span>(${badge})</span>` : ""}</strong> : ${linkThemesInHtml(note.definition || "")}${items}`;
     return type === "prose" ? `<p class="text-note-prose">${content}</p>` : `<li class="text-note">${content}</li>`;
   };
   let notesListOpen = false;
   const readingNotesContent = (text.readingNotes || []).reduce((html, note) => {
     const type = note.type || "analysis";
-    if (type === "opposition" || type === "prose" || type === "plain") {
+    if (type === "opposition" || type === "comparison" || type === "prose" || type === "plain") {
       if (notesListOpen) { html += "</ul>"; notesListOpen = false; }
       return `${html}${renderReadingNote(note, type)}`;
     }
@@ -274,7 +287,7 @@
     adverse: { label:"Thèse adverse" }
   };
   const relationOrder = ["suite", "identique", "proche", "adverse"];
-  const groupedRelations = (text.relatedTexts || []).reduce((groups, related) => {
+  const groupedRelations = (text.relatedTexts || []).slice(0, 2).reduce((groups, related) => {
     const targetText = (window.FV_TEXT_CATALOG || []).find((item) => item.id === related.id);
     if (!targetText) return groups;
     const kind = relationInfo[related.kind] ? related.kind : "proche";
@@ -283,20 +296,30 @@
   }, {});
   const relatedGroups = relationOrder.filter((kind) => groupedRelations[kind]?.length).map((kind) => {
     const relation = relationInfo[kind];
-    const links = groupedRelations[kind].map((related) => `<li><a href="${textUrl(related.id)}">${related.label}</a><span>${related.relation}</span></li>`).join("");
+    const links = groupedRelations[kind].map((related) => `<li><a href="${textUrl(related.id)}">${related.label}</a><span>${linkThemesInHtml(related.relation || "")}</span></li>`).join("");
     return `<section class="text-relation-group text-relation-group--${kind} text-disclosure"><button class="text-relation-group-heading text-disclosure-trigger" type="button" aria-expanded="false"><i class="text-relation-kind-icon" aria-hidden="true"></i><strong>${relation.label}</strong><i class="text-relation-toggle" aria-hidden="true"></i></button><div class="text-disclosure-panel"><div class="text-disclosure-panel-inner"><ul>${links}</ul></div></div></section>`;
   }).join("");
   const related = relatedGroups ? `<aside class="text-relations" aria-label="Parcours de lecture associé"><span class="text-relations-heading">Poursuivre la réflexion</span>${relatedGroups}</aside>` : "";
-  const readingPath = (window.FV_TEXT_PATHS || []).find((path) => path.texts.includes(text.id));
-  const pathIndex = readingPath ? readingPath.texts.indexOf(text.id) : -1;
-  const nextText = readingPath && pathIndex < readingPath.texts.length - 1
-    ? (window.FV_TEXT_CATALOG || []).find((item) => item.id === readingPath.texts[pathIndex + 1])
-    : null;
-  const pathNavigation = readingPath ? `<nav class="text-path-navigation" aria-label="Continuer le parcours ${readingPath.label}">
-    <div class="text-path-navigation-copy"><span>Parcours de lecture</span><strong>${readingPath.label}</strong><small>Étape ${pathIndex + 1} sur ${readingPath.texts.length}</small></div>
+  const allCatalogTexts = window.FV_TEXT_CATALOG || [];
+  const programThemes = window.FV_CURRENT_PROGRAM_THEMES || [];
+  const legacyReadingPath = (window.FV_TEXT_PATHS || []).find((path) => path.texts.includes(text.id));
+  const legacyTheme = legacyReadingPath?.id === "bonheur" ? "Bonheur" : legacyReadingPath?.id === "amour" ? "Amour" : "";
+  const preferredTheme = legacyTheme || (text.themes || []).find((theme) => programThemes.includes(theme)) || (text.themes || [])[0] || "";
+  const pathSlug = preferredTheme.toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const themePathTexts = legacyReadingPath
+    ? legacyReadingPath.texts.map((id) => allCatalogTexts.find((item) => item.id === id)).filter(Boolean)
+    : preferredTheme
+      ? allCatalogTexts.filter((item) => (item.sections || [item.section]).includes("philosophie") && (item.themes || []).includes(preferredTheme))
+      : [];
+  const pathIndex = themePathTexts.findIndex((item) => item.id === text.id);
+  const nextText = pathIndex >= 0 && pathIndex < themePathTexts.length - 1 ? themePathTexts[pathIndex + 1] : null;
+  const pathLabel = legacyReadingPath?.label || (preferredTheme ? `Parcours « ${preferredTheme} »` : "");
+  const pathCompassUrl = pathSlug ? `/textes/philosophie/boussole/?parcours=${encodeURIComponent(pathSlug)}&texte=${encodeURIComponent(text.id)}#parcours-${encodeURIComponent(pathSlug)}` : "";
+  const pathNavigation = pathCompassUrl && pathIndex >= 0 ? `<nav class="text-path-navigation" aria-label="Continuer le parcours ${pathLabel}">
+    <a class="text-path-navigation-copy" href="${pathCompassUrl}" aria-label="Voir ${pathLabel} dans la Boussole philosophique"><span class="text-path-navigation-compass-link"><span>Parcours de lecture</span><i aria-hidden="true">↗</i></span><strong>${pathLabel}</strong><small>Étape ${pathIndex + 1} sur ${themePathTexts.length}</small></a>
     ${nextText
       ? `<a href="${textUrl(nextText)}"><span>Texte suivant</span><strong>${textCredit(nextText)} — ${nextText.title}</strong><i aria-hidden="true">→</i></a>`
-      : `<a href="${returnUrl}"><span>Parcours terminé</span><strong>Revenir aux résultats</strong><i aria-hidden="true">→</i></a>`}
+      : `<a href="${pathCompassUrl}"><span>Parcours terminé</span><strong>Revoir le parcours complet</strong><i aria-hidden="true">→</i></a>`}
   </nav>` : "";
   document.title = `${text.title} — ${textCredit(text)} | Florian Vallin`;
   let canonical = document.querySelector('link[rel="canonical"]');
@@ -318,7 +341,7 @@
     <p class="text-detail-section text-detail-section--${text.section}${isDualSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
     <h1>${text.title}${text.familiarIdea ? ` <span class="text-detail-familiar-idea">(${text.familiarIdea})</span>` : ""}</h1>
     <p class="text-detail-author">${text.author
-      ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${text.author}">${text.author}</a>`
+      ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${escapeAttribute(text.author)}">${escapeAttribute(text.credit || text.author)}</a>`
       : `<a class="text-detail-author-link" href="/textes/theologie/?source=${encodeURIComponent(text.source || "")}" aria-label="Voir les textes du corpus ${escapeAttribute(text.source || "")}">${text.source || ""}</a>`}${text.headerReference ? ` <span class="text-detail-work-reference">${text.headerReference}</span>` : ""}${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}</p>
     <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>
     ${firstContext}
