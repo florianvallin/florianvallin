@@ -72,6 +72,25 @@
     }).join("");
   };
   const escapeAttribute = (value) => String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  // Keep contextual navigation useful without turning repeated vocabulary into link noise.
+  // The helper is called independently for each block, so the first link may reappear
+  // in “Aller encore plus loin” even when the same target was already linked in “Repères de lecture”.
+  const dedupeLinksByHref = (html) => {
+    if (!html || !html.includes("<a")) return html;
+    const template = document.createElement("template");
+    template.innerHTML = html;
+    const seen = new Set();
+    template.content.querySelectorAll("a[href]").forEach((anchor) => {
+      const href = anchor.getAttribute("href") || "";
+      if (!href) return;
+      if (seen.has(href)) {
+        anchor.replaceWith(...anchor.childNodes);
+      } else {
+        seen.add(href);
+      }
+    });
+    return template.innerHTML;
+  };
   // A definition is useful at its first encounter in the excerpt; repeating
   // the tooltip on every occurrence makes the text visually noisy.
   const definedGlossaryTerms = new Set();
@@ -106,7 +125,7 @@
       links.push(`<a class="text-context-philo-compass" href="/textes/philosophie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole philosophique</strong><span class="text-context-philo-compass-meta">Époques · cartes · parcours</span></a>`);
     }
     if (text.bible) {
-      links.push(`<a class="text-context-bible-compass" href="/textes/bible/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole biblique</strong><span class="text-context-bible-compass-meta">Chronologie · livres · lieux · contexte</span></a>`);
+      links.push(`<a class="text-context-bible-compass" href="/textes/theologie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole biblique</strong><span class="text-context-bible-compass-meta">Chronologie · livres · lieux · contexte</span></a>`);
     }
     return links.length ? `<div class="text-context-compasses">${links.join("")}</div>` : "";
   })();
@@ -114,16 +133,19 @@
     const guide = part.readingGuide || [];
     if (guide.length) {
       const isReligiousText = sections.includes("theologie");
-      return `<aside class="text-context" aria-label="Repères de lecture"><span class="text-context-label">Repères de lecture</span><ul class="text-context-guide">${guide.map((item) => {
+      const block = `<aside class="text-context" aria-label="Repères de lecture"><span class="text-context-label">Repères de lecture</span><ul class="text-context-guide">${guide.map((item) => {
         const withTextLinks = linkReferencedTextsInHtml(item.text || "");
         const content = isReligiousText && item.label === "Où sommes-nous ?" ? withTextLinks : linkThemesInHtml(withTextLinks);
         return `<li><strong>${item.label}</strong><span>${content}</span></li>`;
       }).join("")}</ul>${compassLinks}</aside>`;
+      return dedupeLinksByHref(block);
     }
     const questions = (part.readingQuestions || []).length
       ? `<div class="text-context-questions"><span>Questions directrices</span><ul>${part.readingQuestions.map((question) => `<li>${linkThemesInHtml(question)}</li>`).join("")}</ul></div>`
       : "";
-    return part.context ? `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${compassLinks}</aside>` : "";
+    if (!part.context) return "";
+    const block = `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${compassLinks}</aside>`;
+    return dedupeLinksByHref(block);
   };
   const firstContext = renderContext(readingParts[0]);
   let gallerySerial = 0;
@@ -274,8 +296,9 @@
     if (!notesListOpen) { html += '<ul class="text-notes-list">'; notesListOpen = true; }
     return `${html}${renderReadingNote(note, type)}`;
   }, "") + (notesListOpen ? "</ul>" : "");
-  const readingNotes = readingNotesContent
-    ? `<section class="text-reading-notes text-disclosure"><button class="text-disclosure-trigger" type="button" aria-expanded="false"><span>Aller encore plus loin</span><i aria-hidden="true"></i></button><div class="text-disclosure-panel"><div class="text-disclosure-panel-inner text-reading-notes-content">${readingNotesContent}</div></div></section>`
+  const dedupedReadingNotesContent = dedupeLinksByHref(readingNotesContent);
+  const readingNotes = dedupedReadingNotesContent
+    ? `<section class="text-reading-notes text-disclosure"><button class="text-disclosure-trigger" type="button" aria-expanded="false"><span>Aller encore plus loin</span><i aria-hidden="true"></i></button><div class="text-disclosure-panel"><div class="text-disclosure-panel-inner text-reading-notes-content">${dedupedReadingNotesContent}</div></div></section>`
     : "";
   const artworkGallery = (text.artworks || []).length
     ? renderArtworkGallery({ title:text.artworksTitle || "Le mythe de l’androgyne en images", artworks:text.artworks })

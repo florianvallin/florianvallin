@@ -449,6 +449,86 @@
   ]
 },
     {
+  "id": "descartes-maitres-possesseurs-nature",
+  "section": "philosophie",
+  "cardMeta": "Technique · maîtrise de la nature",
+  "title": "La science doit devenir une philosophie pratique",
+  "author": "René Descartes",
+  "authorTag": "Descartes",
+  "cardHighlight": "philosophie pratique",
+  "familiarIdea": "« maîtres et possesseurs de la nature »",
+  "authorMeta": "(1596–1650) · rationalisme",
+  "themes": [
+    "Technique",
+    "Nature"
+  ],
+  "work": "Discours de la méthode",
+  "publication": "1637, VIe partie",
+  "description": "À quoi doit servir la connaissance scientifique de la nature : comprendre seulement, ou aussi améliorer concrètement la vie humaine ?",
+  "context": "Descartes oppose ici une <strong>philosophie spéculative</strong>, principalement tournée vers la connaissance, à une <strong>philosophie pratique</strong> capable d’employer les forces de la nature au bénéfice des êtres humains. Ce passage, fréquemment proposé en Terminale dans la notion de technique, permet aussi de relire la Genèse : l’être humain y reçoit la mission de « soumettre » la terre, mais aussi de « travailler et garder » le jardin.",
+  "readingQuestions": [
+    "Pourquoi Descartes oppose-t-il une philosophie <strong>spéculative</strong> à une philosophie <strong>pratique</strong> ?",
+    "Que signifie exactement l’expression <strong>« comme maîtres et possesseurs de la nature »</strong> ?",
+    "Quelles fins Descartes assigne-t-il à la connaissance et aux techniques ?"
+  ],
+  "glossary": [
+    {
+      "term": "spéculatif / pratique",
+      "definition": "Est spéculatif ce qui vise d’abord la connaissance ; est pratique ce qui vise l’action et la transformation effective de nos conditions de vie."
+    },
+    {
+      "term": "artifice",
+      "definition": "Objet, procédé ou dispositif produit par l’habileté technique humaine, par opposition à ce qui existe spontanément dans la nature."
+    },
+    {
+      "term": "maîtrise",
+      "definition": "Pouvoir acquis grâce à la connaissance des causes et des forces naturelles, qui permet de les employer à des fins humaines."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Philosophie spéculative",
+        "definition": "Elle cherche principalement à connaître et à expliquer."
+      },
+      "right": {
+        "term": "Philosophie pratique",
+        "definition": "Elle transforme la connaissance en moyens d’agir sur la nature et d’améliorer la vie."
+      },
+      "conclusion": "Pour Descartes, la science moderne prend toute sa portée lorsqu’elle devient utilisable."
+    },
+    {
+      "type": "analysis",
+      "term": "Le mot « comme »",
+      "definition": "Descartes n’écrit pas que l’être humain est absolument maître de la nature : il peut devenir <em>comme</em> maître et possesseur en apprenant à employer ses forces. Cette nuance est particulièrement intéressante face à la Genèse, où la maîtrise humaine reste celle d’une créature dans un monde qu’elle n’a pas créé."
+    },
+    {
+      "type": "analysis",
+      "term": "Une maîtrise orientée vers des fins",
+      "definition": "Le texte ne célèbre pas la puissance technique pour elle-même : Descartes évoque les commodités de la vie et surtout la conservation de la santé. La question philosophique devient donc aussi celle des fins auxquelles nous employons notre pouvoir technique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "genese-naissance-du-monde",
+      "kind": "proche",
+      "label": "Genèse — La naissance du monde",
+      "relation": "Le commandement de « soumettre » la terre et la mission de « travailler et garder » le jardin permettent d’interroger la portée et les limites de la maîtrise humaine de la nature."
+    },
+    {
+      "id": "descartes-organisme-machine",
+      "kind": "proche",
+      "label": "Descartes — L’organisme comme machine",
+      "relation": "Les deux passages reposent sur le même projet : connaître les mécanismes naturels assez précisément pour les expliquer et, ici, les employer."
+    }
+  ],
+  "paragraphs": [
+    "Mais, sitôt que j’ai eu acquis quelques notions générales touchant la physique […] elles m’ont fait voir qu’il est possible de parvenir à des connaissances qui soient fort utiles à la vie, et qu’au lieu de cette philosophie spéculative, qu’on enseigne dans les écoles, on peut en trouver une pratique, par laquelle connaissant la force et les actions du feu, de l’eau, de l’air, des astres, des cieux et de tous les autres corps qui nous environnent, aussi distinctement que nous connaissons les divers métiers de nos artisans, nous les pourrions employer en même façon à tous les usages auxquels ils sont propres et ainsi nous rendre comme maîtres et possesseurs de la nature.",
+    "Ce qui n’est pas seulement à désirer pour l’invention d’une infinité d’artifices, qui feraient qu’on jouirait, sans aucune peine, des fruits de la terre et de toutes les commodités qui s’y trouvent, mais principalement aussi pour la conservation de la santé, laquelle est sans doute le premier bien et le fondement de tous les autres biens de cette vie ; car même l’esprit dépend si fort du tempérament et de la disposition des organes du corps que, s’il est possible de trouver quelque moyen qui rende communément les hommes plus sages et plus habiles qu’ils n’ont été jusqu’ici, je crois que c’est dans la médecine qu’on doit le chercher."
+  ]
+},
+    {
   "id": "descartes-organisme-machine",
   "section": "philosophie",
   "cardMeta": "Nature · organisme et machine",
@@ -1292,6 +1372,10 @@
     {
   "id": "pascal-solitude-misere-recherche-dieu",
   "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
   "cardMeta": "Religion · misère et quête de sens",
   "title": "La solitude et la misère de l’homme le poussent à chercher Dieu",
   "author": "Blaise Pascal",
@@ -1351,6 +1435,10 @@
     {
   "id": "anselme-preuve-ontologique-dieu",
   "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
   "cardMeta": "Religion · preuve ontologique",
   "title": "Dieu existe en vertu même de sa définition",
   "author": "Saint Anselme de Cantorbéry",
@@ -1416,6 +1504,7 @@
   "author": "David Hume",
   "authorTag": "Hume",
   "cardHighlight": "le monde n’est pas parfait",
+  "familiarIdea": "le problème du mal",
   "authorMeta": "(1711–1776) · empirisme / scepticisme",
   "themes": [
     "Religion",
@@ -1478,8 +1567,97 @@
   "familiarIdea": "le problème du mal"
 },
     {
+  "id": "leibniz-raison-existence-monde",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
+  "cardMeta": "Religion · raison suffisante",
+  "title": "Le monde doit avoir une raison de son existence",
+  "author": "Gottfried Wilhelm Leibniz",
+  "authorTag": "Leibniz",
+  "cardHighlight": "raison de son existence",
+  "familiarIdea": "le principe de raison suffisante",
+  "authorMeta": "(1646–1716) · rationalisme",
+  "themes": [
+    "Religion",
+    "Raison"
+  ],
+  "work": "Essais de Théodicée",
+  "publication": "1710, première partie, § 7",
+  "description": "Pourquoi l’ensemble des choses contingentes ne peut-il pas contenir en lui-même la raison suffisante de sa propre existence ?",
+  "context": "Dans ce passage proposé en philosophie de Terminale parmi les textes sur la religion et la preuve de Dieu, Leibniz part du caractère <strong>contingent</strong> des choses du monde : elles existent, mais auraient pu être autrement. Il demande alors où trouver la raison de l’existence de l’ensemble du monde et remonte à une substance qui porte en elle la raison de son existence. Le texte donne une formulation philosophique très directe à la question que la Genèse ouvre autrement : <strong>pourquoi y a-t-il un monde ?</strong>",
+  "readingQuestions": [
+    "Pourquoi les choses du monde sont-elles dites <strong>contingentes</strong> ?",
+    "Pourquoi l’assemblage de toutes les choses contingentes ne suffit-il pas, selon Leibniz, à expliquer son existence ?",
+    "Comment Leibniz passe-t-il de la recherche d’une raison du monde à l’affirmation d’un être nécessaire ?"
+  ],
+  "glossary": [
+    {
+      "term": "contingent",
+      "definition": "Ce qui existe mais aurait pu ne pas exister ou être autrement."
+    },
+    {
+      "term": "nécessaire",
+      "definition": "Ce qui ne peut pas ne pas être et dont l’existence ne dépend pas d’une autre chose."
+    },
+    {
+      "term": "raison suffisante",
+      "definition": "Principe selon lequel rien n’est sans qu’il y ait une raison permettant d’expliquer pourquoi cela est ainsi plutôt qu’autrement."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Contingent",
+        "definition": "Le monde et les choses qu’il contient auraient pu être autrement."
+      },
+      "right": {
+        "term": "Nécessaire",
+        "definition": "La raison ultime recherchée doit porter en elle-même la raison de son existence."
+      },
+      "conclusion": "Leibniz refuse donc de faire de l’existence du monde un simple fait sans raison."
+    },
+    {
+      "type": "analysis",
+      "term": "Changer de niveau d’explication",
+      "definition": "Expliquer une chose du monde par une autre chose du monde ne répond pas encore à la question de savoir pourquoi l’ensemble des choses contingentes existe. Leibniz déplace donc la recherche vers une raison qui ne soit pas elle-même contingente."
+    },
+    {
+      "type": "analysis",
+      "term": "De la création au problème métaphysique",
+      "definition": "La Genèse affirme que le monde vient de Dieu ; Leibniz cherche, lui, à construire un raisonnement permettant de passer de la contingence du monde à une première raison nécessaire. Les deux textes ne procèdent donc pas de la même manière, mais se rencontrent sur la question de l’origine."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "genese-naissance-du-monde",
+      "kind": "proche",
+      "label": "Genèse — La naissance du monde",
+      "relation": "La Genèse affirme un commencement créé ; Leibniz transforme cette origine en question métaphysique sur la raison de l’existence du monde."
+    },
+    {
+      "id": "anselme-preuve-ontologique-dieu",
+      "kind": "proche",
+      "label": "Saint Anselme — Dieu existe en vertu même de sa définition",
+      "relation": "Anselme et Leibniz cherchent tous deux à établir rationnellement l’existence de Dieu, mais l’un part du concept de Dieu tandis que l’autre part de la contingence du monde."
+    }
+  ],
+  "paragraphs": [
+    "Dieu est la première raison des choses : car celles qui sont bornées, comme tout ce que nous voyons et expérimentons, sont contingentes et n’ont rien en elles qui rende leur existence nécessaire, étant manifeste que le temps, l’espace et la matière, unies et uniformes en elles-mêmes et indifférentes à tout, pouvaient recevoir de tout autres mouvements et figures, et dans un autre ordre.",
+    "Il faut donc chercher la raison de l’existence du monde, qui est l’assemblage entier des choses contingentes, et il faut la chercher dans la substance qui porte la raison de son existence avec elle, et laquelle par conséquent est nécessaire et éternelle. […] Et c’est la puissance de cette substance qui en rend la volonté efficace. La puissance va à l’être, la sagesse ou l’entendement au vrai, et la volonté au bien.",
+    "Et cette cause intelligente doit être infinie de toutes les manières et absolument parfaite en puissance, en sagesse et en bonté, puisqu’elle va à tout ce qui est possible. Et comme tout est lié, il n’y a pas lieu d’en admettre plus d’une. Son entendement est la source des essences et sa volonté est l’origine des existences. Voilà en peu de mots la preuve d’un Dieu unique avec ses perfections, et par lui l’origine des choses."
+  ]
+},
+    {
   "id": "leibniz-meilleur-mondes-possibles",
   "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
   "cardMeta": "Religion · théodicée",
   "title": "Dieu a créé le meilleur des mondes possibles",
   "author": "Gottfried Wilhelm Leibniz",
@@ -1541,6 +1719,10 @@
     {
   "id": "pascal-coeur-raison-foi",
   "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
   "cardMeta": "Religion · foi et raison",
   "title": "La raison ne peut comprendre la foi",
   "author": "Blaise Pascal",
@@ -4999,6 +5181,90 @@
   ]
 },
     {
+  "id": "augustin-temps-creation-monde",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "theologie"
+  ],
+  "cardMeta": "Temps · création",
+  "title": "Il n’y a pas de temps avant la création du monde",
+  "author": "Saint Augustin",
+  "authorTag": "Augustin",
+  "cardHighlight": "pas de temps avant la création",
+  "authorMeta": "(354–430) · augustinisme",
+  "themes": [
+    "Temps",
+    "Religion"
+  ],
+  "work": "Les Confessions",
+  "publication": "v. 397–400, livre XI, chap. XIII, §§ 15–16, éd. Poujoulat et Raulx, 1864",
+  "description": "Peut-il y avoir un « avant » du monde si le temps lui-même appartient à ce qui a été créé ?",
+  "context": "Le livre XI des <em>Confessions</em> prend pour point de départ les premières paroles de la <strong>Genèse</strong>. Augustin répond à une objection classique : que faisait Dieu avant de créer le ciel et la terre ? Sa réponse consiste à montrer que la question suppose déjà ce qu’elle cherche à penser : un temps antérieur au monde. Or, si le temps appartient lui-même à la création, il ne peut y avoir d’« avant » temporel de la création. Ce passage constitue une entrée classique de Terminale dans le problème du <strong>temps</strong> et de l’<strong>éternité</strong>.",
+  "readingQuestions": [
+    "Pourquoi demander ce que Dieu faisait <strong>avant</strong> la création suppose-t-il déjà l’existence du temps ?",
+    "En quel sens Augustin affirme-t-il que le temps lui-même a un commencement ?",
+    "Pourquoi l’<strong>éternité</strong> de Dieu ne doit-elle pas être comprise comme un temps infiniment long ?"
+  ],
+  "glossary": [
+    {
+      "term": "éternité",
+      "definition": "Chez Augustin, elle ne désigne pas une durée sans fin mais un mode d’être qui ne passe pas et n’est pas soumis à la succession temporelle."
+    },
+    {
+      "term": "succession",
+      "definition": "Ordre selon lequel les moments se remplacent les uns les autres : avant, maintenant, après."
+    },
+    {
+      "term": "création",
+      "definition": "Acte par lequel Dieu donne l’être au monde ; dans ce passage, le temps lui-même appartient à l’ordre créé."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "analysis",
+      "term": "Un faux « avant »",
+      "definition": "La difficulté vient du langage : demander ce qu’il y avait <em>avant</em> la création semble placer Dieu et le monde sur une même ligne temporelle. Augustin refuse précisément cette représentation."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Temps",
+        "definition": "Il implique passage et succession : les moments viennent et disparaissent."
+      },
+      "right": {
+        "term": "Éternité",
+        "definition": "Elle ne passe pas et ne se compose pas d’une succession d’instants."
+      },
+      "conclusion": "Dieu ne précède donc pas le monde comme un instant en précède un autre."
+    },
+    {
+      "type": "analysis",
+      "term": "« Au commencement »",
+      "definition": "Le début de la Genèse ne signifie plus seulement qu’un événement aurait eu lieu au premier instant d’un temps déjà là : chez Augustin, le commencement du monde est aussi le commencement du temps créé."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "genese-naissance-du-monde",
+      "kind": "proche",
+      "label": "Genèse — La naissance du monde",
+      "relation": "Augustin part directement de « Au commencement, Dieu créa le ciel et la terre » pour demander ce que peut signifier un commencement du monde."
+    },
+    {
+      "id": "aristote-temps-nombre-mouvement",
+      "kind": "proche",
+      "label": "Aristote — Le temps comme nombre du mouvement",
+      "relation": "Aristote pense le temps à partir du mouvement et de l’avant/après ; Augustin déplace ici la question vers la création et l’éternité."
+    }
+  ],
+  "paragraphs": [
+    "Puisque vous êtes l’artisan de tous les temps, si l’on suppose quelque temps avant que vous eussiez créé le ciel et la terre, pourquoi donc prétendre que vous demeuriez dans l’inaction ? Car ce temps même était votre ouvrage, et nul temps n’a pu courir avant que vous eussiez fait le temps. Que si avant le ciel et la terre il n’était point de temps, pourquoi demander ce que vous faisiez alors ? Car, où le temps n’était pas, alors ne pouvait être.",
+    "Et ce n’est point par le temps que vous précédez les temps, autrement vous ne seriez pas avant tous les temps. Mais vous précédez les temps passés par l’éminence de votre éternité toujours présente ; vous dominez les temps à venir, parce qu’ils sont à venir, et qu’aussitôt venus, ils seront passés.",
+    "Vos années demeurent toutes à la fois, parce qu’elles demeurent. Elles ne se chassent pas pour se succéder, parce qu’elles ne passent pas. […] Vous avez fait tous les temps, et vous êtes avant tous les temps, et il ne fut pas de temps où le temps n’était pas."
+  ]
+},
+    {
   "id": "augustin-dieu-bonheur",
   "section": "philosophie",
   "sections": [
@@ -5788,6 +6054,7 @@
       cardMeta:"Récit biblique",
       title:"La naissance du monde", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 1–2",
       cardHighlight:"la naissance du monde",
+      familiarIdea:"« Au commencement »",
       authorMeta:"Bible hébraïque · Pentateuque",
       themes:["Nature", "Religion", "Autrui"], work:"Genèse 1–2", publication:"1,1–2,4 et 2,7–25",
       description:"Que signifient les deux récits de la création du monde et de l’être humain placés au commencement de la Genèse ?",
@@ -5800,6 +6067,10 @@
         { type:"opposition", left:{ term:"La science", definition:"Elle cherche à expliquer à partir de quoi et comment sont apparus les astres, les plantes, les animaux et les êtres humains." }, right:{ term:"Le récit de la Genèse", definition:"Il demande pourquoi l’univers et l’humanité existent, vers quoi ils vont et quel sens possède leur histoire." }, conclusion:"L’introduction de l’édition distingue ainsi l’explication des phénomènes et l’interrogation sur leur sens." },
         { type:"concept", term:"Une poésie liturgique", definition:"Le premier récit ne prétend pas rapporter scientifiquement le déroulement matériel de la Création. Sa forme rythmée — parole, accomplissement, jugement de bonté, soir et matin — exprime symboliquement que le monde vient de Dieu et reçoit de lui son ordre." },
         { type:"concept", term:"Le cadre symbolique de la semaine", definition:"Les six jours déploient progressivement le tableau du monde ; le septième, béni et rendu sacré, consacre l’achèvement de l’œuvre créatrice et le repos de Dieu." },
+        { type:"plain", definition:"<strong>Ouvertures philosophiques.</strong> Le récit peut être prolongé par trois problèmes classiques : le commencement du temps, la raison de l’existence du monde et la place de l’être humain face à la nature." },
+        { type:"analysis", term:"Saint Augustin — Le temps commence-t-il avec le monde ?", badge:"philosophie", href:"/textes/augustin-temps-creation-monde/", definition:"Augustin part directement du « Au commencement » de la Genèse : demander ce que Dieu faisait « avant » la création suppose déjà un temps qui, selon lui, appartient lui-même au monde créé." },
+        { type:"analysis", term:"Leibniz — Pourquoi le monde existe-t-il ?", badge:"philosophie", href:"/textes/leibniz-raison-existence-monde/", definition:"Leibniz transforme l’origine du monde en problème de raison suffisante : si le monde est contingent, peut-il contenir en lui-même la raison de sa propre existence ?" },
+        { type:"analysis", term:"Descartes — Devenir « comme maîtres et possesseurs de la nature »", badge:"philosophie", href:"/textes/descartes-maitres-possesseurs-nature/", definition:"Le commandement de « soumettre » la terre peut être mis en regard du projet cartésien de maîtriser les forces naturelles — tandis que Genèse 2 demande aussi à l’être humain de « travailler et garder » le jardin." },
       ],
       readingBlocks:[
         { type:"heading", text:"Premier récit — la Création en sept jours" },
@@ -5905,6 +6176,7 @@
       cardMeta:"Récit biblique",
       title:"La Chute", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 3",
       cardHighlight:"la Chute",
+      familiarIdea:"le fruit défendu",
       authorMeta:"Bible hébraïque · Pentateuque",
       themes:["Liberté", "Conscience", "Religion", "Travail", "Désir"], work:"Genèse 3", publication:"3,1–24",
       description:"Comment le récit de la Chute met-il en scène la tentation, la faute, la honte et les ruptures qui en découlent ?",
@@ -5971,6 +6243,7 @@
       cardMeta:"Récit biblique",
       title:"Caïn et Abel", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 4",
       cardHighlight:"Caïn et Abel",
+      familiarIdea:"« Suis-je le gardien de mon frère ? »",
       authorMeta:"Bible hébraïque · Pentateuque",
       themes:["Justice", "Liberté", "Autrui", "Religion"], work:"Genèse 4", publication:"4,1–15",
       description:"Comment la jalousie transforme-t-elle le frère en rival, et que signifie être responsable de l’autre ?",
@@ -9353,7 +9626,293 @@
             "La grande ressemblance entre le goût intellectuel et le goût corporel nous apprendra aisément à mettre cette histoire en pratique.",
             "Bien qu’il soit certain que la beauté et la laideur ne soient pas, davantage encore que la douceur et l’amertume, des qualités des objets mais proviennent entièrement du sentiment interne ou externe, on doit reconnaître qu’il existe certaines qualités dans les objets qui sont conçues par nature pour produire ces impressions particulières. Comme on peut trouver ces qualités à un faible degré ou bien mélangées ou confondues les unes avec les autres, il arrive souvent que le goût ne soit point affecté avec des qualités aussi menues ou ne soit pas capable de distinguer toutes les saveurs particulières dans le désordre au sein duquel elles sont présentées. Là où les organes sont si raffinés qu’ils permettent que rien ne leur échappe, et en même temps si précis qu’ils perçoivent chaque ingrédient de la composition, nous nommerons cela délicatesse de goût […]."
       ]
-}
+},
+{
+      id:"genese-deluge", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Le Déluge", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 6–8",
+      cardHighlight:"Le Déluge",
+      familiarIdea:"l’arche de Noé",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Justice", "Religion"], work:"Genèse 6–8", publication:"6,5–10.13–19.21–22 ; 7,11–24 ; 8,1–13.20–22",
+      description:"Comment le récit du Déluge articule-t-il le jugement de la violence humaine, le salut de Noé et la promesse d’un recommencement ?",
+      context:"Après Caïn et Abel, la Genèse décrit une humanité gagnée par la violence. Le Déluge prend alors la forme d’un jugement, mais le récit ne s’arrête pas à la destruction : Noé trouve grâce, l’arche préserve les vivants, les eaux se retirent et Dieu promet de ne plus frapper tous les êtres comme il l’a fait. Le récit met ainsi en tension la gravité du mal, la justice et la possibilité d’un recommencement.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 6–8</strong>, après le récit de Caïn et Abel et les généalogies qui conduisent jusqu’à Noé. Le texte raconte la corruption de la terre, la construction de l’arche, le Déluge puis le retrait des eaux. L’alliance avec Noé sera ensuite développée en Genèse 9." },
+        { label:"Piste philosophique", text:"Le passage met en tension <strong>justice et miséricorde</strong> : comment juger une violence devenue générale sans réduire la justice à la destruction ? Il interroge aussi la responsabilité humaine, la possibilité d’un nouveau commencement et la manière dont une promesse peut poser une limite à la logique du châtiment." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"« La terre est remplie de violence »", definition:"Le Déluge n’est pas présenté comme un événement arbitraire : le texte relie explicitement le jugement à une violence devenue générale. Le désordre humain atteint ainsi la terre elle-même." },
+        { type:"concept", term:"« Noé trouva grâce »", definition:"Au milieu d’un monde corrompu, Noé est décrit comme juste et marchant avec Dieu. Le salut apparaît donc à l’intérieur même du jugement : l’arche conserve une possibilité de vie et de recommencement." },
+        { type:"concept", term:"« Dieu se souvint de Noé »", definition:"Dans le langage biblique, cette formule ne signifie pas que Dieu aurait oublié Noé. Elle marque le moment où sa fidélité devient action : le vent se lève, les eaux commencent à se retirer et le monde redevient habitable." },
+        { type:"concept", term:"« Plus jamais »", definition:"À la fin du récit, Dieu constate que le cœur humain demeure incliné au mal, mais il promet pourtant de ne plus frapper tous les vivants. Le jugement débouche ainsi sur une limite posée à la destruction, que l’alliance de Genèse 9 développera explicitement." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La violence et la grâce", range:"6,5–10", marker:"5", aria:"Genèse 6, verset 5", text:"Le Seigneur vit que la méchanceté de l’homme était grande sur la terre, et que toutes les pensées de son cœur se portaient uniquement vers le mal à longueur de journée." },
+        { type:"verse", marker:"6", aria:"Genèse 6, verset 6", text:"Le Seigneur regretta d’avoir fait l’homme, et de l’avoir mis sur la terre ; il s’en affligea et il dit :" },
+        { type:"verse", marker:"7", aria:"Genèse 6, verset 7", text:"« Je vais effacer de la surface du sol les hommes que j’ai créés — et, avec les hommes, les bestiaux, les bestioles et les oiseaux du ciel — car je regrette de les avoir faits. »" },
+        { type:"verse", marker:"8", aria:"Genèse 6, verset 8", text:"Mais Noé trouva grâce aux yeux du Seigneur." },
+        { type:"verse", marker:"9", aria:"Genèse 6, verset 9", text:"Voici l’histoire de Noé : Noé était un homme juste, parfait parmi ceux de sa génération ; il marchait avec Dieu." },
+        { type:"verse", marker:"10", aria:"Genèse 6, verset 10", text:"Noé engendra trois fils, Sem, Cham et Japhet." },
+        { type:"omission", text:"[…]" },
+
+        { type:"movementStart", title:"L’arche et l’alliance", range:"6,13–19.21–22", marker:"13", aria:"Genèse 6, verset 13", text:"Dieu dit à Noé : « La fin de toute chair est arrivée pour moi, car la terre est remplie de violence à cause d’eux : voici que je vais les détruire ainsi que la terre." },
+        { type:"verse", marker:"14", aria:"Genèse 6, verset 14", text:"Fais-toi une arche en bois de cyprès. Tu disposeras l’arche en cellules et tu l’enduiras de bitume à l’intérieur et à l’extérieur." },
+        { type:"verse", marker:"15", aria:"Genèse 6, verset 15", text:"Voici comment tu la feras : de trois cents coudées sera la longueur de l’arche, de cinquante coudées sa largeur, de trente coudées sa hauteur." },
+        { type:"verse", marker:"16", aria:"Genèse 6, verset 16", text:"Tu feras à l’arche un toit et tu l’achèveras à une coudée au-dessus. Tu mettras l’entrée de l’arche sur son côté et tu feras un premier, un second et un troisième étage." },
+        { type:"verse", marker:"17", aria:"Genèse 6, verset 17", text:"Et moi, voici que je vais faire venir sur la terre le déluge — les eaux — pour détruire de dessous le ciel toute chair qui a en elle souffle de vie ; tout ce qui est sur la terre expirera." },
+        { type:"verse", marker:"18", aria:"Genèse 6, verset 18", text:"Mais j’établirai mon alliance avec toi ; tu entreras dans l’arche, toi, tes fils, ta femme et les femmes de tes fils avec toi." },
+        { type:"verse", marker:"19", aria:"Genèse 6, verset 19", text:"De tout ce qui vit, de toute chair, tu feras entrer dans l’arche deux de chaque espèce pour que tu les conserves en vie ; ils seront mâle et femelle." },
+        { type:"omission", text:"[…]" },
+        { type:"verse", marker:"21", aria:"Genèse 6, verset 21", text:"Et toi, procure-toi de tous les aliments qui se mangent, et fais-en provision ; cela te servira de nourriture pour toi et pour eux. »" },
+        { type:"verse", marker:"22", aria:"Genèse 6, verset 22", text:"Noé fit en tout selon ce que lui avait commandé Dieu ; ainsi fit-il." },
+
+        { type:"divider" },
+        { type:"movementStart", title:"Le déluge", range:"7,11–24", marker:"11", aria:"Genèse 7, verset 11", text:"En l’an six cent de la vie de Noé, le deuxième mois, le dix-septième jour du mois, en ce jour-là, jaillirent toutes les sources du grand Abîme et les écluses du ciel s’ouvrirent." },
+        { type:"verse", marker:"12", aria:"Genèse 7, verset 12", text:"Et il y eut de la pluie sur la terre pendant quarante jours et quarante nuits." },
+        { type:"verse", marker:"13–14", aria:"Genèse 7, versets 13 à 14, extrait", text:"Ce jour-là même, Noé entra dans l’arche, ainsi que Sem, Cham et Japhet, fils de Noé et avec eux la femme de Noé et les trois femmes de ses fils, ainsi que toutes les bêtes selon leur espèce." },
+        { type:"omission", text:"[…]" },
+        { type:"verse", marker:"16", aria:"Genèse 7, verset 16, fin du verset reproduite dans la source", text:"Et Yahvé ferma sur eux la porte de l’arche." },
+        { type:"verse", marker:"17", aria:"Genèse 7, verset 17", text:"Et ce fut le déluge pendant quarante jours sur la terre. Les eaux s’accrurent et soulevèrent l’arche qui s’éleva au-dessus de la terre." },
+        { type:"verse", marker:"18", aria:"Genèse 7, verset 18", text:"Les eaux grossirent et s’accrurent beaucoup sur la terre, et l’arche allait sur la face des eaux." },
+        { type:"verse", marker:"19", aria:"Genèse 7, verset 19", text:"Et les eaux grossirent beaucoup, beaucoup sur la terre et toutes les hautes montagnes qui sont sous les cieux furent recouvertes." },
+        { type:"verse", marker:"20", aria:"Genèse 7, verset 20", text:"De quinze coudées au-dessus les eaux avaient grossi et les montagnes avaient été recouvertes." },
+        { type:"verse", marker:"21", aria:"Genèse 7, verset 21", text:"Alors expira toute chair qui se meut sur la terre : oiseaux, bestiaux, bêtes, tout être pullulant qui pullule sur la terre, ainsi que tous les hommes." },
+        { type:"verse", marker:"22", aria:"Genèse 7, verset 22", text:"Tout ce qui avait haleine de vie dans les narines, tout ce qui était sur la terre ferme, mourut." },
+        { type:"verse", marker:"23", aria:"Genèse 7, verset 23", text:"Ainsi fut effacé tout être qui se trouvait sur la surface du sol, depuis l’homme jusqu’aux bestiaux, aux reptiles et aux oiseaux du ciel : ils furent effacés de la terre. Il ne resta que Noé et ce qui était avec lui dans l’arche." },
+        { type:"verse", marker:"24", aria:"Genèse 7, verset 24", text:"Les eaux grandirent sur la terre durant cent cinquante jours." },
+        { type:"gallery", title:"De l’arche au Déluge", artworks:[
+          { title:"The Building of Noah's Ark", alt:"Noé et des ouvriers construisent l’arche avant le Déluge.", details:"Aureliano Milani, première moitié du XVIIIe siècle, Musée des Beaux-Arts de Budapest.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Franz%C3%B6sischer_Meister_um_1675_001.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Franz%C3%B6sischer_Meister_um_1675_001.jpg?width=1576", source:"https://www.mfab.hu/artworks/10130/" },
+          { title:"Entry of Animals into the Ark", alt:"Une multitude d’animaux se rassemble pour entrer dans l’arche de Noé.", details:"Jan Brueghel l’Ancien, 1613, J. Paul Getty Museum, Los Angeles.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_Brueghel_the_Elder_-_The_Entry_of_the_Animals_into_Noah%27s_Ark_-_Google_Art_Project.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Jan_Brueghel_the_Elder_-_The_Entry_of_the_Animals_into_Noah%27s_Ark_-_Google_Art_Project.jpg?width=2400", source:"https://www.getty.edu/art/collection/object/103RJT" },
+          { title:"Le Déluge", alt:"Des hommes tentent d’échapper aux eaux du Déluge dans la fresque de la chapelle Sixtine.", details:"Michel-Ange, 1508–1509, chapelle Sixtine, Vatican.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Deluge_after_restoration.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Deluge_after_restoration.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:The_Deluge_after_restoration.jpg" },
+          { title:"L’Hiver ou Le Déluge", alt:"Un paysage sombre et presque entièrement submergé représente la catastrophe du Déluge.", details:"Nicolas Poussin, 1660–1664, musée du Louvre, Paris.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Nicolas_Poussin_-_L%27Hiver_ou_Le_D%C3%A9luge.jpg?width=2200", source:"https://collections.louvre.fr/ark:/53355/cl010066113" }
+        ] },
+
+        { type:"divider" },
+        { type:"movementStart", title:"Les eaux se retirent", range:"8,1–5", marker:"1", aria:"Genèse 8, verset 1", text:"Dieu se souvint de Noé, de toutes les bêtes et de tous les bestiaux qui étaient avec lui dans l’arche. Dieu fit passer un vent sur la terre et les eaux s’apaisèrent." },
+        { type:"verse", marker:"2", aria:"Genèse 8, verset 2", text:"Les sources de l’Abîme et les écluses du ciel furent fermées et la pluie fut retenue du ciel." },
+        { type:"verse", marker:"3", aria:"Genèse 8, verset 3", text:"Les eaux revinrent graduellement de dessus la terre ; les eaux baissèrent au bout de cent cinquante jours." },
+        { type:"verse", marker:"4", aria:"Genèse 8, verset 4", text:"Au septième mois, le dix-septième jour du mois, l’arche se posa sur les monts d’Ararat." },
+        { type:"verse", marker:"5", aria:"Genèse 8, verset 5", text:"Les eaux continuèrent de baisser jusqu’au dixième mois. Le dixième mois, le premier du mois, apparurent les sommets des montagnes." },
+
+        { type:"movementStart", title:"Le corbeau et la colombe", range:"8,6–13", marker:"6", aria:"Genèse 8, verset 6", text:"Au bout de quarante jours, Noé ouvrit la fenêtre de l’arche qu’il avait construite," },
+        { type:"verse", marker:"7", aria:"Genèse 8, verset 7", text:"et il lâcha un corbeau ; celui-ci s’envola et revint en attendant que la terre soit redevenue sèche." },
+        { type:"verse", marker:"8", aria:"Genèse 8, verset 8", text:"Ensuite, Noé lâcha une colombe pour savoir si les eaux avaient baissé à la surface du sol." },
+        { type:"verse", marker:"9", aria:"Genèse 8, verset 9", text:"La colombe ne trouva pas d’endroit où se poser, et elle revint vers l’arche auprès de lui, parce que les eaux couvraient toute la terre ; Noé tendit la main, prit la colombe, et la fit rentrer auprès de lui dans l’arche." },
+        { type:"verse", marker:"10", aria:"Genèse 8, verset 10", text:"Il attendit encore sept jours, et lâcha de nouveau la colombe hors de l’arche." },
+        { type:"verse", marker:"11", aria:"Genèse 8, verset 11", text:"Sur le soir, la colombe revint, et dans son bec il y avait un rameau d’olivier tout frais ! Noé sut ainsi que les eaux avaient baissé à la surface de la terre." },
+        { type:"verse", marker:"12", aria:"Genèse 8, verset 12", text:"Il attendit encore sept autres jours et lâcha la colombe, qui ne revint plus." },
+        { type:"verse", marker:"13", aria:"Genèse 8, verset 13", text:"C’est en l’an six cent un de la vie de Noé, au premier mois, le premier du mois, que la terre redevint sèche. Noé enleva le toit de l’arche, et regarda : la surface de la terre était sèche." },
+        { type:"omission", text:"[…]" },
+
+        { type:"movementStart", title:"L’autel et la promesse", range:"8,20–22", marker:"20", aria:"Genèse 8, verset 20", text:"Noé dressa un autel au Seigneur ; il prit, parmi tous les animaux purs et tous les oiseaux purs, des victimes qu’il offrit en holocauste sur l’autel." },
+        { type:"verse", marker:"21", aria:"Genèse 8, verset 21", text:"Le Seigneur respira l’agréable odeur, et il se dit en lui-même : « Je ne maudirai plus jamais le sol à cause de l’homme. Les pensées de son cœur sont mauvaises dès sa jeunesse ; mais plus jamais je ne frapperai tous les vivants comme je l’ai fait." },
+        { type:"verse", marker:"22", aria:"Genèse 8, verset 22", text:"Tant que la terre durera,<br>semailles et moissons,<br>froidure et chaleur,<br>été et hiver,<br>jour et nuit<br>ne cesseront jamais. »" },
+        { type:"gallery", title:"Le retour à la terre et l’action de grâce", artworks:[
+          { title:"The Assuaging of the Waters", alt:"Les eaux du Déluge s’apaisent dans un vaste paysage dominé par l’arche.", details:"John Martin, 1840, Fine Arts Museums of San Francisco.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Assuaging_of_the_Waters_by_John_Martin%2C_1840.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Assuaging_of_the_Waters_by_John_Martin%2C_1840.jpg", source:"https://commons.wikimedia.org/wiki/File:The_Assuaging_of_the_Waters_by_John_Martin%2C_1840.jpg" },
+          { title:"The Return of the Dove to the Ark", alt:"Deux jeunes femmes accueillent la colombe revenue vers l’arche avec le signe du retour de la terre.", details:"John Everett Millais, 1851, Ashmolean Museum, Oxford.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Millais_-_Die_R%C3%BCckkehr_der_Taube_zur_Arche_Noah.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Millais_-_Die_R%C3%BCckkehr_der_Taube_zur_Arche_Noah.jpg?width=2200", source:"https://images.ashmolean.org/asset/5617" },
+          { title:"Noé sortant de l’arche", alt:"Noé et les siens après la sortie de l’arche, au moment du sacrifice offert après le Déluge.", details:"Jean Battaille, v. 1841, Museum voor Schone Kunsten, Gand.", src:"https://imagehub.mskgent.be/iiif/2/public%2F74.tif/full/1200,/0/default.jpg", original:"https://imagehub.mskgent.be/iiif/2/public%2F74.tif/full/full/0/default.jpg", source:"https://www.mskgent.be/fr/collection/1841-a" },
+          { title:"The Thanksgiving of Noah", alt:"Noé rend grâce à Dieu après la fin du Déluge.", details:"Giovanni Battista Gaulli, dit Il Baciccio, v. 1700, High Museum of Art, Atlanta.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Thanksgiving_of_Noah_by_Il_Baciccio%2C_c._1700%2C_High_Museum_of_Art.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Thanksgiving_of_Noah_by_Il_Baciccio%2C_c._1700%2C_High_Museum_of_Art.jpg", source:"https://commons.wikimedia.org/wiki/File:The_Thanksgiving_of_Noah_by_Il_Baciccio%2C_c._1700%2C_High_Museum_of_Art.jpg" },
+          { title:"Noah after the Flood", alt:"Noé et sa famille sont représentés avec les animaux après le Déluge.", details:"Atelier de Jacopo Bassano, seconde moitié du XVIe siècle, Museo del Prado, Madrid.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/No%C3%A9_despu%C3%A9s_del_Diluvio.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/No%C3%A9_despu%C3%A9s_del_Diluvio.jpg?width=1920", source:"https://www.museodelprado.es/en/the-collection/art-work/noah-after-the-flood/8a95a6e5-e940-494d-b19d-18d44d1e5237" }
+        ] },
+
+        { type:"pause", reference:"MATTHIEU 13,47–49a", title:"Le jugement et le tri", intro:"Sans jugement, où serait le sérieux de la vie ?", text:"Le Royaume des Cieux est semblable à un filet jeté en mer et qui recueille toute espèce de poissons. Une fois rempli, les pêcheurs le tirent sur le rivage, puis s’asseyant, ils ramassent ce qui est bon dans des paniers et rejettent ce qui ne vaut rien. Ainsi en sera-t-il à la fin du monde." },
+        { type:"pause", reference:"ÉZÉCHIEL 33,11", title:"La justice et la vie", intro:"Mais sans amour, que serait la justice ?", text:"Par ma vie ! — oracle du Seigneur Yahvé — je ne désire pas la mort du méchant, mais qu’il se détourne de sa voie et qu’il vive." },
+        { type:"pause", reference:"ISAÏE 54,8–10", title:"Comme aux jours de Noé", text:"Dans un amour éternel j’ai pitié de toi, dit ton rédempteur, Yahvé. Il en sera pour moi comme aux jours de Noé : comme j’avais juré que les eaux de Noé ne submergeraient plus la terre… ma grâce ne se retirera pas de toi." },
+        { type:"pause", reference:"LUC 19,10", title:"Chercher et sauver", text:"Le Fils de l’homme est venu chercher et sauver ce qui était perdu." }
+      ]
+    },
+{
+      id:"genese-babel", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"La tour de Babel", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 11,1–9",
+      cardHighlight:"tour de Babel",
+      familiarIdea:"la confusion des langues",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Langage", "Religion", "Autrui"], work:"Genèse 11", publication:"11,1–9",
+      description:"Pourquoi le désir d’unité et de renommée conduit-il à la confusion des langues et à la dispersion ?",
+      context:"Après le Déluge et la descendance de Noé, Genèse 11 présente une humanité encore rassemblée par un même langage. Les hommes s’installent en Mésopotamie, maîtrisent la fabrication de la brique et entreprennent de bâtir une ville et une tour « dont le sommet soit dans les cieux ». Leur projet vise explicitement la renommée et le refus de la dispersion ; il aboutit pourtant à l’incompréhension et à l’éparpillement. Le récit place ainsi le langage, la technique et l’ambition collective au cœur d’une réflexion sur l’unité humaine.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 11,1–9</strong>, après le Déluge (Genèse 6–9) et les généalogies des descendants de Noé. Babel clôt les grands récits des origines de Genèse 1–11. Dès le chapitre suivant, avec <strong>l’appel d’Abraham</strong> en Genèse 12, le récit biblique se concentre sur une histoire particulière au sein des peuples dispersés." },
+        { label:"Piste philosophique", text:"Le récit interroge le rapport entre <strong>unité et diversité</strong>. Une humanité qui veut parler d’une seule voix, se faire un nom et maîtriser son propre rassemblement construit-elle une véritable communauté ? Babel permet aussi de réfléchir au langage comme condition d’un monde commun : quand les mots cessent d’être compris, l’action collective elle-même se défait." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"« Le même langage et les mêmes mots »", definition:"Le récit commence par une humanité entièrement unifiée par la langue. Cette unité rend possible une action commune d’une puissance remarquable, mais le texte conduit à demander si l’unité doit signifier l’uniformité, ou si une communauté peut aussi se construire dans la pluralité." },
+        { type:"concept", term:"« Nous travaillerons à notre renommée »", definition:"La tour n’est pas seulement un exploit architectural : le projet vise à « se faire un nom » et à éviter la dispersion. Le récit associe ainsi puissance technique, volonté de maîtrise et recherche de grandeur collective. L’orgueil est une interprétation traditionnelle de cette ambition, explicitement reprise dans l’édition photographiée." },
+        { type:"concept", term:"Babel et la confusion des langues", definition:"Le récit rapproche le nom de Babel de l’« embrouillement » du langage. Il met en scène la langue comme lien politique et humain : l’incompréhension produit la dispersion. Historiquement, le nom de Babylone vient de l’akkadien <em>Bāb-ilim</em>, « porte du dieu », tandis que la Genèse joue en hébreu sur le verbe <em>balal</em>, « mêler, confondre »." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Un même langage", range:"11,1–2", marker:"1", aria:"Genèse 11, verset 1", text:"Toute la terre avait alors le même langage et les mêmes mots." },
+        { type:"verse", marker:"2", aria:"Genèse 11, verset 2", text:"Au cours de leurs déplacements du côté de l’orient, les hommes découvrirent une plaine en Mésopotamie, et ils s’y installèrent." },
+
+        { type:"movementStart", title:"La ville, la tour et la renommée", range:"11,3–4", marker:"3", aria:"Genèse 11, verset 3", text:"Ils se dirent l’un à l’autre : « Allons ! fabriquons des briques et mettons-les à cuire ! » Les briques leur servaient de pierres, et le bitume, de mortier." },
+        { type:"verse", marker:"4", aria:"Genèse 11, verset 4", text:"Ils dirent : « Allons ! bâtissons une ville, avec une tour dont le sommet soit dans les cieux. Nous travaillerons à notre renommée, pour n’être pas dispersés sur toute la terre. »" },
+
+        { type:"movementStart", title:"Le Seigneur descend", range:"11,5–7", marker:"5", aria:"Genèse 11, verset 5", text:"Le Seigneur descendit pour voir la ville et la tour que les hommes avaient bâties." },
+        { type:"verse", marker:"6", aria:"Genèse 11, verset 6", text:"Et le Seigneur dit : « Ils sont un seul peuple, ils ont tous le même langage : s’ils commencent ainsi, rien ne les empêchera désormais de faire tout ce qu’ils décideront." },
+        { type:"verse", marker:"7", aria:"Genèse 11, verset 7", text:"Eh bien ! descendons, embrouillons leur langage : qu’ils ne se comprennent plus les uns les autres. »" },
+
+        { type:"movementStart", title:"La dispersion", range:"11,8–9", marker:"8", aria:"Genèse 11, verset 8", text:"De là, le Seigneur les dispersa sur toute l’étendue de la terre. Ils cessèrent donc de bâtir la ville." },
+        { type:"verse", marker:"9", aria:"Genèse 11, verset 9", text:"C’est pourquoi on l’appela Babel (Babylone), car c’est là que le Seigneur embrouilla le langage des habitants de toute la terre ; et c’est de là qu’il les dispersa sur toute l’étendue de la terre." },
+
+        { type:"pause", reference:"ACTES DES APÔTRES 2,7–11", title:"La Pentecôte : comprendre dans la diversité", intro:"Ce que l’orgueil a dispersé, l’amour le rassemblera. Au matin de la Pentecôte.", text:"... Dans leur étonnement ; ils disaient : « Tous ces gens qui parlent ne sont-ils donc pas Galiléens ? Comment alors les entendons-nous chacun dans sa propre langue maternelle ? Parthes, Mèdes, Elamites, habitants de la Mésopotamie, de Judée et de Cappadoce... Romains résidant ici... nous les entendons parler dans nos langues des grandes œuvres de Dieu ! »" },
+        { type:"pause", reference:"GALATES 3,28", title:"Une unité qui dépasse les divisions", text:"Il n’y a ni Juif ni Grec, il n’y a ni esclave ni homme libre, il n’y a ni homme ni femme : vous n’êtes tous qu’un en Christ Jésus." },
+        { type:"gallery", title:"Babel : du projet à la dispersion", artworks:[
+          { title:"Nimrod Deciding Where to Build the Tower", alt:"Nimrod désigne l’emplacement où doit s’élever la tour de Babel, tandis que le terrain est mesuré et préparé.", details:"Jan Collaert I, d’après Jan Snellinck I, 1585, série The Tower of Babel.", description:"La décision précède le chantier : le projet collectif prend forme sous l’autorité de Nimrod, avant même que la tour ne s’élève.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Nimrod%20wijst%20aan%20waar%20de%20toren%20gebouwd%20moet%20worden%20Geschiedenis%20van%20de%20toren%20van%20Babel%20%28serietitel%29%20Historia%20Turris%20Babijlonicae%20%28serietitel%29%20Thesaurus%20sacrarum%20historiarum%20veteris%20testamenti%2C%20elegantissimis%20imaginibu%2C%20RP-P-1995-25-19.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Nimrod%20wijst%20aan%20waar%20de%20toren%20gebouwd%20moet%20worden%20Geschiedenis%20van%20de%20toren%20van%20Babel%20%28serietitel%29%20Historia%20Turris%20Babijlonicae%20%28serietitel%29%20Thesaurus%20sacrarum%20historiarum%20veteris%20testamenti%2C%20elegantissimis%20imaginibu%2C%20RP-P-1995-25-19.jpg?width=2400", source:"https://www.metmuseum.org/art/collection/search/653611" },
+          { title:"La Tour de Babel", alt:"La gigantesque tour de Babel domine un vaste chantier peuplé d’ouvriers et de machines.", details:"Pieter Bruegel l’Ancien, 1563, Kunsthistorisches Museum, Vienne.", description:"Bruegel donne une échelle monumentale au projet : l’unité des hommes devient puissance de construction, mais aussi démesure architecturale.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Pieter%20Bruegel%20the%20Elder%20-%20The%20Tower%20of%20Babel%20%28Vienna%29%20-%20Google%20Art%20ProjectFXD.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Pieter%20Bruegel%20the%20Elder%20-%20The%20Tower%20of%20Babel%20%28Vienna%29%20-%20Google%20Art%20ProjectFXD.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_ProjectFXD.jpg" },
+          { title:"La Petite Tour de Babel", alt:"Une tour massive et inachevée occupe presque tout le paysage, sous un ciel sombre.", details:"Pieter Bruegel l’Ancien, vers 1568, Museum Boijmans Van Beuningen, Rotterdam.", description:"Plus ramassée et plus sombre que la version de Vienne, cette tour paraît absorber tout l’espace : la démesure du projet devient presque oppressante.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Pieter%20Bruegel%20the%20Elder%20-%20The%20Tower%20of%20Babel%20%28Rotterdam%29%20-%20Google%20Art%20Project%20-%20edited.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Pieter%20Bruegel%20the%20Elder%20-%20The%20Tower%20of%20Babel%20%28Rotterdam%29%20-%20Google%20Art%20Project%20-%20edited.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Rotterdam)_-_Google_Art_Project_-_edited.jpg" },
+          { title:"La Confusion des langues", alt:"Dieu intervient au-dessus de la tour tandis que les hommes, désormais incapables de se comprendre, se dispersent.", details:"Gustave Doré, vers 1865–1868, gravure pour la Bible.", description:"Doré concentre l’image sur le basculement du récit : la parole commune se défait et l’intervention divine transforme le chantier en scène de confusion.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Confusion%20of%20Tongues.png?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Confusion%20of%20Tongues.png", source:"https://commons.wikimedia.org/wiki/File:Confusion_of_Tongues.png" },
+          { title:"The Confusion of Tongues", alt:"La confusion des langues interrompt le chantier de Babel et entraîne la fuite et la dispersion des hommes.", details:"Jan Collaert I, d’après Jan Snellinck I, 1585, série The Tower of Babel.", description:"Le dernier mouvement est celui de la rupture : le travail commun s’arrête, les groupes se séparent et la dispersion remplace l’unité recherchée au commencement.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Babylonische%20spraakverwarring%20Geschiedenis%20van%20de%20toren%20van%20Babel%20%28serietitel%29%20Thesaurus%20sacrarum%20historiarum%20veteris%20testamenti%2C%20elegantissimis%20imaginibus%20expressum%20excellentissimorum%20in%20hac%20arte%20virorum%20opera%20nunc%20pr%2C%20RP-P-1988-312-15.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Babylonische%20spraakverwarring%20Geschiedenis%20van%20de%20toren%20van%20Babel%20%28serietitel%29%20Thesaurus%20sacrarum%20historiarum%20veteris%20testamenti%2C%20elegantissimis%20imaginibus%20expressum%20excellentissimorum%20in%20hac%20arte%20virorum%20opera%20nunc%20pr%2C%20RP-P-1988-312-15.jpg?width=2400", source:"https://www.metmuseum.org/art/collection/search/653616" }
+        ] }
+      ]
+    },
+{
+      id:"genese-appel-abraham", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"L’appel d’Abraham", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 12,1–9 ; 15,1–6",
+      cardHighlight:"appel d’Abraham",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Foi", "Alliance"], work:"Genèse 12 et 15", publication:"12,1–9 ; 15,1–6",
+      description:"Comment répondre à un appel qui oblige à quitter le connu, et comment croire à une promesse dont rien ne garantit encore l’accomplissement ?",
+      context:"Après Babel, la Genèse quitte les grands récits des origines pour suivre une histoire particulière : celle d’Abram. Appelé à quitter son pays et la maison de son père, il reçoit une promesse qui ouvre à la fois sur une terre, une descendance et une bénédiction destinée à « toutes les familles de la terre ». Mais cette promesse se heurte bientôt à l’absence d’enfant. Genèse 15 place alors la confiance d’Abram au centre du récit : il croit avant de voir l’accomplissement.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 12,1–9</strong> puis en <strong>Genèse 15,1–6</strong>. Genèse 12 vient immédiatement après la tour de Babel : l’histoire passe des peuples dispersés à l’appel d’un homme dont la bénédiction doit précisément rejoindre « toutes les familles de la terre ». Avec Abraham commence le grand cycle des patriarches. La datation historique de ces récits reste discutée : il vaut mieux distinguer le temps raconté par la Genèse de la date de composition des textes." },
+        { label:"Piste philosophique", text:"Le passage permet d’interroger la <strong>promesse</strong>, la <strong>confiance</strong> et l’<strong>espérance</strong>. Que signifie agir lorsqu’on ne possède pas encore la preuve de ce qui est promis ? La foi d’Abraham n’est pas une simple attente passive : elle prend la forme d’un départ, d’un déplacement et d’une manière de vivre à partir d’un avenir encore invisible." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"« Pars de ton pays »", definition:"L’appel commence par une rupture : Abram doit quitter pays, famille et maison du père sans connaître d’avance tout ce qui l’attend. La vocation biblique est ici un déplacement réel, mais aussi une manière de consentir à l’inconnu en répondant à une parole." },
+        { type:"concept", term:"« En toi seront bénies toutes les familles de la terre »", definition:"L’élection d’Abraham n’est pas présentée comme un privilège fermé sur lui-même. Le choix d’un homme et d’une lignée est orienté vers une bénédiction universelle : la particularité d’Abraham doit devenir, dans le récit, une médiation pour les peuples." },
+        { type:"concept", term:"« Abram eut foi dans le Seigneur »", definition:"La promesse d’une descendance paraît contredite par la situation d’Abram, qui est sans enfant. Sa foi consiste alors à faire confiance malgré l’absence d’accomplissement visible. Paul reprendra ce verset en Romains 4 pour penser Abraham comme figure de la foi et de la justice reçue de Dieu." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"L’appel et la bénédiction", range:"12,1–3", marker:"1", aria:"Genèse 12, verset 1", text:"Abram vivait alors en Chaldée. Le Seigneur lui dit : « Pars de ton pays, laisse ta famille et la maison de ton père, va dans le pays que je te montrerai." },
+        { type:"verse", marker:"2", aria:"Genèse 12, verset 2", text:"Je ferai de toi une grande nation,<br>je te bénirai,<br>je rendrai grand ton nom,<br>et tu deviendras une bénédiction." },
+        { type:"verse", marker:"3", aria:"Genèse 12, verset 3", text:"Je bénirai ceux qui te béniront,<br>je maudirai celui qui te méprisera.<br>En toi seront bénies<br>toutes les familles de la terre. »" },
+
+        { type:"movementStart", title:"Partir vers Canaan", range:"12,4–6", marker:"4", aria:"Genèse 12, verset 4", text:"Abram partit, comme le Seigneur le lui avait dit, et Loth partit avec lui. Abram avait soixante-quinze ans lorsqu’il sortit de Harrane." },
+        { type:"verse", marker:"5", aria:"Genèse 12, verset 5", text:"Il prit sa femme Saraï, son neveu Loth, tous leurs biens, et les serviteurs qu’ils avaient acquis à Harrane ; ils se mirent en route pour Canaan et ils arrivèrent dans ce pays." },
+        { type:"verse", marker:"6", aria:"Genèse 12, verset 6", text:"Abram traversa le pays jusqu’à Sichem, au Chêne de Moré. Les Cananéens étaient alors dans le pays." },
+
+        { type:"movementStart", title:"La terre promise et les autels", range:"12,7–9", marker:"7", aria:"Genèse 12, verset 7", text:"Le Seigneur apparut à Abram et lui dit : « Voilà le pays que je donnerai à ta descendance. » Et là, Abram bâtit un autel au Seigneur qui lui était apparu." },
+        { type:"verse", marker:"8", aria:"Genèse 12, verset 8", text:"De là, il se rendit dans la montagne, à l’est de Béthel et il planta sa tente, ayant Béthel à l’ouest et Aï à l’est. À cet endroit, il éleva un autel au Seigneur et invoqua le nom du Seigneur." },
+        { type:"verse", marker:"9", aria:"Genèse 12, verset 9", text:"Puis, de campement en campement, Abram s’en alla vers le Néguev." },
+
+        { type:"movementStart", title:"La promesse face à l’absence d’héritier", range:"15,1–4", marker:"1", aria:"Genèse 15, verset 1", text:"La parole du Seigneur fut adressée à Abram dans une vision : « Ne crains pas, Abram ! Je suis un bouclier pour toi. Tu recevras de cette Alliance un merveilleux salaire. »" },
+        { type:"verse", marker:"2", aria:"Genèse 15, verset 2", text:"Abram répondit : « Mon Seigneur Dieu, qu’est-ce que tu vas me donner ? Je suis sans enfant…" },
+        { type:"verse", marker:"3", aria:"Genèse 15, verset 3", text:"Tu ne m’as pas donné de descendance, et c’est un de mes serviteurs qui sera mon héritier. »" },
+        { type:"verse", marker:"4", aria:"Genèse 15, verset 4", text:"Alors cette parole du Seigneur fut adressée à Abram : « Ce n’est pas lui qui sera ton héritier, mais quelqu’un de ton sang. »" },
+
+        { type:"movementStart", title:"Compter les étoiles et croire", range:"15,5–6", marker:"5", aria:"Genèse 15, verset 5", text:"Puis il le fit sortir et lui dit : « Regarde le ciel, et compte les étoiles, si tu le peux… » Et il déclara : « Voilà quelle descendance tu auras ! »" },
+        { type:"verse", marker:"6", aria:"Genèse 15, verset 6", text:"Abram eut foi dans le Seigneur, et le Seigneur estima qu’il était juste." },
+
+        { type:"pause", reference:"ROMAINS 4,17–21", title:"Espérer contre toute espérance", text:"Abraham est notre père devant Dieu en qui il a cru. Espérant contre toute espérance, il crut et devint par là le père d’un grand nombre de nations. C’est sans faiblir dans la foi qu’il songea à son corps déjà mort, et au sein de Sara, mort aussi. Il n’hésita pas, pleinement convaincu que ce que Dieu a promis, il est assez puissant pour l’accomplir." },
+        { type:"pause", reference:"DEUTÉRONOME 7,6–8a", title:"Choisi parce qu’aimé", text:"Tu es un peuple consacré à Yahvé ton Dieu. C’est toi qu’a choisi Yahvé pour être son propre peuple parmi tous les peuples qui sont à la surface du sol. Si Yahvé s’est épris de vous et vous a choisis, ce n’est pas que vous soyez plus nombreux qu’aucun des autres peuples, car vous êtes le moindre de tous les peuples. Mais c’est parce que Yahvé vous aime." },
+        { type:"pause", reference:"PSAUME 100,1.3–5", title:"Son peuple et le troupeau de son pâturage", text:"Acclamez Yahvé, terre entière !<br>C’est lui qui nous a faits et nous sommes à lui,<br>son peuple et le troupeau de son pâturage.<br>Entrez par ses portes avec la louange.<br>Car il est bon, Yahvé,<br>éternelle, sa fidélité,<br>d’âge en âge, sa sincérité !" },
+
+        { type:"gallery", title:"L’appel d’Abraham en images", artworks:[
+          { title:"Departure of Abraham for Canaan", alt:"Abraham quitte son pays avec sa famille, ses serviteurs, ses animaux et ses biens, dans une grande scène de départ vers Canaan.", details:"Jacopo Bassano avec Francesco Bassano, vers 1570, National Gallery of Canada.", description:"Cette scène donne une forme visible au commandement « Pars de ton pays » : l’appel devient départ réel, avec la famille, les biens, les animaux et tout ce qu’il faut quitter pour marcher vers la terre promise.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bassano%20-%20Departure%20of%20Abraham%20for%20Canaan.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bassano%20-%20Departure%20of%20Abraham%20for%20Canaan.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Bassano_-_Departure_of_Abraham_for_Canaan.jpg" },
+          { title:"Abraham Journeying to the Land of Canaan", alt:"Abraham et sa suite avancent vers Canaan au milieu d’un paysage, accompagnés d’animaux et de voyageurs.", details:"Giovanni Benedetto Castiglione, XVIIe siècle, Fitzwilliam Museum.", description:"L’œuvre insiste sur la route elle-même : Abraham n’est pas seulement celui qui a entendu une parole, mais celui qui consent à traverser l’espace, à vivre en marche et à faire confiance à une promesse encore invisible.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Giovanni%20Benedetto%20Castiglione%20%281609-1664%29%20-%20Abraham%20Journeying%20to%20the%20Land%20of%20Canaan%20-%20148%20-%20Fitzwilliam%20Museum.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Giovanni%20Benedetto%20Castiglione%20%281609-1664%29%20-%20Abraham%20Journeying%20to%20the%20Land%20of%20Canaan%20-%20148%20-%20Fitzwilliam%20Museum.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:Giovanni_Benedetto_Castiglione_(1609-1664)_-_Abraham_Journeying_to_the_Land_of_Canaan_-_148_-_Fitzwilliam_Museum.jpg" },
+          { title:"The Caravan of Abram", alt:"Une longue caravane guidée par Abram progresse dans un format vertical, évoquant l’entrée en Canaan et la marche du peuple en devenir.", details:"James Tissot, vers 1896–1902, Jewish Museum, New York.", description:"La verticalité de l’image et la file des voyageurs mettent en valeur l’idée de pèlerinage : l’appel d’Abraham engage tout un déplacement, presque une manière d’exister en route vers ce que Dieu promet.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tissot%20The%20Caravan%20of%20Abraham.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Tissot%20The%20Caravan%20of%20Abraham.jpg?width=2000", source:"https://commons.wikimedia.org/wiki/File:Tissot_The_Caravan_of_Abraham.jpg" },
+          { title:"God appearing to Abraham", alt:"Dieu apparaît à Abraham et lui montre le ciel étoilé, image de la descendance promise.", details:"Nicolas Chaperon, d’après l’atelier de Raphaël, 1649, d’après la Loggia du Vatican.", description:"Cette gravure correspond au second moment de la fiche : en Genèse 15, Dieu promet à Abraham une descendance aussi nombreuse que les étoiles. L’image traduit la foi d’Abraham face à une promesse encore impossible à vérifier.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/God%20verschijnt%20aan%20Abraham%2C%20RP-P-OB-42.585.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/God%20verschijnt%20aan%20Abraham%2C%20RP-P-OB-42.585.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:God_verschijnt_aan_Abraham,_RP-P-OB-42.585.jpg" }
+        ]}
+      ]
+    },
+{
+      id:"genese-alliance-abraham", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"L’Alliance avec Abraham", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 17,1–10",
+      cardHighlight:"Alliance avec Abraham",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Alliance", "Religion"], work:"Genèse 17", publication:"17,1–10",
+      description:"Comment la promesse faite à Abraham devient-elle une alliance durable, inscrite dans un nom, une descendance et un signe ?",
+      context:"La promesse faite à Abram en Genèse 12 et 15 devient en Genèse 17 une alliance explicitement formulée. Abram a quatre-vingt-dix-neuf ans : Dieu lui promet une descendance innombrable, transforme son nom en Abraham, lie l’alliance aux générations futures et donne la circoncision comme signe. Les textes placés à la suite dans l’édition photographiée prolongent ce thème à travers l’élection d’Israël, l’alliance avec David, la promesse d’une alliance nouvelle chez Jérémie et sa relecture chrétienne.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 17,1–10</strong>, après l’appel d’Abram, la promesse d’une descendance et la naissance d’Ismaël au chapitre 16. Le récit approfondit ici la relation entre Dieu et Abraham : la promesse devient une <strong>Alliance</strong>, le nom d’Abram devient Abraham et un signe corporel est associé à cette relation." },
+        { label:"Piste philosophique", text:"L’alliance permet de penser ce qu’est un <strong>engagement durable</strong>. Elle n’est pas un simple échange ponctuel : elle institue une relation, des obligations et une fidélité qui doivent traverser le temps. Le passage pose ainsi une question très générale : comment une promesse peut-elle donner une forme stable à l’avenir et engager non seulement un individu, mais une communauté et des générations ?" }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Alliance", definition:"Le mot biblique traduit l’hébreu <em>berit</em>. Il désigne un lien solennel qui établit une relation durable. Dans Genèse 17, l’initiative vient de Dieu : promesse de descendance, de terre et de fidélité ; Abraham et sa descendance sont appelés à « observer » cette Alliance." },
+        { type:"concept", term:"Abram devient Abraham", definition:"Le changement de nom accompagne une nouvelle définition de la personne : « père d’un grand nombre de peuples ». Dans le récit biblique, le nom n’est pas un détail administratif ; il exprime une vocation et inscrit Abraham dans une histoire qui le dépasse." },
+        { type:"concept", term:"La circoncision comme signe", definition:"La circoncision existait dans plusieurs sociétés du Proche-Orient ancien. Genèse 17 lui donne ici une signification propre à l’Alliance : elle devient le signe corporel de l’Alliance avec Abraham et sa descendance, un rappel concret de l’appartenance au peuple de l’Alliance." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Marcher en présence de Dieu", range:"17,1–2", marker:"1", aria:"Genèse 17, verset 1", text:"Lorsque Abram eut atteint quatre-vingt-dix-neuf ans, le Seigneur lui apparut et lui dit : « Je suis le Dieu Tout-Puissant ; marche en ma présence et sois parfait." },
+        { type:"verse", marker:"2", aria:"Genèse 17, verset 2", text:"J’établis mon Alliance entre moi et toi, et je multiplierai ta descendance à l’infini. »" },
+
+        { type:"movementStart", title:"Un nouveau nom, une multitude de peuples", range:"17,3–6", marker:"3", aria:"Genèse 17, verset 3", text:"Abram tomba la face contre terre et Dieu lui parla ainsi :" },
+        { type:"verse", marker:"4", aria:"Genèse 17, verset 4", text:"« Voici l’Alliance que je fais avec toi : tu deviendras le père d’un grand nombre de peuples," },
+        { type:"verse", marker:"5", aria:"Genèse 17, verset 5", text:"au lieu d’être appelé Abram, comme jusqu’ici, ton nom sera désormais Abraham, car je fais de toi le père d’un grand nombre de peuples." },
+        { type:"verse", marker:"6", aria:"Genèse 17, verset 6", text:"Je te ferai porter des fruits à l’infini, de toi je ferai des peuples, et des rois sortiront de toi." },
+
+        { type:"movementStart", title:"Une Alliance perpétuelle", range:"17,7–8", marker:"7", aria:"Genèse 17, verset 7", text:"J’instituerai mon Alliance entre moi et toi, et après toi avec ta descendance, de génération en génération ; ce sera une Alliance perpétuelle par laquelle je serai ton Dieu, et celui de ta descendance après toi." },
+        { type:"verse", marker:"8", aria:"Genèse 17, verset 8", text:"À toi et à ta descendance après toi je donnerai tout le pays de Canaan, — ce pays où tu es venu en immigré — pour que tu en aies la possession perpétuelle, et je serai votre Dieu. »" },
+
+        { type:"movementStart", title:"Observer l’Alliance et en porter le signe", range:"17,9–10", marker:"9", aria:"Genèse 17, verset 9", text:"Dieu lui dit aussi : « Tu observeras mon Alliance, toi et ta descendance après toi, de génération en génération." },
+        { type:"verse", marker:"10", aria:"Genèse 17, verset 10", text:"Et voici le pacte d’Alliance qui sera observé entre moi et vous, c’est-à-dire toi et ta descendance : tous vos enfants mâles seront circoncis. »" },
+
+        { type:"pause", reference:"PSAUME 89,20.27–29", title:"L’Alliance et la fidélité envers l’élu", text:"J’ai exalté de mon peuple un élu.<br>Il m’invoquera : Tu es mon père,<br>mon Dieu, le Rocher de mon salut.<br>Aussi, moi, je ferai de lui un premier-né.<br>À jamais je lui garderai ma fidélité,<br>et mon alliance pour lui sera loyale." },
+        { type:"pause", reference:"JÉRÉMIE 31,31.33–34", title:"La promesse d’une Alliance nouvelle", intro:"Au moment de l’Exil et de ses ruines, une alliance « nouvelle » commence d’être envisagée :", text:"Voici venir des jours où je conclurai avec la maison d’Israël et avec la maison de Juda une alliance nouvelle. Je mettrai ma loi au-dedans d’eux et je l’écrirai sur leur cœur. Je serai leur Dieu et eux seront mon peuple. Je pardonnerai leurs fautes et de leur péché je ne me souviendrai plus." },
+        { type:"pause", reference:"PRIÈRE EUCHARISTIQUE", title:"L’Alliance nouvelle et éternelle", intro:"Dans la liturgie chrétienne, le thème de l’Alliance est repris dans les paroles sur la coupe :", text:"« Ceci est la coupe de mon sang, le sang de l’Alliance nouvelle et éternelle, qui sera versé pour vous et pour la multitude en rémission des péchés. »" },
+
+        { type:"gallery", title:"L’Alliance avec Abraham en images", artworks:[
+          { title:"God verschijnt voor Abraham", alt:"Dieu apparaît à Abraham et lui parle de l’alliance, tandis qu’au second plan Ismaël et les hommes de la maison reçoivent la circoncision.", details:"Dirck Volckertsz. Coornhert, d’après Maarten van Heemskerck, 1549, Rijksmuseum.", description:"Cette gravure condense toute la logique de Genèse 17 : Dieu se révèle à Abraham, lui parle de l’Alliance, et le signe de cette Alliance — la circoncision — apparaît déjà à l’arrière-plan.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/God%20verschijnt%20voor%20Abraham%20Geschiedenis%20van%20Abraham%20%28serietitel%29%2C%20RP-P-BI-6498.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/God%20verschijnt%20voor%20Abraham%20Geschiedenis%20van%20Abraham%20%28serietitel%29%2C%20RP-P-BI-6498.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:God_verschijnt_voor_Abraham_Geschiedenis_van_Abraham_(serietitel),_RP-P-BI-6498.jpg" },
+          { title:"Abraham reçoit l’institution de la circoncision", alt:"Abraham agenouillé devant Dieu reçoit le commandement de la circoncision dans une enluminure médiévale.", details:"Bible historiale, tradition médiévale française, XIVe siècle.", description:"L’enluminure insiste sur la dimension religieuse du texte : Genèse 17 n’est pas seulement une promesse, mais une Alliance explicitement formulée, accompagnée d’un signe concret à observer de génération en génération.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Circumcision%20of%20Abraham%20%28Bible%20of%20Jean%20de%20Sy%29.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Circumcision%20of%20Abraham%20%28Bible%20of%20Jean%20de%20Sy%29.jpg?width=1800", source:"https://commons.wikimedia.org/wiki/File:Circumcision_of_Abraham_(Bible_of_Jean_de_Sy).jpg" },
+          { title:"Abraham Took Ishmael with All the Males Born in His House and Circumcised Them", alt:"Abraham et les hommes de sa maison accomplissent la circoncision, signe de l’Alliance reçue de Dieu.", details:"Gerard Hoet et atelier, Figures de la Bible, 1728.", description:"Après la parole reçue vient l’acte. Cette image montre le passage de la promesse au signe visible : l’Alliance entre dans la chair et devient une pratique commune pour la maison d’Abraham.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Figures%20017%20Abraham%20Took%20Ishmael%20with%20All%20the%20Males%20Born%20in%20His%20House%20and%20Circumcised%20Them.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Figures%20017%20Abraham%20Took%20Ishmael%20with%20All%20the%20Males%20Born%20in%20His%20House%20and%20Circumcised%20Them.jpg?width=1800", source:"https://commons.wikimedia.org/wiki/File:Figures_017_Abraham_Took_Ishmael_with_All_the_Males_Born_in_His_House_and_Circumcised_Them.jpg" }
+        ]}
+      ]
+    },
+{
+      id:"genese-sodome", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Abraham intercède pour Sodome", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 18,17–33",
+      cardHighlight:"intercède pour Sodome",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Justice", "Religion", "Autrui"], work:"Genèse 18", publication:"18,17–33",
+      description:"Comment Abraham ose-t-il demander à Dieu de ne pas faire périr le juste avec le pécheur ?",
+      context:"Après l’Alliance de Genèse 17 et l’annonce de la naissance d’Isaac au début de Genèse 18, le récit se tourne vers Sodome et Gomorrhe. Dieu fait connaître à Abraham la gravité de la « clameur » qui monte de ces villes. Mais avant le récit de leur destruction, Abraham demeure devant le Seigneur et intercède. Il pose une question décisive : peut-on traiter le juste comme le pécheur ? Le passage met ainsi en tension jugement, responsabilité, justice et miséricorde.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 18,17–33</strong>, immédiatement après la visite d’Abraham aux chênes de Mambré et l’annonce de la naissance d’Isaac. Deux hommes se dirigent vers Sodome, tandis qu’Abraham reste devant le Seigneur. Le chapitre 19 racontera ensuite l’arrivée des messagers à Sodome et la destruction de la ville ; la présente fiche s’arrête au dialogue d’intercession qui précède cet épisode." },
+        { label:"Piste philosophique", text:"Le texte pose une question de <strong>justice</strong> particulièrement nette : une collectivité peut-elle être jugée sans distinguer les innocents des coupables ? Abraham ne nie pas la faute de Sodome ; il demande que la justice ne devienne pas indifférente aux personnes. Le passage permet ainsi de réfléchir à la responsabilité collective, à l’individualisation du jugement et au rapport entre justice et miséricorde." }
+      ],
+      readingNotes:[
+        { type:"opposition", left:{ term:"Responsabilité collective", definition:"La « clameur » de Sodome et Gomorrhe concerne des villes entières : le mal prend une dimension sociale et collective." }, right:{ term:"Destinée individuelle", definition:"Abraham refuse pourtant que la collectivité efface la distinction entre le juste et le pécheur. La présence de quelques justes doit compter dans le jugement." }, conclusion:"Le dialogue fait apparaître la difficulté d’un jugement collectif qui resterait véritablement juste pour chaque personne." },
+        { type:"concept", term:"Intercession", definition:"Intercéder, c’est parler en faveur d’un autre. Abraham ne demande rien pour lui-même : il se tient devant Dieu au nom d’une ville menacée et plaide pour ceux qui pourraient y être justes. Dans la Bible, l’intercession devient ainsi une forme de solidarité par la prière." },
+        { type:"concept", term:"« Le juste avec le pécheur »", definition:"La formule concentre l’enjeu du passage. Abraham affirme implicitement qu’une justice véritable doit distinguer les conduites et ne peut traiter indistinctement l’innocent et le coupable. Sa question culmine dans cette objection : « Celui qui juge toute la terre va-t-il rendre une sentence contraire à la justice ? »" },
+        { type:"concept", term:"De cinquante à dix", definition:"Abraham reprend sa demande six fois : cinquante, quarante-cinq, quarante, trente, vingt, puis dix justes. Cette diminution progressive donne au dialogue sa tension. À chaque étape, le Seigneur accepte de renoncer à détruire la ville si ce petit nombre de justes y est trouvé." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Dieu fait connaître à Abraham ce qu’il va faire", range:"18,17–21", marker:"17", aria:"Genèse 18, verset 17", text:"Le Seigneur s’était dit : « Est-ce que je vais cacher à Abraham ce que je veux faire ?" },
+        { type:"verse", marker:"18", aria:"Genèse 18, verset 18", text:"Non, car Abraham doit devenir une nation grande et puissante, et toutes les nations de la terre doivent être bénies en lui." },
+        { type:"verse", marker:"19", aria:"Genèse 18, verset 19", text:"En effet, je l’ai choisi pour qu’il ordonne à ses fils et à sa descendance de garder le chemin du Seigneur, en pratiquant la justice et le droit, afin que le Seigneur réalise ce qu’il avait promis en faveur d’Abraham. »" },
+        { type:"verse", marker:"20", aria:"Genèse 18, verset 20", text:"Alors le Seigneur lui dit : « Comme elle est grande, la clameur qui monte de Sodome et de Gomorrhe ! Et leur faute, comme elle est lourde !" },
+        { type:"verse", marker:"21", aria:"Genèse 18, verset 21", text:"Je veux descendre pour voir si leur conduite correspond à la clameur venue jusqu’à moi. Si c’est faux, je le reconnaîtrai. »" },
+
+        { type:"movementStart", title:"Abraham demande que le juste ne périsse pas avec le pécheur", range:"18,22–26", marker:"22", aria:"Genèse 18, verset 22", text:"Les deux hommes se dirigèrent vers Sodome, tandis qu’Abraham demeurait devant le Seigneur." },
+        { type:"verse", marker:"23", aria:"Genèse 18, verset 23", text:"Il s’avança et dit : « Vas-tu vraiment faire périr le juste avec le pécheur ?" },
+        { type:"verse", marker:"24", aria:"Genèse 18, verset 24", text:"Peut-être y a-t-il cinquante justes dans la ville. Vas-tu vraiment les faire périr ? Est-ce que tu ne pardonneras pas à cause des cinquante justes qui sont dans la ville ?" },
+        { type:"verse", marker:"25", aria:"Genèse 18, verset 25", text:"Quelle horreur, si tu faisais une chose pareille ! Faire mourir le juste avec le pécheur, traiter le juste de la même manière que le pécheur, quelle horreur ! Celui qui juge toute la terre va-t-il rendre une sentence contraire à la justice ? »" },
+        { type:"verse", marker:"26", aria:"Genèse 18, verset 26", text:"Le Seigneur répondit : « Si je trouve cinquante justes dans Sodome, à cause d’eux je pardonnerai à toute la ville. »" },
+
+        { type:"movementStart", title:"L’intercession : de cinquante justes à dix", range:"18,27–32", marker:"27", aria:"Genèse 18, verset 27", text:"Abraham reprit : « Oserai-je parler encore à mon Seigneur, moi qui suis poussière et cendre ?" },
+        { type:"verse", marker:"28", aria:"Genèse 18, verset 28", text:"Peut-être, sur les cinquante justes, en manquera-t-il cinq : « Non, je ne la détruirai pas, si j’en trouve quarante-cinq. »" },
+        { type:"verse", marker:"29", aria:"Genèse 18, verset 29", text:"Abraham insista : « Peut-être en trouvera-t-on seulement quarante ? » Le Seigneur répondit : « Pour quarante, je ne le ferai pas. »" },
+        { type:"verse", marker:"30", aria:"Genèse 18, verset 30", text:"Abraham dit : « Que mon seigneur ne se mette pas en colère, si j’ose parler encore : peut-être y en aura-t-il seulement trente ? » Il répondit : « Si j’en trouve trente, je ne le ferai pas. »" },
+        { type:"verse", marker:"31", aria:"Genèse 18, verset 31", text:"Abraham dit alors : « Oserai-je parler encore à mon Seigneur ? Peut-être en trouvera-t-on seulement vingt ? » Il répondit : « Pour vingt, je ne détruirai pas. »" },
+        { type:"verse", marker:"32", aria:"Genèse 18, verset 32", text:"Il dit : « Que mon Seigneur ne se mette pas en colère : je ne parlerai plus qu’une fois. Peut-être en trouvera-t-on seulement dix ? » Et le Seigneur répondit : « Pour dix, je ne détruirai pas la ville de Sodome. »" },
+
+        { type:"movementStart", title:"La fin de l’entretien", range:"18,33", marker:"33", aria:"Genèse 18, verset 33", text:"Quand le Seigneur eut fini de s’entretenir avec Abraham il partit, et Abraham retourna chez lui." },
+
+        { type:"pause", reference:"ISAÏE 1,10.20", title:"Pas d’amour sans justice", text:"Écoutez la parole de Yahvé,<br>magistrats de Sodome,<br>prêtez l’oreille à l’enseignement de notre Dieu,<br>peuple de Gomorrhe !<br>Si vous refusez, si vous êtes rebelles,<br>par le glaive vous serez mangés." },
+        { type:"pause", reference:"ISAÏE 57,16.18", title:"Mais pas non plus de justice sans amour", text:"Je n’incrimine pas à jamais,<br>je n’incrimine pas sans fin.<br>Je le guérirai, je le guiderai,<br>je le comblerai de consolations." },
+        { type:"pause", reference:"PSAUME 86,5–7", title:"La prière confiante", text:"Toi, Seigneur, tu es bon et clément,<br>riche en fidélité pour tous ceux qui t’invoquent.<br>Yahvé, prête l’oreille à ma prière.<br>Au jour de ma détresse, je t’appelle,<br>car tu me réponds." },
+        { type:"gallery", title:"Sodome en images", artworks:[
+          { title:"Abraham and the Three Angels", alt:"Abraham accueille les trois visiteurs près de sa demeure, au seuil du récit qui conduit à Sodome.", details:"Giovanni Battista Tiepolo, première moitié du XVIIIe siècle, Museo del Prado, Madrid.", description:"Cette scène replace l’intercession dans son contexte immédiat : avant de plaider pour Sodome, Abraham reçoit les visiteurs par lesquels Dieu entre en dialogue avec lui au chapitre 18.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Giovanni%20Battista%20Tiepolo%20-%20Abraham%20and%20the%20Three%20Angels%20-%20WGA22273.jpg?width=1200", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Giovanni%20Battista%20Tiepolo%20-%20Abraham%20and%20the%20Three%20Angels%20-%20WGA22273.jpg?width=1800", source:"https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_-_Abraham_and_the_Three_Angels_-_WGA22273.jpg" },
+          { title:"Abraham imploring God to spare Sodom and Gomorrah", alt:"Abraham se prosterne et intercède auprès de Dieu afin qu’il épargne Sodome et Gomorrhe.", details:"Étienne Delaune, 1550–1572, gravure, British Museum.", description:"C’est l’image la plus directement liée au passage de Genèse 18,22–32 : Abraham se tient devant Dieu et plaide pour que le juste ne périsse pas avec le pécheur.", src:"https://media.britishmuseum.org/media/Repository/Documents/2014_11/12_10/5fd419e5_d7fb_4445_b9d7_a3e100b18cbd/preview_00096680_001.jpg", original:"https://media.britishmuseum.org/media/Repository/Documents/2014_11/12_10/5fd419e5_d7fb_4445_b9d7_a3e100b18cbd/preview_00096680_001.jpg", source:"https://www.britishmuseum.org/collection/object/P_1834-0804-73" },
+          { title:"Destruction of Sodom and Gomorrah", alt:"Une vision sombre et presque abstraite du châtiment de Sodome et Gomorrhe.", details:"Henry Ossawa Tanner, 1929–1930, High Museum of Art, Atlanta.", description:"Avec Tanner, la destruction n’est plus surtout narrative : elle devient vision spirituelle et bouleversement cosmique, comme si le jugement débordait toute représentation littérale.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Destruction%20of%20Sodom%20and%20Gomorrah%2C%20by%20Henry%20Ossawa%20Tanner%2C%201929-1930.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/Destruction%20of%20Sodom%20and%20Gomorrah%2C%20by%20Henry%20Ossawa%20Tanner%2C%201929-1930.jpg?width=2200", source:"https://commons.wikimedia.org/wiki/File:Destruction_of_Sodom_and_Gomorrah,_by_Henry_Ossawa_Tanner,_1929-1930.jpg" },
+          { title:"The Destruction of Sodom and Gomorrah", alt:"Le cataclysme détruit la ville dans une vaste composition dramatique, tandis que les survivants fuient au premier plan.", details:"John Martin, 1852, Laing Art Gallery, Newcastle upon Tyne.", description:"Cette dernière image montre l’aboutissement spectaculaire du récit : après le dialogue sur la justice et la miséricorde, vient le moment du jugement qui s’abat sur la ville.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20Martin%20-%20Sodom%20and%20Gomorrah.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20Martin%20-%20Sodom%20and%20Gomorrah.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:John_Martin_-_Sodom_and_Gomorrah.jpg" }
+        ] }
+      ]
+    }
   ];
 
   const SECTION_LABELS = { philosophie:"Philosophie", theologie:"Théologie", autres:"Autres" };
@@ -9413,6 +9972,7 @@
       id:"temps",
       label:"Le temps : mesure, durée, existence et délivrance",
       texts:[
+        "augustin-temps-creation-monde",
         "aristote-temps-nombre-mouvement",
         "kant-temps-forme-a-priori",
         "bergson-duree-espace",
@@ -9661,6 +10221,42 @@
   const textCredit = (text) => text.credit || text.author || text.source || "";
   const textThemes = (text) => text.themes || (text.theme ? [text.theme] : []);
   const textSections = (text) => text.sections || [text.section];
+
+  const BIBLE_BOOK_ORDER = [
+    "Genèse", "Exode", "Lévitique", "Nombres", "Deutéronome",
+    "Josué", "Juges", "Ruth", "1 Samuel", "2 Samuel", "1 Rois", "2 Rois",
+    "1 Chroniques", "2 Chroniques", "Esdras", "Néhémie", "Tobie", "Judith", "Esther",
+    "1 Maccabées", "2 Maccabées", "Job", "Psaumes", "Proverbes", "Qohélet", "Cantique des cantiques",
+    "Sagesse", "Ben Sira", "Isaïe", "Jérémie", "Lamentations", "Baruch", "Ézéchiel", "Daniel",
+    "Osée", "Joël", "Amos", "Abdias", "Jonas", "Michée", "Nahum", "Habaquq", "Sophonie",
+    "Aggée", "Zacharie", "Malachie", "Matthieu", "Marc", "Luc", "Jean", "Actes",
+    "Romains", "1 Corinthiens", "2 Corinthiens", "Galates", "Éphésiens", "Philippiens", "Colossiens",
+    "1 Thessaloniciens", "2 Thessaloniciens", "1 Timothée", "2 Timothée", "Tite", "Philémon",
+    "Hébreux", "Jacques", "1 Pierre", "2 Pierre", "1 Jean", "2 Jean", "3 Jean", "Jude", "Apocalypse"
+  ];
+  const bibleReferenceKey = (text) => {
+    if (!text.bible) return null;
+    const label = `${text.sourceTag || ""} ${text.headerReference || ""} ${text.work || ""}`.trim();
+    const bookIndex = BIBLE_BOOK_ORDER.findIndex((book) => normalize(label).includes(normalize(book)));
+    const reference = text.headerReference || text.work || text.publication || "";
+    const numberMatch = reference.match(/(\d+)\s*(?:[,.:]\s*(\d+))?/);
+    const chapter = numberMatch ? Number.parseInt(numberMatch[1], 10) : Number.MAX_SAFE_INTEGER;
+    const verse = numberMatch?.[2] ? Number.parseInt(numberMatch[2], 10) : 0;
+    return [bookIndex < 0 ? BIBLE_BOOK_ORDER.length : bookIndex, chapter, verse];
+  };
+  const theologySort = (left, right) => {
+    const leftBible = bibleReferenceKey(left);
+    const rightBible = bibleReferenceKey(right);
+    if (leftBible && !rightBible) return -1;
+    if (!leftBible && rightBible) return 1;
+    if (leftBible && rightBible) {
+      for (let index = 0; index < leftBible.length; index += 1) {
+        if (leftBible[index] !== rightBible[index]) return leftBible[index] - rightBible[index];
+      }
+      return collator.compare(left.title, right.title);
+    }
+    return collator.compare(authorTag(left), authorTag(right)) || collator.compare(left.title, right.title);
+  };
 
   const root = document.querySelector("[data-text-catalog]");
   if (!root) return;
@@ -9939,9 +10535,13 @@
 
   const tagLink = (href, label, program = false) => `<a class="text-tag${program ? " text-tag--program" : ""}" href="${href}"${program ? ' title="Notion du programme de Terminale" aria-label="#' + label + ', notion du programme de Terminale"' : ""}>#${label}</a>`;
 
+  const formatCardIdea = (value = "") => escapeHtml(value)
+    .replace(/&lt;em&gt;/gi, "<em>")
+    .replace(/&lt;\/em&gt;/gi, "</em>");
+
   const card = (text) => {
     const idea = text.cardIdea || text.familiarIdea;
-    const title = `${formatCardTitle(text)}${idea ? ` <span class="text-card-familiar-idea">${escapeHtml(idea)}</span>` : ""}`;
+    const title = `${formatCardTitle(text)}${idea ? ` <span class="text-card-familiar-idea">${formatCardIdea(idea)}</span>` : ""}`;
     const cardModifiers = [
       text.cardStyle ? `text-card--${text.cardStyle}` : "",
       idea ? "text-card--with-idea" : "",
@@ -10053,6 +10653,7 @@
     linkedCompanionIds.forEach((id) => expandedIds.add(id));
 
     const results = TEXTS.filter((text) => expandedIds.has(text.id));
+    if (fixedSection === "theologie") results.sort(theologySort);
     const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
     currentPage = Math.min(currentPage, totalPages);
     syncFiltersInUrl(selectedSection, selectedThemeValues, selectedAuthor, selectedSource);
@@ -10077,7 +10678,9 @@
     });
     const standalone = pageResults
       .filter((text) => !groupedIds.has(text.id))
-      .sort((a,b) => collator.compare(SECTION_LABELS[a.section],SECTION_LABELS[b.section]) || collator.compare(textCredit(a),textCredit(b)) || collator.compare(a.title,b.title));
+      .sort((a,b) => fixedSection === "theologie"
+        ? theologySort(a,b)
+        : collator.compare(SECTION_LABELS[a.section],SECTION_LABELS[b.section]) || collator.compare(textCredit(a),textCredit(b)) || collator.compare(a.title,b.title));
     const linkedCompanions = results.length - directMatches.length;
     const linkedNote = linkedCompanions > 0 ? ` <span class="texts-count-linked">dont ${linkedCompanions} texte${linkedCompanions > 1 ? "s" : ""} lié${linkedCompanions > 1 ? "s" : ""}</span>` : "";
 

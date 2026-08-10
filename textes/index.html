@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://florianvallin.fr/textes">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css?v=20260807-3">
-  <link rel="stylesheet" href="/css/textes.css?v=20260807-10">
+  <link rel="stylesheet" href="/css/textes.css?v=20260810-structure-1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,6 +42,16 @@
             <div class="texts-filter-group"><label for="author-filter">Auteur</label><select class="texts-select" id="author-filter" data-text-author><option value="all">Tous les auteurs</option></select></div>
             <button class="texts-reset" type="button" data-text-reset>Réinitialiser</button>
           </div>
+          <div class="texts-compass-pair" aria-label="Boussoles de la bibliothèque">
+            <a class="texts-philo-compass-strip" href="/textes/philosophie/boussole/" aria-label="Ouvrir la Boussole philosophique">
+              <span class="texts-philo-compass-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span>
+              <span class="texts-philo-compass-text"><strong>Boussole philosophique</strong></span>
+            </a>
+            <a class="texts-bible-compass-strip" href="/textes/theologie/boussole/" aria-label="Ouvrir la Boussole biblique">
+              <span class="texts-bible-compass-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span>
+              <span class="texts-bible-compass-text"><strong>Boussole biblique</strong></span>
+            </a>
+          </div>
         </div>
         <div class="texts-summary"><p class="texts-count" aria-live="polite" data-text-count></p><p class="texts-sort-note">Textes fortement liés regroupés</p></div>
         <div class="texts-grid" data-text-grid></div>
@@ -50,6 +60,6 @@
   </main>
   <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div></footer>
   <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <script src="/js/script.js?v=20260806-5" defer></script><script src="/js/textes-catalogue.js?v=20260808-25" defer></script>
+  <script src="/js/script.js?v=20260806-5" defer></script><script src="/js/textes-catalogue.js?v=20260809-catalogue-4" defer></script>
 </body>
 </html>

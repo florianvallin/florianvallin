@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Lire la Bible — Florian Vallin</title>
+<meta name="description" content="Lecteur biblique privé du site : livres, chapitres, versets et plusieurs traductions."/>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet"/>
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet"/>
+<link rel="canonical" href="https://florianvallin.fr/textes/theologie/bible/"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="stylesheet" href="/css/style.css?v=20260807-3"/>
+<link rel="stylesheet" href="/css/textes.css?v=20260810-bible-reader-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="texts-page bible-reader-page" id="top">
+<header class="navbar" id="site-header">
+<div class="nav-container">
+<a aria-label="Accueil — Florian Vallin" class="nav-brand" href="/">Florian <strong>Vallin</strong></a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Navigation principale" class="nav-links" id="primary-navigation"><a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a><a href="/#philosophie">Prestations</a><a href="/#quisuisje">Qui suis-je ?</a><a href="/#faq">FAQ</a><a href="/#contact">Contactez-moi</a></nav>
+</div>
+</header>
+
+<main class="bible-reader-main">
+  <div class="bible-reader-shell">
+    <p class="bible-reader-breadcrumb"><a href="/textes/">Textes</a><span>›</span><a href="/textes/theologie/">Théologie</a><span>›</span><a href="/textes/theologie/boussole/">Boussole biblique</a><span>›</span><span>Textes bibliques</span></p>
+
+    <header class="bible-reader-hero">
+      <span class="bible-reader-kicker">Texte intégral · lecture</span>
+      <h1>La Bible, texte par texte</h1>
+      <p>Choisis un livre, une traduction et un chapitre. Les repères éditoriaux servent uniquement à retrouver rapidement un passage.</p>
+    </header>
+
+    <section class="bible-reader-controls" aria-label="Choisir un texte biblique et une traduction">
+      <div class="bible-reader-controls-head">
+        <div><span>Lecture</span><h2>Choisir un passage</h2></div>
+        <span class="bible-reader-status" data-bible-reader-status>Chargement…</span>
+      </div>
+
+      <div class="bible-reader-select-grid">
+        <label class="bible-reader-field"><span>Livre</span><select data-bible-book aria-label="Livre biblique"></select></label>
+        <label class="bible-reader-field"><span>Traduction</span><select data-bible-translation aria-label="Traduction biblique"></select></label>
+        <label class="bible-reader-field"><span>Chapitre</span><select data-bible-chapter aria-label="Chapitre"><option value="1">Chapitre 1</option></select></label>
+      </div>
+
+      <div class="bible-reader-meta-line">
+        <span data-bible-translation-note></span>
+        <div class="bible-reader-meta-actions">
+          <button class="bible-reader-tool-toggle" type="button" data-bible-landmarks-toggle aria-pressed="true" title="Afficher ou masquer les repères de lecture"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h11v15l-5.5-3-5.5 3v-15Z"></path></svg><span>Repères</span></button>
+          <button class="bible-reader-tool-toggle" type="button" data-bible-compare-toggle aria-expanded="false" aria-controls="bible-translation-compare"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5H4v14h4M16 5h4v14h-4M12 3v18"></path></svg><span>Comparer</span></button>
+          <button class="bible-reader-tool-toggle" type="button" data-bible-collections-toggle aria-expanded="false" aria-controls="bible-reader-collections"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h6.2c1.2 0 2.1.5 2.8 1.3v14c-.7-.7-1.6-1.1-2.8-1.1H5V4.5Z"></path><path d="M19 4.5h-5v15.3c.7-.7 1.7-1.1 2.8-1.1H19V4.5Z"></path></svg><span>Prières &amp; paraboles</span></button>
+          <button class="bible-reader-tool-toggle bible-reader-search-toggle" type="button" data-bible-search-toggle aria-expanded="false" aria-controls="bible-global-search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m15.8 15.8 4.1 4.1"></path></svg><span>Rechercher</span></button>
+          <span class="bible-reader-keyboard-hint" aria-hidden="true">← → changer de chapitre</span>
+        </div>
+      </div>
+
+      <div class="bible-reader-search-panel" id="bible-global-search" data-bible-search-panel hidden>
+        <div class="bible-reader-search-head"><div><span>Recherche globale</span><strong>Retrouver un mot ou une expression</strong></div><button type="button" data-bible-search-close aria-label="Fermer la recherche">×</button></div>
+        <form class="bible-reader-search-form" data-bible-search-form>
+          <label><span class="sr-only">Rechercher dans la Bible</span><input type="search" data-bible-search-input placeholder="Ex. : amour, justice, royaume de Dieu…" autocomplete="off"/></label>
+          <select data-bible-search-scope aria-label="Périmètre de recherche"><option value="all">Toute la Bible</option><option value="book">Ce livre seulement</option></select>
+          <button type="submit">Rechercher</button>
+        </form>
+        <div class="bible-reader-search-feedback" data-bible-search-status>La première recherche globale peut prendre quelques secondes.</div>
+        <div class="bible-reader-search-results" data-bible-search-results></div>
+      </div>
+
+      <div class="bible-reader-compare-panel" id="bible-translation-compare" data-bible-compare-panel hidden>
+        <div class="bible-reader-compare-head">
+          <div><span>Comparer</span><strong data-bible-compare-title>Traductions du passage</strong></div>
+          <button type="button" data-bible-compare-close aria-label="Fermer le comparateur">×</button>
+        </div>
+        <div class="bible-reader-compare-toolbar">
+          <div class="bible-reader-compare-modes" role="tablist" aria-label="Mode de comparaison">
+            <button type="button" role="tab" data-bible-compare-mode="verse" aria-selected="true" class="is-active">Verset</button>
+            <button type="button" role="tab" data-bible-compare-mode="chapter" aria-selected="false">Chapitre</button>
+          </div>
+          <div class="bible-reader-compare-translations" data-bible-compare-translations aria-label="Traductions à comparer"></div>
+        </div>
+        <p class="bible-reader-compare-note" data-bible-compare-note>Le mode verset garde la comparaison lisible sur téléphone. Passe en « Chapitre » pour un alignement continu.</p>
+        <div class="bible-reader-compare-focus-nav" data-bible-compare-focus-nav hidden>
+          <button type="button" data-bible-compare-prev-verse aria-label="Verset précédent">←</button>
+          <button type="button" data-bible-compare-focus-ref aria-label="Ouvrir ce verset dans le lecteur"><strong data-bible-compare-focus-label></strong><span>ouvrir dans le texte</span></button>
+          <button type="button" data-bible-compare-next-verse aria-label="Verset suivant">→</button>
+        </div>
+        <div class="bible-reader-compare-content" data-bible-compare-content><div class="bible-reader-compare-loading">Choisis un chapitre pour comparer les traductions.</div></div>
+      </div>
+
+      <div class="bible-reader-collections-panel" id="bible-reader-collections" data-bible-collections-panel hidden>
+        <div class="bible-reader-collections-head">
+          <div><span>Recueils</span><strong>Prières &amp; paraboles bibliques</strong></div>
+          <button type="button" data-bible-collections-close aria-label="Fermer les collections">×</button>
+        </div>
+        <div class="bible-reader-collections-tabs" role="tablist" aria-label="Choisir une collection">
+          <button type="button" role="tab" class="is-active" aria-selected="true" data-bible-collection="prayers">Toutes les prières</button>
+          <button type="button" role="tab" aria-selected="false" data-bible-collection="parables">Toutes les paraboles</button>
+        </div>
+        <p class="bible-reader-collections-description" data-bible-collections-description></p>
+        <div class="bible-reader-collections-tools">
+          <label><span class="sr-only">Rechercher dans la collection</span><input type="search" data-bible-collections-search placeholder="Rechercher un nom, un thème, une référence…" autocomplete="off"/></label>
+          <select data-bible-collections-section aria-label="Filtrer la collection"><option value="all">Tous les textes</option><option value="ancien">Ancien Testament</option><option value="nouveau">Nouveau Testament</option><option value="deuterocanonique">Deutérocanoniques</option><option value="supplementaire">Textes supplémentaires</option></select>
+          <select data-bible-collections-type aria-label="Filtrer par type"><option value="all">Tous les types</option></select>
+        </div>
+        <div class="bible-reader-collections-status" data-bible-collections-status></div>
+        <div class="bible-reader-collections-list" data-bible-collections-list></div>
+      </div>
+
+      <div class="bible-reader-nav-wrap" data-bible-nav-wrap hidden>
+        <div class="bible-reader-chapter-nav" aria-label="Navigation entre les chapitres">
+          <button class="bible-reader-nav-button" type="button" data-bible-prev aria-label="Chapitre précédent"><span aria-hidden="true">←</span><span>Précédent</span></button>
+          <button class="bible-reader-current" type="button" data-bible-current aria-expanded="false" aria-controls="bible-chapter-index"><small>Chapitre</small><strong data-bible-current-label>1</strong><span data-bible-current-title></span></button>
+          <button class="bible-reader-nav-button bible-reader-nav-button--next" type="button" data-bible-next aria-label="Chapitre suivant"><span>Suivant</span><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="bible-reader-chapter-index" id="bible-chapter-index" data-bible-chapter-index hidden></div>
+      </div>
+    </section>
+
+    <div class="bible-reader-progress" aria-hidden="true"><span data-bible-reader-progress></span></div>
+
+    <section class="bible-reader-content" data-bible-reader-content aria-live="polite" aria-busy="true">
+      <div class="bible-reader-loading"><span></span><p>Chargement des textes…</p></div>
+    </section>
+
+    <nav class="bible-reader-floating-nav" data-bible-floating-nav aria-label="Navigation rapide entre les chapitres" hidden>
+      <button type="button" data-bible-floating-prev aria-label="Chapitre précédent">←</button>
+      <button class="bible-reader-floating-current" type="button" data-bible-floating-current title="Revenir au début du chapitre"><strong data-bible-floating-ref></strong><span data-bible-floating-title></span></button>
+      <button type="button" data-bible-floating-next aria-label="Chapitre suivant">→</button>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div></footer>
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<script src="/js/script.js?v=20260806-5" defer></script>
+<script src="/js/bible-reader.js?v=20260810-8" defer></script>
+</body>
+</html>

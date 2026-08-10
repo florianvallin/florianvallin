@@ -1,0 +1,117 @@
+/* Bible text pages — layout fixes
+   - keep artwork galleries centered
+   - keep scripture verses continuous when a movement begins
+   - prevent movement labels from forcing large gaps or breaking words awkwardly
+*/
+
+/* 1) Inline iconography galleries: always centered inside the reading card. */
+.text-reading--scripture .text-art-gallery--inline {
+  box-sizing: border-box;
+  width: min(760px, 100%);
+  max-width: 760px;
+  margin: 42px auto 46px;
+}
+
+/* Keep the artwork, caption and description centered consistently. */
+.text-reading--scripture .text-art-gallery--inline .text-art-slide figcaption,
+.text-reading--scripture .text-art-gallery--inline .text-art-description {
+  text-align: center;
+}
+
+/* Keep the stage itself visually centered even before zooming. */
+.text-reading--scripture .text-art-gallery--inline figure,
+.text-reading--scripture .text-art-gallery--inline img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-reading--scripture .text-art-gallery--inline img {
+  display: block;
+}
+
+/* 2) Movement starts are still verses: do not insert an artificial vertical break. */
+.text-reading--scripture .text-scripture-verse--movement-start,
+.text-reading--scripture .text-scripture-verse--movement-start:first-child {
+  position: relative;
+  margin-top: 0;
+}
+
+/* The movement label stays in the left grid column, but its visible content no longer
+   contributes to the height of the verse row. The biblical text therefore keeps a
+   continuous vertical rhythm while the label can extend naturally in the margin. */
+.text-reading--scripture .text-scripture-movement-label {
+  position: relative;
+  width: 138px;
+  height: 0;
+  min-height: 0;
+  overflow: visible;
+  padding: .08em 14px 0 0;
+  box-sizing: border-box;
+  align-self: start;
+  text-align: right;
+}
+
+/* 3) Movement titles: stable wrapping, no isolated final letters or ugly breaks. */
+.text-reading--scripture .text-scripture-movement-title {
+  display: block;
+  max-width: 100%;
+  line-height: 1.08;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
+}
+
+.text-reading--scripture .text-scripture-movement-range {
+  white-space: nowrap;
+}
+
+.text-reading--scripture .text-scripture-movement-marker {
+  top: .58em;
+  right: 0;
+}
+
+@media (max-width: 780px) {
+  .text-reading--scripture .text-art-gallery--inline {
+    width: min(760px, 100%);
+    margin: 36px auto 40px;
+  }
+
+  .text-reading--scripture .text-scripture-movement-label {
+    width: 118px;
+    padding-right: 12px;
+  }
+
+  .text-reading--scripture .text-scripture-movement-title {
+    font-size: .9rem;
+    line-height: 1.08;
+  }
+}
+
+@media (max-width: 520px) {
+  .text-reading--scripture .text-art-gallery--inline {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .text-reading--scripture .text-scripture-movement-label {
+    width: 110px;
+    padding-right: 11px;
+  }
+
+  .text-reading--scripture .text-scripture-movement-title {
+    font-size: .86rem;
+  }
+}
+
+
+/* Zoomed artwork: return editorial copy to normal left alignment.
+   These selectors intentionally do not affect the carousel itself. */
+.text-art-lightbox figcaption,
+.text-art-lightbox .text-art-description,
+.text-art-viewer figcaption,
+.text-art-viewer .text-art-description,
+[role="dialog"] .text-art-description {
+  text-align: left;
+}
