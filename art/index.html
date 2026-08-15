@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Chosen — Parabole du pêcheur | Art — Florian Vallin</title>
+  <meta name="description" content="Sélection personnelle de vidéos et fragments visuels — The Chosen, Parabole du pêcheur.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://florianvallin.fr/art/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Chosen — Parabole du pêcheur | Art — Florian Vallin">
+  <meta property="og:description" content="Sélection personnelle de vidéos et fragments visuels.">
+  <meta property="og:url" content="https://florianvallin.fr/art/">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/art/art.css">
+</head>
+<body>
+  <a class="art-mark" href="/art/" aria-label="Accueil de la sélection Art">art</a>
+
+  <main class="art-stage" id="artMain">
+    <article class="art-work" aria-live="polite">
+      <div class="art-media" id="artMedia">
+        <video
+          class="art-video"
+          controls
+          playsinline
+          preload="metadata"
+          src="https://64.media.tumblr.com/6fdaf6eb9013f61832b014fe951e0a67/428734f7ab82616e-a8/437f5f0db47a7e639a725dc35b57f4c7c5e1154e.mov"
+        >
+          Votre navigateur ne peut pas lire cette vidéo.
+          <a href="https://64.media.tumblr.com/6fdaf6eb9013f61832b014fe951e0a67/428734f7ab82616e-a8/437f5f0db47a7e639a725dc35b57f4c7c5e1154e.mov">Ouvrir la vidéo</a>.
+        </video>
+      </div>
+
+      <h1 class="art-title" id="artTitle">The Chosen — Parabole du pêcheur</h1>
+    </article>
+  </main>
+
+  <button
+    class="selection-trigger"
+    id="selectionTrigger"
+    type="button"
+    aria-controls="selectionDrawer"
+    aria-expanded="false"
+  >
+    <span class="selection-trigger-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span>Sélection</span>
+  </button>
+
+  <button class="drawer-backdrop" id="drawerBackdrop" type="button" aria-label="Fermer la sélection" tabindex="-1"></button>
+
+  <aside class="selection-drawer" id="selectionDrawer" aria-hidden="true" aria-label="Sélection de vidéos">
+    <div class="selection-head">
+      <p>Sélection</p>
+      <button class="selection-close" id="selectionClose" type="button" aria-label="Fermer">×</button>
+    </div>
+
+    <nav class="selection-list" id="selectionList" aria-label="Vidéos disponibles">
+      <a class="selection-item is-active" href="/art/?v=the-chosen-parabole-du-pecheur" data-video-slug="the-chosen-parabole-du-pecheur" aria-current="page">
+        <span class="selection-index">01</span>
+        <span class="selection-name">The Chosen — Parabole du pêcheur</span>
+      </a>
+    </nav>
+  </aside>
+
+  <noscript>
+    <p class="art-noscript">JavaScript est nécessaire pour parcourir la sélection. La première vidéo reste lisible ci-dessus.</p>
+  </noscript>
+
+  <script src="/art/art-data.js"></script>
+  <script src="/art/art.js"></script>
+</body>
+</html>

@@ -12,6 +12,13 @@
     target.innerHTML = `<div class="text-detail-inner"><p class="text-breadcrumb"><a href="/textes/">Textes</a></p><h1>Texte introuvable</h1><div class="text-placeholder"><p>Cette référence n’existe pas ou n’est plus disponible.</p></div></div>`;
     return;
   }
+  const bibleRoot = window.FV_BIBLE_DATA || {};
+  const bibleData = text.bible ? bibleRoot.texts?.[text.bibleDataKey || text.id] : null;
+  if (bibleData) {
+    text.readingBlocks = bibleData.readingBlocks || [];
+    text.paragraphs = bibleData.paragraphs || [];
+  }
+  const bibleCycle = bibleData?.cycleId ? bibleRoot.cycles?.[bibleData.cycleId] : null;
   target.classList.remove("text-detail--philosophie", "text-detail--theologie", "text-detail--autres");
   target.classList.add(`text-detail--${text.section}`);
   const sectionLabel = window.FV_TEXT_SECTION_LABELS[text.section];
@@ -72,6 +79,18 @@
     }).join("");
   };
   const escapeAttribute = (value) => String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const bibleReaderState = (() => {
+    if (!text.bible) return null;
+    const structured = bibleData?.reader;
+    if (structured?.chapter) return { book:structured.book || "Gen", chapter:String(structured.chapter), verse:String(structured.verse || "1") };
+    const reference = text.headerReference || text.work || "";
+    const match = reference.match(/Genèse\s+(\d+)(?:[–-]\d+)?(?:,(\d+))?/i);
+    if (!match) return null;
+    return { book:"Gen", chapter:match[1], verse:match[2] || "1" };
+  })();
+  const bibleReaderUrl = bibleReaderState
+    ? `/textes/theologie/bible/?livre=${encodeURIComponent(bibleReaderState.book)}&traduction=tob2010&chapitre=${encodeURIComponent(bibleReaderState.chapter)}&verset=${encodeURIComponent(bibleReaderState.verse)}`
+    : "/textes/theologie/bible/";
   // Keep contextual navigation useful without turning repeated vocabulary into link noise.
   // The helper is called independently for each block, so the first link may reappear
   // in “Aller encore plus loin” even when the same target was already linked in “Repères de lecture”.
@@ -110,6 +129,24 @@
       });
     }).join("");
   };
+  const definedBibleEntities = new Set();
+  const addBibleEntityTerms = (html) => {
+    const entities = bibleData?.entities || [];
+    if (!entities.length) return html;
+    const terms = [...entities].sort((a, b) => b.term.length - a.term.length);
+    const pattern = new RegExp(`(?<![\p{L}\p{N}_])(${terms.map(({ term }) => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})(?![\p{L}\p{N}_])`, "giu");
+    return html.split(/(<[^>]+>)/g).map((part) => {
+      if (part.startsWith("<")) return part;
+      return part.replace(pattern, (match) => {
+        const item = terms.find(({ term }) => term.localeCompare(match, "fr", { sensitivity:"base" }) === 0);
+        const termKey = item && item.term.toLocaleLowerCase("fr");
+        if (!item || definedBibleEntities.has(termKey)) return match;
+        definedBibleEntities.add(termKey);
+        return `<span class="text-bible-entity-term" tabindex="0" data-tooltip-kind="Personnage" data-tooltip-title="${escapeAttribute(match)}" data-tooltip="${escapeAttribute(item.definition)}" aria-label="${escapeAttribute(match)} : ${escapeAttribute(item.definition)}">${match}</span>`;
+      });
+    }).join("");
+  };
+  const addTextAnnotations = (html) => text.bible ? addBibleEntityTerms(html) : addGlossaryTerms(html);
   const readingParts = text.parts?.length ? text.parts : [{
     context:text.context,
     readingGuide:text.readingGuide,
@@ -129,6 +166,55 @@
     }
     return links.length ? `<div class="text-context-compasses">${links.join("")}</div>` : "";
   })();
+  const bibleCycleItems = bibleCycle
+    ? bibleCycle.texts.map((cycleTextId) => (window.FV_TEXT_CATALOG || []).find((item) => item.id === cycleTextId)).filter(Boolean)
+    : [];
+  const bibleCycleIndex = bibleCycleItems.findIndex((item) => item.id === text.id);
+  const biblePreviousText = bibleCycleIndex > 0 ? bibleCycleItems[bibleCycleIndex - 1] : null;
+  const bibleNextText = bibleCycleIndex >= 0 && bibleCycleIndex < bibleCycleItems.length - 1 ? bibleCycleItems[bibleCycleIndex + 1] : null;
+  const bibleCoordinate = text.bible && bibleCycle
+    ? `<p class="text-bible-coordinate" aria-label="Coordonnées bibliques"><span>${escapeAttribute(text.headerReference || text.work || "")}</span><i aria-hidden="true">·</i><span>${escapeAttribute(bibleCycle.coordinate || bibleCycle.label)}</span></p>`
+    : "";
+  const bibleCycleNavigation = text.bible && bibleCycleItems.length
+    ? `<nav class="text-bible-cycle" aria-label="Parcourir ${escapeAttribute(bibleCycle.label)}">
+        <div class="text-bible-cycle-head"><span>${escapeAttribute(bibleCycle.reference || "Genèse")}</span><strong>${escapeAttribute(bibleCycle.label)}</strong><small>Étape ${bibleCycleIndex + 1} / ${bibleCycleItems.length}</small></div>
+        <ol>${bibleCycleItems.map((item, index) => `<li${item.id === text.id ? ' class="is-current"' : ""}><a href="${textUrl(item)}"${item.id === text.id ? ' aria-current="page"' : ""}><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeAttribute(item.title)}</strong></a></li>`).join("")}</ol>
+      </nav>`
+    : "";
+  const bibleViewToggle = text.bible
+    ? `<div class="text-bible-toolbar">
+        <div class="text-bible-view-toggle" role="group" aria-label="Mode d’affichage du texte biblique"><span>Affichage</span><button type="button" data-bible-view="reading" aria-pressed="false">Lecture</button><button type="button" data-bible-view="study" aria-pressed="true">Étude</button></div>
+        <div class="text-bible-toolbar-actions">
+          <button type="button" class="text-bible-compare-trigger" data-bible-compare-open><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><path d="M8 5H4v14h4M16 5h4v14h-4M12 3v18"/></svg><span>Comparer les traductions</span></button>
+        </div>
+      </div>`
+    : "";
+  const renderBibleGenealogy = () => {
+    const family = bibleData?.family;
+    if (!family?.levels?.length) return "";
+    const highlighted = [...(family.highlight || [])].sort((a,b) => b.length - a.length);
+    const renderLine = (line) => {
+      let output = escapeAttribute(line);
+      highlighted.forEach((name) => {
+        const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        output = output.replace(new RegExp(escapedName, "giu"), (match) => `<strong>${match}</strong>`);
+      });
+      return output;
+    };
+    return `<div class="text-bible-genealogy" aria-label="${escapeAttribute(family.title || "Repère familial")}"><span>${escapeAttribute(family.title || "Repère familial")}</span><div>${family.levels.map((level, index) => `<p${index === family.levels.length - 1 ? ' class="is-last"' : ""}>${level.map(renderLine).join('<i aria-hidden="true"> + </i>')}</p>`).join("")}</div></div>`;
+  };
+  const primaryBibleBlocks = text.bible ? (readingParts[0]?.readingBlocks || []) : [];
+  const bibleMovements = primaryBibleBlocks.map((block, blockIndex) => ({ block, blockIndex })).filter(({ block }) => block.type === "movementStart");
+  const bibleAnatomy = bibleMovements.length >= 4
+    ? `<nav class="text-bible-anatomy" aria-label="Structure du passage"><div><span>Structure du passage</span><small>${bibleMovements.length} mouvements</small></div><ol>${bibleMovements.map(({ block, blockIndex }, index) => `<li><a href="#passage-movement-${blockIndex + 1}"><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeAttribute(block.title || "Mouvement")}</strong>${block.range ? `<small>${escapeAttribute(block.range)}</small>` : ""}</a></li>`).join("")}</ol></nav>`
+    : "";
+  const bibleBottomNavigation = text.bible && bibleCycleItems.length
+    ? `<nav class="text-bible-prevnext" aria-label="Continuer la lecture de ${escapeAttribute(bibleCycle.label)}">
+        ${biblePreviousText ? `<a class="text-bible-prevnext-side text-bible-prevnext-previous" href="${textUrl(biblePreviousText)}"><span>← Précédent</span><strong>${escapeAttribute(biblePreviousText.title)}</strong></a>` : `<span class="text-bible-prevnext-side is-empty" aria-hidden="true"></span>`}
+<span class="text-bible-prevnext-center"><span>${escapeAttribute(bibleCycle.label)}</span><strong>Étape ${bibleCycleIndex + 1} / ${bibleCycleItems.length}</strong></span>
+        ${bibleNextText ? `<a class="text-bible-prevnext-side text-bible-prevnext-next" href="${textUrl(bibleNextText)}"><span>Suivant →</span><strong>${escapeAttribute(bibleNextText.title)}</strong></a>` : `<span class="text-bible-prevnext-side is-empty" aria-hidden="true"></span>`}
+      </nav>`
+    : "";
   const renderContext = (part) => {
     const guide = part.readingGuide || [];
     if (guide.length) {
@@ -137,14 +223,14 @@
         const withTextLinks = linkReferencedTextsInHtml(item.text || "");
         const content = isReligiousText && item.label === "Où sommes-nous ?" ? withTextLinks : linkThemesInHtml(withTextLinks);
         return `<li><strong>${item.label}</strong><span>${content}</span></li>`;
-      }).join("")}</ul>${compassLinks}</aside>`;
+      }).join("")}</ul>${renderBibleGenealogy()}${compassLinks}</aside>`;
       return dedupeLinksByHref(block);
     }
     const questions = (part.readingQuestions || []).length
       ? `<div class="text-context-questions"><span>Questions directrices</span><ul>${part.readingQuestions.map((question) => `<li>${linkThemesInHtml(question)}</li>`).join("")}</ul></div>`
       : "";
     if (!part.context) return "";
-    const block = `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${compassLinks}</aside>`;
+    const block = `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${renderBibleGenealogy()}${compassLinks}</aside>`;
     return dedupeLinksByHref(block);
   };
   const firstContext = renderContext(readingParts[0]);
@@ -193,19 +279,19 @@
       </dialog>
     </section>`;
   };
-  const renderReadingBlock = (block) => {
+  const renderReadingBlock = (block, blockIndex) => {
     if (block.type === "gallery") return renderArtworkGallery({ ...block, inline:true });
     if (block.type === "heading") {
       return '<h2 class="text-scripture-heading">' + block.text + '</h2>';
     }
     if (block.type === "movementStart") {
       const movementLabel = block.title + (block.range ? ", " + block.range : "");
-      return '<div class="text-scripture-verse text-scripture-verse--movement-start" aria-label="Mouvement du récit : ' + escapeAttribute(movementLabel) + '">' +
+      return '<div id="passage-movement-' + (blockIndex + 1) + '" class="text-scripture-verse text-scripture-verse--movement-start" aria-label="Mouvement du récit : ' + escapeAttribute(movementLabel) + '">' +
         '<div class="text-scripture-movement-label"><span class="text-scripture-movement-title">' + block.title + '</span>' +
           (block.range ? '<span class="text-scripture-movement-range">' + block.range + '</span>' : '') +
           '<span class="text-scripture-marker text-scripture-movement-marker" aria-label="' + escapeAttribute(block.aria || block.marker || "") + '">' + (block.marker || "") + '</span>' +
         '</div>' +
-        '<p class="text-scripture-text">' + addGlossaryTerms(block.text || "") + '</p>' +
+        '<p class="text-scripture-text">' + addTextAnnotations(block.text || "") + '</p>' +
       '</div>';
     }
     if (block.type === "movement") {
@@ -228,13 +314,13 @@
       return '<aside class="text-scripture-pause" aria-label="' + escapeAttribute(pauseLabel) + '">' +
         '<p class="text-scripture-pause-title">' + pauseTitle + '</p>' +
         pauseIntro +
-        '<blockquote>' + addGlossaryTerms(block.text || "") + '</blockquote>' +
+        '<blockquote>' + addTextAnnotations(block.text || "") + '</blockquote>' +
       '</aside>';
     }
     const chapterClass = String(block.marker || "").startsWith("GENÈSE") ? " text-scripture-marker--chapter" : "";
     return '<div class="text-scripture-verse">' +
       '<span class="text-scripture-marker' + chapterClass + '" aria-label="' + escapeAttribute(block.aria || block.marker || "") + '">' + (block.marker || "") + '</span>' +
-      '<p class="text-scripture-text">' + addGlossaryTerms(block.text || "") + '</p>' +
+      '<p class="text-scripture-text">' + addTextAnnotations(block.text || "") + '</p>' +
     '</div>';
   };
   const renderReadingPart = (part, index) => {
@@ -366,12 +452,17 @@
     <p class="text-detail-author">${text.author
       ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${escapeAttribute(text.author)}">${escapeAttribute(text.credit || text.author)}</a>`
       : `<a class="text-detail-author-link" href="/textes/theologie/?source=${encodeURIComponent(text.source || "")}" aria-label="Voir les textes du corpus ${escapeAttribute(text.source || "")}">${text.source || ""}</a>`}${text.headerReference ? ` <span class="text-detail-work-reference">${text.headerReference}</span>` : ""}${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}</p>
+    ${bibleCoordinate}
     <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>
+    ${bibleCycleNavigation}
+    ${bibleViewToggle}
     ${firstContext}
     ${related}
+    ${bibleAnatomy}
     ${readingSections}
     ${artworkGallery}
     ${readingNotes}
+    ${bibleBottomNavigation}
     ${pathNavigation}
     <aside class="text-detail-cta" aria-label="Accompagnement sur ce texte">
       <div class="text-detail-cta-copy">
@@ -381,7 +472,97 @@
       </div>
       <a class="text-detail-cta-link" href="/#contact">Travailler ce texte avec moi <span aria-hidden="true">→</span></a>
     </aside>
-  </div>`;
+  </div>
+  ${text.bible ? `<div class="text-bible-compare-backdrop" data-bible-compare-backdrop hidden></div><aside class="text-bible-compare-drawer" data-bible-compare-drawer aria-hidden="true" aria-label="Comparer les traductions de ${escapeAttribute(text.headerReference || text.title)}"><header><div><span>Lecteur biblique</span><h2>Comparer les traductions</h2><p>${escapeAttribute(text.headerReference || "Genèse")}</p></div><button type="button" data-bible-compare-close aria-label="Fermer le comparateur">×</button></header><div class="text-bible-compare-frame-wrap"><div class="text-bible-compare-frame-loading" data-bible-compare-loading><span></span><p>Chargement du comparateur…</p></div><iframe data-bible-compare-frame title="Comparaison des traductions — ${escapeAttribute(text.headerReference || text.title)}" loading="lazy"></iframe></div><footer><p><strong>Le texte de cette fiche reste inchangé.</strong> Le panneau utilise le lecteur biblique uniquement pour mettre les traductions en regard.</p><a href="${bibleReaderUrl}" target="_blank" rel="noopener">Ouvrir le lecteur complet ↗</a></footer></aside>` : ""}`;
+  if (text.bible) {
+    const bibleViewButtons = [...target.querySelectorAll("[data-bible-view]")];
+    const applyBibleView = (mode, persist = true) => {
+      const resolvedMode = mode === "reading" ? "reading" : "study";
+      target.dataset.viewMode = resolvedMode;
+      target.classList.toggle("text-detail--reading-mode", resolvedMode === "reading");
+      bibleViewButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.bibleView === resolvedMode)));
+      target.querySelectorAll(".text-bible-entity-term").forEach((term) => term.setAttribute("tabindex", resolvedMode === "reading" ? "-1" : "0"));
+      if (persist) {
+        try { window.localStorage.setItem("fvBibleViewMode", resolvedMode); } catch (_) {}
+      }
+      if (resolvedMode === "reading") document.querySelector(".text-glossary-tooltip")?.classList.remove("is-visible", "is-below");
+    };
+    let initialBibleView = "study";
+    try { initialBibleView = window.localStorage.getItem("fvBibleViewMode") || "study"; } catch (_) {}
+    applyBibleView(initialBibleView, false);
+    bibleViewButtons.forEach((button) => button.addEventListener("click", () => applyBibleView(button.dataset.bibleView || "study")));
+    target.querySelectorAll(".text-bible-anatomy a[href^=\"#passage-movement-\"]").forEach((link) => link.addEventListener("click", (event) => {
+      const destination = target.querySelector(link.getAttribute("href"));
+      if (!destination) return;
+      event.preventDefault();
+      const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+      destination.scrollIntoView({ behavior:reduceMotion ? "auto" : "smooth", block:"start" });
+      window.history.replaceState({}, "", link.getAttribute("href"));
+    }));
+    const compareOpen = target.querySelector("[data-bible-compare-open]");
+    const compareDrawer = target.querySelector("[data-bible-compare-drawer]");
+    const compareBackdrop = target.querySelector("[data-bible-compare-backdrop]");
+    const compareClose = target.querySelector("[data-bible-compare-close]");
+    const compareFrame = target.querySelector("[data-bible-compare-frame]");
+    const compareLoading = target.querySelector("[data-bible-compare-loading]");
+    let compareFrameReady = false;
+    const enhanceCompareFrame = () => {
+      if (!compareFrame) return;
+      try {
+        const doc = compareFrame.contentDocument;
+        if (!doc?.body) return;
+        doc.body.classList.add("bible-reader-embedded-compare");
+        if (!doc.getElementById("fv-embedded-compare-style")) {
+          const style = doc.createElement("style");
+          style.id = "fv-embedded-compare-style";
+          style.textContent = `html,body{background:#fff!important}body{min-width:0!important}.navbar,.site-footer,#backToTop,.bible-reader-breadcrumb,.bible-reader-hero,.bible-reader-select-grid,.bible-reader-meta-line,.bible-reader-search-panel,.bible-reader-collections-panel,.bible-reader-nav-wrap,.bible-reader-progress,.bible-reader-content,.bible-reader-floating-nav{display:none!important}.bible-reader-main{padding:0!important;background:#fff!important}.bible-reader-shell{width:100%!important;max-width:none!important;padding:0!important;margin:0!important}.bible-reader-controls{margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fff!important}.bible-reader-controls-head{display:none!important}.bible-reader-compare-panel{margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important}.bible-reader-compare-head{padding-top:16px!important}.bible-reader-compare-content{max-height:none!important}@media(max-width:700px){.bible-reader-compare-toolbar{padding-inline:12px!important}.bible-reader-compare-panel{font-size:95%!important}}`;
+          doc.head.append(style);
+        }
+        let attempts = 0;
+        const activateComparePanel = () => {
+          attempts += 1;
+          const panel = doc.querySelector("[data-bible-compare-panel]");
+          const toggle = doc.querySelector("[data-bible-compare-toggle]");
+          if (panel?.hidden && toggle) toggle.click();
+          if (panel && !panel.hidden) {
+            compareFrameReady = true;
+            if (compareLoading) compareLoading.hidden = true;
+            return;
+          }
+          if (attempts < 30) window.setTimeout(activateComparePanel, 140);
+          else if (compareLoading) compareLoading.hidden = true;
+        };
+        activateComparePanel();
+      } catch (_) {
+        if (compareLoading) compareLoading.hidden = true;
+      }
+    };
+    const openCompare = () => {
+      if (!compareDrawer || !compareBackdrop || !compareFrame) return;
+      compareBackdrop.hidden = false;
+      compareDrawer.setAttribute("aria-hidden", "false");
+      compareDrawer.classList.add("is-open");
+      requestAnimationFrame(() => compareBackdrop.classList.add("is-open"));
+      document.body.classList.add("is-bible-compare-open");
+      if (!compareFrame.getAttribute("src")) compareFrame.setAttribute("src", bibleReaderUrl);
+      else if (compareFrameReady) enhanceCompareFrame();
+      compareClose?.focus({preventScroll:true});
+    };
+    const closeCompare = () => {
+      if (!compareDrawer || !compareBackdrop) return;
+      compareDrawer.classList.remove("is-open");
+      compareDrawer.setAttribute("aria-hidden", "true");
+      compareBackdrop.classList.remove("is-open");
+      document.body.classList.remove("is-bible-compare-open");
+      window.setTimeout(() => { if (!compareBackdrop.classList.contains("is-open")) compareBackdrop.hidden = true; }, 260);
+      compareOpen?.focus({preventScroll:true});
+    };
+    compareFrame?.addEventListener("load", () => window.setTimeout(enhanceCompareFrame, 80));
+    compareOpen?.addEventListener("click", openCompare);
+    compareClose?.addEventListener("click", closeCompare);
+    compareBackdrop?.addEventListener("click", closeCompare);
+    document.addEventListener("keydown", (event) => { if (event.key === "Escape" && compareDrawer?.classList.contains("is-open")) closeCompare(); });
+  }
   target.querySelectorAll("[data-art-gallery]").forEach((artworkGalleryElement) => {
     const slides = [...artworkGalleryElement.querySelectorAll("[data-art-slide]")];
     const dots = [...artworkGalleryElement.querySelectorAll("[data-art-dot]")];
@@ -569,7 +750,7 @@
       panel.setAttribute("aria-hidden", String(!willOpen));
     });
   });
-  const glossaryTerms = [...target.querySelectorAll(".text-glossary-term")];
+  const glossaryTerms = [...target.querySelectorAll(".text-glossary-term, .text-bible-entity-term")];
   if (glossaryTerms.length) {
     const tooltip = document.createElement("div");
     tooltip.className = "text-glossary-tooltip";
@@ -588,15 +769,22 @@
       tooltip.style.top = `${below ? rect.bottom : rect.top}px`;
     };
     const showTooltip = (term) => {
+      if (target.dataset.viewMode === "reading") return;
       activeTerm = term;
-      tooltip.textContent = term.dataset.tooltip || "";
+      const tooltipKind = term.dataset.tooltipKind || "";
+      tooltip.classList.toggle("is-entity", Boolean(tooltipKind));
+      if (tooltipKind) {
+        tooltip.innerHTML = `<span class="text-glossary-tooltip-kind">${escapeAttribute(tooltipKind)}</span><strong>${escapeAttribute(term.dataset.tooltipTitle || term.textContent || "")}</strong><p>${escapeAttribute(term.dataset.tooltip || "")}</p>`;
+      } else {
+        tooltip.textContent = term.dataset.tooltip || "";
+      }
       tooltip.classList.add("is-visible");
       tooltip.setAttribute("aria-hidden", "false");
       requestAnimationFrame(() => positionTooltip(term));
     };
     const hideTooltip = () => {
       activeTerm = null;
-      tooltip.classList.remove("is-visible", "is-below");
+      tooltip.classList.remove("is-visible", "is-below", "is-entity");
       tooltip.setAttribute("aria-hidden", "true");
     };
     glossaryTerms.forEach((term) => {

@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://florianvallin.fr/textes/theologie/bible/"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 <link rel="stylesheet" href="/css/style.css?v=20260807-3"/>
-<link rel="stylesheet" href="/css/textes.css?v=20260810-bible-reader-8"/>
+<link rel="stylesheet" href="/css/textes.css?v=20260810-bible-pathways-modal-1"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -51,9 +51,8 @@
         <div class="bible-reader-meta-actions">
           <button class="bible-reader-tool-toggle" type="button" data-bible-landmarks-toggle aria-pressed="true" title="Afficher ou masquer les repères de lecture"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h11v15l-5.5-3-5.5 3v-15Z"></path></svg><span>Repères</span></button>
           <button class="bible-reader-tool-toggle" type="button" data-bible-compare-toggle aria-expanded="false" aria-controls="bible-translation-compare"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5H4v14h4M16 5h4v14h-4M12 3v18"></path></svg><span>Comparer</span></button>
-          <button class="bible-reader-tool-toggle" type="button" data-bible-collections-toggle aria-expanded="false" aria-controls="bible-reader-collections"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h6.2c1.2 0 2.1.5 2.8 1.3v14c-.7-.7-1.6-1.1-2.8-1.1H5V4.5Z"></path><path d="M19 4.5h-5v15.3c.7-.7 1.7-1.1 2.8-1.1H19V4.5Z"></path></svg><span>Prières &amp; paraboles</span></button>
+          <button class="bible-reader-tool-toggle" type="button" data-bible-collections-toggle aria-expanded="false" aria-controls="bible-reader-collections" hidden><span>Collections</span></button>
           <button class="bible-reader-tool-toggle bible-reader-search-toggle" type="button" data-bible-search-toggle aria-expanded="false" aria-controls="bible-global-search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m15.8 15.8 4.1 4.1"></path></svg><span>Rechercher</span></button>
-          <span class="bible-reader-keyboard-hint" aria-hidden="true">← → changer de chapitre</span>
         </div>
       </div>
 
@@ -89,25 +88,6 @@
         <div class="bible-reader-compare-content" data-bible-compare-content><div class="bible-reader-compare-loading">Choisis un chapitre pour comparer les traductions.</div></div>
       </div>
 
-      <div class="bible-reader-collections-panel" id="bible-reader-collections" data-bible-collections-panel hidden>
-        <div class="bible-reader-collections-head">
-          <div><span>Recueils</span><strong>Prières &amp; paraboles bibliques</strong></div>
-          <button type="button" data-bible-collections-close aria-label="Fermer les collections">×</button>
-        </div>
-        <div class="bible-reader-collections-tabs" role="tablist" aria-label="Choisir une collection">
-          <button type="button" role="tab" class="is-active" aria-selected="true" data-bible-collection="prayers">Toutes les prières</button>
-          <button type="button" role="tab" aria-selected="false" data-bible-collection="parables">Toutes les paraboles</button>
-        </div>
-        <p class="bible-reader-collections-description" data-bible-collections-description></p>
-        <div class="bible-reader-collections-tools">
-          <label><span class="sr-only">Rechercher dans la collection</span><input type="search" data-bible-collections-search placeholder="Rechercher un nom, un thème, une référence…" autocomplete="off"/></label>
-          <select data-bible-collections-section aria-label="Filtrer la collection"><option value="all">Tous les textes</option><option value="ancien">Ancien Testament</option><option value="nouveau">Nouveau Testament</option><option value="deuterocanonique">Deutérocanoniques</option><option value="supplementaire">Textes supplémentaires</option></select>
-          <select data-bible-collections-type aria-label="Filtrer par type"><option value="all">Tous les types</option></select>
-        </div>
-        <div class="bible-reader-collections-status" data-bible-collections-status></div>
-        <div class="bible-reader-collections-list" data-bible-collections-list></div>
-      </div>
-
       <div class="bible-reader-nav-wrap" data-bible-nav-wrap hidden>
         <div class="bible-reader-chapter-nav" aria-label="Navigation entre les chapitres">
           <button class="bible-reader-nav-button" type="button" data-bible-prev aria-label="Chapitre précédent"><span aria-hidden="true">←</span><span>Précédent</span></button>
@@ -117,6 +97,25 @@
         <div class="bible-reader-chapter-index" id="bible-chapter-index" data-bible-chapter-index hidden></div>
       </div>
     </section>
+
+    <div class="bible-reader-collections-panel" id="bible-reader-collections" data-bible-collections-panel hidden>
+      <div class="bible-reader-collections-head">
+        <div><span>Recueils</span><strong>Prières &amp; paraboles bibliques</strong></div>
+        <button type="button" data-bible-collections-close aria-label="Fermer les collections">×</button>
+      </div>
+      <div class="bible-reader-collections-tabs" role="tablist" aria-label="Choisir une collection">
+        <button type="button" role="tab" class="is-active" aria-selected="true" data-bible-collection="prayers">Toutes les prières</button>
+        <button type="button" role="tab" aria-selected="false" data-bible-collection="parables">Toutes les paraboles</button>
+      </div>
+      <p class="bible-reader-collections-description" data-bible-collections-description></p>
+      <div class="bible-reader-collections-tools">
+        <label><span class="sr-only">Rechercher dans la collection</span><input type="search" data-bible-collections-search placeholder="Rechercher un nom, un thème, une référence…" autocomplete="off"/></label>
+        <select data-bible-collections-section aria-label="Filtrer la collection"><option value="all">Tous les textes</option><option value="ancien">Ancien Testament</option><option value="nouveau">Nouveau Testament</option><option value="deuterocanonique">Deutérocanoniques</option><option value="supplementaire">Textes supplémentaires</option></select>
+        <select data-bible-collections-type aria-label="Filtrer par type"><option value="all">Tous les types</option></select>
+      </div>
+      <div class="bible-reader-collections-status" data-bible-collections-status></div>
+      <div class="bible-reader-collections-list" data-bible-collections-list></div>
+    </div>
 
     <div class="bible-reader-progress" aria-hidden="true"><span data-bible-reader-progress></span></div>
 
@@ -136,5 +135,6 @@
 <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 <script src="/js/script.js?v=20260806-5" defer></script>
 <script src="/js/bible-reader.js?v=20260810-8" defer></script>
+<script src="/js/bible-reader-parcours.js?v=20260810-2" defer></script>
 </body>
 </html>

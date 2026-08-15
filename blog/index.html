@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="stylesheet" href="/css/style.css?v=20260807-3">
-  <link rel="stylesheet" href="/css/blog.css?v=20260807-3">
+  <link rel="stylesheet" href="/css/blog.css?v=20260811-3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -53,19 +53,90 @@
     <section class="blog-listing" aria-labelledby="latest-posts">
       <div class="blog-container">
         <header class="blog-listing-heading">
-          <h2 id="latest-posts">Les billets</h2>
-          <p>Repères, méthodes, astuces et compléments.</p>
+          <div>
+            <span class="blog-listing-eyebrow">À lire</span>
+            <h2 id="latest-posts">Les billets</h2>
+          </div>
+          <p>Des fiches pensées pour être consultées, révisées et reliées directement aux textes.</p>
         </header>
-        <div class="blog-grid">
-          <a class="blog-card" href="/blog/reperes-conceptuels-philosophie-terminale/">
-            <div class="blog-card-top"><span class="blog-card-category">Fiche de référence</span><time class="blog-card-date" datetime="2026-08-06">6 août 2026</time></div>
-            <span class="blog-card-number" aria-hidden="true">01</span>
-            <h2>Les repères conceptuels en philosophie</h2>
-            <p class="blog-card-summary">La liste complète du programme officiel, avec des définitions précises, des exemples et trois classements pour retrouver puis mobiliser chaque distinction.</p>
-            <div class="blog-card-footer"><span>Fiche complète · 15 min</span><span class="blog-card-arrow" aria-hidden="true">→</span></div>
+
+        <div class="blog-grid blog-grid--editorial">
+          <a class="blog-card blog-card--featured blog-card--programmes" href="/blog/programmes-philosophie/" aria-label="Lire : Les programmes de philosophie en vigueur">
+            <div class="blog-card-top">
+              <div class="blog-card-labels">
+                <span class="blog-card-featured-label">À la une</span>
+                <span class="blog-card-category">Programmes</span>
+              </div>
+              <time class="blog-card-date" datetime="2026-08-11">11 août 2026</time>
+            </div>
+
+            <div class="blog-card-featured-main">
+              <div class="blog-card-content">
+                <span class="blog-card-number" aria-hidden="true">02</span>
+                <h2>Les programmes de philosophie en vigueur</h2>
+                <p class="blog-card-summary">Terminale générale et technologique, spécialité HLP et classes préparatoires : les programmes regroupés au même endroit, avec leurs sources officielles.</p>
+                <div class="blog-card-audience"><span>Pour qui ?</span><strong>Terminale · HLP · Prépa</strong></div>
+              </div>
+
+              <div class="blog-card-visual blog-card-visual--programmes" aria-hidden="true">
+                <svg viewBox="0 0 320 220" role="presentation">
+                  <rect x="62" y="30" width="164" height="160" rx="18" class="blog-visual-sheet blog-visual-sheet--back"/>
+                  <rect x="90" y="18" width="164" height="164" rx="18" class="blog-visual-sheet"/>
+                  <path d="M122 62h70M122 88h98M122 114h76M122 140h88" class="blog-visual-line"/>
+                  <circle cx="222" cy="52" r="29" class="blog-visual-badge"/>
+                  <path d="M211 52h22M222 41v22" class="blog-visual-plus"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="blog-card-footer">
+              <span>Fiche de référence · 12 min</span>
+              <span class="blog-card-read">Ouvrir la fiche <i aria-hidden="true">→</i></span>
+            </div>
           </a>
 
+          <a class="blog-card blog-card--compact blog-card--reperes" href="/blog/reperes-conceptuels-philosophie-terminale/" aria-label="Lire : Les repères conceptuels en philosophie">
+            <div class="blog-card-top">
+              <div class="blog-card-labels">
+                <span class="blog-card-category">Repères</span>
+              </div>
+              <time class="blog-card-date" datetime="2026-08-06">6 août 2026</time>
+            </div>
 
+            <div class="blog-card-compact-main">
+              <div class="blog-card-visual blog-card-visual--reperes" aria-hidden="true">
+                <svg viewBox="0 0 280 180" role="presentation">
+                  <circle cx="92" cy="90" r="52" class="blog-visual-circle blog-visual-circle--left"/>
+                  <circle cx="188" cy="90" r="52" class="blog-visual-circle blog-visual-circle--right"/>
+                  <path d="M126 90h28" class="blog-visual-bridge"/>
+                  <path d="M144 82l10 8-10 8" class="blog-visual-bridge"/>
+                  <path d="M78 72h28M78 90h20M78 108h34M174 72h28M174 90h34M174 108h20" class="blog-visual-text"/>
+                </svg>
+              </div>
+
+              <div class="blog-card-content">
+                <span class="blog-card-number" aria-hidden="true">01</span>
+                <h2>Les repères conceptuels en philosophie</h2>
+                <p class="blog-card-summary">Les 31 repères du programme avec des définitions accessibles, des exemples, des usages et plusieurs modes d’entraînement.</p>
+                <div class="blog-card-audience"><span>Pour qui ?</span><strong>Première · Terminale</strong></div>
+              </div>
+            </div>
+
+            <div class="blog-card-footer">
+              <span>Fiche complète · 15 min</span>
+              <span class="blog-card-read">Lire <i aria-hidden="true">→</i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog-type-key" aria-label="Types de billets">
+          <span class="blog-type-key-label">Les formats du blog</span>
+          <div class="blog-type-key-items">
+            <span class="blog-type-chip blog-type-chip--programmes"><i aria-hidden="true"></i>Programmes</span>
+            <span class="blog-type-chip blog-type-chip--reperes"><i aria-hidden="true"></i>Repères</span>
+            <span class="blog-type-chip blog-type-chip--method"><i aria-hidden="true"></i>Méthode</span>
+            <span class="blog-type-chip blog-type-chip--lecture"><i aria-hidden="true"></i>Lecture</span>
+          </div>
         </div>
       </div>
     </section>

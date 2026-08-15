@@ -115,3 +115,21 @@
 [role="dialog"] .text-art-description {
   text-align: left;
 }
+
+/* Reading mode: keep only verse markers in the margin; hide editorial movement labels. */
+.text-detail--reading-mode .text-reading--scripture .text-scripture-movement-label {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  text-align: right;
+}
+.text-detail--reading-mode .text-reading--scripture .text-scripture-movement-title,
+.text-detail--reading-mode .text-reading--scripture .text-scripture-movement-range {
+  display: none;
+}
+.text-detail--reading-mode .text-reading--scripture .text-scripture-movement-marker {
+  position: static;
+  display: block;
+  padding-top: .62em;
+}

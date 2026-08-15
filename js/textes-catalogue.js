@@ -9912,7 +9912,459 @@
           { title:"The Destruction of Sodom and Gomorrah", alt:"Le cataclysme détruit la ville dans une vaste composition dramatique, tandis que les survivants fuient au premier plan.", details:"John Martin, 1852, Laing Art Gallery, Newcastle upon Tyne.", description:"Cette dernière image montre l’aboutissement spectaculaire du récit : après le dialogue sur la justice et la miséricorde, vient le moment du jugement qui s’abat sur la ville.", src:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20Martin%20-%20Sodom%20and%20Gomorrah.jpg?width=1400", original:"https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20Martin%20-%20Sodom%20and%20Gomorrah.jpg?width=2400", source:"https://commons.wikimedia.org/wiki/File:John_Martin_-_Sodom_and_Gomorrah.jpg" }
         ] }
       ]
+    },
+{
+      id:"genese-joseph-vendu-freres", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Joseph vendu par ses frères", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 37,3–36",
+      cardHighlight:"vendu par ses frères",
+      familiarIdea:"les songes de Joseph",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Autrui", "Justice"], work:"Genèse 37", publication:"37,3–11.12–28.31–36",
+      description:"Comment la préférence de Jacob et les songes de Joseph font-ils naître une jalousie qui conduit ses frères jusqu’à le vendre ?",
+      context:"Après la mort d’Isaac, Jacob, héritier de la Promesse, prend la relève. De ses douze fils naîtront les douze tribus qui, traditionnellement, constituent le peuple d’Israël. C’est sous son patriarcat que la Bible situe l’émigration en Égypte d’où, plus tard, il faudra s’échapper lors d’un Exode qui restera mémorable. Le récit de cette émigration est englobé dans une histoire aux multiples broderies, l’histoire de Joseph, le fils préféré de Jacob. Les épisodes, gravés dans les mémoires, ont tout le pittoresque et l’imprévu d’un film à suspense. Mieux encore, ils sont porteurs d’un message attachant. Vendu par ses frères, Joseph se venge en leur pardonnant.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 37</strong>. Jacob vit avec ses fils ; Joseph, particulièrement aimé de son père, raconte deux songes dans lesquels sa famille semble appelée à se prosterner devant lui. La jalousie des frères ouvre alors la longue histoire de Joseph en Égypte." },
+        { label:"Piste philosophique", text:"Le passage permet d’interroger la <strong>jalousie</strong>, la violence entre frères et la façon dont un autre peut être réduit à un rival. Il met aussi en jeu la responsabilité : Roubène et Juda s’opposent au meurtre, mais Joseph est néanmoins vendu et son père trompé." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"« Jacob aimait Joseph plus que tous ses autres enfants »", definition:"Le récit place d’emblée la préférence paternelle au cœur de la relation entre les frères : l’amour de Jacob devient pour eux le signe d’une inégalité difficile à supporter." },
+        { type:"concept", term:"Les deux songes", definition:"Gerbes, soleil, lune et onze étoiles mettent en scène une même idée : Joseph occupera une position devant laquelle les autres s’inclineront. Les frères y entendent immédiatement une prétention à régner sur eux." },
+        { type:"opposition", left:{ term:"Roubène", definition:"Il veut sauver Joseph et le ramener à son père ; il propose de le jeter dans la citerne sans verser son sang." }, right:{ term:"Juda", definition:"Il refuse également le meurtre, mais propose de vendre Joseph aux Ismaélites." }, conclusion:"Le meurtre est évité, mais Joseph reste traité comme un objet dont ses frères peuvent disposer." },
+        { type:"concept", term:"La tunique", definition:"Donnée par Jacob puis tachée de sang par les frères, elle passe du signe de la préférence au faux indice destiné à faire croire à la mort de Joseph." }
+      ],
+      relatedTexts:[
+        { id:"genese-ascension-joseph", kind:"proche", label:"Genèse — L’ascension de Joseph", relation:"La vente conduit Joseph en Égypte ; le récit se poursuit avec son interprétation des songes de Pharaon." },
+        { id:"genese-pardon-joseph", kind:"proche", label:"Genèse — Le pardon de Joseph", relation:"La faute des frères trouve son dénouement lorsque Joseph se fait reconnaître et leur pardonne." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Joseph, le fils préféré", range:"37,3–4", marker:"3", aria:"Genèse 37, verset 3", text:"Jacob aimait Joseph plus que tous ses autres enfants, parce qu’il était le fils de sa vieillesse, et il lui fit faire une tunique de grand prix. En voyant qu’il leur préférait Joseph, ses autres fils se mirent à détester celui-ci, et ils ne pouvaient plus lui dire que des paroles hostiles." },
+
+        { type:"movementStart", title:"Les songes de Joseph", range:"37,5–11", marker:"5", aria:"Genèse 37, verset 5", text:"Joseph eut un songe qu’il fit connaître à ses frères ; il leur dit : “Ecoutez, je vous prie, ce songe que j’ai eu. Voici que nous étions à lier des gerbes au milieu des champs, et voici que ma gerbe se leva et elle tint debout, et voici que vos gerbes l’entourèrent et se prosternèrent devant ma gerbe.” Ses frères lui dirent : “Voudrais-tu donc régner sur nous en roi, ou bien nous dominer en maître ?” Et ils le haïrent encore plus à cause de ses songes et de ses paroles." },
+        { type:"verse", marker:"9", aria:"Genèse 37, versets 9 à 11", text:"Il eut encore un autre songe, qu’il raconta à ses frères ; il leur dit : “Voici que j’ai eu encore un songe. Voici que le soleil, la lune et onze étoiles se prosternaient devant moi.” Il raconta cela à son père et à ses frères, mais son père le réprimanda et lui dit : “Qu’est-ce que ce songe que tu as eu ? Nous faudra-t-il, moi, ta mère, et tes frères, venir nous prosterner à terre devant toi ?” Ses frères furent jaloux de lui, mais son père retint la chose." },
+
+        { type:"divider" },
+        { type:"movementStart", title:"Le complot des frères", range:"37,12–20", marker:"12", aria:"Genèse 37, versets 12 à 20", text:"Ils étaient allés à Sichem faire paître le troupeau de leur père. Celui-ci dit à Joseph : « Tes frères gardent le troupeau à Sichem : je vais t’envoyer là-bas. » Joseph partit rejoindre ses frères qui se trouvaient alors à Dotane. Ils l’aperçurent de loin et, avant qu’il arrive près d’eux, ils complotèrent de le faire mourir. Ils se dirent l’un à l’autre : « Voilà l’homme aux songes qui arrive ! C’est le moment, allons-y, tuons-le, et jetons-le dans une de ces citernes. Nous raconterons qu’une bête féroce l’a dévoré, et on verra ce que voulaient dire ses songes ! »" },
+        { type:"verse", marker:"21", aria:"Genèse 37, versets 21 à 22", text:"Mais Roubène les entendit, et voulut le sauver de leurs mains. Il leur dit : « Ne touchons pas à sa vie. » Et il ajouta : « Ne répandez pas son sang : jetez-le dans cette citerne du désert, mais sans le frapper. » Il voulait le sauver de leurs mains et le ramener à son père." },
+        { type:"movementStart", title:"La citerne et la vente", range:"37,23–28", marker:"23", aria:"Genèse 37, versets 23 à 24", text:"Dès que Joseph eut rejoint ses frères, ils le dépouillèrent de la tunique précieuse qu’il portait, ils se saisirent de lui et le jetèrent dans la citerne, qui était vide et sans eau. Ils s’assirent ensuite pour manger." },
+        { type:"verse", marker:"25", aria:"Genèse 37, versets 25 à 28", text:"En levant les yeux, ils virent une caravane d’Ismaélites qui venait de Galaad. Leurs chameaux étaient chargés d’aromates, de baume et de myrrhe qu’ils allaient livrer en Égypte. Alors Juda dit à ses frères : « Quel profit aurions-nous à tuer notre frère et à dissimuler sa mort ? Vendons-le plutôt aux Ismaélites et ne portons pas la main sur lui, car il est du même sang que nous, c’est notre frère. » Les autres l’écoutèrent. Quand la caravane arriva, ils retirèrent Joseph de la citerne, ils le vendirent pour vingt pièces d’argent aux Ismaélites, et ceux-ci l’emmenèrent en Égypte." },
+        { type:"omission", text:"[…]" },
+
+        { type:"movementStart", title:"La tunique et le deuil de Jacob", range:"37,31–35", marker:"31", aria:"Genèse 37, versets 31 à 35", text:"Ils prirent la tunique de Joseph, égorgèrent un bouc et trempèrent la tunique dans le sang. Puis ils envoyèrent la tunique à longues manches et la firent parvenir à leur père en disant : “Voici ce que nous avons trouvé ; examine bien si c’est la tunique de ton fils ou non”. Il l’examina et dit : “La tunique de mon fils ! Une bête féroce l’a dévoré ! Oui, Joseph a été mis en pièces !” Jacob déchira ses habits, mit un sac sur ses reins et pendant de longs jours fit le deuil de son fils. Tous ses fils et toutes ses filles entreprirent de le consoler, mais il refusa de se consoler et il dit : “Non, c’est dans le deuil que je descendrai auprès de mon fils, au chéol.” Et son père le pleura." },
+        { type:"verse", marker:"36", aria:"Genèse 37, verset 36", text:"Quant aux Madianites, ils le vendirent en Égypte à Putiphar, eunuque de Pharaon, commandant des gardes." }
+      ]
+    },
+
+    {
+      id:"genese-ascension-joseph", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Ascension de Joseph", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 41,1–32",
+      cardHighlight:"Ascension de Joseph",
+      familiarIdea:"les songes de Pharaon",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Interprétation", "Religion"], work:"Genèse 41", publication:"41,1–8.25–32",
+      description:"Comment Joseph comprend-il les songes de Pharaon et leur donne-t-il le sens d’un avenir à préparer ?",
+      context:"Joseph devient le majordome de Putiphar. Il se fait remarquer par ses dons d’administrateur, mais aussi par son aptitude à expliquer le sens des rêves. Dieu n’est-il pas avec lui ? Quelqu’un se souvient des dons de Joseph. On l’envoie chercher. Pharaon lui raconte ses rêves. Joseph conseille alors à Pharaon d’amasser de solides réserves pendant les années d’abondance pour ensuite faire face à la disette. Séduit, Pharaon fait de Joseph son grand Vizir.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 41</strong>. Joseph a été emmené en Égypte puis emprisonné. Les songes de Pharaon lui donnent l’occasion d’être appelé à la cour : l’homme jadis désigné par ses frères comme « l’homme aux songes » devient maintenant celui qui interprète les songes d’un roi." },
+        { label:"Piste philosophique", text:"Le texte distingue le <strong>signe</strong> et son interprétation. Joseph ne présente pas le songe comme une énigme gratuite : lui donner sens conduit à anticiper une crise et à agir. Le savoir devient ainsi une responsabilité pratique." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Deux songes, un seul sens", definition:"Les sept vaches et les sept épis donnent deux images d’une même succession : abondance puis famine. La répétition confirme, selon Joseph, que l’événement est décidé." },
+        { type:"concept", term:"« Dieu a annoncé à Pharaon ce qu’il va faire »", definition:"Joseph rapporte explicitement son interprétation à Dieu : il ne se présente pas comme l’origine souveraine du sens qu’il expose à Pharaon." },
+        { type:"opposition", left:{ term:"Abondance", definition:"Sept années pendant lesquelles le pays d’Égypte produit largement." }, right:{ term:"Famine", definition:"Sept années si graves qu’elles feront oublier l’abondance précédente." }, conclusion:"L’interprétation du songe ouvre sur la nécessité de prévoir et de conserver des réserves." }
+      ],
+      relatedTexts:[
+        { id:"genese-joseph-vendu-freres", kind:"proche", label:"Genèse — Joseph vendu par ses frères", relation:"Les premiers songes de Joseph provoquent la jalousie de ses frères et son départ forcé vers l’Égypte." },
+        { id:"genese-pardon-joseph", kind:"proche", label:"Genèse — Le pardon de Joseph", relation:"La position acquise par Joseph en Égypte rend ensuite possible le salut de sa famille pendant la famine." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Les deux songes de Pharaon", range:"41,1–7", marker:"1", aria:"Genèse 41, versets 1 à 7", text:"Or, au bout de deux ans, Pharaon eut un songe. Voici qu’il se tenait près du Nil, et voici que du Nil montaient sept vaches belles d’aspect et grasses de chair, qui se mirent à paître dans les joncs. Et voici que sept autres vaches montaient du Nil après elles, laides d’aspect et maigres de chair, et elles se tinrent à côté des autres vaches sur la rive du Nil. Et les vaches laides d’aspect et maigres de chair dévorèrent les sept vaches belles d’aspect et grasses. Alors Pharaon se réveilla.<br><br>Il se rendormit et eut un second songe. Voici que sept épis montaient sur une même tige, gras et bons. Et voici que sept épis maigres et brûlés par le vent d’est poussaient auprès d’eux. Et les épis maigres engloutirent les sept épis gras et pleins. Alors Pharaon se réveilla, et voilà que c’était un songe !" },
+        { type:"verse", marker:"8", aria:"Genèse 41, verset 8", text:"Or, au matin, l’esprit troublé, Pharaon envoya appeler tous les magiciens d’Égypte et tous ses sages, et il leur raconta le songe qu’il avait eu, mais personne ne put l’interpréter à Pharaon." },
+        { type:"omission", text:"[…]" },
+
+        { type:"movementStart", title:"Joseph interprète les songes", range:"41,25–32", marker:"25", aria:"Genèse 41, versets 25 à 28", text:"Joseph dit à Pharaon : “Le songe de Pharaon est un : Dieu a annoncé à Pharaon ce qu’il va faire. Les sept belles vaches sont sept années, les sept beaux épis sont sept années : c’est un seul songe. Les sept vaches minces et laides qui montaient après elles sont sept années, et les sept épis vides, brûlés par le vent d’est, ce seront sept années de famine. C’est la parole que j’ai dite à Pharaon : Dieu a fait voir à Pharaon ce qu’il va faire." },
+        { type:"verse", marker:"29", aria:"Genèse 41, versets 29 à 31", text:"Voici venir sept années de grande abondance dans tout le pays d’Égypte. Surgiront après elles sept années de famine : on oubliera toute l’abondance dans le pays d’Égypte, et la famine consumera le pays. On ne connaîtra plus l’abondance dans le pays, à cause de cette famine qui suivra ; car elle sera très grave." },
+        { type:"verse", marker:"32", aria:"Genèse 41, verset 32", text:"Et si le songe a été répété deux fois à Pharaon, c’est que la chose est bien décidée de la part de Dieu et que Dieu va se hâter de la faire." }
+      ]
+    },
+
+    {
+      id:"genese-pardon-joseph", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"Le pardon de Joseph", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 45,1–15",
+      cardHighlight:"Le pardon de Joseph",
+      familiarIdea:"Joseph retrouve ses frères",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Autrui", "Justice"], work:"Genèse 45", publication:"45,1–15 ; 50,20",
+      description:"Comment Joseph répond-il à ceux qui l’ont vendu lorsqu’il se fait enfin reconnaître de ses frères ?",
+      context:"Les années de disette venues, on accourt des pays voisins acheter du blé en Égypte. Jacob envoie ses fils. Joseph ne se fait pas reconnaître mais demande à ses frères de revenir avec, cette fois, le dernier-né, Benjamin. À leur retour, Joseph leur ouvre son cœur.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 45</strong>, après plusieurs rencontres entre Joseph, devenu puissant en Égypte, et ses frères venus chercher du blé. Ceux-ci ignorent encore qui il est. Le passage est le moment de la reconnaissance et de la réconciliation." },
+        { label:"Piste philosophique", text:"Le pardon n’efface pas le fait : Joseph nomme encore ce que ses frères ont fait — « vous avez vendu » — mais refuse d’en rester à la vengeance. Le récit permet ainsi de distinguer <strong>pardonner</strong>, oublier et nier la faute." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"« Je suis Joseph ! »", definition:"La scène repose sur une reconnaissance longtemps différée : celui que les frères avaient vendu se tient désormais devant eux avec le pouvoir de les sauver ou de les condamner." },
+        { type:"concept", term:"« Ne regrettez plus de m’avoir vendu »", definition:"Joseph ne nie pas la responsabilité de ses frères. Il relit pourtant l’événement à partir de la vie sauvée pendant la famine et renonce à faire de leur faute le dernier mot de l’histoire." },
+        { type:"concept", term:"« Dieu m’a envoyé en avant de vous »", definition:"Le récit superpose l’action humaine et une lecture providentielle de l’histoire : le mal voulu par les frères n’est pas déclaré bon, mais Joseph affirme qu’il a été tourné vers la sauvegarde d’un peuple." },
+        { type:"concept", term:"Les larmes", definition:"Joseph pleure avec Benjamin puis avec tous ses frères. La réconciliation n’est pas seulement formulée : elle passe par une proximité retrouvée avant que les frères puissent enfin parler avec lui." }
+      ],
+      relatedTexts:[
+        { id:"genese-joseph-vendu-freres", kind:"proche", label:"Genèse — Joseph vendu par ses frères", relation:"Le pardon répond directement à la vente de Joseph et au mensonge fait à Jacob." },
+        { id:"genese-ascension-joseph", kind:"proche", label:"Genèse — L’ascension de Joseph", relation:"L’interprétation des songes de Pharaon explique comment Joseph a acquis la position depuis laquelle il peut secourir sa famille." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Joseph se fait reconnaître", range:"45,1–5", marker:"1", aria:"Genèse 45, versets 1 à 2", text:"Joseph ne put se contenir devant tous les gens de sa suite, et il s’écria : « Faites sortir tout le monde. » Quand il n’y eut plus personne auprès de lui, il se fit reconnaître de ses frères." },
+        { type:"verse", marker:"3", aria:"Genèse 45, versets 3 à 5", text:"Il dit à ses frères : « Je suis Joseph ! Est-ce que mon père vit encore ? » Mais ses frères étaient incapables de lui répondre, tant ils étaient bouleversés de se trouver en face de lui. Alors il leur dit : « Venez près de moi. » Ils s’approchèrent, et il leur dit : « Je suis Joseph, votre frère, que vous avez vendu pour qu’il soit emmené en Égypte. Mais maintenant ne vous affligez pas, et ne regrettez plus de m’avoir vendu, car c’est pour vous conserver la vie que Dieu m’a envoyé le premier." },
+        { type:"movementStart", title:"Une délivrance au cœur de la famine", range:"45,6–8", marker:"6", aria:"Genèse 45, versets 6 à 8", text:"Car voilà deux ans que la famine est à l’intérieur du pays, et il y aura encore cinq années sans labour ni moisson. Dieu m’a envoyé en avant de vous pour vous assurer un reste dans le pays et vous sauver la vie pour une grande délivrance. Ainsi donc, ce n’est pas vous qui m’avez envoyé ici, mais Dieu, et il m’a établi comme père pour Pharaon, comme maître de toute sa maison et gouverneur dans tout le pays d’Égypte." },
+        { type:"movementStart", title:"Faire venir Jacob en Égypte", range:"45,9–12", marker:"9", aria:"Genèse 45, versets 9 à 12", text:"Hâtez-vous donc de remonter auprès de mon père ; vous lui direz : Ainsi parle ton fils Joseph : ‘Dieu m’a établi comme maître de toute l’Égypte : descends auprès de moi, ne tarde pas. Tu habiteras dans le pays de Gochen, et tu seras près de moi, toi, tes fils, les fils de tes fils, ton petit et ton gros bétail, tout ce qui est à toi. Là, je pourvoirai à ta subsistance, car il y aura encore cinq années de famine — pour que tu ne tombes pas dans l’indigence, toi, ta famille et tout ce qui est à toi.’ Et voilà que vos yeux le voient, ainsi que les yeux de mon frère Benjamin : c’est bien ma bouche qui vous parle." },
+        { type:"verse", marker:"13", aria:"Genèse 45, versets 13 à 15", text:"Informez mon père de toute ma gloire et de tout ce que vous avez vu ; et hâtez-vous de faire descendre mon père ici. » Alors, il se jeta au cou de Benjamin, son frère, et pleura. Benjamin aussi pleura à son cou. Puis il embrassa tous ses frères et pleura tout contre eux ; après quoi, ses frères parlèrent avec lui." },
+        { type:"pause", title:"Le mal tourné en bien", reference:"GENÈSE 50,20", text:"“Le mal que vous aviez dessein de me faire, le dessein de Dieu l’a tourné en bien afin d’accomplir ce qui se réalise aujourd’hui : sauver la vie à un peuple nombreux.”" }
+      ]
+    },
+
+    {
+      id:"genese-heritier-promesse", section:"theologie", bible:true,
+      cardMeta:"Récit biblique",
+      title:"L’héritier de la Promesse", source:"Livre de la Genèse", sourceTag:"Genèse", headerReference:"Genèse 49,8–10",
+      cardHighlight:"L’héritier de la Promesse",
+      familiarIdea:"la bénédiction de Juda",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Alliance", "Religion"], work:"Genèse 49", publication:"49,8–10 ; Matthieu 2 ; Colossiens 3",
+      description:"Comment la bénédiction de Juda est-elle reliée à la promesse d’une royauté et à sa relecture dans le Nouveau Testament ?",
+      context:"Jacob vieillissant transmet le flambeau. Des douze frères, c’est Juda qui est l’élu de Dieu. Jacob en le bénissant dévoile son avenir “jusqu’à ce que vienne celui...” Effectivement, c’est de la descendance de Juda que, par le relais de David, naîtra le Messie.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Genèse 49</strong>. Jacob, arrivé au terme de sa vie, prononce des bénédictions sur ses fils. Le document isole celle de Juda puis la met en regard de deux passages du Nouveau Testament." },
+        { label:"Piste philosophique", text:"Le passage fait apparaître une manière biblique de penser l’<strong>histoire</strong> par la promesse et la transmission : une parole prononcée sur une lignée reçoit ensuite de nouvelles lectures. Il invite donc aussi à distinguer le sens d’un texte dans son récit et les interprétations ultérieures qui s’y rattachent." }
+      ],
+      readingNotes:[
+        { type:"concept", term:"Juda", definition:"Parmi les fils de Jacob, Juda reçoit ici une bénédiction associée à l’hommage de ses frères, à la force du lion et à la royauté." },
+        { type:"concept", term:"« La royauté n’échappera point à Juda »", definition:"La bénédiction projette la lignée de Juda vers une fonction de commandement et vers la venue de « celui à qui le pouvoir appartient »." },
+        { type:"concept", term:"Une relecture messianique", definition:"Le document rapproche Genèse 49 de Matthieu 2 : Bethléem, en Juda, devient le lieu d’où doit sortir le chef qui fera paître Israël." },
+        { type:"concept", term:"« vous pardonnant mutuellement »", definition:"Le passage de Colossiens prolonge le thème du pardon qui traverse l’histoire de Joseph et le transpose dans une exigence adressée à la communauté." }
+      ],
+      relatedTexts:[
+        { id:"genese-pardon-joseph", kind:"proche", label:"Genèse — Le pardon de Joseph", relation:"La bénédiction de Juda vient à la fin de l’histoire de Jacob et de ses fils, après la réconciliation autour de Joseph." },
+        { id:"genese-alliance-abraham", kind:"proche", label:"Genèse — L’Alliance avec Abraham", relation:"La Promesse transmise dans la famille de Jacob s’inscrit dans la continuité de l’Alliance conclue avec Abraham." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La bénédiction de Juda", range:"49,8–10", marker:"8", aria:"Genèse 49, versets 8 à 10", text:"« Juda, tes frères te rendront hommage,<br>ta main fera plier la nuque de tes ennemis<br>et les fils de ton père s’inclineront devant toi.<br>Juda mon fils est un jeune lion ;<br>il est revenu de la chasse ;<br>il s’est accroupi, il s’est couché comme un lion ;<br>ce fauve, qui le fera lever ?<br>La royauté n’échappera point à Juda,<br>ni le commandement, à sa descendance,<br>jusqu’à ce que vienne celui à qui le pouvoir appartient,<br>à qui les peuples obéiront. »" },
+        { type:"pause", title:"Bethléem, terre de Juda", reference:"MATTHIEU 2", text:"Et, toi, Bethléem, terre de Juda,<br>Tu n’es certes pas la moindre des grandes cités de Juda,<br>car c’est de toi que sortira le chef<br>qui fera paître mon peuple, Israël." },
+        { type:"pause", title:"Se pardonner mutuellement", reference:"COLOSSIENS 3", text:"Comme des élus de Dieu, saints et bien-aimés, revêtez donc des sentiments de compassion, de bonté, d’humilité, de douceur, de patience, vous supportant les uns les autres et vous pardonnant mutuellement, si l’un a contre l’autre quelque sujet de plainte." }
+      ]
+    },
+{
+      id:"exode-esclavage-hebreux", section:"theologie", bible:true,
+      cardMeta:"Exode · esclavage et oppression",
+      title:"L’esclavage des Hébreux", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 1,8–14.22",
+      cardHighlight:"L’esclavage des Hébreux",
+      familiarIdea:"les corvées de Pharaon",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Liberté", "Justice"], work:"Exode 1", publication:"1,8–14.22",
+      description:"Comment la peur de Pharaon transforme-t-elle les Hébreux en une population soumise aux corvées, à l’esclavage et à un ordre de mort ?",
+      context:"Le livre de l’Exode reprend le fil après le cycle de Joseph. Les descendants de Jacob se sont multipliés en Égypte, mais un nouveau roi ne connaît plus Joseph et voit désormais leur nombre comme une menace. Le récit présente alors l’installation progressive d’une politique d’oppression.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes au début de l’<strong>Exode</strong>, après le cycle de Joseph dont la reconnaissance des frères est racontée en <strong>Genèse 45,1–15</strong>. La famille de Jacob est devenue un peuple nombreux en Égypte. Un nouveau roi, qui « n’avait pas connu Joseph », transforme cette présence en problème politique et impose aux fils d’Israël des travaux forcés." },
+        { label:"Piste philosophique", text:"Le passage montre comment une <strong>peur politique</strong> peut précéder les faits qu’elle prétend prévenir : Pharaon imagine une guerre future et traite déjà tout un groupe comme un ennemi potentiel. La domination se construit alors par étapes, de la corvée jusqu’à l’ordre de supprimer les garçons nouveau-nés." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"« un peuple plus nombreux et plus puissant que nous »", definition:"Pharaon ne part pas d’une révolte réelle, mais d’une éventualité : en cas de guerre, les fils d’Israël pourraient rejoindre l’ennemi. Le texte met ainsi en scène une politique fondée sur l’anticipation d’une menace." },
+        { type:"concept", badge:false, term:"« des chefs de corvée »", definition:"La domination prend d’abord la forme du travail imposé. Les fils d’Israël bâtissent pour Pharaon et leur activité devient un instrument de contrôle politique." },
+        { type:"opposition", left:{ term:"Multiplier les contraintes", definition:"Plus le pouvoir cherche à réduire les Hébreux par les corvées et l’esclavage, plus le texte souligne qu’ils se multiplient." }, right:{ term:"Supprimer les naissances", definition:"L’échec de l’oppression conduit finalement Pharaon à viser directement les garçons nouveau-nés." }, conclusion:"Le récit présente une escalade : lorsque la domination par le travail ne suffit pas, le pouvoir passe à l’ordre de mort." },
+        { type:"concept", badge:false, term:"« Tous les garçons qui naîtront chez les Hébreux, jetez-les dans le Nil »", definition:"L’ordre ne vise plus seulement des travailleurs ou des opposants : il atteint les enfants à leur naissance. C’est précisément dans ce contexte que s’ouvre ensuite le récit de la naissance de Moïse." }
+      ],
+      relatedTexts:[
+        { id:"genese-pardon-joseph", kind:"proche", label:"Genèse — Le pardon de Joseph", relation:"La fin du cycle de Joseph explique comment la famille de Jacob s’est installée en Égypte, cadre dans lequel s’ouvre désormais l’Exode." },
+        { id:"exode-naissance-moise", kind:"suite", label:"Exode — La naissance de Moïse", relation:"L’ordre de jeter les garçons hébreux dans le Nil fournit le contexte immédiat de la naissance et du sauvetage de Moïse." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"L’esclavage des Hébreux", range:"1,8–14", marker:"8", aria:"Exode 1, versets 8 à 14", text:"Un nouveau roi vint au pouvoir en Égypte. Il n’avait pas connu Joseph. Il dit à son peuple : « Voici que les fils d’Israël sont maintenant un peuple plus nombreux et plus puissant que nous. Prenons donc les dispositions voulues pour l’empêcher de se multiplier. Car, s’il y avait une guerre, il se joindrait à nos ennemis, combattrait contre nous, et ensuite il sortirait du pays. » On imposa donc aux fils d’Israël des chefs de corvée pour les accabler de travaux pénibles. Ils durent bâtir pour Pharaon les villes et entrepôts de Pithome et de Ramsès. Mais, plus on les accablait, plus ils se multipliaient et proliféraient, ce qui les fit détester. Les Égyptiens les soumirent à un dur esclavage et leur rendirent la vie intenable à force de corvées : préparation de l’argile et des briques et toutes sortes de travaux à la campagne ; tous ces travaux étaient pour eux un dur esclavage." },
+        { type:"omission", text:"[…]" },
+        { type:"movementStart", title:"L’ordre de Pharaon", range:"1,22", marker:"22", aria:"Exode 1, verset 22", text:"Finalement, Pharaon donna cet ordre à tout son peuple : « Tous les garçons qui naîtront chez les Hébreux, jetez-les dans le Nil. Ne laissez vivre que les filles. »" }
+      ]
+    },
+{
+      id:"exode-naissance-moise", section:"theologie", bible:true,
+      cardMeta:"Exode · naissance et sauvetage",
+      title:"La naissance de Moïse", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 2,1–10",
+      cardHighlight:"La naissance de Moïse",
+      familiarIdea:"Moïse sauvé des eaux",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Liberté", "Autrui"], work:"Exode 2", publication:"2,1–10",
+      description:"Comment un enfant condamné par l’ordre de Pharaon échappe-t-il à la mort grâce à une chaîne de gestes de protection et de pitié ?",
+      context:"Après l’ordre de jeter dans le Nil tous les garçons hébreux, le récit se resserre sur une seule naissance. La mère de Moïse cache son fils, puis le place dans une corbeille au bord du fleuve. La fille de Pharaon le découvre, en a pitié et le recueille : le lieu prévu pour la mort devient ainsi le lieu d’un sauvetage.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Exode 2</strong>, immédiatement après l’ordre de Pharaon raconté en <strong>Exode 1,8–14.22</strong>. Le texte raconte la naissance de Moïse, son exposition au bord du Nil, sa découverte par la fille de Pharaon et son retour provisoire auprès de sa propre mère." },
+        { label:"Piste philosophique", text:"Le passage met en valeur plusieurs formes de <strong>responsabilité envers autrui</strong> : cacher l’enfant, rester à distance pour veiller sur lui, éprouver de la pitié, chercher une nourrice. Aucun de ces gestes ne renverse encore le pouvoir de Pharaon, mais leur enchaînement suffit à sauver une vie." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"La corbeille au bord du Nil", definition:"Le Nil était devenu, par l’ordre de Pharaon, le lieu où devaient être jetés les garçons hébreux. La mère de Moïse y dépose pourtant son enfant dans une corbeille protégée par le bitume et la résine : elle transforme l’exposition au danger en tentative de sauvetage." },
+        { type:"concept", badge:false, term:"« Elle en eut pitié »", definition:"La fille de Pharaon reconnaît immédiatement qu’il s’agit d’« un petit Hébreu », mais cette identification ne l’amène pas à appliquer l’ordre du pouvoir. La pitié interrompt ici la logique du décret." },
+        { type:"opposition", left:{ term:"L’ordre de Pharaon", definition:"Les garçons hébreux doivent être jetés dans le Nil." }, right:{ term:"La fille de Pharaon", definition:"Elle retire précisément un enfant hébreu du Nil et le fait nourrir." }, conclusion:"Le récit construit une forte ironie : le salut de Moïse passe par la propre maison de celui qui voulait empêcher sa survie." },
+        { type:"concept", badge:false, term:"« Je l’ai tiré des eaux »", definition:"Le récit rattache le nom de Moïse au geste par lequel la fille de Pharaon l’a retiré du fleuve. Celui qui est « tiré des eaux » deviendra plus tard la figure centrale de la sortie d’Égypte." }
+      ],
+      relatedTexts:[
+        { id:"exode-esclavage-hebreux", kind:"suite", label:"Exode — L’esclavage des Hébreux", relation:"L’ordre de Pharaon contre les garçons hébreux constitue le contexte immédiat de la naissance de Moïse." },
+        { id:"exode-appel-moise", kind:"suite", label:"Exode — L’appel de Moïse", relation:"L’enfant sauvé des eaux deviendra l’homme que Dieu envoie auprès de Pharaon pour faire sortir Israël d’Égypte." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La naissance de Moïse", range:"2,1–8", marker:"1", aria:"Exode 2, versets 1 à 8", text:"Un homme de la tribu de Lévi avait épousé une femme de la même tribu. Elle conçut, et elle donna naissance à un fils. Voyant qu’il était beau, elle le cacha durant trois mois. Lorsqu’il lui fut impossible de le tenir caché plus longtemps, elle prit une corbeille de jonc, qu’elle enduisit de bitume et de résine. Elle y plaça le bébé, et déposa la corbeille au bord du Nil, au milieu des roseaux. La sœur de l’enfant se tenait à distance pour voir ce qui allait arriver.<br><br>La fille de Pharaon descendit au fleuve pour s’y baigner, tandis que ses suivantes se promenaient sur la rive. Elle aperçut la corbeille parmi les roseaux et envoya sa servante pour la prendre. Elle l’ouvrit et elle vit le bébé. C’était un petit garçon, il pleurait. Elle en eut pitié et dit : « C’est un petit Hébreu. » La sœur de l’enfant dit alors à la fille de Pharaon : « Veux-tu que j’aille te chercher, parmi les femmes des Hébreux, une nourrice pour allaiter le bébé ? » La fille de Pharaon lui répondit : « Va. » La jeune fille alla donc chercher la mère de l’enfant." },
+        { type:"verse", marker:"9", aria:"Exode 2, verset 9", text:"La fille de Pharaon dit à celle-ci : « Emmène ce bébé et nourris-le. C’est moi qui te donnerai ton salaire. » Alors la femme emporta l’enfant et le nourrit." },
+        { type:"verse", marker:"10", aria:"Exode 2, verset 10", text:"Lorsqu’il eut grandi, elle le ramena à la fille de Pharaon qui le traita comme son propre fils ; elle lui donna le nom de Moïse, en disant : « Je l’ai tiré des eaux. »" }
+      ]
+    },
+{
+      id:"exode-appel-moise", section:"theologie", bible:true,
+      cardMeta:"Exode · vocation et nom divin",
+      title:"L’appel de Moïse", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 3,1–10.13–20",
+      cardHighlight:"L’appel de Moïse",
+      familiarIdea:"le buisson ardent",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Religion", "Liberté"], work:"Exode 3", publication:"3,1–10.13–20",
+      description:"Comment la rencontre du buisson ardent devient-elle à la fois révélation de Dieu, connaissance de la souffrance et mission de libération ?",
+      context:"Moïse a quitté l’Égypte et vit au pays de Madiane. Au désert, près de l’Horeb, une rencontre bouleverse sa trajectoire : Dieu l’appelle par son nom, lui révèle qu’il a vu la misère des fils d’Israël et l’envoie auprès de Pharaon. Le même chapitre articule ainsi présence divine, nom de Dieu et mission de libération.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Exode 3</strong>, après le récit de la naissance de Moïse en <strong>Exode 2,1–10</strong>. Moïse a grandi en Égypte puis a fui après avoir tué un Égyptien qui maltraitait un Hébreu. Il garde maintenant le troupeau de son beau-père Jéthro au pays de Madiane lorsqu’il parvient à l’Horeb, la montagne de Dieu." },
+        { label:"Piste philosophique", text:"Le passage associe étroitement connaissance et responsabilité : Dieu dit avoir <strong>vu</strong> la misère, <strong>entendu</strong> les cris et <strong>connu</strong> les souffrances, puis cette connaissance devient action et mission. Le texte permet donc de réfléchir à ce que signifie répondre à la souffrance d’autrui plutôt que la constater à distance." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"Le buisson qui brûle sans se consumer", definition:"La scène rend visible une présence qui se manifeste sans détruire ce qu’elle habite. Le feu attire Moïse, mais c’est son détour — le fait de s’approcher pour regarder — qui ouvre le dialogue." },
+        { type:"concept", badge:false, term:"« Retire tes sandales »", definition:"Le lieu devient « terre sainte » parce qu’il est le lieu d’une rencontre. Le geste demandé à Moïse marque une limite : la proximité avec Dieu n’abolit pas la distance ni le respect." },
+        { type:"concept", badge:false, term:"« J’ai vu, oui, j’ai vu… j’ai entendu… je connais… »", definition:"La connaissance divine de la souffrance n’est pas présentée comme une simple information. Voir, entendre et connaître débouchent sur une décision : « Je suis descendu pour le délivrer » puis « Je t’envoie chez Pharaon »." },
+        { type:"concept", badge:false, term:"« Je suis celui qui suis »", definition:"La réponse donnée à Moïse refuse de réduire Dieu à une définition ordinaire. Le texte associe ensuite cette formule au nom YAHVÉ et au « Dieu de vos pères », reliant le mystère du nom à une histoire et à une promesse de présence." },
+        { type:"prose", term:"Le nom divin et la traduction", definition:"Le document juxtapose « JE-SUIS », « YAHVÉ » et « LE SEIGNEUR ». Ces formes ne sont pas interchangeables à tous les niveaux : elles rendent de différentes manières le nom divin et sa réception. La fiche conserve ici exactement les formulations du passage fourni." },
+        { type:"prose", term:"Des reprises liturgiques", definition:"La page fournie prolonge ensuite l’appel de Moïse par plusieurs textes de chant et de prière. Ils ne font pas partie du texte biblique d’Exode 3, mais montrent comment le thème de la délivrance est relu dans une langue spirituelle et liturgique postérieure." }
+      ],
+      relatedTexts:[
+        { id:"exode-naissance-moise", kind:"suite", label:"Exode — La naissance de Moïse", relation:"Le récit de la naissance explique comment Moïse échappe à l’ordre de Pharaon ; Exode 3 raconte la mission qui lui est ensuite confiée." },
+        { id:"exode-paque-israel", kind:"suite", label:"Exode — La Pâque d’Israël", relation:"La mission annoncée au buisson ardent conduit, après l’affrontement avec Pharaon, à la nuit de la Pâque et au départ d’Égypte." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Le buisson ardent", range:"3,1–3", marker:"1", aria:"Exode 3, versets 1 à 3", text:"Moïse gardait le troupeau de son beau-père Jéthro, prêtre de Madiane. Il mena le troupeau au-delà du désert et parvint à l’Horeb, la montagne de Dieu. L’Ange du Seigneur lui apparut au milieu d’un feu qui sortait d’un buisson. Moïse regarda : le buisson brûlait sans se consumer. Moïse se dit alors : « Je vais faire un détour pour voir cette chose extraordinaire : pourquoi le buisson ne brûle-t-il pas ? »" },
+        { type:"verse", marker:"4", aria:"Exode 3, versets 4 à 9", text:"Le Seigneur vit qu’il avait fait un détour pour venir regarder, et Dieu l’appela du milieu du buisson : « Moïse ! Moïse ! » Il dit : « Me voici ! » Dieu dit alors : « N’approche pas d’ici ! Retire tes sandales, car le lieu que foulent tes pieds est une terre sainte ! Je suis le Dieu de ton père, Dieu d’Abraham, Dieu d’Isaac, Dieu de Jacob. » Moïse se voila le visage car il craignait de porter son regard sur Dieu. Le Seigneur dit à Moïse : « J’ai vu, oui, j’ai vu la misère de mon peuple qui est en Égypte, et j’ai entendu ses cris sous les coups des chefs de corvée. Oui, je connais ses souffrances. Je suis descendu pour le délivrer de la main des Égyptiens et le faire monter de cette terre vers une terre spacieuse et fertile, vers une terre ruisselant de lait et de miel, vers le pays de Canaan. La clameur des fils d’Israël est parvenue jusqu’à moi, et j’ai vu l’oppression que leur font subir les Égyptiens." },
+        { type:"verse", marker:"10", aria:"Exode 3, verset 10", text:"Et maintenant, va ! Je t’envoie chez Pharaon : tu feras sortir d’Égypte mon peuple, les fils d’Israël. »" },
+        { type:"omission", text:"[…]" },
+        { type:"movementStart", title:"Le nom de Dieu", range:"3,13–15", marker:"13", aria:"Exode 3, versets 13 à 15", text:"Moïse répondit (à Dieu) : « J’irai donc trouver les fils d’Israël, et je leur dirai : ‘Le Dieu de vos pères m’a envoyé vers vous.’ Ils vont me demander quel est son nom ; que leur répondrai-je ? » Dieu dit à Moïse : « Je suis celui qui suis. Tu parleras ainsi aux fils d’Israël : ‘Celui qui m’a envoyé vers vous, c’est : JE-SUIS.’ » Dieu dit encore à Moïse : « Tu parleras ainsi aux fils d’Israël : ‘Celui qui m’a envoyé vers vous, c’est YAHVÉ, c’est LE SEIGNEUR, le Dieu de vos pères, Dieu d’Abraham, Dieu d’Isaac, Dieu de Jacob.’ C’est là mon nom pour toujours, c’est le mémorial par lequel vous me célébrerez, d’âge en âge." },
+        { type:"verse", marker:"16", aria:"Exode 3, versets 16 à 19", text:"Va, rassemble les anciens d’Israël. Tu leur diras : ‘Le Seigneur, le Dieu de vos pères, le Dieu d’Abraham, d’Isaac et de Jacob, m’est apparu. Il m’a dit : J’ai décidé de m’occuper de vous et de ce qu’on vous a fait subir en Égypte ; j’ai dit : Je vous ferai monter de l’Égypte qui vous opprime vers le pays de Canaan, la terre qui ruisselle de lait et de miel.’ Ils écouteront ta voix ; alors tu iras, avec les anciens d’Israël, auprès du roi d’Égypte, et vous lui direz : ‘Le Seigneur, le Dieu des Hébreux, est venu nous trouver. Et maintenant, laisse-nous aller dans le désert, à trois jours de marche, pour y offrir un sacrifice au Seigneur notre Dieu.’ Or, je sais que le roi d’Égypte ne vous laissera pas partir s’il n’y est pas forcé." },
+        { type:"verse", marker:"20", aria:"Exode 3, verset 20", text:"Aussi j’étendrai la main, je frapperai l’Égypte par toutes sortes de prodiges que j’accomplirai au milieu d’elle. Après cela, Pharaon vous permettra de partir. »" },
+        { type:"pause", reference:"UNE IDÉE DE L’AMOUR", title:"Les gens de cinq heures du matin", text:"Les gens de cinq heures du matin<br>attendent et courbent le dos sous le froid,<br>brisés par le travail d’hier,<br>debout pour celui d’aujourd’hui.<br>Et tant de demains vont venir<br>dont aucun ne guérira l’autre.<br>Les gens de cinq heures du matin,<br>l’usine va les engloutir.<br>Qui sera l’amour avec eux ?" },
+        { type:"pause", reference:"D 133", title:"Quel est cet homme qui s’avance", text:"Quel est cet homme qui s’avance<br>parmi les enfants du malheur ?<br>C’est Dieu qui vient pour rendre cœur<br>à ceux qu’écrasait son absence." },
+        { type:"pause", reference:"PRIÈRE EUCHARISTIQUE IV", title:"Tu as tellement aimé le monde", text:"Tu as tellement aimé le monde,<br>Père très saint,<br>que tu nous as envoyé ton propre Fils…<br>Il a vécu notre condition d’homme, (…)<br>annonçant aux pauvres<br>la bonne nouvelle du salut,<br>aux captifs, la délivrance,<br>aux affligés, la joie." }
+      ]
+    },
+{
+      id:"exode-paque-israel", section:"theologie", bible:true,
+      cardMeta:"Exode · Pâque et mémorial",
+      title:"La Pâque d’Israël", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 12,1–14",
+      cardHighlight:"La Pâque d’Israël",
+      familiarIdea:"le sang sur les portes",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Religion", "Histoire"], work:"Exode 12", publication:"12,1–14",
+      description:"Comment la nuit du départ devient-elle un rite, un signe de protection et un mémorial transmis d’âge en âge ?",
+      context:"Après l’appel de Moïse et l’affrontement avec Pharaon, le récit arrive à la nuit qui précède la sortie d’Égypte. Le repas de la Pâque est donné comme un rite à accomplir dans l’urgence : agneau, sang sur les maisons, pains sans levain, sandales aux pieds et bâton à la main. L’événement doit ensuite devenir un mémorial.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Exode 12</strong>, bien après l’appel reçu en <strong>Exode 3,1–10.13–20</strong>, au terme de l’affrontement entre Moïse et Pharaon. Le passage organise le repas de la Pâque avant la sortie d’Égypte et relie directement la délivrance imminente à une célébration qui devra être répétée « d’âge en âge »." },
+        { label:"Piste philosophique", text:"Le texte permet de réfléchir au rapport entre <strong>événement, mémoire et rite</strong>. Une délivrance appartient au passé ; un mémorial lui donne une forme transmissible, capable de structurer l’identité collective longtemps après ceux qui l’ont vécue." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"« le premier des mois »", definition:"Le départ d’Égypte devient un commencement qui réorganise le temps lui-même. Le calendrier inscrit la délivrance au principe d’une nouvelle manière de compter et de se souvenir." },
+        { type:"concept", badge:false, term:"Le sang sur les maisons", definition:"Le sang est explicitement présenté comme « un signe ». Dans le récit, il distingue les maisons qui seront épargnées lors du passage du fléau." },
+        { type:"concept", badge:false, term:"« la ceinture aux reins, les sandales aux pieds, le bâton à la main »", definition:"Le repas est celui de gens prêts à partir. Le rite conserve ainsi dans les gestes du corps l’urgence du départ : il ne s’agit pas seulement de manger, mais de manger comme un peuple sur le point de quitter l’Égypte." },
+        { type:"concept", badge:false, term:"« Ce jour-là sera pour vous un mémorial »", definition:"Le mémorial ne consiste pas seulement à se souvenir mentalement d’un fait passé. Le rite inscrit la délivrance dans une pratique répétée « d’âge en âge » et fait de l’événement un repère durable pour l’identité du peuple." },
+        { type:"prose", term:"De la Pâque d’Israël à la Pâque chrétienne", definition:"Le document propose ensuite une relecture chrétienne dans le chant de l’Exultet : la sortie d’Égypte, le passage de la Mer Rouge et la colonne lumineuse y sont rapprochés de la résurrection du Christ. Cette lecture typologique appartient à la liturgie chrétienne et vient après le sens propre du récit de l’Exode." }
+      ],
+      relatedTexts:[
+        { id:"exode-appel-moise", kind:"suite", label:"Exode — L’appel de Moïse", relation:"Au buisson ardent, Moïse reçoit la mission de faire sortir Israël d’Égypte ; la Pâque marque l’approche de son accomplissement." },
+        { id:"exode-delivrance-israel", kind:"suite", label:"Exode — La sortie d’Égypte", relation:"Après le repas pascal vient le départ effectif : Pharaon laisse partir le peuple, qui s’engage vers le désert." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La Pâque d’Israël", range:"12,1–5", marker:"1", aria:"Exode 12, versets 1 à 5", text:"Dans le pays d’Égypte, le Seigneur dit à Moïse et à son frère Aaron : « Ce mois-ci sera pour vous le premier des mois, il marquera pour vous le commencement de l’année. Parlez ainsi à toute la communauté d’Israël : le dix de ce mois, que l’on prenne un agneau par famille, un agneau par maison. Si la maisonnée est trop peu nombreuse pour un agneau, elle le prendra avec son voisin le plus proche, selon le nombre des personnes. Vous choisirez l’agneau d’après ce que chacun peut manger. Ce sera un agneau sans défaut, un mâle, âgé d’un an. Vous prendrez un agneau ou un chevreau. Vous le garderez jusqu’au quatorzième jour du mois." },
+        { type:"verse", marker:"6", aria:"Exode 12, versets 6 à 10", text:"Dans toute l’assemblée de la communauté d’Israël, on l’immolera au coucher du soleil. On prendra du sang, que l’on mettra sur les deux montants et sur le linteau* des maisons où on le mangera. On mangera sa chair cette nuit-là, on la mangera rôtie au feu, avec des pains sans levain et des herbes amères. Vous n’en mangerez aucun morceau qui soit à moitié cuit ou qui soit bouilli ; tout sera rôti au feu, y compris la tête, les jarrets et les entrailles. Vous n’en garderez rien pour le lendemain ; ce qui resterait pour le lendemain matin, vous le détruirez en le brûlant." },
+        { type:"verse", marker:"11", aria:"Exode 12, versets 11 à 13", text:"Vous mangerez ainsi : la ceinture aux reins, les sandales aux pieds, le bâton à la main. Vous mangerez en toute hâte : c’est la Pâque du Seigneur. Cette nuit-là, je traverserai le pays d’Égypte, je frapperai tout premier-né au pays d’Égypte, depuis les hommes jusqu’au bétail. Contre tous les dieux de l’Égypte j’exercerai mes jugements : je suis le Seigneur. Le sang sera pour vous un signe, sur les maisons où vous serez. Je verrai le sang, et je passerai : vous ne serez pas atteints par le fléau dont je frapperai le pays d’Égypte." },
+        { type:"verse", marker:"14", aria:"Exode 12, verset 14", text:"Ce jour-là sera pour vous un mémorial. Vous en ferez pour le Seigneur une fête de pèlerinage. C’est une loi perpétuelle ; d’âge en âge vous la fêterez. »" },
+        { type:"pause", reference:"CHANT DE L’EXULTET. LITURGIE PASCALE", title:"Une relecture chrétienne de la nuit pascale", text:"Exultez de joie, serviteurs de Dieu,<br>car voici la fête de la Pâque<br>dans laquelle est mis à mort l’agneau véritable<br>dont le sang consacre les portes des croyants.<br>Voici la nuit où tu as tiré d’Égypte<br>les enfants d’Israël, nos pères,<br>et leur as fait passer la Mer Rouge à pied sec.<br>Voici la nuit où le feu d’une colonne lumineuse<br>repoussait les ténèbres du péché.<br>Voici la nuit où le Christ<br>brisant les liens de la mort,<br>s’est relevé, victorieux, des enfers.<br>A quoi servirait-il de naître<br>sans le bonheur d’être sauvé ?<br>O nuit de vrai bonheur,<br>nuit où le ciel s’unit à la terre,<br>où l’homme rencontre Dieu !" }
+      ]
+    },
+{
+      id:"exode-delivrance-israel", section:"theologie", bible:true,
+      cardMeta:"Exode · départ et marche au désert",
+      title:"La sortie d’Égypte", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 12,31–39 ; 13,20–22",
+      cardHighlight:"La sortie d’Égypte",
+      familiarIdea:"la sortie d’Égypte",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Liberté", "Religion"], work:"Exode 12–13", publication:"12,31–39 ; 13,20–22",
+      description:"Comment la délivrance devient-elle un départ réel, puis une marche guidée jour et nuit vers le désert ?",
+      context:"La nuit pascale débouche sur le départ. Pharaon finit par laisser partir Moïse, Aaron et les fils d’Israël ; l’urgence du départ se lit jusque dans la pâte qui n’a pas eu le temps de lever. Le récit passe ensuite du geste de quitter l’Égypte à celui d’avancer : la colonne de nuée et la colonne de feu figurent une présence qui guide la marche.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Exode 12–13</strong>. La Pâque vient d’être célébrée en <strong>Exode 12,1–14</strong> et Pharaon consent au départ. Le peuple quitte Ramsès, gagne Soukkot puis Etam, à l’extrémité du désert. Le document s’arrête avant <a href=\"/textes/exode-passage-mer-rouge/\">le récit de la poursuite égyptienne et du passage de la Mer Rouge</a>." },
+        { label:"Piste philosophique", text:"Le texte distingue deux dimensions de la <strong>liberté</strong> : être libéré d’une domination et apprendre ensuite à avancer sans revenir à l’ordre ancien. Sortir d’Égypte est un événement ; devenir un peuple capable de marcher vers une terre nouvelle sera un processus beaucoup plus long." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"« sortez du milieu de mon peuple »", definition:"Le renversement est net : le pouvoir qui refusait le départ finit par l’ordonner lui-même. La délivrance prend ici la forme très concrète d’une séparation d’avec le territoire et l’autorité de Pharaon." },
+        { type:"concept", badge:false, term:"La pâte qui n’avait pas levé", definition:"Le détail matériel de la pâte emportée dans l’urgence rejoint le rite des pains sans levain de la Pâque. Le récit fait ainsi se répondre la mémoire liturgique et la précipitation du départ." },
+        { type:"concept", badge:false, term:"La colonne de nuée et la colonne de feu", definition:"Le peuple n’est plus sous la direction de Pharaon, mais il n’est pas pour autant présenté comme livré à lui-même. La nuée le guide le jour et le feu l’éclaire la nuit : la liberté nouvellement acquise s’accompagne d’une orientation." },
+        { type:"concept", badge:false, term:"De la délivrance au chemin", definition:"La sortie d’Égypte ne clôt pas le récit de l’Exode ; elle l’ouvre. Après le départ viennent le danger de la poursuite, la Mer Rouge, le désert, le Sinaï et l’apprentissage d’une vie collective hors de l’esclavage." }
+      ],
+      relatedTexts:[
+        { id:"exode-paque-israel", kind:"suite", label:"Exode — La Pâque d’Israël", relation:"La Pâque donne au départ son cadre rituel et mémoriel ; la présente fiche en montre l’accomplissement immédiat." },
+        { id:"exode-passage-mer-rouge", kind:"suite", label:"Exode — Le passage de la Mer Rouge", relation:"Le départ conduit directement à la poursuite de Pharaon et au passage de la mer, où la délivrance devient un salut collectif." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Pharaon consent au départ", range:"12,31–34", marker:"31", aria:"Exode 12, versets 31 à 34", text:"Pharaon appela Moïse et Aaron dans la nuit : “Partez, dit-il, sortez du milieu de mon peuple, et vous et les fils d’Israël, et allez, servez Yahvé comme vous l’avez dit. Prenez aussi votre petit et votre gros bétail, selon ce que vous avez dit, et allez ; bénissez-moi aussi.” Les Egyptiens pressèrent le peuple, ayant hâte de le renvoyer du pays, car ils se disaient : “Nous allons tous mourir !” Le peuple emporta sa pâte avant qu’elle n’eût levé, leurs pétrins sur l’épaule, serrés dans leurs manteaux." },
+        { type:"verse", marker:"35", aria:"Exode 12, versets 35 à 38", text:"Les enfants d’Israël firent ce que leur avait dit Moïse et sollicitèrent des Egyptiens des bijoux d’argent, des bijoux d’or et des vêtements. Yahvé mit le peuple en faveur auprès des Egyptiens qui les leur prêtèrent. Ils dépouillèrent ainsi les Egyptiens.<br><br>Les fils d’Israël partirent de Ramsès pour Soukkot, environ six cent mille hommes de pied, hommes seuls sans compter les enfants. En outre, une foule nombreuse et mêlée monta avec eux, et aussi du petit et du gros bétail, un immense troupeau." },
+        { type:"verse", marker:"39", aria:"Exode 12, verset 39", text:"Ils firent cuire en galettes azymes la pâte qu’ils avaient emportée d’Égypte ; car elle n’avait pas levé. Chassés d’Égypte, en effet, ils n’avaient pu s’attarder et ils ne s’étaient même pas procuré de provisions." },
+        { type:"divider" },
+        { type:"movementStart", title:"La colonne de nuée et de feu", range:"13,20–21", marker:"20", aria:"Exode 13, versets 20 à 21", text:"Ils partirent de Soukkot et campèrent à Etam, à l’extrémité du désert. Yahvé allait devant eux, le jour dans une colonne de nuée pour les guider sur la route, et la nuit dans une colonne de feu pour les éclairer ; ils pouvaient ainsi marcher jour et nuit." },
+        { type:"verse", marker:"22", aria:"Exode 13, verset 22", text:"La colonne de nuée ne se retirait pas de jour devant le peuple, ni la colonne de feu la nuit." }
+      ]
+    },
+
+{
+      id:"exode-passage-mer-rouge", section:"theologie", bible:true,
+      cardMeta:"Exode · passage de la mer",
+      title:"Le passage de la Mer Rouge", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 14,21–31 (extraits)",
+      cardHighlight:"passage de la Mer Rouge",
+      familiarIdea:"la traversée à pied sec",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Liberté", "Religion"], work:"Exode 14", publication:"14,21–23.26–31",
+      description:"Comment le passage de la mer accomplit-il la délivrance d’Israël et transforme-t-il la fuite devant Pharaon en expérience fondatrice de salut ?",
+      context:"Après la sortie d’Égypte, Pharaon poursuit les fils d’Israël jusqu’à la mer. Le document retient deux moments du récit : l’ouverture d’un passage à pied sec, puis le retour des eaux sur l’armée égyptienne. Le passage s’achève sur une formule décisive : Israël reconnaît la puissance du Seigneur et met sa foi en lui.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes en <strong>Exode 14</strong>, juste après <a href=\"/textes/exode-delivrance-israel/\">la sortie d’Égypte et le départ vers le désert</a>. Pharaon poursuit le peuple jusqu’à la mer. Le document reproduit les versets 21–23 puis 26–31 : les versets intermédiaires ne sont pas ajoutés." },
+        { label:"Piste philosophique", text:"Le passage donne à la <strong>liberté</strong> la forme d’un franchissement : sortir de l’esclavage ne suffit pas encore, il faut traverser un danger qui peut ramener le peuple sous la domination de Pharaon. Le récit associe ainsi libération, salut, confiance et naissance d’une mémoire collective." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"« les eaux formant une muraille à leur droite et à leur gauche »", definition:"L’image transforme la mer, obstacle apparemment infranchissable, en chemin. Le récit fait du passage à pied sec le signe visible d’une délivrance qui ouvre là où aucune route ne semblait possible." },
+        { type:"opposition", left:{ term:"Pour Israël", definition:"La mer devient un passage : les fils d’Israël avancent à pied sec et échappent à la poursuite." }, right:{ term:"Pour l’armée de Pharaon", definition:"Le même espace devient lieu de catastrophe lorsque les eaux reviennent et recouvrent les chars et les guerriers." }, conclusion:"Le récit ne sépare pas salut et jugement : la délivrance d’Israël est racontée dans le même mouvement que la défaite de la puissance qui le poursuivait." },
+        { type:"concept", badge:false, term:"« Ce jour-là, le Seigneur sauva Israël »", definition:"Le salut désigne ici d’abord une délivrance concrète et collective : échapper à l’armée égyptienne et sortir définitivement de sa portée. Ce sens historique devient ensuite une matrice majeure du vocabulaire biblique du salut." },
+        { type:"concept", badge:false, term:"« il mit sa foi dans le Seigneur et dans son serviteur Moïse »", definition:"La foi apparaît comme une réponse à un événement reconnu comme délivrance. Elle n’est pas présentée ici comme une opinion abstraite, mais comme une confiance née de ce que le peuple vient de traverser." },
+        { type:"analysis", term:"Épopée, histoire et mémoire", definition:"Le document attire lui-même l’attention sur la forme du récit : « l’épopée transfigure l’histoire ».", items:["Le passage de la mer n’est pas présenté comme un compte rendu historique moderne : l’événement reçoit une forme narrative destinée à être mémorisée et transmise.", "La mémoire d’Israël fait de la traversée un haut-fait fondateur : la délivrance devient une manière de dire que Dieu sauve son peuple.", "La <a href=\"/textes/theologie/boussole/#chronologie\">Boussole biblique</a> distingue volontairement le temps du récit, la mémoire religieuse et les repères historiques."] }
+      ],
+      relatedTexts:[
+        { id:"exode-delivrance-israel", kind:"suite", label:"Exode — La sortie d’Égypte", relation:"La colonne de nuée et de feu guide le peuple jusqu’au moment où la poursuite de Pharaon transforme le départ en épreuve décisive." },
+        { id:"exode-cantique-moise", kind:"suite", label:"Exode — Le cantique de Moïse", relation:"Après le passage de la mer, le récit devient chant : Moïse et les fils d’Israël célèbrent la victoire et le salut." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"La mer s’ouvre devant Israël", range:"14,21–23", marker:"21", aria:"Exode 14, versets 21 à 23", text:"Moïse étendit le bras contre la mer. Le Seigneur chassa la mer toute la nuit par un fort vent d’est, et il mit la mer à sec. Les eaux se fendirent, et les fils d’Israël pénétrèrent dans la mer à pied sec, les eaux formant une muraille à leur droite et à leur gauche. Les Égyptiens les poursuivirent et pénétrèrent derrière eux — avec tous les chevaux de Pharaon, ses chars et ses guerriers — jusqu’au milieu de la mer." },
+        { type:"movementStart", title:"Les eaux reviennent", range:"14,26–29", marker:"26", aria:"Exode 14, versets 26 à 29", text:"Le Seigneur dit à Moïse : « Étends le bras contre la mer : que les eaux reviennent sur les Égyptiens, leurs chars et leurs guerriers ! » Moïse étendit le bras contre la mer. Au point du jour, la mer reprit sa place ; dans leur fuite, les Égyptiens s’y heurtèrent, et le Seigneur les précipita au milieu de la mer. Les eaux refluèrent et recouvrirent toute l’armée de Pharaon, ses chars et ses guerriers, qui avaient pénétré dans la mer à la poursuite d’Israël. Il n’en resta pas un seul. Mais les fils d’Israël avaient marché à pied sec au milieu de la mer, les eaux formant une muraille à leur droite et à leur gauche." },
+        { type:"movementStart", title:"Israël reconnaît la délivrance", range:"14,30–31", marker:"30", aria:"Exode 14, versets 30 à 31", text:"Ce jour-là, le Seigneur sauva Israël de la main de l’Égypte, et Israël vit sur le bord de la mer les cadavres des Égyptiens. Israël vit avec quelle main puissante le Seigneur avait agi contre l’Égypte. Le peuple craignit le Seigneur, il mit sa foi dans le Seigneur et dans son serviteur Moïse." }
+      ]
+    },
+{
+      id:"exode-cantique-moise", section:"theologie", bible:true,
+      cardMeta:"Exode · cantique de victoire",
+      title:"Le cantique de Moïse", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 15,1–18 (extraits)",
+      cardHighlight:"cantique de Moïse",
+      familiarIdea:"le chant de la délivrance",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Religion", "Liberté"], work:"Exode 15", publication:"15,1–5.7–8.10–11.13.17–18",
+      description:"Comment la délivrance racontée au chapitre précédent devient-elle un chant de victoire, de salut et de confiance en Dieu ?",
+      context:"Le passage de la mer vient de s’achever. Le récit change alors de registre : Moïse et les fils d’Israël répondent à la délivrance par un cantique. Le document n’en reproduit pas tout le texte, mais plusieurs strophes qui vont de la victoire sur Pharaon à la conduite du peuple vers l’héritage promis.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes au début d’<strong>Exode 15</strong>, immédiatement après <a href=\"/textes/exode-passage-mer-rouge/\">le passage de la Mer Rouge</a>. Le texte quitte la narration pour la poésie : ce qui vient d’être raconté devient louange, mémoire et confession de foi. Le document donne plusieurs extraits du cantique et laisse de côté les strophes qui ne figurent pas sur les pages fournies." },
+        { label:"Piste philosophique", text:"Le cantique permet de réfléchir à la manière dont un événement devient <strong>mémoire collective</strong>. Chanter ne répète pas simplement le récit : le langage poétique sélectionne, intensifie et interprète l’expérience en lui donnant une forme transmissible." }
+      ],
+      readingNotes:[
+        { type:"analysis", term:"Du récit au chant", definition:"Exode 14 et Exode 15 racontent le même événement sous deux formes différentes.", items:["Le récit expose une suite d’actions : la mer s’ouvre, Israël passe, les eaux reviennent.", "Le cantique transforme cette succession en louange : il nomme la victoire, le salut, la sainteté et l’amour de Dieu.", "La mémoire biblique ne conserve donc pas seulement des faits racontés ; elle les transmet aussi sous une forme poétique et liturgique."] },
+        { type:"concept", badge:false, term:"« Je lui dois le salut ! »", definition:"Le chant reprend l’expérience de la délivrance en première personne. Ce qui concernait tout Israël devient aussi une parole que chacun peut prononcer : le salut reçu devient motif de louange." },
+        { type:"concept", badge:false, term:"« Qui est comme toi, Seigneur, parmi les dieux »", definition:"La formule affirme l’incomparabilité du Seigneur par la question rhétorique. Elle appartient au langage religieux ancien du cantique : il faut la lire dans ce contexte avant d’en tirer une théorie abstraite sur les autres dieux." },
+        { type:"concept", badge:false, term:"« Tu conduis, par ton amour, ce peuple que tu rachetas »", definition:"La délivrance n’est pas seulement une sortie hors du danger. Le chant la prolonge par une conduite : le peuple sauvé doit encore être mené vers un lieu, un héritage et une demeure." },
+        { type:"prose", term:"Du cantique aux chants liturgiques", definition:"Le document fait ensuite résonner le cantique de Moïse avec plusieurs chants chrétiens contemporains. Cette juxtaposition montre comment un texte ancien continue d’être repris comme langage de délivrance, de confiance et d’espérance, sans confondre pour autant le texte biblique avec ses réemplois liturgiques ultérieurs." }
+      ],
+      relatedTexts:[
+        { id:"exode-passage-mer-rouge", kind:"suite", label:"Exode — Le passage de la Mer Rouge", relation:"Le cantique répond directement à l’événement raconté en Exode 14 : la traversée devient parole de louange." },
+        { id:"exode-alliance-sinai", kind:"suite", label:"Exode — L’Alliance du Sinaï", relation:"Après la sortie d’Égypte et le chant de la délivrance, le récit conduit Israël au Sinaï : le peuple libéré entre dans l’Alliance et reçoit une manière de vivre." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Le chant de la victoire", range:"15,1–5", marker:"1", aria:"Exode 15, versets 1 à 5", text:"Alors Moïse et les fils d’Israël chantèrent ce cantique au Seigneur :<br><br>Je veux chanter au Seigneur :<br>superbe est sa victoire !<br>cheval et cavalier,<br>il les jette à la mer !<br><br>Il est ma force, il est mon chant :<br>Je lui dois le salut !<br>il est mon Dieu, et je l’admire,<br>Dieu de mon père, et je l’exalte,<br>le Seigneur est un guerrier ;<br>son nom est : « le Seigneur ».<br><br>Les chars du Pharaon,<br>il les pousse à la mer ;<br>son élite de capitaines<br>a sombré dans la mer Rouge ;<br>les abîmes les recouvrent ;<br>ils ont coulé dans les bas-fonds." },
+        { type:"verse", marker:"7–8", aria:"Exode 15, fin du verset 7 et verset 8 reproduits dans la source", text:"Tu déchaînes ta fureur<br>qui les consume comme paille.<br><br>Au souffle de tes narines<br>les eaux s’amoncellent,<br>les flots se sont dressés,<br>pareils à une digue,<br>les abîmes se figent<br>au fond de la mer." },
+        { type:"verse", marker:"10–11", aria:"Exode 15, versets 10 à 11", text:"Tu as soufflé ton haleine<br>la mer les a couverts,<br>ils ont coulé comme du plomb<br>dans les eaux redoutables.<br><br>Qui est comme toi,<br>Seigneur, parmi les dieux,<br>qui est comme toi,<br>magnifique en sainteté,<br>formidable en exploits,<br>auteur de prodiges ?" },
+        { type:"verse", marker:"13.17–18", aria:"Exode 15, versets 13, 17 et 18, extraits reproduits dans la source", text:"Tu conduis, par ton amour,<br>ce peuple que tu rachetas,<br>tu le mèneras et le planteras,<br>sur la montagne, ton héritage,<br>au lieu dont tu fis,<br>Seigneur, ta demeure<br>où tu régneras<br>pour les siècles des siècles !" },
+        { type:"pause", reference:"E 127", title:"Peuples qui marchez dans la longue nuit", intro:"Aujourd’hui, pour une autre délivrance, mais en face d’un même amour, nos chants rejoignent le cantique de Moïse :", text:"Peuples qui marchez dans la longue nuit,<br>le jour va bientôt se lever.<br><br>Peuples qui cherchez le chemin de vie,<br>Dieu lui-même vient vous sauver." },
+        { type:"pause", reference:"F 151", title:"Il est venu sur nos chemins", text:"Il est venu sur nos chemins illuminer nos lendemains.<br>Il est venu comme un voisin donner l’amour au creux des mains.<br>Il est venu sur nos chemins porter la croix de nos douleurs.<br>Il est venu comme un voisin manger le pain de nos labeurs." },
+        { type:"pause", reference:"Z 26", title:"Le Seigneur est ma lumière et mon salut", text:"Le Seigneur est ma lumière et mon salut,<br>de qui aurais-je peur ?<br><br>Le Seigneur est le rempart de ma vie,<br>devant qui tremblerais-je ?<br><br>Je verrai la bonté du Seigneur<br>sur la terre des vivants.<br><br>Attends le Seigneur,<br>sois fort et garde courage,<br>Attends le Seigneur." }
+      ]
+    },
+
+,
+{
+      id:"exode-alliance-sinai", section:"theologie", bible:true,
+      cardMeta:"Exode · alliance, peuple et théophanie",
+      title:"L’Alliance du Sinaï", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 19,1–11.16–20 ; 24,3.5.7–8",
+      cardHighlight:"L’Alliance du Sinaï",
+      familiarIdea:"l’Alliance conclue au Sinaï",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Religion", "Liberté"], work:"Exode 19 et 24", publication:"19,1–11.16–20 ; 24,3.5.7–8",
+      description:"Comment le peuple libéré d’Égypte devient-il un peuple d’Alliance, appelé à écouter, répondre et vivre devant Dieu ?",
+      context:"Après la sortie d’Égypte, le passage de la mer et la marche au désert, Israël arrive au Sinaï. Le récit met en scène une rencontre solennelle : Dieu rappelle la délivrance, appelle le peuple à garder l’Alliance, puis se manifeste dans la nuée, le feu et le tonnerre. Exode 24 montre ensuite l’Alliance ratifiée par la parole, l’obéissance promise et le sang.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes après <a href=\"/textes/exode-cantique-moise/\">le cantique de Moïse</a>, au moment où le peuple atteint le <strong>Sinaï</strong>. La sortie d’Égypte n’est donc pas présentée comme une liberté sans forme : elle conduit à une relation d’Alliance, puis au <a href=\"/textes/exode-dix-commandements/\">Décalogue</a>. Le document revient ensuite en Exode 24 sur la ratification de cette Alliance." },
+        { label:"Piste philosophique", text:"Le passage permet de distinguer <strong>libération</strong> et <strong>liberté instituée</strong>. Israël a été soustrait à Pharaon ; il doit maintenant répondre à une parole, consentir à des obligations et apprendre une vie commune. La liberté n’est plus seulement absence de domination : elle devient fidélité, responsabilité et engagement." }
+      ],
+      readingNotes:[
+        { type:"analysis", term:"De la délivrance à l’Alliance", definition:"Le texte relie explicitement ce qui vient d’arriver en Égypte à ce qui se joue au Sinaï.", items:["Dieu rappelle d’abord : « Vous avez vu ce que j’ai fait à l’Égypte ». L’Alliance vient après la délivrance, non avant elle.", "L’image des « ailes d’un aigle » transforme la sortie d’Égypte en geste de conduite : le peuple a été amené « jusqu’à moi ».", "La réponse attendue est ensuite formulée en termes d’écoute et de fidélité : « si vous entendez ma voix et gardez mon Alliance »." ] },
+        { type:"concept", badge:false, term:"« un royaume de prêtres, une nation sainte »", definition:"L’élection n’est pas seulement un privilège. Le texte donne au peuple une identité et une vocation : appartenir particulièrement à Dieu au sein d’une terre qui, pourtant, lui appartient tout entière." },
+        { type:"concept", badge:false, term:"« Tout ce qu’a dit le Seigneur, nous le ferons »", definition:"L’Alliance comporte une réponse humaine. Le peuple ne produit pas l’initiative divine, mais il y répond collectivement par une promesse d’obéissance, reprise encore en Exode 24." },
+        { type:"concept", badge:false, term:"Nuée, feu, tonnerre et trompette", definition:"La scène du Sinaï est une <strong>théophanie</strong> : la présence divine est mise en récit par des signes qui manifestent à la fois proximité et distance. Le peuple s’approche, mais des préparatifs et des limites marquent la sainteté de la rencontre." },
+        { type:"concept", badge:false, term:"« le sang de l’Alliance »", definition:"En Exode 24, l’Alliance est ratifiée par un rite. Parole entendue, engagement du peuple et sang versé sont rassemblés dans une même scène qui donne à l’Alliance une forme publique et mémorable." },
+        { type:"prose", term:"Alliance et relectures bibliques", definition:"Les textes placés à la suite dans le document montrent que le Sinaï devient un repère durable : le Deutéronome insiste sur l’Alliance vécue au présent, le psaume sur la fidélité, et l’épître aux Hébreux propose une relecture chrétienne autour de Jésus « médiateur d’une alliance neuve »." }
+      ],
+      relatedTexts:[
+        { id:"genese-alliance-abraham", kind:"proche", label:"Genèse — L’Alliance avec Abraham", relation:"Le Sinaï prolonge le grand motif biblique de l’Alliance déjà présent dans le cycle d’Abraham, mais il l’applique désormais à Israël comme peuple." },
+        { id:"exode-dix-commandements", kind:"suite", label:"Exode — Les Dix Commandements", relation:"Au Sinaï, l’Alliance prend immédiatement la forme d’une parole qui ordonne la relation à Dieu et au prochain : le Décalogue." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Israël arrive au Sinaï", range:"19,1–8", marker:"1", aria:"Exode 19, versets 1 à 8, passage reproduit dans la source", text:"Dans le troisième mois qui suivit la sortie d’Égypte, les fils d’Israël pénétrèrent dans le désert du Sinaï. Partis de Rephidim, ils arrivèrent dans ce désert, et ils établirent leur camp juste en face de la montagne.<br><br>Moïse monta vers Dieu. Le Seigneur l’appela du haut de la montagne : « Tu diras à la maison de Jacob, et tu annonceras aux fils d’Israël : ‘Vous avez vu ce que j’ai fait à l’Égypte, comment je vous ai portés comme sur les ailes d’un aigle pour vous amener jusqu’à moi. Et maintenant, si vous entendez ma voix et gardez mon Alliance, vous serez mon domaine particulier parmi tous les peuples, — car toute la terre m’appartient — et vous serez pour moi un royaume de prêtres, une nation sainte. Voilà ce que tu diras aux fils d’Israël.’ » Moïse revint et convoqua les anciens du peuple, il leur communiqua tout ce que le Seigneur avait prescrit. Le peuple tout entier répondit d’une seule voix : « Tout ce qu’a dit le Seigneur, nous le ferons. »" },
+        { type:"verse", marker:"9", aria:"Exode 19, versets 9 à 11, passage reproduit dans la source", text:"Le Seigneur dit à Moïse : « Je vais venir vers toi dans l’épaisseur de la nuée, pour que le peuple, qui m’entendra te parler, ait confiance en toi, pour toujours. » Moïse rapporta les paroles du peuple au Seigneur.<br><br>Et le Seigneur dit encore à Moïse : « Va trouver le peuple ; procède à leur purification, aujourd’hui et demain ; qu’ils lavent leurs vêtements, pour être prêts le troisième jour." },
+        { type:"movementStart", title:"La manifestation sur la montagne", range:"19,16–20", marker:"16", aria:"Exode 19, versets 16 à 20, passage reproduit dans la source", text:"Le troisième jour, dès le matin, il y eut des coups de tonnerre, des éclairs, une lourde nuée sur la montagne, et le son d’une trompette puissante ; dans le camp, tout le peuple trembla. Moïse fit sortir le peuple hors du camp, à la rencontre de Dieu, et ils restèrent debout au pied de la montagne. La montagne du Sinaï était toute fumante, car le Seigneur y était descendu dans le feu ; la fumée montait, comme la fumée d’une fournaise, et toute la montagne tremblait violemment. Le son de la trompette était de plus en plus fort.<br><br>Le Seigneur descendit sur le sommet du Sinaï, il appela Moïse sur le sommet de la montagne, et Moïse monta vers lui." },
+        { type:"divider" },
+        { type:"movementStart", title:"Les paroles de l’Alliance", range:"24,3", marker:"3", aria:"Exode 24, verset 3, passage reproduit dans la source", text:"Moïse vint rapporter au peuple toutes les paroles du Seigneur et tous ses commandements. Le peuple répondit d’une seule voix : « Toutes ces paroles que le Seigneur a dites, nous les mettrons en pratique. »" },
+        { type:"verse", marker:"5", aria:"Exode 24, verset 5, passage reproduit dans la source", text:"Puis il chargea quelques jeunes Israélites d’offrir des holocaustes, et d’immoler au Seigneur de jeunes taureaux en sacrifice de paix." },
+        { type:"verse", marker:"7", aria:"Exode 24, verset 7, passage reproduit dans la source", text:"Il prit le livre de l’Alliance et en fit la lecture au peuple. Celui-ci répondit : « Tout ce que le Seigneur a dit, nous le mettrons en pratique, nous y obéirons. »" },
+        { type:"verse", marker:"8", aria:"Exode 24, verset 8, passage reproduit dans la source", text:"Moïse prit le sang, en aspergea le peuple, et dit : « Voici le sang de l’Alliance que, sur la base de toutes ces paroles, le Seigneur a conclue avec vous. »" },
+        { type:"pause", reference:"DEUTÉRONOME 4 et 5", title:"L’Alliance vécue au présent", text:"Tu sauras donc aujourd’hui et tu rappelleras à ton cœur que c’est Yahvé qui est Dieu dans le ciel en haut et sur la terre en bas : il n’y en a pas d’autre. Observe ses décrets et ses commandements que je te prescris aujourd’hui, de manière qu’il t’arrive du bonheur, à toi, et à tes fils après toi.<br>Ce n’est pas (seulement) avec nos pères que Yahvé a conclu cette alliance, mais avec nous, nous-mêmes, qui sommes ici aujourd’hui tous vivants." },
+        { type:"pause", reference:"PSAUME 25", title:"Grâce, vérité et Alliance", text:"Tous les sentiers du Seigneur sont grâce et vérité<br>pour ceux qui gardent son alliance et ses ordres.<br>L’intimité de Yahvé est pour ceux qui le craignent,<br>et son alliance, il la leur fait connaître." },
+        { type:"pause", reference:"HÉBREUX 12", title:"Une relecture chrétienne de l’Alliance", intro:"Après bien des avatars, l’Alliance du Sinaï sera renouvelée par celle que Jésus conclura de son sang :", text:"Vous ne vous êtes pas approchés, en effet, d’une réalité palpable : feu ardent, nuée obscure, et ténèbres, et ouragan, et son de trompette. Mais vous vous êtes approchés de Jésus médiateur d’une alliance neuve et d’un sang d’aspersion qui parle mieux que celui d’Abel." },
+        { type:"pause", reference:"LUC 10", title:"Heureux les yeux qui voient", text:"Puis se tournant vers ses disciples, il leur dit : “heureux les yeux qui voient ce que vous voyez. Car je vous dis que beaucoup de prophètes et de rois ont voulu voir ce que vous voyez et ils ne l’ont pas vu.”" },
+        { type:"pause", reference:"JEAN 1", title:"Personne n’a jamais vu Dieu", text:"Personne n’a jamais vu Dieu ;<br>un Dieu, Fils unique, lui, l’a fait connaître." },
+        { type:"pause", reference:"JEAN 14", title:"« Celui qui m’a vu a vu le Père »", text:"“Celui qui m’a vu a vu le Père.”" }
+      ]
+    },
+{
+      id:"exode-dix-commandements", section:"theologie", bible:true,
+      cardMeta:"Exode · le Décalogue au Sinaï",
+      title:"Les Dix Commandements", source:"Livre de l’Exode", sourceTag:"Exode", headerReference:"Exode 20,1–17",
+      cardHighlight:"Les Dix Commandements",
+      familiarIdea:"le Décalogue",
+      authorMeta:"Bible hébraïque · Pentateuque",
+      themes:["Devoir", "Justice"], work:"Exode 20", publication:"20,1–17",
+      description:"Comment les Dix Commandements articulent-ils fidélité à Dieu, respect d’autrui et limitation de la violence, de l’appropriation et du désir ?",
+      context:"Au Sinaï, après la délivrance d’Égypte et l’entrée dans l’Alliance, le texte place une série de paroles fondamentales. Elles commencent par le rappel de la libération — « Je suis le Seigneur ton Dieu, qui t’ai fait sortir du pays d’Égypte » — puis ordonnent la relation à Dieu, au temps, à la famille et au prochain.",
+      readingGuide:[
+        { label:"Où sommes-nous ?", text:"Nous sommes au cœur du Sinaï, dans la continuité directe de <a href=\"/textes/exode-alliance-sinai/\">l’Alliance conclue avec Israël</a>. Le Décalogue n’apparaît donc pas comme un code isolé : il est introduit par le rappel de la sortie d’Égypte et s’inscrit dans une relation déjà commencée entre Dieu et le peuple." },
+        { label:"Piste philosophique", text:"Le Décalogue permet de réfléchir à la fonction de la <strong>loi</strong>. Plusieurs interdits ne prescrivent pas une action particulière : ils posent des limites — ne pas tuer, ne pas voler, ne pas porter de faux témoignage, ne pas convoiter. La liberté collective suppose ici que certaines puissances individuelles cessent de pouvoir s’exercer sans borne." }
+      ],
+      readingNotes:[
+        { type:"concept", badge:false, term:"« qui t’ai fait sortir du pays d’Égypte »", definition:"La première parole rappelle une délivrance avant d’énoncer les commandements. Dans l’ordre du récit, l’obéissance ne produit donc pas la libération d’Égypte : elle vient après elle et répond à une relation déjà établie." },
+        { type:"analysis", term:"Deux directions de la Loi", definition:"Le texte articule la relation à Dieu et la relation au prochain sans les séparer.", items:["Les premières paroles concernent les autres dieux, les images, le nom divin et le sabbat.", "Les suivantes portent sur les parents, la vie, la fidélité conjugale, les biens, la parole judiciaire et la convoitise.", "La fidélité religieuse et la justice entre humains sont ainsi placées dans un même ensemble de paroles." ] },
+        { type:"concept", badge:false, term:"Le sabbat : une limite posée au travail", definition:"Le septième jour interrompt l’ouvrage non seulement pour le destinataire du commandement, mais aussi pour ses enfants, ses serviteurs, ses bêtes et l’immigré. Le repos reçoit ainsi une portée collective : aucun membre de la maison n’est réduit à une disponibilité productive continue." },
+        { type:"opposition", left:{ term:"Interdire l’acte", definition:"Meurtre, adultère, vol et faux témoignage désignent des actes qui portent atteinte directement à autrui." }, right:{ term:"Limiter la convoitise", definition:"La dernière parole remonte en amont de l’acte : elle vise le désir d’appropriation de la maison, de la femme et des biens du prochain." }, conclusion:"La Loi ne s’intéresse donc pas seulement aux gestes visibles ; elle atteint aussi la manière dont autrui et ce qui lui appartient peuvent devenir objets de possession." },
+        { type:"concept", badge:false, term:"« Tu ne porteras pas de faux témoignage contre ton prochain »", definition:"Le commandement protège la parole comme condition de justice. Dans un monde où le témoignage joue un rôle décisif, mentir contre quelqu’un n’est pas une simple faute privée : cela peut détruire sa position devant la communauté." },
+        { type:"prose", term:"Décalogue et numérotation", definition:"Les traditions juives et chrétiennes ne découpent pas toujours les « dix paroles » de la même manière. La fiche conserve l’ordre et le texte du document fourni sans imposer une numérotation confessionnelle particulière." }
+      ],
+      relatedTexts:[
+        { id:"exode-alliance-sinai", kind:"suite", label:"Exode — L’Alliance du Sinaï", relation:"Le Décalogue prend son sens dans la scène du Sinaï : une parole adressée à un peuple libéré et engagé dans l’Alliance." },
+        { id:"genese-naissance-du-monde", kind:"proche", label:"Genèse — La naissance du monde", relation:"Le commandement du sabbat reprend explicitement le rythme de la création : six jours d’ouvrage et le septième jour consacré au repos." }
+      ],
+      readingBlocks:[
+        { type:"movementStart", title:"Dieu et l’Alliance", range:"20,1–6", marker:"1", aria:"Exode 20, versets 1 à 6, passage reproduit dans la source", text:"Et Dieu prononça toutes les paroles que voici : « Je suis le Seigneur ton Dieu, qui t’ai fait sortir du pays d’Égypte, de la maison d’esclavage.<br><br>Tu n’auras pas d’autres dieux que moi.<br><br>Tu ne feras aucune idole, aucune image de ce qui est là-haut dans les cieux, ou en bas sur la terre, ou dans les eaux par-dessous la terre. Tu ne te prosterneras pas devant ces images, pour leur rendre un culte. Car moi, le Seigneur ton Dieu, je suis un Dieu jaloux : chez ceux qui me haïssent, je punis la faute des pères sur les fils, jusqu’à la troisième et la quatrième génération ; mais ceux qui m’aiment et observent mes commandements, je leur garde ma fidélité jusqu’à la millième génération." },
+        { type:"verse", marker:"7", aria:"Exode 20, verset 7, passage reproduit dans la source", text:"Tu n’invoqueras pas le nom du Seigneur ton Dieu pour le mal, car le Seigneur ne laissera pas impuni celui qui invoque son nom pour le mal." },
+        { type:"movementStart", title:"Le sabbat", range:"20,8–11", marker:"8", aria:"Exode 20, versets 8 à 11, passage reproduit dans la source", text:"Tu feras du sabbat un mémorial, un jour sacré. Pendant six jours tu travailleras et tu feras tout ton ouvrage ; mais le septième jour est le jour du repos, sabbat en l’honneur du Seigneur ton Dieu : tu ne feras aucun ouvrage, ni toi, ni ton fils, ni ta fille, ni ton serviteur, ni ta servante, ni tes bêtes, ni l’immigré qui réside dans ta ville. Car en six jours le Seigneur a fait le ciel, la terre, la mer et tout ce qu’ils contiennent, mais il s’est reposé le septième jour. C’est pourquoi le Seigneur a béni le jour du sabbat et l’a consacré." },
+        { type:"movementStart", title:"Le prochain", range:"20,12–17", marker:"12", aria:"Exode 20, versets 12 à 17, passage reproduit dans la source", text:"Honore ton père et ta mère, afin d’avoir longue vie sur la terre que te donne le Seigneur ton Dieu.<br><br>Tu ne commettras pas de meurtre.<br><br>Tu ne commettras pas d’adultère.<br><br>Tu ne commettras pas de vol.<br><br>Tu ne porteras pas de faux témoignage contre ton prochain.<br><br>Tu ne convoiteras pas la maison de ton prochain ; tu ne convoiteras pas la femme de ton prochain, ni son serviteur, ni sa servante, ni son bœuf, ni son âne : rien de ce qui lui appartient. »" }
+      ]
     }
+
+
   ];
 
   const SECTION_LABELS = { philosophie:"Philosophie", theologie:"Théologie", autres:"Autres" };

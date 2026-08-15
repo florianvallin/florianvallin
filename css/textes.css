@@ -11850,3 +11850,909 @@ body[data-catalog-section="autres"] .texts-hero-inner {
   .bible-reader-collections-tools{grid-template-columns:1fr}
   .bible-reader-collections-tools label{grid-column:auto}
 }
+
+/* === Bible detail reading system · 2026-08-10 === */
+.text-bible-coordinate{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:7px;
+  max-width:760px;
+  margin:15px auto 0;
+  color:#8b7277;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.055em;
+  line-height:1.45;
+  text-transform:uppercase;
+}
+.text-bible-coordinate span:first-child{color:var(--catalog-theo-dark);font-weight:800}
+.text-bible-coordinate i{color:#c5a9ae;font-style:normal}
+.text-bible-cycle{
+  max-width:760px;
+  margin:24px auto 0;
+  overflow:hidden;
+  border:1px solid rgba(182,77,91,.15);
+  border-radius:14px;
+  background:linear-gradient(135deg,rgba(250,241,243,.94),rgba(255,255,255,.96) 50%,rgba(250,241,243,.55));
+  box-shadow:0 10px 28px rgba(92,55,64,.045);
+}
+.text-bible-cycle-head{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:baseline;
+  gap:10px;
+  padding:11px 14px 9px;
+  border-bottom:1px solid rgba(182,77,91,.11);
+}
+.text-bible-cycle-head>span{color:#a77780;font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.text-bible-cycle-head>strong{color:#563f44;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:600}
+.text-bible-cycle-head>small{color:#a28c91;font-size:8px;font-weight:700;letter-spacing:.04em}
+.text-bible-cycle ol{
+  display:flex;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.text-bible-cycle li{position:relative;flex:1 1 0;min-width:0;border-right:1px solid rgba(182,77,91,.09)}
+.text-bible-cycle li:last-child{border-right:0}
+.text-bible-cycle li.is-current{background:rgba(182,77,91,.075)}
+.text-bible-cycle li.is-current::after{content:"";position:absolute;right:12px;bottom:0;left:12px;height:2px;background:var(--catalog-theo);border-radius:2px 2px 0 0}
+.text-bible-cycle li a{display:flex;min-height:58px;flex-direction:column;justify-content:center;gap:4px;padding:9px 11px 11px;color:inherit;text-decoration:none;transition:background .2s ease}
+.text-bible-cycle li a:hover,.text-bible-cycle li a:focus-visible{background:rgba(182,77,91,.06);outline:none}
+.text-bible-cycle li a>span{color:#b1848c;font-size:7px;font-weight:800;letter-spacing:.1em}
+.text-bible-cycle li a>strong{display:-webkit-box;overflow:hidden;color:#645156;font-size:9.5px;font-weight:650;line-height:1.35;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.text-bible-cycle li.is-current a>strong{color:#8f4552;font-weight:800}
+.text-bible-view-toggle{
+  display:flex;
+  width:max-content;
+  max-width:100%;
+  align-items:center;
+  gap:2px;
+  margin:13px 0 0 auto;
+  padding:3px;
+  border:1px solid rgba(182,77,91,.13);
+  border-radius:999px;
+  background:#fff;
+}
+.text-bible-view-toggle>span{padding:0 7px;color:#a1888d;font-size:7px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.text-bible-view-toggle button{
+  min-width:67px;
+  padding:6px 10px;
+  border:0;
+  border-radius:999px;
+  background:transparent;
+  color:#856d72;
+  font:700 9px/1 Inter,Arial,sans-serif;
+  cursor:pointer;
+  transition:background .2s ease,color .2s ease,box-shadow .2s ease;
+}
+.text-bible-view-toggle button[aria-pressed="true"]{background:#9d5662;color:#fff;box-shadow:0 4px 12px rgba(157,86,98,.16)}
+.text-bible-view-toggle button:focus-visible{outline:2px solid rgba(157,86,98,.3);outline-offset:2px}
+.text-bible-genealogy{
+  display:grid;
+  grid-template-columns:115px minmax(0,1fr);
+  gap:13px;
+  margin:13px 0 2px;
+  padding:12px 0 2px;
+  border-top:1px solid rgba(182,77,91,.12);
+}
+.text-bible-genealogy>span{padding-top:2px;color:#9b5d68;font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.text-bible-genealogy>div{display:grid;gap:0}
+.text-bible-genealogy p{position:relative;margin:0!important;padding:0 0 13px 16px!important;color:#756468!important;font-size:10.5px!important;line-height:1.35!important}
+.text-bible-genealogy p::before{content:"";position:absolute;top:3px;bottom:-2px;left:3px;width:1px;background:#e6cfd3}
+.text-bible-genealogy p::after{content:"";position:absolute;top:4px;left:0;width:7px;height:7px;border:1px solid #c9919b;border-radius:50%;background:#fff}
+.text-bible-genealogy p.is-last{padding-bottom:1px!important}
+.text-bible-genealogy p.is-last::before{display:none}
+.text-bible-genealogy p strong{color:#8f4653;font-weight:800}
+.text-bible-genealogy p i{color:#b19ca0;font-style:normal}
+.text-bible-anatomy{
+  max-width:760px;
+  margin:22px auto 3px;
+  padding:15px 17px 16px;
+  border:1px solid rgba(182,77,91,.13);
+  border-radius:12px;
+  background:#fffdfd;
+}
+.text-bible-anatomy>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}
+.text-bible-anatomy>div>span{color:#8e4a56;font-size:9px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.text-bible-anatomy>div>small{color:#aa9297;font-size:8px;font-weight:650}
+.text-bible-anatomy ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 8px;margin:0;padding:0;list-style:none}
+.text-bible-anatomy li a{display:grid;grid-template-columns:25px minmax(0,1fr) auto;align-items:center;gap:7px;min-height:34px;padding:6px 8px;border-radius:8px;color:inherit;text-decoration:none;transition:background .18s ease,transform .18s ease}
+.text-bible-anatomy li a:hover,.text-bible-anatomy li a:focus-visible{background:#faf0f2;outline:none;transform:translateX(1px)}
+.text-bible-anatomy li a>span{color:#b57a84;font-size:7px;font-weight:850;letter-spacing:.08em}
+.text-bible-anatomy li a>strong{overflow:hidden;color:#655459;font-size:9.5px;font-weight:650;line-height:1.3;text-overflow:ellipsis;white-space:nowrap}
+.text-bible-anatomy li a>small{color:#a99398;font-size:7.5px;font-weight:600;white-space:nowrap}
+[id^="passage-movement-"]{scroll-margin-top:125px}
+.text-bible-entity-term{color:#7f4853;font-weight:650;cursor:help;border-bottom:1px dotted rgba(182,77,91,.5);text-decoration:none}
+.text-bible-entity-term:focus-visible{border-radius:2px;outline:2px solid rgba(182,77,91,.26);outline-offset:2px}
+.text-bible-prevnext{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(160px,.72fr) minmax(0,1fr);
+  max-width:760px;
+  margin:28px auto 0;
+  overflow:hidden;
+  border:1px solid rgba(182,77,91,.14);
+  border-radius:13px;
+  background:#fff;
+}
+.text-bible-prevnext>a{color:inherit;text-decoration:none;transition:background .2s ease}
+.text-bible-prevnext>a:hover,.text-bible-prevnext>a:focus-visible{background:#fbf2f4;outline:none}
+.text-bible-prevnext-side{display:flex;min-width:0;flex-direction:column;justify-content:center;gap:5px;padding:14px 15px}
+.text-bible-prevnext-side>span{color:#a56570;font-size:7.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.text-bible-prevnext-side>strong{display:-webkit-box;overflow:hidden;color:#655257;font-size:10px;font-weight:700;line-height:1.35;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.text-bible-prevnext-next{text-align:right}
+.text-bible-prevnext-center{display:flex;flex-direction:column;justify-content:center;gap:4px;padding:13px 12px;border-right:1px solid rgba(182,77,91,.1);border-left:1px solid rgba(182,77,91,.1);background:linear-gradient(145deg,#fbf2f4,#fff);text-align:center}
+.text-bible-prevnext-center>span{color:#9c5561;font-size:7px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.text-bible-prevnext-center>strong{color:#735f64;font-size:8.5px;font-weight:650;line-height:1.35}
+.text-bible-prevnext-side.is-empty{min-height:58px;background:#fdfbfb}
+
+/* “Lecture” strips the pedagogical apparatus without changing the source text. */
+.text-detail--reading-mode .text-detail-tags,
+.text-detail--reading-mode .text-context,
+.text-detail--reading-mode .text-relations,
+.text-detail--reading-mode .text-bible-anatomy,
+.text-detail--reading-mode .text-reading-notes,
+.text-detail--reading-mode .text-path-navigation,
+.text-detail--reading-mode .text-detail-cta{display:none!important}
+.text-detail--reading-mode .text-reading--scripture{margin-top:27px}
+.text-detail--reading-mode .text-scripture-heading{display:none}
+.text-detail--reading-mode .text-scripture-movement-title,
+.text-detail--reading-mode .text-scripture-movement-range{display:none}
+.text-detail--reading-mode .text-scripture-movement-label{width:auto;padding:0;text-align:right}
+.text-detail--reading-mode .text-scripture-movement-marker{position:static;display:block;padding-top:.62em}
+.text-detail--reading-mode .text-bible-entity-term{color:inherit;font-weight:inherit;cursor:text;border-bottom:0}
+
+@media (max-width:700px){
+  .text-bible-coordinate{gap:5px;margin-top:13px;font-size:8.5px}
+  .text-bible-cycle{margin-top:18px;border-radius:11px}
+  .text-bible-cycle-head{grid-template-columns:1fr auto;gap:5px 8px;padding:9px 10px 8px}
+  .text-bible-cycle-head>span{grid-column:1/-1}
+  .text-bible-cycle-head>strong{font-size:12px}
+  .text-bible-cycle ol{overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-inline:contain}
+  .text-bible-cycle li{flex:0 0 142px;scroll-snap-align:start}
+  .text-bible-cycle li a{min-height:52px;padding:8px 9px 10px}
+  .text-bible-view-toggle{margin-top:10px}
+  .text-bible-genealogy{grid-template-columns:1fr;gap:7px}
+  .text-bible-genealogy>span{padding-top:0}
+  .text-bible-anatomy{margin-top:17px;padding:12px}
+  .text-bible-anatomy ol{grid-template-columns:1fr}
+  .text-bible-anatomy li a{grid-template-columns:23px minmax(0,1fr) auto}
+  .text-bible-prevnext{grid-template-columns:1fr 1fr;margin-top:22px}
+  .text-bible-prevnext-center{grid-column:1/-1;grid-row:1;border-right:0;border-bottom:1px solid rgba(182,77,91,.1);border-left:0}
+  .text-bible-prevnext-side{grid-row:2;padding:12px}
+  .text-bible-prevnext-next{border-left:1px solid rgba(182,77,91,.1)}
+  .text-bible-prevnext-side.is-empty{min-height:54px}
+  .text-detail--reading-mode .text-scripture-movement-label{width:auto;padding-left:0}
+}
+
+@media (max-width:430px){
+  .text-bible-view-toggle{width:100%;justify-content:flex-end}
+  .text-bible-view-toggle>span{margin-right:auto}
+  .text-bible-view-toggle button{min-width:63px}
+  .text-bible-cycle li{flex-basis:132px}
+  .text-bible-prevnext-side>strong{font-size:9px}
+}
+.text-glossary-tooltip.is-entity{max-width:min(330px,calc(100vw - 28px));padding:12px 14px;text-align:left}
+.text-glossary-tooltip.is-entity .text-glossary-tooltip-kind{display:block;margin-bottom:4px;color:#e6bac1;font-size:7px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.text-glossary-tooltip.is-entity strong{display:block;margin-bottom:4px;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:600}
+.text-glossary-tooltip.is-entity p{margin:0;color:rgba(255,255,255,.86);font-size:10.5px;line-height:1.48}
+
+
+/* ========================================================================== */
+/* FICHES BIBLIQUES — NAVIGATION DE CYCLE + COMPARATEUR LATÉRAL             */
+/* ========================================================================== */
+
+.text-bible-cycle-head{grid-template-columns:auto 1fr auto}
+
+.text-bible-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px}
+.text-bible-toolbar .text-bible-view-toggle{margin-top:0}
+.text-bible-toolbar-actions{display:flex;align-items:center;gap:7px}
+.text-bible-compare-trigger{display:inline-flex;min-height:31px;align-items:center;justify-content:center;gap:7px;padding:6px 10px;border:1px solid rgba(157,86,98,.16);border-radius:999px;background:#fff;color:#755e63;font:700 8px/1 Inter,sans-serif;letter-spacing:.02em;text-decoration:none;transition:border-color .2s ease,background .2s ease,color .2s ease,transform .2s ease}
+.text-bible-compare-trigger{appearance:none;cursor:pointer}
+.text-bible-compare-trigger svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.35}
+.text-bible-compare-trigger:hover,.text-bible-compare-trigger:focus-visible{border-color:rgba(157,86,98,.34);background:#fbf2f4;color:#8c4652;outline:none;transform:translateY(-1px)}
+.text-bible-prevnext-center>small{color:#a88087;font-size:7px;font-weight:700}
+
+body.is-bible-compare-open{overflow:hidden}
+.text-bible-compare-backdrop{position:fixed;z-index:9996;inset:0;background:rgba(34,24,26,.16);opacity:0;backdrop-filter:blur(1.5px);transition:opacity .24s ease}
+.text-bible-compare-backdrop.is-open{opacity:1}
+.text-bible-compare-drawer{position:fixed;z-index:9997;top:0;right:0;display:grid;width:min(720px,52vw);height:100dvh;grid-template-rows:auto minmax(0,1fr) auto;border-left:1px solid rgba(126,80,89,.16);background:#fff;box-shadow:-18px 0 52px rgba(51,34,38,.14);transform:translateX(102%);transition:transform .34s cubic-bezier(.2,.75,.2,1)}
+.text-bible-compare-drawer.is-open{transform:translateX(0)}
+.text-bible-compare-drawer>header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:20px 22px 15px;border-bottom:1px solid #eee6e8;background:linear-gradient(180deg,#fffafa 0,#fff 100%)}
+.text-bible-compare-drawer>header span{display:block;margin-bottom:4px;color:#a46c75;font-size:8px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.text-bible-compare-drawer>header h2{margin:0;color:#573f44;font:600 clamp(20px,2vw,27px)/1.1 Georgia,"Times New Roman",serif}
+.text-bible-compare-drawer>header p{margin:6px 0 0;color:#8e777c;font-size:9px;font-weight:650}
+.text-bible-compare-drawer>header button{display:grid;width:34px;height:34px;place-items:center;border:1px solid #eadfe1;border-radius:50%;background:#fff;color:#765c62;font-size:24px;line-height:1;cursor:pointer;transition:background .2s ease,transform .2s ease}
+.text-bible-compare-drawer>header button:hover,.text-bible-compare-drawer>header button:focus-visible{background:#f8edef;outline:none;transform:rotate(4deg)}
+.text-bible-compare-frame-wrap{position:relative;min-height:0;background:#fff}
+.text-bible-compare-frame-wrap iframe{display:block;width:100%;height:100%;border:0;background:#fff}
+.text-bible-compare-frame-loading{position:absolute;z-index:2;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;background:#fff;color:#8e757a;font-size:10px}
+.text-bible-compare-frame-loading[hidden]{display:none}
+.text-bible-compare-frame-loading>span{width:24px;height:24px;border:2px solid #eadbdd;border-top-color:#9d5662;border-radius:50%;animation:bibleCompareSpin .8s linear infinite}
+@keyframes bibleCompareSpin{to{transform:rotate(360deg)}}
+.text-bible-compare-drawer>footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 18px;border-top:1px solid #eee6e8;background:#fdfafb}
+.text-bible-compare-drawer>footer p{max-width:430px;margin:0;color:#8b7579;font-size:8px;line-height:1.45}
+.text-bible-compare-drawer>footer p strong{color:#71585e}
+.text-bible-compare-drawer>footer a{flex:none;color:#98515d;font-size:8px;font-weight:800;text-decoration:none}
+.text-bible-compare-drawer>footer a:hover{text-decoration:underline;text-underline-offset:3px}
+
+@media (max-width:900px){
+  .text-bible-toolbar{align-items:flex-start;flex-direction:column}
+  .text-bible-toolbar-actions{width:100%}
+  .text-bible-compare-trigger{flex:1}
+  .text-bible-compare-drawer{width:min(760px,72vw)}
+}
+@media (max-width:700px){
+  .text-bible-cycle-head{grid-template-columns:1fr auto}
+  .text-bible-cycle-head>strong{grid-column:1;grid-row:2}
+  .text-bible-cycle-head>small{grid-column:1;grid-row:3}
+  .text-bible-cycle-head>a{grid-column:2;grid-row:2/4;align-self:center}
+  .text-bible-toolbar-actions{display:grid;grid-template-columns:1fr 1fr}
+  .text-bible-compare-trigger{min-height:34px;padding-inline:8px;font-size:7.5px}
+  .text-bible-compare-drawer{top:auto;bottom:0;width:100%;height:min(88dvh,780px);border-top:1px solid rgba(126,80,89,.18);border-left:0;border-radius:16px 16px 0 0;box-shadow:0 -18px 48px rgba(51,34,38,.16);transform:translateY(103%)}
+  .text-bible-compare-drawer.is-open{transform:translateY(0)}
+  .text-bible-compare-drawer>header{padding:16px 16px 12px}
+  .text-bible-compare-drawer>footer{align-items:flex-start;flex-direction:column;gap:7px;padding:10px 14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .text-bible-compare-drawer,.text-bible-compare-backdrop{transition:none!important}
+}
+
+/* ========================================================================== 
+   Lecteur biblique — confort de lecture + parcours bibliques · 2026-08-10
+   ========================================================================== */
+
+/* Le lecteur était très compact sur desktop. Ces valeurs rapprochent l'affichage
+   à 100 % d'un confort de lecture qui nécessitait auparavant un zoom navigateur. */
+.bible-reader-page .bible-reader-controls{
+  margin-bottom:18px;
+  padding:17px 18px 15px;
+}
+.bible-reader-page .bible-reader-controls-head{margin-bottom:12px}
+.bible-reader-page .bible-reader-controls-head>div>span{font-size:10px;letter-spacing:.11em}
+.bible-reader-page .bible-reader-controls-head h2{font-size:19px}
+.bible-reader-page .bible-reader-status{font-size:11px}
+.bible-reader-page .bible-reader-select-grid{gap:11px}
+.bible-reader-page .bible-reader-field{gap:6px}
+.bible-reader-page .bible-reader-field>span{font-size:10px}
+.bible-reader-page .bible-reader-field select{
+  height:46px;
+  padding:0 38px 0 13px;
+  font-size:14px;
+}
+.bible-reader-page .bible-reader-meta-line{
+  min-height:32px;
+  margin-top:9px;
+  font-size:11px;
+  line-height:1.45;
+}
+.bible-reader-page .bible-reader-meta-actions{gap:7px}
+.bible-reader-tool-toggle,
+.bible-reader-search-toggle{
+  gap:7px;
+  height:34px;
+  padding:0 10px;
+  border-radius:9px;
+  font-size:11px;
+}
+.bible-reader-tool-toggle svg,
+.bible-reader-search-toggle svg{width:15px;height:15px}
+
+/* Recherche : même niveau de lisibilité que le lecteur. */
+.bible-reader-search-panel{margin-top:11px;padding:15px;border-radius:14px}
+.bible-reader-search-head{margin-bottom:11px}
+.bible-reader-search-head span{font-size:9px}
+.bible-reader-search-head strong{font-size:14px}
+.bible-reader-search-head>button{font-size:25px}
+.bible-reader-search-form{grid-template-columns:minmax(0,1fr) 180px auto;gap:8px}
+.bible-reader-search-form input,
+.bible-reader-search-form select{height:42px;font-size:13px}
+.bible-reader-search-form>button{height:42px;padding:0 15px;font-size:11px}
+.bible-reader-search-feedback{min-height:18px;margin:9px 2px 5px;font-size:10.5px}
+.bible-reader-search-results{gap:7px}
+.bible-reader-search-result{grid-template-columns:108px minmax(0,1fr) 22px;gap:10px;padding:10px 11px;border-radius:11px}
+.bible-reader-search-result strong{font-size:11px}
+.bible-reader-search-result small{font-size:9px}
+.bible-reader-search-result p{font-size:13.5px;line-height:1.45}
+.bible-reader-search-result i{font-size:15px}
+
+/* Sommaires et liens autour du texte : moins miniatures. */
+.bible-reader-outline-head span,.bible-reader-outline-head small{font-size:9.5px}
+.bible-reader-outline-track button{min-height:62px;padding:9px 10px}
+.bible-reader-outline-track small{font-size:9px}
+.bible-reader-outline-track strong{font-size:11px}
+.bible-reader-outline-track span{font-size:9.5px;line-height:1.35}
+.bible-reader-related>span{font-size:9px}
+.bible-reader-related a{min-height:34px;padding:6px 9px}
+.bible-reader-related strong{font-size:10.5px}
+.bible-reader-related small{font-size:9px}
+
+/* Comparateur : les métadonnées restent secondaires, mais ne sont plus minuscules. */
+.bible-reader-compare-panel{padding:15px;border-radius:14px}
+.bible-reader-compare-head span{font-size:9px}
+.bible-reader-compare-head strong{font-size:14px}
+.bible-reader-compare-head>button{font-size:25px}
+.bible-reader-compare-modes button{font-size:10.5px;padding:6px 10px}
+.bible-reader-compare-translation span{font-size:9px;padding:6px 9px}
+.bible-reader-compare-note{font-size:10.5px;line-height:1.5}
+.bible-reader-compare-card header strong{font-size:10.5px}
+.bible-reader-compare-card header span{font-size:8px}
+.bible-reader-compare-card>p{font-size:14.5px;line-height:1.66}
+.bible-reader-compare-card.is-error>p{font-size:11px}
+.bible-reader-compare-card>button,
+.bible-reader-compare-retry,
+.bible-reader-compare-column-head button{font-size:9px;padding:6px 9px}
+
+/* --------------------------------------------------------------------------
+   Parcours bibliques : séparés des outils qui agissent sur le passage courant.
+   -------------------------------------------------------------------------- */
+.bible-reader-pathways{
+  max-width:940px;
+  margin:0 auto 32px;
+  padding:0 2px;
+}
+.bible-reader-pathways-heading{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:28px;
+  margin:0 2px 12px;
+}
+.bible-reader-pathways-heading>div>span{
+  display:block;
+  margin-bottom:3px;
+  color:#af5660;
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.bible-reader-pathways-heading h2{
+  margin:0;
+  color:#393135;
+  font-size:21px;
+  line-height:1.15;
+  letter-spacing:-.025em;
+}
+.bible-reader-pathways-heading p{
+  max-width:520px;
+  margin:0;
+  color:#817579;
+  font-size:12px;
+  line-height:1.55;
+  text-align:right;
+}
+.bible-reader-pathway-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;
+}
+.bible-reader-pathway-card{
+  display:grid;
+  grid-template-columns:auto auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:10px;
+  min-height:82px;
+  padding:13px 14px;
+  border:1px solid #e9dfe1;
+  border-radius:14px;
+  background:linear-gradient(145deg,#fff,#fdfafb);
+  color:#62575b;
+  text-align:left;
+  cursor:pointer;
+  box-shadow:0 7px 20px rgba(74,48,54,.025);
+  transition:border-color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.bible-reader-pathway-card:hover,
+.bible-reader-pathway-card.is-active{
+  border-color:#d9b6bb;
+  background:linear-gradient(145deg,#fff,#fff6f7);
+  box-shadow:0 10px 24px rgba(112,61,70,.055);
+  transform:translateY(-1px);
+}
+.bible-reader-pathway-num{
+  align-self:start;
+  padding-top:2px;
+  color:#c5a7ac;
+  font-size:9px;
+  font-weight:750;
+  letter-spacing:.07em;
+}
+.bible-reader-pathway-icon{
+  display:grid;
+  place-items:center;
+  width:36px;
+  height:36px;
+  border-radius:11px;
+  background:#fbf3f4;
+  color:#a84d57;
+}
+.bible-reader-pathway-icon svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.bible-reader-pathway-copy{display:grid;gap:4px;min-width:0}
+.bible-reader-pathway-copy strong{color:#51464a;font-size:14px;line-height:1.2}
+.bible-reader-pathway-copy small{color:#91858a;font-size:10.5px;line-height:1.4}
+.bible-reader-pathway-arrow{color:#b49da2;font-size:15px;transition:transform .2s ease,color .2s ease}
+.bible-reader-pathway-card:hover .bible-reader-pathway-arrow,
+.bible-reader-pathway-card.is-active .bible-reader-pathway-arrow{color:#a84d57;transform:translateX(2px)}
+.bible-reader-pathway-panels{margin-top:10px}
+
+/* Collections dédiées : prières et paraboles ont maintenant chacune leur entrée.
+   Le moteur de données existant reste commun, mais l'interface n'affiche plus
+   les deux catégories comme deux petits onglets perdus dans un même outil. */
+.bible-reader-pathway-panels>.bible-reader-collections-panel{margin-top:0}
+.bible-reader-collections-panel.is-dedicated-collection .bible-reader-collections-tabs{display:none}
+.bible-reader-collections-panel{
+  padding:16px;
+  border-radius:14px;
+  box-shadow:0 10px 28px rgba(72,47,52,.045);
+}
+.bible-reader-collections-head{margin-bottom:11px}
+.bible-reader-collections-head span{font-size:9px}
+.bible-reader-collections-head strong{font-size:15px}
+.bible-reader-collections-head>button{font-size:25px}
+.bible-reader-collections-tabs{gap:7px;margin-bottom:10px}
+.bible-reader-collections-tabs button{padding:7px 12px;font-size:11px}
+.bible-reader-collections-description{margin-bottom:12px;font-size:11.5px;line-height:1.55}
+.bible-reader-collections-tools{gap:8px;margin-bottom:9px}
+.bible-reader-collections-tools input,
+.bible-reader-collections-tools select{
+  min-height:40px;
+  border-radius:10px;
+  padding:0 11px;
+  font-size:12px;
+}
+.bible-reader-collections-status{margin:4px 2px 9px;font-size:10px}
+.bible-reader-collections-list{gap:9px;max-height:min(64vh,680px)}
+.bible-reader-collection-item{border-radius:11px}
+.bible-reader-collection-item-main{gap:10px;padding:12px 12px 7px}
+.bible-reader-collection-copy>span{margin-bottom:4px;font-size:8.5px}
+.bible-reader-collection-copy h3{font-size:13px;line-height:1.3}
+.bible-reader-collection-copy p{margin-top:5px;font-size:10.5px;line-height:1.45}
+.bible-reader-collection-read{padding:7px 10px;font-size:9.5px}
+.bible-reader-collection-refs{gap:5px;padding:0 12px 11px}
+.bible-reader-collection-refs button{padding:5px 8px;font-size:9px}
+.bible-reader-collection-preview{padding:11px 12px 13px;border-radius:0 0 11px 11px}
+.bible-reader-collection-passage+ .bible-reader-collection-passage{margin-top:13px;padding-top:13px}
+.bible-reader-collection-passage header{margin-bottom:8px}
+.bible-reader-collection-passage header strong{font-size:10px}
+.bible-reader-collection-passage header span{font-size:9px}
+.bible-reader-collection-passage>div p{margin-bottom:5px;font-size:14px;line-height:1.62}
+.bible-reader-collection-passage sup{min-width:20px;margin-right:4px;font-size:9px}
+.bible-reader-collection-passage>a{margin-top:7px;font-size:10px}
+.bible-reader-collection-passage.is-error>p,
+.bible-reader-collection-empty,
+.bible-reader-collections-empty{font-size:11px}
+
+/* --------------------------------------------------------------------------
+   Mystères du Rosaire.
+   -------------------------------------------------------------------------- */
+.bible-reader-rosary-panel{
+  padding:16px;
+  border:1px solid #e7dadd;
+  border-radius:14px;
+  background:linear-gradient(145deg,rgba(255,255,255,.99),rgba(252,247,248,.99));
+  box-shadow:0 10px 28px rgba(72,47,52,.045);
+}
+.bible-reader-rosary-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+.bible-reader-rosary-head>div{display:flex;align-items:baseline;gap:9px;min-width:0}
+.bible-reader-rosary-head span{color:#b0535c;font-size:9px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.bible-reader-rosary-head strong{color:#51474a;font-size:15px}
+.bible-reader-rosary-head>button{border:0;background:transparent;color:#a99da0;font-size:25px;line-height:1;cursor:pointer}
+.bible-reader-rosary-today{
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+  margin-bottom:10px;
+  padding:10px 12px;
+  border:1px solid #eadcdf;
+  border-radius:11px;
+  background:#fff;
+}
+.bible-reader-rosary-today span{color:#ad5660;font-size:9px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+.bible-reader-rosary-today strong{color:#61555a;font-size:12px}
+.bible-reader-rosary-days{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  gap:6px;
+  margin-bottom:11px;
+}
+.bible-reader-rosary-days button{
+  position:relative;
+  display:grid;
+  justify-items:center;
+  gap:4px;
+  min-height:58px;
+  padding:9px 5px 7px;
+  border:1px solid #e9dfe1;
+  border-radius:10px;
+  background:#fff;
+  color:#716469;
+  cursor:pointer;
+}
+.bible-reader-rosary-days button span{font-size:11px;font-weight:750}
+.bible-reader-rosary-days button small{color:#a29699;font-size:8.5px}
+.bible-reader-rosary-days button i{
+  position:absolute;
+  top:-6px;
+  padding:2px 5px;
+  border-radius:999px;
+  background:#ad535d;
+  color:#fff;
+  font-size:6.5px;
+  font-style:normal;
+  font-weight:750;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.bible-reader-rosary-days button:hover,
+.bible-reader-rosary-days button.is-active{border-color:#d7afb5;background:#fff5f6;color:#9a444e}
+.bible-reader-rosary-series-wrap{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 0 12px;
+  border-bottom:1px solid #eee5e7;
+}
+.bible-reader-rosary-series-wrap>span{color:#95898c;font-size:10px}
+.bible-reader-rosary-series{display:flex;flex-wrap:wrap;gap:5px}
+.bible-reader-rosary-series button{
+  border:1px solid #e7dcde;
+  border-radius:999px;
+  padding:6px 10px;
+  background:#fff;
+  color:#84777b;
+  font-size:10px;
+  font-weight:650;
+  cursor:pointer;
+}
+.bible-reader-rosary-series button:hover,
+.bible-reader-rosary-series button.is-active{border-color:#d8b3b8;background:#fff4f5;color:#984650}
+.bible-reader-rosary-content{max-width:790px;margin:17px auto 0}
+.bible-reader-rosary-content>header{margin-bottom:12px;text-align:center}
+.bible-reader-rosary-content>header>span{color:#ad5660;font-size:9px;font-weight:750;letter-spacing:.09em;text-transform:uppercase}
+.bible-reader-rosary-content h3{margin:4px 0 5px;color:#443a3f;font-family:Georgia,"Times New Roman",serif;font-size:26px;font-weight:500;letter-spacing:-.025em}
+.bible-reader-rosary-content>header p{margin:0;color:#8c8084;font-size:11px;line-height:1.5}
+.bible-reader-rosary-list{display:grid;gap:7px}
+.bible-reader-rosary-item{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  gap:12px;
+  padding:12px 13px;
+  border:1px solid #eee5e7;
+  border-radius:12px;
+  background:#fff;
+}
+.bible-reader-rosary-item-num{
+  display:grid;
+  place-items:center;
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background:#fbf3f4;
+  color:#aa535c;
+  font-size:10px;
+  font-weight:750;
+}
+.bible-reader-rosary-item-copy{min-width:0}
+.bible-reader-rosary-item-copy>small{display:block;margin-bottom:3px;color:#ac7279;font-size:9px;font-weight:700}
+.bible-reader-rosary-item-copy h4{margin:0;color:#51474a;font-size:14px;line-height:1.3}
+.bible-reader-rosary-item-copy p{margin:5px 0 0;color:#8d8185;font-size:10.5px;line-height:1.5}
+.bible-reader-rosary-read{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  width:max-content;
+  max-width:100%;
+  margin-top:8px;
+  padding:7px 9px;
+  border-radius:8px;
+  background:#faf2f3;
+  color:#954851;
+  font-size:10px;
+  font-weight:700;
+  text-decoration:none;
+}
+.bible-reader-rosary-read span{color:#aa7a80;font-weight:600}
+.bible-reader-rosary-read i{font-style:normal}
+.bible-reader-rosary-item--tradition{background:#fdfbfb}
+.bible-reader-rosary-related{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.bible-reader-rosary-related a{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:6px 8px;
+  border:1px solid #eadfe1;
+  border-radius:8px;
+  background:#fff;
+  color:#8d535a;
+  font-size:9.5px;
+  font-weight:650;
+  text-decoration:none;
+}
+.bible-reader-rosary-note{
+  max-width:790px;
+  margin:13px auto 1px;
+  color:#9b9093;
+  font-size:9.5px;
+  line-height:1.55;
+}
+
+@media(max-width:800px){
+  .bible-reader-pathways-heading{display:block}.bible-reader-pathways-heading p{margin-top:7px;text-align:left}
+  .bible-reader-pathway-grid{grid-template-columns:1fr}
+  .bible-reader-pathway-card{min-height:70px}
+  .bible-reader-rosary-days{display:flex;overflow-x:auto;padding:6px 1px 5px;scroll-snap-type:x proximity}
+  .bible-reader-rosary-days button{flex:0 0 78px;scroll-snap-align:start}
+}
+
+@media(max-width:720px){
+  .bible-reader-page .bible-reader-controls{padding:13px 12px 11px}
+  .bible-reader-page .bible-reader-controls-head h2{font-size:17px}
+  .bible-reader-page .bible-reader-controls-head>div>span{font-size:9px}
+  .bible-reader-page .bible-reader-status{font-size:10px}
+  .bible-reader-page .bible-reader-field>span{font-size:9px}
+  .bible-reader-page .bible-reader-field select{height:43px;font-size:13px}
+  .bible-reader-page .bible-reader-meta-line{font-size:10px;align-items:flex-start;flex-direction:column}
+  .bible-reader-page .bible-reader-meta-actions{width:100%;justify-content:flex-start;gap:5px}
+  .bible-reader-tool-toggle,.bible-reader-search-toggle{height:34px;padding:0 9px;font-size:10px}
+  .bible-reader-tool-toggle span,.bible-reader-search-toggle span{display:inline}
+  .bible-reader-pathways{margin-bottom:25px}
+  .bible-reader-pathways-heading h2{font-size:19px}
+  .bible-reader-pathways-heading p{font-size:11px}
+  .bible-reader-pathway-copy strong{font-size:13px}
+  .bible-reader-pathway-copy small{font-size:10px}
+  .bible-reader-collections-panel,.bible-reader-rosary-panel{padding:12px}
+  .bible-reader-collections-tools{grid-template-columns:1fr}
+  .bible-reader-collections-tools label{grid-column:auto}
+  .bible-reader-collections-list{grid-template-columns:1fr;max-height:64vh}
+  .bible-reader-collection-copy h3{font-size:12.5px}
+  .bible-reader-collection-passage>div p{font-size:13.5px}
+  .bible-reader-rosary-series-wrap{align-items:flex-start;flex-direction:column;gap:7px}
+  .bible-reader-rosary-item{grid-template-columns:36px minmax(0,1fr);gap:9px;padding:10px}
+  .bible-reader-rosary-item-num{width:32px;height:32px}
+  .bible-reader-rosary-content h3{font-size:23px}
+  .bible-reader-search-form{grid-template-columns:1fr auto}
+  .bible-reader-search-form label{grid-column:1/-1}
+  .bible-reader-search-form input,.bible-reader-search-form select{font-size:12px}
+  .bible-reader-search-result{grid-template-columns:86px minmax(0,1fr) 18px}
+  .bible-reader-search-result p{font-size:12.5px}
+  .bible-reader-compare-cell{font-size:12.8px;line-height:1.55}
+  .bible-reader-compare-cell::before{font-size:8.5px}
+}
+
+@media(max-width:430px){
+  .bible-reader-page .bible-reader-meta-actions{display:grid;grid-template-columns:repeat(3,1fr)}
+  .bible-reader-tool-toggle,.bible-reader-search-toggle{justify-content:center;width:100%;padding:0 5px;font-size:9.5px}
+  .bible-reader-pathway-card{grid-template-columns:auto auto minmax(0,1fr);padding:11px}
+  .bible-reader-pathway-arrow{display:none}
+  .bible-reader-pathway-icon{width:32px;height:32px}
+  .bible-reader-rosary-head>div{display:grid;gap:2px}
+  .bible-reader-rosary-head strong{font-size:13px}
+  .bible-reader-rosary-today{display:grid;gap:3px}
+  .bible-reader-rosary-read{align-items:flex-start;flex-wrap:wrap}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .bible-reader-pathway-card,.bible-reader-pathway-arrow{transition:none}
+}
+
+/* ========================================================================== 
+   Lecteur biblique — parcours bibliques en espace indépendant · 2026-08-10
+   ========================================================================== */
+
+/* Le sélecteur reste l'outil de lecture ; les parcours deviennent une seconde
+   zone clairement séparée et n'ouvrent plus de contenu dans le flux de page. */
+.bible-reader-pathways{
+  position:relative;
+  max-width:940px;
+  margin:30px auto 44px;
+  padding:27px 2px 0;
+  border-top:1px solid #e7dadd;
+}
+.bible-reader-pathways::before{
+  content:"";
+  position:absolute;
+  top:-1px;
+  left:0;
+  width:72px;
+  height:2px;
+  border-radius:999px;
+  background:#b45a64;
+  opacity:.72;
+}
+.bible-reader-pathways-heading{margin-bottom:14px}
+.bible-reader-pathways-heading p{max-width:470px}
+.bible-reader-pathway-card{min-height:76px;padding:12px 13px;box-shadow:none}
+.bible-reader-pathway-card.is-active{transform:none}
+
+/* Le panneau est volontairement hors du flux du lecteur : le sélecteur reste
+   visible derrière mais devient un simple contexte, jamais une seconde zone
+   de scroll qui se mélange au contenu du parcours. */
+body.bible-reader-pathway-modal-open{overflow:hidden}
+.bible-reader-pathway-modal[hidden]{display:none!important}
+.bible-reader-pathway-modal{
+  position:fixed;
+  inset:0;
+  z-index:1300;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .18s ease;
+}
+.bible-reader-pathway-modal.is-open{opacity:1;pointer-events:auto}
+.bible-reader-pathway-modal-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(35,26,29,.46);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+.bible-reader-pathway-dialog{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  width:min(1120px,calc(100vw - 48px));
+  max-height:min(88vh,900px);
+  overflow:hidden;
+  border:1px solid rgba(226,211,214,.96);
+  border-radius:22px;
+  background:#fffdfd;
+  box-shadow:0 28px 90px rgba(45,27,32,.23);
+  transform:translateY(10px) scale(.992);
+  transition:transform .2s ease;
+}
+.bible-reader-pathway-modal.is-open .bible-reader-pathway-dialog{transform:translateY(0) scale(1)}
+.bible-reader-pathway-dialog-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:18px 20px 14px;
+  border-bottom:1px solid #eee3e5;
+  background:rgba(255,253,253,.98);
+}
+.bible-reader-pathway-dialog-title{display:grid;gap:3px;min-width:0}
+.bible-reader-pathway-dialog-title span{
+  color:#ad535d;
+  font-size:9.5px;
+  font-weight:760;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.bible-reader-pathway-dialog-title strong{
+  color:#453b3f;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:23px;
+  font-weight:500;
+  line-height:1.12;
+}
+.bible-reader-pathway-dialog-close{
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  width:38px;
+  height:38px;
+  padding:0;
+  border:1px solid #eadfe1;
+  border-radius:11px;
+  background:#fff;
+  color:#98898d;
+  font-size:25px;
+  line-height:1;
+  cursor:pointer;
+}
+.bible-reader-pathway-dialog-close:hover{border-color:#d8b6bb;background:#fff5f6;color:#984650}
+.bible-reader-pathway-dialog-tabs{
+  display:flex;
+  gap:6px;
+  padding:10px 20px 11px;
+  border-bottom:1px solid #eee5e7;
+  background:#fdf9fa;
+}
+.bible-reader-pathway-dialog-tabs button{
+  min-height:36px;
+  padding:0 13px;
+  border:1px solid transparent;
+  border-radius:9px;
+  background:transparent;
+  color:#766a6e;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+.bible-reader-pathway-dialog-tabs button:hover{background:#fff;color:#9b4852}
+.bible-reader-pathway-dialog-tabs button.is-active{
+  border-color:#dfc4c8;
+  background:#fff;
+  color:#9a444e;
+  box-shadow:0 3px 10px rgba(90,54,61,.045);
+}
+.bible-reader-pathway-dialog-body{
+  min-height:0;
+  overflow:auto;
+  overscroll-behavior:contain;
+  padding:16px 20px 20px;
+  scrollbar-gutter:stable;
+}
+
+/* Les panneaux internes perdent leur aspect de "bloc dans un bloc" dans la
+   fenêtre dédiée. Le contenu garde ses composants et son moteur existants. */
+.bible-reader-pathway-dialog .bible-reader-collections-panel,
+.bible-reader-pathway-dialog .bible-reader-rosary-panel{
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.bible-reader-pathway-dialog .bible-reader-collections-head,
+.bible-reader-pathway-dialog .bible-reader-rosary-head{padding:0 1px 12px;margin:0 0 12px;border-bottom:1px solid #efe6e8}
+.bible-reader-pathway-dialog .bible-reader-collections-head>button,
+.bible-reader-pathway-dialog .bible-reader-rosary-head>button{display:none}
+.bible-reader-pathway-dialog .bible-reader-collections-list{
+  max-height:none;
+  overflow:visible;
+}
+.bible-reader-pathway-dialog .bible-reader-collections-tools{
+  position:sticky;
+  top:-16px;
+  z-index:3;
+  padding:10px 0 9px;
+  background:linear-gradient(#fffdfd 75%,rgba(255,253,253,.94));
+}
+.bible-reader-pathway-dialog .bible-reader-rosary-content{max-width:850px}
+.bible-reader-pathway-dialog .bible-reader-rosary-note{max-width:850px}
+
+@media(max-width:800px){
+  .bible-reader-pathways{margin-top:24px;padding-top:23px}
+  .bible-reader-pathway-grid{gap:7px}
+  .bible-reader-pathway-card{min-height:68px}
+  .bible-reader-pathway-modal{place-items:end center;padding:0}
+  .bible-reader-pathway-dialog{
+    width:100%;
+    max-height:94dvh;
+    border-width:1px 0 0;
+    border-radius:21px 21px 0 0;
+    transform:translateY(28px);
+  }
+  .bible-reader-pathway-modal.is-open .bible-reader-pathway-dialog{transform:translateY(0)}
+  .bible-reader-pathway-dialog-head{padding:15px 14px 11px}
+  .bible-reader-pathway-dialog-title strong{font-size:20px}
+  .bible-reader-pathway-dialog-close{width:36px;height:36px}
+  .bible-reader-pathway-dialog-tabs{
+    gap:4px;
+    padding:8px 10px 9px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .bible-reader-pathway-dialog-tabs::-webkit-scrollbar{display:none}
+  .bible-reader-pathway-dialog-tabs button{flex:0 0 auto;min-height:36px;padding:0 11px;font-size:10.5px}
+  .bible-reader-pathway-dialog-body{padding:13px 13px 18px}
+  .bible-reader-pathway-dialog .bible-reader-collections-tools{top:-13px}
+}
+
+@media(max-width:430px){
+  .bible-reader-pathways-heading p{display:none}
+  .bible-reader-pathways-heading h2{font-size:18px}
+  .bible-reader-pathway-card{min-height:64px}
+  .bible-reader-pathway-copy small{font-size:9.5px}
+  .bible-reader-pathway-dialog-title strong{font-size:18px}
+  .bible-reader-pathway-dialog-title span{font-size:8.5px}
+  .bible-reader-pathway-dialog-tabs{padding-inline:8px}
+  .bible-reader-pathway-dialog-tabs button{font-size:10px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .bible-reader-pathway-modal,.bible-reader-pathway-dialog{transition:none}
+}

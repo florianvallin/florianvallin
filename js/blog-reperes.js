@@ -507,19 +507,19 @@
   },
   "Universel / général / particulier / singulier": {
     "Nature": [
-      "« Tous les êtres humains sont mortels » prétend à l’<em>universel</em> ; « les mammifères » désigne une classe <em>générale</em> ; « les primates » un groupe plus <em>particulier</em> ; Socrate est <em>singulier</em>.",
+      "« Être vivant » est un concept <em>général</em> ; « tous les humains sont mortels » est <em>universel</em> ; « certains humains vivent en montagne » est <em>particulier</em> ; cet individu précis est <em>singulier</em>.",
       "Penser la nature oblige à passer de lois <em>universelles</em> ou classes <em>générales</em> à des cas <em>particuliers</em> et à des individus <em>singuliers</em>."
     ],
     "Science": [
-      "Une loi prétend valoir <em>universellement</em> ; une tendance statistique est plus <em>générale</em> ; une expérience étudie un cas <em>particulier</em> ; une mesure précise est <em>singulière</em>.",
+      "Une loi scientifique formulée sans exception prétend à l’<em>universel</em> ; un concept comme « mammifère » est <em>général</em> ; une expérience peut porter sur certains cas <em>particuliers</em> ; cette mesure effectuée ici et maintenant est <em>singulière</em>.",
       "La science cherche à partir de faits <em>singuliers</em> et de cas <em>particuliers</em> pour construire des régularités <em>générales</em>, voire des lois <em>universelles</em>."
     ],
     "Langage": [
-      "La faculté humaine de langage peut être pensée comme <em>universelle</em> ; une règle du français est <em>générale</em> ; un emploi exceptionnel est <em>particulier</em> ; cette phrase prononcée maintenant est <em>singulière</em>.",
+      "La capacité de langage peut être attribuée <em>universellement</em> aux humains ; « langue » est un concept <em>général</em> ; certains usages sont <em>particuliers</em> ; cette phrase prononcée maintenant est <em>singulière</em>.",
       "Le langage permet de formuler des énoncés <em>universels</em> ou <em>généraux</em> tout en désignant des cas <em>particuliers</em> et des êtres <em>singuliers</em>."
     ],
     "Justice": [
-      "Les droits humains se veulent <em>universels</em> ; une loi vaut de façon <em>générale</em> ; un régime spécial concerne un cas <em>particulier</em> ; un jugement tranche une situation <em>singulière</em>.",
+      "Les droits humains se veulent <em>universels</em> ; une catégorie juridique est <em>générale</em> ; une règle dérogatoire peut concerner certains cas <em>particuliers</em> ; un jugement tranche une situation <em>singulière</em>.",
       "La justice doit articuler des principes <em>universels</em> et des règles <em>générales</em> avec l’examen de situations <em>particulières</em> et de personnes <em>singulières</em>."
     ]
   },
@@ -542,24 +542,72 @@
   const thematicExampleHtml = (theme, term, fallback) => {
     const examples = thematicExamples[term]?.[theme];
     if (!examples?.length) return fallback;
-    return `<span>Exemple</span><ul>${examples.map((example) => `<li>${example}</li>`).join("")}</ul>`;
+    const labels = ["Simple", "Classique"];
+    return `<span>Exemples</span><ul>${examples.map((example, index) => `<li><strong>${labels[index] || "Exemple"} — </strong>${example}</li>`).join("")}</ul>`;
   };
 
   const countLabel = (count) => `${count} repère${count > 1 ? "s" : ""}`;
+  const searchInput = browser.querySelector("[data-repere-search]");
+  const searchClear = browser.querySelector("[data-repere-search-clear]");
+  const searchStatus = browser.querySelector("[data-repere-search-status]");
+  let currentView = "alphabetical";
+  let searchQuery = "";
+
+  const normalize = (value) => (value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("fr")
+    .replace(/[’']/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const cardSearchText = (card) => normalize([
+    card.querySelector("dt")?.textContent || "",
+    card.textContent || "",
+    card.dataset.themes || "",
+    card.dataset.category || ""
+  ].join(" "));
+
+  const getFilteredCards = () => {
+    if (!searchQuery) return sourceCards;
+    const query = normalize(searchQuery);
+    return sourceCards.filter((card) => cardSearchText(card).includes(query));
+  };
+
+  const renderEmpty = () => {
+    const empty = document.createElement("div");
+    empty.className = "blog-repere-empty";
+    empty.innerHTML = `<strong>Aucun repère trouvé</strong><p>Essaie un terme plus large : « loi », « vérité », « cause », « science »…</p>`;
+    panel.replaceChildren(empty);
+  };
+
+  const updateSearchStatus = (count) => {
+    if (!searchStatus) return;
+    searchStatus.textContent = searchQuery
+      ? `${count} repère${count > 1 ? "s" : ""} trouvé${count > 1 ? "s" : ""} pour « ${searchQuery.trim()} »`
+      : `${sourceCards.length} repères disponibles`;
+    if (searchClear) searchClear.classList.toggle("is-visible", Boolean(searchQuery));
+  };
 
   function renderAlphabetical() {
+    const cards = getFilteredCards();
+    updateSearchStatus(cards.length);
+    if (!cards.length) return renderEmpty();
     const list = document.createElement("div");
     list.className = "blog-repere-list";
-    sourceCards.forEach((card) => list.append(card.cloneNode(true)));
+    cards.forEach((card) => list.append(card.cloneNode(true)));
     panel.replaceChildren(list);
   }
 
   function renderCategories() {
+    const filteredCards = getFilteredCards();
+    updateSearchStatus(filteredCards.length);
+    if (!filteredCards.length) return renderEmpty();
     const groups = document.createElement("div");
     groups.className = "blog-repere-groups";
 
     categories.forEach((category, index) => {
-      const cards = sourceCards.filter((card) => card.dataset.category === category.id);
+      const cards = filteredCards.filter((card) => card.dataset.category === category.id);
       if (!cards.length) return;
 
       const section = document.createElement("section");
@@ -592,11 +640,14 @@
   }
 
   function renderThemes() {
+    const filteredCards = getFilteredCards();
+    updateSearchStatus(filteredCards.length);
+    if (!filteredCards.length) return renderEmpty();
     const grid = document.createElement("div");
     grid.className = "blog-repere-theme-grid";
 
     themes.forEach((theme) => {
-      const cards = sourceCards.filter((card) => (card.dataset.themes || "").split("|").includes(theme));
+      const cards = filteredCards.filter((card) => (card.dataset.themes || "").split("|").includes(theme));
       if (!cards.length) return;
 
       const section = document.createElement("section");
@@ -616,6 +667,7 @@
         const term = card.querySelector("dt");
         const definition = card.querySelector(".blog-repere-definition");
         const example = card.querySelector(".blog-repere-example");
+        const textLinks = card.querySelector(".blog-repere-texts");
         if (!term || !definition || !example) return;
 
         const details = document.createElement("details");
@@ -630,13 +682,14 @@
 
         const body = document.createElement("div");
         body.className = "blog-repere-theme-body";
-        const definitionCopy = document.createElement("p");
+        const definitionCopy = document.createElement("div");
         definitionCopy.className = "blog-repere-theme-definition";
         definitionCopy.innerHTML = definition.innerHTML;
         const exampleCopy = document.createElement("div");
         exampleCopy.className = "blog-repere-theme-example";
         exampleCopy.innerHTML = thematicExampleHtml(theme, term.textContent.trim(), example.innerHTML);
         body.append(definitionCopy, exampleCopy);
+        if (textLinks) body.append(textLinks.cloneNode(true));
 
         details.append(summary, body);
         items.append(details);
@@ -657,6 +710,7 @@
 
   function selectView(view) {
     if (!renderers[view]) return;
+    currentView = view;
     buttons.forEach((button) => {
       const active = button.dataset.repereView === view;
       button.classList.toggle("is-active", active);
@@ -669,6 +723,269 @@
   buttons.forEach((button) => {
     button.addEventListener("click", () => selectView(button.dataset.repereView));
   });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      searchQuery = searchInput.value;
+      renderers[currentView]();
+    });
+  }
+
+  if (searchClear && searchInput) {
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      searchQuery = "";
+      renderers[currentView]();
+      searchInput.focus();
+    });
+  }
+
+  const training = document.querySelector("[data-repere-training]");
+  if (training) {
+    const trainingPanel = training.querySelector("[data-training-panel]");
+    const trainingButtons = Array.from(training.querySelectorAll("[data-training-mode]"));
+    let lastRevision = -1;
+    let lastExercise = -1;
+    let matchResizeHandler = null;
+
+    const exerciseBank = [
+      { q: "Une règle respecte la loi, mais tu veux savoir si elle est juste. Quel repère faut-il utiliser ?", a: "Légal / légitime", e: "Légal signifie : conforme aux lois en vigueur. Légitime signifie : justifié ou juste. Une règle peut donc être légale sans être légitime." },
+      { q: "Tu tiens une promesse alors que personne ne peut te forcer physiquement. Quel repère permet de préciser la situation ?", a: "Obligation / contrainte", e: "Une obligation indique ce que tu dois faire, mais tu peux encore désobéir. Une contrainte limite fortement ta possibilité de faire autrement." },
+      { q: "Tu montres un seul cygne blanc pour affirmer que tous les cygnes sont blancs. Quelle distinction faut-il faire ?", a: "Exemple / preuve", e: "Le cygne blanc est un exemple : il illustre l’idée. Mais un seul exemple ne suffit pas à prouver une règle qui porte sur tous les cygnes." },
+      { q: "Tu racontes comment une institution est née, puis tu demandes pourquoi son autorité serait juste. Quel repère distingue ces deux questions ?", a: "Origine / fondement", e: "L’origine demande d’où vient une chose. Le fondement demande ce qui permet de la justifier." },
+      { q: "La météo annonce 70 % de pluie, mais une personne affirme être absolument sûre qu’il pleuvra. Quel repère faut-il mobiliser ?", a: "Vrai / probable / certain", e: "Probable signifie : vraisemblable sans être complètement établi. Certain décrit notre assurance. Vrai signifie que ce qui est affirmé est réellement le cas." },
+      { q: "Un triangle doit avoir trois côtés, mais il peut être rouge ou vert. Quel repère est en jeu ?", a: "Essentiel / accidentel", e: "Avoir trois côtés est essentiel au triangle. Sa couleur est accidentelle : elle peut changer sans qu’il cesse d’être un triangle." },
+      { q: "Tu cherches d’abord les causes d’un geste, puis le sens que la personne lui donne. Quel repère distingue ces deux démarches ?", a: "Expliquer / comprendre", e: "Expliquer cherche les causes ou les mécanismes. Comprendre cherche le sens, les raisons ou les intentions." },
+      { q: "Tu proposes une idée, tu en tires une prévision, puis tu regardes les résultats. Quels trois termes structurent ce raisonnement ?", a: "Hypothèse / conséquence / conclusion", e: "L’hypothèse est l’idée de départ. La conséquence est ce qui doit suivre si elle est juste. La conclusion est le résultat obtenu après le raisonnement ou le test." },
+      { q: "Une publicité joue sur la peur ; un professeur donne des arguments que tu peux vérifier. Quel repère aide à distinguer les deux démarches ?", a: "Persuader / convaincre", e: "Persuader agit notamment sur les émotions et les désirs. Convaincre cherche surtout l’adhésion par des raisons et des arguments." },
+      { q: "Deux pièces de 2 € ont la même valeur mais ce sont deux objets différents. Quel repère clarifie cette différence ?", a: "Identité / égalité / différence", e: "Les deux pièces sont égales en valeur, mais elles ne sont pas identiques : ce sont deux objets différents." },
+      { q: "« Tous les humains sont mortels », « certains humains sont philosophes » et « Socrate est mortel » ne parlent pas du même nombre de cas. Quel repère ?", a: "Universel / général / particulier / singulier", e: "Universel porte sur tous les cas ; particulier sur une partie des cas ; singulier sur un seul cas. Un mot général, comme « humain », désigne une catégorie." },
+      { q: "Tu aurais pu prendre le bus ou le vélo. En revanche, un cercle carré est impossible. Quel repère aide à penser cette différence ?", a: "Contingent / nécessaire", e: "Est contingent ce qui aurait pu être autrement. Est nécessaire ce qui ne peut pas être autrement dans les conditions considérées." },
+      { q: "Tu ressens qu’une pièce est froide ; un thermomètre indique 18 °C. Quel repère permet de distinguer ces deux informations ?", a: "Objectif / subjectif / intersubjectif", e: "Le ressenti est subjectif. La mesure vise l’objectivité car elle peut être vérifiée avec des critères communs. Cette vérification par plusieurs personnes est intersubjective." },
+      { q: "Tu lis un manuel de natation, puis tu entres dans l’eau pour apprendre à nager. Quel repère distingue ces deux moments ?", a: "Théorie / pratique", e: "La théorie organise des idées et des règles. La pratique est l’action réelle, où l’on applique, teste ou complète ce savoir." },
+      { q: "Tu connais une information parce qu’un témoin te l’a racontée, alors que ta propre douleur t’est donnée directement. Quel repère ?", a: "Médiat / immédiat", e: "Est immédiat ce qui est donné directement. Est médiat ce qui passe par un intermédiaire, ici le témoignage." },
+      { q: "Une règle dit ce qui devrait être fait, mais dans la réalité les personnes font autre chose. Quel repère distingue ces deux niveaux ?", a: "En fait / en droit", e: "En fait décrit ce qui se passe réellement. En droit indique ce qui doit être selon une règle, une loi ou un principe." }
+    ];
+
+    const associationDefinitions = {
+      "Absolu / relatif": "D’un côté, ce qui vaut indépendamment d’un point de vue ou d’une situation ; de l’autre, ce qui dépend des conditions dans lesquelles on l’envisage.",
+      "Abstrait / concret": "D’un côté, on isole mentalement une idée ou une propriété ; de l’autre, on considère une réalité précise telle qu’elle se présente dans l’expérience.",
+      "En acte / en puissance": "D’un côté, une capacité ou une possibilité qui n’est pas encore réalisée ; de l’autre, cette capacité lorsqu’elle est effectivement réalisée.",
+      "Analyse / synthèse": "Une démarche décompose un ensemble pour examiner ses éléments ; l’autre les rassemble afin de comprendre comment ils forment un tout.",
+      "Concept / image / métaphore": "On distingue une idée générale définie, une représentation que l’on peut se figurer, et une manière de parler d’une chose à travers une autre.",
+      "Contingent / nécessaire": "D’un côté, ce qui aurait pu se produire autrement ; de l’autre, ce qui ne peut pas être différent dans les conditions envisagées.",
+      "Croire / savoir": "D’un côté, on tient quelque chose pour vrai sans disposer forcément de raisons suffisantes ; de l’autre, on peut appuyer ce que l’on affirme sur des raisons ou des vérifications solides.",
+      "Essentiel / accidentel": "On distingue ce sans quoi une chose ne serait plus ce qu’elle est, et ce qui peut changer sans modifier sa nature.",
+      "Exemple / preuve": "L’un sert surtout à rendre une idée plus claire en montrant un cas ; l’autre sert à établir qu’une affirmation est justifiée.",
+      "Expliquer / comprendre": "Une démarche cherche les causes ou les mécanismes d’un phénomène ; l’autre cherche le sens d’une action, les raisons ou les intentions d’une personne.",
+      "En fait / en droit": "On distingue ce qui se passe réellement de ce qui devrait être selon une règle, une loi ou un principe.",
+      "Formel / matériel": "D’un côté, on s’intéresse à la structure, à la règle ou à l’organisation ; de l’autre, au contenu et aux conditions réelles auxquelles cette structure s’applique.",
+      "Genre / espèce / individu": "On passe d’une grande catégorie à une catégorie plus précise qu’elle contient, puis à un être ou objet unique appartenant à cette catégorie.",
+      "Hypothèse / conséquence / conclusion": "On distingue une proposition posée au départ pour être examinée, ce qui doit en découler si elle tient, puis le résultat auquel conduit le raisonnement ou le test.",
+      "Idéal / réel": "D’un côté, un modèle ou un but que l’on se représente ; de l’autre, ce qui existe effectivement, même si cela ne correspond pas parfaitement à ce modèle.",
+      "Identité / égalité / différence": "On distingue le fait d’être exactement le même, le fait d’avoir la même valeur selon un critère, et le fait de ne pas coïncider sur certains points.",
+      "Impossible / possible": "On distingue ce qui peut arriver ou exister de ce qui ne le peut pas.",
+      "Intuitif / discursif": "Une connaissance est saisie d’un seul coup, sans étapes apparentes ; une autre se construit progressivement par un raisonnement.",
+      "Légal / légitime": "D’un côté, une action respecte les règles juridiques en vigueur ; de l’autre, on demande si elle est juste ou suffisamment justifiée.",
+      "Médiat / immédiat": "On distingue ce qui nous est donné directement de ce que nous connaissons seulement grâce à un intermédiaire, comme un témoignage ou un raisonnement.",
+      "Objectif / subjectif / intersubjectif": "On distingue ce qui dépend d’une expérience personnelle, ce que l’on cherche à vérifier avec des critères communs, et ce qui peut être contrôlé ou partagé par plusieurs personnes.",
+      "Obligation / contrainte": "Dans un cas, une règle indique ce que l’on doit faire tout en laissant la possibilité de désobéir ; dans l’autre, une force ou un obstacle réduit fortement la possibilité de faire autrement.",
+      "Origine / fondement": "Une question demande d’où une chose vient ou comment elle est apparue ; l’autre demande ce qui permet de la justifier ou de la rendre valable.",
+      "Persuader / convaincre": "Une manière d’obtenir l’adhésion joue surtout sur les émotions, les désirs ou la sensibilité ; l’autre s’appuie surtout sur des raisons et des arguments examinables.",
+      "Principe / cause / fin": "On distingue ce qui sert de point de départ ou de règle, ce qui produit un événement, et le but en vue duquel on agit.",
+      "Public / privé": "On distingue ce qui concerne la vie commune ou peut être accessible à tous de ce qui relève d’une personne, d’un cercle restreint ou de l’intimité.",
+      "Ressemblance / analogie": "Dans un cas, deux choses possèdent des traits semblables ; dans l’autre, ce sont surtout leurs relations ou leurs fonctions qui se correspondent.",
+      "Théorie / pratique": "D’un côté, on organise des idées, des règles ou des explications ; de l’autre, on agit réellement et l’on met ces idées à l’épreuve d’une situation.",
+      "Transcendant / immanent": "On distingue ce qui est pensé comme situé au-delà ou en dehors d’un domaine de ce qui appartient à ce domaine et agit de l’intérieur.",
+      "Universel / général / particulier / singulier": "On distingue ce qui vaut pour tous les cas, un terme qui désigne une catégorie, ce qui ne concerne qu’une partie des cas, et ce qui vise un seul cas précis.",
+      "Vrai / probable / certain": "On distingue ce qui correspond réellement à ce qui est, ce qui a de bonnes chances d’être correct sans être assuré, et le degré d’assurance avec lequel une personne tient une affirmation pour établie."
+    };
+
+    const randomIndex = (length, previous) => {
+      if (length <= 1) return 0;
+      let next = previous;
+      while (next === previous) next = Math.floor(Math.random() * length);
+      return next;
+    };
+
+    const shuffle = (items) => {
+      const copy = items.slice();
+      for (let i = copy.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    };
+
+    const sample = (items, count) => shuffle(items).slice(0, count);
+
+    const renderRevision = () => {
+      if (matchResizeHandler) {
+        window.removeEventListener("resize", matchResizeHandler);
+        matchResizeHandler = null;
+      }
+      lastRevision = randomIndex(sourceCards.length, lastRevision);
+      const card = sourceCards[lastRevision];
+      const term = card.querySelector("dt")?.textContent.trim() || "Repère";
+      const definition = card.querySelector(".blog-repere-definition")?.innerHTML || "";
+      const example = card.querySelector(".blog-repere-example")?.innerHTML || "";
+      trainingPanel.innerHTML = `
+        <div class="blog-training-card blog-training-revision">
+          <span>Repère à définir</span>
+          <h3>${term}</h3>
+          <p class="blog-training-instruction">Essaie d’expliquer les mots avec une phrase simple, comme si tu les présentais à un camarade. Puis donne un exemple.</p>
+          <div class="blog-training-answer" data-training-answer hidden>${definition}<div class="blog-training-example">${example}</div></div>
+          <div class="blog-training-actions"><button type="button" data-training-reveal>Voir la réponse</button><button type="button" data-training-next>Autre repère</button></div>
+        </div>`;
+      const reveal = trainingPanel.querySelector("[data-training-reveal]");
+      const answer = trainingPanel.querySelector("[data-training-answer]");
+      reveal?.addEventListener("click", () => {
+        const isHidden = answer.hasAttribute("hidden");
+        answer.toggleAttribute("hidden", !isHidden);
+        reveal.textContent = isHidden ? "Masquer la réponse" : "Voir la réponse";
+      });
+      trainingPanel.querySelector("[data-training-next]")?.addEventListener("click", renderRevision);
+    };
+
+    const renderExercise = () => {
+      if (matchResizeHandler) {
+        window.removeEventListener("resize", matchResizeHandler);
+        matchResizeHandler = null;
+      }
+      lastExercise = randomIndex(exerciseBank.length, lastExercise);
+      const item = exerciseBank[lastExercise];
+      trainingPanel.innerHTML = `
+        <div class="blog-training-card blog-training-exercise">
+          <span>Quel repère mobiliser ?</span>
+          <h3>${item.q}</h3>
+          <div class="blog-training-answer" data-training-answer hidden><strong>${item.a}</strong><p>${item.e}</p></div>
+          <div class="blog-training-actions"><button type="button" data-training-reveal>Voir la correction</button><button type="button" data-training-next>Nouvel exercice</button></div>
+        </div>`;
+      const reveal = trainingPanel.querySelector("[data-training-reveal]");
+      const answer = trainingPanel.querySelector("[data-training-answer]");
+      reveal?.addEventListener("click", () => {
+        const isHidden = answer.hasAttribute("hidden");
+        answer.toggleAttribute("hidden", !isHidden);
+        reveal.textContent = isHidden ? "Masquer la correction" : "Voir la correction";
+      });
+      trainingPanel.querySelector("[data-training-next]")?.addEventListener("click", renderExercise);
+    };
+
+    const renderMatch = () => {
+      if (matchResizeHandler) {
+        window.removeEventListener("resize", matchResizeHandler);
+        matchResizeHandler = null;
+      }
+      const terms = sample(Object.keys(associationDefinitions), 5);
+      const definitions = shuffle(terms.map((term) => ({ term, definition: associationDefinitions[term] })));
+      trainingPanel.innerHTML = `
+        <div class="blog-training-card blog-training-match">
+          <span>Associer les repères</span>
+          <h3>Relie chaque repère à la bonne définition</h3>
+          <p class="blog-training-instruction">Clique d’abord sur un repère à gauche, puis sur la formulation qui lui correspond à droite. Les mots du repère ne sont jamais repris dans les propositions : il faut reconnaître l’idée.</p>
+          <div class="blog-match-board" data-match-board>
+            <svg class="blog-match-lines" data-match-lines aria-hidden="true"></svg>
+            <div class="blog-match-column blog-match-terms" aria-label="Repères">
+              <strong>Repères</strong>
+              ${terms.map((term, index) => `<button type="button" data-match-term="${index}" data-pair="${encodeURIComponent(term)}">${term}</button>`).join("")}
+            </div>
+            <div class="blog-match-column blog-match-definitions" aria-label="Définitions">
+              <strong>Définitions reformulées</strong>
+              ${definitions.map((item, index) => `<button type="button" data-match-definition="${index}" data-pair="${encodeURIComponent(item.term)}">${item.definition}</button>`).join("")}
+            </div>
+          </div>
+          <p class="blog-match-status" data-match-status aria-live="polite">0 / 5 associations trouvées.</p>
+          <div class="blog-training-actions"><button type="button" data-training-next>Nouvelle série de 5</button></div>
+        </div>`;
+
+      const board = trainingPanel.querySelector("[data-match-board]");
+      const svg = trainingPanel.querySelector("[data-match-lines]");
+      const termButtons = Array.from(trainingPanel.querySelectorAll("[data-match-term]"));
+      const defButtons = Array.from(trainingPanel.querySelectorAll("[data-match-definition]"));
+      const status = trainingPanel.querySelector("[data-match-status]");
+      let selectedTerm = null;
+      let solved = 0;
+
+      const drawLines = () => {
+        if (!board || !svg) return;
+        const boardRect = board.getBoundingClientRect();
+        const width = Math.max(1, boardRect.width);
+        const height = Math.max(1, boardRect.height);
+        svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+        svg.setAttribute("width", String(width));
+        svg.setAttribute("height", String(height));
+        svg.replaceChildren();
+        termButtons.filter((button) => button.classList.contains("is-matched")).forEach((left) => {
+          const right = defButtons.find((button) => button.dataset.pair === left.dataset.pair && button.classList.contains("is-matched"));
+          if (!right) return;
+          const l = left.getBoundingClientRect();
+          const r = right.getBoundingClientRect();
+          const x1 = l.right - boardRect.left;
+          const y1 = l.top + l.height / 2 - boardRect.top;
+          const x2 = r.left - boardRect.left;
+          const y2 = r.top + r.height / 2 - boardRect.top;
+          const curve = Math.max(28, (x2 - x1) * 0.42);
+          const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          path.setAttribute("d", `M ${x1} ${y1} C ${x1 + curve} ${y1}, ${x2 - curve} ${y2}, ${x2} ${y2}`);
+          path.setAttribute("class", "blog-match-line");
+          svg.append(path);
+        });
+      };
+
+      const selectTerm = (button) => {
+        if (button.classList.contains("is-matched")) return;
+        termButtons.forEach((item) => item.classList.remove("is-selected"));
+        selectedTerm = button;
+        button.classList.add("is-selected");
+        status.textContent = "Repère choisi. Clique maintenant sur sa définition.";
+      };
+
+      const tryDefinition = (button) => {
+        if (button.classList.contains("is-matched")) return;
+        if (!selectedTerm) {
+          status.textContent = "Choisis d’abord un repère dans la colonne de gauche.";
+          return;
+        }
+        if (button.dataset.pair === selectedTerm.dataset.pair) {
+          selectedTerm.classList.remove("is-selected");
+          selectedTerm.classList.add("is-matched");
+          button.classList.add("is-matched");
+          selectedTerm.disabled = true;
+          button.disabled = true;
+          selectedTerm = null;
+          solved += 1;
+          status.textContent = solved === 5 ? "Bravo : les 5 associations sont correctes." : `${solved} / 5 associations trouvées.`;
+          requestAnimationFrame(drawLines);
+        } else {
+          button.classList.add("is-wrong");
+          status.textContent = "Ce n’est pas cette définition. Essaie encore.";
+          window.setTimeout(() => button.classList.remove("is-wrong"), 420);
+        }
+      };
+
+      termButtons.forEach((button) => button.addEventListener("click", () => selectTerm(button)));
+      defButtons.forEach((button) => button.addEventListener("click", () => tryDefinition(button)));
+      trainingPanel.querySelector("[data-training-next]")?.addEventListener("click", renderMatch);
+      matchResizeHandler = () => requestAnimationFrame(drawLines);
+      window.addEventListener("resize", matchResizeHandler);
+    };
+
+    const selectTrainingMode = (mode) => {
+      trainingButtons.forEach((button) => {
+        const active = button.dataset.trainingMode === mode;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+      if (mode === "exercise") renderExercise();
+      else if (mode === "match") renderMatch();
+      else renderRevision();
+    };
+
+    trainingButtons.forEach((button) => {
+      button.addEventListener("click", () => selectTrainingMode(button.dataset.trainingMode));
+    });
+    selectTrainingMode("revision");
+  }
 
   selectView("alphabetical");
 })();
