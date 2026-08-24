@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://florianvallin.fr/</loc></url>
-  <url><loc>https://florianvallin.fr/blog/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://florianvallin.fr/blog/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://florianvallin.fr/blog/reperes-conceptuels-philosophie-terminale/</loc><lastmod>2026-08-06</lastmod></url>
-  <url><loc>https://florianvallin.fr/blog/textes-religieux-mythologiques-philosophie/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://florianvallin.fr/blog/programmes-philosophie/</loc><lastmod>2026-08-11</lastmod></url>
+  <url><loc>https://florianvallin.fr/blog/textes-religieux-mythologiques-philosophie/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/</loc></url>
   <url><loc>https://florianvallin.fr/textes/philosophie/</loc></url>
   <url><loc>https://florianvallin.fr/textes/mythologie/</loc><lastmod>2026-08-15</lastmod></url>
@@ -81,5 +82,4 @@
   <url><loc>https://florianvallin.fr/textes/stendhal-cristallisation-amour/</loc></url>
   <url><loc>https://florianvallin.fr/cgv.html</loc></url>
   <url><loc>https://florianvallin.fr/textes/philosophie/boussole/</loc><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://florianvallin.fr/art/</loc><lastmod>2026-08-13</lastmod></url>
 </urlset>

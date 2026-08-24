@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" data-philo-release="20260825-philo-clean-1">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
 <title>Boussole philosophique : dictionnaire, chronologie, parcours et dialogues — Florian Vallin</title>
 <meta content="Une boussole pour se repérer en philosophie : dictionnaire, chronologie, courants et lieux, parcours de lecture et dialogues intellectuels." name="description"/>
 <link href="https://florianvallin.fr/textes/philosophie/boussole/" rel="canonical"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/css/style.css?v=20260807-3" rel="stylesheet"/>
-<link href="/css/textes.css?v=20260816-philo-resources-2" rel="stylesheet"/>
+<link href="/css/style.css?v=20260825-philo-clean-1" rel="stylesheet"/>
+<link href="/css/textes.css?v=20260825-philo-clean-1" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+<script>
+(() => {
+  const currentRelease = "20260825-philo-clean-1";
+  const releaseUrl = "/textes/philosophie/boussole/version.json";
+
+  fetch(`${releaseUrl}?t=${Date.now()}`, { cache: "no-store" })
+    .then((response) => response.ok ? response.json() : null)
+    .then((data) => {
+      const latest = data && data.release;
+      if (!latest || latest === currentRelease) return;
+
+      const url = new URL(window.location.href);
+      if (url.searchParams.get("_release") === latest) return;
+
+      url.searchParams.set("_release", latest);
+      window.location.replace(url.toString());
+    })
+    .catch(() => {});
+})();
+</script>
+
 </head>
 <body class="texts-page philo-compass-page" id="top">
 <header class="navbar" id="site-header">
@@ -282,9 +307,9 @@
 </main>
 <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a class="footer-copyright" href="#top">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"/><p class="footer-legal">Tous droits réservés.</p></div></footer>
 <button aria-label="Retour en haut" class="back-to-top" id="backToTop"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></button>
-<script defer="" src="/js/script.js?v=20260806-5"></script>
-<script defer="" src="/js/textes-catalogue.js?v=20260809-philo-genese-1"></script>
-<script defer="" src="/js/philosophy-dictionary-data.js?v=20260808-2"></script>
-<script defer="" src="/js/philosophy-compass.js?v=20260816-boussoles-blog-1"></script>
+<script defer="" src="/js/script.js?v=20260825-philo-clean-1"></script>
+<script defer="" src="/js/textes-catalogue.js?v=20260825-philo-clean-1"></script>
+<script defer="" src="/js/philosophy-dictionary-data.js?v=20260825-philo-clean-1"></script>
+<script defer="" src="/js/philosophy-compass.js?v=20260825-philo-clean-1"></script>
 </body>
 </html>

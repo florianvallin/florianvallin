@@ -1,5 +1,5 @@
 /**
- * Numéro masqué : décalage -3 → inversion → base64 (inverse de l’encodage côté build).
+ * Numéro masqué : décalage -3 → inversion → base64.
  */
 function decodeProtectedPayload(encoded) {
   const unshifted = encoded
@@ -15,6 +15,7 @@ function initProtectedPhoneBlocks() {
     const trigger = element.querySelector(".protected-trigger");
     const encoded = element.getAttribute("data-encoded");
     const contentType = element.getAttribute("data-content-type");
+
     if (!trigger || !encoded || contentType !== "phone") return;
 
     trigger.addEventListener(
@@ -23,15 +24,17 @@ function initProtectedPhoneBlocks() {
         const decoded = decodeProtectedPayload(encoded);
         const tel = decoded.replace(/\s/g, "");
         const link = document.createElement("a");
+
         link.href = `tel:${tel}`;
         link.textContent = decoded;
-        const isAlert = element.closest(".contact-alert");
-        if (isAlert) {
+
+        if (element.closest(".contact-alert")) {
           link.className = "contact-alert__link";
         } else {
           link.className = "phone-number";
           link.id = "phoneNumber";
         }
+
         trigger.setAttribute("aria-expanded", "true");
         element.replaceWith(link);
       },
@@ -40,4 +43,12 @@ function initProtectedPhoneBlocks() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", initProtectedPhoneBlocks);
+if (document.readyState === "loading") {
+  document.addEventListener(
+    "DOMContentLoaded",
+    initProtectedPhoneBlocks,
+    { once: true },
+  );
+} else {
+  initProtectedPhoneBlocks();
+}

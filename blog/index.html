@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <title>Blog de philosophie et méthode — Florian Vallin</title>
   <meta name="description" content="Compléments de philosophie : repères conceptuels, méthodes, astuces et éclairages pour comprendre les textes et progresser dans les exercices.">
   <link rel="canonical" href="https://florianvallin.fr/blog/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
-  <link rel="stylesheet" href="/css/style.css?v=20260807-3">
-  <link rel="stylesheet" href="/css/blog.css?v=20260816-2">
+  <link rel="stylesheet" href="/css/style.css?v=20260824-3">
+  <link rel="stylesheet" href="/css/blog.css?v=20260824-7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
   <meta property="og:description" content="Repères conceptuels, méthodes, astuces et éclairages pour progresser en philosophie et mieux comprendre les textes.">
   <meta property="og:url" content="https://florianvallin.fr/blog/">
 </head>
-<body id="top" class="blog-page">
+<body id="top" class="blog-page blog-index-page">
   <header class="navbar" id="site-header">
     <div class="nav-container">
       <a class="nav-brand" href="/" aria-label="Accueil — Florian Vallin">Florian <strong>Vallin</strong></a>
@@ -64,119 +65,56 @@
           <p>Des fiches pensées pour être consultées, révisées et reliées directement aux textes.</p>
         </header>
 
+        <div class="blog-index-tools" data-blog-tools>
+          <div class="blog-index-filters" role="group" aria-label="Filtrer les billets">
+            <button class="is-active" type="button" data-blog-filter="all" aria-pressed="true">Tous</button>
+            <button type="button" data-blog-filter="philosophie" aria-pressed="false">Philosophie</button>
+            <button type="button" data-blog-filter="methodologie" aria-pressed="false">Méthodologie</button>
+          </div>
+          <label class="blog-index-search">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4 4"/></svg>
+            <span class="sr-only">Rechercher dans les billets</span>
+            <input type="search" autocomplete="off" placeholder="Rechercher dans les billets…" data-blog-search>
+          </label>
+          <span class="blog-index-count" data-blog-count aria-live="polite">3 billets</span>
+        </div>
+
         <div class="blog-grid blog-grid--editorial">
-          <a class="blog-card blog-card--featured blog-card--programmes" href="/blog/programmes-philosophie/" aria-label="Lire : Les programmes de philosophie en vigueur">
+          <a class="blog-card blog-card--programmes" href="/blog/programmes-philosophie/" data-blog-card data-blog-topic="philosophie" data-blog-search="programmes philosophie terminale générale technologique HLP humanités littérature classes préparatoires prépa auteurs notions programme officiel bac éducation nationale horaires épreuves spécialité">
             <div class="blog-card-top">
-              <div class="blog-card-labels">
-                <span class="blog-card-featured-label">À la une</span>
-                <span class="blog-card-category">Programmes</span>
-              </div>
+              <span class="blog-card-topic blog-card-topic--philosophie">Philosophie</span>
               <time class="blog-card-date" datetime="2026-08-11">11 août 2026</time>
             </div>
-
-            <div class="blog-card-featured-main">
-              <div class="blog-card-content">
-                <span class="blog-card-number" aria-hidden="true">02</span>
-                <h2>Les programmes de philosophie en vigueur</h2>
-                <p class="blog-card-summary">Terminale générale et technologique, spécialité HLP et classes préparatoires : les programmes regroupés au même endroit, avec leurs sources officielles.</p>
-                <div class="blog-card-audience"><span>Pour qui ?</span><strong>Terminale · HLP · Prépa</strong></div>
-              </div>
-
-              <div class="blog-card-visual blog-card-visual--programmes" aria-hidden="true">
-                <svg viewBox="0 0 320 220" role="presentation">
-                  <rect x="62" y="30" width="164" height="160" rx="18" class="blog-visual-sheet blog-visual-sheet--back"/>
-                  <rect x="90" y="18" width="164" height="164" rx="18" class="blog-visual-sheet"/>
-                  <path d="M122 62h70M122 88h98M122 114h76M122 140h88" class="blog-visual-line"/>
-                  <circle cx="222" cy="52" r="29" class="blog-visual-badge"/>
-                  <path d="M211 52h22M222 41v22" class="blog-visual-plus"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="blog-card-footer">
-              <span>Fiche de référence · 12 min</span>
-              <span class="blog-card-read">Ouvrir la fiche <i aria-hidden="true">→</i></span>
-            </div>
+            <span class="blog-card-number" aria-hidden="true">01</span>
+            <h2>Les programmes de <strong>philosophie</strong> en vigueur</h2>
+            <p class="blog-card-summary">Terminale, HLP et classes préparatoires : programmes, notions, auteurs et liens vers les textes officiels.</p>
+            <span class="blog-card-read">Ouvrir <i aria-hidden="true">→</i></span>
           </a>
 
-          <a class="blog-card blog-card--compact blog-card--method" href="/blog/textes-religieux-mythologiques-philosophie/" aria-label="Lire : Faire feu de tout bois — mythes, religions et philosophie">
+          <a class="blog-card blog-card--reperes" href="/blog/reperes-conceptuels-philosophie-terminale/" data-blog-card data-blog-topic="philosophie" data-blog-search="repères conceptuels philosophie dissertation explication texte terminale absolu relatif analyse synthèse cause fin contingent nécessaire croire savoir exemples exercices révision bac">
             <div class="blog-card-top">
-              <div class="blog-card-labels"><span class="blog-card-category">Méthode</span></div>
-              <time class="blog-card-date" datetime="2026-08-16">16 août 2026</time>
-            </div>
-
-            <div class="blog-card-compact-main">
-              <div class="blog-card-visual blog-card-visual--method" aria-hidden="true">
-                <svg viewBox="0 0 280 180" role="presentation">
-                  <path d="M140 90 76 48M140 90 204 46M140 90 69 132M140 90 211 132" class="blog-visual-link"/>
-                  <circle cx="140" cy="90" r="31" class="blog-visual-node blog-visual-node--center"/>
-                  <circle cx="76" cy="48" r="20" class="blog-visual-node"/>
-                  <circle cx="204" cy="46" r="20" class="blog-visual-node"/>
-                  <circle cx="69" cy="132" r="20" class="blog-visual-node"/>
-                  <circle cx="211" cy="132" r="20" class="blog-visual-node"/>
-                  <circle cx="140" cy="90" r="5" class="blog-visual-dot"/>
-                </svg>
-              </div>
-
-              <div class="blog-card-content">
-                <span class="blog-card-number" aria-hidden="true">03</span>
-                <h2>Faire feu de tout bois : mythes, religions et philosophie</h2>
-                <p class="blog-card-summary">Pourquoi varier ses références — et comment transformer un mythe, un récit religieux, une œuvre ou une situation en véritable matière à penser.</p>
-                <div class="blog-card-audience"><span>Pour qui ?</span><strong>Terminale · Licence · Prépa</strong></div>
-              </div>
-            </div>
-
-            <div class="blog-card-footer">
-              <span>Billet de méthode · 15 min</span>
-              <span class="blog-card-read">Lire <i aria-hidden="true">→</i></span>
-            </div>
-          </a>
-
-          <a class="blog-card blog-card--compact blog-card--reperes" href="/blog/reperes-conceptuels-philosophie-terminale/" aria-label="Lire : Les repères conceptuels en philosophie">
-            <div class="blog-card-top">
-              <div class="blog-card-labels">
-                <span class="blog-card-category">Repères</span>
-              </div>
+              <span class="blog-card-topic blog-card-topic--philosophie">Philosophie</span>
               <time class="blog-card-date" datetime="2026-08-06">6 août 2026</time>
             </div>
-
-            <div class="blog-card-compact-main">
-              <div class="blog-card-visual blog-card-visual--reperes" aria-hidden="true">
-                <svg viewBox="0 0 280 180" role="presentation">
-                  <circle cx="92" cy="90" r="52" class="blog-visual-circle blog-visual-circle--left"/>
-                  <circle cx="188" cy="90" r="52" class="blog-visual-circle blog-visual-circle--right"/>
-                  <path d="M126 90h28" class="blog-visual-bridge"/>
-                  <path d="M144 82l10 8-10 8" class="blog-visual-bridge"/>
-                  <path d="M78 72h28M78 90h20M78 108h34M174 72h28M174 90h34M174 108h20" class="blog-visual-text"/>
-                </svg>
-              </div>
-
-              <div class="blog-card-content">
-                <span class="blog-card-number" aria-hidden="true">01</span>
-                <h2>Les repères conceptuels en philosophie</h2>
-                <p class="blog-card-summary">Les 31 repères du programme avec des définitions accessibles, des exemples, des usages et plusieurs modes d’entraînement.</p>
-                <div class="blog-card-audience"><span>Pour qui ?</span><strong>Première · Terminale</strong></div>
-              </div>
-            </div>
-
-            <div class="blog-card-footer">
-              <span>Fiche complète · 15 min</span>
-              <span class="blog-card-read">Lire <i aria-hidden="true">→</i></span>
-            </div>
+            <span class="blog-card-number" aria-hidden="true">02</span>
+            <h2>Les <strong>repères conceptuels</strong> en philosophie</h2>
+            <p class="blog-card-summary">Les 31 repères du programme avec définitions, exemples, usages et exercices pour les mobiliser réellement.</p>
+            <span class="blog-card-read">Ouvrir <i aria-hidden="true">→</i></span>
           </a>
 
-
+          <a class="blog-card blog-card--method" href="/blog/textes-religieux-mythologiques-philosophie/" data-blog-card data-blog-topic="methodologie philosophie" data-blog-search="mythologie religion philosophie méthodologie dissertation explication de texte références exemples argument mythe bible récit religieux culture peinture littérature faire feu de tout bois désir bonheur justice liberté">
+            <div class="blog-card-top">
+              <span class="blog-card-topics"><span class="blog-card-topic blog-card-topic--philosophie">Philosophie</span><span class="blog-card-topic blog-card-topic--methodologie">Méthodologie</span></span>
+              <time class="blog-card-date" datetime="2026-08-16">16 août 2026</time>
+            </div>
+            <span class="blog-card-number" aria-hidden="true">03</span>
+            <h2><strong>Faire feu de tout bois</strong> : mythes, religions et philosophie</h2>
+            <p class="blog-card-summary">Comment varier ses références et transformer un récit, une œuvre ou une situation en véritable matière à penser.</p>
+            <span class="blog-card-read">Ouvrir <i aria-hidden="true">→</i></span>
+          </a>
         </div>
 
-        <div class="blog-type-key" aria-label="Types de billets">
-          <span class="blog-type-key-label">Les formats du blog</span>
-          <div class="blog-type-key-items">
-            <span class="blog-type-chip blog-type-chip--programmes"><i aria-hidden="true"></i>Programmes</span>
-            <span class="blog-type-chip blog-type-chip--reperes"><i aria-hidden="true"></i>Repères</span>
-            <span class="blog-type-chip blog-type-chip--method"><i aria-hidden="true"></i>Méthode</span>
-            <span class="blog-type-chip blog-type-chip--lecture"><i aria-hidden="true"></i>Lecture</span>
-          </div>
-        </div>
+        <p class="blog-index-empty" data-blog-empty hidden>Aucun billet ne correspond à cette recherche.</p>
       </div>
     </section>
 
@@ -206,7 +144,7 @@
     <div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div>
   </footer>
   <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <script src="/js/script.js?v=20260806-5" defer></script>
+  <script src="/js/script.js?v=20260824-2" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"Ressources de philosophie — Florian Vallin","url":"https://florianvallin.fr/blog/","description":"Compléments de philosophie : repères conceptuels, méthodes, astuces et éclairages pour comprendre les textes et progresser dans les exercices.","author":{"@type":"Person","name":"Florian Vallin"}}
   </script>

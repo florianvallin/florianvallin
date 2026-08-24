@@ -6,7 +6,8 @@
 
   <title>The Chosen — Parabole du pêcheur | Art — Florian Vallin</title>
   <meta name="description" content="Sélection personnelle de vidéos et fragments visuels — The Chosen, Parabole du pêcheur.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="googlebot" content="noindex,nofollow,noarchive">
   <link rel="canonical" href="https://florianvallin.fr/art/">
 
   <meta property="og:type" content="website">
@@ -60,8 +61,10 @@
       <div class="art-caption">
         <div class="art-caption-mark" aria-hidden="true"></div>
         <div class="art-caption-copy">
-          <p class="art-kicker">Fragment visuel · sélection personnelle</p>
+          <p class="art-kicker" id="artKicker">Spiritualité · fragment visuel</p>
           <h1 class="art-title" id="artTitle">The Chosen — Parabole du pêcheur</h1>
+          <p class="art-description" id="artDescription">Un fragment de The Chosen autour de la parole de Jésus et de l’image du pêcheur.</p>
+          <div class="art-tags" id="artTags" aria-label="Mots-clés de la vidéo"></div>
         </div>
       </div>
     </article>
@@ -94,7 +97,16 @@
       <button class="selection-close" id="selectionClose" type="button" aria-label="Fermer"><span aria-hidden="true">×</span></button>
     </div>
 
-    <div class="selection-summary" aria-hidden="true">
+    <div class="selection-tools">
+      <label class="selection-search">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
+        <span class="sr-only">Rechercher dans la collection</span>
+        <input id="selectionSearch" type="search" autocomplete="off" placeholder="Rechercher un titre, un thème, un hashtag…">
+      </label>
+      <div class="selection-sections" id="selectionSections" aria-label="Sections de la collection"></div>
+    </div>
+
+    <div class="selection-summary">
       <span id="selectionCount">01 fragment</span>
       <span class="selection-summary-line"></span>
     </div>

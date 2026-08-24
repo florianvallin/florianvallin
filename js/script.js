@@ -11,14 +11,16 @@
 
   ready(() => {
     ensureBlogLinks();
-    initSiteSearch();
-    initBlogIndexSearch();
     initNavigation();
     initFaq();
     initBackToTop();
     initMethodologyReveal();
     initReviews();
     initTooltips();
+    enhanceFooter();
+    initBlogIndexFilters();
+    initGlobalSearch();
+    initStudentAccess();
   });
 
   function ensureBlogLinks() {
@@ -36,248 +38,6 @@
     if (footerTexts && !footerTexts.querySelector(".footer-blog-link")) {
       footerTexts.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
     }
-  }
-
-  function normalizeSearchText(value) {
-    return String(value || "")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/[’']/g, " ")
-      .replace(/[^a-z0-9\s-]/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-  }
-
-  function initSiteSearch() {
-    const nav = document.querySelector(".nav-links");
-    const blogLink = nav?.querySelector(".nav-blog-link");
-    if (!nav || !blogLink || nav.querySelector(".nav-site-search")) return;
-
-    const navbar = nav.closest(".navbar");
-    const wrap = document.createElement("div");
-    wrap.className = "nav-site-search";
-    wrap.innerHTML = `
-      <button class="nav-site-search-toggle" type="button" aria-label="Rechercher sur le site" aria-expanded="false" aria-controls="site-search-panel">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
-        <span class="nav-site-search-label">Rechercher</span>
-      </button>
-      <div class="nav-site-search-panel" id="site-search-panel" hidden>
-        <div class="nav-site-search-field">
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
-          <input type="search" autocomplete="off" spellcheck="false" placeholder="Auteur, notion, titre…" aria-label="Rechercher sur florianvallin.fr">
-          <button class="nav-site-search-clear" type="button" aria-label="Effacer la recherche" hidden>×</button>
-        </div>
-        <div class="nav-site-search-results" aria-live="polite"></div>
-      </div>`;
-    blogLink.insertAdjacentElement("afterend", wrap);
-    nav.classList.add("has-site-search");
-
-    const toggle = wrap.querySelector(".nav-site-search-toggle");
-    const panel = wrap.querySelector(".nav-site-search-panel");
-    const input = wrap.querySelector("input");
-    const clear = wrap.querySelector(".nav-site-search-clear");
-    const results = wrap.querySelector(".nav-site-search-results");
-    let indexPromise = null;
-    let firstResult = null;
-
-    const shortcuts = [
-      { title:"Bibliothèque de textes", meta:"Philosophie · Mythologie · Théologie", url:"/textes/", accent:"texts" },
-      { title:"Blog", meta:"Repères · programmes · méthode", url:"/blog/", accent:"blog" },
-      { title:"Boussole philosophique", meta:"Dictionnaire · chronologie · parcours · ressources", url:"/textes/philosophie/boussole/", accent:"compass" }
-    ];
-
-    const loadIndex = () => {
-      if (!indexPromise) {
-        indexPromise = fetch("/js/site-search-index.json?v=20260816-1", { credentials:"same-origin" })
-          .then((response) => {
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            return response.json();
-          })
-          .then((items) => Array.isArray(items) ? items : [])
-          .catch(() => []);
-      }
-      return indexPromise;
-    };
-
-    const makeResult = (item, label) => {
-      const link = document.createElement("a");
-      link.className = "nav-site-search-result";
-      link.href = item.url;
-      const labelText = String(label || item.kindLabel || "").toLowerCase();
-      const accent = item.accent
-        || (labelText.includes("mythologie") ? "mythologie"
-          : labelText.includes("théologie") || labelText.includes("theologie") ? "theologie"
-          : labelText.includes("autres") ? "autres"
-          : item.kind === "blog" || labelText.includes("blog") ? "blog"
-          : labelText.includes("boussole") ? "compass"
-          : labelText.includes("philosophie") ? "philosophie"
-          : item.kind === "texte" ? "texts" : "compass");
-      link.dataset.searchAccent = accent;
-      const kind = document.createElement("span");
-      kind.textContent = label || item.kindLabel || "Page";
-      const title = document.createElement("strong");
-      title.textContent = item.title;
-      const meta = document.createElement("small");
-      meta.textContent = item.meta || "";
-      link.append(kind, title, meta);
-      return link;
-    };
-
-    const showShortcuts = () => {
-      firstResult = null;
-      results.replaceChildren();
-      const intro = document.createElement("p");
-      intro.className = "nav-site-search-hint";
-      intro.textContent = "Rechercher un auteur, une notion, un texte ou un billet.";
-      const list = document.createElement("div");
-      list.className = "nav-site-search-shortcuts";
-      shortcuts.forEach((item) => list.append(makeResult(item, "Accès rapide")));
-      results.append(intro, list);
-    };
-
-    const scoreItem = (item, terms) => {
-      const title = normalizeSearchText(item.title);
-      const meta = normalizeSearchText(item.meta);
-      const keywords = normalizeSearchText(item.keywords);
-      const haystack = `${title} ${meta} ${keywords}`;
-      if (!terms.every((term) => haystack.includes(term))) return -1;
-      let score = 0;
-      terms.forEach((term) => {
-        if (title === term) score += 120;
-        else if (title.startsWith(term)) score += 70;
-        else if (title.includes(term)) score += 45;
-        if (meta.includes(term)) score += 22;
-        if (keywords.includes(term)) score += 14;
-      });
-      if (item.kind === "texte") score += 4;
-      return score;
-    };
-
-    const renderSearch = async () => {
-      const query = normalizeSearchText(input.value);
-      clear.hidden = !query;
-      if (!query) {
-        showShortcuts();
-        return;
-      }
-      results.innerHTML = '<p class="nav-site-search-loading">Recherche…</p>';
-      const items = await loadIndex();
-      if (normalizeSearchText(input.value) !== query) return;
-      const terms = query.split(" ").filter(Boolean);
-      const matches = items
-        .map((item) => ({ item, score:scoreItem(item, terms) }))
-        .filter((entry) => entry.score >= 0)
-        .sort((a,b) => b.score - a.score || a.item.title.localeCompare(b.item.title, "fr"))
-        .slice(0,8);
-      results.replaceChildren();
-      firstResult = null;
-      if (!matches.length) {
-        const empty = document.createElement("p");
-        empty.className = "nav-site-search-empty";
-        empty.textContent = "Aucun résultat. Essayez un auteur, une notion ou un mot du titre.";
-        results.append(empty);
-        return;
-      }
-      const count = document.createElement("p");
-      count.className = "nav-site-search-count";
-      count.textContent = `${matches.length} résultat${matches.length > 1 ? "s" : ""} affiché${matches.length > 1 ? "s" : ""}`;
-      const list = document.createElement("div");
-      list.className = "nav-site-search-list";
-      matches.forEach(({item}) => {
-        const link = makeResult(item);
-        if (!firstResult) firstResult = link;
-        list.append(link);
-      });
-      results.append(count, list);
-    };
-
-    let closeTimer = 0;
-    const open = () => {
-      window.clearTimeout(closeTimer);
-      panel.hidden = false;
-      wrap.classList.add("is-open");
-      navbar?.classList.add("site-search-open");
-      toggle.setAttribute("aria-expanded", "true");
-      if (!input.value.trim()) showShortcuts();
-      window.requestAnimationFrame(() => {
-        window.requestAnimationFrame(() => panel.classList.add("is-visible"));
-      });
-      window.setTimeout(() => input.focus({ preventScroll:true }), 170);
-    };
-    const close = () => {
-      wrap.classList.remove("is-open");
-      panel.classList.remove("is-visible");
-      toggle.setAttribute("aria-expanded", "false");
-      closeTimer = window.setTimeout(() => {
-        if (!wrap.classList.contains("is-open")) {
-          panel.hidden = true;
-          navbar?.classList.remove("site-search-open");
-        }
-      }, 440);
-    };
-
-    toggle.addEventListener("click", () => wrap.classList.contains("is-open") ? close() : open());
-    input.addEventListener("input", renderSearch);
-    input.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && firstResult) {
-        event.preventDefault();
-        window.location.href = firstResult.href;
-      }
-    });
-    clear.addEventListener("click", () => {
-      input.value = "";
-      clear.hidden = true;
-      showShortcuts();
-      input.focus();
-    });
-    document.addEventListener("click", (event) => {
-      if (!panel.hidden && !wrap.contains(event.target)) close();
-    });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !panel.hidden) {
-        close();
-        toggle.focus();
-      }
-    });
-  }
-
-  function initBlogIndexSearch() {
-    const search = document.querySelector("[data-blog-search]");
-    const grid = document.querySelector("[data-blog-grid]");
-    const cards = [...document.querySelectorAll("[data-blog-card]")];
-    if (!search || !grid || !cards.length) return;
-    const input = search.querySelector("[data-blog-search-input]");
-    const clear = search.querySelector("[data-blog-search-clear]");
-    const status = document.querySelector("[data-blog-search-status]");
-    if (!input || !clear || !status) return;
-
-    const searchable = cards.map((card) => ({
-      card,
-      haystack:normalizeSearchText(`${card.dataset.blogSearchText || ""} ${card.textContent || ""}`)
-    }));
-
-    const apply = () => {
-      const query = normalizeSearchText(input.value);
-      const terms = query.split(" ").filter(Boolean);
-      clear.hidden = !query;
-      let visible = 0;
-      searchable.forEach(({card,haystack}) => {
-        const match = !terms.length || terms.every((term) => haystack.includes(term));
-        card.hidden = !match;
-        if (match) visible += 1;
-      });
-      grid.classList.toggle("blog-grid--filtered", Boolean(query));
-      status.hidden = !query;
-      if (query) status.textContent = visible ? `${visible} billet${visible > 1 ? "s" : ""} trouvé${visible > 1 ? "s" : ""}.` : "Aucun billet ne correspond à cette recherche.";
-    };
-
-    input.addEventListener("input", apply);
-    clear.addEventListener("click", () => {
-      input.value = "";
-      apply();
-      input.focus();
-    });
   }
 
   function initNavigation() {
@@ -490,4 +250,364 @@
     window.addEventListener("scroll", () => activeTarget && position(activeTarget), { passive: true });
     window.addEventListener("resize", () => activeTarget && position(activeTarget));
   }
+
+  function normalizeSearch(value) {
+    return String(value || "").toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " ").replace(/[^a-z0-9\s-]/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function enhanceFooter() {
+    document.querySelectorAll(".footer-textes").forEach((column) => {
+      if (!column.querySelector(".footer-blog-link")) {
+        column.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
+      }
+    });
+
+    // L’espace Art reste volontairement discret : aucun lien public dans le footer.
+    document.querySelectorAll(".footer-art-link").forEach((item) => item.remove());
+    document.querySelectorAll("[data-student-access]").forEach((item) => {
+      if (!item.closest(".footer-right")) item.remove();
+    });
+
+    document.querySelectorAll(".footer-right").forEach((column) => {
+      if (!column.querySelector("[data-student-access]")) {
+        column.insertAdjacentHTML("beforeend", '<button class="footer-student-access" type="button" data-student-access>S\'identifier</button>');
+      }
+    });
+  }
+
+  function initBlogIndexFilters() {
+    const root = document.querySelector("[data-blog-tools]");
+    if (!root) return;
+    const buttons = [...root.querySelectorAll("[data-blog-filter]")];
+    const input = root.querySelector("[data-blog-search]");
+    const cards = [...document.querySelectorAll("[data-blog-card]")];
+    const count = document.querySelector("[data-blog-count]");
+    const empty = document.querySelector("[data-blog-empty]");
+    let topic = "all";
+
+    const render = () => {
+      const query = normalizeSearch(input?.value);
+      let visible = 0;
+      cards.forEach((card) => {
+        const topics = normalizeSearch(card.dataset.blogTopic).split(" ");
+        const haystack = normalizeSearch(`${card.textContent} ${card.dataset.blogSearch || ""}`);
+        const topicMatch = topic === "all" || topics.includes(topic);
+        const queryMatch = !query || query.split(" ").every((word) => haystack.includes(word));
+        const show = topicMatch && queryMatch;
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+      if (count) count.textContent = `${visible} billet${visible > 1 ? "s" : ""}`;
+      if (empty) empty.hidden = visible !== 0;
+    };
+
+    buttons.forEach((button) => button.addEventListener("click", () => {
+      topic = button.dataset.blogFilter || "all";
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      render();
+    }));
+    input?.addEventListener("input", render);
+    render();
+  }
+
+  function initGlobalSearch() {
+    const nav = document.querySelector(".nav-links");
+    if (nav && !nav.querySelector("[data-site-search-open]")) {
+      const blog = nav.querySelector(".nav-blog-link");
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "nav-search-trigger";
+      button.dataset.siteSearchOpen = "";
+      button.setAttribute("aria-label", "Rechercher sur le site");
+      button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg><kbd>R</kbd>';
+      if (blog) blog.insertAdjacentElement("afterend", button); else nav.prepend(button);
+    }
+
+    if (!document.querySelector("[data-site-search-dialog]")) {
+      document.body.insertAdjacentHTML("beforeend", `
+        <div class="site-search-shell" data-site-search-dialog hidden>
+          <button class="site-search-backdrop" type="button" data-site-search-close aria-label="Fermer la recherche"></button>
+          <section class="site-search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+            <header class="site-search-head">
+              <div><span>Recherche du site</span><h2 id="site-search-title">Que cherchez-vous ?</h2></div>
+              <button class="site-search-close" type="button" data-site-search-close aria-label="Fermer">×</button>
+            </header>
+            <label class="site-search-field">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
+              <input type="search" autocomplete="off" spellcheck="false" placeholder="Ex. liberté, désir, Kant, bonheur…" data-site-search-input>
+              <kbd>Esc</kbd>
+            </label>
+            <div class="site-search-hints" data-site-search-hints><button type="button" data-site-search-example="liberté">Liberté</button><button type="button" data-site-search-example="désir">Désir</button><button type="button" data-site-search-example="Kant">Kant</button><button type="button" data-site-search-example="religion">Religion</button></div>
+            <div class="site-search-status" data-site-search-status>Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.</div>
+            <div class="site-search-results" data-site-search-results></div>
+          </section>
+        </div>`);
+    }
+
+    const shell = document.querySelector("[data-site-search-dialog]");
+    const input = shell?.querySelector("[data-site-search-input]");
+    const results = shell?.querySelector("[data-site-search-results]");
+    const status = shell?.querySelector("[data-site-search-status]");
+    let dataPromise = null;
+
+    const ensureData = () => {
+      if (window.FV_SITE_SEARCH_DATA) return Promise.resolve(window.FV_SITE_SEARCH_DATA);
+      if (dataPromise) return dataPromise;
+      dataPromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "/js/site-search-data.js?v=20260824-1";
+        script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
+        script.onerror = reject;
+        document.head.append(script);
+      });
+      return dataPromise;
+    };
+
+    const escapeHtml = (value) => String(value || "").replace(/[&<>\"]/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
+    const highlight = (value, query) => {
+      const tokens = normalizeSearch(query).split(" ").filter((token) => token.length > 1);
+      if (!tokens.length) return escapeHtml(value);
+      return String(value || "").split(/([\p{L}\p{N}’'-]+)/gu).map((part) => {
+        const normalized = normalizeSearch(part);
+        const match = normalized && tokens.some((token) => normalized.includes(token));
+        return match ? `<mark>${escapeHtml(part)}</mark>` : escapeHtml(part);
+      }).join("");
+    };
+
+    const synonymMap = {
+      "liberte":["liberte","libre","autonomie","emancipation"],
+      "desir":["desir","passion","manque","appetit"],
+      "bonheur":["bonheur","heureux","plaisir"],
+      "religion":["religion","dieu","foi","croyance"],
+      "travail":["travail","labeur","activite"],
+      "verite":["verite","vrai","certitude"]
+    };
+
+    const scoreItem = (item, query) => {
+      const q = normalizeSearch(query);
+      const queryTerms = q.split(" ").filter(Boolean);
+      if (!q || !queryTerms.length) return 0;
+      const title = normalizeSearch(item.title);
+      const meta = normalizeSearch(item.meta);
+      const keywords = normalizeSearch(item.keywords);
+      const excerpt = normalizeSearch(item.excerpt);
+      const all = `${title} ${meta} ${keywords} ${excerpt}`;
+      const groups = queryTerms.map((term) => synonymMap[term] || [term]);
+      if (!groups.every((variants) => variants.some((variant) => all.includes(variant)))) return 0;
+      let score = Number(item.boost || 0);
+      if (title === q) score += 220;
+      if (title.includes(q)) score += 130;
+      groups.forEach((variants, groupIndex) => variants.forEach((term, variantIndex) => {
+        const synonymFactor = variantIndex === 0 ? 1 : .42;
+        if (title.split(" ").includes(term)) score += 70 * synonymFactor;
+        else if (title.includes(term)) score += 45 * synonymFactor;
+        if (keywords.split(" ").includes(term)) score += 60 * synonymFactor;
+        else if (keywords.includes(term)) score += 28 * synonymFactor;
+        if (meta.includes(term)) score += 20 * synonymFactor;
+        if (excerpt.includes(term)) score += 8 * synonymFactor;
+      }));
+      const typeBoost = {"Parcours":80,"Thème":65,"Blog":20,"Texte":15,"Dictionnaire":5,"Bible":0};
+      score += typeBoost[item.type] || 0;
+      return score;
+    };
+
+    const renderResults = async () => {
+      if (!input || !results || !status) return;
+      const query = input.value.trim();
+      if (query.length < 2) {
+        results.innerHTML = "";
+        status.textContent = "Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.";
+        return;
+      }
+      status.textContent = "Recherche…";
+      try {
+        const data = await ensureData();
+        const found = data.map((item) => ({ item, score:scoreItem(item, query) })).filter((entry) => entry.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
+        status.textContent = found.length ? `${found.length} résultat${found.length > 1 ? "s" : ""} parmi les plus pertinents.` : "Aucun résultat. Essayez un auteur, une notion ou un mot voisin.";
+        results.innerHTML = found.map(({item}) => `
+          <a class="site-search-result" href="${escapeHtml(item.url)}">
+            <span class="site-search-result-type">${escapeHtml(item.type || "Ressource")}</span>
+            <strong>${highlight(item.title, query)}</strong>
+            ${item.meta ? `<small>${highlight(item.meta, query)}</small>` : ""}
+            ${item.excerpt ? `<p>${highlight(item.excerpt, query)}</p>` : ""}
+            <i aria-hidden="true">→</i>
+          </a>`).join("");
+      } catch (_) {
+        status.textContent = "La recherche n’a pas pu être chargée.";
+      }
+    };
+
+    const open = (seed = "") => {
+      if (!shell || !input) return;
+      shell.hidden = false;
+      document.body.classList.add("site-search-open");
+      if (seed) input.value = seed;
+      requestAnimationFrame(() => input.focus({preventScroll:true}));
+      renderResults();
+    };
+    const close = () => {
+      if (!shell) return;
+      shell.hidden = true;
+      document.body.classList.remove("site-search-open");
+    };
+
+    document.querySelectorAll("[data-site-search-open]").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        open();
+        // Le clic sur le bouton / la touche visuelle « R » doit permettre
+        // de commencer à taper immédiatement, sans second clic dans le champ.
+        requestAnimationFrame(() => {
+          input?.focus({preventScroll:true});
+          if (input && typeof input.setSelectionRange === "function") {
+            const end = input.value.length;
+            input.setSelectionRange(end, end);
+          }
+        });
+      });
+    });
+    shell?.querySelectorAll("[data-site-search-close]").forEach((button) => button.addEventListener("click", close));
+    shell?.querySelectorAll("[data-site-search-example]").forEach((button) => button.addEventListener("click", () => {
+      if (!input) return;
+      input.value = button.dataset.siteSearchExample || "";
+      input.focus();
+      renderResults();
+    }));
+    input?.addEventListener("input", renderResults);
+
+    document.addEventListener("keydown", (event) => {
+      const target = event.target;
+      const typing = target instanceof HTMLElement && (target.matches("input,textarea,select") || target.isContentEditable);
+      if (!typing && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.toLocaleLowerCase("fr") === "r") {
+        event.preventDefault();
+        open();
+      } else if (event.key === "Escape" && !shell?.hidden) {
+        close();
+      }
+    });
+  }
+
+  function initStudentAccess() {
+    const STUDENT_PORTALS = {
+      didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
+      art: "/art/",
+      livres: "/lecture/"
+    };
+
+    if (!document.querySelector("[data-student-dialog]")) {
+      document.body.insertAdjacentHTML("beforeend", `
+        <div class="student-access-shell" data-student-dialog hidden>
+          <button class="student-access-backdrop" type="button" data-student-close aria-label="Fermer"></button>
+
+          <section class="student-access-panel" role="dialog" aria-modal="true" aria-labelledby="student-access-title">
+            <button class="student-access-close" type="button" data-student-close aria-label="Fermer">×</button>
+            <span>Espace élève</span>
+            <h2 id="student-access-title">S’identifier</h2>
+
+            <form data-student-form>
+              <label for="student-password">Mot de passe</label>
+              <div>
+                <input
+                  id="student-password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Mot de passe"
+                  data-student-password
+                >
+                <button type="submit">Accéder <span aria-hidden="true">→</span></button>
+              </div>
+              <p data-student-feedback aria-live="polite"></p>
+            </form>
+          </section>
+        </div>`);
+    }
+
+    const shell = document.querySelector("[data-student-dialog]");
+    const input = shell?.querySelector("[data-student-password]");
+    const feedback = shell?.querySelector("[data-student-feedback]");
+    let navigating = false;
+
+    const open = () => {
+      if (!shell || !input) return;
+      shell.hidden = false;
+      if (feedback) feedback.textContent = "";
+      requestAnimationFrame(() => input.focus({ preventScroll: true }));
+    };
+
+    const close = () => {
+      if (shell) shell.hidden = true;
+    };
+
+    const grantLibraryAccess = () => {
+      try {
+        localStorage.setItem("fv-private-library", "1");
+      } catch (_) {}
+
+      try {
+        sessionStorage.setItem("fv-private-library", "1");
+      } catch (_) {}
+    };
+
+    const enter = (showError = true) => {
+      if (navigating) return false;
+
+      const key = normalizeSearch(input?.value).replace(/\s+/g, "");
+      const destination = STUDENT_PORTALS[key];
+
+      if (!destination) {
+        if (showError && feedback) {
+          feedback.textContent = "Mot de passe non reconnu.";
+        }
+        return false;
+      }
+
+      navigating = true;
+
+      if (key === "livres") {
+        grantLibraryAccess();
+      }
+
+      if (feedback) {
+        feedback.textContent = "Accès reconnu — ouverture de votre espace…";
+      }
+
+      window.location.href = destination;
+      return true;
+    };
+
+    document
+      .querySelectorAll("[data-student-access]")
+      .forEach((button) => button.addEventListener("click", open));
+
+    shell
+      ?.querySelectorAll("[data-student-close]")
+      .forEach((button) => button.addEventListener("click", close));
+
+    shell
+      ?.querySelector("[data-student-form]")
+      ?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        enter(true);
+      });
+
+    // "livres" ouvre directement le lecteur dès que le mot exact est saisi.
+    input?.addEventListener("input", () => {
+      const key = normalizeSearch(input.value).replace(/\s+/g, "");
+
+      if (key === "livres") {
+        enter(false);
+      } else if (feedback) {
+        feedback.textContent = "";
+      }
+    });
+
+    shell?.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+  }
+
 })();

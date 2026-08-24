@@ -282,6 +282,23 @@
     progress.style.transform = `scaleX(${ratio})`;
   };
 
+  const updateControlsCondensed = () => {
+    const controls = document.querySelector(".bible-reader-controls");
+    if (!controls) return;
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      controls.classList.remove("is-condensed");
+      return;
+    }
+    const expandedPanel = controls.querySelector(".bible-reader-search-panel:not([hidden]), .bible-reader-compare-panel:not([hidden])");
+    if (expandedPanel) {
+      controls.classList.remove("is-condensed");
+      return;
+    }
+    const hero = document.querySelector(".bible-reader-hero");
+    const threshold = hero ? hero.getBoundingClientRect().bottom + window.scrollY + 18 : 260;
+    controls.classList.toggle("is-condensed", window.scrollY > threshold);
+  };
+
   const queryState = () => {
     const params = new URLSearchParams(window.location.search);
     const legacyBook = {genesis:"Gen",matthew:"Matt",mark:"Mark",luke:"Luke",john:"John",revelation:"Rev"};
@@ -1193,8 +1210,8 @@
     if(chapterIndex&&!chapterIndex.hidden&&navWrap&&!navWrap.contains(event.target))toggleIndex(false);
     if (!element || !element.closest(".bible-reader-xrefs,[data-bible-xref-toggle],[data-bible-context-slot]")) closeCrossReferences();
   });
-  window.addEventListener("scroll",()=>{updateProgress();updateFloatingVisibility();},{passive:true});
-  window.addEventListener("resize",()=>{updateProgress();updateFloatingVisibility();});
+  window.addEventListener("scroll",()=>{updateProgress();updateFloatingVisibility();updateControlsCondensed();},{passive:true});
+  window.addEventListener("resize",()=>{updateProgress();updateFloatingVisibility();updateControlsCondensed();});
   window.addEventListener("popstate",()=>{
     if (!meta) return;
     const state=queryState();
@@ -1203,4 +1220,5 @@
     else if (currentData && state.verse!==currentVerse) {if(state.verse)focusVerse(state.verse,{smooth:false,updateUrl:false});else{currentVerse=null;clearVerseHighlight();if(compareIsOpen)renderCompare();}}
   });
   init();
+  requestAnimationFrame(updateControlsCondensed);
 })();

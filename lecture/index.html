@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet">
+  <title>Lecture — Florian Vallin</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="reader.css?v=20260825-9">
+  <script>
+    (() => {
+      let allowed = false;
+      try {
+        allowed = localStorage.getItem("fv-private-library") === "1" || sessionStorage.getItem("fv-private-library") === "1";
+      } catch (_) {}
+      if (!allowed) location.replace("/");
+    })();
+  </script>
+  <script defer src="library.js?v=20260825-9"></script>
+  <script defer src="reader.js?v=20260825-9"></script>
+</head>
+<body data-theme="paper">
+<main class="reader-app" id="reader-app">
+  <header class="reader-topbar">
+    <div class="reader-brand">
+      <button class="reader-menu-button" id="drawer-toggle" type="button" aria-label="Ouvrir les outils" aria-expanded="false">☰</button>
+      <span class="reader-brand-mark" aria-hidden="true"></span>
+      <div class="reader-meta">
+        <span>Lecture</span>
+        <strong id="book-title">Bibliothèque</strong>
+        <small id="book-author">Thérèse d’Avila</small>
+      </div>
+    </div>
+    <div class="reader-top-actions">
+      <select id="book-select" class="reader-book-select" aria-label="Choisir un livre"></select>
+      <button id="trail-back" class="reader-icon-button" type="button" aria-label="Emplacement précédent" disabled>↶</button>
+      <button id="trail-forward" class="reader-icon-button" type="button" aria-label="Emplacement suivant" disabled>↷</button>
+      <button id="search-toggle" class="reader-icon-button" type="button" aria-label="Rechercher" aria-expanded="false">⌕</button>
+      <button id="bookmark-toggle" class="reader-icon-button reader-bookmark-button" type="button" aria-label="Marque-page">☆</button>
+      <button id="focus-toggle" class="reader-icon-button" type="button" aria-label="Mode focus">◫</button>
+      <button id="theme-toggle" class="reader-icon-button" type="button" aria-label="Changer le thème">◐</button>
+      <a class="reader-exit" href="/" aria-label="Retour au site">×</a>
+    </div>
+  </header>
+
+  <section class="reader-search-panel" id="search-panel" hidden>
+    <div class="reader-search-bar">
+      <select id="search-scope" aria-label="Portée de la recherche">
+        <option value="book">Livre actuel</option>
+        <option value="all">Toute la bibliothèque</option>
+        <option value="notes">Notes et tags</option>
+      </select>
+      <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Mot, expression, thème…">
+      <button id="search-prev" type="button" aria-label="Résultat précédent">↑</button>
+      <button id="search-next" type="button" aria-label="Résultat suivant">↓</button>
+      <button id="search-clear" type="button" aria-label="Effacer">×</button>
+    </div>
+    <div id="search-results" class="reader-search-results" aria-live="polite"></div>
+  </section>
+
+  <section class="reader-stage">
+    <div class="reader-paper" id="reader-paper">
+      <button id="prev-edge" class="reader-edge reader-edge-left" type="button" aria-label="Page précédente">‹</button>
+      <div id="page-scroll" class="reader-page-scroll" tabindex="0">
+        <article id="page-content" class="reader-page-content"></article>
+        <p class="reader-page-footer">
+          <span id="page-number"></span><span>·</span><span id="progress-text"></span><span>·</span><span id="chapter-time"></span>
+        </p>
+      </div>
+      <button id="next-edge" class="reader-edge reader-edge-right" type="button" aria-label="Page suivante">›</button>
+      <aside id="compare-pane" class="compare-pane" hidden>
+        <div class="compare-head"><strong>Comparer</strong><button id="compare-close" type="button" aria-label="Fermer">×</button></div>
+        <div id="compare-content"></div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="reader-controls">
+    <button id="prev-page" class="reader-nav-button" type="button" aria-label="Page précédente">‹</button>
+    <label class="reader-field"><span>Chapitre</span><select id="chapter-select" class="reader-select"></select></label>
+    <label class="reader-field reader-field-page"><span id="page-label">Page</span><span class="reader-page-box"><input id="page-input" type="number" inputmode="numeric"><span>/ <b id="page-total">—</b></span></span></label>
+    <button id="next-page" class="reader-nav-button" type="button" aria-label="Page suivante">›</button>
+    <div class="reader-progress-wrap">
+      <input id="progress-range" class="reader-progress" type="range" aria-label="Progression">
+      <div id="chapter-ticks" class="chapter-ticks"></div>
+    </div>
+  </footer>
+
+  <aside id="reader-drawer" class="reader-drawer" hidden>
+    <div class="drawer-head"><strong>Outils de lecture</strong><button id="drawer-close" type="button" aria-label="Fermer">×</button></div>
+    <nav class="drawer-tabs" id="drawer-tabs">
+      <button data-tab="toc" class="is-active">Sommaire</button>
+      <button data-tab="library">Bibliothèque</button>
+      <button data-tab="notebook">Carnet</button>
+      <button data-tab="extracts">Extraits</button>
+      <button data-tab="review">À revoir</button>
+      <button data-tab="stack">Pile</button>
+      <button data-tab="stats">Lecture</button>
+      <button data-tab="settings">Réglages</button>
+      <button data-tab="help">Aide</button>
+    </nav>
+    <div class="drawer-body">
+      <section data-panel="toc" class="drawer-panel is-active"><div id="book-map" class="book-map"></div><div id="toc-list" class="toc-list"></div></section>
+      <section data-panel="library" class="drawer-panel"><div id="library-grid" class="library-grid"></div></section>
+      <section data-panel="notebook" class="drawer-panel">
+        <label class="tool-label">Note générale sur le livre<textarea id="book-note" rows="7" placeholder="Ce que je veux retenir, questions, idées…"></textarea></label>
+        <label class="tool-label">Résumé du chapitre actuel<textarea id="chapter-summary" rows="7" placeholder="Résumer ce chapitre avec mes propres mots…"></textarea></label>
+        <button id="copy-deep-link" class="tool-button">Copier le lien vers ce passage</button>
+      </section>
+      <section data-panel="extracts" class="drawer-panel">
+        <div class="panel-row"><select id="extract-scope"><option value="book">Livre actuel</option><option value="all">Tous les livres</option></select><input id="tag-filter" type="search" placeholder="Filtrer par tag…"></div>
+        <div id="tag-cloud" class="tag-cloud"></div><div id="extract-list" class="extract-list"></div>
+      </section>
+      <section data-panel="review" class="drawer-panel"><p class="panel-intro">Passages à revoir selon une répétition espacée légère.</p><div id="review-list" class="review-list"></div></section>
+      <section data-panel="stack" class="drawer-panel"><p class="panel-intro">Une pile temporaire, comme garder plusieurs doigts dans un livre.</p><div id="stack-list" class="stack-list"></div></section>
+      <section data-panel="stats" class="drawer-panel">
+        <div id="stats-summary" class="stats-summary"></div>
+        <div class="goal-grid"><label>Objectif minutes / jour<input id="goal-minutes" type="number" min="0" max="600"></label><label>Objectif pages / jour<input id="goal-pages" type="number" min="0" max="500"></label></div>
+        <div id="history-list" class="history-list"></div>
+      </section>
+      <section data-panel="settings" class="drawer-panel settings-panel">
+        <label>Police<select id="font-family"><option value="serif">Serif classique</option><option value="sans">Sans-serif</option><option value="book">Livre / Palatino</option></select></label>
+        <label>Taille du texte<input id="font-size" type="range" min="80" max="140" step="5"></label>
+        <label>Interligne<input id="line-height" type="range" min="1.4" max="2.1" step="0.05"></label>
+        <label>Largeur du texte<input id="text-width" type="range" min="520" max="900" step="20"></label>
+        <label>Vitesse de lecture (mots/min)<input id="reading-speed" type="number" min="100" max="600" step="10"></label>
+        <label class="check-row"><input id="text-only" type="checkbox"> Masquer les éléments éditoriaux</label>
+        <label>Format de citation<select id="citation-format"><option value="reference">Texte + référence</option><option value="markdown">Markdown</option><option value="text">Texte seul</option></select></label>
+        <div class="settings-actions"><button id="fullscreen-button" class="tool-button">Plein écran</button><button id="backup-button" class="tool-button">Sauvegarder mes données</button><label class="tool-button file-button">Restaurer<input id="restore-input" type="file" accept="application/json"></label></div>
+      </section>
+      <section data-panel="help" class="drawer-panel"><div class="shortcuts"><p><kbd>←</kbd>/<kbd>→</kbd> pages</p><p><kbd>/</kbd> recherche</p><p><kbd>B</kbd> marque-page</p><p><kbd>F</kbd> plein écran</p><p><kbd>M</kbd> focus</p><p><kbd>T</kbd> thème</p><p><kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> historique</p><p><kbd>Échap</kbd> fermer</p></div></section>
+    </div>
+  </aside>
+  <button id="drawer-backdrop" class="drawer-backdrop" type="button" hidden aria-label="Fermer"></button>
+
+  <div id="selection-toolbar" class="selection-toolbar" hidden>
+    <button data-action="highlight">Surligner</button><button data-action="note">Note</button><button data-action="review">À revoir</button><button data-action="copy">Copier</button><button data-action="citation">Citation</button><button data-action="define">Définir</button><button data-action="search">Rechercher</button><button data-action="stack">Épingler</button><button data-action="compare">Comparer</button>
+  </div>
+
+  <dialog id="annotation-dialog" class="reader-dialog">
+    <form method="dialog" id="annotation-form">
+      <div class="dialog-head"><strong>Annotation</strong><button type="button" data-close-dialog>×</button></div>
+      <blockquote id="annotation-quote"></blockquote>
+      <label>Couleur<select id="annotation-color"><option value="violet">Violet</option><option value="gold">Or</option><option value="green">Vert</option><option value="blue">Bleu</option><option value="none">Sans surlignage</option></select></label>
+      <label>Note<textarea id="annotation-note" rows="4"></textarea></label>
+      <label>Tags<input id="annotation-tags" type="text" placeholder="prière, liberté, à utiliser…"></label>
+      <label class="check-row"><input id="annotation-review" type="checkbox"> Ajouter aux passages à revoir</label>
+      <fieldset><legend>Relier à un autre passage</legend><select id="annotation-link-book"></select><input id="annotation-link-page" type="number" placeholder="Page / position"></fieldset>
+      <div class="dialog-actions"><button id="annotation-delete" type="button" class="danger-button">Supprimer</button><button type="submit" class="primary-button">Enregistrer</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="bookmark-dialog" class="reader-dialog">
+    <form method="dialog" id="bookmark-form">
+      <div class="dialog-head"><strong>Marque-page</strong><button type="button" data-close-dialog>×</button></div>
+      <label>Note<textarea id="bookmark-note" rows="4"></textarea></label>
+      <label>Tags<input id="bookmark-tags" type="text" placeholder="à relire, important…"></label>
+      <div class="dialog-actions"><button id="bookmark-delete" type="button" class="danger-button">Supprimer</button><button type="submit" class="primary-button">Enregistrer</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="footnote-dialog" class="reader-dialog footnote-dialog"><div class="dialog-head"><strong>Note</strong><button type="button" data-close-dialog>×</button></div><div id="footnote-text"></div></dialog>
+  <div id="toast" class="reader-toast" hidden></div>
+  <button id="focus-return" class="focus-return" type="button" hidden>Afficher les contrôles</button>
+</main>
+</body>
+</html>

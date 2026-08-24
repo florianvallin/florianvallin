@@ -785,3 +785,71 @@ body.drawer-open .selection-trigger { opacity: 0; pointer-events: none; }
     animation-iteration-count: 1 !important;
   }
 }
+
+/* ========================================================================== 
+   Collection — recherche, sections et hashtags
+   2026-08-24
+   ========================================================================== */
+.art-description {
+  max-width:720px;
+  margin:10px 0 0;
+  color:rgba(255,255,255,.46);
+  font-size:11px;
+  line-height:1.55;
+}
+.art-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+.art-tags button {
+  padding:5px 8px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:999px;
+  background:rgba(255,255,255,.035);
+  color:rgba(255,255,255,.46);
+  font-size:8px;
+  letter-spacing:.035em;
+  cursor:pointer;
+  transition:color .18s ease,border-color .18s ease,background .18s ease;
+}
+.art-tags button:hover { color:#fff; border-color:rgba(181,160,141,.28); background:rgba(181,160,141,.08); }
+
+.selection-tools { display:grid; gap:10px; margin:18px 0 14px; }
+.selection-search {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-height:42px;
+  padding:0 11px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:12px;
+  background:rgba(255,255,255,.035);
+}
+.selection-search svg { width:15px; height:15px; stroke:rgba(255,255,255,.38); stroke-width:1.7; }
+.selection-search input {
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:rgba(255,255,255,.88);
+  font-size:10px;
+}
+.selection-search input::placeholder { color:rgba(255,255,255,.28); }
+.selection-sections { display:flex; flex-wrap:wrap; gap:6px; }
+.selection-sections button {
+  min-height:27px;
+  padding:0 9px;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:999px;
+  background:transparent;
+  color:rgba(255,255,255,.38);
+  font-size:8px;
+  cursor:pointer;
+}
+.selection-sections button:hover { color:rgba(255,255,255,.75); border-color:rgba(255,255,255,.14); }
+.selection-sections button.is-active { border-color:rgba(181,160,141,.25); background:rgba(181,160,141,.08); color:var(--art-accent); }
+.selection-summary { margin-top:4px; }
+.selection-item-tags { display:block; margin-top:7px; color:rgba(255,255,255,.25); font-size:7px; line-height:1.55; }
+.selection-empty { margin:20px 0; padding:18px; border:1px dashed rgba(255,255,255,.08); border-radius:12px; color:rgba(255,255,255,.35); font-size:10px; line-height:1.5; text-align:center; }
+
+@media (max-width:720px) {
+  .art-description { font-size:10px; }
+  .art-tags { gap:5px; }
+}
