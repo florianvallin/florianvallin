@@ -958,3 +958,196 @@
 @media (prefers-reduced-motion:reduce) {
   .blog-card,.blog-card-read i { transition:none; }
 }
+
+/* Faire feu de tout bois — billet mythes, religions et références extra-philosophiques */
+.blog-extraphilo-hero { position:relative; overflow:hidden; background:linear-gradient(145deg,#f3f2ff 0%,#fff 61%,#f6f7f1 100%); }
+.blog-extraphilo-hero::after { content:"↗"; position:absolute; right:max(3vw,24px); bottom:-50px; color:rgba(63,132,119,.045); font-family:Georgia,"Times New Roman",serif; font-size:260px; line-height:1; transform:rotate(-9deg); pointer-events:none; }
+.blog-extraphilo-page .blog-article-title em { color:var(--blog-warm-dark); font-weight:500; }
+.blog-extraphilo-page .blog-section-eyebrow { margin-top:0; }
+.blog-extraphilo-page .blog-prose > section { scroll-margin-top:110px; }
+.blog-extraphilo-thesis { border-left:3px solid var(--blog-warm); }
+
+.blog-extraphilo-benefits { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:30px 0 38px; font-family:Inter,Arial,sans-serif; }
+.blog-extraphilo-benefits article { position:relative; min-height:190px; padding:23px 22px; border:1px solid var(--blog-rule); border-radius:8px; background:#fff; box-shadow:0 10px 28px rgba(42,39,78,.025); }
+.blog-extraphilo-benefits article > span { color:var(--blog-warm); font:800 9px/1 Inter,Arial,sans-serif; letter-spacing:.12em; }
+.blog-prose .blog-extraphilo-benefits h3 { margin:14px 0 9px; font-family:Georgia,"Times New Roman",serif; font-size:20px; font-weight:550; line-height:1.25; }
+.blog-extraphilo-benefits p { margin:0; color:var(--text-medium); font-size:12px; line-height:1.65; }
+
+.blog-reference-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:27px 0 36px; font-family:Inter,Arial,sans-serif; }
+.blog-reference-compare article { padding:22px; border:1px solid var(--blog-rule); border-radius:8px; background:#fff; }
+.blog-reference-compare article > span { display:inline-flex; align-items:center; min-height:25px; padding:0 8px; border-radius:999px; font-size:8px; font-weight:850; letter-spacing:.1em; text-transform:uppercase; }
+.blog-reference-compare .is-weak > span { background:#f5f3f1; color:#756d66; }
+.blog-reference-compare .is-strong { border-color:rgba(108,99,255,.24); background:#f9f8ff; }
+.blog-reference-compare .is-strong > span { background:var(--blog-warm-soft); color:var(--blog-warm-dark); }
+.blog-reference-compare p { margin:16px 0 13px; color:var(--blog-ink); font-family:Georgia,"Times New Roman",serif; font-size:14px; line-height:1.66; }
+.blog-reference-compare small { display:block; color:var(--text-light); font-size:10px; line-height:1.55; }
+
+.blog-source-block { margin-top:58px; padding-top:42px; border-top:1px solid var(--blog-rule); scroll-margin-top:110px; }
+.blog-source-heading { margin-bottom:25px; }
+.blog-source-heading > span { color:var(--blog-warm-dark); font:850 9px/1 Inter,Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+.blog-prose .blog-source-heading h3 { margin:10px 0 11px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.65rem,3.2vw,2.2rem); font-weight:500; line-height:1.2; letter-spacing:-.025em; }
+.blog-source-heading p { max-width:690px; margin:0; color:var(--text-medium); font-size:16px; line-height:1.72; }
+
+.blog-thought-cases { display:grid; gap:13px; margin:28px 0; font-family:Inter,Arial,sans-serif; }
+.blog-thought-case { padding:25px 25px 23px; border:1px solid var(--blog-rule); border-radius:9px; background:#fff; box-shadow:0 10px 32px rgba(42,39,78,.025); }
+.blog-thought-case-top { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.blog-thought-case-top > span { color:var(--blog-warm-dark); font-size:8px; font-weight:850; letter-spacing:.1em; text-transform:uppercase; }
+.blog-thought-case-top > a { flex:none; color:var(--blog-warm-dark); font-size:9px; font-weight:750; text-decoration:none; }
+.blog-prose .blog-thought-case h4 { margin:10px 0 8px; color:var(--blog-ink); font-family:Georgia,"Times New Roman",serif; font-size:23px; font-weight:550; line-height:1.25; }
+.blog-thought-case > p { margin:0; color:var(--text-medium); font-family:Georgia,"Times New Roman",serif; font-size:14px; line-height:1.68; }
+.blog-thought-path { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:18px 0 16px; padding:12px 13px; border-radius:7px; background:#f7f6ff; font-size:10px; line-height:1.45; }
+.blog-thought-path > span { color:var(--text-light); font-size:8px; font-weight:850; letter-spacing:.1em; text-transform:uppercase; }
+.blog-thought-path > i { color:var(--blog-warm); font-style:normal; }
+.blog-thought-path > strong { color:var(--blog-ink); font-weight:750; }
+.blog-thought-path > em { color:var(--blog-warm-dark); font-family:Georgia,"Times New Roman",serif; font-size:13px; font-weight:600; }
+.blog-thought-case .blog-thought-use { padding-top:15px; border-top:1px solid var(--blog-rule); font-family:Inter,Arial,sans-serif; font-size:11px; line-height:1.62; }
+.blog-thought-case .blog-thought-use strong { color:var(--blog-warm-dark); }
+
+.blog-extraphilo-field-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; margin:28px 0 38px; font-family:Inter,Arial,sans-serif; }
+.blog-extraphilo-field-grid article { padding:20px; border:1px solid var(--blog-rule); border-radius:8px; background:#fff; }
+.blog-extraphilo-field-grid article > span { color:var(--blog-warm-dark); font-size:8px; font-weight:850; letter-spacing:.1em; text-transform:uppercase; }
+.blog-prose .blog-extraphilo-field-grid h4 { margin:8px 0 6px; color:var(--blog-ink); font-family:Georgia,"Times New Roman",serif; font-size:20px; font-weight:550; }
+.blog-extraphilo-field-grid p { margin:0; color:var(--text-medium); font-size:11px; line-height:1.55; }
+.blog-extraphilo-field-grid strong { display:block; margin-top:12px; padding-top:11px; border-top:1px solid var(--blog-rule); color:var(--blog-ink); font-size:10px; font-weight:700; line-height:1.55; }
+
+.blog-extraphilo-process { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; margin:30px 0; padding:20px; border:1px solid rgba(108,99,255,.16); border-radius:8px; background:linear-gradient(135deg,#faf9ff,#fff); font-family:Inter,Arial,sans-serif; }
+.blog-extraphilo-process span,.blog-extraphilo-process strong { display:inline-flex; align-items:center; min-height:34px; padding:0 11px; border-radius:7px; background:#fff; color:var(--text-medium); font-size:10px; font-weight:750; box-shadow:0 3px 14px rgba(42,39,78,.04); }
+.blog-extraphilo-process strong { background:var(--blog-warm); color:#fff; }
+.blog-extraphilo-process i { color:var(--blog-warm); font-style:normal; }
+
+/* Blog index — visuel du billet “Faire feu de tout bois” */
+.blog-card--compact.blog-card--method { background:linear-gradient(155deg,#f4fbf8 0%,#fff 57%,#f5f8f1 100%); }
+.blog-card-visual--method { height:185px; border:1px solid rgba(63,132,119,.12); background:linear-gradient(145deg,#f1faf7,#fbfdfb); }
+.blog-card-visual--method::after { content:"RELIER"; position:absolute; right:16px; bottom:10px; color:rgba(42,103,90,.14); font-size:9px; font-weight:850; letter-spacing:.18em; }
+.blog-visual-node { fill:#fff; stroke:rgba(63,132,119,.5); stroke-width:1.6; }
+.blog-visual-node--center { fill:rgba(108,99,255,.09); stroke:rgba(108,99,255,.55); }
+.blog-visual-link { fill:none; stroke:rgba(63,132,119,.45); stroke-width:1.8; stroke-linecap:round; }
+.blog-visual-dot { fill:#6c63ff; opacity:.72; }
+
+@media (max-width:760px) {
+  .blog-extraphilo-benefits,.blog-reference-compare,.blog-extraphilo-field-grid { grid-template-columns:1fr; }
+  .blog-extraphilo-benefits article { min-height:0; }
+  .blog-thought-case-top { align-items:flex-start; flex-direction:column; gap:7px; }
+  .blog-card-visual--method { height:175px; }
+}
+@media (max-width:560px) {
+  .blog-extraphilo-hero::after { right:-45px; font-size:190px; }
+  .blog-thought-case { padding:21px 18px 19px; }
+  .blog-thought-path { align-items:flex-start; flex-direction:column; gap:5px; }
+  .blog-thought-path > i { display:none; }
+  .blog-extraphilo-process { justify-content:flex-start; }
+  .blog-extraphilo-process i { transform:rotate(90deg); }
+  .blog-card-visual--method { height:150px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .blog-thought-case-top > a { transition:none; }
+}
+
+
+/* ========================================================================== 
+   Blog index — composition compacte + portraits du hero
+   Correctif 2026-08-16
+   ========================================================================== */
+.blog-index-hero-inner {
+  grid-template-columns:minmax(0,1.28fr) minmax(300px,.72fr);
+  align-items:center;
+  gap:46px;
+}
+.blog-hero-portraits {
+  position:relative;
+  align-self:stretch;
+  min-height:350px;
+  isolation:isolate;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);
+}
+.blog-hero-portrait {
+  position:absolute;
+  bottom:-15px;
+  width:auto;
+  max-width:none;
+  height:470px;
+  object-fit:contain;
+  user-select:none;
+  filter:grayscale(1) contrast(.94);
+}
+.blog-hero-portrait--socrate {
+  left:-38px;
+  z-index:2;
+  opacity:.38;
+  transform:rotate(-1.5deg);
+}
+.blog-hero-portrait--descartes {
+  right:-42px;
+  z-index:1;
+  height:445px;
+  opacity:.28;
+  transform:rotate(1.5deg);
+}
+
+.blog-listing { padding:60px 0 82px; }
+.blog-listing-heading { margin-bottom:23px; }
+.blog-grid--editorial { gap:14px; }
+.blog-card:hover { transform:translateY(-3px); box-shadow:0 18px 42px rgba(34,30,72,.095); }
+.blog-card--featured {
+  min-height:300px;
+  padding:20px 24px 18px;
+  border-radius:20px;
+}
+.blog-card--compact {
+  min-height:0;
+  padding:16px 19px 14px;
+  border-radius:18px;
+}
+.blog-card-featured-main {
+  grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);
+  gap:27px;
+  margin:9px 0 6px;
+}
+.blog-card-compact-main {
+  grid-template-columns:145px minmax(0,1fr);
+  gap:19px;
+  margin:8px 0 5px;
+}
+.blog-card-visual { border-radius:14px; }
+.blog-card-visual--programmes { height:150px; }
+.blog-card-visual--reperes,
+.blog-card-visual--method { height:105px; }
+.blog-card-number { margin-top:5px; font-size:10.5px; }
+.blog-card-number::after { width:22px; }
+.blog-card h2 { margin-top:6px; }
+.blog-card--featured h2 { font-size:clamp(2.15rem,3vw,2.8rem); }
+.blog-card--compact h2 { max-width:720px; font-size:clamp(1.45rem,1.95vw,1.82rem); line-height:1.08; }
+.blog-card-summary { margin-top:7px; font-size:10.8px; line-height:1.52; }
+.blog-card--featured .blog-card-summary { font-size:11.3px; }
+.blog-card-audience { margin-top:9px; }
+.blog-card-footer { padding-top:10px; font-size:8.5px; }
+.blog-card-read i { width:26px; height:26px; border-radius:8px; font-size:14px; }
+.blog-type-key { margin-top:14px; }
+
+@media (max-width:980px) {
+  .blog-index-hero-inner { grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr); gap:28px; }
+  .blog-hero-portraits { min-height:320px; }
+  .blog-hero-portrait { height:405px; bottom:-12px; }
+  .blog-hero-portrait--socrate { left:-42px; }
+  .blog-hero-portrait--descartes { right:-64px; height:382px; }
+  .blog-card-featured-main { grid-template-columns:minmax(0,1fr) 210px; gap:22px; }
+  .blog-card-compact-main { grid-template-columns:135px minmax(0,1fr); gap:17px; }
+}
+@media (max-width:760px) {
+  .blog-index-hero-inner { grid-template-columns:1fr; }
+  .blog-hero-portraits { display:none; }
+  .blog-card--featured,.blog-card--compact { padding:22px; border-radius:19px; }
+  .blog-card-featured-main,.blog-card-compact-main { grid-template-columns:1fr; gap:14px; }
+  .blog-card-visual--programmes { height:165px; }
+  .blog-card-visual--reperes,.blog-card-visual--method { height:145px; }
+  .blog-card--featured h2 { font-size:clamp(2.15rem,9.5vw,3rem); }
+  .blog-card--compact h2 { font-size:clamp(1.8rem,8vw,2.35rem); }
+}
+@media (max-width:560px) {
+  .blog-card--featured,.blog-card--compact { padding:19px; border-radius:17px; }
+  .blog-card-visual { margin-top:12px; }
+  .blog-card-visual--programmes { height:145px; }
+  .blog-card-visual--reperes,.blog-card-visual--method { height:130px; }
+}

@@ -1,5 +1,8 @@
 :root {
   --catalog-philo: #6c63ff;
+  --catalog-myth: #a66a2c;
+  --catalog-myth-dark: #7b491a;
+  --catalog-myth-soft: #f8efe3;
   --catalog-theo: #b64d5b;
   --catalog-theo-dark: #8f3442;
   --catalog-theo-soft: #f9ecee;
@@ -9,6 +12,11 @@
 }
 
 .texts-page { background:#fbfbfe; }
+body[data-catalog-section="mythologie"] { --primary:var(--catalog-myth); --primary-dark:var(--catalog-myth-dark); --accent-bg:var(--catalog-myth-soft); }
+body[data-catalog-section="mythologie"] .texts-hero { background:linear-gradient(145deg,#fbf5ec 0%,#fff 58%,#f7ecde 100%); }
+body[data-catalog-section="mythologie"] .texts-hero::before { content:"ΜΥΘΟΣ"; top:18px; right:max(4vw,22px); color:color-mix(in srgb,var(--catalog-myth) 7%,transparent); font-family:Georgia,"Times New Roman",serif; font-size:clamp(72px,13vw,190px); font-weight:600; letter-spacing:-.07em; line-height:1; }
+body[data-catalog-section="mythologie"] .texts-search:focus { border-color:color-mix(in srgb,var(--catalog-myth) 62%,transparent); box-shadow:0 0 0 4px color-mix(in srgb,var(--catalog-myth) 10%,transparent); }
+body[data-catalog-section="mythologie"] .texts-reset { border-color:color-mix(in srgb,var(--catalog-myth) 26%,transparent); }
 body[data-catalog-section="theologie"] { --primary:var(--catalog-theo); --primary-dark:var(--catalog-theo-dark); --accent-bg:var(--catalog-theo-soft); }
 body[data-catalog-section="theologie"] .texts-hero { background:linear-gradient(145deg,#fbf0f2 0%,#fff 58%,#f8e9ec 100%); }
 body[data-catalog-section="theologie"] .texts-hero::before { color:color-mix(in srgb,var(--catalog-theo) 8%,transparent); }
@@ -40,6 +48,7 @@ body[data-catalog-section="autres"] .texts-reset { border-color:color-mix(in srg
 .texts-search:focus { border-color:rgba(108,99,255,.6); background:#fff; box-shadow:0 0 0 4px rgba(108,99,255,.09); }
 .texts-filters { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)) auto; gap:12px; margin-top:14px; }
 body[data-catalog-section="philosophie"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)) auto; }
+body[data-catalog-section="mythologie"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)) auto; }
 body[data-catalog-section="theologie"] .texts-filters { grid-template-columns:repeat(3,minmax(0,1fr)) auto; }
 body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)) auto; }
 .texts-filter-group label { display:block; margin:0 0 5px 3px; color:var(--text-light); font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; }
@@ -117,12 +126,14 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
 .text-card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:var(--card-accent,var(--card-color,var(--primary))); opacity:.72; }
 .text-card:hover { transform:translateY(-5px); border-color:color-mix(in srgb,var(--card-color,var(--primary)) 34%,transparent); box-shadow:0 24px 52px rgba(28,28,40,.1); }
 .text-card--philosophie { --card-color:var(--catalog-philo); --card-ink:var(--primary-dark); }
+.text-card--mythologie { --card-color:var(--catalog-myth); --card-ink:var(--catalog-myth-dark); }
 .text-card--theologie,.text-card--religion { --card-color:var(--catalog-theo); --card-ink:var(--catalog-theo-dark); }
 .text-card--dual { --card-color:#8f567f; --card-ink:#66365f; --card-accent:linear-gradient(180deg,var(--catalog-philo),var(--catalog-theo)); }
 .text-card--autres { --card-color:var(--catalog-other); --card-ink:var(--catalog-other-dark); }
 .text-card-section { display:flex; align-items:center; gap:7px; color:var(--text-light); font-size:10px; font-weight:750; letter-spacing:.105em; text-transform:uppercase; }
 .text-card-section-symbol { color:var(--card-color); font-family:Georgia,"Times New Roman",serif; font-size:17px; font-weight:700; line-height:.8; text-transform:none; }
 .text-card-section-symbol--philosophie { color:var(--catalog-philo); }
+.text-card-section-symbol--mythologie { color:var(--catalog-myth); }
 .text-card-section-symbol--theologie { color:var(--catalog-theo); }
 .text-card-section-symbol--autres { color:var(--catalog-other); }
 .text-card h2 { margin-top:14px; font-family:Georgia,"Times New Roman",serif; font-size:23px; line-height:1.25; font-weight:500; letter-spacing:-.015em; text-wrap:balance; }
@@ -139,6 +150,9 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
 .text-tag:hover,.text-tag:focus-visible { border-color:rgba(108,99,255,.24); background:var(--accent-bg); color:var(--primary-dark); outline:none; }
 .text-tag--program { border-color:rgba(108,99,255,.18); background:rgba(108,99,255,.09); color:var(--primary-dark); }
 .text-tag--program::after { content:""; display:inline-block; width:5px; height:5px; margin:0 0 1px 6px; border-radius:50%; background:var(--primary); opacity:.7; vertical-align:middle; }
+.text-card--mythologie .text-tag--program { border-color:color-mix(in srgb,var(--catalog-myth) 25%,transparent); background:color-mix(in srgb,var(--catalog-myth) 10%,transparent); color:var(--catalog-myth-dark); }
+.text-card--mythologie .text-tag--program::after { background:var(--catalog-myth); }
+.text-card--mythologie .text-tag:hover,.text-card--mythologie .text-tag:focus-visible { border-color:color-mix(in srgb,var(--catalog-myth) 25%,transparent); background:var(--catalog-myth-soft); color:var(--catalog-myth-dark); }
 .text-card--theologie .text-tag--program,.text-card--religion .text-tag--program { border-color:color-mix(in srgb,var(--catalog-theo) 25%,transparent); background:color-mix(in srgb,var(--catalog-theo) 10%,transparent); color:var(--catalog-theo-dark); }
 .text-card--theologie .text-tag--program::after,.text-card--religion .text-tag--program::after { background:var(--catalog-theo); }
 .text-card--dual .text-tag--program { border-color:color-mix(in srgb,#8f567f 28%,transparent); background:linear-gradient(100deg,color-mix(in srgb,var(--catalog-philo) 9%,#fff),color-mix(in srgb,var(--catalog-theo) 9%,#fff)); color:var(--card-ink); }
@@ -156,6 +170,7 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
 .texts-page-number.is-current { border-color:var(--primary); background:var(--primary); color:#fff; box-shadow:0 7px 18px rgba(108,99,255,.2); }
 
 .text-detail { min-height:100vh; padding:126px 20px 100px; background:linear-gradient(120deg,#f7f6fc 0%,#fff 48%,#f8f7fc 100%); }
+.text-detail--mythologie { --primary:var(--catalog-myth); --primary-dark:var(--catalog-myth-dark); --accent-bg:var(--catalog-myth-soft); background:linear-gradient(120deg,#fbf5ec 0%,#fff 48%,#f8efe4 100%); }
 .text-detail--theologie { --primary:var(--catalog-theo); --primary-dark:var(--catalog-theo-dark); --accent-bg:var(--catalog-theo-soft); background:linear-gradient(120deg,#fbf0f2 0%,#fff 48%,#f9ecef 100%); }
 .text-detail--autres { --primary:var(--catalog-other); --primary-dark:var(--catalog-other-dark); --accent-bg:var(--catalog-other-soft); background:linear-gradient(120deg,#eef6fa 0%,#fff 48%,#edf6fa 100%); }
 .text-detail-inner { width:min(860px,100%); margin:auto; padding:52px 68px 64px; border:1px solid rgba(48,45,68,.1); border-radius:3px; background:#fff; box-shadow:0 22px 60px rgba(42,37,72,.07); }
@@ -167,6 +182,7 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
 .text-detail-section { display:flex; align-items:center; gap:6px; color:var(--primary); font-size:12px; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
 .text-detail-section-symbol { font-family:Georgia,"Times New Roman",serif; font-size:17px; font-weight:700; letter-spacing:0; line-height:.8; }
 .text-detail-section-symbol--philosophie { color:var(--catalog-philo); }
+.text-detail-section-symbol--mythologie { color:var(--catalog-myth); }
 .text-detail-section-symbol--theologie { color:var(--catalog-theo); }
 .text-detail-section-symbol--autres { color:var(--catalog-other); }
 .text-detail-section--dual > span:last-child { color:#8f567f; }
@@ -412,6 +428,7 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
   .text-linked-set { grid-column:1/-1; }
   .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)); }
   body[data-catalog-section="philosophie"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  body[data-catalog-section="mythologie"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)); }
   body[data-catalog-section="theologie"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)); }
   body[data-catalog-section="theologie"] .texts-reset { grid-column:2; justify-self:stretch; }
   body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repeat(2,minmax(0,1fr)) auto; }
@@ -425,6 +442,7 @@ body[data-catalog-section="autres"] .texts-filters { grid-template-columns:repea
   .texts-tools { padding:16px; border-radius:16px; }
   .texts-filters { grid-template-columns:1fr; }
   body[data-catalog-section="philosophie"] .texts-filters,
+  body[data-catalog-section="mythologie"] .texts-filters,
   body[data-catalog-section="theologie"] .texts-filters,
   body[data-catalog-section="autres"] .texts-filters { grid-template-columns:1fr; }
   .texts-reset { width:100%; }
@@ -10464,6 +10482,17 @@ button.philo-dict-chip:focus-visible {
   .texts-compass-pair .texts-bible-compass-text { font-size:9.4px; }
 }
 
+
+@media (max-width:620px) {
+  body[data-catalog-section="mythologie"] .texts-hero { padding-top:44px; padding-bottom:40px; }
+  body[data-catalog-section="mythologie"] .texts-hero::before {
+    top:18px;
+    right:-34px;
+    font-size:clamp(62px,25vw,112px);
+    opacity:.82;
+  }
+}
+
 /* --------------------------------------------------------------------------
    /textes/theologie/ — illustration de fond du sélecteur
    Gustave Doré, The Creation of Light (Genèse 1,1-5), 1873.
@@ -12755,4 +12784,537 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
 
 @media(prefers-reduced-motion:reduce){
   .bible-reader-pathway-modal,.bible-reader-pathway-dialog{transition:none}
+}
+
+/* ========================================================================== 
+   V30 — Boussoles : navigation spécialisée harmonisée + dialogues secondaires
+   2026-08-16
+   ========================================================================== */
+
+/* Philosophie — au repos, le bandeau reprend le langage compact de la boussole
+   biblique. Le mode condensé existant reste le mode de lecture privilégié. */
+.philo-compass-page .philo-compass-jump:not(.is-condensed) {
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:5px !important;
+  width:min(100%,760px) !important;
+  max-width:760px !important;
+  margin:14px auto 36px !important;
+  padding:6px !important;
+  border:1px solid rgba(91,83,199,.10) !important;
+  border-radius:15px !important;
+  background:rgba(252,251,255,.96) !important;
+  box-shadow:0 9px 24px rgba(45,40,71,.05) !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) > a {
+  display:grid !important;
+  grid-template-columns:28px minmax(0,1fr) !important;
+  grid-template-rows:auto auto !important;
+  gap:1px 7px !important;
+  align-items:center !important;
+  justify-content:stretch !important;
+  min-height:45px !important;
+  padding:6px 8px !important;
+  border:0 !important;
+  border-radius:10px !important;
+  background:transparent !important;
+  text-align:left !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) > a:hover,
+.philo-compass-page .philo-compass-jump:not(.is-condensed) > a:focus-visible {
+  background:#f1efff !important;
+  outline:none !important;
+  transform:none !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-icon {
+  grid-row:1/3 !important;
+  width:28px !important;
+  height:28px !important;
+  min-width:28px !important;
+  border-radius:9px !important;
+  background:#eceaff !important;
+  color:#6259d0 !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-icon svg {
+  width:17px !important;
+  height:17px !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-copy {
+  display:contents !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) strong {
+  align-self:end !important;
+  color:#4d4856 !important;
+  font-size:9.2px !important;
+  line-height:1.1 !important;
+  text-align:left !important;
+}
+.philo-compass-page .philo-compass-jump:not(.is-condensed) small {
+  align-self:start !important;
+  color:#8e88a0 !important;
+  font-size:6.9px !important;
+  line-height:1.12 !important;
+  text-align:left !important;
+}
+
+/* Les dialogues deviennent une entrée secondaire, incluse dans les parcours. */
+.philo-dialogues-appendix {
+  margin-top:18px;
+  overflow:hidden;
+  border:1px solid rgba(71,65,111,.09);
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+}
+.philo-dialogues-appendix > summary {
+  display:grid;
+  grid-template-columns:31px minmax(0,1fr) 20px;
+  gap:10px;
+  align-items:center;
+  min-height:58px;
+  padding:9px 12px;
+  cursor:pointer;
+  list-style:none;
+  color:#716b7b;
+  transition:background .18s ease;
+}
+.philo-dialogues-appendix > summary::-webkit-details-marker { display:none; }
+.philo-dialogues-appendix > summary:hover,
+.philo-dialogues-appendix > summary:focus-visible { background:#fbfaff; outline:none; }
+.philo-dialogues-appendix-icon {
+  display:grid;
+  width:31px;
+  height:31px;
+  place-items:center;
+  border-radius:9px;
+  background:#f0eeff;
+  color:#655dcf;
+}
+.philo-dialogues-appendix-icon svg {
+  width:17px;
+  height:17px;
+  stroke:currentColor;
+  stroke-width:1.45;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.philo-dialogues-appendix > summary > span:nth-child(2) { display:grid; gap:2px; }
+.philo-dialogues-appendix > summary small {
+  color:#9791a0;
+  font-size:7.5px;
+  font-weight:760;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.philo-dialogues-appendix > summary strong {
+  color:#5b5662;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:13.5px;
+  font-weight:560;
+  line-height:1.25;
+}
+.philo-dialogues-appendix > summary > i {
+  position:relative;
+  width:18px;
+  height:18px;
+}
+.philo-dialogues-appendix > summary > i::before,
+.philo-dialogues-appendix > summary > i::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:9px;
+  height:1px;
+  background:#9690a0;
+  transform:translate(-50%,-50%);
+  transition:transform .2s ease;
+}
+.philo-dialogues-appendix > summary > i::after { transform:translate(-50%,-50%) rotate(90deg); }
+.philo-dialogues-appendix[open] > summary > i::after { transform:translate(-50%,-50%) rotate(0); }
+.philo-dialogues-appendix-body {
+  padding:12px;
+  border-top:1px solid rgba(71,65,111,.07);
+  background:#fff;
+}
+.philo-dialogues-appendix-body > p {
+  margin:0 2px 12px;
+  color:#8a8490;
+  font-size:9px;
+  line-height:1.5;
+}
+.philo-dialogues-appendix .philo-dialogue-board {
+  border-radius:12px;
+  box-shadow:none;
+}
+.philo-dialogues-appendix .philo-dialogue-trigger { min-height:54px; padding:9px 12px; }
+.philo-dialogues-appendix .philo-dialogue-trigger strong { font-size:14px; }
+
+/* Théologie — une fois le bandeau dépassé sur ordinateur, il devient un rail
+   horizontal de pictogrammes. Le pictogramme survolé révèle son libellé. */
+@media (min-width:701px) {
+  .bible-compass-page .bible-compass-jump:not(.is-floating) {
+    position:relative !important;
+    top:auto !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-floating {
+    position:fixed !important;
+    z-index:4500 !important;
+    top:76px !important;
+    left:50% !important;
+    right:auto !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:4px !important;
+    width:max-content !important;
+    max-width:calc(100vw - 28px) !important;
+    margin:0 !important;
+    padding:5px !important;
+    border:1px solid rgba(147,75,89,.13) !important;
+    border-radius:15px !important;
+    background:rgba(255,252,251,.95) !important;
+    box-shadow:0 10px 28px rgba(66,45,52,.09) !important;
+    backdrop-filter:blur(12px) !important;
+    -webkit-backdrop-filter:blur(12px) !important;
+    transform:translateX(-50%) !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-floating > a {
+    position:relative !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:0 !important;
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+    min-height:40px !important;
+    padding:0 !important;
+    overflow:hidden !important;
+    border:0 !important;
+    border-radius:11px !important;
+    background:transparent !important;
+    box-shadow:none !important;
+    transition:width .18s ease,padding .18s ease,gap .18s ease,background .16s ease !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-floating .bible-jump-num { display:none !important; }
+  .bible-compass-page .bible-compass-jump.is-floating .bible-jump-icon {
+    grid-row:auto !important;
+    display:grid !important;
+    width:31px !important;
+    height:31px !important;
+    min-width:31px !important;
+    flex:0 0 31px !important;
+    place-items:center !important;
+    border-radius:9px !important;
+    background:#f7edef !important;
+    color:#98515f !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-floating .bible-jump-copy {
+    display:none !important;
+    min-width:0 !important;
+    text-align:left !important;
+  }
+  @media (hover:hover) and (pointer:fine) {
+    .bible-compass-page .bible-compass-jump.is-floating > a:hover,
+    .bible-compass-page .bible-compass-jump.is-floating > a:focus-visible {
+      width:142px !important;
+      padding:0 10px 0 5px !important;
+      gap:8px !important;
+      justify-content:flex-start !important;
+      background:#f8ecef !important;
+      outline:none !important;
+    }
+    .bible-compass-page .bible-compass-jump.is-floating > a:hover .bible-jump-copy,
+    .bible-compass-page .bible-compass-jump.is-floating > a:focus-visible .bible-jump-copy {
+      display:grid !important;
+      gap:1px !important;
+      align-content:center !important;
+    }
+    .bible-compass-page .bible-compass-jump.is-floating > a:hover strong,
+    .bible-compass-page .bible-compass-jump.is-floating > a:focus-visible strong {
+      color:#51464b !important;
+      font-size:8.8px !important;
+      line-height:1.08 !important;
+      white-space:nowrap !important;
+    }
+    .bible-compass-page .bible-compass-jump.is-floating > a:hover small,
+    .bible-compass-page .bible-compass-jump.is-floating > a:focus-visible small {
+      color:#9a5966 !important;
+      font-size:6.8px !important;
+      line-height:1.08 !important;
+      white-space:nowrap !important;
+    }
+  }
+}
+
+@media (max-width:700px) {
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) {
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:4px !important;
+    width:100% !important;
+    padding:5px !important;
+  }
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) > a {
+    grid-template-columns:27px minmax(0,1fr) !important;
+    gap:1px 6px !important;
+    min-height:53px !important;
+    padding:6px !important;
+  }
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-icon {
+    width:27px !important;
+    height:27px !important;
+    min-width:27px !important;
+  }
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) strong { font-size:8.5px !important; }
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) small { font-size:6.3px !important; }
+  .philo-dialogues-appendix > summary { grid-template-columns:29px minmax(0,1fr) 18px; padding:8px 10px; }
+  .philo-dialogues-appendix-icon { width:29px; height:29px; }
+  .philo-dialogues-appendix > summary strong { font-size:12.5px; }
+  .philo-dialogues-appendix-body { padding:9px; }
+}
+
+
+/* ========================================================================== 
+   V31 — Boussole philosophie : rail iconique + ressources philosophiques
+   2026-08-16
+   ========================================================================== */
+
+/* En haut : même sensation de petites cartes que la boussole biblique. */
+.philo-compass-page .philo-compass-jump:not(.is-condensed) > a {
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:hover,
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:focus-visible {
+    transform:translateY(-2px) !important;
+    border-color:rgba(91,83,199,.20) !important;
+    background:#f7f5ff !important;
+    box-shadow:0 10px 22px rgba(61,54,112,.075) !important;
+  }
+}
+
+/* En lecture : aucun mot n'est visible au repos. Le libellé n'apparaît
+   que lorsque l'icône concernée est survolée, à la manière du rail biblique. */
+.philo-compass-page .philo-compass-jump.is-condensed {
+  gap:4px !important;
+  margin-top:8px !important;
+}
+.philo-compass-page .philo-compass-jump.is-condensed > a {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:0 !important;
+  width:40px !important;
+  min-width:40px !important;
+  overflow:hidden !important;
+  transition:width .2s ease, padding .2s ease, gap .2s ease, background .16s ease, transform .16s ease !important;
+}
+.philo-compass-page .philo-compass-jump.is-condensed .philo-jump-copy {
+  display:grid !important;
+  grid-column:auto !important;
+  grid-row:auto !important;
+  gap:1px !important;
+  width:0 !important;
+  max-width:0 !important;
+  min-width:0 !important;
+  overflow:hidden !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  transform:translateX(-4px) !important;
+  transition:max-width .2s ease, opacity .15s ease, transform .2s ease !important;
+}
+.philo-compass-page .philo-compass-jump.is-condensed > a::after {
+  display:none !important;
+  content:none !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  .philo-compass-page .philo-compass-jump.is-condensed > a:hover,
+  .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible {
+    width:142px !important;
+    padding:0 10px 0 5px !important;
+    gap:8px !important;
+    justify-content:flex-start !important;
+    background:#f1efff !important;
+    transform:translateY(-1px) !important;
+    outline:none !important;
+  }
+  .philo-compass-page .philo-compass-jump.is-condensed > a:hover .philo-jump-copy,
+  .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible .philo-jump-copy {
+    width:auto !important;
+    max-width:92px !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:translateX(0) !important;
+  }
+  .philo-compass-page .philo-compass-jump.is-condensed > a:hover strong,
+  .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible strong {
+    font-size:8.8px !important;
+    line-height:1.08 !important;
+    white-space:nowrap !important;
+  }
+  .philo-compass-page .philo-compass-jump.is-condensed > a:hover small,
+  .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible small {
+    display:block !important;
+    font-size:6.7px !important;
+    line-height:1.08 !important;
+    white-space:nowrap !important;
+  }
+}
+
+/* Ressources : structure volontairement calquée sur la bibliothèque de
+   ressources bibliques, avec la couleur et la hiérarchie de la boussole philo. */
+.philo-resources-v1 {
+  margin-top:58px !important;
+  padding-top:52px !important;
+  border-top:1px solid rgba(62,56,108,.08);
+  scroll-margin-top:118px;
+}
+.philo-resources-v1 .philo-compass-section-head h2 {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.philo-resource-heading-icon {
+  display:grid;
+  flex:0 0 auto;
+  width:34px;
+  height:34px;
+  place-items:center;
+  border-radius:10px;
+  background:#efedff;
+  color:#6259d0;
+}
+.philo-resource-heading-icon svg {
+  width:19px;
+  height:19px;
+  stroke:currentColor;
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.philo-resources-v1 .bible-resource-featured-card {
+  border-color:rgba(91,83,199,.11);
+  background:linear-gradient(145deg,#fff 0%,#faf9ff 100%);
+  box-shadow:0 10px 28px rgba(50,44,92,.045);
+}
+.philo-resources-v1 .bible-resource-featured-card:hover,
+.philo-resources-v1 .bible-resource-featured-card:focus-visible {
+  border-color:rgba(91,83,199,.27);
+  box-shadow:0 15px 34px rgba(50,44,92,.085);
+  transform:translateY(-2px);
+}
+.philo-resources-v1 .bible-resource-featured-kind {
+  color:#5f57c8;
+}
+.philo-resources-v1 .bible-resource-featured-kind-icon,
+.philo-resources-v1 .bible-resource-group-icon {
+  background:#efedff;
+  color:#6259d0;
+}
+.philo-resources-v1 .bible-resource-featured-card > b {
+  color:#6259d0;
+}
+.philo-resources-v1 .bible-resource-group {
+  border-color:rgba(91,83,199,.10);
+  background:rgba(255,255,255,.8);
+}
+.philo-resources-v1 .bible-resource-group summary:hover,
+.philo-resources-v1 .bible-resource-group summary:focus-visible {
+  background:#faf9ff;
+}
+.philo-resources-v1 .bible-resource-group-num,
+.philo-resources-v1 .bible-resource-site-badge {
+  color:#655dcf;
+}
+.philo-resources-v1 .bible-resource-group-body a:hover,
+.philo-resources-v1 .bible-resource-group-body a:focus-visible {
+  border-color:rgba(91,83,199,.17) !important;
+  background:#faf9ff !important;
+}
+.philo-resources-v1 .bible-resource-site-main strong { color:#45404f !important; }
+.philo-resources-v1 .bible-resource-site-main p { color:#746f7e !important; }
+
+@media (max-width:700px) {
+  .philo-resources-v1 { margin-top:42px !important; padding-top:38px !important; }
+  .philo-resource-heading-icon { width:31px; height:31px; border-radius:9px; }
+  .philo-resource-heading-icon svg { width:17px; height:17px; }
+  /* Sur écran tactile, le rail reste uniquement iconique. */
+  .philo-compass-page .philo-compass-jump.is-condensed .philo-jump-copy {
+    display:none !important;
+  }
+}
+
+/* ========================================================================== 
+   V31 — Boussole philosophie : Ressources dans la navigation spécialisée
+   2026-08-16
+   ========================================================================== */
+.philo-compass-page .philo-compass-jump:not(.is-condensed) {
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  width:min(100%,900px) !important;
+  max-width:900px !important;
+}
+@media (max-width:700px) {
+  .philo-compass-page .philo-compass-jump:not(.is-condensed) {
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+
+/* ========================================================================== 
+   /textes/mythologie/ — retour du tableau de Calliope
+   Simon Vouet et atelier, Uranie et Calliope, vers 1634 — domaine public.
+   L'œuvre complète est utilisée comme fond, recadrée sur Calliope à droite.
+   ========================================================================== */
+body[data-catalog-section="mythologie"] .texts-hero::before {
+  content:"";
+  z-index:0;
+  top:-28px;
+  right:-14px;
+  bottom:-40px;
+  width:min(54vw,920px);
+  height:auto;
+  color:transparent;
+  font-size:0;
+  line-height:0;
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Simon_Vouet_-_The_Muses_Urania_and_Calliope%2C_1634.jpg/1280px-Simon_Vouet_-_The_Muses_Urania_and_Calliope%2C_1634.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:58% 53%;
+  opacity:.145;
+  filter:sepia(.18) saturate(.58) hue-rotate(346deg) brightness(1.06);
+  mix-blend-mode:multiply;
+  pointer-events:none;
+  -webkit-mask-image:linear-gradient(to left,#000 0%,#000 70%,rgba(0,0,0,.82) 81%,rgba(0,0,0,.30) 94%,transparent 100%);
+  mask-image:linear-gradient(to left,#000 0%,#000 70%,rgba(0,0,0,.82) 81%,rgba(0,0,0,.30) 94%,transparent 100%);
+}
+body[data-catalog-section="mythologie"] .texts-hero-inner { z-index:1; }
+@media (max-width:620px) {
+  body[data-catalog-section="mythologie"] .texts-hero::before {
+    top:-30px;
+    right:-48%;
+    bottom:-48px;
+    width:132%;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Simon_Vouet_-_The_Muses_Urania_and_Calliope%2C_1634.jpg/960px-Simon_Vouet_-_The_Muses_Urania_and_Calliope%2C_1634.jpg");
+    background-position:60% 52%;
+    opacity:.11;
+    -webkit-mask-image:linear-gradient(to left,#000 0%,#000 57%,rgba(0,0,0,.76) 72%,rgba(0,0,0,.32) 91%,transparent 100%);
+    mask-image:linear-gradient(to left,#000 0%,#000 57%,rgba(0,0,0,.76) 72%,rgba(0,0,0,.32) 91%,transparent 100%);
+  }
+}
+
+/* Ressources philosophie — état préparé pour l'animation JS des dépliants. */
+.philo-resources-v1 .bible-resource-group-body {
+  transform-origin:top center;
+  will-change:height,opacity,transform;
+}
+.philo-resources-v1 .bible-resource-group.is-resource-animating {
+  overflow:hidden;
+}
+.philo-resources-v1 .bible-resource-group > summary {
+  transition:background .24s ease,color .24s ease;
+}
+.philo-resources-v1 .bible-resource-group > summary::after,
+.philo-resources-v1 .bible-resource-group-icon {
+  transition:transform .34s cubic-bezier(.16,1,.3,1),background .24s ease,color .24s ease;
 }

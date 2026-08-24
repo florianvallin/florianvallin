@@ -9,10 +9,15 @@
   const drawer = document.getElementById("selectionDrawer");
   const closeButton = document.getElementById("selectionClose");
   const backdrop = document.getElementById("drawerBackdrop");
+  const position = document.getElementById("artPosition");
+  const selectionCount = document.getElementById("selectionCount");
+  const triggerCount = document.getElementById("selectionTriggerCount");
 
   let currentSlug = null;
 
   const bySlug = (slug) => videos.find((video) => video.slug === slug) || videos[0];
+  const indexOf = (slug) => Math.max(0, videos.findIndex((video) => video.slug === slug));
+  const formatNumber = (number) => String(number).padStart(2, "0");
 
   function youtubeId(url) {
     try {
@@ -91,13 +96,26 @@
 
       const number = document.createElement("span");
       number.className = "selection-index";
-      number.textContent = String(index + 1).padStart(2, "0");
+      number.textContent = formatNumber(index + 1);
+
+      const main = document.createElement("span");
+      main.className = "selection-item-main";
+
+      const kind = document.createElement("span");
+      kind.className = "selection-kind";
+      kind.textContent = video.type === "youtube" ? "YouTube" : "Vidéo";
 
       const name = document.createElement("span");
       name.className = "selection-name";
       name.textContent = video.title;
 
-      link.append(number, name);
+      const arrow = document.createElement("span");
+      arrow.className = "selection-arrow";
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.textContent = "↗";
+
+      main.append(kind, name);
+      link.append(number, main, arrow);
       list.append(link);
     });
   }
@@ -110,6 +128,9 @@
     renderList(video.slug);
     title.textContent = video.title;
     document.title = `${video.title} | Art — Florian Vallin`;
+
+    const currentIndex = indexOf(video.slug) + 1;
+    if (position) position.textContent = `${formatNumber(currentIndex)} / ${formatNumber(videos.length)}`;
 
     if (updateUrl) {
       const url = new URL(window.location.href);
@@ -133,6 +154,10 @@
     backdrop.tabIndex = -1;
     if (focusTrigger) trigger.focus({ preventScroll: true });
   }
+
+  const countLabel = `${formatNumber(videos.length)} fragment${videos.length > 1 ? "s" : ""}`;
+  if (selectionCount) selectionCount.textContent = countLabel;
+  if (triggerCount) triggerCount.textContent = formatNumber(videos.length);
 
   trigger.addEventListener("click", openDrawer);
   closeButton.addEventListener("click", () => closeDrawer());

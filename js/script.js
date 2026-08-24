@@ -11,6 +11,8 @@
 
   ready(() => {
     ensureBlogLinks();
+    initSiteSearch();
+    initBlogIndexSearch();
     initNavigation();
     initFaq();
     initBackToTop();
@@ -34,6 +36,248 @@
     if (footerTexts && !footerTexts.querySelector(".footer-blog-link")) {
       footerTexts.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
     }
+  }
+
+  function normalizeSearchText(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[’']/g, " ")
+      .replace(/[^a-z0-9\s-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function initSiteSearch() {
+    const nav = document.querySelector(".nav-links");
+    const blogLink = nav?.querySelector(".nav-blog-link");
+    if (!nav || !blogLink || nav.querySelector(".nav-site-search")) return;
+
+    const navbar = nav.closest(".navbar");
+    const wrap = document.createElement("div");
+    wrap.className = "nav-site-search";
+    wrap.innerHTML = `
+      <button class="nav-site-search-toggle" type="button" aria-label="Rechercher sur le site" aria-expanded="false" aria-controls="site-search-panel">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
+        <span class="nav-site-search-label">Rechercher</span>
+      </button>
+      <div class="nav-site-search-panel" id="site-search-panel" hidden>
+        <div class="nav-site-search-field">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
+          <input type="search" autocomplete="off" spellcheck="false" placeholder="Auteur, notion, titre…" aria-label="Rechercher sur florianvallin.fr">
+          <button class="nav-site-search-clear" type="button" aria-label="Effacer la recherche" hidden>×</button>
+        </div>
+        <div class="nav-site-search-results" aria-live="polite"></div>
+      </div>`;
+    blogLink.insertAdjacentElement("afterend", wrap);
+    nav.classList.add("has-site-search");
+
+    const toggle = wrap.querySelector(".nav-site-search-toggle");
+    const panel = wrap.querySelector(".nav-site-search-panel");
+    const input = wrap.querySelector("input");
+    const clear = wrap.querySelector(".nav-site-search-clear");
+    const results = wrap.querySelector(".nav-site-search-results");
+    let indexPromise = null;
+    let firstResult = null;
+
+    const shortcuts = [
+      { title:"Bibliothèque de textes", meta:"Philosophie · Mythologie · Théologie", url:"/textes/", accent:"texts" },
+      { title:"Blog", meta:"Repères · programmes · méthode", url:"/blog/", accent:"blog" },
+      { title:"Boussole philosophique", meta:"Dictionnaire · chronologie · parcours · ressources", url:"/textes/philosophie/boussole/", accent:"compass" }
+    ];
+
+    const loadIndex = () => {
+      if (!indexPromise) {
+        indexPromise = fetch("/js/site-search-index.json?v=20260816-1", { credentials:"same-origin" })
+          .then((response) => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return response.json();
+          })
+          .then((items) => Array.isArray(items) ? items : [])
+          .catch(() => []);
+      }
+      return indexPromise;
+    };
+
+    const makeResult = (item, label) => {
+      const link = document.createElement("a");
+      link.className = "nav-site-search-result";
+      link.href = item.url;
+      const labelText = String(label || item.kindLabel || "").toLowerCase();
+      const accent = item.accent
+        || (labelText.includes("mythologie") ? "mythologie"
+          : labelText.includes("théologie") || labelText.includes("theologie") ? "theologie"
+          : labelText.includes("autres") ? "autres"
+          : item.kind === "blog" || labelText.includes("blog") ? "blog"
+          : labelText.includes("boussole") ? "compass"
+          : labelText.includes("philosophie") ? "philosophie"
+          : item.kind === "texte" ? "texts" : "compass");
+      link.dataset.searchAccent = accent;
+      const kind = document.createElement("span");
+      kind.textContent = label || item.kindLabel || "Page";
+      const title = document.createElement("strong");
+      title.textContent = item.title;
+      const meta = document.createElement("small");
+      meta.textContent = item.meta || "";
+      link.append(kind, title, meta);
+      return link;
+    };
+
+    const showShortcuts = () => {
+      firstResult = null;
+      results.replaceChildren();
+      const intro = document.createElement("p");
+      intro.className = "nav-site-search-hint";
+      intro.textContent = "Rechercher un auteur, une notion, un texte ou un billet.";
+      const list = document.createElement("div");
+      list.className = "nav-site-search-shortcuts";
+      shortcuts.forEach((item) => list.append(makeResult(item, "Accès rapide")));
+      results.append(intro, list);
+    };
+
+    const scoreItem = (item, terms) => {
+      const title = normalizeSearchText(item.title);
+      const meta = normalizeSearchText(item.meta);
+      const keywords = normalizeSearchText(item.keywords);
+      const haystack = `${title} ${meta} ${keywords}`;
+      if (!terms.every((term) => haystack.includes(term))) return -1;
+      let score = 0;
+      terms.forEach((term) => {
+        if (title === term) score += 120;
+        else if (title.startsWith(term)) score += 70;
+        else if (title.includes(term)) score += 45;
+        if (meta.includes(term)) score += 22;
+        if (keywords.includes(term)) score += 14;
+      });
+      if (item.kind === "texte") score += 4;
+      return score;
+    };
+
+    const renderSearch = async () => {
+      const query = normalizeSearchText(input.value);
+      clear.hidden = !query;
+      if (!query) {
+        showShortcuts();
+        return;
+      }
+      results.innerHTML = '<p class="nav-site-search-loading">Recherche…</p>';
+      const items = await loadIndex();
+      if (normalizeSearchText(input.value) !== query) return;
+      const terms = query.split(" ").filter(Boolean);
+      const matches = items
+        .map((item) => ({ item, score:scoreItem(item, terms) }))
+        .filter((entry) => entry.score >= 0)
+        .sort((a,b) => b.score - a.score || a.item.title.localeCompare(b.item.title, "fr"))
+        .slice(0,8);
+      results.replaceChildren();
+      firstResult = null;
+      if (!matches.length) {
+        const empty = document.createElement("p");
+        empty.className = "nav-site-search-empty";
+        empty.textContent = "Aucun résultat. Essayez un auteur, une notion ou un mot du titre.";
+        results.append(empty);
+        return;
+      }
+      const count = document.createElement("p");
+      count.className = "nav-site-search-count";
+      count.textContent = `${matches.length} résultat${matches.length > 1 ? "s" : ""} affiché${matches.length > 1 ? "s" : ""}`;
+      const list = document.createElement("div");
+      list.className = "nav-site-search-list";
+      matches.forEach(({item}) => {
+        const link = makeResult(item);
+        if (!firstResult) firstResult = link;
+        list.append(link);
+      });
+      results.append(count, list);
+    };
+
+    let closeTimer = 0;
+    const open = () => {
+      window.clearTimeout(closeTimer);
+      panel.hidden = false;
+      wrap.classList.add("is-open");
+      navbar?.classList.add("site-search-open");
+      toggle.setAttribute("aria-expanded", "true");
+      if (!input.value.trim()) showShortcuts();
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => panel.classList.add("is-visible"));
+      });
+      window.setTimeout(() => input.focus({ preventScroll:true }), 170);
+    };
+    const close = () => {
+      wrap.classList.remove("is-open");
+      panel.classList.remove("is-visible");
+      toggle.setAttribute("aria-expanded", "false");
+      closeTimer = window.setTimeout(() => {
+        if (!wrap.classList.contains("is-open")) {
+          panel.hidden = true;
+          navbar?.classList.remove("site-search-open");
+        }
+      }, 440);
+    };
+
+    toggle.addEventListener("click", () => wrap.classList.contains("is-open") ? close() : open());
+    input.addEventListener("input", renderSearch);
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && firstResult) {
+        event.preventDefault();
+        window.location.href = firstResult.href;
+      }
+    });
+    clear.addEventListener("click", () => {
+      input.value = "";
+      clear.hidden = true;
+      showShortcuts();
+      input.focus();
+    });
+    document.addEventListener("click", (event) => {
+      if (!panel.hidden && !wrap.contains(event.target)) close();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !panel.hidden) {
+        close();
+        toggle.focus();
+      }
+    });
+  }
+
+  function initBlogIndexSearch() {
+    const search = document.querySelector("[data-blog-search]");
+    const grid = document.querySelector("[data-blog-grid]");
+    const cards = [...document.querySelectorAll("[data-blog-card]")];
+    if (!search || !grid || !cards.length) return;
+    const input = search.querySelector("[data-blog-search-input]");
+    const clear = search.querySelector("[data-blog-search-clear]");
+    const status = document.querySelector("[data-blog-search-status]");
+    if (!input || !clear || !status) return;
+
+    const searchable = cards.map((card) => ({
+      card,
+      haystack:normalizeSearchText(`${card.dataset.blogSearchText || ""} ${card.textContent || ""}`)
+    }));
+
+    const apply = () => {
+      const query = normalizeSearchText(input.value);
+      const terms = query.split(" ").filter(Boolean);
+      clear.hidden = !query;
+      let visible = 0;
+      searchable.forEach(({card,haystack}) => {
+        const match = !terms.length || terms.every((term) => haystack.includes(term));
+        card.hidden = !match;
+        if (match) visible += 1;
+      });
+      grid.classList.toggle("blog-grid--filtered", Boolean(query));
+      status.hidden = !query;
+      if (query) status.textContent = visible ? `${visible} billet${visible > 1 ? "s" : ""} trouvé${visible > 1 ? "s" : ""}.` : "Aucun billet ne correspond à cette recherche.";
+    };
+
+    input.addEventListener("input", apply);
+    clear.addEventListener("click", () => {
+      input.value = "";
+      apply();
+      input.focus();
+    });
   }
 
   function initNavigation() {

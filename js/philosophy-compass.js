@@ -1456,6 +1456,81 @@
   }
 
 
+
+  // ------------------------------------------------------------
+  // Ressources : animation douce des <details> natifs.
+  // On garde la sémantique/accessibilité de details/summary, mais on retarde
+  // la fermeture jusqu'à la fin du mouvement afin d'éviter l'effet brutal.
+  // ------------------------------------------------------------
+  const philoResourceGroups = [...document.querySelectorAll(".philo-resources-v1 details.bible-resource-group")];
+  if (philoResourceGroups.length) {
+    const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+    philoResourceGroups.forEach((detail) => {
+      const summary = detail.querySelector(":scope > summary");
+      const body = detail.querySelector(":scope > .bible-resource-group-body");
+      if (!summary || !body) return;
+
+      let intendedOpen = detail.open;
+      let running = null;
+
+      const cleanup = (open) => {
+        detail.open = open;
+        detail.classList.remove("is-resource-animating");
+        body.style.removeProperty("height");
+        body.style.removeProperty("overflow");
+        body.style.removeProperty("opacity");
+        body.style.removeProperty("transform");
+        running = null;
+      };
+
+      const animateTo = (open) => {
+        intendedOpen = open;
+        running?.cancel?.();
+        if (reducedMotion || !body.animate) {
+          cleanup(open);
+          return;
+        }
+
+        detail.classList.add("is-resource-animating");
+        const wasOpen = detail.open;
+        const currentHeight = wasOpen ? body.getBoundingClientRect().height : 0;
+        if (open) detail.open = true;
+
+        if (open) {
+          body.style.height = "auto";
+          const targetHeight = body.scrollHeight;
+          body.style.height = "0px";
+          body.style.overflow = "hidden";
+          running = body.animate(
+            [
+              { height:`${Math.max(0,currentHeight)}px`, opacity:.18, transform:"translateY(-7px)" },
+              { height:`${targetHeight}px`, opacity:1, transform:"translateY(0)" }
+            ],
+            { duration:420, easing:"cubic-bezier(.16,1,.3,1)", fill:"forwards" }
+          );
+          running.onfinish = () => cleanup(true);
+        } else {
+          const startHeight = body.getBoundingClientRect().height || body.scrollHeight;
+          body.style.overflow = "hidden";
+          running = body.animate(
+            [
+              { height:`${startHeight}px`, opacity:1, transform:"translateY(0)" },
+              { height:"0px", opacity:.12, transform:"translateY(-6px)" }
+            ],
+            { duration:330, easing:"cubic-bezier(.4,0,.2,1)", fill:"forwards" }
+          );
+          running.onfinish = () => cleanup(false);
+        }
+      };
+
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        animateTo(!intendedOpen);
+      });
+    });
+  }
+
   // ------------------------------------------------------------
   // Navigation de la boussole : complète dans sa position initiale, puis
   // réduite aux quatre pictogrammes lorsqu'elle rejoint le header.

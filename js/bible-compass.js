@@ -496,21 +496,16 @@
 
 
   // ------------------------------------------------------------
-  // Navigation mobile de la boussole : lisible en tête de page, puis
-  // transformée en rail d’icônes discret quand on continue la lecture.
+  // Navigation de la boussole : complète au départ, puis réduite aux
+  // pictogrammes lorsqu'elle rejoint le header. Sur ordinateur, le libellé
+  // du pictogramme survolé se déploie ; sur mobile, le rail reste discret.
   // ------------------------------------------------------------
   const jumpWrap = document.querySelector("[data-bible-jump-wrap]");
   const jumpNav = jumpWrap?.querySelector(".bible-compass-jump");
   if (jumpWrap && jumpNav) {
-    const mobileMq = window.matchMedia("(max-width: 700px)");
     let wrapHeight = 0;
 
     const measureJump = () => {
-      if (!mobileMq.matches) {
-        jumpNav.classList.remove("is-floating");
-        jumpWrap.style.removeProperty("height");
-        return;
-      }
       const wasFloating = jumpNav.classList.contains("is-floating");
       if (wasFloating) jumpNav.classList.remove("is-floating");
       wrapHeight = Math.ceil(jumpNav.getBoundingClientRect().height);
@@ -519,22 +514,18 @@
     };
 
     const updateFloatingJump = () => {
-      if (!mobileMq.matches) {
-        jumpNav.classList.remove("is-floating");
-        jumpWrap.style.removeProperty("height");
-        return;
-      }
       if (!wrapHeight) measureJump();
       const siteHeader = document.getElementById("site-header");
-      const headerHeight = siteHeader?.getBoundingClientRect().height || 68;
+      const headerHeight = siteHeader?.getBoundingClientRect().height || (window.innerWidth <= 700 ? 60 : 68);
       const rect = jumpWrap.getBoundingClientRect();
       jumpNav.classList.toggle("is-floating", rect.top <= headerHeight + 8);
     };
 
     jumpNav.querySelectorAll("a").forEach(link => {
       const label = link.querySelector(".bible-jump-copy strong")?.textContent?.trim();
+      const subtitle = link.querySelector(".bible-jump-copy small")?.textContent?.trim();
       if (label) {
-        link.setAttribute("aria-label", label);
+        link.setAttribute("aria-label", subtitle ? `${label} — ${subtitle}` : label);
         link.dataset.floatingLabel = label;
       }
     });
@@ -543,10 +534,9 @@
     updateFloatingJump();
     window.addEventListener("scroll", updateFloatingJump, { passive:true });
     window.addEventListener("resize", () => { measureJump(); updateFloatingJump(); });
-    mobileMq.addEventListener?.("change", () => { measureJump(); updateFloatingJump(); });
+    window.addEventListener("load", () => { measureJump(); updateFloatingJump(); }, { once:true });
   }
 
-  // ------------------------------------------------------------
   // Dictionnaire biblique : recherche, familles et navigation croisée.
   // ------------------------------------------------------------
   const glossaryRoot = document.querySelector("[data-bible-glossary]");

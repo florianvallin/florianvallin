@@ -4,7 +4,7 @@
   if (!target) return;
   const params = new URLSearchParams(window.location.search);
   const cleanPathMatch = window.location.pathname.match(/^\/textes\/([^/]+)\/?$/);
-  const reservedPaths = new Set(["lire", "philosophie", "theologie", "autres"]);
+  const reservedPaths = new Set(["lire", "philosophie", "mythologie", "theologie", "autres"]);
   const cleanPathId = cleanPathMatch && !reservedPaths.has(cleanPathMatch[1]) ? decodeURIComponent(cleanPathMatch[1]) : null;
   const id = params.get("id") || cleanPathId;
   const text = (window.FV_TEXT_CATALOG || []).find((item) => item.id === id);
@@ -19,13 +19,15 @@
     text.paragraphs = bibleData.paragraphs || [];
   }
   const bibleCycle = bibleData?.cycleId ? bibleRoot.cycles?.[bibleData.cycleId] : null;
-  target.classList.remove("text-detail--philosophie", "text-detail--theologie", "text-detail--autres");
+  target.classList.remove("text-detail--philosophie", "text-detail--mythologie", "text-detail--theologie", "text-detail--autres");
   target.classList.add(`text-detail--${text.section}`);
   const sectionLabel = window.FV_TEXT_SECTION_LABELS[text.section];
   const sections = text.sections || [text.section];
-  const isDualSection = sections.includes("philosophie") && sections.includes("theologie");
-  const sectionHeading = isDualSection ? "Philosophie & théologie" : sectionLabel;
-  const sectionSymbols = { philosophie:"φ", theologie:"✦", autres:"—" };
+  const isMultiSection = sections.length > 1;
+  const sectionHeading = isMultiSection
+    ? sections.map((section) => window.FV_TEXT_SECTION_LABELS[section] || section).join(" & ")
+    : sectionLabel;
+  const sectionSymbols = { philosophie:"φ", mythologie:"Μ", theologie:"✦", autres:"—" };
   const sectionMark = sections.map((section) => `<span class="text-detail-section-symbol text-detail-section-symbol--${section}">${sectionSymbols[section] || ""}</span>`).join("");
   const textUrl = window.FV_TEXT_URL || ((item) => `/textes/${encodeURIComponent(typeof item === "string" ? item : item.id)}/`);
   const cleanTextUrl = textUrl(text);
@@ -36,7 +38,7 @@
   try {
     const storedReturn = window.sessionStorage.getItem("fvTextCatalogReturn") || "";
     const storedPath = storedReturn.split("?")[0];
-    if (["/textes/", "/textes/philosophie/", "/textes/theologie/", "/textes/autres/"].includes(storedPath)) returnUrl = storedReturn;
+    if (["/textes/", "/textes/philosophie/", "/textes/mythologie/", "/textes/theologie/", "/textes/autres/"].includes(storedPath)) returnUrl = storedReturn;
   } catch (_) {}
   const themes = text.themes || (text.theme ? [text.theme] : []);
   const currentProgramThemes = window.FV_CURRENT_PROGRAM_THEMES || [];
@@ -447,7 +449,7 @@
   description.content = text.description;
   target.innerHTML = `<div class="text-detail-inner">
     <p class="text-breadcrumb"><a class="text-back-results" href="${returnUrl}"><span aria-hidden="true">←</span> Retour aux résultats</a><span aria-hidden="true">·</span><a href="/textes/${text.section}/">${sectionLabel}</a></p>
-    <p class="text-detail-section text-detail-section--${text.section}${isDualSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
+    <p class="text-detail-section text-detail-section--${text.section}${isMultiSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
     <h1>${text.title}${text.familiarIdea ? ` <span class="text-detail-familiar-idea">(${text.familiarIdea})</span>` : ""}</h1>
     <p class="text-detail-author">${text.author
       ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${escapeAttribute(text.author)}">${escapeAttribute(text.credit || text.author)}</a>`

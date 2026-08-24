@@ -2921,7 +2921,8 @@
     {
   "id": "sophocle-antigone-lois-non-ecrites",
   "section": "philosophie",
-  "cardMeta": "Justice · droit naturel et droit positif",
+  "sections": ["philosophie", "mythologie"],
+  "cardMeta": "Loi · justice · désobéissance",
   "title": "Il existe des lois non écrites supérieures aux lois humaines",
   "author": "Sophocle",
   "authorTag": "Sophocle",
@@ -2930,12 +2931,11 @@
   "authorMeta": "(v. 495–406 av. J.-C.) · tragédie grecque",
   "themes": [
     "Justice",
-    "Devoir",
-    "Religion"
+    "État"
   ],
   "work": "Antigone",
   "publication": "v. 442 av. J.-C., trad. P. Mazon, Belles Lettres, 1962, p. 102–104",
-  "description": "Une loi politique peut-elle obliger lorsqu’elle contredit une loi tenue pour plus ancienne, divine et inébranlable ?",
+  "description": "Faut-il obéir à une loi que l’on juge injuste ?",
   "context": "Dans <em>Antigone</em>, l’ordre de Créon entre en conflit avec des <strong>lois non écrites</strong> qu’Antigone juge plus anciennes et plus légitimes que tout décret humain. Le texte pose directement la question des limites de l’obéissance à l’État.",
   "readingQuestions": [
     "Pourquoi Antigone refuse-t-elle d’obéir au décret de Créon ?",
@@ -2988,6 +2988,12 @@
       "kind": "adverse",
       "label": "Calliclès — Nous n’obéissons à la loi que par convention",
       "relation": "Les deux textes invoquent une norme supérieure à la loi positive, mais dans des directions morales presque opposées."
+    },
+    {
+      "id": "eschyle-oreste-tribunal-justice",
+      "kind": "proche",
+      "label": "Eschyle — Oreste : de la vengeance au tribunal",
+      "relation": "Antigone interroge la limite de la loi politique ; le procès d’Oreste montre comment une institution peut transformer un conflit de vengeance en jugement."
     }
   ],
   "paragraphs": [
@@ -3506,6 +3512,7 @@
     {
   "id": "platon-glaucon-devoir-contrainte",
   "section": "philosophie",
+  "sections": ["philosophie", "mythologie"],
   "cardMeta": "Justice et nature humaine",
   "title": "Si nous le pouvions, nous désobéirions sans cesse au devoir",
   "author": "Platon",
@@ -4819,6 +4826,7 @@
     {
   "id": "platon-mythe-androgyne-desir",
   "section": "philosophie",
+  "sections": ["philosophie", "mythologie"],
   "cardMeta": "Antiquité grecque",
   "title": "Le désir amoureux poursuit l’unité perdue",
   "author": "Platon",
@@ -6070,8 +6078,8 @@
         { type:"plain", definition:"<strong>Ouvertures philosophiques.</strong> Le récit peut être prolongé par trois problèmes classiques : le commencement du temps, la raison de l’existence du monde et la place de l’être humain face à la nature." },
         { type:"analysis", term:"Saint Augustin — Le temps commence-t-il avec le monde ?", badge:"philosophie", href:"/textes/augustin-temps-creation-monde/", definition:"Augustin part directement du « Au commencement » de la Genèse : demander ce que Dieu faisait « avant » la création suppose déjà un temps qui, selon lui, appartient lui-même au monde créé." },
         { type:"analysis", term:"Leibniz — Pourquoi le monde existe-t-il ?", badge:"philosophie", href:"/textes/leibniz-raison-existence-monde/", definition:"Leibniz transforme l’origine du monde en problème de raison suffisante : si le monde est contingent, peut-il contenir en lui-même la raison de sa propre existence ?" },
-        { type:"analysis", term:"Descartes — Devenir « comme maîtres et possesseurs de la nature »", badge:"philosophie", href:"/textes/descartes-maitres-possesseurs-nature/", definition:"Le commandement de « soumettre » la terre peut être mis en regard du projet cartésien de maîtriser les forces naturelles — tandis que Genèse 2 demande aussi à l’être humain de « travailler et garder » le jardin." },
-      ],
+        { type:"analysis", term:"Descartes — Devenir « comme maîtres et possesseurs de la nature »", badge:"philosophie", href:"/textes/descartes-maitres-possesseurs-nature/", definition:"Le commandement de « soumettre » la terre peut être mis en regard du projet cartésien de maîtriser les forces naturelles — tandis que Genèse 2 demande aussi à l’être humain de « travailler et garder » le jardin." }
+    ],
       readingBlocks:[
         { type:"heading", text:"Premier récit — la Création en sept jours" },
         { type:"movementStart", title:"Le monde s’ordonne", range:"1,1–13", marker:"1", aria:"Genèse 1, verset 1", text:"Au commencement, Dieu créa le ciel et la terre." },
@@ -6148,8 +6156,8 @@
           { title:"Le paradis terrestre", alt:"Enluminure représentant Adam et Ève dans le paradis terrestre.", details:"Enluminure conservée à la Bibliothèque nationale de France.", src:"https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/ej42bLks/uploads/media/image/20210706164952000000_20201204061949000000_can_263.jpg", original:"https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/ej42bLks/uploads/media/image/20210706164952000000_20201204061949000000_can_263.jpg", source:"https://essentiels.bnf.fr/fr/article/7d6606b6-f27e-4db5-ae91-74825d32e19d-sources-lutopie" },
           { title:"La création d’Ève", alt:"Mosaïque médiévale représentant la création d’Ève à partir d’Adam.", details:"Mosaïque du XIIIe siècle, narthex de la basilique Saint-Marc, Venise.", src:"https://1oeuvre-1histoire.com/creation-adam-eve-3.jpg", original:"https://1oeuvre-1histoire.com/creation-adam-eve-3.jpg", source:"https://1oeuvre-1histoire.com/creation-adam-eve.html" },
           { title:"Adam et Ève", alt:"Représentation artistique d’Adam et Ève.", details:"", src:"https://cdn.prod.website-files.com/5ed7bf5384079963115358b8/670e1e731056bd91b44556a0_5f083235697e96469589596c_7026707189_30eb229578_b%2520copie.jpeg", original:"https://cdn.prod.website-files.com/5ed7bf5384079963115358b8/670e1e731056bd91b44556a0_5f083235697e96469589596c_7026707189_30eb229578_b%2520copie.jpeg" }
-        ] },
-      ],
+        ] }
+    ],
       paragraphs:[
         "<strong>Premier récit — la Création en sept jours</strong>",
         "Au commencement, Dieu créa le ciel et la terre. La terre était informe et vide, les ténèbres étaient au-dessus de l’abîme et le souffle de Dieu planait au-dessus des eaux. Dieu dit : « Que la lumière soit. » Et la lumière fut. Dieu vit que la lumière était bonne, et Dieu sépara la lumière des ténèbres. Dieu appela la lumière : « jour », il appela les ténèbres : « nuit ». Il y eut un soir, il y eut un matin : ce fut le premier jour.",
@@ -10286,7 +10294,6 @@
       ]
     },
 
-,
 {
       id:"exode-alliance-sinai", section:"theologie", bible:true,
       cardMeta:"Exode · alliance, peuple et théophanie",
@@ -10363,12 +10370,1346 @@
         { type:"movementStart", title:"Le prochain", range:"20,12–17", marker:"12", aria:"Exode 20, versets 12 à 17, passage reproduit dans la source", text:"Honore ton père et ta mère, afin d’avoir longue vie sur la terre que te donne le Seigneur ton Dieu.<br><br>Tu ne commettras pas de meurtre.<br><br>Tu ne commettras pas d’adultère.<br><br>Tu ne commettras pas de vol.<br><br>Tu ne porteras pas de faux témoignage contre ton prochain.<br><br>Tu ne convoiteras pas la maison de ton prochain ; tu ne convoiteras pas la femme de ton prochain, ni son serviteur, ni sa servante, ni son bœuf, ni son âne : rien de ce qui lui appartient. »" }
       ]
     }
+,
+{
+    "id": "hesiode-cosmogonie-chaos-gaia-eros",
+    "section": "mythologie",
+    "cardMeta": "Origine · ordre · monde",
+    "title": "Au commencement : Chaos, Gaïa et Éros",
+    "author": "Hésiode",
+    "authorTag": "Hésiode",
+    "cardHighlight": "Chaos, Gaïa et Éros",
+    "familiarIdea": "",
+    "authorMeta": "VIIIe–VIIe s. av. J.-C. · poésie grecque archaïque",
+    "themes": [
+        "Nature",
+        "Religion"
+    ],
+    "work": "Théogonie",
+    "publication": "v. 116–127 (extraits), trad. Leconte de Lisle, Alphonse Lemerre, s. d. (1869 ?)",
+    "description": "Comment l’ordre du monde peut-il apparaître progressivement ?",
+    "context": "Au commencement, le monde n’est pas présenté comme un ensemble déjà ordonné. Khaos, Gaia, le Tartaros et Érôs apparaissent d’abord, puis d’autres puissances naissent les unes des autres. Le récit invite ainsi à penser <strong>l’apparition de l’ordre</strong> : le cosmos se constitue peu à peu par des générations, des séparations et des rapports entre puissances. Zeus n’est pas à l’origine de tout ; il appartient à une histoire divine déjà commencée.",
+    "readingQuestions": [
+        "Que signifie le fait que Khaos, Gaia et Érôs apparaissent avant les dieux olympiens ?",
+        "Pourquoi l’origine du monde prend-elle ici la forme d’une généalogie ?",
+        "Quelle différence y a-t-il entre créer le monde et faire naître progressivement un ordre ?"
+    ],
+    "glossary": [
+        {
+            "term": "Khaos",
+            "definition": "Puissance primordiale placée au commencement du récit. Le mot ne doit pas être réduit au sens moderne de « désordre » : il désigne d’abord une ouverture ou une béance originelle."
+        },
+        {
+            "term": "Gaia",
+            "definition": "La Terre, pensée ici comme puissance divine primordiale et comme assise du monde."
+        },
+        {
+            "term": "Érôs",
+            "definition": "Puissance d’attraction et de génération. Il s’agit ici d’un Éros primordial, antérieur au petit dieu ailé des traditions iconographiques plus tardives."
+        }
+    ],
+    "readingNotes": [
+        {
+            "type": "concept",
+            "term": "Le monde et les dieux",
+            "definition": "Le monde et les dieux ne constituent pas deux histoires séparées : les éléments du cosmos sont eux-mêmes des puissances divines et leur généalogie organise progressivement le réel."
+        },
+        {
+            "type": "opposition",
+            "left": {
+                "term": "Créer",
+                "definition": "Faire exister le monde à partir d’une volonté qui lui est extérieure."
+            },
+            "right": {
+                "term": "Engendrer",
+                "definition": "Faire apparaître de nouvelles puissances par génération à partir de réalités déjà présentes."
+            },
+            "conclusion": "Ici, le monde se déploie surtout par naissance et filiation : l’ordre apparaît progressivement plutôt qu’en un seul geste."
+        },
+        {
+            "type": "analysis",
+            "term": "De Khaos à l’ordre",
+            "definition": "L’ordre n’est pas le point de départ du récit. Le poème fait émerger peu à peu des régions, des puissances et des générations qui donnent au monde sa structure. Cette progression est une clé de lecture majeure de la mythologie grecque."
+        },
+        {
+            "type": "prose",
+            "term": "Avant Zeus",
+            "definition": "Zeus n’est pas le créateur initial de tout ce qui existe. Il appartient à une génération beaucoup plus tardive et son règne résultera d’une histoire de successions et de conflits divins."
+        }
+    ],
+    "relatedTexts": [
+        {
+            "id": "genese-naissance-du-monde",
+            "kind": "proche",
+            "label": "Genèse — La naissance du monde",
+            "relation": "Deux récits d’origine à comparer : la Genèse ordonne la création par la parole divine, tandis qu’Hésiode déploie une généalogie de puissances primordiales."
+        },
+        {
+            "id": "hesiode-promethee-vol-feu",
+            "kind": "suite",
+            "label": "Hésiode — Prométhée vole le feu aux dieux",
+            "relation": "Après l’origine du cosmos et des dieux, le mythe permet de déplacer la question vers la condition proprement humaine et la technique."
+        }
+    ],
+    "paragraphs": [
+        "Avant toutes choses fut Khaos, et puis Gaia au large sein, siège toujours solide de tous les Immortels qui habitent les sommets du neigeux Olympos et le Tartaros sombre dans les profondeurs de la terre spacieuse, et puis Érôs, le plus beau d’entre les Dieux Immortels, qui rompt les forces, et qui de tous les Dieux et de tous les hommes dompte l’intelligence et la sagesse dans leur poitrine.",
+        "Et de Khaos naquirent Érébos et la noire Nyx. Et, de Nyx, Aithèr et Hèmérè naquirent, car elle les conçut, s’étant unie d’amour à Érébos.",
+        "Et, d’abord, Gaia enfanta son égal en grandeur, l’Ouranos étoilé, afin qu’il la couvrît tout entière et qu’il fût une demeure sûre pour les Dieux heureux."
+    ]
+},
+{
+    "id": "hesiode-promethee-vol-feu",
+    "section": "mythologie",
+    "cardMeta": "Technique · liberté · limites",
+    "title": "Prométhée vole le feu aux dieux",
+    "author": "Hésiode",
+    "authorTag": "Hésiode",
+    "cardHighlight": "vole le feu aux dieux",
+    "familiarIdea": "",
+    "authorMeta": "VIIIe–VIIe s. av. J.-C. · poésie grecque archaïque",
+    "themes": [
+        "Technique",
+        "Liberté"
+    ],
+    "work": "Les Travaux et les Jours",
+    "publication": "v. 42–58 (extrait), trad. Anne Bignan, éd. Ernest Falconnet, Desrez, 1838",
+    "description": "La technique nous libère-t-elle, ou nous donne-t-elle un pouvoir difficile à maîtriser ?",
+    "context": "Prométhée dérobe le feu que Zeus avait caché aux humains. Ce feu représente plus qu’un moyen de se chauffer : il permet de cuire, fabriquer, transformer et maîtriser davantage le milieu. Le mythe relie ainsi <strong>puissance technique et transgression</strong> : acquérir de nouvelles capacités libère de certaines contraintes, mais pose aussitôt la question des limites et de l’usage de cette puissance.",
+    "readingQuestions": [
+        "Pourquoi le feu peut-il être compris comme plus qu’un simple moyen de se chauffer ?",
+        "En quoi Prométhée aide-t-il les humains tout en transgressant l’ordre fixé par Zeus ?",
+        "Le progrès de la puissance technique rend-il l’être humain plus libre, ou l’expose-t-il aussi à de nouveaux dangers ?"
+    ],
+    "glossary": [
+        {
+            "term": "Prométhée",
+            "definition": "Titan associé à la prévoyance et, dans plusieurs récits grecs, à la protection des humains face à Zeus."
+        },
+        {
+            "term": "Japet",
+            "definition": "Titan présenté comme le père de Prométhée dans la généalogie hésiodique."
+        },
+        {
+            "term": "férule",
+            "definition": "Grande tige végétale creuse dont la moelle pouvait conserver une braise ; elle sert ici à dissimuler et transporter le feu volé."
+        }
+    ],
+    "readingNotes": [
+        {
+            "type": "concept",
+            "term": "Transformer le monde",
+            "definition": "Le feu permet de cuire, transformer, forger et fabriquer. Le mythe condense ainsi dans un objet ce qui distingue une humanité capable de modifier son milieu plutôt que de seulement s’y adapter."
+        },
+        {
+            "type": "opposition",
+            "left": {
+                "term": "Bienfait",
+                "definition": "Prométhée rend aux mortels une puissance dont ils étaient privés."
+            },
+            "right": {
+                "term": "Transgression",
+                "definition": "Cette puissance est obtenue contre la volonté de Zeus et par tromperie."
+            },
+            "conclusion": "La même action peut donc être lue comme bienfait du point de vue humain et comme transgression du point de vue de l’ordre divin."
+        },
+        {
+            "type": "analysis",
+            "term": "Une puissance ambivalente",
+            "definition": "La technique peut libérer de certaines contraintes tout en créant de nouveaux risques. Le problème n’est donc pas seulement de pouvoir agir, mais de savoir jusqu’où et comment utiliser cette puissance."
+        }],
+    "relatedTexts": [
+        {
+            "id": "hesiode-pandore-maux-esperance",
+            "kind": "suite",
+            "label": "Hésiode — Pandore ouvre la jarre des maux",
+            "relation": "Zeus annonce précisément ici le « funeste présent » qui constitue la réponse divine au vol du feu."
+        },
+        {
+            "id": "descartes-maitres-possesseurs-nature",
+            "kind": "proche",
+            "label": "Descartes — « Maîtres et possesseurs de la nature »",
+            "relation": "Le mythe de Prométhée offre un contrepoint ancien à la question moderne de la puissance technique et de la maîtrise humaine de la nature."
+        }
+    ],
+    "paragraphs": [
+        "Mais Jupiter nous déroba ce secret, furieux dans son âme d’avoir été trompé par l’astucieux Prométhée. Voilà pourquoi il condamna les hommes aux soucis et aux tourmens. Il leur avait caché le feu ; mais le noble fils de Japet, par un adroit larcin, le leur apporta dans la tige d’une férule, après l’avoir enlevé au prudent Jupiter qui aime à lancer la foudre.",
+        "Ce Dieu qui rassemble les nuages lui dit en son courroux : « Fils de Japet, ô le plus habile de tous les mortels ! tu te réjouis d’avoir dérobé le feu divin et trompé ma sagesse ; mais ton vol te sera fatal à toi et aux hommes à venir. Pour me venger de ce larcin, je leur enverrai un funeste présent dont ils seront tous charmés au fond de leur âme, chérissant eux-mêmes leur propre fléau. »"
+    ]
+},
+{
+    "id": "hesiode-pandore-maux-esperance",
+    "section": "mythologie",
+    "cardMeta": "Mal · espérance · condition humaine",
+    "title": "Pandore ouvre la jarre des maux",
+    "author": "Hésiode",
+    "authorTag": "Hésiode",
+    "cardHighlight": "la jarre des maux",
+    "familiarIdea": "",
+    "authorMeta": "VIIIe–VIIe s. av. J.-C. · poésie grecque archaïque",
+    "themes": [
+        "Travail",
+        "Religion"
+    ],
+    "work": "Les Travaux et les Jours",
+    "publication": "v. 90–105 (extrait), trad. Henri Patin, Garnier Frères, 1892",
+    "description": "Pourquoi l’existence humaine est-elle marquée par la souffrance, et quel rôle reste-t-il à l’espérance ?",
+    "context": "Pandore est envoyée après le vol du feu par Prométhée. Quand la jarre est ouverte, le travail pénible, les maladies et les souffrances se répandent parmi les humains. Le mythe cherche ainsi à donner une origine à la <strong>fragilité de la condition humaine</strong>. Mais l’Espérance reste dans la jarre : est-elle préservée comme un dernier secours, ou retenue à distance des humains ? Le récit laisse cette question ouverte.",
+    "readingQuestions": [
+        "Pourquoi ce qui semble être un cadeau devient-il une punition ?",
+        "Qu’est-ce qui change dans la condition humaine avant et après l’ouverture du vase ?",
+        "Comment interpréter le fait que l’Espérance soit la seule à rester à l’intérieur ?"
+    ],
+    "glossary": [
+        {
+            "term": "Pandore",
+            "definition": "Nom de la première femme dans ce récit hésiodique. Le poème explique son nom par les dons reçus des dieux de l’Olympe."
+        },
+        {
+            "term": "Épiméthée",
+            "definition": "Frère de Prométhée. Malgré l’avertissement de celui-ci, il accepte le présent envoyé par Zeus."
+        },
+        {
+            "term": "vase",
+            "definition": "Le récit grec parle d’un grand récipient, souvent rapproché du <em>pithos</em>, une jarre. La célèbre « boîte de Pandore » appartient à une tradition de réception plus tardive."
+        }
+    ],
+    "readingNotes": [
+        {
+            "type": "concept",
+            "term": "Un cadeau empoisonné",
+            "definition": "Zeus ne frappe pas directement les humains : il leur envoie quelque chose de séduisant qu’ils accueillent eux-mêmes. Le mythe donne ainsi à la catastrophe la forme paradoxale d’un présent désiré."
+        },
+        {
+            "type": "opposition",
+            "left": {
+                "term": "Avant le vase",
+                "definition": "Les hommes sont décrits comme exempts de souffrances, de pénible travail et de maladies."
+            },
+            "right": {
+                "term": "Après le vase",
+                "definition": "Les maux se répandent sur terre et sur mer et deviennent constitutifs de l’existence mortelle."
+            },
+            "conclusion": "Le récit explique mythiquement pourquoi la condition humaine est marquée par l’effort, la vulnérabilité et la souffrance."
+        },
+        {
+            "type": "analysis",
+            "term": "Que signifie l’Espérance ?",
+            "definition": "Le texte dit qu’elle reste dans le vase mais ne tranche pas explicitement sa valeur. Est-elle conservée pour les humains comme ultime ressource, ou enfermée et donc partiellement refusée ? Cette indétermination rend le passage philosophiquement riche."
+        },
+        {
+            "type": "prose",
+            "term": "Une représentation ancienne des femmes",
+            "definition": "Le récit associe la première femme à l’arrivée du malheur et reprend des représentations misogynes propres à son contexte archaïque. Une lecture contemporaine doit les identifier comme un trait historique du texte, et non les reconduire comme une vérité sur les femmes."
+        }],
+    "relatedTexts": [
+        {
+            "id": "hesiode-promethee-vol-feu",
+            "kind": "suite",
+            "label": "Hésiode — Prométhée vole le feu aux dieux",
+            "relation": "Pandore est envoyée en réponse à la transgression de Prométhée : les deux épisodes forment un même enchaînement narratif chez Hésiode."
+        },
+        {
+            "id": "genese-la-chute",
+            "kind": "proche",
+            "label": "Genèse — La Chute",
+            "relation": "Les deux récits sont souvent rapprochés parce qu’ils pensent une condition humaine devenue douloureuse, mais leurs personnages, leurs causes et leur théologie restent profondément différents."
+        }
+    ],
+    "paragraphs": [
+        "Auparavant, la race humaine vivait sur la terre loin de tous les maux, loin de la peine, de la fatigue, des tristes maladies, qui ont apporté aux hommes la vieillesse et la mort (car les hommes vieillissent vite dans l’affliction). Mais Pandore, découvrant de ses mains un vase qu’elle portait, laissa échapper tous ces fléaux et les répandit sur les mortels.",
+        "L’Espérance seule y resta captive, errant sur les bords du vase, prête à s’envoler ; car Pandore le referma sur-le-champ, d’après l’ordre du grand Jupiter. Depuis ce temps, mille fléaux divers parcourent la demeure des mortels ; la terre est pleine de maux, la mer en est pleine ; les maladies viennent d’elles-mêmes nous visiter et, le jour, la nuit, nous apportent la douleur ; elles viennent en silence, car le prudent Jupiter leur a ôté la voix."
+    ]
+},
+{
+    "id": "ovide-deucalion-pyrrha-deluge",
+    "section": "mythologie",
+    "cardMeta": "Justice · catastrophe · recommencement",
+    "title": "Deucalion et Pyrrha après le Déluge",
+    "author": "Ovide",
+    "authorTag": "Ovide",
+    "cardHighlight": "après le Déluge",
+    "familiarIdea": "",
+    "authorMeta": "43 av. J.-C.–17 apr. J.-C. · poésie latine",
+    "themes": [
+        "Justice",
+        "Religion"
+    ],
+    "work": "Métamorphoses, livre I",
+    "publication": "trad. collective, texte établi par Désiré Nisard, Firmin-Didot, 1850 (extraits)",
+    "description": "Une catastrophe peut-elle être à la fois une punition et un nouveau commencement ?",
+    "context": "Une humanité jugée corrompue est détruite par un déluge. Deucalion et Pyrrha survivent parce qu’ils sont présentés comme justes et respectueux des dieux. Pour faire renaître l’humanité, ils doivent ensuite <strong>interpréter un oracle</strong> : la Terre est leur « aïeule » et ses pierres sont ses « os ». Le récit associe ainsi justice, compréhension et recommencement : survivre ne suffit pas, il faut encore comprendre comment reconstruire un monde humain.",
+    "readingQuestions": [
+        "Pourquoi Deucalion et Pyrrha sont-ils les survivants du Déluge ?",
+        "Pourquoi l’oracle exige-t-il une interprétation plutôt qu’une obéissance littérale ?",
+        "Que suggère l’idée d’une humanité nouvelle issue de pierres, qualifiée de « race dure et laborieuse » ?"
+    ],
+    "glossary": [
+        {
+            "term": "Deucalion",
+            "definition": "Héros du Déluge grec, traditionnellement présenté comme le fils de Prométhée."
+        },
+        {
+            "term": "Pyrrha",
+            "definition": "Épouse et compagne de Deucalion, rattachée dans la généalogie mythique à Épiméthée et Pandore."
+        },
+        {
+            "term": "Thémis",
+            "definition": "Puissance divine associée à l’ordre juste et aux normes ; dans cet épisode, elle délivre l’oracle permettant de repeupler la terre."
+        }
+    ],
+    "readingNotes": [
+        {
+            "type": "concept",
+            "term": "Survivre pour recommencer",
+            "definition": "Le récit oppose la destruction collective à la survie de deux figures caractérisées par la justice et la piété. Le recommencement de l’humanité se fait donc à partir d’un modèle moral."
+        },
+        {
+            "type": "analysis",
+            "term": "Comprendre l’oracle",
+            "definition": "Pris à la lettre, l’ordre de jeter les os d’une aïeule paraît impie. Deucalion doit déplacer le sens des mots : l’aïeule est la Terre et ses os sont les pierres. Le salut passe ainsi par une véritable opération d’interprétation."
+        },
+        {
+            "type": "concept",
+            "term": "Une humanité née de la terre",
+            "definition": "La nouvelle humanité n’est pas créée à partir de rien : elle sort de la matière même du sol. Ovide explique ainsi symboliquement sa dureté et sa capacité au labeur par son origine minérale."
+        },
+        {
+            "type": "prose",
+            "term": "Deux récits du Déluge",
+            "definition": "On retrouve un jugement, une catastrophe aquatique, des survivants et un nouveau départ. Mais la scène biblique repose sur Noé, l’arche, l’alliance et la promesse divine ; Ovide met au centre l’oracle, la métamorphose des pierres et une tout autre représentation du divin."
+        }
+    ],
+    "relatedTexts": [
+        {
+            "id": "genese-deluge",
+            "kind": "proche",
+            "label": "Genèse — Le Déluge",
+            "relation": "Le rapprochement permet de comparer deux récits de destruction et de recommencement de l’humanité sans effacer leurs différences religieuses et narratives."
+        },
+        {
+            "id": "hesiode-promethee-vol-feu",
+            "kind": "proche",
+            "label": "Hésiode — Prométhée vole le feu aux dieux",
+            "relation": "La tradition fait de Deucalion le fils de Prométhée : le cycle relie ainsi le bienfaiteur des humains à celui qui participe à leur recommencement après le Déluge."
+        }
+    ],
+    "paragraphs": [
+        "Jamais homme n’eut plus de zèle que Deucalion pour la vertu et pour la justice, jamais femme n’eut pour les dieux plus de respect que Pyrrha.",
+        "« Si les dieux, disent-ils, se laissent fléchir aux humbles prières des mortels, s’ils ne sont pas inexorables, apprends-nous, ô Thémis, quelle vertu féconde peut réparer la ruine du genre humain, et montre-toi propice et secourable au monde abîmé sous les eaux. » Touchée de leur prière, la déesse rendit cet oracle : « Éloignez-vous du temple, voilez vos têtes, détachez les ceintures de vos vêtements, et jetez derrière vous les os de votre aïeule antique. »",
+        "« Notre aïeule, c’est la terre, et les pierres renfermées dans son sein sont les ossements qu’on nous ordonne de jeter derrière nous. »",
+        "Ainsi, dans un court espace de temps, la puissance des dieux change en hommes les pierres lancées par Deucalion, et renouvelle, par la main d’une femme, la race des femmes éteinte. C’est de là que nous venons : race dure et laborieuse, nous témoignons sans cesse de notre origine."
+    ]
+},
+{
+    "id": "sophocle-oedipe-verite-destin",
+    "section": "mythologie",
+    "cardMeta": "Vérité · liberté · responsabilité",
+    "title": "Œdipe découvre qui il est",
+    "author": "Sophocle",
+    "authorTag": "Sophocle",
+    "cardHighlight": "découvre qui il est",
+    "familiarIdea": "",
+    "authorMeta": "v. 496–406 av. J.-C. · tragédie grecque",
+    "themes": [
+        "Vérité",
+        "Liberté"
+    ],
+    "work": "Œdipe roi",
+    "publication": "trad. Leconte de Lisle, Alphonse Lemerre, 1877, scène de la reconnaissance (extrait)",
+    "description": "Sommes-nous responsables de nos actes quand nous ignorons des éléments essentiels de la situation ?",
+    "context": "Œdipe cherche la cause du mal qui frappe Thèbes. Son enquête le conduit peu à peu vers sa propre histoire : l’homme qu’il a tué était son père, et la femme qu’il a épousée est sa mère. Il a donc accompli l’oracle sans savoir qui étaient réellement les personnes concernées. Le passage met face à face <strong>vérité, ignorance, liberté et responsabilité</strong> : peut-on répondre de ses actes lorsqu’on en ignore une part décisive ?",
+    "readingQuestions": [
+        "Pourquoi Œdipe continue-t-il à exiger la vérité alors que le serviteur cherche à se taire ?",
+        "Peut-on être pleinement responsable d’un acte accompli sans connaître l’identité des personnes concernées ?",
+        "En quoi les tentatives faites pour éviter l’oracle participent-elles paradoxalement à son accomplissement ?"
+    ],
+    "glossary": [
+        {
+            "term": "Oidipous",
+            "definition": "Forme utilisée par Leconte de Lisle pour le nom grec d’Œdipe. La fiche emploie « Œdipe » dans ses titres et repères, mais conserve la traduction dans l’extrait."
+        },
+        {
+            "term": "Laios",
+            "definition": "Roi de Thèbes et père d’Œdipe. L’oracle annonçait que son fils le tuerait."
+        },
+        {
+            "term": "oracles",
+            "definition": "Paroles divines annonçant ou éclairant un destin. Dans la tragédie, elles sont connues par fragments et leurs effets dépendent aussi de la manière dont les personnages cherchent à leur échapper."
+        }
+    ],
+    "readingNotes": [
+        {
+            "type": "concept",
+            "term": "La vérité contre soi-même",
+            "definition": "Œdipe est celui qui mène l’enquête et qui refuse finalement l’ignorance. Sa grandeur tragique tient aussi à ceci : la vérité qu’il exige est celle qui détruit son identité sociale, familiale et politique."
+        },
+        {
+            "type": "opposition",
+            "left": {
+                "term": "Ignorance",
+                "definition": "Œdipe agit sans savoir que l’homme tué est son père ni que la femme épousée est sa mère."
+            },
+            "right": {
+                "term": "Responsabilité",
+                "definition": "Les actes ont pourtant bien été accomplis par lui et produisent des conséquences réelles."
+            },
+            "conclusion": "La tragédie empêche une réponse trop simple : elle dissocie connaissance, intention, action et responsabilité."
+        },
+        {
+            "type": "analysis",
+            "term": "Choisir sans tout savoir",
+            "definition": "Œdipe n’est ni un automate sans volonté ni un individu souverain maîtrisant tout. Il décide, enquête, se met en colère et agit dans un monde où il ignore des données décisives de sa propre histoire. C’est cette combinaison de choix et de nécessité qui fait la force philosophique du mythe."
+        },
+        {
+            "type": "prose",
+            "term": "Œdipe avant Freud",
+            "definition": "Le « complexe d’Œdipe » est une réutilisation moderne du mythe. La tragédie de Sophocle est bien antérieure à la psychanalyse et porte d’abord sur la vérité, l’identité, l’oracle, la faute, la cité et les limites de la connaissance humaine."
+        }
+    ],
+    "relatedTexts": [],
+    "paragraphs": [
+        "LE SERVITEUR. — Eh bien ! c’était un enfant de la demeure de Laios.",
+        "OIDIPOUS. — Était-il esclave, ou de la race même de Laios ?",
+        "LE SERVITEUR. — Ô Dieux ! C’est pour moi la chose la plus horrible à dire !",
+        "OIDIPOUS. — Et pour moi à entendre. Mais je dois l’entendre.",
+        "LE SERVITEUR. — On disait qu’il était fils de Laios. Mais ta femme qui est dans ta demeure te dirait bien mieux comment les choses se sont passées.",
+        "OIDIPOUS. — C’est elle-même qui t’a livré l’enfant ?",
+        "LE SERVITEUR. — Oui, ô Roi.",
+        "OIDIPOUS. — Dans quelle intention ?",
+        "LE SERVITEUR. — Pour que je le tuasse.",
+        "OIDIPOUS. — Elle ! qui l’avait enfanté ! La malheureuse !",
+        "LE SERVITEUR. — Par crainte de lamentables oracles.",
+        "OIDIPOUS. — Desquels ?",
+        "LE SERVITEUR. — Il était prédit qu’il tuerait ses parents.",
+        "LE SERVITEUR. — Par pitié, ô maître ! J’ai cru qu’il emporterait l’enfant dans un pays étranger ; mais il l’a sauvé pour de plus grands malheurs. Si tu es celui qu’il dit, sache que tu es malheureux.",
+        "OIDIPOUS. — Hélas, hélas ! tout apparaît clairement. Ô lumière, je te vois pour la dernière fois, moi qui suis né de ceux dont il ne fallait point naître, qui me suis uni à qui je ne devais point m’unir, qui ai tué qui je ne devais point tuer !"
+    ]
+}
+,
+{
+  "id": "homere-ulysse-sirenes-maitrise-desir",
+  "section": "mythologie",
+  "cardMeta": "Désir · maîtrise de soi · liberté",
+  "title": "Ulysse résiste au chant des Sirènes",
+  "author": "Homère",
+  "authorTag": "Homère",
+  "cardHighlight": "chant des Sirènes",
+  "familiarIdea": "",
+  "authorMeta": "VIIIe s. av. J.-C. · épopée grecque",
+  "themes": [
+    "Liberté",
+    "Désir"
+  ],
+  "work": "Odyssée, chant XII",
+  "publication": "trad. Eugène Bareste, Lavigne, 1842 (extrait)",
+  "description": "Être libre, est-ce suivre son désir ou savoir se protéger de soi-même ?",
+  "context": "Ulysse veut entendre le chant des Sirènes, tout en sachant que celui qui s’y abandonne ne revient pas. Il organise donc à l’avance sa propre résistance : ses compagnons ont les oreilles bouchées, tandis que lui est attaché au mât et leur ordonne de ne pas le libérer, même s’il le demande ensuite. Le mythe fait ainsi apparaître une forme paradoxale de <strong>liberté par la contrainte</strong> : Ulysse se lie volontairement pour empêcher un désir futur de détruire le projet qu’il a choisi.",
+  "readingQuestions": [
+    "Pourquoi Ulysse veut-il entendre les Sirènes alors qu’il connaît le danger ?",
+    "Pourquoi demande-t-il à ses compagnons de désobéir à ses futurs ordres ?",
+    "Une contrainte que l’on choisit soi-même peut-elle nous rendre plus libres ?"
+  ],
+  "glossary": [
+    {
+      "term": "Sirènes",
+      "definition": "Créatures dont le chant attire les navigateurs et les détourne de leur retour jusqu’à la mort. Chez Homère, leur pouvoir tient aussi à la connaissance qu’elles promettent."
+    },
+    {
+      "term": "Achéens",
+      "definition": "Nom fréquemment donné aux Grecs dans les poèmes homériques, notamment aux combattants partis à Troie."
+    },
+    {
+      "term": "Ithaque",
+      "definition": "Île et royaume d’Ulysse, dont le retour constitue le but de son voyage."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Se contraindre pour rester libre",
+      "definition": "Ulysse ne compte pas sur sa seule volonté au moment de la tentation. Il modifie à l’avance la situation afin que son désir ne puisse pas décider à sa place."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Volonté présente",
+        "definition": "Ulysse veut poursuivre son retour et choisit lucidement les moyens de résister."
+      },
+      "right": {
+        "term": "Désir futur",
+        "definition": "Sous l’effet du chant, il voudra être détaché et abandonner la décision prise auparavant."
+      },
+      "conclusion": "Le passage pose une question centrale de la liberté : quelle volonté doit compter lorsque nous savons que nos désirs peuvent changer ?"
+    },
+    {
+      "type": "analysis",
+      "term": "Une tentation de connaissance",
+      "definition": "Les Sirènes ne promettent pas seulement du plaisir : elles affirment tout savoir. Le danger vient donc aussi du désir de connaître sans limite, lorsqu’il détourne l’individu de sa vie et de son but."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-socrate-temperance",
+      "kind": "proche",
+      "label": "Platon — Socrate défend la tempérance",
+      "relation": "Dans les deux textes, la liberté ne consiste pas simplement à satisfaire le désir présent : elle suppose de pouvoir lui imposer une limite."
+    },
+    {
+      "id": "epictete-depend-nous",
+      "kind": "proche",
+      "label": "Épictète — Distinguer ce qui dépend de nous",
+      "relation": "Ulysse agit sur ce qu’il peut maîtriser — ses préparatifs et les consignes données — plutôt que de prétendre supprimer la puissance du chant."
+    }
+  ],
+  "paragraphs": [
+    "Aussitôt je tire mon glaive d'airain et je divise en morceaux une grande masse de cire que je presse fortement entre mes mains ; la cire s'amollit en cédant à mes efforts et à la brillante lumière du soleil, fils d'Hypérion, puis j'introduis cette cire dans les oreilles de tous mes guerriers. Ceux-ci m'attachent les pieds et les mains au mât avec de fortes cordes ; ils s'asseyent et frappent de leurs rames la mer blanchissante.",
+    "« Viens, Ulysse, viens, héros fameux, toi la gloire des Achéens ; arrête ici ton navire et prête l'oreille à nos accents. Jamais aucun mortel n'a paru devant ce rivage sans avoir écouté les harmonieux concerts qui s'échappent de nos lèvres. Toujours celui qui a quitté notre plage s'en retourne charmé dans sa patrie et riche de nouvelles connaissances. Nous savons tout ce que, dans les vastes plaines d'Ilion, les Achéens et les Troyens ont souffert par la volonté des dieux. Nous savons aussi tout ce qui arrive sur la terre féconde. »",
+    "Tel est le chant mélodieux des Sirènes, que mon cœur désirait entendre. Aussitôt fronçant les sourcils, j'ordonne à mes compagnons de me délier ; mais au lieu d'obéir ils se couchent et rament encore avec plus d'ardeur. En même temps Euryloque et Périmède se lèvent, me chargent de nouveaux liens qui me serrent davantage."
+  ]
+},
+{
+  "id": "ovide-icare-voler-trop-haut",
+  "section": "mythologie",
+  "cardMeta": "Technique · mesure · responsabilité",
+  "title": "Icare vole trop près du Soleil",
+  "author": "Ovide",
+  "authorTag": "Ovide",
+  "cardHighlight": "trop près du Soleil",
+  "familiarIdea": "",
+  "authorMeta": "43 av. J.-C.–17 apr. J.-C. · poésie latine",
+  "themes": [
+    "Technique",
+    "Liberté"
+  ],
+  "work": "Métamorphoses, livre VIII",
+  "publication": "trad. collective, texte établi par Désiré Nisard, Firmin-Didot, 1850 (extrait)",
+  "description": "Une puissance nouvelle vaut-elle sans la capacité d’en maîtriser les limites ?",
+  "context": "Dédale réussit à accomplir ce qui semblait impossible : fabriquer des ailes et ouvrir une route dans les airs. Mais l’invention ne suffit pas. Il faut encore apprendre à l’utiliser et respecter les conditions qui la rendent possible. Icare, emporté par le plaisir du vol, quitte la trajectoire indiquée par son père. Le mythe permet ainsi de distinguer <strong>pouvoir faire</strong> et <strong>savoir faire</strong> : une technique accroît notre liberté, mais elle exige aussi mesure, apprentissage et responsabilité.",
+  "readingQuestions": [
+    "Pourquoi Dédale demande-t-il à Icare de voler entre deux dangers ?",
+    "Qu’est-ce qui pousse Icare à abandonner la règle qu’il connaît ?",
+    "Le progrès technique nous rend-il plus libres si nous ne savons pas en maîtriser l’usage ?"
+  ],
+  "glossary": [
+    {
+      "term": "Dédale",
+      "definition": "Inventeur et architecte mythique, constructeur du Labyrinthe de Crète et des ailes qui permettent sa fuite avec Icare."
+    },
+    {
+      "term": "Icare",
+      "definition": "Fils de Dédale. Son vol devient le symbole d’une puissance qui se perd lorsqu’elle ignore ses conditions et ses limites."
+    },
+    {
+      "term": "Minos",
+      "definition": "Roi de Crète qui retient Dédale ; l’invention des ailes permet à celui-ci de chercher une voie de fuite par les airs."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Inventer ne suffit pas",
+      "definition": "Dédale ne transmet pas seulement un objet technique : il enseigne une manière de s’en servir. La maîtrise d’une technique suppose donc des règles, un apprentissage et une attention aux conséquences."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Pouvoir voler",
+        "definition": "Les ailes rendent possible une action auparavant inaccessible aux humains."
+      },
+      "right": {
+        "term": "Savoir voler",
+        "definition": "Le succès dépend d’un usage mesuré qui tient compte de la mer, du Soleil et de la fragilité des ailes."
+      },
+      "conclusion": "L’augmentation de la puissance ne supprime pas les limites : elle rend leur compréhension plus décisive."
+    },
+    {
+      "type": "analysis",
+      "term": "Le plaisir de dépasser la limite",
+      "definition": "Icare ne tombe pas par ignorance totale : il a reçu l’avertissement de son père. Le récit montre comment l’ivresse d’une capacité nouvelle peut faire oublier la règle même qui la rend possible."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "hesiode-promethee-vol-feu",
+      "kind": "proche",
+      "label": "Hésiode — Prométhée vole le feu aux dieux",
+      "relation": "Prométhée interroge l’acquisition de la puissance technique ; Icare interroge la manière de l’utiliser et la nécessité d’en connaître les limites."
+    },
+    {
+      "id": "descartes-maitres-possesseurs-nature",
+      "kind": "proche",
+      "label": "Descartes — « Maîtres et possesseurs de la nature »",
+      "relation": "Le rapprochement permet de distinguer l’extension de la puissance humaine et la question de son usage prudent ou responsable."
+    }
+  ],
+  "paragraphs": [
+    "« Icare, dit-il, prends le milieu des airs et crois mes avis ; car si ton vol s’abaisse, l’onde appesantira tes ailes ; s’il s’élève trop haut, le feu les brûlera. Vole entre ces deux écueils ; crains surtout de regarder le Bouvier, ou l’Hélice, ou le glaive nu d’Orion. Prends ton vol en suivant le mien. » Il lui enseigne ensuite à voler et attache ses ailes à ses épaules qui n’en savent pas encore l’usage.",
+    "Le jeune Icare, se laissant emporter au plaisir d’un vol audacieux et au désir de s’approcher du ciel, abandonne son guide et porte plus haut son essor. Les rayons trop voisins du soleil amollissent la cire parfumée et fondent les liens de ses ailes.",
+    "Il agite ses bras dépouillés, et privé de ses plumes qui le soutenaient comme des rames, il frappe en vain les airs où il n’a plus de prise ; sa bouche répète le nom de son père, et il tombe au fond des mers auxquelles il a donné son nom."
+  ]
+},
+{
+  "id": "ovide-narcisse-reflet-desir-identite",
+  "section": "mythologie",
+  "cardMeta": "Image · désir · identité",
+  "title": "Narcisse tombe amoureux de son reflet",
+  "author": "Ovide",
+  "authorTag": "Ovide",
+  "cardHighlight": "amoureux de son reflet",
+  "familiarIdea": "",
+  "authorMeta": "43 av. J.-C.–17 apr. J.-C. · poésie latine",
+  "themes": [
+    "Conscience",
+    "Désir"
+  ],
+  "work": "Métamorphoses, livre III",
+  "publication": "trad. collective, texte établi par Désiré Nisard, Firmin-Didot, 1850 (extrait)",
+  "description": "Peut-on se connaître lorsque l’on confond son image avec un autre ?",
+  "context": "Narcisse aperçoit son reflet dans une eau parfaitement calme sans comprendre d’abord qu’il se regarde lui-même. Il transforme une image sans consistance en objet de désir et cherche à saisir ce qui disparaît dès qu’il tente de l’atteindre. Le mythe permet de distinguer <strong>se voir</strong> et <strong>se connaître</strong> : une image de soi peut fasciner tout en empêchant de comprendre ce qu’elle représente réellement.",
+  "readingQuestions": [
+    "Pourquoi Narcisse attribue-t-il d’abord une existence propre à son reflet ?",
+    "Quelle différence le texte fait-il entre voir une image et comprendre ce qu’elle est ?",
+    "Pourquoi un désir tourné uniquement vers sa propre image devient-il impossible à satisfaire ?"
+  ],
+  "glossary": [
+    {
+      "term": "Narcisse",
+      "definition": "Jeune homme célèbre pour sa beauté et son refus de ceux qui l’aiment ; il devient prisonnier du désir suscité par son propre reflet."
+    },
+    {
+      "term": "Écho",
+      "definition": "Nymphe condamnée à ne pouvoir que répéter les dernières paroles qu’elle entend ; elle aime Narcisse sans être aimée en retour."
+    },
+    {
+      "term": "reflet",
+      "definition": "Image produite par la surface de l’eau. Elle ressemble à Narcisse sans constituer une personne distincte qu’il pourrait rencontrer ou posséder."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Prendre une image pour une présence",
+      "definition": "Narcisse donne mentalement un corps à ce qui n’est qu’un reflet. Son désir naît donc d’une erreur sur le statut de ce qu’il voit."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Se voir",
+        "definition": "Percevoir son apparence comme un objet visible."
+      },
+      "right": {
+        "term": "Se connaître",
+        "definition": "Reconnaître que cette apparence est la sienne et comprendre la relation entre soi et son image."
+      },
+      "conclusion": "Le mythe montre que la visibilité de soi ne garantit pas la connaissance de soi."
+    },
+    {
+      "type": "analysis",
+      "term": "Un désir sans véritable autre",
+      "definition": "Le reflet imite chaque geste de Narcisse mais ne peut lui répondre comme une personne indépendante. Le désir tourne alors en circuit fermé : il cherche une altérité qui n’existe pas."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-mythe-androgyne-desir",
+      "kind": "proche",
+      "label": "Platon — Le mythe de l’androgyne et le désir de retrouver l’autre",
+      "relation": "Le Banquet pense le désir comme recherche d’une union avec un autre ; Narcisse montre au contraire un désir enfermé dans sa propre image."
+    },
+    {
+      "id": "rousseau-desir-imagination-bonheur",
+      "kind": "proche",
+      "label": "Rousseau — L’imagination nourrit le désir",
+      "relation": "Dans les deux textes, l’objet désiré doit une part de sa puissance à ce que l’imagination projette sur lui."
+    }
+  ],
+  "paragraphs": [
+    "Tandis qu’il boit, épris de son image qu’il aperçoit dans l’onde, il prête un corps à l’ombre vaine qui le captive : en extase devant lui-même, il demeure, le visage immobile comme une statue de marbre de Paros. Étendu sur la rive, il contemple ses yeux aussi brillants que deux astres, sa chevelure, digne de Bacchus et d’Apollon, ses joues, ombragées d’un léger duvet, son cou d’ivoire, sa bouche gracieuse et son teint, où la blancheur de la neige se marie au plus vif incarnat : il admire les charmes qui le font admirer.",
+    "Insensé ! c’est à lui-même qu’il adresse ses vœux ; il est lui-même, et l’amant et l’objet aimé, c’est lui-même qu’il recherche, et les feux qu’il allume, le consument lui-même ! Que de vains baisers il donne à cette onde trompeuse ! Que de fois il y plonge ses bras pour saisir la tête qu’il a vue, sans pouvoir embrasser son image ! Il ne sait ce qu’il voit, mais ce qu’il voit l’enflamme, et l’illusion qui trompe ses yeux irrite encore ses désirs."
+  ]
+},
+{
+  "id": "ovide-orphee-eurydice-regard-interdit",
+  "section": "mythologie",
+  "cardMeta": "Art · amour · mort",
+  "title": "Orphée se retourne vers Eurydice",
+  "author": "Ovide",
+  "authorTag": "Ovide",
+  "cardHighlight": "se retourne vers Eurydice",
+  "familiarIdea": "",
+  "authorMeta": "43 av. J.-C.–17 apr. J.-C. · poésie latine",
+  "themes": [
+    "Art",
+    "Amour"
+  ],
+  "work": "Métamorphoses, livre X",
+  "publication": "trad. collective, texte établi par Désiré Nisard, Firmin-Didot, 1850 (extrait)",
+  "description": "L’art peut-il vaincre la mort, et pourquoi l’amour échoue-t-il au moment de retrouver ce qu’il a perdu ?",
+  "context": "Par son chant, Orphée réussit à émouvoir le monde des morts et obtient le retour d’Eurydice. Une seule condition lui est imposée : ne pas la regarder avant d’avoir quitté les Enfers. Presque arrivé au terme, il se retourne par inquiétude et par désir de la voir. Le mythe donne ainsi à l’art un pouvoir immense, mais non absolu : il peut <strong>suspendre l’ordre ordinaire</strong>, sans supprimer la mort ni la fragilité du désir humain.",
+  "readingQuestions": [
+    "Que montre le fait que le chant d’Orphée parvienne à fléchir les puissances des Enfers ?",
+    "Pourquoi Orphée se retourne-t-il alors qu’il connaît parfaitement la condition imposée ?",
+    "Le besoin de vérifier par le regard peut-il détruire ce que la confiance permettait encore d’espérer ?"
+  ],
+  "glossary": [
+    {
+      "term": "Orphée",
+      "definition": "Poète et musicien mythique dont le chant possède le pouvoir d’émouvoir les humains, les animaux et jusqu’aux puissances du monde des morts."
+    },
+    {
+      "term": "Eurydice",
+      "definition": "Épouse d’Orphée, morte après une morsure de serpent et recherchée par lui jusque dans les Enfers."
+    },
+    {
+      "term": "Averne",
+      "definition": "Lac d’Italie associé dans la tradition antique à une entrée du monde souterrain ; sortir de ses vallées marque ici le terme de l’épreuve."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "Le pouvoir de l’art",
+      "definition": "Le chant d’Orphée accomplit ce que la force ne pourrait obtenir : il émeut les puissances des Enfers. L’art apparaît comme une puissance capable de transformer les dispositions de ceux qui l’entendent."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Faire confiance",
+        "definition": "Continuer d’avancer sans disposer de la preuve visible qu’Eurydice suit réellement."
+      },
+      "right": {
+        "term": "Vérifier",
+        "definition": "Se retourner pour rendre sa présence certaine, au risque de rompre la condition qui permet son retour."
+      },
+      "conclusion": "Le regard qui veut s’assurer de la présence de l’autre provoque précisément sa perte."
+    },
+    {
+      "type": "analysis",
+      "term": "Une victoire incomplète sur la mort",
+      "definition": "Orphée obtient une exception, non l’abolition de la mortalité. Le mythe affirme à la fois la puissance de l’art et une limite qu’il ne peut définitivement franchir."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "levinas-caresse-desir-invisible",
+      "kind": "proche",
+      "label": "Lévinas — La caresse et le désir de l’invisible",
+      "relation": "Le rapprochement permet de penser un désir qui ne peut se réduire à la possession immédiate de ce qu’il cherche."
+    },
+    {
+      "id": "aristote-amour-amitie-veritable",
+      "kind": "proche",
+      "label": "Aristote — L’amitié véritable veut le bien de l’autre",
+      "relation": "Orphée met en scène un amour confronté à la perte ; Aristote permet de déplacer la question vers la relation à l’autre comme autre."
+    }
+  ],
+  "paragraphs": [
+    "Ni la souveraine des morts, ni celui qui règne sur les mânes ne peuvent repousser sa prière. Ils appellent Eurydice. Elle était là parmi les ombres nouvelles, et d’un pas ralenti par sa blessure, elle s’avance. Il l’a retrouvée, mais c’est à une condition. Le chantre du Rhodope ne doit jeter les yeux derrière lui qu’au sortir des vallées de l’Averne : sinon la grâce est révoquée.",
+    "Ils suivent, au milieu d’un morne silence, un sentier raide, escarpé, ténébreux, noyé d’épaisses vapeurs. Ils n’étaient pas éloignés du but ; ils touchaient à la surface de la terre, lorsque, tremblant qu’elle n’échappe, inquiet, impatient de voir, Orphée tourne la tête. Soudain elle est rentraînée dans l’abîme. Il lui tend les bras, il cherche son étreinte, il veut la saisir ; elle s’évanouit, et l’infortuné n’embrasse que son ombre.",
+    "C’en est fait ! elle meurt pour la seconde fois : mais elle ne se plaint pas de son époux. Et de quoi se plaindrait-elle ? Il l’aimait. Adieu ! ce fut le dernier adieu, et à peine parvint-il aux oreilles d’Orphée : déjà l’Enfer a reconquis sa proie."
+  ]
+},
+{
+  "id": "eschyle-oreste-tribunal-justice",
+  "section": "mythologie",
+  "cardMeta": "Justice · vengeance · institution",
+  "title": "Oreste : de la vengeance au tribunal",
+  "author": "Eschyle",
+  "authorTag": "Eschyle",
+  "cardHighlight": "de la vengeance au tribunal",
+  "familiarIdea": "",
+  "authorMeta": "v. 525–456 av. J.-C. · tragédie grecque",
+  "themes": [
+    "Justice",
+    "État"
+  ],
+  "work": "Les Euménides",
+  "publication": "458 av. J.-C., trad. Leconte de Lisle, A. Lemerre, 1872 (extrait)",
+  "description": "Comment sortir du cycle de la vengeance sans renoncer à juger les crimes ?",
+  "context": "Oreste a tué sa mère Clytemnestre pour venger le meurtre de son père Agamemnon. Les Érinyes le poursuivent au nom du sang versé et réclament à leur tour vengeance. À Athènes, Athéna transforme ce conflit en <strong>affaire à juger</strong> : elle institue des juges liés par serment et une procédure appelée à durer au-delà du cas d’Oreste. Le mythe permet ainsi de penser le passage de la vengeance privée à une justice commune et institutionnelle.",
+  "readingQuestions": [
+    "Pourquoi la vengeance risque-t-elle de produire une chaîne sans fin de nouveaux crimes ?",
+    "Qu’est-ce qui change lorsque le conflit est confié à des juges plutôt qu’aux proches de la victime ?",
+    "Pourquoi Athéna institue-t-elle une règle destinée à valoir aussi pour l’avenir ?"
+  ],
+  "glossary": [
+    {
+      "term": "Oreste",
+      "definition": "Fils d’Agamemnon et de Clytemnestre. Il tue sa mère pour venger son père et doit ensuite répondre de ce meurtre."
+    },
+    {
+      "term": "Érinyes",
+      "definition": "Puissances anciennes de vengeance qui poursuivent notamment les crimes commis contre les membres de sa propre famille ; elles seront associées aux Euménides."
+    },
+    {
+      "term": "Aréopage",
+      "definition": "Colline d’Arès à Athènes et, par extension, tribunal auquel la tragédie rattache le jugement des crimes de sang."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "concept",
+      "term": "De la vengeance au jugement",
+      "definition": "La vengeance est exercée directement au nom d’un tort subi ; le jugement introduit un tiers, des preuves, une procédure et une décision qui ne dépend plus seulement des parties en conflit."
+    },
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Vengeance",
+        "definition": "Répondre au sang versé par un nouveau sang versé, au risque de relancer indéfiniment le conflit."
+      },
+      "right": {
+        "term": "Justice instituée",
+        "definition": "Confier le différend à des juges qui doivent entendre les parties et décider selon une procédure commune."
+      },
+      "conclusion": "Le passage ne supprime pas la nécessité de répondre au crime ; il transforme la manière dont cette réponse est produite."
+    },
+    {
+      "type": "analysis",
+      "term": "Une règle qui dépasse Oreste",
+      "definition": "Athéna ne règle pas seulement un cas particulier : elle fonde un tribunal pour « tous les temps à venir ». L’institution rend la justice moins dépendante des personnes et des passions du moment."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sophocle-antigone-lois-non-ecrites",
+      "kind": "proche",
+      "label": "Sophocle — Antigone et les lois non écrites",
+      "relation": "Antigone demande quand une loi mérite obéissance ; les Euménides montrent pourquoi une cité a besoin d’institutions capables de transformer un conflit en jugement."
+    },
+    {
+      "id": "kant-justice-instituee-imparfaite",
+      "kind": "proche",
+      "label": "Kant — Une justice instituée, même imparfaite, vaut mieux que l’absence de droit",
+      "relation": "Les deux textes permettent de penser ce que l’institution juridique apporte par rapport au règlement privé des conflits."
+    }
+  ],
+  "paragraphs": [
+    "Écoutez encore la loi que je fonde, peuple de l’Attique, vous qui êtes les premiers juges du sang versé. Ce tribunal, désormais et pour toujours, jugera le peuple Aigéen. Sur cette colline d’Arès, les Amazones plantèrent autrefois leurs tentes, quand, irritées contre Thèseus, elles assiégèrent la Ville récemment fondée et opposèrent des tours à ses hautes tours. Ici, elles firent des sacrifices à Arès, d’où ce nom d’Arèopagos, le rocher, la colline d’Arès.",
+    "Donc, ici, le respect et la crainte seront toujours présents, le jour et la nuit, à tous les citoyens, tant qu’ils se garderont eux-mêmes d’instituer de nouvelles lois. Si vous souillez une eau limpide par des courants boueux, comment pourrez-vous la boire ? Je voudrais persuader aux citoyens chargés du soin de la République d’éviter l’anarchie et la tyrannie, mais non de renoncer à toute répression.",
+    "Quel homme restera juste, s’il ne craint rien ? Respectez donc la majesté de ce tribunal, rempart sauveur de ce pays et de cette ville. J’institue ce tribunal incorruptible, vénérable et sévère, gardien vigilant de cette terre, même pendant le sommeil de tous."
+  ]
+},
+{
+  "id": "platon-caverne-apparence-verite",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Vérité · apparence · éducation",
+  "title": "La caverne : sortir des apparences",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "sortir des apparences",
+  "familiarIdea": "l’allégorie de la caverne",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "Vérité",
+    "Raison"
+  ],
+  "work": "La République, livre VII",
+  "publication": "514a–517a, trad. Victor Cousin, 1834 (extrait)",
+  "description": "Comment savoir si ce que nous tenons pour réel n’est qu’une apparence ?",
+  "context": "Des prisonniers n’ont jamais vu que des ombres et les prennent pour la réalité. L’un d’eux est libéré : ce qui est plus vrai lui paraît d’abord moins évident, parce que ses yeux et son esprit sont habitués à l’ancien monde. La connaissance apparaît alors comme une <strong>conversion difficile du regard</strong>, et l’éducation non comme l’accumulation d’informations mais comme un déplacement hors de ce qui semblait aller de soi.",
+  "readingQuestions": [
+    "Pourquoi les prisonniers prennent-ils les ombres pour la réalité ?",
+    "Pourquoi la libération commence-t-elle par la douleur et l’éblouissement ?",
+    "Pourquoi celui qui a vu le monde extérieur doit-il redescendre parmi les prisonniers ?"
+  ],
+  "glossary": [
+    {
+      "term": "caverne",
+      "definition": "Image d’un monde où les hommes sont enfermés dans des représentations qu’ils ne savent pas distinguer de la réalité."
+    },
+    {
+      "term": "ombre",
+      "definition": "Ce qui n’est qu’une apparence dérivée mais que les prisonniers prennent pour la chose elle-même."
+    },
+    {
+      "term": "conversion",
+      "definition": "Renversement de l’orientation du regard et de la pensée : apprendre suppose de se tourner vers ce qui est plus réel, même si cela déstabilise d’abord."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Apparence",
+        "definition": "Ce qui se présente immédiatement aux prisonniers et leur paraît évident."
+      },
+      "right": {
+        "term": "Réalité",
+        "definition": "Ce qui demande une transformation du regard pour être reconnu comme plus vrai."
+      },
+      "conclusion": "Le texte montre que l’évidence subjective ne suffit pas à garantir la vérité."
+    },
+    {
+      "type": "analysis",
+      "term": "Apprendre peut faire perdre ses certitudes",
+      "definition": "Le prisonnier libéré commence par préférer les ombres qu’il connaît. La connaissance n’est donc pas toujours vécue comme une délivrance immédiate : elle peut d’abord désorienter."
+    },
+    {
+      "type": "analysis",
+      "term": "Pourquoi redescendre ?",
+      "definition": "Celui qui a accédé à une connaissance plus haute ne doit pas seulement contempler le vrai pour lui-même. Le retour dans la caverne pose la question de la responsabilité du philosophe envers la cité."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-art-imitation-eloigne-vrai",
+      "kind": "proche",
+      "label": "Platon — L’art d’imitation est éloigné du vrai",
+      "relation": "Les deux passages interrogent la confusion possible entre une apparence et ce qu’elle représente."
+    },
+    {
+      "id": "kant-connaissance-experience-a-priori",
+      "kind": "proche",
+      "label": "Kant — La connaissance ne dérive pas toute de l’expérience",
+      "relation": "La comparaison permet de poursuivre la question des conditions qui rendent possible une connaissance véritable."
+    }
+  ],
+  "paragraphs": [
+    "Maintenant, repris-je, pour avoir une idée de la conduite de l’homme par rapport à la science et à l’ignorance, figure-toi la situation que je vais te décrire. Imagine un antre souterrain, très ouvert dans toute sa profondeur du côté de la lumière du jour ; et dans cet antre des hommes retenus, depuis leur enfance, par des chaînes qui leur assujettissent tellement les jambes et le cou, qu’ils ne peuvent ni changer de place ni tourner la tête, et ne voient que ce qu’ils ont en face. La lumière leur vient d’un feu allumé à une certaine distance en haut derrière eux.",
+    "Figure-toi encore qu’il passe le long d’un petit mur des hommes portant des objets de toute sorte, des figures d’hommes et d’animaux en bois ou en pierre. [...] Crois-tu que dans cette situation ils verront autre chose d’eux-mêmes et de ceux qui sont à leurs côtés, que les ombres qui vont se retracer, à la lueur du feu, sur le côté de la caverne exposé à leurs regards ? [...] Enfin, ces captifs n’attribueront absolument de réalité qu’aux ombres.",
+    "Supposons maintenant qu’on les délivre de leurs chaînes et qu’on les guérisse de leur erreur. Qu’on détache un de ces captifs ; qu’on le force sur-le-champ de se lever, de tourner la tête, de marcher et de regarder du côté de la lumière : il ne pourra faire tout cela sans souffrir, et l’éblouissement l’empêchera de discerner les objets dont il voyait auparavant les ombres. [...] Si maintenant on l’arrache de sa caverne malgré lui, et qu’on le traîne, par le sentier rude et escarpé, jusqu’à la clarté du soleil, cette violence n’excitera-t-elle pas ses plaintes et sa colère ? [...] Ce n’est que peu à peu que ses yeux pourront s’accoutumer à cette région supérieure.",
+    "À la fin il pourra, je pense, non-seulement voir le soleil dans les eaux et partout où son image se réfléchit, mais le contempler en lui-même à sa véritable place. [...] Imagine encore que cet homme redescende dans la caverne et qu’il aille s’asseoir à son ancienne place ; dans ce passage subit du grand jour à l’obscurité, ses yeux ne seront-ils pas comme aveuglés ? [...] Ne diront-ils pas que pour être monté là-haut, il a perdu la vue ; que ce n’est pas la peine d’essayer de sortir du lieu où ils sont, et que si quelqu’un s’avise de vouloir les en tirer et les conduire en haut, il faut le saisir et le tuer, s’il est possible ?"
+  ]
+},
+{
+  "id": "platon-mythe-er-choix-vie",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Liberté · choix · responsabilité",
+  "title": "Le mythe d’Er : choisir sa vie",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "choisir sa vie",
+  "familiarIdea": "le mythe d’Er",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "Liberté",
+    "Justice"
+  ],
+  "work": "La République, livre X",
+  "publication": "617d–620d, trad. Victor Cousin, 1834 (extrait)",
+  "description": "Sommes-nous responsables de la vie que nous choisissons, même lorsque le hasard fixe les conditions du choix ?",
+  "context": "À la fin de <em>La République</em>, Er rapporte ce qu’il aurait vu après sa mort. Les âmes doivent choisir une nouvelle existence parmi de nombreux genres de vie. Le hasard décide de l’ordre dans lequel elles choisissent, mais non de leur décision : chacune demeure <strong>responsable de son choix</strong>. Le mythe relie ainsi liberté, expérience, caractère et apprentissage de la justice.",
+  "readingQuestions": [
+    "Que décide le hasard, et que doit choisir chaque âme elle-même ?",
+    "Pourquoi la première âme choisit-elle si mal malgré une vie antérieure apparemment vertueuse ?",
+    "En quoi la philosophie prépare-t-elle à choisir une vie plutôt qu’une autre ?"
+  ],
+  "glossary": [
+    {
+      "term": "Lachésis",
+      "definition": "L’une des trois Parques. Dans le récit, elle préside au moment où les âmes reçoivent leur rang de choix et choisissent leur génie."
+    },
+    {
+      "term": "Nécessité",
+      "definition": "Puissance qui structure l’ordre cosmique ; le mythe l’associe pourtant à un espace où subsiste la responsabilité du choix."
+    },
+    {
+      "term": "génie",
+      "definition": "Être gardien attaché à l’âme après son choix ; il accompagne l’existence choisie mais ne choisit pas à sa place."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Hasard",
+        "definition": "Le sort détermine l’ordre dans lequel les âmes choisissent."
+      },
+      "right": {
+        "term": "Responsabilité",
+        "definition": "Le rang reçu n’impose aucune existence particulière : l’âme doit discerner et choisir."
+      },
+      "conclusion": "Le mythe ne supprime pas la contingence, mais refuse d’en faire une excuse qui annulerait toute responsabilité."
+    },
+    {
+      "type": "analysis",
+      "term": "Savoir choisir",
+      "definition": "Toutes les vies disponibles ne se valent pas. La véritable épreuve consiste à reconnaître celle qui rendra l’âme plus juste plutôt qu’à se laisser éblouir par le pouvoir ou la richesse."
+    },
+    {
+      "type": "analysis",
+      "term": "L’habitude ne suffit pas",
+      "definition": "L’âme qui choisit la tyrannie avait auparavant vécu correctement par habitude. Platon oppose ainsi une vertu simplement acquise par conformisme à une capacité réfléchie de discerner le bien."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "sartre-existence-precede-essence",
+      "kind": "proche",
+      "label": "Sartre — L’existence précède l’essence",
+      "relation": "Les deux textes placent la responsabilité du sujet au centre, même si leurs conceptions de l’âme, du monde et de la liberté sont profondément différentes."
+    },
+    {
+      "id": "epictete-depend-nous",
+      "kind": "proche",
+      "label": "Épictète — Distinguer ce qui dépend de nous",
+      "relation": "Le rapprochement permet de distinguer les conditions reçues de la manière dont nous orientons notre conduite."
+    }
+  ],
+  "paragraphs": [
+    "Aussitôt que les âmes étaient arrivées, il leur avait fallu se présenter devant Lachésis. [...] Un hiérophante [...] avait parlé ainsi : « Voici ce que dit la vierge Lachésis, fille de la Nécessité : Âmes passagères, vous allez recommencer une nouvelle carrière et renaître à la condition mortelle. Vous ne devez point échoir en partage à un génie : vous choisirez vous-même chacune le vôtre. Celle que le sort appellera, choisira la première, et son choix sera irrévocable. La vertu n’a point de maître : elle s’attache à qui l’honore, et abandonne qui la néglige. On est responsable de son choix : Dieu est innocent. »",
+    "Ensuite l’hiérophante étala sur terre devant elles des genres de vie de toute espèce, en beaucoup plus grand nombre qu’il n’y avait d’âmes assemblées ; la variété en était infinie. [...] Or, c’est évidemment là, cher Glaucon, l’épreuve redoutable pour l’humanité ; voilà pourquoi chacun de nous doit [...] savoir discerner les bonnes et les mauvaises conditions, et choisir toujours la meilleure en toute circonstance.",
+    "Celui à qui le premier sort était échu s’avança avec empressement, et choisit la tyrannie la plus considérable, emporté par son imprudence et son avidité, et sans regarder suffisamment à ce qu’il faisait. [...] Quand il eut considéré à loisir le sort qu’il avait choisi, il gémit, se lamenta, et [...] ce n’était pas à sa propre faute qu’il s’en prenait, c’était à la fortune, aux dieux, à tout, excepté à lui-même.",
+    "L’âme d’Ulysse, à qui le hasard avait donné le dernier sort, vint aussi pour choisir : mais le souvenir de ses longs revers l’ayant désabusée de l’ambition, elle chercha longtemps, et découvrit à grand-peine dans un coin la vie tranquille d’un homme privé que toutes les autres âmes avaient laissée dédaigneusement à l’écart. En l’apercevant enfin, elle dit que, quand elle aurait été la première à choisir, elle n’aurait pas fait un autre choix."
+  ]
+},
+{
+  "id": "platon-attelage-aile-ame-desirs",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Âme · désir · maîtrise de soi",
+  "title": "L’attelage ailé : gouverner ses désirs",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "gouverner ses désirs",
+  "familiarIdea": "l’attelage ailé",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "Désir",
+    "Raison"
+  ],
+  "work": "Phèdre",
+  "publication": "246a–246b ; 253d–256b, trad. Victor Cousin, 1831 (extrait)",
+  "description": "Être maître de soi, est-ce supprimer ses désirs ou apprendre à les gouverner ?",
+  "context": "Platon compare l’âme humaine à un attelage conduit par un cocher. L’un des chevaux se laisse guider par l’honneur et la mesure ; l’autre tire vers la satisfaction immédiate. L’image ne présente donc pas l’être humain comme une volonté simple : nous sommes traversés par des forces différentes qu’il faut <strong>ordonner plutôt que nier</strong>.",
+  "readingQuestions": [
+    "Que représentent le cocher et les deux chevaux dans l’image de l’âme ?",
+    "Pourquoi l’attelage humain est-il difficile à conduire ?",
+    "La maîtrise de soi consiste-t-elle à détruire le désir ou à lui donner une direction ?"
+  ],
+  "glossary": [
+    {
+      "term": "cocher",
+      "definition": "Figure de la puissance qui doit diriger l’attelage et maintenir ensemble des tendances différentes."
+    },
+    {
+      "term": "coursier",
+      "definition": "Cheval de l’attelage ; les deux coursiers symbolisent des tendances opposées présentes dans l’âme."
+    },
+    {
+      "term": "maîtrise de soi",
+      "definition": "Capacité à ordonner ses tendances et à ne pas laisser le désir le plus impérieux décider seul de l’action."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Cheval docile",
+        "definition": "Il répond à la retenue, à l’honneur et à la voix du cocher."
+      },
+      "right": {
+        "term": "Cheval indocile",
+        "definition": "Il pousse avec violence vers l’objet désiré et résiste à la direction commune."
+      },
+      "conclusion": "Le conflit moral est représenté comme une tension interne à une même âme."
+    },
+    {
+      "type": "analysis",
+      "term": "Gouverner plutôt que supprimer",
+      "definition": "Le cocher ne peut avancer sans chevaux. L’image suggère donc que la raison n’agit pas dans le vide : elle doit orienter des forces désirantes indispensables au mouvement de l’âme."
+    },
+    {
+      "type": "analysis",
+      "term": "Une liberté intérieure",
+      "definition": "La maîtrise de soi n’est pas l’absence de conflit mais la capacité à empêcher une tendance particulière de prendre seule le contrôle de l’ensemble."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-callicles-desirs",
+      "kind": "adverse",
+      "label": "Platon — Calliclès défend la libre satisfaction des désirs",
+      "relation": "Le Gorgias permet de confronter la maîtrise de soi à l’idéal opposé d’un désir auquel on ne devrait imposer aucune limite."
+    },
+    {
+      "id": "epictete-depend-nous",
+      "kind": "proche",
+      "label": "Épictète — Distinguer ce qui dépend de nous",
+      "relation": "Les deux textes invitent à penser la liberté comme un travail sur la manière dont nous répondons à nos propres impulsions."
+    }
+  ],
+  "paragraphs": [
+    "C’est assez parler de l’immortalité de l’âme ; occupons-nous maintenant de l’âme en elle-même. Pour faire comprendre ce qu’elle est, il faudrait une science divine et des dissertations sans fin ; mais pour en donner une idée par comparaison, la science humaine suffit. [...] Comparons l’âme aux forces réunies d’un attelage ailé et d’un cocher.",
+    "Les coursiers et les cochers des dieux sont tous excellents et d’une excellente origine ; mais les autres sont bien mélangés. Chez nous autres hommes, par exemple, le cocher dirige l’attelage, mais des coursiers l’un est beau et bon et d’une origine excellente, l’autre est d’une origine différente et bien différent : d’où il suit que chez nous l’attelage est pénible et difficile à guider.",
+    "En commençant ce discours nous avons distingué dans chaque âme trois parties différentes, deux coursiers et un cocher : conservons ici la même figure. Des deux coursiers, avons-nous dit, l’un est généreux, l’autre ne l’est pas. [...] Le premier, d’une noble contenance [...] aimant l’honneur avec une sage retenue, fidèle à marcher sur les traces de la vraie gloire, obéit, sans avoir besoin qu’on le frappe, aux seules exhortations et à la voix du cocher.",
+    "L’autre coursier et le cocher lui opposent la pudeur et la raison. Si donc la partie la plus noble de l’intelligence remporte une si belle victoire, et les guide vers la sagesse et la philosophie, ils passent [...] maîtres d’eux-mêmes, réglés dans leurs mœurs, parce qu’ils ont asservi ce qui portait le vice dans leur âme et affranchi ce qui y respirait la vertu."
+  ]
+},
+{
+  "id": "platon-theuth-ecriture-memoire",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Technique · mémoire · savoir",
+  "title": "Theuth : l’écriture aide-t-elle vraiment à penser ?",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "l’écriture aide-t-elle à penser ?",
+  "familiarIdea": "le mythe de Theuth",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "Technique",
+    "Langage"
+  ],
+  "work": "Phèdre",
+  "publication": "274c–275d, trad. Victor Cousin, 1831 (extrait)",
+  "description": "Une technique qui conserve nos connaissances peut-elle aussi affaiblir notre capacité à penser par nous-mêmes ?",
+  "context": "Theuth présente l’écriture comme une invention qui rendra les hommes plus savants et soulagera leur mémoire. Le roi Thamus renverse ce diagnostic : confier le souvenir à des signes extérieurs peut produire de l’oubli et donner <strong>l’apparence du savoir sans le savoir lui-même</strong>. Le mythe pose ainsi une question générale sur les technologies intellectuelles : leurs effets réels peuvent différer des intentions de leurs inventeurs.",
+  "readingQuestions": [
+    "Quel bénéfice Theuth attend-il de l’écriture ?",
+    "Pourquoi Thamus distingue-t-il mémoire et simple réminiscence ?",
+    "En quoi posséder beaucoup d’informations écrites peut-il donner seulement l’apparence du savoir ?"
+  ],
+  "glossary": [
+    {
+      "term": "Theuth",
+      "definition": "Divinité égyptienne à laquelle le récit attribue plusieurs inventions, notamment le calcul et l’écriture."
+    },
+    {
+      "term": "Thamus",
+      "definition": "Roi d’Égypte chargé dans le récit d’évaluer les inventions de Theuth et leurs effets réels."
+    },
+    {
+      "term": "réminiscence",
+      "definition": "Ici, rappel déclenché par un signe extérieur, distingué d’une mémoire véritablement possédée et exercée par l’esprit."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Promesse technique",
+        "definition": "L’écriture doit augmenter le savoir et soutenir la mémoire."
+      },
+      "right": {
+        "term": "Effet possible",
+        "definition": "Elle peut inciter à externaliser la mémoire et donner une confiance excessive dans des connaissances seulement consultées."
+      },
+      "conclusion": "L’inventeur ne maîtrise pas nécessairement les conséquences de son invention."
+    },
+    {
+      "type": "analysis",
+      "term": "Information ou connaissance ?",
+      "definition": "Lire beaucoup de choses ne garantit pas qu’on sache les expliquer, les défendre ou les relier. Platon distingue ainsi l’accès à des contenus et l’appropriation véritable d’un savoir."
+    },
+    {
+      "type": "analysis",
+      "term": "Une critique de l’écriture écrite par Platon",
+      "definition": "Le paradoxe est volontairement fécond : le texte n’exige pas l’abandon de l’écriture, mais oblige à réfléchir à ce qu’elle peut et ne peut pas faire à la place d’un dialogue vivant et d’un travail de pensée."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "locke-identite-conscience-memoire",
+      "kind": "proche",
+      "label": "Locke — La conscience et la mémoire font l’identité personnelle",
+      "relation": "Les deux textes permettent d’interroger ce que signifie réellement conserver un souvenir et le reconnaître comme sien."
+    },
+    {
+      "id": "descartes-maitres-possesseurs-nature",
+      "kind": "proche",
+      "label": "Descartes — Devenir comme maîtres et possesseurs de la nature",
+      "relation": "Theuth permet de compléter la question de la puissance technique par celle des effets imprévus des outils que nous créons."
+    }
+  ],
+  "paragraphs": [
+    "J’ai entendu dire que près de Naucratis, en Égypte, il y eut un dieu [...] qui s’appelle Theuth. On dit qu’il a inventé le premier les nombres, le calcul, la géométrie et l’astronomie ; les jeux d’échecs, de dés, et l’écriture. [...] Theuth vint donc trouver le roi, lui montra les arts qu’il avait inventés, et lui dit qu’il fallait en faire part à tous les Égyptiens.",
+    "Lorsqu’ils en furent à l’écriture : « Cette science, ô roi ! lui dit Theuth, rendra les Égyptiens plus savants et soulagera leur mémoire. C’est un remède que j’ai trouvé contre la difficulté d’apprendre et de savoir. »",
+    "Le roi répondit : « Industrieux Theuth, tel homme est capable d’enfanter les arts, tel autre d’apprécier les avantages ou les désavantages qui peuvent résulter de leur emploi ; et toi, père de l’écriture, par une bienveillance naturelle pour ton ouvrage, tu l’as vu tout autre qu’il n’est : il ne produira que l’oubli dans l’esprit de ceux qui apprennent, en leur faisant négliger la mémoire. En effet, ils laisseront à ces caractères étrangers le soin de leur rappeler ce qu’ils auront confié à l’écriture, et n’en garderont eux-mêmes aucun souvenir. »",
+    "« Tu n’as donc point trouvé un moyen pour la mémoire, mais pour la simple réminiscence, et tu n’offres à tes disciples que le nom de la science sans la réalité ; car, lorsqu’ils auront lu beaucoup de choses sans maîtres, ils se croiront de nombreuses connaissances, tout ignorants qu’ils seront pour la plupart. » [...] Car voici l’inconvénient de l’écriture, mon cher Phèdre, comme de la peinture. Les productions de ce dernier art semblent vivantes ; mais interrogez-les, elles vous répondront par un grave silence."
+  ]
+},
+{
+  "id": "platon-promethee-epimethee-naissance-politique",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Nature · technique · politique",
+  "title": "Prométhée et Épiméthée : pourquoi les hommes ont besoin de la politique",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "besoin de la politique",
+  "familiarIdea": "le mythe de Prométhée et Épiméthée",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "Technique",
+    "État"
+  ],
+  "work": "Protagoras",
+  "publication": "320c–322d, trad. Victor Cousin, 1826 (extrait)",
+  "description": "La technique suffit-elle pour permettre aux êtres humains de vivre ensemble ?",
+  "context": "Épiméthée distribue aux animaux leurs capacités naturelles mais oublie l’être humain, qui reste nu et sans défense. Prométhée compense ce manque en lui donnant le feu et les techniques. Pourtant cela ne suffit toujours pas : les hommes savent survivre, mais pas <strong>vivre ensemble</strong>. Le récit fait ainsi de la politique et de la justice une nécessité distincte de la simple puissance technique.",
+  "readingQuestions": [
+    "En quoi l’être humain apparaît-il d’abord comme un animal naturellement démuni ?",
+    "Que permettent le feu et les techniques, et que ne permettent-ils pas encore ?",
+    "Pourquoi la justice doit-elle être partagée par tous et non réservée à quelques spécialistes ?"
+  ],
+  "glossary": [
+    {
+      "term": "Épiméthée",
+      "definition": "Frère de Prométhée ; il répartit les capacités entre les espèces mais épuise les ressources avant d’avoir pourvu l’être humain."
+    },
+    {
+      "term": "Prométhée",
+      "definition": "Celui qui remédie au dénuement humain en dérobant le feu et les arts techniques pour les donner aux hommes."
+    },
+    {
+      "term": "vertu politique",
+      "definition": "Capacité à participer à la vie commune ; dans le récit, elle suppose notamment la justice et la retenue nécessaires à l’existence des cités."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Technique",
+        "definition": "Elle permet aux hommes de fabriquer, se vêtir, se nourrir et mieux résister à leur environnement."
+      },
+      "right": {
+        "term": "Politique",
+        "definition": "Elle rend possible une coexistence durable en empêchant les hommes réunis de se détruire mutuellement."
+      },
+      "conclusion": "Savoir transformer le monde ne suffit pas à savoir habiter un monde commun."
+    },
+    {
+      "type": "analysis",
+      "term": "L’être humain comme être inachevé",
+      "definition": "Contrairement aux animaux pourvus de protections naturelles spécialisées, l’homme apparaît démuni. Sa survie dépend de capacités acquises et transmises plutôt que d’un équipement biologique suffisant."
+    },
+    {
+      "type": "analysis",
+      "term": "Pourquoi tous doivent participer à la justice",
+      "definition": "Un art spécialisé peut être exercé par quelques-uns pour le bénéfice des autres. La cité, elle, ne peut exister si seuls quelques individus sont capables de respecter les conditions élémentaires de la vie commune."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "hesiode-promethee-vol-feu",
+      "kind": "proche",
+      "label": "Hésiode — Prométhée vole le feu aux dieux",
+      "relation": "Hésiode met au premier plan le vol du feu et la transgression ; le Protagoras réutilise le mythe pour distinguer technique et capacité politique."
+    },
+    {
+      "id": "descartes-maitres-possesseurs-nature",
+      "kind": "proche",
+      "label": "Descartes — Devenir comme maîtres et possesseurs de la nature",
+      "relation": "Les deux textes interrogent la puissance technique, mais Platon insiste ici sur ce qu’elle ne suffit pas à produire : un ordre politique juste."
+    }
+  ],
+  "paragraphs": [
+    "Il fut un temps où les dieux existaient, et où il n’y avait point encore d’êtres mortels. [...] Quand ils furent sur le point de les faire paraître à la lumière, ils chargèrent Prométhée et Épiméthée du soin de les orner, et de pourvoir chacun d’eux des facultés convenables. Épiméthée conjura son frère de lui laisser faire cette distribution. « Quand je l’aurai faite, dit-il, tu examineras si elle est bien. »",
+    "Comme Épiméthée n’était pas fort habile, il ne s’aperçut pas qu’il avait épuisé toutes les facultés en faveur des êtres privés de raison. L’espèce humaine restait donc dépourvue de tout. [...] Prométhée trouva que les autres animaux étaient partagés avec beaucoup de sagesse, mais que l’homme était nu, sans chaussure, sans vêtements, sans défense. [...] Il prit le parti de dérober à Vulcain et à Minerve les arts et le feu ; car sans le feu la connaissance des arts serait impossible et inutile ; et il en fit présent à l’homme.",
+    "Ainsi notre espèce reçut l’industrie nécessaire au soutien de sa vie ; mais elle n’eut point la politique. [...] Ainsi pourvus du nécessaire, les premiers hommes vivaient dispersés, et les villes n’existaient pas encore. [...] Ils cherchaient à se rassembler, et à se mettre en sûreté en bâtissant des villes ; mais, lorsqu’ils étaient réunis, ils se nuisaient les uns aux autres, parce que la politique leur manquait.",
+    "Jupiter, craignant donc que notre espèce ne pérît entièrement, envoya Mercure pour faire présent aux hommes de la pudeur et de la justice, afin qu’elles missent l’ordre dans les villes, et resserrassent les liens de l’union sociale. [...] « Les distribuerai-je comme on a fait les arts ? » [...] « Entre tous, repartit Jupiter ; et que tous y aient part. Car si la distribution s’en fait entre un petit nombre, comme celle des autres arts, jamais les villes ne se formeront. »"
+  ]
+},
+{
+  "id": "platon-atlantide-puissance-demesure",
+  "section": "philosophie",
+  "sections": [
+    "philosophie",
+    "mythologie"
+  ],
+  "cardMeta": "Puissance · richesse · mesure",
+  "title": "L’Atlantide : quand la puissance corrompt",
+  "author": "Platon",
+  "authorTag": "Platon",
+  "cardHighlight": "quand la puissance corrompt",
+  "familiarIdea": "l’Atlantide",
+  "authorMeta": "v. 427–347 av. J.-C. · philosophie antique",
+  "themes": [
+    "État",
+    "Justice"
+  ],
+  "work": "Critias",
+  "publication": "120d–121c, trad. Victor Cousin, 1840 (extrait)",
+  "description": "Une cité peut-elle rester juste lorsqu’elle devient riche, puissante et incapable de se limiter ?",
+  "context": "Le récit de l’Atlantide ne se réduit pas à la disparition spectaculaire d’une île. Platon décrit une civilisation d’abord gouvernée avec mesure, puis progressivement dominée par le désir d’accroître sa richesse et sa puissance. Sa chute prend ainsi une signification politique : la prospérité devient dangereuse lorsqu’elle fait perdre <strong>la maîtrise de soi et le sens de la justice</strong>.",
+  "readingQuestions": [
+    "Pourquoi les Atlantes supportent-ils d’abord leur richesse sans être dominés par elle ?",
+    "Qu’est-ce qui change lorsque la recherche de puissance et de richesse devient une fin en soi ?",
+    "Peut-on être puissant politiquement tout en ayant perdu ce qui fait une cité juste ?"
+  ],
+  "glossary": [
+    {
+      "term": "Atlantide",
+      "definition": "Île et puissance maritime décrites dans le Timée et le Critias ; son récit associe grandeur politique, expansion, corruption et catastrophe."
+    },
+    {
+      "term": "tempérance",
+      "definition": "Capacité à se gouverner soi-même et à limiter ses désirs plutôt qu’à être dominé par eux."
+    },
+    {
+      "term": "prospérité",
+      "definition": "Situation de richesse et de réussite matérielle ; le passage demande si elle demeure un bien lorsqu’elle détruit la mesure et la vertu."
+    }
+  ],
+  "readingNotes": [
+    {
+      "type": "opposition",
+      "left": {
+        "term": "Posséder des richesses",
+        "definition": "Les biens matériels peuvent être présents sans déterminer la valeur de la cité."
+      },
+      "right": {
+        "term": "Être possédé par elles",
+        "definition": "La richesse devient corruptrice lorsqu’elle commande les désirs, les décisions et l’expansion politique."
+      },
+      "conclusion": "Le problème n’est pas l’existence de la puissance mais l’incapacité à lui imposer une mesure."
+    },
+    {
+      "type": "analysis",
+      "term": "La prospérité comme épreuve",
+      "definition": "Le texte inverse une intuition courante : le succès peut être plus difficile à supporter moralement que le manque, parce qu’il donne les moyens d’étendre sans limite ce que l’on désire."
+    },
+    {
+      "type": "analysis",
+      "term": "Grandeur apparente, misère réelle",
+      "definition": "Ceux qui jugent seulement par la richesse croient l’Atlantide au sommet au moment même où elle dégénère. Platon oppose ainsi puissance visible et qualité véritable d’un ordre politique."
+    }
+  ],
+  "relatedTexts": [
+    {
+      "id": "platon-callicles-loi-nature-justice",
+      "kind": "proche",
+      "label": "Platon — Calliclès : le plus fort devrait avoir davantage",
+      "relation": "L’expansion de l’Atlantide permet de confronter politiquement l’idéal de puissance sans mesure défendu par Calliclès."
+    },
+    {
+      "id": "pascal-force-justice",
+      "kind": "proche",
+      "label": "Pascal — Force et justice",
+      "relation": "Le rapprochement permet de distinguer puissance effective et légitimité : être le plus fort ne signifie pas être juste."
+    }
+  ],
+  "paragraphs": [
+    "Pendant plusieurs générations, tant que les habitants de l’Atlantide conservèrent quelque chose de leur extraction divine, ils obéirent aux lois, et respectèrent le principe divin qui leur était commun à tous ; leurs âmes, attachées à la vérité, ne s’ouvraient qu’à de nobles sentiments ; leur prudence et leur modération éclataient dans toutes les circonstances et dans tous leurs rapports entre eux.",
+    "Ne connaissant d’autres biens que la vertu, ils estimaient peu leurs richesses, et n’avaient pas de peine à considérer comme un fardeau l’or et la multitude des avantages du même genre. Au lieu de se laisser enivrer par les délices de l’opulence et de perdre le gouvernement d’eux-mêmes, ils ne s’écartaient point de la tempérance ; ils comprenaient à merveille que la concorde avec la vertu accroît les autres biens, et qu’en les recherchant avec trop d’ardeur, on les perd, et la vertu avec eux.",
+    "Mais quand l’essence divine commença à s’altérer en eux [...] et que l’humanité prit le dessus, incapables de supporter leur prospérité, ils dégénérèrent ; et dès lors ceux qui savent voir purent reconnaître leur misère et qu’ils avaient perdu le meilleur de leurs biens ; tandis que ceux qui ne peuvent apprécier ce qui fait le vrai bonheur, les crurent parvenus au comble de la gloire et de la félicité, lorsqu’ils se laissaient dominer par l’injuste passion d’étendre leur puissance et leurs richesses.",
+    "Alors Jupiter, le dieu des dieux, qui gouverne tout selon la justice, et à qui rien n’est caché, voyant la dépravation de cette race, autrefois si vertueuse, voulut les punir pour les rendre plus sages et plus modérés."
+  ]
+}
+  ].filter(Boolean);
 
-
-  ];
-
-  const SECTION_LABELS = { philosophie:"Philosophie", theologie:"Théologie", autres:"Autres" };
-  const SECTION_SYMBOLS = { philosophie:"φ", theologie:"✦", autres:"—" };
+  const SECTION_LABELS = { philosophie:"Philosophie", mythologie:"Mythologie", theologie:"Théologie", autres:"Autres" };
+  const SECTION_SYMBOLS = { philosophie:"φ", mythologie:"Μ", theologie:"✦", autres:"—" };
   const READING_PATHS = [
     {
       id:"art",
@@ -10719,8 +12060,8 @@
   const search = root.querySelector("[data-text-search]");
   const section = root.querySelector("[data-text-section]");
   const theme = root.querySelector("[data-text-theme]");
-  const multiThemeEnabled = (fixedSection === "philosophie" || fixedSection === "theologie" || fixedSection === "autres" || fixedSection === "all") && !!theme;
-  const MAX_SELECTED_THEMES = fixedSection === "philosophie" || fixedSection === "theologie" ? 3 : 2;
+  const multiThemeEnabled = (fixedSection === "philosophie" || fixedSection === "mythologie" || fixedSection === "theologie" || fixedSection === "autres" || fixedSection === "all") && !!theme && (fixedSection !== "mythologie" || TEXTS.some((text) => textSections(text).includes("mythologie")));
+  const MAX_SELECTED_THEMES = fixedSection === "philosophie" || fixedSection === "mythologie" || fixedSection === "theologie" ? 3 : 2;
   const author = root.querySelector("[data-text-author]");
   const source = root.querySelector("[data-text-source]");
   const reset = root.querySelector("[data-text-reset]");
@@ -10732,6 +12073,7 @@
   grid.insertAdjacentElement("afterend", pagination);
 
   const availableSections = new Set(TEXTS.flatMap(textSections));
+  availableSections.add("mythologie");
   const sectionTabs = document.querySelector(".texts-section-tabs");
   sectionTabs?.querySelectorAll("a[href]").forEach((link) => {
     const match = link.getAttribute("href")?.match(/^\/textes\/([^/]+)\/?$/);
@@ -11001,11 +12343,12 @@
     ].filter(Boolean).join(" ");
     const destination = textUrl(text);
     const sections = textSections(text);
+    const displaySection = fixedSection !== "all" && sections.includes(fixedSection) ? fixedSection : text.section;
     const isDualSection = sections.includes("philosophie") && sections.includes("theologie");
     const sectionSymbols = sections.map((sectionName) => `<span class="text-card-section-symbol text-card-section-symbol--${sectionName}">${SECTION_SYMBOLS[sectionName] || ""}</span>`).join("");
     const sectionMeta = isDualSection ? "Philosophie & théologie" : (text.cardMeta || SECTION_LABELS[text.section]);
     return `
-    <article class="text-card text-card--${text.section}${isDualSection ? " text-card--dual" : ""}${cardModifiers ? ` ${cardModifiers}` : ""}">
+    <article class="text-card text-card--${displaySection}${isDualSection ? " text-card--dual" : ""}${cardModifiers ? ` ${cardModifiers}` : ""}">
       <a class="text-card-cover-link" href="${destination}" data-text-link aria-label="Lire : ${escapeHtml(text.title)}${textCredit(text) ? `, ${escapeHtml(textCredit(text))}` : ""}"></a>
       <p class="text-card-section">${sectionSymbols}<span aria-hidden="true">•</span><span>${escapeHtml(sectionMeta)}</span></p>
       <h2>${title}</h2>
@@ -11138,7 +12481,10 @@
 
     const pageNote = totalPages > 1 ? ` <span class="texts-count-page">· ${pageResults.length} affiché${pageResults.length > 1 ? "s" : ""} sur la page ${currentPage}</span>` : "";
     count.innerHTML = `<strong>${results.length}</strong> texte${results.length > 1 ? "s" : ""} trouvé${results.length > 1 ? "s" : ""}${linkedNote}${pageNote}`;
-    grid.innerHTML = results.length ? `${renderedSets.join("")}${standalone.map(card).join("")}` : `<div class="texts-empty"><h2>Aucun texte ne correspond</h2><p>Modifiez un filtre ou réinitialisez votre sélection.</p></div>`;
+    const emptyState = fixedSection === "mythologie" && sectionTexts.length === 0
+      ? `<div class="texts-empty"><h2>La section Mythologie est ouverte</h2><p>Les premiers extraits de textes antiques seront ajoutés prochainement.</p></div>`
+      : `<div class="texts-empty"><h2>Aucun texte ne correspond</h2><p>Modifiez un filtre ou réinitialisez votre sélection.</p></div>`;
+    grid.innerHTML = results.length ? `${renderedSets.join("")}${standalone.map(card).join("")}` : emptyState;
     pagination.hidden = totalPages <= 1;
     pagination.innerHTML = totalPages > 1
       ? Array.from({ length:totalPages }, (_, index) => index + 1).map((page) => `<button type="button" class="texts-page-number${page === currentPage ? " is-current" : ""}" data-text-page="${page}"${page === currentPage ? ' aria-current="page"' : ""} aria-label="Afficher la page ${page}">${page}</button>`).join("")
