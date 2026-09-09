@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Lire la Bible — Florian Vallin</title>
@@ -9,8 +28,8 @@
 <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet"/>
 <link rel="canonical" href="https://florianvallin.fr/textes/theologie/bible/"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-<link rel="stylesheet" href="/css/style.css?v=20260807-3"/>
-<link rel="stylesheet" href="/css/textes.css?v=20260824-bible-compact-1"/>
+<link rel="stylesheet" href="/css/style.css?v=20260909-cache-1"/>
+<link rel="stylesheet" href="/css/textes.css?v=20260909-cache-1"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -133,8 +152,8 @@
 
 <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div></footer>
 <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-<script src="/js/script.js?v=20260806-5" defer></script>
-<script src="/js/bible-reader.js?v=20260824-9" defer></script>
-<script src="/js/bible-reader-parcours.js?v=20260810-2" defer></script>
+<script src="/js/script.js?v=20260909-cache-1" defer></script>
+<script src="/js/bible-reader.js?v=20260909-cache-1" defer></script>
+<script src="/js/bible-reader-parcours.js?v=20260909-cache-1" defer></script>
 </body>
 </html>

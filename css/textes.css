@@ -13242,3 +13242,754 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
   }
 }
 
+
+
+/* --- HLP 2026 : intégration des 10 textes --- */
+:root{--hlp:#5f58b6;--hlp-soft:#f2f0ff}
+.text-hlp-badge{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;border:1px solid rgba(95,88,182,.2);border-radius:999px;padding:2px 5px;background:var(--hlp-soft);color:var(--hlp);font:800 7px/1 Inter,sans-serif;letter-spacing:.08em}
+.text-hlp-badge--detail{margin-left:6px;padding:3px 6px;font-size:7.5px}
+.text-detail-hlp-meta{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin:7px 0 14px;color:#807b94;font:500 9px/1.35 Inter,sans-serif}
+.text-detail-hlp-meta>span{color:#5f58a7;font-weight:650}
+.text-detail-hlp-meta small{border:1px solid #ebe8f6;border-radius:999px;padding:3px 6px;background:#faf9fe;color:#8b8698;font-size:7.5px}
+.texts-theme-multi-group--hlp{margin-top:7px;padding-top:8px;border-top:1px solid #eceaf4}.texts-theme-multi-group--hlp .texts-theme-multi-group-title{color:#5f58a7}
+.texts-theme-multi-hlp-object{display:grid;gap:3px;margin:6px 0 8px;padding:6px 7px;border:1px solid #efedf7;border-radius:9px;background:#fbfaff}.texts-theme-multi-hlp-object>strong{color:#68627f;font-size:8px;font-weight:700}.texts-theme-multi-option--hlp span{font-size:8px}
+.philo-hlp-mini{display:inline-flex;border-radius:999px;padding:2px 5px;background:#efedff;color:#5b53ba;font-size:7px;font-weight:850;letter-spacing:.04em}
+@media(max-width:700px){.text-detail-hlp-meta{gap:4px}.text-hlp-badge{font-size:6.8px}}
+
+
+/* --- HLP 2026 : audit éditorial global des 34 fiches --- */
+:root{
+  --hlp-premiere:#6c4aa2;
+  --hlp-premiere-soft:#f3eef9;
+  --hlp-terminale:#18766f;
+  --hlp-terminale-soft:#eaf6f4;
+  --hlp-transversal:#8c6732;
+  --hlp-transversal-soft:#f8f3ea;
+}
+.text-card-section{flex-wrap:wrap}
+.text-hlp-badge{
+  flex:none;
+  margin-left:auto;
+  padding:4px 7px;
+  border-width:1px;
+  font-size:8.5px;
+  font-weight:850;
+  letter-spacing:.065em;
+  white-space:nowrap;
+}
+.text-hlp-badge--premiere{border-color:rgba(108,74,162,.23);background:var(--hlp-premiere-soft);color:var(--hlp-premiere)}
+.text-hlp-badge--terminale{border-color:rgba(24,118,111,.23);background:var(--hlp-terminale-soft);color:var(--hlp-terminale)}
+.text-hlp-badge--transversal{border-color:rgba(140,103,50,.22);background:var(--hlp-transversal-soft);color:var(--hlp-transversal)}
+.text-hlp-badge--detail{margin-left:8px;padding:5px 8px;font-size:9px}
+.text-detail-translator{
+  display:inline-flex;
+  margin-left:6px;
+  padding:2px 6px;
+  border:1px solid rgba(31,33,41,.08);
+  border-radius:999px;
+  background:#fafafa;
+  color:var(--text-light);
+  font-size:11px;
+  line-height:1.25;
+}
+.text-detail-hlp-meta{
+  align-items:flex-start;
+  gap:7px;
+  margin:9px 0 18px;
+  font-size:10px;
+}
+.text-detail-hlp-meta>span{
+  padding-top:3px;
+  color:var(--text-medium);
+  font-weight:700;
+}
+.text-detail-hlp-connections{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:5px;
+}
+.text-detail-hlp-connections em{
+  color:var(--text-light);
+  font-size:8px;
+  font-style:normal;
+  font-weight:750;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.text-detail-hlp-meta small{
+  padding:4px 7px;
+  border-color:rgba(31,33,41,.08);
+  background:#fbfbfc;
+  color:var(--text-medium);
+  font-size:8px;
+}
+
+.text-hlp-study{
+  max-width:760px;
+  margin:34px auto 0;
+  padding:18px 20px 19px;
+  border:1px solid rgba(108,74,162,.13);
+  border-radius:14px;
+  background:linear-gradient(145deg,rgba(108,74,162,.055),rgba(255,255,255,.96) 46%,rgba(24,118,111,.025));
+}
+.text-hlp-study-heading{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:8px;
+}
+.text-hlp-study-heading>div>span,
+.text-hlp-study-cell>span,
+.text-hlp-central-question>span{
+  display:block;
+  color:var(--hlp-premiere);
+  font-size:8.5px;
+  font-weight:850;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.text-hlp-study-heading h2{
+  margin:3px 0 0;
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:20px;
+  font-weight:500;
+  line-height:1.2;
+}
+.text-hlp-tier{
+  flex:none;
+  border:1px solid rgba(31,33,41,.1);
+  border-radius:999px;
+  padding:5px 8px;
+  background:#fff;
+  color:var(--text-medium);
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.04em;
+}
+.text-hlp-tier--essential{border-color:rgba(108,74,162,.2);background:var(--hlp-premiere-soft);color:var(--hlp-premiere)}
+.text-hlp-tier--transversal{border-color:rgba(24,118,111,.18);background:var(--hlp-terminale-soft);color:var(--hlp-terminale)}
+.text-hlp-hook{
+  margin:0;
+  color:var(--text-medium);
+  font-size:13px;
+  line-height:1.65;
+}
+.text-hlp-central-question{
+  margin-top:14px;
+  padding:12px 14px;
+  border-left:2px solid var(--hlp-premiere);
+  background:#fff;
+}
+.text-hlp-central-question strong{
+  display:block;
+  margin-top:4px;
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:16px;
+  font-weight:500;
+  line-height:1.4;
+}
+.text-hlp-study-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);
+  gap:12px 18px;
+  margin-top:15px;
+  padding-top:14px;
+  border-top:1px solid rgba(31,33,41,.08);
+}
+.text-hlp-study-cell:first-child{grid-row:span 2}
+.text-hlp-study-cell ul{margin:7px 0 0;padding-left:17px}
+.text-hlp-study-cell li{margin:5px 0;color:var(--text-medium);font-size:11.5px;line-height:1.5}
+.text-hlp-keywords,.text-hlp-oppositions{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.text-hlp-keywords small{
+  border:1px solid rgba(108,74,162,.13);
+  border-radius:999px;
+  padding:4px 7px;
+  background:#fff;
+  color:#655d70;
+  font-size:8px;
+  font-weight:700;
+}
+.text-hlp-oppositions small{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  border-radius:7px;
+  padding:5px 7px;
+  background:#fff;
+  color:var(--text-medium);
+  font-size:8px;
+}
+.text-hlp-oppositions b{font-weight:750}
+.text-hlp-oppositions i{color:var(--hlp-premiere);font-style:normal}
+
+.text-context--structured{padding:18px 20px 19px}
+.text-context-intro>span,.text-context-guide-wrap>span{
+  display:block;
+  margin-bottom:5px;
+  color:var(--primary-dark);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.text-context-guide-wrap{
+  margin-top:13px;
+  padding-top:12px;
+  border-top:1px solid rgba(108,99,255,.12);
+}
+.text-context-questions ol{margin:0;padding-left:20px}
+.text-context-questions li{margin:5px 0;font-size:12px;font-style:normal;line-height:1.55}
+.text-reading-part-title{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  max-width:760px;
+  margin:32px auto 13px;
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:18px;
+  font-weight:500;
+  line-height:1.3;
+}
+.text-reading-part-title>span{
+  color:var(--text-light);
+  font-family:Inter,sans-serif;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.1em;
+}
+.text-detail-reference--apa{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:5px 8px;
+  font-size:11px;
+}
+.text-detail-reference-label{
+  color:var(--text-light);
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.text-detail-reference--apa>a{
+  margin-left:auto;
+  color:var(--primary-dark);
+  font-size:9px;
+  font-weight:700;
+  text-decoration:none;
+}
+.text-detail-reference--apa>a:hover,.text-detail-reference--apa>a:focus-visible{text-decoration:underline;outline:none}
+
+.texts-theme-multi-group--hlp-premiere .texts-theme-multi-group-title{color:var(--hlp-premiere)}
+.texts-theme-multi-group--hlp-terminale .texts-theme-multi-group-title{color:var(--hlp-terminale)}
+.texts-theme-multi-group--hlp-overview{background:linear-gradient(90deg,rgba(108,74,162,.025),rgba(24,118,111,.018))}
+.texts-theme-multi-group--hlp-premiere .texts-theme-multi-hlp-object{border-color:rgba(108,74,162,.12);background:#fcfaff}
+.texts-theme-multi-group--hlp-terminale .texts-theme-multi-hlp-object{border-color:rgba(24,118,111,.12);background:#f9fdfc}
+
+@media(max-width:700px){
+  .text-hlp-badge{padding:3px 6px;font-size:7.7px}
+  .text-hlp-badge--detail{margin-left:4px;font-size:8px}
+  .text-detail-section{flex-wrap:wrap}
+  .text-detail-translator{margin:6px 0 0 0}
+  .text-hlp-study{margin-top:26px;padding:15px 14px 16px;border-radius:11px}
+  .text-hlp-study-heading{gap:10px}
+  .text-hlp-study-heading h2{font-size:18px}
+  .text-hlp-study-grid{grid-template-columns:1fr;gap:13px}
+  .text-hlp-study-cell:first-child{grid-row:auto}
+  .text-hlp-central-question{padding:10px 11px}
+  .text-hlp-central-question strong{font-size:15px}
+  .text-context--structured{padding:15px 14px 16px}
+  .text-reading-part-title{gap:8px;margin-top:25px;font-size:16.5px}
+  .text-detail-reference--apa{display:block;font-size:10px}
+  .text-detail-reference--apa .text-detail-reference-label{display:block;margin-bottom:4px}
+  .text-detail-reference--apa>a{display:inline-block;margin:6px 0 0}
+}
+@media(max-width:430px){
+  .text-card-section>span:not(.text-card-section-symbol):not(.text-hlp-badge){min-width:0}
+  .text-hlp-badge{margin-left:0}
+  .text-hlp-study-heading{display:block}
+  .text-hlp-tier{display:inline-flex;margin-top:8px}
+}
+
+/* === HLP · parcours + fiches : simplification visuelle (2026-09-05) === */
+
+/* Fiche : « Pourquoi lire ce texte ? » devient un dépliant léger, placé
+   après l'introduction/les repères et juste avant « Poursuivre la réflexion ». */
+.text-hlp-study{
+  max-width:760px;
+  margin:18px auto 0;
+  padding:0;
+  overflow:hidden;
+  border:1px solid rgba(108,74,162,.12);
+  border-radius:12px;
+  background:#fff;
+}
+.text-hlp-study-trigger{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto 18px;
+  gap:10px;
+  align-items:center;
+  width:100%;
+  height:58px;
+  min-height:58px;
+  padding:9px 14px;
+  border:0;
+  background:#fcfbfe;
+  color:inherit;
+  cursor:pointer;
+  font:inherit;
+  text-align:left;
+}
+.text-hlp-study-trigger:hover,
+.text-hlp-study-trigger:focus-visible{background:#f8f6fc;outline:none}
+.text-hlp-study-trigger:focus-visible{box-shadow:inset 0 0 0 2px rgba(108,74,162,.18)}
+.text-hlp-study-trigger-copy{display:grid;gap:2px;min-width:0}
+.text-hlp-study-trigger-copy small{
+  color:var(--hlp-premiere);
+  font-size:7.8px;
+  font-weight:850;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.text-hlp-study-trigger-copy strong{
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:16px;
+  font-weight:500;
+  line-height:1.25;
+}
+.text-hlp-study-trigger .text-hlp-tier{margin:0;padding:4px 7px;font-size:7.5px;white-space:nowrap}
+.text-hlp-study-toggle{position:relative;width:16px;height:16px}
+.text-hlp-study-toggle::before,
+.text-hlp-study-toggle::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:8px;
+  height:1px;
+  background:#8e8796;
+  transform:translate(-50%,-50%);
+  transition:transform .24s ease;
+}
+.text-hlp-study-toggle::after{transform:translate(-50%,-50%) rotate(90deg)}
+.text-hlp-study.is-open .text-hlp-study-toggle::after{transform:translate(-50%,-50%) rotate(0)}
+.text-hlp-study-panel{
+  padding:0 14px;
+  border-top:0;
+  transition:padding .24s ease;
+}
+.text-hlp-study.is-open .text-hlp-study-panel{
+  padding:13px 14px 14px;
+  border-top:1px solid rgba(31,33,41,.065);
+}
+.text-hlp-hook{margin:0;color:var(--text-medium);font-size:12px;line-height:1.58}
+.text-hlp-central-question{
+  margin-top:11px;
+  padding:9px 11px;
+  border-left:2px solid rgba(108,74,162,.55);
+  background:#faf9fc;
+}
+.text-hlp-central-question>span{font-size:7.8px;letter-spacing:.085em}
+.text-hlp-central-question strong{margin-top:3px;font-size:14.5px;line-height:1.35}
+.text-hlp-study-grid{
+  grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+  gap:10px 16px;
+  margin-top:11px;
+  padding-top:11px;
+}
+.text-hlp-study-cell:first-child{grid-row:span 2}
+.text-hlp-study-cell>span{font-size:7.8px;letter-spacing:.085em}
+.text-hlp-study-cell ul{margin:5px 0 0;padding-left:16px}
+.text-hlp-study-cell li{margin:3px 0;font-size:10.8px;line-height:1.45}
+.text-hlp-keywords,.text-hlp-oppositions{gap:4px;margin-top:5px}
+.text-hlp-keywords small{padding:3px 6px;font-size:7.7px}
+.text-hlp-oppositions small{padding:4px 6px;font-size:7.7px}
+
+/* Boussole HLP : une même grammaire visuelle pour tous les objets du programme.
+   Chaque grand objet forme une carte, puis ses sous-thèmes deviennent des sections. */
+.philo-path-card--hlp-cluster{
+  --hlp-path-accent:var(--hlp-premiere);
+  --hlp-path-soft:var(--hlp-premiere-soft);
+  --hlp-path-tint:#fcfbff;
+  border-color:color-mix(in srgb,var(--hlp-path-accent) 16%,transparent)!important;
+  background:linear-gradient(145deg,#fff 0%,var(--hlp-path-tint) 100%)!important;
+}
+.philo-path-card--hlp-cluster.philo-path-card--hlp-terminale{
+  --hlp-path-accent:var(--hlp-terminale);
+  --hlp-path-soft:var(--hlp-terminale-soft);
+  --hlp-path-tint:#f9fdfc;
+}
+.philo-path-card--hlp-cluster .philo-path-number{
+  background:var(--hlp-path-soft)!important;
+  color:var(--hlp-path-accent)!important;
+}
+.philo-path-card--hlp-cluster .philo-hlp-mini{
+  background:var(--hlp-path-soft);
+  color:var(--hlp-path-accent);
+}
+.philo-path-card--hlp-cluster .philo-path-body{
+  gap:8px;
+  background:color-mix(in srgb,var(--hlp-path-accent) 1.5%,transparent);
+}
+.philo-path-card--hlp-cluster .philo-path-question--hlp-section{
+  border-color:color-mix(in srgb,var(--hlp-path-accent) 11%,transparent);
+  background:#fff;
+}
+.philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger{
+  grid-template-columns:minmax(0,1fr) 20px;
+  gap:2px 10px;
+  padding:12px 13px;
+  background:#fff;
+}
+.philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger:hover,
+.philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger:focus-visible{
+  background:color-mix(in srgb,var(--hlp-path-accent) 4%,#fff);
+}
+.philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger>span{
+  color:var(--hlp-path-accent);
+  font-size:7.6px;
+  letter-spacing:.085em;
+}
+.philo-path-question--hlp-section .philo-path-question-trigger>strong{
+  font-size:15.5px;
+  line-height:1.22;
+}
+.philo-path-subquestion{
+  grid-column:1;
+  margin-top:2px;
+  color:#716b78!important;
+  font-size:10.4px!important;
+  font-style:normal!important;
+  line-height:1.45!important;
+}
+.philo-path-question--hlp-section .philo-path-question-trigger>i{grid-row:1/4}
+.philo-path-question--hlp-section .philo-path-question-panel-inner{
+  padding:10px 11px 11px;
+  background:#fdfcfe;
+}
+.philo-path-question--hlp-section .philo-path-question-panel-inner>p{
+  max-width:720px;
+  margin:0 0 8px;
+  color:#716b78;
+  font-size:10.2px;
+  line-height:1.5;
+}
+.philo-path-flow--section{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:5px;
+  counter-reset:hlp-path-step;
+}
+.philo-path-flow--section>a{
+  counter-increment:hlp-path-step;
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr);
+  grid-template-rows:auto auto;
+  gap:1px 8px;
+  min-height:48px;
+  padding:7px 9px;
+  border-radius:8px;
+  background:#fff;
+}
+.philo-path-flow--section>a::before{
+  content:counter(hlp-path-step, decimal-leading-zero);
+  grid-column:1;
+  grid-row:1/3;
+  align-self:center;
+  color:#aaa4b1;
+  font-size:7.4px;
+  font-weight:850;
+  letter-spacing:.03em;
+}
+.philo-path-flow--section>a small{grid-column:2;font-size:7.9px}
+.philo-path-flow--section>a strong{grid-column:2;font-size:9.2px;line-height:1.35}
+
+@media(max-width:700px){
+  .text-hlp-study{margin-top:14px;border-radius:10px}
+  .text-hlp-study-trigger{grid-template-columns:minmax(0,1fr) auto 16px;height:54px;min-height:54px;padding:8px 11px;gap:7px}
+  .text-hlp-study-trigger .text-hlp-tier{grid-column:2;grid-row:1;justify-self:end;margin:0;padding:3px 6px;font-size:7px}
+  .text-hlp-study-toggle{grid-column:3;grid-row:1}
+  .text-hlp-study-trigger-copy strong{font-size:15px}
+  .text-hlp-study-panel{padding:0 11px}
+  .text-hlp-study.is-open .text-hlp-study-panel{padding:11px 11px 12px}
+  .text-hlp-study-grid{grid-template-columns:1fr;gap:9px}
+  .text-hlp-study-cell:first-child{grid-row:auto}
+  .text-hlp-central-question strong{font-size:13.8px}
+  .philo-path-card--hlp-cluster .philo-path-body{padding:0 8px 9px}
+  .philo-path-question--hlp-section .philo-path-question-trigger{padding:10px 11px}
+  .philo-path-question--hlp-section .philo-path-question-trigger>strong{font-size:14.5px}
+  .philo-path-subquestion{font-size:9.7px!important}
+  .philo-path-flow--section{grid-template-columns:1fr;gap:4px}
+  .philo-path-flow--section>a{width:100%;min-width:0;min-height:46px;padding:7px 8px}
+}
+
+
+/* ==========================================================
+   BOUSSOLE MYTHOLOGIQUE — accès catalogue + CTA (2026-09-08)
+   ========================================================== */
+.texts-myth-compass-strip {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  margin-top:15px;
+  padding:9px 12px;
+  border:1px solid rgba(166,106,44,.17);
+  border-radius:12px;
+  background:rgba(166,106,44,.035);
+  color:#96602a;
+  text-decoration:none;
+  transition:border-color .2s ease,background .2s ease,box-shadow .2s ease,transform .2s ease;
+}
+.texts-myth-compass-strip:hover,.texts-myth-compass-strip:focus-visible {
+  border-color:rgba(166,106,44,.32);
+  background:rgba(166,106,44,.065);
+  box-shadow:0 7px 18px rgba(91,59,29,.055);
+  outline:none;
+  transform:translateY(-1px);
+}
+.texts-myth-compass-icon {
+  display:grid;
+  width:30px;height:30px;flex:0 0 30px;place-items:center;
+  border-radius:50%;background:rgba(166,106,44,.075);color:currentColor;
+}
+.texts-myth-compass-icon svg {
+  width:24px;height:24px;overflow:visible;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;
+}
+.texts-myth-compass-icon .compass-needle-north { fill:currentColor; fill-opacity:.92; stroke-width:1; }
+.texts-myth-compass-icon .compass-needle-south { fill:#fff; fill-opacity:.96; stroke-width:1; }
+.texts-myth-compass-text { min-width:0;color:currentColor;font-size:11px;line-height:1.35;text-align:center; }
+.texts-myth-compass-text strong { color:currentColor;font-weight:760; }
+
+/* /textes/ : trois boussoles. La boussole survolée devient la porte d'entrée principale. */
+.texts-compass-pair {
+  grid-template-columns:minmax(0,1.65fr) minmax(0,.72fr) minmax(0,.72fr);
+  transition:grid-template-columns .28s ease;
+}
+.texts-compass-pair .texts-philo-compass-strip,
+.texts-compass-pair .texts-myth-compass-strip,
+.texts-compass-pair .texts-bible-compass-strip { width:100%;min-width:0;margin-top:0;box-sizing:border-box; }
+.texts-compass-pair .texts-philo-compass-text,
+.texts-compass-pair .texts-myth-compass-text,
+.texts-compass-pair .texts-bible-compass-text { overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+@supports selector(.texts-compass-pair:has(a:hover)) {
+  .texts-compass-pair:has(.texts-philo-compass-strip:hover),
+  .texts-compass-pair:has(.texts-philo-compass-strip:focus-visible) { grid-template-columns:minmax(0,1.65fr) minmax(0,.72fr) minmax(0,.72fr); }
+  .texts-compass-pair:has(.texts-myth-compass-strip:hover),
+  .texts-compass-pair:has(.texts-myth-compass-strip:focus-visible) { grid-template-columns:minmax(0,.72fr) minmax(0,1.65fr) minmax(0,.72fr); }
+  .texts-compass-pair:has(.texts-bible-compass-strip:hover),
+  .texts-compass-pair:has(.texts-bible-compass-strip:focus-visible) { grid-template-columns:minmax(0,.72fr) minmax(0,.72fr) minmax(0,1.65fr); }
+}
+.compass-context-cta--myth.compass-context-cta--merged {
+  border-color:rgba(103,66,31,.26)!important;
+  background:linear-gradient(135deg,#684926 0%,#8b6031 100%)!important;
+  box-shadow:0 13px 30px rgba(105,69,32,.14)!important;
+}
+.compass-context-cta--myth .compass-context-cta-primary { color:#74491f; }
+
+@media (max-width:700px) {
+  .texts-compass-pair { grid-template-columns:1fr;gap:7px; }
+  .texts-compass-pair .texts-philo-compass-strip,
+  .texts-compass-pair .texts-myth-compass-strip,
+  .texts-compass-pair .texts-bible-compass-strip { min-height:42px; }
+  .texts-compass-pair .texts-philo-compass-text,
+  .texts-compass-pair .texts-myth-compass-text,
+  .texts-compass-pair .texts-bible-compass-text { font-size:10px;white-space:normal; }
+}
+@media (max-width:520px) {
+  .texts-myth-compass-strip { gap:8px;margin-top:13px;padding:8px 10px; }
+  .texts-myth-compass-icon { width:28px;height:28px;flex-basis:28px; }
+  .texts-myth-compass-icon svg { width:22px;height:22px; }
+  .texts-myth-compass-text { font-size:10.2px; }
+  .texts-compass-pair .texts-myth-compass-strip { gap:6px;padding:8px 7px; }
+  .texts-compass-pair .texts-myth-compass-icon { width:25px;height:25px;flex-basis:25px; }
+  .texts-compass-pair .texts-myth-compass-icon svg { width:20px;height:20px; }
+}
+
+/* ========================================================================== 
+   BOUSSOLE BIBLIQUE V22 — navigation sticky et condensée comme la boussole
+   philosophique, sur desktop et mobile · 2026-09-08
+   ========================================================================== */
+.bible-compass-page .bible-compass-jump-wrap{
+  position:sticky !important;
+  top:76px !important;
+  z-index:4300 !important;
+  width:100% !important;
+  height:auto !important;
+  margin:14px auto 30px !important;
+  pointer-events:none !important;
+}
+.bible-compass-page .bible-compass-jump,
+.bible-compass-page .bible-compass-jump.is-floating{
+  position:relative !important;
+  top:auto !important;
+  right:auto !important;
+  left:auto !important;
+  transform:none !important;
+  z-index:auto !important;
+  pointer-events:auto !important;
+  transition:width .18s ease,max-width .18s ease,padding .18s ease,border-radius .18s ease,box-shadow .18s ease !important;
+}
+.bible-compass-page .bible-compass-jump:not(.is-condensed){
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  gap:5px !important;
+  width:min(100%,900px) !important;
+  max-width:900px !important;
+  margin:0 auto !important;
+  padding:6px !important;
+}
+.bible-compass-page .bible-compass-jump.is-condensed{
+  display:flex !important;
+  grid-template-columns:none !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:4px !important;
+  width:max-content !important;
+  max-width:calc(100vw - 24px) !important;
+  margin:0 auto !important;
+  padding:5px !important;
+  border:1px solid rgba(147,75,89,.14) !important;
+  border-radius:15px !important;
+  background:rgba(255,252,251,.96) !important;
+  box-shadow:0 10px 28px rgba(66,45,52,.095) !important;
+  backdrop-filter:blur(12px) !important;
+  -webkit-backdrop-filter:blur(12px) !important;
+}
+.bible-compass-page .bible-compass-jump.is-condensed > a{
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:row !important;
+  gap:0 !important;
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  min-height:40px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  border:0 !important;
+  border-radius:11px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:left !important;
+  transition:width .18s ease,padding .18s ease,gap .18s ease,background .16s ease !important;
+}
+.bible-compass-page .bible-compass-jump.is-condensed .bible-jump-num{display:none !important}
+.bible-compass-page .bible-compass-jump.is-condensed .bible-jump-icon{
+  display:grid !important;
+  place-items:center !important;
+  width:31px !important;
+  height:31px !important;
+  min-width:31px !important;
+  flex:0 0 31px !important;
+  border-radius:9px !important;
+}
+.bible-compass-page .bible-compass-jump.is-condensed .bible-jump-copy{
+  display:none !important;
+  min-width:0 !important;
+}
+.bible-compass-page .bible-compass-jump.is-condensed > a::before{display:none !important;content:none !important}
+@media (hover:hover) and (pointer:fine){
+  .bible-compass-page .bible-compass-jump.is-condensed > a:hover,
+  .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible{
+    width:150px !important;
+    padding:0 10px 0 5px !important;
+    gap:8px !important;
+    justify-content:flex-start !important;
+    background:#f7ecef !important;
+    outline:none !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-condensed > a:hover .bible-jump-copy,
+  .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible .bible-jump-copy{
+    display:grid !important;
+    gap:1px !important;
+    align-content:center !important;
+    width:auto !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-condensed > a:hover .bible-jump-copy strong,
+  .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible .bible-jump-copy strong{
+    display:block !important;
+    color:#54494e !important;
+    font-size:9px !important;
+    line-height:1.08 !important;
+    text-align:left !important;
+    white-space:nowrap !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-condensed > a:hover .bible-jump-copy small,
+  .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible .bible-jump-copy small{
+    display:block !important;
+    color:#995361 !important;
+    font-size:7px !important;
+    line-height:1.08 !important;
+    text-align:left !important;
+    white-space:nowrap !important;
+  }
+}
+@media(max-width:700px){
+  .bible-compass-page .bible-compass-jump-wrap{
+    top:68px !important;
+    margin:12px auto 27px !important;
+  }
+  .bible-compass-page .bible-compass-jump:not(.is-condensed){
+    position:relative !important;
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:4px !important;
+    width:100% !important;
+    max-width:900px !important;
+    margin:0 auto !important;
+    padding:5px !important;
+    transform:none !important;
+  }
+  .bible-compass-page .bible-compass-jump:not(.is-condensed) > a{
+    display:grid !important;
+    grid-template-columns:26px minmax(0,1fr) !important;
+    grid-template-rows:auto auto !important;
+    min-height:46px !important;
+    padding:5px !important;
+    text-align:left !important;
+  }
+  .bible-compass-page .bible-compass-jump:not(.is-condensed) .bible-jump-icon{
+    grid-row:1/3 !important;
+    width:26px !important;
+    height:26px !important;
+    flex:0 0 26px !important;
+  }
+  .bible-compass-page .bible-compass-jump:not(.is-condensed) .bible-jump-copy{display:contents !important}
+  .bible-compass-page .bible-compass-jump:not(.is-condensed) .bible-jump-copy strong{display:block !important;font-size:8.2px !important;text-align:left !important}
+  .bible-compass-page .bible-compass-jump:not(.is-condensed) .bible-jump-copy small{display:block !important;font-size:6.4px !important;text-align:left !important}
+  .bible-compass-page .bible-compass-jump.is-condensed,
+  .bible-compass-page .bible-compass-jump.is-floating.is-condensed{
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    gap:3px !important;
+    padding:4px !important;
+    transform:none !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-condensed > a{
+    width:37px !important;
+    height:37px !important;
+    min-width:37px !important;
+    min-height:37px !important;
+    flex-direction:row !important;
+  }
+  .bible-compass-page .bible-compass-jump.is-condensed .bible-jump-icon{
+    width:28px !important;
+    height:28px !important;
+    min-width:28px !important;
+    flex-basis:28px !important;
+  }
+}
+@media(max-width:480px){
+  .bible-compass-page .bible-compass-jump:not(.is-condensed){grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}

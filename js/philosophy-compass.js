@@ -4,6 +4,7 @@
   const textUrl = window.FV_TEXT_URL || ((item) => `/textes/${encodeURIComponent(typeof item === "string" ? item : item.id)}/`);
   const catalog = window.FV_TEXT_CATALOG || [];
   const legacyPaths = window.FV_TEXT_PATHS || [];
+  const hlpPaths = window.FV_HLP_PATHS || [];
   const programThemes = window.FV_CURRENT_PROGRAM_THEMES || [
     "Art", "Bonheur", "Conscience", "Devoir", "État", "Inconscient", "Justice", "Langage", "Liberté",
     "Nature", "Raison", "Religion", "Science", "Technique", "Temps", "Travail", "Vérité"
@@ -513,6 +514,7 @@
   const pathSearchFeedback = document.querySelector("[data-philo-path-search-feedback]");
   const pathTabs = [...document.querySelectorAll("[data-philo-path-tab]")];
   const otherCount = document.querySelector("[data-philo-other-count]");
+  const hlpCount = document.querySelector("[data-philo-hlp-count]");
   const allCount = document.querySelector("[data-philo-all-count]");
 
   const pathGuides = {
@@ -773,19 +775,106 @@
     if (!groups.length && items.length) groups = [{kind:"Point de départ",question:`Une première entrée sur « ${theme} »`,note:"",items}];
     return {theme,slug,category,items,groups,intro:guide?.intro || (items.length ? `${items.length} texte${items.length>1?"s":""} actuellement relié${items.length>1?"s":""} à ce thème.` : "Ce thème est prévu dans la boussole, mais aucun texte de la bibliothèque n’y est encore rattaché.")};
   };
+  // HLP : une carte par grand objet du programme. Les sous-thèmes deviennent
+  // des sous-sections internes, pour éviter une succession de parcours dispersés.
+  const hlpSubthemeQuestions = {
+    "Éducation, transmission et émancipation":"Comment l’éducation et l’exemple peuvent-ils rendre le sujet plus libre ?",
+    "Les expressions de la sensibilité":"Comment la littérature donne-t-elle forme à ce que le sujet éprouve ?",
+    "Les métamorphoses du moi":"Comment le rapport à soi transforme-t-il l’identité ?",
+    "Découverte du monde et pluralité des cultures":"Comment la rencontre d’autres cultures transforme-t-elle le regard que nous portons sur la nôtre ?",
+    "Décrire, figurer, imaginer":"Comment les représentations façonnent-elles notre manière de voir et de désirer le monde ?",
+    "L’homme et l’animal":"Quelles frontières pouvons-nous tracer entre l’être humain et les autres animaux ?",
+    "Histoire et violence":"Comment la violence historique agit-elle sur les sociétés et sur les esprits ?"
+  };
+  const hlpThemeIntros = {
+    "La recherche de soi":"Un parcours en trois étapes : apprendre et s’émanciper, exprimer la sensibilité, puis interroger les transformations du moi.",
+    "Les représentations du monde":"Un parcours en trois étapes : rencontrer la pluralité des cultures, comprendre comment nous décrivons et imaginons le monde, puis interroger la frontière entre l’homme et l’animal.",
+    "L’humanité en question":"Un parcours pour interroger les formes de la violence historique et leurs effets sur les individus comme sur les sociétés."
+  };
+  const hlpKey = (path) => `${path.level || ""}::${path.theme || ""}`;
+  const explicitHlpClusters = hlpPaths.filter((path) => path.groups?.length);
+  const explicitKeys = new Set(explicitHlpClusters.map(hlpKey));
+  const leafHlpPaths = hlpPaths.filter((path) => !path.groups?.length);
+  const leavesByKey = new Map();
+  leafHlpPaths.forEach((path) => {
+    const key = hlpKey(path);
+    if (!leavesByKey.has(key)) leavesByKey.set(key, []);
+    leavesByKey.get(key).push(path);
+  });
+  const syntheticHlpClusters = [...leavesByKey.entries()]
+    .filter(([key]) => !explicitKeys.has(key))
+    .map(([, paths]) => {
+      const first = paths[0];
+      const texts = [...new Set(paths.flatMap((path) => path.texts || []))];
+      return {
+        id:`hlp-${slugify(first.theme)}-parcours`,
+        level:first.level,
+        theme:first.theme,
+        subtheme:"Parcours",
+        intro:hlpThemeIntros[first.theme] || (paths.length > 1
+          ? `Un parcours en ${paths.length} sous-sections pour explorer « ${first.theme} ».`
+          : first.intro || `Un parcours HLP autour de « ${first.theme} ».`),
+        texts,
+        aliases:paths.map((path) => path.id),
+        groups:paths.map((path,index) => ({
+          kind:`${index+1} · ${path.subtheme}`,
+          question:hlpSubthemeQuestions[path.subtheme] || path.subtheme,
+          note:path.intro || "",
+          texts:path.texts || []
+        }))
+      };
+    });
+  const explicitWithAliases = explicitHlpClusters.map((path) => ({
+    ...path,
+    aliases:leafHlpPaths.filter((leaf) => hlpKey(leaf) === hlpKey(path)).map((leaf) => leaf.id)
+  }));
+  const hlpLevelOrder = {Première:0,Terminale:1};
+  const hlpDisplayPaths = [...explicitWithAliases, ...syntheticHlpClusters].sort((a,b) =>
+    (hlpLevelOrder[a.level] ?? 9) - (hlpLevelOrder[b.level] ?? 9) || collator.compare(a.theme,b.theme)
+  );
+  const hlpModels = hlpDisplayPaths.map((path) => {
+    const items = path.texts.map((id) => catalog.find((item) => item.id === id)).filter(Boolean);
+    const groups = (path.groups || []).map((group) => ({
+      kind:group.kind || `HLP · ${path.level}`,
+      question:group.question || path.subtheme,
+      note:group.note || "",
+      items:(group.texts || []).map((id) => catalog.find((item) => item.id === id)).filter(Boolean)
+    })).filter((group) => group.items.length);
+    return {
+      theme:path.theme,
+      slug:path.id,
+      aliases:path.aliases || [],
+      category:"hlp",
+      items,
+      hlp:path,
+      groups,
+      isGroupedPath:true,
+      intro:path.intro || `${items.length} texte${items.length>1?"s":""} dans ce parcours HLP.`
+    };
+  });
   const themeModels = [
     ...programThemes.map((theme) => buildThemeModel(theme,"main")),
-    ...otherThemes.map((theme) => buildThemeModel(theme,"other"))
+    ...otherThemes.map((theme) => buildThemeModel(theme,"other")),
+    ...hlpModels
   ];
+  if (hlpCount) hlpCount.textContent = String(hlpModels.length);
   if (allCount) allCount.textContent = String(themeModels.length);
 
-  const renderFlow = (items) => `<div class="philo-path-flow">${items.map((item,index) => `${index ? '<span class="philo-path-connector" aria-hidden="true">→</span>' : ''}<a href="${textUrl(item)}" data-philo-path-text="${escapeHtml(item.id)}"><small>${escapeHtml(item.authorTag || item.author || item.source || "Texte")}</small><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>`;
+  const renderFlow = (items, sectionMode = false) => `<div class="philo-path-flow${sectionMode ? " philo-path-flow--section" : ""}">${items.map((item,index) => `${!sectionMode && index ? '<span class="philo-path-connector" aria-hidden="true">→</span>' : ''}<a href="${textUrl(item)}" data-philo-path-text="${escapeHtml(item.id)}"><small>${escapeHtml(item.authorTag || item.author || item.source || "Texte")}</small><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>`;
+  const cleanHlpGroupTitle = (value) => String(value || "").replace(/^\s*\d+\s*[·.–-]\s*/, "");
 
   if (pathRoot) {
     pathRoot.innerHTML = themeModels.map((model,index) => {
-      const groupsHtml = model.groups.length ? model.groups.map((group,groupIndex) => `<article class="philo-path-question" data-philo-path-group data-philo-group-authors="${escapeHtml(group.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" "))}"><button type="button" class="philo-path-question-trigger" aria-expanded="false" data-philo-path-group-trigger><span>${escapeHtml(group.kind)} · ${String(groupIndex+1).padStart(2,"0")}</span><strong>${formatForeignTerms(group.question)}</strong><i aria-hidden="true"></i></button><div class="philo-path-question-panel" data-philo-path-group-panel hidden><div class="philo-path-question-panel-inner">${group.note ? `<p>${formatForeignTerms(group.note)}</p>` : ""}${renderFlow(group.items)}</div></div></article>`).join("") : `<div class="philo-path-no-text"><strong>Parcours à venir</strong><span>Aucun texte n’est encore rattaché à ce thème.</span><a href="/textes/philosophie/?theme=${encodeURIComponent(model.theme)}">Voir le thème dans la bibliothèque →</a></div>`;
+      const groupsHtml = model.groups.length ? model.groups.map((group,groupIndex) => {
+        const groupedHlp = model.category === "hlp" && model.isGroupedPath;
+        const groupTitle = groupedHlp ? cleanHlpGroupTitle(group.kind) : group.question;
+        const groupKicker = groupedHlp ? `Sous-section ${String(groupIndex+1).padStart(2,"0")} · ${group.items.length} texte${group.items.length>1?"s":""}` : `${group.kind} · ${String(groupIndex+1).padStart(2,"0")}`;
+        return `<article class="philo-path-question${groupedHlp ? " philo-path-question--hlp-section" : ""}" data-philo-path-group data-philo-group-authors="${escapeHtml(group.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" "))}"><button type="button" class="philo-path-question-trigger" aria-expanded="false" data-philo-path-group-trigger><span>${escapeHtml(groupKicker)}</span><strong>${formatForeignTerms(groupTitle)}</strong>${groupedHlp ? `<em class="philo-path-subquestion">${formatForeignTerms(group.question)}</em>` : ""}<i aria-hidden="true"></i></button><div class="philo-path-question-panel" data-philo-path-group-panel hidden><div class="philo-path-question-panel-inner">${group.note ? `<p>${formatForeignTerms(group.note)}</p>` : ""}${renderFlow(group.items, groupedHlp)}</div></div></article>`;
+      }).join("") : `<div class="philo-path-no-text"><strong>Parcours à venir</strong><span>Aucun texte n’est encore rattaché à ce thème.</span><a href="/textes/philosophie/?theme=${encodeURIComponent(model.theme)}">Voir le thème dans la bibliothèque →</a></div>`;
       const authors = model.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" ");
-      return `<article class="philo-path-card" id="parcours-${escapeHtml(model.slug)}" data-philo-path-id="${escapeHtml(model.slug)}" data-philo-path-theme="${escapeHtml(model.theme)}" data-philo-path-category="${model.category}" data-philo-path-authors="${escapeHtml(authors)}"><button class="philo-path-card-trigger" type="button" aria-expanded="false" data-philo-path-trigger><span class="philo-path-number">${String(index+1).padStart(2,"0")}</span><span class="philo-path-title"><small>${model.items.length} texte${model.items.length>1?"s":""}${model.groups.length ? ` · ${model.groups.length} question${model.groups.length>1?"s":""}` : ""}</small><strong>${escapeHtml(model.theme)}</strong><em>${formatForeignTerms(model.intro)}</em></span><span class="philo-path-toggle" aria-hidden="true"></span></button><div class="philo-path-card-panel" data-philo-path-panel hidden><div class="philo-path-body">${groupsHtml}</div></div></article>`;
+      const modelMeta = model.isGroupedPath ? `${model.items.length} textes · ${model.groups.length} sous-sections` : `${model.items.length} texte${model.items.length>1?"s":""}${model.groups.length ? ` · ${model.groups.length} question${model.groups.length>1?"s":""}` : ""}`;
+      const hlpLevelClass = model.hlp?.level === "Terminale" ? " philo-path-card--hlp-terminale" : model.hlp?.level === "Première" ? " philo-path-card--hlp-premiere" : "";
+      return `<article class="philo-path-card${model.isGroupedPath ? ` philo-path-card--hlp-cluster${hlpLevelClass}` : ""}" id="parcours-${escapeHtml(model.slug)}" data-philo-path-id="${escapeHtml(model.slug)}" data-philo-path-aliases="${escapeHtml((model.aliases || []).join(" "))}" data-philo-path-theme="${escapeHtml(model.theme)}" data-philo-path-category="${model.category}" data-philo-path-authors="${escapeHtml(authors)}"><button class="philo-path-card-trigger" type="button" aria-expanded="false" data-philo-path-trigger><span class="philo-path-number">${String(index+1).padStart(2,"0")}</span><span class="philo-path-title"><small>${model.hlp ? `<b class="philo-hlp-mini">HLP · ${escapeHtml(model.hlp.level)}</b> · ` : ""}${modelMeta}</small><strong>${escapeHtml(model.theme)}</strong><em>${formatForeignTerms(model.intro)}</em></span><span class="philo-path-toggle" aria-hidden="true"></span></button><div class="philo-path-card-panel" data-philo-path-panel hidden><div class="philo-path-body">${groupsHtml}</div></div></article>`;
     }).join("");
 
     let activePathTab = "main";
@@ -923,7 +1012,7 @@
     const requestedPath = slugify(params.get("parcours") || "");
     const requestedText = params.get("texte") || "";
     if (requestedPath) {
-      const targetCard = cards.find((card) => card.dataset.philoPathId === requestedPath);
+      const targetCard = cards.find((card) => card.dataset.philoPathId === requestedPath || (card.dataset.philoPathAliases || "").split(/\s+/).includes(requestedPath));
       if (targetCard) {
         activePathTab = targetCard.dataset.philoPathCategory;
         pathTabs.forEach((button) => {

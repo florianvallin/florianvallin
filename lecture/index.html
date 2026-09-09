@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet">
   <title>Lecture — Florian Vallin</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="reader.css?v=20260825-9">
+  <link rel="stylesheet" href="reader.css?v=20260909-cache-1">
   <script>
     (() => {
       let allowed = false;
@@ -17,8 +21,8 @@
       if (!allowed) location.replace("/");
     })();
   </script>
-  <script defer src="library.js?v=20260825-9"></script>
-  <script defer src="reader.js?v=20260825-9"></script>
+  <script defer src="library.js?v=20260909-cache-1"></script>
+  <script defer src="reader.js?v=20260909-cache-1"></script>
 </head>
 <body data-theme="paper">
 <main class="reader-app" id="reader-app">
@@ -33,6 +37,7 @@
       </div>
     </div>
     <div class="reader-top-actions">
+      <select id="author-select" class="reader-author-select" aria-label="Choisir un auteur"></select>
       <select id="book-select" class="reader-book-select" aria-label="Choisir un livre"></select>
       <button id="trail-back" class="reader-icon-button" type="button" aria-label="Emplacement précédent" disabled>↶</button>
       <button id="trail-forward" class="reader-icon-button" type="button" aria-label="Emplacement suivant" disabled>↷</button>
@@ -102,7 +107,14 @@
     </nav>
     <div class="drawer-body">
       <section data-panel="toc" class="drawer-panel is-active"><div id="book-map" class="book-map"></div><div id="toc-list" class="toc-list"></div></section>
-      <section data-panel="library" class="drawer-panel"><div id="library-grid" class="library-grid"></div></section>
+      <section data-panel="library" class="drawer-panel">
+        <div class="fv-library-filter">
+          <label for="library-author-filter">Auteur
+            <select id="library-author-filter" aria-label="Filtrer la bibliothèque par auteur"></select>
+          </label>
+        </div>
+        <div id="library-grid" class="library-grid"></div>
+      </section>
       <section data-panel="notebook" class="drawer-panel">
         <label class="tool-label">Note générale sur le livre<textarea id="book-note" rows="7" placeholder="Ce que je veux retenir, questions, idées…"></textarea></label>
         <label class="tool-label">Résumé du chapitre actuel<textarea id="chapter-summary" rows="7" placeholder="Résumer ce chapitre avec mes propres mots…"></textarea></label>

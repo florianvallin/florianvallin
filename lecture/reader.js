@@ -17,9 +17,9 @@
   const $ = (id) => document.getElementById(id);
   const els = {
     app: $("reader-app"), paper: $("reader-paper"),
-    title: $("book-title"), author: $("book-author"), bookSelect: $("book-select"),
+    title: $("book-title"), author: $("book-author"), authorSelect: $("author-select"), bookSelect: $("book-select"),
     drawerToggle: $("drawer-toggle"), drawer: $("reader-drawer"), drawerClose: $("drawer-close"), drawerBackdrop: $("drawer-backdrop"), drawerTabs: $("drawer-tabs"),
-    tocList: $("toc-list"), bookMap: $("book-map"), libraryGrid: $("library-grid"),
+    tocList: $("toc-list"), bookMap: $("book-map"), libraryGrid: $("library-grid"), libraryAuthorFilter: $("library-author-filter"),
     bookNote: $("book-note"), chapterSummary: $("chapter-summary"), copyDeepLink: $("copy-deep-link"),
     extractScope: $("extract-scope"), tagFilter: $("tag-filter"), tagCloud: $("tag-cloud"), extractList: $("extract-list"),
     reviewList: $("review-list"), stackList: $("stack-list"), statsSummary: $("stats-summary"), historyList: $("history-list"), goalMinutes: $("goal-minutes"), goalPages: $("goal-pages"),
@@ -363,6 +363,22 @@
     } else {
       showEditorialOnce = false;
       (p.blocks || []).forEach((block, i) => {
+        if (block.t === "i" && block.src) {
+          const figure = document.createElement("figure");
+          figure.className = "reader-figure";
+          const image = document.createElement("img");
+          image.src = block.src;
+          image.alt = block.alt || "Illustration";
+          image.loading = "lazy";
+          figure.appendChild(image);
+          if (block.alt) {
+            const caption = document.createElement("figcaption");
+            caption.textContent = block.alt;
+            figure.appendChild(caption);
+          }
+          els.content.appendChild(figure);
+          return;
+        }
         const element = document.createElement(block.t === "h" ? "h2" : "p");
         element.className = `reader-block${block.t === "s" ? " reader-separator" : ""}${block.t === "r" ? " reader-right" : ""}`;
         element.dataset.blockIndex = i;
@@ -430,17 +446,62 @@
     if (next !== pageIndex) renderPage(next, { focus: true, restoreMarker: false });
   }
 
-  function buildBookSelect() {
+  function authorNames() {
+    return [...new Set(LIBRARY.map((meta) => meta.author).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+  }
+
+  function fillAuthorSelect(select, { includeAll = true } = {}) {
+    if (!select) return;
+    const previous = select.value;
+    select.replaceChildren();
+    if (includeAll) {
+      const all = document.createElement("option");
+      all.value = "";
+      all.textContent = "Tous les auteurs";
+      select.appendChild(all);
+    }
+    authorNames().forEach((authorName) => {
+      const option = document.createElement("option");
+      option.value = authorName;
+      option.textContent = authorName;
+      select.appendChild(option);
+    });
+    if ([...select.options].some((option) => option.value === previous)) select.value = previous;
+  }
+
+  function booksForAuthor(authorName) {
+    return authorName ? LIBRARY.filter((meta) => meta.author === authorName) : LIBRARY;
+  }
+
+  function populateBookSelect(authorName = "", selectedId = null) {
+    const choices = booksForAuthor(authorName);
     els.bookSelect.replaceChildren();
+    choices.forEach((meta) => {
+      const option = document.createElement("option");
+      option.value = meta.id;
+      option.textContent = meta.title;
+      els.bookSelect.appendChild(option);
+    });
+    const wanted = selectedId && choices.some((meta) => meta.id === selectedId) ? selectedId : choices[0]?.id;
+    if (wanted) els.bookSelect.value = wanted;
+    return wanted;
+  }
+
+  function buildBookSelect() {
+    fillAuthorSelect(els.authorSelect, { includeAll: false });
+    fillAuthorSelect(els.libraryAuthorFilter);
+
     els.annotationLinkBook.replaceChildren();
     LIBRARY.forEach((meta) => {
-      const a = document.createElement("option");
-      a.value = meta.id;
-      a.textContent = meta.title;
-      els.bookSelect.appendChild(a);
-      const b = a.cloneNode(true);
-      els.annotationLinkBook.appendChild(b);
+      const option = document.createElement("option");
+      option.value = meta.id;
+      option.textContent = `${meta.author} — ${meta.title}`;
+      els.annotationLinkBook.appendChild(option);
     });
+
+    const initial = getMeta(store.state.lastBookId);
+    if (els.authorSelect) els.authorSelect.value = initial.author;
+    populateBookSelect(initial.author, initial.id);
   }
 
   function buildChapterSelect() {
@@ -489,7 +550,8 @@
       timedBookId = book.id;
       els.title.textContent = book.title;
       els.author.textContent = book.author;
-      els.bookSelect.value = book.id;
+      if (els.authorSelect) els.authorSelect.value = book.author;
+      populateBookSelect(book.author, book.id);
       buildChapterSelect();
       buildPageControls();
       renderToc();
@@ -757,7 +819,9 @@
 
   function renderLibrary() {
     els.libraryGrid.replaceChildren();
+    const authorFilter = els.libraryAuthorFilter?.value || "";
     LIBRARY.forEach((meta) => {
+      if (authorFilter && meta.author !== authorFilter) return;
       const bs = store.book(meta.id);
       const pos = bs.position ?? meta.firstPage;
       const pct = Math.round(clamp((pos - meta.firstPage) / Math.max(1, meta.lastPage - meta.firstPage), 0, 1) * 100);
@@ -1178,9 +1242,19 @@
   }
 
   function registerOffline() {
-    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-      navigator.serviceWorker.register("/lecture/sw.js", { scope: "/lecture/" }).catch(() => {});
-    }
+    if (!("serviceWorker" in navigator) || !location.protocol.startsWith("http")) return;
+
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (refreshing) return;
+      refreshing = true;
+      location.reload();
+    });
+
+    navigator.serviceWorker
+      .register("/lecture/sw.js", { scope: "/lecture/", updateViaCache: "none" })
+      .then((registration) => registration.update())
+      .catch(() => {});
   }
 
   function bindEvents() {
@@ -1188,7 +1262,12 @@
     els.prevEdge.addEventListener("click", previousPage);
     els.next.addEventListener("click", nextPage);
     els.nextEdge.addEventListener("click", nextPage);
+    els.authorSelect?.addEventListener("change", async () => {
+      const nextId = populateBookSelect(els.authorSelect.value);
+      if (nextId) await selectBook(nextId);
+    });
     els.bookSelect.addEventListener("change", () => selectBook(els.bookSelect.value));
+    els.libraryAuthorFilter?.addEventListener("change", renderLibrary);
     els.chapterSelect.addEventListener("change", () => {
       const item = book.toc?.[Number(els.chapterSelect.value)];
       if (item) jumpTo(book.id, item.page);

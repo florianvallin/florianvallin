@@ -1107,6 +1107,7 @@ button { color: inherit; }
 .home-blog-card--programmes { --home-blog-accent:108,99,255; }
 .home-blog-card--reperes { --home-blog-accent:125,112,214; }
 .home-blog-card--methodologie { --home-blog-accent:63,132,119; }
+.home-blog-card--cinema { --home-blog-accent:138,102,186; }
 .home-blog-card::before { content:""; position:absolute; top:0; left:0; width:48px; height:2px; background:rgb(var(--home-blog-accent)); opacity:.86; }
 .home-blog-card::after { content:""; position:absolute; width:150px; height:150px; right:-75px; top:-82px; border-radius:50%; background:rgba(var(--home-blog-accent),.06); pointer-events:none; }
 .home-blog-card:hover { transform:translateY(-2px); border-color:rgba(var(--home-blog-accent),.28); box-shadow:0 14px 32px rgba(38,34,70,.06); }

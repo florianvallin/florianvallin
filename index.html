@@ -2,7 +2,26 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="UTF-8">
 
   <meta
     name="viewport"
@@ -29,7 +48,7 @@
   <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
   <meta property="og:site_name" content="Florian Vallin">
 
-  <link rel="stylesheet" href="css/style.css?v=20260824-3">
+  <link rel="stylesheet" href="css/style.css?v=20260909-cache-1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1312,10 +1331,10 @@
         <p>Varier ses références et apprendre à transformer un récit ou une œuvre en matière à penser.</p>
         <span class="home-blog-card-open">Lire le billet <i aria-hidden="true">→</i></span>
       </a>
-      <a class="home-blog-card home-blog-card--programmes" href="/blog/programmes-philosophie/">
-        <span class="home-blog-card-type">Philosophie</span>
-        <h3>Les programmes de philosophie en vigueur</h3>
-        <p>Terminale, HLP et classes préparatoires : notions, auteurs et sources officielles réunis.</p>
+      <a class="home-blog-card home-blog-card--cinema" href="/blog/utiliser-cinema-philosophie/">
+        <span class="home-blog-card-type">Philosophie · Méthodologie</span>
+        <h3>Le cinéma en dissertation de philosophie</h3>
+        <p>Des films à retenir et une méthode claire pour les utiliser comme références dans une dissertation de philosophie.</p>
         <span class="home-blog-card-open">Lire le billet <i aria-hidden="true">→</i></span>
       </a>
     </div>
@@ -1372,9 +1391,9 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260824-books-4" defer></script>
-<script src="js/protected-phone.js?v=20260824-phone-only-1" defer></script>
-<script src="js/contact-form.js?v=20260731-1" defer></script>
+<script src="js/script.js?v=20260909-cache-1" defer></script>
+<script src="js/protected-phone.js?v=20260909-cache-1" defer></script>
+<script src="js/contact-form.js?v=20260909-cache-1" defer></script>
 
 <script type="application/ld+json">
 {

@@ -1472,11 +1472,187 @@
     "url": "/blog/reperes-conceptuels-philosophie-terminale/"
   },
   {
+    "kind": "blog",
+    "kindLabel": "Blog · Cinéma",
+    "title": "Utiliser le cinéma dans une dissertation de philosophie",
+    "meta": "Films · dissertation · notions · auteurs",
+    "keywords": "cinéma films philosophie dissertation référence introduction problématisation développement argument exemple notions auteurs matrix truman show temps modernes justice vérité liberté technique travail",
+    "url": "/blog/utiliser-cinema-philosophie/"
+  },
+  {
     "kind": "page",
     "kindLabel": "Blog",
     "title": "Blog",
     "meta": "Fiches de philosophie · programmes · repères",
     "keywords": "blog philosophie fiches programmes repères méthode",
     "url": "/blog/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Un étonnement mutuel",
+    "meta": "Jean de Léry — Histoire d’un voyage fait en la terre du Brésil",
+    "keywords": "Jean de Léry · Léry · (1536–1613) · voyageur et écrivain humaniste · Histoire d’un voyage fait en la terre du Brésil · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · altérité · décentrement · langage · ethnocentrisme",
+    "url": "/textes/lery-etonnement-mutuel-tupinambas/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Une forme de vengeance ?",
+    "meta": "Michel de Montaigne — Essais, « Des Cannibales »",
+    "keywords": "Michel de Montaigne · Montaigne · (1533–1592) · humanisme et scepticisme · Essais, « Des Cannibales » · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · barbarie · ethnocentrisme · coutume · relativisme",
+    "url": "/textes/montaigne-cannibales-barbarie-europeenne/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Une violence inouïe",
+    "meta": "Bartolomé de Las Casas — Très Brève Relation de la destruction des Indes",
+    "keywords": "Bartolomé de Las Casas · Las Casas · (1484–1566) · dominicain et défenseur des Indiens · Très Brève Relation de la destruction des Indes · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · conquête · violence · témoignage · colonisation",
+    "url": "/textes/lascasas-violence-conquete-indes/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Une rencontre prometteuse",
+    "meta": "Louis-Antoine de Bougainville — Voyage autour du monde",
+    "keywords": "Louis-Antoine de Bougainville · Bougainville · (1729–1811) · navigateur et écrivain des Lumières · Voyage autour du monde · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · rencontre · échange · don · altérité",
+    "url": "/textes/bougainville-rencontre-tahiti/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Renversement de perspective",
+    "meta": "Denis Diderot — Supplément au Voyage de Bougainville",
+    "keywords": "Denis Diderot · Diderot · (1713–1784) · Lumières et matérialisme · Supplément au Voyage de Bougainville · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · colonisation · liberté · propriété · civilisation",
+    "url": "/textes/diderot-tahitien-colonisation/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Qui sont les vrais civilisés ?",
+    "meta": "Michel de Montaigne — Essais, « Des Coches »",
+    "keywords": "Michel de Montaigne · Montaigne · (1533–1592) · humanisme et scepticisme · Essais, « Des Coches » · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · civilisation · conquête · violence · décentrement",
+    "url": "/textes/montaigne-coches-civilisation-conquete/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "L’éducation des femmes",
+    "meta": "Montesquieu — Lettres persanes",
+    "keywords": "Montesquieu · Montesquieu · (1689–1755) · philosophie politique des Lumières · Lettres persanes · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · nature · culture · éducation · égalité",
+    "url": "/textes/montesquieu-education-femmes-nature-culture/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Le fondement de la propriété",
+    "meta": "John Locke — Deuxième Traité du gouvernement civil",
+    "keywords": "John Locke · Locke · (1632–1704) · empirisme et libéralisme politique · Deuxième Traité du gouvernement civil · HLP · Première · Les représentations du monde · Découverte du monde et pluralité des cultures · propriété · travail · nature · commun",
+    "url": "/textes/locke-propriete-travail-nature/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Le principe d’un univers infini",
+    "meta": "Giordano Bruno — Le Banquet des cendres",
+    "keywords": "Giordano Bruno · Bruno · (1548–1600) · philosophie de la Renaissance · Le Banquet des cendres · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · infini · cosmos · pluralité des mondes · décentrement",
+    "url": "/textes/bruno-univers-infini/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Rencontre avec l’infiniment petit",
+    "meta": "Voltaire — Micromégas",
+    "keywords": "Voltaire · Voltaire · (1694–1778) · écrivain et philosophe des Lumières · Micromégas · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · échelle · anthropocentrisme · fiction · relativité",
+    "url": "/textes/voltaire-micromegas-infiniment-petit/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Un monde égalitaire",
+    "meta": "Thomas More — Utopia",
+    "keywords": "Thomas More · Thomas More · (1478–1535) · humanisme de la Renaissance · Utopia · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · utopie · égalité · société · bien commun",
+    "url": "/textes/more-utopia-monde-egalitaire/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "La maison de Salomon",
+    "meta": "Francis Bacon — La Nouvelle Atlantide",
+    "keywords": "Francis Bacon · Bacon · (1561–1626) · empirisme et philosophie des sciences · La Nouvelle Atlantide · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · science · utopie · technique · progrès",
+    "url": "/textes/bacon-maison-salomon-science-utopie/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Le monde à l’envers",
+    "meta": "Marivaux — L’Île des esclaves",
+    "keywords": "Marivaux · Marivaux · (1688–1763) · théâtre des Lumières · L’Île des esclaves · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · inversion · domination · égalité · fiction",
+    "url": "/textes/marivaux-ile-esclaves-monde-envers/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Le projet encyclopédique",
+    "meta": "Denis Diderot et Jean le Rond d’Alembert — Encyclopédie",
+    "keywords": "Denis Diderot et Jean le Rond d’Alembert · Diderot & d’Alembert · XVIIIe siècle · Lumières et Encyclopédie · Encyclopédie · HLP · Première · Les représentations du monde · Décrire, figurer, imaginer · savoir · encyclopédie · transmission · classification",
+    "url": "/textes/diderot-alembert-projet-encyclopedique/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "L’animal-machine",
+    "meta": "René Descartes — Lettre au marquis de Newcastle",
+    "keywords": "René Descartes · Descartes · (1596–1650) · rationalisme moderne · Lettre au marquis de Newcastle · HLP · Première · Les représentations du monde · L’homme et l’animal · animal-machine · instinct · pensée · raison",
+    "url": "/textes/descartes-animal-machine-instinct/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "De l’ingéniosité animale",
+    "meta": "Jean de La Fontaine — Fables, « Discours à Madame de La Sablière »",
+    "keywords": "Jean de La Fontaine · La Fontaine · (1621–1695) · moraliste et fabuliste · Fables, « Discours à Madame de La Sablière » · HLP · Première · Les représentations du monde · L’homme et l’animal · intelligence animale · instinct · invention · observation",
+    "url": "/textes/lafontaine-ingeniosite-animale/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Les animaux aussi communiquent",
+    "meta": "Michel de Montaigne — Essais, « Apologie de Raimond Sebond »",
+    "keywords": "Michel de Montaigne · Montaigne · (1533–1592) · humanisme et scepticisme · Essais, « Apologie de Raimond Sebond » · HLP · Première · Les représentations du monde · L’homme et l’animal · langage animal · communication · anthropocentrisme · altérité",
+    "url": "/textes/montaigne-animaux-communication/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Les animaux et la morale",
+    "meta": "Julien Offray de La Mettrie — L’Homme Machine",
+    "keywords": "Julien Offray de La Mettrie · La Mettrie · (1709–1751) · matérialisme des Lumières · L’Homme Machine · HLP · Première · Les représentations du monde · L’homme et l’animal · conscience · morale animale · remords · analogie",
+    "url": "/textes/lamettrie-animaux-morale-remords/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Le cheval et son cavalier",
+    "meta": "Georges-Louis Leclerc de Buffon — Histoire naturelle, tome IV, Discours sur la nature des Animaux, « Le Cheval »",
+    "keywords": "Georges-Louis Leclerc de Buffon · Buffon · (1707–1788) · naturaliste des Lumières · Histoire naturelle, tome IV, Discours sur la nature des Animaux, « Le Cheval » · HLP · Première · Les représentations du monde · L’homme et l’animal · domestication · liberté · servitude · animal",
+    "url": "/textes/buffon-cheval-domestication-servitude/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Des monstres sans scrupules",
+    "meta": "Voltaire — Mélanges, « Dialogue du Chapon et de la Poularde »",
+    "keywords": "Voltaire · Voltaire · (1694–1778) · écrivain et philosophe des Lumières · Mélanges, « Dialogue du Chapon et de la Poularde » · HLP · Première · Les représentations du monde · L’homme et l’animal · cruauté · point de vue · exploitation · animal",
+    "url": "/textes/voltaire-chapon-poularde-cruaute/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP",
+    "title": "Un devoir d’humanité",
+    "meta": "Michel de Montaigne — Essais, « De la cruauté »",
+    "keywords": "Michel de Montaigne · Montaigne · (1533–1592) · humanisme et scepticisme · Essais, « De la cruauté » · HLP · Première · Les représentations du monde · L’homme et l’animal · devoir · bienveillance · sensibilité · humanité",
+    "url": "/textes/montaigne-devoir-humanite-animaux/"
   }
 ]

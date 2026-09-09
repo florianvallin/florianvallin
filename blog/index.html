@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <title>Blog de philosophie et méthode — Florian Vallin</title>
@@ -9,8 +28,8 @@
   <link rel="canonical" href="https://florianvallin.fr/blog/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
-  <link rel="stylesheet" href="/css/style.css?v=20260824-3">
-  <link rel="stylesheet" href="/css/blog.css?v=20260824-7">
+  <link rel="stylesheet" href="/css/style.css?v=20260909-cache-1">
+  <link rel="stylesheet" href="/css/blog.css?v=20260909-cache-1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -76,7 +95,7 @@
             <span class="sr-only">Rechercher dans les billets</span>
             <input type="search" autocomplete="off" placeholder="Rechercher dans les billets…" data-blog-search>
           </label>
-          <span class="blog-index-count" data-blog-count aria-live="polite">3 billets</span>
+          <span class="blog-index-count" data-blog-count aria-live="polite">4 billets</span>
         </div>
 
         <div class="blog-grid blog-grid--editorial">
@@ -112,6 +131,17 @@
             <p class="blog-card-summary">Comment varier ses références et transformer un récit, une œuvre ou une situation en véritable matière à penser.</p>
             <span class="blog-card-read">Ouvrir <i aria-hidden="true">→</i></span>
           </a>
+
+          <a class="blog-card blog-card--cinema" href="/blog/utiliser-cinema-philosophie/" data-blog-card data-blog-topic="philosophie methodologie" data-blog-search="cinéma films philosophie méthodologie dissertation notions auteurs matrix truman show 12 hommes en colère temps modernes her blade runner into the wild la vague premier contact vérité liberté justice travail technique conscience langage religion science temps">
+            <div class="blog-card-top">
+              <span class="blog-card-topics"><span class="blog-card-topic blog-card-topic--philosophie">Philosophie</span><span class="blog-card-topic blog-card-topic--methodologie">Méthodologie</span></span>
+              <time class="blog-card-date" datetime="2026-09-09">9 septembre 2026</time>
+            </div>
+            <span class="blog-card-number" aria-hidden="true">04</span>
+            <h2>Le cinéma en <strong>dissertation de philosophie</strong></h2>
+            <p class="blog-card-summary">Comment choisir un film, le relier à une notion et l’utiliser avec justesse dans une dissertation de philosophie.</p>
+            <span class="blog-card-read">Ouvrir <i aria-hidden="true">→</i></span>
+          </a>
         </div>
 
         <p class="blog-index-empty" data-blog-empty hidden>Aucun billet ne correspond à cette recherche.</p>
@@ -144,7 +174,7 @@
     <div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div>
   </footer>
   <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <script src="/js/script.js?v=20260824-2" defer></script>
+  <script src="/js/script.js?v=20260909-cache-1" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"Ressources de philosophie — Florian Vallin","url":"https://florianvallin.fr/blog/","description":"Compléments de philosophie : repères conceptuels, méthodes, astuces et éclairages pour comprendre les textes et progresser dans les exercices.","author":{"@type":"Person","name":"Florian Vallin"}}
   </script>

@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
@@ -9,8 +28,8 @@
 <link href="https://florianvallin.fr/blog/textes-religieux-mythologiques-philosophie/" rel="canonical"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
-<link href="/css/style.css?v=20260824-6" rel="stylesheet"/>
-<link href="/css/blog.css?v=20260824-8" rel="stylesheet"/>
+<link href="/css/style.css?v=20260909-cache-1" rel="stylesheet"/>
+<link href="/css/blog.css?v=20260909-cache-1" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -271,7 +290,7 @@
 </main>
 <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p><p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p></div><div class="footer-column footer-right"><a class="footer-copyright" href="#top">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"/><p class="footer-legal">Tous droits réservés.</p></div></footer>
 <button aria-label="Retour en haut" class="back-to-top" id="backToTop"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></button>
-<script defer="" src="/js/script.js?v=20260806-5"></script>
+<script defer="" src="/js/script.js?v=20260909-cache-1"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Faire feu de tout bois : philosophie et références extra-philosophiques","description":"Comment distinguer philosophie et extra-philosophie puis mobiliser mythes, récits religieux et littérature comme matière à penser.","datePublished":"2026-08-16","dateModified":"2026-08-24","mainEntityOfPage":"https://florianvallin.fr/blog/textes-religieux-mythologiques-philosophie/","author":{"@type":"Person","name":"Florian Vallin"},"publisher":{"@type":"Person","name":"Florian Vallin"}}</script>
 </body>
 </html>

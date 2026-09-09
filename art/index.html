@@ -1,7 +1,26 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>The Chosen — Parabole du pêcheur | Art — Florian Vallin</title>
@@ -18,7 +37,7 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/art/art.css">
+  <link rel="stylesheet" href="/art/art.css?v=20260909-cache-1">
 </head>
 <body>
   <div class="art-ambient" aria-hidden="true"></div>
@@ -127,7 +146,7 @@
     <p class="art-noscript">JavaScript est nécessaire pour parcourir la sélection. La première vidéo reste lisible ci-dessus.</p>
   </noscript>
 
-  <script src="/art/art-data.js"></script>
-  <script src="/art/art.js"></script>
+  <script src="/art/art-data.js?v=20260909-cache-1"></script>
+  <script src="/art/art.js?v=20260909-cache-1"></script>
 </body>
 </html>

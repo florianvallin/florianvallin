@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boussole mythologique : mythes, personnages, généalogies et parcours — Florian Vallin</title>
+  <meta name="description" content="Une boussole pour se repérer dans la mythologie gréco-romaine : grands mythes, personnages, généalogies, lieux, sources et parcours de lecture reliés aux textes du site.">
+  <link rel="canonical" href="https://florianvallin.fr/textes/mythologie/boussole/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css?v=20260909-cache-1">
+  <link rel="stylesheet" href="/css/textes.css?v=20260909-cache-1">
+  <link rel="stylesheet" href="/css/mythology-compass.css?v=20260909-cache-1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="top" class="texts-page mythology-compass-page" data-catalog-section="mythologie">
+  <header class="navbar" id="site-header">
+    <div class="nav-container">
+      <a class="nav-brand" href="/" aria-label="Accueil — Florian Vallin">Florian <strong>Vallin</strong></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
+        <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a><a href="/#philosophie">Prestations</a><a href="/#quisuisje">Qui suis-je ?</a><a href="/#faq">FAQ</a><a href="/#contact">Contactez-moi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="myth-compass-main">
+    <div class="myth-compass-container">
+      <p class="myth-compass-breadcrumb"><a href="/textes/">Textes</a><span>›</span><a href="/textes/mythologie/">Mythologie</a><span>›</span><span>Boussole mythologique</span></p>
+
+      <header class="myth-compass-hero">
+        <span class="myth-compass-kicker">Repère permanent · Grèce &amp; Rome</span>
+        <h1>La mythologie : une boussole pour retrouver le fil des récits</h1>
+        <p>Cette page rassemble les repères qui permettent de retrouver rapidement un récit : <strong>grands mythes</strong>, <strong>personnages</strong>, <strong>généalogies</strong>, <strong>lieux</strong>, <strong>vocabulaire</strong> et <strong>parcours de découverte</strong>.</p>
+        <a class="myth-compass-quiet-entry" href="/textes/mythologie/" aria-label="Voir les textes de mythologie" title="Voir les textes de mythologie"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 4.5h10a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2v-13Z"/><path d="M9 8h5M9 11h5M9 14h3"/><path d="M17 8h2a1 1 0 0 1 1 1v10h-3"/></svg></a>
+      </header>
+
+      <div class="myth-compass-jump-wrap"><nav class="myth-compass-jump" aria-label="Aller à une section de la boussole">
+        <a href="#mythes"><span class="myth-jump-num">01</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4.5h9.5a2 2 0 0 1 2 2v13H8a3 3 0 0 1-3-3V5.5A1 1 0 0 1 6 4.5Z"/><path d="M5 16.7A3.1 3.1 0 0 1 8 14h9.5"/><path d="M9 8h5M9 11h4"/></svg></span><span><strong>Mythes</strong><small>Que se passe-t-il ?</small></span></a>
+        <a href="#personnages"><span class="myth-jump-num">02</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.3"/><path d="M5.5 20c.8-4.2 3-6.3 6.5-6.3s5.7 2.1 6.5 6.3"/></svg></span><span><strong>Personnages</strong><small>Qui est qui ?</small></span></a>
+        <a href="#genealogies"><span class="myth-jump-num">03</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v5M6 14V9h12v5M6 14v2M12 9v7M18 14v2"/><circle cx="6" cy="18" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><circle cx="12" cy="3" r="2"/></svg></span><span><strong>Généalogies</strong><small>Qui est lié à qui ?</small></span></a>
+        <a href="#monde"><span class="myth-jump-num">04</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.1"/></svg></span><span><strong>Monde</strong><small>Où sommes-nous ?</small></span></a>
+        <a href="#parcours"><span class="myth-jump-num">05</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 5h4v4H5zM15 15h4v4h-4z"/><path d="M9 7h4a4 4 0 0 1 4 4v4M7 9v5a3 3 0 0 0 3 3h5"/></svg></span><span><strong>Parcours</strong><small>Par où commencer ?</small></span></a>
+        <a href="#ressources"><span class="myth-jump-num">06</span><span class="myth-jump-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5.5 4.5h8.8a2 2 0 0 1 2 2v13H7.5a2 2 0 0 1-2-2v-13Z"/><path d="M16.3 7.5H19a1 1 0 0 1 1 1v11h-3.7M9 8.5h4.5M9 11.5h4.5M9 14.5h3"/></svg></span><span><strong>Ressources</strong><small>Pour aller plus loin</small></span></a>
+      </nav></div>
+      <section class="myth-compass-section myth-search-section" aria-labelledby="myth-search-title">
+        <div class="myth-search-shell" data-myth-global-search>
+          <div class="myth-dictionary-heading">
+            <div class="myth-search-copy"><span>Dictionnaire · vocabulaire</span><h2 id="myth-search-title">Dictionnaire &amp; vocabulaire mythologique</h2><p>Écrivez le terme que vous voulez comprendre — <strong>mètis</strong>, <strong>hubris</strong>, <strong>moira</strong>, <strong>katabasis</strong>… — ou recherchez un mythe, une figure et un lieu. Lorsqu’un mot de vocabulaire est reconnu, sa définition détaillée s’affiche directement.</p></div>
+            <span class="myth-dictionary-badge">Recherche libre</span>
+          </div>
+          <div class="myth-search-input-wrap"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.1 4.1"/></svg><label class="sr-only" for="myth-global-search-input">Rechercher dans le dictionnaire mythologique</label><input id="myth-global-search-input" type="search" autocomplete="off" placeholder="Ex. : mètis, Œdipe, Troie, destin, monstre…" data-myth-search-input><button type="button" data-myth-search-clear aria-label="Effacer la recherche" hidden>×</button></div>
+          <div class="myth-vocab-starters" data-myth-vocab-starters aria-label="Exemples de mots du dictionnaire"><span>Pour explorer</span><button type="button" data-myth-vocab-starter="Mètis"><i>Mètis</i></button><button type="button" data-myth-vocab-starter="Hubris"><i>Hubris</i></button><button type="button" data-myth-vocab-starter="Moira"><i>Moira</i></button><button type="button" data-myth-vocab-starter="Katabasis"><i>Katabasis</i></button><button type="button" data-myth-vocab-starter="Xenia"><i>Xenia</i></button><button type="button" data-myth-vocab-starter="Nostos"><i>Nostos</i></button></div>
+          <div class="myth-search-results" data-myth-search-results hidden></div>
+          <article class="myth-dictionary-answer" data-myth-vocab-detail aria-live="polite" hidden></article>
+        </div>
+      </section>
+
+      <section class="myth-compass-section" id="mythes">
+        <div class="myth-section-heading"><span>01 · Que se passe-t-il ?</span><h2>Les grands mythes</h2><p>Choisissez un cycle, puis un récit : la fiche met en évidence <strong>le fil de l’histoire</strong>, les figures, la source antique et l’idée essentielle à retenir.</p></div>
+        <div class="myth-story-browser">
+          <aside class="myth-story-sidebar" aria-label="Grands cycles mythologiques">
+            <div class="myth-browser-label"><span>Grands ensembles</span><small>Filtrer les récits</small></div>
+            <div class="myth-cycle-nav" data-myth-cycle-filters></div>
+          </aside>
+          <div class="myth-story-directory">
+            <div class="myth-directory-head"><div><strong data-myth-cycle-title>Origines</strong><small data-myth-count></small></div><span>Choisissez un récit</span></div>
+            <div class="myth-story-list" data-myth-list></div>
+          </div>
+          <article class="myth-story-detail" data-myth-detail aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section class="myth-compass-section" id="personnages">
+        <div class="myth-section-heading"><span>02 · Qui est qui ?</span><h2>Personnages &amp; figures</h2><p>Un annuaire pour situer rapidement dieux, héros, mortels et créatures : chaque fiche résume leur rôle, leurs relations et les récits auxquels ils appartiennent.</p></div>
+        <div class="myth-people-shell">
+          <div class="myth-people-toolbar">
+            <div class="myth-people-search"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.1 4.1"/></svg><label class="sr-only" for="myth-person-search">Rechercher un personnage</label><input id="myth-person-search" type="search" autocomplete="off" placeholder="Rechercher une figure : Athéna, Ulysse, Méduse…" data-myth-person-search></div>
+            <div class="myth-person-filters" data-myth-person-filters></div>
+            <div class="myth-person-alphabet-wrap"><span>Index alphabétique</span><div class="myth-person-alphabet" data-myth-person-alphabet aria-label="Index alphabétique"></div></div>
+          </div>
+          <div class="myth-people-browser">
+            <div class="myth-people-directory">
+              <div class="myth-people-list-head"><strong>Figures</strong><span data-myth-person-count></span></div>
+              <div class="myth-person-list" data-myth-person-list></div>
+            </div>
+            <article class="myth-person-detail" data-myth-person-detail aria-live="polite"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="myth-compass-section" id="genealogies">
+        <div class="myth-section-heading"><span>03 · Qui est lié à qui ?</span><h2>Généalogies essentielles</h2><p>Cinq arbres volontairement simplifiés : l’objectif est de <strong>voir immédiatement les générations</strong>, les couples et les personnages qui structurent chaque grand cycle.</p></div>
+        <div class="myth-genealogy-shell">
+          <div class="myth-genealogy-search" data-myth-genealogy-search>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.1 4.1"/></svg>
+            <label class="sr-only" for="myth-genealogy-search-input">Rechercher un nom dans les généalogies</label>
+            <input id="myth-genealogy-search-input" type="search" autocomplete="off" placeholder="Rechercher un nom : Œdipe, Zeus, Hélène, Oreste…" data-myth-genealogy-search-input>
+            <span class="myth-genealogy-search-hint">5 familles</span>
+            <div class="myth-genealogy-search-results" data-myth-genealogy-search-results hidden></div>
+          </div>
+          <div class="myth-genealogy-tabs" role="tablist" aria-label="Choisir une généalogie" data-myth-genealogy-tabs></div>
+          <div class="myth-genealogy-panel" data-myth-genealogy-panel></div>
+        </div>
+      </section>
+
+      <section class="myth-compass-section" id="monde">
+        <div class="myth-section-heading"><span>04 · Où sommes-nous ?</span><h2>Le monde mythologique</h2><p>Commencez par la <strong>géographie symbolique</strong> des récits — Olympe, marges du monde, royaume des morts et autres espaces de passage. Ouvrez ensuite la <strong>carte des lieux antiques</strong> pour distinguer ce qui relève de l’imaginaire mythique de ce qui renvoie à des cités, sanctuaires et régions bien réels.</p></div>
+        <div class="myth-world-shell">
+          <div class="myth-world-tabs" role="tablist" aria-label="Choisir une vue du monde mythologique" data-myth-world-tabs>
+            <button type="button" class="is-active" role="tab" aria-selected="true" data-world-view="cosmos"><span>01</span><div><strong>Espaces mythiques</strong><small>Dieux, marges, morts et frontières</small></div></button>
+            <button type="button" role="tab" aria-selected="false" data-world-view="map"><span>02</span><div><strong>Carte des récits</strong><small>Cités, sanctuaires, îles</small></div></button>
+          </div>
+          <div class="myth-world-panel" data-myth-world-panel></div>
+        </div>
+      </section>
+
+      <section class="myth-compass-section" id="parcours">
+        <div class="myth-section-heading"><span>05 · Par où commencer ?</span><h2>Parcours de découverte</h2><p>Choisissez un <strong>angle de lecture</strong> plutôt qu’une liste à mémoriser. Chaque parcours relie quelques récits essentiels pour faire apparaître une question, un motif ou une progression.</p></div>
+        <div class="myth-route-browser">
+          <div class="myth-route-selector" data-myth-route-selector></div>
+          <article class="myth-route-detail" data-myth-route-detail aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section class="myth-compass-section myth-resources-section" id="ressources">
+        <div class="myth-section-heading"><span>06 · Pour aller plus loin</span><h2>Ressources de référence</h2><p>Quatre portes d’entrée immédiates, puis une sélection courte pour <strong>commencer sans se perdre</strong> et <strong>revenir aux sources antiques</strong>. L’objectif n’est pas d’accumuler les références, mais de savoir laquelle ouvrir selon votre besoin.</p></div>
+
+        <div class="myth-resource-featured">
+          <a class="myth-resource-featured-card" href="https://www.glenat.com/glenat-bd/collections-la-sagesse-des-mythes/" target="_blank" rel="noopener noreferrer">
+            <div class="myth-resource-featured-topline"><span>BD · Entrer</span><img alt="" loading="lazy" decoding="async" src="https://www.google.com/s2/favicons?domain=glenat.com&amp;sz=64"></div>
+            <strong>La Sagesse des mythes</strong><p>Une porte d’entrée narrative et visuelle, dirigée par Luc Ferry, pour découvrir les grands récits avant d’aller vers les textes antiques.</p><b aria-hidden="true">↗</b>
+          </a>
+          <a class="myth-resource-featured-card" href="https://boutique.arte.tv/detail/les-grands-mythes-lintegrale" target="_blank" rel="noopener noreferrer">
+            <div class="myth-resource-featured-topline"><span>Vidéo · Comprendre</span><img alt="" loading="lazy" decoding="async" src="https://www.google.com/s2/favicons?domain=arte.tv&amp;sz=64"></div>
+            <strong>ARTE — Les Grands Mythes</strong><p>Des épisodes très accessibles qui racontent les mythes tout en les reliant à leurs sources et à l’histoire de l’art.</p><b aria-hidden="true">↗</b>
+          </a>
+          <a class="myth-resource-featured-card" href="https://www.youtube.com/@histoireetmythologie" target="_blank" rel="noopener noreferrer">
+            <div class="myth-resource-featured-topline"><span>Vidéo · Réviser</span><img alt="" loading="lazy" decoding="async" src="https://www.google.com/s2/favicons?domain=youtube.com&amp;sz=64"></div>
+            <strong>Histoire et Mythologie en BD</strong><p>Des récits courts en bande dessinée animée, utiles pour découvrir une figure ou réactiver rapidement un épisode.</p><b aria-hidden="true">↗</b>
+          </a>
+          <a class="myth-resource-featured-card myth-resource-featured-card--reference" href="https://www.theoi.com/" target="_blank" rel="noopener noreferrer">
+            <div class="myth-resource-featured-topline"><span>Référence · Vérifier</span><img alt="" loading="lazy" decoding="async" src="https://www.google.com/s2/favicons?domain=theoi.com&amp;sz=64"></div>
+            <strong>Theoi Greek Mythology</strong><p>Le meilleur réflexe en ligne pour vérifier une figure, une filiation, une variante, une source antique ou une représentation.</p><b aria-hidden="true">↗</b>
+          </a>
+        </div>
+
+        <div class="myth-resource-guide" aria-label="Comment choisir une ressource">
+          <span>Un réflexe simple</span><p><strong>Découvrir</strong> avec un récit clair → <strong>vérifier</strong> avec un dictionnaire ou Theoi → <strong>revenir au texte antique</strong> dès qu’une version précise du mythe compte.</p>
+        </div>
+
+        <div class="myth-resource-groups">
+          <details class="myth-resource-group" open>
+            <summary><span class="myth-resource-num">01</span><span class="myth-resource-group-icon" aria-hidden="true">⌕</span><span><strong>Commencer sans se perdre</strong><small>Trois ouvrages pour se repérer</small></span><i aria-hidden="true">+</i></summary>
+            <div class="myth-resource-content">
+              <div class="myth-resource-books myth-resource-books--starter">
+                <article class="is-priority"><span>Premier choix · accessible</span><strong>Jean-Pierre Vernant — <em>L’Univers, les Dieux, les Hommes</em></strong><p>Le meilleur point de départ en français : les grands récits sont racontés avec clarté par un spécialiste de la Grèce ancienne, sans transformer la mythologie en simple catalogue.</p></article>
+                <article><span>Vue d’ensemble</span><strong>Edith Hamilton — <em>La Mythologie : ses dieux, ses héros, ses légendes</em></strong><p>Une synthèse très lisible pour mémoriser les grandes figures et les récits majeurs. Idéale en accompagnement d’une première découverte.</p></article>
+                <article><span>Dictionnaire</span><strong>Pierre Grimal — <em>Dictionnaire de la mythologie grecque et romaine</em></strong><p>À ouvrir quand un nom, une filiation ou une variante vous échappe : un outil de consultation plus qu’un livre à lire de bout en bout.</p></article>
+              </div>
+            </div>
+          </details>
+
+          <details class="myth-resource-group">
+            <summary><span class="myth-resource-num">02</span><span class="myth-resource-group-icon" aria-hidden="true">⌑</span><span><strong>Revenir aux sources antiques</strong><small>Cinq jalons qui structurent les récits</small></span><i aria-hidden="true">+</i></summary>
+            <div class="myth-resource-content">
+              <p class="myth-resource-intro">Il n’existe pas une version unique et canonique de tous les mythes. Ces textes transmettent des traditions différentes : comparez-les plutôt que de chercher à les faire entrer de force dans un seul récit.</p>
+              <div class="myth-source-path">
+                <article><span>01</span><div><strong>Hésiode — <em>Théogonie</em></strong><p>Le point de départ pour les origines du cosmos, les générations divines et l’installation de l’ordre olympien.</p></div></article>
+                <article><span>02</span><div><strong>Homère — <em>Iliade</em> &amp; <em>Odyssée</em></strong><p>Le grand socle épique : Troie, Achille, Hector, Ulysse, le retour, l’hospitalité et la ruse.</p></div></article>
+                <article><span>03</span><div><strong>Pseudo-Apollodore — <em>Bibliothèque</em></strong><p>Moins littéraire mais extrêmement pratique pour suivre les généalogies, les cycles héroïques et comparer rapidement des traditions.</p></div></article>
+                <article><span>04</span><div><strong>Eschyle · Sophocle · Euripide</strong><p>Les tragiques ne se contentent pas de répéter les mythes : ils les retravaillent. Œdipe, Antigone, Oreste, Médée ou Iphigénie changent selon l’œuvre.</p></div></article>
+                <article><span>05</span><div><strong>Apollonios de Rhodes &amp; Ovide</strong><p><em>Argonautiques</em> pour Jason et Médée ; <em>Métamorphoses</em> pour une immense mémoire romaine des récits grecs et de leurs transformations.</p></div></article>
+              </div>
+              <p class="myth-resource-note"><strong>Ordre conseillé :</strong> commencez par Hésiode et Homère, utilisez Apollodore comme repère, puis choisissez les tragédies et les récits plus tardifs selon le mythe que vous voulez approfondir.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <aside class="compass-context-cta compass-context-cta--myth compass-context-cta--merged" aria-label="Continuer depuis la boussole mythologique">
+        <div class="compass-context-cta-copy"><span>Continuer à explorer</span><strong>Revenir aux textes, préciser un récit et transformer une référence mythologique en véritable outil de réflexion.</strong></div>
+        <div class="compass-context-cta-actions"><a class="compass-context-cta-back" href="/textes/mythologie/">← Retour aux textes</a><a class="compass-context-cta-primary" href="/#contact">Travailler un texte en cours <span aria-hidden="true">→</span></a></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div><div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Florian Vallin</a></div></div><div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div></footer>
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <script src="/js/script.js?v=20260909-cache-1" defer></script>
+  <script src="/js/mythology-compass.js?v=20260909-cache-1" defer></script>
+</body>
+</html>

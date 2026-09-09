@@ -32,6 +32,12 @@
   const textUrl = window.FV_TEXT_URL || ((item) => `/textes/${encodeURIComponent(typeof item === "string" ? item : item.id)}/`);
   const cleanTextUrl = textUrl(text);
   const textCredit = (item) => item.credit || item.author || item.source || "";
+  const textHlpEntries = (item) => [item.hlp, ...(item.hlpConnections || [])].filter(Boolean);
+  const hasHlp = (item) => textHlpEntries(item).length > 0;
+  const hlpLevel = (item) => item.hlp?.level || item.hlpConnections?.[0]?.level || "";
+  const hlpLevelKey = (item) => hlpLevel(item) === "Première" ? "premiere" : hlpLevel(item) === "Terminale" ? "terminale" : "transversal";
+  const hlpBadgeLabel = (item) => hlpLevel(item) === "Première" ? "HLP 1re" : hlpLevel(item) === "Terminale" ? "HLP Tle" : "HLP";
+  const hlpBadge = (item, detail = false) => hasHlp(item) ? `<span class="text-hlp-badge text-hlp-badge--${hlpLevelKey(item)}${detail ? " text-hlp-badge--detail" : ""}" title="Programme HLP ${hlpLevel(item)}">${hlpBadgeLabel(item)}</span>` : "";
   if (window.location.pathname.includes("/textes/lire/")) window.history.replaceState({}, "", cleanTextUrl);
 
   let returnUrl = "/textes/";
@@ -150,17 +156,20 @@
   };
   const addTextAnnotations = (html) => text.bible ? addBibleEntityTerms(html) : addGlossaryTerms(html);
   const readingParts = text.parts?.length ? text.parts : [{
+    title:text.partTitle,
     context:text.context,
     readingGuide:text.readingGuide,
     readingQuestions:text.readingQuestions,
     readingBlocks:text.readingBlocks,
     paragraphs:text.paragraphs,
     work:text.work,
-    publication:text.publication
+    publication:text.publication,
+    citationApa:text.citationApa,
+    sourceUrl:text.sourceUrl
   }];
   const compassLinks = (() => {
     const links = [];
-    if (sections.includes("philosophie")) {
+    if (sections.includes("philosophie") || text.hlp) {
       links.push(`<a class="text-context-philo-compass" href="/textes/philosophie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole philosophique</strong><span class="text-context-philo-compass-meta">Époques · cartes · parcours</span></a>`);
     }
     if (text.bible) {
@@ -219,23 +228,39 @@
     : "";
   const renderContext = (part) => {
     const guide = part.readingGuide || [];
-    if (guide.length) {
-      const isReligiousText = sections.includes("theologie");
-      const block = `<aside class="text-context" aria-label="Repères de lecture"><span class="text-context-label">Repères de lecture</span><ul class="text-context-guide">${guide.map((item) => {
-        const withTextLinks = linkReferencedTextsInHtml(item.text || "");
-        const content = isReligiousText && item.label === "Où sommes-nous ?" ? withTextLinks : linkThemesInHtml(withTextLinks);
-        return `<li><strong>${item.label}</strong><span>${content}</span></li>`;
-      }).join("")}</ul>${renderBibleGenealogy()}${compassLinks}</aside>`;
-      return dedupeLinksByHref(block);
-    }
-    const questions = (part.readingQuestions || []).length
-      ? `<div class="text-context-questions"><span>Questions directrices</span><ul>${part.readingQuestions.map((question) => `<li>${linkThemesInHtml(question)}</li>`).join("")}</ul></div>`
+    const questions = part.readingQuestions || [];
+    if (!part.context && !guide.length && !questions.length) return "";
+    const isReligiousText = sections.includes("theologie");
+    const intro = part.context ? `<div class="text-context-intro"><span>Introduction</span><p>${linkThemesInHtml(part.context)}</p></div>` : "";
+    const guideHtml = guide.length ? `<div class="text-context-guide-wrap"><span>Repères de lecture</span><ul class="text-context-guide">${guide.map((item) => {
+      const withTextLinks = linkReferencedTextsInHtml(item.text || "");
+      const content = isReligiousText && item.label === "Où sommes-nous ?" ? withTextLinks : linkThemesInHtml(withTextLinks);
+      return `<li><strong>${item.label}</strong><span>${content}</span></li>`;
+    }).join("")}</ul></div>` : "";
+    const questionsHtml = questions.length
+      ? `<div class="text-context-questions"><span>Comprendre le passage</span><ol>${questions.map((question) => `<li>${linkThemesInHtml(question)}</li>`).join("")}</ol></div>`
       : "";
-    if (!part.context) return "";
-    const block = `<aside class="text-context" aria-label="Repère de lecture"><span class="text-context-label">Repère de lecture</span><p>${linkThemesInHtml(part.context)}</p>${questions}${renderBibleGenealogy()}${compassLinks}</aside>`;
+    const block = `<aside class="text-context text-context--structured" aria-label="Introduction, repères de lecture et questions">${intro}${guideHtml}${questionsHtml}${renderBibleGenealogy()}${compassLinks}</aside>`;
     return dedupeLinksByHref(block);
   };
   const firstContext = renderContext(readingParts[0]);
+  const hlpTierLabels = { essential:"Essentiel HLP", deepening:"Approfondissement", transversal:"Transversal" };
+  const hlpStudy = hasHlp(text) && (text.pedagogicalHook || text.hlpQuestion || text.problematisations?.length || text.keywords?.length || text.hlpOppositions?.length) ? `<section class="text-hlp-study text-disclosure" aria-label="Pourquoi lire ce texte en HLP">
+    <button class="text-hlp-study-trigger text-disclosure-trigger" type="button" aria-expanded="false">
+      <span class="text-hlp-study-trigger-copy"><small>Repère HLP</small><strong>Pourquoi lire ce texte&nbsp;?</strong></span>
+      ${text.hlpTier ? `<small class="text-hlp-tier text-hlp-tier--${text.hlpTier}">${hlpTierLabels[text.hlpTier] || text.hlpTier}</small>` : ""}
+      <i class="text-hlp-study-toggle" aria-hidden="true"></i>
+    </button>
+    <div class="text-disclosure-panel"><div class="text-disclosure-panel-inner text-hlp-study-panel">
+      ${text.pedagogicalHook ? `<p class="text-hlp-hook">${text.pedagogicalHook}</p>` : ""}
+      ${text.hlpQuestion ? `<div class="text-hlp-central-question"><span>Question HLP</span><strong>${text.hlpQuestion}</strong></div>` : ""}
+      <div class="text-hlp-study-grid">
+        ${text.problematisations?.length ? `<div class="text-hlp-study-cell text-hlp-study-cell--problems"><span>Pistes pour l’essai</span><ul>${text.problematisations.slice(0,2).map((item) => `<li>${item}</li>`).join("")}</ul></div>` : ""}
+        ${text.keywords?.length ? `<div class="text-hlp-study-cell"><span>Notions-clés</span><div class="text-hlp-keywords">${text.keywords.slice(0,4).map((item) => `<small>${item}</small>`).join("")}</div></div>` : ""}
+        ${text.hlpOppositions?.length ? `<div class="text-hlp-study-cell"><span>Opposition utile</span><div class="text-hlp-oppositions">${text.hlpOppositions.slice(0,1).map((item) => `<small><b>${item.left}</b><i aria-hidden="true">↔</i><b>${item.right}</b></small>`).join("")}</div></div>` : ""}
+      </div>
+    </div></div>
+  </section>` : "";
   let gallerySerial = 0;
   const renderArtworkGallery = (gallery = {}) => {
     const galleryArtworks = gallery.artworks || [];
@@ -325,24 +350,30 @@
       '<p class="text-scripture-text">' + addTextAnnotations(block.text || "") + '</p>' +
     '</div>';
   };
+  const renderReference = (part) => {
+    const citation = part.citationApa || text.citationApa;
+    const sourceUrl = part.sourceUrl || text.sourceUrl;
+    if (citation) return `<p class="text-detail-reference text-detail-reference--apa"><span class="text-detail-reference-label">Référence</span><span>${citation}</span>${sourceUrl ? `<a href="${escapeAttribute(sourceUrl)}" target="_blank" rel="noopener">Source du texte ↗</a>` : ""}</p>`;
+    return `<p class="text-detail-reference"><strong>${textCredit(text)}</strong>, <cite>${part.work || text.work}</cite>, ${part.publication || text.publication}.${sourceUrl ? ` <a href="${escapeAttribute(sourceUrl)}" target="_blank" rel="noopener">Source ↗</a>` : ""}</p>`;
+  };
   const renderReadingPart = (part, index) => {
-    if ((part.readingBlocks || []).length) {
+    const partHeading = part.title ? `<h2 class="text-reading-part-title"><span>${String(index + 1).padStart(2,"0")}</span>${part.title}</h2>` : "";
+    if (part.readingBlocks?.length) {
       const body = part.readingBlocks.map(renderReadingBlock).join("");
       const divider = index > 0 ? '<hr class="text-reading-part-divider" aria-hidden="true">' + renderContext(part) : "";
-      return divider + '<article class="text-reading text-reading--scripture">' +
+      return divider + partHeading + '<article class="text-reading text-reading--scripture">' +
         '<div class="text-reading-content">' + body + '</div>' +
-      '</article>' +
-      '<p class="text-detail-reference"><strong>' + textCredit(text) + '</strong>, <cite>' + (part.work || text.work) + '</cite>, ' + (part.publication || text.publication) + '.</p>';
+      '</article>' + renderReference(part);
     }
     const body = (part.paragraphs || []).map((paragraph) => `<p>${addGlossaryTerms(paragraph)}</p>`).join("");
     const divider = index > 0 ? `<hr class="text-reading-part-divider" aria-hidden="true">${renderContext(part)}` : "";
-    return `${divider}<article class="text-reading" data-line-numbered>
+    return `${divider}${partHeading}<article class="text-reading" data-line-numbered>
       <span class="text-reading-quote text-reading-quote--open" aria-hidden="true">«</span>
       <div class="text-reading-content">${body}</div>
       <span class="text-reading-quote text-reading-quote--close" aria-hidden="true">»</span>
       <div class="text-reading-line-numbers" aria-hidden="true"></div>
     </article>
-    <p class="text-detail-reference"><strong>${textCredit(text)}</strong>, <cite>${part.work || text.work}</cite>, ${part.publication || text.publication}.</p>`;
+    ${renderReference(part)}`;
   };
   const readingSections = readingParts.map(renderReadingPart).join("");
   const noteBadges = {
@@ -398,7 +429,7 @@
     adverse: { label:"Thèse adverse" }
   };
   const relationOrder = ["suite", "identique", "proche", "adverse"];
-  const groupedRelations = (text.relatedTexts || []).slice(0, 2).reduce((groups, related) => {
+  const groupedRelations = (text.relatedTexts || []).slice(0, 4).reduce((groups, related) => {
     const targetText = (window.FV_TEXT_CATALOG || []).find((item) => item.id === related.id);
     if (!targetText) return groups;
     const kind = relationInfo[related.kind] ? related.kind : "proche";
@@ -413,18 +444,21 @@
   const related = relatedGroups ? `<aside class="text-relations" aria-label="Parcours de lecture associé"><span class="text-relations-heading">Poursuivre la réflexion</span>${relatedGroups}</aside>` : "";
   const allCatalogTexts = window.FV_TEXT_CATALOG || [];
   const programThemes = window.FV_CURRENT_PROGRAM_THEMES || [];
-  const legacyReadingPath = (window.FV_TEXT_PATHS || []).find((path) => path.texts.includes(text.id));
-  const legacyTheme = legacyReadingPath?.id === "bonheur" ? "Bonheur" : legacyReadingPath?.id === "amour" ? "Amour" : "";
+  const hlpReadingPath = hasHlp(text) ? (window.FV_HLP_PATHS || []).find((path) => path.texts.includes(text.id)) : null;
+  const legacyReadingPath = hlpReadingPath || (window.FV_TEXT_PATHS || []).find((path) => path.texts.includes(text.id));
+  const legacyTheme = !hlpReadingPath && legacyReadingPath?.id === "bonheur" ? "Bonheur" : !hlpReadingPath && legacyReadingPath?.id === "amour" ? "Amour" : "";
   const preferredTheme = legacyTheme || (text.themes || []).find((theme) => programThemes.includes(theme)) || (text.themes || [])[0] || "";
-  const pathSlug = preferredTheme.toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-  const themePathTexts = legacyReadingPath
-    ? legacyReadingPath.texts.map((id) => allCatalogTexts.find((item) => item.id === id)).filter(Boolean)
-    : preferredTheme
-      ? allCatalogTexts.filter((item) => (item.sections || [item.section]).includes("philosophie") && (item.themes || []).includes(preferredTheme))
-      : [];
+  const pathSlug = hlpReadingPath?.id || preferredTheme.toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const themePathTexts = hlpReadingPath
+    ? hlpReadingPath.texts.map((id) => allCatalogTexts.find((item) => item.id === id)).filter(Boolean)
+    : legacyReadingPath
+      ? legacyReadingPath.texts.map((id) => allCatalogTexts.find((item) => item.id === id)).filter(Boolean)
+      : preferredTheme
+        ? allCatalogTexts.filter((item) => (item.sections || [item.section]).includes("philosophie") && (item.themes || []).includes(preferredTheme))
+        : [];
   const pathIndex = themePathTexts.findIndex((item) => item.id === text.id);
   const nextText = pathIndex >= 0 && pathIndex < themePathTexts.length - 1 ? themePathTexts[pathIndex + 1] : null;
-  const pathLabel = legacyReadingPath?.label || (preferredTheme ? `Parcours « ${preferredTheme} »` : "");
+  const pathLabel = hlpReadingPath ? (hlpReadingPath.label || `HLP · ${hlpReadingPath.theme} — ${hlpReadingPath.subtheme}`) : (legacyReadingPath?.label || (preferredTheme ? `Parcours « ${preferredTheme} »` : ""));
   const pathCompassUrl = pathSlug ? `/textes/philosophie/boussole/?parcours=${encodeURIComponent(pathSlug)}&texte=${encodeURIComponent(text.id)}#parcours-${encodeURIComponent(pathSlug)}` : "";
   const pathNavigation = pathCompassUrl && pathIndex >= 0 ? `<nav class="text-path-navigation" aria-label="Continuer le parcours ${pathLabel}">
     <a class="text-path-navigation-copy" href="${pathCompassUrl}" aria-label="Voir ${pathLabel} dans la Boussole philosophique"><span class="text-path-navigation-compass-link"><span>Parcours de lecture</span><i aria-hidden="true">↗</i></span><strong>${pathLabel}</strong><small>Étape ${pathIndex + 1} sur ${themePathTexts.length}</small></a>
@@ -449,16 +483,17 @@
   description.content = text.description;
   target.innerHTML = `<div class="text-detail-inner">
     <p class="text-breadcrumb"><a class="text-back-results" href="${returnUrl}"><span aria-hidden="true">←</span> Retour aux résultats</a><span aria-hidden="true">·</span><a href="/textes/${text.section}/">${sectionLabel}</a></p>
-    <p class="text-detail-section text-detail-section--${text.section}${isMultiSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span></p>
+    <p class="text-detail-section text-detail-section--${text.section}${isMultiSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span>${hlpBadge(text, true)}</p>
     <h1>${text.title}${text.familiarIdea ? ` <span class="text-detail-familiar-idea">(${text.familiarIdea})</span>` : ""}</h1>
     <p class="text-detail-author">${text.author
       ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${escapeAttribute(text.author)}">${escapeAttribute(text.credit || text.author)}</a>`
-      : `<a class="text-detail-author-link" href="/textes/theologie/?source=${encodeURIComponent(text.source || "")}" aria-label="Voir les textes du corpus ${escapeAttribute(text.source || "")}">${text.source || ""}</a>`}${text.headerReference ? ` <span class="text-detail-work-reference">${text.headerReference}</span>` : ""}${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}</p>
+      : `<a class="text-detail-author-link" href="/textes/theologie/?source=${encodeURIComponent(text.source || "")}" aria-label="Voir les textes du corpus ${escapeAttribute(text.source || "")}">${text.source || ""}</a>`}${text.headerReference ? ` <span class="text-detail-work-reference">${text.headerReference}</span>` : ""}${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}${text.translator ? ` <span class="text-detail-translator">Trad. ${escapeAttribute(text.translator)}</span>` : ""}</p>
     ${bibleCoordinate}
-    <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>
+    <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>${hasHlp(text) ? `<div class="text-detail-hlp-meta">${text.hlp ? `<span>${text.hlp.level} · ${text.hlp.object} · ${text.hlp.subtheme}</span>` : `<span>Transversal HLP</span>`}${text.hlpConnections?.length ? `<div class="text-detail-hlp-connections"><em>Aussi utile pour</em>${text.hlpConnections.map((entry) => `<small>${entry.level} · ${entry.object} · ${entry.subtheme}</small>`).join("")}</div>` : ""}</div>` : ""}
     ${bibleCycleNavigation}
     ${bibleViewToggle}
     ${firstContext}
+    ${hlpStudy}
     ${related}
     ${bibleAnatomy}
     ${readingSections}

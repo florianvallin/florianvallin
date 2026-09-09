@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cette fiche a été fusionnée — Florian Vallin</title>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://florianvallin.fr/textes/ovide-narcisse-reflet-desir-identite/">
+  <meta http-equiv="refresh" content="0;url=/textes/ovide-narcisse-reflet-desir-identite/">
+  <script>location.replace("/textes/ovide-narcisse-reflet-desir-identite/"+location.search+location.hash);</script>
+</head>
+<body><p>Cette fiche a été fusionnée avec sa version principale. <a href="/textes/ovide-narcisse-reflet-desir-identite/">Ouvrir la fiche</a>.</p></body>
+</html>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://florianvallin.fr/</loc></url>
-  <url><loc>https://florianvallin.fr/blog/</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://florianvallin.fr/blog/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://florianvallin.fr/blog/reperes-conceptuels-philosophie-terminale/</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://florianvallin.fr/blog/programmes-philosophie/</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://florianvallin.fr/blog/textes-religieux-mythologiques-philosophie/</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://florianvallin.fr/blog/utiliser-cinema-philosophie/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/</loc></url>
   <url><loc>https://florianvallin.fr/textes/philosophie/</loc></url>
   <url><loc>https://florianvallin.fr/textes/mythologie/</loc><lastmod>2026-08-15</lastmod></url>
@@ -21,10 +22,10 @@
   <url><loc>https://florianvallin.fr/textes/sophocle-oedipe-verite-destin/</loc><lastmod>2026-08-15</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/homere-ulysse-sirenes-maitrise-desir/</loc><lastmod>2026-08-15</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/ovide-icare-voler-trop-haut/</loc><lastmod>2026-08-15</lastmod></url>
-  <url><loc>https://florianvallin.fr/textes/ovide-narcisse-reflet-desir-identite/</loc><lastmod>2026-08-15</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/ovide-narcisse-reflet-desir-identite/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/ovide-orphee-eurydice-regard-interdit/</loc><lastmod>2026-08-15</lastmod></url>
-  <url><loc>https://florianvallin.fr/textes/sophocle-antigone-lois-non-ecrites/</loc><lastmod>2026-08-15</lastmod></url>
-  <url><loc>https://florianvallin.fr/textes/eschyle-oreste-tribunal-justice/</loc><lastmod>2026-08-15</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/sophocle-antigone-lois-non-ecrites/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/eschyle-oreste-tribunal-justice/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/theologie/</loc></url>
   <url><loc>https://florianvallin.fr/textes/theologie/boussole/</loc><lastmod>2026-08-13</lastmod></url>
   <url><loc>https://florianvallin.fr/textes/autres/</loc></url>
@@ -82,4 +83,59 @@
   <url><loc>https://florianvallin.fr/textes/stendhal-cristallisation-amour/</loc></url>
   <url><loc>https://florianvallin.fr/cgv.html</loc></url>
   <url><loc>https://florianvallin.fr/textes/philosophie/boussole/</loc><lastmod>2026-08-10</lastmod></url>
+
+  <url><loc>https://florianvallin.fr/textes/ciceron-verrines-sthenius/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/tacite-dialogue-orateurs-formation/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/demosthene-premiere-philippique-agir/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/tacite-annales-claude-integration/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/salluste-memmius-liberte/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/voltaire-calas-sirven-plaidoyer/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/hippocrate-serment/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/chanson-roland-droit-parole/</loc><lastmod>2026-09-05</lastmod></url>
+
+  <url><loc>https://florianvallin.fr/textes/thucydide-pericles-oraison-funebre/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/corneille-cinna-clemence-auguste/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/la-boetie-servitude-volontaire-ne-plus-servir/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/la-fontaine-loup-agneau-force-raison/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/racine-plaideurs-aristote-autorite/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/hugo-ruy-blas-valet-commandement/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/platon-gorgias-plaire-rendre-meilleur/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/gracian-homme-cour-faible-chacun/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/roman-renart-chantecler-flatterie/</loc><lastmod>2026-09-05</lastmod></url>
+
+  <url><loc>https://florianvallin.fr/textes/shakespeare-othello-iago-jalousie/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/moliere-dom-juan-detourner-langage/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/la-rochefoucauld-maximes-conversation-vanite/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/ronsard-mignonne-rose-carpe-diem/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/rousseau-julie-lettre-amour-sincerite/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/laclos-liaisons-lettre-56-tourvel/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/epictete-manuel-46-vivre-principes/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/sappho-fragment-31-parole-corps/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/louise-labe-sonnet-8-je-vis-je-meurs/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/racine-phedre-aveu-hippolyte/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/sun-tzu-dissensions-rumeur/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/seneque-colere-juge-medecin/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/flaubert-madame-bovary-lectures-imaginaire/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/pascal-force-justice/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/lery-etonnement-mutuel-tupinambas/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/montaigne-cannibales-barbarie-europeenne/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/lascasas-violence-conquete-indes/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/bougainville-rencontre-tahiti/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/diderot-tahitien-colonisation/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/montaigne-coches-civilisation-conquete/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/montesquieu-education-femmes-nature-culture/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/locke-propriete-travail-nature/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/bruno-univers-infini/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/voltaire-micromegas-infiniment-petit/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/more-utopia-monde-egalitaire/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/bacon-maison-salomon-science-utopie/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/marivaux-ile-esclaves-monde-envers/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/diderot-alembert-projet-encyclopedique/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/descartes-animal-machine-instinct/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/lafontaine-ingeniosite-animale/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/montaigne-animaux-communication/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/lamettrie-animaux-morale-remords/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/buffon-cheval-domestication-servitude/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/voltaire-chapon-poularde-cruaute/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://florianvallin.fr/textes/montaigne-devoir-humanite-animaux/</loc><lastmod>2026-09-05</lastmod></url>
 </urlset>
