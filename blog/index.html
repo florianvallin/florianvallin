@@ -15,7 +15,7 @@
         location.reload();
       });
       navigator.serviceWorker
-        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .register("/sw.js?v=20260917-publish1", { scope: "/", updateViaCache: "none" })
         .then((registration) => registration.update())
         .catch(() => {});
     })();
@@ -28,8 +28,8 @@
   <link rel="canonical" href="https://florianvallin.fr/blog/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
-  <link rel="stylesheet" href="/css/style.css?v=20260909-cache-1">
-  <link rel="stylesheet" href="/css/blog.css?v=20260909-cache-1">
+  <link rel="stylesheet" href="/css/style.css?v=20260917-publish1">
+  <link rel="stylesheet" href="/css/blog.css?v=20260917-publish1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -174,7 +174,7 @@
     <div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div>
   </footer>
   <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <script src="/js/script.js?v=20260909-cache-1" defer></script>
+  <script src="/js/script.js?v=20260917-publish1" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Blog","name":"Ressources de philosophie — Florian Vallin","url":"https://florianvallin.fr/blog/","description":"Compléments de philosophie : repères conceptuels, méthodes, astuces et éclairages pour comprendre les textes et progresser dans les exercices.","author":{"@type":"Person","name":"Florian Vallin"}}
   </script>

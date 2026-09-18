@@ -1252,7 +1252,7 @@
     });
 
     navigator.serviceWorker
-      .register("/lecture/sw.js", { scope: "/lecture/", updateViaCache: "none" })
+      .register("/lecture/sw.js?v=20260917-publish1", { scope: "/lecture/", updateViaCache: "none" })
       .then((registration) => registration.update())
       .catch(() => {});
   }
@@ -1409,10 +1409,10 @@
       if (event.key === "ArrowRight" || event.key === "PageDown") { event.preventDefault(); nextPage(); }
       else if (event.key === "ArrowLeft" || event.key === "PageUp") { event.preventDefault(); previousPage(); }
       else if (event.key === "/") { event.preventDefault(); openSearch(); }
-      else if (event.key.toLowerCase() === "b") { event.preventDefault(); toggleBookmark(); }
-      else if (event.key.toLowerCase() === "t") { event.preventDefault(); cycleTheme(); }
-      else if (event.key.toLowerCase() === "m") { event.preventDefault(); toggleFocus(); }
-      else if (event.key.toLowerCase() === "f") { event.preventDefault(); requestFullscreen(); }
+      else if (event.shiftKey && event.code === "KeyB") { event.preventDefault(); toggleBookmark(); }
+      else if (event.shiftKey && event.code === "KeyT") { event.preventDefault(); cycleTheme(); }
+      else if (event.shiftKey && event.code === "KeyM") { event.preventDefault(); toggleFocus(); }
+      else if (!event.shiftKey && event.code === "KeyF") { event.preventDefault(); requestFullscreen(); }
     });
 
     let startX = null;

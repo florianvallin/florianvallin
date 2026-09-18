@@ -860,7 +860,11 @@
   if (hlpCount) hlpCount.textContent = String(hlpModels.length);
   if (allCount) allCount.textContent = String(themeModels.length);
 
-  const renderFlow = (items, sectionMode = false) => `<div class="philo-path-flow${sectionMode ? " philo-path-flow--section" : ""}">${items.map((item,index) => `${!sectionMode && index ? '<span class="philo-path-connector" aria-hidden="true">→</span>' : ''}<a href="${textUrl(item)}" data-philo-path-text="${escapeHtml(item.id)}"><small>${escapeHtml(item.authorTag || item.author || item.source || "Texte")}</small><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>`;
+  const renderFlow = (items, sectionMode = false) => {
+    const denseMode = !sectionMode && items.length >= 5;
+    const classes = `philo-path-flow${sectionMode ? " philo-path-flow--section" : ""}${denseMode ? " philo-path-flow--dense" : ""}`;
+    return `<div class="${classes}">${items.map((item,index) => `${!sectionMode && !denseMode && index ? '<span class="philo-path-connector" aria-hidden="true">→</span>' : ''}<a href="${textUrl(item)}" data-philo-path-text="${escapeHtml(item.id)}"><small>${escapeHtml(item.authorTag || item.author || item.source || "Texte")}</small><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>`;
+  };
   const cleanHlpGroupTitle = (value) => String(value || "").replace(/^\s*\d+\s*[·.–-]\s*/, "");
 
   if (pathRoot) {

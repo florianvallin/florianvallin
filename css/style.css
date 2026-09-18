@@ -84,6 +84,8 @@ button { color: inherit; }
 .hero-inner { position: relative; z-index: 1; width: min(900px, 100%); margin: auto; text-align: center; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 28px; padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; background: #fff; box-shadow: 0 5px 16px rgba(28,28,40,.05); font-size: 12px; color: var(--text-medium); }
 .hero-badge span { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.1); }
+.hero-badge--placeholder { visibility: hidden; border-color: transparent; background: transparent; box-shadow: none; min-width: 1px; }
+.hero-badge--placeholder::before { content: ""; display: block; width: 1px; height: 14px; }
 .hero-main-title { font-size: clamp(3rem, 7vw, 4.6rem); line-height: 1.06; letter-spacing: -.05em; font-weight: 600; }
 .hero-title-main, .hero-title-secondary { display: block; }
 .hero-title-secondary { margin-top: 4px; color: var(--primary); font-size: .7em; }
@@ -1005,6 +1007,39 @@ button { color: inherit; }
   box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
 }
 
+.about-social-link--site .about-social-link__icon {
+  border: 1px solid rgba(108, 99, 255, .12);
+  background: #fff;
+  color: var(--primary);
+  box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
+}
+
+.about-social-divider {
+  width: 1px;
+  height: 36px;
+  margin: 0 2px;
+  background: rgba(108, 99, 255, .18);
+  border-radius: 999px;
+}
+
+.about-social-link--youtube .about-social-link__icon {
+  background: #fff;
+  color: #e62117;
+  box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
+}
+
+.about-social-link--tiktok .about-social-link__icon {
+  background: #fff;
+  color: #18181b;
+  box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
+}
+
+.about-social-link--instagram .about-social-link__icon {
+  background: #fff;
+  color: #8a3ab9;
+  box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
+}
+
 .about-social-link:hover {
   transform: translateY(-3px);
   border-color: rgba(108, 99, 255, .34);
@@ -1034,6 +1069,11 @@ button { color: inherit; }
   .about-social-link {
     width: 54px;
     height: 54px;
+  }
+
+  .about-social-divider {
+    height: 32px;
+    margin: 0;
   }
 }
 
@@ -1296,3 +1336,9 @@ body.site-search-open { overflow:hidden; }
     gap:8px;
   }
 }
+
+/* CGV — éléments de lisibilité ajoutés le 16/09/2026 */
+.legal-content .legal-update { margin:-26px 0 34px; text-align:center; font-size:13px; color:var(--text-light); }
+.legal-withdrawal-form { margin:20px 0 28px; padding:22px 24px; border:1px solid var(--border); border-left:3px solid var(--primary); border-radius:12px; background:rgba(255,255,255,.72); }
+.legal-withdrawal-form p { margin-bottom:10px; }
+.legal-withdrawal-form p:last-child { margin-bottom:0; }

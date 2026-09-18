@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
-Disallow: /lecture/
+
+# Les zones non publiées utilisent une balise meta robots noindex.
+# Elles ne sont volontairement pas listées ici afin de ne pas révéler leurs chemins
+# et pour permettre aux moteurs de lire la directive noindex.
 
 Sitemap: https://florianvallin.fr/sitemap.xml

@@ -13993,3 +13993,49 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
 @media(max-width:480px){
   .bible-compass-page .bible-compass-jump:not(.is-condensed){grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 }
+
+
+/* ==========================================================
+   BOUSSOLE PHILOSOPHIQUE — correctifs lisibilité 2026-09-17
+   ========================================================== */
+/* Les groupes très fournis (« Autres textes » notamment) ne sont plus
+   compressés sur une seule ligne : ils deviennent une grille réellement lisible. */
+.philo-compass-page .philo-path-flow--dense {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:8px;
+  width:100%;
+  align-items:stretch;
+}
+.philo-compass-page .philo-path-flow--dense > a {
+  width:100%;
+  min-width:0;
+  min-height:64px;
+  box-sizing:border-box;
+}
+.philo-compass-page .philo-path-flow--dense > a small,
+.philo-compass-page .philo-path-flow--dense > a strong {
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:auto;
+}
+
+/* La frise ayant été supprimée, Périodes et Carte se partagent désormais
+   toute la largeur du sélecteur au lieu d'occuper seulement les 2/3. */
+.philo-compass-page .philo-view-tabs {
+  width:100%;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.philo-compass-page .philo-view-tabs button { width:100%; }
+
+@media (max-width:900px) {
+  .philo-compass-page .philo-path-flow--dense {
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  }
+}
+@media (max-width:700px) {
+  .philo-compass-page .philo-path-flow--dense {
+    grid-template-columns:1fr;
+    gap:7px;
+  }
+}

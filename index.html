@@ -16,7 +16,7 @@
         location.reload();
       });
       navigator.serviceWorker
-        .register("/sw.js", { scope: "/", updateViaCache: "none" })
+        .register("/sw.js?v=20260917-publish1", { scope: "/", updateViaCache: "none" })
         .then((registration) => registration.update())
         .catch(() => {});
     })();
@@ -48,7 +48,7 @@
   <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
   <meta property="og:site_name" content="Florian Vallin">
 
-  <link rel="stylesheet" href="css/style.css?v=20260909-cache-1">
+  <link rel="stylesheet" href="css/style.css?v=20260917-publish1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,7 +93,7 @@
     decoding="async"
   >
   <div class="hero-inner">
-    <div class="hero-badge"><span aria-hidden="true"></span>Inscriptions ouvertes pour l'année 2026-2027</div>
+    <div class="hero-badge hero-badge--placeholder" aria-hidden="true"></div>
     <h1 class="hero-main-title" id="hero-title">
       <span class="hero-title-main">Cours de Philosophie</span>
       <span class="hero-title-secondary">et méthodologie générale.</span>
@@ -194,7 +194,7 @@
       <a
         class="info-tooltip info-tooltip-link"
         href="/textes/philosophie/boussole/#parcours"
-        data-tooltip="Bonheur · Liberté · Justice · Temps · Religion..."
+        data-tooltip="Les notions qui structurent le cours : 17 en Terminale générale, 7 en Terminale technologique ; en HLP, de grands objets d’étude organisent le programme."
       >
         thèmes
       </a>,
@@ -202,7 +202,7 @@
       <a
         class="info-tooltip info-tooltip-link"
         href="/blog/reperes-conceptuels-philosophie-terminale/"
-        data-tooltip="Absolu / relatif · En fait / en droit · Objectif / subjectif · Théorie / pratique..."
+        data-tooltip="Les 31 distinctions du programme — par exemple absolu / relatif ou en fait / en droit — servent à préciser les concepts et éviter les confusions."
       >
         repères conceptuels
       </a>
@@ -210,7 +210,7 @@
       <a
         class="info-tooltip info-tooltip-link"
         href="/textes/philosophie/boussole/#chronologie"
-        data-tooltip="Platon · Aristote · Descartes · Kant · Nietzsche · Rousseau..."
+        data-tooltip="Le programme prévoit une liste d’auteurs de référence, de l’Antiquité à aujourd’hui, mobilisés pour éclairer les notions et les problèmes."
       >
         auteurs
       </a>.
@@ -948,14 +948,14 @@
         <p>
           Mon travail s’organise autour de deux axes : la <strong>philosophie</strong> (dissertation, explication de texte)
           et la <strong>méthodologie générale</strong> (apprendre à apprendre, organisation, mémorisation, outils).
-          Je me suis beaucoup intéressé aux méthodes de travail afin d’optimiser mon quotidien et mes études : techniques de mémorisation avancée, usage des macros, intégration de l’IA, etc.
+          Je me suis beaucoup intéressé aux méthodes de travail afin d’optimiser mon quotidien et mes études : techniques d’apprentissage et de mémorisation avancées, intégration de l’IA pour les étudiants, usage des macros dans le traitement de texte, etc.
         </p>
 
         <p>
-          J’ai accompagné des élèves via <strong>Acadomia</strong>, <strong>MyMaxicours</strong> et en <strong>tutorat universitaire</strong> (Licence de Philosophie à Distance, Université de Montpellier).
+          Depuis plusieurs années, j’accompagne des élèves en <strong>cours particuliers</strong> selon trois modalités : <strong>à titre privé</strong>, via des plateformes de soutien scolaire — <strong>Acadomia</strong> en présentiel à Montpellier et <strong>MyMaxicours</strong> à distance —, ainsi qu’en <strong>tutorat universitaire</strong> (Licence de Philosophie à Distance, Université de Montpellier).
         </p>
 
-        <div class="about-social-links" aria-label="Profils professionnels">
+        <div class="about-social-links" aria-label="Profils et réseaux">
           <a
             class="about-social-link about-social-link--linkedin"
             href="https://www.linkedin.com/in/florianvallin/"
@@ -974,9 +974,64 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Voir ma fiche Google Business dans un nouvel onglet"
+            title="Google"
           >
             <span class="about-social-link__icon" aria-hidden="true">
               <iconify-icon icon="logos:google-icon" width="18" height="18"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--site"
+            href="https://florianvallin.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ouvrir florianvallin.fr dans un nouvel onglet"
+            title="florianvallin.fr"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:web" width="19" height="19"></iconify-icon>
+            </span>
+          </a>
+
+          <span class="about-social-divider" aria-hidden="true"></span>
+
+          <a
+            class="about-social-link about-social-link--youtube"
+            href="https://www.youtube.com/channel/UClfhjKJbbtW0HJPcxDdTwyg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir la chaîne YouTube Philosophal, @lephilosophal, dans un nouvel onglet"
+            title="YouTube · Philosophal · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:youtube" width="21" height="21"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--tiktok"
+            href="https://www.tiktok.com/@lephilosophal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le compte TikTok @lephilosophal dans un nouvel onglet"
+            title="TikTok · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="simple-icons:tiktok" width="18" height="18"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--instagram"
+            href="https://www.instagram.com/lephilosophal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le compte Instagram @lephilosophal dans un nouvel onglet"
+            title="Instagram · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon>
             </span>
           </a>
         </div>
@@ -1391,9 +1446,9 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260909-cache-1" defer></script>
-<script src="js/protected-phone.js?v=20260909-cache-1" defer></script>
-<script src="js/contact-form.js?v=20260909-cache-1" defer></script>
+<script src="js/script.js?v=20260917-publish1" defer></script>
+<script src="js/protected-phone.js?v=20260917-publish1" defer></script>
+<script src="js/contact-form.js?v=20260917-publish1" defer></script>
 
 <script type="application/ld+json">
 {

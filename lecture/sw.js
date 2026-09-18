@@ -1,10 +1,10 @@
-const CACHE = "fv-reader-v11";
+const CACHE = "fv-reader-v13-20260917-publish1";
 const CORE = [
   "/lecture/",
   "/lecture/index.html",
-  "/lecture/reader.css?v=20260909-cache-1",
-  "/lecture/reader.js?v=20260909-cache-1",
-  "/lecture/library.js?v=20260909-cache-1",
+  "/lecture/reader.css?v=20260917-publish1",
+  "/lecture/reader.js?v=20260917-publish1",
+  "/lecture/library.js?v=20260917-publish1",
   "/favicon.svg"
 ];
 

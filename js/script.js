@@ -1,4 +1,15 @@
 (() => {
+  if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
+  const script = document.createElement("script");
+  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+  const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260917-publish1`;
+  script.defer = true;
+  script.dataset.fvSiteTools = "";
+  document.head.append(script);
+})();
+
+(() => {
   "use strict";
 
   const ready = (callback) => {
@@ -359,7 +370,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20260824-1";
+        script.src = "/js/site-search-data.js?v=20260917-publish1";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = reject;
         document.head.append(script);
@@ -455,6 +466,8 @@
       document.body.classList.remove("site-search-open");
     };
 
+    window.FVSiteSearch = { open, close };
+
     document.querySelectorAll("[data-site-search-open]").forEach((button) => {
       button.addEventListener("click", (event) => {
         event.preventDefault();
@@ -479,6 +492,13 @@
     }));
     input?.addEventListener("input", renderResults);
 
+    try {
+      if (sessionStorage.getItem("fv-open-site-search") === "1") {
+        sessionStorage.removeItem("fv-open-site-search");
+        open();
+      }
+    } catch (_) {}
+
     document.addEventListener("keydown", (event) => {
       const target = event.target;
       const typing = target instanceof HTMLElement && (target.matches("input,textarea,select") || target.isContentEditable);
@@ -495,7 +515,18 @@
     const STUDENT_PORTALS = {
       didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
       art: "/art/",
-      livres: "/lecture/"
+      livre: "/lecture/",
+      livres: "/lecture/",
+      media: "/mediatheque/",
+      mediatheque: "/mediatheque/",
+      bible: "/textes/theologie/boussole/"
+    };
+
+    const resolveStudentDestination = (destination) => {
+      if (!destination?.startsWith("/")) return destination;
+      const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+      const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
+      return `${localMain ? "/main" : ""}${destination}`;
     };
 
     if (!document.querySelector("[data-student-dialog]")) {
@@ -542,6 +573,9 @@
       if (shell) shell.hidden = true;
     };
 
+    // API légère utilisée par les raccourcis globaux (touche S).
+    window.FVStudentAccess = { open, close };
+
     const grantLibraryAccess = () => {
       try {
         localStorage.setItem("fv-private-library", "1");
@@ -567,7 +601,7 @@
 
       navigating = true;
 
-      if (key === "livres") {
+      if (key === "livre" || key === "livres") {
         grantLibraryAccess();
       }
 
@@ -575,7 +609,7 @@
         feedback.textContent = "Accès reconnu — ouverture de votre espace…";
       }
 
-      window.location.href = destination;
+      window.location.href = resolveStudentDestination(destination);
       return true;
     };
 
@@ -594,11 +628,11 @@
         enter(true);
       });
 
-    // "livres" ouvre directement le lecteur dès que le mot exact est saisi.
+    // Les mots d’accès exacts ouvrent directement l’espace correspondant.
     input?.addEventListener("input", () => {
       const key = normalizeSearch(input.value).replace(/\s+/g, "");
 
-      if (key === "livres") {
+      if (STUDENT_PORTALS[key]) {
         enter(false);
       } else if (feedback) {
         feedback.textContent = "";
