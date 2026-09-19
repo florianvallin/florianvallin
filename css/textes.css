@@ -13802,6 +13802,19 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
   .texts-compass-pair .texts-myth-compass-text,
   .texts-compass-pair .texts-bible-compass-text { font-size:10px;white-space:normal; }
 }
+
+@media (max-width:700px) {
+  /* Sur l'onglet « Tous », garder une seule porte d'entrée sur téléphone.
+     Les boussoles mythologique et biblique restent présentes dans leurs
+     onglets dédiés, qui n'utilisent pas data-catalog-section="all". */
+  body[data-catalog-section="all"] .texts-myth-compass-strip,
+  body[data-catalog-section="all"] .texts-bible-compass-strip {
+    display:none;
+  }
+  body[data-catalog-section="all"] .texts-compass-pair {
+    grid-template-columns:minmax(0,1fr);
+  }
+}
 @media (max-width:520px) {
   .texts-myth-compass-strip { gap:8px;margin-top:13px;padding:8px 10px; }
   .texts-myth-compass-icon { width:28px;height:28px;flex-basis:28px; }

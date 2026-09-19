@@ -696,7 +696,8 @@ button { color: inherit; }
 
 @media (max-width: 620px) {
   .container { width:min(100% - 28px,1100px); }
-  .hero { padding:125px 16px 76px; }
+  .hero { padding:108px 16px 76px; }
+  .hero-badge--placeholder { display:none; }
   .hero-socrate {
     display:block;
     top:94px;
@@ -1189,6 +1190,7 @@ button { color: inherit; }
 
 @media (max-width: 620px) {
   .about-social-links {
+    justify-content: center;
     gap: 10px;
   }
 
@@ -1197,9 +1199,14 @@ button { color: inherit; }
     height: 54px;
   }
 
+  /* Le séparateur devient un saut de ligne : YouTube, TikTok et Instagram
+     forment une seconde rangée, centrée sous LinkedIn, Google et le site. */
   .about-social-divider {
-    height: 32px;
-    margin: 0;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 0;
+    margin: -5px 0;
+    background: transparent;
   }
 }
 

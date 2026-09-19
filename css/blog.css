@@ -1051,6 +1051,19 @@
   .blog-hero-portrait--descartes { right:-28px; height:390px; opacity:.60; }
 }
 
+/* Le bloc portraits réintroduisait deux colonnes après le breakpoint mobile
+   précédent : sur téléphone, le texte se retrouvait écrasé dans une colonne
+   très étroite. On repasse explicitement le hero sur une seule colonne. */
+@media (max-width:760px) {
+  .blog-index-page .blog-index-hero-inner {
+    grid-template-columns:minmax(0,1fr);
+    gap:0;
+  }
+  .blog-index-page .blog-hero-portraits { display:none; }
+  .blog-index-page .blog-index-title,
+  .blog-index-page .blog-index-intro { max-width:100%; }
+}
+
 @media (max-width:760px) {
   .blog-program-section-heading > span {
     min-height:30px;

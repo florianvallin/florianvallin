@@ -28,8 +28,8 @@
 <link href="https://florianvallin.fr/blog/experiences-de-pensee-philosophie/" rel="canonical"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
-<link href="/css/style.css?v=20260919-hlp-consolidation1" rel="stylesheet"/>
-<link href="/css/blog.css?v=20260919-hlp-consolidation1" rel="stylesheet"/>
+<link href="/css/style.css?v=20260919-mobile-polish1" rel="stylesheet"/>
+<link href="/css/blog.css?v=20260919-mobile-polish1" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -62,6 +62,18 @@
 .thought-concept-list{margin:1.15rem 0 1.55rem}.thought-concept-list>.thought-concept-label{display:block;margin:0 0 .48rem;color:#6e65ad;font-family:Inter,Arial,sans-serif;font-size:.7rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.thought-concept-list ul{margin:.25rem 0 0!important;padding:0 0 0 1.15rem!important;list-style:disc!important}.thought-concept-list li{margin:.4rem 0!important;padding:0!important;color:#4f4b57;font-size:.94rem;line-height:1.58}.thought-concept-list li::marker{color:var(--thought-accent)}.thought-concept-list li strong{color:#302d37;font-weight:700}.thought-concept-note{margin:.65rem 0 0!important;color:#777180!important;font-family:Inter,Arial,sans-serif!important;font-size:.77rem!important;line-height:1.55!important}.thought-intro-distinction{margin:1.45rem 0 1.65rem;padding:0}
 .thought-reference-table{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin:1.3rem 0 .15rem;border-top:1px solid var(--thought-rule);border-bottom:1px solid var(--thought-rule)}.thought-reference-cell{min-width:0;padding:1.05rem 1.1rem}.thought-reference-cell+ .thought-reference-cell{border-left:1px solid var(--thought-rule)}.thought-reference-cell>span{display:block;margin-bottom:.42rem;color:#6e65ad;font-family:Inter,Arial,sans-serif;font-size:.68rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.thought-reference-source{color:#4b4752;font-size:.91rem;line-height:1.63}.thought-reference-source>strong:first-of-type{color:#302d37}.thought-reference-cultural>span{color:#916638}.thought-reference-cultural>strong{display:block;color:#3e3831;font-family:Georgia,"Times New Roman",serif;font-size:1rem;font-weight:600;line-height:1.3}.thought-reference-cultural p{margin:.35rem 0 0!important;color:#62594f!important;font-size:.85rem!important;line-height:1.56!important}.thought-reference-table--single .thought-reference-cell{grid-column:1 / -1;padding-left:0;padding-right:0}.thought-reference-table--single .thought-reference-cell+ .thought-reference-cell{border-left:0}
 @media(max-width:650px){.thought-reference-table{grid-template-columns:1fr}.thought-reference-cell{padding:1rem 0}.thought-reference-cell+ .thought-reference-cell{border-left:0;border-top:1px solid var(--thought-rule)}.thought-reference-table--single .thought-reference-cell{grid-column:1}}
+
+/* Visuel éditorial du billet : une hypothèse au centre, plusieurs chemins possibles. */
+.thought-hero-symbol{display:grid;place-items:center;align-self:center;min-height:300px}
+.thought-hero-symbol svg{display:block;width:min(100%,290px);height:auto;overflow:visible}
+.thought-hero-symbol .thought-symbol-orbit{fill:none;stroke:rgba(108,99,255,.22);stroke-width:1.35;stroke-dasharray:3 7}
+.thought-hero-symbol .thought-symbol-link{fill:none;stroke:rgba(81,72,207,.31);stroke-width:1.4;stroke-linecap:round}
+.thought-hero-symbol .thought-symbol-node{fill:#fff;stroke:rgba(108,99,255,.38);stroke-width:1.4}
+.thought-hero-symbol .thought-symbol-core{fill:rgba(108,99,255,.075);stroke:rgba(108,99,255,.31);stroke-width:1.5}
+.thought-hero-symbol .thought-symbol-question{fill:#5d54e8;font:500 82px/1 Georgia,"Times New Roman",serif;text-anchor:middle}
+.thought-hero-symbol .thought-symbol-caption{fill:#736c8c;font:800 9px/1 Inter,Arial,sans-serif;letter-spacing:.16em;text-anchor:middle}
+.thought-aside-sources::before{content:none!important;display:none!important}
+@media(max-width:720px){.thought-hero-symbol{min-height:170px;height:170px;margin-top:-6px}.thought-hero-symbol svg{width:190px}}
 </style>
 </head>
 <body class="blog-page thought-page" id="top">
@@ -81,12 +93,28 @@
 </header>
 <main class="blog-article-main">
 <header class="blog-article-header thought-hero">
-<div class="blog-article-header-inner">
+<div class="blog-article-header-inner blog-article-header-inner--visual">
 <nav aria-label="Fil d’Ariane" class="blog-breadcrumb"><a href="/">Accueil</a><span>·</span><a href="/blog/">Blog</a><span>·</span><span>Expériences de pensée</span></nav>
+<div class="blog-article-hero-grid thought-hero-grid">
+<div class="blog-article-hero-copy">
 <p class="blog-article-kicker">Philosophie · Découverte · Terminale</p>
 <h1 class="blog-article-title">10 <span class="thought-title-accent">expériences de pensée et dilemmes</span> pour <em>entrer en philosophie</em></h1>
 <p class="blog-article-lead">Et si vous deveniez <strong>invisible</strong> ? Si toute votre vie était une <strong>simulation</strong> ? Si une machine pouvait vous rendre <strong>parfaitement heureux</strong> ?</p>
 <p class="blog-article-meta"><strong>Florian Vallin</strong><i aria-hidden="true"></i><time datetime="2026-09-18">18 septembre 2026</time><i aria-hidden="true"></i><span>Lecture · 16 min</span></p>
+</div>
+<figure class="blog-article-hero-visual thought-hero-symbol" aria-hidden="true">
+<svg viewBox="0 0 320 320" role="img">
+<circle class="thought-symbol-orbit" cx="160" cy="150" r="112"/>
+<path class="thought-symbol-link" d="M160 102V57M207 148h49M126 188l-36 34"/>
+<circle class="thought-symbol-node" cx="160" cy="48" r="10"/>
+<circle class="thought-symbol-node" cx="266" cy="148" r="10"/>
+<circle class="thought-symbol-node" cx="82" cy="230" r="10"/>
+<circle class="thought-symbol-core" cx="160" cy="150" r="52"/>
+<text class="thought-symbol-question" x="160" y="178">?</text>
+<text class="thought-symbol-caption" x="160" y="294">ET SI… ?</text>
+</svg>
+</figure>
+</div>
 </div>
 </header>
 <div class="blog-article-layout">
