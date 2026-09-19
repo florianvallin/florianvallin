@@ -1,5 +1,6 @@
 /**
- * Numéro masqué : décalage -3 → inversion → base64.
+ * Coordonnées masquées dans le HTML : décalage -3 → inversion → base64.
+ * Le contenu n'est reconstruit qu'après une action volontaire de l'utilisateur.
  */
 function decodeProtectedPayload(encoded) {
   const unshifted = encoded
@@ -10,30 +11,34 @@ function decodeProtectedPayload(encoded) {
   return atob(reversed);
 }
 
-function initProtectedPhoneBlocks() {
+function initProtectedContactBlocks() {
   document.querySelectorAll(".protected-content").forEach((element) => {
     const trigger = element.querySelector(".protected-trigger");
     const encoded = element.getAttribute("data-encoded");
     const contentType = element.getAttribute("data-content-type");
 
-    if (!trigger || !encoded || contentType !== "phone") return;
+    if (!trigger || !encoded || !["phone", "email"].includes(contentType)) return;
 
     trigger.addEventListener(
       "click",
       () => {
         const decoded = decodeProtectedPayload(encoded);
-        const tel = decoded.replace(/\s/g, "");
         const link = document.createElement("a");
 
-        link.href = `tel:${tel}`;
-        link.textContent = decoded;
-
-        if (element.closest(".contact-alert")) {
-          link.className = "contact-alert__link";
+        if (contentType === "phone") {
+          link.href = `tel:${decoded.replace(/\s/g, "")}`;
+          link.setAttribute("aria-label", `Appeler le ${decoded}`);
         } else {
-          link.className = "phone-number";
-          link.id = "phoneNumber";
+          link.href = `mailto:${decoded}`;
+          link.setAttribute("aria-label", `Envoyer un e-mail à ${decoded}`);
         }
+
+        link.textContent = decoded;
+        link.className = element.closest(".contact-method")
+          ? "contact-direct-link"
+          : element.closest(".contact-alert")
+            ? "contact-alert__link"
+            : "phone-number";
 
         trigger.setAttribute("aria-expanded", "true");
         element.replaceWith(link);
@@ -44,11 +49,7 @@ function initProtectedPhoneBlocks() {
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener(
-    "DOMContentLoaded",
-    initProtectedPhoneBlocks,
-    { once: true },
-  );
+  document.addEventListener("DOMContentLoaded", initProtectedContactBlocks, { once: true });
 } else {
-  initProtectedPhoneBlocks();
+  initProtectedContactBlocks();
 }

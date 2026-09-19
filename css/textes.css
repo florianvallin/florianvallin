@@ -14039,3 +14039,142 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
     gap:7px;
   }
 }
+
+
+/* === HLP · audit affichage + navigation boussole (2026-09-19) === */
+/* La ligne supérieure d’une carte reste sur une seule ligne : le libellé peut
+   se réduire proprement, mais le badge HLP reste toujours aligné à droite. */
+.text-card-section{
+  flex-wrap:nowrap;
+  min-width:0;
+}
+.text-card-section-dot{flex:none}
+.text-card-section-meta{
+  flex:1 1 auto;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.text-hlp-badge{
+  position:relative;
+  z-index:3;
+  flex:none;
+  margin-left:auto;
+  text-decoration:none;
+  cursor:pointer;
+  transition:border-color .18s ease,background .18s ease,transform .18s ease,box-shadow .18s ease;
+}
+.text-hlp-badge:hover{
+  transform:translateY(-1px);
+  box-shadow:0 4px 12px rgba(31,33,41,.08);
+}
+.text-hlp-badge:focus-visible{
+  outline:2px solid currentColor;
+  outline-offset:2px;
+}
+@media(max-width:430px){
+  .text-card-section-meta{font-size:9.2px}
+  .text-hlp-badge{margin-left:auto}
+}
+
+
+/* === HLP · consolidation finale (2026-09-19) === */
+/* Relations : vocabulaire de lecture plus utile que la seule proximité de thèse. */
+.text-relation-group--prolonger{--relation-color:var(--primary-dark);--relation-border:rgba(108,99,255,.24);--relation-bg:linear-gradient(90deg,rgba(108,99,255,.095),#fff 58%)}
+.text-relation-group--prolonger .text-relation-kind-icon{width:18px;height:12px;background:currentColor;clip-path:polygon(0 41%,66% 41%,66% 10%,100% 50%,66% 90%,66% 59%,0 59%)}
+.text-relation-group--meme-probleme{--relation-color:#7854b8;--relation-border:rgba(120,84,184,.22);--relation-bg:linear-gradient(90deg,rgba(120,84,184,.08),#fff 58%)}
+.text-relation-group--meme-probleme .text-relation-kind-icon{border:2px solid currentColor;border-radius:50%}
+.text-relation-group--meme-probleme .text-relation-kind-icon::after{content:"";position:absolute;inset:3px;border-radius:50%;background:currentColor}
+.text-relation-group--autre-approche{--relation-color:#4d9274;--relation-border:rgba(77,146,116,.23);--relation-bg:linear-gradient(90deg,rgba(77,146,116,.085),#fff 58%)}
+.text-relation-group--autre-approche .text-relation-kind-icon{border:2px solid currentColor;border-radius:50%}
+.text-relation-group--autre-approche .text-relation-kind-icon::after{content:"";position:absolute;inset:3px;border-radius:50%;background:currentColor}
+.text-relation-group--confronter{--relation-color:#b45d69;--relation-border:rgba(180,93,105,.25);--relation-bg:linear-gradient(90deg,rgba(180,93,105,.085),#fff 58%)}
+.text-relation-group--confronter .text-relation-kind-icon::before,.text-relation-group--confronter .text-relation-kind-icon::after{content:"";position:absolute;top:5px;left:-1px;width:15px;height:2px;border-radius:2px;background:currentColor}
+.text-relation-group--confronter .text-relation-kind-icon::before{transform:rotate(45deg)}
+.text-relation-group--confronter .text-relation-kind-icon::after{transform:rotate(-45deg)}
+
+/* Fiche : position dans le programme HLP = fil d’Ariane discret et entièrement cliquable. */
+.text-detail-hlp-meta{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:9px 0 18px}
+.text-detail-hlp-path{display:inline-flex;align-items:center;flex-wrap:wrap;gap:5px;max-width:100%;padding:5px 8px;border:1px solid rgba(24,118,111,.13);border-radius:8px;background:#f9fdfc;color:#516762;text-decoration:none;font:650 9.5px/1.35 Inter,sans-serif;transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.text-detail-hlp-path:hover{background:#f1faf7;border-color:rgba(24,118,111,.25);transform:translateY(-1px)}
+.text-detail-hlp-path:focus-visible{outline:2px solid var(--hlp-terminale);outline-offset:2px}
+.text-detail-hlp-path i{color:#a4afa9;font-style:normal;font-weight:500}
+.text-detail-hlp-path strong{color:var(--hlp-terminale);font-weight:800}
+.text-detail-hlp-path b{margin-left:2px;color:#8aa49b;font-size:9px}
+.text-detail-hlp-connections a{display:inline-flex;padding:4px 7px;border:1px solid rgba(31,33,41,.08);border-radius:999px;background:#fbfbfc;color:var(--text-medium);font-size:8px;text-decoration:none}
+.text-detail-hlp-connections a:hover{border-color:rgba(108,74,162,.2);color:var(--hlp-premiere)}
+
+/* Boussole HLP : plancher de lisibilité sur téléphone. */
+@media(max-width:700px){
+  .philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger>span{font-size:10.5px;line-height:1.25}
+  .philo-path-question--hlp-section .philo-path-question-trigger>strong{font-size:15px;line-height:1.3}
+  .philo-path-subquestion{font-size:12px!important;line-height:1.48!important}
+  .philo-path-question--hlp-section .philo-path-question-panel-inner>p{font-size:11.5px;line-height:1.55}
+  .philo-path-flow--section>a{grid-template-columns:30px minmax(0,1fr);min-height:54px;padding:9px 10px;gap:2px 9px}
+  .philo-path-flow--section>a::before{font-size:10px}
+  .philo-path-flow--section>a small{font-size:10.5px;line-height:1.3}
+  .philo-path-flow--section>a strong{font-size:12.5px;line-height:1.4}
+  .text-detail-hlp-path{gap:4px;padding:6px 8px;font-size:10.5px}
+}
+
+/* ==========================================================
+   HLP — fusion des grands objets et sous-sections lisibles
+   ========================================================== */
+.philo-hlp-stages{
+  display:grid;
+  gap:9px;
+  margin-top:8px;
+}
+.philo-hlp-stage{
+  padding:10px;
+  border:1px solid color-mix(in srgb,var(--hlp-path-accent) 10%,transparent);
+  border-radius:10px;
+  background:color-mix(in srgb,var(--hlp-path-accent) 2.5%,#fff);
+}
+.philo-hlp-stage-head{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:2px 8px;
+  align-items:baseline;
+  margin-bottom:7px;
+}
+.philo-hlp-stage-head>span{
+  grid-row:1/3;
+  align-self:start;
+  padding:3px 6px;
+  border-radius:999px;
+  background:var(--hlp-path-soft);
+  color:var(--hlp-path-accent);
+  font:800 8px/1.2 Inter,sans-serif;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.philo-hlp-stage-head>strong{
+  color:#24212a;
+  font:760 12.5px/1.35 Inter,sans-serif;
+}
+.philo-hlp-stage-head>em{
+  color:#746e79;
+  font:500 10px/1.45 Inter,sans-serif;
+}
+.philo-hlp-stage>p{
+  margin:0 0 8px;
+  color:#716b78;
+  font-size:10.2px;
+  line-height:1.5;
+}
+.philo-hlp-stage .philo-path-flow--section{
+  margin-top:0;
+}
+
+@media(max-width:700px){
+  .philo-hlp-stages{gap:8px;margin-top:9px}
+  .philo-hlp-stage{padding:9px;border-radius:9px}
+  .philo-hlp-stage-head{grid-template-columns:1fr;gap:3px;margin-bottom:8px}
+  .philo-hlp-stage-head>span{grid-row:auto;justify-self:start;font-size:9.5px}
+  .philo-hlp-stage-head>strong{font-size:13.5px;line-height:1.35}
+  .philo-hlp-stage-head>em{font-size:11px;line-height:1.5}
+  .philo-hlp-stage>p{font-size:11px;line-height:1.55}
+}

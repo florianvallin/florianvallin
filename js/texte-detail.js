@@ -37,7 +37,27 @@
   const hlpLevel = (item) => item.hlp?.level || item.hlpConnections?.[0]?.level || "";
   const hlpLevelKey = (item) => hlpLevel(item) === "Première" ? "premiere" : hlpLevel(item) === "Terminale" ? "terminale" : "transversal";
   const hlpBadgeLabel = (item) => hlpLevel(item) === "Première" ? "HLP 1re" : hlpLevel(item) === "Terminale" ? "HLP Tle" : "HLP";
-  const hlpBadge = (item, detail = false) => hasHlp(item) ? `<span class="text-hlp-badge text-hlp-badge--${hlpLevelKey(item)}${detail ? " text-hlp-badge--detail" : ""}" title="Programme HLP ${hlpLevel(item)}">${hlpBadgeLabel(item)}</span>` : "";
+  const normalizeHlp = (value) => String(value || "").toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, "'");
+  const hlpPathForEntry = (item, entry) => {
+    const paths = window.FV_HLP_PATHS || [];
+    if (entry) {
+      const groupedSubtheme = paths.find((path) => path.groups?.length && path.level === entry.level && normalizeHlp(path.subtheme) === normalizeHlp(entry.subtheme));
+      if (groupedSubtheme) return groupedSubtheme;
+      const groupedObject = paths.find((path) => path.groups?.length && path.level === entry.level && normalizeHlp(path.theme) === normalizeHlp(entry.object));
+      if (groupedObject) return groupedObject;
+    }
+    return paths.find((path) => (path.texts || []).includes(item.id))
+      || paths.find((path) => path.level === (entry?.level || hlpLevel(item)));
+  };
+  const hlpPathForText = (item) => hlpPathForEntry(item, item.hlp || item.hlpConnections?.[0] || null);
+  const hlpCompassUrlForEntry = (item, entry) => {
+    const path = hlpPathForEntry(item, entry);
+    if (!path) return "/textes/philosophie/boussole/#parcours";
+    const params = new URLSearchParams({ parcours:path.id, texte:item.id });
+    return `/textes/philosophie/boussole/?${params.toString()}#parcours`;
+  };
+  const hlpCompassUrl = (item) => hlpCompassUrlForEntry(item, item.hlp || item.hlpConnections?.[0] || null);
+  const hlpBadge = (item, detail = false) => hasHlp(item) ? `<a class="text-hlp-badge text-hlp-badge--${hlpLevelKey(item)}${detail ? " text-hlp-badge--detail" : ""}" href="${hlpCompassUrl(item)}" title="Voir ce texte dans les parcours HLP de la Boussole philosophique" aria-label="${hlpBadgeLabel(item)} — voir ce texte dans les parcours de lecture HLP de la Boussole philosophique">${hlpBadgeLabel(item)}</a>` : "";
   if (window.location.pathname.includes("/textes/lire/")) window.history.replaceState({}, "", cleanTextUrl);
 
   let returnUrl = "/textes/";
@@ -423,12 +443,16 @@
     ? renderArtworkGallery({ title:text.artworksTitle || "Le mythe de l’androgyne en images", artworks:text.artworks })
     : "";
   const relationInfo = {
+    prolonger: { label:"À prolonger avec" },
+    "meme-probleme": { label:"Même problème" },
+    "autre-approche": { label:"Autre approche" },
+    confronter: { label:"À confronter à" },
     suite: { label:"Dans le même dialogue" },
     identique: { label:"Même thèse" },
     proche: { label:"Thèse proche" },
     adverse: { label:"Thèse adverse" }
   };
-  const relationOrder = ["suite", "identique", "proche", "adverse"];
+  const relationOrder = ["prolonger", "meme-probleme", "autre-approche", "confronter", "suite", "identique", "proche", "adverse"];
   const groupedRelations = (text.relatedTexts || []).slice(0, 4).reduce((groups, related) => {
     const targetText = (window.FV_TEXT_CATALOG || []).find((item) => item.id === related.id);
     if (!targetText) return groups;
@@ -466,14 +490,22 @@
       ? `<a href="${textUrl(nextText)}"><span>Texte suivant</span><strong>${textCredit(nextText)} — ${nextText.title}</strong><i aria-hidden="true">→</i></a>`
       : `<a href="${pathCompassUrl}"><span>Parcours terminé</span><strong>Revoir le parcours complet</strong><i aria-hidden="true">→</i></a>`}
   </nav>` : "";
-  document.title = `${text.title} — ${textCredit(text)} | Florian Vallin`;
+  const hlpMeta = hasHlp(text) ? (() => {
+    const primary = text.hlp || text.hlpConnections?.[0] || null;
+    const primaryLine = primary ? `<a class="text-detail-hlp-path" href="${hlpCompassUrlForEntry(text, primary)}" title="Ouvrir ce parcours dans la Boussole philosophique"><span>HLP ${primary.level}</span><i aria-hidden="true">›</i><span>${primary.object}</span><i aria-hidden="true">›</i><strong>${primary.subtheme}</strong><b aria-hidden="true">↗</b></a>` : `<span>Transversal HLP</span>`;
+    const connections = text.hlpConnections?.length ? `<div class="text-detail-hlp-connections"><em>Aussi utile pour</em>${text.hlpConnections.map((entry) => `<a href="${hlpCompassUrlForEntry(text, entry)}">${entry.level} · ${entry.object} · ${entry.subtheme}</a>`).join("")}</div>` : "";
+    return `<nav class="text-detail-hlp-meta" aria-label="Position de ce texte dans le programme HLP">${primaryLine}${connections}</nav>`;
+  })() : "";
+  const seoTitle = hasHlp(text) ? `${text.title} — ${textCredit(text)} | HLP ${hlpLevel(text)} | Florian Vallin` : `${text.title} — ${textCredit(text)} | Florian Vallin`;
+  const seoUrl = `https://florianvallin.fr${cleanTextUrl}`;
+  document.title = seoTitle;
   let canonical = document.querySelector('link[rel="canonical"]');
   if (!canonical) {
     canonical = document.createElement("link");
     canonical.rel = "canonical";
     document.head.append(canonical);
   }
-  canonical.href = `https://florianvallin.fr${cleanTextUrl}`;
+  canonical.href = seoUrl;
   let description = document.querySelector('meta[name="description"]');
   if (!description) {
     description = document.createElement("meta");
@@ -481,6 +513,19 @@
     document.head.append(description);
   }
   description.content = text.description;
+  const setMeta = (selector, attrs) => {
+    let node = document.querySelector(selector);
+    if (!node) {
+      node = document.createElement("meta");
+      Object.entries(attrs).forEach(([key, value]) => key === "content" ? null : node.setAttribute(key, value));
+      document.head.append(node);
+    }
+    node.setAttribute("content", attrs.content);
+  };
+  setMeta('meta[property="og:title"]', { property:"og:title", content:seoTitle });
+  setMeta('meta[property="og:description"]', { property:"og:description", content:text.description });
+  setMeta('meta[property="og:type"]', { property:"og:type", content:"article" });
+  setMeta('meta[property="og:url"]', { property:"og:url", content:seoUrl });
   target.innerHTML = `<div class="text-detail-inner">
     <p class="text-breadcrumb"><a class="text-back-results" href="${returnUrl}"><span aria-hidden="true">←</span> Retour aux résultats</a><span aria-hidden="true">·</span><a href="/textes/${text.section}/">${sectionLabel}</a></p>
     <p class="text-detail-section text-detail-section--${text.section}${isMultiSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span>${hlpBadge(text, true)}</p>
@@ -489,7 +534,7 @@
       ? `<a class="text-detail-author-link" href="${catalogUrl("auteur", text.author)}" aria-label="Voir les textes de ${escapeAttribute(text.author)}">${escapeAttribute(text.credit || text.author)}</a>`
       : `<a class="text-detail-author-link" href="/textes/theologie/?source=${encodeURIComponent(text.source || "")}" aria-label="Voir les textes du corpus ${escapeAttribute(text.source || "")}">${text.source || ""}</a>`}${text.headerReference ? ` <span class="text-detail-work-reference">${text.headerReference}</span>` : ""}${text.authorMeta ? ` <span class="text-detail-author-meta">${text.authorMeta}</span>` : ""}${text.translator ? ` <span class="text-detail-translator">Trad. ${escapeAttribute(text.translator)}</span>` : ""}</p>
     ${bibleCoordinate}
-    <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>${hasHlp(text) ? `<div class="text-detail-hlp-meta">${text.hlp ? `<span>${text.hlp.level} · ${text.hlp.object} · ${text.hlp.subtheme}</span>` : `<span>Transversal HLP</span>`}${text.hlpConnections?.length ? `<div class="text-detail-hlp-connections"><em>Aussi utile pour</em>${text.hlpConnections.map((entry) => `<small>${entry.level} · ${entry.object} · ${entry.subtheme}</small>`).join("")}</div>` : ""}</div>` : ""}
+    <div class="text-detail-tags">${themes.slice(0, 4).map(themeTag).join("")}</div>${hlpMeta}
     ${bibleCycleNavigation}
     ${bibleViewToggle}
     ${firstContext}

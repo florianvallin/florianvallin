@@ -16,7 +16,7 @@
         location.reload();
       });
       navigator.serviceWorker
-        .register("/sw.js?v=20260917-publish1", { scope: "/", updateViaCache: "none" })
+        .register("/sw.js?v=20260919-hlp-consolidation1", { scope: "/", updateViaCache: "none" })
         .then((registration) => registration.update())
         .catch(() => {});
     })();
@@ -48,7 +48,7 @@
   <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
   <meta property="og:site_name" content="Florian Vallin">
 
-  <link rel="stylesheet" href="css/style.css?v=20260917-publish1">
+  <link rel="stylesheet" href="css/style.css?v=20260919-hlp-consolidation1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1203,164 +1203,53 @@
         >
       </div>
 
-      <div class="contact-card">
+      <div class="contact-card contact-card--direct">
         <div class="contact-card-header">
           <div class="contact-header-copy">
-            <h2 class="bloc-7-title">Contact</h2>
-
-          <p class="contact-intro">
-            Vous pouvez me contacter depuis le formulaire ci-dessous ou directement par téléphone :
-            <span
-              class="protected-content"
-              data-encoded="@X}QjXmPjLWRjnGQj&#92;GP"
-              data-content-type="phone"
-            >
-              <button
-                type="button"
-                class="phone-reveal-btn protected-trigger"
-                id="revealPhoneBtn"
-                aria-expanded="false"
-              >
-                afficher le numéro
-              </button>
-              <span class="protected-revealed hidden-phone" aria-hidden="true">
-                <span class="protected-content-text"></span>
-              </span>
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <!-- Alertes (masquées par défaut) -->
-      <div
-        id="contact-success-alert"
-        class="contact-alert contact-alert--success hidden"
-        role="status"
-        aria-live="polite"
-      >
-        <p class="contact-alert__title">Message envoyé avec succès !</p>
-        <p class="contact-alert__text">Je vous répondrai dans les plus brefs délais.</p>
-      </div>
-
-      <div
-        id="contact-error-alert"
-        class="contact-alert contact-alert--error hidden"
-        role="alert"
-        aria-live="assertive"
-      >
-        <p class="contact-alert__title">Une erreur s’est produite</p>
-        <p class="contact-alert__text">
-          Veuillez me contacter directement par e-mail ou par téléphone.
-        </p>
-        <p class="contact-alert__actions">
-          <a href="mailto:contact@florianvallin.fr" class="contact-alert__link">contact@florianvallin.fr</a>
-          <span class="contact-alert__sep">·</span>
-          <span
-            class="protected-content"
-            data-encoded="@X}QjXmPjLWRjnGQj&#92;GP"
-            data-content-type="phone"
-          >
-            <button type="button" class="contact-alert__link protected-trigger">voir le numéro</button>
-            <span class="protected-revealed hidden-phone" aria-hidden="true">
-              <span class="protected-content-text"></span>
-            </span>
-          </span>
-        </p>
-      </div>
-
-      <form
-        id="contact-form"
-        name="contact"
-        method="POST"
-        class="contact-form"
-        data-netlify="true"
-        data-netlify-recaptcha="true"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="subject" data-remove-prefix value="[%{siteName}] Nouveau message" id="subject" />
-
-        <div class="contact-field">
-          <label for="email">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="votre@email.com"
-            required
-            autocomplete="email"
-            aria-describedby="email-error"
-          />
-          <span id="email-error" class="sr-only" role="alert" aria-live="polite"></span>
-        </div>
-
-        <div class="contact-field contact-field--select">
-          <label for="prestation">
-            Type d’accompagnement *
-          </label>
-        
-          <div class="contact-select-wrapper">
-            <select
-              id="prestation"
-              name="prestation"
-              required
-              aria-describedby="prestation-help"
-            >
-              <option value="" selected disabled>
-                Choisissez une prestation
-              </option>
-        
-              <option value="Philosophie">
-                Cours de philosophie
-              </option>
-        
-              <option value="Méthodologie">
-                Cours de méthodologie
-              </option>
-            </select>
-        
-            <span class="contact-select-icon" aria-hidden="true">
-              <svg viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M5.5 7.5L10 12L14.5 7.5"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
+            <h2 class="bloc-7-title">Me joindre</h2>
+            <p class="contact-intro">
+              Pour toute question ou demande de cours, vous pouvez me contacter directement ici. Je vous réponds sous 48 heures.
+            </p>
           </div>
-        
-          <p id="prestation-help" class="contact-field-help">
-          </p>
         </div>
 
-        <div class="contact-field">
-          <label for="message">Message *</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="7"
-            placeholder="Décrivez votre demande…"
-            required
-            aria-describedby="message-error"
-          ></textarea>
-          <span id="message-error" class="sr-only" role="alert" aria-live="polite"></span>
+        <div class="contact-direct">
+          <article class="contact-method">
+            <div class="contact-method-icon" aria-hidden="true">
+              <iconify-icon icon="lucide:mail" width="22" height="22"></iconify-icon>
+            </div>
+            <div class="contact-method-copy">
+              <p class="contact-method-label">Contact</p>
+              <h3>E-mail</h3>
+            </div>
+            <div class="contact-method-action">
+              <span class="protected-content" data-encoded="|]pOoYpfpEnes{Jek]qekopfy{p]" data-content-type="email">
+                <button type="button" class="contact-reveal-btn protected-trigger" aria-expanded="false">
+                  <iconify-icon icon="lucide:eye" width="16" height="16" aria-hidden="true"></iconify-icon>
+                  Afficher l’e-mail
+                </button>
+              </span>
+            </div>
+          </article>
+
+          <article class="contact-method">
+            <div class="contact-method-icon" aria-hidden="true">
+              <iconify-icon icon="lucide:phone" width="22" height="22"></iconify-icon>
+            </div>
+            <div class="contact-method-copy">
+              <p class="contact-method-label">Contact</p>
+              <h3>Téléphone</h3>
+            </div>
+            <div class="contact-method-action">
+              <span class="protected-content" data-encoded="@X}QjXmPjLWRjnGQj\GP" data-content-type="phone">
+                <button type="button" class="contact-reveal-btn protected-trigger" aria-expanded="false">
+                  <iconify-icon icon="lucide:eye" width="16" height="16" aria-hidden="true"></iconify-icon>
+                  Afficher le numéro
+                </button>
+              </span>
+            </div>
+          </article>
         </div>
-
-        <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
-
-        <div class="contact-submit-wrap">
-          <button type="submit" class="contact-submit" id="contact-submit-btn">
-            <span id="contact-submit-text">Envoyer le message</span>
-            <span id="contact-submit-spinner" class="contact-submit-spinner" aria-hidden="true"></span>
-          </button>
-        </div>
-
-        <p class="contact-response-time">
-          Je vous réponds par e-mail dans un délai de 48 heures.
-        </p>
-      </form>
       </div>
     </div>
   </div>
@@ -1446,9 +1335,8 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260917-publish1" defer></script>
-<script src="js/protected-phone.js?v=20260917-publish1" defer></script>
-<script src="js/contact-form.js?v=20260917-publish1" defer></script>
+<script src="js/script.js?v=20260919-hlp-consolidation1" defer></script>
+<script src="js/protected-phone.js?v=20260919-hlp-consolidation1" defer></script>
 
 <script type="application/ld+json">
 {

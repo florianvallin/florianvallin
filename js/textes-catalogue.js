@@ -19111,8 +19111,10 @@
       "Les expressions de la sensibilité",
       "Les métamorphoses du moi"
     ],
-    "L’humanité en question": [
-      "Histoire et violence"
+    "L’Humanité en question": [
+      "Création, continuités et ruptures",
+      "Histoire et violence",
+      "L’humain et ses limites"
     ]
   }
 };
@@ -19670,7 +19672,24 @@
   const hlpLevel = (text) => text.hlp?.level || text.hlpConnections?.[0]?.level || "";
   const hlpLevelKey = (text) => hlpLevel(text) === "Première" ? "premiere" : hlpLevel(text) === "Terminale" ? "terminale" : "transversal";
   const hlpBadgeLabel = (text) => hlpLevel(text) === "Première" ? "HLP 1re" : hlpLevel(text) === "Terminale" ? "HLP Tle" : "HLP";
-  const hlpBadge = (text, detail = false) => hasHlp(text) ? `<span class="text-hlp-badge text-hlp-badge--${hlpLevelKey(text)}${detail ? " text-hlp-badge--detail" : ""}" title="Programme HLP ${escapeHtml(hlpLevel(text) || "")}">${hlpBadgeLabel(text)}</span>` : "";
+  const hlpPathForText = (text) => {
+    const entry = text.hlp || text.hlpConnections?.[0] || null;
+    if (entry) {
+      const groupedSubtheme = HLP_PATHS.find((path) => path.groups?.length && path.level === entry.level && normalize(path.subtheme) === normalize(entry.subtheme));
+      if (groupedSubtheme) return groupedSubtheme;
+      const groupedObject = HLP_PATHS.find((path) => path.groups?.length && path.level === entry.level && normalize(path.theme) === normalize(entry.object));
+      if (groupedObject) return groupedObject;
+    }
+    return HLP_PATHS.find((path) => (path.texts || []).includes(text.id))
+      || HLP_PATHS.find((path) => path.level === hlpLevel(text));
+  };
+  const hlpCompassUrl = (text) => {
+    const path = hlpPathForText(text);
+    if (!path) return "/textes/philosophie/boussole/#parcours";
+    const params = new URLSearchParams({ parcours:path.id, texte:text.id });
+    return `/textes/philosophie/boussole/?${params.toString()}#parcours`;
+  };
+  const hlpBadge = (text, detail = false) => hasHlp(text) ? `<a class="text-hlp-badge text-hlp-badge--${hlpLevelKey(text)}${detail ? " text-hlp-badge--detail" : ""}" href="${hlpCompassUrl(text)}" title="Voir ce texte dans les parcours HLP de la Boussole philosophique" aria-label="${hlpBadgeLabel(text)} — voir ce texte dans les parcours de lecture HLP de la Boussole philosophique">${hlpBadgeLabel(text)}</a>` : "";
   const HLP_FILTER_PREFIX = "HLP::";
   const HLP_ALL_FILTER = "HLP::ALL";
   const HLP_ESSENTIAL_FILTER = "HLP::ESSENTIAL";
@@ -19688,7 +19707,7 @@
     if (value === HLP_ALL_FILTER) return hasHlp(text);
     if (value === HLP_ESSENTIAL_FILTER) return text.hlpTier === "essential";
     const [, level, object, subtheme] = String(value).split("::");
-    return textHlpEntries(text).some((entry) => (!level || entry.level === level) && (!object || entry.object === object) && (!subtheme || entry.subtheme === subtheme));
+    return textHlpEntries(text).some((entry) => (!level || entry.level === level) && (!object || normalize(entry.object) === normalize(object)) && (!subtheme || normalize(entry.subtheme) === normalize(subtheme)));
   };
 
   const BIBLE_BOOK_ORDER = [
@@ -19782,9 +19801,9 @@
     objects:Object.entries(objects).map(([object, subthemes]) => ({
       object,
       value:hlpFilterValue(level, object),
-      subthemes:subthemes.filter((subtheme) => hlpTextsInSection.some((text) => textHlpEntries(text).some((entry) => entry.level === level && entry.object === object && entry.subtheme === subtheme)))
+      subthemes:subthemes.filter((subtheme) => hlpTextsInSection.some((text) => textHlpEntries(text).some((entry) => entry.level === level && normalize(entry.object) === normalize(object) && normalize(entry.subtheme) === normalize(subtheme))))
         .map((subtheme) => ({ label:subtheme, value:hlpFilterValue(level, object, subtheme) }))
-    })).filter((item) => hlpTextsInSection.some((text) => textHlpEntries(text).some((entry) => entry.level === level && entry.object === item.object)))
+    })).filter((item) => hlpTextsInSection.some((text) => textHlpEntries(text).some((entry) => entry.level === level && normalize(entry.object) === normalize(item.object))))
   })).filter((group) => group.objects.length);
 
   if (section) {
@@ -20042,7 +20061,7 @@
     return `
     <article class="text-card text-card--${displaySection}${isDualSection ? " text-card--dual" : ""}${cardModifiers ? ` ${cardModifiers}` : ""}">
       <a class="text-card-cover-link" href="${destination}" data-text-link aria-label="Lire : ${escapeHtml(text.title)}${textCredit(text) ? `, ${escapeHtml(textCredit(text))}` : ""}"></a>
-      <p class="text-card-section">${sectionSymbols}<span aria-hidden="true">•</span><span>${escapeHtml(sectionMeta)}</span>${hlpBadge(text)}</p>
+      <p class="text-card-section">${sectionSymbols}<span class="text-card-section-dot" aria-hidden="true">•</span><span class="text-card-section-meta" title="${escapeHtml(sectionMeta)}">${escapeHtml(sectionMeta)}</span>${hlpBadge(text)}</p>
       <h2>${title}</h2>
       <p class="text-card-author">${text.author
         ? `<a href="${catalogUrl("auteur", text.author)}" data-filter-author="${escapeHtml(text.author)}" aria-label="Afficher les textes de ${escapeHtml(text.author)}">${escapeHtml(text.credit || text.author)}</a>`

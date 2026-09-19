@@ -1654,5 +1654,533 @@
     "meta": "Michel de Montaigne — Essais, « De la cruauté »",
     "keywords": "Michel de Montaigne · Montaigne · (1533–1592) · humanisme et scepticisme · Essais, « De la cruauté » · HLP · Première · Les représentations du monde · L’homme et l’animal · devoir · bienveillance · sensibilité · humanité",
     "url": "/textes/montaigne-devoir-humanite-animaux/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le modèle de l’éducation humaniste",
+    "meta": "François Rabelais — Gargantua — Éducation, transmission et émancipation",
+    "keywords": "François Rabelais · Rabelais · Gargantua · Le modèle de l’éducation humaniste · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Raison Travail · humanisme formation savoir exercice · Comment l’éducation humaniste cherche-t-elle à former toutes les dimensions de l’élève ?",
+    "url": "/textes/rabelais-education-humaniste/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une éducation par les choses",
+    "meta": "Jean-Jacques Rousseau — Émile ou de l’éducation — Éducation, transmission et émancipation",
+    "keywords": "Jean-Jacques Rousseau · Rousseau · Émile ou de l’éducation · Une éducation par les choses · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Nature Liberté Raison · nature expérience autonomie raison · Faut-il transmettre directement un savoir à l’enfant, ou lui permettre de le découvrir ?",
+    "url": "/textes/rousseau-education-par-les-choses/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’instruction, pilier d’une société égalitaire",
+    "meta": "Nicolas de Condorcet — Esquisse d’un tableau historique des progrès de l’esprit humain — Éducation, transmission et émancipation",
+    "keywords": "Nicolas de Condorcet · Condorcet · Esquisse d’un tableau historique des progrès de l’esprit humain · L’instruction, pilier d’une société égalitaire · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté Justice État Raison · instruction égalité citoyenneté autonomie · Pourquoi l’égalité d’instruction est-elle une condition de l’autonomie politique et intellectuelle ?",
+    "url": "/textes/condorcet-instruction-societe-egalitaire/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La discipline, condition de la liberté",
+    "meta": "Emmanuel Kant — Traité de pédagogie — Éducation, transmission et émancipation",
+    "keywords": "Emmanuel Kant · Kant · Traité de pédagogie · La discipline, condition de la liberté · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté Devoir · discipline contrainte liberté autonomie · Comment une contrainte éducative peut-elle préparer l’enfant à devenir libre ?",
+    "url": "/textes/kant-discipline-liberte-education/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Nécessité de l’éducateur",
+    "meta": "Friedrich Nietzsche — Considérations inactuelles — Éducation, transmission et émancipation",
+    "keywords": "Friedrich Nietzsche · Nietzsche · Considérations inactuelles · Nécessité de l’éducateur · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté · éducateur libération formation devenir-soi · Pourquoi l’éducateur véritable est-il, pour Nietzsche, un libérateur plutôt qu’un fabricant ?",
+    "url": "/textes/nietzsche-necessite-educateur/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Préparer l’enfant au monde",
+    "meta": "Hannah Arendt — « La crise de l’éducation », La Crise de la culture — Éducation, transmission et émancipation",
+    "keywords": "Hannah Arendt · Arendt · « La crise de l’éducation », La Crise de la culture · Préparer l’enfant au monde · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Temps · éducation transmission autorité tradition · Que doit transmettre l’éducation dans un monde qui ne repose plus sur une autorité commune ?",
+    "url": "/textes/arendt-preparer-enfant-monde/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Éducation ou conditionnement ?",
+    "meta": "John Stuart Mill — De l’assujettissement des femmes — Éducation, transmission et émancipation",
+    "keywords": "John Stuart Mill · Mill · De l’assujettissement des femmes · Éducation ou conditionnement ? · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté Justice · éducation conditionnement assujettissement liberté · Une éducation peut-elle fabriquer les dispositions qu’elle présente ensuite comme naturelles ?",
+    "url": "/textes/mill-education-conditionnement-femmes/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Les conditions économiques et sociales de l’émancipation intellectuelle",
+    "meta": "Virginia Woolf — Une chambre à soi — Éducation, transmission et émancipation",
+    "keywords": "Virginia Woolf · Woolf · Une chambre à soi · Les conditions économiques et sociales de l’émancipation intellectuelle · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté Travail Justice · émancipation travail indépendance conditions matérielles · Pourquoi l’émancipation intellectuelle dépend-elle aussi de conditions matérielles ?",
+    "url": "/textes/woolf-emancipation-intellectuelle-chambre/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Ne pas se résigner à l’inégalité",
+    "meta": "Simone de Beauvoir — Le Deuxième Sexe — Éducation, transmission et émancipation",
+    "keywords": "Simone de Beauvoir · Beauvoir · Le Deuxième Sexe · Ne pas se résigner à l’inégalité · HLP Terminale · La recherche de soi · Éducation, transmission et émancipation · Liberté Justice · inégalité résignation éducation émancipation · Comment une inégalité sociale peut-elle être intériorisée et reconduite par ceux qui la subissent ?",
+    "url": "/textes/beauvoir-inegalite-education-femmes/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le sentiment du sublime",
+    "meta": "Emmanuel Kant — Critique de la faculté de juger — Les expressions de la sensibilité",
+    "keywords": "Emmanuel Kant · Kant · Critique de la faculté de juger · Le sentiment du sublime · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art Nature · sublime nature sensibilité puissance · Pourquoi une nature qui nous effraie peut-elle en même temps élever le sentiment que nous avons de nous-mêmes ?",
+    "url": "/textes/kant-sentiment-sublime/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Regarder le paysage de la ville moderne",
+    "meta": "Charles Baudelaire — Le Peintre de la vie moderne — Les expressions de la sensibilité",
+    "keywords": "Charles Baudelaire · Baudelaire · Le Peintre de la vie moderne · Regarder le paysage de la ville moderne · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art · modernité ville regard création · Comment le regard de l’artiste transforme-t-il le tumulte de la ville moderne en matière poétique ?",
+    "url": "/textes/baudelaire-regarder-ville-moderne/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La sensibilité transfigurée par l’amour",
+    "meta": "Johann Wolfgang von Goethe — Les Souffrances du jeune Werther — Les expressions de la sensibilité",
+    "keywords": "Johann Wolfgang von Goethe · Goethe · Les Souffrances du jeune Werther · La sensibilité transfigurée par l’amour · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Conscience Bonheur · amour passion corps musique · Comment la passion amoureuse envahit-elle le corps, la perception et toute la vie intérieure ?",
+    "url": "/textes/goethe-sensibilite-amour-werther/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une sensibilité rayonnante",
+    "meta": "Henri Bergson — Essais sur les données immédiates de la conscience — Les expressions de la sensibilité",
+    "keywords": "Henri Bergson · Bergson · Essais sur les données immédiates de la conscience · Une sensibilité rayonnante · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Conscience · conscience intensité passion qualité · Pourquoi un sentiment profond ne se laisse-t-il pas mesurer comme une quantité ?",
+    "url": "/textes/bergson-sensibilite-rayonnante/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une âme maîtresse de sa sensibilité",
+    "meta": "Friedrich von Schiller — Textes esthétiques — « Sur le pathétique » — Les expressions de la sensibilité",
+    "keywords": "Friedrich von Schiller · Schiller · Textes esthétiques — « Sur le pathétique » · Une âme maîtresse de sa sensibilité · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art Liberté · pathos sensibilité liberté tragique · Comment la sensibilité éprouvée avec force peut-elle faire apparaître la liberté morale ?",
+    "url": "/textes/schiller-maitrise-sensibilite/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’ivresse artistique",
+    "meta": "Friedrich Nietzsche — Crépuscule des idoles — « Incursions d’un inactuel » — Les expressions de la sensibilité",
+    "keywords": "Friedrich Nietzsche · Nietzsche · Crépuscule des idoles — « Incursions d’un inactuel » · L’ivresse artistique · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art · ivresse création force idéalisation · Pourquoi Nietzsche fait-il de l’ivresse une condition de la création artistique ?",
+    "url": "/textes/nietzsche-ivresse-artistique/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’art comme éveil de l’âme",
+    "meta": "Georg Wilhelm Friedrich Hegel — Introduction à l’esthétique — Les expressions de la sensibilité",
+    "keywords": "Georg Wilhelm Friedrich Hegel · Hegel · Introduction à l’esthétique · L’art comme éveil de l’âme · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art Conscience · art sensibilité représentation expérience · Comment l’art peut-il éveiller en nous des sentiments et nous faire accéder à l’humain ?",
+    "url": "/textes/hegel-art-eveil-ame/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’art comme révélation de la sensibilité",
+    "meta": "Marcel Proust — Le Temps retrouvé — Les expressions de la sensibilité",
+    "keywords": "Marcel Proust · Proust · Le Temps retrouvé · L’art comme révélation de la sensibilité · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Art Conscience · art vision impression habitude · Pourquoi l’art permet-il, selon Proust, de découvrir une vie que l’habitude nous dissimule ?",
+    "url": "/textes/proust-art-revelation-sensibilite/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le lieu d’une révélation",
+    "meta": "Jean-Paul Sartre — La Nausée — Les expressions de la sensibilité",
+    "keywords": "Jean-Paul Sartre · Sartre · La Nausée · Le lieu d’une révélation · HLP Terminale · La recherche de soi · Les expressions de la sensibilité · Conscience · existence révélation nausée perception · Comment une expérience sensible ordinaire peut-elle bouleverser notre rapport au monde et à l’existence ?",
+    "url": "/textes/sartre-lieu-revelation-existence/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Souvenir et souvenir-écran",
+    "meta": "Sigmund Freud — Psychopathologie de la vie quotidienne — « Souvenirs d’enfance et souvenirs-écrans » — Les métamorphoses du moi",
+    "keywords": "Sigmund Freud · Freud · Psychopathologie de la vie quotidienne — « Souvenirs d’enfance et souvenirs-écrans » · Souvenir et souvenir-écran · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Inconscient Temps Conscience · mémoire inconscient souvenir-écran refoulement · Pourquoi certains souvenirs d’enfance apparemment insignifiants peuvent-ils masquer d’autres expériences ?",
+    "url": "/textes/freud-souvenir-ecran/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Se voir de l’extérieur",
+    "meta": "Simone de Beauvoir — Tout compte fait — Les métamorphoses du moi",
+    "keywords": "Simone de Beauvoir · Beauvoir · Tout compte fait · Se voir de l’extérieur · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Conscience · conscience de soi regard d’autrui identité objectivation · Pourquoi le regard d’autrui peut-il nous révéler une réalité de nous-mêmes qui nous échappe ?",
+    "url": "/textes/beauvoir-se-voir-exterieur/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le sens du passé",
+    "meta": "Jean-Paul Sartre — L’Être et le Néant — Les métamorphoses du moi",
+    "keywords": "Jean-Paul Sartre · Sartre · L’Être et le Néant · Le sens du passé · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Temps Liberté Conscience · passé projet signification liberté · Notre passé possède-t-il un sens fixé une fois pour toutes, ou reçoit-il sa signification de nos projets présents ?",
+    "url": "/textes/sartre-sens-passe/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "« Lettre du voyant »",
+    "meta": "Arthur Rimbaud — Lettre à Paul Demeny — « Lettre du voyant » — Les métamorphoses du moi",
+    "keywords": "Arthur Rimbaud · Rimbaud · Lettre à Paul Demeny — « Lettre du voyant » · « Lettre du voyant » · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Art Conscience · voyant altérité création moi · Que devient le moi lorsque le poète cherche à devenir « voyant » par le dérèglement de tous les sens ?",
+    "url": "/textes/rimbaud-lettre-voyant/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Limites de la pensée logique",
+    "meta": "Friedrich Nietzsche — Par-delà le bien et le mal — Les métamorphoses du moi",
+    "keywords": "Friedrich Nietzsche · Nietzsche · Par-delà le bien et le mal · Limites de la pensée logique · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Raison Langage Conscience · sujet pensée grammaire interprétation · Le « je » est-il réellement l’auteur de nos pensées, ou une interprétation produite par nos habitudes grammaticales ?",
+    "url": "/textes/nietzsche-limites-pensee-logique/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La multiplicité des moi",
+    "meta": "Fernando Pessoa — « Je ne sais combien d’âmes j’ai » — Les métamorphoses du moi",
+    "keywords": "Fernando Pessoa · Pessoa · « Je ne sais combien d’âmes j’ai » · La multiplicité des moi · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Conscience Art · identité multiplicité étrangeté moi · L’identité personnelle peut-elle demeurer une lorsque celui qui se regarde se découvre continuellement différent de lui-même ?",
+    "url": "/textes/pessoa-multiplicite-moi/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La mémoire collective",
+    "meta": "Maurice Halbwachs — La Mémoire collective — Les métamorphoses du moi",
+    "keywords": "Maurice Halbwachs · Halbwachs · La Mémoire collective · La mémoire collective · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Temps Conscience · mémoire collectif groupe identité · Nos souvenirs les plus personnels sont-ils réellement individuels, ou sont-ils reconstruits depuis les groupes auxquels nous appartenons ?",
+    "url": "/textes/halbwachs-memoire-collective/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une vision réaliste de la folie",
+    "meta": "Honoré de Balzac — La Recherche de l’absolu — Les métamorphoses du moi",
+    "keywords": "Honoré de Balzac · Balzac · La Recherche de l’absolu · Une vision réaliste de la folie · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Conscience Inconscient Raison · folie identité conscience obsession · Comment la folie apparaît-elle dans les gestes, le visage et le rapport au monde d’un personnage ?",
+    "url": "/textes/balzac-vision-realiste-folie/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le glissement vers la folie",
+    "meta": "Georg Büchner — Lenz — Les métamorphoses du moi",
+    "keywords": "Georg Büchner · Büchner · Lenz · Le glissement vers la folie · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Conscience Inconscient · folie moi perception angoisse · Comment un sujet perd-il progressivement ses repères jusqu’à ne plus savoir distinguer ses pensées du monde qui l’entoure ?",
+    "url": "/textes/buchner-glissement-folie/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Interroger l’idéal de la santé",
+    "meta": "Friedrich Nietzsche — Le Gai Savoir — Les métamorphoses du moi",
+    "keywords": "Friedrich Nietzsche · Nietzsche · Le Gai Savoir · Interroger l’idéal de la santé · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Nature Raison Conscience · santé norme individualité connaissance de soi · Existe-t-il une santé normale valable pour tous, ou seulement des manières singulières d’être sain ?",
+    "url": "/textes/nietzsche-ideal-sante/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La folie, un univers de fiction",
+    "meta": "Arthur Schopenhauer — Le Monde comme volonté et comme représentation — Les métamorphoses du moi",
+    "keywords": "Arthur Schopenhauer · Schopenhauer · Le Monde comme volonté et comme représentation · La folie, un univers de fiction · HLP Terminale · La recherche de soi · Les métamorphoses du moi · Conscience Raison Inconscient · folie mémoire fiction identité · La folie est-elle une absence de raison ou une rupture dans la continuité de la mémoire ?",
+    "url": "/textes/schopenhauer-folie-fiction/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Qu’est-ce que le surréalisme ?",
+    "meta": "André Breton — Manifeste du surréalisme — Création, continuités et ruptures",
+    "keywords": "André Breton · Breton · Manifeste du surréalisme · Qu’est-ce que le surréalisme ? · HLP Terminale · L’Humanité en question · Création, continuités et ruptures · Art Inconscient Raison · surréalisme inconscient création rêve · Que devient la création lorsque l’on cherche à suspendre le contrôle de la raison ?",
+    "url": "/textes/breton-surrealisme/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Éloge d’un monde nouveau",
+    "meta": "Filippo Tommaso Marinetti — Premier Manifeste futuriste — Création, continuités et ruptures",
+    "keywords": "Filippo Tommaso Marinetti · Marinetti · Premier Manifeste futuriste · Éloge d’un monde nouveau · HLP Terminale · L’Humanité en question · Création, continuités et ruptures · Art Technique Histoire · futurisme modernité vitesse rupture · Comment une avant-garde artistique transforme-t-elle la vitesse, la machine et la rupture en valeurs esthétiques ?",
+    "url": "/textes/marinetti-monde-nouveau/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une nouvelle perception des choses",
+    "meta": "Walter Benjamin — L’Œuvre d’art à l’époque de sa reproductibilité technique — Création, continuités et ruptures",
+    "keywords": "Walter Benjamin · Benjamin · L’Œuvre d’art à l’époque de sa reproductibilité technique · Une nouvelle perception des choses · HLP Terminale · L’Humanité en question · Création, continuités et ruptures · Art Technique Science · cinéma perception technique modernité · Comment le cinéma et la photographie transforment-ils notre manière de percevoir et de comprendre le réel ?",
+    "url": "/textes/benjamin-nouvelle-perception-choses/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Les deux thèmes de l’écriture d’aujourd’hui",
+    "meta": "Michel Foucault — Qu’est-ce qu’un auteur ? — Création, continuités et ruptures",
+    "keywords": "Michel Foucault · Foucault · Qu’est-ce qu’un auteur ? · Les deux thèmes de l’écriture d’aujourd’hui · HLP Terminale · L’Humanité en question · Création, continuités et ruptures · Art Langage · auteur écriture mort modernité · Que devient l’auteur lorsque l’écriture cesse d’être pensée comme l’expression d’un sujet ?",
+    "url": "/textes/foucault-ecriture-aujourdhui/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’homme moderne et la foule",
+    "meta": "Martin Heidegger — L’Être et le Temps — Création, continuités et ruptures",
+    "keywords": "Martin Heidegger · Heidegger · L’Être et le Temps · L’homme moderne et la foule · HLP Terminale · L’Humanité en question · Création, continuités et ruptures · Conscience Liberté État · modernité foule on responsabilité · Que devient l’individu lorsque ses jugements, ses goûts et ses conduites prennent la forme anonyme du « on » ?",
+    "url": "/textes/heidegger-homme-moderne-foule/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’image obsédante de la mort",
+    "meta": "Simone Weil — L’Iliade ou le poème de la force — Histoire et violence",
+    "keywords": "Simone Weil · Weil · L’Iliade ou le poème de la force · L’image obsédante de la mort · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté · guerre mort force avenir · Comment la guerre transforme-t-elle le rapport au temps, à l’avenir et à la pensée elle-même ?",
+    "url": "/textes/weil-image-mort/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La grande société des nations",
+    "meta": "Emmanuel Kant — Idée d’une histoire universelle au point de vue cosmopolitique — Histoire et violence",
+    "keywords": "Emmanuel Kant · Kant · Idée d’une histoire universelle au point de vue cosmopolitique · La grande société des nations · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté · guerre histoire État paix · La guerre peut-elle, malgré elle, pousser les États à construire les conditions d’une paix durable ?",
+    "url": "/textes/kant-grande-societe-nations/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Des millions de morts anonymes",
+    "meta": "Günther Anders — Hiroshima est partout — Histoire et violence",
+    "keywords": "Günther Anders · Anders · Hiroshima est partout · Des millions de morts anonymes · HLP Terminale · L’Humanité en question · Histoire et violence · Technique Devoir Histoire · Hiroshima technique imagination langage · Comment la technique moderne rend-elle possible une violence que l’imagination humaine peine à se représenter ?",
+    "url": "/textes/anders-morts-anonymes/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Se battre contre l’agresseur",
+    "meta": "Michael Walzer — Guerres justes et injustes — Histoire et violence",
+    "keywords": "Michael Walzer · Walzer · Guerres justes et injustes · Se battre contre l’agresseur · HLP Terminale · L’Humanité en question · Histoire et violence · Justice État Devoir Liberté · guerre juste agression droits résistance · À quelles conditions la résistance armée à une agression peut-elle être tenue pour juste ?",
+    "url": "/textes/walzer-se-battre-agresseur/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La défense de la patrie",
+    "meta": "Svetlana Alexievitch — La guerre n’a pas un visage de femme — Histoire et violence",
+    "keywords": "Svetlana Alexievitch · Alexievitch · La guerre n’a pas un visage de femme · La défense de la patrie · HLP Terminale · L’Humanité en question · Histoire et violence · Devoir Liberté État Histoire · guerre courage peur engagement · Comment l’engagement dans la guerre transforme-t-il la peur en décision de tenir ?",
+    "url": "/textes/alexievitch-defense-patrie/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le règne de l’absurde",
+    "meta": "Alexandre Soljenitsyne — L’Archipel du Goulag — Histoire et violence",
+    "keywords": "Alexandre Soljenitsyne · Soljenitsyne · L’Archipel du Goulag · Le règne de l’absurde · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté Histoire · Goulag totalitarisme survie absurde · Comment l’absurdité du système totalitaire détruit-elle jusqu’à l’idée d’une vie normale ?",
+    "url": "/textes/soljenitsyne-regne-absurde/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Coupable d’un crime possible",
+    "meta": "Hannah Arendt — Les Origines du totalitarisme — Le Système totalitaire — Histoire et violence",
+    "keywords": "Hannah Arendt · Arendt · Les Origines du totalitarisme — Le Système totalitaire · Coupable d’un crime possible · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté Raison · totalitarisme justice possible idéologie · Comment le totalitarisme peut-il punir un individu pour un crime qui n’a pas été commis ?",
+    "url": "/textes/arendt-crime-possible/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une résistance discrète",
+    "meta": "Robert Antelme — L’Espèce humaine — Histoire et violence",
+    "keywords": "Robert Antelme · Antelme · L’Espèce humaine · Une résistance discrète · HLP Terminale · L’Humanité en question · Histoire et violence · Liberté Devoir Justice État · résistance camp solidarité dignité · Comment un mot presque imperceptible peut-il devenir un acte de résistance ?",
+    "url": "/textes/antelme-resistance-discrete/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’état d’exception permanent",
+    "meta": "Giorgio Agamben — Moyens sans fins. Notes sur la politique — Histoire et violence",
+    "keywords": "Giorgio Agamben · Agamben · Moyens sans fins. Notes sur la politique · L’état d’exception permanent · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté · camp état d’exception biopolitique droit · Pourquoi le camp est-il pour Agamben un espace où l’exception devient durable ?",
+    "url": "/textes/agamben-etat-exception-permanent/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le langage totalitaire",
+    "meta": "Victor Klemperer — LTI, la langue du IIIe Reich — Histoire et violence",
+    "keywords": "Victor Klemperer · Klemperer · LTI, la langue du IIIe Reich · Le langage totalitaire · HLP Terminale · L’Humanité en question · Histoire et violence · Langage État Vérité Raison · langage propagande nazisme pensée · Comment un régime totalitaire transforme-t-il la pensée en transformant l’usage des mots ?",
+    "url": "/textes/klemperer-langage-totalitaire/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’expérience de la torture",
+    "meta": "Jean Améry — Par-delà le crime et le châtiment — Histoire et violence",
+    "keywords": "Jean Améry · Améry · Par-delà le crime et le châtiment · L’expérience de la torture · HLP Terminale · L’Humanité en question · Histoire et violence · Conscience Liberté Justice Histoire · torture corps confiance monde · Que détruit la torture au-delà de la douleur physique ?",
+    "url": "/textes/amery-experience-torture/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Que sont devenus les siens ?",
+    "meta": "Scholastique Mukasonga — L’Iguifou — Histoire et violence",
+    "keywords": "Scholastique Mukasonga · Mukasonga · L’Iguifou · Que sont devenus les siens ? · HLP Terminale · L’Humanité en question · Histoire et violence · Vérité Langage Justice Histoire · génocide témoignage langage deuil · Comment écrire l’incompréhension et le silence qui entourent un génocide en cours ?",
+    "url": "/textes/mukasonga-que-sont-devenus-siens/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’idéologie du génocide",
+    "meta": "David Gakunzi — La Règle du jeu — Histoire et violence",
+    "keywords": "David Gakunzi · Gakunzi · La Règle du jeu · L’idéologie du génocide · HLP Terminale · L’Humanité en question · Histoire et violence · Langage État Justice Liberté Histoire · génocide idéologie déshumanisation haine · Comment une idéologie prépare-t-elle les esprits à l’extermination d’un groupe humain ?",
+    "url": "/textes/gakunzi-ideologie-genocide/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La banalité du mal",
+    "meta": "Hannah Arendt — La Vie de l’esprit — Histoire et violence",
+    "keywords": "Hannah Arendt · Arendt · La Vie de l’esprit · La banalité du mal · HLP Terminale · L’Humanité en question · Histoire et violence · Morale Justice État Raison · mal jugement responsabilité pensée · Comment des actes monstrueux peuvent-ils être commis sans volonté démoniaque ?",
+    "url": "/textes/arendt-banalite-mal/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La complicité des spectateurs passifs",
+    "meta": "Karl Jaspers — La Culpabilité allemande — Histoire et violence",
+    "keywords": "Karl Jaspers · Jaspers · La Culpabilité allemande · La complicité des spectateurs passifs · HLP Terminale · L’Humanité en question · Histoire et violence · Morale Justice État · culpabilité solidarité responsabilité témoin · Jusqu’où sommes-nous responsables des injustices que nous n’avons pas commises mais que nous avons laissé faire ?",
+    "url": "/textes/jaspers-complicite-spectateurs/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’impossible témoignage",
+    "meta": "Elie Wiesel — La Nuit — Histoire et violence",
+    "keywords": "Elie Wiesel · Wiesel · La Nuit · L’impossible témoignage · HLP Terminale · L’Humanité en question · Histoire et violence · Morale Langage · témoignage langage Shoah mémoire · Comment témoigner d’une expérience qui semble dépasser les possibilités ordinaires du langage ?",
+    "url": "/textes/wiesel-impossible-temoignage/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La violence, monopole d’État",
+    "meta": "Max Weber — Le Savant et le Politique — Histoire et violence",
+    "keywords": "Max Weber · Weber · Le Savant et le Politique · La violence, monopole d’État · HLP Terminale · L’Humanité en question · Histoire et violence · État Justice Liberté · État violence légitimité domination · Pourquoi l’État moderne se définit-il par le monopole de la violence physique légitime ?",
+    "url": "/textes/weber-violence-monopole-etat/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Réaffirmer son droit",
+    "meta": "Albert Camus — L’Homme révolté — Histoire et violence",
+    "keywords": "Albert Camus · Camus · L’Homme révolté · Réaffirmer son droit · HLP Terminale · L’Humanité en question · Histoire et violence · Liberté Justice Morale · révolte droit limite liberté · Pourquoi dire « non » peut-il constituer à la fois un refus et l’affirmation d’une valeur commune ?",
+    "url": "/textes/camus-reaffirmer-droit/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une menace invisible",
+    "meta": "Avishai Margalit — La Société décente — Histoire et violence",
+    "keywords": "Avishai Margalit · Margalit · La Société décente · Une menace invisible · HLP Terminale · L’Humanité en question · Histoire et violence · Justice État Morale · humiliation colonialisme normalité domination · Comment une situation de domination peut-elle devenir invisible à ceux mêmes qui la vivent ou l’exercent ?",
+    "url": "/textes/margalit-menace-invisible/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Se fabriquer des organes artificiels",
+    "meta": "Henri Bergson — L’Évolution créatrice — L’humain et ses limites",
+    "keywords": "Henri Bergson · Bergson · L’Évolution créatrice · Se fabriquer des organes artificiels · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Travail Nature · technique outil intelligence · La technique prolonge-t-elle simplement les organes humains ?",
+    "url": "/textes/bergson-organes-artificiels/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’homme diminué",
+    "meta": "Aldous Huxley — Le Meilleur des mondes — L’humain et ses limites",
+    "keywords": "Aldous Huxley · Huxley · Le Meilleur des mondes · L’homme diminué · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Liberté Science · conditionnement science technique · Une société peut-elle chercher à améliorer l’être humain en diminuant certaines de ses capacités ?",
+    "url": "/textes/huxley-homme-diminue/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une logique sans pensée",
+    "meta": "Markus Gabriel — Pourquoi la pensée humaine est inégalable — L’humain et ses limites",
+    "keywords": "Markus Gabriel · Gabriel · Pourquoi la pensée humaine est inégalable · Une logique sans pensée · HLP Terminale · L’Humanité en question · L’humain et ses limites · Raison Science Technique · IA logique pensée corps · L’intelligence artificielle pense-t-elle vraiment ?",
+    "url": "/textes/gabriel-logique-sans-pensee/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La science au service de l’oppression",
+    "meta": "George Orwell — 1984 — L’humain et ses limites",
+    "keywords": "George Orwell · Orwell · 1984 · La science au service de l’oppression · HLP Terminale · L’Humanité en question · L’humain et ses limites · Science Technique État Liberté · science totalitarisme pouvoir technique liberté · Comment un régime totalitaire peut-il subordonner la science à ses objectifs de domination ?",
+    "url": "/textes/orwell-telecran-presence-attentive/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Le mythe du robot",
+    "meta": "Gilbert Simondon — Du mode d’existence des objets techniques — L’humain et ses limites",
+    "keywords": "Gilbert Simondon · Simondon · Du mode d’existence des objets techniques · Le mythe du robot · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Raison · robot machine imaginaire technique · Le robot existe-t-il vraiment comme machine autonome, ou est-il d’abord une projection de notre imaginaire ?",
+    "url": "/textes/simondon-mythe-robot/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Des hommes au service des machines ?",
+    "meta": "Hannah Arendt — Condition de l’homme moderne — L’humain et ses limites",
+    "keywords": "Hannah Arendt · Arendt · Condition de l’homme moderne · Des hommes au service des machines ? · HLP Terminale · L’Humanité en question · L’humain et ses limites · Travail Technique Liberté · travail machine outil adaptation · La machine reste-t-elle au service de l’homme lorsque le travailleur doit régler son propre corps sur son rythme ?",
+    "url": "/textes/arendt-hommes-service-machines/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Communication ou isolement ?",
+    "meta": "Theodor Adorno & Max Horkheimer — La Dialectique de la raison — L’humain et ses limites",
+    "keywords": "Theodor Adorno & Max Horkheimer · Adorno · Horkheimer · La Dialectique de la raison · Communication ou isolement ? · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Langage · communication isolement technique uniformité · Les moyens de communication rapprochent-ils réellement les individus ?",
+    "url": "/textes/adorno-horkheimer-communication-isolement/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’accident de la centrale nucléaire",
+    "meta": "Svetlana Alexievitch — Inspirations du Mal — L’humain et ses limites",
+    "keywords": "Svetlana Alexievitch · Alexievitch · Inspirations du Mal · L’accident de la centrale nucléaire · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Nature · Tchernobyl catastrophe risque technique · Que devient notre rapport au monde lorsqu’une catastrophe technologique rend dangereux ce qui paraissait familier et inoffensif ?",
+    "url": "/textes/alexievitch-accident-centrale-nucleaire/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’humanité responsable",
+    "meta": "Hans Jonas — Le Principe responsabilité — L’humain et ses limites",
+    "keywords": "Hans Jonas · Jonas · Le Principe responsabilité · L’humanité responsable · HLP Terminale · L’Humanité en question · L’humain et ses limites · Devoir Nature Technique · responsabilité avenir technique biosphère · Jusqu’où notre responsabilité s’étend-elle lorsque la puissance technique engage l’avenir de l’humanité et de la biosphère ?",
+    "url": "/textes/jonas-humanite-responsable/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "La nature au service de l’homme",
+    "meta": "Martin Heidegger — Essais et conférences — L’humain et ses limites",
+    "keywords": "Martin Heidegger · Heidegger · Essais et conférences · La nature au service de l’homme · HLP Terminale · L’Humanité en question · L’humain et ses limites · Technique Nature · technique nature Rhin ressource · La technique moderne se contente-t-elle d’utiliser la nature, ou transforme-t-elle d’abord notre manière de la voir ?",
+    "url": "/textes/heidegger-nature-service-homme/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "Une adaptation paradoxale",
+    "meta": "Max Horkheimer & Theodor W. Adorno — La Dialectique de la raison — L’humain et ses limites",
+    "keywords": "Max Horkheimer & Theodor W. Adorno · Horkheimer · Adorno · La Dialectique de la raison · Une adaptation paradoxale · HLP Terminale · L’Humanité en question · L’humain et ses limites · Raison Technique Nature · adaptation destruction technique raison · Le perfectionnement technique de l’espèce humaine peut-il être compris comme un progrès si sa puissance détruit ce à quoi elle s’adapte ?",
+    "url": "/textes/horkheimer-adorno-adaptation-paradoxale/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’éthique de la terre",
+    "meta": "Aldo Leopold — Almanach d’un Comté des sables — L’humain et ses limites",
+    "keywords": "Aldo Leopold · Leopold · Almanach d’un Comté des sables · L’éthique de la terre · HLP Terminale · L’Humanité en question · L’humain et ses limites · Nature Devoir · éthique terre communauté nature · La nature peut-elle entrer dans la communauté de ceux envers lesquels nous avons des devoirs ?",
+    "url": "/textes/leopold-ethique-terre/"
+  },
+  {
+    "kind": "texte",
+    "kindLabel": "Texte · HLP Terminale",
+    "title": "L’hôte et le parasite",
+    "meta": "Michel Serres — Le Contrat naturel — L’humain et ses limites",
+    "keywords": "Michel Serres · Serres · Le Contrat naturel · L’hôte et le parasite · HLP Terminale · L’Humanité en question · L’humain et ses limites · Nature Technique Devoir · contrat naturel symbiose réciprocité nature · Quel type de relation devons-nous établir avec une nature que nous exploitons tout en dépendant d’elle ?",
+    "url": "/textes/serres-hote-parasite/"
   }
 ]

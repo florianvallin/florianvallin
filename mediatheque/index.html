@@ -4,136 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-  <meta name="theme-color" content="#f8f8fa">
-  <title>Médiathèque — Philosophal</title>
-  <meta name="description" content="Médiathèque personnelle Philosophal : textes, livres, audio, vidéos et cours écrits réunis dans un même outil.">
-  <link rel="icon" href="../favicon.ico" sizes="any">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./mediatheque.css?v=20260917-publish1">
+  <title>Cours — Médiathèque Philosophal</title>
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="./cours.css?v=20260919-hlp-consolidation1">
 </head>
-<body id="top" class="media-page">
-  <header class="media-topbar">
-    <a class="media-brand" href="./" aria-label="Accueil de la médiathèque">
-      <span class="media-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span><strong>Médiathèque</strong><small>cabinet personnel</small></span>
-    </a>
-    <a class="media-return" href="../">← <span>Retour au site</span></a>
+<body>
+  <header class="course-topbar">
+    <a href="../?type=cours" class="course-back">← <span>Cours écrits</span></a>
+    <a href="../" class="course-media-link">Médiathèque</a>
   </header>
 
-  <main class="media-shell">
-    <section class="media-intro" aria-labelledby="media-title">
-      <div class="media-title-row">
-        <div>
-          <p class="media-eyebrow">Retrouver, lire, écouter, regarder</p>
-          <h1 id="media-title">Médiathèque</h1>
+  <main class="course-shell">
+    <aside class="course-aside" data-course-aside hidden>
+      <div class="course-aside-sticky">
+        <span class="course-aside-label">Sommaire</span>
+        <nav data-course-toc></nav>
+      </div>
+    </aside>
+
+    <article class="course-reader">
+      <header class="course-header">
+        <div class="course-domain-line">
+          <span class="course-domain-pill" data-course-domain>Psychologie</span>
+          <span data-course-path></span>
         </div>
-        <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
+        <h1 data-course-title>Chargement…</h1>
+        <p class="course-description" data-course-description></p>
+        <div class="course-meta" data-course-meta></div>
+      </header>
+
+      <div class="course-loading" data-course-loading>Chargement du cours…</div>
+      <div class="course-content" data-course-content hidden></div>
+
+      <div class="course-error" data-course-error hidden>
+        <strong>Impossible d’ouvrir ce cours.</strong>
+        <p>Le fichier texte associé est introuvable ou l’identifiant est invalide.</p>
+        <a href="../?type=cours">Retour aux cours</a>
       </div>
-
-      <label class="media-search" for="media-search">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path></svg>
-        <span class="sr-only">Rechercher dans la médiathèque</span>
-        <input id="media-search" data-media-search type="search" autocomplete="off" spellcheck="false" placeholder="Rechercher une œuvre, une personne, un thème…">
-        <kbd>/</kbd>
-        <button class="media-search-clear" data-media-clear type="button" aria-label="Effacer la recherche" hidden>×</button>
-      </label>
-
-      <nav class="media-type-row" data-media-types aria-label="Rayons de la médiathèque"></nav>
-
-      <div class="media-context-row">
-        <div class="media-active-filters" data-active-filters hidden></div>
-        <div class="media-utility-actions">
-          <button class="media-quiet-button" type="button" data-toggle-pinned aria-pressed="false"><span aria-hidden="true">☆</span> Favoris</button>
-          <button class="media-reset" type="button" data-media-reset hidden>Réinitialiser</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="media-course-search-panel" data-course-search-shell hidden aria-label="Recherche dans les cours écrits">
-      <div class="media-course-search-copy">
-        <span>Cours écrits</span>
-        <strong>Rechercher dans mes cours</strong>
-        <small data-course-search-status>Recherche par titre, matière, année, thème et contenu.</small>
-      </div>
-      <label class="media-course-search" for="media-course-search">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path></svg>
-        <span class="sr-only">Rechercher uniquement dans les cours écrits</span>
-        <input id="media-course-search" data-course-search type="search" autocomplete="off" spellcheck="false" placeholder="Ex. Wundt, diagnostic, empirisme, discrimination…">
-        <button class="media-course-search-clear" data-course-search-clear type="button" aria-label="Effacer la recherche dans les cours" hidden>×</button>
-      </label>
-    </section>
-
-    <section class="media-results" aria-live="polite" aria-label="Ressources">
-      <div class="media-summary-row">
-        <div>
-          <span class="media-summary-kicker" data-summary-kicker>Vue d’ensemble</span>
-          <h2 data-summary-title>Rayons</h2>
-        </div>
-        <p class="media-count" data-media-count></p>
-      </div>
-
-      <div class="media-home" data-media-home></div>
-      <div class="media-list-shell" data-media-list-shell hidden></div>
-
-      <div class="media-empty" data-media-empty hidden>
-        <span aria-hidden="true">⌕</span>
-        <h3>Aucune ressource</h3>
-        <p>Essayez un autre terme ou retirez un filtre.</p>
-        <button type="button" data-empty-reset>Tout afficher</button>
-      </div>
-    </section>
+    </article>
   </main>
 
-  <aside class="media-explorer" data-media-explorer hidden aria-label="Explorer la médiathèque">
-    <button class="media-overlay" type="button" data-close-explorer aria-label="Fermer"></button>
-    <section class="media-side-panel" role="dialog" aria-modal="true" aria-labelledby="media-explorer-title">
-      <header>
-        <div><span>Explorer</span><h2 id="media-explorer-title">Personnes, thèmes et dossiers</h2></div>
-        <button type="button" class="media-close" data-close-explorer aria-label="Fermer">×</button>
-      </header>
-      <nav class="media-explorer-tabs" data-explorer-tabs aria-label="Modes d’exploration">
-        <button type="button" data-explorer-view="people" class="is-active">Personnes</button>
-        <button type="button" data-explorer-view="themes">Thèmes</button>
-        <button type="button" data-explorer-view="dossiers">Dossiers</button>
-      </nav>
-      <label class="media-explorer-search">
-        <span class="sr-only">Filtrer l’exploration</span>
-        <input type="search" data-explorer-search placeholder="Filtrer…" autocomplete="off">
-      </label>
-      <div class="media-explorer-list" data-explorer-list></div>
-    </section>
-  </aside>
-
-  <aside class="media-player" data-media-player hidden aria-label="Lecteur intégré">
-    <button class="media-overlay" type="button" data-close-player aria-label="Fermer le lecteur"></button>
-    <section class="media-player-panel" role="dialog" aria-modal="true" aria-labelledby="media-player-title">
-      <header>
-        <div>
-          <span data-player-kind>Lecture</span>
-          <h2 id="media-player-title" data-player-title></h2>
-          <p data-player-meta></p>
-        </div>
-        <button type="button" class="media-close" data-close-player aria-label="Fermer">×</button>
-      </header>
-      <div class="media-player-frame" data-player-frame></div>
-      <div class="media-player-foot">
-        <div class="media-player-tags" data-player-tags></div>
-        <a data-player-source href="#" target="_blank" rel="noopener noreferrer">Ouvrir la source ↗</a>
-      </div>
-    </section>
-  </aside>
-
-  <footer class="media-footer">
-    <span><kbd>/</kbd> rechercher</span>
-    <span><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>?</kbd> aide complète</span>
-  </footer>
-
-  <script src="./data.js?v=20260917-publish1"></script>
-  <script src="./mediatheque.js?v=20260917-publish1"></script>
-  <script src="../js/site-tools.js?v=20260917-publish1" defer></script>
+  <script src="../data.js?v=20260919-hlp-consolidation1"></script>
+  <script src="./cours.js?v=20260919-hlp-consolidation1"></script>
+  <script src="../../js/site-tools.js?v=20260919-hlp-consolidation1" defer></script>
 </body>
 </html>

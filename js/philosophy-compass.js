@@ -775,70 +775,136 @@
     if (!groups.length && items.length) groups = [{kind:"Point de départ",question:`Une première entrée sur « ${theme} »`,note:"",items}];
     return {theme,slug,category,items,groups,intro:guide?.intro || (items.length ? `${items.length} texte${items.length>1?"s":""} actuellement relié${items.length>1?"s":""} à ce thème.` : "Ce thème est prévu dans la boussole, mais aucun texte de la bibliothèque n’y est encore rattaché.")};
   };
-  // HLP : une carte par grand objet du programme. Les sous-thèmes deviennent
-  // des sous-sections internes, pour éviter une succession de parcours dispersés.
+  // HLP : une seule carte par grand objet du programme.
+  // Les entrées portant le même nom sont fusionnées ; les sous-thèmes officiels
+  // deviennent des sections internes clairement identifiées.
   const hlpSubthemeQuestions = {
-    "Éducation, transmission et émancipation":"Comment l’éducation et l’exemple peuvent-ils rendre le sujet plus libre ?",
-    "Les expressions de la sensibilité":"Comment la littérature donne-t-elle forme à ce que le sujet éprouve ?",
-    "Les métamorphoses du moi":"Comment le rapport à soi transforme-t-il l’identité ?",
+    "L’art de la parole":"Comment construire une parole capable de convaincre et de faire agir ?",
+    "L’autorité de la parole":"Pourquoi certaines paroles engagent-elles, instituent-elles ou commandent-elles ?",
+    "Les séductions de la parole":"Comment une parole agit-elle sur le désir, l’amour-propre et les croyances ?",
     "Découverte du monde et pluralité des cultures":"Comment la rencontre d’autres cultures transforme-t-elle le regard que nous portons sur la nôtre ?",
     "Décrire, figurer, imaginer":"Comment les représentations façonnent-elles notre manière de voir et de désirer le monde ?",
     "L’homme et l’animal":"Quelles frontières pouvons-nous tracer entre l’être humain et les autres animaux ?",
-    "Histoire et violence":"Comment la violence historique agit-elle sur les sociétés et sur les esprits ?"
+    "Éducation, transmission et émancipation":"Comment l’éducation et l’exemple peuvent-ils rendre le sujet plus libre ?",
+    "Les expressions de la sensibilité":"Comment la littérature et l’art donnent-ils forme à ce que le sujet éprouve ?",
+    "Les métamorphoses du moi":"Comment le rapport à soi transforme-t-il l’identité ?",
+    "Création, continuités et ruptures":"Pourquoi créer suppose-t-il parfois de rompre avec les formes héritées ?",
+    "Histoire et violence":"Comment la violence historique agit-elle sur les individus et les sociétés ?",
+    "L’humain et ses limites":"Que devient l’humain lorsque sa puissance technique transforme son milieu, ses capacités et ses responsabilités ?"
   };
   const hlpThemeIntros = {
-    "La recherche de soi":"Un parcours en trois étapes : apprendre et s’émanciper, exprimer la sensibilité, puis interroger les transformations du moi.",
-    "Les représentations du monde":"Un parcours en trois étapes : rencontrer la pluralité des cultures, comprendre comment nous décrivons et imaginons le monde, puis interroger la frontière entre l’homme et l’animal.",
-    "L’humanité en question":"Un parcours pour interroger les formes de la violence historique et leurs effets sur les individus comme sur les sociétés."
+    "Les pouvoirs de la parole":"Trois sous-sections pour comprendre comment la parole se construit, reçoit une autorité et peut séduire ou manipuler.",
+    "Les représentations du monde":"Trois sous-sections pour rencontrer la pluralité des cultures, comprendre comment nous représentons le monde, puis interroger la frontière entre l’homme et l’animal.",
+    "La recherche de soi":"Trois sous-sections pour penser l’éducation et l’émancipation, les expressions de la sensibilité, puis les métamorphoses du moi.",
+    "L’Humanité en question":"Trois sous-sections pour penser les ruptures de la création, les violences de l’histoire et les limites de l’humain à l’âge technique."
   };
-  const hlpKey = (path) => `${path.level || ""}::${path.theme || ""}`;
-  const explicitHlpClusters = hlpPaths.filter((path) => path.groups?.length);
-  const explicitKeys = new Set(explicitHlpClusters.map(hlpKey));
-  const leafHlpPaths = hlpPaths.filter((path) => !path.groups?.length);
-  const leavesByKey = new Map();
-  leafHlpPaths.forEach((path) => {
-    const key = hlpKey(path);
-    if (!leavesByKey.has(key)) leavesByKey.set(key, []);
-    leavesByKey.get(key).push(path);
-  });
-  const syntheticHlpClusters = [...leavesByKey.entries()]
-    .filter(([key]) => !explicitKeys.has(key))
-    .map(([, paths]) => {
-      const first = paths[0];
-      const texts = [...new Set(paths.flatMap((path) => path.texts || []))];
-      return {
-        id:`hlp-${slugify(first.theme)}-parcours`,
-        level:first.level,
-        theme:first.theme,
-        subtheme:"Parcours",
-        intro:hlpThemeIntros[first.theme] || (paths.length > 1
-          ? `Un parcours en ${paths.length} sous-sections pour explorer « ${first.theme} ».`
-          : first.intro || `Un parcours HLP autour de « ${first.theme} ».`),
-        texts,
-        aliases:paths.map((path) => path.id),
-        groups:paths.map((path,index) => ({
-          kind:`${index+1} · ${path.subtheme}`,
-          question:hlpSubthemeQuestions[path.subtheme] || path.subtheme,
-          note:path.intro || "",
-          texts:path.texts || []
-        }))
-      };
-    });
-  const explicitWithAliases = explicitHlpClusters.map((path) => ({
-    ...path,
-    aliases:leafHlpPaths.filter((leaf) => hlpKey(leaf) === hlpKey(path)).map((leaf) => leaf.id)
-  }));
+  const hlpSubthemeOrder = new Map([
+    ["L’art de la parole",0],
+    ["L’autorité de la parole",1],
+    ["Les séductions de la parole",2],
+    ["Découverte du monde et pluralité des cultures",0],
+    ["Décrire, figurer, imaginer",1],
+    ["L’homme et l’animal",2],
+    ["Éducation, transmission et émancipation",0],
+    ["Les expressions de la sensibilité",1],
+    ["Les métamorphoses du moi",2],
+    ["Création, continuités et ruptures",0],
+    ["Histoire et violence",1],
+    ["L’humain et ses limites",2]
+  ]);
+  const hlpThemeOrder = new Map([
+    [slugify("Les pouvoirs de la parole"),0],
+    [slugify("Les représentations du monde"),1],
+    [slugify("La recherche de soi"),2],
+    [slugify("L’humanité en question"),3]
+  ]);
   const hlpLevelOrder = {Première:0,Terminale:1};
-  const hlpDisplayPaths = [...explicitWithAliases, ...syntheticHlpClusters].sort((a,b) =>
-    (hlpLevelOrder[a.level] ?? 9) - (hlpLevelOrder[b.level] ?? 9) || collator.compare(a.theme,b.theme)
+  const hlpThemeKey = (path) => `${path.level || ""}::${slugify(path.theme || "")}`;
+  const uniqueIds = (values) => [...new Set((values || []).filter(Boolean))];
+
+  const hlpBuckets = new Map();
+  hlpPaths.forEach((path) => {
+    const key = hlpThemeKey(path);
+    if (!hlpBuckets.has(key)) hlpBuckets.set(key, []);
+    hlpBuckets.get(key).push(path);
+  });
+
+  const hlpDisplayPaths = [...hlpBuckets.values()].map((paths) => {
+    const full = paths.find((path) => path.groups?.length && normalize(path.subtheme || "") === normalize("Parcours complet"));
+    const preferred = full || paths.find((path) => path.groups?.length) || paths[0];
+    const theme = preferred.theme;
+    const level = preferred.level;
+    const aliases = uniqueIds(paths.flatMap((path) => [path.id, ...(path.aliases || [])]));
+    const texts = uniqueIds(paths.flatMap((path) => path.texts || []));
+
+    // Pour les deux objets de Première, le parcours complet contient déjà les
+    // trois sous-thèmes officiels : on le conserve tel quel, sans doublons.
+    if (full) {
+      return {
+        ...full,
+        aliases:aliases.filter((id) => id !== full.id),
+        texts,
+        intro:hlpThemeIntros[theme] || full.intro,
+        groups:(full.groups || []).map((group) => ({...group, subgroups:[]}))
+      };
+    }
+
+    // En Terminale, plusieurs parcours portent le même grand objet. On les
+    // fusionne en une carte ; chaque entrée officielle devient une sous-section
+    // et conserve, lorsqu’elles existent, ses étapes de lecture internes.
+    const bySubtheme = new Map();
+    paths.forEach((path) => {
+      const label = path.subtheme || "Parcours";
+      if (!bySubtheme.has(label)) bySubtheme.set(label, []);
+      bySubtheme.get(label).push(path);
+    });
+    const groups = [...bySubtheme.entries()]
+      .sort((a,b) => (hlpSubthemeOrder.get(a[0]) ?? 99) - (hlpSubthemeOrder.get(b[0]) ?? 99) || collator.compare(a[0],b[0]))
+      .map(([subtheme, subPaths], index) => {
+        const subTexts = uniqueIds(subPaths.flatMap((path) => path.texts || []));
+        const notes = uniqueIds(subPaths.map((path) => path.intro || ""));
+        const subgroups = subPaths.flatMap((path) => (path.groups || []).map((group) => ({
+          ...group,
+          texts:uniqueIds(group.texts || [])
+        })));
+        return {
+          kind:`${index+1} · ${subtheme}`,
+          question:hlpSubthemeQuestions[subtheme] || subtheme,
+          note:notes[0] || "",
+          texts:subTexts,
+          subgroups
+        };
+      });
+    const canonicalId = `hlp-${slugify(theme)}-${slugify(level)}`;
+    return {
+      id:canonicalId,
+      level,
+      theme,
+      subtheme:"Parcours complet",
+      intro:hlpThemeIntros[theme] || `Un parcours en ${groups.length} sous-sections pour explorer « ${theme} ».`,
+      texts,
+      aliases,
+      groups
+    };
+  }).sort((a,b) =>
+    (hlpLevelOrder[a.level] ?? 9) - (hlpLevelOrder[b.level] ?? 9)
+    || (hlpThemeOrder.get(slugify(a.theme)) ?? 99) - (hlpThemeOrder.get(slugify(b.theme)) ?? 99)
+    || collator.compare(a.theme,b.theme)
   );
+
   const hlpModels = hlpDisplayPaths.map((path) => {
     const items = path.texts.map((id) => catalog.find((item) => item.id === id)).filter(Boolean);
     const groups = (path.groups || []).map((group) => ({
       kind:group.kind || `HLP · ${path.level}`,
       question:group.question || path.subtheme,
       note:group.note || "",
-      items:(group.texts || []).map((id) => catalog.find((item) => item.id === id)).filter(Boolean)
+      items:(group.texts || []).map((id) => catalog.find((item) => item.id === id)).filter(Boolean),
+      subgroups:(group.subgroups || []).map((subgroup) => ({
+        kind:subgroup.kind || "Étape",
+        question:subgroup.question || "",
+        note:subgroup.note || "",
+        items:(subgroup.texts || []).map((id) => catalog.find((item) => item.id === id)).filter(Boolean)
+      })).filter((subgroup) => subgroup.items.length)
     })).filter((group) => group.items.length);
     return {
       theme:path.theme,
@@ -849,6 +915,7 @@
       hlp:path,
       groups,
       isGroupedPath:true,
+      searchText:[path.theme,path.intro,...groups.flatMap((group) => [group.kind,group.question,group.note,...group.subgroups.flatMap((subgroup) => [subgroup.kind,subgroup.question,subgroup.note])])].filter(Boolean).join(" "),
       intro:path.intro || `${items.length} texte${items.length>1?"s":""} dans ce parcours HLP.`
     };
   });
@@ -866,6 +933,10 @@
     return `<div class="${classes}">${items.map((item,index) => `${!sectionMode && !denseMode && index ? '<span class="philo-path-connector" aria-hidden="true">→</span>' : ''}<a href="${textUrl(item)}" data-philo-path-text="${escapeHtml(item.id)}"><small>${escapeHtml(item.authorTag || item.author || item.source || "Texte")}</small><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>`;
   };
   const cleanHlpGroupTitle = (value) => String(value || "").replace(/^\s*\d+\s*[·.–-]\s*/, "");
+  const renderHlpSubgroups = (group) => {
+    if (!group.subgroups?.length) return renderFlow(group.items,true);
+    return `<div class="philo-hlp-stages">${group.subgroups.map((subgroup,index) => `<section class="philo-hlp-stage"><header class="philo-hlp-stage-head"><span>Étape ${String(index+1).padStart(2,"0")}</span><strong>${formatForeignTerms(cleanHlpGroupTitle(subgroup.kind))}</strong>${subgroup.question ? `<em>${formatForeignTerms(subgroup.question)}</em>` : ""}</header>${subgroup.note ? `<p>${formatForeignTerms(subgroup.note)}</p>` : ""}${renderFlow(subgroup.items,true)}</section>`).join("")}</div>`;
+  };
 
   if (pathRoot) {
     pathRoot.innerHTML = themeModels.map((model,index) => {
@@ -873,12 +944,13 @@
         const groupedHlp = model.category === "hlp" && model.isGroupedPath;
         const groupTitle = groupedHlp ? cleanHlpGroupTitle(group.kind) : group.question;
         const groupKicker = groupedHlp ? `Sous-section ${String(groupIndex+1).padStart(2,"0")} · ${group.items.length} texte${group.items.length>1?"s":""}` : `${group.kind} · ${String(groupIndex+1).padStart(2,"0")}`;
-        return `<article class="philo-path-question${groupedHlp ? " philo-path-question--hlp-section" : ""}" data-philo-path-group data-philo-group-authors="${escapeHtml(group.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" "))}"><button type="button" class="philo-path-question-trigger" aria-expanded="false" data-philo-path-group-trigger><span>${escapeHtml(groupKicker)}</span><strong>${formatForeignTerms(groupTitle)}</strong>${groupedHlp ? `<em class="philo-path-subquestion">${formatForeignTerms(group.question)}</em>` : ""}<i aria-hidden="true"></i></button><div class="philo-path-question-panel" data-philo-path-group-panel hidden><div class="philo-path-question-panel-inner">${group.note ? `<p>${formatForeignTerms(group.note)}</p>` : ""}${renderFlow(group.items, groupedHlp)}</div></div></article>`;
+        const groupContent = groupedHlp ? renderHlpSubgroups(group) : renderFlow(group.items,false);
+        return `<article class="philo-path-question${groupedHlp ? " philo-path-question--hlp-section" : ""}" data-philo-path-group data-philo-group-authors="${escapeHtml(group.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" "))}"><button type="button" class="philo-path-question-trigger" aria-expanded="false" data-philo-path-group-trigger><span>${escapeHtml(groupKicker)}</span><strong>${formatForeignTerms(groupTitle)}</strong>${groupedHlp ? `<em class="philo-path-subquestion">${formatForeignTerms(group.question)}</em>` : ""}<i aria-hidden="true"></i></button><div class="philo-path-question-panel" data-philo-path-group-panel hidden><div class="philo-path-question-panel-inner">${group.note ? `<p>${formatForeignTerms(group.note)}</p>` : ""}${groupContent}</div></div></article>`;
       }).join("") : `<div class="philo-path-no-text"><strong>Parcours à venir</strong><span>Aucun texte n’est encore rattaché à ce thème.</span><a href="/textes/philosophie/?theme=${encodeURIComponent(model.theme)}">Voir le thème dans la bibliothèque →</a></div>`;
       const authors = model.items.map((item) => `${item.author || ""} ${item.authorTag || ""}`).join(" ");
       const modelMeta = model.isGroupedPath ? `${model.items.length} textes · ${model.groups.length} sous-sections` : `${model.items.length} texte${model.items.length>1?"s":""}${model.groups.length ? ` · ${model.groups.length} question${model.groups.length>1?"s":""}` : ""}`;
       const hlpLevelClass = model.hlp?.level === "Terminale" ? " philo-path-card--hlp-terminale" : model.hlp?.level === "Première" ? " philo-path-card--hlp-premiere" : "";
-      return `<article class="philo-path-card${model.isGroupedPath ? ` philo-path-card--hlp-cluster${hlpLevelClass}` : ""}" id="parcours-${escapeHtml(model.slug)}" data-philo-path-id="${escapeHtml(model.slug)}" data-philo-path-aliases="${escapeHtml((model.aliases || []).join(" "))}" data-philo-path-theme="${escapeHtml(model.theme)}" data-philo-path-category="${model.category}" data-philo-path-authors="${escapeHtml(authors)}"><button class="philo-path-card-trigger" type="button" aria-expanded="false" data-philo-path-trigger><span class="philo-path-number">${String(index+1).padStart(2,"0")}</span><span class="philo-path-title"><small>${model.hlp ? `<b class="philo-hlp-mini">HLP · ${escapeHtml(model.hlp.level)}</b> · ` : ""}${modelMeta}</small><strong>${escapeHtml(model.theme)}</strong><em>${formatForeignTerms(model.intro)}</em></span><span class="philo-path-toggle" aria-hidden="true"></span></button><div class="philo-path-card-panel" data-philo-path-panel hidden><div class="philo-path-body">${groupsHtml}</div></div></article>`;
+      return `<article class="philo-path-card${model.isGroupedPath ? ` philo-path-card--hlp-cluster${hlpLevelClass}` : ""}" id="parcours-${escapeHtml(model.slug)}" data-philo-path-id="${escapeHtml(model.slug)}" data-philo-path-aliases="${escapeHtml((model.aliases || []).join(" "))}" data-philo-path-theme="${escapeHtml(model.theme)}" data-philo-path-search="${escapeHtml(model.searchText || model.theme)}" data-philo-path-category="${model.category}" data-philo-path-authors="${escapeHtml(authors)}"><button class="philo-path-card-trigger" type="button" aria-expanded="false" data-philo-path-trigger><span class="philo-path-number">${String(index+1).padStart(2,"0")}</span><span class="philo-path-title"><small>${model.hlp ? `<b class="philo-hlp-mini">HLP · ${escapeHtml(model.hlp.level)}</b> · ` : ""}${modelMeta}</small><strong>${escapeHtml(model.theme)}</strong><em>${formatForeignTerms(model.intro)}</em></span><span class="philo-path-toggle" aria-hidden="true"></span></button><div class="philo-path-card-panel" data-philo-path-panel hidden><div class="philo-path-body">${groupsHtml}</div></div></article>`;
     }).join("");
 
     let activePathTab = "main";
@@ -963,7 +1035,7 @@
         return;
       }
 
-      const themeMatches = themeModels.filter((model) => normalize(model.theme).includes(query));
+      const themeMatches = themeModels.filter((model) => normalize(model.searchText || model.theme).includes(query));
       const exactTheme = themeModels.find((model) => normalize(model.theme) === query);
       const effectiveThemeMatches = exactTheme ? [exactTheme] : themeMatches;
       let matchCount = 0;

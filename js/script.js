@@ -127,6 +127,7 @@
     if (!track || !viewport) return;
 
     const reviews = [
+      { name: "Didier Marlot", date: "16/09/2026", rating: 5, text: "Quand la philosophie devient un vrai plaisir d\'apprendre ! Tout est là : convivialité, rigueur, explications structurées et approfondies, connaissances inépuisables... Un vrai bonheur pour l\'adulte que je suis d\'avoir trouvé la perle « philosophique » en la personne de Florian !", url: "https://share.google/2xTdqNWDUXxZtW5YY" },
       { name: "Élodie Jannin", date: "28/02/2025", rating: 5, text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser." },
       { name: "Olivier Le Pioufle", date: "01/03/2025", rating: 5, text: "Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux, avec beaucoup de pédagogie et de patience." },
       { name: "Louna Schroetter", date: "21/03/2026", rating: 5, text: "Je recommande vivement pour les études de philosophie. Florian est de très bon conseil, très pédagogue et passionné par son travail." },
@@ -139,7 +140,7 @@
     track.innerHTML = reviews.map((review) => `
       <a
         class="review-card"
-        href="${googleBusinessUrl}"
+        href="${review.url || googleBusinessUrl}"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Voir l’avis de ${review.name} sur Google"
@@ -147,7 +148,7 @@
         <div class="review-head">
           <div class="review-person">
             <span class="review-avatar" aria-hidden="true">${initials(review.name)}</span>
-            <div><div class="review-name">${review.name}</div><div class="review-date">${review.date}</div></div>
+            <div><div class="review-name">${review.name}</div>${review.date ? `<div class="review-date">${review.date}</div>` : ""}</div>
           </div>
           <span class="review-google-mini" aria-hidden="true">G</span>
         </div>
@@ -370,7 +371,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20260917-publish1";
+        script.src = "/js/site-search-data.js?v=20260919-hlp-consolidation1";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = reject;
         document.head.append(script);
