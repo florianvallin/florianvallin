@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js?v=20260919-publish2", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions générales de vente | Florian Vallin</title>
+
+  <link rel="stylesheet" href="css/style.css?v=20260919-publish2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site-tools.css?v=20260919-publish2">
+</head>
+
+<body id="top">
+
+<header class="navbar" id="site-header">
+  <div class="nav-container">
+    <a class="nav-brand" href="/" aria-label="Retour à la page d’accueil">Florian <strong>Vallin</strong></a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
+      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a>
+      <a href="/#philosophie">Prestations</a>
+      <a href="/#quisuisje">Qui suis-je ?</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Contactez-moi</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- CONTENU -->
+  <main class="legal-page">
+    <div class="container">
+
+      <!-- Fil d’Ariane -->
+      <nav class="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="index.html">Accueil</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Conditions générales de vente</span>
+      </nav>
+
+      <h1 class="legal-title">Conditions générales de vente</h1>
+
+      <div class="legal-content">
+
+  <p class="legal-update"><strong>Dernière mise à jour :</strong> 16 septembre 2026.</p>
+
+  <p>
+    Les présentes Conditions Générales de Vente (CGV) régissent les prestations proposées par Florian Vallin,
+    entrepreneur individuel – micro-entreprise, exerçant une activité libérale non réglementée
+    (régime spécial BNC), TVA non applicable – article 293 B du Code général des impôts,
+    établi à Montpellier (34000), France.
+  </p>
+
+  <p>
+    Elles s’appliquent aux réservations de cours et d’accompagnements conclues avec un client consommateur,
+    en présentiel ou à distance. Toute réservation confirmée implique l’acceptation des présentes CGV.
+  </p>
+
+  <h2>1. Objet</h2>
+  <p>Les prestations proposées comprennent notamment :</p>
+  <ul>
+    <li>des cours particuliers de philosophie ;</li>
+    <li>des cours de méthodologie générale ;</li>
+    <li>des cours de philosophie en petit groupe ;</li>
+    <li>des accompagnements ponctuels, réguliers ou sous forme de pack ;</li>
+    <li>la mise à disposition de supports pédagogiques liés à l’accompagnement.</li>
+  </ul>
+  <p>
+    Les prestations peuvent être réalisées à Montpellier, dans un lieu convenu avec le client,
+    ou à distance au moyen d’un service de visioconférence ou de communication adapté.
+  </p>
+
+  <h2>2. Description des prestations</h2>
+  <p>
+    La durée de référence d’une séance est d’une heure. Selon la formule choisie ou l’accord intervenu avant la séance,
+    une durée différente peut être prévue, notamment 1 h 30 ou 2 h.
+  </p>
+  <p>
+    L’accompagnement vise notamment la compréhension des notions et des textes, la structuration du raisonnement,
+    la maîtrise de la dissertation et de l’explication de texte, ainsi que l’acquisition de méthodes de travail durables.
+  </p>
+  <p>
+    Les éventuels conseils relatifs aux études ou à l’orientation sont fournis à titre informatif et ne constituent
+    ni un conseil réglementé ni une garantie d’admission, de résultat scolaire ou de réussite à un examen.
+  </p>
+  <p>L’enregistrement d’une séance n’est pas autorisé sans accord préalable du prestataire.</p>
+
+  <h2>3. Réservation et formation du contrat</h2>
+  <p>
+    La prise de contact peut s’effectuer au moyen du formulaire disponible sur le site ou par échange direct.
+    Une séance, un cours collectif ou un pack est considéré comme réservé lorsque ses éléments essentiels
+    (prestation, date ou calendrier lorsqu’il est connu, durée et prix) ont été acceptés par les parties.
+  </p>
+  <p>
+    Sauf accord contraire, le règlement intervient avant la séance ou avant le début de la formule réservée.
+  </p>
+
+  <h2>4. Tarifs et paiement</h2>
+  <p><strong>Séances individuelles :</strong></p>
+  <ul>
+    <li>Cours de philosophie : 50 € par heure ;</li>
+    <li>Cours de méthodologie générale : 40 € par heure.</li>
+  </ul>
+
+  <p><strong>Cours collectifs de philosophie :</strong></p>
+  <ul>
+    <li>2 élèves : 35 € par heure et par élève ;</li>
+    <li>3 à 5 élèves : 25 € par heure et par élève.</li>
+  </ul>
+  <p>
+    Les cours collectifs sont proposés sous réserve de la compatibilité du niveau, des disponibilités et des objectifs des participants.
+  </p>
+
+  <p><strong>Formules d’accompagnement en philosophie :</strong></p>
+  <ul>
+    <li>Pack Express : 2 séances de 2 heures, soit 4 heures au total, pour 175 € ;</li>
+    <li>Pack Remise à niveau : 6 séances d’une heure pour 250 € ;</li>
+    <li>Pack Excellence : 8 séances d’une heure pour 320 €.</li>
+  </ul>
+  <p>
+    Le contenu de chaque formule est celui présenté sur le site au moment de la réservation.
+    Toute prestation supplémentaire fait l’objet d’un accord préalable sur son contenu et son prix.
+  </p>
+  <p>
+    Les prix sont indiqués en euros, toutes taxes comprises. TVA non applicable – article 293 B du Code général des impôts.
+  </p>
+  <p>
+    Les moyens de paiement actuellement proposés sont ceux indiqués sur le site ou convenus lors de la réservation
+    (notamment espèces, chèque, virement bancaire, PayPal ou service de paiement entre particuliers disponible).
+  </p>
+  <p>
+    Une note ou facture est remise conformément aux obligations légales applicables aux prestations de services.
+    Elle peut être transmise sous format électronique avec l’accord du client.
+  </p>
+
+  <h2>5. Annulation et report</h2>
+  <p>
+    Toute annulation ou demande de report doit être signalée au moins 24 heures avant l’horaire prévu.
+  </p>
+  <p>
+    En cas d’annulation moins de 24 heures avant la séance ou d’absence non justifiée, 50 % du prix de la séance peut être dû,
+    sauf cas de force majeure ou accord contraire entre les parties.
+  </p>
+  <p>
+    En cas d’empêchement sérieux ou de difficulté technique indépendante de la volonté des parties,
+    un report est recherché de bonne foi dans les meilleurs délais.
+  </p>
+  <p>
+    Si le prestataire annule une séance, celle-ci est reportée sans frais ou remboursée lorsqu’aucun report acceptable n’est possible.
+  </p>
+  <p>
+    Pour un pack comprenant plusieurs séances, les séances déjà réalisées restent dues. Les séances restantes sont organisées
+    selon les disponibilités convenues et sous réserve, le cas échéant, de l’exercice du droit de rétractation prévu ci-dessous.
+  </p>
+
+  <h2>6. Élèves mineurs</h2>
+  <p>
+    Lorsque l’élève est mineur, la réservation et le paiement sont effectués en principe par son représentant légal
+    ou avec son accord. Le prestataire peut demander une confirmation écrite du représentant légal avant le début de l’accompagnement.
+  </p>
+  <p>
+    Les échanges pédagogiques peuvent avoir lieu directement avec l’élève lorsque cela est nécessaire au déroulement des cours.
+  </p>
+
+  <h2>7. Responsabilité</h2>
+  <p>Le prestataire est tenu à une obligation de moyens et non de résultat.</p>
+  <p>
+    Aucun résultat scolaire, note, classement, admission ou réussite à un examen ne peut être garanti.
+    La progression dépend notamment de l’assiduité, du travail personnel et de l’implication de l’élève.
+  </p>
+  <p>
+    Le prestataire ne répond pas des interruptions ou dysfonctionnements provenant d’un service tiers ou d’un équipement
+    qui ne relève pas de son contrôle. La présente clause ne limite pas les responsabilités qui ne peuvent être exclues par la loi.
+  </p>
+
+  <h2>8. Propriété intellectuelle et ressources</h2>
+  <p>
+    Les supports pédagogiques originaux remis dans le cadre d’un accompagnement sont destinés à l’usage personnel de l’élève.
+    Ils ne peuvent être diffusés, revendus ou publiés sans autorisation préalable lorsqu’ils sont protégés par le droit d’auteur.
+  </p>
+  <p>
+    Cette restriction ne crée aucun droit exclusif sur les œuvres du domaine public, les textes de tiers ou les ressources externes
+    accessibles depuis le site, qui restent soumis à leurs propres droits et conditions d’utilisation.
+  </p>
+
+  <h2>9. Données personnelles</h2>
+  <p>
+    Le formulaire de contact du site recueille l’adresse e-mail, le type d’accompagnement choisi et le contenu du message.
+    D’autres informations peuvent être communiquées volontairement au cours des échanges ou de l’accompagnement lorsqu’elles sont utiles à son organisation.
+  </p>
+  <p>
+    Ces données sont utilisées pour répondre aux demandes, organiser les prestations, assurer le suivi pédagogique et respecter les obligations administratives.
+    Le site peut s’appuyer sur des prestataires techniques nécessaires au fonctionnement du formulaire et à sa sécurisation,
+    ainsi que sur des outils utilisés pour les échanges et le suivi pédagogique.
+  </p>
+  <p>
+    Toute personne concernée peut demander l’accès à ses données, leur rectification, leur effacement lorsque celui-ci est applicable,
+    ou exercer les autres droits prévus par la réglementation en écrivant à <a href="mailto:florianvallin@free.fr">florianvallin@free.fr</a>.
+  </p>
+
+  <h2>10. Droit de rétractation</h2>
+  <p>
+    Pour un contrat de prestation de services conclu à distance, le client consommateur dispose en principe de 14 jours à compter
+    de la conclusion du contrat pour exercer son droit de rétractation, sans avoir à motiver sa décision.
+  </p>
+  <p>
+    Lorsque le client demande expressément que la prestation commence avant la fin de ce délai et se rétracte alors que le service
+    a déjà commencé mais n’est pas entièrement exécuté, il reste redevable du montant correspondant à la partie de la prestation déjà réalisée,
+    calculé proportionnellement au prix convenu.
+  </p>
+  <p>
+    Le droit de rétractation ne peut être perdu avant l’expiration du délai que si la prestation a été pleinement exécutée
+    après accord préalable exprès du client pour commencer l’exécution et après reconnaissance expresse de la perte de ce droit une fois la prestation entièrement exécutée.
+  </p>
+  <p>
+    La demande de rétractation peut être adressée à <a href="mailto:florianvallin@free.fr">florianvallin@free.fr</a>
+    au moyen d’une déclaration dénuée d’ambiguïté ou du formulaire type ci-dessous.
+  </p>
+
+  <h2>11. Formulaire type de rétractation</h2>
+  <blockquote class="legal-withdrawal-form">
+    <p>À l’attention de Florian Vallin – <a href="mailto:florianvallin@free.fr">florianvallin@free.fr</a></p>
+    <p>Je vous notifie par la présente ma rétractation du contrat portant sur la prestation suivante : …</p>
+    <p>Prestation réservée le : …</p>
+    <p>Nom du client : …</p>
+    <p>Adresse du client : …</p>
+    <p>Date : …</p>
+    <p>Signature (uniquement en cas d’envoi sur papier) : …</p>
+  </blockquote>
+
+  <h2>12. Réclamations, médiation et droit applicable</h2>
+  <p>Les présentes CGV sont soumises au droit français.</p>
+  <p>
+    En cas de difficulté, le client est invité à adresser d’abord une réclamation au prestataire afin de rechercher une solution amiable.
+  </p>
+  <p>
+    Lorsqu’un litige de consommation n’a pas pu être réglé directement, le consommateur peut recourir gratuitement au médiateur de la consommation
+    dont relève le prestataire, conformément aux dispositions du Code de la consommation. Les coordonnées du médiateur effectivement désigné
+    doivent être communiquées au consommateur sur le site et dans les présentes CGV.
+  </p>
+  <p>
+    À défaut de résolution amiable ou par médiation, le litige relève des juridictions compétentes selon les règles de droit commun.
+  </p>
+
+  <h2>13. Acceptation et version applicable</h2>
+  <p>
+    La version applicable est celle portée à la connaissance du client au moment de la réservation.
+    Le fait de réserver une prestation après communication des présentes CGV vaut acceptation de celles-ci.
+  </p>
+
+</div>
+  </main>
+
+  <div class="footer-spacing"></div>
+
+  <!-- FOOTER (identique à l’accueil) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-column footer-prestations">
+        <p class="footer-title"><a href="/#philosophie">Prestations</a></p>
+        <ul class="footer-list">
+          <li><a href="/#philosophie">Cours de Philosophie</a></li>
+          <li><a href="/#methodologie">Cours de méthodologie</a></li>
+        </ul>
+
+        <p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title"><a href="/#quisuisje">Informations</a></p>
+        <ul class="footer-list">
+          <li><a href="/#quisuisje">Qui suis-je ?</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/#contact">Contactez-moi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-textes">
+        <p class="footer-title"><a href="/textes/">Textes</a></p>
+      </div>
+
+      <div class="footer-column footer-right">
+        <a href="#top" class="footer-copyright">© 2026 Florian Vallin</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <hr class="footer-divider">
+      <p class="footer-legal">Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=20260919-publish2" defer></script>
+</body>
+</html>

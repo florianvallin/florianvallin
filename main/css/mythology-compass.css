@@ -1,0 +1,885 @@
+:root{
+  --myth:#a66a2c;--myth-dark:#744518;--myth-soft:#f8efe3;--myth-pale:#fcf8f2;
+  --myth-ink:#25231f;--myth-muted:#6d6862;--myth-line:#e9dfd2;--myth-line-strong:#dcc9b4;
+  --myth-shadow:0 18px 45px rgba(89,61,31,.07)
+}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+.mythology-compass-page{background:#fbfbfe;color:var(--myth-ink)}
+.mythology-compass-page *{box-sizing:border-box}
+.mythology-compass-page button,.mythology-compass-page input{font:inherit}
+.myth-compass-main{padding:34px 0 88px;overflow:hidden}
+.myth-compass-container{width:min(1160px,calc(100% - 38px));margin:0 auto}
+.myth-compass-breadcrumb{display:flex;align-items:center;gap:8px;margin:0 0 18px;color:#837e78;font-size:.78rem}
+.myth-compass-breadcrumb a{color:inherit;text-decoration:none}.myth-compass-breadcrumb a:hover{color:var(--myth-dark)}
+
+/* Hero */
+.myth-compass-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(220px,.6fr);gap:42px;align-items:center;min-height:320px;padding:54px 58px;border:1px solid var(--myth-line);border-radius:28px;background:linear-gradient(135deg,#fcf5ec 0%,#fff 58%,#f8ecdc 100%);overflow:hidden;box-shadow:0 10px 28px rgba(83,57,31,.035)}
+.myth-compass-hero:before{content:"";position:absolute;right:-95px;bottom:-140px;width:330px;height:330px;border:1px solid rgba(166,106,44,.13);border-radius:50%}
+.myth-compass-hero:after{content:"";position:absolute;right:25px;bottom:-104px;width:255px;height:255px;border:1px solid rgba(166,106,44,.09);border-radius:50%}
+.myth-compass-hero-copy{position:relative;z-index:2}.myth-compass-hero-topline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.myth-compass-kicker,.myth-compass-tradition{display:inline-flex;align-items:center;min-height:28px;padding:5px 10px;border-radius:999px;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.myth-compass-kicker{background:var(--myth);color:#fff}.myth-compass-tradition{border:1px solid var(--myth-line-strong);background:rgba(255,255,255,.55);color:var(--myth-dark)}
+.myth-compass-hero h1{max-width:760px;margin:0;color:#24211d;font-size:clamp(2rem,4.4vw,3.55rem);font-weight:520;line-height:1.04;letter-spacing:-.047em}
+.myth-compass-hero p{max-width:760px;margin:22px 0 0;color:#5f5a53;font-size:1rem;line-height:1.75}.myth-compass-hero p strong{color:#42352a;font-weight:650}
+.myth-compass-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}.myth-primary-link,.myth-secondary-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;border-radius:11px;text-decoration:none;font-size:.84rem;font-weight:650;transition:.18s ease}
+.myth-primary-link{background:var(--myth);color:#fff;box-shadow:0 8px 20px rgba(166,106,44,.15)}.myth-primary-link:hover{background:var(--myth-dark);transform:translateY(-1px)}
+.myth-secondary-link{border:1px solid var(--myth-line-strong);background:rgba(255,255,255,.65);color:var(--myth-dark)}.myth-secondary-link:hover{background:#fff;border-color:#cfae8c}
+.myth-compass-hero-mark{position:relative;z-index:1;justify-self:end;text-align:right;color:var(--myth)}.myth-compass-hero-mark span{display:block;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.5rem,7vw,6.3rem);font-weight:600;line-height:.9;letter-spacing:-.07em;opacity:.17}.myth-compass-hero-mark small{display:block;margin-top:15px;color:#8e6a44;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.68}
+
+/* Jump nav */
+.myth-compass-jump{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:16px 0 54px}.myth-compass-jump a{display:grid;grid-template-columns:auto 34px minmax(0,1fr);gap:10px;align-items:center;min-height:78px;padding:12px 13px;border:1px solid #e8e4df;border-radius:15px;background:#fff;color:#3e3a35;text-decoration:none;box-shadow:0 6px 17px rgba(60,50,40,.025);transition:.18s ease}.myth-compass-jump a:hover{transform:translateY(-2px);border-color:var(--myth-line-strong);box-shadow:0 12px 26px rgba(83,57,31,.07)}
+.myth-jump-num{align-self:start;color:#b3ada6;font-size:.62rem;font-weight:700;letter-spacing:.06em}.myth-jump-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--myth-soft);color:var(--myth)}.myth-jump-icon svg{width:19px;height:19px;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.myth-compass-jump strong,.myth-compass-jump small{display:block}.myth-compass-jump strong{font-size:.82rem;font-weight:650}.myth-compass-jump small{margin-top:3px;color:#89847e;font-size:.66rem}
+
+/* Shared sections */
+.myth-compass-section{padding:46px 0;border-top:1px solid #ece8e4}.myth-compass-section:first-of-type{border-top:0}.myth-section-heading{max-width:800px;margin:0 0 24px}.myth-section-heading>span{display:block;margin-bottom:8px;color:var(--myth);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.myth-section-heading h2{margin:0;color:#26231f;font-size:clamp(1.55rem,3vw,2.15rem);font-weight:560;letter-spacing:-.035em;line-height:1.15}.myth-section-heading p{margin:11px 0 0;color:#6d6862;font-size:.91rem;line-height:1.65}.myth-section-heading--compact{margin-bottom:20px}
+.myth-method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.myth-method-grid article{padding:22px;border:1px solid #ece5dc;border-radius:17px;background:#fff}.myth-method-grid article>span{display:inline-block;margin-bottom:18px;color:#b98b59;font-size:.64rem;font-weight:700;letter-spacing:.08em}.myth-method-grid strong{display:block;color:#35302a;font-size:.91rem}.myth-method-grid p{margin:8px 0 0;color:#77716b;font-size:.79rem;line-height:1.6}
+.myth-caution{display:flex;gap:13px;align-items:flex-start;margin-top:13px;padding:16px 18px;border:1px solid #eadbc9;border-radius:14px;background:#fdf8f1}.myth-caution>span{display:grid;place-items:center;flex:0 0 25px;width:25px;height:25px;border-radius:50%;background:var(--myth);color:#fff;font-size:.75rem;font-weight:700}.myth-caution strong{display:block;color:#513b25;font-size:.82rem}.myth-caution p{margin:4px 0 0;color:#776652;font-size:.76rem;line-height:1.55}
+.myth-filter-chip{min-height:30px;padding:0 10px;border:1px solid #e4d9cd;border-radius:999px;background:#fff;color:#6d5a48;font-size:.69rem;cursor:pointer;transition:.15s ease}.myth-filter-chip:hover,.myth-filter-chip.is-active{border-color:#cda77d;background:var(--myth-soft);color:var(--myth-dark)}
+.myth-theme-tags,.myth-place-tags{display:flex;gap:6px;flex-wrap:wrap}.myth-theme-tags span,.myth-place-tags span{padding:5px 8px;border-radius:999px;background:#f5f1ec;color:#75695d;font-size:.64rem}
+
+/* Global search */
+.myth-search-section{padding-top:18px}.myth-search-shell{position:relative;padding:30px;border:1px solid var(--myth-line);border-radius:22px;background:linear-gradient(145deg,#fff,#fcf8f2);box-shadow:var(--myth-shadow)}.myth-search-copy span{color:var(--myth);font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.myth-search-copy h2{margin:7px 0 0;font-size:1.45rem;font-weight:560;letter-spacing:-.025em}.myth-search-copy p{margin:7px 0 0;color:#77716b;font-size:.78rem}.myth-search-input-wrap{position:relative;margin-top:20px}.myth-search-input-wrap svg{position:absolute;left:15px;top:50%;width:19px;height:19px;transform:translateY(-50%);stroke:#9a7b5d;stroke-width:1.6;stroke-linecap:round}.myth-search-input-wrap input{width:100%;height:50px;padding:0 46px;border:1px solid #dfd8cf;border-radius:13px;outline:0;background:#fff;color:#292521;font-size:.88rem}.myth-search-input-wrap input:focus{border-color:#c99d71;box-shadow:0 0 0 4px rgba(166,106,44,.08)}.myth-search-input-wrap button{position:absolute;right:9px;top:50%;width:31px;height:31px;transform:translateY(-50%);border:0;border-radius:8px;background:#f2ece5;color:#7c6e60;cursor:pointer}.myth-search-prompts{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.myth-search-prompts button{min-height:30px;padding:0 10px;border:1px solid #e4d9cd;border-radius:999px;background:#fff;color:#6d5a48;font-size:.7rem;cursor:pointer}.myth-search-prompts button:hover{border-color:#cda77d;background:var(--myth-soft);color:var(--myth-dark)}
+.myth-search-results{position:absolute;z-index:20;left:30px;right:30px;top:calc(100% - 24px);padding:8px;border:1px solid #e3d8cc;border-radius:14px;background:#fff;box-shadow:0 18px 42px rgba(68,48,29,.14)}.myth-search-result{display:grid;grid-template-columns:auto 1fr auto;gap:11px;align-items:center;width:100%;padding:10px 11px;border:0;border-radius:10px;background:transparent;text-align:left;cursor:pointer}.myth-search-result:hover{background:#fbf5ed}.myth-search-result-type{display:inline-flex;align-items:center;justify-content:center;min-width:65px;height:23px;padding:0 7px;border-radius:7px;background:var(--myth-soft);color:var(--myth-dark);font-size:.61rem;font-weight:700;text-transform:uppercase}.myth-search-result strong{display:block;color:#37312b;font-size:.78rem}.myth-search-result small{display:block;margin-top:2px;color:#8a847d;font-size:.66rem}.myth-search-result>span:last-child{color:#b49373}.myth-search-empty{padding:16px;color:#7d756e;font-size:.78rem}
+
+/* 01 — Myths: cycle > list > detail */
+.myth-story-browser{display:grid;grid-template-columns:190px 330px minmax(0,1fr);min-height:490px;border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}
+.myth-story-sidebar{padding:18px;border-right:1px solid #eee7df;background:#fbf8f4}.myth-browser-label{padding:4px 5px 13px}.myth-browser-label span,.myth-browser-label small{display:block}.myth-browser-label span{color:#5d4c3b;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-browser-label small{margin-top:3px;color:#9a8e83;font-size:.64rem}.myth-cycle-nav{display:grid;gap:5px}.myth-cycle-button{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:39px;padding:0 10px;border:0;border-radius:10px;background:transparent;color:#625a52;text-align:left;cursor:pointer}.myth-cycle-button:hover{background:#f7efe6}.myth-cycle-button.is-active{background:#efe0cf;color:#6e431e}.myth-cycle-button span{font-size:.74rem;font-weight:620}.myth-cycle-button small{font-size:.59rem;color:#9b8b7d}.myth-cycle-button.is-active small{color:#8a6644}
+.myth-story-directory{border-right:1px solid #eee7df}.myth-directory-head{display:flex;align-items:center;justify-content:space-between;gap:10px;height:68px;padding:0 17px;border-bottom:1px solid #eee7df}.myth-directory-head strong,.myth-directory-head small{display:block}.myth-directory-head strong{font-size:.84rem}.myth-directory-head small{margin-top:2px;color:#9b938b;font-size:.61rem}.myth-directory-head>span{color:#a39b93;font-size:.61rem}.myth-story-list{max-height:421px;overflow:auto;padding:8px}.myth-story-row{display:grid;grid-template-columns:28px 1fr auto;gap:9px;align-items:center;width:100%;padding:12px 10px;border:0;border-radius:11px;background:transparent;text-align:left;cursor:pointer}.myth-story-row:hover{background:#fbf6ef}.myth-story-row.is-active{background:#f5eadc}.myth-story-row-num{color:#b5a79a;font-size:.59rem;font-weight:700}.myth-story-row-copy strong,.myth-story-row-copy small{display:block}.myth-story-row-copy strong{color:#39332d;font-size:.75rem;line-height:1.35}.myth-story-row-copy small{margin-top:4px;color:#958a80;font-size:.6rem;line-height:1.3}.myth-story-row-arrow{color:#bc956e;font-size:.75rem}
+.myth-story-detail{padding:30px 32px;background:linear-gradient(145deg,#fff,#fdfaf6)}.myth-story-detail-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.myth-story-cycle{color:var(--myth);font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-story-level{padding:4px 8px;border-radius:999px;background:#f2eee9;color:#887c71;font-size:.59rem;font-weight:650}.myth-story-detail h3{margin:16px 0 0;color:#2e2924;font-size:1.45rem;font-weight:580;line-height:1.2;letter-spacing:-.025em}.myth-story-summary{margin:12px 0 0;color:#6f6860;font-size:.84rem;line-height:1.65}.myth-story-facts{display:grid;gap:15px;margin-top:24px;padding-top:20px;border-top:1px solid #ece6df}.myth-story-facts>div>span{display:block;margin-bottom:7px;color:#9a8d81;font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}.myth-story-facts strong{color:#4a4037;font-size:.75rem;font-weight:620}.myth-inline-links{display:flex;gap:6px;flex-wrap:wrap}.myth-inline-links button{padding:5px 8px;border:1px solid #e7d9ca;border-radius:999px;background:#fff;color:#775331;font-size:.64rem;cursor:pointer}.myth-inline-links button:hover{background:var(--myth-soft);border-color:#d7b590}.myth-story-read,.myth-person-read{display:inline-flex;align-items:center;gap:8px;margin-top:24px;color:var(--myth-dark);font-size:.73rem;font-weight:650;text-decoration:none}.myth-story-read:hover,.myth-person-read:hover{text-decoration:underline}.myth-story-quiet{margin:23px 0 0;color:#a09890;font-size:.65rem}
+
+/* 02 — People directory */
+.myth-people-browser{display:grid;grid-template-columns:420px minmax(0,1fr);min-height:570px;border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}
+.myth-people-directory{padding:18px;border-right:1px solid #eee7df;background:#fcfbf9}.myth-people-search{position:relative}.myth-people-search svg{position:absolute;left:12px;top:50%;width:17px;height:17px;transform:translateY(-50%);stroke:#9b8065;stroke-width:1.6;stroke-linecap:round}.myth-people-search input{width:100%;height:43px;padding:0 13px 0 38px;border:1px solid #ded7cf;border-radius:11px;background:#fff;outline:0;font-size:.76rem}.myth-people-search input:focus{border-color:#c89d73;box-shadow:0 0 0 3px rgba(166,106,44,.07)}.myth-person-filters{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.myth-person-alphabet{display:flex;gap:4px;flex-wrap:wrap;padding:11px 0;border-top:1px solid #eee9e3;border-bottom:1px solid #eee9e3}.myth-person-alphabet button{min-width:25px;height:25px;padding:0 6px;border:0;border-radius:7px;background:transparent;color:#89817a;font-size:.61rem;cursor:pointer}.myth-person-alphabet button:hover,.myth-person-alphabet button.is-active{background:#eee1d3;color:#71471f}.myth-people-list-head{display:flex;justify-content:space-between;align-items:center;padding:12px 3px 7px}.myth-people-list-head strong{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:#68594b}.myth-people-list-head span{font-size:.61rem;color:#9b9289}.myth-person-list{height:365px;overflow:auto;padding-right:3px}.myth-person-row{display:grid;grid-template-columns:32px 1fr auto;gap:10px;align-items:center;width:100%;padding:9px 8px;border:0;border-radius:10px;background:transparent;text-align:left;cursor:pointer}.myth-person-row:hover{background:#f8f3ed}.myth-person-row.is-active{background:#f2e4d5}.myth-person-monogram{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#f2ede7;color:#9a7047;font-family:Georgia,"Times New Roman",serif;font-size:.75rem}.myth-person-row.is-active .myth-person-monogram{background:#fff;color:var(--myth-dark)}.myth-person-row strong,.myth-person-row small{display:block}.myth-person-row strong{font-size:.74rem;color:#3b352f}.myth-person-row small{margin-top:2px;color:#999087;font-size:.58rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.myth-person-row>span:last-child{color:#b79a7d;font-size:.7rem}.myth-person-empty{padding:22px;text-align:center;color:#857b72}.myth-person-empty strong{display:block;color:#5f564d;font-size:.78rem}.myth-person-empty p{margin:5px 0 0;font-size:.67rem}
+.myth-person-detail{position:relative;padding:38px 42px;background:linear-gradient(150deg,#fff,#fcf8f3)}.myth-person-detail-kicker{display:flex;justify-content:space-between;align-items:center;gap:10px}.myth-person-detail-kicker span{color:var(--myth);font-size:.65rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.myth-person-detail-kicker small{color:#9b9188;font-size:.62rem}.myth-person-detail h3{margin:14px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:2.1rem;font-weight:500;color:#2e2924}.myth-person-definition{max-width:640px;margin:13px 0 0;color:#6f6860;font-size:.85rem;line-height:1.68}.myth-person-detail-sections{display:grid;gap:18px;margin-top:28px;padding-top:22px;border-top:1px solid #ebe5df}.myth-person-detail-sections section>span{display:block;margin-bottom:8px;color:#9a8e82;font-size:.61rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-person-detail-sections p{margin:0;color:#655e57;font-size:.73rem;line-height:1.55}.myth-related-links,.myth-related-myths{display:flex;gap:6px;flex-wrap:wrap}.myth-related-links button,.myth-related-links span,.myth-related-myths button{padding:5px 8px;border:1px solid #e7ddd3;border-radius:999px;background:#fff;color:#72573e;font-size:.63rem}.myth-related-links button,.myth-related-myths button{cursor:pointer}.myth-related-links button:hover,.myth-related-myths button:hover{background:var(--myth-soft);border-color:#d7b590}
+
+/* 03 — Genealogies */
+.myth-genealogy-shell{border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}.myth-genealogy-tabs{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid #eae3dc;background:#fcfaf7}.myth-genealogy-tabs button{display:flex;gap:8px;align-items:center;justify-content:center;min-height:58px;padding:8px;border:0;border-right:1px solid #eee8e1;background:transparent;color:#72695f;cursor:pointer}.myth-genealogy-tabs button:last-child{border-right:0}.myth-genealogy-tabs button:hover{background:#f8f1e9}.myth-genealogy-tabs button.is-active{background:#f0e1d1;color:#70441e}.myth-genealogy-tabs button>span{font-size:.58rem;color:#ae9e8f}.myth-genealogy-tabs strong{font-size:.68rem;font-weight:650}.myth-genealogy-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(270px,.65fr)}.myth-family-tree-card{padding:30px 32px;border-right:1px solid #eee7df}.myth-family-tree-head{display:grid;grid-template-columns:1fr minmax(220px,.7fr);gap:24px;align-items:start}.myth-family-tree-head span{color:var(--myth);font-size:.61rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-family-tree-head h3{margin:7px 0 0;font-size:1.25rem;font-weight:580;letter-spacing:-.02em}.myth-family-tree-head p{margin:0;color:#766f68;font-size:.73rem;line-height:1.55}.myth-family-tree{display:grid;justify-items:center;margin-top:28px}.myth-family-level{width:100%;text-align:center}.myth-family-level-label{display:inline-flex;padding:4px 8px;border-radius:999px;background:#f5f1ed;color:#93877c;font-size:.58rem;font-weight:650}.myth-family-level-nodes{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:8px}.myth-family-node{display:flex;align-items:center;gap:7px;min-height:39px;padding:8px 12px;border:1px solid #e4d8cb;border-radius:11px;background:#fff;box-shadow:0 4px 12px rgba(72,53,35,.035)}.myth-family-node span{color:#55483c;font-size:.7rem;font-weight:620}.myth-family-node i{color:#b8916c;font-style:normal;font-size:.65rem}.myth-family-node--group{gap:5px;background:#faf6f1}.myth-family-node--group span+span:before{content:"·";margin-right:5px;color:#b8aa9c}.myth-family-node--couple{background:#fdf9f5}.myth-family-connector{display:grid;justify-items:center;height:38px}.myth-family-connector span{width:1px;height:22px;background:#dccbb9}.myth-family-connector i{margin-top:-2px;color:#b99a7d;font-size:.7rem;font-style:normal}.myth-family-reading{padding:30px;background:#fbf7f2}.myth-family-reading-kicker{color:var(--myth);font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.myth-family-reading ol{display:grid;gap:13px;margin:16px 0 0;padding:0;list-style:none;counter-reset:family}.myth-family-reading li{position:relative;padding-left:31px;color:#625b54;font-size:.72rem;line-height:1.55;counter-increment:family}.myth-family-reading li:before{content:counter(family);position:absolute;left:0;top:0;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#efe0d1;color:#845726;font-size:.58rem;font-weight:700}.myth-family-variation{margin-top:22px;padding-top:18px;border-top:1px solid #e6ddd4}.myth-family-variation strong{font-size:.67rem;color:#5e5145}.myth-family-variation p{margin:6px 0 0;color:#81776e;font-size:.65rem;line-height:1.5}.myth-family-reading>button{margin-top:18px;padding:0;border:0;background:transparent;color:var(--myth-dark);font-size:.69rem;font-weight:650;cursor:pointer}.myth-family-reading>button:hover{text-decoration:underline}
+
+/* 04 — World map */
+.myth-world-shell{border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}.myth-world-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #e9e2db;background:#fcfaf7}.myth-world-tabs button{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:14px 18px;border:0;border-right:1px solid #eee7df;background:transparent;text-align:left;color:#71685f;cursor:pointer}.myth-world-tabs button:last-child{border-right:0}.myth-world-tabs button:hover{background:#f9f3ec}.myth-world-tabs button.is-active{background:#f1e3d4;color:#6f461f}.myth-world-tabs button>span{font-size:.6rem;color:#ac9b8b}.myth-world-tabs strong,.myth-world-tabs small{display:block}.myth-world-tabs strong{font-size:.75rem}.myth-world-tabs small{margin-top:3px;font-size:.6rem;color:#968a7e}.myth-map-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,.65fr)}.myth-map-card{padding:22px;border-right:1px solid #eee7df}.myth-map-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.myth-map-card-head strong,.myth-map-card-head small{display:block}.myth-map-card-head strong{font-size:.76rem}.myth-map-card-head small{margin-top:2px;color:#9a9189;font-size:.59rem}.myth-map-card-head>span{color:#9c8f82;font-size:.6rem}.myth-map-canvas{position:relative;aspect-ratio:16/9;min-height:340px;border:1px solid #ddd5cc;border-radius:15px;overflow:hidden;background:#eef1ef}.myth-map-base{position:absolute;inset:0;width:100%;height:100%}.myth-sea{fill:#e8eff0}.myth-land{fill:#e8e2d8;stroke:#d2c6b7;stroke-width:2}.myth-black-sea{fill:#dce8ea;stroke:#cfdbdd;stroke-width:2}.myth-map-water-label{fill:#9cafb2;font-size:17px;letter-spacing:2px}.myth-map-water-label--dark{fill:#98aaad}.myth-map-marker{position:absolute;left:var(--x);top:var(--y);display:flex;align-items:center;gap:5px;transform:translate(-50%,-50%);padding:4px 6px 4px 4px;border:0;border-radius:999px;background:rgba(255,255,255,.88);box-shadow:0 3px 10px rgba(54,48,42,.11);color:#55493e;cursor:pointer;white-space:nowrap}.myth-map-marker i{display:block;width:9px;height:9px;border:2px solid #fff;border-radius:50%;background:#b2773f;box-shadow:0 0 0 1px #9c6533}.myth-map-marker span{font-size:.57rem;font-weight:650}.myth-map-marker:hover,.myth-map-marker.is-active{background:#fff;color:#6e431f;box-shadow:0 4px 14px rgba(86,59,33,.18)}.myth-map-marker.is-active i{background:#754719;box-shadow:0 0 0 2px #d9b895}.myth-map-note{margin:10px 2px 0;color:#9a9188;font-size:.58rem;line-height:1.45}.myth-place-detail{padding:30px;background:#fbf8f4}.myth-place-detail-top{display:flex;justify-content:space-between;gap:10px}.myth-place-detail-top span{color:var(--myth);font-size:.62rem;font-weight:700}.myth-place-detail-top small{color:#9b9188;font-size:.59rem}.myth-place-detail h3{margin:14px 0 0;font-size:1.25rem;font-weight:580}.myth-place-detail p{margin:10px 0 0;color:#736b64;font-size:.75rem;line-height:1.6}.myth-place-tags{margin-top:18px}
+.myth-cosmos-card{display:grid;grid-template-rows:auto auto 28px auto;min-height:455px;padding:22px;border-right:1px solid #eee7df;background:linear-gradient(#f4f0e8,#f8f7f4 48%,#e9e2d9 49%,#ddd2c5)}.myth-cosmos-band{padding:18px;border:1px solid rgba(116,91,64,.12);border-radius:14px;background:rgba(255,255,255,.66)}.myth-cosmos-band>span{display:block;color:#96734e;font-size:.59rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-cosmos-band>strong{display:block;margin-top:7px;font-size:.84rem}.myth-cosmos-band>small{display:block;margin-top:5px;color:#847b72;font-size:.64rem;line-height:1.45}.myth-cosmos-band--world{align-self:center}.myth-cosmos-band--under{background:rgba(250,247,243,.62)}.myth-cosmos-places{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.myth-cosmos-place{padding:8px 10px;border:1px solid #ded2c5;border-radius:10px;background:#fff;text-align:left;color:#574b40;cursor:pointer}.myth-cosmos-place:hover,.myth-cosmos-place.is-active{border-color:#c49c72;background:#f7ebdd}.myth-cosmos-place strong,.myth-cosmos-place small{display:block}.myth-cosmos-place strong{font-size:.68rem}.myth-cosmos-place small{margin-top:2px;color:#94877b;font-size:.56rem}.myth-cosmos-divider{display:flex;align-items:center;gap:9px;color:#87796b;font-size:.55rem;text-transform:uppercase;letter-spacing:.08em}.myth-cosmos-divider:before,.myth-cosmos-divider:after{content:"";flex:1;height:1px;background:#cfc2b4}
+
+/* 05 — Routes */
+.myth-route-browser{display:grid;grid-template-columns:350px minmax(0,1fr);border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}.myth-route-selector{max-height:590px;padding:10px;border-right:1px solid #eee7df;background:#fcfaf7;overflow:auto}.myth-route-choice{display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start;width:100%;padding:12px 11px;border:0;border-radius:11px;background:transparent;text-align:left;color:#625a53;cursor:pointer}.myth-route-choice:hover{background:#f8f1e9}.myth-route-choice.is-active{background:#f0e1d1;color:#70451f}.myth-route-choice>span{padding-top:2px;color:#b29d89;font-size:.58rem;font-weight:700}.myth-route-choice strong,.myth-route-choice small{display:block}.myth-route-choice strong{font-size:.72rem;line-height:1.35}.myth-route-choice small{margin-top:3px;color:#988d83;font-size:.58rem}.myth-route-detail{padding:32px 38px;background:linear-gradient(145deg,#fff,#fcf9f5)}.myth-route-detail-head{display:flex;justify-content:space-between;gap:24px;padding-bottom:21px;border-bottom:1px solid #eae3dc}.myth-route-detail-head>div>span{color:var(--myth);font-size:.61rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-route-detail-head h3{margin:8px 0 0;font-size:1.28rem;font-weight:580;letter-spacing:-.02em}.myth-route-detail-head p{max-width:620px;margin:8px 0 0;color:#746d66;font-size:.73rem;line-height:1.55}.myth-route-detail-head>small{flex:0 0 auto;align-self:flex-start;padding:5px 8px;border-radius:999px;background:#f3eee8;color:#887b6f;font-size:.58rem}.myth-route-path{display:grid;margin-top:24px}.myth-route-step{display:grid;grid-template-columns:35px 1fr;gap:13px}.myth-route-step-marker{display:grid;grid-template-rows:28px 1fr;justify-items:center}.myth-route-step-marker>span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#e8d3bd;color:#754719;font-size:.62rem;font-weight:700}.myth-route-step-marker i{width:1px;min-height:58px;background:#dfd1c3}.myth-route-step-copy{padding:3px 0 23px}.myth-route-step-copy strong{display:block;color:#484039;font-size:.76rem}.myth-route-step-copy p{margin:5px 0 0;color:#7a726b;font-size:.69rem;line-height:1.5}.myth-route-step-copy a{display:inline-flex;margin-top:7px;color:var(--myth-dark);font-size:.63rem;font-weight:650;text-decoration:none}.myth-route-step-copy a:hover{text-decoration:underline}.myth-route-step-copy small{display:block;margin-top:7px;color:#aaa097;font-size:.58rem}
+
+/* Closing */
+.myth-closing-section{padding-bottom:0}.myth-closing-card{display:flex;flex-direction:column;align-items:flex-start;padding:31px 34px;border:1px solid var(--myth-line);border-radius:20px;background:linear-gradient(135deg,#fcf6ee,#fff)}.myth-closing-card>span{color:var(--myth);font-size:.64rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.myth-closing-card h2{margin:8px 0 0;font-size:1.4rem;font-weight:560}.myth-closing-card p{max-width:720px;margin:9px 0 0;color:#756e67;font-size:.78rem;line-height:1.6}.myth-closing-card a{margin-top:17px;color:var(--myth-dark);font-size:.74rem;font-weight:650;text-decoration:none}.myth-closing-card a:hover{text-decoration:underline}
+
+@media(max-width:1050px){
+  .myth-story-browser{grid-template-columns:170px 300px minmax(0,1fr)}
+  .myth-people-browser{grid-template-columns:380px minmax(0,1fr)}
+  .myth-family-tree-head{grid-template-columns:1fr}.myth-map-layout{grid-template-columns:minmax(0,1.45fr) 270px}
+}
+@media(max-width:900px){
+  .myth-compass-hero{grid-template-columns:1fr;padding:42px}.myth-compass-hero-mark{display:none}.myth-compass-jump{grid-template-columns:repeat(3,1fr)}
+  .myth-method-grid{grid-template-columns:1fr}.myth-story-browser{grid-template-columns:180px 1fr}.myth-story-detail{grid-column:1/-1;border-top:1px solid #eee7df}.myth-story-directory{border-right:0}
+  .myth-people-browser{grid-template-columns:1fr}.myth-people-directory{border-right:0;border-bottom:1px solid #eee7df}.myth-person-list{height:300px}.myth-person-detail{min-height:420px}
+  .myth-genealogy-tabs{grid-template-columns:repeat(3,1fr)}.myth-genealogy-tabs button:nth-child(3){border-right:0}.myth-genealogy-layout{grid-template-columns:1fr}.myth-family-tree-card{border-right:0;border-bottom:1px solid #eee7df}
+  .myth-map-layout{grid-template-columns:1fr}.myth-map-card,.myth-cosmos-card{border-right:0;border-bottom:1px solid #eee7df}.myth-map-canvas{min-height:310px}
+  .myth-route-browser{grid-template-columns:1fr}.myth-route-selector{display:grid;grid-template-columns:repeat(2,1fr);max-height:none;border-right:0;border-bottom:1px solid #eee7df}
+}
+@media(max-width:680px){
+  .myth-compass-main{padding-top:20px}.myth-compass-container{width:min(100% - 24px,1160px)}.myth-compass-hero{padding:30px 24px;border-radius:20px}.myth-compass-hero h1{font-size:2.1rem}.myth-compass-hero p{font-size:.88rem}.myth-compass-jump{grid-template-columns:1fr 1fr;margin-bottom:38px}.myth-compass-jump a{min-height:68px}.myth-compass-section{padding:36px 0}
+  .myth-search-shell{padding:22px}.myth-search-results{left:22px;right:22px}.myth-search-result{grid-template-columns:1fr auto}.myth-search-result-type{display:none}
+  .myth-story-browser{grid-template-columns:1fr;min-height:0}.myth-story-sidebar{border-right:0;border-bottom:1px solid #eee7df}.myth-cycle-nav{display:flex;gap:6px;overflow:auto;padding-bottom:2px}.myth-cycle-button{flex:0 0 auto;width:auto}.myth-browser-label{display:none}.myth-story-directory{border-bottom:1px solid #eee7df}.myth-story-list{max-height:310px}.myth-story-detail{grid-column:auto;padding:25px 22px}
+  .myth-people-directory{padding:14px}.myth-person-list{height:280px}.myth-person-detail{padding:28px 22px}.myth-person-detail h3{font-size:1.75rem}
+  .myth-genealogy-tabs{display:flex;overflow:auto}.myth-genealogy-tabs button{flex:0 0 auto;min-width:140px;border-right:1px solid #eee7df}.myth-family-tree-card,.myth-family-reading{padding:24px 18px}.myth-family-level-nodes{gap:6px}.myth-family-node{padding:7px 9px}.myth-family-node span{font-size:.64rem}
+  .myth-world-tabs button{padding:12px}.myth-map-card{padding:13px}.myth-map-canvas{min-height:260px}.myth-map-marker span{display:none}.myth-map-marker{padding:5px}.myth-map-marker i{width:10px;height:10px}.myth-place-detail{padding:24px 20px}.myth-cosmos-card{padding:14px}
+  .myth-route-selector{grid-template-columns:1fr;padding:8px}.myth-route-detail{padding:26px 20px}.myth-route-detail-head{display:block}.myth-route-detail-head>small{display:inline-flex;margin-top:10px}.myth-closing-card{padding:25px 22px}
+}
+@media(max-width:430px){.myth-compass-jump{grid-template-columns:1fr}.myth-world-tabs{grid-template-columns:1fr}.myth-world-tabs button{border-right:0;border-bottom:1px solid #eee7df}.myth-world-tabs button:last-child{border-bottom:0}.myth-map-canvas{min-height:230px}}
+
+/* Grid safety: prevents long labels and horizontal toolbars from forcing clipped panels. */
+.myth-story-sidebar,.myth-story-directory,.myth-story-detail,.myth-people-directory,.myth-person-detail,.myth-family-tree-card,.myth-family-reading,.myth-map-card,.myth-cosmos-card,.myth-place-detail,.myth-route-selector,.myth-route-detail{min-width:0}
+@media(max-width:680px){
+  .myth-story-sidebar,.myth-story-directory,.myth-story-detail{width:100%}
+  .myth-cycle-nav{max-width:100%;min-width:0}
+  .myth-story-detail h3{overflow-wrap:anywhere}
+}
+
+
+/* ============================================================
+   V3 — refinement: dictionary, richer browsers, real map
+   ============================================================ */
+.myth-orientation-intro{display:none!important}
+
+/* Dictionary / vocabulary */
+.myth-dictionary-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.myth-dictionary-badge{flex:0 0 auto;padding:7px 10px;border:1px solid #dfcfbe;border-radius:999px;background:#fff;color:#8a6848;font-size:.61rem;font-weight:700;letter-spacing:.04em}.myth-vocab-browser{margin-top:22px;padding-top:19px;border-top:1px solid #e9dfd5}.myth-vocab-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:12px}.myth-vocab-head span,.myth-vocab-head strong{display:block}.myth-vocab-head span{color:var(--myth);font-size:.59rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.myth-vocab-head strong{margin-top:3px;color:#51483f;font-size:.77rem}.myth-vocab-head small{color:#9a9188;font-size:.62rem}.myth-vocab-list{display:flex;gap:7px;flex-wrap:wrap}.myth-vocab-list button{display:flex;align-items:center;gap:6px;min-height:32px;padding:0 10px;border:1px solid #e4d9cd;border-radius:999px;background:#fff;color:#69594a;cursor:pointer}.myth-vocab-list button span{font-size:.67rem;font-weight:650}.myth-vocab-list button small{font-size:.54rem;color:#a09285}.myth-vocab-list button:hover,.myth-vocab-list button.is-active{border-color:#cba47e;background:#f1e2d3;color:#6c421d}.myth-vocab-detail{display:grid;grid-template-columns:minmax(145px,.28fr) minmax(0,1fr);gap:5px 24px;margin-top:14px;padding:18px 20px;border:1px solid #eadfd4;border-radius:14px;background:linear-gradient(135deg,#fff,#fbf6ef)}.myth-vocab-detail-top{grid-row:1/4;align-self:start;padding-right:18px;border-right:1px solid #eee4db}.myth-vocab-detail-top span,.myth-vocab-detail-top small{display:block}.myth-vocab-detail-top span{color:var(--myth);font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.myth-vocab-detail-top small{margin-top:5px;color:#a09489;font-size:.56rem}.myth-vocab-detail h3{margin:0;color:#342f2a;font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;font-weight:500}.myth-vocab-detail>p{margin:5px 0 0;color:#6f6861;font-size:.73rem;line-height:1.58}.myth-vocab-example{margin-top:7px}.myth-vocab-example span{display:block;color:#9b8d80;font-size:.56rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.myth-vocab-example strong{display:block;margin-top:3px;color:#675848;font-size:.65rem;font-weight:620}
+
+/* Myths — cycle tabs over a two-column browser */
+.myth-story-browser{grid-template-columns:330px minmax(0,1fr);grid-template-rows:auto 1fr;min-height:530px}.myth-story-sidebar{grid-column:1/-1;display:flex;align-items:center;gap:18px;padding:13px 16px;border-right:0;border-bottom:1px solid #eee7df;background:linear-gradient(90deg,#fbf8f4,#fff)}.myth-browser-label{flex:0 0 auto;padding:0 14px 0 2px;border-right:1px solid #e7ddd4}.myth-cycle-nav{display:flex;gap:6px;flex-wrap:wrap}.myth-cycle-button{width:auto;min-height:34px;padding:0 11px;border:1px solid transparent}.myth-cycle-button:hover{border-color:#e5d6c7}.myth-cycle-button.is-active{border-color:#dbc2aa;background:#efe0cf}.myth-cycle-button span{font-size:.68rem}.myth-story-directory{grid-column:1;border-right:1px solid #eee7df}.myth-story-list{max-height:463px}.myth-story-row{position:relative;padding:14px 11px}.myth-story-row.is-active:before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:3px;border-radius:0 3px 3px 0;background:#9d642d}.myth-story-row-copy strong{font-size:.77rem}.myth-story-detail{grid-column:2;padding:34px 38px;background:radial-gradient(circle at 92% 9%,rgba(166,106,44,.07),transparent 25%),linear-gradient(145deg,#fff,#fdfaf6)}.myth-story-detail h3{max-width:760px;font-family:Georgia,"Times New Roman",serif;font-size:1.75rem;font-weight:500}.myth-story-summary{max-width:760px;font-size:.86rem}.myth-story-narrative{max-width:800px;margin-top:21px;padding:18px 19px;border-left:3px solid #bf8b58;border-radius:0 12px 12px 0;background:#fbf4ec}.myth-story-narrative>span{display:block;color:#916132;font-size:.59rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.myth-story-narrative p{margin:7px 0 0;color:#665d54;font-size:.76rem;line-height:1.66}.myth-story-key{display:flex;gap:10px;align-items:flex-start;margin-top:12px;padding:12px 14px;border:1px solid #eadfd5;border-radius:11px;background:#fff}.myth-story-key i{display:grid;place-items:center;flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#ead7c4;color:#75481e;font-size:.67rem;font-style:normal}.myth-story-key p{margin:1px 0 0;color:#5d554e;font-size:.7rem;line-height:1.55}.myth-story-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.myth-story-facts>div{padding:12px;border:1px solid #eee7df;border-radius:11px;background:rgba(255,255,255,.8)}
+
+/* People — centered alphabet and cleaner reader */
+.myth-people-shell{border:1px solid #e8e1d9;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 12px 34px rgba(70,51,34,.045)}.myth-people-toolbar{padding:18px 22px 15px;border-bottom:1px solid #eae3dc;background:linear-gradient(180deg,#fcfaf7,#fff)}.myth-people-search{max-width:630px;margin:0 auto}.myth-person-filters{justify-content:center;margin:13px 0 10px}.myth-person-alphabet-wrap{padding-top:10px;border-top:1px solid #eee8e1;text-align:center}.myth-person-alphabet-wrap>span{display:block;margin-bottom:7px;color:#9a8d80;font-size:.57rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.myth-person-alphabet{justify-content:center;padding:0;border:0}.myth-person-alphabet button{min-width:27px;height:27px}.myth-people-browser{grid-template-columns:340px minmax(0,1fr);min-height:510px;border:0;border-radius:0;box-shadow:none}.myth-people-directory{padding:15px 16px 16px}.myth-person-list{height:432px}.myth-person-row{padding:10px 9px}.myth-person-detail{padding:38px 46px;background:radial-gradient(circle at 92% 10%,rgba(166,106,44,.07),transparent 27%),linear-gradient(150deg,#fff,#fcf8f3)}.myth-person-detail h3{font-size:2.25rem}.myth-person-definition{max-width:760px;font-size:.86rem}.myth-person-memory{display:grid;grid-template-columns:90px 1fr;gap:13px;align-items:start;max-width:760px;margin-top:18px;padding:13px 15px;border:1px solid #e8d9ca;border-radius:12px;background:#f8efe5}.myth-person-memory span{padding-top:2px;color:#9a6939;font-size:.57rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.myth-person-memory strong{color:#5d5146;font-size:.72rem;font-weight:620;line-height:1.5}.myth-person-detail-sections{grid-template-columns:1fr 1.25fr 1fr;gap:13px}.myth-person-detail-sections section{min-width:0;padding:13px;border:1px solid #ede6df;border-radius:11px;background:rgba(255,255,255,.72)}
+
+/* Genealogies — clearer generations and depth */
+.myth-genealogy-shell{background:linear-gradient(145deg,#fff,#fdfaf6)}.myth-genealogy-tabs button{position:relative;min-height:64px}.myth-genealogy-tabs button.is-active:after{content:"";position:absolute;left:22%;right:22%;bottom:0;height:3px;border-radius:3px 3px 0 0;background:#9d642d}.myth-family-tree-card{position:relative;padding:32px 38px;background:radial-gradient(circle at 50% 50%,rgba(166,106,44,.035),transparent 46%)}.myth-family-tree-head h3{font-family:Georgia,"Times New Roman",serif;font-size:1.43rem;font-weight:500}.myth-family-tree-legend{display:flex;align-items:center;gap:14px;margin-top:18px;padding:9px 11px;border:1px solid #eee5dc;border-radius:10px;background:#fff}.myth-family-tree-legend span{display:flex;align-items:center;gap:6px;color:#8a7f75;font-size:.57rem}.myth-family-tree-legend span i{display:block;width:9px;height:9px;border:1px solid #d7bda3;border-radius:3px;background:#f8eee4}.myth-family-tree-legend span:nth-child(2) i{border-radius:999px;background:#f3e3d3}.myth-family-tree-legend small{margin-left:auto;color:#a0958b;font-size:.56rem}.myth-family-tree{position:relative;margin-top:22px;padding:2px 0}.myth-family-level{position:relative}.myth-family-level-label{gap:6px;padding:5px 9px;background:#f3ece5}.myth-family-level-label i{color:#b4977a;font-style:normal;font-size:.52rem}.myth-family-level-nodes{margin-top:10px}.myth-family-node{min-height:42px;padding:9px 13px;box-shadow:0 5px 16px rgba(72,53,35,.05)}.myth-family-level[style*="--family-level:3"] .myth-family-node,.myth-family-level[style*="--family-level:4"] .myth-family-node{border-color:#d9bea3;background:#fffaf5}.myth-family-connector{height:42px}.myth-family-connector span{height:25px;background:linear-gradient(#dbc6b0,#cda783)}.myth-family-reading{background:linear-gradient(180deg,#fbf7f2,#f8f1e9)}
+
+/* World — actual Leaflet map + richer location card */
+.myth-map-card{padding:22px 22px 18px}.myth-leaflet-wrap{position:relative;overflow:hidden;border:1px solid #dcd4cb;border-radius:15px;background:#ecefea}.myth-leaflet-map{height:390px;width:100%;z-index:1}.myth-map-loading{position:absolute;inset:0;z-index:2;display:grid;place-content:center;justify-items:center;gap:7px;background:#f2f3ef;color:#7c756d}.myth-map-loading>span{width:23px;height:23px;border:2px solid #d7cec5;border-top-color:#9d642d;border-radius:50%;animation:myth-spin .8s linear infinite}.myth-map-loading strong{font-size:.67rem}.myth-map-loading>span+strong+span{font-size:.58rem}@keyframes myth-spin{to{transform:rotate(360deg)}}.myth-leaflet-marker{display:grid;place-items:center;width:24px;height:24px;border:1px solid rgba(109,73,41,.22);border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 4px 12px rgba(62,47,34,.2)}.myth-leaflet-marker i{display:block;width:9px;height:9px;border-radius:50%;background:#a66a2c;box-shadow:0 0 0 3px #f3dfcb}.myth-leaflet-marker.is-active{transform:scale(1.12);border-color:#87501f}.myth-leaflet-marker.is-active i{background:#684016}.myth-leaflet-tooltip{border:0!important;border-radius:7px!important;box-shadow:0 5px 16px rgba(55,43,33,.15)!important;color:#5b4a3a!important;font-size:.64rem!important;font-weight:650!important}.myth-leaflet-map .leaflet-tile-pane{filter:saturate(.58) contrast(.97) brightness(1.03)}.myth-leaflet-map .leaflet-control-attribution{font-size:8px}.myth-map-place-list{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.myth-map-place-list button{display:block;padding:8px 9px;border:1px solid #e6ddd4;border-radius:9px;background:#fff;text-align:left;cursor:pointer}.myth-map-place-list button span,.myth-map-place-list button small{display:block}.myth-map-place-list button span{color:#5f5145;font-size:.65rem;font-weight:650}.myth-map-place-list button small{margin-top:2px;color:#9c938a;font-size:.52rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.myth-map-place-list button:hover,.myth-map-place-list button.is-active{border-color:#d2b394;background:#f7ede3}.myth-place-detail{padding:32px}.myth-place-detail h3{font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:500}.myth-place-summary{font-size:.77rem!important}.myth-place-guide{display:grid;gap:11px;margin-top:20px}.myth-place-guide section{padding:12px;border:1px solid #eae1d8;border-radius:10px;background:#fff}.myth-place-guide section>span{display:block;color:#9a6d41;font-size:.56rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.myth-place-guide section p{margin:5px 0 0;font-size:.67rem;line-height:1.55}
+
+/* Routes — selector cards + horizontal learning path */
+.myth-route-browser{display:block}.myth-route-selector{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;max-height:none;padding:12px;border-right:0;border-bottom:1px solid #eee7df;overflow:visible;background:#fcfaf7}.myth-route-choice{min-height:86px;padding:11px;border:1px solid transparent;border-radius:12px;background:#fff}.myth-route-choice:hover{border-color:#e4d4c4}.myth-route-choice.is-active{border-color:#d4b393;background:#f1e2d3;box-shadow:0 4px 13px rgba(78,55,33,.06)}.myth-route-choice>span{display:grid;place-items:center;width:27px;height:27px;border:1px solid #e8ddd2;border-radius:50%;background:#fff;color:#9d7754}.myth-route-choice strong{font-size:.7rem}.myth-route-detail{padding:30px 34px 34px}.myth-route-detail-head{align-items:flex-start}.myth-route-detail-head h3{font-family:Georgia,"Times New Roman",serif;font-size:1.48rem;font-weight:500}.myth-route-path{display:grid;grid-template-columns:repeat(var(--route-steps),minmax(0,1fr));gap:0;margin-top:27px}.myth-route-step{position:relative;display:block;min-width:0}.myth-route-step-marker{position:relative;display:flex;align-items:center;height:32px}.myth-route-step-marker>span{position:relative;z-index:2;width:30px;height:30px;border:3px solid #fff;box-shadow:0 0 0 1px #d7b798}.myth-route-step-marker i{position:absolute;z-index:1;left:30px;right:0;top:15px;width:auto;min-height:0;height:1px;background:#d9c6b4}.myth-route-step-copy{margin-right:9px;margin-top:9px;padding:13px;border:1px solid #ebe3db;border-radius:11px;background:#fff;min-height:154px}.myth-route-step-copy>small{display:block;margin:0 0 6px;color:#a48e79;font-size:.54rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em}.myth-route-step-copy strong{font-size:.74rem}.myth-route-step-copy p{font-size:.66rem}.myth-route-step-copy em{display:block;margin-top:7px;color:#aaa097;font-size:.57rem;font-style:normal}
+
+@media(max-width:1050px){.myth-story-browser{grid-template-columns:300px 1fr}.myth-story-facts{grid-template-columns:1fr}.myth-people-browser{grid-template-columns:310px 1fr}.myth-person-detail-sections{grid-template-columns:1fr}.myth-route-selector{grid-template-columns:repeat(2,1fr)}.myth-route-path{grid-template-columns:repeat(2,1fr);gap:10px}.myth-route-step-marker i{display:none}.myth-map-place-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.myth-dictionary-heading{display:block}.myth-dictionary-badge{display:inline-flex;margin-top:12px}.myth-vocab-head{display:block}.myth-vocab-head small{display:block;margin-top:5px}.myth-vocab-detail{grid-template-columns:1fr}.myth-vocab-detail-top{grid-row:auto;padding:0 0 10px;border-right:0;border-bottom:1px solid #eee4db}.myth-story-browser{display:block}.myth-story-sidebar{display:block}.myth-browser-label{margin-bottom:9px;padding:0;border-right:0}.myth-cycle-nav{flex-wrap:nowrap;overflow:auto;padding-bottom:3px}.myth-cycle-button{flex:0 0 auto}.myth-story-directory{border-right:0;border-bottom:1px solid #eee7df}.myth-story-list{max-height:300px}.myth-story-detail{padding:28px 22px}.myth-story-detail h3{font-size:1.5rem}.myth-people-toolbar{padding:15px}.myth-people-browser{display:block}.myth-people-directory{border-right:0;border-bottom:1px solid #eee7df}.myth-person-list{height:300px}.myth-person-detail{padding:30px 22px}.myth-person-memory{grid-template-columns:1fr}.myth-genealogy-tabs{display:flex;overflow:auto}.myth-genealogy-tabs button{flex:0 0 150px}.myth-family-tree-legend{flex-wrap:wrap}.myth-family-tree-legend small{width:100%;margin-left:0}.myth-leaflet-map{height:340px}.myth-map-place-list{grid-template-columns:1fr 1fr}.myth-route-selector{grid-template-columns:1fr 1fr}.myth-route-path{grid-template-columns:1fr}.myth-route-step{display:grid;grid-template-columns:36px 1fr}.myth-route-step-marker{display:grid;grid-template-rows:30px 1fr;height:auto;justify-items:center}.myth-route-step-marker i{display:block;position:static;width:1px;height:auto;min-height:70px;margin:0;background:#d9c6b4}.myth-route-step-copy{margin:0 0 10px 0;min-height:0}}
+@media(max-width:480px){.myth-vocab-list{flex-wrap:nowrap;overflow:auto;padding-bottom:4px}.myth-vocab-list button{flex:0 0 auto}.myth-person-alphabet{flex-wrap:nowrap;justify-content:flex-start;overflow:auto;padding-bottom:4px}.myth-route-selector{grid-template-columns:1fr}.myth-map-place-list{grid-template-columns:1fr}.myth-leaflet-map{height:300px}}
+
+/* ============================================================
+   Boussole mythologique · V4
+   Dictionnaire saisi + cosmos renforcé + ressources
+   ============================================================ */
+@media(min-width:1051px){.myth-compass-jump{grid-template-columns:repeat(6,1fr)}}
+
+/* Dictionnaire : aucune liste imposée, le mot doit être saisi */
+.myth-dictionary-answer{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;margin-top:18px;padding:22px 24px;border:1px solid #dfd0c1;border-radius:16px;background:linear-gradient(135deg,#fff 0%,#fbf5ee 100%);box-shadow:0 9px 25px rgba(80,55,32,.045)}
+.myth-dictionary-answer[hidden]{display:none}
+.myth-dictionary-answer-top{padding-right:20px;border-right:1px solid #e8ddd2}
+.myth-dictionary-answer-top span,.myth-dictionary-answer-top small{display:block}
+.myth-dictionary-answer-top span{color:var(--myth);font-size:.61rem;font-weight:750;letter-spacing:.09em;text-transform:uppercase}
+.myth-dictionary-answer-top small{margin-top:6px;color:#9b9085;font-size:.57rem;line-height:1.4}
+.myth-dictionary-answer-main h3{margin:0;color:#332d28;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:500;letter-spacing:-.015em}
+.myth-dictionary-definition{max-width:780px;margin:8px 0 0;color:#625b54;font-size:.76rem;line-height:1.7}
+.myth-dictionary-answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.myth-dictionary-answer-grid section{padding:12px 13px;border:1px solid #e9dfd5;border-radius:11px;background:rgba(255,255,255,.82)}
+.myth-dictionary-answer-grid section>span{display:block;color:#9a6c42;font-size:.55rem;font-weight:750;letter-spacing:.075em;text-transform:uppercase}
+.myth-dictionary-answer-grid section p{margin:5px 0 0;color:#70675f;font-size:.66rem;line-height:1.58}
+
+/* Espaces mythiques : lecture verticale claire du cosmos */
+.myth-cosmos-layout{background:#fbfaf8}
+.myth-cosmos-card{position:relative;display:block;min-height:0;padding:24px 25px 25px;border-right:1px solid #eee7df;background:linear-gradient(180deg,#f7f1e9 0%,#fcfaf7 34%,#f7f5f1 64%,#ece5dc 100%)}
+.myth-cosmos-head{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid rgba(127,98,70,.14)}
+.myth-cosmos-head span,.myth-cosmos-head strong{display:block}
+.myth-cosmos-head span{color:#9c734d;font-size:.57rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+.myth-cosmos-head strong{margin-top:4px;color:#4c433b;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem;font-weight:500}
+.myth-cosmos-head>small{max-width:190px;color:#9b9188;font-size:.56rem;line-height:1.45;text-align:right}
+.myth-cosmos-axis{position:absolute;z-index:0;left:43px;top:91px;bottom:52px;width:1px;background:linear-gradient(#cfb18f,#d7cbc0 45%,#a99786)}
+.myth-cosmos-axis:before,.myth-cosmos-axis:after{content:"";position:absolute;left:50%;width:7px;height:7px;border-radius:50%;background:#b47b45;transform:translateX(-50%)}
+.myth-cosmos-axis:before{top:0}.myth-cosmos-axis:after{bottom:0;background:#706052}
+.myth-cosmos-zone{position:relative;z-index:1;display:grid;grid-template-columns:205px minmax(0,1fr);gap:17px;margin:9px 0;padding:14px 15px 14px 21px;border:1px solid rgba(129,103,77,.13);border-radius:14px;background:rgba(255,255,255,.72);backdrop-filter:blur(2px)}
+.myth-cosmos-zone:before{content:"";position:absolute;left:14px;top:21px;width:8px;height:8px;border:2px solid #fff;border-radius:50%;background:#b47b45;box-shadow:0 0 0 1px #d4b798}
+.myth-cosmos-zone--divine{background:linear-gradient(90deg,rgba(255,250,238,.94),rgba(255,255,255,.7))}
+.myth-cosmos-zone--margin{background:linear-gradient(90deg,rgba(249,248,241,.94),rgba(255,255,255,.72))}
+.myth-cosmos-zone--threshold{background:linear-gradient(90deg,rgba(244,244,241,.95),rgba(255,255,255,.72))}
+.myth-cosmos-zone--under{background:linear-gradient(90deg,rgba(235,229,222,.96),rgba(250,247,243,.84))}
+.myth-cosmos-zone--threshold:before{background:#8795a0;box-shadow:0 0 0 1px #bfc8ce}.myth-cosmos-zone--under:before{background:#716052;box-shadow:0 0 0 1px #a9998c}
+.myth-cosmos-zone-label{padding-left:10px}
+.myth-cosmos-zone-label>span{display:grid;place-items:center;width:27px;height:27px;margin-bottom:7px;border:1px solid #dbc8b6;border-radius:50%;background:#fff;color:#9b6d42;font-size:.56rem;font-weight:750}
+.myth-cosmos-zone-label strong,.myth-cosmos-zone-label small{display:block}
+.myth-cosmos-zone-label strong{color:#4f4740;font-size:.72rem}.myth-cosmos-zone-label small{margin-top:3px;color:#988e84;font-size:.57rem;line-height:1.42}
+.myth-cosmos-zone-body{min-width:0;align-self:center}
+.myth-cosmos-concept{padding:11px 12px;border:1px dashed #d9c6b3;border-radius:10px;background:rgba(255,255,255,.78)}
+.myth-cosmos-concept span{display:block;color:#755130;font-size:.67rem;font-weight:700}.myth-cosmos-concept p{margin:4px 0 0;color:#786f67;font-size:.62rem;line-height:1.5}
+.myth-cosmos-zone-body--places{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.myth-cosmos-zone--under .myth-cosmos-zone-body--places{grid-template-columns:repeat(3,minmax(0,1fr))}
+.myth-cosmos-place{display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:8px;align-items:center;width:100%;padding:10px 10px;border:1px solid #dfd5ca;border-radius:10px;background:rgba(255,255,255,.9);text-align:left;color:#574b40;cursor:pointer;transition:.16s ease}
+.myth-cosmos-place:hover{transform:translateY(-1px);border-color:#c9aa8d;box-shadow:0 5px 13px rgba(77,57,39,.05)}
+.myth-cosmos-place.is-active{border-color:#be9168;background:#f7eadc;box-shadow:inset 3px 0 0 #a66a2c}
+.myth-cosmos-place-dot{width:7px;height:7px;border-radius:50%;background:#b9804b;box-shadow:0 0 0 3px #f3e5d7}
+.myth-cosmos-place strong,.myth-cosmos-place small{display:block}.myth-cosmos-place strong{font-size:.66rem}.myth-cosmos-place small{margin-top:2px;color:#978b80;font-size:.53rem;line-height:1.35}.myth-cosmos-place>i{color:#ae9c8b;font-size:.7rem;font-style:normal}
+.myth-cosmos-note{position:relative;z-index:1;margin:16px 2px 0;padding:11px 12px;border-top:1px solid rgba(122,96,70,.13);color:#897f75;font-size:.59rem;line-height:1.5}.myth-cosmos-note strong{color:#71583f}
+.myth-place-detail--cosmos{background:linear-gradient(180deg,#fbf8f4,#f6f1eb)}
+
+/* Ressources */
+.myth-resources-shell{overflow:hidden;border:1px solid #e7dfd7;border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(70,51,34,.04)}
+.myth-resource-group{border-bottom:1px solid #ece5de;background:#fff}.myth-resource-group:last-child{border-bottom:0}
+.myth-resource-group>summary{display:grid;grid-template-columns:36px minmax(0,1fr) 28px;gap:13px;align-items:center;padding:17px 20px;list-style:none;cursor:pointer;transition:.16s ease}.myth-resource-group>summary::-webkit-details-marker{display:none}.myth-resource-group>summary:hover{background:#fcf8f3}.myth-resource-group[open]>summary{background:#f9f2e9}
+.myth-resource-num{display:grid;place-items:center;width:32px;height:32px;border:1px solid #e2d4c6;border-radius:10px;background:#fff;color:#9a6a3d;font-size:.58rem;font-weight:750}
+.myth-resource-group summary strong,.myth-resource-group summary small{display:block}.myth-resource-group summary strong{color:#4a433d;font-size:.76rem}.myth-resource-group summary small{margin-top:3px;color:#978d83;font-size:.59rem}.myth-resource-group summary>i{display:grid;place-items:center;width:25px;height:25px;border:1px solid #e2d7cc;border-radius:50%;color:#927252;font-size:.9rem;font-style:normal;transition:.18s ease}.myth-resource-group[open] summary>i{transform:rotate(45deg);background:#fff}
+.myth-resource-content{padding:0 20px 22px 69px;background:linear-gradient(180deg,#fdfaf6 0,#fff 52%)}
+.myth-resource-intro{max-width:800px;margin:0 0 14px;color:#736b63;font-size:.7rem;line-height:1.6}
+.myth-resource-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.myth-resource-list article{padding:13px;border:1px solid #ebe2da;border-radius:11px;background:#fff}.myth-resource-list article strong,.myth-resource-list article span{display:block}.myth-resource-list article strong{color:#554a40;font-size:.68rem}.myth-resource-list article span{margin-top:3px;color:#966c45;font-size:.58rem}.myth-resource-list article p{margin:7px 0 0;color:#7b736b;font-size:.61rem;line-height:1.5}
+.myth-resource-books{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.myth-resource-books article{padding:15px;border:1px solid #e8e0d8;border-radius:12px;background:#fff}.myth-resource-books article>span{display:block;color:#9d7047;font-size:.54rem;font-weight:750;letter-spacing:.075em;text-transform:uppercase}.myth-resource-books article strong{display:block;margin-top:6px;color:#51483f;font-size:.67rem;line-height:1.48}.myth-resource-books article p{margin:7px 0 0;color:#7c746c;font-size:.61rem;line-height:1.52}.myth-resource-note{margin:12px 0 0;padding:10px 12px;border-left:2px solid #cba37e;background:#fbf6f0;color:#756b62;font-size:.62rem;line-height:1.5}
+.myth-resource-links{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}.myth-resource-links a{display:block;min-height:104px;padding:12px;border:1px solid #e8dfd6;border-radius:11px;background:#fff;color:inherit;text-decoration:none;transition:.16s ease}.myth-resource-links a:hover{transform:translateY(-2px);border-color:#d4b493;box-shadow:0 7px 16px rgba(75,55,36,.05)}.myth-resource-links a>span,.myth-resource-links a strong,.myth-resource-links a small{display:block}.myth-resource-links a>span{color:#9c7048;font-size:.53rem;font-weight:750;text-transform:uppercase;letter-spacing:.07em}.myth-resource-links a strong{margin-top:7px;color:#554a40;font-size:.65rem;line-height:1.4}.myth-resource-links a small{margin-top:5px;color:#948a80;font-size:.55rem;line-height:1.4}
+.myth-resource-bridge{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:24px;align-items:center;padding:15px;border:1px solid #e7ded5;border-radius:13px;background:#fff}.myth-resource-bridge>div>span{display:block;color:#986b43;font-size:.55rem;font-weight:750;text-transform:uppercase;letter-spacing:.075em}.myth-resource-bridge>div>strong{display:block;margin-top:6px;color:#4e453d;font-family:Georgia,"Times New Roman",serif;font-size:1rem;font-weight:500}.myth-resource-bridge p{margin:7px 0 0;color:#766d65;font-size:.66rem;line-height:1.55}.myth-resource-bridge-actions{display:grid;gap:7px}.myth-resource-bridge-actions a{display:flex;justify-content:space-between;gap:12px;padding:10px 11px;border:1px solid #e4d8cc;border-radius:9px;background:#fbf6f0;color:#74491f;font-size:.61rem;font-weight:650;line-height:1.4;text-decoration:none}.myth-resource-bridge-actions a:hover{background:#f4e5d6}
+
+@media(max-width:1050px){
+  .myth-cosmos-zone{grid-template-columns:170px minmax(0,1fr)}
+  .myth-resource-list{grid-template-columns:repeat(2,1fr)}.myth-resource-books{grid-template-columns:1fr}.myth-resource-links{grid-template-columns:repeat(3,1fr)}.myth-resource-bridge{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .myth-dictionary-answer{grid-template-columns:1fr;padding:19px}.myth-dictionary-answer-top{padding:0 0 10px;border-right:0;border-bottom:1px solid #e8ddd2}.myth-dictionary-answer-grid{grid-template-columns:1fr}
+  .myth-cosmos-card{padding:18px 15px}.myth-cosmos-head{display:block;padding-left:8px}.myth-cosmos-head>small{display:block;margin-top:7px;max-width:none;text-align:left}.myth-cosmos-axis{left:28px;top:97px}.myth-cosmos-zone{grid-template-columns:1fr;gap:9px;padding:13px 12px 13px 25px}.myth-cosmos-zone-label{display:flex;gap:9px;align-items:center;padding-left:0}.myth-cosmos-zone-label>span{flex:0 0 auto;margin:0}.myth-cosmos-zone-body--places,.myth-cosmos-zone--under .myth-cosmos-zone-body--places{grid-template-columns:1fr 1fr}
+  .myth-resource-content{padding:0 15px 18px}.myth-resource-list{grid-template-columns:1fr 1fr}.myth-resource-links{grid-template-columns:1fr 1fr}.myth-resource-group>summary{grid-template-columns:32px 1fr 25px;padding:15px}
+}
+@media(max-width:480px){
+  .myth-cosmos-zone-body--places,.myth-cosmos-zone--under .myth-cosmos-zone-body--places{grid-template-columns:1fr}.myth-resource-list,.myth-resource-links{grid-template-columns:1fr}.myth-resource-content{padding:0 12px 16px}.myth-resource-group>summary{padding:13px 12px;gap:9px}
+}
+.myth-search-results{position:relative;left:auto;right:auto;top:auto;margin-top:9px;box-shadow:0 9px 24px rgba(68,48,29,.08)}
+
+
+/* ==========================================================
+   BOUSSOLE MYTHOLOGIQUE V5 — harmonisation biblique (2026-09-08)
+   ========================================================== */
+.mythology-compass-page{background:#fbfaf8}
+.myth-compass-main{padding:94px 0 80px;overflow:visible}
+.myth-compass-container{width:min(1080px,calc(100% - 40px));overflow:visible}
+.myth-compass-breadcrumb{flex-wrap:wrap;gap:8px;margin:0 0 24px;color:#8b827a;font-size:11px}
+
+.myth-compass-hero{
+  position:relative;display:block;min-height:0;padding:42px 44px 38px;
+  border:1px solid rgba(166,106,44,.14);border-radius:24px;
+  background:linear-gradient(128deg,#fff 0%,#fffbf6 58%,#f7f0e8 100%);
+  box-shadow:0 20px 55px rgba(67,49,31,.065);overflow:hidden
+}
+.myth-compass-hero:before{content:"Μ";position:absolute;right:34px;top:3px;width:auto;height:auto;border:0;border-radius:0;color:rgba(166,106,44,.07);font-family:Georgia,"Times New Roman",serif;font-size:138px;line-height:1;pointer-events:none}
+.myth-compass-hero:after{content:"";position:absolute;right:-80px;bottom:-125px;width:260px;height:260px;border:1px solid rgba(166,106,44,.08);border-radius:50%;pointer-events:none}
+.myth-compass-kicker{display:block;margin:0 0 9px;padding:0;min-height:0;border-radius:0;background:transparent;color:#9a632d;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.myth-compass-hero h1{position:relative;z-index:2;max-width:760px;margin:0;color:#302a24;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,5vw,3.35rem);font-weight:500;line-height:1.03;letter-spacing:-.038em}
+.myth-compass-hero p{position:relative;z-index:2;max-width:720px;margin:17px 0 0;color:#716961;font-size:14px;line-height:1.65}
+.myth-compass-hero p strong{color:#544638}
+.myth-compass-quiet-entry{position:absolute;z-index:4;top:16px;right:16px;display:grid;place-items:center;width:31px;height:31px;border:1px solid rgba(137,97,57,.14);border-radius:50%;color:rgba(116,76,37,.34);background:rgba(255,255,255,.3);opacity:.62;text-decoration:none;backdrop-filter:blur(5px);transition:.2s ease}
+.myth-compass-quiet-entry svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.myth-compass-quiet-entry:hover,.myth-compass-quiet-entry:focus-visible{opacity:1;color:#96602a;border-color:rgba(166,106,44,.28);background:rgba(255,255,255,.8);transform:translateY(-1px);outline:none}
+
+.myth-compass-jump-wrap{position:relative;width:100%;margin:14px auto 30px}
+.mythology-compass-page .myth-compass-jump{position:sticky;z-index:20;top:76px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;width:min(100%,900px);max-width:900px;margin:0 auto;padding:6px;border:1px solid rgba(133,93,52,.10);border-radius:15px;background:rgba(255,253,250,.95);box-shadow:0 9px 24px rgba(66,49,33,.055);backdrop-filter:blur(14px)}
+.mythology-compass-page .myth-compass-jump a{display:grid;grid-template-columns:28px minmax(0,1fr);grid-template-rows:auto auto;gap:1px 7px;align-items:center;min-width:0;min-height:45px;padding:6px 7px;border:0;border-radius:10px;background:transparent;box-shadow:none;color:#5d534a;text-decoration:none;transition:.18s ease}
+.mythology-compass-page .myth-compass-jump a:hover,.mythology-compass-page .myth-compass-jump a:focus-visible{background:#fbf3ea;color:#82511f;transform:none;outline:none}
+.mythology-compass-page .myth-jump-num{display:none}
+.mythology-compass-page .myth-jump-icon{grid-row:1/3;width:28px;height:28px;border-radius:9px;background:#f7eee4;color:#97602a}
+.mythology-compass-page .myth-jump-icon svg{width:16px;height:16px}
+.mythology-compass-page .myth-compass-jump a>span:last-child{display:contents}
+.mythology-compass-page .myth-compass-jump strong{align-self:end;overflow:visible;color:#554b42;font-size:8.8px;line-height:1.1;text-overflow:clip;white-space:normal}
+.mythology-compass-page .myth-compass-jump small{align-self:start;overflow:visible;margin:0;color:#988d83;font-size:6.8px;line-height:1.12;text-overflow:clip;white-space:normal}
+
+.myth-compass-section{scroll-margin-top:145px;margin:0 0 64px;padding:0;border-top:0}
+.myth-search-section{padding-top:0}
+.myth-section-heading{display:grid;gap:8px;max-width:760px;margin:0 0 22px}
+.myth-section-heading>span{margin:0;color:#9f672f;font-size:9px;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+.myth-section-heading h2,.myth-search-copy h2{margin:0;color:#302a24;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.65rem,3vw,2.25rem);font-weight:500;letter-spacing:-.025em;line-height:1.12}
+.myth-section-heading p{margin:0;color:#766f68;font-size:12.5px;line-height:1.62}
+
+.myth-search-shell{padding:25px 27px;border:1px solid rgba(117,87,56,.10);border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(67,49,31,.045)}
+.myth-search-copy span{color:#a06a35;font-size:9px;font-weight:850;letter-spacing:.13em}
+.myth-search-copy p{margin:8px 0 0;color:#7a726a;font-size:12px;line-height:1.58}
+.myth-dictionary-badge{padding:6px 9px;border-color:#eadfD3;background:#fbf7f2;color:#8d673f;font-size:9px}
+.myth-search-input-wrap{margin-top:17px}
+.myth-search-input-wrap input{height:46px;border-radius:12px;font-size:12.5px}
+.myth-dictionary-answer{grid-template-columns:165px minmax(0,1fr);gap:22px;margin-top:14px;padding:20px 22px;border-color:#e8ddd2;border-radius:14px;background:#fff;box-shadow:none}
+.myth-dictionary-answer-main h3{font-size:1.35rem}
+.myth-dictionary-definition{font-size:11.5px;line-height:1.68}
+.myth-dictionary-answer-grid{grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+.myth-dictionary-answer-grid section{padding:12px 13px;border-radius:10px;background:#fcfaf7}
+.myth-dictionary-answer-grid section.myth-dictionary-example-card{border-color:rgba(166,106,44,.17);background:#fbf3e9}
+.myth-dictionary-answer-grid section>span{font-size:8px}
+.myth-dictionary-answer-grid section p{font-size:10.5px;line-height:1.56}
+.myth-dictionary-related{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:12px;padding-top:11px;border-top:1px solid #eee7df}
+.myth-dictionary-related>span{color:#9c8e81;font-size:8px;font-weight:750;letter-spacing:.07em;text-transform:uppercase}
+.myth-dictionary-related button{padding:5px 8px;border:1px solid #e7ddd3;border-radius:999px;background:#fff;color:#765636;font-size:9px;cursor:pointer}
+.myth-dictionary-related button:hover{background:#f8efe5;border-color:#d9bfA5}
+
+/* Recherche ciblée dans les généalogies */
+.myth-genealogy-shell{overflow:visible;border-radius:18px;box-shadow:0 10px 30px rgba(67,49,31,.04)}
+.myth-genealogy-search{position:relative;display:grid;grid-template-columns:30px minmax(0,1fr) auto;align-items:center;gap:6px;padding:8px 10px;border-bottom:1px solid #ece5de;background:#fff}
+.myth-genealogy-search>svg{width:17px;height:17px;justify-self:center;stroke:#9c744d;stroke-width:1.55;stroke-linecap:round}
+.myth-genealogy-search input{width:100%;height:34px;padding:0;border:0;outline:0;background:transparent;color:#51483f;font-size:12px}
+.myth-genealogy-search input::placeholder{color:#a49a91}
+.myth-genealogy-search-hint{padding:4px 7px;border-radius:7px;background:#f8f5f1;color:#9a8f84;font-size:9px}
+.myth-genealogy-search-results{position:absolute;z-index:30;left:39px;right:10px;top:calc(100% - 2px);padding:6px;border:1px solid #e4d8cc;border-radius:11px;background:#fff;box-shadow:0 15px 35px rgba(68,48,29,.12)}
+.myth-genealogy-search-results[hidden]{display:none}
+.myth-genealogy-result{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;width:100%;padding:9px 10px;border:0;border-radius:8px;background:transparent;text-align:left;cursor:pointer}
+.myth-genealogy-result:hover{background:#fbf4ec}
+.myth-genealogy-result strong,.myth-genealogy-result small{display:block}
+.myth-genealogy-result strong{color:#51463b;font-size:10.5px}.myth-genealogy-result small{margin-top:2px;color:#94897e;font-size:8.8px}.myth-genealogy-result>span{align-self:center;color:#a97849;font-size:10px}
+.myth-family-node span.is-search-hit{padding:3px 6px;border-radius:6px;background:#f1dcc6;color:#6d421a;box-shadow:0 0 0 1px rgba(166,106,44,.16)}
+
+.myth-genealogy-tabs{background:#fcfaf7}
+.myth-genealogy-tabs button{min-height:56px}
+.myth-family-tree-card{padding:28px 32px;background:#fff}
+.myth-family-tree-head h3{font-size:1.35rem}
+
+/* Parcours : bibliothèque d'angles + chemin de lecture */
+.myth-route-browser{border-radius:18px;box-shadow:0 10px 30px rgba(67,49,31,.04)}
+.myth-route-selector{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px;background:#fcfaf7}
+.myth-route-choice{grid-template-columns:32px minmax(0,1fr);min-height:78px;padding:11px 12px;border:1px solid #eee6de;border-radius:12px;background:#fff}
+.myth-route-choice:hover{border-color:#dfccb9;background:#fffaf5}
+.myth-route-choice.is-active{border-color:#d7b99b;background:#f7eadc;box-shadow:0 5px 14px rgba(78,55,33,.055)}
+.myth-route-choice>span{width:29px;height:29px;border:0;border-radius:9px;background:#f7efe7;color:#956331}
+.myth-route-choice strong{color:#554a40;font-size:10.5px;line-height:1.35}.myth-route-choice small{color:#9a8e83;font-size:8.5px}
+.myth-route-detail{padding:27px 30px 31px;background:#fff}
+.myth-route-detail-head{padding-bottom:18px}
+.myth-route-detail-head>div>span{font-size:8px}.myth-route-detail-head h3{font-size:1.42rem}.myth-route-detail-head p{font-size:11px;line-height:1.58}.myth-route-detail-head>small{font-size:8.5px;background:#f7f3ef}
+.myth-route-path{margin-top:22px}
+.myth-route-step-copy{min-height:142px;padding:12px;border-radius:10px;background:#fcfbf9}
+.myth-route-step-copy strong{font-size:10.5px}.myth-route-step-copy p{font-size:9.5px;line-height:1.5}.myth-route-step-copy a,.myth-route-step-copy em{font-size:8.5px}
+
+/* Ressources : même logique visuelle que la boussole biblique */
+.myth-resource-featured{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-bottom:12px}
+.myth-resource-featured-card{position:relative;display:block;min-height:154px;padding:15px 16px;border:1px solid rgba(117,87,56,.10);border-radius:14px;background:#fff;color:inherit;text-decoration:none;transition:.18s ease}
+.myth-resource-featured-card:hover,.myth-resource-featured-card:focus-visible{border-color:rgba(166,106,44,.24);box-shadow:0 8px 22px rgba(75,54,34,.055);outline:none;transform:translateY(-1px)}
+.myth-resource-featured-topline{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px}
+.myth-resource-featured-topline>span{color:#9e672f;font-size:8px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.myth-resource-featured-topline img{width:18px;height:18px;border-radius:4px;object-fit:contain}
+.myth-resource-featured-card>strong{display:block;padding-right:18px;color:#443a31;font-size:11px;line-height:1.3}
+.myth-resource-featured-card>p{margin:7px 0 0;color:#7b7269;font-size:9.7px;line-height:1.52}
+.myth-resource-featured-card>b{position:absolute;right:13px;bottom:12px;color:#b1845a;font-size:10px;font-weight:500}
+.myth-resource-groups{overflow:hidden;border:1px solid #e7dfd7;border-radius:16px;background:#fff}
+.myth-resource-group>summary{grid-template-columns:31px 29px minmax(0,1fr) 24px;gap:9px;min-height:58px;padding:11px 14px}
+.myth-resource-group[open]>summary{background:#fbf5ee}
+.myth-resource-num{width:27px;height:27px;border-radius:8px;font-size:8px}
+.myth-resource-group-icon{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#f7eee4;color:#97602a;font-size:13px}
+.myth-resource-group summary strong{font-size:10.5px}.myth-resource-group summary small{font-size:8.6px}
+.myth-resource-group summary>i{width:22px;height:22px;font-size:12px}
+.myth-resource-content{padding:0 16px 17px 83px;background:linear-gradient(180deg,#fdfaf6 0,#fff 48%)}
+.myth-resource-intro{font-size:10.5px}
+.myth-resource-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.myth-resource-list article,.myth-resource-books article{padding:12px;border-radius:10px}
+.myth-resource-list article strong,.myth-resource-books article strong{font-size:10px}.myth-resource-list article span,.myth-resource-books article>span{font-size:8.5px}.myth-resource-list article p,.myth-resource-books article p{font-size:9.3px;line-height:1.5}
+.myth-resource-books{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.myth-resource-note{font-size:9.5px}
+
+.compass-context-cta--myth{margin-top:12px;margin-bottom:0}
+
+@media(max-width:900px){
+  .myth-resource-featured{grid-template-columns:repeat(2,1fr)}
+  .myth-route-selector{grid-template-columns:repeat(2,1fr)}
+  .myth-resource-books{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .myth-compass-main{padding-top:82px}
+  .myth-compass-container{width:min(100% - 28px,1080px)}
+  .myth-compass-hero{padding:28px 21px 25px;border-radius:18px}
+  .myth-compass-hero h1{max-width:390px;font-size:clamp(2rem,8vw,3rem)}
+  .myth-compass-hero p{max-width:410px;font-size:12.5px;line-height:1.62}
+  .myth-compass-hero:before{right:15px;top:10px;font-size:94px}
+  .myth-compass-jump-wrap{margin:12px auto 27px}
+  .mythology-compass-page .myth-compass-jump{position:static;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:5px}
+  .mythology-compass-page .myth-compass-jump a{min-height:46px;padding:5px}
+  .myth-section-heading p{font-size:11.5px}
+  .myth-dictionary-heading{display:block}.myth-dictionary-badge{display:inline-flex;margin-top:10px}
+  .myth-dictionary-answer{grid-template-columns:1fr;padding:17px}.myth-dictionary-answer-top{padding:0 0 10px;border-right:0;border-bottom:1px solid #e8ddd2}.myth-dictionary-answer-grid{grid-template-columns:1fr}
+  .myth-genealogy-search{grid-template-columns:28px minmax(0,1fr)}.myth-genealogy-search-hint{display:none}.myth-genealogy-search-results{left:8px;right:8px}
+  .myth-route-selector{grid-template-columns:1fr 1fr}
+  .myth-resource-content{padding:0 13px 15px}.myth-resource-list{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .mythology-compass-page .myth-compass-jump{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .myth-route-selector{grid-template-columns:1fr}
+  .myth-resource-featured,.myth-resource-list{grid-template-columns:1fr}
+  .myth-resource-group>summary{grid-template-columns:28px 27px minmax(0,1fr) 22px;padding:10px}
+  .myth-resource-content{padding:0 11px 13px}
+}
+
+/* ==========================================================
+   BOUSSOLE MYTHOLOGIQUE V6 — navigation sticky, dictionnaire,
+   parcours allégé et ressources restructurées (2026-09-08)
+   ========================================================== */
+
+/* Navigation : même principe que la boussole philosophique.
+   Le wrapper porte le sticky afin que le bandeau puisse suivre toute la page. */
+.mythology-compass-page .myth-compass-jump-wrap{
+  position:sticky !important;
+  top:76px !important;
+  z-index:4300 !important;
+  width:100% !important;
+  margin:14px auto 30px !important;
+  pointer-events:none;
+}
+.mythology-compass-page .myth-compass-jump{
+  position:relative !important;
+  top:auto !important;
+  z-index:auto !important;
+  pointer-events:auto;
+  transition:width .18s ease,max-width .18s ease,padding .18s ease,border-radius .18s ease,box-shadow .18s ease;
+}
+.mythology-compass-page .myth-compass-jump:not(.is-condensed){
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  width:min(100%,900px) !important;
+  max-width:900px !important;
+}
+.mythology-compass-page .myth-compass-jump.is-condensed{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:4px !important;
+  width:max-content !important;
+  max-width:calc(100vw - 24px) !important;
+  margin:0 auto !important;
+  padding:5px !important;
+  border-color:rgba(133,93,52,.14) !important;
+  border-radius:15px !important;
+  background:rgba(255,253,250,.96) !important;
+  box-shadow:0 10px 28px rgba(66,49,33,.095) !important;
+  backdrop-filter:blur(12px) !important;
+  -webkit-backdrop-filter:blur(12px) !important;
+}
+.mythology-compass-page .myth-compass-jump.is-condensed > a{
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:0 !important;
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  min-height:40px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  border:0 !important;
+  border-radius:11px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transition:width .18s ease,padding .18s ease,gap .18s ease,background .16s ease !important;
+}
+.mythology-compass-page .myth-compass-jump.is-condensed .myth-jump-icon{
+  display:grid !important;
+  place-items:center !important;
+  width:31px !important;
+  height:31px !important;
+  min-width:31px !important;
+  flex:0 0 31px !important;
+  border-radius:9px !important;
+}
+.mythology-compass-page .myth-compass-jump.is-condensed > a > span:last-child{
+  display:none !important;
+  min-width:0 !important;
+}
+@media (hover:hover) and (pointer:fine){
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:hover,
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:focus-visible{
+    width:154px !important;
+    padding:0 10px 0 5px !important;
+    gap:8px !important;
+    justify-content:flex-start !important;
+    background:#f8ede1 !important;
+    outline:none !important;
+  }
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:hover > span:last-child,
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:focus-visible > span:last-child{
+    display:grid !important;
+    gap:1px !important;
+    align-content:center !important;
+  }
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:hover strong,
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:focus-visible strong{
+    color:#50443a !important;
+    font-size:9px !important;
+    line-height:1.08 !important;
+    text-align:left !important;
+    white-space:nowrap !important;
+  }
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:hover small,
+  .mythology-compass-page .myth-compass-jump.is-condensed > a:focus-visible small{
+    color:#95683f !important;
+    font-size:7px !important;
+    line-height:1.08 !important;
+    text-align:left !important;
+    white-space:nowrap !important;
+  }
+}
+
+/* Dictionnaire : exemples cliquables comme dans la boussole biblique. */
+.myth-vocab-starters{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+.myth-vocab-starters>span{
+  margin-right:2px;
+  color:#9b8e82;
+  font-size:8.5px;
+  font-weight:760;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+.myth-vocab-starters button{
+  min-height:28px;
+  padding:4px 9px;
+  border:1px solid #e7ddd3;
+  border-radius:999px;
+  background:#fff;
+  color:#735433;
+  font:inherit;
+  font-size:9.5px;
+  cursor:pointer;
+  transition:.16s ease;
+}
+.myth-vocab-starters button i{font-family:Georgia,"Times New Roman",serif;font-style:italic}
+.myth-vocab-starters button:hover,.myth-vocab-starters button:focus-visible{
+  border-color:#d8b996;
+  background:#f9f0e6;
+  color:#6f431a;
+  outline:none;
+}
+
+/* Parcours : un ruban de choix, puis une seule vue de lecture très claire. */
+.myth-route-browser{
+  display:block !important;
+  overflow:hidden !important;
+  border:1px solid #e8e1d9 !important;
+  border-radius:18px !important;
+  background:#fff !important;
+  box-shadow:0 10px 28px rgba(67,49,31,.04) !important;
+}
+.myth-route-selector{
+  display:flex !important;
+  gap:5px !important;
+  max-height:none !important;
+  padding:8px !important;
+  overflow-x:auto !important;
+  overflow-y:hidden !important;
+  border:0 !important;
+  border-bottom:1px solid #eee7df !important;
+  background:#fcfaf7 !important;
+  scrollbar-width:thin;
+  scrollbar-color:#dbcdbf transparent;
+}
+.myth-route-selector::-webkit-scrollbar{height:5px}
+.myth-route-selector::-webkit-scrollbar-thumb{background:#dbcdbf;border-radius:999px}
+.myth-route-choice{
+  display:flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  flex:0 0 auto !important;
+  width:auto !important;
+  min-width:138px !important;
+  min-height:42px !important;
+  padding:7px 9px !important;
+  border:1px solid transparent !important;
+  border-radius:10px !important;
+  background:transparent !important;
+  color:#675e55 !important;
+  box-shadow:none !important;
+}
+.myth-route-choice:hover{border-color:#eadbcf !important;background:#fff !important}
+.myth-route-choice.is-active{border-color:#d9c1a9 !important;background:#f7ede3 !important;color:#6d451f !important;box-shadow:none !important}
+.myth-route-choice>span{
+  display:grid !important;
+  place-items:center !important;
+  flex:0 0 24px !important;
+  width:24px !important;
+  height:24px !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:7px !important;
+  background:#f3ece5 !important;
+  color:#9a724d !important;
+  font-size:7.8px !important;
+}
+.myth-route-choice>div{min-width:0}
+.myth-route-choice strong{font-size:9.6px !important;line-height:1.18 !important;white-space:nowrap !important}
+.myth-route-choice small{display:none !important}
+.myth-route-detail{padding:0 !important;background:#fff !important}
+.myth-route-overview{
+  display:grid;
+  grid-template-columns:minmax(220px,.34fr) minmax(0,.66fr);
+  gap:0;
+  min-height:310px;
+}
+.myth-route-overview-copy{
+  padding:28px 28px 26px;
+  border-right:1px solid #eee7df;
+  background:linear-gradient(145deg,#fffaf5 0%,#fff 70%);
+}
+.myth-route-overview-copy>span{
+  display:block;
+  color:#a06a35;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.myth-route-overview-copy h3{
+  margin:9px 0 0;
+  color:#392f27;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.28rem,2.4vw,1.65rem);
+  font-weight:500;
+  line-height:1.14;
+  letter-spacing:-.02em;
+}
+.myth-route-overview-copy p{
+  margin:12px 0 0;
+  color:#766e66;
+  font-size:10.8px;
+  line-height:1.62;
+}
+.myth-route-overview-copy>small{
+  display:inline-flex;
+  margin-top:15px;
+  padding:5px 7px;
+  border-radius:999px;
+  background:#f6f1ec;
+  color:#8d8176;
+  font-size:8px;
+}
+.myth-route-sequence{
+  display:grid;
+  align-content:start;
+  padding:17px 25px 19px;
+}
+.myth-route-sequence-step{
+  position:relative;
+  display:grid;
+  grid-template-columns:31px minmax(0,1fr);
+  gap:12px;
+  padding:11px 0;
+  border-bottom:1px solid #f0ebe6;
+}
+.myth-route-sequence-step:last-child{border-bottom:0}
+.myth-route-sequence-step::before{
+  content:"";
+  position:absolute;
+  left:14.5px;
+  top:37px;
+  bottom:-12px;
+  width:1px;
+  background:#e4d7ca;
+}
+.myth-route-sequence-step:last-child::before{display:none}
+.myth-route-sequence-num{
+  position:relative;
+  z-index:1;
+  display:grid;
+  place-items:center;
+  width:29px;
+  height:29px;
+  border:1px solid #ddc9b5;
+  border-radius:50%;
+  background:#fff;
+  color:#8d5c2d;
+  font-size:8px;
+  font-weight:800;
+}
+.myth-route-sequence-step strong{display:block;color:#51483f;font-size:10.5px;line-height:1.35}
+.myth-route-sequence-step p{margin:4px 0 0;color:#7d756e;font-size:9.5px;line-height:1.52}
+.myth-route-sequence-step a,.myth-route-sequence-step small{display:inline-flex;margin-top:5px;color:#8a5b31;font-size:8.4px;font-weight:650;text-decoration:none}
+.myth-route-sequence-step small{color:#a1968c;font-weight:500}
+.myth-route-sequence-step a:hover{text-decoration:underline}
+
+/* Ressources : une hiérarchie explicite plutôt qu'une simple accumulation. */
+.myth-resource-featured-card--reference{border-color:rgba(166,106,44,.22) !important;background:linear-gradient(145deg,#fff 0%,#fff9f2 100%) !important}
+.myth-resource-guide{
+  display:grid;
+  grid-template-columns:118px minmax(0,1fr);
+  gap:16px;
+  align-items:center;
+  margin:0 0 11px;
+  padding:10px 13px;
+  border:1px solid #e9dfd5;
+  border-radius:12px;
+  background:#fcfaf7;
+}
+.myth-resource-guide>span{color:#9a6736;font-size:8px;font-weight:820;letter-spacing:.08em;text-transform:uppercase}
+.myth-resource-guide p{margin:0;color:#776e66;font-size:9.7px;line-height:1.5}
+.myth-resource-guide p strong{color:#55483c}
+.myth-resource-books--starter article{position:relative}
+.myth-resource-books--starter article.is-priority{border-color:#ddc4aa;background:#fffaf4}
+.myth-resource-books--starter article.is-priority::after{
+  content:"À lire en premier";
+  position:absolute;
+  right:9px;
+  top:9px;
+  padding:3px 6px;
+  border-radius:999px;
+  background:#f2e3d3;
+  color:#8d5d30;
+  font-size:7px;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.myth-source-path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.myth-source-path article{display:grid;grid-template-columns:25px minmax(0,1fr);gap:8px;padding:11px 10px;border:1px solid #ebe2da;border-radius:10px;background:#fff}
+.myth-source-path article>span{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:#f6eee6;color:#956536;font-size:7.5px;font-weight:800}
+.myth-source-path strong{display:block;color:#53483f;font-size:9.5px;line-height:1.36}
+.myth-source-path p{margin:5px 0 0;color:#7d746c;font-size:8.8px;line-height:1.5}
+
+@media(max-width:1000px){
+  .myth-source-path{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .myth-source-path article:last-child{grid-column:1/-1}
+}
+@media(max-width:700px){
+  .mythology-compass-page .myth-compass-jump-wrap{top:68px !important;margin:12px auto 27px !important}
+  .mythology-compass-page .myth-compass-jump:not(.is-condensed){
+    position:relative !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    width:100% !important;
+    gap:4px !important;
+    padding:5px !important;
+  }
+  .mythology-compass-page .myth-compass-jump.is-condensed{position:relative !important;top:auto !important;gap:3px !important;padding:4px !important}
+  .mythology-compass-page .myth-compass-jump.is-condensed > a{width:37px !important;height:37px !important;min-width:37px !important;min-height:37px !important}
+  .mythology-compass-page .myth-compass-jump.is-condensed .myth-jump-icon{width:28px !important;height:28px !important;min-width:28px !important;flex-basis:28px !important}
+  .myth-route-overview{grid-template-columns:1fr;min-height:0}
+  .myth-route-overview-copy{padding:21px 20px 18px;border-right:0;border-bottom:1px solid #eee7df}
+  .myth-route-sequence{padding:10px 19px 14px}
+  .myth-resource-guide{grid-template-columns:1fr;gap:4px}
+  .myth-resource-books--starter article.is-priority::after{position:static;display:inline-flex;margin-top:8px}
+}
+@media(max-width:480px){
+  .mythology-compass-page .myth-compass-jump:not(.is-condensed){grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .myth-vocab-starters{gap:6px}
+  .myth-vocab-starters>span{width:100%;margin-bottom:1px}
+  .myth-route-choice{min-width:128px !important}
+  .myth-source-path{grid-template-columns:1fr}
+  .myth-source-path article:last-child{grid-column:auto}
+}
+
+/* V6.1 — tous les parcours restent visibles d’un coup sur grand écran. */
+@media(min-width:901px){
+  .myth-route-selector{overflow-x:visible !important}
+  .myth-route-choice{
+    flex:1 1 0 !important;
+    min-width:0 !important;
+    padding:7px 6px !important;
+  }
+  .myth-route-choice strong{
+    font-size:8.6px !important;
+    line-height:1.17 !important;
+    white-space:normal !important;
+  }
+}
+
+/* V6.2 — priorité à la lisibilité : 4 parcours par ligne sur grand écran. */
+@media(min-width:901px){
+  .myth-route-selector{
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:5px !important;
+    overflow:visible !important;
+  }
+  .myth-route-choice{
+    width:100% !important;
+    min-width:0 !important;
+    min-height:44px !important;
+    padding:7px 9px !important;
+  }
+  .myth-route-choice strong{
+    font-size:9.7px !important;
+    line-height:1.2 !important;
+    white-space:normal !important;
+  }
+}
+
+/* ==========================================================
+   BOUSSOLE MYTHOLOGIQUE V7 — ressources & CTA · 2026-09-09
+   ========================================================== */
+
+/* Ressources : hiérarchie courte, pensée par usage. */
+.myth-resource-books--reference{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.myth-resource-tools{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  margin-top:9px;
+}
+.myth-resource-tools>a,
+.myth-resource-tools>article{
+  position:relative;
+  min-height:94px;
+  padding:12px 34px 12px 13px;
+  border:1px solid #e8dfd6;
+  border-radius:10px;
+  background:#fff;
+  color:inherit;
+  text-decoration:none;
+}
+.myth-resource-tools>a{transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease}
+.myth-resource-tools>a:hover,
+.myth-resource-tools>a:focus-visible{
+  transform:translateY(-1px);
+  border-color:#d4b493;
+  box-shadow:0 7px 16px rgba(75,55,36,.05);
+  outline:none;
+}
+.myth-resource-tools span{
+  display:block;
+  color:#9d7047;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+}
+.myth-resource-tools strong{
+  display:block;
+  margin-top:5px;
+  color:#51483f;
+  font-size:10px;
+  line-height:1.38;
+}
+.myth-resource-tools p{
+  margin:5px 0 0;
+  color:#7c746c;
+  font-size:9px;
+  line-height:1.48;
+}
+.myth-resource-tools b{
+  position:absolute;
+  right:12px;
+  top:12px;
+  color:#b1845a;
+  font-size:10px;
+  font-weight:500;
+}
+.myth-source-path--expanded{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.myth-source-path--expanded article:last-child{grid-column:auto}
+
+/* CTA mythologique : plus présent, sans devenir un bloc promotionnel massif. */
+.compass-context-cta--myth.compass-context-cta--merged{
+  min-height:142px;
+  margin-top:24px !important;
+  padding:30px 32px !important;
+  gap:30px !important;
+  border-radius:18px !important;
+}
+.compass-context-cta--myth.compass-context-cta--merged .compass-context-cta-copy{
+  gap:7px;
+  max-width:690px;
+}
+.compass-context-cta--myth.compass-context-cta--merged .compass-context-cta-copy>span{
+  font-size:9px !important;
+  letter-spacing:.095em;
+}
+.compass-context-cta--myth.compass-context-cta--merged .compass-context-cta-copy>strong{
+  font-size:15px !important;
+  line-height:1.48 !important;
+}
+.compass-context-cta--myth .compass-context-cta-actions{
+  gap:10px;
+}
+.compass-context-cta--myth .compass-context-cta-actions>a{
+  min-height:42px;
+  padding:10px 14px;
+  border-radius:10px;
+  font-size:10px;
+}
+
+@media(max-width:980px){
+  .myth-resource-books--reference{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .myth-source-path--expanded{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .myth-resource-tools{grid-template-columns:1fr}
+  .compass-context-cta--myth.compass-context-cta--merged{
+    min-height:0;
+    padding:23px 21px !important;
+    gap:18px !important;
+    border-radius:15px !important;
+  }
+  .compass-context-cta--myth.compass-context-cta--merged .compass-context-cta-copy>strong{
+    font-size:13px !important;
+  }
+}
+@media(max-width:520px){
+  .myth-resource-books--reference,
+  .myth-source-path--expanded{grid-template-columns:1fr}
+  .compass-context-cta--myth .compass-context-cta-actions>a{
+    width:100%;
+  }
+}
+
+
+/* Ressources — ouverture douce des accordéons · 2026-09-09 */
+.myth-resource-group{overflow:hidden}
+.myth-resource-group>.myth-resource-content{will-change:height,opacity;transition:opacity .28s ease}
+.myth-resource-group.is-animating>.myth-resource-content{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.myth-resource-group>.myth-resource-content{transition:none}}

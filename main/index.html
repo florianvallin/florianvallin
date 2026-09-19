@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js?v=20260919-publish2", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cours particuliers de philosophie et méthodologie générale à Montpellier ou à distance</title>
+
+  <meta name="description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
+
+
+  <link rel="canonical" href="https://florianvallin.fr/">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c1c28">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://florianvallin.fr/">
+  <meta property="og:title" content="Cours particuliers de philosophie à Montpellier ou à distance">
+  <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
+  <meta property="og:site_name" content="Florian Vallin">
+
+  <link rel="stylesheet" href="css/style.css?v=20260919-publish2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+<script
+    src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+  ></script>
+</head>
+
+<body id="top">
+
+<header class="navbar" id="site-header">
+  <div class="nav-container">
+    <a class="nav-brand" href="/" aria-label="Accueil — Florian Vallin">Florian <strong>Vallin</strong></a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
+      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a>
+      <a href="#philosophie">Prestations</a>
+      <a href="#quisuisje">Qui suis-je ?</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contactez-moi</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-glow hero-glow--left" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow--right" aria-hidden="true"></div>
+  <img
+    class="hero-socrate"
+    src="images/socrate-hero-buste.png?v=20260919-publish2"
+    alt=""
+    aria-hidden="true"
+    width="1023"
+    height="1537"
+    decoding="async"
+  >
+  <div class="hero-inner">
+    <div class="hero-badge hero-badge--placeholder" aria-hidden="true"></div>
+    <h1 class="hero-main-title" id="hero-title">
+      <span class="hero-title-main">Cours de Philosophie</span>
+      <span class="hero-title-secondary">et méthodologie générale.</span>
+    </h1>
+    <p class="hero-description">
+      À Montpellier ou à distance, bénéficiez d’un accompagnement personnalisé pour
+      <strong>structurer votre réflexion</strong>, <strong>maîtriser les exercices</strong> et <strong>gagner en autonomie</strong>.
+    </p>
+
+    <p class="hero-audience">
+      Vous êtes élève ou étudiant en <span>Terminale · Licence · Prépa&nbsp;?</span>
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="cta-beam"><span class="cta-beam-content"><iconify-icon icon="lucide:phone" width="16" height="16"></iconify-icon>Commencer l'accompagnement</span></a>
+      <a href="#philosophie" class="hero-secondary-button"><iconify-icon icon="solar:document-text-linear" width="18" height="18"></iconify-icon>Découvrir le programme</a>
+    </div>
+    <div class="hero-features">
+      <article class="hero-feature"><span class="hero-feature-icon"><iconify-icon icon="solar:target-linear" width="22" height="22"></iconify-icon></span><h2>Méthode sur-mesure</h2><p>Travaillez avec une méthode adaptée à votre profil et à vos objectifs.</p></article>
+      <article class="hero-feature"><span class="hero-feature-icon"><iconify-icon icon="solar:pen-new-square-linear" width="22" height="22"></iconify-icon></span><h2>Rigueur analytique</h2><p>Entraînez-vous à structurer vos dissertations et vos explications de texte.</p></article>
+      <article class="hero-feature"><span class="hero-feature-icon"><iconify-icon icon="solar:diploma-linear" width="22" height="22"></iconify-icon></span><h2>Des résultats</h2><p>Des étudiants accompagnés vers la réussite aux examens.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     BLOC AVIS (Google) — sous HERO
+================================ -->
+
+<section class="reviews-block" id="avis" data-nosnippet>
+  <div class="container reviews-container">
+
+    <h2 class="reviews-title">Les personnes qui m'ont déjà fait confiance</h2>
+    <div class="reviews-carousel" data-carousel>
+      <button class="reviews-nav prev" type="button" aria-label="Avis précédents" data-prev>
+        ‹
+      </button>
+
+      <div class="reviews-viewport" data-viewport>
+        <div class="reviews-track" data-track>
+          <!-- Les cartes sont injectées par JS -->
+        </div>
+      </div>
+
+      <button class="reviews-nav next" type="button" aria-label="Avis suivants" data-next>
+        ›
+      </button>
+    </div>
+
+    <div class="reviews-dots" aria-hidden="true" data-dots></div>
+
+  </div>
+</section>
+
+
+
+<!-- ===============================
+     BLOC 3 – COURS DE PHILOSOPHIE
+================================ -->
+
+<section id="philosophie">
+  <div class="container">
+
+    <h2 class="bloc-3-title">
+  1. Cours de <span class="title-accent">Philosophie</span>
+</h2>
+
+   <p class="bloc3-accroche">
+  La réussite en philosophie repose sur deux piliers :<br>
+  <strong>comprendre les notions </strong>
+  et <strong>maîtriser les méthodes</strong>
+</p>
+
+  <p class="bloc3-intro-strong">
+  Structurez votre réflexion, consolidez vos connaissances et progressez dans les exercices.
+</p>
+
+<div class="philo-cards">
+
+  <!-- Carte 1 -->
+  <article class="philo-card">
+    <div class="philo-badge" aria-hidden="true">
+      <span class="philo-badge-number">01</span>
+    </div>
+
+    <div class="philo-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+  <path d="M3 6.5C6 5 9 5 12 6.5V19C9 17.5 6 17.5 3 19V6.5Z"
+    stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 6.5C18 5 15 5 12 6.5V19C15 17.5 18 17.5 21 19V6.5Z"
+    stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </div>
+
+    <h3 class="philo-card-title">Comprenez votre cours</h3>
+
+    <p class="philo-card-text">
+      Clarifiez les
+      <a
+        class="info-tooltip info-tooltip-link"
+        href="/textes/philosophie/boussole/#parcours"
+        data-tooltip="Les notions qui structurent le cours : 17 en Terminale générale, 7 en Terminale technologique ; en HLP, de grands objets d’étude organisent le programme."
+      >
+        thèmes
+      </a>,
+      les
+      <a
+        class="info-tooltip info-tooltip-link"
+        href="/blog/reperes-conceptuels-philosophie-terminale/"
+        data-tooltip="Les 31 distinctions du programme — par exemple absolu / relatif ou en fait / en droit — servent à préciser les concepts et éviter les confusions."
+      >
+        repères conceptuels
+      </a>
+      et les
+      <a
+        class="info-tooltip info-tooltip-link"
+        href="/textes/philosophie/boussole/#chronologie"
+        data-tooltip="Le programme prévoit une liste d’auteurs de référence, de l’Antiquité à aujourd’hui, mobilisés pour éclairer les notions et les problèmes."
+      >
+        auteurs
+      </a>.
+      Reliez vos connaissances aux exigences de l’épreuve.
+    </p>
+  </article>
+
+  <!-- Carte 2 -->
+  <article class="philo-card">
+    <div class="philo-badge" aria-hidden="true">
+      <span class="philo-badge-number">02</span>
+    </div>
+
+    <div class="philo-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+  <!-- cadre du document -->
+  <rect x="6" y="4" width="12" height="16" rx="2"
+    stroke="currentColor"
+    stroke-width="1.4"/>
+
+  <!-- lignes de texte -->
+  <line x1="9" y1="8" x2="15" y2="8"
+    stroke="currentColor"
+    stroke-width="1.2"
+    stroke-linecap="round"/>
+
+  <line x1="9" y1="11" x2="15" y2="11"
+    stroke="currentColor"
+    stroke-width="1.2"
+    stroke-linecap="round"/>
+
+  <!-- coche centrale -->
+  <path d="M9.5 15L11 16.5L14.5 13"
+    stroke="currentColor"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
+    </div>
+
+    <h3 class="philo-card-title">Maîtrisez les exercices</h3>
+
+    <p class="philo-card-text">
+      Apprenez à problématiser, à construire un plan et à rédiger avec précision.
+    </p>
+  </article>
+
+  <!-- Carte 3 -->
+  <article class="philo-card">
+    <div class="philo-badge" aria-hidden="true">
+      <span class="philo-badge-number">03</span>
+    </div>
+
+    <div class="philo-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+    stroke="currentColor" stroke-width="1.3"/>
+  <path d="M15 9L13 13L9 15L11 11L15 9Z"
+    stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+</svg>
+    </div>
+
+    <h3 class="philo-card-title">Gagnez en autonomie</h3>
+
+    <p class="philo-card-text">
+      Méthode reproductible, retours ciblés, progression mesurable : apprendre à se relire, corriger ses réflexes, gagner en rigueur.
+    </p>
+  </article>
+
+</div>
+<div
+  class="pricing-card pricing-card--philo-complete"
+  aria-label="Tarifs et accompagnements en philosophie"
+>
+
+  <!-- TARIF À L'HEURE -->
+<div class="pricing-card-grid pricing-hourly">
+
+  <div class="pricing-left">
+    <p class="pricing-plan pricing-plan--philo">
+      COURS DE PHILOSOPHIE
+    </p>
+
+    <div class="price-row" aria-label="Tarif">
+      <span class="price-main">
+        <span class="price-integer">50</span>
+        <span class="price-currency">€</span>
+      </span>
+
+      <span class="price-unit">/ heure</span>
+    </div>
+
+    <p class="pricing-note">
+      Tarif TTC — séance individuelle
+    </p>
+
+    <a href="#contact" class="btn-primary btn-primary--small">
+      Réserver une séance
+    </a>
+  </div>
+
+  <div class="pricing-right">
+    <ul class="check-list" role="list">
+
+      <li class="check-list-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <span>
+          <strong>Séance ponctuelle</strong> ou
+          <strong>suivi régulier</strong>
+        </span>
+      </li>
+
+      <li class="check-list-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <span>
+          <strong>Supports fournis</strong> :
+          cours, textes et fiches structurées
+        </span>
+      </li>
+
+      <li class="check-list-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <span>
+          <strong>Exercices personnalisés</strong>
+          et corrections
+        </span>
+      </li>
+
+      <li class="check-list-item">
+        <span class="check-icon" aria-hidden="true">✓</span>
+        <span>
+          Méthode pour la
+          <strong>dissertation</strong> et
+          l’<strong>explication de texte</strong>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+<!-- IMPORTANT : la grille tarifaire se termine ici -->
+
+
+<!-- COURS COLLECTIFS -->
+<div class="collective-pricing">
+
+  <div class="collective-pricing-header">
+
+    <div class="collective-pricing-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+
+        <circle
+          cx="8"
+          cy="8"
+          r="3"
+          stroke="currentColor"
+          stroke-width="1.5"
+        />
+
+        <circle
+          cx="16"
+          cy="8"
+          r="3"
+          stroke="currentColor"
+          stroke-width="1.5"
+        />
+
+        <path
+          d="M3.5 19C3.8 15.8 5.5 14 8 14C10.5 14 12.2 15.8 12.5 19"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+
+        <path
+          d="M11.5 19C11.8 15.8 13.5 14 16 14C18.5 14 20.2 15.8 20.5 19"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+
+      </svg>
+    </div>
+
+    <div class="collective-pricing-heading">
+
+      <p class="collective-pricing-eyebrow">
+        FORMULE COLLECTIVE
+      </p>
+
+      <h3 class="collective-pricing-title">
+        Suivre les cours à plusieurs
+      </h3>
+
+      <p class="collective-pricing-intro">
+        Constituez un petit groupe d’élèves ayant un
+        <strong>niveau</strong> et des
+        <strong>objectifs compatibles</strong>.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="collective-pricing-options">
+
+    <!-- 2 ÉLÈVES -->
+    <div class="collective-option">
+
+      <div class="collective-option-top">
+
+        <span class="collective-option-size">
+          2 élèves
+        </span>
+
+        <span class="collective-option-saving">
+          15 € économisés
+        </span>
+
+      </div>
+
+      <div class="collective-option-price">
+        <span class="collective-price-number">35</span>
+        <span class="collective-price-currency">€</span>
+        <span class="collective-price-unit">
+          par heure et par élève
+        </span>
+      </div>
+
+      <p class="collective-option-text">
+        Idéal pour travailler avec un camarade sur des
+        <strong>difficultés communes</strong>.
+      </p>
+
+    </div>
+
+
+    <!-- 3 À 5 ÉLÈVES -->
+    <div class="collective-option collective-option--best">
+
+      <div class="collective-option-top">
+
+        <span class="collective-option-size">
+          3 à 5 élèves
+        </span>
+
+        <span class="collective-option-saving">
+          25 € économisés
+        </span>
+
+      </div>
+
+      <div class="collective-option-price">
+        <span class="collective-price-number">25</span>
+        <span class="collective-price-currency">€</span>
+        <span class="collective-price-unit">
+          par heure et par élève
+        </span>
+      </div>
+
+      <p class="collective-option-text">
+        Une formule accessible pour un
+        <strong>accompagnement structuré en petit groupe</strong>.
+      </p>
+
+    </div>
+
+  </div>
+
+  <a href="#contact" class="collective-pricing-button">
+    Organiser un cours collectif
+  </a>
+
+</div>
+
+  <!-- SÉPARATION -->
+  <div class="pricing-pack-separator">
+    <span>Ou choisissez un accompagnement complet</span>
+  </div>
+
+  <!-- PACKS -->
+  <div class="pricing-packs-area">
+
+    <div class="pricing-packs-heading">
+      <p class="pricing-packs-eyebrow">
+        FORMULES D’ACCOMPAGNEMENT
+      </p>
+
+      <h3>Un parcours adapté à chaque objectif</h3>
+    </div>
+
+    <div class="philo-pack-grid">
+
+      <!-- =================================================
+           PACK EXPRESS — LE PLUS CHOISI
+      ================================================== -->
+      <article class="philo-pack-card">
+        <div class="philo-pack-top">
+          <div>
+            <p class="philo-pack-label">
+              RÉUSSIR LES EXERCICES
+            </p>
+    
+            <h4 class="philo-pack-title">
+              Pack Express
+            </h4>
+          </div>
+    
+          <span class="philo-pack-duration">
+            2 × 2 h
+          </span>
+        </div>
+    
+        <p class="philo-pack-description">
+          <strong>Maîtrisez rapidement</strong> les deux exercices fondamentaux de philosophie.
+        </p>
+    
+        <div class="philo-pack-price">
+          <span class="philo-pack-price-number">175</span>
+          <span class="philo-pack-price-currency">€</span>
+        </div>
+    
+        <p class="philo-pack-saving">
+          <strong>4 heures de cours</strong>
+          · soit <strong>43,75 € / heure</strong>
+        </p>
+    
+        <ul class="philo-pack-list" role="list">
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              Méthode détaillée
+              de la <strong>dissertation</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              Méthode détaillée
+              de <strong>l’explication de texte</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Entraînements</strong>
+              sur des sujets
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Fiches récapitulatives</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Simulations</strong>
+              et corrections
+            </span>
+          </li>
+    
+        </ul>
+    
+        <a
+          href="#contact"
+          class="philo-pack-button"
+        >
+          Choisir ce pack
+        </a>
+    
+      </article>
+    
+    
+      <!-- =================================================
+           PACK REMISE À NIVEAU
+      ================================================== -->
+      <article class="philo-pack-card philo-pack-card--featured">
+    
+        <div class="philo-pack-popular">
+          Le plus choisi
+        </div>
+
+        <div class="philo-pack-top">
+          <div>
+            <p class="philo-pack-label">
+              REPRENDRE LES BASES
+            </p>
+    
+            <h4 class="philo-pack-title">
+              Pack Remise à niveau
+            </h4>
+          </div>
+    
+          <span class="philo-pack-duration">
+            6 × 1 h
+          </span>
+        </div>
+    
+        <p class="philo-pack-description">
+          <strong>Reprenez les bases</strong>, consolidez vos connaissances et retrouvez une méthode solide.
+        </p>
+    
+        <div class="philo-pack-price">
+          <span class="philo-pack-price-number">250</span>
+          <span class="philo-pack-price-currency">€</span>
+        </div>
+    
+        <p class="philo-pack-saving">
+          <strong>6 heures de cours</strong>
+          · soit <strong>41,67 € / heure</strong>
+        </p>
+    
+        <ul class="philo-pack-list" role="list">
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Diagnostic initial</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Reprise du cours</strong>
+              et des éléments essentiels
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Clarification</strong>
+              des notions
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Exercices guidés</strong>
+              et corrigés
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Méthode progressive</strong>
+            </span>
+          </li>
+    
+        </ul>
+    
+        <a href="#contact" class="philo-pack-button philo-pack-button--featured">
+          Choisir ce pack
+        </a>
+    
+      </article>
+    
+    
+      <!-- =================================================
+           PACK EXCELLENCE
+      ================================================== -->
+      <article class="philo-pack-card">
+    
+        <div class="philo-pack-top">
+          <div>
+            <p class="philo-pack-label">
+              VISER L’EXCELLENCE
+            </p>
+    
+            <h4 class="philo-pack-title">
+              Pack Excellence
+            </h4>
+          </div>
+    
+          <span class="philo-pack-duration">
+            8 × 1 h
+          </span>
+        </div>
+    
+        <p class="philo-pack-description">
+          <strong>Approfondissez votre réflexion</strong> et enrichissez vos références philosophiques.
+        </p>
+    
+        <div class="philo-pack-price">
+          <span class="philo-pack-price-number">320</span>
+          <span class="philo-pack-price-currency">€</span>
+        </div>
+    
+        <p class="philo-pack-saving">
+          <strong>8 heures de cours</strong>
+          · soit <strong>40 € / heure</strong>
+        </p>
+    
+        <ul class="philo-pack-list" role="list">
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Approfondissement</strong>
+              des notions
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Références philosophiques</strong>
+              supplémentaires
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Entraînements exigeants</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Corrections détaillées</strong>
+            </span>
+          </li>
+    
+          <li>
+            <span class="philo-pack-check" aria-hidden="true">✓</span>
+    
+            <span>
+              <strong>Exercices approfondis</strong>
+            </span>
+          </li>
+    
+        </ul>
+    
+        <a href="#contact" class="philo-pack-button">
+          Choisir ce pack
+        </a>
+    
+      </article>
+    
+    </div>
+    <!-- fin de .philo-pack-grid -->
+
+  </div>
+  <!-- fin de .pricing-packs-area -->
+
+</div>
+<!-- fin de .pricing-card--philo-complete -->
+
+  </div>
+  <!-- fin de .container -->
+
+</section>
+<!-- fin de #philosophie -->
+
+<!-- ===============================
+     BLOC 4 – COURS DE MÉTHODOLOGIE
+================================ -->
+
+<section class="bloc-4" id="methodologie">
+  <div class="container">
+
+    <h2 class="bloc-4-title">
+  2. Cours de <span class="title-accent">Méthodologie</span>
+</h2>
+
+<div class="methodologie-center">
+  <p class="bloc-4-text methodologie-intro">
+    Construisez une <strong>méthode de travail claire et structurée</strong>, adaptée à vos études.
+    Apprenez progressivement à vous organiser, à
+    <span
+      class="info-tooltip"
+      tabindex="0"
+      data-tooltip="Méthode Leitner · Blurting · Time Blocking · Méthode Kanban · Deep Work · Méthode SMART..."
+    >
+      mémoriser efficacement
+    </span>
+    et à travailler en autonomie.
+  </p>
+  <div class="methodologie-steps-grid">
+
+    <div class="stepper-step stepper-active">
+      <div class="stepper-circle">1</div>
+      <div class="stepper-content">
+        <div class="stepper-title">Clarifier</div>
+        <div class="stepper-status">Point de départ</div>
+        <div class="stepper-time">Identifier les attentes, les consignes et les critères d’évaluation.</div>
+      </div>
+    </div>
+
+    <div class="stepper-step stepper-pending">
+      <div class="stepper-circle">2</div>
+      <div class="stepper-content">
+        <div class="stepper-title">Structurer</div>
+        <div class="stepper-status">Organisation</div>
+        <div class="stepper-time">Planifier, hiérarchiser, stabiliser un cadre de travail clair.</div>
+      </div>
+    </div>
+
+    <div class="stepper-step stepper-pending">
+      <div class="stepper-circle">3</div>
+      <div class="stepper-content">
+        <div class="stepper-title">Stabiliser</div>
+        <div class="stepper-status">Méthodes durables</div>
+        <div class="stepper-time">Mémorisation, révisions efficaces, outils adaptés aux objectifs.</div>
+      </div>
+    </div>
+
+    <div class="stepper-step stepper-pending">
+      <div class="stepper-circle">4</div>
+      <div class="stepper-content">
+        <div class="stepper-title">Autonomiser</div>
+        <div class="stepper-status">Consolidation</div>
+        <div class="stepper-time">Travailler seul avec une méthode reproductible et ajustable.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ <div class="pricing-card">
+  <div class="pricing-card-grid">
+
+    <!-- Colonne gauche -->
+    <div class="pricing-left">
+      <p class="pricing-plan pricing-plan--methodo">COURS DE MÉTHODOLOGIE</p>
+
+      <div class="price-row">
+        <span class="price-main">
+          <span class="price-integer">40</span>
+          <span class="price-currency">€</span>
+        </span>
+        <span class="price-unit">/ heure</span>
+      </div>
+
+      <p class="pricing-note">
+        Tarif TTC — séance individuelle (durée modulable)
+      </p>
+
+      <a href="#contact" class="btn-primary btn-primary--small">
+        Prendre contact
+      </a>
+    </div>
+
+    <!-- Colonne droite -->
+    <div class="pricing-right">
+  <ul class="check-list" role="list">
+
+    <li class="check-list-item">
+      <span class="check-icon" aria-hidden="true">✓</span>
+      <span><strong>Cadre structuré</strong> : rythme, organisation, priorités</span>
+    </li>
+
+    <li class="check-list-item">
+      <span class="check-icon" aria-hidden="true">✓</span>
+      <span><strong>Outils méthodologiques</strong> : planning, révisions, mémorisation</span>
+    </li>
+
+    <li class="check-list-item">
+      <span class="check-icon" aria-hidden="true">✓</span>
+      <span><strong>Méthode durable et transférable</strong></span>
+    </li>
+
+    <li class="check-list-item">
+      <span class="check-icon" aria-hidden="true">✓</span>
+      <span><strong>Suivi ajusté</strong> et progression mesurable</span>
+    </li>
+
+  </ul>
+</div>
+<!-- fin de .pricing-right -->
+
+</div>
+<!-- fin de .pricing-card-grid -->
+
+</div>
+<!-- fin de .pricing-card -->
+
+</div>
+<!-- fin de .container -->
+
+</section>
+<!-- fin de #methodologie -->
+
+<!-- ===============================
+     BLOC 5 – QUI SUIS-JE
+================================ -->
+
+<section id="quisuisje" class="bloc-5">
+  <div class="container">
+    <h2 class="bloc-5-title">Qui suis-je</h2>
+
+    <div class="about-card">
+      <div class="about-photo">
+        <img 
+          src="images/hero-florian.jpg" 
+          alt="Florian Vallin, professeur de philosophie à Montpellier"
+          loading="lazy"
+          >
+      </div>
+
+      <div class="about-text">
+        <p>
+          Je m’appelle <strong>Florian VALLIN</strong>. Je suis diplômé d’une <strong>Licence de philosophie</strong> (Grenoble) et d'un <strong>Master Esthétique</strong>
+          (philosophie de l’art, Montpellier) et j’enseigne en <strong>cours particuliers</strong> depuis plusieurs années.
+        </p>
+
+        <p>
+          Mon travail s’organise autour de deux axes : la <strong>philosophie</strong> (dissertation, explication de texte)
+          et la <strong>méthodologie générale</strong> (apprendre à apprendre, organisation, mémorisation, outils).
+          Je me suis beaucoup intéressé aux méthodes de travail afin d’optimiser mon quotidien et mes études : techniques d’apprentissage et de mémorisation avancées, intégration de l’IA pour les étudiants, usage des macros dans le traitement de texte, etc.
+        </p>
+
+        <p>
+          Depuis plusieurs années, j’accompagne des élèves en <strong>cours particuliers</strong> selon trois modalités : <strong>à titre privé</strong>, via des plateformes de soutien scolaire — <strong>Acadomia</strong> en présentiel à Montpellier et <strong>MyMaxicours</strong> à distance —, ainsi qu’en <strong>tutorat universitaire</strong> (Licence de Philosophie à Distance, Université de Montpellier).
+        </p>
+
+        <div class="about-social-links" aria-label="Profils et réseaux">
+          <a
+            class="about-social-link about-social-link--linkedin"
+            href="https://www.linkedin.com/in/florianvallin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir mon profil LinkedIn dans un nouvel onglet"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:linkedin" width="19" height="19"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--google"
+            href="https://share.google/HqIblISJpOMhoSiPT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir ma fiche Google Business dans un nouvel onglet"
+            title="Google"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="logos:google-icon" width="18" height="18"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--site"
+            href="https://florianvallin.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ouvrir florianvallin.fr dans un nouvel onglet"
+            title="florianvallin.fr"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:web" width="19" height="19"></iconify-icon>
+            </span>
+          </a>
+
+          <span class="about-social-divider" aria-hidden="true"></span>
+
+          <a
+            class="about-social-link about-social-link--youtube"
+            href="https://www.youtube.com/channel/UClfhjKJbbtW0HJPcxDdTwyg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir la chaîne YouTube Philosophal, @lephilosophal, dans un nouvel onglet"
+            title="YouTube · Philosophal · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:youtube" width="21" height="21"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--tiktok"
+            href="https://www.tiktok.com/@lephilosophal"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le compte TikTok @lephilosophal dans un nouvel onglet"
+            title="TikTok · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="simple-icons:tiktok" width="18" height="18"></iconify-icon>
+            </span>
+          </a>
+
+          <a
+            class="about-social-link about-social-link--instagram"
+            href="https://www.instagram.com/lephilosophal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le compte Instagram @lephilosophal dans un nouvel onglet"
+            title="Instagram · @lephilosophal"
+          >
+            <span class="about-social-link__icon" aria-hidden="true">
+              <iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     BLOC 6 – FAQ
+================================ -->
+
+<section class="bloc-faq" id="faq">
+  <div class="container">
+
+    <h2 class="faq-title">
+  Questions <span>fréquentes</span>
+</h2>
+
+    <!-- 1 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        À qui s’adressent les cours ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Aux <strong>élèves de Terminale</strong>, <strong>étudiants</strong>, 
+          <strong>candidats aux concours</strong> et personnes en 
+          <strong>reprise d’études</strong>. L’accompagnement s’adapte au niveau et aux objectifs de chacun.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Où ont lieu les séances ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          En <strong>présentiel à Montpellier (34000)</strong> ou à 
+          <strong>distance</strong> via <strong>Discord</strong>, 
+          <strong>Google Meet</strong> ou <strong>Zoom</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Séance ponctuelle ou suivi régulier ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Les deux sont possibles : <strong>séance ponctuelle</strong> 
+          ou <strong>accompagnement régulier</strong> sur plusieurs semaines.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Y a-t-il du travail personnel ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Des <strong>exercices ciblés</strong> ou 
+          <strong>travaux préparatoires</strong> peuvent être proposés 
+          afin de consolider la progression.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Comment se déroule la première séance ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Elle permet d’identifier les <strong>attentes</strong>, les 
+          <strong>difficultés</strong> et les <strong>objectifs</strong>, 
+          et d’engager un premier travail méthodologique.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Des supports sont-ils fournis ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Oui : <strong>supports méthodologiques</strong>, 
+          <strong>plans-types</strong>, <strong>exercices corrigés</strong>. 
+          Une <strong>page Notion évolutive</strong> centralise les documents 
+          et organise le suivi entre les séances.
+        </p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Séances de groupe possibles ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Oui, en <strong>petit groupe</strong>, si les niveaux et objectifs sont compatibles. 
+          Le <strong>tarif est modulé</strong> selon le <strong>nombre de participants</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Quels sont les moyens de paiements ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+
+        <p><strong>Paiements acceptés :</strong> espèces, chèque, virement bancaire, paypal, paylib</p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Conditions d’annulation ?
+        <span class="faq-icon">▷</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Annulation ou report possible <strong>jusqu’à 24 heures avant la séance</strong>. 
+          Passé ce délai, la séance peut être due.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===============================
+     BLOC 7 – CONTACT
+================================ -->
+<section id="contact" class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-stage">
+      <div class="contact-side-portrait" aria-hidden="true">
+        <img
+          src="images/contact-lowpoly.png?v=20260919-publish2"
+          alt=""
+          width="1086"
+          height="1448"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <div class="contact-card contact-card--direct">
+        <div class="contact-card-header">
+          <div class="contact-header-copy">
+            <h2 class="bloc-7-title">Me joindre</h2>
+            <p class="contact-intro">
+              Pour toute question ou demande de cours, vous pouvez me contacter directement ici. Je vous réponds sous 48 heures.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-direct">
+          <article class="contact-method">
+            <div class="contact-method-icon" aria-hidden="true">
+              <iconify-icon icon="lucide:mail" width="22" height="22"></iconify-icon>
+            </div>
+            <div class="contact-method-copy">
+              <p class="contact-method-label">Contact</p>
+              <h3>E-mail</h3>
+            </div>
+            <div class="contact-method-action">
+              <span class="protected-content" data-encoded="|]pOoYpfpEnes{Jek]qekopfy{p]" data-content-type="email">
+                <button type="button" class="contact-reveal-btn protected-trigger" aria-expanded="false">
+                  <iconify-icon icon="lucide:eye" width="16" height="16" aria-hidden="true"></iconify-icon>
+                  Afficher l’e-mail
+                </button>
+              </span>
+            </div>
+          </article>
+
+          <article class="contact-method">
+            <div class="contact-method-icon" aria-hidden="true">
+              <iconify-icon icon="lucide:phone" width="22" height="22"></iconify-icon>
+            </div>
+            <div class="contact-method-copy">
+              <p class="contact-method-label">Contact</p>
+              <h3>Téléphone</h3>
+            </div>
+            <div class="contact-method-action">
+              <span class="protected-content" data-encoded="@X}QjXmPjLWRjnGQj\GP" data-content-type="phone">
+                <button type="button" class="contact-reveal-btn protected-trigger" aria-expanded="false">
+                  <iconify-icon icon="lucide:eye" width="16" height="16" aria-hidden="true"></iconify-icon>
+                  Afficher le numéro
+                </button>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="home-blog-preview" aria-labelledby="home-blog-title">
+  <div class="container home-blog-preview-inner">
+    <header class="home-blog-preview-head">
+      <div><span>Ressources</span><h2 id="home-blog-title">À lire sur le blog</h2></div>
+      <a href="/blog/">Voir tous les billets <span aria-hidden="true">→</span></a>
+    </header>
+    <div class="home-blog-preview-grid">
+      <a class="home-blog-card home-blog-card--reperes" href="/blog/reperes-conceptuels-philosophie-terminale/">
+        <span class="home-blog-card-type">Philosophie</span>
+        <h3>Les repères conceptuels en philosophie</h3>
+        <p>31 repères avec définitions, exemples et exercices pour mieux les mobiliser.</p>
+        <span class="home-blog-card-open">Lire le billet <i aria-hidden="true">→</i></span>
+      </a>
+      <a class="home-blog-card home-blog-card--methodologie" href="/blog/textes-religieux-mythologiques-philosophie/">
+        <span class="home-blog-card-type">Méthodologie</span>
+        <h3>Faire feu de tout bois : mythes, religions et philosophie</h3>
+        <p>Varier ses références et apprendre à transformer un récit ou une œuvre en matière à penser.</p>
+        <span class="home-blog-card-open">Lire le billet <i aria-hidden="true">→</i></span>
+      </a>
+      <a class="home-blog-card home-blog-card--cinema" href="/blog/utiliser-cinema-philosophie/">
+        <span class="home-blog-card-type">Philosophie · Méthodologie</span>
+        <h3>Le cinéma en dissertation de philosophie</h3>
+        <p>Des films à retenir et une méthode claire pour les utiliser comme références dans une dissertation de philosophie.</p>
+        <span class="home-blog-card-open">Lire le billet <i aria-hidden="true">→</i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-column footer-prestations">
+      <p class="footer-title">
+        <a href="/#philosophie">Prestations</a>
+      </p>
+
+      <ul class="footer-list">
+        <li><a href="/#philosophie">Cours de Philosophie</a></li>
+        <li><a href="/#methodologie">Cours de méthodologie</a></li>
+      </ul>
+
+      <p class="footer-title footer-cgv">
+        <a href="/cgv.html">Conditions générales de vente</a>
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <p class="footer-title">
+        <a href="/#quisuisje">Informations</a>
+      </p>
+
+      <ul class="footer-list">
+        <li><a href="/#quisuisje">Qui suis-je ?</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/#contact">Contactez-moi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-textes">
+      <p class="footer-title">
+        <a href="/textes/">Textes</a>
+      </p>
+    </div>
+
+    <div class="footer-column footer-right">
+      <a href="#top" class="footer-copyright">
+        © 2026 Florian Vallin
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <hr class="footer-divider">
+    <p class="footer-legal">Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="js/script.js?v=20260919-publish2" defer></script>
+<script src="js/protected-phone.js?v=20260919-publish2" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalService",
+  "name": "Cours particuliers de philosophie et méthodologie générale – Florian Vallin",
+  "description": "Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.",
+  "url": "https://florianvallin.fr/",
+  "logo": "https://florianvallin.fr/favicon-512.png",
+  "serviceType": [
+    "Cours particuliers de philosophie",
+    "Cours de méthodologie générale"
+  ],
+  "provider": {
+    "@type": "Person",
+    "name": "Florian Vallin"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Montpellier"
+    },
+    {
+      "@type": "Country",
+      "name": "France"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Montpellier",
+    "postalCode": "34000",
+    "addressCountry": "FR"
+  }
+}
+</script>
+
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L6 11M12 5L18 11"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+
+</body>
+</html>

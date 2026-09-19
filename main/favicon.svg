@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Logo FV</title>
+  <desc id="desc">Monogramme FV, F blanc et V violet sur fond circulaire sombre.</desc>
+  <circle cx="256" cy="256" r="232" fill="#1c1c28" stroke="#514d72" stroke-width="10"/>
+  <text x="104" y="365" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="226" font-weight="700">F</text>
+  <text x="244" y="365" fill="#7a72ff" font-family="Arial, Helvetica, sans-serif" font-size="226" font-weight="700">V</text>
+</svg>
