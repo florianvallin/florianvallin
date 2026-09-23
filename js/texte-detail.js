@@ -192,7 +192,7 @@
     if (sections.includes("philosophie") || text.hlp) {
       links.push(`<a class="text-context-philo-compass" href="/textes/philosophie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole philosophique</strong><span class="text-context-philo-compass-meta">Époques · cartes · parcours</span></a>`);
     }
-    if (text.bible) {
+  if (text.bible) {
       links.push(`<a class="text-context-bible-compass" href="/textes/theologie/boussole/"><span aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13.25"/><path d="M18 2.75v3.5M18 29.75v3.5M2.75 18h3.5M29.75 18h3.5"/><path class="compass-needle-north" d="m22.8 10.2-2.7 7.1-7.1 2.7 2.7-7.1 7.1-2.7Z"/><path class="compass-needle-south" d="m13.2 25.8 2.7-7.1 7.1-2.7-2.7 7.1-7.1 2.7Z"/><circle cx="18" cy="18" r="1.35"/></svg></span><strong>Boussole biblique</strong><span class="text-context-bible-compass-meta">Chronologie · livres · lieux · contexte</span></a>`);
     }
     return links.length ? `<div class="text-context-compasses">${links.join("")}</div>` : "";
@@ -527,6 +527,16 @@
   setMeta('meta[property="og:type"]', { property:"og:type", content:"article" });
   setMeta('meta[property="og:url"]', { property:"og:url", content:seoUrl });
   target.innerHTML = `<div class="text-detail-inner">
+    <div class="text-focus-controls" aria-label="Réglages de lecture">
+      <button class="text-focus-toggle" type="button" data-text-focus-toggle aria-pressed="false">◐ Focus</button>
+      <div class="text-focus-tools" data-text-focus-tools hidden>
+        <button type="button" data-text-focus-size="down" aria-label="Réduire le texte">A−</button>
+        <button type="button" data-text-focus-size="up" aria-label="Agrandir le texte">A+</button>
+        <button type="button" data-text-focus-width aria-label="Changer la largeur de lecture">↔</button>
+        <button type="button" data-text-focus-leading aria-label="Changer l’interligne">≡</button>
+        <button type="button" data-text-focus-theme aria-label="Changer le thème">◑</button>
+      </div>
+    </div>
     <p class="text-breadcrumb"><a class="text-back-results" href="${returnUrl}"><span aria-hidden="true">←</span> Retour aux résultats</a><span aria-hidden="true">·</span><a href="/textes/${text.section}/">${sectionLabel}</a></p>
     <p class="text-detail-section text-detail-section--${text.section}${isMultiSection ? " text-detail-section--dual" : ""}">${sectionMark}<span>${sectionHeading}</span>${hlpBadge(text, true)}</p>
     <h1>${text.title}${text.familiarIdea ? ` <span class="text-detail-familiar-idea">(${text.familiarIdea})</span>` : ""}</h1>
@@ -556,6 +566,46 @@
     </aside>
   </div>
   ${text.bible ? `<div class="text-bible-compare-backdrop" data-bible-compare-backdrop hidden></div><aside class="text-bible-compare-drawer" data-bible-compare-drawer aria-hidden="true" aria-label="Comparer les traductions de ${escapeAttribute(text.headerReference || text.title)}"><header><div><span>Lecteur biblique</span><h2>Comparer les traductions</h2><p>${escapeAttribute(text.headerReference || "Genèse")}</p></div><button type="button" data-bible-compare-close aria-label="Fermer le comparateur">×</button></header><div class="text-bible-compare-frame-wrap"><div class="text-bible-compare-frame-loading" data-bible-compare-loading><span></span><p>Chargement du comparateur…</p></div><iframe data-bible-compare-frame title="Comparaison des traductions — ${escapeAttribute(text.headerReference || text.title)}" loading="lazy"></iframe></div><footer><p><strong>Le texte de cette fiche reste inchangé.</strong> Le panneau utilise le lecteur biblique uniquement pour mettre les traductions en regard.</p><a href="${bibleReaderUrl}" target="_blank" rel="noopener">Ouvrir le lecteur complet ↗</a></footer></aside>` : ""}`;
+  const focusToggle = target.querySelector("[data-text-focus-toggle]");
+const focusTools = target.querySelector("[data-text-focus-tools]");
+const focusPrefsKey = "fvTextFocusPrefs";
+let focusPrefs = { size: 1, width: "normal", leading: "comfort", theme: "paper" };
+try { focusPrefs = { ...focusPrefs, ...JSON.parse(localStorage.getItem(focusPrefsKey) || "{}") }; } catch (_) {}
+const clampFocusSize = (value) => Math.min(1.35, Math.max(.88, Number(value) || 1));
+const saveFocusPrefs = () => { try { localStorage.setItem(focusPrefsKey, JSON.stringify(focusPrefs)); } catch (_) {} };
+const applyFocusPrefs = () => {
+  focusPrefs.size = clampFocusSize(focusPrefs.size);
+  document.documentElement.style.setProperty("--text-focus-scale", String(focusPrefs.size));
+    document.documentElement.style.setProperty("--text-focus-font-size", `${Math.round(focusPrefs.size * 100)}%`);
+  document.body.dataset.textFocusWidth = focusPrefs.width;
+  document.body.dataset.textFocusLeading = focusPrefs.leading;
+  document.body.dataset.textFocusTheme = focusPrefs.theme;
+};
+const setTextFocus = (active) => {
+  const enabled = Boolean(active);
+  document.body.classList.toggle("text-focus-mode", enabled);
+  focusToggle?.setAttribute("aria-pressed", String(enabled));
+  if (focusToggle) focusToggle.textContent = enabled ? "× Quitter" : "◐ Focus";
+  if (focusTools) focusTools.hidden = !enabled;
+};
+applyFocusPrefs();
+focusToggle?.addEventListener("click", () => setTextFocus(!document.body.classList.contains("text-focus-mode")));
+target.querySelectorAll("[data-text-focus-size]").forEach((button) => button.addEventListener("click", () => {
+  focusPrefs.size = clampFocusSize(focusPrefs.size + (button.dataset.textFocusSize === "up" ? .08 : -.08));
+  saveFocusPrefs(); applyFocusPrefs();
+}));
+target.querySelector("[data-text-focus-width]")?.addEventListener("click", () => {
+  const values=["narrow","normal","wide"]; focusPrefs.width=values[(values.indexOf(focusPrefs.width)+1)%values.length]; saveFocusPrefs(); applyFocusPrefs();
+});
+target.querySelector("[data-text-focus-leading]")?.addEventListener("click", () => {
+  const values=["compact","comfort","airy"]; focusPrefs.leading=values[(values.indexOf(focusPrefs.leading)+1)%values.length]; saveFocusPrefs(); applyFocusPrefs();
+});
+target.querySelector("[data-text-focus-theme]")?.addEventListener("click", () => {
+  const values=["paper","white","night"]; focusPrefs.theme=values[(values.indexOf(focusPrefs.theme)+1)%values.length]; saveFocusPrefs(); applyFocusPrefs();
+});
+document.addEventListener("keydown", (event) => { if (event.key === "Escape" && document.body.classList.contains("text-focus-mode")) setTextFocus(false); });
+if (new URLSearchParams(location.search).get("focus") === "1") setTextFocus(true);
+
   if (text.bible) {
     const bibleViewButtons = [...target.querySelectorAll("[data-bible-view]")];
     const applyBibleView = (mode, persist = true) => {

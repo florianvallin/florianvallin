@@ -5119,8 +5119,172 @@ window.FV_MEDIATHEQUE_DATA = {
       "contentUrl": "/mediatheque/cours/contenus/psycho/l1/s1/ue1/document-schema-petit-traite-manipulation.md",
       "url": "/mediatheque/cours/?id=psy-l1-s1-ue1-doc-petit-traite-schema"
     }
+    ,
+    {
+      "id": "video:milgram-jeu-de-la-mort",
+      "kind": "video",
+      "videoType": "film",
+      "title": "Le Jeu de la mort — jusqu’où obéit-on à une autorité ?",
+      "creator": "France Télévisions",
+      "description": "Documentaire qui transpose le protocole de Milgram dans un faux jeu télévisé afin d’interroger la soumission à l’autorité, la pression de la situation et la responsabilité individuelle.",
+      "url": "https://www.youtube.com/watch?v=JFbFQEk2aLY&t=875s",
+      "source": "YouTube",
+      "section": "Psychologie sociale",
+      "themes": [
+        "Liberté",
+        "Déterminisme",
+        "Conditionnement",
+        "Psychologie sociale",
+        "Autorité",
+        "Obéissance"
+      ],
+      "people": [
+        "Stanley Milgram"
+      ],
+      "keywords": [
+        "Milgram",
+        "expérience de Milgram",
+        "Le Jeu de la mort",
+        "soumission à l’autorité",
+        "obéissance",
+        "pression sociale",
+        "responsabilité",
+        "liberté",
+        "déterminisme",
+        "conditionnement",
+        "autonomie",
+        "hétéronomie"
+      ]
+    },
+    {
+      "id": "video:milgram-i-comme-icare",
+      "kind": "video",
+      "videoType": "film",
+      "title": "I comme Icare — reconstitution de l’expérience de Milgram",
+      "creator": "Henri Verneuil",
+      "description": "Scène de fiction mettant en images le protocole de Milgram. Une ressource particulièrement claire pour observer la montée progressive de l’obéissance, l’autorité du scientifique et le conflit entre conscience morale et consigne.",
+      "url": "https://www.youtube.com/watch?v=I7to2P8osl0",
+      "source": "YouTube",
+      "section": "Cinéma & psychologie sociale",
+      "themes": [
+        "Liberté",
+        "Déterminisme",
+        "Conditionnement",
+        "Psychologie sociale",
+        "Autorité",
+        "Responsabilité"
+      ],
+      "people": [
+        "Stanley Milgram",
+        "Henri Verneuil"
+      ],
+      "keywords": [
+        "Milgram",
+        "expérience de Milgram",
+        "I comme Icare",
+        "soumission à l’autorité",
+        "obéissance",
+        "responsabilité morale",
+        "liberté",
+        "déterminisme",
+        "conditionnement",
+        "autonomie",
+        "hétéronomie"
+      ]
+    },
+    {
+      "id": "video:milgram-science-etonnante",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "L’expérience de Milgram — analyse critique",
+      "creator": "ScienceEtonnante — David Louapre",
+      "description": "Analyse détaillée de l’expérience de Milgram, de son protocole, de ses résultats et surtout des limites de leur interprétation. Utile pour ne pas réduire Milgram à l’idée simpliste d’une obéissance aveugle.",
+      "url": "https://www.youtube.com/watch?v=7Vy1Cg5O5Pc&t=551s",
+      "source": "YouTube",
+      "section": "Analyse & psychologie sociale",
+      "themes": [
+        "Liberté",
+        "Déterminisme",
+        "Conditionnement",
+        "Psychologie sociale",
+        "Science",
+        "Autorité"
+      ],
+      "people": [
+        "Stanley Milgram",
+        "David Louapre"
+      ],
+      "keywords": [
+        "Milgram",
+        "expérience de Milgram",
+        "Science Étonnante",
+        "ScienceEtonnante",
+        "David Louapre",
+        "soumission à l’autorité",
+        "méthodologie expérimentale",
+        "critique de Milgram",
+        "obéissance",
+        "liberté",
+        "déterminisme",
+        "conditionnement"
+      ]
+    },
+    {
+      "id": "video:milgram-documentaire-archives",
+      "kind": "video",
+      "videoType": "film",
+      "title": "L’expérience de Milgram — documentaire d’archives",
+      "creator": "Documentaire",
+      "description": "Ancien documentaire consacré à l’expérience de Milgram et à la soumission à l’autorité. Il permet de compléter les reconstitutions contemporaines par une présentation plus proche du contexte historique de l’expérience.",
+      "url": "https://www.youtube.com/watch?v=pAuDIGkL70U",
+      "source": "YouTube",
+      "section": "Psychologie sociale",
+      "themes": [
+        "Liberté",
+        "Déterminisme",
+        "Conditionnement",
+        "Psychologie sociale",
+        "Autorité",
+        "Obéissance"
+      ],
+      "people": [
+        "Stanley Milgram"
+      ],
+      "keywords": [
+        "Milgram",
+        "expérience de Milgram",
+        "documentaire Milgram",
+        "archives",
+        "soumission à l’autorité",
+        "obéissance",
+        "liberté",
+        "déterminisme",
+        "conditionnement",
+        "responsabilité"
+      ]
+    }
   ],
   "dossiers": [
+    {
+      "id": "milgram-liberte-determinisme-conditionnement",
+      "title": "Milgram — liberté, déterminisme et conditionnement",
+      "eyebrow": "Dossier thématique",
+      "description": "Quatre ressources complémentaires pour étudier l’expérience de Milgram : transposition télévisuelle, scène de fiction, analyse critique et documentaire d’archives. À utiliser pour penser l’obéissance, la liberté, le poids de la situation et la responsabilité.",
+      "themes": [
+        "Liberté",
+        "Déterminisme",
+        "Conditionnement",
+        "Psychologie sociale",
+        "Autorité",
+        "Obéissance"
+      ],
+      "resourceIds": [
+        "video:milgram-jeu-de-la-mort",
+        "video:milgram-i-comme-icare",
+        "video:milgram-science-etonnante",
+        "video:milgram-documentaire-archives"
+      ]
+    },
     {
       "id": "therese-avila",
       "title": "Thérèse d’Avila",

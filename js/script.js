@@ -3,7 +3,7 @@
   const script = document.createElement("script");
   const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
   const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260917-publish1`;
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260923-github-refresh1`;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -371,7 +371,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20260919-hlp-consolidation1";
+        script.src = "/js/site-search-data.js?v=20260923-github-refresh1";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = reject;
         document.head.append(script);

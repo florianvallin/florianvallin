@@ -12,6 +12,24 @@
   const error = $("[data-course-error]");
   const aside = $("[data-course-aside]");
   const toc = $("[data-course-toc]");
+  const focusButtons = [...document.querySelectorAll("[data-course-focus]")];
+  function applyCourseFocus(active) {
+    const enabled = Boolean(active);
+    document.body.classList.toggle("course-focus", enabled);
+    focusButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(enabled));
+      if (button.classList.contains("course-focus-exit")) button.hidden = !enabled;
+    });
+    try { localStorage.setItem("fvCourseFocus", enabled ? "1" : "0"); } catch (_) {}
+  }
+  focusButtons.forEach((button) => button.addEventListener("click", () => applyCourseFocus(!document.body.classList.contains("course-focus"))));
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && document.body.classList.contains("course-focus")) applyCourseFocus(false); });
+  {
+    const focusParam = new URLSearchParams(location.search).get("focus");
+    let remembered = false;
+    try { remembered = localStorage.getItem("fvCourseFocus") === "1"; } catch (_) {}
+    applyCourseFocus(focusParam === "1" || (focusParam !== "0" && remembered));
+  }
 
   function esc(value="") {
     return String(value).replace(/[&<>'"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));

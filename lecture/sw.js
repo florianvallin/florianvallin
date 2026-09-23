@@ -1,10 +1,10 @@
-const CACHE = "fv-reader-v13-20260917-publish1";
+const CACHE = "fv-reader-v16-20260922-mac-shortcuts1";
 const CORE = [
   "/lecture/",
   "/lecture/index.html",
-  "/lecture/reader.css?v=20260917-publish1",
-  "/lecture/reader.js?v=20260917-publish1",
-  "/lecture/library.js?v=20260917-publish1",
+  "/lecture/reader.css?v=20260923-github-refresh1",
+  "/lecture/reader.js?v=20260923-github-refresh1",
+  "/lecture/library.js?v=20260923-github-refresh1",
   "/favicon.svg"
 ];
 

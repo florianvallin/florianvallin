@@ -2182,5 +2182,30 @@
     "meta": "Michel Serres — Le Contrat naturel — L’humain et ses limites",
     "keywords": "Michel Serres · Serres · Le Contrat naturel · L’hôte et le parasite · HLP Terminale · L’Humanité en question · L’humain et ses limites · Nature Technique Devoir · contrat naturel symbiose réciprocité nature · Quel type de relation devons-nous établir avec une nature que nous exploitons tout en dépendant d’elle ?",
     "url": "/textes/serres-hote-parasite/"
+  },
+  {
+    "type": "Blog",
+    "title": "Atomic Habits : mieux étudier avec de petites habitudes",
+    "meta": "Méthodologie · Études · Habitudes",
+    "excerpt": "Rendre le travail plus facile à commencer, plus régulier et réellement efficace pour apprendre grâce à de petites habitudes et à l’effet cumulé.",
+    "keywords": "Atomic Habits étudiants etudiant James Clear habitudes méthode méthodologie travail révisions motivation procrastination système action minimale règle deux minutes empilement habitudes environnement friction rappel actif retrieval practice test espacement répétition espacée production PACTE partiel université terminale licence prépa mémoire concentration effet cumulé petites habitudes",
+    "url": "/blog/atomic-habits-etudiants/",
+    "boost": 31
+  },
+  {
+    "kind": "blog",
+    "kindLabel": "Blog · Philosophie & extra-philosophie",
+    "title": "Faire feu de tout bois : philosophie et extra-philosophie",
+    "meta": "Mythologie · religion · littérature · méthode",
+    "keywords": "mythologie religion littérature philosophie méthodologie dissertation références exemples argument culture",
+    "url": "/blog/textes-religieux-mythologiques-philosophie/"
+  },
+  {
+    "kind": "blog",
+    "kindLabel": "Blog · Expériences de pensée",
+    "title": "10 expériences de pensée et dilemmes pour entrer en philosophie",
+    "meta": "Dilemmes · méthode · notions",
+    "keywords": "expériences de pensée dilemmes Gygès Thésée cerveau cuve Nozick tramway Laplace Rawls prisonnier Mary Searle philosophie",
+    "url": "/blog/experiences-de-pensee-philosophie/"
   }
 ]

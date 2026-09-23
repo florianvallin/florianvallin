@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js?v=20260923-github-refresh1", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>Atomic Habits : mieux étudier avec de petites habitudes — Philosophal</title>
+  <meta name="description" content="Une méthode concrète inspirée d’Atomic Habits pour rendre le travail plus facile à commencer, plus régulier et réellement efficace pour apprendre.">
+  <link rel="canonical" href="https://philosophal.fr/blog/atomic-habits-etudiants/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="stylesheet" href="/css/style.css?v=20260923-github-refresh1">
+  <link rel="stylesheet" href="/css/blog.css?v=20260923-github-refresh1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Atomic Habits : mieux étudier avec de petites habitudes">
+  <meta property="og:description" content="Transformer de petites actions en un système de travail simple, régulier et réellement efficace pour apprendre.">
+  <meta property="og:url" content="https://philosophal.fr/blog/atomic-habits-etudiants/">
+  <meta property="article:published_time" content="2026-09-22">
+  <meta property="article:modified_time" content="2026-09-23">
+</head>
+<body id="top" class="blog-page blog-atomic-page">
+  <header class="navbar" id="site-header">
+    <div class="nav-container">
+      <a class="nav-brand" href="/" aria-label="Accueil — Philosophal">Florian <strong>Vallin</strong></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
+        <a class="nav-texts-link" href="/textes/">Textes</a>
+        <a class="nav-blog-link" href="/blog/" aria-current="page">Blog</a>
+        <a href="/#philosophie">Prestations</a><a href="/#quisuisje">Qui suis-je ?</a><a href="/#faq">FAQ</a><a href="/#contact">Contactez-moi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog-article-main">
+    <header class="blog-article-header atomic-hero">
+      <div class="blog-article-header-inner blog-article-header-inner--visual">
+        <nav class="blog-breadcrumb" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span>·</span><a href="/blog/">Blog</a><span>·</span><span>Atomic Habits · petites habitudes</span></nav>
+        <div class="blog-article-hero-grid atomic-hero-grid">
+          <div class="blog-article-hero-copy">
+            <p class="blog-article-kicker">Méthodologie · Études · Habitudes</p>
+            <h1 class="blog-article-title"><em>Atomic Habits</em> : mieux étudier avec de <strong>petites habitudes</strong></h1>
+            <p class="blog-article-lead">Construire des habitudes de travail <strong>simples, régulières et réellement efficaces pour apprendre</strong>.</p>
+            <p class="blog-article-meta"><strong>Florian Vallin</strong><i aria-hidden="true"></i><time datetime="2026-09-22">22 septembre 2026</time><i aria-hidden="true"></i><span>Lecture · 13 min</span></p>
+          </div>
+          <figure class="atomic-hero-visual atomic-hero-visual--minimal" aria-label="Illustration symbolique de l’effet cumulé des petites habitudes">
+            <div class="atomic-minimal-art" aria-hidden="true">
+              <span class="atomic-minimal-orbit atomic-minimal-orbit--1"></span>
+              <span class="atomic-minimal-orbit atomic-minimal-orbit--2"></span>
+              <span class="atomic-minimal-node atomic-minimal-node--1"></span>
+              <span class="atomic-minimal-node atomic-minimal-node--2"></span>
+              <span class="atomic-minimal-node atomic-minimal-node--3"></span>
+              <span class="atomic-minimal-path"></span>
+              <span class="atomic-minimal-dot atomic-minimal-dot--1"></span>
+              <span class="atomic-minimal-dot atomic-minimal-dot--2"></span>
+              <span class="atomic-minimal-dot atomic-minimal-dot--3"></span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <div class="blog-article-layout">
+      <article class="blog-prose">
+        <p>Travailler mieux ne repose pas seulement sur la motivation : ce sont surtout les petites actions que l’on parvient à répéter qui comptent. Quelques minutes de rappel actif, une tâche préparée la veille ou une reprise régulière paraissent modestes, mais leur <strong>effet cumulé</strong> peut devenir décisif au fil des semaines ; l’enjeu est donc de rendre le travail assez simple pour rester régulier, tout en choisissant des méthodes qui font réellement apprendre.</p>
+
+        <div class="blog-callout atomic-thesis">
+          <span>L’idée directrice</span>
+          <p><strong>Une bonne méthode de travail doit résoudre deux problèmes à la fois :</strong></p>
+          <ul class="atomic-thesis-list">
+            <li><strong>Rendre le travail assez simple pour être régulier.</strong></li>
+            <li><strong>Choisir des actions qui produisent réellement de l’apprentissage.</strong></li>
+          </ul>
+        </div>
+
+        <p class="atomic-inspiration"><strong>À propos d’<em>Atomic Habits</em>.</strong> Cet article s’en inspire librement. Je ne suis pas toujours d’accord avec la perspective générale du développement personnel, mais on peut y trouver des stratégies concrètes — action minimale, réduction des frictions, empilement d’habitudes, organisation de l’environnement — qui s’adaptent très bien aux pratiques étudiantes. C’est dans cet esprit que je les reprends ici : comme des outils utiles, à tester et à ajuster.</p>
+
+        <section id="motivation" aria-labelledby="motivation-title">
+          <span class="blog-section-eyebrow blog-section-title">01 · Système</span>
+          <h2 id="motivation-title">La motivation donne une impulsion. Le système donne une continuité.</h2>
+          <p>La motivation varie avec la fatigue, les autres cours, le sommeil, les échéances et l’humeur. Une méthode qui ne fonctionne que lorsque vous êtes très motivé est donc fragile par construction.</p>
+          <div class="atomic-compare atomic-compare--stackable">
+            <article><span>Objectif</span><strong>« Réussir mon partiel. »</strong><p>Donne une direction, mais ne dit pas quoi faire aujourd’hui.</p></article>
+            <article><span>Intention</span><strong>« Cette semaine, je travaille sérieusement. »</strong><p>Bonne résolution, mais encore vague.</p></article>
+            <article class="is-best"><span>Système</span><strong>« À 18 h, je fais 20 minutes de rappel actif. »</strong><p>Une action identifiable, située dans le temps et répétable.</p></article>
+          </div>
+          <div class="atomic-rule"><strong>Question à remplacer</strong><p>Ne demandez pas seulement : « Quel résultat est-ce que je veux ? » Demandez aussi : <strong>« Quelle action répétée peut raisonnablement m’y conduire ? »</strong></p></div>
+        </section>
+
+        <section id="premier-pas" aria-labelledby="premier-pas-title">
+          <span class="blog-section-eyebrow blog-section-title">02 · Démarrage</span>
+          <h2 id="premier-pas-title">Réduire le premier pas jusqu’à ce qu’il soit facile à commencer</h2>
+          <p>Quand une tâche paraît lourde, nous imaginons souvent l’ensemble du travail à accomplir : « réviser le chapitre », « faire la dissertation », « avancer le mémoire », mais c’est trop lourd, trop coûteux.</p>
+          <p>La solution consiste à distinguer <strong>la tâche complète</strong> de <strong>l’action d’entrée</strong>.</p>
+          <div class="atomic-table-wrap" role="region" aria-label="Transformer une tâche en première action" tabindex="0">
+            <table class="atomic-table"><thead><tr><th>Projet</th><th>Première action</th></tr></thead><tbody>
+              <tr><td>Lire davantage</td><td>Lire 2 pages</td></tr>
+              <tr><td>Réviser un cours</td><td>Répondre à 3 questions sans regarder</td></tr>
+              <tr><td>Faire une dissertation</td><td>Définir les 2 termes du sujet</td></tr>
+              <tr><td>Apprendre un auteur</td><td>Expliquer 1 thèse à voix haute</td></tr>
+              <tr><td>Avancer un mémoire</td><td>Écrire 100 mots imparfaits</td></tr>
+            </tbody></table>
+          </div>
+          <div class="atomic-rule"><strong>Règle des mauvais départs</strong><p>Si vous procrastinez, réduisez l’action jusqu’à obtenir quelque chose que vous êtes presque certain de pouvoir commencer. Le but de l’<strong>action minimale</strong> n’est pas de finir : c’est d’entrer dans le travail.</p></div>
+        </section>
+
+        <section id="preciser" aria-labelledby="preciser-title">
+          <span class="blog-section-eyebrow blog-section-title">03 · Précision</span>
+          <h2 id="preciser-title">« Travailler » n’est pas une tâche</h2>
+          <p>Une <em>consigne vague</em> vous oblige à décider au dernier moment par où commencer. En réalité : plus la tâche est précise, moins vous dépensez d’énergie à l’interpréter.</p>
+          <div class="atomic-ladder" aria-label="Rendre une tâche progressivement plus précise">
+            <div><span>Vague</span><p>Réviser la philosophie</p></div><i>→</i>
+            <div><span>Mieux</span><p>Revoir le cours sur la liberté</p></div><i>→</i>
+            <div class="is-best"><span>Actionnable</span><p>Restituer pendant 5 min ce que je sais du déterminisme, puis vérifier</p></div>
+          </div>
+          <p>Une bonne tâche commence souvent par un verbe : <strong>définir, expliquer, comparer, restituer, résoudre, rédiger, corriger, mémoriser</strong>. Elle possède aussi une fin identifiable.</p>
+        </section>
+
+        <section id="declencheur" aria-labelledby="declencheur-title">
+          <span class="blog-section-eyebrow blog-section-title">04 · Déclencheur</span>
+          <h2 id="declencheur-title">Accrocher la nouvelle habitude à quelque chose qui existe déjà</h2>
+          <p>Plutôt que d’attendre « le bon moment », associez l’habitude à un événement stable de votre journée (<strong>empilement d’habitudes</strong>).</p>
+          <div class="atomic-formula"><span>Formule</span><strong>Après [habitude existante], je fais [petite action].</strong></div>
+          <div class="atomic-examples" aria-label="Exemples d’empilement d’habitudes">
+            <p><b>Après mon café du matin</b><span>→</span><i>je révise 5 cartes.</i></p>
+            <p><b>Après chaque cours</b><span>→</span><i>je note les 3 idées essentielles.</i></p>
+            <p><b>Après être arrivé à la BU</b><span>→</span><i>j’écris mes 3 tâches.</i></p>
+            <p><b>Après dîner</b><span>→</span><i>je lis 10 minutes.</i></p>
+            <p><b>Avant de fermer l’ordinateur</b><span>→</span><i>je prépare la première action de demain.</i></p>
+          </div>
+        </section>
+
+        <section id="environnement" aria-labelledby="environnement-title">
+          <span class="blog-section-eyebrow blog-section-title">05 · Environnement</span>
+          <h2 id="environnement-title">Avant de chercher plus de volonté, réduisez les <em>frictions</em></h2>
+          <p>Une habitude devient plus probable quand ce qui la déclenche est visible et quand sa première étape demande peu d’effort. Inversement, une distraction devient moins probable si elle demande un effort supplémentaire.</p>
+          <div class="atomic-friction-grid">
+            <article>
+              <span>Faciliter le travail</span>
+              <ul>
+                <li>cours déjà ouvert</li>
+                <li>livre posé sur le bureau</li>
+                <li>tâche suivante choisie la veille</li>
+                <li>matériel préparé</li>
+                <li>lieu de travail identifié</li>
+              </ul>
+            </article>
+            <article>
+              <span>Compliquer la distraction</span>
+              <ul>
+                <li>téléphone hors de portée</li>
+                <li>notifications coupées</li>
+                <li>réseaux sociaux déconnectés</li>
+                <li>onglets inutiles fermés</li>
+                <li>bloqueur de sites pendant la séance</li>
+              </ul>
+            </article>
+          </div>
+          <div class="atomic-rule"><strong>Principe</strong><p>La discipline ne consiste pas seulement à résister. Elle consiste aussi à <strong>organiser l’environnement pour avoir moins souvent besoin de résister</strong>.</p></div>
+        </section>
+
+        <section id="apprendre" aria-labelledby="apprendre-title">
+          <span class="blog-section-eyebrow blog-section-title">06 · Apprentissage</span>
+          <h2 id="apprendre-title">Répéter une habitude ne suffit pas : il faut <em>répéter</em> la bonne activité</h2>
+          <p>C’est ici qu’il faut dépasser <em>Atomic Habits</em>. Un étudiant peut relire consciencieusement son cours tous les jours et pourtant apprendre moins qu’il ne le pense. Les recherches en psychologie cognitive distinguent plusieurs techniques, et deux ressortent régulièrement par leur utilité : <strong>se tester</strong> et <strong>espacer les reprises</strong>.</p>
+          <div class="atomic-science-bridge"><span>Habitudes</span><strong>Comment rendre l’action régulière ?</strong><i>+</i><span>Apprentissage</span><strong>Quelle action fait réellement progresser ?</strong></div>
+          <div class="atomic-learning-grid">
+            <article><span>1</span><h3>Rappel actif</h3><p>Fermez le cours et essayez de restituer ce que vous savez avant de vérifier. Il existe plusieurs formes de rappel actif : questions-réponses, flashcards, restitution orale, quiz, mini-plan ou auto-explication. Une question simple : <strong>« Qu’est-ce que je suis capable d’expliquer sans regarder ? »</strong></p></article>
+            <article><span>2</span><h3>Espacement</h3><p>Revenez plusieurs fois sur une notion plutôt que de concentrer toutes les révisions la veille. Trois rythmes très courants : <strong>rapproché</strong> (J0 → J1 → J3 → J7), <strong>hebdomadaire</strong> (J0 → J7 → J14 → J30) et <strong>spiralaire</strong> (reprises régulières sur tout le semestre, fréquent en médecine, en droit ou en concours).</p></article>
+            <article><span>3</span><h3>Production</h3><p>Utilisez les connaissances : répondre à une question, faire un plan, réaliser une <strong>mind-map</strong>, rédiger une <strong>restitution écrite</strong>, expliquer à voix haute ou résoudre un exercice.</p></article>
+          </div>
+          <div class="atomic-study-notes">
+            <span>Voir les travaux de :</span>
+            <ul>
+              <li>Roediger &amp; Karpicke — sur l’effet de test et le rappel actif ;</li>
+              <li>Cepeda et al. — sur l’espacement des reprises ;</li>
+              <li>Dunlosky et al. — sur l’efficacité comparée des techniques d’apprentissage.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="trois-niveaux" aria-labelledby="trois-niveaux-title">
+          <span class="blog-section-eyebrow blog-section-title">07 · Adaptation</span>
+          <h2 id="trois-niveaux-title">Prévoir trois versions de votre séance</h2>
+          <p>Un système durable ne doit pas être conçu uniquement pour les jours où vous êtes reposé et disponible. Prévoyez à l’avance une <strong>version minimale (1)</strong>, une <strong>version normale (2)</strong> et une <strong>version approfondie (3)</strong>.</p>
+          <div class="atomic-levels">
+            <article><span>Version minimale (1)</span><strong>5 min</strong><p>Jour chargé, fatigue, baisse d’énergie. Maintenir le lien avec l’habitude.</p></article>
+            <article class="is-normal"><span>Version normale (2)</span><strong>25–45 min</strong><p>Séance habituelle : une tâche précise, un temps défini, une vraie concentration.</p></article>
+            <article><span>Version approfondie (3)</span><strong>60–90 min</strong><p>Dissertation, mémoire, lecture difficile, sujet type examen.</p></article>
+          </div>
+          <div class="atomic-rule"><strong>Le piège à éviter</strong><p><strong>Très motivé → énorme séance → épuisement → arrêt.</strong> Le problème n’est pas seulement la fatigue : c’est aussi la rupture de la continuité. Dans une méthode durable, <strong>la continuité dans le temps est très importante</strong>.</p></div>
+        </section>
+
+        <section id="reprendre" aria-labelledby="reprendre-title">
+          <span class="blog-section-eyebrow blog-section-title">08 · Retour</span>
+          <h2 id="reprendre-title">Après une interruption, ne rattrapez pas tout : reprenez</h2>
+          <p>Une séance ratée n’est pas grave. Le problème apparaît lorsqu’elle devient le début d’une rupture : séance manquée, culpabilité, retard, tâche devenue énorme, nouvel évitement.</p>
+          <div class="atomic-return"><div><span>Erreur classique</span><strong>« J’ai raté deux jours, il faut maintenant faire deux heures. »</strong></div><i>→</i><div class="is-best"><span>Retour utile</span><strong>« Aujourd’hui, je reprends avec 10 minutes. »</strong></div></div>
+          <p>Votre priorité après une interruption est de <strong>réamorcer le système</strong>. Vous pourrez augmenter l’effort une fois le mouvement retrouvé.</p>
+        </section>
+
+        <section id="mesurer" aria-labelledby="mesurer-title">
+          <span class="blog-section-eyebrow blog-section-title">09 · Mesure</span>
+          <h2 id="mesurer-title">Mesurer ce que vous contrôlez réellement</h2>
+          <p>Vous ne contrôlez pas directement votre note finale. Vous contrôlez beaucoup mieux les comportements qui la précèdent : nombre de séances, exercices réalisés, rappels actifs, chapitres revus ou sujets préparés.</p>
+          <div class="atomic-tracker" aria-label="Exemple de suivi hebdomadaire">
+            <p><span>✓</span> 4 séances courtes dans la semaine</p>
+            <p><span>✓</span> 2 exercices réalisés</p>
+            <p><span>✓</span> 1 ancien chapitre repris</p>
+            <p><span>✓</span> 1 sujet type examen</p>
+          </div>
+          <p>Le suivi n’a pas besoin de devenir un nouveau travail. Quelques indicateurs simples suffisent pour rendre visible la régularité.</p>
+        </section>
+
+        <section id="pacte" aria-labelledby="pacte-title">
+          <span class="blog-section-eyebrow blog-section-title">10 · Synthèse</span>
+          <h2 id="pacte-title">La méthode P.A.C.T.E. : une routine en cinq gestes</h2>
+          <p>Pour transformer les principes précédents en routine, vous pouvez retenir cinq gestes. Le nom importe moins que l’ordre : savoir quoi faire, démarrer, se concentrer, vérifier l’apprentissage et préparer la reprise.</p>
+          <div class="atomic-pacte" aria-label="Méthode PACTE">
+            <article><b>P</b><div><span>Préparer</span><p>Définir une tâche précise : « questions 1 à 3 », pas « travailler ».</p></div></article>
+            <article><b>A</b><div><span>Amorcer</span><p>Commencer par une action de 2 à 5 minutes.</p></div></article>
+            <article><b>C</b><div><span>Concentrer</span><p>Une tâche, un temps défini, le moins de distractions possible.</p></div></article>
+            <article><b>T</b><div><span>Tester</span><p>Avant de relire : qu’est-ce que je sais restituer ?</p></div></article>
+            <article><b>E</b><div><span>Enchaîner</span><p>Avant d’arrêter, écrire la première action de la prochaine séance.</p></div></article>
+          </div>
+        </section>
+
+        <section id="semaine" aria-labelledby="semaine-title">
+          <span class="blog-section-eyebrow blog-section-title">11 · Exemple</span>
+          <h2 id="semaine-title">À quoi ressemble une semaine concrète ?</h2>
+          <p>Imaginons un partiel dans trois semaines. L’objectif n’est pas de remplir chaque journée, mais d’alterner nouvelles notions, reprises espacées et production.</p>
+          <div class="atomic-week">
+            <article><span>Lundi</span><strong>25 min</strong><p>Rappel actif du chapitre 1.</p></article>
+            <article><span>Mardi</span><strong>30 min</strong><p>Chapitre 2 + 5 questions.</p></article>
+            <article><span>Mercredi</span><strong>10 min</strong><p>Reprise espacée du chapitre 1.</p></article>
+            <article><span>Jeudi</span><strong>30 min</strong><p>Chapitre 3 + restitution.</p></article>
+            <article><span>Vendredi</span><strong>20 min</strong><p>Restituer les 3 chapitres sans cours.</p></article>
+            <article><span>Samedi</span><strong>45 min</strong><p>Exercice ou sujet type examen.</p></article>
+            <article><span>Dimanche</span><strong>15 min</strong><p>Bilan + préparation de la semaine.</p></article>
+          </div>
+          <div class="atomic-final-principle"><span>À retenir</span><p>Le but n’est pas de travailler constamment. Une bonne méthode doit au contraire rendre le travail <strong>plus prévisible, plus ciblé et plus soutenable</strong>, afin de laisser aussi une place au sommeil, au repos et au reste de la vie.</p></div>
+        </section>
+
+        <section id="sources" aria-labelledby="sources-title">
+          <span class="blog-section-eyebrow blog-section-title">Sources · Pour aller plus loin</span>
+          <h2 id="sources-title">Les références utilisées</h2>
+          <div class="atomic-sources">
+            <article><span>Habitudes</span><strong>James Clear, <em>Atomic Habits</em>, 2018.</strong><p>Le cadre général : habitudes fondées sur l’identité, réduction de la friction, empilement d’habitudes et quatre lois du changement de comportement.</p><a href="https://jamesclear.com/atomic-habits-summary" target="_blank" rel="noopener">Résumé officiel ↗</a></article>
+            <article><span>Techniques d’apprentissage</span><strong>John Dunlosky et al., 2013.</strong><p><em>Improving Students’ Learning With Effective Learning Techniques</em>, <em>Psychological Science in the Public Interest</em>, 14(1), 4–58.</p><a href="https://doi.org/10.1177/1529100612453266" target="_blank" rel="noopener">DOI ↗</a></article>
+            <article><span>Rappel actif</span><strong>Henry L. Roediger III &amp; Jeffrey D. Karpicke, 2006.</strong><p><em>Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention</em>, <em>Psychological Science</em>, 17(3), 249–255.</p><a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">DOI ↗</a></article>
+            <article><span>Espacement</span><strong>Nicholas J. Cepeda et al., 2006.</strong><p><em>Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis</em>, <em>Psychological Bulletin</em>, 132(3), 354–380.</p><a href="https://doi.org/10.1037/0033-2909.132.3.354" target="_blank" rel="noopener">DOI ↗</a></article>
+          </div>
+          <div class="atomic-video-resources" aria-labelledby="atomic-video-title">
+            <div class="atomic-video-resources-head">
+              <span>Pour aller plus loin</span>
+              <h3 id="atomic-video-title">Deux ressources vidéo sur <em>Atomic Habits</em></h3>
+            </div>
+            <div class="atomic-video-grid">
+              <article class="atomic-video-card">
+                <div class="atomic-video-frame">
+                  <iframe src="https://www.youtube-nocookie.com/embed/2uZfySlFYc4" title="Atomic Habits — ressource vidéo complémentaire" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="atomic-video-copy"><span>Vidéo</span><strong>Atomic Habits — application et habitudes d’étude</strong><a href="https://www.youtube.com/watch?v=2uZfySlFYc4" target="_blank" rel="noopener">Ouvrir sur YouTube ↗</a></div>
+              </article>
+              <article class="atomic-video-card">
+                <div class="atomic-video-frame">
+                  <iframe src="https://www.youtube-nocookie.com/embed/C2jTHbLbQDs" title="Résumé d’Atomic Habits" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="atomic-video-copy"><span>Vidéo</span><strong>Résumé d’<em>Atomic Habits</em></strong><a href="https://www.youtube.com/watch?v=C2jTHbLbQDs" target="_blank" rel="noopener">Ouvrir sur YouTube ↗</a></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <div class="blog-end-cta atomic-end">
+          <h2>Pour prolonger ce travail</h2>
+          <p>Si vous voulez aller plus loin, vous pouvez parcourir les autres billets méthodologiques du blog, ou me contacter pour travailler votre méthode de façon plus ciblée.</p>
+          <div class="blog-end-actions">
+            <a href="/blog/">Voir les autres billets</a>
+            <a href="/#contact">Me contacter</a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="blog-article-aside atomic-aside" aria-label="Dans ce billet">
+        <span>Dans ce billet</span>
+        <ol>
+          <li><a href="#motivation">Système</a></li>
+          <li><a href="#premier-pas">Premier pas</a></li>
+          <li><a href="#preciser">Préciser</a></li>
+          <li><a href="#declencheur">Déclencheur</a></li>
+          <li><a href="#environnement">Environnement</a></li>
+          <li><a href="#apprendre">Apprendre</a></li>
+          <li><a href="#trois-niveaux">3 niveaux</a></li>
+          <li><a href="#reprendre">Reprendre</a></li>
+          <li><a href="#mesurer">Mesurer</a></li>
+          <li><a href="#pacte">P.A.C.T.E.</a></li>
+          <li><a href="#semaine">Une semaine</a></li>
+        </ol>
+        <a class="thought-aside-sources" href="#sources">Sources &amp; références ↓</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div>
+      <div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div>
+      <div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p><p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p></div>
+      <div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Florian Vallin</a></div>
+    </div>
+    <div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div>
+  </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <script src="/js/script.js?v=20260923-github-refresh1" defer></script>
+  <script src="/js/blog-atomic-habits.js?v=20260923-github-refresh1" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Atomic Habits : mieux étudier avec de petites habitudes","datePublished":"2026-09-22","dateModified":"2026-09-23","author":{"@type":"Person","name":"Florian Vallin"},"mainEntityOfPage":"https://philosophal.fr/blog/atomic-habits-etudiants/","description":"Une méthode concrète inspirée d’Atomic Habits pour rendre le travail plus facile à commencer, plus régulier et réellement efficace pour apprendre."}</script>
+</body>
+</html>

@@ -1252,7 +1252,7 @@
     });
 
     navigator.serviceWorker
-      .register("/lecture/sw.js?v=20260917-publish1", { scope: "/lecture/", updateViaCache: "none" })
+      .register("/lecture/sw.js?v=20260923-github-refresh1", { scope: "/lecture/", updateViaCache: "none" })
       .then((registration) => registration.update())
       .catch(() => {});
   }
@@ -1446,6 +1446,12 @@
     const requestedPage = Number(params.get("page"));
     await selectBook(requestedId, Number.isFinite(requestedPage) && requestedPage > 0 ? requestedPage : null, { recordTrail: false, resumeToast: !requestedPage });
     updateTrailButtons();
+
+    // Accès « Livres » : afficher directement la bibliothèque afin que
+    // Thérèse d’Avila, Jean de la Croix, etc. soient immédiatement visibles.
+    if (params.get("view") === "library") {
+      openDrawer("library");
+    }
   }
 
   start();

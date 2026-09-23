@@ -11,7 +11,7 @@
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <title>Lecture — Florian Vallin</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="reader.css?v=20260919-hlp-consolidation1">
+  <link rel="stylesheet" href="reader.css?v=20260923-github-refresh1">
   <script>
     (() => {
       let allowed = false;
@@ -21,8 +21,8 @@
       if (!allowed) location.replace("/");
     })();
   </script>
-  <script defer src="library.js?v=20260919-hlp-consolidation1"></script>
-  <script defer src="reader.js?v=20260919-hlp-consolidation1"></script>
+  <script defer src="library.js?v=20260923-github-refresh1"></script>
+  <script defer src="reader.js?v=20260923-github-refresh1"></script>
 </head>
 <body data-theme="paper">
 <main class="reader-app" id="reader-app">
@@ -39,6 +39,7 @@
     <div class="reader-top-actions">
       <select id="author-select" class="reader-author-select" aria-label="Choisir un auteur"></select>
       <select id="book-select" class="reader-book-select" aria-label="Choisir un livre"></select>
+      <a class="reader-epub-link" href="/mediatheque/lecteur/" title="Ouvrir un EPUB ou un livre local" aria-label="Ouvrir le lecteur EPUB">EPUB</a>
       <button id="trail-back" class="reader-icon-button" type="button" aria-label="Emplacement précédent" disabled>↶</button>
       <button id="trail-forward" class="reader-icon-button" type="button" aria-label="Emplacement suivant" disabled>↷</button>
       <button id="search-toggle" class="reader-icon-button" type="button" aria-label="Rechercher" aria-expanded="false">⌕</button>
@@ -108,6 +109,13 @@
     <div class="drawer-body">
       <section data-panel="toc" class="drawer-panel is-active"><div id="book-map" class="book-map"></div><div id="toc-list" class="toc-list"></div></section>
       <section data-panel="library" class="drawer-panel">
+        <div class="fv-local-reader-entry">
+          <div>
+            <strong>Ouvrir un livre personnel</strong>
+            <p>EPUB, TXT, HTML, Markdown ou FB2 stocké localement dans ce navigateur.</p>
+          </div>
+          <a href="/mediatheque/lecteur/">Lecteur EPUB →</a>
+        </div>
         <div class="fv-library-filter">
           <label for="library-author-filter">Auteur
             <select id="library-author-filter" aria-label="Filtrer la bibliothèque par auteur"></select>
@@ -141,7 +149,7 @@
         <label>Format de citation<select id="citation-format"><option value="reference">Texte + référence</option><option value="markdown">Markdown</option><option value="text">Texte seul</option></select></label>
         <div class="settings-actions"><button id="fullscreen-button" class="tool-button">Plein écran</button><button id="backup-button" class="tool-button">Sauvegarder mes données</button><label class="tool-button file-button">Restaurer<input id="restore-input" type="file" accept="application/json"></label></div>
       </section>
-      <section data-panel="help" class="drawer-panel"><div class="shortcuts"><p><kbd>←</kbd>/<kbd>→</kbd> pages</p><p><kbd>/</kbd> recherche</p><p><kbd>Maj</kbd>+<kbd>B</kbd> marque-page</p><p><kbd>F</kbd> plein écran</p><p><kbd>Alt</kbd>+<kbd>M</kbd> médiathèque</p><p><kbd>Maj</kbd>+<kbd>M</kbd> focus</p><p><kbd>Maj</kbd>+<kbd>T</kbd> thème</p><p><kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> historique</p><p><kbd>Échap</kbd> fermer</p></div></section>
+      <section data-panel="help" class="drawer-panel"><div class="shortcuts"><p><kbd>←</kbd>/<kbd>→</kbd> pages</p><p><kbd>/</kbd> recherche</p><p><kbd data-fv-key="shift">Maj</kbd>+<kbd>B</kbd> marque-page</p><p><kbd>F</kbd> plein écran</p><p><kbd data-fv-key="alt">Alt</kbd>+<kbd>M</kbd> médiathèque</p><p><kbd data-fv-key="shift">Maj</kbd>+<kbd>M</kbd> focus</p><p><kbd data-fv-key="shift">Maj</kbd>+<kbd>T</kbd> thème</p><p><kbd data-fv-key="alt">Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> historique</p><p><kbd>Échap</kbd> fermer</p></div></section>
     </div>
   </aside>
   <button id="drawer-backdrop" class="drawer-backdrop" type="button" hidden aria-label="Fermer"></button>
@@ -176,6 +184,6 @@
   <div id="toast" class="reader-toast" hidden></div>
   <button id="focus-return" class="focus-return" type="button" hidden>Afficher les contrôles</button>
 </main>
-  <script src="../js/site-tools.js?v=20260919-hlp-consolidation1" defer></script>
+  <script src="../js/site-tools.js?v=20260923-github-refresh1" defer></script>
 </body>
 </html>

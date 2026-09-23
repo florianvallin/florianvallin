@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="theme-color" content="#f4f1eb">
+  <title>Lecteur de livres — Médiathèque Philosophal</title>
+  <meta name="description" content="Lecteur local EPUB, texte, HTML, Markdown et FB2 de la médiathèque Philosophal.">
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="./reader.css?v=20260923-github-refresh1">
+</head>
+<body class="reader-page">
+  <header class="reader-topbar">
+    <a class="reader-back" href="../">← <span>Médiathèque</span></a>
+    <div class="reader-book-heading" aria-live="polite">
+      <strong data-head-title>Lecteur</strong>
+      <small data-head-author>Bibliothèque locale</small>
+    </div>
+    <div class="reader-top-actions">
+      <button type="button" data-open-library title="Bibliothèque locale">Bibliothèque</button>
+      <button type="button" data-import-book title="Importer un livre">Importer</button>
+      <button type="button" data-toggle-settings aria-expanded="false" title="Réglages de lecture">Aa</button>
+      <button type="button" data-focus-reader aria-pressed="false" title="Mode focus">Focus</button>
+      <button type="button" data-fullscreen title="Plein écran" aria-label="Plein écran">⛶</button>
+    </div>
+  </header>
+
+  <main class="reader-main">
+    <section class="reader-welcome" data-welcome>
+      <div class="reader-welcome-copy">
+        <p class="reader-kicker">Médiathèque · lecteur local</p>
+        <h1>Ouvrir un livre dans le navigateur</h1>
+        <p>Glissez un fichier ici, puis reprenez votre lecture plus tard au même endroit. Le livre reste stocké localement dans ce navigateur.</p>
+        <div class="reader-welcome-actions">
+          <button class="reader-primary" type="button" data-import-book>Choisir un livre</button>
+          <span>EPUB · TXT · HTML · Markdown · FB2</span>
+        </div>
+      </div>
+
+      <button class="reader-dropzone" type="button" data-dropzone data-import-book>
+        <span class="reader-drop-icon" aria-hidden="true">↧</span>
+        <strong>Déposez votre livre</strong>
+        <small>ou cliquez pour parcourir vos fichiers</small>
+      </button>
+
+      <section class="reader-library-preview" aria-labelledby="reader-library-title">
+        <div class="reader-library-head">
+          <div>
+            <span>Sur cet appareil</span>
+            <h2 id="reader-library-title">Vos livres récents</h2>
+          </div>
+          <button type="button" data-open-library>Voir toute la bibliothèque</button>
+        </div>
+        <div class="reader-book-grid" data-recent-books></div>
+        <p class="reader-empty-library" data-recent-empty>Aucun livre importé pour l’instant.</p>
+      </section>
+
+      <p class="reader-local-note">Aucun fichier n’est envoyé sur le site : les livres sont conservés dans le stockage local de votre navigateur.</p>
+    </section>
+
+    <section class="reader-workspace" data-workspace hidden>
+      <div class="reader-stage" data-stage>
+        <button class="reader-page-nav reader-page-prev" type="button" data-prev aria-label="Page précédente">‹</button>
+        <div class="reader-render" data-render aria-label="Livre"></div>
+        <article class="reader-plain" data-plain hidden></article>
+        <button class="reader-page-nav reader-page-next" type="button" data-next aria-label="Page suivante">›</button>
+        <div class="reader-loading" data-loading hidden>
+          <span></span><strong>Ouverture du livre…</strong>
+        </div>
+      </div>
+
+      <footer class="reader-progressbar">
+        <button type="button" data-open-toc class="reader-progress-menu">Sommaire</button>
+        <input data-progress type="range" min="0" max="1000" value="0" aria-label="Progression dans le livre">
+        <span data-progress-label>0 %</span>
+      </footer>
+    </section>
+  </main>
+
+  <aside class="reader-drawer" data-library-drawer hidden aria-label="Bibliothèque locale">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel">
+      <header>
+        <div><span>Sur cet appareil</span><h2>Bibliothèque locale</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-storage" data-storage-info></div>
+      <div class="reader-library-list" data-library-list></div>
+      <p class="reader-empty-library" data-library-empty>Aucun livre importé.</p>
+    </section>
+  </aside>
+
+  <aside class="reader-drawer" data-toc-drawer hidden aria-label="Sommaire">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel">
+      <header>
+        <div><span>Navigation</span><h2>Sommaire</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <nav class="reader-toc" data-toc></nav>
+      <p class="reader-empty-library" data-toc-empty>Ce fichier ne contient pas de sommaire exploitable.</p>
+    </section>
+  </aside>
+
+  <aside class="reader-settings" data-settings hidden aria-label="Réglages de lecture">
+    <div class="reader-settings-grid">
+      <label>
+        <span>Taille du texte</span>
+        <input data-font-size type="range" min="80" max="160" step="5" value="100">
+      </label>
+      <label>
+        <span>Interligne</span>
+        <input data-line-height type="range" min="1.25" max="2.1" step="0.05" value="1.6">
+      </label>
+      <label>
+        <span>Police</span>
+        <select data-font-family>
+          <option value="serif">Livre</option>
+          <option value="sans">Sans serif</option>
+        </select>
+      </label>
+      <label>
+        <span>Ambiance</span>
+        <select data-theme>
+          <option value="paper">Papier</option>
+          <option value="white">Blanc</option>
+          <option value="night">Nuit</option>
+        </select>
+      </label>
+      <label>
+        <span>Lecture</span>
+        <select data-flow>
+          <option value="paginated">Pages</option>
+          <option value="scrolled-doc">Défilement</option>
+        </select>
+      </label>
+    </div>
+  </aside>
+
+  <div class="reader-drop-overlay" data-global-drop hidden>
+    <div><span aria-hidden="true">↧</span><strong>Déposez votre livre pour l’ouvrir</strong><small>EPUB · TXT · HTML · Markdown · FB2</small></div>
+  </div>
+
+  <button class="reader-focus-exit" type="button" data-focus-reader aria-pressed="false" hidden>Quitter le focus</button>
+  <div class="reader-toast" data-toast hidden role="status" aria-live="polite"></div>
+  <input data-file-input type="file" accept=".epub,.txt,.text,.html,.htm,.xhtml,.md,.markdown,.fb2" hidden>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js" crossorigin="anonymous"></script>
+  <script src="./storage.js?v=20260923-github-refresh1"></script>
+  <script src="./reader.js?v=20260923-github-refresh1"></script>
+</body>
+</html>

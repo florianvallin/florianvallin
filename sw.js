@@ -1,21 +1,53 @@
-/* Florian Vallin — freshness worker — 20260919-catalogue-hlp-fusion2
-   Revalidates same-origin resources. Catalogue restored; HLP reading paths merged by programme object and clarified for desktop/mobile. */
-const BUILD = "20260919-catalogue-hlp-fusion2";
+const CACHE = "fv-reader-v16-20260922-mac-shortcuts1";
+const CORE = [
+  "/lecture/",
+  "/lecture/index.html",
+  "/lecture/reader.css?v=20260923-github-refresh1",
+  "/lecture/reader.js?v=20260923-github-refresh1",
+  "/lecture/library.js?v=20260923-github-refresh1",
+  "/favicon.svg"
+];
 
-self.addEventListener("install", () => self.skipWaiting());
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(CACHE)
+      .then(async (cache) => {
+        for (const path of CORE) {
+          try {
+            const response = await fetch(path, { cache: "reload" });
+            if (response.ok) await cache.put(path, response);
+          } catch (_) {}
+        }
+      })
+      .then(() => self.skipWaiting())
+  );
+});
+
 self.addEventListener("activate", (event) => {
-  event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.filter((key) => !key.startsWith("fv-reader-")).map((key) => caches.delete(key)));
-    await self.clients.claim();
-  })());
+  event.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith("fv-reader-") && key !== CACHE).map((key) => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener("fetch", (event) => {
-  const request = event.request;
-  if (request.method !== "GET") return;
-  const url = new URL(request.url);
+  if (event.request.method !== "GET") return;
+  const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.startsWith("/lecture/")) return;
-  event.respondWith(fetch(request, { cache:"no-cache" }));
+  if (!url.pathname.startsWith("/lecture/") && url.pathname !== "/favicon.svg") return;
+
+  event.respondWith((async () => {
+    try {
+      const response = await fetch(event.request, { cache: "no-cache" });
+      if (response && response.ok) {
+        const cache = await caches.open(CACHE);
+        await cache.put(event.request, response.clone());
+      }
+      return response;
+    } catch (_) {
+      const cached = await caches.match(event.request);
+      return cached || caches.match("/lecture/index.html");
+    }
+  })());
 });

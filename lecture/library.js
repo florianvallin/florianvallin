@@ -7,7 +7,7 @@ window.FV_LIBRARY = [
     "firstPage": 7,
     "lastPage": 331,
     "mainStartPage": 19,
-    "file": "books/therese-avila-chemins-perfection.json?v=20260825-9",
+    "file": "books/therese-avila-chemins-perfection.json?v=20260923-github-refresh1",
     "category": "Spiritualité · Mystique",
     "tags": ["Thérèse d’Avila", "Mystique", "Spiritualité"]
   },
@@ -19,7 +19,7 @@ window.FV_LIBRARY = [
     "firstPage": 1,
     "lastPage": 43,
     "mainStartPage": 1,
-    "file": "books/therese-avila-chemin-perfection.json?v=20260906-1",
+    "file": "books/therese-avila-chemin-perfection.json?v=20260923-github-refresh1",
     "category": "Spiritualité · Mystique",
     "tags": ["Thérèse d’Avila", "Mystique", "Spiritualité", "Oraison"]
   },
@@ -31,7 +31,7 @@ window.FV_LIBRARY = [
     "firstPage": 1,
     "lastPage": 136,
     "mainStartPage": 5,
-    "file": "books/therese-avila-chateau-ame.json?v=20260825-9",
+    "file": "books/therese-avila-chateau-ame.json?v=20260923-github-refresh1",
     "category": "Spiritualité · Mystique",
     "tags": ["Thérèse d’Avila", "Mystique", "Spiritualité"]
   },
@@ -43,7 +43,7 @@ window.FV_LIBRARY = [
     "firstPage": 7,
     "lastPage": 527,
     "mainStartPage": 39,
-    "file": "books/therese-avila-livre-vie.json?v=20260825-9",
+    "file": "books/therese-avila-livre-vie.json?v=20260923-github-refresh1",
     "category": "Spiritualité · Mystique",
     "tags": ["Thérèse d’Avila", "Mystique", "Spiritualité"]
   }
@@ -55,7 +55,7 @@ window.FV_LIBRARY = [
     "firstPage": 11,
     "lastPage": 1072,
     "mainStartPage": 45,
-    "file": "books/jean-croix-oeuvres-completes.json?v=20260907-1",
+    "file": "books/jean-croix-oeuvres-completes.json?v=20260923-github-refresh1",
     "category": "Spiritualité · Mystique",
     "tags": ["Jean de la Croix", "Mystique", "Spiritualité", "Carmel"]
   }

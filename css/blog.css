@@ -1187,7 +1187,7 @@
 }
 .blog-card-topics { display:flex; align-items:center; flex-wrap:wrap; gap:5px; }
 .blog-card-topic--philosophie { background:rgba(108,99,255,.08); color:rgb(108,99,255); }
-.blog-card-topic--methodologie { background:rgba(63,132,119,.09); color:rgb(63,132,119); }
+.blog-card-topic--methodologie { background:rgba(201,111,91,.09); color:rgb(63,132,119); }
 .blog-index-page .blog-card-date { min-height:24px; padding:0; background:transparent; color:var(--text-light); font-size:8px; }
 .blog-index-page .blog-card-number { position:relative; z-index:1; margin-top:18px; color:rgb(var(--card-accent)); font-size:9px; }
 .blog-index-page .blog-card h2 {
@@ -2573,4 +2573,2028 @@
   .blog-film-selector-result--full { grid-template-columns:1fr; }
   .blog-film-selector-intro,.blog-film-selector-links { grid-column:1; }
   .blog-film-selector-result--full .blog-film-selector-card { min-height:0; }
+}
+
+
+/* =========================================================
+   Atomic Habits pour les étudiants — 2026-09-22
+   ========================================================= */
+.blog-card--atomic { --card-accent:63,132,119; }
+.blog-atomic-page { --atomic:#C96F5B; --atomic-dark:#8B4B42; --atomic-soft:#FCF2EF; --atomic-purple:#6c63ff; }
+.blog-atomic-page .atomic-hero { background:linear-gradient(145deg,#FCF2EF 0%,#fff 58%,#f3f1ff 100%); }
+.blog-atomic-page .blog-article-title em { color:var(--atomic-dark); font-style:italic; font-weight:500; }
+.blog-atomic-page .blog-article-title strong { color:#302d3d; font-weight:700; }
+.blog-atomic-page .blog-article-lead strong { color:#2d655c; }
+.atomic-hero-grid { align-items:center; }
+.atomic-hero-visual {
+  min-height:305px; margin:0; padding:28px 30px; display:flex; flex-direction:column; justify-content:center; gap:22px;
+  border:1px solid rgba(201,111,91,.16); border-radius:22px;
+  background:linear-gradient(155deg,#ffffff 0%,#f4faf8 68%,#f4f2ff 100%);
+  box-shadow:0 24px 70px rgba(139,75,66,.09); font-family:Inter,Arial,sans-serif;
+}
+.atomic-compound-head { display:grid; gap:7px; }
+.atomic-compound-head > span { color:var(--atomic-dark); font-size:8px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+.atomic-compound-head > strong { max-width:330px; color:#302f3f; font:650 17px/1.38 Georgia,"Times New Roman",serif; }
+.atomic-compound-chart { height:130px; display:grid; grid-template-columns:repeat(4,1fr); gap:10px; align-items:end; padding:0 6px; border-bottom:1px solid rgba(201,111,91,.18); }
+.atomic-compound-bar { height:100%; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:8px; }
+.atomic-compound-bar i { display:block; width:min(44px,72%); border-radius:8px 8px 2px 2px; background:linear-gradient(180deg,#E0A093,#C96F5B); box-shadow:inset 0 1px 0 rgba(255,255,255,.35); }
+.atomic-compound-bar--1 i { height:26px; opacity:.52; }
+.atomic-compound-bar--2 i { height:50px; opacity:.66; }
+.atomic-compound-bar--3 i { height:78px; opacity:.82; }
+.atomic-compound-bar--4 i { height:112px; }
+.atomic-compound-bar span { min-height:22px; color:#686573; font-size:7px; font-weight:800; letter-spacing:.03em; text-align:center; }
+.atomic-compound-equation { display:flex; flex-wrap:wrap; align-items:center; gap:7px; color:#666370; font-size:8.5px; font-weight:750; }
+.atomic-compound-equation span,.atomic-compound-equation strong { padding:6px 8px; border-radius:999px; background:#fff; border:1px solid rgba(201,111,91,.14); }
+.atomic-compound-equation b { color:#8eaaa5; font-weight:800; }
+.atomic-compound-equation strong { color:var(--atomic-dark); background:#FCF2EF; border-color:rgba(201,111,91,.22); }
+
+.blog-atomic-page .blog-prose > p:first-child { font-size:16px; line-height:1.72; }
+.blog-atomic-page .blog-prose > section { margin-top:44px; padding-top:28px; border-top:1px solid rgba(42,39,78,.14); }
+.blog-atomic-page .blog-prose > section > h2 { margin-top:7px!important; font-weight:700!important; line-height:1.22!important; }
+.blog-atomic-page .blog-prose > section h3 { font-weight:650!important; }
+.blog-atomic-page .blog-section-eyebrow { font-weight:900!important; }
+.atomic-thesis { border-color:rgba(201,111,91,.20)!important; background:linear-gradient(145deg,#f2faf7,#fff)!important; }
+.atomic-thesis > span { color:var(--atomic-dark)!important; font-weight:900!important; }
+.atomic-thesis > p { margin-bottom:11px!important; }
+.atomic-thesis strong { color:#285d54; }
+.atomic-thesis-list { margin:0!important; padding-left:18px!important; }
+.atomic-thesis-list > li { margin:10px 0!important; color:#403f49!important; font-size:12.5px!important; line-height:1.55!important; }
+.atomic-thesis-list > li::marker { color:var(--atomic); }
+.atomic-thesis-list ul { margin:5px 0 0!important; padding-left:18px!important; }
+.atomic-thesis-list ul li { margin:0!important; color:#67646f!important; font-size:10.5px!important; line-height:1.55!important; }
+.atomic-thesis-list ul li::marker { color:#D9A99F; }
+.atomic-inspiration { margin:18px 0 4px!important; padding:14px 16px; border-left:2px solid rgba(108,99,255,.35); background:#faf9ff; color:#595663!important; font-family:Inter,Arial,sans-serif!important; font-size:10.5px!important; line-height:1.62!important; }
+.atomic-inspiration strong { color:#403d50; }
+
+.atomic-compare,.atomic-learning-grid,.atomic-levels { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; margin:22px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-compare article,.atomic-learning-grid article,.atomic-levels article { padding:17px; border:1px solid var(--blog-rule); border-radius:12px; background:#fff; }
+.atomic-compare article > span,.atomic-levels article > span { color:var(--text-light); font-size:7.5px; font-weight:850; letter-spacing:.10em; text-transform:uppercase; }
+.atomic-compare article > strong { display:block; margin-top:10px; color:#353344; font:600 14px/1.35 Georgia,"Times New Roman",serif; }
+.atomic-compare article > p,.atomic-levels article > p { margin:8px 0 0!important; color:var(--text-medium)!important; font-size:10.5px!important; line-height:1.55!important; }
+.atomic-compare article.is-best,.atomic-levels article.is-normal { border-color:rgba(201,111,91,.26); background:var(--atomic-soft); }
+.atomic-compare article.is-best > span,.atomic-levels article.is-normal > span { color:var(--atomic-dark); }
+
+.atomic-rule { margin:22px 0; padding:17px 19px; border-left:3px solid var(--atomic); background:#f7fbfa; }
+.atomic-rule > strong { display:block; color:var(--atomic-dark); font:800 8px/1.2 Inter,Arial,sans-serif; letter-spacing:.10em; text-transform:uppercase; }
+.atomic-rule > p { margin:7px 0 0!important; color:#4c5452!important; font-size:13px!important; line-height:1.62!important; }
+
+.atomic-table-wrap { width:min(100%,680px); margin:22px auto 26px; overflow:auto; border:1px solid var(--blog-rule); border-radius:12px; background:#fff; box-shadow:0 8px 26px rgba(42,39,78,.035); }
+.atomic-table { width:100%; border-collapse:collapse; font-family:Inter,Arial,sans-serif; font-size:10.5px; }
+.atomic-table th { padding:11px 14px; background:#f5faf8; color:var(--atomic-dark); font-size:8px; letter-spacing:.09em; text-align:left; text-transform:uppercase; }
+.atomic-table td { padding:12px 14px; border-top:1px solid var(--blog-rule); color:#52505a; }
+.atomic-table td:last-child { color:#2f4f49; font-weight:650; }
+
+.atomic-ladder { display:grid; grid-template-columns:1fr auto 1fr auto 1.25fr; align-items:stretch; gap:8px; margin:22px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-ladder > div { padding:15px; border:1px solid var(--blog-rule); border-radius:11px; background:#fff; }
+.atomic-ladder > div.is-best { border-color:rgba(201,111,91,.24); background:var(--atomic-soft); }
+.atomic-ladder span { color:var(--text-light); font-size:7px; font-weight:850; letter-spacing:.10em; text-transform:uppercase; }
+.atomic-ladder p { margin:7px 0 0!important; color:#45434e!important; font-size:10.5px!important; line-height:1.48!important; }
+.atomic-ladder > i { align-self:center; color:#9aafb0; font-style:normal; }
+
+.atomic-formula { width:min(100%,680px); margin:22px auto 15px; padding:17px 20px 18px; border:1px solid rgba(201,111,91,.24); border-radius:12px; background:linear-gradient(145deg,#FCF2EF,#fbfdfc); text-align:center; font-family:Inter,Arial,sans-serif; box-shadow:0 8px 24px rgba(139,75,66,.045); }
+.atomic-formula span { display:inline-block; padding:4px 7px; border-radius:999px; background:#dceee9; color:var(--atomic-dark)!important; font-size:7px; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+.atomic-formula strong { display:block; margin-top:10px; color:#263f3a!important; font:700 15px/1.45 Georgia,"Times New Roman",serif; }
+.atomic-examples { width:min(100%,680px); display:grid; gap:7px; margin:14px auto 30px; }
+.atomic-examples p { display:grid; grid-template-columns:minmax(150px,.8fr) auto 1fr; gap:10px; align-items:center; margin:0!important; padding:11px 13px; border-bottom:1px solid var(--blog-rule); color:#55535e!important; font-family:Inter,Arial,sans-serif!important; font-size:10.5px!important; }
+.atomic-examples b { color:#34323f; font-weight:750; }
+.atomic-examples span { color:var(--atomic); }
+
+.atomic-friction-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:21px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-friction-grid article { padding:18px 19px; border:1px solid var(--blog-rule); border-radius:12px; background:#fff; }
+.atomic-friction-grid article:first-child { border-color:rgba(201,111,91,.22); background:#FFF8F6; }
+.atomic-friction-grid article > span { color:var(--atomic-dark); font-size:8px; font-weight:850; letter-spacing:.08em; text-transform:uppercase; }
+.atomic-friction-grid ul { margin:12px 0 0!important; padding-left:17px!important; }
+.atomic-friction-grid li { margin:6px 0!important; color:#56545e!important; font-size:10.5px!important; line-height:1.45!important; }
+
+.atomic-science-bridge { display:grid; grid-template-columns:auto 1fr auto auto 1fr; align-items:center; gap:10px; margin:22px 0; padding:15px 17px; border:1px solid rgba(108,99,255,.12); border-radius:12px; background:#faf9ff; font-family:Inter,Arial,sans-serif; }
+.atomic-science-bridge span { color:#6c63ff; font-size:7px; font-weight:850; letter-spacing:.10em; text-transform:uppercase; }
+.atomic-science-bridge strong { color:#464354; font-size:10px; line-height:1.45; }
+.atomic-science-bridge i { color:#aaa6ba; font-style:normal; }
+.atomic-learning-grid article { position:relative; padding-top:42px; }
+.atomic-learning-grid article > span { position:absolute; top:15px; left:16px; display:grid; place-items:center; width:20px; height:20px; border-radius:7px; background:var(--atomic-soft); color:var(--atomic-dark); font-size:8px; font-weight:850; }
+.blog-prose .atomic-learning-grid h3 { margin:0!important; color:#353344!important; font-family:Georgia,"Times New Roman",serif!important; font-size:18px!important; font-weight:500!important; }
+.atomic-learning-grid p { margin:8px 0 0!important; color:var(--text-medium)!important; font-size:10.5px!important; line-height:1.58!important; }
+.atomic-source-note { margin-top:-8px!important; color:var(--text-light)!important; font-family:Inter,Arial,sans-serif!important; font-size:9px!important; line-height:1.55!important; }
+
+.atomic-levels article > strong { display:block; margin-top:7px; color:#363340; font:500 25px/1 Georgia,"Times New Roman",serif; }
+.atomic-levels .is-normal > strong { color:var(--atomic-dark); }
+.atomic-return { display:grid; grid-template-columns:1fr auto 1fr; gap:12px; align-items:center; margin:22px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-return > div { padding:17px; border:1px solid var(--blog-rule); border-radius:12px; background:#fff; }
+.atomic-return > div.is-best { border-color:rgba(201,111,91,.22); background:var(--atomic-soft); }
+.atomic-return span { display:block; color:var(--text-light); font-size:7px; font-weight:850; letter-spacing:.1em; text-transform:uppercase; }
+.atomic-return strong { display:block; margin-top:8px; color:#3d3a48; font-size:11.5px; line-height:1.5; }
+.atomic-return > i { color:#9aafb0; font-style:normal; }
+
+.atomic-tracker { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; margin:20px 0; }
+.atomic-tracker p { display:flex; align-items:center; gap:9px; margin:0!important; padding:12px 14px; border:1px solid var(--blog-rule); border-radius:10px; color:#55525e!important; font-family:Inter,Arial,sans-serif!important; font-size:10.5px!important; }
+.atomic-tracker span { display:grid; place-items:center; width:20px; height:20px; flex:none; border-radius:50%; background:var(--atomic-soft); color:var(--atomic-dark); font-weight:900; }
+
+.atomic-pacte { display:grid; gap:8px; margin:22px 0 26px; }
+.atomic-pacte article { display:grid; grid-template-columns:44px 1fr; gap:13px; align-items:center; padding:12px 15px; border:1px solid var(--blog-rule); border-radius:11px; background:#fff; }
+.atomic-pacte b { display:grid; place-items:center; width:38px; height:38px; border-radius:12px; background:var(--atomic-soft); color:var(--atomic-dark); font:700 18px/1 Georgia,"Times New Roman",serif; }
+.atomic-pacte span { display:block; color:#3d3a47; font:600 15px/1.2 Georgia,"Times New Roman",serif; }
+.atomic-pacte p { margin:4px 0 0!important; color:var(--text-medium)!important; font-family:Inter,Arial,sans-serif!important; font-size:9.5px!important; line-height:1.5!important; }
+
+.atomic-builder { margin:22px 0 28px; border:1px solid rgba(201,111,91,.20); border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 14px 36px rgba(139,75,66,.06); font-family:Inter,Arial,sans-serif; }
+.atomic-builder-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; padding:19px; }
+.atomic-builder label { display:grid; gap:6px; }
+.atomic-builder label > span { color:#5e5b66; font-size:8px; font-weight:800; letter-spacing:.045em; }
+.atomic-builder input { width:100%; min-height:39px; padding:0 11px; border:1px solid rgba(42,39,78,.12); border-radius:9px; outline:0; background:#fcfcfd; color:#34313f; font:500 10px/1.2 Inter,Arial,sans-serif; }
+.atomic-builder input:focus { border-color:rgba(201,111,91,.52); box-shadow:0 0 0 3px rgba(201,111,91,.08); }
+.atomic-builder-plan { padding:18px 19px; border-top:1px solid rgba(201,111,91,.16); background:linear-gradient(145deg,#FCF2EF,#f9fcfb); }
+.atomic-builder-plan > span { color:var(--atomic-dark); font-size:7.5px; font-weight:850; letter-spacing:.11em; text-transform:uppercase; }
+.atomic-builder-plan > p { min-height:43px; margin:7px 0 0!important; color:#4B4852!important; font-family:Georgia,"Times New Roman",serif!important; font-size:13.5px!important; line-height:1.58!important; }
+.atomic-builder-actions { display:flex; flex-wrap:wrap; gap:7px; margin-top:13px; }
+.atomic-builder-actions button { min-height:33px; padding:0 11px; border:1px solid var(--atomic); border-radius:8px; background:var(--atomic); color:#fff; font:750 8.5px/1 Inter,Arial,sans-serif; cursor:pointer; }
+.atomic-builder-actions button.is-secondary { border-color:rgba(201,111,91,.24); background:transparent; color:var(--atomic-dark); }
+.atomic-builder-plan small { display:block; min-height:15px; margin-top:7px; color:#777482; font-size:7.8px; }
+
+.atomic-week { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:6px; margin:22px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-week article { min-height:128px; padding:11px 9px; border:1px solid var(--blog-rule); border-radius:10px; background:#fff; }
+.atomic-week span { color:var(--atomic-dark); font-size:7px; font-weight:850; letter-spacing:.08em; text-transform:uppercase; }
+.atomic-week strong { display:block; margin-top:8px; color:#34313f; font:600 16px/1 Georgia,"Times New Roman",serif; }
+.atomic-week p { margin:8px 0 0!important; color:var(--text-medium)!important; font-size:8.5px!important; line-height:1.45!important; }
+.atomic-final-principle { margin:24px 0; padding:20px; border-radius:12px; background:#302f3f; color:#fff; }
+.atomic-final-principle span { color:#E5B8AE; font:850 7.5px/1 Inter,Arial,sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+.atomic-final-principle p { margin:8px 0 0!important; color:#f2f0f6!important; font-size:13px!important; line-height:1.65!important; }
+
+.atomic-sources { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; margin:22px 0; font-family:Inter,Arial,sans-serif; }
+.atomic-sources article { padding:16px; border:1px solid var(--blog-rule); border-radius:11px; background:#fff; }
+.atomic-sources article > span { color:var(--atomic-dark); font-size:7px; font-weight:850; letter-spacing:.09em; text-transform:uppercase; }
+.atomic-sources article > strong { display:block; margin-top:7px; color:#403d49; font-family:Georgia,"Times New Roman",serif; font-size:12.5px; font-weight:600; line-height:1.4; }
+.atomic-sources article > p { margin:7px 0 0!important; color:var(--text-medium)!important; font-size:9px!important; line-height:1.5!important; }
+.atomic-sources a { display:inline-block; margin-top:9px; color:var(--atomic-dark); font-size:8px; font-weight:800; text-decoration:none; }
+.atomic-end { margin-top:52px; }
+.atomic-end .blog-end-actions a:first-child { border-color:#C96F5B; background:#C96F5B; color:#2C2936; }
+.atomic-aside a.is-active { color:var(--atomic-dark)!important; font-weight:800; }
+
+@media (max-width:900px) {
+  .atomic-week { grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+@media (max-width:760px) {
+  .atomic-compare,.atomic-learning-grid,.atomic-levels,.atomic-sources { grid-template-columns:1fr; }
+  .atomic-friction-grid,.atomic-builder-grid { grid-template-columns:1fr; }
+  .atomic-ladder { grid-template-columns:1fr; }
+  .atomic-ladder > i { transform:rotate(90deg); justify-self:center; }
+  .atomic-science-bridge { grid-template-columns:1fr; gap:5px; }
+  .atomic-science-bridge > i { display:none; }
+  .atomic-return { grid-template-columns:1fr; }
+  .atomic-return > i { transform:rotate(90deg); justify-self:center; }
+  .atomic-week { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:520px) {
+  .atomic-hero-visual { min-height:255px; padding:21px; }
+  .atomic-compound-head > strong { font-size:15px; }
+  .atomic-compound-chart { height:112px; }
+  .atomic-examples p { grid-template-columns:1fr; gap:4px; }
+  .atomic-examples p > span { display:none; }
+  .atomic-tracker { grid-template-columns:1fr; }
+  .atomic-week { grid-template-columns:1fr; }
+  .atomic-week article { min-height:0; }
+}
+@media print {
+  .blog-atomic-page .navbar,.blog-atomic-page .site-footer,.blog-atomic-page .back-to-top,.blog-atomic-page .blog-article-aside,.blog-atomic-page .blog-end-cta { display:none!important; }
+  .blog-atomic-page .blog-article-layout { display:block; width:100%; }
+  .blog-atomic-page .blog-prose { max-width:none; }
+  .atomic-builder { break-inside:avoid; }
+}
+
+/* ===== Atomic Habits v3 refinements ===== */
+.blog-atomic-page {
+  --atomic:#C96F5B;
+  --atomic-dark:#8B4B42;
+  --atomic-soft:#eef8f5;
+  --atomic-soft-2:#f8fcfb;
+  --atomic-ink:#2f2b3f;
+  --atomic-sand:#f5f1ec;
+}
+.blog-atomic-page .atomic-hero { background:linear-gradient(145deg,#f2f8f6 0%,#fff 56%,#f5f0ff 100%); }
+.blog-atomic-page .blog-prose > section { border-top:1px solid rgba(42,39,78,.12); }
+
+.atomic-hero-visual--minimal {
+  min-height:250px;
+  border:1px solid rgba(42,39,78,.08);
+  border-radius:24px;
+  background:radial-gradient(circle at 50% 50%, rgba(218,151,137,.16), transparent 44%), linear-gradient(145deg,#fff,#f7fbfa);
+  box-shadow:0 20px 40px rgba(42,39,78,.06);
+  display:grid;
+  place-items:center;
+}
+.atomic-minimal-art {
+  position:relative;
+  width:min(290px,100%);
+  aspect-ratio:1/1;
+}
+.atomic-minimal-orbit,
+.atomic-minimal-node,
+.atomic-minimal-path,
+.atomic-minimal-dot { position:absolute; display:block; }
+.atomic-minimal-orbit {
+  inset:auto;
+  border:1px solid rgba(201,111,91,.18);
+  border-radius:50%;
+}
+.atomic-minimal-orbit--1 { inset:18% 18%; }
+.atomic-minimal-orbit--2 { inset:7% 7%; border-style:dashed; opacity:.55; }
+.atomic-minimal-node {
+  width:18px; height:18px; border-radius:50%;
+  background:linear-gradient(180deg,#E3A497,#C96F5B);
+  box-shadow:0 8px 20px rgba(201,111,91,.25);
+}
+.atomic-minimal-node--1 { left:14%; bottom:26%; }
+.atomic-minimal-node--2 { left:47%; top:34%; width:22px; height:22px; }
+.atomic-minimal-node--3 { right:15%; top:18%; }
+.atomic-minimal-path {
+  left:18%; right:18%; top:50%; height:2px;
+  background:linear-gradient(90deg, rgba(201,111,91,.18), rgba(201,111,91,.85));
+  transform:rotate(-30deg);
+  transform-origin:center;
+}
+.atomic-minimal-dot { width:6px; height:6px; border-radius:50%; background:#c7ded8; }
+.atomic-minimal-dot--1 { left:28%; top:30%; }
+.atomic-minimal-dot--2 { right:32%; top:56%; }
+.atomic-minimal-dot--3 { left:62%; bottom:20%; }
+
+.atomic-thesis-list { padding-left:18px!important; }
+.atomic-thesis-list > li { padding-left:2px; }
+.atomic-thesis-list ul { display:none; }
+
+.atomic-compare--stackable {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.atomic-compare--stackable article {
+  padding:18px 18px 17px;
+  border-radius:16px;
+  box-shadow:0 10px 26px rgba(42,39,78,.04);
+}
+.atomic-compare--stackable article > span {
+  display:inline-block;
+  padding:5px 8px;
+  border-radius:999px;
+  background:#f4f4f8;
+}
+.atomic-compare--stackable article.is-best > span { background:#F4D8D1; }
+
+.atomic-table th,
+.atomic-table td { text-align:center; vertical-align:middle; }
+.atomic-table td:last-child { font-weight:700; }
+
+.atomic-ladder > div,
+.atomic-formula,
+.atomic-examples p,
+.atomic-friction-grid article,
+.atomic-learning-grid article,
+.atomic-levels article,
+.atomic-return > div,
+.atomic-pacte article,
+.atomic-sources article,
+.atomic-week article {
+  box-shadow:0 12px 28px rgba(42,39,78,.04);
+}
+
+.atomic-formula {
+  background:linear-gradient(145deg,#2f3145,#3c3752);
+  border:none;
+  box-shadow:0 16px 34px rgba(35,34,53,.16);
+}
+.atomic-formula span {
+  background:rgba(201,111,91,.14);
+  color:#d1ebe6!important;
+}
+.atomic-formula strong { color:#f7fbfa!important; }
+.atomic-examples {
+  width:min(100%,720px);
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+  margin:16px auto 30px;
+}
+.atomic-examples p {
+  grid-template-columns:1fr auto 1fr;
+  margin:0!important;
+  padding:13px 14px;
+  border:1px solid rgba(42,39,78,.08);
+  border-radius:12px;
+  background:#fff;
+}
+.atomic-examples b,
+.atomic-examples i { display:block; }
+.atomic-examples i { color:#56626a; font-style:normal; }
+.atomic-examples span { font-weight:800; }
+
+.atomic-friction-grid {
+  gap:14px;
+}
+.atomic-friction-grid article {
+  padding:16px 16px 14px;
+  border-radius:16px;
+  background:linear-gradient(145deg,#fff,#fbfdfc);
+}
+.atomic-friction-grid article:first-child { background:linear-gradient(145deg,#FFF8F6,#fff); }
+.atomic-friction-grid ul {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:7px;
+  padding-left:0!important;
+  list-style:none;
+}
+.atomic-friction-grid li {
+  margin:0!important;
+  padding:8px 10px;
+  border-radius:10px;
+  background:#f7f9fb;
+}
+.atomic-friction-grid article:first-child li { background:#FCF2EF; }
+.atomic-friction-grid li::before {
+  content:"•";
+  color:var(--atomic);
+  font-weight:900;
+  margin-right:8px;
+}
+
+.atomic-learning-grid {
+  gap:14px;
+}
+.atomic-learning-grid article {
+  border-radius:18px;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfdfd 100%);
+  padding:50px 18px 18px;
+}
+.atomic-learning-grid article > span {
+  width:28px; height:28px;
+  border-radius:10px;
+  top:16px; left:16px;
+  background:linear-gradient(180deg,#dff0eb,#c4e3dc);
+  font-size:10px;
+}
+.atomic-study-notes {
+  margin:18px 0 0;
+  padding:16px 18px;
+  border-radius:14px;
+  background:#faf9ff;
+  border:1px solid rgba(108,99,255,.12);
+  font-family:Inter,Arial,sans-serif;
+}
+.atomic-study-notes > span {
+  display:block;
+  color:#5246c7;
+  font-size:8px;
+  font-weight:850;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.atomic-study-notes ul { margin:10px 0 0!important; padding-left:18px!important; }
+.atomic-study-notes li { margin:5px 0!important; font-size:10px!important; color:#5c5868!important; }
+
+.atomic-levels article {
+  border-radius:16px;
+  padding:18px;
+}
+.atomic-levels article > span {
+  display:inline-block;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#f5f7fa;
+}
+.atomic-levels article.is-normal > span { background:#dff0eb; }
+.atomic-levels article > strong { margin-top:11px; }
+
+.atomic-return {
+  gap:10px;
+}
+.atomic-return > div {
+  min-height:122px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  border-radius:18px;
+}
+.atomic-return > div.is-best {
+  background:linear-gradient(145deg,#eef8f5,#fbfffe);
+}
+.atomic-return > i {
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:#f0f4f6;
+  color:#6b7d83;
+}
+
+.atomic-pacte {
+  grid-template-columns:1fr;
+  gap:11px;
+}
+.atomic-pacte article {
+  padding:14px 16px;
+  border-radius:16px;
+  background:linear-gradient(145deg,#fff,#fbfdfd);
+  align-items:flex-start;
+}
+.atomic-pacte b {
+  width:42px; height:42px;
+  border-radius:14px;
+  background:linear-gradient(180deg,#e0f0eb,#c7e4dc);
+}
+
+.atomic-week {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.atomic-week article {
+  min-height:0;
+  display:grid;
+  gap:6px;
+  padding:15px 16px;
+  border-radius:16px;
+  background:linear-gradient(145deg,#fff,#fcfdfd);
+}
+.atomic-week article span {
+  display:inline-block;
+  width:max-content;
+  padding:5px 8px;
+  border-radius:999px;
+  background:#FCF2EF;
+}
+.atomic-week article:last-child {
+  grid-column:1/-1;
+  background:linear-gradient(145deg,#f6f0ff,#fff);
+}
+.atomic-final-principle {
+  background:linear-gradient(145deg,#2f3145,#3c3752);
+  box-shadow:0 18px 40px rgba(35,34,53,.18);
+}
+.atomic-final-principle span { color:#c6ebe5; }
+.atomic-final-principle p,
+.atomic-final-principle strong { color:#f8f7fb!important; }
+
+.atomic-sources {
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.atomic-sources article {
+  padding:18px;
+  border-radius:16px;
+  border:1px solid rgba(42,39,78,.08);
+  background:linear-gradient(145deg,#fff,#fbfbfd);
+  position:relative;
+  overflow:hidden;
+}
+.atomic-sources article::before {
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:4px;
+  background:linear-gradient(180deg,#98cbc0,#5f8f86);
+}
+.atomic-sources article > span { margin-left:2px; }
+.atomic-sources a {
+  padding:7px 10px;
+  border-radius:999px;
+  background:#FCF2EF;
+}
+
+.atomic-end {
+  margin-top:48px;
+  padding:26px 24px;
+  border-radius:20px;
+  background:linear-gradient(145deg,#f5f7fb,#FCF2EF 48%,#fff);
+  border:1px solid rgba(42,39,78,.08);
+}
+.atomic-end h2 { margin:0 0 10px!important; }
+.atomic-end .blog-end-actions a:first-child {
+  border-color:#8B4B42;
+  background:#8B4B42;
+  color:#fff;
+}
+.atomic-end .blog-end-actions a:last-child {
+  border-color:#d6e7e2;
+  background:#fff;
+  color:#8B4B42;
+}
+
+@media (max-width:1080px) {
+  .atomic-compare--stackable { grid-template-columns:1fr; }
+}
+@media (max-width:860px) {
+  .atomic-examples,
+  .atomic-sources,
+  .atomic-week { grid-template-columns:1fr; }
+  .atomic-week article:last-child { grid-column:auto; }
+}
+@media (max-width:720px) {
+  .atomic-hero-visual--minimal { min-height:210px; }
+  .atomic-examples p,
+  .atomic-return > div,
+  .atomic-learning-grid article,
+  .atomic-pacte article { text-align:left; }
+  .atomic-return { grid-template-columns:1fr; }
+  .atomic-return > i {
+    transform:rotate(90deg);
+    justify-self:center;
+    margin:0 auto;
+  }
+}
+@media (max-width:640px) {
+  .atomic-examples p { grid-template-columns:1fr; text-align:center; }
+  .atomic-examples p > span { display:none; }
+  .atomic-table th,
+  .atomic-table td { padding:12px 10px; font-size:10px; }
+  .atomic-friction-grid li,
+  .atomic-return strong,
+  .atomic-learning-grid p,
+  .atomic-study-notes li,
+  .atomic-pacte p,
+  .atomic-week p,
+  .atomic-sources article > p { font-size:10px!important; }
+  .atomic-formula strong { font-size:14px; }
+  .atomic-final-principle { padding:18px; }
+  .atomic-final-principle p { font-size:12px!important; }
+}
+
+/* ===== Atomic Habits v4 — contraste, centrage et responsive ===== */
+.blog-atomic-page {
+  --atomic:#4f9386;
+  --atomic-dark:#2f6f64;
+  --atomic-deep:#285f57;
+  --atomic-text:#52656a;
+  --atomic-muted:#708086;
+  --atomic-purple:#7567c8;
+  --atomic-lilac:#f3f0fb;
+  --atomic-mint:#FCF2EF;
+  --atomic-mint-strong:#d9ece6;
+  --atomic-cream:#fbfaf7;
+}
+
+/* Palette générale : éviter les noirs/gris très foncés dans l'article */
+.blog-atomic-page .blog-article-title,
+.blog-atomic-page .blog-article-title strong,
+.blog-atomic-page .blog-prose h2,
+.blog-atomic-page .blog-prose h3 {
+  color:var(--atomic-dark)!important;
+}
+.blog-atomic-page .blog-article-title em { color:var(--atomic-purple)!important; }
+.blog-atomic-page .blog-article-lead,
+.blog-atomic-page .blog-article-meta,
+.blog-atomic-page .blog-prose,
+.blog-atomic-page .blog-prose p,
+.blog-atomic-page .blog-prose li {
+  color:var(--atomic-text)!important;
+}
+.blog-atomic-page .blog-prose strong { color:var(--atomic-deep); }
+.blog-atomic-page .blog-section-eyebrow,
+.blog-atomic-page .blog-prose a { color:var(--atomic-purple); }
+.blog-atomic-page .atomic-thesis strong,
+.blog-atomic-page .atomic-rule strong,
+.blog-atomic-page .atomic-learning-grid strong,
+.blog-atomic-page .atomic-pacte span,
+.blog-atomic-page .atomic-sources strong { color:var(--atomic-deep)!important; }
+
+/* Exceptions sur fonds sombres */
+.blog-atomic-page .atomic-formula strong,
+.blog-atomic-page .atomic-final-principle p,
+.blog-atomic-page .atomic-final-principle strong {
+  color:#f7fbfa!important;
+}
+
+/* 01 — système : cartes centrées et claires */
+.atomic-compare--stackable {
+  align-items:stretch;
+  gap:14px;
+}
+.atomic-compare--stackable article {
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:22px 18px;
+  border:1px solid rgba(79,147,134,.13);
+  background:linear-gradient(180deg,#fff 0%,#fbfdfc 100%);
+}
+.atomic-compare--stackable article:nth-child(2) {
+  background:linear-gradient(180deg,#fbf9ff 0%,#fff 100%);
+  border-color:rgba(117,103,200,.13);
+}
+.atomic-compare--stackable article.is-best {
+  background:linear-gradient(180deg,#edf8f5 0%,#f9fdfc 100%);
+  border-color:rgba(79,147,134,.28);
+}
+.atomic-compare--stackable article > span {
+  margin:0 auto;
+  color:var(--atomic-purple)!important;
+  background:var(--atomic-lilac);
+}
+.atomic-compare--stackable article.is-best > span {
+  color:var(--atomic-dark)!important;
+  background:var(--atomic-mint-strong);
+}
+.atomic-compare--stackable article > strong {
+  margin-top:12px;
+  color:var(--atomic-dark)!important;
+  text-align:center;
+}
+.atomic-compare--stackable article > p {
+  max-width:28ch;
+  margin:9px auto 0!important;
+  text-align:center;
+  color:var(--atomic-text)!important;
+}
+
+/* 02 — tableau */
+.atomic-table th,
+.atomic-table td {
+  text-align:center!important;
+  vertical-align:middle!important;
+}
+.atomic-table th { color:var(--atomic-dark)!important; }
+.atomic-table td { color:var(--atomic-text)!important; }
+.atomic-table tbody tr:nth-child(even) { background:#fafcfb; }
+
+/* 03 — progression de la consigne */
+.atomic-ladder {
+  gap:10px;
+  align-items:center;
+}
+.atomic-ladder > div {
+  min-height:116px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border-radius:16px;
+  border:1px solid rgba(79,147,134,.13);
+  background:linear-gradient(180deg,#fff,#fbfdfc);
+}
+.atomic-ladder > div:nth-of-type(2) {
+  background:linear-gradient(180deg,#fbf9ff,#fff);
+  border-color:rgba(117,103,200,.13);
+}
+.atomic-ladder > div.is-best {
+  background:linear-gradient(180deg,#edf8f5,#fbfefd);
+  border-color:rgba(79,147,134,.3);
+}
+.atomic-ladder span {
+  display:inline-block;
+  padding:5px 9px;
+  border-radius:999px;
+  color:var(--atomic-purple)!important;
+  background:var(--atomic-lilac);
+}
+.atomic-ladder .is-best span {
+  color:var(--atomic-dark)!important;
+  background:var(--atomic-mint-strong);
+}
+.atomic-ladder p {
+  margin:9px auto 0!important;
+  max-width:27ch;
+  text-align:center;
+  color:var(--atomic-text)!important;
+}
+.atomic-ladder > i {
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#f0f6f4;
+  color:var(--atomic-dark)!important;
+  font-weight:800;
+}
+
+/* 04 — empilement : tout centré */
+.atomic-formula { text-align:center; }
+.atomic-examples p {
+  min-height:92px;
+  align-content:center;
+  justify-items:center;
+  text-align:center;
+  background:linear-gradient(180deg,#fff,#fbfdfc);
+}
+.atomic-examples b,
+.atomic-examples i {
+  width:100%;
+  text-align:center;
+}
+.atomic-examples b { color:var(--atomic-dark)!important; }
+.atomic-examples i { color:var(--atomic-text)!important; }
+.atomic-examples span { color:var(--atomic-purple)!important; }
+
+/* 05 — environnement : cartes plus légères et lisibles */
+.atomic-friction-grid {
+  gap:16px;
+}
+.atomic-friction-grid article {
+  padding:18px;
+  border-radius:18px;
+  border:1px solid rgba(79,147,134,.14);
+  background:linear-gradient(180deg,#f3faf7 0%,#fff 100%);
+  box-shadow:0 12px 28px rgba(56,104,95,.05);
+}
+.atomic-friction-grid article:nth-child(2) {
+  border-color:rgba(117,103,200,.14);
+  background:linear-gradient(180deg,#f7f4fc 0%,#fff 100%);
+}
+.atomic-friction-grid article > span {
+  display:block;
+  width:max-content;
+  max-width:100%;
+  margin:0 auto 13px;
+  padding:7px 11px;
+  border-radius:999px;
+  color:var(--atomic-dark)!important;
+  background:#F4D8D1;
+  text-align:center;
+}
+.atomic-friction-grid article:nth-child(2) > span {
+  color:#6659ae!important;
+  background:#ece8f8;
+}
+.atomic-friction-grid ul {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  margin:0!important;
+  padding:0!important;
+}
+.atomic-friction-grid li {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:54px;
+  margin:0!important;
+  padding:9px 10px;
+  border-radius:12px;
+  border:1px solid rgba(79,147,134,.08);
+  background:rgba(255,255,255,.82)!important;
+  color:var(--atomic-text)!important;
+  text-align:center;
+  list-style:none;
+}
+.atomic-friction-grid li::before { display:none; }
+
+/* 06 — apprentissage */
+.atomic-learning-grid article {
+  border-color:rgba(79,147,134,.12);
+  background:linear-gradient(180deg,#fff 0%,#fbfdfc 100%);
+}
+.atomic-learning-grid article:nth-child(2) {
+  background:linear-gradient(180deg,#faf8ff 0%,#fff 100%);
+  border-color:rgba(117,103,200,.13);
+}
+.atomic-learning-grid h3 { color:var(--atomic-dark)!important; }
+.atomic-learning-grid p { color:var(--atomic-text)!important; }
+.atomic-study-notes { background:#f7f5fc; }
+.atomic-study-notes > span { color:var(--atomic-purple)!important; }
+.atomic-study-notes li { color:var(--atomic-text)!important; }
+
+/* 07 — versions : centrage complet */
+.atomic-levels article {
+  min-height:178px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.atomic-levels article > span {
+  margin:0 auto;
+  text-align:center;
+  color:var(--atomic-purple)!important;
+}
+.atomic-levels article.is-normal > span { color:var(--atomic-dark)!important; }
+.atomic-levels article > strong {
+  color:var(--atomic-dark)!important;
+  text-align:center;
+}
+.atomic-levels article > p {
+  max-width:28ch;
+  margin:10px auto 0!important;
+  text-align:center;
+  color:var(--atomic-text)!important;
+}
+
+/* 08 — retour */
+.atomic-return span { color:var(--atomic-purple)!important; }
+.atomic-return strong { color:var(--atomic-dark)!important; }
+.atomic-return > div { background:linear-gradient(180deg,#fff,#fbfdfc); }
+.atomic-return > div.is-best { background:linear-gradient(180deg,#eef8f5,#fff); }
+
+/* 09 — suivi */
+.atomic-tracker p { color:var(--atomic-text)!important; }
+
+/* 10 — PACTE */
+.atomic-pacte article { border-color:rgba(79,147,134,.12); }
+.atomic-pacte b { color:var(--atomic-dark)!important; }
+.atomic-pacte span { color:var(--atomic-dark)!important; }
+.atomic-pacte p { color:var(--atomic-text)!important; }
+
+/* 11 — semaine : cartes plus distinctes, lisibles et respirantes */
+.atomic-week {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.atomic-week article {
+  min-height:150px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px 14px;
+  border-radius:18px;
+  border:1px solid rgba(79,147,134,.12);
+  background:linear-gradient(180deg,#f2faf7 0%,#fff 100%);
+}
+.atomic-week article:nth-child(2n) {
+  background:linear-gradient(180deg,#f7f4fc 0%,#fff 100%);
+  border-color:rgba(117,103,200,.12);
+}
+.atomic-week article:nth-child(3n) {
+  background:linear-gradient(180deg,#fbf8f2 0%,#fff 100%);
+  border-color:rgba(176,142,88,.12);
+}
+.atomic-week article:last-child {
+  grid-column:auto;
+  background:linear-gradient(180deg,#eef8f5 0%,#fff 100%);
+}
+.atomic-week span {
+  margin:0 auto;
+  color:var(--atomic-dark)!important;
+  background:#F4D8D1;
+}
+.atomic-week strong { color:var(--atomic-purple)!important; }
+.atomic-week p {
+  max-width:25ch;
+  margin:8px auto 0!important;
+  text-align:center;
+  color:var(--atomic-text)!important;
+}
+.atomic-final-principle {
+  background:linear-gradient(135deg,#426f67 0%,#5f6c91 100%);
+}
+.atomic-final-principle span { color:#e0f4ef!important; }
+.atomic-final-principle p,
+.atomic-final-principle strong { color:#fff!important; }
+
+/* Références */
+.atomic-sources article {
+  border-color:rgba(79,147,134,.12);
+  background:linear-gradient(180deg,#fff,#fbfdfc);
+}
+.atomic-sources article:nth-child(even) {
+  background:linear-gradient(180deg,#fbf9ff,#fff);
+  border-color:rgba(117,103,200,.12);
+}
+.atomic-sources article > span { color:var(--atomic-purple)!important; }
+.atomic-sources article > strong { color:var(--atomic-dark)!important; }
+.atomic-sources article > p { color:var(--atomic-text)!important; }
+.atomic-sources a {
+  color:var(--atomic-dark)!important;
+  background:var(--atomic-mint);
+}
+
+/* Ressources vidéo */
+.atomic-video-resources {
+  margin:26px 0 4px;
+  padding-top:22px;
+  border-top:1px solid rgba(42,39,78,.10);
+}
+.atomic-video-resources-head {
+  margin-bottom:14px;
+  text-align:left;
+}
+.atomic-video-resources-head > span {
+  display:block;
+  color:var(--atomic-purple)!important;
+  font:850 8px/1.2 Inter,Arial,sans-serif;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.blog-prose .atomic-video-resources-head h3 {
+  margin:7px 0 0!important;
+  color:var(--atomic-dark)!important;
+  font-size:20px!important;
+}
+.atomic-video-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.atomic-video-card {
+  overflow:hidden;
+  border:1px solid rgba(79,147,134,.12);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(42,39,78,.045);
+}
+.atomic-video-card:nth-child(2) { border-color:rgba(117,103,200,.13); }
+.atomic-video-frame {
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#edf5f3;
+}
+.atomic-video-frame iframe {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+.atomic-video-copy {
+  display:grid;
+  gap:7px;
+  padding:14px 15px 16px;
+}
+.atomic-video-copy > span {
+  width:max-content;
+  padding:4px 7px;
+  border-radius:999px;
+  background:var(--atomic-lilac);
+  color:var(--atomic-purple)!important;
+  font:850 7px/1 Inter,Arial,sans-serif;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.atomic-video-copy > strong {
+  color:var(--atomic-dark)!important;
+  font:600 14px/1.35 Georgia,"Times New Roman",serif;
+}
+.atomic-video-copy > a {
+  width:max-content;
+  color:var(--atomic-dark)!important;
+  font:800 8px/1.2 Inter,Arial,sans-serif;
+  text-decoration:none;
+}
+
+/* CTA de fin : contraste explicite */
+.atomic-end {
+  background:linear-gradient(135deg,#eef8f5 0%,#f4f1fb 100%)!important;
+  border:1px solid rgba(79,147,134,.16)!important;
+  box-shadow:0 16px 36px rgba(55,92,85,.07)!important;
+}
+.atomic-end h2 {
+  color:var(--atomic-dark)!important;
+}
+.atomic-end p {
+  color:var(--atomic-text)!important;
+}
+.atomic-end .blog-end-actions a:first-child {
+  border-color:var(--atomic-dark)!important;
+  background:var(--atomic-dark)!important;
+  color:#fff!important;
+}
+.atomic-end .blog-end-actions a:last-child {
+  border-color:rgba(79,147,134,.28)!important;
+  background:#fff!important;
+  color:var(--atomic-dark)!important;
+}
+
+@media (max-width:920px) {
+  .atomic-week { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:760px) {
+  .atomic-compare--stackable,
+  .atomic-levels,
+  .atomic-video-grid { grid-template-columns:1fr!important; }
+  .atomic-compare--stackable article,
+  .atomic-levels article {
+    min-height:0;
+    padding:18px 16px;
+  }
+  .atomic-ladder {
+    grid-template-columns:1fr;
+  }
+  .atomic-ladder > i {
+    transform:rotate(90deg);
+    justify-self:center;
+    margin:0 auto;
+  }
+  .atomic-friction-grid { grid-template-columns:1fr; }
+  .atomic-friction-grid ul { grid-template-columns:1fr; }
+  .atomic-week { grid-template-columns:1fr; }
+  .atomic-week article { min-height:0; padding:16px 14px; }
+}
+@media (max-width:560px) {
+  .atomic-examples p { text-align:center!important; }
+  .atomic-return > div { text-align:center!important; }
+  .atomic-friction-grid article { padding:15px; }
+  .atomic-friction-grid article > span { width:100%; }
+  .atomic-video-resources-head { text-align:center; }
+  .atomic-video-resources-head > span { text-align:center; }
+}
+
+/* ===== Atomic Habits v5 — retour au noir + palette Philosophal ===== */
+.blog-atomic-page {
+  --atomic:#6c63ff;
+  --atomic-dark:#5148cf;
+  --atomic-deep:#20202b;
+  --atomic-text:#50505c;
+  --atomic-muted:#777482;
+  --atomic-purple:#6c63ff;
+  --atomic-lilac:#f1efff;
+  --atomic-mint:#f6f5ff;
+  --atomic-mint-strong:#e8e5ff;
+  --atomic-cream:#fbf8f2;
+}
+
+/* Retour à une hiérarchie typographique normale : titres et gras en noir. */
+.blog-atomic-page .blog-article-title,
+.blog-atomic-page .blog-article-title strong,
+.blog-atomic-page .blog-prose h2,
+.blog-atomic-page .blog-prose h3,
+.blog-atomic-page .blog-prose strong,
+.blog-atomic-page .blog-article-lead strong,
+.blog-atomic-page .atomic-thesis strong,
+.blog-atomic-page .atomic-rule strong,
+.blog-atomic-page .atomic-learning-grid strong,
+.blog-atomic-page .atomic-pacte span,
+.blog-atomic-page .atomic-sources strong,
+.blog-atomic-page .atomic-compare--stackable article > strong,
+.blog-atomic-page .atomic-levels article > strong,
+.blog-atomic-page .atomic-return strong,
+.blog-atomic-page .atomic-formula strong,
+.blog-atomic-page .atomic-final-principle strong {
+  color:var(--blog-ink)!important;
+}
+.blog-atomic-page .blog-prose h2,
+.blog-atomic-page .blog-prose h3 { color:var(--blog-ink)!important; }
+.blog-atomic-page .blog-article-title em,
+.blog-atomic-page .blog-section-eyebrow,
+.blog-atomic-page .blog-prose a { color:var(--blog-warm)!important; }
+.blog-atomic-page .blog-prose,
+.blog-atomic-page .blog-prose p,
+.blog-atomic-page .blog-prose li,
+.blog-atomic-page .blog-article-lead,
+.blog-atomic-page .blog-article-meta { color:#50505c!important; }
+
+/* Encadrés : plus aucun fond sombre dans cet article. */
+.atomic-formula {
+  border:1px solid rgba(108,99,255,.18)!important;
+  background:linear-gradient(145deg,#f0eeff,#fbfaff)!important;
+  box-shadow:0 12px 28px rgba(108,99,255,.07)!important;
+}
+.atomic-formula span {
+  color:var(--blog-warm-dark)!important;
+  background:#e5e2ff!important;
+}
+.atomic-formula strong { color:var(--blog-ink)!important; }
+
+.atomic-final-principle {
+  border:1px solid rgba(108,99,255,.16)!important;
+  background:linear-gradient(135deg,#f2f0ff 0%,#fbfaf7 100%)!important;
+  box-shadow:0 14px 32px rgba(65,59,130,.06)!important;
+}
+.atomic-final-principle span { color:var(--blog-warm-dark)!important; }
+.atomic-final-principle p,
+.atomic-final-principle strong { color:var(--blog-ink)!important; }
+
+/* 01 — système : violet / neutre, sans vert. */
+.atomic-compare--stackable article {
+  border-color:rgba(42,39,78,.10)!important;
+  background:linear-gradient(180deg,#fff 0%,#fdfdff 100%)!important;
+}
+.atomic-compare--stackable article:nth-child(2) {
+  border-color:rgba(108,99,255,.14)!important;
+  background:linear-gradient(180deg,#f7f5ff 0%,#fff 100%)!important;
+}
+.atomic-compare--stackable article.is-best {
+  border-color:rgba(108,99,255,.25)!important;
+  background:linear-gradient(180deg,#efedff 0%,#faf9ff 100%)!important;
+}
+.atomic-compare--stackable article > span,
+.atomic-compare--stackable article.is-best > span {
+  color:var(--blog-warm-dark)!important;
+  background:#ebe8ff!important;
+}
+.atomic-compare--stackable article > p { color:#555461!important; }
+
+/* 02 */
+.atomic-table th {
+  color:var(--blog-ink)!important;
+  background:#f2f0ff!important;
+}
+.atomic-table td { color:#50505c!important; }
+.atomic-table tbody tr:nth-child(even) { background:#fbfaff!important; }
+
+/* 03 — progression plus proche de l'identité du site. */
+.atomic-ladder > div {
+  border-color:rgba(42,39,78,.10)!important;
+  background:linear-gradient(180deg,#fff,#fdfdff)!important;
+}
+.atomic-ladder > div:nth-of-type(2) {
+  border-color:rgba(108,99,255,.15)!important;
+  background:linear-gradient(180deg,#f7f5ff,#fff)!important;
+}
+.atomic-ladder > div.is-best {
+  border-color:rgba(108,99,255,.25)!important;
+  background:linear-gradient(180deg,#efedff,#faf9ff)!important;
+}
+.atomic-ladder span,
+.atomic-ladder .is-best span {
+  color:var(--blog-warm-dark)!important;
+  background:#ebe8ff!important;
+}
+.atomic-ladder p { color:#555461!important; }
+.atomic-ladder > i {
+  color:var(--blog-warm-dark)!important;
+  background:#f0eeff!important;
+}
+
+/* 04 */
+.atomic-examples p {
+  border-color:rgba(108,99,255,.10)!important;
+  background:linear-gradient(180deg,#fff,#fbfaff)!important;
+}
+.atomic-examples b { color:var(--blog-ink)!important; }
+.atomic-examples i { color:#555461!important; }
+.atomic-examples span { color:var(--blog-warm)!important; }
+
+/* 05 — environnement : cartes légères sans vert. */
+.atomic-friction-grid article {
+  border-color:rgba(108,99,255,.14)!important;
+  background:linear-gradient(180deg,#f6f4ff 0%,#fff 100%)!important;
+  box-shadow:0 12px 28px rgba(65,59,130,.05)!important;
+}
+.atomic-friction-grid article:nth-child(2) {
+  border-color:rgba(163,126,80,.13)!important;
+  background:linear-gradient(180deg,#fbf7f1 0%,#fff 100%)!important;
+}
+.atomic-friction-grid article > span {
+  color:var(--blog-warm-dark)!important;
+  background:#e9e6ff!important;
+}
+.atomic-friction-grid article:nth-child(2) > span {
+  color:#795f42!important;
+  background:#f2e9dc!important;
+}
+.atomic-friction-grid li {
+  border-color:rgba(108,99,255,.07)!important;
+  background:rgba(255,255,255,.9)!important;
+  color:#50505c!important;
+}
+
+/* 06 */
+.atomic-learning-grid article {
+  border-color:rgba(108,99,255,.12)!important;
+  background:linear-gradient(180deg,#fff 0%,#fbfaff 100%)!important;
+}
+.atomic-learning-grid article:nth-child(2) {
+  border-color:rgba(108,99,255,.16)!important;
+  background:linear-gradient(180deg,#f6f4ff 0%,#fff 100%)!important;
+}
+.atomic-learning-grid article:nth-child(3) {
+  border-color:rgba(163,126,80,.12)!important;
+  background:linear-gradient(180deg,#fbf7f1 0%,#fff 100%)!important;
+}
+.atomic-learning-grid article > span {
+  color:var(--blog-warm-dark)!important;
+  background:linear-gradient(180deg,#ebe8ff,#dedaff)!important;
+}
+.atomic-learning-grid h3 { color:var(--blog-ink)!important; }
+.atomic-learning-grid p { color:#50505c!important; }
+.atomic-study-notes {
+  border-color:rgba(108,99,255,.14)!important;
+  background:#f7f5ff!important;
+}
+.atomic-study-notes > span { color:var(--blog-warm-dark)!important; }
+.atomic-study-notes li { color:#555461!important; }
+
+/* 07 */
+.atomic-levels article {
+  border-color:rgba(42,39,78,.10)!important;
+  background:#fff!important;
+}
+.atomic-levels article:nth-child(1) { background:linear-gradient(180deg,#fbfaf7,#fff)!important; }
+.atomic-levels article.is-normal {
+  border-color:rgba(108,99,255,.23)!important;
+  background:linear-gradient(180deg,#efedff,#faf9ff)!important;
+}
+.atomic-levels article:nth-child(3) { background:linear-gradient(180deg,#f7f5ff,#fff)!important; }
+.atomic-levels article > span,
+.atomic-levels article.is-normal > span {
+  color:var(--blog-warm-dark)!important;
+  background:#ebe8ff!important;
+}
+.atomic-levels article > p { color:#555461!important; }
+
+/* 08 */
+.atomic-return span { color:var(--blog-warm-dark)!important; }
+.atomic-return strong { color:var(--blog-ink)!important; }
+.atomic-return > div {
+  border-color:rgba(42,39,78,.10)!important;
+  background:linear-gradient(180deg,#fff,#fdfdff)!important;
+}
+.atomic-return > div.is-best {
+  border-color:rgba(108,99,255,.23)!important;
+  background:linear-gradient(180deg,#efedff,#faf9ff)!important;
+}
+.atomic-return > i {
+  color:var(--blog-warm-dark)!important;
+  background:#eeecff!important;
+}
+
+/* 09 */
+.atomic-tracker span {
+  color:var(--blog-warm-dark)!important;
+  background:#ebe8ff!important;
+}
+
+/* 10 */
+.atomic-pacte article {
+  border-color:rgba(108,99,255,.11)!important;
+  background:linear-gradient(145deg,#fff,#fbfaff)!important;
+}
+.atomic-pacte b {
+  color:var(--blog-warm-dark)!important;
+  background:linear-gradient(180deg,#ece9ff,#dfdcff)!important;
+}
+.atomic-pacte span { color:var(--blog-ink)!important; }
+.atomic-pacte p { color:#555461!important; }
+
+/* 11 — semaine : violet + neutres chauds, sans vert. */
+.atomic-week article {
+  border-color:rgba(108,99,255,.12)!important;
+  background:linear-gradient(180deg,#f6f4ff 0%,#fff 100%)!important;
+}
+.atomic-week article:nth-child(2n) {
+  border-color:rgba(163,126,80,.11)!important;
+  background:linear-gradient(180deg,#fbf7f1 0%,#fff 100%)!important;
+}
+.atomic-week article:nth-child(3n) {
+  border-color:rgba(42,39,78,.09)!important;
+  background:linear-gradient(180deg,#f9f9fc 0%,#fff 100%)!important;
+}
+.atomic-week article:last-child {
+  border-color:rgba(108,99,255,.18)!important;
+  background:linear-gradient(180deg,#efedff 0%,#fff 100%)!important;
+}
+.atomic-week span {
+  color:var(--blog-warm-dark)!important;
+  background:#ebe8ff!important;
+}
+.atomic-week strong { color:var(--blog-ink)!important; }
+.atomic-week p { color:#555461!important; }
+
+/* Références + vidéos */
+.atomic-sources article {
+  border-color:rgba(108,99,255,.11)!important;
+  background:linear-gradient(180deg,#fff,#fbfaff)!important;
+}
+.atomic-sources article:nth-child(even) {
+  border-color:rgba(163,126,80,.10)!important;
+  background:linear-gradient(180deg,#fbf8f3,#fff)!important;
+}
+.atomic-sources article::before {
+  background:linear-gradient(180deg,#8a82ff,#6c63ff)!important;
+}
+.atomic-sources article > span { color:var(--blog-warm-dark)!important; }
+.atomic-sources article > strong { color:var(--blog-ink)!important; }
+.atomic-sources article > p { color:#555461!important; }
+.atomic-sources a {
+  color:var(--blog-warm-dark)!important;
+  background:#efedff!important;
+}
+.atomic-video-resources-head > span { color:var(--blog-warm-dark)!important; }
+.blog-prose .atomic-video-resources-head h3 { color:var(--blog-ink)!important; }
+.atomic-video-card { border-color:rgba(108,99,255,.12)!important; }
+.atomic-video-frame { background:#f0eeff!important; }
+.atomic-video-copy > span {
+  color:var(--blog-warm-dark)!important;
+  background:#efedff!important;
+}
+.atomic-video-copy > strong { color:var(--blog-ink)!important; }
+.atomic-video-copy > a { color:var(--blog-warm-dark)!important; }
+
+/* CTA : fond clair, texte noir, action principale violette. */
+.atomic-end {
+  background:linear-gradient(135deg,#f1efff 0%,#fbfaf7 100%)!important;
+  border:1px solid rgba(108,99,255,.16)!important;
+  box-shadow:0 16px 36px rgba(65,59,130,.07)!important;
+}
+.atomic-end h2,
+.atomic-end p { color:var(--blog-ink)!important; }
+.atomic-end .blog-end-actions a:first-child {
+  border-color:var(--blog-warm)!important;
+  background:var(--blog-warm)!important;
+  color:#fff!important;
+}
+.atomic-end .blog-end-actions a:last-child {
+  border-color:rgba(108,99,255,.24)!important;
+  background:#fff!important;
+  color:var(--blog-warm-dark)!important;
+}
+
+/* ===== Blog v8 — palette Méthodologie : corail poudré / terracotta, sans vert ===== */
+:root {
+  --method-gold:#C96F5B;
+  --method-gold-dark:#8B4B42;
+  --method-gold-soft:#FCF2EF;
+  --method-gold-soft-strong:#F4D8D1;
+  --method-gold-border:#E8C1B8;
+  --method-gold-rgb:201,111,91;
+}
+
+/* Index du blog : la catégorie Méthodologie a désormais sa couleur propre. */
+.blog-card--method,
+.blog-card--atomic {
+  --card-accent:var(--method-gold-rgb)!important;
+}
+.blog-type-chip--method { --chip:var(--method-gold-rgb)!important; }
+.blog-card-topic--methodologie {
+  background:rgba(var(--method-gold-rgb),.11)!important;
+  color:var(--method-gold-dark)!important;
+  border-color:rgba(var(--method-gold-rgb),.18)!important;
+}
+.blog-index-filters [data-blog-filter="methodologie"] {
+  border-color:rgba(var(--method-gold-rgb),.26)!important;
+  color:var(--method-gold-dark)!important;
+}
+.blog-index-filters [data-blog-filter="methodologie"]:hover,
+.blog-index-filters [data-blog-filter="methodologie"].is-active {
+  border-color:var(--method-gold)!important;
+  background:var(--method-gold-soft)!important;
+  color:var(--method-gold-dark)!important;
+}
+.blog-card--method .blog-card-number,
+.blog-card--method .blog-card-read,
+.blog-card--atomic .blog-card-number,
+.blog-card--atomic .blog-card-read {
+  color:var(--method-gold-dark)!important;
+}
+.blog-card--method .blog-card-read i,
+.blog-card--atomic .blog-card-read i {
+  background:rgba(var(--method-gold-rgb),.11)!important;
+}
+
+/* Article Atomic Habits : violet = identité Philosophal ; corail = méthodologie. */
+.blog-atomic-page {
+  --atomic:var(--method-gold);
+  --atomic-dark:var(--method-gold-dark);
+  --atomic-deep:#20202b;
+  --atomic-text:#50505c;
+  --atomic-muted:#777482;
+  --atomic-purple:#6C63FF;
+  --atomic-lilac:#F1EFFF;
+  --atomic-mint:var(--method-gold-soft);
+  --atomic-mint-strong:var(--method-gold-soft-strong);
+  --atomic-cream:#FFFDF8;
+}
+.blog-atomic-page .atomic-hero {
+  background:linear-gradient(145deg,#FDF3F0 0%,#fff 58%,#F4F2FF 100%)!important;
+}
+.blog-atomic-page .blog-article-title,
+.blog-atomic-page .blog-article-title strong,
+.blog-atomic-page .blog-prose h2,
+.blog-atomic-page .blog-prose h3,
+.blog-atomic-page .blog-prose strong,
+.blog-atomic-page .blog-article-lead strong,
+.blog-atomic-page .atomic-formula strong,
+.blog-atomic-page .atomic-final-principle strong {
+  color:var(--blog-ink)!important;
+}
+.blog-atomic-page .blog-article-title em,
+.blog-atomic-page .blog-article-kicker,
+.blog-atomic-page .blog-section-eyebrow {
+  color:var(--method-gold-dark)!important;
+}
+.blog-atomic-page .blog-prose a { color:var(--blog-warm-dark)!important; }
+
+/* Visuel symbolique du hero : corail + violet uniquement. */
+.atomic-hero-visual--minimal {
+  border-color:rgba(var(--method-gold-rgb),.16)!important;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(var(--method-gold-rgb),.13),transparent 44%),
+    linear-gradient(145deg,#FFFDFC,#F7F4FF)!important;
+  box-shadow:0 20px 40px rgba(116,70,61,.06)!important;
+}
+.atomic-minimal-orbit { border-color:rgba(var(--method-gold-rgb),.24)!important; }
+.atomic-minimal-orbit--2 { border-color:rgba(108,99,255,.20)!important; }
+.atomic-minimal-node {
+  background:linear-gradient(180deg,#DC8A77,var(--method-gold))!important;
+  box-shadow:0 8px 20px rgba(var(--method-gold-rgb),.23)!important;
+}
+.atomic-minimal-node--2 { background:linear-gradient(180deg,#8C84FF,#6C63FF)!important; }
+.atomic-minimal-path {
+  background:linear-gradient(90deg,rgba(var(--method-gold-rgb),.18),rgba(var(--method-gold-rgb),.88))!important;
+}
+.atomic-minimal-dot { background:#E7B5A9!important; }
+.atomic-minimal-dot--2 { background:#B8B3FF!important; }
+
+/* Introduction / idée directrice. */
+.atomic-thesis {
+  border-color:rgba(var(--method-gold-rgb),.22)!important;
+  background:linear-gradient(145deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-thesis > span { color:var(--method-gold-dark)!important; }
+.atomic-thesis-list > li::marker { color:var(--method-gold)!important; }
+.atomic-inspiration {
+  border-left-color:rgba(108,99,255,.38)!important;
+  background:#FAF9FF!important;
+}
+
+/* 01 — Système : neutre → violet → méthodologie corail. */
+.atomic-compare--stackable article {
+  border-color:rgba(42,39,78,.10)!important;
+  background:linear-gradient(180deg,#fff,#FDFDFF)!important;
+}
+.atomic-compare--stackable article:nth-child(2) {
+  border-color:rgba(108,99,255,.16)!important;
+  background:linear-gradient(180deg,#F6F4FF,#fff)!important;
+}
+.atomic-compare--stackable article.is-best {
+  border-color:rgba(var(--method-gold-rgb),.28)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#FFFDFC)!important;
+}
+.atomic-compare--stackable article > span {
+  color:var(--blog-warm-dark)!important;
+  background:#ECE9FF!important;
+}
+.atomic-compare--stackable article.is-best > span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+
+/* 02 — Démarrage. */
+.atomic-table th {
+  color:var(--blog-ink)!important;
+  background:var(--method-gold-soft)!important;
+}
+.atomic-table tbody tr:nth-child(even) { background:#FFFDFC!important; }
+.atomic-rule {
+  border-left-color:var(--method-gold)!important;
+  background:#FDF6F3!important;
+}
+.atomic-rule > strong { color:var(--method-gold-dark)!important; }
+
+/* 03 — précision. */
+.atomic-ladder > div {
+  border-color:rgba(42,39,78,.10)!important;
+  background:#fff!important;
+}
+.atomic-ladder > div:nth-of-type(2) {
+  border-color:rgba(108,99,255,.16)!important;
+  background:linear-gradient(180deg,#F7F5FF,#fff)!important;
+}
+.atomic-ladder > div.is-best {
+  border-color:rgba(var(--method-gold-rgb),.28)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-ladder span {
+  color:var(--blog-warm-dark)!important;
+  background:#ECE9FF!important;
+}
+.atomic-ladder .is-best span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+.atomic-ladder > i {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft)!important;
+}
+
+/* 04 — empilement. */
+.atomic-formula {
+  border-color:rgba(var(--method-gold-rgb),.25)!important;
+  background:linear-gradient(145deg,var(--method-gold-soft),#FFFDFC)!important;
+  box-shadow:0 12px 28px rgba(130,76,65,.07)!important;
+}
+.atomic-formula span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+.atomic-examples p {
+  border-color:rgba(var(--method-gold-rgb),.12)!important;
+  background:linear-gradient(180deg,#fff,#FFFDFC)!important;
+}
+.atomic-examples span { color:var(--method-gold)!important; }
+
+/* 05 — environnement : corail pour faciliter, violet pour la distraction. */
+.atomic-friction-grid article {
+  border-color:rgba(var(--method-gold-rgb),.20)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+  box-shadow:0 12px 28px rgba(130,76,65,.05)!important;
+}
+.atomic-friction-grid article:nth-child(2) {
+  border-color:rgba(108,99,255,.16)!important;
+  background:linear-gradient(180deg,#F6F4FF,#fff)!important;
+}
+.atomic-friction-grid article > span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+.atomic-friction-grid article:nth-child(2) > span {
+  color:var(--blog-warm-dark)!important;
+  background:#EDEAFF!important;
+}
+.atomic-friction-grid li {
+  border-color:rgba(var(--method-gold-rgb),.08)!important;
+  background:rgba(255,255,255,.90)!important;
+}
+
+/* 06 — apprentissage. */
+.atomic-learning-grid article:nth-child(1) {
+  border-color:rgba(var(--method-gold-rgb),.18)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-learning-grid article:nth-child(2) {
+  border-color:rgba(108,99,255,.16)!important;
+  background:linear-gradient(180deg,#F6F4FF,#fff)!important;
+}
+.atomic-learning-grid article:nth-child(3) {
+  border-color:rgba(var(--method-gold-rgb),.13)!important;
+  background:linear-gradient(180deg,#FDF5F2,#fff)!important;
+}
+.atomic-learning-grid article > span {
+  color:var(--method-gold-dark)!important;
+  background:linear-gradient(180deg,#F6DDD7,var(--method-gold-soft-strong))!important;
+}
+.atomic-learning-grid article:nth-child(2) > span {
+  color:var(--blog-warm-dark)!important;
+  background:linear-gradient(180deg,#EFEDFF,#DFDCFF)!important;
+}
+.atomic-study-notes {
+  border-color:rgba(108,99,255,.14)!important;
+  background:#F8F6FF!important;
+}
+
+/* 07 — trois niveaux : la version normale devient le repère méthodologique corail. */
+.atomic-levels article { border-color:rgba(42,39,78,.10)!important; background:#fff!important; }
+.atomic-levels article:nth-child(1) { background:linear-gradient(180deg,#FBFAF7,#fff)!important; }
+.atomic-levels article.is-normal {
+  border-color:rgba(var(--method-gold-rgb),.28)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-levels article:nth-child(3) {
+  border-color:rgba(108,99,255,.15)!important;
+  background:linear-gradient(180deg,#F7F5FF,#fff)!important;
+}
+.atomic-levels article > span { color:var(--blog-warm-dark)!important; background:#ECE9FF!important; }
+.atomic-levels article.is-normal > span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+
+/* 08 — retour utile. */
+.atomic-return > div { border-color:rgba(42,39,78,.10)!important; background:#fff!important; }
+.atomic-return > div.is-best {
+  border-color:rgba(var(--method-gold-rgb),.28)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-return span { color:var(--method-gold-dark)!important; }
+.atomic-return > div:first-child span { color:var(--blog-warm-dark)!important; }
+.atomic-return > i {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft)!important;
+}
+
+/* 09 — suivi. */
+.atomic-tracker span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+
+/* 10 — PACTE. */
+.atomic-pacte article {
+  border-color:rgba(var(--method-gold-rgb),.14)!important;
+  background:linear-gradient(145deg,#fff,#FFFDF8)!important;
+}
+.atomic-pacte b {
+  color:var(--method-gold-dark)!important;
+  background:linear-gradient(180deg,#F5DAD4,var(--method-gold-soft-strong))!important;
+}
+
+/* 11 — semaine : crème, violet léger et neutres ; aucun vert. */
+.atomic-week article {
+  border-color:rgba(var(--method-gold-rgb),.17)!important;
+  background:linear-gradient(180deg,var(--method-gold-soft),#fff)!important;
+}
+.atomic-week article:nth-child(2n) {
+  border-color:rgba(108,99,255,.13)!important;
+  background:linear-gradient(180deg,#F7F5FF,#fff)!important;
+}
+.atomic-week article:nth-child(3n) {
+  border-color:rgba(42,39,78,.09)!important;
+  background:linear-gradient(180deg,#FAFAFC,#fff)!important;
+}
+.atomic-week article:last-child {
+  border-color:rgba(var(--method-gold-rgb),.24)!important;
+  background:linear-gradient(180deg,#F8DED7,#fff)!important;
+}
+.atomic-week span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft-strong)!important;
+}
+.atomic-week article:nth-child(2n) span {
+  color:var(--blog-warm-dark)!important;
+  background:#ECE9FF!important;
+}
+.atomic-week strong { color:var(--blog-ink)!important; }
+.atomic-final-principle {
+  border-color:rgba(var(--method-gold-rgb),.22)!important;
+  background:linear-gradient(135deg,var(--method-gold-soft) 0%,#F6F3FF 100%)!important;
+  box-shadow:0 14px 32px rgba(126,73,62,.06)!important;
+}
+.atomic-final-principle span { color:var(--method-gold-dark)!important; }
+.atomic-final-principle p,
+.atomic-final-principle strong { color:var(--blog-ink)!important; }
+
+/* Références et vidéos : corail méthodologie, violet secondaire. */
+.atomic-sources article {
+  border-color:rgba(var(--method-gold-rgb),.15)!important;
+  background:linear-gradient(180deg,#fff,#FFFDFC)!important;
+}
+.atomic-sources article:nth-child(even) {
+  border-color:rgba(108,99,255,.12)!important;
+  background:linear-gradient(180deg,#FAF9FF,#fff)!important;
+}
+.atomic-sources article::before {
+  background:linear-gradient(180deg,#DA806C,var(--method-gold))!important;
+}
+.atomic-sources article:nth-child(even)::before {
+  background:linear-gradient(180deg,#8B83FF,#6C63FF)!important;
+}
+.atomic-sources article > span { color:var(--method-gold-dark)!important; }
+.atomic-sources a {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft)!important;
+}
+.atomic-video-resources-head > span { color:var(--method-gold-dark)!important; }
+.atomic-video-card { border-color:rgba(var(--method-gold-rgb),.16)!important; }
+.atomic-video-card:nth-child(2) { border-color:rgba(108,99,255,.14)!important; }
+.atomic-video-frame { background:var(--method-gold-soft)!important; }
+.atomic-video-card:nth-child(2) .atomic-video-frame { background:#F1EFFF!important; }
+.atomic-video-copy > span {
+  color:var(--method-gold-dark)!important;
+  background:var(--method-gold-soft)!important;
+}
+.atomic-video-card:nth-child(2) .atomic-video-copy > span {
+  color:var(--blog-warm-dark)!important;
+  background:#EFEDFF!important;
+}
+.atomic-video-copy > a { color:var(--method-gold-dark)!important; }
+
+/* CTA final : clair et méthodologique, sans aplat sombre. */
+.atomic-end {
+  background:linear-gradient(135deg,var(--method-gold-soft) 0%,#F6F3FF 100%)!important;
+  border-color:rgba(var(--method-gold-rgb),.22)!important;
+  box-shadow:0 16px 36px rgba(126,73,62,.07)!important;
+}
+.atomic-end h2,
+.atomic-end p { color:var(--blog-ink)!important; }
+.atomic-end .blog-end-actions a:first-child {
+  border-color:var(--method-gold-dark)!important;
+  background:var(--method-gold-dark)!important;
+  color:#fff!important;
+}
+.atomic-end .blog-end-actions a:first-child:hover {
+  border-color:#743E36!important;
+  background:#743E36!important;
+}
+.atomic-end .blog-end-actions a:last-child {
+  border-color:rgba(var(--method-gold-rgb),.30)!important;
+  background:#fff!important;
+  color:var(--method-gold-dark)!important;
+}
+.atomic-aside a.is-active { color:var(--method-gold-dark)!important; }
+
+/* Hover/focus de catégorie méthodologie. */
+.blog-card--method:hover,
+.blog-card--atomic:hover {
+  border-color:rgba(var(--method-gold-rgb),.36)!important;
+  box-shadow:0 28px 68px rgba(126,73,62,.10)!important;
+}
+
+@media (max-width:760px) {
+  .blog-index-filters [data-blog-filter="methodologie"] { background:#FFFDFC; }
+}
+
+
+/* ===== Blog v9 — Méthodologie en violet améthyste =====
+   Philosophal reste #6C63FF ; la méthodologie utilise une teinte violette plus chaude.
+   Le texte/gras reste noir ou gris neutre. */
+:root {
+  --method-gold:#8468D7;
+  --method-gold-dark:#5E469E;
+  --method-gold-soft:#F3F0FC;
+  --method-gold-soft-strong:#DCD3F5;
+  --method-gold-border:#C8B9EB;
+  --method-gold-rgb:132,104,215;
+}
+
+/* Blog index — méthodologie */
+.blog-card--method,
+.blog-card--atomic {
+  --card-accent:132,104,215!important;
+}
+.blog-type-chip--method { --chip:132,104,215!important; }
+
+.blog-card-topic--methodologie {
+  background:#EFEAFB!important;
+  color:#5E469E!important;
+  border-color:#D4C9F0!important;
+}
+.blog-index-filters [data-blog-filter="methodologie"] {
+  border-color:#C8B9EB!important;
+  color:#5E469E!important;
+  background:#fff!important;
+}
+.blog-index-filters [data-blog-filter="methodologie"]:hover,
+.blog-index-filters [data-blog-filter="methodologie"].is-active {
+  border-color:#8468D7!important;
+  background:#F3F0FC!important;
+  color:#5E469E!important;
+}
+.blog-card--method .blog-card-number,
+.blog-card--method .blog-card-read,
+.blog-card--atomic .blog-card-number,
+.blog-card--atomic .blog-card-read {
+  color:#5E469E!important;
+}
+.blog-card--method .blog-card-read i,
+.blog-card--atomic .blog-card-read i {
+  background:#EFEAFB!important;
+}
+
+/* Atomic Habits — palette violette monochromatique */
+.blog-atomic-page {
+  --atomic:#8468D7!important;
+  --atomic-dark:#5E469E!important;
+  --atomic-purple:#6C63FF!important;
+  --atomic-lilac:#F1EFFF!important;
+  --atomic-mint:#F3F0FC!important;
+  --atomic-mint-strong:#DCD3F5!important;
+  --atomic-cream:#FBFAFE!important;
+}
+.blog-atomic-page .atomic-hero {
+  background:linear-gradient(145deg,#F4F1FD 0%,#fff 58%,#EFEDFF 100%)!important;
+}
+.blog-atomic-page .blog-article-title,
+.blog-atomic-page .blog-article-title strong,
+.blog-atomic-page .blog-prose h2,
+.blog-atomic-page .blog-prose h3,
+.blog-atomic-page .blog-prose strong,
+.blog-atomic-page .blog-article-lead strong,
+.blog-atomic-page .atomic-formula strong,
+.blog-atomic-page .atomic-final-principle strong {
+  color:#1F1F2A!important;
+}
+.blog-atomic-page .blog-article-title em,
+.blog-atomic-page .blog-article-kicker,
+.blog-atomic-page .blog-section-eyebrow {
+  color:#6C63FF!important;
+}
+
+/* Visuel symbolique */
+.atomic-hero-visual--minimal {
+  background:
+    radial-gradient(circle at 50% 50%,rgba(132,104,215,.12),transparent 44%),
+    linear-gradient(145deg,#fff,#F6F3FD)!important;
+  border-color:rgba(132,104,215,.14)!important;
+}
+.atomic-minimal-orbit { border-color:rgba(132,104,215,.28)!important; }
+.atomic-minimal-orbit--2 { border-color:rgba(108,99,255,.22)!important; }
+.atomic-minimal-node {
+  background:linear-gradient(180deg,#A38FE8,#8468D7)!important;
+  box-shadow:0 8px 20px rgba(94,70,158,.18)!important;
+}
+.atomic-minimal-node--2 { background:linear-gradient(180deg,#8C84FF,#6C63FF)!important; }
+.atomic-minimal-path {
+  background:linear-gradient(90deg,rgba(132,104,215,.16),rgba(108,99,255,.78))!important;
+}
+.atomic-minimal-dot { background:#C5B8ED!important; }
+.atomic-minimal-dot--2 { background:#AAA2FF!important; }
+
+/* Encadrés et cartes */
+.atomic-thesis {
+  background:linear-gradient(145deg,#F5F2FC,#fff)!important;
+  border-color:#D8CFF2!important;
+}
+.atomic-thesis > span,
+.atomic-rule > strong,
+.atomic-return span,
+.atomic-sources article > span,
+.atomic-video-resources-head > span {
+  color:#5E469E!important;
+}
+.atomic-thesis-list > li::marker { color:#8468D7!important; }
+
+.atomic-inspiration {
+  background:#F7F5FC!important;
+  border-left-color:#8468D7!important;
+}
+
+.atomic-compare--stackable article,
+.atomic-ladder > div,
+.atomic-friction-grid article,
+.atomic-learning-grid article,
+.atomic-levels article,
+.atomic-return > div,
+.atomic-pacte article,
+.atomic-week article,
+.atomic-sources article,
+.atomic-video-card {
+  border-color:rgba(94,70,158,.13)!important;
+}
+.atomic-compare--stackable article:nth-child(2),
+.atomic-ladder > div:nth-of-type(2),
+.atomic-friction-grid article:nth-child(2),
+.atomic-learning-grid article:nth-child(2),
+.atomic-week article:nth-child(2n),
+.atomic-sources article:nth-child(even) {
+  background:#F8F6FD!important;
+}
+.atomic-compare--stackable article.is-best,
+.atomic-ladder > div.is-best,
+.atomic-levels article.is-normal,
+.atomic-return > div.is-best {
+  background:linear-gradient(145deg,#F1EDFB,#fff)!important;
+  border-color:#C8B9EB!important;
+}
+.atomic-compare--stackable article > span,
+.atomic-ladder span,
+.atomic-levels article > span {
+  background:#F0ECFA!important;
+  color:#5E469E!important;
+}
+.atomic-compare--stackable article.is-best > span,
+.atomic-ladder .is-best span,
+.atomic-levels article.is-normal > span {
+  background:#DED5F5!important;
+  color:#5E469E!important;
+}
+
+/* Tableau / règle */
+.atomic-table th {
+  background:#F1EDFB!important;
+  color:#5E469E!important;
+}
+.atomic-table tbody tr:nth-child(even) { background:#FAF9FD!important; }
+.atomic-rule {
+  background:#F6F3FC!important;
+  border-left-color:#8468D7!important;
+}
+
+/* Formule 04 — clair, lisible, centré */
+.atomic-formula {
+  background:linear-gradient(145deg,#EEE9FA,#F8F6FD)!important;
+  border:1px solid #C8B9EB!important;
+  box-shadow:0 12px 28px rgba(94,70,158,.08)!important;
+}
+.atomic-formula span {
+  background:#DCD3F5!important;
+  color:#5E469E!important;
+}
+.atomic-formula strong { color:#1F1F2A!important; }
+.atomic-examples p {
+  background:#fff!important;
+  border-color:#D8CFF2!important;
+}
+.atomic-examples span { color:#8468D7!important; }
+
+/* 05 — frictions */
+.atomic-friction-grid article:first-child {
+  background:linear-gradient(145deg,#F5F2FC,#fff)!important;
+}
+.atomic-friction-grid article:nth-child(2) {
+  background:linear-gradient(145deg,#FAF8FE,#fff)!important;
+}
+.atomic-friction-grid article > span,
+.atomic-friction-grid article:nth-child(2) > span {
+  color:#5E469E!important;
+}
+.atomic-friction-grid li {
+  background:#F5F2FC!important;
+}
+.atomic-friction-grid article:nth-child(2) li {
+  background:#F8F6FD!important;
+}
+.atomic-friction-grid li::before { color:#8468D7!important; }
+
+/* 06 — apprentissage */
+.atomic-learning-grid article:nth-child(1),
+.atomic-learning-grid article:nth-child(2),
+.atomic-learning-grid article:nth-child(3) {
+  background:linear-gradient(180deg,#fff 0%,#F8F6FD 100%)!important;
+}
+.atomic-learning-grid article > span,
+.atomic-learning-grid article:nth-child(2) > span {
+  background:linear-gradient(180deg,#E5DEF7,#D5CAF1)!important;
+  color:#5E469E!important;
+}
+.atomic-study-notes {
+  background:#F6F3FC!important;
+  border-color:#D8CFF2!important;
+}
+.atomic-study-notes > span { color:#5E469E!important; }
+
+/* 07 / 08 / 09 / 10 */
+.atomic-levels article:nth-child(1) { background:#FAF9FD!important; }
+.atomic-levels article:nth-child(3) { background:#F7F5FC!important; }
+.atomic-return > i {
+  background:#EEEAF8!important;
+  color:#5E469E!important;
+}
+.atomic-tracker span {
+  background:#E7E0F7!important;
+  color:#5E469E!important;
+}
+.atomic-pacte b {
+  background:linear-gradient(180deg,#E6DFF8,#D4C8F1)!important;
+  color:#5E469E!important;
+}
+
+/* Semaine */
+.atomic-week article {
+  background:linear-gradient(145deg,#fff,#FAF9FD)!important;
+}
+.atomic-week article:nth-child(2n) { background:linear-gradient(145deg,#F7F5FC,#fff)!important; }
+.atomic-week article:nth-child(3n) { background:linear-gradient(145deg,#F3F0FC,#fff)!important; }
+.atomic-week article:last-child { background:linear-gradient(145deg,#EEE9FA,#fff)!important; }
+.atomic-week span,
+.atomic-week article:nth-child(2n) span {
+  background:#E9E3F8!important;
+  color:#5E469E!important;
+}
+
+/* À retenir */
+.atomic-final-principle {
+  background:linear-gradient(145deg,#F0ECFA,#F8F6FD)!important;
+  border:1px solid #C8B9EB!important;
+  box-shadow:0 14px 30px rgba(94,70,158,.08)!important;
+}
+.atomic-final-principle span { color:#5E469E!important; }
+.atomic-final-principle p,
+.atomic-final-principle strong { color:#1F1F2A!important; }
+
+/* Références et vidéos */
+.atomic-sources article::before {
+  background:linear-gradient(180deg,#8468D7,#6C63FF)!important;
+}
+.atomic-sources article:nth-child(even)::before {
+  background:linear-gradient(180deg,#A18EE8,#8468D7)!important;
+}
+.atomic-sources a {
+  background:#EEE9FA!important;
+  color:#5E469E!important;
+}
+.atomic-video-card { border-color:#D8CFF2!important; }
+.atomic-video-card:nth-child(2) { border-color:#CEC6F6!important; }
+.atomic-video-frame,
+.atomic-video-card:nth-child(2) .atomic-video-frame {
+  background:#F0ECFA!important;
+}
+.atomic-video-copy > span,
+.atomic-video-card:nth-child(2) .atomic-video-copy > span {
+  background:#EEE9FA!important;
+  color:#5E469E!important;
+}
+.atomic-video-copy > a { color:#5E469E!important; }
+
+/* CTA */
+.atomic-end {
+  background:linear-gradient(135deg,#F0ECFA 0%,#F8F6FD 58%,#fff 100%)!important;
+  border:1px solid #C8B9EB!important;
+  box-shadow:0 16px 36px rgba(94,70,158,.08)!important;
+}
+.atomic-end h2,
+.atomic-end p { color:#1F1F2A!important; }
+.atomic-end .blog-end-actions a:first-child {
+  border-color:#6C63FF!important;
+  background:#6C63FF!important;
+  color:#fff!important;
+}
+.atomic-end .blog-end-actions a:first-child:hover {
+  border-color:#5E55E6!important;
+  background:#5E55E6!important;
+}
+.atomic-end .blog-end-actions a:last-child {
+  border-color:#C8B9EB!important;
+  background:#fff!important;
+  color:#5E469E!important;
+}
+.atomic-aside a.is-active { color:#6C63FF!important; }
+
+@media (max-width:640px) {
+  .blog-index-filters [data-blog-filter="methodologie"] {
+    background:#F8F6FD!important;
+  }
+}
+
+
+/* Atomic Habits — séparation des sources dans le plan latéral */
+.blog-atomic-page .atomic-aside .thought-aside-sources {
+  display:block;
+  grid-template-columns:none;
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid var(--blog-rule);
+}
+.blog-atomic-page .atomic-aside .thought-aside-sources::before {
+  content:none;
 }
