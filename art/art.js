@@ -159,7 +159,7 @@
     if (kicker) kicker.textContent = `${sectionOf(video)} · fragment visuel`;
     if (description) description.textContent = video.description || "";
     renderTags(video);
-    document.title = `${video.title} | Art — Florian Vallin`;
+    document.title = `${video.title} | Art — Philosophal`;
     const currentIndex = indexOf(video.slug) + 1;
     if (position) position.textContent = `${formatNumber(currentIndex)} / ${formatNumber(videos.length)}`;
     if (updateUrl) {

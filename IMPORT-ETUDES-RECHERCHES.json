@@ -1,0 +1,74 @@
+{
+  "newResources": 58,
+  "docxImported": 57,
+  "xmindImported": 1,
+  "embeddedImagesOmitted": 81,
+  "conversionErrors": [],
+  "byDossier": {
+    "Esthétique & musique": 5,
+    "Recherche — Mémoire": 8,
+    "Philosophie & histoire des idées": 12,
+    "Mythologies & religions": 8,
+    "Conférences & entretiens": 7,
+    "Méthodes & pratiques": 5,
+    "Esthétique, art & corps": 6,
+    "Podcasts & émissions": 7
+  },
+  "byModule": {
+    "Esthétique & musique / Esthétique musicale — lectures & fiches": 5,
+    "Recherche — Mémoire / Bibliographie & fiches de lecture": 2,
+    "Recherche — Mémoire / Projet — musique, violence & catharsis": 5,
+    "Philosophie & histoire des idées / Notes de lecture — philosophie": 12,
+    "Mythologies & religions / Notes de lecture — mythes & religions": 3,
+    "Conférences & entretiens / Philosophie — conférences & entretiens": 7,
+    "Méthodes & pratiques / Organisation, habitudes & travail": 2,
+    "Esthétique, art & corps / Notes de lecture — esthétique & arts": 6,
+    "Méthodes & pratiques / Lecture, communication & psychologie": 3,
+    "Mythologies & religions / Les Grands Mythes — ARTE": 4,
+    "Mythologies & religions / Religions & traditions — émissions": 1,
+    "Podcasts & émissions / Kierkegaard — podcasts": 4,
+    "Podcasts & émissions / Mozart — Philosopher avec…": 3,
+    "Recherche — Mémoire / Cartes de recherche & plans": 1
+  },
+  "excludedDocx": [
+    [
+      "AUTRE - Philosophistoria #1 - Les présocratiques, de Thalès à Héraclite.docx",
+      "doublon strict"
+    ],
+    [
+      "CONF & INTERVIEW/EMISSION - Mythologie Hindouiste.docx",
+      "doublon strict"
+    ],
+    [
+      "Ca c_est du relativisme.docx",
+      "doublon strict"
+    ],
+    [
+      "G.Ménage - Histoire des femmes philosophes(1).docx",
+      "doublon strict"
+    ],
+    [
+      "INTERVIEW - Que peut-on réellement savoir sur Socrate.docx",
+      "doublon strict"
+    ],
+    [
+      "INTERVIEW- La philosophie de Platon.docx",
+      "doublon strict"
+    ],
+    [
+      "J.Brun - L_épicure (que sais-je)(1).docx",
+      "doublon strict"
+    ],
+    [
+      "J.Fillioza - Philosophie de l_Inde.docx",
+      "document vide / illisible"
+    ]
+  ],
+  "sourceExtensions": {
+    ".docx": 65,
+    ".pdf": 11,
+    ".png": 3,
+    ".xmind": 1
+  },
+  "excludedNonTextSources": "PDF/PNG source or administrative/reference artifacts are not copied; XMind is transcribed as text."
+}

@@ -1,25 +1,14 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260923-alt-only1";
+  const VERSION = "20260917-tools-10";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
 
-  const PLATFORM_NAME = String(navigator.userAgentData?.platform || navigator.platform || navigator.userAgent || "");
-  const IS_MAC = /mac/i.test(PLATFORM_NAME);
-  const KEY_LABELS = {
-    alt: IS_MAC ? "⌥" : "Alt",
-    shift: IS_MAC ? "⇧" : "Maj",
-    meta: IS_MAC ? "⌘" : "Ctrl"
-  };
-
-  const keyLabel = (name) => KEY_LABELS[name] || name;
-
   ready(() => {
     ensureStylesheet();
     document.body.classList.add("fv-site-tools-ready");
-    applyPlatformShortcutLabels(document);
     initShortcuts();
     initFloatingTools();
   });
@@ -66,49 +55,6 @@
     window.location.assign(resolveSitePath(path));
   }
 
-  async function openBlogHub() {
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-
-    // En local, d'anciens service workers / caches de Live Server peuvent servir
-    // une ancienne copie de /blog/index.html. On nettoie uniquement l'environnement
-    // de développement avant d'ouvrir une route dédiée, non ambiguë.
-    if (localHost) {
-      try {
-        if ("serviceWorker" in navigator) {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(registrations.map((registration) => registration.unregister()));
-        }
-        if ("caches" in window) {
-          const keys = await caches.keys();
-          await Promise.all(keys.map((key) => caches.delete(key)));
-        }
-      } catch (_) {}
-
-      window.location.assign(resolveSitePath("/blog/tous-les-billets.html?v=20260923-github-refresh1"));
-      return;
-    }
-
-    go("/blog/");
-  }
-
-  function openPrivateLibrary() {
-    // Le lecteur /lecture/ est volontairement caché. Le mot-clé « Livre »
-    // accordait déjà cet accès ; les raccourcis doivent faire exactement pareil.
-    try { localStorage.setItem("fv-private-library", "1"); } catch (_) {}
-    try { sessionStorage.setItem("fv-private-library", "1"); } catch (_) {}
-    go("/lecture/?view=library");
-  }
-
-  function applyPlatformShortcutLabels(root = document) {
-    root.querySelectorAll("[data-fv-key]").forEach((node) => {
-      const name = node.dataset.fvKey;
-      if (KEY_LABELS[name]) node.textContent = KEY_LABELS[name];
-    });
-    root.querySelectorAll("[data-fv-platform]").forEach((node) => {
-      node.textContent = IS_MAC ? "macOS" : "Windows / Linux";
-    });
-  }
-
   function initShortcuts() {
     // Raccourcis globaux : uniquement sur keydown. event.code reste fiable
     // avec un clavier AZERTY, y compris lorsque Alt modifie event.key.
@@ -147,11 +93,12 @@
         return;
       }
 
-      // Accès privés : Alt uniquement. Toute combinaison contenant Ctrl est ignorée.
-      if (event.altKey && !event.ctrlKey && !event.shiftKey) {
+      // Accès Alt. On ne rejette pas ctrlKey ici : sur certains claviers / pilotes,
+      // AltGr peut remonter comme Ctrl+Alt. event.code identifie toujours la lettre.
+      if (event.altKey && !event.shiftKey) {
         const destinations = [
           ["KeyA", "a", "/art/"],
-          ["KeyL", "l", "__library__"],
+          ["KeyL", "l", "/lecture/"],
           ["KeyC", "c", "/mediatheque/"],
           ["KeyB", "b", "/textes/theologie/boussole/"],
           ["KeyM", "m", "/textes/mythologie/boussole/"],
@@ -162,8 +109,7 @@
           if (!codeMatches(event, code, key)) continue;
           consumeShortcut(event);
           closeShortcutHelp();
-          if (path === "__library__") openPrivateLibrary();
-          else go(path);
+          go(path);
           return;
         }
         return;
@@ -196,7 +142,7 @@
       if (codeMatches(event, "KeyB", "b")) {
         consumeShortcut(event);
         closeShortcutHelp();
-        openBlogHub();
+        go("/blog/");
         return;
       }
       if (codeMatches(event, "KeyH", "h")) {
@@ -719,30 +665,30 @@
       shortcutRow("B", "Blog"),
       shortcutRow("C", "Contact"),
       shortcutRow("S", "Espace élève · S’identifier"),
-      shortcutRow(keyLabel("shift"), "?", "Afficher cette aide")
+      shortcutRow("Maj", "?", "Afficher cette aide")
     ];
 
     const compassRows = [
-      shortcutRow(keyLabel("alt"), "P", "Boussole philosophique"),
-      shortcutRow(keyLabel("alt"), "M", "Boussole mythologique"),
-      shortcutRow(keyLabel("alt"), "B", "Boussole biblique")
+      shortcutRow("Alt", "P", "Boussole philosophique"),
+      shortcutRow("Alt", "M", "Boussole mythologique"),
+      shortcutRow("Alt", "B", "Boussole biblique")
     ];
 
     const privateRows = [
-      shortcutRow(keyLabel("alt"), "A", "Art"),
-      shortcutRow(keyLabel("alt"), "L", "Livres"),
-      shortcutRow(keyLabel("alt"), "C", "Médiathèque"),
-      shortcutRow(keyLabel("alt"), keyLabel("shift"), "?", "Afficher l’aide complète")
+      shortcutRow("Alt", "A", "Art"),
+      shortcutRow("Alt", "L", "Livres"),
+      shortcutRow("Alt", "C", "Médiathèque"),
+      shortcutRow("Alt", "Maj", "?", "Afficher l’aide complète")
     ];
 
     const readerRows = [
       shortcutRow("←", "→", "Changer de page"),
       shortcutRow("/", "Rechercher dans le livre"),
-      shortcutRow(keyLabel("shift"), "B", "Ajouter / retirer un marque-page"),
-      shortcutRow(keyLabel("shift"), "T", "Changer le thème du lecteur"),
-      shortcutRow(keyLabel("shift"), "M", "Mode focus"),
+      shortcutRow("Maj", "B", "Ajouter / retirer un marque-page"),
+      shortcutRow("Maj", "T", "Changer le thème du lecteur"),
+      shortcutRow("Maj", "M", "Mode focus"),
       shortcutRow("F", "Plein écran"),
-      shortcutRow(keyLabel("alt"), "← / →", "Historique de lecture"),
+      shortcutRow("Alt", "← / →", "Historique de lecture"),
       shortcutRow("Échap", "Fermer les panneaux")
     ];
 
@@ -759,7 +705,7 @@
           <div><span>${complete ? "Aide complète" : "Navigation"}</span><h2 id="fv-shortcuts-title">Raccourcis clavier</h2></div>
           <button type="button" data-fv-shortcuts-close aria-label="Fermer">×</button>
         </div>
-        <p>${complete ? "Tous les raccourcis disponibles sur le site." : "Les raccourcis essentiels pour naviguer plus rapidement."} <span class="fv-shortcuts-platform">${IS_MAC ? "Touches macOS" : "Touches Windows / Linux"}</span></p>
+        <p>${complete ? "Tous les raccourcis disponibles sur le site." : "Les raccourcis essentiels pour naviguer plus rapidement."}</p>
         ${shortcutSection("Navigation", complete ? "Général" : "Raccourcis", standardRows)}
         ${shortcutSection("Boussoles", "Explorer", compassRows, "is-compasses")}
         ${complete ? shortcutSection("Accès supplémentaires", "Accès direct", privateRows) : ""}

@@ -9,22 +9,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-  <title>Lecture — Florian Vallin</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="reader.css?v=20260923-github-refresh1">
-  <script>
-    (() => {
-      let allowed = false;
-      try {
-        allowed = localStorage.getItem("fv-private-library") === "1" || sessionStorage.getItem("fv-private-library") === "1";
-      } catch (_) {}
-      if (!allowed) location.replace("/");
-    })();
-  </script>
-  <script defer src="library.js?v=20260923-github-refresh1"></script>
-  <script defer src="reader.js?v=20260923-github-refresh1"></script>
+  <title>Lecture — Philosophal</title>
+  <link rel="icon" href="/favicon.svg?v=20260924-logo1" type="image/svg+xml">
+  <link rel="stylesheet" href="reader.css?v=20260923-private1">
+  <script src="../js/private-access.js?v=20260923-private1"></script>
+  <script defer src="private-gate.js?v=20260923-private1"></script>
 </head>
-<body data-theme="paper">
+<body data-theme="paper" class="reader-private-locked">
+<section class="reader-private-gate" id="reader-private-gate" aria-labelledby="reader-private-title">
+  <div class="reader-private-card">
+    <span class="reader-private-mark" aria-hidden="true">◇</span>
+    <p class="reader-private-kicker">Accès réservé</p>
+    <h1 id="reader-private-title">Espace privé</h1>
+    <p>Entrez le mot de passe pour continuer.</p>
+    <form id="reader-private-form">
+      <label for="reader-private-password">Mot de passe</label>
+      <div class="reader-private-row"><input id="reader-private-password" type="password" autocomplete="current-password" spellcheck="false"><button type="submit">Accéder</button></div>
+      <p class="reader-private-error" id="reader-private-error" role="alert" hidden>Mot de passe incorrect.</p>
+    </form>
+    <a class="reader-private-back" href="../mediatheque/">← Retour</a>
+  </div>
+</section>
 <main class="reader-app" id="reader-app">
   <header class="reader-topbar">
     <div class="reader-brand">

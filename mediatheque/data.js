@@ -4,7 +4,7 @@
  * Index léger : les textes complets restent dans /textes/ et les livres dans /lecture/.
  * Pour ajouter une ressource personnelle, ajouter un objet à resources avec :
  * id, kind (texte|livre|podcast|audio|video|cours|article), title, creator, description, url, themes, people, keywords.
- * Pour les vidéos : videoType = "film" (film/documentaire/extrait) ou "cours" (cours/conférence).
+ * Pour les vidéos : videoType = "film" (film/documentaire/extrait), "cours" (cours/conférence externe) ou "cours-video" (cours vidéo Philosophal).
  * Pour les cours écrits : formation, year, subject, format sont recommandés.
  * Les liens YouTube et SoundCloud sont détectés automatiquement et lus dans la médiathèque.
  * Pour une autre source qui fournit un lecteur embarqué, ajouter optionnellement :
@@ -12,6 +12,698 @@
  */
 window.FV_MEDIATHEQUE_DATA = {
   "resources": [
+    {
+      "id": "manuel:nathan-2002-guide-methode",
+      "kind": "manuel",
+      "title": "Le Guide spécial méthode — Philosophie (2002)",
+      "creator": "Nathan",
+      "subtitle": "Annales · 2002",
+      "description": "Annales de philosophie — Nathan, 2002.",
+      "url": "https://mega.nz/file/TrJDxJRA#6bdJXQ5SgDuyxqEsglHk2yRsROfA05zNeABn0NCWQVU",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Nathan",
+      "year": 2002,
+      "manualGroup": "annales",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Nathan",
+        "2002",
+        "Annales"
+      ]
+    },
+    {
+      "id": "manuel:nathan-2009-philosophie-annales",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale L/ES/S (2009)",
+      "creator": "Nathan",
+      "subtitle": "Annales · 2009",
+      "description": "Annales de philosophie — Nathan, 2009.",
+      "url": "https://mega.nz/file/mzBSFTbK#FUNPxCAPHZtE2diIgp-amGCkMOU_V0BNXvxamm61KSA",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Nathan",
+      "year": 2009,
+      "manualGroup": "annales",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Nathan",
+        "2009",
+        "Annales"
+      ]
+    },
+    {
+      "id": "manuel:nathan-2014-abc-bac",
+      "kind": "manuel",
+      "title": "Mes fiches ABC du Bac — Philosophie (2014)",
+      "creator": "Nathan",
+      "subtitle": "Annales · 2014",
+      "description": "Annales de philosophie — Nathan, 2014.",
+      "url": "https://mega.nz/file/324DVKrI#hmhay2un3SCPY-PG-zAn-qJjuoCxNq0CU7trGEnrBvI",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Nathan",
+      "year": 2014,
+      "manualGroup": "annales",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Nathan",
+        "2014",
+        "Annales"
+      ]
+    },
+    {
+      "id": "manuel:nathan-2019-annales-abc",
+      "kind": "manuel",
+      "title": "Annales ABC du Bac — Philosophie : sujets & corrigés (2019)",
+      "creator": "Nathan",
+      "subtitle": "Annales · 2019",
+      "description": "Annales de philosophie — Nathan, 2019.",
+      "url": "https://mega.nz/file/Ti5lSBCB#Q4bRJavukMZrJF1ipRBX8UwiNQtXap8bXHjbynqgUcM",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Nathan",
+      "year": 2019,
+      "manualGroup": "annales",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Nathan",
+        "2019",
+        "Annales"
+      ]
+    },
+    {
+      "id": "manuel:armand-colin-2000-nouvel-abrege",
+      "kind": "manuel",
+      "title": "Nouvel abrégé de philosophie (2000)",
+      "creator": "Armand Colin",
+      "subtitle": "Manuel · 2000",
+      "description": "Manuel de philosophie — Armand Colin, 2000.",
+      "url": "https://mega.nz/file/3r4xFDDD#KYewgqLKVAAUSFpzv8wu9nkn4-VcI7yXEtriGmfUk_E",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Armand Colin",
+      "year": 2000,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Armand Colin",
+        "2000",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:belin-2004-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminales L, ES, S (2004)",
+      "creator": "Belin",
+      "subtitle": "Manuel · 2004",
+      "description": "Manuel de philosophie — Belin, 2004.",
+      "url": "https://mega.nz/file/q742QKAR#8bjuNbS9j9Iz44hiuClIbI4lIbV7ezvDXw2zwlOGPyU",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Belin",
+      "year": 2004,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Belin",
+        "2004",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:belin-2012-anthologie",
+      "kind": "manuel",
+      "title": "Philosophie — Anthologie Terminales L, ES, S (2012)",
+      "creator": "Belin",
+      "subtitle": "Manuel · 2012",
+      "description": "Manuel de philosophie — Belin, 2012.",
+      "url": "https://mega.nz/file/qvQz0DKB#cCcJ-gE6HAgJ1eGzo_QCKoP709Sf_V7d7uOlJrjSrFo",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Belin",
+      "year": 2012,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Belin",
+        "2012",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:bordas-1995-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Le cours, corrélations, vocabulaire (1995)",
+      "creator": "Bordas",
+      "subtitle": "Manuel · 1995",
+      "description": "Manuel de philosophie — Bordas, 1995.",
+      "url": "https://mega.nz/file/umwzFYZI#cOcBwIe_sGSV2rc2wCZGyCzOSRS41AmCbcpOB8trY2U",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Bordas",
+      "year": 1995,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Bordas",
+        "1995",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:armand-colin-1989-chemins-pensee",
+      "kind": "manuel",
+      "title": "Les Chemins de la pensée — Philosophie, terminales (1989)",
+      "creator": "Armand Colin",
+      "subtitle": "Manuel · 1989",
+      "description": "Manuel de philosophie — Armand Colin, 1989.",
+      "url": "https://mega.nz/file/76R3DKwJ#YXSXu_5QAf7ZYvH7L25wkfKyh4u60VspKd7LeLxZjBk",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Armand Colin",
+      "year": 1989,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Armand Colin",
+        "1989",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:hatier-2006-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale (2006)",
+      "creator": "Hatier",
+      "subtitle": "Manuel · 2006",
+      "description": "Manuel de philosophie — Hatier, 2006.",
+      "url": "https://mega.nz/file/SrZFlZJL#OoP2lPCo435NRPkqC2bcz6dOJL4T2BQsUldWXA6XElY",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hatier",
+      "year": 2006,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hatier",
+        "2006",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:hatier-1995-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale (1995)",
+      "creator": "Hatier",
+      "subtitle": "Manuel · 1995",
+      "description": "Manuel de philosophie — Hatier, 1995.",
+      "url": "https://mega.nz/file/PvZEGTQb#VwuIk2imUP5spp5d6livW6HnesbW-WsrAY4XcQix9NI",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hatier",
+      "year": 1995,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hatier",
+        "1995",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:hatier-2003-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale (2003)",
+      "creator": "Hatier",
+      "subtitle": "Manuel · 2003",
+      "description": "Manuel de philosophie — Hatier, 2003.",
+      "url": "https://mega.nz/file/CngUXCoa#swxFkrCTxakq3-YwY14nDMgOO78bzMMA6j3ruIHI44E",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hatier",
+      "year": 2003,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hatier",
+        "2003",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:hatier-2009-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale (2009)",
+      "creator": "Hatier",
+      "subtitle": "Manuel · 2009",
+      "description": "Manuel de philosophie — Hatier, 2009.",
+      "url": "https://mega.nz/file/nqZUiRYa#_D5_yQPe74RVT5DIu-fhp0nzjIwMIkD2aB8Vl2ncAlg",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hatier",
+      "year": 2009,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hatier",
+        "2009",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:le-monde-2011-reviser-bac",
+      "kind": "manuel",
+      "title": "Réviser son bac avec Le Monde — Philosophie (2011)",
+      "creator": "Le Monde",
+      "subtitle": "Manuel · 2011",
+      "description": "Manuel de philosophie — Le Monde, 2011.",
+      "url": "https://mega.nz/file/3vJBXIwI#wN5PPJQ7GeUaXi3MN_oV_MIBDa_queTHvOdzaiKPu78",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Le Monde",
+      "year": 2011,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Le Monde",
+        "2011",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:le-monde-2016-reviser-bac",
+      "kind": "manuel",
+      "title": "Réviser son bac avec Le Monde — Philosophie (2016)",
+      "creator": "Le Monde",
+      "subtitle": "Manuel · 2016",
+      "description": "Manuel de philosophie — Le Monde, 2016.",
+      "url": "https://mega.nz/file/inJw0QBQ#xLcp1dzwkPY7Tj-m6L2Oe9mRHvik5UPezGOgIlDTECk",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Le Monde",
+      "year": 2016,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Le Monde",
+        "2016",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:le-monde-2020-reviser-bac",
+      "kind": "manuel",
+      "title": "Réviser son bac avec Le Monde — Philosophie (2020)",
+      "creator": "Le Monde",
+      "subtitle": "Manuel · 2020",
+      "description": "Manuel de philosophie — Le Monde, 2020.",
+      "url": "https://mega.nz/file/qmQ3TLLC#7b6eRT5YO6xTAQWeKMRV2h1VwNaK7qq8r2r8Ohdeupg",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Le Monde",
+      "year": 2020,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Le Monde",
+        "2020",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:magnard-2012-philosophie",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale (2012)",
+      "creator": "Magnard",
+      "subtitle": "Manuel · 2012",
+      "description": "Manuel de philosophie — Magnard, 2012.",
+      "url": "https://mega.nz/file/T25BELhD#NsPoxA252xdim2XIJQj-0NMSPa85cg0Pvuk1cYO3Ykk",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Magnard",
+      "year": 2012,
+      "manualGroup": "general",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Magnard",
+        "2012",
+        "Manuel"
+      ]
+    },
+    {
+      "id": "manuel:belin-2020-technologique",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale, voie technologique (2020)",
+      "creator": "Belin",
+      "subtitle": "Série technologique · 2020",
+      "description": "Série technologique de philosophie — Belin, 2020.",
+      "url": "https://mega.nz/file/jy5ymR7Z#TfQylJcsp2wWYBIzpgFApOB-FdVWm46XcUybzF5zzf8",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Belin",
+      "year": 2020,
+      "manualGroup": "technologique",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Belin",
+        "2020",
+        "Série technologique"
+      ]
+    },
+    {
+      "id": "manuel:breal-2006-technologique",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale technologique (2006)",
+      "creator": "Bréal",
+      "subtitle": "Série technologique · 2006",
+      "description": "Série technologique de philosophie — Bréal, 2006.",
+      "url": "https://mega.nz/file/Xq4SDJJR#Q1GEsi1e5RjZF4uAMTpfxiLzKuK-ETnwx1LFaleCHoU",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Bréal",
+      "year": 2006,
+      "manualGroup": "technologique",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Bréal",
+        "2006",
+        "Série technologique"
+      ]
+    },
+    {
+      "id": "manuel:hachette-2020-passerelles",
+      "kind": "manuel",
+      "title": "Passerelles Philosophie — Terminale séries technologiques (2020)",
+      "creator": "Hachette",
+      "subtitle": "Série technologique · 2020",
+      "description": "Série technologique de philosophie — Hachette, 2020.",
+      "url": "https://mega.nz/file/WqAQWDxJ#RApqBcszosH97URImwicsNSlA9gLXIT2LDbKVwi-iAc",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hachette",
+      "year": 2020,
+      "manualGroup": "technologique",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hachette",
+        "2020",
+        "Série technologique"
+      ]
+    },
+    {
+      "id": "manuel:hachette-2020-philosophie-techno",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale technologique (2020)",
+      "creator": "Hachette",
+      "subtitle": "Série technologique · 2020",
+      "description": "Série technologique de philosophie — Hachette, 2020.",
+      "url": "https://mega.nz/file/264U2ZgK#t4p2y0LzWQ6t4Vc8oHNjfPy-aaD5fejbOr1jgwOtOGM",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Hachette",
+      "year": 2020,
+      "manualGroup": "technologique",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Hachette",
+        "2020",
+        "Série technologique"
+      ]
+    },
+    {
+      "id": "manuel:magnard-2020-technologique",
+      "kind": "manuel",
+      "title": "Philosophie — Terminale, voie technologique (2020)",
+      "creator": "Magnard",
+      "subtitle": "Série technologique · 2020",
+      "description": "Série technologique de philosophie — Magnard, 2020.",
+      "url": "https://mega.nz/file/PiRGUbAI#EORVwSqCAJBiz0Lx-ZgF_3coaukAUJGMT35RZiGNG7s",
+      "source": "Mega",
+      "format": "PDF",
+      "publisher": "Magnard",
+      "year": 2020,
+      "manualGroup": "technologique",
+      "themes": [
+        "Philosophie",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "manuel",
+        "philosophie",
+        "PDF",
+        "cours",
+        "révision",
+        "Magnard",
+        "2020",
+        "Série technologique"
+      ]
+    },
+    {
+      "id": "manuel:reperes-conceptuels-01",
+      "kind": "manuel",
+      "title": "Repère conceptuel tiré du manuel BORDAS",
+      "creator": "Philosophal",
+      "subtitle": "Repères conceptuels",
+      "description": "Document de travail consacré aux repères conceptuels utiles en philosophie : distinctions, oppositions et outils de problématisation.",
+      "url": "https://mega.nz/file/3z4TTJbC#Zi3sNw3CvGH_XDmQslDaTkZtC1VMqorAuJVO6u0gomE",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "reperes",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Repères conceptuels"
+      ],
+      "people": [],
+      "keywords": [
+        "repères conceptuels",
+        "repères",
+        "distinctions conceptuelles",
+        "notions",
+        "philosophie",
+        "méthodologie",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:reperes-conceptuels-02",
+      "kind": "manuel",
+      "title": "Repère conceptuel tiré du manuel NATHAN",
+      "creator": "Philosophal",
+      "subtitle": "Repères conceptuels",
+      "description": "Second document de travail consacré aux repères conceptuels et aux distinctions utiles pour analyser, problématiser et argumenter en philosophie.",
+      "url": "https://mega.nz/file/yvBBFSiQ#g_3uS-6MSuOd0wKUY32834omxYN-q0HO1MU5T_V2Jus",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "reperes",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Repères conceptuels"
+      ],
+      "people": [],
+      "keywords": [
+        "repères conceptuels",
+        "repères",
+        "distinctions conceptuelles",
+        "notions",
+        "philosophie",
+        "méthodologie",
+        "PDF"
+      ]
+    },
     {
       "id": "texte:hume-causalite-experience-induction",
       "kind": "texte",
@@ -5118,8 +5810,127 @@ window.FV_MEDIATHEQUE_DATA = {
       "subject": "TD — Histoire & Thème",
       "contentUrl": "/mediatheque/cours/contenus/psycho/l1/s1/ue1/document-schema-petit-traite-manipulation.md",
       "url": "/mediatheque/cours/?id=psy-l1-s1-ue1-doc-petit-traite-schema"
-    }
-    ,
+    },
+    {
+      "id": "video:florian-explication-texte",
+      "kind": "video",
+      "videoType": "cours-video",
+      "title": "Méthodologie philosophique — Explication de texte",
+      "creator": "Florian Vallin",
+      "description": "Cours vidéo de méthodologie consacré à l’explication de texte philosophique : lecture du passage, construction du problème, analyse de l’argumentation et organisation de l’explication.",
+      "url": "https://youtu.be/9nPjNsQX7pY",
+      "source": "YouTube",
+      "section": "Cours vidéo",
+      "themes": [
+        "Méthodologie",
+        "Explication de texte",
+        "Philosophie"
+      ],
+      "people": [
+        "Florian Vallin"
+      ],
+      "keywords": [
+        "cours vidéo",
+        "méthodologie philosophique",
+        "explication de texte",
+        "commentaire",
+        "analyse",
+        "argumentation",
+        "université",
+        "tutorat philosophie"
+      ]
+    },
+    {
+      "id": "video:florian-dissertation",
+      "kind": "video",
+      "videoType": "cours-video",
+      "title": "Méthodologie philosophique — Dissertation",
+      "creator": "Florian Vallin",
+      "description": "Cours vidéo consacré à la dissertation philosophique : analyse du sujet, problématisation, construction du plan et articulation rigoureuse de l’argumentation.",
+      "url": "https://youtu.be/Vx28fGgTVgE",
+      "source": "YouTube",
+      "section": "Cours vidéo",
+      "themes": [
+        "Méthodologie",
+        "Dissertation",
+        "Philosophie"
+      ],
+      "people": [
+        "Florian Vallin"
+      ],
+      "keywords": [
+        "cours vidéo",
+        "méthodologie philosophique",
+        "dissertation",
+        "problématique",
+        "plan",
+        "argumentation",
+        "université",
+        "tutorat philosophie"
+      ]
+    },
+    {
+      "id": "video:florian-methodologie-etudier-ia-fichage-memorisation",
+      "kind": "video",
+      "videoType": "cours-video",
+      "title": "Méthodologie 2 — Organisation, étudier, IA, fichage, mémorisation",
+      "creator": "Florian Vallin",
+      "description": "Cours vidéo sur l’organisation du travail étudiant : méthodes d’étude, usage raisonné de l’IA, fichage des cours et stratégies de mémorisation.",
+      "url": "https://youtu.be/Ayg06PgDE0c",
+      "source": "YouTube",
+      "section": "Cours vidéo",
+      "themes": [
+        "Méthodologie",
+        "Organisation",
+        "Mémorisation",
+        "Intelligence artificielle"
+      ],
+      "people": [
+        "Florian Vallin"
+      ],
+      "keywords": [
+        "cours vidéo",
+        "méthodologie",
+        "organisation",
+        "étudier",
+        "IA",
+        "intelligence artificielle",
+        "fichage",
+        "mémorisation",
+        "université",
+        "tutorat"
+      ]
+    },
+    {
+      "id": "video:florian-outils-sites-etudiants-philosophie",
+      "kind": "video",
+      "videoType": "cours-video",
+      "title": "Méthodologie 1 — Liens, logiciels et sites utiles pour étudiants de philosophie",
+      "creator": "Florian Vallin",
+      "description": "Cours vidéo présentant des ressources numériques, logiciels et sites utiles pour travailler plus efficacement en philosophie à l’université.",
+      "url": "https://youtu.be/l5tkWPZ_gK8",
+      "source": "YouTube",
+      "section": "Cours vidéo",
+      "themes": [
+        "Méthodologie",
+        "Outils numériques",
+        "Philosophie"
+      ],
+      "people": [
+        "Florian Vallin"
+      ],
+      "keywords": [
+        "cours vidéo",
+        "méthodologie",
+        "logiciels",
+        "sites utiles",
+        "ressources numériques",
+        "étudiant",
+        "philosophie",
+        "université",
+        "tutorat"
+      ]
+    },
     {
       "id": "video:milgram-jeu-de-la-mort",
       "kind": "video",
@@ -5261,6 +6072,852 @@ window.FV_MEDIATHEQUE_DATA = {
         "déterminisme",
         "conditionnement",
         "responsabilité"
+      ]
+    },
+    {
+      "id": "manuel:sujets-philosophie-01",
+      "kind": "manuel",
+      "title": "11 000 sujets — Mélès, Baptise (téléchargeable uniquement)",
+      "creator": "Ressources de philosophie",
+      "subtitle": "Sujets · Dissertation & explication de texte",
+      "description": "Document rassemblant des sujets de philosophie : dissertations, explications de texte et autres exercices.",
+      "url": "https://mega.nz/file/K7xE0RDL#L5_cIysTtBxeX0mCy2ASxeKXohgI1A5fDWaR--Tq_Cs",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "sujets",
+      "manualSubgroup": "Recueils de sujets",
+      "themes": [
+        "Philosophie",
+        "Dissertation",
+        "Explication de texte",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "sujets",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "exercices",
+        "bac",
+        "entraînement",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:sujets-philosophie-02",
+      "kind": "manuel",
+      "title": "861 sujets-textes de philosophie — Terminale",
+      "creator": "Ressources de philosophie",
+      "subtitle": "Sujets · Dissertation & explication de texte",
+      "description": "Document rassemblant des sujets de philosophie : dissertations, explications de texte et autres exercices.",
+      "url": "https://mega.nz/file/XzRjFD6Y#3GO33UE29cvIKPLg2qm_4st_Y9w9j0JWThY2U6i4u3c",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "sujets",
+      "manualSubgroup": "Recueils de sujets",
+      "themes": [
+        "Philosophie",
+        "Dissertation",
+        "Explication de texte",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "sujets",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "exercices",
+        "bac",
+        "entraînement",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:sujets-philosophie-03",
+      "kind": "manuel",
+      "title": "Annales rassemblant des sujets — Kabore / Zoungrana",
+      "creator": "Ressources de philosophie",
+      "subtitle": "Sujets · Dissertation & explication de texte",
+      "description": "Document rassemblant des sujets de philosophie : dissertations, explications de texte et autres exercices.",
+      "url": "https://mega.nz/file/euAhTYSL#wxdWgBcTKCgrKhsrmTGjSXWgbbrFDRixvKF_1e8JAX0",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "sujets",
+      "manualSubgroup": "Recueils de sujets",
+      "themes": [
+        "Philosophie",
+        "Dissertation",
+        "Explication de texte",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "sujets",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "exercices",
+        "bac",
+        "entraînement",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:sujets-philosophie-04",
+      "kind": "manuel",
+      "title": "Sujets d’explication de texte — 1996-2021",
+      "creator": "Ressources de philosophie",
+      "subtitle": "Sujets · Dissertation & explication de texte",
+      "description": "Document rassemblant des sujets de philosophie : dissertations, explications de texte et autres exercices.",
+      "url": "https://mega.nz/file/LyghgJTa#ElxOLt-ObHiQ49vP03HCkjDRdqdTEdXSZLu2axUmBAQ",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "sujets",
+      "manualSubgroup": "Recueils de sujets",
+      "themes": [
+        "Philosophie",
+        "Dissertation",
+        "Explication de texte",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "sujets",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "exercices",
+        "bac",
+        "entraînement",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:sujets-philosophie-05",
+      "kind": "manuel",
+      "title": "Sujets de dissertation — 1996-2021",
+      "creator": "Ressources de philosophie",
+      "subtitle": "Sujets · Dissertation & explication de texte",
+      "description": "Document rassemblant des sujets de philosophie : dissertations, explications de texte et autres exercices.",
+      "url": "https://mega.nz/file/rqxT1R6K#frJfoHfWNNzsChASyfYKT_pJpUOUTOvZHy1jQDxMU_s",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "sujets",
+      "manualSubgroup": "Recueils de sujets",
+      "themes": [
+        "Philosophie",
+        "Dissertation",
+        "Explication de texte",
+        "Méthodologie"
+      ],
+      "people": [],
+      "keywords": [
+        "sujets",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "exercices",
+        "bac",
+        "entraînement",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-01",
+      "kind": "manuel",
+      "title": "ASP — Construire un plan",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/fiYjjTqI#_k5hQkx8_TFSep5lqdvvWr_t_mZQyB1WN6hQl62njrk",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-02",
+      "kind": "manuel",
+      "title": "ASP — Introduire et conclure",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/ii4ShRCY#xfYjLRtG2mQ-r-Qi5pN4P2yZrWLly5kRi_5vH2Cw3kg",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-03",
+      "kind": "manuel",
+      "title": "ASP — L’explication de texte 1",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/auAUmJYT#1N33_X_6yiXf-6V9TPdZTp_z4frBOKIZmtM5ZT4iD5U",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-04",
+      "kind": "manuel",
+      "title": "ASP — L’explication de texte 2",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/Cu5AVaxA#UKj20ocbB0JG6dRfooc0giP5fpfljJinHOG5MWUI-hg",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-05",
+      "kind": "manuel",
+      "title": "ASP — L’explication de texte 3",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/z7ZxDCAZ#YDOd6pbCc8iPk2a41QBtGls-CNuhP7qZKZC51RQwz5o",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-06",
+      "kind": "manuel",
+      "title": "ASP — Le développement",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/eqoFzRwL#A4OhK5kgftiGDonuoVszZ2pjoarrC2ZAOlCPNpPCWHI",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-07",
+      "kind": "manuel",
+      "title": "ASP — Les sujets de dissertation",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/6voyASRT#KIHMelMCPcg8kUFhB2mqpfzh7wfPj4Xp1dS-M4RyGuM",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-08",
+      "kind": "manuel",
+      "title": "ASP — Consulter la méthodologie",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/2qAj1JyD#U_iTVIDTwZUejoSXx1FsEE5sT2YvtfsWI38vWxyutvY",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-09",
+      "kind": "manuel",
+      "title": "ASP — Problématiser un sujet",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/KzwHEI6K#1bcBvtNeM-I0DO-U5KFKN73G63nCKcMEYgbTrSuj-wg",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-asp-10",
+      "kind": "manuel",
+      "title": "ASP — Qu’est-ce que la philosophie ?",
+      "creator": "ASP",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « ASP ».",
+      "url": "https://mega.nz/file/6jRGHRyb#Yd7Zg6fqaBiIw3RDUxq50v3bzMnihzxuuEnOJuNhy3I",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "ASP",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "ASP",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-maxicours-01",
+      "kind": "manuel",
+      "title": "Maxicours — Analyser le sujet",
+      "creator": "Maxicours",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Maxicours ».",
+      "url": "https://mega.nz/file/DvwFwTTZ#I4CHH3swMuBC1B3B_WsKZQfUW7P5ShMn5ILKL5s19YU",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Maxicours",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Maxicours",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-maxicours-02",
+      "kind": "manuel",
+      "title": "Maxicours — Rédiger une dissertation",
+      "creator": "Maxicours",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Maxicours ».",
+      "url": "https://mega.nz/file/XqJR0RTa#gVF7asISnYP2j_N4IvCO1ee-FWtKk2tXKKiFK6k9jO0",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Maxicours",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Maxicours",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-maxicours-03",
+      "kind": "manuel",
+      "title": "Maxicours — Rédiger une explication de texte",
+      "creator": "Maxicours",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Maxicours ».",
+      "url": "https://mega.nz/file/CywizSgT#0GuYlJQpNCfoAfqUG6GkG5E4cSeOL0TK-tGTJc7Upl0",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Maxicours",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Maxicours",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-maxicours-04",
+      "kind": "manuel",
+      "title": "Maxicours — Rédiger une introduction",
+      "creator": "Maxicours",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Maxicours ».",
+      "url": "https://mega.nz/file/zzJAyASJ#seQlrAfOEKdgYwnLJ1x1MsL8aLR1T74c5okrsXEYwDE",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Maxicours",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Maxicours",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-maxicours-05",
+      "kind": "manuel",
+      "title": "Maxicours — Trouver une problématique",
+      "creator": "Maxicours",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Maxicours ».",
+      "url": "https://mega.nz/file/CnJCkZRR#P9VErYVj9Chq8Ik7Gii7QyR4HfC3bYB6VDto8EtIIP0",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Maxicours",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Maxicours",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-studyrama-01",
+      "kind": "manuel",
+      "title": "Studyrama — Compétences pour un devoir de philosophie",
+      "creator": "Studyrama",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Studyrama ».",
+      "url": "https://mega.nz/file/a3A3wJ5J#ji7Z3B7fmSlWqhVgCrgRK1EAG0lh4i7vIhdPYqvkvWI",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Studyrama",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Studyrama",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-studyrama-02",
+      "kind": "manuel",
+      "title": "Studyrama — Méthodologie de l’explication de texte",
+      "creator": "Studyrama",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Studyrama ».",
+      "url": "https://mega.nz/file/7j5mWCiL#-OX_AR6xL9V6rn_wrth2o3SUS5PE3hty-T_jW6KPpLw",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Studyrama",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Studyrama",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-studyrama-03",
+      "kind": "manuel",
+      "title": "Studyrama — Méthodologie de la dissertation",
+      "creator": "Studyrama",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Studyrama ».",
+      "url": "https://mega.nz/file/vqhERLDD#Imki2cliQZc6BVoWig-qC2mzeFdlqgfxr2P27UnHMCg",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Studyrama",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Studyrama",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-manuels-01",
+      "kind": "manuel",
+      "title": "Bordas 2020 — Explication de texte + dissertation",
+      "creator": "Divers manuels",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Méthodologie de manuels ».",
+      "url": "https://mega.nz/file/amJQyIqK#kscvCMdJBnD2h1taLwb0TVXNjLiqoPlllu8aPuSKGJo",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Méthodologie de manuels",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Méthodologie de manuels",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-manuels-02",
+      "kind": "manuel",
+      "title": "Nathan 2018 — Explication de texte + dissertation",
+      "creator": "Divers manuels",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Méthodologie de manuels ».",
+      "url": "https://mega.nz/file/Xr5inRQC#E1uiMahjqaJZYmVOiH_6cH13uxduRizrSm0sHW90fSE",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Méthodologie de manuels",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Méthodologie de manuels",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-manuels-03",
+      "kind": "manuel",
+      "title": "Philosophie, pour réussir le jour J — Explication de texte + dissertation",
+      "creator": "Divers manuels",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Méthodologie de manuels ».",
+      "url": "https://mega.nz/file/2vIDTbrQ#w8HLQajqhYkSGEeOiqeEDjORY6osjE8sjErLKOL1F3o",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Méthodologie de manuels",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Méthodologie de manuels",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-kartable-01",
+      "kind": "manuel",
+      "title": "Kartable — méthodologie philosophique 1",
+      "creator": "Kartable",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Kartable ».",
+      "url": "https://mega.nz/file/u7IRgAAC#jfZdDWflEt5WY-Nms9hsJc-FaFAHgL59UkobzvGCn58",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Kartable",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Kartable",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-lycee-fac-01",
+      "kind": "manuel",
+      "title": "Méthodologie de la dissertation — Faculté de Nantes",
+      "creator": "Lycée / FAC",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Lycée / FAC ».",
+      "url": "https://mega.nz/file/OqJxkJoQ#F7HPHbQrteDD9ek0G3YX8xb1epurhhkq0siYlyrGRPk",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Lycée / FAC",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Lycée / FAC",
+        "PDF"
+      ]
+    },
+    {
+      "id": "manuel:methodologie-lycee-fac-02",
+      "kind": "manuel",
+      "title": "Méthodologie de la dissertation — Lycée de Guyane",
+      "creator": "Lycée / FAC",
+      "subtitle": "Méthodologie philosophique",
+      "description": "Document de méthodologie philosophique provenant de la collection « Lycée / FAC ».",
+      "url": "https://mega.nz/file/3zohEZLJ#dZYjB_M_3_oNSemj9HO5S-nROWQHpsha-cGQgRBTTRw",
+      "source": "Mega",
+      "format": "PDF",
+      "manualGroup": "methodologie",
+      "manualSubgroup": "Lycée / FAC",
+      "themes": [
+        "Philosophie",
+        "Méthodologie",
+        "Dissertation",
+        "Explication de texte"
+      ],
+      "people": [],
+      "keywords": [
+        "méthodologie",
+        "philosophie",
+        "dissertation",
+        "explication de texte",
+        "méthode",
+        "Lycée / FAC",
+        "PDF"
       ]
     }
   ],

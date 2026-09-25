@@ -1,0 +1,73 @@
+{
+  "newResources": 51,
+  "images": 0,
+  "policy": "Version texte uniquement : aucune illustration embarquée.",
+  "illustrationsRemoved": 158,
+  "imageExtensions": {
+    ".jpeg": 23,
+    ".emf": 13,
+    ".png": 104,
+    ".wmf": 8,
+    ".jpg": 5,
+    ".gif": 5
+  },
+  "conversionErrors": [],
+  "byUE": {
+    "UE1 — Psychologie clinique": 16,
+    "UE2 — Psychologie sociale & travail": 10,
+    "UE3 — Psychologie cognitive & développement": 14,
+    "UE4 — Outils": 1,
+    "UE5 — Bases de biologie": 6,
+    "UE6 — Ouverture": 4
+  },
+  "byModule": {
+    "CM — Introduction à la psychopathologie de l’adulte": 11,
+    "CM — Psychopathologie de l’enfant et de l’adolescent": 5,
+    "CM — Psychologie du travail": 9,
+    "CM — Psychologie sociale": 1,
+    "CM — Psychologie cognitive": 5,
+    "CM — Psychologie du développement": 9,
+    "CM — Traitement de données": 1,
+    "CM — Éthologie & chronobiologie": 2,
+    "CM — Évolution et comportement": 4,
+    "CM — Ouverture": 4
+  },
+  "excluded": [
+    {
+      "path": "AUTEUR.docx",
+      "reason": "Document transversal / liste d’auteurs"
+    },
+    {
+      "path": "QCM/QCM - PSYCHOLOGIE TRAVAIL.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "QCM/QCM - EVOLUTION ET COMPORTEMENT.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "QCM/QCM - PSYCHOLOGIE SOCIALE.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "QCM/QCM - PSYCHOLOGIE COGNITIVE.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "QCM/QCM - ETHOLOGIE ET CHRONOBIOLOGIE.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "QCM/QCM - PSYCHOLOGIE DU DEVELOPPEMENT.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "UE5 - Base de biologie/Evolution et comportement/QCM - EVOLUTION ET COMPORTEMENT.docx",
+      "reason": "QCM"
+    },
+    {
+      "path": "UE5 - Base de biologie/Ethologie et chronobiologie/QCM - ETHOLOGIE ET CHRONOBIOLOGIE.docx",
+      "reason": "QCM"
+    }
+  ]
+}

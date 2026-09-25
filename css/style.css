@@ -40,16 +40,35 @@ button { color: inherit; }
   position: fixed;
   inset: 0 0 auto;
   z-index: 1000;
-  padding: 18px 24px;
+  padding: 10px 24px;
   background: rgba(255,255,255,.72);
   border-bottom: 1px solid rgba(255,255,255,.5);
   backdrop-filter: blur(16px);
   transition: padding .25s ease, background .25s ease, box-shadow .25s ease;
 }
-.navbar.scrolled { padding-block: 12px; background: rgba(255,255,255,.94); box-shadow: 0 8px 24px rgba(28,28,40,.06); }
+.navbar.scrolled { padding-block: 8px; background: rgba(255,255,255,.94); box-shadow: 0 8px 24px rgba(28,28,40,.06); }
 .nav-container { width: min(1100px, 100%); margin: auto; display: flex; align-items: center; gap: 0; }
-.nav-brand { text-decoration: none; font-size: 18px; letter-spacing: .2px; }
-.nav-brand strong { color: var(--primary); text-transform: uppercase; letter-spacing: 1.2px; }
+.nav-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.nav-brand-logo {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  transform: translateZ(0);
+}
+.nav-brand:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
 .nav-links { display: flex; flex: 1; align-items: center; gap: 12px; }
 .nav-links a { padding: 7px 10px; border-radius: 9px; text-decoration: none; font-size: 14px; font-weight: 500; transition: .2s ease; }
 .nav-links a:hover { color: var(--primary); background: rgba(108,99,255,.07); }
@@ -764,6 +783,9 @@ button { color: inherit; }
 }
 
 @media (max-width: 860px) {
+  .navbar { padding: 8px 16px; }
+  .navbar.scrolled { padding-block: 7px; }
+  .nav-brand, .nav-brand-logo { width: 42px; height: 42px; }
   .nav-toggle { display:block; margin-left:auto; }
   .nav-links { position:absolute; top:calc(100% + 10px); left:20px; right:20px; display:flex; flex-direction:column; padding:24px; border:1px solid var(--border); border-radius:18px; background:rgba(255,255,255,.98); box-shadow:0 20px 50px rgba(28,28,40,.12); opacity:0; visibility:hidden; pointer-events:none; transform:translateY(-8px); transition:.25s ease; }
   .navbar.nav-open .nav-links { opacity:1; visibility:visible; pointer-events:auto; transform:none; }

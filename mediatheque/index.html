@@ -10,10 +10,10 @@
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="theme-color" content="#f8f8fa">
   <title>Médiathèque — Philosophal</title>
-  <meta name="description" content="Médiathèque personnelle Philosophal : textes, livres, audio, vidéos et cours écrits réunis dans un même outil.">
+  <meta name="description" content="Médiathèque Philosophal : ressources et outils de travail.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./mediatheque.css?v=20260923-github-refresh1">
+  <link rel="stylesheet" href="./mediatheque.css?v=20260925-titres1">
 </head>
 <body id="top" class="media-page">
   <header class="media-topbar">
@@ -29,7 +29,13 @@
       <div class="media-title-row">
         <div>
           <p class="media-eyebrow">Retrouver, comprendre, relier</p>
-          <h1 id="media-title">Médiathèque</h1>
+          <div class="media-heading-line">
+            <h1 id="media-title">Médiathèque</h1>
+            <div class="media-access-switch" data-media-access-switch aria-label="Version de la médiathèque">
+              <button class="media-access-button is-active" type="button" data-access-mode="public" aria-pressed="true">Public</button>
+              <button class="media-access-button" type="button" data-access-mode="private" aria-pressed="false">Privé</button>
+            </div>
+          </div>
         </div>
         <div class="media-title-actions">
           <details class="media-useful-links" data-useful-links>
@@ -62,6 +68,8 @@
           <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
         </div>
       </div>
+
+      
 
       <label class="media-search" for="media-search">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path></svg>
@@ -184,9 +192,30 @@
     <span><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>?</kbd> aide complète</span>
   </footer>
 
-  <script src="./data.js?v=20260923-github-refresh1"></script>
+  <script src="../js/private-access.js?v=20260925-titres1"></script>
+  <script src="./data.js?v=20260925-titres1"></script>
+  <script src="./mindmaps-data.js?v=20260925-titres1"></script>
   <script src="./textes-sync.js?v=20260923-github-refresh1"></script>
-  <script src="./mediatheque.js?v=20260923-github-refresh1"></script>
-  <script src="../js/site-tools.js?v=20260923-github-refresh1" defer></script>
+  <script src="./mediatheque.js?v=20260925-titres1"></script>
+  <script src="../js/site-tools.js?v=20260925-titres1" defer></script>
+  <div class="media-private-gate" data-private-gate hidden>
+    <div class="media-private-gate-backdrop" data-private-gate-close></div>
+    <section class="media-private-gate-card" role="dialog" aria-modal="true" aria-labelledby="private-gate-title">
+      <button class="media-private-gate-close" type="button" data-private-gate-close aria-label="Fermer">×</button>
+      <span class="media-private-gate-icon" aria-hidden="true">◇</span>
+      <p class="media-private-gate-kicker">Accès réservé</p>
+      <h2 id="private-gate-title">Version privée</h2>
+      <p>Entrez le mot de passe pour continuer.</p>
+      <form data-private-gate-form>
+        <label for="media-private-password">Mot de passe</label>
+        <div class="media-private-password-row">
+          <input id="media-private-password" data-private-password type="password" autocomplete="current-password" spellcheck="false">
+          <button type="submit">Accéder</button>
+        </div>
+        <p class="media-private-error" data-private-error role="alert" hidden>Mot de passe incorrect.</p>
+      </form>
+    </section>
+  </div>
+
 </body>
 </html>

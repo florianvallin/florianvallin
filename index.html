@@ -16,7 +16,7 @@
         location.reload();
       });
       navigator.serviceWorker
-        .register("/sw.js?v=20260919-hlp-consolidation1", { scope: "/", updateViaCache: "none" })
+        .register("/sw.js?v=20260925-publish1", { scope: "/", updateViaCache: "none" })
         .then((registration) => registration.update())
         .catch(() => {});
     })();
@@ -35,10 +35,10 @@
 
   <link rel="canonical" href="https://philosophal.fr/">
 
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.svg?v=20260925-publish1" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png?v=20260925-publish1" type="image/png" sizes="48x48">
+  <link rel="shortcut icon" href="/favicon.ico?v=20260924-logo1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260924-logo1">
   <meta name="theme-color" content="#1c1c28">
 
   <meta property="og:type" content="website">
@@ -46,9 +46,9 @@
   <meta property="og:url" content="https://philosophal.fr/">
   <meta property="og:title" content="Cours particuliers de philosophie à Montpellier ou à distance">
   <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
-  <meta property="og:site_name" content="Florian Vallin">
+  <meta property="og:site_name" content="Philosophal">
 
-  <link rel="stylesheet" href="css/style.css?v=20260923-homefix1">
+  <link rel="stylesheet" href="css/style.css?v=20260925-publish1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,7 @@
 
 <header class="navbar" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="/" aria-label="Accueil — Florian Vallin">Florian <strong>Vallin</strong></a>
+    <a class="nav-brand" href="/" aria-label="Accueil — Philosophal"><img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20260925-publish1" alt="Philosophal" width="46" height="46" decoding="async"></a>
     <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -85,7 +85,7 @@
   <div class="hero-glow hero-glow--right" aria-hidden="true"></div>
   <img
     class="hero-socrate"
-    src="images/socrate-hero-buste.png?v=20260923-homefix1"
+    src="images/socrate-hero-buste.png?v=20260925-publish1"
     alt=""
     aria-hidden="true"
     width="1023"
@@ -944,14 +944,14 @@
       <div class="about-photo">
         <img 
           src="images/hero-florian.jpg" 
-          alt="Florian Vallin, professeur de philosophie à Montpellier"
+          alt="Professeur de philosophie à Montpellier"
           loading="lazy"
           >
       </div>
 
       <div class="about-text">
         <p>
-          Je m’appelle <strong>Florian VALLIN</strong>. Je suis diplômé d’une <strong>Licence de philosophie</strong> (Grenoble) et d'un <strong>Master Esthétique</strong>
+          Je suis diplômé d’une <strong>Licence de philosophie</strong> (Grenoble) et d'un <strong>Master Esthétique</strong>
           (philosophie de l’art, Montpellier) et j’enseigne en <strong>cours particuliers</strong> depuis plusieurs années.
         </p>
 
@@ -967,18 +967,6 @@
 
         <div class="about-social-links" aria-label="Profils et réseaux">
           <a
-            class="about-social-link about-social-link--linkedin"
-            href="https://www.linkedin.com/in/florianvallin/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Voir mon profil LinkedIn dans un nouvel onglet"
-          >
-            <span class="about-social-link__icon" aria-hidden="true">
-              <iconify-icon icon="mdi:linkedin" width="19" height="19"></iconify-icon>
-            </span>
-          </a>
-
-          <a
             class="about-social-link about-social-link--google"
             href="https://share.google/HqIblISJpOMhoSiPT"
             target="_blank"
@@ -993,11 +981,11 @@
 
           <a
             class="about-social-link about-social-link--site"
-            href="https://florianvallin.fr/"
+            href="https://philosophal.fr/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Ouvrir florianvallin.fr dans un nouvel onglet"
-            title="florianvallin.fr"
+            aria-label="Ouvrir philosophal.fr dans un nouvel onglet"
+            title="philosophal.fr"
           >
             <span class="about-social-link__icon" aria-hidden="true">
               <iconify-icon icon="mdi:web" width="19" height="19"></iconify-icon>
@@ -1204,7 +1192,7 @@
     <div class="contact-stage">
       <div class="contact-side-portrait" aria-hidden="true">
         <img
-          src="images/contact-lowpoly.png?v=20260923-homefix1"
+          src="images/contact-lowpoly.png?v=20260925-publish1"
           alt=""
           width="1086"
           height="1448"
@@ -1428,7 +1416,7 @@
 
     <div class="footer-column footer-right">
       <a href="#top" class="footer-copyright">
-        © 2026 Florian Vallin
+        © 2026 Philosophal
       </a>
     </div>
 
@@ -1440,15 +1428,15 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260923-homefix1" defer></script>
-<script src="js/protected-phone.js?v=20260923-homefix1" defer></script>
-<script src="js/contact-form.js?v=20260923-homefix1" defer></script>
+<script src="js/script.js?v=20260925-publish1" defer></script>
+<script src="js/protected-phone.js?v=20260925-publish1" defer></script>
+<script src="js/contact-form.js?v=20260925-publish1" defer></script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalService",
-  "name": "Cours particuliers de philosophie et méthodologie générale – Florian Vallin",
+  "name": "Cours particuliers de philosophie et méthodologie générale – Philosophal",
   "description": "Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.",
   "url": "https://philosophal.fr/",
   "logo": "https://philosophal.fr/favicon-512.png",
@@ -1457,8 +1445,8 @@
     "Cours de méthodologie générale"
   ],
   "provider": {
-    "@type": "Person",
-    "name": "Florian Vallin"
+    "@type": "Organization",
+    "name": "Philosophal"
   },
   "areaServed": [
     {

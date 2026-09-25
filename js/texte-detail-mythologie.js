@@ -87,7 +87,7 @@
     <aside class="text-detail-cta" aria-label="Accompagnement sur ce texte"><div class="text-detail-cta-copy"><span class="text-detail-cta-eyebrow">Cours particulier</span><strong>Besoin d’aller plus loin sur ce texte ?</strong><p>Je peux t’aider à l’expliquer, à construire une problématique ou à le relier à une notion philosophique.</p></div><a class="btn-primary" href="/#contact">Prendre contact</a></aside>
   </div>`;
 
-  document.title = `${text.title} — ${text.author || "Mythologie"} | Florian Vallin`;
+  document.title = `${text.title} — ${text.author || "Mythologie"} | Philosophal`;
   const description = document.querySelector('meta[name="description"]');
   if (description && text.description) description.content = text.description;
 

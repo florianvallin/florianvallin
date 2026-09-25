@@ -5861,6 +5861,9515 @@
     "kind": "concept"
   },
   {
+    "term": "Kairos",
+    "aliases": "kairos",
+    "category": "Concept grec / temps",
+    "lead": "Le kairos est le moment opportun : non pas le temps mesurable en général, mais l’instant qualitativement décisif où une action, une parole ou une décision peut réussir parce qu’elle survient à propos.",
+    "kind": "concept",
+    "etymology": "Du grec καιρός, « moment opportun, occasion favorable ».",
+    "senses": [
+      "À distinguer de [[Chronos]], le temps successif et mesurable, et d’[[Aiôn]], qui peut désigner la durée d’une vie ou un temps cosmique.",
+      "Dans la rhétorique et l’éthique antiques, le kairos rappelle qu’une bonne règle ne suffit pas : il faut encore juger quand et comment l’appliquer."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La prudence pratique suppose de saisir les circonstances singulières et le moment convenable de l’action."
+      }
+    ],
+    "related": [
+      "Temps",
+      "Chronos",
+      "Aiôn",
+      "Phronèsis"
+    ]
+  },
+  {
+    "term": "Chronos",
+    "aliases": "chronos",
+    "category": "Concept grec / temps",
+    "lead": "Chronos désigne le temps considéré comme succession, ordre et durée mesurable. Il sert souvent, dans le vocabulaire contemporain inspiré du grec, à contraster le temps quantifiable avec le moment opportun du kairos.",
+    "kind": "concept",
+    "etymology": "Du grec χρόνος, « temps ».",
+    "senses": [
+      "Le terme n’est pas une théorie philosophique unique chez les Grecs : son sens varie selon les auteurs.",
+      "L’opposition moderne Chronos/Kairos est utile, mais elle simplifie des usages antiques plus divers."
+    ],
+    "related": [
+      "Temps",
+      "Kairos",
+      "Aiôn"
+    ]
+  },
+  {
+    "term": "Aiôn",
+    "aliases": "aiôn aion",
+    "category": "Concept grec / temps",
+    "lead": "Aiôn désigne selon les contextes la durée d’une vie, un âge, une éternité ou un mode de durée qui ne se réduit pas au temps chronométrique. Le terme devient important dans certaines cosmologies antiques puis dans la philosophie contemporaine du temps.",
+    "kind": "concept",
+    "etymology": "Du grec αἰών, « vie, âge, durée, éternité ».",
+    "senses": [
+      "Chez Platon, l’aiôn peut désigner l’éternité dont le temps est une image mobile.",
+      "Chez certains auteurs modernes et contemporains, il sert à penser un temps non homogène ou un devenir irréductible à la simple succession."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "Dans le Timée, l’éternité sert de modèle au temps cosmique."
+      }
+    ],
+    "related": [
+      "Temps",
+      "Chronos",
+      "Kairos",
+      "Durée"
+    ]
+  },
+  {
+    "term": "Ousia",
+    "aliases": "ousia",
+    "category": "Concept grec / métaphysique",
+    "lead": "Ousia désigne ce qui est au sens fondamental : selon les contextes, la substance, l’essence ou la réalité d’une chose. Chez Aristote, le terme devient central pour penser ce qui existe en premier et ce qui répond à la question « qu’est-ce que c’est ? ».",
+    "kind": "concept",
+    "etymology": "Du grec οὐσία, dérivé du participe du verbe « être » ; traditionnellement traduit par « substance » ou « essence » selon le contexte.",
+    "senses": [
+      "Dans les Catégories, la substance première est l’individu concret, par exemple cet homme-ci.",
+      "Dans la Métaphysique, l’ousia renvoie aussi à la forme ou à l’essence qui explique ce qu’est une chose."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "L’enquête sur l’être conduit à l’étude de l’ousia comme sens fondamental de l’être."
+      }
+    ],
+    "related": [
+      "Être",
+      "Essence",
+      "Substance",
+      "Eidos",
+      "Hylémorphisme"
+    ]
+  },
+  {
+    "term": "Eidos",
+    "aliases": "eidos",
+    "category": "Concept grec / métaphysique",
+    "lead": "Eidos signifie forme, aspect ou espèce intelligible. Chez Platon, il peut désigner la Forme ou Idée intelligible ; chez Aristote, la forme est ce qui détermine une matière et fait qu’une chose est ce qu’elle est.",
+    "kind": "concept",
+    "etymology": "Du grec εἶδος, « forme, aspect, figure, espèce ».",
+    "senses": [
+      "Platon : réalité intelligible stable dont les choses sensibles participent.",
+      "Aristote : principe formel d’un composé, corrélatif de la matière."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "Les eidè sont les réalités intelligibles que la connaissance véritable vise."
+      },
+      {
+        "name": "Aristote",
+        "text": "L’eidos est la forme qui actualise une matière dans la substance composée."
+      }
+    ],
+    "related": [
+      "Forme",
+      "Idée",
+      "Hylè",
+      "Morphè",
+      "Methexis"
+    ]
+  },
+  {
+    "term": "Hylè",
+    "aliases": "hylè hyle",
+    "category": "Concept grec / métaphysique",
+    "lead": "Hylè désigne la matière comme principe de déterminabilité : ce dont une chose est faite et qui reçoit une forme. Dans l’hylémorphisme aristotélicien, matière et forme ne sont pas deux objets juxtaposés mais deux principes d’un même composé.",
+    "kind": "concept",
+    "etymology": "Du grec ὕλη, d’abord « bois, matériau », puis « matière » au sens philosophique.",
+    "senses": [
+      "La matière première est pensée comme pure puissance de recevoir des déterminations ; elle n’existe pas séparément comme un objet ordinaire.",
+      "Une matière est toujours relative à une forme et à un niveau d’analyse : le bronze est matière de la statue, mais possède lui-même une structure."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La matière est principe de puissance et la forme principe d’actualisation dans les substances naturelles."
+      }
+    ],
+    "related": [
+      "Morphè",
+      "Eidos",
+      "Dunamis",
+      "Energeia",
+      "Hylémorphisme"
+    ]
+  },
+  {
+    "term": "Morphè",
+    "aliases": "morphè morphe",
+    "category": "Concept grec / métaphysique",
+    "lead": "Morphè signifie la forme ou configuration d’une chose. Chez Aristote, le terme peut fonctionner avec eidos pour désigner le principe formel qui organise une matière et rend le composé déterminé.",
+    "kind": "concept",
+    "etymology": "Du grec μορφή, « forme, figure ».",
+    "senses": [
+      "Dans le couple matière-forme, la morphè n’est pas seulement la silhouette extérieure : elle peut être le principe d’organisation et de fonctionnement de la chose."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La forme est ce par quoi une matière devient tel être déterminé."
+      }
+    ],
+    "related": [
+      "Hylè",
+      "Eidos",
+      "Hylémorphisme",
+      "Entéléchie"
+    ]
+  },
+  {
+    "term": "Dunamis",
+    "aliases": "dunamis",
+    "category": "Concept grec / métaphysique",
+    "lead": "Dunamis désigne la puissance, la capacité ou la possibilité réelle qu’a une chose de produire ou de recevoir un changement. Elle s’oppose corrélativement à l’acte sans être une simple possibilité logique.",
+    "kind": "concept",
+    "etymology": "Du grec δύναμις, « puissance, capacité ».",
+    "senses": [
+      "Une graine est en puissance un arbre : elle possède une capacité réelle qui peut être actualisée sous certaines conditions.",
+      "La puissance peut être active, capacité d’agir, ou passive, capacité de subir ou recevoir une détermination."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La distinction puissance/acte permet de penser le changement sans faire surgir l’être du néant."
+      }
+    ],
+    "related": [
+      "Energeia",
+      "Entéléchie",
+      "Acte",
+      "Puissance",
+      "Hylémorphisme"
+    ]
+  },
+  {
+    "term": "Energeia",
+    "aliases": "energeia",
+    "category": "Concept grec / métaphysique",
+    "lead": "Energeia désigne l’être-en-acte, l’activité ou l’actualisation d’une puissance. Chez Aristote, elle permet de distinguer ce qu’une chose peut être de ce qu’elle est effectivement en train d’accomplir.",
+    "kind": "concept",
+    "etymology": "Du grec ἐνέργεια, formé sur ergon, « œuvre, activité ».",
+    "senses": [
+      "L’acte possède une priorité explicative sur la puissance : on comprend une capacité par l’activité accomplie vers laquelle elle tend.",
+      "Energeia et entéléchie sont proches chez Aristote mais ne sont pas toujours strictement interchangeables."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "L’energeia est centrale dans l’analyse du mouvement, de la substance et de l’activité intellectuelle."
+      }
+    ],
+    "related": [
+      "Dunamis",
+      "Entéléchie",
+      "Acte",
+      "Puissance"
+    ]
+  },
+  {
+    "term": "Entéléchie",
+    "aliases": "entéléchie entelechie",
+    "category": "Concept grec / métaphysique",
+    "lead": "L’entéléchie est l’état d’accomplissement d’un être dont la forme ou la fin est effectivement réalisée. Chez Aristote, le mot est étroitement lié à l’acte et sert notamment à définir l’âme comme entéléchie première d’un corps naturel organisé.",
+    "kind": "concept",
+    "etymology": "Du grec ἐντελέχεια, terme aristotélicien évoquant le fait d’avoir sa fin ou son accomplissement en soi.",
+    "senses": [
+      "L’entéléchie insiste sur l’accomplissement d’une puissance selon la forme propre de l’être.",
+      "Dans le De anima, l’âme est l’entéléchie première d’un corps possédant la vie en puissance."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "L’entéléchie permet de penser l’unité fonctionnelle du vivant et le passage de la puissance à l’acte."
+      }
+    ],
+    "related": [
+      "Energeia",
+      "Dunamis",
+      "Âme",
+      "Hylémorphisme"
+    ]
+  },
+  {
+    "term": "Nous",
+    "aliases": "nous",
+    "category": "Concept grec / esprit",
+    "lead": "Nous désigne l’intellect ou l’intelligence, parfois comme faculté humaine de saisir les principes, parfois comme principe cosmique ordonnateur. Son sens varie fortement de Anaxagore à Aristote puis au néoplatonisme.",
+    "kind": "concept",
+    "etymology": "Du grec νοῦς, « intelligence, esprit, intellect ».",
+    "senses": [
+      "Anaxagore : le Nous est un principe ordonnateur distinct du mélange initial.",
+      "Aristote : l’intellect est la faculté de saisir les intelligibles et les premiers principes.",
+      "Plotin : le Nous est l’Intellect, seconde hypostase, contenant les formes intelligibles."
+    ],
+    "authors": [
+      {
+        "name": "Anaxagore",
+        "text": "Le Nous met en mouvement et ordonne le mélange cosmique."
+      },
+      {
+        "name": "Aristote",
+        "text": "Le nous saisit les principes qui ne sont pas démontrés par syllogisme."
+      },
+      {
+        "name": "Plotin",
+        "text": "L’Intellect est le domaine des Formes intelligibles."
+      }
+    ],
+    "related": [
+      "Raison",
+      "Intellect agent",
+      "Intellect possible",
+      "Hypostase"
+    ]
+  },
+  {
+    "term": "Phronèsis",
+    "aliases": "phronèsis phronesis",
+    "category": "Concept grec / éthique",
+    "lead": "La phronèsis est la prudence ou sagesse pratique : la capacité de délibérer justement sur ce qu’il convient de faire dans des situations concrètes. Elle ne se réduit ni à une règle abstraite ni à une simple habileté stratégique.",
+    "kind": "concept",
+    "etymology": "Du grec φρόνησις, « pensée pratique, prudence ».",
+    "senses": [
+      "Chez Aristote, elle porte sur les choses contingentes qui dépendent de nous et vise l’action bonne.",
+      "Elle suppose l’expérience, le jugement des circonstances et l’orientation vers une vie bonne."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La phronèsis est une vertu intellectuelle indispensable à l’exercice des vertus morales."
+      }
+    ],
+    "related": [
+      "Prudence",
+      "Vertu",
+      "Kairos",
+      "Sophia",
+      "Délibération"
+    ]
+  },
+  {
+    "term": "Sophia",
+    "aliases": "sophia",
+    "category": "Concept grec / savoir",
+    "lead": "Sophia désigne la sagesse. Chez Aristote, elle associe la connaissance des premiers principes et la science démonstrative des réalités les plus hautes, tandis que la phronèsis concerne l’action.",
+    "kind": "concept",
+    "etymology": "Du grec σοφία, « sagesse, savoir ».",
+    "senses": [
+      "Dans la tradition grecque, la sophia peut désigner une excellence de savoir plus large que la seule philosophie théorique.",
+      "Chez Aristote, elle se distingue de la prudence pratique sans rendre celle-ci inutile."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La sophia est la forme la plus élevée du savoir théorique."
+      }
+    ],
+    "related": [
+      "Sagesse",
+      "Phronèsis",
+      "Nous",
+      "Science"
+    ]
+  },
+  {
+    "term": "Akrasia",
+    "aliases": "akrasia",
+    "category": "Concept grec / éthique",
+    "lead": "L’akrasia est la faiblesse de la volonté ou l’incontinence : agir contre son meilleur jugement, tout en sachant ou croyant qu’une autre action serait préférable. Elle pose le problème du rapport entre connaissance, désir et action.",
+    "kind": "concept",
+    "etymology": "Du grec ἀκρασία, « absence de maîtrise de soi ».",
+    "senses": [
+      "Socrate tend à nier qu’on puisse faire sciemment le mal : l’erreur vient d’une ignorance du bien.",
+      "Aristote explique l’akrasia par une connaissance qui n’est pas pleinement actualisée dans l’action sous l’effet du désir."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Il analyse l’incontinent comme quelqu’un dont le savoir est présent d’une certaine manière mais neutralisé dans la situation passionnelle."
+      }
+    ],
+    "related": [
+      "Volonté",
+      "Désir",
+      "Vertu",
+      "Autonomie"
+    ]
+  },
+  {
+    "term": "Apatheia",
+    "aliases": "apatheia",
+    "category": "Concept hellénistique / éthique",
+    "lead": "L’apatheia est, surtout chez les stoïciens, la liberté à l’égard des passions comprises comme jugements erronés et mouvements excessifs de l’âme. Elle ne signifie pas absence de toute émotion ni indifférence froide.",
+    "kind": "concept",
+    "etymology": "Du grec ἀπάθεια, « absence de pathos subi ».",
+    "senses": [
+      "Le sage stoïcien vise à ne pas être dominé par des passions irrationnelles.",
+      "Les stoïciens admettent des « bons affects » rationnels ; l’apatheia n’est donc pas l’anesthésie affective."
+    ],
+    "authors": [
+      {
+        "name": "Stoïciens",
+        "text": "L’apatheia résulte d’un jugement droit sur ce qui dépend réellement de nous et sur la valeur des choses externes."
+      }
+    ],
+    "related": [
+      "Stoïcisme",
+      "Affect",
+      "Ataraxie",
+      "Prohairesis"
+    ]
+  },
+  {
+    "term": "Aponie",
+    "aliases": "aponie",
+    "category": "Concept épicurien / éthique",
+    "lead": "L’aponie est l’absence de douleur corporelle. Chez Épicure, elle constitue avec l’ataraxie, absence de trouble de l’âme, un aspect majeur du plaisir stable qui définit la vie heureuse.",
+    "kind": "concept",
+    "etymology": "Du grec ἀπονία, « absence de peine ou de douleur ».",
+    "senses": [
+      "Le plaisir épicurien ne consiste pas dans une accumulation indéfinie d’excitations, mais dans un état où manque et douleur sont supprimés."
+    ],
+    "authors": [
+      {
+        "name": "Épicure",
+        "text": "Il associe l’absence de douleur corporelle à la tranquillité de l’âme comme formes du plaisir accompli."
+      }
+    ],
+    "related": [
+      "Épicurisme",
+      "Ataraxie",
+      "Plaisir",
+      "Tetrapharmakos"
+    ]
+  },
+  {
+    "term": "Prohairesis",
+    "aliases": "prohairesis",
+    "category": "Concept stoïcien / éthique",
+    "lead": "La prohairesis est la faculté de choix réfléchi ou la disposition directrice par laquelle un sujet donne ou refuse son assentiment à ses représentations. Chez Épictète, elle constitue le noyau de ce qui dépend de nous.",
+    "kind": "concept",
+    "etymology": "Du grec προαίρεσις, « choix délibéré, décision ».",
+    "senses": [
+      "Chez Aristote, la prohairesis est le choix délibéré des moyens en vue d’une fin.",
+      "Chez Épictète, elle prend un sens plus central : notre usage des représentations et nos jugements relèvent de nous, contrairement aux événements externes."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Le choix délibéré articule désir et raison pratique."
+      },
+      {
+        "name": "Épictète",
+        "text": "La liberté consiste d’abord dans l’usage que nous faisons de nos représentations."
+      }
+    ],
+    "related": [
+      "Stoïcisme",
+      "Autonomie",
+      "Phronèsis",
+      "Assentiment"
+    ]
+  },
+  {
+    "term": "Katalepsis",
+    "aliases": "katalepsis",
+    "category": "Concept stoïcien / épistémologie",
+    "lead": "La katalepsis est la « saisie » cognitive : chez les stoïciens, l’assentiment donné à une représentation cognitive suffisamment claire et causée de façon adéquate par son objet. Elle joue un rôle central dans leur réponse au scepticisme.",
+    "kind": "concept",
+    "etymology": "Du grec κατάληψις, « saisie, appréhension ».",
+    "senses": [
+      "Une représentation kataleptique est censée porter une marque telle qu’elle ne pourrait provenir de ce qui n’est pas.",
+      "Les Académiciens sceptiques contestent précisément qu’un tel critère infaillible soit disponible."
+    ],
+    "authors": [
+      {
+        "name": "Stoïciens",
+        "text": "La katalepsis fournit un niveau de connaissance plus ferme que l’opinion."
+      },
+      {
+        "name": "Carnéade",
+        "text": "Il critique la prétention stoïcienne à disposer d’un critère infaillible de vérité."
+      }
+    ],
+    "related": [
+      "Stoïcisme",
+      "Scepticisme",
+      "Certitude",
+      "Assentiment"
+    ]
+  },
+  {
+    "term": "Parrêsia",
+    "aliases": "parrêsia parresia",
+    "category": "Concept grec / politique",
+    "lead": "La parrêsia est le franc-parler : le fait de dire vrai ouvertement, souvent au risque de déplaire ou de se mettre en danger. Dans les analyses contemporaines de Foucault, elle désigne une pratique éthique et politique de véridiction.",
+    "kind": "concept",
+    "etymology": "Du grec παρρησία, « dire tout, parler librement ».",
+    "senses": [
+      "Dans la démocratie antique, la parrêsia est liée au droit et au courage de parler publiquement.",
+      "Chez Foucault, elle suppose une relation entre vérité, risque, critique et transformation de soi."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Il étudie la parrêsia comme pratique de vérité où le sujet s’engage personnellement dans ce qu’il dit."
+      }
+    ],
+    "related": [
+      "Vérité",
+      "Courage",
+      "Politique",
+      "Subjectivation"
+    ]
+  },
+  {
+    "term": "Askèsis",
+    "aliases": "askèsis askesis",
+    "category": "Concept antique / éthique",
+    "lead": "L’askèsis est l’exercice ou entraînement par lequel on façonne des habitudes, un mode de vie et un rapport à soi. Dans les écoles antiques, la philosophie comporte ainsi des pratiques, et pas seulement des doctrines.",
+    "kind": "concept",
+    "etymology": "Du grec ἄσκησις, « exercice, entraînement ».",
+    "senses": [
+      "L’ascèse antique peut inclure examen de soi, mémorisation de principes, méditation sur la mort, maîtrise des désirs ou exercices d’attention.",
+      "Elle ne signifie pas nécessairement mortification du corps ; son sens premier est celui d’une pratique formatrice."
+    ],
+    "authors": [
+      {
+        "name": "Stoïciens",
+        "text": "Les exercices philosophiques visent à rendre effectifs les jugements rationnels dans la conduite."
+      },
+      {
+        "name": "Foucault",
+        "text": "Il réinterprète l’askèsis comme ensemble de techniques de soi dans l’Antiquité."
+      }
+    ],
+    "related": [
+      "Stoïcisme",
+      "Épicurisme",
+      "Subjectivation",
+      "Exercice spirituel"
+    ]
+  },
+  {
+    "term": "Anamnèsis",
+    "aliases": "anamnèsis anamnesis",
+    "category": "Concept platonicien / connaissance",
+    "lead": "L’anamnèsis est la réminiscence : chez Platon, apprendre consiste en un sens à se ressouvenir de vérités que l’âme peut reconnaître parce qu’elle en possède déjà une intelligibilité antérieure à l’expérience présente.",
+    "kind": "concept",
+    "etymology": "Du grec ἀνάμνησις, « rappel, réminiscence ».",
+    "senses": [
+      "Dans le Ménon, le questionnement d’un jeune esclave illustre l’idée qu’une connaissance peut être réveillée plutôt que simplement transmise.",
+      "La théorie est liée chez Platon à l’immortalité ou à la préexistence de l’âme, selon les dialogues."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "La réminiscence explique comment l’âme peut atteindre des vérités universelles à partir de l’expérience sensible."
+      }
+    ],
+    "related": [
+      "Platonisme",
+      "Connaissance",
+      "Âme",
+      "Maïeutique"
+    ]
+  },
+  {
+    "term": "Methexis",
+    "aliases": "methexis",
+    "category": "Concept platonicien / métaphysique",
+    "lead": "La methexis est la participation : le rapport par lequel une chose sensible est ce qu’elle est en « participant » à une Forme intelligible. Le terme nomme autant une solution platonicienne qu’un problème : comment relier les particuliers changeants aux Formes séparées ?",
+    "kind": "concept",
+    "etymology": "Du grec μέθεξις, « participation ».",
+    "senses": [
+      "Dire qu’une chose est belle parce qu’elle participe au Beau indique une dépendance à l’égard de la Forme sans encore expliquer entièrement la nature de ce lien.",
+      "Le Parménide de Platon soumet précisément la participation à des objections difficiles."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "La participation articule monde sensible et Formes intelligibles, tout en soulevant des difficultés métaphysiques internes au platonisme."
+      }
+    ],
+    "related": [
+      "Platonisme",
+      "Eidos",
+      "Forme",
+      "Universaux"
+    ]
+  },
+  {
+    "term": "Chôra",
+    "aliases": "chôra chora",
+    "category": "Concept platonicien / cosmologie",
+    "lead": "Dans le Timée, la chôra est le « réceptacle » ou lieu qui permet aux réalités sensibles de devenir et d’apparaître. Elle n’est ni une Forme intelligible ni un corps sensible, ce qui rend son statut volontairement difficile à saisir.",
+    "kind": "concept",
+    "etymology": "Du grec χώρα, « place, espace, région ».",
+    "senses": [
+      "Platon la présente comme un troisième genre, à côté de l’être intelligible et du devenir sensible.",
+      "Le terme a été largement réinterprété dans la philosophie contemporaine, notamment chez Derrida, mais ces usages ne doivent pas être confondus avec le texte platonicien."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "La chôra est le réceptacle du devenir dans la cosmologie du Timée."
+      }
+    ],
+    "related": [
+      "Platonisme",
+      "Espace",
+      "Devenir",
+      "Eidos"
+    ]
+  },
+  {
+    "term": "Maïeutique",
+    "aliases": "maïeutique maieutique",
+    "category": "Méthode socratique",
+    "lead": "La maïeutique désigne métaphoriquement l’art d’« accoucher » les esprits par le questionnement. Socrate ne transmet pas simplement une réponse : il conduit l’interlocuteur à examiner ses croyances, découvrir ses contradictions et produire lui-même une compréhension plus solide.",
+    "kind": "concept",
+    "etymology": "Du grec maieutikê, « art de la sage-femme » ; l’image est développée notamment dans le Théétète de Platon.",
+    "senses": [
+      "La maïeutique ne doit pas être réduite à une technique pédagogique neutre : elle s’inscrit dans l’examen critique des opinions.",
+      "Elle est liée à l’ironie socratique et à l’elenchos, mais ces termes ne sont pas strictement synonymes."
+    ],
+    "authors": [
+      {
+        "name": "Socrate",
+        "text": "Le dialogue philosophique vise moins à déposer un savoir qu’à faire examiner les raisons de ce que l’on croit savoir."
+      }
+    ],
+    "related": [
+      "Socrate",
+      "Elenchos",
+      "Dialectique",
+      "Anamnèsis"
+    ]
+  },
+  {
+    "term": "Elenchos",
+    "aliases": "elenchos",
+    "category": "Méthode socratique / logique",
+    "lead": "L’elenchos est la réfutation ou mise à l’épreuve d’une thèse par questions et réponses. Dans les dialogues socratiques, il consiste souvent à tirer les conséquences des engagements de l’interlocuteur jusqu’à faire apparaître une contradiction.",
+    "kind": "concept",
+    "etymology": "Du grec ἔλεγχος, « examen, réfutation ».",
+    "senses": [
+      "Il ne fournit pas toujours directement une doctrine positive ; il peut avoir une fonction purgative en révélant une fausse prétention au savoir.",
+      "Son efficacité dépend des prémisses que l’interlocuteur accepte lui-même."
+    ],
+    "authors": [
+      {
+        "name": "Socrate",
+        "text": "L’elenchos transforme l’ignorance inconsciente en reconnaissance de ne pas savoir."
+      }
+    ],
+    "related": [
+      "Maïeutique",
+      "Aporie",
+      "Dialectique",
+      "Argument"
+    ]
+  },
+  {
+    "term": "Éristique",
+    "aliases": "éristique eristique",
+    "category": "Concept grec / argumentation",
+    "lead": "L’éristique est l’art de la dispute orienté vers la victoire plutôt que vers la recherche du vrai. Chez Platon et Aristote, le terme sert souvent à distinguer l’argumentation sophistique ou compétitive de la dialectique philosophique.",
+    "kind": "concept",
+    "etymology": "Du grec eristikos, « qui aime la querelle, la dispute ».",
+    "senses": [
+      "Une argumentation éristique peut exploiter ambiguïtés, sophismes ou pièges sans viser une conclusion vraie.",
+      "Il faut cependant distinguer l’usage polémique du terme chez Platon d’une description uniforme de tous les sophistes."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "Il oppose régulièrement la recherche dialectique de la vérité à la dispute qui vise seulement à vaincre."
+      },
+      {
+        "name": "Aristote",
+        "text": "Les Réfutations sophistiques analysent des arguments qui ont l’apparence du raisonnement sans en posséder la validité."
+      }
+    ],
+    "related": [
+      "Sophisme",
+      "Dialectique",
+      "Elenchos",
+      "Rhétorique"
+    ]
+  },
+  {
+    "term": "Catharsis",
+    "aliases": "catharsis",
+    "category": "Concept esthétique / éthique",
+    "lead": "La catharsis signifie purification, purgation ou clarification. Dans la Poétique d’Aristote, la tragédie produit une catharsis liée notamment à la pitié et à la crainte, mais la nature exacte de cette catharsis reste interprétée et débattue.",
+    "kind": "concept",
+    "etymology": "Du grec κάθαρσις, « purification, purgation ».",
+    "senses": [
+      "Le terme possède des usages médicaux, religieux et philosophiques dans l’Antiquité.",
+      "Il serait imprudent de réduire la catharsis aristotélicienne à une simple « décharge émotionnelle » : le passage de la Poétique est bref et a reçu plusieurs interprétations."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La tragédie suscite pitié et crainte et accomplit leur catharsis ; le sens précis de cette formule demeure discuté."
+      }
+    ],
+    "related": [
+      "Tragédie",
+      "Art",
+      "Émotion",
+      "Mimèsis"
+    ]
+  },
+  {
+    "term": "Mesotès",
+    "aliases": "mesotès mesotes",
+    "category": "Concept aristotélicien / éthique",
+    "lead": "La mesotès est le juste milieu propre à la vertu morale. Chez Aristote, la vertu vise une médiété relative à nous, déterminée par la raison, entre deux excès vicieux ; il ne s’agit donc pas d’une moyenne arithmétique ou d’un compromis tiède.",
+    "kind": "concept",
+    "etymology": "Du grec μεσότης, « milieu, médiété ».",
+    "senses": [
+      "Le courage, par exemple, se situe entre témérité et lâcheté relativement à une situation et à une personne.",
+      "Certaines actions sont mauvaises par leur objet même et ne possèdent pas de « juste milieu » vertueux."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La vertu morale est une disposition à choisir le juste milieu tel que le déterminerait la personne prudente."
+      }
+    ],
+    "related": [
+      "Vertu",
+      "Phronèsis",
+      "Éthique",
+      "Habitude"
+    ]
+  },
+  {
+    "term": "Synolon",
+    "aliases": "synolon",
+    "category": "Concept aristotélicien / métaphysique",
+    "lead": "Le synolon est le composé concret de matière et de forme. Il permet de rappeler que, dans l’hylémorphisme aristotélicien, la substance sensible n’est normalement ni une matière sans forme ni une forme séparée, mais leur unité.",
+    "kind": "concept",
+    "etymology": "Du grec σύνολον, « tout, ensemble composé ».",
+    "senses": [
+      "Une statue de bronze peut être analysée selon sa matière et sa forme, mais l’objet concret est leur composé.",
+      "Le statut exact de la substance première et la priorité de la forme varient selon les contextes aristotéliciens."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Le synolon aide à penser la substance sensible comme unité de matière et de forme."
+      }
+    ],
+    "related": [
+      "Hylè",
+      "Morphè",
+      "Eidos",
+      "Hylémorphisme",
+      "Substance"
+    ]
+  },
+  {
+    "term": "Hylémorphisme",
+    "aliases": "hylémorphisme hylemorphisme",
+    "category": "Doctrine métaphysique",
+    "lead": "L’hylémorphisme est la théorie, issue d’Aristote, selon laquelle les substances corporelles s’analysent comme des composés de matière et de forme. Elle vise à expliquer à la fois l’identité, le changement et l’organisation des êtres naturels.",
+    "kind": "concept",
+    "etymology": "Formé sur les mots grecs hylè, « matière », et morphè, « forme ».",
+    "senses": [
+      "La matière fournit un principe de potentialité et de continuité ; la forme détermine ce qu’est et fait le composé.",
+      "Dans la philosophie médiévale, l’hylémorphisme est repris et transformé, notamment pour penser le vivant et l’union de l’âme et du corps."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La matière et la forme sont des principes corrélatifs des substances naturelles."
+      },
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Il reprend l’hylémorphisme pour penser l’âme comme forme substantielle du corps vivant."
+      }
+    ],
+    "related": [
+      "Hylè",
+      "Morphè",
+      "Synolon",
+      "Dunamis",
+      "Energeia"
+    ]
+  },
+  {
+    "term": "Clinamen",
+    "aliases": "clinamen",
+    "category": "Concept épicurien / atomisme",
+    "lead": "Le clinamen est la déviation spontanée et minimale des atomes dans l’exposé latin de l’épicurisme par Lucrèce. Il rompt l’image d’une chute atomique entièrement parallèle et sert à expliquer les rencontres d’atomes ; son rapport exact à la liberté humaine est discuté.",
+    "kind": "concept",
+    "etymology": "Latin clinamen, « inclinaison, déviation » ; le terme est surtout associé à Lucrèce.",
+    "senses": [
+      "Le clinamen ne doit pas être identifié sans précaution à un « libre arbitre atomique » : Lucrèce l’insère dans une physique matérialiste et son rôle précis fait débat.",
+      "Il permet au minimum que des collisions et compositions se produisent dans l’atomisme."
+    ],
+    "authors": [
+      {
+        "name": "Lucrèce",
+        "text": "Dans De rerum natura, la déclinaison des atomes rompt la stricte parallélité de leur chute et est associée à l’absence de nécessité absolue."
+      }
+    ],
+    "related": [
+      "Épicurisme",
+      "Atomisme",
+      "Déterminisme",
+      "Contingence"
+    ]
+  },
+  {
+    "term": "Tetrapharmakos",
+    "aliases": "tetrapharmakos",
+    "category": "Concept épicurien / éthique",
+    "lead": "Le tetrapharmakos, ou « quadruple remède », condense quatre maximes épicuriennes : ne pas craindre les dieux, ne pas craindre la mort, reconnaître que le bien nécessaire est facile à obtenir et que le mal supportable est limité. C’est une formule pédagogique tardive résumant des thèmes épicuriens.",
+    "kind": "concept",
+    "etymology": "Du grec τετραφάρμακος, « remède composé de quatre éléments ».",
+    "senses": [
+      "Il ne remplace pas l’ensemble de la doctrine d’Épicure : il en offre un mémorandum pratique destiné à réduire les peurs et désirs vains."
+    ],
+    "authors": [
+      {
+        "name": "Épicure",
+        "text": "La philosophie est conçue comme une thérapeutique des représentations qui troublent l’âme."
+      }
+    ],
+    "related": [
+      "Épicurisme",
+      "Ataraxie",
+      "Aponie",
+      "Mort",
+      "Désir"
+    ]
+  },
+  {
+    "term": "Autarkeia",
+    "aliases": "autarkeia",
+    "category": "Concept grec / éthique",
+    "lead": "L’autarkeia est l’autosuffisance : la capacité d’une vie bonne à ne pas dépendre excessivement de biens externes. Elle n’implique pas nécessairement l’isolement social et prend des sens différents chez Aristote, les cyniques, les stoïciens et les épicuriens.",
+    "kind": "concept",
+    "etymology": "Du grec αὐτάρκεια, « suffisance à soi ».",
+    "senses": [
+      "Chez Aristote, le bonheur est dit autosuffisant tout en appartenant à un animal politique qui vit avec d’autres.",
+      "Dans les écoles hellénistiques, la réduction des dépendances peut devenir un exercice de liberté à l’égard de la fortune."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "L’autosuffisance caractérise le bien qui rend la vie désirable et complète, sans exiger une solitude absolue."
+      },
+      {
+        "name": "Épicure",
+        "text": "La simplicité des besoins accroît l’indépendance à l’égard de la fortune."
+      }
+    ],
+    "related": [
+      "Bonheur",
+      "Épicurisme",
+      "Stoïcisme",
+      "Besoin"
+    ]
+  },
+  {
+    "term": "Oikeiôsis",
+    "aliases": "oikeiôsis oikeiosis",
+    "category": "Concept stoïcien / éthique",
+    "lead": "L’oikeiôsis est le processus d’appropriation ou de familiarisation par lequel un vivant se rapporte d’abord à sa propre constitution puis, chez l’être rationnel, peut étendre sa considération aux autres. Les stoïciens s’en servent pour expliquer la genèse de la conduite conforme à la nature et de la sociabilité.",
+    "kind": "concept",
+    "etymology": "Du grec οἰκείωσις, lié à oikeios, « propre, familier, de la maison ».",
+    "senses": [
+      "L’oikeiôsis n’est pas un simple égoïsme initial : les textes stoïciens décrivent aussi une appropriation sociale qui élargit le cercle de la sollicitude.",
+      "La reconstruction exacte de la doctrine varie selon les sources antiques, souvent fragmentaires."
+    ],
+    "authors": [
+      {
+        "name": "Stoïciens",
+        "text": "L’oikeiôsis relie conservation de soi, rationalité et extension progressive des devoirs envers autrui."
+      }
+    ],
+    "related": [
+      "Stoïcisme",
+      "Nature",
+      "Sociabilité",
+      "Devoir"
+    ]
+  },
+  {
+    "term": "Quiddité",
+    "aliases": "quiddité quiddite",
+    "category": "Concept scolastique / métaphysique",
+    "lead": "La quiddité est le « ce qu’est » d’une chose, son essence considérée comme réponse à la question quid est ?, « qu’est-ce que c’est ? ». Elle désigne ce qui rend une chose intelligible comme appartenant à telle nature ou espèce.",
+    "kind": "concept",
+    "etymology": "Du latin quidditas, formé sur quid, « quoi ? ».",
+    "senses": [
+      "La quiddité s’oppose chez Duns Scot à la haecceitas, la « cette-ité » qui individue tel être singulier.",
+      "Chez Thomas d’Aquin, l’essence ou quiddité des créatures est distincte de leur acte d’exister."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "La quiddité correspond à l’essence intelligible d’une chose créée."
+      },
+      {
+        "name": "Duns Scot",
+        "text": "Il distingue la nature commune de ce qui fait qu’un individu est précisément cet individu-ci."
+      }
+    ],
+    "related": [
+      "Essence",
+      "Haecceitas",
+      "Individuation",
+      "Substance"
+    ]
+  },
+  {
+    "term": "Haecceitas",
+    "aliases": "haecceitas",
+    "category": "Concept scolastique / métaphysique",
+    "lead": "La haecceitas est, chez Duns Scot, le principe positif d’individuation par lequel une nature commune est précisément « celle-ci » dans cet individu singulier. Elle ne désigne pas une qualité descriptive supplémentaire mais la singularité irréductible du « ceci ».",
+    "kind": "concept",
+    "etymology": "Du latin haec, « ceci » ; haecceitas peut se traduire par « cette-ité ».",
+    "senses": [
+      "Elle répond à la question de savoir ce qui individue numériquement Socrate plutôt que de seulement dire ce qu’est un homme.",
+      "La haecceitas se distingue de la quiddité : la première individualise, la seconde exprime le « quoi » ou l’essence."
+    ],
+    "authors": [
+      {
+        "name": "Duns Scot",
+        "text": "Il introduit la haecceitas pour expliquer l’unité numérique et l’individuation d’une substance possédant une nature commune."
+      }
+    ],
+    "related": [
+      "Quiddité",
+      "Individuation",
+      "Universaux",
+      "Univocité de l’être"
+    ]
+  },
+  {
+    "term": "Ipséité",
+    "aliases": "ipséité ipseite",
+    "category": "Concept métaphysique / philosophie du soi",
+    "lead": "L’ipséité désigne le fait d’être soi-même, l’identité vécue ou réflexive d’un sujet en tant qu’il se rapporte à lui-même. Le terme sert souvent à distinguer le « soi » d’une simple identité objective ou numérique.",
+    "kind": "concept",
+    "etymology": "Du latin ipse, « soi-même, lui-même ».",
+    "senses": [
+      "Chez Ricœur, l’ipséité, identité-ipse, se distingue de l’identité-idem : rester soi peut ne pas signifier demeurer absolument identique dans toutes ses propriétés.",
+      "Le concept permet de penser la promesse, la responsabilité et la continuité narrative du sujet."
+    ],
+    "authors": [
+      {
+        "name": "Paul Ricœur",
+        "text": "Il distingue mêmeté et ipséité pour articuler permanence, changement et identité personnelle."
+      }
+    ],
+    "related": [
+      "Identité",
+      "Sujet",
+      "Soi",
+      "Identité personnelle"
+    ]
+  },
+  {
+    "term": "Hypostase",
+    "aliases": "hypostase",
+    "category": "Concept métaphysique / théologie",
+    "lead": "Une hypostase est une réalité subsistante ou un principe doté d’une certaine consistance propre. Le terme prend des sens différents en néoplatonisme et en théologie chrétienne, où il sert notamment à penser les personnes de la Trinité.",
+    "kind": "concept",
+    "etymology": "Du grec ὑπόστασις, « ce qui se tient dessous, subsistance ».",
+    "senses": [
+      "Chez Plotin, l’Un, l’Intellect et l’Âme sont traditionnellement appelés les trois hypostases.",
+      "Dans la théologie trinitaire, hypostase devient un terme technique pour distinguer les personnes sans multiplier l’essence divine."
+    ],
+    "authors": [
+      {
+        "name": "Plotin",
+        "text": "Il ordonne la réalité selon l’Un, l’Intellect et l’Âme."
+      },
+      {
+        "name": "Pères cappadociens",
+        "text": "Ils contribuent à stabiliser la distinction entre une ousia et trois hypostases dans le vocabulaire trinitaire."
+      }
+    ],
+    "related": [
+      "Ousia",
+      "Nous",
+      "Substance",
+      "Personne"
+    ]
+  },
+  {
+    "term": "Suppôt",
+    "aliases": "suppôt suppot",
+    "category": "Concept scolastique / métaphysique",
+    "lead": "Le suppôt est un sujet concret subsistant qui porte des propriétés et possède une nature déterminée. En scolastique, le terme sert à distinguer la nature ou essence de l’individu concret qui existe par soi.",
+    "kind": "concept",
+    "etymology": "Du latin suppositum, « ce qui est posé dessous ».",
+    "senses": [
+      "Un suppôt n’est pas seulement un substrat abstrait : il désigne l’être individuel complet auquel les propriétés sont attribuées.",
+      "Dans la théologie médiévale, le terme intervient dans les analyses de la personne et de l’Incarnation."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Le suppôt est ce qui subsiste individuellement dans une nature, et la personne est un suppôt de nature rationnelle."
+      }
+    ],
+    "related": [
+      "Substance",
+      "Hypostase",
+      "Personne",
+      "Quiddité"
+    ]
+  },
+  {
+    "term": "Universaux",
+    "aliases": "universaux",
+    "category": "Problème métaphysique / logique",
+    "lead": "Les universaux sont des propriétés, genres ou concepts susceptibles d’être communs à plusieurs individus, comme « humanité », « rougeur » ou « animal ». Leur statut soulève une question classique : existent-ils indépendamment des choses particulières, dans les choses, ou seulement dans l’esprit et le langage ?",
+    "kind": "concept",
+    "etymology": "Du latin universale, « ce qui vaut pour plusieurs ».",
+    "senses": [
+      "Le réalisme affirme sous différentes formes une réalité des universaux.",
+      "Le nominalisme refuse généralement d’en faire des entités communes extramentales ; le conceptualisme les situe principalement dans l’activité conceptuelle."
+    ],
+    "related": [
+      "Réalisme des universaux",
+      "Conceptualisme",
+      "Nominalisme",
+      "Eidos",
+      "Propriété"
+    ]
+  },
+  {
+    "term": "Réalisme des universaux",
+    "aliases": "réalisme des universaux realisme des universaux",
+    "category": "Doctrine métaphysique",
+    "lead": "Le réalisme des universaux soutient que la généralité de nos concepts correspond, d’une manière ou d’une autre, à une structure réelle et non à de simples noms. Il existe plusieurs réalismes : platonicien, aristotélicien ou médiéval modéré.",
+    "kind": "concept",
+    "senses": [
+      "Un réalisme platonicien peut concevoir les universaux comme séparés de leurs instances ; un réalisme aristotélicien les pense plutôt comme immanents aux choses.",
+      "Le débat porte autant sur l’ontologie que sur l’explication de la ressemblance, de la prédication et de la connaissance générale."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "Les Formes constituent un modèle fort de réalisme des universaux."
+      },
+      {
+        "name": "Aristote",
+        "text": "Les formes ou natures communes ne sont pas séparées des substances sensibles de la même manière que chez Platon."
+      }
+    ],
+    "related": [
+      "Universaux",
+      "Conceptualisme",
+      "Nominalisme",
+      "Methexis"
+    ]
+  },
+  {
+    "term": "Conceptualisme",
+    "aliases": "conceptualisme",
+    "category": "Doctrine métaphysique / logique",
+    "lead": "Le conceptualisme soutient que l’universalité appartient principalement aux concepts de l’esprit plutôt qu’à des entités universelles existant séparément. Il cherche souvent une position intermédiaire entre réalisme fort et nominalisme strict.",
+    "kind": "concept",
+    "senses": [
+      "Plusieurs versions admettent que les concepts sont fondés sur des ressemblances ou structures réelles sans postuler un universel numériquement identique présent dans plusieurs choses."
+    ],
+    "related": [
+      "Universaux",
+      "Réalisme des universaux",
+      "Nominalisme",
+      "Concept"
+    ]
+  },
+  {
+    "term": "Univocité de l’être",
+    "aliases": "univocité de l’être univocite de l etre",
+    "category": "Concept scolastique / métaphysique",
+    "lead": "L’univocité de l’être est la thèse, associée à Duns Scot, selon laquelle le concept d’être conserve un noyau de sens commun lorsqu’il est prédiqué de Dieu et des créatures. Elle ne signifie pas que Dieu et les créatures possèdent l’être exactement de la même manière.",
+    "kind": "concept",
+    "senses": [
+      "Scot soutient qu’un concept univoque d’être est nécessaire pour raisonner sans équivoque du fini à l’infini.",
+      "La thèse s’oppose classiquement à certaines formulations thomistes de l’analogie de l’être."
+    ],
+    "authors": [
+      {
+        "name": "Duns Scot",
+        "text": "Il défend un concept univoque d’être suffisamment commun pour rendre possibles métaphysique et théologie rationnelle."
+      }
+    ],
+    "related": [
+      "Analogie de l’être",
+      "Être",
+      "Haecceitas",
+      "Métaphysique"
+    ]
+  },
+  {
+    "term": "Analogie de l’être",
+    "aliases": "analogie de l’être analogie de l etre",
+    "category": "Concept scolastique / métaphysique",
+    "lead": "L’analogie de l’être désigne la doctrine selon laquelle « être » ne se dit ni dans un sens absolument identique de toutes choses ni dans des sens totalement étrangers. Les différents usages sont ordonnés selon des rapports de priorité, de proportion ou de dépendance.",
+    "kind": "concept",
+    "senses": [
+      "Dans la tradition thomiste, elle permet notamment de parler de Dieu à partir des créatures sans les placer sur un même plan ontologique.",
+      "Il existe plusieurs théories médiévales de l’analogie ; l’expression ne renvoie pas à une formulation unique et simple."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "La prédication de termes comme « bon » ou « être » à Dieu et aux créatures exige un mode analogique, ni pure univocité ni pure équivocité."
+      }
+    ],
+    "related": [
+      "Univocité de l’être",
+      "Analogie",
+      "Être",
+      "Théologie négative"
+    ]
+  },
+  {
+    "term": "Intellect agent",
+    "aliases": "intellect agent",
+    "category": "Concept aristotélicien / théorie de la connaissance",
+    "lead": "L’intellect agent est, dans une lecture classique d’Aristote, le principe qui rend les formes intelligibles effectivement pensables en les « actualisant » à partir de l’expérience sensible. Son statut exact a suscité d’importantes controverses antiques et médiévales.",
+    "kind": "concept",
+    "senses": [
+      "Il est distingué de l’intellect possible, qui reçoit ou devient les formes intelligibles.",
+      "La question de savoir si l’intellect agent est individuel, séparé ou divin a reçu des réponses divergentes chez Alexandre d’Aphrodise, Avicenne, Averroès et Thomas d’Aquin."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Le De anima III, 5 distingue un intellect qui devient toutes choses et un intellect qui les produit en acte."
+      },
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Il défend un intellect agent appartenant à chaque âme humaine, contre certaines lectures séparatistes."
+      }
+    ],
+    "related": [
+      "Intellect possible",
+      "Nous",
+      "Connaissance",
+      "Abstraction"
+    ]
+  },
+  {
+    "term": "Intellect possible",
+    "aliases": "intellect possible",
+    "category": "Concept aristotélicien / théorie de la connaissance",
+    "lead": "L’intellect possible est la puissance de recevoir les formes intelligibles sans leur matière et de devenir intellectuellement ce qu’il connaît. Il est corrélatif de l’intellect agent dans la tradition aristotélicienne.",
+    "kind": "concept",
+    "senses": [
+      "Il est « possible » parce qu’il peut recevoir des intelligibles divers avant de les penser en acte.",
+      "Son rapport à l’individu humain a fait l’objet de controverses majeures dans l’aristotélisme médiéval."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Il compare l’intellect en puissance à une capacité de devenir toutes les formes intelligibles."
+      },
+      {
+        "name": "Averroès",
+        "text": "Son interprétation d’un intellect possible séparé et commun a suscité d’importants débats latins."
+      }
+    ],
+    "related": [
+      "Intellect agent",
+      "Nous",
+      "Puissance",
+      "Connaissance"
+    ]
+  },
+  {
+    "term": "Synderèse",
+    "aliases": "synderèse synderese",
+    "category": "Concept scolastique / éthique",
+    "lead": "La synderèse est, dans la scolastique, l’habitus ou disposition naturelle par laquelle la raison pratique saisit les premiers principes moraux les plus généraux, par exemple que le bien doit être recherché et le mal évité. Elle se distingue de la conscience appliquée à un cas particulier.",
+    "kind": "concept",
+    "etymology": "Du latin scolastique synderesis, issu d’une tradition manuscrite complexe autour d’un terme grec.",
+    "senses": [
+      "La synderèse porte sur des principes généraux, tandis que la conscience juge une action concrète en appliquant des principes à une situation.",
+      "Elle n’équivaut pas à une infaillibilité de tous nos jugements moraux particuliers."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Il décrit la synderèse comme l’habitus des premiers principes de la raison pratique."
+      }
+    ],
+    "related": [
+      "Conscience",
+      "Loi naturelle",
+      "Raison pratique",
+      "Devoir"
+    ]
+  },
+  {
+    "term": "Loi naturelle",
+    "aliases": "loi naturelle",
+    "category": "Concept éthique / philosophie du droit",
+    "lead": "La loi naturelle est l’idée qu’il existe des normes de conduite fondées sur la nature rationnelle, humaine ou cosmique, et accessibles au moins en partie à la raison indépendamment d’une législation positive particulière. Les théories de la loi naturelle sont diverses.",
+    "kind": "concept",
+    "senses": [
+      "Chez Thomas d’Aquin, elle est la participation de la créature rationnelle à la loi éternelle.",
+      "Dans la modernité, le droit naturel est souvent reformulé autour des droits, de l’égalité ou de l’état de nature."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "La loi naturelle commence par le principe pratique selon lequel le bien est à faire et à poursuivre, le mal à éviter."
+      },
+      {
+        "name": "Grotius",
+        "text": "Il participe à la transformation moderne du droit naturel vers une rationalité juridique plus autonome."
+      }
+    ],
+    "related": [
+      "Droit naturel",
+      "Synderèse",
+      "Morale",
+      "Justice"
+    ]
+  },
+  {
+    "term": "Participation",
+    "aliases": "participation",
+    "category": "Concept métaphysique",
+    "lead": "La participation désigne le rapport par lequel un être reçoit, réalise ou possède de manière dérivée une perfection qui existe selon un mode plus fondamental. Le concept traverse le platonisme, le néoplatonisme et la métaphysique médiévale.",
+    "kind": "concept",
+    "etymology": "Du latin participatio, traduction notamment du grec methexis.",
+    "senses": [
+      "Chez Platon, les sensibles sont dits participer aux Formes.",
+      "Chez Thomas d’Aquin, les créatures possèdent l’être de manière reçue et limitée, tandis que Dieu est pensé comme acte d’être subsistant."
+    ],
+    "authors": [
+      {
+        "name": "Platon",
+        "text": "La participation relie les particuliers sensibles aux Formes intelligibles."
+      },
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Il emploie la participation pour penser la dépendance ontologique des créatures à l’égard de l’être divin."
+      }
+    ],
+    "related": [
+      "Methexis",
+      "Platonisme",
+      "Analogie de l’être",
+      "Création"
+    ]
+  },
+  {
+    "term": "Théologie négative",
+    "aliases": "théologie négative theologie negative",
+    "category": "Concept théologique / métaphysique",
+    "lead": "La théologie négative, ou voie apophatique, affirme que Dieu excède nos concepts positifs : on approche alors le divin en niant les déterminations limitées que nous lui attribuons plutôt qu’en prétendant le définir directement.",
+    "kind": "concept",
+    "senses": [
+      "Dire que Dieu est « non fini » ou « au-delà de l’être » ne signifie pas simplement l’absence de toute pensée, mais la reconnaissance des limites du langage conceptuel.",
+      "Elle coexiste souvent avec une théologie affirmative ou analogique plutôt qu’elle ne l’abolit entièrement."
+    ],
+    "authors": [
+      {
+        "name": "Pseudo-Denys l’Aréopagite",
+        "text": "La voie négative dépasse les affirmations sur Dieu afin de préserver sa transcendance."
+      },
+      {
+        "name": "Maître Eckhart",
+        "text": "Certaines formulations de son œuvre radicalisent le détachement à l’égard des représentations de Dieu."
+      }
+    ],
+    "related": [
+      "Théologie apophatique",
+      "Analogie de l’être",
+      "Transcendance",
+      "Mystique"
+    ]
+  },
+  {
+    "term": "Occasionalisme",
+    "aliases": "occasionalisme",
+    "category": "Doctrine métaphysique / causalité",
+    "lead": "L’occasionalisme soutient que les créatures ne sont pas des causes efficientes véritables au sens fort : ce que nous appelons une cause créée n’est que l’occasion à laquelle Dieu produit l’effet correspondant. La doctrine cherche notamment à résoudre le problème de l’interaction entre l’âme et le corps.",
+    "kind": "concept",
+    "senses": [
+      "Chez Malebranche, aucune puissance causale créée n’explique par elle-même qu’un événement en produise un autre.",
+      "L’occasionalisme radicalise la dépendance du monde à l’égard de l’action divine et distingue cause véritable et cause occasionnelle."
+    ],
+    "authors": [
+      {
+        "name": "Malebranche",
+        "text": "Dieu seul est véritable cause efficiente ; les événements créés sont les occasions de lois générales voulues par Dieu."
+      }
+    ],
+    "related": [
+      "Causalité",
+      "Dualisme",
+      "Harmonie préétablie",
+      "Malebranche"
+    ]
+  },
+  {
+    "term": "Harmonie préétablie",
+    "aliases": "harmonie préétablie harmonie preetablie",
+    "category": "Doctrine leibnizienne / métaphysique",
+    "lead": "L’harmonie préétablie est la thèse de Leibniz selon laquelle les substances simples n’agissent pas causalement les unes sur les autres, mais leurs états correspondent parce que Dieu les a réglés dès l’origine de manière coordonnée.",
+    "kind": "concept",
+    "senses": [
+      "Elle explique notamment la correspondance entre états de l’âme et états du corps sans interaction causale directe.",
+      "Chaque monade développe sa propre série interne de perceptions selon sa loi, tout en s’accordant avec toutes les autres."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "L’univers ressemble à une pluralité de séries indépendantes dont la concordance a été préétablie par Dieu."
+      }
+    ],
+    "related": [
+      "Monade",
+      "Compossibilité",
+      "Occasionalisme",
+      "Principe de raison suffisante"
+    ]
+  },
+  {
+    "term": "Monade",
+    "aliases": "monade",
+    "category": "Concept leibnizien / métaphysique",
+    "lead": "La monade est, chez Leibniz, une substance simple, sans parties, centre de perception et d’appétition. Elle ne possède pas de « fenêtres » par lesquelles des causes externes entreraient en elle ; ses changements procèdent de son principe interne.",
+    "kind": "concept",
+    "etymology": "Du grec monas, « unité ».",
+    "senses": [
+      "Les monades diffèrent par le degré de clarté de leurs perceptions et expriment chacune l’univers depuis son point de vue.",
+      "Les corps sont phénoménalement fondés dans l’ordre coordonné des monades, sans que la monade soit une petite particule matérielle."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "La Monadologie présente les substances simples comme les éléments métaphysiques de la réalité créée."
+      }
+    ],
+    "related": [
+      "Harmonie préétablie",
+      "Petites perceptions",
+      "Aperception",
+      "Compossibilité"
+    ]
+  },
+  {
+    "term": "Compossibilité",
+    "aliases": "compossibilité compossibilite",
+    "category": "Concept leibnizien / modalité",
+    "lead": "La compossibilité est la possibilité pour plusieurs essences, événements ou états de coexister au sein d’un même monde possible sans contradiction dans l’ordre total de ce monde. Deux possibles peuvent être individuellement possibles sans être compossibles entre eux.",
+    "kind": "concept",
+    "senses": [
+      "Le choix divin du « meilleur des mondes possibles » porte chez Leibniz sur un système total de possibles compossibles, et non sur l’addition indépendante de tous les biens imaginables."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "La compossibilité structure la théorie des mondes possibles et l’explication du choix divin du meilleur monde réalisable."
+      }
+    ],
+    "related": [
+      "Monde possible",
+      "Leibniz",
+      "Principe de raison suffisante",
+      "Contingence"
+    ]
+  },
+  {
+    "term": "Principe de raison suffisante",
+    "aliases": "principe de raison suffisante",
+    "category": "Principe métaphysique",
+    "lead": "Le principe de raison suffisante affirme qu’il doit y avoir une raison pour laquelle une chose est ainsi plutôt qu’autrement, ou pour laquelle elle existe plutôt qu’elle n’existe pas. Sa portée exacte varie selon les formulations.",
+    "kind": "concept",
+    "senses": [
+      "Chez Leibniz, il complète le principe de non-contradiction et sert à rendre intelligibles les vérités de fait.",
+      "Le principe ne signifie pas nécessairement que toutes les raisons sont accessibles à un esprit humain ni que tout est logiquement nécessaire."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "Rien n’arrive sans qu’il soit possible, au moins en principe, d’en donner une raison suffisante, même si cette raison peut inclure un choix libre et l’ordre du monde."
+      }
+    ],
+    "related": [
+      "Raison",
+      "Causalité",
+      "Compossibilité",
+      "Nécessité"
+    ]
+  },
+  {
+    "term": "Petites perceptions",
+    "aliases": "petites perceptions",
+    "category": "Concept leibnizien / philosophie de l’esprit",
+    "lead": "Les petites perceptions sont, chez Leibniz, des perceptions trop faibles ou trop nombreuses pour être aperçues distinctement par la conscience, mais qui contribuent néanmoins à l’état mental global. Elles anticipent l’idée d’une vie psychique non entièrement consciente sans constituer pour autant l’inconscient freudien.",
+    "kind": "concept",
+    "senses": [
+      "Le bruit de la mer est l’exemple classique : l’impression globale suppose une multitude de petites perceptions de vagues singulières que nous ne distinguons pas.",
+      "Elles expliquent des transitions graduelles dans la conscience et contestent l’idée que tout état mental soit explicitement conscient."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "Les petites perceptions assurent une continuité entre perception obscure et aperception consciente."
+      }
+    ],
+    "related": [
+      "Aperception",
+      "Monade",
+      "Conscience",
+      "Inconscient"
+    ]
+  },
+  {
+    "term": "Aperception",
+    "aliases": "aperception",
+    "category": "Concept de philosophie de l’esprit",
+    "lead": "L’aperception est la saisie réflexive ou consciente d’une représentation, par opposition à une perception qui peut rester obscure ou non remarquée. Le terme prend des sens distincts chez Leibniz puis chez Kant.",
+    "kind": "concept",
+    "etymology": "Du latin ad-percipere, dans l’usage philosophique moderne.",
+    "senses": [
+      "Leibniz : l’aperception est la conscience réflexive d’une perception.",
+      "Kant : l’aperception transcendantale désigne l’unité du « je pense » qui doit pouvoir accompagner les représentations."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "Il distingue perception et aperception pour montrer que toutes les représentations ne sont pas conscientes."
+      },
+      {
+        "name": "Kant",
+        "text": "Il fait de l’unité de l’aperception une condition de possibilité de l’expérience objective."
+      }
+    ],
+    "related": [
+      "Petites perceptions",
+      "Aperception transcendantale",
+      "Conscience",
+      "Représentation"
+    ]
+  },
+  {
+    "term": "Natura naturans",
+    "aliases": "natura naturans",
+    "category": "Concept spinoziste / métaphysique",
+    "lead": "Natura naturans désigne chez Spinoza la Nature considérée comme cause active, c’est-à-dire Dieu ou les attributs exprimant une essence éternelle et infinie. Elle se distingue de la Natura naturata, ensemble des modes qui résultent de cette nécessité.",
+    "kind": "concept",
+    "etymology": "Latin : « nature naturante », la nature en tant qu’elle produit.",
+    "senses": [
+      "La distinction n’introduit pas deux natures séparées : elle décrit deux aspects d’une unique réalité, Deus sive Natura."
+    ],
+    "authors": [
+      {
+        "name": "Spinoza",
+        "text": "La Natura naturans est la substance et ses attributs envisagés comme cause immanente de tout ce qui existe."
+      }
+    ],
+    "related": [
+      "Natura naturata",
+      "Spinoza",
+      "Immanence",
+      "Substance"
+    ]
+  },
+  {
+    "term": "Natura naturata",
+    "aliases": "natura naturata",
+    "category": "Concept spinoziste / métaphysique",
+    "lead": "Natura naturata désigne chez Spinoza l’ensemble de ce qui suit de la nécessité de la nature divine : les modes et l’ordre de leurs déterminations. Elle est la Nature « naturée », corrélative de la Natura naturans.",
+    "kind": "concept",
+    "etymology": "Latin : « nature naturée », la nature comme ensemble des effets ou modes produits.",
+    "senses": [
+      "Elle ne constitue pas une création extérieure à Dieu : les modes sont en Dieu et suivent de sa nature selon l’immanence spinoziste."
+    ],
+    "authors": [
+      {
+        "name": "Spinoza",
+        "text": "La Natura naturata comprend tout ce qui résulte des attributs de Dieu selon la nécessité de la nature divine."
+      }
+    ],
+    "related": [
+      "Natura naturans",
+      "Spinoza",
+      "Mode",
+      "Immanence"
+    ]
+  },
+  {
+    "term": "Affectio",
+    "aliases": "affectio",
+    "category": "Concept spinoziste / métaphysique",
+    "lead": "Affectio désigne chez Spinoza une affection ou modification d’un corps ou d’une substance, c’est-à-dire un état déterminé par une rencontre ou une manière d’être. Il faut la distinguer d’affectus, l’affect qui exprime une variation de puissance.",
+    "kind": "concept",
+    "etymology": "Latin affectio, « affection, modification ».",
+    "senses": [
+      "Une affection corporelle peut représenter simultanément l’état de notre corps et la manière dont un corps extérieur l’affecte.",
+      "Dans l’Éthique, les idées des affections du corps jouent un rôle majeur dans l’imagination et la connaissance du premier genre."
+    ],
+    "authors": [
+      {
+        "name": "Spinoza",
+        "text": "Les affections sont des modifications des modes finis et structurent notre rapport ordinaire aux choses extérieures."
+      }
+    ],
+    "related": [
+      "Affectus",
+      "Affect",
+      "Corps",
+      "Spinoza"
+    ]
+  },
+  {
+    "term": "Affectus",
+    "aliases": "affectus",
+    "category": "Concept spinoziste / éthique",
+    "lead": "Affectus désigne chez Spinoza un affect : une modification du corps qui augmente ou diminue sa puissance d’agir, accompagnée de l’idée de cette modification. Les affects fondamentaux sont le désir, la joie et la tristesse.",
+    "kind": "concept",
+    "etymology": "Latin affectus, « disposition, affect ».",
+    "senses": [
+      "Les affects sont passifs lorsque nous n’en sommes qu’une cause partielle et actifs lorsqu’ils procèdent d’idées adéquates.",
+      "L’éthique spinoziste ne cherche donc pas à supprimer tout affect, mais à transformer notre manière d’être affectés en accroissant l’activité rationnelle."
+    ],
+    "authors": [
+      {
+        "name": "Spinoza",
+        "text": "L’analyse des affects est inséparable de la théorie du conatus et de la puissance d’agir."
+      }
+    ],
+    "related": [
+      "Affectio",
+      "Affect",
+      "Conatus",
+      "Joie",
+      "Tristesse"
+    ]
+  },
+  {
+    "term": "Tabula rasa",
+    "aliases": "tabula rasa",
+    "category": "Concept empiriste / connaissance",
+    "lead": "La tabula rasa est l’image d’un esprit qui ne possède pas à la naissance le stock d’idées innées que certains rationalistes lui attribuent. Chez Locke, nos idées dérivent de l’expérience, par sensation et réflexion.",
+    "kind": "concept",
+    "etymology": "Latin : « tablette effacée, table rase ».",
+    "senses": [
+      "La formule ne signifie pas que l’être humain naît sans capacités cognitives ni dispositions naturelles : elle vise surtout la thèse des idées ou principes innés déjà présents comme contenus.",
+      "Locke lui-même emploie plutôt des images comme le « papier blanc » ; l’expression tabula rasa résume traditionnellement sa position."
+    ],
+    "authors": [
+      {
+        "name": "Locke",
+        "text": "L’Essai sur l’entendement humain critique les idées innées et fait de l’expérience la source des matériaux de la connaissance."
+      }
+    ],
+    "related": [
+      "Empirisme",
+      "Expérience",
+      "Idées innées",
+      "Locke"
+    ]
+  },
+  {
+    "term": "Faisceau du moi",
+    "aliases": "faisceau du moi",
+    "category": "Concept empiriste / identité personnelle",
+    "lead": "La théorie du faisceau du moi, associée à Hume, soutient que lorsqu’on cherche un moi substantiel derrière l’expérience, on ne rencontre qu’un flux ou faisceau de perceptions particulières. L’identité personnelle continue est alors à expliquer sans postuler une substance psychique directement donnée.",
+    "kind": "concept",
+    "senses": [
+      "Hume ne nie pas que nous parlions légitimement de personnes ; il remet en question l’impression d’un moi simple, identique et immédiatement perçu.",
+      "La mémoire, l’imagination et les relations entre perceptions contribuent à la fiction ou construction de continuité personnelle."
+    ],
+    "authors": [
+      {
+        "name": "Hume",
+        "text": "Dans le Traité de la nature humaine, il décrit l’esprit comme une collection de perceptions en perpétuel changement."
+      }
+    ],
+    "related": [
+      "Identité personnelle",
+      "Moi",
+      "Substance",
+      "Empirisme"
+    ]
+  },
+  {
+    "term": "Volonté générale",
+    "aliases": "volonté générale volonte generale",
+    "category": "Concept rousseauiste / politique",
+    "lead": "La volonté générale est, chez Rousseau, la volonté qui vise l’intérêt commun en tant que les citoyens se considèrent comme membres du corps politique. Elle ne se confond ni avec la volonté d’un chef ni avec la simple somme des préférences particulières.",
+    "kind": "concept",
+    "senses": [
+      "Rousseau distingue la volonté générale de la « volonté de tous », qui peut n’être qu’un agrégat d’intérêts privés.",
+      "Le concept suppose des conditions institutionnelles et civiques permettant aux citoyens de délibérer sans dépendances particulières dominantes."
+    ],
+    "authors": [
+      {
+        "name": "Rousseau",
+        "text": "La souveraineté populaire s’exprime par la volonté générale orientée vers le bien commun."
+      }
+    ],
+    "related": [
+      "Souveraineté",
+      "Bien commun",
+      "Citoyen",
+      "Contrat social"
+    ]
+  },
+  {
+    "term": "Amour de soi",
+    "aliases": "amour de soi",
+    "category": "Concept rousseauiste / anthropologie",
+    "lead": "L’amour de soi est, chez Rousseau, l’attachement naturel d’un être à sa propre conservation et à son bien-être. Il se distingue de l’amour-propre social, qui dépend du regard, de la comparaison et de la reconnaissance d’autrui.",
+    "kind": "concept",
+    "senses": [
+      "L’amour de soi n’est pas en lui-même un vice égoïste : il est compatible avec la pitié naturelle et une existence relativement indépendante.",
+      "La distinction sert à analyser comment la socialisation transforme les désirs et la rivalité humaine."
+    ],
+    "authors": [
+      {
+        "name": "Rousseau",
+        "text": "L’amour de soi est un principe naturel de conservation qui se transforme au contact des rapports sociaux."
+      }
+    ],
+    "related": [
+      "Amour-propre",
+      "Pitié",
+      "État de nature",
+      "Perfectibilité"
+    ]
+  },
+  {
+    "term": "Amour-propre",
+    "aliases": "amour-propre amour propre",
+    "category": "Concept rousseauiste / anthropologie",
+    "lead": "L’amour-propre est, chez Rousseau, un sentiment social et relatif par lequel nous cherchons à être reconnus, estimés ou préférés aux autres. Il naît de la comparaison et peut engendrer rivalité, dépendance et ressentiment, sans être toujours purement négatif.",
+    "kind": "concept",
+    "senses": [
+      "Il faut le distinguer de l’amour de soi, plus directement lié à la conservation.",
+      "Parce qu’il dépend du jugement d’autrui, l’amour-propre peut soutenir aussi bien l’émulation et la reconnaissance que la jalousie et la domination."
+    ],
+    "authors": [
+      {
+        "name": "Rousseau",
+        "text": "Le développement de l’amour-propre accompagne la socialisation et explique une part importante des inégalités morales et psychologiques."
+      }
+    ],
+    "related": [
+      "Amour de soi",
+      "Reconnaissance",
+      "Comparaison",
+      "Perfectibilité"
+    ]
+  },
+  {
+    "term": "Perfectibilité",
+    "aliases": "perfectibilité perfectibilite",
+    "category": "Concept rousseauiste / anthropologie",
+    "lead": "La perfectibilité est, chez Rousseau, la capacité spécifiquement humaine de se transformer, d’acquérir de nouvelles facultés et de modifier son mode de vie. Elle rend possibles la culture et le progrès, mais aussi la corruption et l’accroissement de nouvelles formes de dépendance.",
+    "kind": "concept",
+    "senses": [
+      "La perfectibilité n’est donc pas synonyme de progrès nécessaire vers le mieux.",
+      "Elle explique la plasticité historique de l’être humain par opposition à un comportement entièrement fixé par l’instinct."
+    ],
+    "authors": [
+      {
+        "name": "Rousseau",
+        "text": "La perfectibilité fait de l’humanité une espèce historique, capable de transformations bénéfiques comme destructrices."
+      }
+    ],
+    "related": [
+      "Nature",
+      "Culture",
+      "Amour-propre",
+      "Histoire"
+    ]
+  },
+  {
+    "term": "Catégorie",
+    "aliases": "catégorie categorie",
+    "category": "Concept kantien / connaissance",
+    "lead": "Chez Kant, une catégorie est un concept pur de l’entendement qui fournit une forme fondamentale pour penser les objets de l’expérience, par exemple causalité, substance, unité ou possibilité. Les catégories ne sont pas tirées de l’expérience : elles en structurent l’intelligibilité objective.",
+    "kind": "concept",
+    "etymology": "Du grec katègoria, « prédication, accusation » ; chez Aristote, le mot désigne déjà des genres fondamentaux de prédication, mais le système kantien est différent.",
+    "senses": [
+      "Kant dérive douze catégories à partir des formes logiques du jugement, regroupées sous quantité, qualité, relation et modalité.",
+      "Leur usage légitime est limité à l’expérience possible ; appliquées au-delà de toute intuition sensible, elles produisent des illusions métaphysiques."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Les catégories sont les conditions intellectuelles a priori sous lesquelles un divers sensible peut être pensé comme objet."
+      }
+    ],
+    "related": [
+      "Entendement",
+      "Transcendantal",
+      "Déduction transcendantale",
+      "Schématisme transcendantal"
+    ]
+  },
+  {
+    "term": "Schématisme transcendantal",
+    "aliases": "schématisme transcendantal schematisme transcendantal",
+    "category": "Concept kantien / connaissance",
+    "lead": "Le schématisme transcendantal est le mécanisme par lequel les catégories pures de l’entendement deviennent applicables aux phénomènes sensibles grâce à des schèmes temporels. Il répond au problème de l’hétérogénéité entre concept pur et intuition sensible.",
+    "kind": "concept",
+    "senses": [
+      "Le schème n’est pas une image particulière : c’est une règle de synthèse qui donne une détermination temporelle à une catégorie.",
+      "Par exemple, le schème de causalité implique une succession réglée selon laquelle quelque chose suit d’une autre chose."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Le chapitre du schématisme explique comment l’entendement peut légitimement déterminer l’expérience sensible."
+      }
+    ],
+    "related": [
+      "Catégorie",
+      "Imagination transcendantale",
+      "Temps",
+      "Transcendantal"
+    ]
+  },
+  {
+    "term": "Aperception transcendantale",
+    "aliases": "aperception transcendantale",
+    "category": "Concept kantien / sujet",
+    "lead": "L’aperception transcendantale est l’unité originaire du « je pense » qui doit pouvoir accompagner toutes mes représentations pour qu’elles appartiennent à une même conscience et puissent constituer une expérience objective. Ce n’est pas la perception empirique d’une substance appelée « moi ».",
+    "kind": "concept",
+    "senses": [
+      "L’unité de la conscience exige que les représentations puissent être synthétisées selon des règles communes.",
+      "Kant en fait le principe suprême de l’usage de l’entendement sans en déduire pour autant une connaissance métaphysique de l’âme comme substance."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La possibilité d’attribuer plusieurs représentations au même « je pense » conditionne leur unité objective dans une expérience."
+      }
+    ],
+    "related": [
+      "Aperception",
+      "Sujet",
+      "Déduction transcendantale",
+      "Paralogisme"
+    ]
+  },
+  {
+    "term": "Imagination transcendantale",
+    "aliases": "imagination transcendantale",
+    "category": "Concept kantien / connaissance",
+    "lead": "L’imagination transcendantale est la faculté de synthétiser le divers sensible en médiant entre sensibilité et entendement. Elle ne se réduit pas à inventer des images fictives : elle participe à la constitution même d’une expérience ordonnée.",
+    "kind": "concept",
+    "senses": [
+      "Kant lui attribue un rôle dans la synthèse des intuitions et dans le schématisme des catégories.",
+      "Les deux éditions de la Critique de la raison pure accentuent différemment son rapport à l’entendement et à l’unité de l’aperception."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "L’imagination productive réalise une synthèse a priori nécessaire à la formation de l’expérience."
+      }
+    ],
+    "related": [
+      "Schématisme transcendantal",
+      "Aperception transcendantale",
+      "Synthèse",
+      "Sensibilité"
+    ]
+  },
+  {
+    "term": "Synthétique a priori",
+    "aliases": "synthétique a priori synthetique a priori",
+    "category": "Concept kantien / connaissance",
+    "lead": "Un jugement synthétique a priori étend la connaissance sans dériver son contenu de l’expérience particulière, tout en prétendant à une nécessité et une universalité. La question de leur possibilité structure la Critique de la raison pure.",
+    "kind": "concept",
+    "senses": [
+      "« Synthétique » signifie que le prédicat ajoute quelque chose qui n’est pas simplement contenu analytiquement dans le concept du sujet.",
+      "« A priori » signifie que la justification ne repose pas sur une généralisation empirique ; Kant prend les mathématiques et certains principes de la physique comme exemples centraux."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Son projet critique cherche les conditions qui rendent possibles les jugements synthétiques a priori tout en limitant la métaphysique spéculative."
+      }
+    ],
+    "related": [
+      "A priori",
+      "A posteriori",
+      "Analytique",
+      "Transcendantal"
+    ]
+  },
+  {
+    "term": "Chose en soi",
+    "aliases": "chose en soi",
+    "category": "Concept kantien / métaphysique",
+    "lead": "La chose en soi désigne la chose considérée indépendamment des conditions sensibles et conceptuelles sous lesquelles elle nous apparaît. Chez Kant, nous pouvons penser qu’il y a des choses en soi, mais nous ne pouvons pas les connaître théoriquement comme objets déterminés hors de toute expérience possible.",
+    "kind": "concept",
+    "senses": [
+      "Il faut distinguer chose en soi et phénomène sans imaginer nécessairement deux mondes séparés : il peut s’agir de deux manières de considérer ce qui est.",
+      "Le noumène est un concept voisin mais possède une fonction plus technique dans la critique des limites de la connaissance."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La distinction phénomène/chose en soi limite les prétentions de la métaphysique dogmatique tout en refusant d’identifier l’apparence à une illusion subjective."
+      }
+    ],
+    "related": [
+      "Phénomène",
+      "Noumène",
+      "Transcendantal",
+      "Idéalisme"
+    ]
+  },
+  {
+    "term": "Antinomie",
+    "aliases": "antinomie",
+    "category": "Concept kantien / dialectique",
+    "lead": "Une antinomie est un conflit dans lequel la raison peut apparemment démontrer une thèse et son contraire lorsqu’elle applique ses principes au monde considéré comme totalité inconditionnée. Kant analyse quatre antinomies cosmologiques pour diagnostiquer les illusions de la métaphysique traditionnelle.",
+    "kind": "concept",
+    "etymology": "Du grec anti, « contre », et nomos, « loi ».",
+    "senses": [
+      "Les antinomies portent notamment sur le commencement du monde, la divisibilité, la liberté et l’existence d’un être nécessaire.",
+      "Le conflit révèle une erreur de méthode : traiter le monde comme chose en soi avec des catégories dont l’usage légitime vaut pour l’expérience."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Les antinomies montrent que la raison se contredit lorsqu’elle dépasse les limites de l’expérience possible sans critique."
+      }
+    ],
+    "related": [
+      "Dialectique transcendantale",
+      "Chose en soi",
+      "Liberté",
+      "Métaphysique"
+    ]
+  },
+  {
+    "term": "Paralogisme",
+    "aliases": "paralogisme",
+    "category": "Concept kantien / dialectique",
+    "lead": "Chez Kant, un paralogisme est un raisonnement fallacieux de la psychologie rationnelle qui prétend déduire la nature substantielle, simple ou immortelle de l’âme à partir de la seule forme du « je pense ».",
+    "kind": "concept",
+    "etymology": "Du grec paralogismos, « raisonnement fautif ».",
+    "senses": [
+      "L’erreur consiste notamment à transformer l’unité formelle du sujet de pensée en connaissance d’un objet ou d’une substance psychique.",
+      "La critique ne nie pas l’existence du sujet ; elle nie qu’on puisse connaître son essence métaphysique par ces inférences."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Les paralogismes exposent l’illusion qui consiste à hypostasier le sujet transcendantal en chose connaissable."
+      }
+    ],
+    "related": [
+      "Aperception transcendantale",
+      "Âme",
+      "Dialectique transcendantale",
+      "Sujet"
+    ]
+  },
+  {
+    "term": "Idée régulatrice",
+    "aliases": "idée régulatrice idee regulatrice",
+    "category": "Concept kantien / raison",
+    "lead": "Une idée régulatrice est une idée de la raison qui ne constitue pas directement un objet connaissable mais oriente systématiquement la recherche en invitant à unifier les connaissances sous des principes toujours plus généraux.",
+    "kind": "concept",
+    "senses": [
+      "Les idées de l’âme, du monde et de Dieu ne doivent pas être employées constitutivement comme si elles donnaient des objets au-delà de l’expérience.",
+      "Employées régulativement, elles peuvent guider l’unité de la connaissance et l’enquête scientifique."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La raison a besoin d’idées qui orientent la systématicité du savoir sans autoriser une connaissance dogmatique de l’inconditionné."
+      }
+    ],
+    "related": [
+      "Raison",
+      "Dialectique transcendantale",
+      "Métaphysique",
+      "Transcendantal"
+    ]
+  },
+  {
+    "term": "Dialectique transcendantale",
+    "aliases": "dialectique transcendantale",
+    "category": "Concept kantien / critique de la raison",
+    "lead": "La dialectique transcendantale est la partie de la Critique de la raison pure qui analyse l’illusion naturelle de la raison lorsqu’elle transforme son exigence d’inconditionné en prétention à connaître l’âme, le monde comme totalité ou Dieu.",
+    "kind": "concept",
+    "senses": [
+      "Elle comprend notamment la critique des paralogismes, des antinomies et de l’idéal de la raison pure.",
+      "La dialectique ne supprime pas la raison : elle distingue son usage légitime, régulateur, de son usage spéculatif illégitime."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La raison produit nécessairement des questions qui dépassent l’expérience ; la critique doit en déterminer les limites."
+      }
+    ],
+    "related": [
+      "Paralogisme",
+      "Antinomie",
+      "Idée régulatrice",
+      "Raison"
+    ]
+  },
+  {
+    "term": "Esthétique transcendantale",
+    "aliases": "esthétique transcendantale esthetique transcendantale",
+    "category": "Concept kantien / connaissance",
+    "lead": "L’esthétique transcendantale est la partie de la Critique de la raison pure consacrée à la sensibilité et aux formes a priori de l’intuition, l’espace et le temps. « Esthétique » y signifie théorie de la sensibilité, non philosophie de l’art.",
+    "kind": "concept",
+    "senses": [
+      "Espace et temps ne sont pas, chez Kant, des propriétés des choses en soi mais les formes sous lesquelles les phénomènes peuvent nous être donnés.",
+      "Cette doctrine fonde la possibilité de connaissances mathématiques a priori tout en limitant leur portée aux objets de l’expérience possible."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "L’espace est la forme du sens externe et le temps celle du sens interne, tous deux conditions a priori de l’intuition sensible."
+      }
+    ],
+    "related": [
+      "Espace",
+      "Temps",
+      "Sensibilité",
+      "Transcendantal"
+    ]
+  },
+  {
+    "term": "Analytique transcendantale",
+    "aliases": "analytique transcendantale",
+    "category": "Concept kantien / connaissance",
+    "lead": "L’analytique transcendantale étudie les éléments et principes a priori de l’entendement qui rendent possible la pensée objective de l’expérience. Elle contient notamment la table des catégories, leur déduction et les principes de l’entendement pur.",
+    "kind": "concept",
+    "senses": [
+      "Elle cherche à montrer non seulement quels concepts purs nous possédons, mais pourquoi ils valent nécessairement pour tout objet pouvant nous être donné dans l’expérience."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "L’analytique est une « logique de la vérité » en ce qu’elle détermine les conditions formelles de toute connaissance d’objet possible."
+      }
+    ],
+    "related": [
+      "Catégorie",
+      "Déduction transcendantale",
+      "Schématisme transcendantal",
+      "Entendement"
+    ]
+  },
+  {
+    "term": "Déduction transcendantale",
+    "aliases": "déduction transcendantale deduction transcendantale",
+    "category": "Concept kantien / connaissance",
+    "lead": "La déduction transcendantale est l’argument par lequel Kant cherche à justifier le droit objectif des catégories : pourquoi des concepts a priori de l’entendement doivent-ils s’appliquer nécessairement à tout objet de l’expérience ?",
+    "kind": "concept",
+    "senses": [
+      "Elle ne raconte pas l’origine psychologique des catégories ; « déduction » signifie ici justification de leur légitimité.",
+      "Kant relie cette légitimité à l’unité synthétique de l’aperception et aux conditions de constitution d’une expérience objective."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Les catégories valent pour les objets parce que ces objets, en tant qu’objets d’expérience possible, doivent pouvoir être unifiés dans une conscience selon des règles."
+      }
+    ],
+    "related": [
+      "Catégorie",
+      "Aperception transcendantale",
+      "Analytique transcendantale",
+      "Synthèse"
+    ]
+  },
+  {
+    "term": "Impératif hypothétique",
+    "aliases": "impératif hypothétique imperatif hypothetique",
+    "category": "Concept kantien / éthique",
+    "lead": "Un impératif hypothétique commande une action sous condition d’une fin que l’agent veut atteindre : « si tu veux X, fais Y ». Il exprime une rationalité des moyens et se distingue de l’impératif catégorique, qui oblige indépendamment d’une fin contingente.",
+    "kind": "concept",
+    "senses": [
+      "Kant distingue notamment les règles d’habileté liées à des fins particulières et les conseils de prudence orientés vers le bonheur.",
+      "L’obligation morale proprement dite ne peut, selon lui, être réduite à ce type de conditionnement instrumental."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La distinction entre impératifs hypothétiques et catégoriques sépare rationalité instrumentale et exigence morale inconditionnelle."
+      }
+    ],
+    "related": [
+      "Impératif catégorique",
+      "Devoir",
+      "Raison pratique",
+      "Maxime"
+    ]
+  },
+  {
+    "term": "Hétéronomie",
+    "aliases": "hétéronomie heteronomie",
+    "category": "Concept kantien / éthique",
+    "lead": "L’hétéronomie est la situation d’une volonté dont la loi dépend d’un principe extérieur à sa raison pratique autonome : désir, intérêt, bonheur, autorité ou ordre reçu. Chez Kant, une morale fondée sur de tels mobiles ne peut fournir l’inconditionnalité du devoir.",
+    "kind": "concept",
+    "etymology": "Du grec heteros, « autre », et nomos, « loi ».",
+    "senses": [
+      "L’hétéronomie ne signifie pas simplement obéir à quelqu’un : une conduite peut être conforme au devoir tout en restant moralement hétéronome si son mobile est l’intérêt.",
+      "Elle s’oppose à l’autonomie, par laquelle la volonté rationnelle se donne à elle-même une loi universalisable."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "L’autonomie est le principe suprême de la moralité ; les doctrines qui fondent le devoir sur un bien empirique ou une autorité externe relèvent de l’hétéronomie."
+      }
+    ],
+    "related": [
+      "Autonomie",
+      "Devoir",
+      "Impératif catégorique",
+      "Maxime"
+    ]
+  },
+  {
+    "term": "Maxime",
+    "aliases": "maxime",
+    "category": "Concept kantien / éthique",
+    "lead": "Chez Kant, une maxime est le principe subjectif selon lequel un agent se propose d’agir : elle formule la règle de son action avec ses circonstances et sa fin. L’épreuve morale porte sur la possibilité de vouloir cette maxime comme loi universelle.",
+    "kind": "concept",
+    "senses": [
+      "Une maxime est subjective parce qu’elle exprime la règle effectivement adoptée par l’agent ; une loi morale prétend, elle, valoir objectivement pour tout être rationnel.",
+      "Deux actions extérieurement identiques peuvent relever de maximes différentes et ne pas avoir la même valeur morale."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La première formulation de l’impératif catégorique demande de n’agir que d’après une maxime qu’on puisse vouloir universelle."
+      }
+    ],
+    "related": [
+      "Impératif catégorique",
+      "Devoir",
+      "Bonne volonté",
+      "Hétéronomie"
+    ]
+  },
+  {
+    "term": "Bonne volonté",
+    "aliases": "bonne volonté bonne volonte",
+    "category": "Concept kantien / éthique",
+    "lead": "La bonne volonté est, chez Kant, la volonté déterminée à agir par respect pour la loi morale. Elle est dite bonne sans restriction, non parce qu’elle réussit toujours, mais parce que sa valeur tient à son principe de détermination et non à ses conséquences heureuses.",
+    "kind": "concept",
+    "senses": [
+      "Agir conformément au devoir ne suffit pas : la valeur morale stricte exige d’agir par devoir.",
+      "La bonne volonté n’est pas une simple intention vague ; elle est liée à la capacité rationnelle de se déterminer par une maxime universalisable."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La Fondation de la métaphysique des mœurs ouvre sur l’idée qu’une bonne volonté est bonne en elle-même, indépendamment de ses effets."
+      }
+    ],
+    "related": [
+      "Devoir",
+      "Maxime",
+      "Autonomie",
+      "Respect"
+    ]
+  },
+  {
+    "term": "Royaume des fins",
+    "aliases": "royaume des fins",
+    "category": "Concept kantien / éthique",
+    "lead": "Le royaume des fins est l’idéal d’une communauté systématique d’êtres rationnels qui se donnent des lois universelles et se traitent toujours comme des fins en soi, jamais simplement comme des moyens.",
+    "kind": "concept",
+    "senses": [
+      "Il articule autonomie individuelle et législation commune : chacun est à la fois sujet et législateur dans un ordre moral possible.",
+      "Le concept ne décrit pas un État historique existant mais une idée pratique servant à tester et organiser les maximes morales."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "La formule du royaume des fins présente la moralité comme appartenance à une communauté idéale de législateurs rationnels."
+      }
+    ],
+    "related": [
+      "Dignité",
+      "Autonomie",
+      "Impératif catégorique",
+      "Fin en soi"
+    ]
+  },
+  {
+    "term": "Sensus communis",
+    "aliases": "sensus communis",
+    "category": "Concept esthétique / Kant",
+    "lead": "Le sensus communis est, chez Kant, l’idée d’un « sens commun » esthétique : la capacité de juger en tenant compte d’un point de vue partageable avec autrui. Il ne s’agit pas d’une opinion moyenne ou du simple bon sens empirique.",
+    "kind": "concept",
+    "etymology": "Latin : « sens commun ».",
+    "senses": [
+      "Dans le jugement de goût, nous réclamons l’assentiment d’autrui sans pouvoir démontrer la beauté par concept.",
+      "Le sensus communis exprime ainsi une communicabilité universelle du jeu des facultés plutôt qu’une règle objective du beau."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Le jugement esthétique suppose de pouvoir élargir son point de vue et prétendre à une communicabilité commune du plaisir désintéressé."
+      }
+    ],
+    "related": [
+      "Jugement de goût",
+      "Désintéressement",
+      "Beauté",
+      "Génie"
+    ]
+  },
+  {
+    "term": "Génie",
+    "aliases": "génie genie",
+    "category": "Concept esthétique / Kant",
+    "lead": "Chez Kant, le génie est le talent naturel qui donne à l’art ses règles en produisant des œuvres exemplaires sans pouvoir expliquer intégralement par une méthode déterminée comment il les produit. Le génie concerne l’art, non la science démonstrative.",
+    "kind": "concept",
+    "senses": [
+      "L’originalité ne suffit pas : une production absurde peut être originale sans être exemplaire.",
+      "Les « idées esthétiques » du génie donnent beaucoup à penser sans être épuisables par un concept déterminé."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Le génie associe originalité, exemplarité et production d’idées esthétiques."
+      }
+    ],
+    "related": [
+      "Art",
+      "Sensus communis",
+      "Beauté",
+      "Idée esthétique"
+    ]
+  },
+  {
+    "term": "Sublime mathématique",
+    "aliases": "sublime mathématique sublime mathematique",
+    "category": "Concept esthétique / Kant",
+    "lead": "Le sublime mathématique naît devant une grandeur qui déborde la capacité de l’imagination à en former une intuition adéquate comme totalité. Cette défaillance sensible fait indirectement éprouver la vocation de la raison à penser l’inconditionné ou l’infini.",
+    "kind": "concept",
+    "senses": [
+      "Le sublime n’est pas une propriété simple de l’objet : il décrit un rapport conflictuel entre imagination et raison dans le sujet.",
+      "Il se distingue du sublime dynamique, lié à la puissance plutôt qu’à la grandeur."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "L’expérience du sublime mathématique confronte l’imagination à son insuffisance devant une grandeur que la raison exige de penser comme totalité."
+      }
+    ],
+    "related": [
+      "Sublime",
+      "Sublime dynamique",
+      "Imagination",
+      "Raison"
+    ]
+  },
+  {
+    "term": "Sublime dynamique",
+    "aliases": "sublime dynamique",
+    "category": "Concept esthétique / Kant",
+    "lead": "Le sublime dynamique se produit face à une puissance naturelle capable de nous faire éprouver notre faiblesse physique, à condition que nous la contemplions depuis une situation où nous ne sommes pas réellement écrasés par le danger. Il fait sentir, selon Kant, une supériorité de notre vocation rationnelle sur la nature sensible.",
+    "kind": "concept",
+    "senses": [
+      "Une tempête ou une montagne menaçante peuvent susciter ce type de sentiment lorsque la contemplation n’est pas absorbée par la peur effective.",
+      "Le sublime dynamique ne célèbre donc pas simplement la force de la nature ; il déplace l’évaluation vers la capacité morale et rationnelle du sujet."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Le sublime dynamique articule sentiment de vulnérabilité sensible et conscience d’une destination suprasensible."
+      }
+    ],
+    "related": [
+      "Sublime",
+      "Sublime mathématique",
+      "Nature",
+      "Raison"
+    ]
+  },
+  {
+    "term": "Aufhebung",
+    "aliases": "aufhebung",
+    "category": "Concept hégélien / dialectique",
+    "lead": "Aufhebung désigne chez Hegel un mouvement de « suppression-conservation » : une détermination est niée comme forme limitée tout en étant conservée et élevée dans une unité plus riche. Aucune traduction française unique ne restitue parfaitement les sens du verbe allemand aufheben.",
+    "kind": "concept",
+    "etymology": "Allemand aufheben : abolir ou supprimer, mais aussi conserver et relever.",
+    "senses": [
+      "Le dépassement dialectique n’est pas un simple effacement du moment précédent : ce qui est nié demeure comme moment intégré de la nouvelle détermination.",
+      "Employer « thèse-antithèse-synthèse » comme équivalent automatique d’Aufhebung simplifie excessivement la méthode hégélienne."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "L’Aufhebung exprime la manière dont une contradiction déterminée peut être dépassée sans perdre tout le contenu des moments qu’elle transforme."
+      }
+    ],
+    "related": [
+      "Dialectique",
+      "Négativité",
+      "Médiation",
+      "Contradiction"
+    ]
+  },
+  {
+    "term": "Négativité",
+    "aliases": "négativité negativite",
+    "category": "Concept hégélien / dialectique",
+    "lead": "La négativité est la puissance par laquelle une détermination se nie, se différencie et entre en mouvement plutôt que de rester une identité immobile. Chez Hegel, elle est constitutive du devenir de la pensée, de la conscience et de l’histoire.",
+    "kind": "concept",
+    "senses": [
+      "La négation pertinente est souvent une négation déterminée : elle produit un contenu nouveau en révélant la limite interne d’une forme donnée.",
+      "La négativité ne désigne donc pas simplement le pessimisme ou la destruction."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "Le négatif est le moteur du développement dialectique parce qu’une détermination finie porte en elle ses limites et son dépassement."
+      }
+    ],
+    "related": [
+      "Aufhebung",
+      "Dialectique",
+      "Médiation",
+      "Travail du négatif"
+    ]
+  },
+  {
+    "term": "Médiation",
+    "aliases": "médiation mediation",
+    "category": "Concept dialectique",
+    "lead": "La médiation désigne le processus par lequel une chose, une pensée ou une identité se constitue à travers des relations, des différences et des transformations, plutôt que comme donnée immédiate autosuffisante. Chez Hegel, le vrai se comprend comme résultat médiatisé.",
+    "kind": "concept",
+    "senses": [
+      "Opposer simplement immédiat et médiat est insuffisant : l’immédiat lui-même se révèle souvent être le résultat d’une médiation oubliée.",
+      "La médiation peut être logique, historique, sociale ou institutionnelle selon le contexte."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La conscience découvre que son rapport à elle-même et au monde passe par des médiations conceptuelles, pratiques et sociales."
+      }
+    ],
+    "related": [
+      "Immédiat",
+      "Dialectique",
+      "Négativité",
+      "Reconnaissance"
+    ]
+  },
+  {
+    "term": "En-soi",
+    "aliases": "en-soi en soi",
+    "category": "Concept dialectique / existentialiste",
+    "lead": "L’expression « en-soi » désigne ce qu’une réalité est indépendamment de sa manifestation consciente ou de son explicitation. Son sens varie fortement chez Hegel et Sartre, où elle prend des fonctions techniques différentes.",
+    "kind": "concept",
+    "senses": [
+      "Hegel : être « en soi » signifie souvent posséder implicitement une détermination qui doit encore devenir explicite ou « pour soi ».",
+      "Sartre : l’être-en-soi est le mode d’être massif des choses, opposé à la conscience ou pour-soi, qui se rapporte à ce qu’elle n’est pas."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "L’en-soi est fréquemment un moment encore implicite d’un développement."
+      },
+      {
+        "name": "Sartre",
+        "text": "L’en-soi caractérise la plénitude d’être des choses, sans distance réflexive à soi."
+      }
+    ],
+    "related": [
+      "Pour-soi",
+      "Dialectique",
+      "Conscience",
+      "Néantisation"
+    ]
+  },
+  {
+    "term": "Pour-soi",
+    "aliases": "pour-soi pour soi",
+    "category": "Concept dialectique / existentialiste",
+    "lead": "Le pour-soi désigne un mode d’être qui se rapporte à lui-même et se différencie de ce qui est simplement donné. Chez Hegel, il marque l’explicitation réflexive ; chez Sartre, il caractérise la conscience comme distance à soi et pouvoir de néantisation.",
+    "kind": "concept",
+    "senses": [
+      "Hegel : devenir pour soi, c’est rendre explicite une détermination qui n’était encore qu’en soi.",
+      "Sartre : le pour-soi n’est jamais une chose coïncidant pleinement avec elle-même ; il se projette vers des possibles."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "Le passage de l’en-soi au pour-soi est un moment de l’auto-développement de l’esprit."
+      },
+      {
+        "name": "Sartre",
+        "text": "Le pour-soi est la conscience comme manque, projet et liberté."
+      }
+    ],
+    "related": [
+      "En-soi",
+      "Néantisation",
+      "Projet fondamental",
+      "Conscience"
+    ]
+  },
+  {
+    "term": "Conscience malheureuse",
+    "aliases": "conscience malheureuse",
+    "category": "Concept hégélien / phénoménologie de l’esprit",
+    "lead": "La conscience malheureuse est une figure de la Phénoménologie de l’esprit dans laquelle la conscience se vit comme divisée entre un soi changeant, fini et imparfait et un absolu immuable situé au-delà d’elle.",
+    "kind": "concept",
+    "senses": [
+      "Cette scission se manifeste historiquement dans certaines formes de religiosité, mais la figure a une fonction logique dans le parcours de la conscience.",
+      "Elle ne désigne pas simplement un état psychologique de tristesse : c’est une structure de rapport à soi et à l’absolu."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La conscience malheureuse cherche à rejoindre l’immuable qu’elle oppose pourtant à sa propre finitude."
+      }
+    ],
+    "related": [
+      "Aliénation",
+      "Religion",
+      "Reconnaissance",
+      "Dialectique"
+    ]
+  },
+  {
+    "term": "Sittlichkeit",
+    "aliases": "sittlichkeit",
+    "category": "Concept hégélien / éthique politique",
+    "lead": "Sittlichkeit désigne la vie éthique ou éthicité : l’incarnation concrète de la liberté dans des institutions, pratiques et habitudes partagées, notamment la famille, la société civile et l’État.",
+    "kind": "concept",
+    "etymology": "Allemand Sittlichkeit, lié à Sitte, « coutume, mœurs ».",
+    "senses": [
+      "Elle se distingue de Moralität, la moralité centrée sur l’intention et la conscience subjective.",
+      "Hegel ne réduit pas l’éthique à l’obéissance aux coutumes existantes : les institutions doivent être comprises comme formes rationnelles de liberté."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La liberté devient effective lorsqu’elle prend forme dans des institutions où les individus peuvent se reconnaître comme libres."
+      }
+    ],
+    "related": [
+      "Moralität",
+      "Esprit objectif",
+      "Liberté",
+      "Institution"
+    ]
+  },
+  {
+    "term": "Moralität",
+    "aliases": "moralität moralitat",
+    "category": "Concept hégélien / éthique",
+    "lead": "Moralität désigne chez Hegel la moralité du point de vue subjectif : intention, responsabilité, conscience du bien et droit de la subjectivité à reconnaître comme sien ce qu’elle fait. Elle est nécessaire mais insuffisante sans la vie éthique institutionnelle, Sittlichkeit.",
+    "kind": "concept",
+    "etymology": "Allemand Moralität, « moralité ».",
+    "senses": [
+      "La moralité subjective permet d’évaluer l’intention et la responsabilité de l’agent.",
+      "Isolée des institutions et des pratiques communes, elle risque de devenir formalisme ou subjectivisme."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La moralité est un moment de la liberté moderne qui doit être intégré à l’éthicité concrète."
+      }
+    ],
+    "related": [
+      "Sittlichkeit",
+      "Devoir",
+      "Responsabilité",
+      "Esprit objectif"
+    ]
+  },
+  {
+    "term": "Bildung",
+    "aliases": "bildung",
+    "category": "Concept allemand / formation",
+    "lead": "Bildung désigne la formation de soi par laquelle un individu cultive ses capacités, acquiert un monde de significations et se transforme au contact de la culture et de l’altérité. Chez Hegel, elle implique souvent une sortie de l’immédiateté et un travail du négatif.",
+    "kind": "concept",
+    "etymology": "Allemand Bildung : « formation, culture, éducation de soi ».",
+    "senses": [
+      "La Bildung n’est pas seulement accumulation de connaissances ; elle transforme la manière de percevoir, juger et se rapporter à soi.",
+      "Le concept traverse l’idéalisme et l’humanisme allemands avec des accents différents."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La formation passe par l’aliénation de l’immédiat et la réappropriation médiatisée de soi dans la culture."
+      },
+      {
+        "name": "Wilhelm von Humboldt",
+        "text": "La Bildung est liée au développement harmonieux des forces humaines dans le rapport au monde."
+      }
+    ],
+    "related": [
+      "Culture",
+      "Éducation",
+      "Médiation",
+      "Travail du négatif"
+    ]
+  },
+  {
+    "term": "Travail du négatif",
+    "aliases": "travail du négatif travail du negatif",
+    "category": "Concept hégélien / dialectique",
+    "lead": "Le « travail du négatif » désigne le processus par lequel une forme de pensée ou de vie est transformée en affrontant ses contradictions, ses pertes et ses limites au lieu de les éviter. Le négatif produit ainsi du développement plutôt qu’une pure destruction.",
+    "kind": "concept",
+    "senses": [
+      "L’expression est associée à la préface de la Phénoménologie de l’esprit et à l’idée que l’esprit ne devient vrai qu’en soutenant la négativité.",
+      "Elle ne signifie pas qu’une contradiction logique quelconque produise automatiquement un progrès historique."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "La vérité se constitue par le séjour auprès du négatif et par son intégration dans une forme plus déterminée."
+      }
+    ],
+    "related": [
+      "Négativité",
+      "Aufhebung",
+      "Dialectique",
+      "Médiation"
+    ]
+  },
+  {
+    "term": "Ruse de la raison",
+    "aliases": "ruse de la raison",
+    "category": "Concept hégélien / philosophie de l’histoire",
+    "lead": "La ruse de la raison désigne l’idée que les passions et intérêts particuliers des individus peuvent contribuer, sans qu’ils le veuillent explicitement, à la réalisation de transformations historiques plus générales.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne suppose pas nécessairement qu’une intelligence consciente manipule les acteurs comme des marionnettes.",
+      "La notion appartient à la philosophie hégélienne de l’histoire et doit être distinguée d’une théorie empirique simple du complot ou de la providence."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "Les individus historiques poursuivent leurs fins particulières tandis que leurs actions participent à des transformations plus larges de la liberté objective."
+      }
+    ],
+    "related": [
+      "Histoire",
+      "Esprit objectif",
+      "Téléologie",
+      "Dialectique"
+    ]
+  },
+  {
+    "term": "Esprit objectif",
+    "aliases": "esprit objectif",
+    "category": "Concept hégélien / philosophie politique",
+    "lead": "L’esprit objectif est, chez Hegel, le domaine où la liberté prend une existence sociale et institutionnelle dans le droit, la moralité et la vie éthique. Il se distingue de l’esprit subjectif et de l’esprit absolu.",
+    "kind": "concept",
+    "senses": [
+      "Le droit donne une forme externe à la liberté ; la moralité introduit l’intention subjective ; la Sittlichkeit les articule dans des institutions concrètes.",
+      "« Esprit » ne signifie pas ici une substance surnaturelle séparée : il désigne aussi des structures de rationalité incarnées dans des pratiques sociales."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "Les Principes de la philosophie du droit développent l’esprit objectif comme effectuation institutionnelle de la liberté."
+      }
+    ],
+    "related": [
+      "Sittlichkeit",
+      "Moralität",
+      "Esprit absolu",
+      "Droit"
+    ]
+  },
+  {
+    "term": "Esprit absolu",
+    "aliases": "esprit absolu",
+    "category": "Concept hégélien / métaphysique",
+    "lead": "L’esprit absolu désigne chez Hegel le moment où l’esprit se rapporte à lui-même dans les formes les plus hautes de la culture : art, religion et philosophie. Dans la philosophie, l’absolu se saisit conceptuellement comme totalité médiatisée.",
+    "kind": "concept",
+    "senses": [
+      "Il ne faut pas identifier trop vite l’esprit absolu à un « esprit cosmique » personnel : le concept appartient à l’architecture systématique de l’idéalisme hégélien.",
+      "Art, religion et philosophie expriment un même contenu absolu sous des formes différentes : intuition sensible, représentation et concept."
+    ],
+    "authors": [
+      {
+        "name": "Hegel",
+        "text": "L’esprit absolu achève le système par le savoir de la liberté et de la totalité dans l’art, la religion et la philosophie."
+      }
+    ],
+    "related": [
+      "Esprit objectif",
+      "Absolu",
+      "Art",
+      "Religion",
+      "Philosophie"
+    ]
+  },
+  {
+    "term": "Fétichisme de la marchandise",
+    "aliases": "fétichisme de la marchandise fetichisme de la marchandise",
+    "category": "Concept marxien / critique de l’économie politique",
+    "lead": "Le fétichisme de la marchandise désigne le phénomène par lequel des rapports sociaux entre producteurs apparaissent comme des propriétés naturelles de choses et comme des rapports entre marchandises.",
+    "kind": "concept",
+    "senses": [
+      "La valeur semble appartenir spontanément à l’objet, alors qu’elle exprime un rapport social historiquement déterminé de production et d’échange.",
+      "Le concept ne signifie pas simplement « aimer excessivement les objets » : il analyse une forme objective de perception propre aux rapports marchands."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "Dans Le Capital, la forme marchandise masque le caractère social du travail en donnant aux produits une apparence d’autonomie."
+      }
+    ],
+    "related": [
+      "Marchandise",
+      "Valeur d’échange",
+      "Réification",
+      "Aliénation"
+    ]
+  },
+  {
+    "term": "Plus-value",
+    "aliases": "plus-value plus value",
+    "category": "Concept marxien / économie politique",
+    "lead": "La plus-value est, chez Marx, la différence entre la valeur produite par le travailleur et la valeur de sa force de travail versée sous forme de salaire. Elle constitue la source du profit capitaliste dans son analyse de la production.",
+    "kind": "concept",
+    "senses": [
+      "La plus-value absolue est accrue notamment en allongeant le temps de travail au-delà du temps nécessaire à la reproduction de la force de travail.",
+      "La plus-value relative est accrue en réduisant ce temps nécessaire grâce aux gains de productivité."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "L’exploitation capitaliste repose sur l’achat de la force de travail et l’appropriation de la valeur nouvelle produite au-delà de sa propre valeur."
+      }
+    ],
+    "related": [
+      "Valeur d’usage",
+      "Valeur d’échange",
+      "Mode de production",
+      "Capital"
+    ]
+  },
+  {
+    "term": "Valeur d’usage",
+    "aliases": "valeur d’usage valeur d usage",
+    "category": "Concept marxien / économie politique",
+    "lead": "La valeur d’usage est l’utilité concrète d’une chose, sa capacité à satisfaire un besoin déterminé. Dans l’analyse marxienne de la marchandise, elle se distingue de la valeur et de la valeur d’échange.",
+    "kind": "concept",
+    "senses": [
+      "Une chose peut avoir une grande valeur d’usage sans avoir de valeur d’échange si elle n’est pas produite comme marchandise.",
+      "La valeur d’usage est qualitative et dépend des propriétés et usages concrets de la chose."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "Toute marchandise doit avoir une valeur d’usage, mais sa forme sociale marchande ne se réduit pas à cette utilité."
+      }
+    ],
+    "related": [
+      "Valeur d’échange",
+      "Marchandise",
+      "Besoin",
+      "Travail"
+    ]
+  },
+  {
+    "term": "Valeur d’échange",
+    "aliases": "valeur d’échange valeur d echange",
+    "category": "Concept marxien / économie politique",
+    "lead": "La valeur d’échange est la proportion dans laquelle une marchandise s’échange contre d’autres. Chez Marx, elle est une forme d’apparition de la valeur et ne doit pas être confondue avec l’utilité concrète de la chose.",
+    "kind": "concept",
+    "senses": [
+      "Des valeurs d’usage qualitativement différentes deviennent comparables sur le marché à travers une forme sociale de valeur.",
+      "Dans Le Capital, Marx relie cette commensurabilité au travail abstrait socialement nécessaire."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "La valeur d’échange manifeste sous une forme quantitative un rapport social de production fondé sur le travail abstrait."
+      }
+    ],
+    "related": [
+      "Valeur d’usage",
+      "Fétichisme de la marchandise",
+      "Travail abstrait",
+      "Marchandise"
+    ]
+  },
+  {
+    "term": "Matérialisme historique",
+    "aliases": "matérialisme historique materialisme historique",
+    "category": "Concept marxiste / philosophie de l’histoire",
+    "lead": "Le matérialisme historique est le nom donné à l’analyse selon laquelle les formes politiques, juridiques et idéologiques doivent être comprises en relation avec les conditions matérielles de production et les rapports sociaux historiques.",
+    "kind": "concept",
+    "senses": [
+      "Il ne signifie pas que toute idée soit mécaniquement causée par l’économie ; les formulations de Marx insistent sur des rapports historiques complexes entre production, institutions et luttes sociales.",
+      "Le terme a été systématisé dans la tradition marxiste au-delà des usages exacts de Marx lui-même."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "L’histoire des sociétés est analysée à partir des formes de production, des rapports de classe et de leurs contradictions."
+      },
+      {
+        "name": "Engels",
+        "text": "Il contribue à formuler et diffuser l’expression de conception matérialiste de l’histoire."
+      }
+    ],
+    "related": [
+      "Mode de production",
+      "Infrastructure",
+      "Superstructure",
+      "Lutte des classes"
+    ]
+  },
+  {
+    "term": "Infrastructure",
+    "aliases": "infrastructure",
+    "category": "Concept marxiste / société",
+    "lead": "Dans le vocabulaire marxiste, l’infrastructure ou « base » désigne l’ensemble des rapports et forces de production qui organisent matériellement une société. Elle est mise en relation avec la superstructure juridique, politique et idéologique.",
+    "kind": "concept",
+    "senses": [
+      "La métaphore base/superstructure ne doit pas être comprise comme un déterminisme à sens unique simple : Marx décrit aussi des médiations et des effets réciproques historiques.",
+      "L’usage du terme varie entre les textes de Marx et les élaborations ultérieures du marxisme."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "La Préface de 1859 met en relation la structure économique de la société et les formes juridiques, politiques et idéologiques."
+      }
+    ],
+    "related": [
+      "Superstructure",
+      "Mode de production",
+      "Forces productives",
+      "Matérialisme historique"
+    ]
+  },
+  {
+    "term": "Superstructure",
+    "aliases": "superstructure",
+    "category": "Concept marxiste / société",
+    "lead": "La superstructure désigne, dans une métaphore marxiste classique, les formes juridiques, politiques et idéologiques qui s’élèvent sur une structure économique déterminée et avec lesquelles les individus prennent conscience des conflits sociaux.",
+    "kind": "concept",
+    "senses": [
+      "Elle comprend selon les usages le droit, l’État, les institutions politiques et certaines formes idéologiques.",
+      "Elle ne doit pas être réduite à un simple reflet passif de l’économie ; l’analyse historique marxiste peut reconnaître aux institutions une efficacité propre."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "La superstructure est historiquement liée aux rapports sociaux de production et aux conflits qui les traversent."
+      }
+    ],
+    "related": [
+      "Infrastructure",
+      "Idéologie",
+      "État",
+      "Matérialisme historique"
+    ]
+  },
+  {
+    "term": "Mode de production",
+    "aliases": "mode de production",
+    "category": "Concept marxiste / économie politique",
+    "lead": "Un mode de production est une configuration historique des forces productives et des rapports de production : techniques, organisation du travail, propriété et relations de classe. Il donne une structure générale à la manière dont une société produit et reproduit ses conditions d’existence.",
+    "kind": "concept",
+    "senses": [
+      "Les notions de modes de production antique, féodal ou capitaliste sont des outils de périodisation et d’analyse, non des cases identiques dans tous les textes de Marx.",
+      "Les transitions historiques résultent de conflits et contradictions et ne suivent pas nécessairement un schéma mécanique uniforme."
+    ],
+    "authors": [
+      {
+        "name": "Marx",
+        "text": "Le capitalisme est analysé comme un mode de production spécifique fondé notamment sur le salariat, la propriété privée des moyens de production et la valorisation du capital."
+      }
+    ],
+    "related": [
+      "Forces productives",
+      "Rapports de production",
+      "Matérialisme historique",
+      "Plus-value"
+    ]
+  },
+  {
+    "term": "Réification",
+    "aliases": "réification reification",
+    "category": "Concept critique / marxisme",
+    "lead": "La réification est le processus par lequel des relations humaines ou sociales prennent la forme de choses autonomes, fixes et apparemment naturelles. Chez Lukács, elle généralise l’analyse marxienne du fétichisme de la marchandise à l’expérience sociale sous le capitalisme.",
+    "kind": "concept",
+    "etymology": "Du latin res, « chose ».",
+    "senses": [
+      "La réification ne consiste pas seulement à « traiter quelqu’un comme un objet » au sens moral ; elle décrit aussi une forme structurelle d’objectivation et de rationalisation des rapports sociaux.",
+      "Des théories ultérieures, notamment chez Honneth, réinterprètent la réification en relation avec la reconnaissance."
+    ],
+    "authors": [
+      {
+        "name": "Lukács",
+        "text": "La généralisation de la forme marchandise transforme les rapports sociaux et la conscience en formes objectivées calculables."
+      }
+    ],
+    "related": [
+      "Fétichisme de la marchandise",
+      "Aliénation",
+      "Conscience de classe",
+      "Reconnaissance"
+    ]
+  },
+  {
+    "term": "Conscience de classe",
+    "aliases": "conscience de classe",
+    "category": "Concept marxiste / théorie sociale",
+    "lead": "La conscience de classe désigne la compréhension qu’un groupe social peut avoir de sa position dans les rapports de production, de ses intérêts et de sa capacité d’action collective. Le concept reçoit des formulations différentes chez Marx et dans le marxisme ultérieur.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne se réduit pas à l’appartenance statistique à une catégorie socio-économique : elle implique une manière de comprendre les relations sociales et les conflits.",
+      "Chez Lukács, elle devient un concept philosophique central lié à la totalité sociale et à la praxis."
+    ],
+    "authors": [
+      {
+        "name": "Lukács",
+        "text": "La conscience de classe du prolétariat est pensée comme possibilité d’une saisie de la totalité des rapports sociaux capitalistes."
+      }
+    ],
+    "related": [
+      "Classe sociale",
+      "Réification",
+      "Matérialisme historique",
+      "Praxis"
+    ]
+  },
+  {
+    "term": "Industrie culturelle",
+    "aliases": "industrie culturelle",
+    "category": "Concept de théorie critique",
+    "lead": "L’industrie culturelle désigne chez Adorno et Horkheimer l’organisation industrielle et standardisée de la production culturelle dans les sociétés capitalistes avancées. Elle tend selon eux à intégrer divertissement, publicité et conformisme social.",
+    "kind": "concept",
+    "senses": [
+      "Le concept ne signifie pas que toute culture populaire est sans valeur ni que les publics sont entièrement passifs ; il vise une structure économique et sociale de production de masse.",
+      "La critique porte sur la standardisation, la pseudo-individualisation et l’intégration du loisir aux logiques marchandes."
+    ],
+    "authors": [
+      {
+        "name": "Adorno et Horkheimer",
+        "text": "Dans Dialectique de la raison, ils analysent cinéma, radio et divertissement comme une « industrie culturelle » contribuant à la reproduction de rapports sociaux conformistes."
+      }
+    ],
+    "related": [
+      "Raison instrumentale",
+      "Culture",
+      "Marchandise",
+      "Critique sociale"
+    ]
+  },
+  {
+    "term": "Raison instrumentale",
+    "aliases": "raison instrumentale",
+    "category": "Concept de théorie critique",
+    "lead": "La raison instrumentale est une rationalité centrée sur l’efficacité des moyens relativement à des fins données, sans examen suffisant de la valeur de ces fins. La théorie critique en dénonce l’extension lorsqu’elle tend à coloniser la vie sociale et la pensée.",
+    "kind": "concept",
+    "senses": [
+      "Elle n’est pas identique à toute rationalité technique : le problème apparaît lorsque l’efficacité devient le critère dominant de rationalité.",
+      "Le concept peut être mis en rapport avec la domination de la nature et la bureaucratisation des rapports humains."
+    ],
+    "authors": [
+      {
+        "name": "Horkheimer",
+        "text": "L’Éclipse de la raison oppose notamment une rationalité instrumentale à une conception plus substantielle de la raison."
+      },
+      {
+        "name": "Adorno et Horkheimer",
+        "text": "Ils relient la rationalisation moderne à des formes de domination dans Dialectique de la raison."
+      }
+    ],
+    "related": [
+      "Technique",
+      "Industrie culturelle",
+      "Rationalité",
+      "Domination"
+    ]
+  },
+  {
+    "term": "Épochè",
+    "aliases": "épochè epoche",
+    "category": "Concept phénoménologique",
+    "lead": "L’épochè est la suspension méthodique de l’attitude naturelle : au lieu d’affirmer spontanément l’existence du monde tel qu’il est présupposé dans la vie ordinaire, le phénoménologue met entre parenthèses cette thèse pour décrire comment les choses se donnent à la conscience.",
+    "kind": "concept",
+    "etymology": "Du grec ἐποχή, « suspension, arrêt du jugement » ; le terme existait déjà dans le scepticisme antique mais reçoit chez Husserl un sens méthodique nouveau.",
+    "senses": [
+      "L’épochè husserlienne n’est ni négation de l’existence du monde ni doute cartésien provisoire : elle modifie le regard porté sur le rapport conscience-monde.",
+      "Elle ouvre la voie à la réduction phénoménologique."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "L’épochè suspend la thèse générale de l’attitude naturelle afin d’examiner les structures de la donation et de l’intentionnalité."
+      }
+    ],
+    "related": [
+      "Réduction phénoménologique",
+      "Phénoménologie",
+      "Intentionnalité",
+      "Attitude naturelle"
+    ]
+  },
+  {
+    "term": "Réduction phénoménologique",
+    "aliases": "réduction phénoménologique reduction phenomenologique",
+    "category": "Concept phénoménologique",
+    "lead": "La réduction phénoménologique est le mouvement méthodique qui, à partir de l’épochè, reconduit l’analyse vers les structures de l’expérience et de la conscience transcendantale par lesquelles le monde apparaît comme sens.",
+    "kind": "concept",
+    "etymology": "Du latin reducere, « reconduire ».",
+    "senses": [
+      "Elle ne réduit pas le phénomène à une explication psychologique ou biologique ; elle cherche les conditions de sa manifestation comme phénomène.",
+      "La phénoménologie husserlienne connaît plusieurs formulations de la réduction, ce qui interdit de la figer en une procédure unique et simple."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "La réduction vise le champ transcendantal où peuvent être décrits constitution, intentionnalité et modes de donation."
+      }
+    ],
+    "related": [
+      "Épochè",
+      "Réduction eidétique",
+      "Constitution",
+      "Transcendantal"
+    ]
+  },
+  {
+    "term": "Réduction eidétique",
+    "aliases": "réduction eidétique reduction eidetique",
+    "category": "Concept phénoménologique",
+    "lead": "La réduction eidétique est la démarche par laquelle on cherche l’essence ou structure invariante d’un phénomène en faisant varier imaginativement ses traits et en déterminant ce qui ne peut être supprimé sans que le phénomène cesse d’être ce qu’il est.",
+    "kind": "concept",
+    "senses": [
+      "Elle s’appuie sur la variation eidétique plutôt que sur une induction statistique à partir d’un grand nombre de cas.",
+      "Elle vise des structures de possibilité de l’expérience, non une essence séparée au sens platonicien simple."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "La variation imaginative permet de dégager l’eidos d’un type d’expérience à partir de ses modifications possibles."
+      }
+    ],
+    "related": [
+      "Eidos",
+      "Phénoménologie",
+      "Réduction phénoménologique",
+      "Essence"
+    ]
+  },
+  {
+    "term": "Noèse",
+    "aliases": "noèse noese",
+    "category": "Concept phénoménologique",
+    "lead": "La noèse désigne le côté actif ou vécu d’un acte intentionnel : percevoir, juger, imaginer, se souvenir, vouloir, etc., considéré selon sa manière de viser quelque chose. Elle est corrélative du noème.",
+    "kind": "concept",
+    "etymology": "Du grec noèsis, « pensée, intellection ».",
+    "senses": [
+      "Une même chose peut être visée sous différentes modalités noétiques : perçue, imaginée, remémorée ou jugée.",
+      "Noèse et noème ne sont pas deux objets indépendants mais deux pôles corrélatifs de l’analyse intentionnelle."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "L’analyse noético-noématique décrit la corrélation entre les vécus intentionnels et le sens de l’objet tel qu’il est visé."
+      }
+    ],
+    "related": [
+      "Noème",
+      "Intentionnalité",
+      "Conscience",
+      "Phénoménologie"
+    ]
+  },
+  {
+    "term": "Noème",
+    "aliases": "noème noeme",
+    "category": "Concept phénoménologique",
+    "lead": "Le noème est, chez Husserl, le corrélat intentionnel de l’acte : l’objet tel qu’il est visé ou le sens selon lequel il apparaît dans une expérience. Il ne faut pas l’identifier sans précaution à une image mentale située dans la tête.",
+    "kind": "concept",
+    "etymology": "Du grec noèma, « ce qui est pensé ».",
+    "senses": [
+      "Le noème permet d’analyser comment un même objet peut être donné sous des profils, significations et modalités différentes tout en étant reconnu comme le même.",
+      "Son interprétation exacte fait l’objet de débats dans les études husserliennes : sens, objet-comme-visé, structure de corrélation, etc."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Le noème appartient à l’analyse du sens intentionnel et de l’objet tel qu’il est donné à travers un acte."
+      }
+    ],
+    "related": [
+      "Noèse",
+      "Intentionnalité",
+      "Horizon",
+      "Abschattung"
+    ]
+  },
+  {
+    "term": "Lebenswelt",
+    "aliases": "lebenswelt",
+    "category": "Concept phénoménologique",
+    "lead": "La Lebenswelt, ou monde de la vie, est le monde préthéorique de l’expérience ordinaire dans lequel nous sommes déjà engagés avant les abstractions scientifiques. Chez le Husserl tardif, il constitue le sol de sens que les sciences présupposent tout en tendant à l’oublier.",
+    "kind": "concept",
+    "etymology": "Allemand Lebenswelt, « monde de la vie ».",
+    "senses": [
+      "Le monde de la vie n’est pas un monde purement subjectif opposé à la réalité : il est le monde commun tel qu’il est vécu et pratiqué.",
+      "La critique husserlienne des sciences vise leur oubli de ce fondement de sens, non leur invalidité comme sciences."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Dans La Crise des sciences européennes, il analyse la Lebenswelt comme sol originaire de l’objectivation scientifique."
+      }
+    ],
+    "related": [
+      "Monde",
+      "Expérience",
+      "Phénoménologie",
+      "Intersubjectivité"
+    ]
+  },
+  {
+    "term": "Horizon",
+    "aliases": "horizon",
+    "category": "Concept phénoménologique",
+    "lead": "En phénoménologie, un horizon est l’ensemble des possibilités, attentes et significations implicitement co-présentes qui entourent ce qui est actuellement donné. Toute perception excède ainsi ce qui est directement visible à l’instant.",
+    "kind": "concept",
+    "senses": [
+      "Un objet possède un horizon interne : ses faces cachées sont anticipées comme accessibles par d’autres perspectives.",
+      "Toute expérience possède aussi un horizon externe : le monde environnant et les relations possibles avec d’autres objets."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "La structure d’horizon explique comment l’objet est donné comme plus que le profil sensible actuellement présent."
+      },
+      {
+        "name": "Gadamer",
+        "text": "L’idée d’horizon est reprise herméneutiquement pour penser la situation historique de la compréhension."
+      }
+    ],
+    "related": [
+      "Abschattung",
+      "Noème",
+      "Fusion des horizons",
+      "Monde"
+    ]
+  },
+  {
+    "term": "Constitution",
+    "aliases": "constitution",
+    "category": "Concept phénoménologique",
+    "lead": "La constitution désigne, chez Husserl, le processus par lequel un objet, un monde ou un sens se manifeste comme unité identifiable à travers une multiplicité d’expériences. Elle ne signifie pas nécessairement que la conscience « fabrique » arbitrairement la réalité.",
+    "kind": "concept",
+    "senses": [
+      "Constituer un objet, c’est rendre intelligible la manière dont ses profils successifs, ses horizons et ses validités sont synthétisés comme le même objet.",
+      "La constitution peut être perceptive, temporelle, intersubjective ou culturelle selon le niveau d’analyse."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "L’analyse constitutive décrit les opérations et synthèses par lesquelles quelque chose peut être donné comme objet stable et sensé."
+      }
+    ],
+    "related": [
+      "Synthèse passive",
+      "Noème",
+      "Intersubjectivité",
+      "Réduction phénoménologique"
+    ]
+  },
+  {
+    "term": "Donation",
+    "aliases": "donation",
+    "category": "Concept phénoménologique",
+    "lead": "La donation désigne la manière dont quelque chose se donne ou apparaît à l’expérience. Le concept permet de déplacer la question de « ce qu’est l’objet en soi » vers l’analyse des modes selon lesquels il est présent, absent, esquissé, signifié ou intuitivement rempli.",
+    "kind": "concept",
+    "senses": [
+      "Chez Husserl, les objets peuvent être donnés avec différents degrés d’évidence et d’intuition.",
+      "Dans la phénoménologie française contemporaine, notamment chez Jean-Luc Marion, la donation devient un thème métaphysique et phénoménologique plus autonome."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "L’évidence dépend du mode de donation de la chose elle-même."
+      },
+      {
+        "name": "Jean-Luc Marion",
+        "text": "Il radicalise la donation comme principe phénoménologique et développe la notion de phénomène saturé."
+      }
+    ],
+    "related": [
+      "Phénomène",
+      "Évidence apodictique",
+      "Intuition",
+      "Noème"
+    ]
+  },
+  {
+    "term": "Évidence apodictique",
+    "aliases": "évidence apodictique evidence apodictique",
+    "category": "Concept phénoménologique / connaissance",
+    "lead": "Une évidence apodictique est une évidence dont la validité se présente comme absolument indubitable ou comme excluant la possibilité de son non-être dans l’expérience concernée. Husserl cherche à préciser ce degré d’évidence sans l’assimiler à toute impression de certitude subjective.",
+    "kind": "concept",
+    "etymology": "Du grec apodeiktikos, « démonstratif, nécessaire ».",
+    "senses": [
+      "Toutes les évidences ne sont pas apodictiques : une perception extérieure peut être évidente tout en restant révisable.",
+      "Le statut de l’ego transcendantal et de certaines évidences réflexives est au cœur du projet fondationnel husserlien."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Il distingue plusieurs modalités et degrés d’évidence afin de penser la justification des connaissances phénoménologiques."
+      }
+    ],
+    "related": [
+      "Évidence",
+      "Certitude",
+      "Réduction phénoménologique",
+      "Apodictique"
+    ]
+  },
+  {
+    "term": "Intuition catégoriale",
+    "aliases": "intuition catégoriale intuition categoriale",
+    "category": "Concept phénoménologique",
+    "lead": "L’intuition catégoriale est, chez Husserl, la possibilité que des structures non simplement sensibles — par exemple un état de choses, une relation ou la forme « est » — soient données intuitivement sur la base d’actes perceptifs.",
+    "kind": "concept",
+    "senses": [
+      "Elle élargit le concept d’intuition au-delà de la simple réception d’un contenu sensoriel.",
+      "Heidegger reconnaîtra l’importance de cette découverte husserlienne pour la question de l’être."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Les Recherches logiques analysent des actes dans lesquels des formes catégoriales sont remplies intuitivement et non seulement signifiées."
+      }
+    ],
+    "related": [
+      "Intuition",
+      "Jugement",
+      "Phénoménologie",
+      "Être"
+    ]
+  },
+  {
+    "term": "Chair",
+    "aliases": "chair",
+    "category": "Concept phénoménologique",
+    "lead": "La chair désigne le corps tel qu’il est vécu de l’intérieur comme puissance de sentir, se mouvoir et être affecté, par opposition au corps considéré seulement comme objet physique. En français phénoménologique, le terme traduit notamment Leib chez Husserl et reçoit une élaboration propre chez Merleau-Ponty.",
+    "kind": "concept",
+    "senses": [
+      "La main qui touche peut aussi être touchée : cette réversibilité révèle une corporéité qui n’est pas simplement objet parmi les objets.",
+      "Chez Merleau-Ponty, la « chair » s’élargit dans les derniers textes à une notion ontologique de réversibilité entre voyant et visible."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Le Leib est le corps propre vécu, centre d’orientation et siège des sensations kinesthésiques."
+      },
+      {
+        "name": "Merleau-Ponty",
+        "text": "La chair exprime l’entrelacement du corps sensible et du monde sensible."
+      }
+    ],
+    "related": [
+      "Corps propre",
+      "Perception",
+      "Merleau-Ponty",
+      "Intersubjectivité"
+    ]
+  },
+  {
+    "term": "Corps propre",
+    "aliases": "corps propre",
+    "category": "Concept phénoménologique",
+    "lead": "Le corps propre est le corps vécu comme « mien », centre de perception et puissance d’action, avant d’être un objet anatomique observable de l’extérieur. Il constitue notre manière incarnée d’avoir un monde.",
+    "kind": "concept",
+    "senses": [
+      "Il ne se situe pas dans l’espace exactement comme une chose extérieure : il fournit le « ici » à partir duquel les directions et distances prennent sens.",
+      "Ses habitudes motrices peuvent fonctionner comme un savoir pratique pré-réflexif."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Le corps propre est le point zéro d’orientation du monde spatial."
+      },
+      {
+        "name": "Merleau-Ponty",
+        "text": "La motricité corporelle manifeste une compréhension pratique du monde antérieure à la représentation explicite."
+      }
+    ],
+    "related": [
+      "Chair",
+      "Cognition incarnée",
+      "Perception",
+      "Monde"
+    ]
+  },
+  {
+    "term": "Intersubjectivité",
+    "aliases": "intersubjectivité intersubjectivite",
+    "category": "Concept phénoménologique / social",
+    "lead": "L’intersubjectivité désigne la relation entre sujets et la manière dont un monde peut être vécu comme commun, objectif et partageable. Elle constitue un problème majeur pour toute philosophie qui part de l’expérience à la première personne.",
+    "kind": "concept",
+    "senses": [
+      "Chez Husserl, l’expérience d’autrui comme alter ego et la synthèse de perspectives contribuent à la constitution d’un monde objectif commun.",
+      "Le concept dépasse la simple communication explicite : il concerne aussi les structures tacites de co-présence et de socialité."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Les Méditations cartésiennes analysent l’accès à autrui et la constitution intersubjective du monde objectif."
+      },
+      {
+        "name": "Merleau-Ponty",
+        "text": "L’incarnation et le monde partagé rendent la relation à autrui plus originaire qu’une inférence à partir d’un corps-objet."
+      }
+    ],
+    "related": [
+      "Autrui",
+      "Lebenswelt",
+      "Constitution",
+      "Reconnaissance"
+    ]
+  },
+  {
+    "term": "Rétention",
+    "aliases": "rétention retention",
+    "category": "Concept phénoménologique / temps",
+    "lead": "La rétention est, chez Husserl, la conscience immédiate du « tout juste passé » qui demeure comme phase du présent vivant. Elle permet par exemple d’entendre une mélodie comme unité sans devoir se souvenir activement de chaque note.",
+    "kind": "concept",
+    "senses": [
+      "La rétention n’est pas un souvenir volontaire ou une représentation ultérieure du passé : elle appartient à la structure même de l’expérience temporelle en cours.",
+      "Elle est corrélative de la protention, anticipation passive de ce qui est sur le point de venir."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "L’analyse de la conscience interne du temps distingue impression originaire, rétention et protention."
+      }
+    ],
+    "related": [
+      "Protention",
+      "Temps",
+      "Mémoire",
+      "Synthèse passive"
+    ]
+  },
+  {
+    "term": "Protention",
+    "aliases": "protention",
+    "category": "Concept phénoménologique / temps",
+    "lead": "La protention est l’anticipation passive et immédiate du moment à venir qui appartient à la structure du présent vivant. Elle oriente l’expérience vers ce qui est attendu sans constituer nécessairement une prédiction consciente.",
+    "kind": "concept",
+    "senses": [
+      "Dans l’écoute d’une mélodie, chaque note présente ouvre une attente de continuation ; une rupture inattendue est ressentie comme surprise parce qu’elle déçoit une protention.",
+      "Elle se distingue d’un projet explicite ou d’une imagination du futur."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Rétentions et protentions forment avec l’impression actuelle la structure temporelle de l’expérience continue."
+      }
+    ],
+    "related": [
+      "Rétention",
+      "Temps",
+      "Attente",
+      "Synthèse passive"
+    ]
+  },
+  {
+    "term": "Synthèse passive",
+    "aliases": "synthèse passive synthese passive",
+    "category": "Concept phénoménologique",
+    "lead": "La synthèse passive désigne les unifications et associations qui structurent l’expérience avant toute décision ou activité réflexive explicite du sujet. Des ressemblances, continuités, habitudes et anticipations s’organisent ainsi pré-réflexivement.",
+    "kind": "concept",
+    "senses": [
+      "Elle complète les analyses d’actes intentionnels actifs en montrant qu’une grande partie du sens se constitue sans opération volontaire.",
+      "La temporalité, l’association et la formation d’habitudes perceptives sont des terrains privilégiés de cette analyse."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "Ses analyses génétiques décrivent les synthèses passives qui préparent et motivent les prises de position actives de la conscience."
+      }
+    ],
+    "related": [
+      "Constitution",
+      "Rétention",
+      "Protention",
+      "Habitude"
+    ]
+  },
+  {
+    "term": "Abschattung",
+    "aliases": "abschattung",
+    "category": "Concept phénoménologique / perception",
+    "lead": "Abschattung désigne l’esquisse, le profil ou l’adumbration sous lequel un objet spatial est donné à un moment déterminé. Un cube n’est jamais perçu d’un seul coup dans toutes ses faces, mais à travers une série d’esquisses qui renvoient au même objet.",
+    "kind": "concept",
+    "etymology": "Allemand Abschattung, « esquisse, profil, nuance ».",
+    "senses": [
+      "La transcendance perceptive de l’objet consiste précisément dans le fait qu’il excède chaque profil actuellement donné.",
+      "La synthèse des esquisses est liée aux horizons d’exploration possibles du corps percevant."
+    ],
+    "authors": [
+      {
+        "name": "Husserl",
+        "text": "La perception d’une chose est essentiellement perspectivale : l’objet se donne lui-même, mais toujours par profils incomplets."
+      }
+    ],
+    "related": [
+      "Horizon",
+      "Perception",
+      "Noème",
+      "Corps propre"
+    ]
+  },
+  {
+    "term": "Dasein",
+    "aliases": "dasein",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "Dasein est le terme par lequel Heidegger désigne l’être que nous sommes nous-mêmes, caractérisé par le fait qu’il y va pour lui de son propre être et qu’il possède une compréhension préontologique de l’être. Le traduire simplement par « homme » perd une partie de sa fonction conceptuelle.",
+    "kind": "concept",
+    "etymology": "Allemand Dasein, littéralement « être-là », terme courant que Heidegger réélabore techniquement.",
+    "senses": [
+      "Le Dasein n’est pas une substance mentale enfermée dans un corps : son mode fondamental est l’être-au-monde.",
+      "L’analyse existentiale décrit des structures comme le souci, la facticité, l’être-avec, le On et l’être-pour-la-mort."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Être et Temps analyse le Dasein afin de rouvrir la question du sens de l’être."
+      }
+    ],
+    "related": [
+      "Être-au-monde",
+      "Souci",
+      "Das Man",
+      "Être-pour-la-mort"
+    ]
+  },
+  {
+    "term": "Être-au-monde",
+    "aliases": "être-au-monde etre au monde",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "L’être-au-monde désigne l’unité originaire du Dasein et de son monde pratique. Heidegger refuse ainsi de partir d’un sujet intérieur qui devrait ensuite construire un pont vers des objets extérieurs.",
+    "kind": "concept",
+    "senses": [
+      "Le monde est d’abord un réseau de significations, d’usages et de renvois dans lequel nous sommes engagés avant de le contempler théoriquement.",
+      "La spatialité et la connaissance objective sont dérivées d’un rapport plus originaire de familiarité pratique."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Le Dasein est toujours déjà engagé dans un monde de significations et de pratiques ; sujet et objet ne constituent pas le point de départ le plus originaire."
+      }
+    ],
+    "related": [
+      "Dasein",
+      "Monde",
+      "Souci",
+      "Facticité"
+    ]
+  },
+  {
+    "term": "Souci",
+    "aliases": "souci",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "Le souci, Sorge, est la structure fondamentale de l’être du Dasein : être déjà jeté dans un monde, se projeter vers des possibilités et être engagé auprès des choses et des autres. Il ne désigne pas seulement l’inquiétude psychologique.",
+    "kind": "concept",
+    "etymology": "Allemand Sorge, « souci, soin, préoccupation ».",
+    "senses": [
+      "Heidegger formule le souci comme unité de l’existentialité, de la facticité et de la déchéance.",
+      "Le concept organise l’analyse du temps, du projet et de la finitude."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Le souci exprime l’unité structurelle d’un être qui se devance, est déjà au monde et se trouve auprès des étants."
+      }
+    ],
+    "related": [
+      "Dasein",
+      "Facticité",
+      "Projet",
+      "Être-pour-la-mort"
+    ]
+  },
+  {
+    "term": "Être-pour-la-mort",
+    "aliases": "être-pour-la-mort etre pour la mort",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "L’être-pour-la-mort est le rapport du Dasein à sa possibilité la plus propre, certaine et indépassable : sa propre finitude. L’anticipation authentique de la mort individualise l’existence sans fournir une doctrine morbide du suicide ou du décès biologique.",
+    "kind": "concept",
+    "senses": [
+      "La mort n’est pas seulement un événement futur ; elle structure dès maintenant l’horizon des possibilités parce qu’aucun autre ne peut mourir à ma place au sens existentiel.",
+      "Dans le mode quotidien, le « On » neutralise cette singularité en disant simplement que « l’on meurt »."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "L’anticipation de la mort peut arracher le Dasein à la dispersion quotidienne et révéler la finitude de ses possibilités."
+      }
+    ],
+    "related": [
+      "Dasein",
+      "Authenticité",
+      "Das Man",
+      "Finitude"
+    ]
+  },
+  {
+    "term": "Facticité",
+    "aliases": "facticité facticite",
+    "category": "Concept existential / phénoménologique",
+    "lead": "La facticité désigne le caractère d’une existence toujours déjà située dans des conditions qu’elle n’a pas choisies : corps, époque, naissance, langue, passé, monde social. Elle s’oppose à l’idée d’une liberté créant ex nihilo toutes ses déterminations.",
+    "kind": "concept",
+    "senses": [
+      "Chez Heidegger, la facticité est liée à l’être-jeté du Dasein.",
+      "Chez Sartre, elle désigne les données auxquelles la liberté doit se rapporter sans jamais pouvoir les supprimer par simple décision."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "La facticité exprime le fait que le Dasein se trouve toujours déjà livré à une situation."
+      },
+      {
+        "name": "Sartre",
+        "text": "La liberté est toujours liberté en situation, en rapport avec une facticité qui la conditionne sans la déterminer entièrement."
+      }
+    ],
+    "related": [
+      "Geworfenheit",
+      "Situation",
+      "Liberté",
+      "Dasein"
+    ]
+  },
+  {
+    "term": "Geworfenheit",
+    "aliases": "geworfenheit",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "Geworfenheit, l’« être-jeté », désigne le fait que le Dasein découvre son existence comme déjà commencée dans un monde, une histoire et des possibilités qu’il n’a pas choisis. Ce donné n’abolit pas le projet mais en constitue la condition.",
+    "kind": "concept",
+    "etymology": "Allemand geworfen, « jeté ».",
+    "senses": [
+      "L’être-jeté exprime la facticité : je n’ai pas choisi d’exister ni le point de départ à partir duquel j’ai à être.",
+      "Il s’articule au projet : l’existence est à la fois reçue comme situation et ouverte à des possibilités."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Le Dasein est jeté dans un monde qu’il n’a pas fondé tout en ayant à se comprendre à partir de possibilités."
+      }
+    ],
+    "related": [
+      "Facticité",
+      "Dasein",
+      "Projet",
+      "Souci"
+    ]
+  },
+  {
+    "term": "Authenticité",
+    "aliases": "authenticité authenticite",
+    "category": "Concept existential / Heidegger",
+    "lead": "L’authenticité désigne chez Heidegger un mode d’existence dans lequel le Dasein assume comme siennes ses possibilités finies au lieu de s’en remettre entièrement aux normes impersonnelles du « On ». Elle n’est pas une supériorité morale ou une personnalité « vraie » cachée au fond de soi.",
+    "kind": "concept",
+    "senses": [
+      "L’authenticité n’abolit pas la vie quotidienne ni la coexistence avec autrui ; elle modifie la manière de se rapporter aux possibilités héritées.",
+      "Elle est liée à l’appel de la conscience, à la résolution et à l’être-pour-la-mort."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "L’existence propre assume sa finitude et choisit ses possibilités au lieu de se laisser entièrement dicter ce qui « se fait »."
+      }
+    ],
+    "related": [
+      "Inauthenticité",
+      "Das Man",
+      "Être-pour-la-mort",
+      "Résolution"
+    ]
+  },
+  {
+    "term": "Inauthenticité",
+    "aliases": "inauthenticité inauthenticite",
+    "category": "Concept existential / Heidegger",
+    "lead": "L’inauthenticité désigne chez Heidegger le mode quotidien où le Dasein se comprend principalement à partir des normes, attentes et possibilités anonymes du « On ». Elle n’est pas un péché ou une défaillance morale exceptionnelle, mais une possibilité structurelle ordinaire.",
+    "kind": "concept",
+    "senses": [
+      "L’existence inauthentique tend à niveler les possibilités : on pense, on juge et on agit comme « on » le fait.",
+      "Authenticité et inauthenticité ne sont pas deux espèces d’humains ; ce sont des modes possibles du même Dasein."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "La quotidienneté est dominée par le On, la curiosité, le bavardage et l’équivoque, sans être pour autant une simple faute morale."
+      }
+    ],
+    "related": [
+      "Authenticité",
+      "Das Man",
+      "Dasein",
+      "Quotidienneté"
+    ]
+  },
+  {
+    "term": "Das Man",
+    "aliases": "das man",
+    "category": "Concept heideggérien / social",
+    "lead": "Das Man, traduit par « le On », désigne le mode impersonnel de la vie quotidienne où les manières de juger, de sentir et d’agir sont réglées par ce qui se fait et se dit anonymement.",
+    "kind": "concept",
+    "etymology": "Allemand man, pronom impersonnel équivalent en partie au français « on ».",
+    "senses": [
+      "Le On facilite la vie commune en fournissant des normes et des pratiques partagées, mais il peut aussi décharger chacun de sa responsabilité propre.",
+      "Heidegger ne désigne pas une classe sociale ou un groupe précis : le On est une structure de la coexistence quotidienne."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Dans le On, chacun est l’autre et personne n’est pleinement soi-même comme source déterminée de ses choix."
+      }
+    ],
+    "related": [
+      "Authenticité",
+      "Inauthenticité",
+      "Dasein",
+      "Conformisme"
+    ]
+  },
+  {
+    "term": "Différence ontologique",
+    "aliases": "différence ontologique difference ontologique",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "La différence ontologique est la distinction entre l’être et les étants : entre le fait ou sens d’être et les choses qui sont. Heidegger considère que la métaphysique occidentale tend souvent à oublier cette différence en traitant l’être comme s’il était lui-même un étant suprême.",
+    "kind": "concept",
+    "senses": [
+      "La question « qu’est-ce que l’être ? » ne peut pas recevoir simplement le nom d’une chose particulière.",
+      "Cette différence structure le projet de destruction ou déconstruction de l’histoire de l’ontologie."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "La question du sens de l’être exige de ne pas confondre l’être avec un étant, même le plus élevé."
+      }
+    ],
+    "related": [
+      "Être",
+      "Étant",
+      "Ontologie",
+      "Ontothéologie"
+    ]
+  },
+  {
+    "term": "Ontothéologie",
+    "aliases": "ontothéologie ontotheologie",
+    "category": "Concept critique de la métaphysique",
+    "lead": "L’ontothéologie désigne, dans la critique heideggérienne, une structure de la métaphysique qui pense l’être des étants en relation avec un fondement suprême ou un étant premier, réunissant ainsi ontologie et théologie philosophique.",
+    "kind": "concept",
+    "senses": [
+      "Le terme ne signifie pas que toute théologie soit identique ni que toute pensée de Dieu soit automatiquement ontothéologique.",
+      "Heidegger vise la tendance métaphysique à expliquer la totalité de l’étant par une cause ou fondement ultime tout en oubliant la question de l’être."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Il analyse la constitution onto-théologique de la métaphysique comme articulation entre généralité de l’être et fondement suprême de l’étant."
+      }
+    ],
+    "related": [
+      "Différence ontologique",
+      "Métaphysique",
+      "Théologie",
+      "Fondement"
+    ]
+  },
+  {
+    "term": "Ereignis",
+    "aliases": "ereignis",
+    "category": "Concept heideggérien / ontologie",
+    "lead": "Ereignis est un terme tardif de Heidegger souvent traduit par « événement appropriant » ou « avenance ». Il désigne la co-appartenance de l’être et de l’humain dans l’événement où une ouverture de sens se donne, plutôt qu’un événement factuel datable.",
+    "kind": "concept",
+    "etymology": "Allemand Ereignis signifie couramment « événement » ; Heidegger joue aussi sur eignen, « approprier, appartenir en propre ».",
+    "senses": [
+      "Le terme appartient surtout aux écrits postérieurs à Être et Temps et ne doit pas être réduit à une cause métaphysique supplémentaire.",
+      "Il vise une pensée de l’être comme événement de dévoilement plutôt que comme présence stable d’un fondement."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Dans les écrits tardifs, l’Ereignis nomme l’événement de co-appartenance par lequel homme et être s’approprient mutuellement dans une ouverture."
+      }
+    ],
+    "related": [
+      "Dévoilement",
+      "Différence ontologique",
+      "Être",
+      "Événement"
+    ]
+  },
+  {
+    "term": "Dévoilement",
+    "aliases": "dévoilement devoilement",
+    "category": "Concept heideggérien / vérité",
+    "lead": "Le dévoilement désigne la vérité comprise comme ouverture ou sortie du retrait avant sa réduction à la simple conformité d’un énoncé avec un fait. Heidegger rapproche cette idée du grec alètheia, « non-occultation ».",
+    "kind": "concept",
+    "senses": [
+      "La vérité propositionnelle n’est pas niée mais reconduite à une condition plus originaire : il faut qu’un étant soit déjà découvert pour qu’un énoncé puisse être vrai ou faux à son sujet.",
+      "Tout dévoilement s’accompagne aussi de retrait et de dissimulation ; l’ouverture n’est jamais transparence totale."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Il interprète alètheia comme non-retrait afin de repenser l’histoire occidentale du concept de vérité."
+      }
+    ],
+    "related": [
+      "Vérité",
+      "Alètheia",
+      "Ereignis",
+      "Phénomène"
+    ]
+  },
+  {
+    "term": "Néantisation",
+    "aliases": "néantisation neantisation",
+    "category": "Concept sartrien / conscience",
+    "lead": "La néantisation est, chez Sartre, le pouvoir de la conscience d’introduire du négatif dans l’être en se distanciant de ce qui est donné : dire non, viser une absence, se projeter vers ce qui n’est pas encore.",
+    "kind": "concept",
+    "senses": [
+      "Le néant n’est pas pour Sartre une substance indépendante ; il apparaît par la structure du pour-soi qui n’est jamais coïncidence pleine avec lui-même.",
+      "Cette distance rend possible liberté, projet, interrogation et mauvaise foi."
+    ],
+    "authors": [
+      {
+        "name": "Sartre",
+        "text": "La conscience fait surgir le néant au sein de l’être en se rapportant à ce qui manque, ce qui n’est plus ou ce qui pourrait être autrement."
+      }
+    ],
+    "related": [
+      "Pour-soi",
+      "Liberté",
+      "Néant",
+      "Projet fondamental"
+    ]
+  },
+  {
+    "term": "Projet fondamental",
+    "aliases": "projet fondamental",
+    "category": "Concept sartrien / existentialisme",
+    "lead": "Le projet fondamental désigne chez Sartre l’orientation globale par laquelle une existence se choisit et organise le sens de ses conduites particulières. Il ne s’agit pas nécessairement d’un plan explicitement formulé ni d’une décision ponctuelle consciente.",
+    "kind": "concept",
+    "senses": [
+      "La psychanalyse existentielle cherche à reconstruire l’unité d’une vie à partir de ce choix de soi à travers ses conduites concrètes.",
+      "Le projet reste libre et révisable, mais il se déploie toujours dans une facticité et une situation déterminées."
+    ],
+    "authors": [
+      {
+        "name": "Sartre",
+        "text": "Les conduites particulières expriment un choix plus global de la manière dont le pour-soi cherche à être."
+      }
+    ],
+    "related": [
+      "Pour-soi",
+      "Liberté",
+      "Facticité",
+      "Psychanalyse existentielle"
+    ]
+  },
+  {
+    "term": "Visage",
+    "aliases": "visage",
+    "category": "Concept lévinassien / éthique",
+    "lead": "Le visage désigne chez Lévinas la manifestation d’autrui en tant qu’elle résiste à ma réduction de l’autre à un objet de connaissance ou de possession et m’adresse une exigence éthique. Il ne s’agit pas seulement des traits physiques du visage.",
+    "kind": "concept",
+    "senses": [
+      "Le visage signifie la vulnérabilité et la hauteur d’autrui, notamment à travers l’interdit de tuer.",
+      "La relation éthique à autrui est asymétrique : ma responsabilité ne dépend pas d’abord d’un contrat de réciprocité."
+    ],
+    "authors": [
+      {
+        "name": "Lévinas",
+        "text": "Le visage d’autrui met en question ma liberté spontanée et m’appelle à une responsabilité qui précède la connaissance totalisante."
+      }
+    ],
+    "related": [
+      "Autrui",
+      "Responsabilité",
+      "Altérité",
+      "Éthique"
+    ]
+  },
+  {
+    "term": "Il y a",
+    "aliases": "il y a",
+    "category": "Concept lévinassien / existence",
+    "lead": "L’« il y a » désigne chez Lévinas l’existence impersonnelle, anonyme et oppressante qui demeure lorsque les étants déterminés et les repères familiers s’effacent. Ce n’est pas l’affirmation neutre qu’« il existe quelque chose ».",
+    "kind": "concept",
+    "senses": [
+      "L’expérience de l’insomnie sert à décrire cette impossibilité d’échapper à un exister sans sujet clairement constitué.",
+      "L’hypostase du sujet puis la relation à autrui sont pensées comme des sorties partielles de cet anonymat de l’être."
+    ],
+    "authors": [
+      {
+        "name": "Lévinas",
+        "text": "De l’existence à l’existant décrit l’il y a comme bruissement impersonnel de l’existence avant la position d’un sujet."
+      }
+    ],
+    "related": [
+      "Existence",
+      "Hypostase",
+      "Visage",
+      "Autrui"
+    ]
+  },
+  {
+    "term": "Élan vital",
+    "aliases": "élan vital elan vital",
+    "category": "Concept bergsonien / philosophie de la vie",
+    "lead": "L’élan vital est, chez Bergson, l’image conceptuelle d’une impulsion créatrice traversant l’évolution du vivant. Il vise à penser l’inventivité et la divergence de l’évolution sans la réduire ni à un mécanisme strict ni à un plan final entièrement préétabli.",
+    "kind": "concept",
+    "senses": [
+      "Bergson ne propose pas un fluide mesurable ajouté aux organismes ; l’élan vital est une manière philosophique de caractériser le mouvement créateur de la vie.",
+      "Il s’oppose au mécanisme intégral comme au finalisme figé."
+    ],
+    "authors": [
+      {
+        "name": "Bergson",
+        "text": "L’Évolution créatrice décrit la vie comme création imprévisible de formes divergentes à partir d’une impulsion commune."
+      }
+    ],
+    "related": [
+      "Durée",
+      "Vie",
+      "Création",
+      "Téléologie"
+    ]
+  },
+  {
+    "term": "Multiplicité qualitative",
+    "aliases": "multiplicité qualitative multiplicite qualitative",
+    "category": "Concept bergsonien / temps",
+    "lead": "La multiplicité qualitative désigne chez Bergson une pluralité dont les éléments s’interpénètrent au lieu d’être juxtaposés comme des unités comptables. Elle caractérise la durée vécue, par opposition à une multiplicité quantitative spatialisée.",
+    "kind": "concept",
+    "senses": [
+      "Les états de conscience ne sont pas des billes séparées : chaque moment modifie la tonalité du tout et conserve quelque chose des moments précédents.",
+      "La distinction sert à critiquer la traduction abusive du temps vécu dans les catégories de l’espace homogène."
+    ],
+    "authors": [
+      {
+        "name": "Bergson",
+        "text": "Dans l’Essai sur les données immédiates de la conscience, la durée est une multiplicité qualitative où les états se pénètrent mutuellement."
+      }
+    ],
+    "related": [
+      "Durée",
+      "Temps",
+      "Quantité",
+      "Conscience"
+    ]
+  },
+  {
+    "term": "Fabulation",
+    "aliases": "fabulation",
+    "category": "Concept bergsonien / religion",
+    "lead": "La fonction fabulatrice est, chez Bergson, la capacité humaine de produire des représentations imaginaires qui soutiennent la cohésion sociale, compensent certaines inquiétudes de l’intelligence et alimentent les formes statiques de religion.",
+    "kind": "concept",
+    "senses": [
+      "La fabulation n’est pas seulement mensonge conscient : elle possède une fonction vitale et sociale.",
+      "Bergson la distingue de la religion dynamique et de l’expérience mystique, qui ouvrent selon lui à un autre type d’élan."
+    ],
+    "authors": [
+      {
+        "name": "Bergson",
+        "text": "Les Deux Sources de la morale et de la religion relient la fonction fabulatrice à la conservation des sociétés closes."
+      }
+    ],
+    "related": [
+      "Religion",
+      "Mythe",
+      "Imagination",
+      "Société close"
+    ]
+  },
+  {
+    "term": "Absurde",
+    "aliases": "absurde",
+    "category": "Concept existential / Camus",
+    "lead": "L’absurde désigne chez Camus la confrontation entre le désir humain de sens, d’unité ou de justification et le silence d’un monde qui ne fournit pas spontanément de réponse ultime. Il ne réside ni dans l’homme seul ni dans le monde seul, mais dans leur rapport.",
+    "kind": "concept",
+    "senses": [
+      "Reconnaître l’absurde n’implique pas selon Camus le suicide ; celui-ci supprimerait l’un des termes de la confrontation.",
+      "La réponse camusienne privilégie la lucidité, la révolte et une vie sans appel à une justification transcendante."
+    ],
+    "authors": [
+      {
+        "name": "Camus",
+        "text": "Le Mythe de Sisyphe part de l’absurde pour demander comment vivre sans nier la tension entre besoin de sens et monde muet."
+      }
+    ],
+    "related": [
+      "Révolte",
+      "Existentialisme",
+      "Sens",
+      "Suicide"
+    ]
+  },
+  {
+    "term": "Révolte",
+    "aliases": "révolte revolte",
+    "category": "Concept camusien / éthique politique",
+    "lead": "La révolte est, chez Camus, le refus d’une situation jugée intolérable qui affirme en même temps une valeur commune : en disant « non », le révolté affirme qu’il existe une limite que l’on ne devrait pas franchir.",
+    "kind": "concept",
+    "senses": [
+      "La révolte se distingue de la simple rancœur individuelle parce qu’elle peut faire surgir une solidarité : « je me révolte, donc nous sommes ».",
+      "Camus critique les révolutions qui absolutisent une fin historique au point de légitimer sans limite le meurtre présent."
+    ],
+    "authors": [
+      {
+        "name": "Camus",
+        "text": "L’Homme révolté cherche une mesure politique capable de résister à l’injustice sans transformer la révolte en justification de la terreur."
+      }
+    ],
+    "related": [
+      "Absurde",
+      "Mesure",
+      "Violence",
+      "Justice"
+    ]
+  },
+  {
+    "term": "Saut de la foi",
+    "aliases": "saut de la foi",
+    "category": "Concept kierkegaardien / religion",
+    "lead": "Le « saut de la foi » désigne, dans la réception de Kierkegaard, le passage existentiel à un engagement religieux qui ne peut pas être garanti par une démonstration objective complète. L’expression résume un motif kierkegaardien, même si la formule canonique est souvent plus scolaire que littérale.",
+    "kind": "concept",
+    "senses": [
+      "La foi ne consiste pas à croire sans aucune raison à n’importe quoi ; elle engage subjectivement l’existence face à une incertitude qui ne peut être supprimée par le savoir objectif.",
+      "Dans Crainte et Tremblement, Abraham incarne la tension paradoxale entre éthique universelle et rapport absolu à l’absolu."
+    ],
+    "authors": [
+      {
+        "name": "Kierkegaard",
+        "text": "La vérité religieuse engage le mode d’existence du sujet et ne se laisse pas convertir en système spéculatif impersonnel."
+      }
+    ],
+    "related": [
+      "Foi",
+      "Paradoxe",
+      "Désespoir",
+      "Subjectivité"
+    ]
+  },
+  {
+    "term": "Désespoir",
+    "aliases": "désespoir desespoir",
+    "category": "Concept kierkegaardien / existence",
+    "lead": "Le désespoir est, chez Kierkegaard, une maladie du rapport à soi : le soi ne veut pas être lui-même, ou veut être lui-même par sa seule puissance sans reconnaître le rapport qui le fonde. Il ne se réduit pas au sentiment conscient de tristesse.",
+    "kind": "concept",
+    "senses": [
+      "On peut être désespéré sans le savoir, précisément lorsque l’existence se fuit dans l’immédiateté.",
+      "Le désespoir devient aussi une catégorie religieuse dans La Maladie à la mort, liée au péché et au rapport à Dieu."
+    ],
+    "authors": [
+      {
+        "name": "Kierkegaard",
+        "text": "Le soi est un rapport qui se rapporte à lui-même ; le désespoir est un dérèglement de ce rapport."
+      }
+    ],
+    "related": [
+      "Soi",
+      "Foi",
+      "Angoisse",
+      "Saut de la foi"
+    ]
+  },
+  {
+    "term": "Répétition",
+    "aliases": "répétition repetition",
+    "category": "Concept kierkegaardien / existence",
+    "lead": "La répétition désigne chez Kierkegaard une reprise existentielle qui n’est ni simple reproduction mécanique du passé ni souvenir nostalgique. Elle concerne la possibilité de recevoir à nouveau son existence en l’assumant de manière nouvelle.",
+    "kind": "concept",
+    "senses": [
+      "Kierkegaard oppose souvent répétition et réminiscence : la réminiscence regarde en arrière, tandis que la répétition engage un devenir et une appropriation.",
+      "Le concept est exploré de manière littéraire et expérimentale dans l’ouvrage La Répétition."
+    ],
+    "authors": [
+      {
+        "name": "Kierkegaard",
+        "text": "La répétition est un mouvement existentiel de reprise qui met à l’épreuve la possibilité de devenir soi."
+      }
+    ],
+    "related": [
+      "Anamnèsis",
+      "Temps",
+      "Existence",
+      "Désespoir"
+    ]
+  },
+  {
+    "term": "Cercle herméneutique",
+    "aliases": "cercle herméneutique cercle hermeneutique",
+    "category": "Concept herméneutique",
+    "lead": "Le cercle herméneutique désigne la structure selon laquelle on comprend les parties d’un texte à partir du tout et le tout à partir des parties, plus largement le nouveau à partir d’anticipations de sens qui sont elles-mêmes révisées par ce que l’on comprend.",
+    "kind": "concept",
+    "senses": [
+      "Le cercle n’est pas nécessairement un raisonnement vicieux : il décrit la dynamique révisable de toute compréhension située.",
+      "Chez Heidegger et Gadamer, il est élargi au-delà de l’exégèse des textes vers la structure existentielle et historique de la compréhension."
+    ],
+    "authors": [
+      {
+        "name": "Schleiermacher",
+        "text": "Il formalise le va-et-vient entre partie et tout dans l’interprétation."
+      },
+      {
+        "name": "Heidegger",
+        "text": "Il donne au cercle un statut ontologique : comprendre suppose toujours des préstructures."
+      },
+      {
+        "name": "Gadamer",
+        "text": "Il insiste sur la révision des préjugés dans la rencontre avec le texte ou la tradition."
+      }
+    ],
+    "related": [
+      "Précompréhension",
+      "Fusion des horizons",
+      "Interprétation",
+      "Herméneutique"
+    ]
+  },
+  {
+    "term": "Précompréhension",
+    "aliases": "précompréhension precomprehension",
+    "category": "Concept herméneutique",
+    "lead": "La précompréhension désigne l’ensemble des attentes, concepts, habitudes et intérêts à partir desquels toute compréhension commence. Elle signifie qu’il n’existe pas de lecture absolument sans présupposé, mais n’implique pas que toutes les interprétations se valent.",
+    "kind": "concept",
+    "senses": [
+      "Les anticipations initiales peuvent être corrigées lorsque le texte, l’objet ou l’autre résiste à ce que nous projetions sur lui.",
+      "Chez Heidegger, la compréhension possède une structure préalable ; chez Gadamer, les « préjugés » doivent être soumis à l’épreuve de l’interprétation."
+    ],
+    "authors": [
+      {
+        "name": "Heidegger",
+        "text": "Toute interprétation se déploie sur un fond de pré-acquis, prévision et préconception."
+      },
+      {
+        "name": "Gadamer",
+        "text": "L’enjeu n’est pas de supprimer tous les préjugés mais de distinguer ceux qui ouvrent la compréhension de ceux qui la ferment."
+      }
+    ],
+    "related": [
+      "Cercle herméneutique",
+      "Fusion des horizons",
+      "Préjugé",
+      "Interprétation"
+    ]
+  },
+  {
+    "term": "Fusion des horizons",
+    "aliases": "fusion des horizons",
+    "category": "Concept herméneutique",
+    "lead": "La fusion des horizons est, chez Gadamer, le processus par lequel l’horizon historique de l’interprète et celui du texte ou de la tradition se transforment dans une compréhension commune. Il ne s’agit pas d’effacer toutes les différences historiques.",
+    "kind": "concept",
+    "senses": [
+      "Un horizon est une perspective située qui peut s’élargir ; la compréhension véritable modifie les questions avec lesquelles l’interprète abordait initialement le texte.",
+      "La fusion n’est pas une assimilation totale de l’autre à soi, mais un événement de dialogue où un nouveau sens commun devient possible."
+    ],
+    "authors": [
+      {
+        "name": "Gadamer",
+        "text": "Vérité et méthode décrit la compréhension comme rencontre historique où les horizons ne restent pas simplement juxtaposés."
+      }
+    ],
+    "related": [
+      "Horizon",
+      "Précompréhension",
+      "Histoire de l’effectivité",
+      "Dialogue"
+    ]
+  },
+  {
+    "term": "Histoire de l’effectivité",
+    "aliases": "histoire de l’effectivité histoire de l effectivite",
+    "category": "Concept herméneutique",
+    "lead": "L’histoire de l’effectivité, Wirkungsgeschichte, désigne chez Gadamer l’histoire des effets d’une œuvre ou d’une tradition sur les interprètes ultérieurs, ainsi que le fait que nous sommes nous-mêmes historiquement formés par ces effets avant de les étudier.",
+    "kind": "concept",
+    "etymology": "Allemand Wirkungsgeschichte, « histoire des effets ».",
+    "senses": [
+      "Comprendre un texte ancien ne consiste pas à se placer hors de toute histoire : nos questions et catégories portent déjà la marque de sa réception.",
+      "La conscience de cette effectivité vise une réflexivité accrue, non une maîtrise totale de nos conditions historiques."
+    ],
+    "authors": [
+      {
+        "name": "Gadamer",
+        "text": "L’interprète appartient à l’histoire qu’il cherche à comprendre ; l’œuvre continue d’agir dans la tradition qui rend sa lecture possible."
+      }
+    ],
+    "related": [
+      "Fusion des horizons",
+      "Tradition",
+      "Précompréhension",
+      "Historicité"
+    ]
+  },
+  {
+    "term": "Distanciation",
+    "aliases": "distanciation",
+    "category": "Concept herméneutique / Ricœur",
+    "lead": "La distanciation désigne chez Ricœur la distance productive introduite par l’écriture et l’objectivation du discours. Une fois inscrit dans un texte, le sens se détache partiellement de l’intention de l’auteur et de la situation initiale d’énonciation, rendant possible de nouvelles interprétations.",
+    "kind": "concept",
+    "senses": [
+      "La distanciation n’est pas l’opposé absolu de l’appartenance ou de l’appropriation : elle permet une compréhension plus critique.",
+      "Elle soutient l’idée qu’un texte possède un « monde » que l’interprétation peut déployer au-delà de la psychologie de son auteur."
+    ],
+    "authors": [
+      {
+        "name": "Paul Ricœur",
+        "text": "Il cherche à articuler explication et compréhension grâce à la distance instaurée par le texte."
+      }
+    ],
+    "related": [
+      "Monde du texte",
+      "Interprétation",
+      "Herméneutique du soupçon",
+      "Explication"
+    ]
+  },
+  {
+    "term": "Herméneutique du soupçon",
+    "aliases": "herméneutique du soupçon hermeneutique du soupcon",
+    "category": "Concept herméneutique / critique",
+    "lead": "L’herméneutique du soupçon désigne, chez Ricœur, une famille de lectures qui refusent de prendre les significations conscientes au premier degré et cherchent les forces, intérêts ou désirs qui les travaillent en profondeur. Marx, Nietzsche et Freud en sont les figures exemplaires.",
+    "kind": "concept",
+    "senses": [
+      "Le soupçon vise les illusions de la conscience : idéologie, ressentiment, rationalisation ou refoulement selon les auteurs.",
+      "Ricœur ne réduit pas toute interprétation au soupçon ; il cherche aussi une herméneutique de la confiance, du symbole et de l’appropriation du sens."
+    ],
+    "authors": [
+      {
+        "name": "Paul Ricœur",
+        "text": "Il rassemble Marx, Nietzsche et Freud comme « maîtres du soupçon » tout en cherchant à dépasser une critique exclusivement démystificatrice."
+      }
+    ],
+    "related": [
+      "Conflit des interprétations",
+      "Idéologie",
+      "Inconscient",
+      "Généalogie"
+    ]
+  },
+  {
+    "term": "Conflit des interprétations",
+    "aliases": "conflit des interprétations conflit des interpretations",
+    "category": "Concept herméneutique / Ricœur",
+    "lead": "Le conflit des interprétations désigne la pluralité irréductible de méthodes et de lectures appliquées aux symboles, textes et actions humaines. Chez Ricœur, le travail herméneutique ne supprime pas ce conflit par une méthode unique mais cherche à articuler des perspectives concurrentes.",
+    "kind": "concept",
+    "senses": [
+      "Une interprétation peut être explicative, psychanalytique, structuraliste, phénoménologique ou existentielle sans que leurs questions se superposent entièrement.",
+      "Le conflit devient productif lorsqu’il oblige chaque lecture à préciser ses présupposés et ses limites."
+    ],
+    "authors": [
+      {
+        "name": "Paul Ricœur",
+        "text": "Il refuse aussi bien le relativisme indifférent que la réduction de toutes les interprétations à une seule grille explicative."
+      }
+    ],
+    "related": [
+      "Herméneutique du soupçon",
+      "Interprétation",
+      "Distanciation",
+      "Symbole"
+    ]
+  },
+  {
+    "term": "Événement de sens",
+    "aliases": "événement de sens evenement de sens",
+    "category": "Concept herméneutique",
+    "lead": "Un événement de sens est la survenue d’une signification nouvelle dans la rencontre entre une parole, un texte, une situation et un interprète. L’expression insiste sur le fait que comprendre n’est pas seulement extraire un contenu fixe déjà entièrement constitué.",
+    "kind": "concept",
+    "senses": [
+      "Dans l’herméneutique contemporaine, le sens peut émerger dans l’acte de lecture tout en restant contraint par la structure du texte et son contexte.",
+      "L’idée s’oppose à une conception purement mécanique de la signification sans autoriser une invention arbitraire."
+    ],
+    "authors": [
+      {
+        "name": "Gadamer",
+        "text": "La compréhension a le caractère d’un événement historique de dialogue."
+      },
+      {
+        "name": "Paul Ricœur",
+        "text": "Le discours et le texte ouvrent des possibilités de signification qui se réactualisent dans l’interprétation."
+      }
+    ],
+    "related": [
+      "Monde du texte",
+      "Fusion des horizons",
+      "Interprétation",
+      "Sens"
+    ]
+  },
+  {
+    "term": "Monde du texte",
+    "aliases": "monde du texte",
+    "category": "Concept herméneutique / Ricœur",
+    "lead": "Le monde du texte est, chez Ricœur, l’horizon de possibilités, de relations et de manières d’habiter le réel qu’un texte projette devant lui. Comprendre ne consiste donc pas seulement à reconstruire ce que l’auteur avait psychologiquement en tête.",
+    "kind": "concept",
+    "senses": [
+      "Le lecteur peut se comprendre autrement en explorant le monde proposé par le texte.",
+      "Cette notion permet de lier distanciation critique et appropriation existentielle du sens."
+    ],
+    "authors": [
+      {
+        "name": "Paul Ricœur",
+        "text": "Le texte se détache de son contexte initial et ouvre un monde possible que le lecteur peut habiter imaginativement et comprendre."
+      }
+    ],
+    "related": [
+      "Distanciation",
+      "Interprétation",
+      "Événement de sens",
+      "Récit"
+    ]
+  },
+  {
+    "term": "Proposition",
+    "aliases": "proposition",
+    "category": "Concept logique / langage",
+    "lead": "Une proposition est ce qui est affirmé ou nié et qui peut être vrai ou faux. En logique et en philosophie du langage, on la distingue souvent de la phrase matérielle qui l’exprime et de l’acte psychologique par lequel un locuteur la pense.",
+    "kind": "concept",
+    "etymology": "Du latin propositio, « énoncé, présentation ».",
+    "senses": [
+      "Des phrases différentes peuvent exprimer la même proposition si elles ont le même contenu de vérité.",
+      "Le statut ontologique des propositions — objets abstraits, contenus d’actes, structures linguistiques — fait l’objet de débats."
+    ],
+    "related": [
+      "Énoncé",
+      "Vérité",
+      "Sens",
+      "Référence"
+    ]
+  },
+  {
+    "term": "Validité",
+    "aliases": "validité validite",
+    "category": "Concept logique",
+    "lead": "La validité est une propriété d’un raisonnement : un argument est valide lorsqu’il est impossible que ses prémisses soient vraies et sa conclusion fausse. La validité concerne donc la forme ou la relation de conséquence, non la vérité effective des prémisses.",
+    "kind": "concept",
+    "senses": [
+      "Un argument peut être valide tout en ayant des prémisses fausses.",
+      "Un argument déductivement solide est valide et possède en plus des prémisses vraies."
+    ],
+    "related": [
+      "Conséquence logique",
+      "Argument",
+      "Vérité",
+      "Déduction"
+    ]
+  },
+  {
+    "term": "Conséquence logique",
+    "aliases": "conséquence logique consequence logique",
+    "category": "Concept logique",
+    "lead": "Une conclusion est conséquence logique de prémisses lorsqu’elle doit être vraie dans toute interprétation ou situation où ces prémisses sont vraies. La notion formalise l’idée qu’une conclusion suit nécessairement de ce qui a été admis.",
+    "kind": "concept",
+    "senses": [
+      "La définition exacte dépend du système logique utilisé : conséquence sémantique, dérivabilité syntaxique ou autres conceptions.",
+      "La logique classique vise idéalement l’accord entre dérivabilité dans un calcul et préservation de la vérité dans les modèles."
+    ],
+    "related": [
+      "Validité",
+      "Déduction",
+      "Satisfiabilité",
+      "Logique des prédicats"
+    ]
+  },
+  {
+    "term": "Tautologie",
+    "aliases": "tautologie",
+    "category": "Concept logique",
+    "lead": "Une tautologie est une formule vraie sous toute attribution possible de valeurs de vérité à ses constituants, dans un langage logique donné. En logique propositionnelle classique, « P ou non-P » en est un exemple.",
+    "kind": "concept",
+    "etymology": "Du grec tautologia, « répétition du même ».",
+    "senses": [
+      "Le sens logique moderne est plus précis que le sens rhétorique courant de répétition inutile.",
+      "Une tautologie est vraie en vertu de sa forme logique dans le système considéré, non en vertu d’un fait particulier du monde."
+    ],
+    "related": [
+      "Logique propositionnelle",
+      "Validité",
+      "Contradiction",
+      "Vérité logique"
+    ]
+  },
+  {
+    "term": "Satisfiabilité",
+    "aliases": "satisfiabilité satisfiabilite",
+    "category": "Concept logique",
+    "lead": "Une formule ou un ensemble de formules est satisfiable s’il existe au moins une interprétation dans laquelle toutes sont vraies. L’insatisfiabilité signifie qu’aucun modèle ne peut les rendre vraies simultanément.",
+    "kind": "concept",
+    "senses": [
+      "Une formule tautologique est satisfiable dans toutes les interprétations ; une contradiction ne l’est dans aucune.",
+      "La satisfiabilité est centrale en logique mathématique, en informatique et dans la théorie des modèles."
+    ],
+    "related": [
+      "Tautologie",
+      "Contradiction",
+      "Modèle",
+      "Conséquence logique"
+    ]
+  },
+  {
+    "term": "Quantificateur",
+    "aliases": "quantificateur",
+    "category": "Concept logique",
+    "lead": "Un quantificateur est un opérateur logique qui indique sur combien d’objets d’un domaine porte une prédication. Les deux quantificateurs classiques fondamentaux sont l’universel « pour tout » et l’existentiel « il existe au moins un ».",
+    "kind": "concept",
+    "senses": [
+      "La portée d’un quantificateur et l’ordre des quantificateurs sont décisifs : « pour tout x, il existe y » ne signifie pas nécessairement « il existe y pour tout x ».",
+      "La quantification permet d’analyser des énoncés généraux sans les traiter comme de simples listes de cas particuliers."
+    ],
+    "related": [
+      "Logique des prédicats",
+      "Variable",
+      "Proposition",
+      "Domaine"
+    ]
+  },
+  {
+    "term": "Logique propositionnelle",
+    "aliases": "logique propositionnelle",
+    "category": "Branche de la logique",
+    "lead": "La logique propositionnelle étudie les relations formelles entre propositions construites à l’aide de connecteurs comme « non », « et », « ou », « si… alors ». Elle traite chaque proposition atomique comme une unité sans analyser sa structure interne.",
+    "kind": "concept",
+    "senses": [
+      "Elle permet de tester la validité de nombreuses inférences par tables de vérité ou systèmes de déduction.",
+      "Elle est moins expressive que la logique des prédicats, qui analyse quantification, individus et propriétés."
+    ],
+    "related": [
+      "Tautologie",
+      "Logique des prédicats",
+      "Validité",
+      "Connecteur logique"
+    ]
+  },
+  {
+    "term": "Logique des prédicats",
+    "aliases": "logique des prédicats logique des predicats",
+    "category": "Branche de la logique",
+    "lead": "La logique des prédicats étend la logique propositionnelle en analysant la structure interne des énoncés au moyen de variables, prédicats, relations et quantificateurs. Elle permet notamment de formaliser « tous », « certains », « aucun » et des relations entre individus.",
+    "kind": "concept",
+    "senses": [
+      "La logique du premier ordre quantifie normalement sur des individus ; des logiques d’ordre supérieur permettent aussi de quantifier sur propriétés ou relations.",
+      "Sa sémantique précise les domaines et les interprétations dans lesquels les formules sont vraies ou fausses."
+    ],
+    "related": [
+      "Quantificateur",
+      "Logique propositionnelle",
+      "Prédicat",
+      "Conséquence logique"
+    ]
+  },
+  {
+    "term": "Métalangage",
+    "aliases": "métalangage metalangage",
+    "category": "Concept logique / philosophie du langage",
+    "lead": "Un métalangage est un langage utilisé pour parler d’un autre langage, appelé langage-objet. La distinction sert à éviter des confusions entre une expression et ce qu’on dit de cette expression.",
+    "kind": "concept",
+    "senses": [
+      "Par exemple, dans « “neige” comporte cinq lettres », le français est utilisé comme métalangage pour mentionner le mot « neige ».",
+      "La hiérarchie langage-objet/métalangage joue un rôle majeur chez Tarski dans l’analyse de la vérité et l’évitement de certains paradoxes sémantiques."
+    ],
+    "authors": [
+      {
+        "name": "Tarski",
+        "text": "Il formalise une séparation de niveaux linguistiques pour définir la vérité d’un langage-objet dans un métalangage suffisamment riche."
+      }
+    ],
+    "related": [
+      "Langage-objet",
+      "Paradoxe du menteur",
+      "Vérité",
+      "Sémantique"
+    ]
+  },
+  {
+    "term": "Langage-objet",
+    "aliases": "langage-objet langage objet",
+    "category": "Concept logique / philosophie du langage",
+    "lead": "Le langage-objet est le langage dont on étudie les expressions à l’aide d’un métalangage. Cette distinction permet de séparer ce qui est dit dans un langage de ce qui est dit à propos de ce langage.",
+    "kind": "concept",
+    "senses": [
+      "Une théorie sémantique formelle décrit généralement un langage-objet depuis un métalangage qui peut nommer ses expressions et leurs conditions de vérité."
+    ],
+    "authors": [
+      {
+        "name": "Tarski",
+        "text": "La séparation des niveaux linguistiques est centrale dans sa conception sémantique de la vérité."
+      }
+    ],
+    "related": [
+      "Métalangage",
+      "Vérité",
+      "Sémantique",
+      "Paradoxe du menteur"
+    ]
+  },
+  {
+    "term": "Paradoxe du menteur",
+    "aliases": "paradoxe du menteur",
+    "category": "Paradoxe logique / sémantique",
+    "lead": "Le paradoxe du menteur naît d’énoncés autoréférentiels comme « cette phrase est fausse ». Si l’énoncé est vrai, alors il est faux ; s’il est faux, il semble vrai. Il met sous tension nos notions ordinaires de vérité et de référence à soi.",
+    "kind": "concept",
+    "senses": [
+      "Les solutions proposées incluent hiérarchies de langage, restrictions de vérité, logiques non classiques ou théories de points fixes.",
+      "Le paradoxe est distinct d’une simple contradiction empirique : il touche la structure même d’un prédicat de vérité appliqué à son propre langage."
+    ],
+    "authors": [
+      {
+        "name": "Tarski",
+        "text": "Sa hiérarchie entre langage-objet et métalangage empêche une définition globale de la vérité dans le même langage sous certaines conditions."
+      },
+      {
+        "name": "Kripke",
+        "text": "Il propose une théorie partielle de la vérité fondée sur des points fixes sans hiérarchie rigide totale."
+      }
+    ],
+    "related": [
+      "Métalangage",
+      "Vérité",
+      "Autoréférence",
+      "Contradiction"
+    ]
+  },
+  {
+    "term": "Intension",
+    "aliases": "intension",
+    "category": "Concept logique / sémantique",
+    "lead": "L’intension d’une expression correspond, selon les théories, à son sens, son contenu descriptif ou la règle qui détermine sa référence à travers différents contextes ou mondes possibles. Elle se distingue de son extension.",
+    "kind": "concept",
+    "senses": [
+      "Deux expressions peuvent avoir la même extension actuelle tout en différant intensionnellement, par exemple si elles ne désignent pas les mêmes choses dans d’autres circonstances possibles.",
+      "Dans la sémantique modale, une intension peut être modélisée comme une fonction des mondes possibles vers des extensions."
+    ],
+    "related": [
+      "Extension",
+      "Sens",
+      "Référence",
+      "Monde possible"
+    ]
+  },
+  {
+    "term": "Extension",
+    "aliases": "extension",
+    "category": "Concept logique / sémantique",
+    "lead": "L’extension d’un terme ou prédicat est l’ensemble des objets auxquels il s’applique ; l’extension d’une expression singulière peut être son référent. Elle se distingue de l’intension ou du contenu par lequel cette référence est déterminée.",
+    "kind": "concept",
+    "senses": [
+      "Deux prédicats peuvent avoir actuellement la même extension tout en ayant des significations différentes.",
+      "L’opposition intension/extension aide à analyser les contextes où substituer des expressions co-référentielles change la valeur de vérité."
+    ],
+    "related": [
+      "Intension",
+      "Référence",
+      "Dénotation",
+      "Prédicat"
+    ]
+  },
+  {
+    "term": "Référence",
+    "aliases": "référence reference",
+    "category": "Concept de philosophie du langage",
+    "lead": "La référence est la relation par laquelle une expression renvoie à un objet, une personne, un lieu, une propriété ou autre entité selon la théorie considérée. Elle ne se confond pas nécessairement avec le sens de l’expression.",
+    "kind": "concept",
+    "senses": [
+      "Frege distingue le sens, mode de présentation, de la référence : « l’étoile du matin » et « l’étoile du soir » ont des sens différents tout en désignant Vénus.",
+      "Les théories causales et externalistes contestent qu’une description mentale complète soit toujours ce qui fixe la référence."
+    ],
+    "authors": [
+      {
+        "name": "Frege",
+        "text": "Il distingue Sinn et Bedeutung afin d’expliquer l’information contenue dans des identités vraies."
+      },
+      {
+        "name": "Kripke",
+        "text": "Il critique certaines théories descriptivistes des noms propres et développe la notion de désignateur rigide."
+      }
+    ],
+    "related": [
+      "Sens",
+      "Dénotation",
+      "Désignateur rigide",
+      "Intension"
+    ]
+  },
+  {
+    "term": "Dénotation",
+    "aliases": "dénotation denotation",
+    "category": "Concept de philosophie du langage",
+    "lead": "La dénotation est le rapport par lequel une expression désigne son référent ou son extension. Dans certains usages, le mot est proche de « référence » ; dans d’autres traditions techniques, une distinction plus précise est maintenue.",
+    "kind": "concept",
+    "senses": [
+      "Une description définie peut dénoter un objet si un objet satisfait de manière appropriée la description.",
+      "Le vocabulaire varie d’un auteur à l’autre : il faut vérifier si « dénotation », « référence » et « extension » sont employés comme synonymes ou comme notions distinctes."
+    ],
+    "related": [
+      "Référence",
+      "Extension",
+      "Description définie",
+      "Sémantique"
+    ]
+  },
+  {
+    "term": "Description définie",
+    "aliases": "description définie description definie",
+    "category": "Concept de philosophie du langage",
+    "lead": "Une description définie est une expression de la forme « le/la F », par exemple « l’actuel roi de France ». Russell l’analyse non comme un nom simple mais comme une structure quantificationnelle impliquant existence et unicité.",
+    "kind": "concept",
+    "senses": [
+      "L’analyse russellienne permet d’expliquer comment une phrase contenant une description sans référent peut néanmoins être significative et fausse plutôt que dépourvue de sens.",
+      "Strawson contestera cette analyse en mettant l’accent sur la présupposition et l’usage pragmatique."
+    ],
+    "authors": [
+      {
+        "name": "Russell",
+        "text": "La théorie des descriptions traduit « le F est G » en une structure affirmant qu’il existe un unique F et qu’il est G."
+      },
+      {
+        "name": "Strawson",
+        "text": "Il soutient que l’usage ordinaire des descriptions engage des présuppositions que l’analyse russellienne ne capture pas entièrement."
+      }
+    ],
+    "related": [
+      "Dénotation",
+      "Référence",
+      "Présupposition",
+      "Quantificateur"
+    ]
+  },
+  {
+    "term": "Atomisme logique",
+    "aliases": "atomisme logique",
+    "category": "Courant analytique / métaphysique",
+    "lead": "L’atomisme logique est le projet, surtout associé à Russell et au premier Wittgenstein, d’analyser les énoncés complexes et la structure du monde en éléments simples reliés par une forme logique.",
+    "kind": "concept",
+    "senses": [
+      "Chez Russell, l’analyse doit décomposer les propositions complexes jusqu’à des constituants logiquement simples.",
+      "Dans le Tractatus, Wittgenstein pense les propositions élémentaires comme images de faits atomiques, même si son vocabulaire et sa théorie ne se confondent pas avec ceux de Russell."
+    ],
+    "authors": [
+      {
+        "name": "Russell",
+        "text": "L’analyse logique doit révéler les constituants ultimes cachés par la grammaire ordinaire."
+      },
+      {
+        "name": "Wittgenstein",
+        "text": "Le Tractatus conçoit le monde comme totalité des faits et la proposition comme image logique d’un état de choses."
+      }
+    ],
+    "related": [
+      "Analyse",
+      "Proposition",
+      "Fait",
+      "Forme logique"
+    ]
+  },
+  {
+    "term": "Vérificationnisme",
+    "aliases": "vérificationnisme verificationnisme",
+    "category": "Doctrine épistémologique / langage",
+    "lead": "Le vérificationnisme associe la signification cognitive d’un énoncé à ses conditions ou procédures possibles de vérification empirique, selon des versions plus ou moins fortes. Il est lié au positivisme logique mais a rencontré de nombreuses difficultés.",
+    "kind": "concept",
+    "senses": [
+      "Une version stricte risque d’exclure comme dépourvues de sens des généralisations scientifiques, des énoncés historiques ou le principe de vérification lui-même.",
+      "Les positivistes logiques ont progressivement assoupli le critère vers la confirmabilité ou d’autres relations avec l’expérience."
+    ],
+    "authors": [
+      {
+        "name": "A. J. Ayer",
+        "text": "Il popularise en anglais un critère vérificationniste de signification inspiré du Cercle de Vienne."
+      },
+      {
+        "name": "Carnap",
+        "text": "Il cherche à préciser le rapport entre langage scientifique, confirmation et expérience en abandonnant les versions trop simples du principe."
+      }
+    ],
+    "related": [
+      "Positivisme logique",
+      "Empirisme",
+      "Falsifiabilité",
+      "Signification"
+    ]
+  },
+  {
+    "term": "Jeu de langage",
+    "aliases": "jeu de langage",
+    "category": "Concept wittgensteinien / langage",
+    "lead": "Un jeu de langage est, chez le second Wittgenstein, une pratique dans laquelle des expressions reçoivent leur sens par des usages réglés : demander, promettre, calculer, prier, raconter, ordonner, plaisanter, etc.",
+    "kind": "concept",
+    "senses": [
+      "Le concept combat l’idée qu’il existerait une essence unique du langage ou qu’un mot signifie toujours parce qu’il nomme une chose.",
+      "Les jeux de langage sont enchâssés dans des formes de vie : apprendre un mot, c’est aussi apprendre une pratique."
+    ],
+    "authors": [
+      {
+        "name": "Wittgenstein",
+        "text": "Les Recherches philosophiques insistent sur la diversité des usages du langage et la primauté de l’usage dans l’analyse du sens."
+      }
+    ],
+    "related": [
+      "Forme de vie",
+      "Ressemblance de famille",
+      "Usage",
+      "Langage"
+    ]
+  },
+  {
+    "term": "Forme de vie",
+    "aliases": "forme de vie",
+    "category": "Concept wittgensteinien / langage",
+    "lead": "Une forme de vie désigne le tissu de pratiques, réactions, institutions et habitudes partagées dans lequel des jeux de langage ont un sens. Le concept relie langage et activité humaine sans les réduire à des définitions abstraites.",
+    "kind": "concept",
+    "senses": [
+      "Le terme est volontairement peu systématisé chez Wittgenstein et ne doit pas être transformé trop vite en théorie sociologique complète.",
+      "L’accord dans le langage repose en partie sur des manières communes d’agir et de réagir."
+    ],
+    "authors": [
+      {
+        "name": "Wittgenstein",
+        "text": "Les usages linguistiques sont compris sur le fond de pratiques humaines partagées qui constituent une forme de vie."
+      }
+    ],
+    "related": [
+      "Jeu de langage",
+      "Usage",
+      "Règle",
+      "Ressemblance de famille"
+    ]
+  },
+  {
+    "term": "Ressemblance de famille",
+    "aliases": "ressemblance de famille",
+    "category": "Concept wittgensteinien / concepts",
+    "lead": "La ressemblance de famille désigne un mode de parenté conceptuelle où les cas se recouvrent par un réseau de similitudes partielles sans posséder nécessairement un trait unique commun à tous.",
+    "kind": "concept",
+    "senses": [
+      "Wittgenstein prend notamment l’exemple des « jeux » : jeux de plateau, jeux de balle, jeux solitaires ou compétitifs n’ont pas forcément une essence simple unique.",
+      "Le concept critique certaines recherches de définitions essentielles sans interdire toute classification ou précision conceptuelle."
+    ],
+    "authors": [
+      {
+        "name": "Wittgenstein",
+        "text": "Les catégories ordinaires peuvent fonctionner par chevauchement de ressemblances plutôt que par une condition nécessaire et suffisante unique."
+      }
+    ],
+    "related": [
+      "Jeu de langage",
+      "Concept",
+      "Essence",
+      "Forme de vie"
+    ]
+  },
+  {
+    "term": "Ostension",
+    "aliases": "ostension",
+    "category": "Concept de philosophie du langage",
+    "lead": "L’ostension est l’acte de montrer un objet ou un exemple afin d’enseigner ou fixer l’usage d’un mot, comme pointer une couleur en disant « rouge ». Elle semble simple, mais son interprétation suppose déjà des attentes et des règles.",
+    "kind": "concept",
+    "etymology": "Du latin ostendere, « montrer ».",
+    "senses": [
+      "Un même geste peut viser la couleur, la forme, la matière, le nombre ou le nom propre de l’objet montré ; le contexte d’apprentissage détermine ce qui est enseigné.",
+      "Wittgenstein utilise ce problème pour critiquer l’idée qu’une définition ostensive suffise à elle seule à fonder toute signification."
+    ],
+    "authors": [
+      {
+        "name": "Wittgenstein",
+        "text": "Une définition ostensive ne fonctionne qu’à l’intérieur d’une pratique où l’apprenant sait déjà en partie quel rôle doit jouer le mot."
+      }
+    ],
+    "related": [
+      "Jeu de langage",
+      "Signification",
+      "Règle",
+      "Usage"
+    ]
+  },
+  {
+    "term": "Acte de parole",
+    "aliases": "acte de parole",
+    "category": "Concept pragmatique / langage",
+    "lead": "Un acte de parole est une action accomplie en parlant : affirmer, promettre, ordonner, demander, baptiser, s’excuser, féliciter, etc. La théorie des actes de parole montre que le langage ne sert pas seulement à décrire des faits.",
+    "kind": "concept",
+    "senses": [
+      "Austin distingue dimensions locutoire, illocutoire et perlocutoire.",
+      "Searle systématise les conditions et familles d’actes illocutoires, tout en modifiant certains aspects du cadre d’Austin."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "Dire quelque chose, c’est souvent faire quelque chose selon des conventions et des circonstances appropriées."
+      },
+      {
+        "name": "Searle",
+        "text": "Il développe une taxonomie et une théorie des conditions de réussite des actes illocutoires."
+      }
+    ],
+    "related": [
+      "Locutoire",
+      "Illocutoire",
+      "Perlocutoire",
+      "Performatif"
+    ]
+  },
+  {
+    "term": "Locutoire",
+    "aliases": "locutoire",
+    "category": "Concept pragmatique / langage",
+    "lead": "L’acte locutoire est, chez Austin, le fait de produire une expression linguistique dotée d’une certaine structure et d’un certain sens. Il constitue le niveau de « ce qui est dit » avant de distinguer la force illocutoire et les effets perlocutoires.",
+    "kind": "concept",
+    "senses": [
+      "Prononcer « la porte est ouverte » accomplit un acte locutoire ; selon le contexte, cela peut aussi être une affirmation, un avertissement ou une demande indirecte."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "La dimension locutoire comprend la production de sons, de mots et d’un contenu significatif selon les conventions d’une langue."
+      }
+    ],
+    "related": [
+      "Acte de parole",
+      "Illocutoire",
+      "Perlocutoire",
+      "Sens"
+    ]
+  },
+  {
+    "term": "Illocutoire",
+    "aliases": "illocutoire",
+    "category": "Concept pragmatique / langage",
+    "lead": "La force illocutoire est l’action conventionnelle accomplie en disant quelque chose : affirmer, promettre, ordonner, avertir, demander, déclarer, etc. Elle dépend du contexte, des règles et de la position du locuteur.",
+    "kind": "concept",
+    "senses": [
+      "Le même contenu propositionnel peut avoir des forces illocutoires différentes, par exemple affirmation, question ou ordre.",
+      "La réussite d’un acte illocutoire dépend souvent de conditions de félicité : autorité, sincérité, procédure appropriée ou contexte pertinent."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "Il place l’illocutoire au cœur de l’idée que parler est accomplir des actions socialement réglées."
+      },
+      {
+        "name": "Searle",
+        "text": "Il systématise les forces illocutoires et leurs conditions de réussite."
+      }
+    ],
+    "related": [
+      "Acte de parole",
+      "Locutoire",
+      "Perlocutoire",
+      "Performatif"
+    ]
+  },
+  {
+    "term": "Perlocutoire",
+    "aliases": "perlocutoire",
+    "category": "Concept pragmatique / langage",
+    "lead": "L’acte perlocutoire concerne les effets effectivement produits par une parole sur quelqu’un : convaincre, effrayer, rassurer, amuser, faire agir, etc. Ces effets se distinguent de l’acte illocutoire conventionnel accompli dans l’énonciation.",
+    "kind": "concept",
+    "senses": [
+      "Promettre est une force illocutoire ; rassurer l’auditeur grâce à cette promesse peut être un effet perlocutoire.",
+      "Un effet perlocutoire peut échouer même si l’acte illocutoire a été correctement accompli."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "Il distingue l’acte accompli conventionnellement en parlant de l’effet causal que la parole peut produire chez autrui."
+      }
+    ],
+    "related": [
+      "Acte de parole",
+      "Illocutoire",
+      "Locutoire",
+      "Rhétorique"
+    ]
+  },
+  {
+    "term": "Performatif",
+    "aliases": "performatif",
+    "category": "Concept pragmatique / langage",
+    "lead": "Un énoncé performatif accomplit, dans des circonstances appropriées, l’action qu’il énonce ou institue, comme « je promets », « je vous déclare mariés » ou « je baptise ce navire… ». La catégorie a conduit Austin à repenser plus largement toute énonciation en termes d’actes.",
+    "kind": "concept",
+    "senses": [
+      "Un performatif ne se juge pas seulement vrai ou faux : il peut être heureux ou malheureux selon que les conditions conventionnelles sont remplies.",
+      "Austin abandonne progressivement une opposition rigide entre performatif et constatif, car même une assertion est un acte illocutoire."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "Les performatifs révèlent que certaines paroles ne décrivent pas simplement une action mais la réalisent selon des conventions sociales."
+      }
+    ],
+    "related": [
+      "Constatif",
+      "Acte de parole",
+      "Illocutoire",
+      "Itérabilité"
+    ]
+  },
+  {
+    "term": "Constatif",
+    "aliases": "constatif",
+    "category": "Concept pragmatique / langage",
+    "lead": "Un énoncé constatif est, dans la première distinction d’Austin, un énoncé qui décrit ou affirme un état de choses et peut être évalué comme vrai ou faux, par contraste avec le performatif. Austin montrera ensuite que cette opposition est trop simple.",
+    "kind": "concept",
+    "senses": [
+      "Même une assertion descriptive possède une force illocutoire et dépend de conditions pragmatiques de réussite.",
+      "La distinction reste pédagogiquement utile pour comprendre le point de départ de la théorie des actes de parole, mais elle n’en constitue pas l’aboutissement."
+    ],
+    "authors": [
+      {
+        "name": "Austin",
+        "text": "Son analyse passe d’une opposition performatif/constatif à une théorie générale des actes locutoires, illocutoires et perlocutoires."
+      }
+    ],
+    "related": [
+      "Performatif",
+      "Acte de parole",
+      "Assertion",
+      "Vérité"
+    ]
+  },
+  {
+    "term": "Implicature conversationnelle",
+    "aliases": "implicature conversationnelle",
+    "category": "Concept pragmatique / langage",
+    "lead": "Une implicature conversationnelle est un contenu communiqué sans être littéralement énoncé, que l’interlocuteur infère à partir du contexte et de l’hypothèse que la conversation suit certaines attentes coopératives.",
+    "kind": "concept",
+    "senses": [
+      "Répondre « il y a une station-service au coin » à quelqu’un qui dit manquer d’essence peut impliquer que la station est ouverte ou utile, sans l’affirmer explicitement.",
+      "Les implicatures conversationnelles sont en principe annulables : on peut les retirer sans contradiction logique avec ce qui a été littéralement dit."
+    ],
+    "authors": [
+      {
+        "name": "Grice",
+        "text": "Il explique de nombreux sous-entendus par un principe de coopération et des maximes conversationnelles plutôt que par l’ajout de significations lexicales cachées."
+      }
+    ],
+    "related": [
+      "Principe de coopération",
+      "Présupposition",
+      "Pragmatique",
+      "Sens"
+    ]
+  },
+  {
+    "term": "Principe de coopération",
+    "aliases": "principe de coopération principe de cooperation",
+    "category": "Concept pragmatique / langage",
+    "lead": "Le principe de coopération de Grice est l’idée que les participants à une conversation contribuent normalement de manière adaptée au but et au stade de l’échange. Des maximes de quantité, qualité, relation et manière permettent d’expliquer des implicatures.",
+    "kind": "concept",
+    "senses": [
+      "Un locuteur peut ouvertement violer une maxime pour faire comprendre autre chose, par exemple utiliser une formulation ostensiblement insuffisante afin de suggérer une critique.",
+      "Il s’agit d’un modèle de rationalité conversationnelle, non d’une règle morale selon laquelle tout échange réel serait coopératif ou bienveillant."
+    ],
+    "authors": [
+      {
+        "name": "Grice",
+        "text": "Le principe de coopération fournit un cadre pour expliquer comment les auditeurs infèrent ce qui est suggéré au-delà du contenu littéral."
+      }
+    ],
+    "related": [
+      "Implicature conversationnelle",
+      "Pragmatique",
+      "Communication",
+      "Maxime"
+    ]
+  },
+  {
+    "term": "Présupposition",
+    "aliases": "présupposition presupposition",
+    "category": "Concept sémantique / pragmatique",
+    "lead": "Une présupposition est une information tenue pour acquise par un énoncé plutôt qu’assertée directement. « Paul a cessé de fumer » présuppose typiquement que Paul fumait auparavant.",
+    "kind": "concept",
+    "senses": [
+      "Une propriété classique est la projection sous certaines négations : « Paul n’a pas cessé de fumer » tend encore à présupposer qu’il fumait.",
+      "Le traitement des présuppositions se partage entre théories sémantiques, pragmatiques et dynamiques."
+    ],
+    "authors": [
+      {
+        "name": "Strawson",
+        "text": "Il met en avant le rôle des présuppositions dans la critique de l’analyse russellienne des descriptions définies."
+      }
+    ],
+    "related": [
+      "Implicature conversationnelle",
+      "Description définie",
+      "Pragmatique",
+      "Assertion"
+    ]
+  },
+  {
+    "term": "Indexical",
+    "aliases": "indexical",
+    "category": "Concept de philosophie du langage",
+    "lead": "Un indexical est une expression dont la référence dépend systématiquement du contexte d’énonciation, comme « je », « ici », « maintenant », « aujourd’hui ». Comprendre son sens général ne suffit pas à connaître son référent dans une occurrence donnée.",
+    "kind": "concept",
+    "senses": [
+      "Kaplan distingue le caractère d’un indexical, règle qui associe les contextes à des contenus, et le contenu obtenu dans un contexte déterminé.",
+      "Les indexicaux montrent que la sémantique de certains énoncés dépend constitutivement de paramètres contextuels."
+    ],
+    "authors": [
+      {
+        "name": "Kaplan",
+        "text": "Il développe une sémantique formelle des démonstratifs et indexicaux distinguant caractère et contenu."
+      }
+    ],
+    "related": [
+      "Référence",
+      "Contexte",
+      "Désignateur rigide",
+      "Pragmatique"
+    ]
+  },
+  {
+    "term": "Désignateur rigide",
+    "aliases": "désignateur rigide designateur rigide",
+    "category": "Concept de philosophie du langage",
+    "lead": "Un désignateur rigide est, chez Kripke, une expression qui désigne le même objet dans tous les mondes possibles où cet objet existe. Les noms propres sont ses exemples paradigmatiques dans sa théorie.",
+    "kind": "concept",
+    "senses": [
+      "La rigidité ne signifie pas que l’objet désigné existe dans tous les mondes possibles, mais que l’expression ne change pas de référent d’un monde à l’autre où l’objet existe.",
+      "La notion soutient l’idée de vérités nécessaires connues a posteriori, comme certaines identités impliquant des noms ou des espèces naturelles."
+    ],
+    "authors": [
+      {
+        "name": "Kripke",
+        "text": "Nom et nécessité oppose les noms rigides à de nombreuses descriptions qui peuvent désigner des individus différents selon les mondes possibles."
+      }
+    ],
+    "related": [
+      "Référence",
+      "Monde possible",
+      "Nécessité de re",
+      "Essentialisme"
+    ]
+  },
+  {
+    "term": "Nécessité de re",
+    "aliases": "nécessité de re necessite de re",
+    "category": "Concept modal",
+    "lead": "La nécessité de re attribue à une chose elle-même une propriété nécessaire : elle affirme que cet objet ne pourrait pas manquer de posséder une certaine caractéristique, relativement au type de nécessité considéré.",
+    "kind": "concept",
+    "etymology": "Latin de re, « à propos de la chose ».",
+    "senses": [
+      "Elle se distingue de la nécessité de dicto, qui porte sur une proposition ou une description entière.",
+      "La modalité de re est au cœur des débats contemporains sur essentialisme, identité transmondaine et désignation rigide."
+    ],
+    "authors": [
+      {
+        "name": "Kripke",
+        "text": "Sa défense de la désignation rigide et de certaines propriétés essentielles relance la légitimité des modalités de re au XXe siècle."
+      }
+    ],
+    "related": [
+      "Nécessité de dicto",
+      "Essentialisme",
+      "Désignateur rigide",
+      "Modalité"
+    ]
+  },
+  {
+    "term": "Nécessité de dicto",
+    "aliases": "nécessité de dicto necessite de dicto",
+    "category": "Concept modal",
+    "lead": "La nécessité de dicto porte sur ce qui est nécessairement vrai d’une proposition, d’une description ou d’une formulation prise comme telle, plutôt que sur une propriété essentielle attribuée directement à un objet.",
+    "kind": "concept",
+    "etymology": "Latin de dicto, « à propos de ce qui est dit ».",
+    "senses": [
+      "La distinction de re/de dicto aide à lever des ambiguïtés de portée dans des phrases modales.",
+      "Selon l’analyse logique choisie, déplacer le quantificateur par rapport à l’opérateur modal peut changer le type de nécessité exprimé."
+    ],
+    "related": [
+      "Nécessité de re",
+      "Modalité",
+      "Quantificateur",
+      "Monde possible"
+    ]
+  },
+  {
+    "term": "Monde possible",
+    "aliases": "monde possible",
+    "category": "Concept modal / métaphysique",
+    "lead": "Un monde possible est une manière complète dont les choses auraient pu être. L’outil sert à analyser nécessité, possibilité, conditionnels contrefactuels et propriétés essentielles sans supposer que tous les philosophes s’accordent sur ce que sont ontologiquement les mondes possibles.",
+    "kind": "concept",
+    "senses": [
+      "Une proposition est nécessaire si elle est vraie dans tous les mondes possibles pertinents, possible si elle est vraie dans au moins un.",
+      "Lewis défend un réalisme modal robuste où les autres mondes sont aussi concrets que le nôtre ; d’autres théories les traitent comme objets abstraits, descriptions ou constructions."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "Il parle de mondes possibles dans le cadre de la compossibilité et du choix divin."
+      },
+      {
+        "name": "David Lewis",
+        "text": "Il développe un réalisme modal selon lequel les mondes possibles sont des totalités concrètes distinctes."
+      }
+    ],
+    "related": [
+      "Modalité",
+      "Réalisme modal",
+      "Compossibilité",
+      "Nécessité"
+    ]
+  },
+  {
+    "term": "Abduction",
+    "aliases": "abduction",
+    "category": "Concept épistémologique / raisonnement",
+    "lead": "L’abduction est un type d’inférence qui part d’un fait surprenant et propose une hypothèse qui, si elle était vraie, rendrait ce fait intelligible. Elle est souvent rapprochée de l’inférence à la meilleure explication.",
+    "kind": "concept",
+    "etymology": "Du latin abductio ; le concept moderne est associé à Charles S. Peirce.",
+    "senses": [
+      "Contrairement à une déduction valide, une abduction n’assure pas la vérité de sa conclusion : plusieurs hypothèses peuvent expliquer les mêmes données.",
+      "Chez Peirce, l’abduction joue surtout le rôle de génération d’hypothèses, tandis que déduction et induction participent à leur mise à l’épreuve."
+    ],
+    "authors": [
+      {
+        "name": "Peirce",
+        "text": "L’abduction est le raisonnement par lequel une hypothèse explicative nouvelle est introduite face à un phénomène surprenant."
+      }
+    ],
+    "related": [
+      "Inférence à la meilleure explication",
+      "Induction",
+      "Déduction",
+      "Hypothèse"
+    ]
+  },
+  {
+    "term": "Inférence à la meilleure explication",
+    "aliases": "inférence à la meilleure explication inference a la meilleure explication",
+    "category": "Concept épistémologique",
+    "lead": "L’inférence à la meilleure explication consiste à choisir, parmi plusieurs hypothèses compatibles avec les données, celle qui les explique le mieux selon des critères comme simplicité, puissance explicative, cohérence ou unification.",
+    "kind": "concept",
+    "senses": [
+      "Elle est ampliative : la conclusion contient plus que ce qui est logiquement garanti par les observations.",
+      "Le débat porte sur le lien entre qualité explicative et probabilité de vérité, ainsi que sur le risque que la meilleure hypothèse disponible reste fausse."
+    ],
+    "authors": [
+      {
+        "name": "Gilbert Harman",
+        "text": "Il popularise l’expression « inference to the best explanation » dans l’épistémologie contemporaine."
+      },
+      {
+        "name": "Peter Lipton",
+        "text": "Il analyse les critères explicatifs et la relation entre « meilleure » explication et explication la plus probable."
+      }
+    ],
+    "related": [
+      "Abduction",
+      "Explication",
+      "Réalisme scientifique",
+      "Sous-détermination des théories"
+    ]
+  },
+  {
+    "term": "Méthode hypothético-déductive",
+    "aliases": "méthode hypothético-déductive methode hypothetico deductive",
+    "category": "Méthode scientifique",
+    "lead": "La méthode hypothético-déductive consiste à proposer une hypothèse, en déduire des conséquences observables sous certaines conditions, puis confronter ces conséquences à l’expérience. Les résultats peuvent soutenir, modifier ou mettre en difficulté l’hypothèse sans transformer automatiquement la science en pure déduction.",
+    "kind": "concept",
+    "senses": [
+      "Une prédiction dépend souvent d’hypothèses auxiliaires, d’instruments et de conditions initiales ; un échec expérimental ne désigne donc pas toujours univoquement la proposition fautive.",
+      "La méthode est un schéma général utile, mais elle ne décrit pas à elle seule toute la diversité des pratiques scientifiques."
+    ],
+    "related": [
+      "Falsifiabilité",
+      "Hypothèse",
+      "Thèse de Duhem-Quine",
+      "Corroboration"
+    ]
+  },
+  {
+    "term": "Falsifiabilité",
+    "aliases": "falsifiabilité falsifiabilite",
+    "category": "Concept de philosophie des sciences",
+    "lead": "La falsifiabilité est, chez Popper, la possibilité pour une théorie d’entrer en conflit avec des observations ou tests concevables. Elle sert de critère de démarcation entre théories empiriquement testables et systèmes qui se protègent de toute réfutation possible.",
+    "kind": "concept",
+    "senses": [
+      "Falsifiable ne signifie pas « actuellement fausse » : une bonne théorie scientifique doit prendre le risque d’être mise en défaut.",
+      "En pratique, aucune observation ne teste une hypothèse isolée ; Popper lui-même reconnaît le rôle de décisions méthodologiques et d’énoncés de base."
+    ],
+    "authors": [
+      {
+        "name": "Popper",
+        "text": "Une théorie scientifique doit interdire certains états de choses observables et ainsi exposer ses prédictions au risque de réfutation."
+      }
+    ],
+    "related": [
+      "Corroboration",
+      "Critère de démarcation",
+      "Vérificationnisme",
+      "Méthode hypothético-déductive"
+    ]
+  },
+  {
+    "term": "Corroboration",
+    "aliases": "corroboration",
+    "category": "Concept poppérien / science",
+    "lead": "La corroboration désigne chez Popper le degré auquel une théorie a résisté jusqu’ici à des tests sévères. Elle ne constitue pas une probabilité inductive de vérité ni une confirmation définitive.",
+    "kind": "concept",
+    "senses": [
+      "Une théorie hautement corroborée reste falsifiable et révisable.",
+      "La valeur d’un test dépend de sa sévérité : réussir une prédiction risquée est plus informatif que réussir une épreuve qu’une théorie pouvait difficilement manquer."
+    ],
+    "authors": [
+      {
+        "name": "Popper",
+        "text": "La corroboration mesure un succès historique face aux tentatives de réfutation sans transformer ce succès en garantie de vérité future."
+      }
+    ],
+    "related": [
+      "Falsifiabilité",
+      "Test",
+      "Induction",
+      "Critère de démarcation"
+    ]
+  },
+  {
+    "term": "Critère de démarcation",
+    "aliases": "critère de démarcation critere de demarcation",
+    "category": "Concept de philosophie des sciences",
+    "lead": "Un critère de démarcation cherche à distinguer la science empirique de la non-science ou de la pseudo-science. Popper propose la falsifiabilité, mais aucun critère unique ne fait consensus dans la philosophie des sciences contemporaine.",
+    "kind": "concept",
+    "senses": [
+      "La démarcation ne coïncide pas avec la distinction vrai/faux : une théorie scientifique peut être fausse, et une affirmation non scientifique peut être vraie.",
+      "Des approches contemporaines utilisent plutôt des ensembles de traits institutionnels, méthodologiques et épistémiques."
+    ],
+    "authors": [
+      {
+        "name": "Popper",
+        "text": "Il remplace le vérificationnisme par la falsifiabilité comme critère de caractère empirique."
+      },
+      {
+        "name": "Lakatos",
+        "text": "Il déplace l’analyse vers des programmes de recherche et leur dynamique plutôt que vers des théories isolées."
+      }
+    ],
+    "related": [
+      "Falsifiabilité",
+      "Science",
+      "Pseudo-science",
+      "Programme de recherche"
+    ]
+  },
+  {
+    "term": "Paradigme",
+    "aliases": "paradigme",
+    "category": "Concept kuhnien / histoire des sciences",
+    "lead": "Un paradigme est, chez Kuhn, un ensemble de réalisations exemplaires, méthodes, valeurs, problèmes et manières de voir partagés par une communauté scientifique. Il structure ce qui compte comme problème légitime et comme solution acceptable durant une période de science normale.",
+    "kind": "concept",
+    "etymology": "Du grec paradeigma, « modèle, exemple ».",
+    "senses": [
+      "Kuhn utilise d’abord le terme de manière assez large, puis distingue notamment la « matrice disciplinaire » et les « exemplaires » pour préciser son sens.",
+      "Un paradigme n’est pas simplement une opinion dominante : il organise des pratiques de recherche concrètes."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Kuhn",
+        "text": "La Structure des révolutions scientifiques décrit l’alternance entre science normale, crises et changements de paradigme."
+      }
+    ],
+    "related": [
+      "Science normale",
+      "Révolution scientifique",
+      "Incommensurabilité",
+      "Anomalie"
+    ]
+  },
+  {
+    "term": "Science normale",
+    "aliases": "science normale",
+    "category": "Concept kuhnien / histoire des sciences",
+    "lead": "La science normale est, chez Kuhn, la recherche menée à l’intérieur d’un paradigme relativement stabilisé. Les scientifiques y résolvent des « énigmes » sans remettre en cause en permanence les engagements fondamentaux du cadre.",
+    "kind": "concept",
+    "senses": [
+      "Elle peut être très productive précisément parce que le cadre général n’est pas continuellement rediscuté.",
+      "Des anomalies persistantes peuvent cependant contribuer à une crise lorsque les ressources ordinaires du paradigme ne suffisent plus."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Kuhn",
+        "text": "La science normale développe les potentialités d’un paradigme en résolvant des problèmes exemplaires et en affinant mesures et théories."
+      }
+    ],
+    "related": [
+      "Paradigme",
+      "Anomalie",
+      "Révolution scientifique",
+      "Communauté scientifique"
+    ]
+  },
+  {
+    "term": "Révolution scientifique",
+    "aliases": "révolution scientifique revolution scientifique",
+    "category": "Concept kuhnien / histoire des sciences",
+    "lead": "Une révolution scientifique est, chez Kuhn, une transformation dans laquelle un cadre paradigmatique est remplacé ou profondément réorganisé, modifiant les problèmes, méthodes, standards et parfois le vocabulaire d’une discipline.",
+    "kind": "concept",
+    "senses": [
+      "Le changement n’est pas une simple addition cumulative de nouveaux faits : il peut transformer ce que les scientifiques perçoivent comme pertinent et la manière dont les concepts sont appliqués.",
+      "Cela ne signifie pas que le choix entre paradigmes serait totalement irrationnel ou purement subjectif."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Kuhn",
+        "text": "Les épisodes copernicien, newtonien ou einsteinien illustrent des réorganisations profondes des cadres de recherche scientifique."
+      }
+    ],
+    "related": [
+      "Paradigme",
+      "Science normale",
+      "Incommensurabilité",
+      "Anomalie"
+    ]
+  },
+  {
+    "term": "Anomalie",
+    "aliases": "anomalie",
+    "category": "Concept de philosophie des sciences",
+    "lead": "Une anomalie est un résultat, une observation ou un problème qui résiste aux attentes produites par une théorie ou un paradigme. Une anomalie isolée n’entraîne pas automatiquement l’abandon de la théorie.",
+    "kind": "concept",
+    "senses": [
+      "En science normale kuhnienne, de nombreuses anomalies sont traitées comme des énigmes à résoudre à l’intérieur du paradigme.",
+      "Elles deviennent historiquement décisives lorsqu’elles persistent, touchent des enjeux centraux et contribuent à une crise plus large."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Kuhn",
+        "text": "Le rôle historique d’une anomalie dépend de la manière dont la communauté scientifique l’évalue et de sa relation aux difficultés du paradigme."
+      }
+    ],
+    "related": [
+      "Paradigme",
+      "Science normale",
+      "Falsifiabilité",
+      "Révolution scientifique"
+    ]
+  },
+  {
+    "term": "Incommensurabilité",
+    "aliases": "incommensurabilité incommensurabilite",
+    "category": "Concept kuhnien / philosophie des sciences",
+    "lead": "L’incommensurabilité désigne l’absence d’une mesure ou d’un langage entièrement neutre permettant de comparer terme à terme certains paradigmes scientifiques concurrents. Les concepts, problèmes et standards peuvent changer avec le cadre théorique.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne signifie pas nécessairement que deux paradigmes sont absolument incomparables ou que toute communication est impossible.",
+      "Kuhn affine le concept vers des difficultés de traduction locale et des différences taxonomiques plutôt qu’un relativisme total."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Kuhn",
+        "text": "Les révolutions scientifiques peuvent transformer le sens des concepts et les critères de résolution des problèmes, compliquant la comparaison purement algorithmique des paradigmes."
+      }
+    ],
+    "related": [
+      "Paradigme",
+      "Révolution scientifique",
+      "Relativisme",
+      "Traduction"
+    ]
+  },
+  {
+    "term": "Programme de recherche",
+    "aliases": "programme de recherche",
+    "category": "Concept lakatosien / science",
+    "lead": "Un programme de recherche est, chez Lakatos, une suite historique de théories partageant un « noyau dur » protégé par une ceinture d’hypothèses auxiliaires et guidé par des heuristiques de développement.",
+    "kind": "concept",
+    "senses": [
+      "Un programme est progressif lorsqu’il produit des prédictions ou explications nouvelles confirmées ; il devient dégénératif lorsqu’il se contente d’ajustements ad hoc après les faits.",
+      "Lakatos cherche ainsi une position intermédiaire entre falsification instantanée et description kuhnienne des paradigmes."
+    ],
+    "authors": [
+      {
+        "name": "Imre Lakatos",
+        "text": "La méthodologie des programmes de recherche évalue des trajectoires théoriques dans le temps plutôt que des hypothèses isolées."
+      }
+    ],
+    "related": [
+      "Noyau dur",
+      "Ceinture protectrice",
+      "Falsifiabilité",
+      "Paradigme"
+    ]
+  },
+  {
+    "term": "Noyau dur",
+    "aliases": "noyau dur",
+    "category": "Concept lakatosien / science",
+    "lead": "Le noyau dur d’un programme de recherche est l’ensemble des engagements théoriques fondamentaux que ses défenseurs choisissent méthodologiquement de ne pas abandonner face aux premières difficultés. Les ajustements portent d’abord sur des hypothèses périphériques.",
+    "kind": "concept",
+    "senses": [
+      "Le caractère « dur » n’implique pas une vérité garantie : il décrit une stratégie de recherche.",
+      "Si le programme cesse durablement de produire des développements progressifs, le maintien du noyau peut devenir méthodologiquement moins rationnel."
+    ],
+    "authors": [
+      {
+        "name": "Imre Lakatos",
+        "text": "La « heuristique négative » recommande de détourner les réfutations du noyau dur vers la ceinture protectrice tant que le programme reste progressif."
+      }
+    ],
+    "related": [
+      "Programme de recherche",
+      "Ceinture protectrice",
+      "Hypothèse auxiliaire",
+      "Falsifiabilité"
+    ]
+  },
+  {
+    "term": "Ceinture protectrice",
+    "aliases": "ceinture protectrice",
+    "category": "Concept lakatosien / science",
+    "lead": "La ceinture protectrice est l’ensemble des hypothèses auxiliaires, modèles, conditions initiales et ajustements entourant le noyau dur d’un programme de recherche. Elle est modifiée lorsque de nouvelles données créent des difficultés.",
+    "kind": "concept",
+    "senses": [
+      "Modifier la ceinture n’est pas automatiquement ad hoc : un ajustement peut être progressif s’il conduit à de nouvelles prédictions réussies.",
+      "Le concept reconnaît qu’un test empirique porte rarement sur une proposition isolée."
+    ],
+    "authors": [
+      {
+        "name": "Imre Lakatos",
+        "text": "Les scientifiques protègent provisoirement le noyau dur en révisant des hypothèses périphériques selon une stratégie de recherche."
+      }
+    ],
+    "related": [
+      "Programme de recherche",
+      "Noyau dur",
+      "Thèse de Duhem-Quine",
+      "Hypothèse auxiliaire"
+    ]
+  },
+  {
+    "term": "Thèse de Duhem-Quine",
+    "aliases": "thèse de duhem-quine these de duhem quine",
+    "category": "Concept épistémologique / science",
+    "lead": "La thèse de Duhem-Quine désigne l’idée qu’une hypothèse scientifique n’est pas testée isolément : les prédictions dépendent d’un réseau d’hypothèses auxiliaires, de théories de mesure et de conditions initiales. Un résultat négatif ne désigne donc pas logiquement une unique proposition à rejeter.",
+    "kind": "concept",
+    "senses": [
+      "Duhem formule d’abord ce holisme à propos de la physique théorique ; Quine l’étend dans une perspective plus générale sur le réseau de nos croyances.",
+      "La thèse n’implique pas que toute théorie puisse être sauvée rationnellement contre toute donnée sans coût méthodologique."
+    ],
+    "authors": [
+      {
+        "name": "Pierre Duhem",
+        "text": "Une expérience de physique met à l’épreuve un ensemble théorique et expérimental plutôt qu’une hypothèse isolée."
+      },
+      {
+        "name": "Quine",
+        "text": "Il radicalise l’idée en parlant de confrontation de l’expérience avec le « tribunal » de l’ensemble de nos énoncés."
+      }
+    ],
+    "related": [
+      "Sous-détermination des théories",
+      "Holisme",
+      "Ceinture protectrice",
+      "Falsifiabilité"
+    ]
+  },
+  {
+    "term": "Sous-détermination des théories",
+    "aliases": "sous-détermination des théories sous determination des theories",
+    "category": "Concept épistémologique / science",
+    "lead": "La sous-détermination est la possibilité que les données disponibles soient compatibles avec plusieurs théories différentes. Elle soulève la question de ce qui justifie le choix entre théories empiriquement équivalentes ou insuffisamment discriminées par l’expérience.",
+    "kind": "concept",
+    "senses": [
+      "La sous-détermination peut être locale et provisoire ou, selon certaines thèses plus fortes, structurelle.",
+      "Les scientifiques mobilisent alors aussi simplicité, fécondité, cohérence avec d’autres connaissances, pouvoir explicatif ou nouvelles prédictions."
+    ],
+    "related": [
+      "Thèse de Duhem-Quine",
+      "Inférence à la meilleure explication",
+      "Réalisme scientifique",
+      "Empirisme"
+    ]
+  },
+  {
+    "term": "Charge théorique de l’observation",
+    "aliases": "charge théorique de l’observation charge theorique de l observation",
+    "category": "Concept de philosophie des sciences",
+    "lead": "La charge théorique de l’observation est l’idée que ce que nous observons et la manière dont nous le décrivons dépendent en partie de concepts, attentes, instruments et théories déjà disponibles. L’observation n’est donc pas un accès entièrement neutre à des « faits bruts ».",
+    "kind": "concept",
+    "senses": [
+      "Deux chercheurs peuvent recevoir les mêmes stimulations sensorielles tout en catégorisant différemment ce qu’ils voient selon leur formation théorique.",
+      "Cette thèse n’implique pas que l’observation soit arbitraire ou que les données n’exercent aucune contrainte sur les théories."
+    ],
+    "authors": [
+      {
+        "name": "Hanson",
+        "text": "Il popularise l’idée que « voir » scientifiquement est déjà informé par des cadres conceptuels."
+      },
+      {
+        "name": "Thomas Kuhn",
+        "text": "Les changements de paradigme modifient en partie ce que les scientifiques apprennent à reconnaître comme faits pertinents."
+      }
+    ],
+    "related": [
+      "Observation",
+      "Paradigme",
+      "Sous-détermination des théories",
+      "Théorie"
+    ]
+  },
+  {
+    "term": "Réalisme scientifique",
+    "aliases": "réalisme scientifique realisme scientifique",
+    "category": "Doctrine de philosophie des sciences",
+    "lead": "Le réalisme scientifique soutient, sous différentes formes, que les meilleures théories scientifiques visent une description approximativement vraie d’un monde indépendant de nous, y compris concernant certaines entités inobservables comme électrons, gènes ou champs.",
+    "kind": "concept",
+    "senses": [
+      "L’argument du « miracle » affirme que le succès prédictif des sciences serait difficile à expliquer si leurs théories n’étaient pas au moins approximativement vraies.",
+      "Les antiréalistes invoquent notamment les changements historiques de théories, la sous-détermination et la possibilité de préserver seulement l’adéquation empirique."
+    ],
+    "authors": [
+      {
+        "name": "Hilary Putnam",
+        "text": "Il a défendu une forme influente de l’argument selon lequel le succès de la science ne doit pas apparaître comme un miracle."
+      },
+      {
+        "name": "Bas van Fraassen",
+        "text": "Son empirisme constructif accepte l’adéquation empirique sans exiger la croyance en la vérité concernant les inobservables."
+      }
+    ],
+    "related": [
+      "Instrumentalisme",
+      "Sous-détermination des théories",
+      "Explication",
+      "Vérité"
+    ]
+  },
+  {
+    "term": "Instrumentalisme",
+    "aliases": "instrumentalisme",
+    "category": "Doctrine de philosophie des sciences",
+    "lead": "L’instrumentalisme considère les théories scientifiques principalement comme des instruments efficaces pour organiser, prévoir ou calculer les phénomènes, sans exiger qu’elles décrivent littéralement la structure inobservable du monde.",
+    "kind": "concept",
+    "senses": [
+      "Une théorie peut être jugée excellente parce qu’elle fonctionne prédictivement même si l’on suspend son engagement ontologique concernant ses entités théoriques.",
+      "Il existe plusieurs formes d’instrumentalisme et d’antiréalisme ; toutes ne traitent pas les théories comme de simples fictions arbitraires."
+    ],
+    "related": [
+      "Réalisme scientifique",
+      "Empirisme",
+      "Conventionnalisme",
+      "Théorie"
+    ]
+  },
+  {
+    "term": "Conventionnalisme",
+    "aliases": "conventionnalisme",
+    "category": "Doctrine de philosophie des sciences",
+    "lead": "Le conventionnalisme souligne le rôle de choix, définitions, unités ou conventions dans la formulation des théories scientifiques. Il ne signifie pas nécessairement que les faits sont inventés arbitrairement, mais que plusieurs cadres formels peuvent parfois organiser les mêmes observations.",
+    "kind": "concept",
+    "senses": [
+      "Poincaré discute par exemple le statut conventionnel des géométries utilisées pour décrire l’espace physique.",
+      "Une convention reste soumise à des contraintes de simplicité, cohérence, fécondité et adéquation empirique."
+    ],
+    "authors": [
+      {
+        "name": "Henri Poincaré",
+        "text": "Il montre que certains principes géométriques et mécaniques peuvent être choisis conventionnellement dans un système global soumis à l’expérience."
+      }
+    ],
+    "related": [
+      "Instrumentalisme",
+      "Opérationnalisme",
+      "Théorie",
+      "Mesure"
+    ]
+  },
+  {
+    "term": "Opérationnalisme",
+    "aliases": "opérationnalisme operationnalisme",
+    "category": "Doctrine méthodologique / science",
+    "lead": "L’opérationnalisme définit ou précise un concept scientifique par les opérations utilisées pour le mesurer ou le mettre en œuvre. Il vise à limiter les notions obscures en les reliant à des procédures observables.",
+    "kind": "concept",
+    "senses": [
+      "Une version forte risque de multiplier les concepts selon chaque procédure de mesure et de confondre la grandeur avec son instrument de mesure.",
+      "Les sciences contemporaines utilisent souvent des définitions opérationnelles sans adopter pour autant un opérationnalisme philosophique intégral."
+    ],
+    "authors": [
+      {
+        "name": "Percy Bridgman",
+        "text": "Il défend au XXe siècle une conception opérationnelle des concepts scientifiques, notamment dans le contexte de la physique."
+      }
+    ],
+    "related": [
+      "Mesure",
+      "Vérificationnisme",
+      "Conventionnalisme",
+      "Concept"
+    ]
+  },
+  {
+    "term": "Réductionnisme",
+    "aliases": "réductionnisme reductionnisme",
+    "category": "Doctrine méthodologique / métaphysique",
+    "lead": "Le réductionnisme est la thèse selon laquelle des phénomènes, propriétés ou théories d’un niveau peuvent être expliqués, identifiés ou dérivés à partir d’un niveau plus fondamental. Le terme couvre plusieurs thèses distinctes et ne doit pas être utilisé sans préciser ce qui est réduit à quoi.",
+    "kind": "concept",
+    "senses": [
+      "Un réductionnisme ontologique affirme que certaines entités ne sont rien de plus que des entités plus fondamentales ; un réductionnisme explicatif affirme qu’un vocabulaire ou mécanisme inférieur suffit à les expliquer.",
+      "Les débats sur émergence, esprit, biologie et sciences sociales portent souvent sur les limites de telles réductions."
+    ],
+    "related": [
+      "Émergence",
+      "Physicalisme",
+      "Explication",
+      "Niveau d’organisation"
+    ]
+  },
+  {
+    "term": "Émergence",
+    "aliases": "émergence emergence",
+    "category": "Concept métaphysique / science",
+    "lead": "L’émergence désigne l’apparition, à un niveau d’organisation, de propriétés ou comportements qui dépendent de composants plus fondamentaux sans se laisser expliquer de manière simple par leur seule description isolée.",
+    "kind": "concept",
+    "senses": [
+      "L’émergence faible peut signifier complexité et imprédictibilité pratique tout en restant compatible avec une réduction de principe.",
+      "L’émergence forte attribue parfois aux propriétés de haut niveau une nouveauté ontologique ou des pouvoirs causaux irréductibles, thèse beaucoup plus controversée."
+    ],
+    "related": [
+      "Réductionnisme",
+      "Survenance",
+      "Complexité",
+      "Pouvoir causal"
+    ]
+  },
+  {
+    "term": "Explication nomologico-déductive",
+    "aliases": "explication nomologico-déductive explication nomologico deductive",
+    "category": "Modèle de l’explication scientifique",
+    "lead": "Le modèle nomologico-déductif, associé à Hempel et Oppenheim, explique un phénomène en montrant qu’il peut être déduit de lois générales et de conditions initiales pertinentes. Une bonne explication prend alors la forme d’un argument déductif.",
+    "kind": "concept",
+    "etymology": "Du grec nomos, « loi », et logique déductive.",
+    "senses": [
+      "Le modèle rend bien certaines explications de la physique classique mais rencontre des contre-exemples d’asymétrie et de pertinence explicative.",
+      "Il a stimulé des modèles causaux, mécanistes, unificationnistes et pragmatiques alternatifs de l’explication."
+    ],
+    "authors": [
+      {
+        "name": "Carl Hempel",
+        "text": "Il formalise avec Oppenheim le modèle déductif-nomologique comme idéal d’explication par subsomption sous des lois."
+      }
+    ],
+    "related": [
+      "Loi scientifique",
+      "Déduction",
+      "Explication",
+      "Causalité"
+    ]
+  },
+  {
+    "term": "Ceteris paribus",
+    "aliases": "ceteris paribus",
+    "category": "Concept méthodologique",
+    "lead": "Une clause ceteris paribus signifie « toutes choses égales par ailleurs ». Elle indique qu’une généralisation vaut sous réserve que d’autres facteurs pertinents ne changent pas ou qu’aucune condition perturbatrice n’intervienne.",
+    "kind": "concept",
+    "etymology": "Latin : « les autres choses étant égales ».",
+    "senses": [
+      "De nombreuses lois ou régularités en économie, biologie et sciences sociales ont une portée ceteris paribus plutôt qu’universelle sans exception.",
+      "Le défi philosophique est d’éviter que la clause devienne une échappatoire vide utilisée après coup pour protéger n’importe quelle généralisation."
+    ],
+    "related": [
+      "Loi scientifique",
+      "Condition",
+      "Modèle",
+      "Falsifiabilité"
+    ]
+  },
+  {
+    "term": "Bayésianisme",
+    "aliases": "bayésianisme bayesianisme",
+    "category": "Approche épistémologique / probabiliste",
+    "lead": "Le bayésianisme représente les degrés de croyance par des probabilités et décrit leur mise à jour à la lumière de nouvelles données au moyen de la règle de Bayes. Il fournit un cadre puissant pour comparer hypothèses, données et croyances antérieures.",
+    "kind": "concept",
+    "etymology": "Du nom de Thomas Bayes.",
+    "senses": [
+      "La probabilité postérieure dépend de la vraisemblance des données sous l’hypothèse et de la probabilité antérieure attribuée à cette hypothèse.",
+      "Les débats portent notamment sur le choix des priors, l’interprétation des probabilités et le lien entre rationalité normative et pratiques scientifiques réelles."
+    ],
+    "related": [
+      "Probabilité",
+      "Confirmation",
+      "Inférence",
+      "Abduction"
+    ]
+  },
+  {
+    "term": "Problème de Gettier",
+    "aliases": "problème de gettier probleme de gettier",
+    "category": "Problème épistémologique",
+    "lead": "Le problème de Gettier montre que la définition traditionnelle de la connaissance comme croyance vraie justifiée peut être insuffisante : une personne peut avoir une croyance vraie et justifiée dont la vérité dépend pourtant d’un hasard épistémique.",
+    "kind": "concept",
+    "senses": [
+      "Dans les cas de Gettier, la justification conduit raisonnablement à la croyance, mais un élément accidentel empêche de considérer intuitivement le sujet comme sachant.",
+      "Le problème a suscité des théories ajoutant des conditions anti-chance, de fiabilité, de sécurité ou de connexion causale à la vérité."
+    ],
+    "authors": [
+      {
+        "name": "Edmund Gettier",
+        "text": "Son bref article de 1963 fournit des contre-exemples devenus classiques à l’analyse tripartite de la connaissance."
+      }
+    ],
+    "related": [
+      "Connaissance",
+      "Justification",
+      "Fiabilisme",
+      "Chance épistémique"
+    ]
+  },
+  {
+    "term": "Fondationnalisme",
+    "aliases": "fondationnalisme",
+    "category": "Doctrine épistémologique",
+    "lead": "Le fondationnalisme soutient que la justification de nos croyances repose ultimement sur certaines croyances de base qui ne tirent pas toute leur justification d’autres croyances. Il vise à éviter une régression infinie des raisons.",
+    "kind": "concept",
+    "senses": [
+      "Les versions classiques attribuent parfois une certitude forte aux fondations ; les versions modestes acceptent des croyances de base faillibles.",
+      "Le défi consiste à expliquer comment des croyances de base sont justifiées et comment leur justification se transmet aux croyances dérivées."
+    ],
+    "related": [
+      "Cohérentisme",
+      "Justification",
+      "Connaissance",
+      "Régression épistémique"
+    ]
+  },
+  {
+    "term": "Cohérentisme",
+    "aliases": "cohérentisme coherentisme",
+    "category": "Doctrine épistémologique",
+    "lead": "Le cohérentisme soutient que la justification d’une croyance dépend de sa place dans un système global de croyances qui se soutiennent mutuellement par cohérence, intégration explicative et absence de contradiction, plutôt que d’une fondation ultime indépendante.",
+    "kind": "concept",
+    "senses": [
+      "Le principal défi est le problème de l’isolement : un système de croyances pourrait être très cohérent tout en étant déconnecté du monde.",
+      "Des versions contemporaines combinent cohérence interne et contraintes issues de l’expérience."
+    ],
+    "related": [
+      "Fondationnalisme",
+      "Justification",
+      "Holisme",
+      "Connaissance"
+    ]
+  },
+  {
+    "term": "Fiabilisme",
+    "aliases": "fiabilisme",
+    "category": "Doctrine épistémologique",
+    "lead": "Le fiabilisme soutient, sous une forme classique, qu’une croyance est justifiée lorsqu’elle est produite ou maintenue par un processus qui tend de manière fiable à produire des croyances vraies dans les conditions appropriées.",
+    "kind": "concept",
+    "senses": [
+      "La perception normale, la mémoire ou un raisonnement valide peuvent être fiables sans que le sujet possède nécessairement une théorie réflexive de leur fiabilité.",
+      "Le fiabilisme est souvent externaliste parce que la justification peut dépendre de faits auxquels le sujet n’a pas un accès introspectif complet."
+    ],
+    "authors": [
+      {
+        "name": "Alvin Goldman",
+        "text": "Il développe une forme influente de fiabilisme processuel dans l’épistémologie contemporaine."
+      }
+    ],
+    "related": [
+      "Externalisme épistémique",
+      "Internalisme épistémique",
+      "Problème de Gettier",
+      "Justification"
+    ]
+  },
+  {
+    "term": "Internalisme épistémique",
+    "aliases": "internalisme épistémique internalisme epistemique",
+    "category": "Doctrine épistémologique",
+    "lead": "L’internalisme épistémique soutient que les facteurs qui justifient une croyance doivent être, d’une manière pertinente, accessibles au sujet ou internes à sa perspective cognitive. Les versions divergent sur le type d’accès requis.",
+    "kind": "concept",
+    "senses": [
+      "Certaines versions exigent que le sujet puisse réfléchir à ses raisons ; d’autres parlent plus largement d’états mentaux accessibles.",
+      "L’internalisme met l’accent sur la responsabilité rationnelle et la perspective de première personne, mais doit expliquer comment éviter une régression de justifications."
+    ],
+    "related": [
+      "Externalisme épistémique",
+      "Justification",
+      "Fondationnalisme",
+      "Fiabilisme"
+    ]
+  },
+  {
+    "term": "Externalisme épistémique",
+    "aliases": "externalisme épistémique externalisme epistemique",
+    "category": "Doctrine épistémologique",
+    "lead": "L’externalisme épistémique admet que la connaissance ou la justification puisse dépendre de facteurs externes à ce que le sujet peut consciemment inspecter, par exemple la fiabilité d’un processus ou une relation adéquate avec le monde.",
+    "kind": "concept",
+    "senses": [
+      "Le fiabilisme est une forme importante d’externalisme, mais toutes les théories externalistes ne sont pas fiabilistes.",
+      "L’approche explique comment des enfants ou animaux peuvent connaître sans posséder une métathéorie explicite de leurs raisons."
+    ],
+    "related": [
+      "Internalisme épistémique",
+      "Fiabilisme",
+      "Connaissance",
+      "Justification"
+    ]
+  },
+  {
+    "term": "Épistémologie des vertus",
+    "aliases": "épistémologie des vertus epistemologie des vertus",
+    "category": "Courant épistémologique",
+    "lead": "L’épistémologie des vertus analyse la connaissance et la justification à partir des qualités cognitives de l’agent : attention, ouverture d’esprit, courage intellectuel, fiabilité de facultés, compétence ou responsabilité.",
+    "kind": "concept",
+    "senses": [
+      "Les versions « reliabilistes » traitent les vertus comme des capacités cognitives fiables ; les versions « responsabilistes » insistent davantage sur les traits de caractère intellectuel.",
+      "L’approche cherche notamment à expliquer pourquoi une croyance vraie doit être attribuable à la compétence cognitive du sujet plutôt qu’à la chance."
+    ],
+    "authors": [
+      {
+        "name": "Ernest Sosa",
+        "text": "Il analyse la connaissance en termes de performance cognitive compétente, comparable à une réussite par aptitude."
+      },
+      {
+        "name": "Linda Zagzebski",
+        "text": "Elle développe une théorie responsabiliste liant vertu intellectuelle et caractère de l’agent."
+      }
+    ],
+    "related": [
+      "Vertu",
+      "Connaissance",
+      "Fiabilisme",
+      "Chance épistémique"
+    ]
+  },
+  {
+    "term": "Injustice épistémique",
+    "aliases": "injustice épistémique injustice epistemique",
+    "category": "Concept d’épistémologie sociale",
+    "lead": "L’injustice épistémique est une injustice subie spécifiquement en tant que sujet connaissant ou participant à la production de sens. Miranda Fricker distingue notamment l’injustice testimoniale et l’injustice herméneutique.",
+    "kind": "concept",
+    "senses": [
+      "L’injustice testimoniale survient lorsque des préjugés conduisent à accorder injustement trop peu de crédibilité à la parole de quelqu’un.",
+      "L’injustice herméneutique apparaît lorsque des ressources collectives de compréhension manquent pour rendre intelligible une expérience sociale importante."
+    ],
+    "authors": [
+      {
+        "name": "Miranda Fricker",
+        "text": "Elle systématise le concept pour analyser les dimensions épistémiques des rapports sociaux de pouvoir et de préjugé."
+      }
+    ],
+    "related": [
+      "Témoignage",
+      "Pouvoir",
+      "Connaissance",
+      "Interprétation"
+    ]
+  },
+  {
+    "term": "Témoignage",
+    "aliases": "témoignage temoignage",
+    "category": "Concept épistémologique / social",
+    "lead": "Le témoignage est une source de croyance fondée sur ce qu’autrui nous dit, écrit ou transmet. Une grande partie de nos connaissances ordinaires, historiques et scientifiques dépend de cette confiance épistémique socialement distribuée.",
+    "kind": "concept",
+    "senses": [
+      "Le réductionnisme testimonial exige de fonder la confiance sur d’autres sources comme perception, mémoire ou induction ; l’anti-réductionnisme admet un droit plus fondamental à accepter le témoignage en l’absence de raisons de douter.",
+      "Les questions de compétence, sincérité, autorité et réseaux de confiance sont centrales."
+    ],
+    "related": [
+      "Injustice épistémique",
+      "Connaissance",
+      "Confiance",
+      "Épistémologie sociale"
+    ]
+  },
+  {
+    "term": "Conséquentialisme",
+    "aliases": "conséquentialisme consequentialisme",
+    "category": "Courant éthique",
+    "lead": "Le conséquentialisme regroupe les théories selon lesquelles la valeur morale d’une action dépend fondamentalement de ses conséquences, évaluées selon un critère du bien. L’utilitarisme en est une forme majeure mais non la seule.",
+    "kind": "concept",
+    "senses": [
+      "Un conséquentialisme peut évaluer les actes, les règles, les motifs ou d’autres objets selon leurs effets.",
+      "Les débats portent notamment sur les droits, l’intégrité personnelle, les exigences excessives et la manière de mesurer les conséquences."
+    ],
+    "related": [
+      "Utilitarisme",
+      "Déontologisme",
+      "Bien",
+      "Conséquence"
+    ]
+  },
+  {
+    "term": "Déontologisme",
+    "aliases": "déontologisme deontologisme",
+    "category": "Courant éthique",
+    "lead": "Le déontologisme regroupe les théories qui reconnaissent des devoirs, interdictions ou droits dont la force morale ne se réduit pas à la maximisation des bonnes conséquences.",
+    "kind": "concept",
+    "etymology": "Du grec deon, « ce qui doit être ».",
+    "senses": [
+      "Certaines actions peuvent ainsi être interdites même si leur violation produirait davantage de bien total.",
+      "Les versions déontologiques diffèrent sur le caractère absolu ou prima facie des devoirs et sur leur rapport aux conséquences."
+    ],
+    "related": [
+      "Conséquentialisme",
+      "Devoir",
+      "Droit",
+      "Principe du double effet"
+    ]
+  },
+  {
+    "term": "Éthique de la vertu",
+    "aliases": "éthique de la vertu ethique de la vertu",
+    "category": "Courant éthique",
+    "lead": "L’éthique de la vertu place au centre la formation du caractère et les dispositions stables qui permettent de bien agir et de bien vivre, plutôt que de réduire la morale à des règles ou au calcul des conséquences.",
+    "kind": "concept",
+    "senses": [
+      "Dans la tradition aristotélicienne, les vertus sont des excellences acquises par l’habitude et guidées par la prudence.",
+      "Les versions contemporaines interrogent aussi les émotions, les pratiques, les communautés et les modèles de vie humaine accomplie."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La vie bonne repose sur l’exercice des vertus dans une activité rationnelle conforme à l’excellence."
+      },
+      {
+        "name": "Elizabeth Anscombe",
+        "text": "Elle contribue au renouveau contemporain des éthiques de la vertu en critiquant certaines formes modernes de théorie morale."
+      }
+    ],
+    "related": [
+      "Vertu",
+      "Phronèsis",
+      "Bonheur",
+      "Déontologisme"
+    ]
+  },
+  {
+    "term": "Éthique du care",
+    "aliases": "éthique du care ethique du care",
+    "category": "Courant éthique",
+    "lead": "L’éthique du care met au centre l’attention aux vulnérabilités, aux dépendances, aux relations concrètes et aux pratiques de soin. Elle critique les théories morales trop abstraites qui privilégient un agent indépendant et désincarné.",
+    "kind": "concept",
+    "etymology": "Anglais care : « soin, souci, attention ».",
+    "senses": [
+      "Le care n’est pas seulement une émotion privée : il peut être analysé comme pratique sociale, travail matériel et enjeu politique.",
+      "Les théories du care divergent sur leur rapport à la justice, à l’universalité et aux institutions."
+    ],
+    "authors": [
+      {
+        "name": "Carol Gilligan",
+        "text": "Elle met en lumière une voix morale centrée sur les relations et la responsabilité du soin."
+      },
+      {
+        "name": "Joan Tronto",
+        "text": "Elle développe une conception politique du care attentive à la répartition sociale du travail de soin et au pouvoir."
+      }
+    ],
+    "related": [
+      "Vulnérabilité",
+      "Responsabilité",
+      "Justice",
+      "Soin"
+    ]
+  },
+  {
+    "term": "Métaéthique",
+    "aliases": "métaéthique metaethique",
+    "category": "Branche de la philosophie morale",
+    "lead": "La métaéthique étudie le statut des jugements moraux plutôt que de dire directement quelles actions sont bonnes ou mauvaises. Elle interroge le sens du vocabulaire moral, l’existence éventuelle de faits moraux et la possibilité d’une connaissance morale.",
+    "kind": "concept",
+    "senses": [
+      "Elle oppose notamment réalisme et antiréalisme, cognitivisme et non-cognitivisme, naturalisme et non-naturalisme.",
+      "Une théorie métaéthique peut être compatible avec plusieurs doctrines normatives différentes."
+    ],
+    "related": [
+      "Réalisme moral",
+      "Antiréalisme moral",
+      "Cognitivisme moral",
+      "Non-cognitivisme"
+    ]
+  },
+  {
+    "term": "Réalisme moral",
+    "aliases": "réalisme moral realisme moral",
+    "category": "Doctrine métaéthique",
+    "lead": "Le réalisme moral soutient qu’il existe des vérités ou faits moraux qui ne dépendent pas simplement des préférences individuelles ou des conventions locales, et que certains jugements moraux visent à les décrire correctement.",
+    "kind": "concept",
+    "senses": [
+      "Les réalistes divergent sur la nature des faits moraux : naturels, non naturels, dépendants de raisons ou de structures rationnelles.",
+      "Le réalisme n’implique pas automatiquement que nous connaissions facilement ces vérités ni que tous les désaccords moraux puissent être résolus."
+    ],
+    "related": [
+      "Antiréalisme moral",
+      "Cognitivisme moral",
+      "Métaéthique",
+      "Objectivité"
+    ]
+  },
+  {
+    "term": "Antiréalisme moral",
+    "aliases": "antiréalisme moral antirealisme moral",
+    "category": "Doctrine métaéthique",
+    "lead": "L’antiréalisme moral regroupe les positions qui refusent au moins une composante centrale du réalisme moral, par exemple l’existence de faits moraux objectifs indépendants ou l’idée que les jugements moraux décrivent de tels faits.",
+    "kind": "concept",
+    "senses": [
+      "Il comprend des positions très différentes : théorie de l’erreur, expressivisme, constructivisme dans certaines lectures, relativismes, etc.",
+      "Il ne signifie pas nécessairement que « tout se vaut » ou que l’argumentation morale devient impossible."
+    ],
+    "related": [
+      "Réalisme moral",
+      "Non-cognitivisme",
+      "Émotivisme",
+      "Métaéthique"
+    ]
+  },
+  {
+    "term": "Cognitivisme moral",
+    "aliases": "cognitivisme moral",
+    "category": "Doctrine métaéthique",
+    "lead": "Le cognitivisme moral soutient que les jugements moraux expriment des croyances ou propositions susceptibles d’être vraies ou fausses. Il est compatible aussi bien avec certaines formes de réalisme qu’avec la théorie de l’erreur.",
+    "kind": "concept",
+    "senses": [
+      "Un cognitiviste peut affirmer qu’il existe des vérités morales, ou soutenir que tous les jugements moraux positifs sont faux si aucune propriété morale n’existe.",
+      "La question centrale est le type d’état mental exprimé par un jugement comme « mentir est mal »."
+    ],
+    "related": [
+      "Non-cognitivisme",
+      "Réalisme moral",
+      "Théorie de l’erreur",
+      "Proposition"
+    ]
+  },
+  {
+    "term": "Non-cognitivisme",
+    "aliases": "non-cognitivisme non cognitivisme",
+    "category": "Doctrine métaéthique",
+    "lead": "Le non-cognitivisme soutient que les jugements moraux ne fonctionnent pas principalement comme des descriptions de faits vraies ou fausses mais expriment, prescrivent ou structurent des attitudes pratiques.",
+    "kind": "concept",
+    "senses": [
+      "L’émotivisme les rapproche d’expressions d’approbation ou de désapprobation ; le prescriptivisme met l’accent sur la prescription universalisable.",
+      "Les versions contemporaines doivent expliquer la logique des arguments moraux et l’apparente objectivité du discours éthique."
+    ],
+    "related": [
+      "Cognitivisme moral",
+      "Émotivisme",
+      "Prescriptivisme",
+      "Expressivisme"
+    ]
+  },
+  {
+    "term": "Émotivisme",
+    "aliases": "émotivisme emotivisme",
+    "category": "Doctrine métaéthique",
+    "lead": "L’émotivisme est une forme de non-cognitivisme selon laquelle les énoncés moraux expriment principalement des attitudes d’approbation ou de désapprobation et peuvent chercher à influencer celles d’autrui plutôt qu’à rapporter des faits moraux.",
+    "kind": "concept",
+    "senses": [
+      "Dire « voler est mal » est alors proche, dans une version simplifiée, d’exprimer une désapprobation du vol, sans s’y réduire grammaticalement.",
+      "La théorie doit expliquer comment des désaccords moraux peuvent être rationnels et comment les énoncés moraux s’insèrent dans des raisonnements complexes."
+    ],
+    "authors": [
+      {
+        "name": "A. J. Ayer",
+        "text": "Il associe les jugements éthiques à l’expression d’émotions dans le cadre de son empirisme logique."
+      },
+      {
+        "name": "Charles Stevenson",
+        "text": "Il développe une version plus élaborée de l’émotivisme attentive au désaccord d’attitudes et à la persuasion."
+      }
+    ],
+    "related": [
+      "Non-cognitivisme",
+      "Prescriptivisme",
+      "Métaéthique",
+      "Valeur"
+    ]
+  },
+  {
+    "term": "Prescriptivisme",
+    "aliases": "prescriptivisme",
+    "category": "Doctrine métaéthique",
+    "lead": "Le prescriptivisme analyse les jugements moraux comme des prescriptions ou recommandations pratiques dotées d’une exigence de cohérence et, chez Hare, d’universalisabilité.",
+    "kind": "concept",
+    "senses": [
+      "Un jugement moral engage le locuteur à adopter une prescription dans des situations pertinentes similaires, quel que soit le rôle qu’il y occupe.",
+      "La théorie tente ainsi de préserver une forme de rationalité morale sans traiter les valeurs comme de simples propriétés descriptives."
+    ],
+    "authors": [
+      {
+        "name": "R. M. Hare",
+        "text": "Il développe le prescriptivisme universel et insiste sur les engagements pratiques impliqués par le langage moral."
+      }
+    ],
+    "related": [
+      "Non-cognitivisme",
+      "Émotivisme",
+      "Impératif",
+      "Universalisabilité"
+    ]
+  },
+  {
+    "term": "Erreur naturaliste",
+    "aliases": "erreur naturaliste",
+    "category": "Concept métaéthique",
+    "lead": "L’« erreur naturaliste » est le nom donné par G. E. Moore à la tentative de définir la propriété de bonté en termes d’une propriété naturelle ou métaphysique, par exemple plaisir ou désiré. La notion est distincte de la simple inférence illégitime du fait à la valeur.",
+    "kind": "concept",
+    "senses": [
+      "Moore utilise l’argument de la question ouverte : même après une définition proposée de « bon », il semble rester sensé de demander si cette chose est réellement bonne.",
+      "L’identification de l’erreur naturaliste par Moore est controversée et ne constitue pas à elle seule une réfutation de tous les naturalismes moraux contemporains."
+    ],
+    "authors": [
+      {
+        "name": "G. E. Moore",
+        "text": "Principia Ethica soutient que « bon » est une notion simple et indéfinissable, non réductible à une propriété naturelle."
+      }
+    ],
+    "related": [
+      "Loi de Hume",
+      "Fait-valeur",
+      "Naturalisme moral",
+      "Métaéthique"
+    ]
+  },
+  {
+    "term": "Loi de Hume",
+    "aliases": "loi de hume",
+    "category": "Concept métaéthique",
+    "lead": "La « loi de Hume » désigne l’idée qu’on ne peut pas dériver logiquement une conclusion normative — ce qui doit être — de prémisses exclusivement descriptives — ce qui est — sans introduire au moins un principe normatif supplémentaire.",
+    "kind": "concept",
+    "senses": [
+      "Hume observe le passage soudain de « est » à « doit » chez certains moralistes et demande qu’il soit expliqué.",
+      "La thèse porte sur la structure de la justification, non sur l’impossibilité de tout lien entre faits et normes."
+    ],
+    "authors": [
+      {
+        "name": "Hume",
+        "text": "Le Traité de la nature humaine attire l’attention sur le passage non justifié des propositions en « est » aux propositions en « doit »."
+      }
+    ],
+    "related": [
+      "Fait-valeur",
+      "Erreur naturaliste",
+      "Norme",
+      "Métaéthique"
+    ]
+  },
+  {
+    "term": "Fait-valeur",
+    "aliases": "fait-valeur fait valeur",
+    "category": "Distinction métaéthique",
+    "lead": "La distinction fait-valeur sépare les énoncés descriptifs sur ce qui est de ceux qui évaluent ou prescrivent ce qui est bon, mauvais ou souhaitable. Elle sert à clarifier les arguments sans impliquer que faits et valeurs soient toujours psychologiquement ou socialement indépendants.",
+    "kind": "concept",
+    "senses": [
+      "La question philosophique porte sur les relations de justification possibles entre descriptions et évaluations.",
+      "Plusieurs traditions contestent qu’une frontière absolument nette puisse être maintenue dans tous les concepts épais comme « cruel », « courageux » ou « injuste »."
+    ],
+    "related": [
+      "Loi de Hume",
+      "Valeur",
+      "Norme",
+      "Erreur naturaliste"
+    ]
+  },
+  {
+    "term": "Chance morale",
+    "aliases": "chance morale",
+    "category": "Concept éthique",
+    "lead": "La chance morale désigne le problème qui apparaît lorsque notre évaluation morale d’un agent dépend de facteurs qui échappent en partie à son contrôle. Deux personnes également imprudentes peuvent être jugées très différemment selon qu’un accident survient ou non.",
+    "kind": "concept",
+    "senses": [
+      "On distingue souvent chance dans les conséquences, les circonstances, la constitution de l’agent et les chaînes causales antérieures.",
+      "Le problème met en tension l’intuition que la responsabilité suppose le contrôle et nos pratiques effectives de blâme ou de mérite."
+    ],
+    "authors": [
+      {
+        "name": "Thomas Nagel",
+        "text": "Il systématise plusieurs formes de moral luck et montre leur menace pour l’idée de contrôle moral."
+      },
+      {
+        "name": "Bernard Williams",
+        "text": "Il analyse notamment la chance dans l’évaluation rétrospective d’une décision à travers le cas de Gauguin."
+      }
+    ],
+    "related": [
+      "Responsabilité",
+      "Contrôle",
+      "Culpabilité",
+      "Conséquentialisme"
+    ]
+  },
+  {
+    "term": "Surérogation",
+    "aliases": "surérogation surerogation",
+    "category": "Concept éthique",
+    "lead": "Un acte surérogatoire est moralement bon ou admirable au-delà de ce qui est strictement requis par le devoir : il est permis de ne pas l’accomplir, mais louable de le faire.",
+    "kind": "concept",
+    "etymology": "Du latin supererogare, « donner au-delà de ce qui est dû ».",
+    "senses": [
+      "Les actes héroïques de sacrifice sont des exemples typiques, mais la frontière entre devoir et surérogation varie selon les théories morales.",
+      "Le concept pose une difficulté aux théories qui semblent exiger en permanence la maximisation du bien."
+    ],
+    "related": [
+      "Devoir",
+      "Mérite",
+      "Conséquentialisme",
+      "Vertu"
+    ]
+  },
+  {
+    "term": "Principe du double effet",
+    "aliases": "principe du double effet",
+    "category": "Concept éthique",
+    "lead": "Le principe du double effet cherche à distinguer l’effet mauvais voulu comme moyen ou comme fin de l’effet mauvais seulement prévu comme conséquence latérale d’une action orientée vers un bien. Il est issu de la tradition thomiste et reste très débattu.",
+    "kind": "concept",
+    "senses": [
+      "Les formulations classiques exigent notamment que l’acte ne soit pas mauvais en lui-même, que le mauvais effet ne soit pas le moyen du bon et qu’il existe une proportion suffisante entre les effets.",
+      "Les critiques contestent parfois la stabilité morale de la distinction entre intention et prévision."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Son analyse de la légitime défense est souvent considérée comme une source historique du principe, même si la formulation moderne est postérieure."
+      }
+    ],
+    "related": [
+      "Intention",
+      "Conséquence",
+      "Déontologisme",
+      "Actes et omissions"
+    ]
+  },
+  {
+    "term": "Actes et omissions",
+    "aliases": "actes et omissions",
+    "category": "Distinction éthique",
+    "lead": "La distinction entre actes et omissions oppose le fait de provoquer activement un événement au fait de ne pas empêcher qu’il survienne. Une question centrale est de savoir si, à conséquences égales, cette différence possède une importance morale intrinsèque.",
+    "kind": "concept",
+    "senses": [
+      "Certaines théories déontologiques accordent plus de poids à l’interdiction de faire du mal qu’au devoir d’empêcher tout mal comparable.",
+      "Les critiques montrent que « laisser faire » peut parfois être intentionnel, causalement pertinent et moralement aussi grave qu’un acte positif."
+    ],
+    "related": [
+      "Principe du double effet",
+      "Responsabilité",
+      "Omission",
+      "Déontologisme"
+    ]
+  },
+  {
+    "term": "Raisons agent-relatives",
+    "aliases": "raisons agent-relatives raisons agent relatives",
+    "category": "Concept éthique",
+    "lead": "Les raisons agent-relatives sont des raisons dont la force dépend essentiellement de l’identité, des engagements ou de la position de l’agent : par exemple une obligation spéciale envers son enfant ou l’interdiction pour moi de commettre directement un certain acte.",
+    "kind": "concept",
+    "senses": [
+      "Elles s’opposent aux raisons agent-neutres, qui peuvent être formulées sans référence essentielle à la personne qui doit agir.",
+      "La distinction est importante dans les débats entre conséquentialisme, déontologie et obligations spéciales."
+    ],
+    "related": [
+      "Raisons agent-neutres",
+      "Déontologisme",
+      "Obligation",
+      "Partialité"
+    ]
+  },
+  {
+    "term": "Raisons agent-neutres",
+    "aliases": "raisons agent-neutres raisons agent neutres",
+    "category": "Concept éthique",
+    "lead": "Les raisons agent-neutres sont des raisons que tout agent peut avoir de promouvoir ou respecter un certain état de choses indépendamment d’une relation spéciale avec lui. Maximiser le bien-être total est un exemple typique de formulation agent-neutre.",
+    "kind": "concept",
+    "senses": [
+      "Elles jouent un rôle majeur dans les théories conséquentialistes impartiales.",
+      "Le débat porte sur la place qu’une morale peut reconnaître aux projets personnels, aux relations spéciales et aux contraintes qui ne se réduisent pas à la promotion d’un bien impersonnel."
+    ],
+    "related": [
+      "Raisons agent-relatives",
+      "Conséquentialisme",
+      "Impartialité",
+      "Bien"
+    ]
+  },
+  {
+    "term": "Équilibre réfléchi",
+    "aliases": "équilibre réfléchi equilibre reflechi",
+    "category": "Méthode de philosophie morale",
+    "lead": "L’équilibre réfléchi est une méthode qui ajuste progressivement jugements particuliers, principes généraux et théories de fond jusqu’à atteindre une cohérence suffisamment stable entre eux. Aucune intuition isolée n’est tenue pour absolument intangible.",
+    "kind": "concept",
+    "senses": [
+      "L’équilibre peut être « étroit » lorsqu’il ajuste surtout jugements et principes proches, ou « large » lorsqu’il confronte aussi des théories concurrentes et des informations de fond.",
+      "La méthode est centrale chez Rawls mais a une portée plus générale en philosophie normative."
+    ],
+    "authors": [
+      {
+        "name": "John Rawls",
+        "text": "Il utilise l’équilibre réfléchi pour justifier et réviser les principes de justice en dialogue avec nos jugements considérés."
+      }
+    ],
+    "related": [
+      "Position originelle",
+      "Justice",
+      "Justification",
+      "Intuition"
+    ]
+  },
+  {
+    "term": "Position originelle",
+    "aliases": "position originelle",
+    "category": "Concept rawlsien / philosophie politique",
+    "lead": "La position originelle est une situation de choix hypothétique dans laquelle des personnes rationnelles déterminent des principes de justice sous un voile d’ignorance qui les prive d’informations sur leur place particulière dans la société.",
+    "kind": "concept",
+    "senses": [
+      "Elle n’est pas une hypothèse historique sur un contrat réellement conclu ; c’est un dispositif de représentation destiné à modéliser l’impartialité.",
+      "Les parties connaissent des faits généraux sur la société mais ignorent leur classe, talents, conception du bien, sexe ou génération."
+    ],
+    "authors": [
+      {
+        "name": "John Rawls",
+        "text": "La position originelle sert à représenter des conditions équitables de choix des principes de justice."
+      }
+    ],
+    "related": [
+      "Voile d’ignorance",
+      "Justice distributive",
+      "Équilibre réfléchi",
+      "Contrat social"
+    ]
+  },
+  {
+    "term": "Voile d’ignorance",
+    "aliases": "voile d’ignorance voile d ignorance",
+    "category": "Concept rawlsien / philosophie politique",
+    "lead": "Le voile d’ignorance est la restriction d’information imposée aux parties de la position originelle afin que personne ne puisse choisir des principes de justice avantageant sa situation particulière.",
+    "kind": "concept",
+    "senses": [
+      "Les parties ignorent leur position sociale, richesse, talents naturels et conception particulière du bien, mais disposent de connaissances générales sur la psychologie, l’économie et la vie sociale.",
+      "Le dispositif vise l’impartialité sans exiger que les personnes réelles soient dépourvues d’identité ou d’intérêts."
+    ],
+    "authors": [
+      {
+        "name": "John Rawls",
+        "text": "Le voile d’ignorance garantit que les principes choisis ne soient pas adaptés aux contingences arbitraires de la position sociale des parties."
+      }
+    ],
+    "related": [
+      "Position originelle",
+      "Impartialité",
+      "Justice",
+      "Égalité"
+    ]
+  },
+  {
+    "term": "Capabilités",
+    "aliases": "capabilités capabilites",
+    "category": "Concept éthique / justice sociale",
+    "lead": "L’approche par les capabilités évalue la justice et le développement à partir des libertés réelles qu’ont les personnes d’être et de faire ce qu’elles ont raison de valoriser, plutôt qu’à partir des seules ressources ou satisfactions déclarées.",
+    "kind": "concept",
+    "etymology": "Anglais capability, « capacité réelle, possibilité effective ».",
+    "senses": [
+      "Une même quantité de ressources peut offrir des libertés très différentes selon la santé, l’environnement, le genre, les handicaps ou les institutions.",
+      "Sen résiste à une liste unique et fermée de capabilités centrales ; Nussbaum propose au contraire une liste normative plus déterminée."
+    ],
+    "authors": [
+      {
+        "name": "Amartya Sen",
+        "text": "Il analyse le développement comme expansion des libertés substantielles et compare les situations par les fonctionnements et capabilités accessibles."
+      },
+      {
+        "name": "Martha Nussbaum",
+        "text": "Elle propose une théorie des capabilités centrales comme seuils de dignité humaine."
+      }
+    ],
+    "related": [
+      "Justice distributive",
+      "Liberté",
+      "Égalité",
+      "Dignité"
+    ]
+  },
+  {
+    "term": "Liberté négative",
+    "aliases": "liberté négative liberte negative",
+    "category": "Concept de philosophie politique",
+    "lead": "La liberté négative désigne l’absence d’interférence ou d’obstacles imposés par d’autres à l’action d’un individu. La question centrale devient : dans quel domaine puis-je agir sans qu’autrui ou l’État m’en empêche ?",
+    "kind": "concept",
+    "senses": [
+      "Isaiah Berlin oppose analytiquement liberté négative et liberté positive, tout en reconnaissant la complexité de leurs rapports.",
+      "Des théories républicaines contestent que la non-interférence suffise, puisqu’une personne peut être soumise à un pouvoir arbitraire même si ce pouvoir n’intervient pas effectivement."
+    ],
+    "authors": [
+      {
+        "name": "Isaiah Berlin",
+        "text": "Il popularise la distinction entre liberté négative, absence d’interférence, et liberté positive, maîtrise ou gouvernement de soi."
+      }
+    ],
+    "related": [
+      "Liberté positive",
+      "Non-domination",
+      "Liberté",
+      "Droit"
+    ]
+  },
+  {
+    "term": "Liberté positive",
+    "aliases": "liberté positive liberte positive",
+    "category": "Concept de philosophie politique",
+    "lead": "La liberté positive désigne la capacité de se gouverner soi-même, de participer à la détermination de ses fins ou de disposer des moyens permettant une autonomie effective.",
+    "kind": "concept",
+    "senses": [
+      "Elle peut désigner l’autonomie personnelle, la participation politique collective ou l’accès aux capacités nécessaires pour agir réellement.",
+      "Berlin met en garde contre des usages où une autorité prétendrait connaître le « vrai moi » d’un individu et le contraindre au nom de sa propre liberté."
+    ],
+    "authors": [
+      {
+        "name": "Isaiah Berlin",
+        "text": "Il distingue la question « qui me gouverne ? » de la question négative « jusqu’où suis-je empêché ? » tout en critiquant certaines dérives paternalistes de la liberté positive."
+      }
+    ],
+    "related": [
+      "Liberté négative",
+      "Autonomie",
+      "Capabilités",
+      "Non-domination"
+    ]
+  },
+  {
+    "term": "Non-domination",
+    "aliases": "non-domination non domination",
+    "category": "Concept républicain / philosophie politique",
+    "lead": "La non-domination définit la liberté comme absence de soumission à un pouvoir arbitraire, y compris lorsque ce pouvoir choisit de ne pas intervenir. Elle met l’accent sur la dépendance structurelle plutôt que sur la seule fréquence des obstacles effectifs.",
+    "kind": "concept",
+    "senses": [
+      "Un esclave soumis à un maître bienveillant peut subir peu d’interférences tout en restant dominé parce que le maître conserve un pouvoir arbitraire sur lui.",
+      "Les institutions républicaines cherchent à rendre le pouvoir contrôlable, contestable et non arbitraire."
+    ],
+    "authors": [
+      {
+        "name": "Philip Pettit",
+        "text": "Il systématise la conception néorépublicaine de la liberté comme non-domination."
+      }
+    ],
+    "related": [
+      "Liberté négative",
+      "Liberté positive",
+      "Républicanisme",
+      "Pouvoir"
+    ]
+  },
+  {
+    "term": "Désobéissance civile",
+    "aliases": "désobéissance civile desobeissance civile",
+    "category": "Concept de philosophie politique",
+    "lead": "La désobéissance civile est une violation publique, consciente et politique d’une règle juridique visant à protester contre une injustice et à provoquer une réforme. Les définitions classiques insistent souvent sur la non-violence et l’acceptation des conséquences juridiques, mais ces critères sont débattus.",
+    "kind": "concept",
+    "senses": [
+      "Elle se distingue d’une infraction privée motivée par l’intérêt personnel et d’une insurrection visant directement à renverser tout ordre juridique.",
+      "Le problème philosophique concerne les conditions dans lesquelles le devoir d’obéir à la loi peut être dépassé par des exigences de justice."
+    ],
+    "authors": [
+      {
+        "name": "Henry David Thoreau",
+        "text": "Son refus de l’impôt et son essai sur la résistance au gouvernement civil constituent une référence historique majeure."
+      },
+      {
+        "name": "John Rawls",
+        "text": "Il définit la désobéissance civile comme acte public, non violent, consciencieux et politique adressé au sens de la justice de la majorité."
+      }
+    ],
+    "related": [
+      "Justice",
+      "État de droit",
+      "Légalité",
+      "Résistance"
+    ]
+  },
+  {
+    "term": "Justice distributive",
+    "aliases": "justice distributive",
+    "category": "Concept de philosophie politique",
+    "lead": "La justice distributive concerne les principes selon lesquels biens, ressources, opportunités, charges, revenus ou avantages sociaux doivent être répartis entre les membres d’une société.",
+    "kind": "concept",
+    "senses": [
+      "Les critères possibles incluent égalité, besoin, mérite, contribution, priorité aux plus défavorisés, droits de propriété ou capacités réelles.",
+      "La question ne se réduit pas à l’impôt : elle concerne aussi la structure des institutions qui produisent les distributions initiales."
+    ],
+    "related": [
+      "Justice procédurale",
+      "Justice substantielle",
+      "Égalité",
+      "Capabilités"
+    ]
+  },
+  {
+    "term": "Justice procédurale",
+    "aliases": "justice procédurale justice procedurale",
+    "category": "Concept de philosophie politique",
+    "lead": "La justice procédurale évalue la justice d’une décision ou d’un résultat à partir de la procédure qui l’a produit : impartialité, règles connues, possibilité d’être entendu, absence de fraude, etc.",
+    "kind": "concept",
+    "senses": [
+      "Une procédure juste peut parfois produire des résultats inégaux sans que ces résultats soient nécessairement injustes selon la théorie considérée.",
+      "Rawls distingue plusieurs types de justice procédurale selon qu’il existe ou non un critère indépendant du résultat correct."
+    ],
+    "authors": [
+      {
+        "name": "John Rawls",
+        "text": "Il distingue justice procédurale parfaite, imparfaite et pure pour analyser le rapport entre procédure et résultat."
+      }
+    ],
+    "related": [
+      "Justice distributive",
+      "Justice substantielle",
+      "État de droit",
+      "Procédure"
+    ]
+  },
+  {
+    "term": "Justice substantielle",
+    "aliases": "justice substantielle",
+    "category": "Concept de philosophie politique / droit",
+    "lead": "La justice substantielle évalue le contenu même des règles, décisions ou distributions, et non seulement la régularité de la procédure qui les produit. Une procédure parfaitement suivie peut ainsi conduire à un résultat substantiellement injuste.",
+    "kind": "concept",
+    "senses": [
+      "L’opposition procédure/substance est analytique : dans les institutions réelles, critères procéduraux et substantiels interagissent souvent.",
+      "Les désaccords portent sur les biens ou droits que la justice doit garantir indépendamment de la procédure."
+    ],
+    "related": [
+      "Justice procédurale",
+      "Justice distributive",
+      "Droit",
+      "Égalité"
+    ]
+  },
+  {
+    "term": "État de droit",
+    "aliases": "état de droit etat de droit",
+    "category": "Concept politique / juridique",
+    "lead": "L’État de droit désigne un ordre politique dans lequel l’exercice du pouvoir public est soumis à des règles juridiques générales, publiées et contrôlables, avec des garanties contre l’arbitraire.",
+    "kind": "concept",
+    "senses": [
+      "Une conception formelle met l’accent sur légalité, prévisibilité et procédures ; une conception substantielle ajoute souvent des droits fondamentaux et exigences de justice.",
+      "Le simple fait qu’un gouvernement adopte des lois ne suffit pas à constituer un État de droit si le pouvoir peut les modifier ou les appliquer arbitrairement."
+    ],
+    "related": [
+      "Légalité",
+      "Droit",
+      "Non-domination",
+      "Séparation des pouvoirs"
+    ]
+  },
+  {
+    "term": "Bien commun",
+    "aliases": "bien commun",
+    "category": "Concept éthique / politique",
+    "lead": "Le bien commun désigne les conditions, institutions ou finalités qui permettent à une communauté et à ses membres de mener une vie bonne ensemble. Selon les traditions, il peut être conçu comme bien partagé, ensemble de biens publics ou forme d’épanouissement collectif.",
+    "kind": "concept",
+    "senses": [
+      "Il ne se réduit pas à la somme des intérêts privés, mais il ne doit pas non plus être automatiquement opposé aux droits individuels.",
+      "Les conceptions aristotéliciennes, républicaines, thomistes et contemporaines lui donnent des contenus différents."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "La communauté politique existe en vue d’une vie bonne et pas seulement pour assurer la survie ou les échanges."
+      },
+      {
+        "name": "Rousseau",
+        "text": "La volonté générale vise l’intérêt commun plutôt que l’addition des intérêts particuliers."
+      }
+    ],
+    "related": [
+      "Volonté générale",
+      "Républicanisme",
+      "Justice",
+      "Communauté"
+    ]
+  },
+  {
+    "term": "Espace public",
+    "aliases": "espace public",
+    "category": "Concept de philosophie sociale / politique",
+    "lead": "L’espace public désigne la sphère de communication où des citoyens discutent d’affaires communes, forment des opinions et peuvent critiquer le pouvoir. Chez Habermas, il possède une histoire institutionnelle liée à la modernité.",
+    "kind": "concept",
+    "senses": [
+      "Il ne se réduit pas à un lieu physique public : journaux, associations, médias et forums peuvent constituer des infrastructures de publicité politique.",
+      "Les critiques féministes, postcoloniales et sociologiques ont montré la pluralité des publics et les exclusions historiques de l’espace public bourgeois."
+    ],
+    "authors": [
+      {
+        "name": "Jürgen Habermas",
+        "text": "Il analyse la transformation historique de la sphère publique et son potentiel de discussion critique entre citoyens."
+      }
+    ],
+    "related": [
+      "Démocratie délibérative",
+      "Communication",
+      "Opinion publique",
+      "Pouvoir"
+    ]
+  },
+  {
+    "term": "Démocratie délibérative",
+    "aliases": "démocratie délibérative democratie deliberative",
+    "category": "Concept de philosophie politique",
+    "lead": "La démocratie délibérative conçoit la légitimité politique comme liée à des processus publics de discussion où les citoyens ou leurs représentants échangent des raisons et peuvent réviser leurs positions.",
+    "kind": "concept",
+    "senses": [
+      "Elle complète ou critique une conception purement agrégative de la démocratie dans laquelle il suffirait d’additionner des préférences données.",
+      "Les enjeux majeurs sont l’égalité de participation, la qualité des raisons, les rapports de pouvoir, la représentation et la faisabilité à grande échelle."
+    ],
+    "authors": [
+      {
+        "name": "Jürgen Habermas",
+        "text": "Il relie légitimité démocratique et procédures discursives de formation de la volonté."
+      },
+      {
+        "name": "John Rawls",
+        "text": "L’idée de raison publique impose des conditions de justification réciproque sur certaines questions politiques fondamentales."
+      }
+    ],
+    "related": [
+      "Espace public",
+      "Délibération",
+      "Légitimité",
+      "Démocratie"
+    ]
+  },
+  {
+    "term": "Hégémonie",
+    "aliases": "hégémonie hegemonie",
+    "category": "Concept politique / théorie critique",
+    "lead": "L’hégémonie désigne une forme de direction ou domination qui repose non seulement sur la contrainte mais sur la capacité à organiser le consentement, les institutions et le « sens commun » autour d’une certaine conception du monde.",
+    "kind": "concept",
+    "etymology": "Du grec hègemonia, « direction, commandement ».",
+    "senses": [
+      "Chez Gramsci, une classe dominante maintient son pouvoir à travers la société civile autant que par l’appareil coercitif de l’État.",
+      "Dans la théorie du discours de Laclau et Mouffe, l’hégémonie devient aussi la fixation contingente d’un ordre de significations et d’identités politiques."
+    ],
+    "authors": [
+      {
+        "name": "Antonio Gramsci",
+        "text": "Il analyse le rôle de la société civile, des intellectuels et du consentement dans la stabilité d’un bloc historique."
+      }
+    ],
+    "related": [
+      "Idéologie",
+      "Pouvoir",
+      "Société civile",
+      "Domination"
+    ]
+  },
+  {
+    "term": "Biopolitique",
+    "aliases": "biopolitique",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "La biopolitique désigne chez Foucault les formes modernes de pouvoir qui prennent pour objet la vie des populations : natalité, mortalité, santé, longévité, sexualité, risques et régulation collective.",
+    "kind": "concept",
+    "senses": [
+      "Elle se distingue analytiquement de la discipline centrée sur le dressage des corps individuels, tout en s’articulant avec elle.",
+      "Le concept ne désigne pas simplement toute politique de santé : il analyse une rationalité historique de gouvernement des processus vitaux."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "À partir du XVIIIe siècle, il décrit l’émergence d’un pouvoir qui vise à « faire vivre » en régulant les phénomènes de population."
+      }
+    ],
+    "related": [
+      "Biopouvoir",
+      "Gouvernementalité",
+      "Discipline",
+      "Population"
+    ]
+  },
+  {
+    "term": "Biopouvoir",
+    "aliases": "biopouvoir",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "Le biopouvoir désigne l’ensemble des techniques de pouvoir qui prennent la vie biologique comme enjeu, en combinant une anatomo-politique disciplinaire des corps et une biopolitique régulatrice des populations.",
+    "kind": "concept",
+    "senses": [
+      "Il marque pour Foucault une transformation par rapport au modèle souverain centré sur le droit de faire mourir ou de laisser vivre.",
+      "Le biopouvoir agit par normes, institutions médicales, statistiques, dispositifs de sécurité et savoirs sur la vie."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Histoire de la sexualité I analyse le passage vers un pouvoir qui administre, optimise et régule la vie plutôt que de s’exprimer seulement par la loi souveraine."
+      }
+    ],
+    "related": [
+      "Biopolitique",
+      "Discipline",
+      "Normalisation",
+      "Gouvernementalité"
+    ]
+  },
+  {
+    "term": "Gouvernementalité",
+    "aliases": "gouvernementalité gouvernementalite",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "La gouvernementalité désigne chez Foucault l’ensemble formé par des rationalités, savoirs, institutions et techniques qui visent à conduire les conduites des individus et des populations.",
+    "kind": "concept",
+    "senses": [
+      "Gouverner ne signifie pas seulement commander depuis l’État : c’est structurer le champ d’action possible d’autrui et de soi.",
+      "Foucault étudie notamment la raison d’État, le libéralisme et le néolibéralisme comme formes historiques de gouvernementalité."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Ses cours au Collège de France élargissent l’analyse du pouvoir vers les arts de gouverner et la conduite des conduites."
+      }
+    ],
+    "related": [
+      "Biopolitique",
+      "Pouvoir",
+      "Subjectivation",
+      "Dispositif"
+    ]
+  },
+  {
+    "term": "Discipline",
+    "aliases": "discipline",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "La discipline est un ensemble de techniques modernes qui organisent minutieusement les corps dans l’espace et le temps afin de les rendre à la fois utiles, dociles et observables.",
+    "kind": "concept",
+    "senses": [
+      "Elle fonctionne par surveillance, exercices, horaires, examens, classement et correction plutôt que seulement par interdiction juridique.",
+      "École, caserne, atelier, hôpital et prison illustrent chez Foucault des dispositifs disciplinaires sans être identiques entre eux."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Surveiller et punir décrit l’émergence de mécanismes disciplinaires qui individualisent les sujets par observation, normalisation et examen."
+      }
+    ],
+    "related": [
+      "Panoptisme",
+      "Normalisation",
+      "Biopouvoir",
+      "Pouvoir"
+    ]
+  },
+  {
+    "term": "Panoptisme",
+    "aliases": "panoptisme",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "Le panoptisme désigne le modèle de pouvoir rendu visible par le Panoptique de Bentham : une architecture où la possibilité permanente d’être observé conduit les individus à intégrer la surveillance dans leur propre conduite.",
+    "kind": "concept",
+    "senses": [
+      "L’efficacité du dispositif tient au fait que le détenu ne sait pas quand il est réellement observé et doit donc agir comme s’il l’était toujours.",
+      "Chez Foucault, le Panoptique est un diagramme général de pouvoir disciplinaire, pas seulement une prison particulière."
+    ],
+    "authors": [
+      {
+        "name": "Jeremy Bentham",
+        "text": "Il conçoit le Panoptique comme architecture de surveillance permettant à un observateur central de voir sans être vu."
+      },
+      {
+        "name": "Foucault",
+        "text": "Il transforme le Panoptique en modèle analytique de la discipline moderne et de l’intériorisation de la surveillance."
+      }
+    ],
+    "related": [
+      "Discipline",
+      "Surveillance",
+      "Normalisation",
+      "Pouvoir"
+    ]
+  },
+  {
+    "term": "Normalisation",
+    "aliases": "normalisation",
+    "category": "Concept foucaldien / pouvoir",
+    "lead": "La normalisation est le processus par lequel des normes établissent des écarts, moyennes, seuils et catégories à partir desquels les individus sont comparés, classés, corrigés ou optimisés.",
+    "kind": "concept",
+    "senses": [
+      "La norme fonctionne différemment de la loi : elle ne se contente pas d’interdire, elle mesure et produit des distributions de normalité et d’anormalité.",
+      "Elle est centrale dans les disciplines, la médecine, la psychiatrie, la sexualité et les dispositifs de sécurité."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Le pouvoir normalisateur individualise en comparant chaque sujet à des standards produits par des savoirs et institutions."
+      }
+    ],
+    "related": [
+      "Norme",
+      "Discipline",
+      "Biopouvoir",
+      "Examen"
+    ]
+  },
+  {
+    "term": "Subjectivation",
+    "aliases": "subjectivation",
+    "category": "Concept de philosophie contemporaine",
+    "lead": "La subjectivation désigne les processus par lesquels des individus deviennent des sujets : sujets d’un savoir, soumis à des normes et pouvoirs, mais aussi capables de se rapporter à eux-mêmes et de se transformer.",
+    "kind": "concept",
+    "senses": [
+      "Chez Foucault, le terme permet d’articuler assujettissement et constitution de soi sans supposer un sujet entièrement donné avant les pratiques sociales.",
+      "Les modes de subjectivation varient historiquement avec les discours, institutions et techniques de soi."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Son œuvre tardive étudie les pratiques par lesquelles les individus se constituent comme sujets moraux, notamment dans l’Antiquité."
+      }
+    ],
+    "related": [
+      "Gouvernementalité",
+      "Askèsis",
+      "Pouvoir",
+      "Techniques de soi"
+    ]
+  },
+  {
+    "term": "Dispositif",
+    "aliases": "dispositif",
+    "category": "Concept foucaldien / théorie sociale",
+    "lead": "Un dispositif est un réseau hétérogène de discours, institutions, architectures, règles, savoirs et pratiques qui répond à un problème stratégique et organise des rapports de pouvoir et de savoir.",
+    "kind": "concept",
+    "senses": [
+      "Un dispositif n’est pas un appareil matériel unique : il comprend aussi des énoncés, catégories et mécanismes administratifs.",
+      "Le dispositif de sexualité, par exemple, articule médecine, confession, famille, pédagogie, statistiques et normes."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Le dispositif permet d’analyser ensemble des éléments discursifs et non discursifs dans une stratégie historique de pouvoir-savoir."
+      }
+    ],
+    "related": [
+      "Pouvoir",
+      "Discours",
+      "Gouvernementalité",
+      "Subjectivation"
+    ]
+  },
+  {
+    "term": "État d’exception",
+    "aliases": "état d’exception etat d exception",
+    "category": "Concept de philosophie politique / droit",
+    "lead": "L’état d’exception désigne une situation où l’ordre juridique ordinaire est suspendu, modifié ou concentré au nom d’une urgence. Le concept interroge la frontière entre droit et pouvoir souverain.",
+    "kind": "concept",
+    "senses": [
+      "Chez Carl Schmitt, le souverain est celui qui décide de la situation exceptionnelle.",
+      "Agamben analyse la tendance moderne à rendre l’exception durable et à créer des zones où droit et fait deviennent difficiles à distinguer."
+    ],
+    "authors": [
+      {
+        "name": "Carl Schmitt",
+        "text": "La décision sur l’exception révèle selon lui le lieu de la souveraineté au-delà de l’application ordinaire des normes."
+      },
+      {
+        "name": "Giorgio Agamben",
+        "text": "Il étudie l’extension historique de dispositifs d’exception et leur relation à la vie juridiquement exposée."
+      }
+    ],
+    "related": [
+      "Souveraineté",
+      "Droit",
+      "Pouvoir",
+      "Biopolitique"
+    ]
+  },
+  {
+    "term": "Agonisme",
+    "aliases": "agonisme",
+    "category": "Concept de philosophie politique",
+    "lead": "L’agonisme conçoit le conflit comme une dimension irréductible et potentiellement productive de la politique démocratique. L’objectif n’est pas d’abolir tout antagonisme mais de transformer des ennemis à détruire en adversaires légitimes partageant certaines règles du jeu politique.",
+    "kind": "concept",
+    "etymology": "Du grec agôn, « lutte, concours ».",
+    "senses": [
+      "La démocratie agonistique critique les modèles qui espèrent résoudre les désaccords politiques fondamentaux par un consensus rationnel complet.",
+      "Elle doit néanmoins préciser quelles limites rendent un conflit démocratiquement acceptable."
+    ],
+    "authors": [
+      {
+        "name": "Chantal Mouffe",
+        "text": "Elle oppose le modèle agonistique à une politique du consensus qui sous-estimerait la persistance des passions et conflits collectifs."
+      }
+    ],
+    "related": [
+      "Démocratie",
+      "Hégémonie",
+      "Conflit",
+      "Pluralisme"
+    ]
+  },
+  {
+    "term": "Refoulement",
+    "aliases": "refoulement",
+    "category": "Concept psychanalytique",
+    "lead": "Le refoulement est le processus par lequel des représentations liées à des désirs ou conflits psychiques sont maintenues hors de la conscience tout en continuant à produire des effets. Chez Freud, il constitue un mécanisme central de formation de l’inconscient dynamique.",
+    "kind": "concept",
+    "senses": [
+      "Le refoulement n’est pas un simple oubli volontaire : le contenu refoulé reste psychiquement actif.",
+      "Freud distingue notamment un refoulement originaire et un refoulement proprement dit de dérivés liés aux représentations déjà refoulées."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le refoulement explique comment un contenu incompatible avec certaines exigences du moi peut devenir inconscient tout en revenant sous forme de symptômes, rêves ou formations de compromis."
+      }
+    ],
+    "related": [
+      "Retour du refoulé",
+      "Inconscient",
+      "Résistance",
+      "Symptôme"
+    ]
+  },
+  {
+    "term": "Retour du refoulé",
+    "aliases": "retour du refoulé retour du refoule",
+    "category": "Concept psychanalytique",
+    "lead": "Le retour du refoulé désigne la réapparition indirecte de contenus refoulés sous des formes transformées : symptômes, rêves, lapsus, actes manqués, fantasmes ou formations de compromis.",
+    "kind": "concept",
+    "senses": [
+      "Le contenu ne revient généralement pas sous sa forme initiale transparente ; il est déformé par les mécanismes de défense et la censure.",
+      "Le symptôme peut ainsi satisfaire partiellement un désir tout en exprimant les forces qui s’y opposent."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le refoulé demeure actif et cherche des voies substitutives de satisfaction, ce qui explique la persistance et le caractère symbolique de certains symptômes."
+      }
+    ],
+    "related": [
+      "Refoulement",
+      "Symptôme",
+      "Condensation",
+      "Déplacement"
+    ]
+  },
+  {
+    "term": "Résistance",
+    "aliases": "résistance resistance",
+    "category": "Concept psychanalytique",
+    "lead": "La résistance désigne les forces psychiques qui s’opposent à l’accès à certains contenus, associations ou affects au cours du travail analytique. Elle peut apparaître comme silence, oubli, rationalisation, répétition ou rupture du processus.",
+    "kind": "concept",
+    "senses": [
+      "La résistance n’est pas seulement un refus conscient de coopérer : elle manifeste souvent les mêmes défenses qui participent à la formation des symptômes.",
+      "Freud lie étroitement l’analyse des résistances au transfert."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "L’analyse ne consiste pas seulement à révéler un contenu caché mais à travailler les résistances qui empêchent son élaboration psychique."
+      }
+    ],
+    "related": [
+      "Refoulement",
+      "Transfert",
+      "Défense",
+      "Inconscient"
+    ]
+  },
+  {
+    "term": "Transfert",
+    "aliases": "transfert",
+    "category": "Concept psychanalytique",
+    "lead": "Le transfert est le processus par lequel des désirs, attentes, affects et schèmes relationnels issus d’expériences antérieures sont actualisés dans la relation avec l’analyste. Il devient à la fois obstacle et moteur du travail analytique.",
+    "kind": "concept",
+    "senses": [
+      "Le transfert ne se réduit pas à « projeter ses parents sur l’analyste » : il concerne la répétition de modalités de relation et de désir dans la situation analytique.",
+      "Son interprétation doit être distinguée du contre-transfert, qui concerne les réactions de l’analyste."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le transfert transforme la cure en scène où les conflits psychiques peuvent être vécus et travaillés plutôt que seulement racontés."
+      }
+    ],
+    "related": [
+      "Contre-transfert",
+      "Résistance",
+      "Répétition",
+      "Psychanalyse"
+    ]
+  },
+  {
+    "term": "Contre-transfert",
+    "aliases": "contre-transfert contre transfert",
+    "category": "Concept psychanalytique",
+    "lead": "Le contre-transfert désigne les réactions affectives, fantasmatiques et relationnelles de l’analyste à l’égard du patient et du transfert de celui-ci. D’abord conçu surtout comme obstacle, il a ensuite été aussi pensé comme source possible d’information clinique lorsqu’il est élaboré.",
+    "kind": "concept",
+    "senses": [
+      "Il ne justifie pas que l’analyste prenne ses propres émotions comme vérités directes sur le patient : elles doivent être examinées et contextualisées.",
+      "Les différentes écoles psychanalytiques lui accordent des fonctions et des périmètres différents."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Il recommande à l’analyste de reconnaître et maîtriser ses réactions contre-transférentielles afin qu’elles n’entravent pas l’écoute."
+      }
+    ],
+    "related": [
+      "Transfert",
+      "Résistance",
+      "Psychanalyse",
+      "Relation thérapeutique"
+    ]
+  },
+  {
+    "term": "Fixation",
+    "aliases": "fixation",
+    "category": "Concept psychanalytique",
+    "lead": "La fixation désigne l’attachement durable d’une part de la libido ou d’un mode de fonctionnement psychique à une phase, un objet ou une modalité de satisfaction antérieure. Elle peut rendre certaines formes de régression plus probables.",
+    "kind": "concept",
+    "senses": [
+      "Dans la théorie freudienne du développement psychosexuel, une fixation peut concerner une organisation libidinale particulière.",
+      "Le concept est historique et théorique : il ne doit pas être traité comme un diagnostic médical autonome contemporain."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "La fixation aide à expliquer pourquoi, sous certaines conditions, le sujet revient à des formes plus anciennes de satisfaction ou de défense."
+      }
+    ],
+    "related": [
+      "Régression",
+      "Libido",
+      "Développement psychosexuel",
+      "Pulsion"
+    ]
+  },
+  {
+    "term": "Régression",
+    "aliases": "régression regression",
+    "category": "Concept psychanalytique",
+    "lead": "La régression est le retour à des modes de fonctionnement, d’expression ou de satisfaction psychique antérieurs. Chez Freud, elle peut être temporelle, formelle ou topique selon ce qui régresse et la manière dont le processus se produit.",
+    "kind": "concept",
+    "senses": [
+      "Elle n’est pas toujours pathologique : le rêve comporte par exemple une régression vers des formes plus imagées de représentation.",
+      "Dans certains symptômes, elle peut s’appuyer sur des points de fixation antérieurs."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "La régression permet d’analyser la reprise de modes plus anciens de satisfaction ou de représentation lorsque des voies plus récentes sont bloquées."
+      }
+    ],
+    "related": [
+      "Fixation",
+      "Libido",
+      "Rêve",
+      "Processus primaire"
+    ]
+  },
+  {
+    "term": "Libido",
+    "aliases": "libido",
+    "category": "Concept psychanalytique",
+    "lead": "La libido est, chez Freud, l’énergie des pulsions sexuelles au sens large, puis une dimension centrale d’Éros dans la seconde théorie des pulsions. Elle dépasse la sexualité génitale et concerne les investissements d’objet et du moi.",
+    "kind": "concept",
+    "etymology": "Du latin libido, « désir ».",
+    "senses": [
+      "La libido peut être investie sur des objets extérieurs ou retirée vers le moi selon les modèles freudiens.",
+      "Chez Jung, le terme reçoit un sens énergétique beaucoup plus général ; les deux usages ne doivent pas être confondus."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "La théorie de la libido organise l’économie des investissements pulsionnels et leurs transformations."
+      },
+      {
+        "name": "Jung",
+        "text": "Il élargit la libido en énergie psychique générale, divergence importante avec Freud."
+      }
+    ],
+    "related": [
+      "Pulsion",
+      "Narcissisme",
+      "Éros",
+      "Fixation"
+    ]
+  },
+  {
+    "term": "Narcissisme",
+    "aliases": "narcissisme",
+    "category": "Concept psychanalytique",
+    "lead": "Le narcissisme désigne l’investissement libidinal du moi ou de sa propre image. Chez Freud, il n’est pas seulement vanité pathologique : une dimension narcissique appartient à la constitution psychique et aux rapports entre amour de soi et investissement d’objet.",
+    "kind": "concept",
+    "senses": [
+      "Freud distingue un narcissisme primaire, moment théorique de l’organisation libidinale, et des retours narcissiques secondaires.",
+      "Le terme clinique contemporain possède des usages distincts qu’il ne faut pas confondre automatiquement avec le concept métapsychologique freudien."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Pour introduire le narcissisme analyse la circulation de la libido entre moi et objets et la formation de l’idéal du moi."
+      }
+    ],
+    "related": [
+      "Libido",
+      "Moi",
+      "Idéal du moi",
+      "Stade du miroir"
+    ]
+  },
+  {
+    "term": "Complexe d’Œdipe",
+    "aliases": "complexe d’œdipe complexe d dipe",
+    "category": "Concept psychanalytique",
+    "lead": "Le complexe d’Œdipe désigne chez Freud une configuration de désirs, identifications, rivalités et interdits organisée autour des figures parentales durant l’enfance. Il joue un rôle théorique dans la formation du surmoi et des identifications.",
+    "kind": "concept",
+    "senses": [
+      "Le modèle freudien classique ne doit pas être traité comme une loi empirique simple universellement confirmée ; sa portée est discutée dans et hors de la psychanalyse.",
+      "Lacan le reformule en termes de fonction symbolique, de désir et de Nom-du-Père plutôt qu’en simple triangle familial biologique."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le complexe d’Œdipe organise une étape décisive du développement psychosexuel et des identifications."
+      },
+      {
+        "name": "Lacan",
+        "text": "Il réinterprète l’Œdipe à travers l’ordre symbolique et la fonction paternelle."
+      }
+    ],
+    "related": [
+      "Castration",
+      "Nom-du-Père",
+      "Surmoi",
+      "Désir"
+    ]
+  },
+  {
+    "term": "Castration",
+    "aliases": "castration",
+    "category": "Concept psychanalytique",
+    "lead": "La castration est, en psychanalyse, un concept symbolique lié à la reconnaissance d’une limite, d’un manque et de l’impossibilité d’une satisfaction totale. Chez Freud, il s’inscrit dans le complexe d’Œdipe ; chez Lacan, il est reformulé dans la structure du désir et du symbolique.",
+    "kind": "concept",
+    "senses": [
+      "Le terme ne doit pas être compris seulement comme menace anatomique littérale : son usage psychanalytique est théorique et symbolique.",
+      "Chez Lacan, la castration symbolique est liée à l’inscription du sujet dans la loi du langage et à la renonciation à être l’objet supposé combler l’Autre."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "L’angoisse de castration intervient dans ses analyses du développement œdipien."
+      },
+      {
+        "name": "Lacan",
+        "text": "Il généralise la castration comme opérateur symbolique structurant le manque et le désir."
+      }
+    ],
+    "related": [
+      "Complexe d’Œdipe",
+      "Nom-du-Père",
+      "Désir",
+      "Manque"
+    ]
+  },
+  {
+    "term": "Compulsion de répétition",
+    "aliases": "compulsion de répétition compulsion de repetition",
+    "category": "Concept psychanalytique",
+    "lead": "La compulsion de répétition est la tendance à répéter des situations, relations ou scénarios pénibles au lieu de simplement rechercher le plaisir. Freud l’analyse comme un fait qui met en difficulté une conception du psychisme entièrement réglée par le principe de plaisir.",
+    "kind": "concept",
+    "senses": [
+      "Elle se manifeste dans certains traumatismes, répétitions relationnelles et dans le transfert.",
+      "Dans Au-delà du principe de plaisir, Freud l’articule spéculativement à la pulsion de mort, articulation qui reste l’un des aspects les plus controversés de sa métapsychologie."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "La répétition de ce qui n’a pas été élaboré conduit à repenser les limites du principe de plaisir et le travail de remémoration."
+      }
+    ],
+    "related": [
+      "Principe de plaisir",
+      "Thanatos / pulsion de mort",
+      "Transfert",
+      "Répétition"
+    ]
+  },
+  {
+    "term": "Processus primaire",
+    "aliases": "processus primaire",
+    "category": "Concept psychanalytique",
+    "lead": "Le processus primaire désigne, dans la métapsychologie freudienne, un mode de fonctionnement psychique associé à l’inconscient où l’énergie circule plus librement et où condensation, déplacement et recherche de satisfaction immédiate dominent.",
+    "kind": "concept",
+    "senses": [
+      "Il suit principalement le principe de plaisir et apparaît de manière privilégiée dans le rêve, le fantasme et certaines formations symptomatiques.",
+      "Il s’oppose conceptuellement au processus secondaire sans que la vie psychique réelle se divise en deux compartiments absolument séparés."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le processus primaire permet de décrire la logique spécifique des formations inconscientes et du travail du rêve."
+      }
+    ],
+    "related": [
+      "Processus secondaire",
+      "Condensation",
+      "Déplacement",
+      "Principe de plaisir"
+    ]
+  },
+  {
+    "term": "Processus secondaire",
+    "aliases": "processus secondaire",
+    "category": "Concept psychanalytique",
+    "lead": "Le processus secondaire désigne un mode de fonctionnement psychique plus lié au moi, à la pensée organisée, au délai de satisfaction et à la prise en compte de la réalité. Il est classiquement opposé au processus primaire.",
+    "kind": "concept",
+    "senses": [
+      "Il fonctionne davantage selon le principe de réalité et permet planification, jugement et action adaptée.",
+      "La distinction est un modèle métapsychologique ; elle ne signifie pas que pensée consciente et inconscient seraient deux systèmes sans interaction."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le développement du processus secondaire permet de différer la décharge immédiate et de tenir compte des contraintes du monde extérieur."
+      }
+    ],
+    "related": [
+      "Processus primaire",
+      "Principe de réalité",
+      "Moi",
+      "Pensée"
+    ]
+  },
+  {
+    "term": "Principe de plaisir",
+    "aliases": "principe de plaisir",
+    "category": "Concept psychanalytique",
+    "lead": "Le principe de plaisir désigne la tendance du fonctionnement psychique à réduire les tensions pénibles et à rechercher des états de satisfaction. Chez Freud, il domine les processus primaires mais doit composer avec les exigences de la réalité.",
+    "kind": "concept",
+    "senses": [
+      "Le plaisir n’est pas chez Freud une simple recherche consciente de sensations agréables : le principe concerne une économie de tension psychique.",
+      "La compulsion de répétition conduit Freud à interroger ce qui peut fonctionner « au-delà » de ce principe."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le principe de plaisir règle une grande part de l’économie psychique mais est modulé par le principe de réalité et mis en difficulté par certaines répétitions traumatiques."
+      }
+    ],
+    "related": [
+      "Principe de réalité",
+      "Compulsion de répétition",
+      "Processus primaire",
+      "Pulsion"
+    ]
+  },
+  {
+    "term": "Principe de réalité",
+    "aliases": "principe de réalité principe de realite",
+    "category": "Concept psychanalytique",
+    "lead": "Le principe de réalité désigne la transformation par laquelle la recherche de satisfaction accepte délais, détours et contraintes afin de tenir compte des conditions du monde extérieur. Il ne supprime pas le principe de plaisir mais en modifie les voies.",
+    "kind": "concept",
+    "senses": [
+      "L’agent apprend à différer une satisfaction immédiate pour obtenir une satisfaction possible et plus stable.",
+      "Freud lie ce principe au développement des fonctions du moi et des processus secondaires."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le principe de réalité remanie la poursuite du plaisir en intégrant perception, mémoire, jugement et action dans un environnement contraignant."
+      }
+    ],
+    "related": [
+      "Principe de plaisir",
+      "Processus secondaire",
+      "Moi",
+      "Réalité"
+    ]
+  },
+  {
+    "term": "Condensation",
+    "aliases": "condensation",
+    "category": "Concept psychanalytique",
+    "lead": "La condensation est un mécanisme du travail du rêve par lequel plusieurs pensées, représentations ou chaînes associatives se trouvent réunies dans une seule image ou élément manifeste.",
+    "kind": "concept",
+    "senses": [
+      "Un personnage de rêve peut ainsi combiner des traits de plusieurs personnes ou situations.",
+      "La condensation contribue à la surdétermination des formations de l’inconscient et n’est pas une simple abréviation consciente."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "L’Interprétation du rêve décrit la condensation comme l’un des mécanismes transformant les pensées latentes en contenu manifeste."
+      }
+    ],
+    "related": [
+      "Déplacement",
+      "Rêve",
+      "Processus primaire",
+      "Surdétermination"
+    ]
+  },
+  {
+    "term": "Déplacement",
+    "aliases": "déplacement deplacement",
+    "category": "Concept psychanalytique",
+    "lead": "Le déplacement est un mécanisme par lequel l’intensité affective ou psychique se transfère d’une représentation importante vers une représentation liée mais apparemment secondaire.",
+    "kind": "concept",
+    "senses": [
+      "Dans le rêve, un détail banal peut recevoir une forte charge parce qu’il représente indirectement un conflit plus central.",
+      "Le déplacement participe aussi à la formation de symptômes, phobies et autres compromis psychiques selon la théorie freudienne."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Le déplacement, avec la condensation, caractérise le travail qui déforme les pensées latentes dans les productions de l’inconscient."
+      }
+    ],
+    "related": [
+      "Condensation",
+      "Processus primaire",
+      "Rêve",
+      "Symptôme"
+    ]
+  },
+  {
+    "term": "Souvenir-écran",
+    "aliases": "souvenir-écran souvenir ecran",
+    "category": "Concept psychanalytique",
+    "lead": "Un souvenir-écran est un souvenir d’enfance apparemment anodin mais particulièrement vif qui peut masquer, déplacer ou représenter indirectement d’autres expériences affectivement plus importantes.",
+    "kind": "concept",
+    "senses": [
+      "Il ne s’agit pas simplement d’un « faux souvenir » : le problème porte sur la sélection, la construction et la fonction psychique du souvenir.",
+      "Le concept met en question l’idée que la mémoire autobiographique serait un enregistrement neutre du passé."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Il analyse certains souvenirs précoces comme formations de compromis où un contenu banal sert d’écran à des significations plus chargées."
+      }
+    ],
+    "related": [
+      "Mémoire",
+      "Déplacement",
+      "Refoulement",
+      "Enfance"
+    ]
+  },
+  {
+    "term": "Inquiétante étrangeté",
+    "aliases": "inquiétante étrangeté inquietante etrangete",
+    "category": "Concept psychanalytique / esthétique",
+    "lead": "L’inquiétante étrangeté, Unheimliche, est l’effet troublant produit lorsque quelque chose de familier devient étrangement inquiétant, ou lorsque revient sous une forme déformée ce qui aurait dû rester caché ou refoulé.",
+    "kind": "concept",
+    "etymology": "Allemand das Unheimliche : littéralement ce qui n’est pas heimlich, familier ou intime, avec un jeu sémantique complexe exploré par Freud.",
+    "senses": [
+      "Freud l’illustre par doubles, automates, répétitions involontaires, motifs de perte des yeux ou retour de croyances infantiles.",
+      "Le concept se situe à la frontière de l’esthétique, de la littérature et de la théorie du refoulement."
+    ],
+    "authors": [
+      {
+        "name": "Freud",
+        "text": "Son essai de 1919 relie l’Unheimliche au retour de contenus familiers devenus étrangers par le refoulement ou le dépassement de croyances infantiles."
+      }
+    ],
+    "related": [
+      "Refoulement",
+      "Retour du refoulé",
+      "Double",
+      "Esthétique"
+    ]
+  },
+  {
+    "term": "Objet petit a",
+    "aliases": "objet petit a",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "L’objet petit a est chez Lacan l’objet-cause du désir : non pas l’objet concret qui satisferait enfin le sujet, mais le reste ou manque autour duquel le désir se relance.",
+    "kind": "concept",
+    "senses": [
+      "Il ne faut pas le confondre avec l’objet désiré au sens ordinaire : tel objet empirique peut venir occuper sa place sans épuiser la cause du désir.",
+      "L’objet a prend différentes figures dans l’enseignement de Lacan, notamment le sein, les fèces, le regard et la voix."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "L’objet petit a formalise ce qui cause le désir et résiste à une intégration complète dans l’ordre symbolique."
+      }
+    ],
+    "related": [
+      "Désir",
+      "Manque",
+      "Jouissance",
+      "Réel"
+    ]
+  },
+  {
+    "term": "Symbolique",
+    "aliases": "symbolique",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le Symbolique est, chez Lacan, l’ordre des signifiants, des différences linguistiques, des lois de parenté et des structures qui précèdent et organisent la position du sujet. Il forme avec l’Imaginaire et le Réel un triptyque central.",
+    "kind": "concept",
+    "senses": [
+      "Entrer dans le langage signifie se situer dans un réseau de significations que le sujet n’a pas créé seul.",
+      "Le Symbolique n’est pas simplement « ce qui symbolise quelque chose » au sens courant ; c’est un registre structurel."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "L’inconscient est structuré comme un langage et le sujet se constitue dans l’ordre symbolique des signifiants."
+      }
+    ],
+    "related": [
+      "Imaginaire",
+      "Réel",
+      "Nom-du-Père",
+      "Signifiant"
+    ]
+  },
+  {
+    "term": "Imaginaire",
+    "aliases": "imaginaire",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "L’Imaginaire est, chez Lacan, le registre des images, identifications, ressemblances et relations spéculaires par lesquelles le moi se constitue. Il est illustré de façon paradigmatique par le stade du miroir.",
+    "kind": "concept",
+    "senses": [
+      "L’Imaginaire produit des formes d’unité et de maîtrise mais aussi de méconnaissance, rivalité et captation par l’image de l’autre.",
+      "Il ne désigne pas simplement l’imagination volontaire ou le monde irréel des fantasmes."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "L’identification spéculaire forme le moi à partir d’une image unifiée qui anticipe une maîtrise que le corps vécu ne possède pas encore pleinement."
+      }
+    ],
+    "related": [
+      "Symbolique",
+      "Réel",
+      "Stade du miroir",
+      "Moi"
+    ]
+  },
+  {
+    "term": "Réel",
+    "aliases": "réel reel",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le Réel désigne chez Lacan ce qui résiste à la symbolisation complète et ne peut être intégralement capturé par les images et signifiants disponibles. Il ne se confond pas avec la « réalité objective » au sens courant.",
+    "kind": "concept",
+    "senses": [
+      "Le Réel apparaît souvent comme impossible, rupture, traumatique ou point où le réseau symbolique échoue à tout maîtriser.",
+      "Son sens évolue au cours de l’enseignement de Lacan et doit toujours être distingué du réel empirique ordinaire."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "Le Réel est l’un des trois registres avec le Symbolique et l’Imaginaire et désigne ce qui ne cesse pas de ne pas s’écrire dans le symbolique."
+      }
+    ],
+    "related": [
+      "Symbolique",
+      "Imaginaire",
+      "Jouissance",
+      "Objet petit a"
+    ]
+  },
+  {
+    "term": "Nom-du-Père",
+    "aliases": "nom-du-père nom du pere",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le Nom-du-Père est chez Lacan un signifiant de la fonction symbolique qui introduit la loi, la séparation et une médiation dans le rapport de l’enfant au désir de l’Autre. Il ne désigne pas simplement le père biologique.",
+    "kind": "concept",
+    "senses": [
+      "Dans les premières formulations, il est lié à la métaphore paternelle et à la structuration œdipienne du désir.",
+      "L’enseignement tardif de Lacan pluralise les « Noms-du-Père » et complexifie cette fonction."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "Le Nom-du-Père représente une fonction symbolique qui inscrit le sujet dans un ordre de loi et de signification au-delà de la dyade imaginaire."
+      }
+    ],
+    "related": [
+      "Forclusion",
+      "Complexe d’Œdipe",
+      "Symbolique",
+      "Castration"
+    ]
+  },
+  {
+    "term": "Forclusion",
+    "aliases": "forclusion",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "La forclusion est, chez Lacan, un mécanisme distinct du refoulement : un signifiant fondamental n’est pas intégré dans l’ordre symbolique et peut faire retour dans le Réel. Lacan l’emploie dans sa théorie structurale des psychoses.",
+    "kind": "concept",
+    "senses": [
+      "Contrairement au refoulé, qui appartient au symbolique et revient sous forme déformée, le signifiant forclos est pensé comme rejeté hors de cette inscription symbolique.",
+      "La théorie lacanienne de la psychose est un cadre psychanalytique spécifique et ne doit pas être confondue avec les classifications psychiatriques contemporaines."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "Il relie classiquement la psychose à la forclusion du Nom-du-Père dans les premiers temps de son enseignement structural."
+      }
+    ],
+    "related": [
+      "Nom-du-Père",
+      "Refoulement",
+      "Réel",
+      "Psychose"
+    ]
+  },
+  {
+    "term": "Jouissance",
+    "aliases": "jouissance",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "La jouissance désigne chez Lacan une satisfaction qui excède le simple plaisir et peut inclure douleur, répétition ou transgression de la limite imposée par le principe de plaisir.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne se réduit ni au plaisir sexuel ni au bonheur : elle nomme un rapport paradoxal à une satisfaction parfois coûteuse ou destructrice.",
+      "Lacan distingue plusieurs modalités de jouissance au fil de son enseignement, notamment jouissance phallique et « autre » jouissance."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "La jouissance aide à penser pourquoi le sujet peut rester attaché à des répétitions qui lui font souffrir et ne visent pas une simple maximisation du plaisir."
+      }
+    ],
+    "related": [
+      "Principe de plaisir",
+      "Désir",
+      "Objet petit a",
+      "Réel"
+    ]
+  },
+  {
+    "term": "Désir de l’Autre",
+    "aliases": "désir de l’autre desir de l autre",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le « désir de l’Autre » est une formule lacanienne à double portée : le désir du sujet est structuré par le champ de l’Autre, langage et attentes sociales, et le sujet se demande aussi ce que l’Autre veut de lui.",
+    "kind": "concept",
+    "senses": [
+      "L’Autre avec majuscule ne désigne pas simplement une personne particulière : il représente le lieu du langage, de la loi et des signifiants.",
+      "Le désir se forme au-delà du besoin et de la demande, dans une relation à ce qui manque et à la reconnaissance symbolique."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "Le désir humain est médiatisé par le langage et par la question du désir de l’Autre, plutôt que d’être une pulsion immédiatement transparente au sujet."
+      }
+    ],
+    "related": [
+      "Désir",
+      "Autrui",
+      "Symbolique",
+      "Objet petit a"
+    ]
+  },
+  {
+    "term": "Sujet supposé savoir",
+    "aliases": "sujet supposé savoir sujet suppose savoir",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le sujet supposé savoir désigne la position transférentielle dans laquelle l’analysant suppose à l’analyste un savoir sur la vérité de son désir ou de son symptôme. Cette supposition soutient le transfert sans signifier que l’analyste possède effectivement ce savoir à l’avance.",
+    "kind": "concept",
+    "senses": [
+      "La cure vise précisément à déplacer cette supposition et à permettre que le sujet rencontre son propre rapport au savoir inconscient.",
+      "La notion explique pourquoi la position de l’analyste ne doit pas être confondue avec celle d’un expert omniscient donnant des réponses toutes faites."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "Le transfert se noue autour de la supposition de savoir adressée à l’analyste, supposition que le dispositif analytique doit travailler plutôt que confirmer naïvement."
+      }
+    ],
+    "related": [
+      "Transfert",
+      "Savoir",
+      "Inconscient",
+      "Désir"
+    ]
+  },
+  {
+    "term": "Stade du miroir",
+    "aliases": "stade du miroir",
+    "category": "Concept lacanien / psychanalyse",
+    "lead": "Le stade du miroir désigne chez Lacan le moment logique et développemental où l’enfant s’identifie à une image corporelle unifiée, construisant une forme du moi à partir d’une image extérieure qui anticipe sa maîtrise motrice.",
+    "kind": "concept",
+    "senses": [
+      "Cette identification est structurante mais aussi méconnaissante : le moi se forme par une image extérieure et idéale de cohérence.",
+      "Le stade du miroir fonde le registre imaginaire et éclaire les dimensions de rivalité et d’aliénation propres au moi."
+    ],
+    "authors": [
+      {
+        "name": "Lacan",
+        "text": "L’identification à l’image spéculaire montre que le moi n’est pas une transparence originaire à soi mais une construction imaginaire relationnelle."
+      }
+    ],
+    "related": [
+      "Imaginaire",
+      "Moi",
+      "Narcissisme",
+      "Identification"
+    ]
+  },
+  {
+    "term": "Archéologie du savoir",
+    "aliases": "archéologie du savoir archeologie du savoir",
+    "category": "Méthode foucaldienne",
+    "lead": "L’archéologie est chez Foucault une méthode d’analyse des règles historiques qui rendent possibles certains énoncés, objets, concepts et positions de sujet dans un champ de savoir. Elle ne cherche pas une origine cachée ni la continuité d’une conscience collective.",
+    "kind": "concept",
+    "senses": [
+      "Elle décrit des formations discursives, leurs seuils, ruptures et régularités à un niveau distinct de l’histoire des idées centrée sur les intentions individuelles.",
+      "La généalogie complétera ensuite ce travail en insistant davantage sur les pratiques, rapports de pouvoir et contingences historiques."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "L’Archéologie du savoir explicite une méthode pour décrire les règles de formation des discours sans les rapporter à un sujet fondateur unique."
+      }
+    ],
+    "related": [
+      "Généalogie",
+      "Discours",
+      "Épistémè",
+      "Dispositif"
+    ]
+  },
+  {
+    "term": "Généalogie",
+    "aliases": "généalogie genealogie",
+    "category": "Méthode philosophique / critique",
+    "lead": "La généalogie analyse l’émergence historique de valeurs, pratiques et catégories en montrant leurs conflits, accidents et rapports de force plutôt qu’en les présentant comme développement naturel ou nécessaire d’une essence.",
+    "kind": "concept",
+    "senses": [
+      "Chez Nietzsche, la généalogie des valeurs interroge les conditions affectives et historiques de leur formation.",
+      "Chez Foucault, elle étudie l’entrelacement des savoirs, pouvoirs et pratiques de subjectivation sans rechercher une origine pure."
+    ],
+    "authors": [
+      {
+        "name": "Nietzsche",
+        "text": "La Généalogie de la morale reconstruit les conflits de forces et évaluations derrière certaines valeurs morales."
+      },
+      {
+        "name": "Foucault",
+        "text": "Il reprend la généalogie comme histoire critique des contingences qui ont produit nos formes de savoir, de pouvoir et de sujet."
+      }
+    ],
+    "related": [
+      "Archéologie du savoir",
+      "Pouvoir",
+      "Subjectivation",
+      "Histoire"
+    ]
+  },
+  {
+    "term": "Problématisation",
+    "aliases": "problématisation problematisation",
+    "category": "Concept foucaldien / méthode",
+    "lead": "La problématisation désigne le processus historique par lequel quelque chose devient objet de pensée, de questionnement, de savoir et de pratique : folie, sexualité, punition, conduite, etc.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne consiste pas à inventer arbitrairement un « problème » : elle analyse les conditions dans lesquelles certaines conduites deviennent discutables et appellent des réponses diverses.",
+      "Étudier une problématisation permet de dépasser l’opposition simple entre idées et institutions en examinant leurs relations."
+    ],
+    "authors": [
+      {
+        "name": "Foucault",
+        "text": "Ses travaux tardifs se présentent comme des histoires des problématisations par lesquelles des domaines de l’expérience deviennent pensables."
+      }
+    ],
+    "related": [
+      "Généalogie",
+      "Discours",
+      "Subjectivation",
+      "Histoire"
+    ]
+  },
+  {
+    "term": "Différance",
+    "aliases": "différance differance",
+    "category": "Concept derridien / déconstruction",
+    "lead": "La différance est un néologisme de Derrida qui indique à la fois la différence et le différer : les signes n’ont de sens que par leurs écarts avec d’autres signes, et la présence du sens est toujours renvoyée dans une chaîne de traces.",
+    "kind": "concept",
+    "etymology": "Le « a » de différance s’entend comme « différence » à l’oral, ce qui met en jeu la primauté supposée de la voix sur l’écriture.",
+    "senses": [
+      "La différance n’est pas une chose ou un principe premier présent derrière les différences ; elle nomme le jeu qui rend possibles identité et signification sans origine pleinement présente.",
+      "Elle vise à déstabiliser les oppositions métaphysiques qui privilégient présence, identité ou origine simple."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "La différance travaille toute présence depuis l’espacement et le renvoi à ce qui n’est pas immédiatement donné."
+      }
+    ],
+    "related": [
+      "Trace",
+      "Déconstruction",
+      "Métaphysique de la présence",
+      "Itérabilité"
+    ]
+  },
+  {
+    "term": "Trace",
+    "aliases": "trace",
+    "category": "Concept derridien / déconstruction",
+    "lead": "La trace désigne chez Derrida la marque de l’altérité et de l’absence au cœur de toute présence et signification. Un signe vaut parce qu’il porte les différences et renvois à d’autres signes qui ne sont pas actuellement présents.",
+    "kind": "concept",
+    "senses": [
+      "La trace n’est pas une empreinte empirique originelle que l’on pourrait retrouver intacte ; elle désigne une structure de renvoi et d’espacement.",
+      "Elle est inséparable de la différance et de la critique d’une origine pure du sens."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "La signification est constituée par des traces d’autres signes et ne se ferme jamais dans une présence autosuffisante."
+      }
+    ],
+    "related": [
+      "Différance",
+      "Supplément",
+      "Écriture",
+      "Déconstruction"
+    ]
+  },
+  {
+    "term": "Supplément",
+    "aliases": "supplément supplement",
+    "category": "Concept derridien / déconstruction",
+    "lead": "Le supplément désigne chez Derrida ce qui semble s’ajouter après coup à une présence complète mais révèle en même temps que cette présence avait déjà besoin d’un ajout pour être ce qu’elle est.",
+    "kind": "concept",
+    "senses": [
+      "Dans la lecture de Rousseau, l’écriture apparaît comme supplément de la parole, mais cette fonction montre que la parole elle-même n’était pas une origine autosuffisante.",
+      "Le supplément brouille ainsi l’opposition entre addition extérieure et complément nécessaire."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "De la grammatologie utilise la logique du supplément pour montrer l’instabilité d’oppositions comme nature/culture, parole/écriture ou présence/absence."
+      }
+    ],
+    "related": [
+      "Trace",
+      "Différance",
+      "Déconstruction",
+      "Écriture"
+    ]
+  },
+  {
+    "term": "Pharmakon",
+    "aliases": "pharmakon",
+    "category": "Concept derridien / déconstruction",
+    "lead": "Pharmakon est un terme grec signifiant à la fois remède, drogue et poison. Derrida l’utilise dans sa lecture du Phèdre pour montrer comment certaines oppositions conceptuelles reposent sur un terme ambivalent qui ne se laisse pas fixer d’un seul côté.",
+    "kind": "concept",
+    "etymology": "Du grec φάρμακον, « remède, drogue, poison ».",
+    "senses": [
+      "Dans le Phèdre, l’écriture est présentée à la fois comme aide à la mémoire et comme risque d’oubli ou de simulacre de savoir.",
+      "Derrida ne propose pas le pharmakon comme une simple « synthèse » réconciliant les contraires : il expose leur dépendance mutuelle et leur instabilité."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "La Pharmacie de Platon montre que le pharmakon déjoue une traduction univoque et perturbe l’opposition entre bon remède et mauvais poison."
+      }
+    ],
+    "related": [
+      "Déconstruction",
+      "Supplément",
+      "Écriture",
+      "Indécidable"
+    ]
+  },
+  {
+    "term": "Déconstruction",
+    "aliases": "déconstruction deconstruction",
+    "category": "Méthode philosophique / Derrida",
+    "lead": "La déconstruction est une pratique de lecture qui examine comment un texte ou un système conceptuel dépend d’oppositions hiérarchisées qu’il ne peut pourtant maintenir de manière stable. Elle ne signifie ni destruction du sens ni relativisme arbitraire.",
+    "kind": "concept",
+    "senses": [
+      "La lecture déconstructive suit les tensions internes, marges, exclusions et déplacements par lesquels un texte excède parfois ses propres oppositions déclarées.",
+      "Elle cherche moins à remplacer une doctrine par son contraire qu’à transformer le champ conceptuel qui rendait l’opposition possible."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "La déconstruction travaille de l’intérieur les structures de la métaphysique occidentale en révélant leurs dépendances et apories."
+      }
+    ],
+    "related": [
+      "Différance",
+      "Trace",
+      "Logocentrisme",
+      "Métaphysique de la présence"
+    ]
+  },
+  {
+    "term": "Logocentrisme",
+    "aliases": "logocentrisme",
+    "category": "Concept derridien / critique",
+    "lead": "Le logocentrisme désigne chez Derrida la tendance de la métaphysique occidentale à privilégier un sens, une raison ou une origine supposés présents à eux-mêmes, en subordonnant ce qui apparaît comme dérivé, écrit, extérieur ou secondaire.",
+    "kind": "concept",
+    "senses": [
+      "Il est lié au phonocentrisme lorsque la voix est privilégiée parce qu’elle semble offrir une présence immédiate du locuteur à sa pensée.",
+      "La critique du logocentrisme ne rejette pas la logique ou la raison ; elle interroge une certaine métaphysique de la présence."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "Il repère dans de nombreuses traditions le privilège accordé à une origine de sens pleinement présente, que l’écriture serait censée seulement représenter."
+      }
+    ],
+    "related": [
+      "Phonocentrisme",
+      "Métaphysique de la présence",
+      "Déconstruction",
+      "Différance"
+    ]
+  },
+  {
+    "term": "Phonocentrisme",
+    "aliases": "phonocentrisme",
+    "category": "Concept derridien / critique",
+    "lead": "Le phonocentrisme est le privilège accordé à la parole vive sur l’écriture, parce que la voix semble garantir la présence immédiate du sujet à ce qu’il veut dire. Derrida montre que cette impression masque déjà une structure de différence et d’itérabilité.",
+    "kind": "concept",
+    "senses": [
+      "L’écriture n’est pas pour Derrida un simple système graphique secondaire : certains traits traditionnellement attribués à l’écriture appartiennent à toute marque signifiante.",
+      "La critique du phonocentrisme est une dimension du diagnostic plus large du logocentrisme."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "De la grammatologie déconstruit la hiérarchie parole/écriture et la conception d’une parole originellement transparente à elle-même."
+      }
+    ],
+    "related": [
+      "Logocentrisme",
+      "Écriture",
+      "Itérabilité",
+      "Déconstruction"
+    ]
+  },
+  {
+    "term": "Métaphysique de la présence",
+    "aliases": "métaphysique de la présence metaphysique de la presence",
+    "category": "Concept derridien / critique",
+    "lead": "La métaphysique de la présence désigne la tendance à penser la vérité, l’identité ou le sens à partir d’une présence pleine, immédiate et autosuffisante, en reléguant absence, différence, médiation et temporalité au second plan.",
+    "kind": "concept",
+    "senses": [
+      "Derrida relit ainsi des oppositions comme original/copie, parole/écriture, identité/différence ou présence/absence.",
+      "La déconstruction ne remplace pas simplement la présence par l’absence ; elle montre que toute présence est déjà structurée par ce qui diffère et se retire."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "La différance et la trace mettent en question le rêve d’un sens présent à soi avant tout renvoi et toute inscription."
+      }
+    ],
+    "related": [
+      "Différance",
+      "Trace",
+      "Logocentrisme",
+      "Déconstruction"
+    ]
+  },
+  {
+    "term": "Itérabilité",
+    "aliases": "itérabilité iterabilite",
+    "category": "Concept derridien / langage",
+    "lead": "L’itérabilité est la capacité d’une marque ou d’un signe à être répété dans de nouveaux contextes. Cette répétabilité rend la communication possible mais implique aussi que le signe puisse fonctionner en l’absence de son auteur, de son contexte initial ou de son intention présente.",
+    "kind": "concept",
+    "etymology": "Du latin iter, « de nouveau », associé par Derrida à l’altérité dans la répétition.",
+    "senses": [
+      "Une signature n’est efficace que parce qu’elle peut être reconnue comme répétable, tout en devant apparaître comme singulière.",
+      "L’itérabilité nourrit le débat de Derrida avec les théories des actes de parole sur le rôle des contextes « normaux » et des citations."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "Dans Signature événement contexte, la répétabilité de toute marque fragilise l’idée d’un contexte absolument saturable ou d’une intention contrôlant entièrement le sens."
+      }
+    ],
+    "related": [
+      "Performatif",
+      "Trace",
+      "Différance",
+      "Contexte"
+    ]
+  },
+  {
+    "term": "Indécidable",
+    "aliases": "indécidable indecidable",
+    "category": "Concept derridien / déconstruction",
+    "lead": "Un indécidable est chez Derrida un terme ou une structure qui ne se laisse pas stabiliser dans l’un des pôles d’une opposition conceptuelle sans excéder cette opposition.",
+    "kind": "concept",
+    "senses": [
+      "Le pharmakon, supplément ou hymen peuvent fonctionner comme indécidables dans des lectures précises.",
+      "« Indécidable » ne signifie pas que toute décision soit impossible ; au contraire, Derrida soutient qu’une décision véritable intervient là où aucune règle ne garantit mécaniquement le choix."
+    ],
+    "authors": [
+      {
+        "name": "Derrida",
+        "text": "L’indécidabilité expose les limites des oppositions binaires et la responsabilité d’une décision qui ne peut être entièrement programmée par un savoir préalable."
+      }
+    ],
+    "related": [
+      "Pharmakon",
+      "Déconstruction",
+      "Décision",
+      "Aporie"
+    ]
+  },
+  {
+    "term": "Rhizome",
+    "aliases": "rhizome",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "Le rhizome est chez Deleuze et Guattari un modèle de multiplicité non hiérarchique, sans centre unique ni origine arborescente, dans laquelle n’importe quel point peut en principe se connecter à d’autres.",
+    "kind": "concept",
+    "etymology": "Emprunt à la botanique : un rhizome est une tige souterraine qui se développe horizontalement.",
+    "senses": [
+      "Le rhizome s’oppose au modèle de l’arbre qui organise le savoir par filiation, unité et subdivision hiérarchique.",
+      "Il sert à penser des réseaux de signes, de pratiques, de désirs et de territoires sans unité totalisante préalable."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Mille Plateaux présente le rhizome comme image d’une pensée de la multiplicité, des connexions et des lignes de fuite."
+      }
+    ],
+    "related": [
+      "Multiplicité",
+      "Agencement",
+      "Déterritorialisation",
+      "Plan d’immanence"
+    ]
+  },
+  {
+    "term": "Déterritorialisation",
+    "aliases": "déterritorialisation deterritorialisation",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "La déterritorialisation désigne le mouvement par lequel un élément quitte ou transforme les coordonnées, fonctions et relations qui le stabilisaient dans un territoire donné. Elle est presque toujours corrélée à des processus de reterritorialisation.",
+    "kind": "concept",
+    "senses": [
+      "Un territoire peut être géographique, social, sémiotique, affectif ou institutionnel : le terme ne renvoie pas seulement au déplacement spatial.",
+      "Une déterritorialisation n’est pas automatiquement émancipatrice ; elle peut être captée ou suivie d’une reterritorialisation oppressive."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Ils analysent les flux du désir, du capital et des signes comme mouvements de déterritorialisation et de reterritorialisation à différentes échelles."
+      }
+    ],
+    "related": [
+      "Reterritorialisation",
+      "Agencement",
+      "Rhizome",
+      "Ligne de fuite"
+    ]
+  },
+  {
+    "term": "Reterritorialisation",
+    "aliases": "reterritorialisation",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "La reterritorialisation est le processus par lequel des flux ou éléments déterritorialisés sont réinscrits dans de nouvelles coordonnées, identités, institutions ou fonctions relativement stabilisées.",
+    "kind": "concept",
+    "senses": [
+      "Elle ne signifie pas nécessairement un simple retour à l’ancien territoire : une nouvelle organisation peut apparaître.",
+      "Déterritorialisation et reterritorialisation sont souvent simultanées ou enchaînées plutôt que deux étapes absolument séparées."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Les transformations sociales et désirantes produisent sans cesse de nouveaux ancrages après ou pendant les mouvements de déterritorialisation."
+      }
+    ],
+    "related": [
+      "Déterritorialisation",
+      "Territoire",
+      "Agencement",
+      "Capitalisme"
+    ]
+  },
+  {
+    "term": "Agencement",
+    "aliases": "agencement",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "Un agencement est un ensemble provisoire et hétérogène de corps, pratiques, objets, affects, énoncés et institutions qui fonctionnent ensemble sans être réductibles à une essence ou à une structure unique.",
+    "kind": "concept",
+    "etymology": "Traduction habituelle du français « agencement », rendu en anglais par assemblage.",
+    "senses": [
+      "Un agencement possède à la fois un versant machinique de corps et d’actions et un versant collectif d’énonciation.",
+      "Il est défini par les connexions et capacités qu’il produit, ainsi que par ses mouvements de territorialisation et de déterritorialisation."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Ils pensent les réalités sociales et désirantes comme des agencements composés d’éléments hétérogènes en relation variable."
+      }
+    ],
+    "related": [
+      "Rhizome",
+      "Déterritorialisation",
+      "Multiplicité",
+      "Devenir"
+    ]
+  },
+  {
+    "term": "Corps sans organes",
+    "aliases": "corps sans organes",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "Le corps sans organes est un concept par lequel Deleuze et Guattari pensent un plan d’intensités et de potentialités qui résiste à l’organisation fixe des fonctions, identités et hiérarchies d’un organisme. Il ne signifie pas littéralement supprimer ses organes.",
+    "kind": "concept",
+    "etymology": "Expression empruntée à Antonin Artaud.",
+    "senses": [
+      "Le CsO désigne une expérimentation des connexions et intensités du désir plutôt qu’un corps anatomique mutilé.",
+      "Les auteurs insistent sur la prudence : certaines désorganisations peuvent conduire à l’effondrement plutôt qu’à une nouvelle puissance de vie."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "L’Anti-Œdipe et Mille Plateaux mobilisent le corps sans organes pour critiquer les organisations qui fixent le désir dans des fonctions prédéterminées."
+      }
+    ],
+    "related": [
+      "Désir",
+      "Agencement",
+      "Plan d’immanence",
+      "Machine désirante"
+    ]
+  },
+  {
+    "term": "Devenir",
+    "aliases": "devenir",
+    "category": "Concept deleuzien",
+    "lead": "Le devenir désigne chez Deleuze et Guattari une transformation relationnelle qui ne consiste ni à imiter un modèle ni à passer simplement d’une identité stable à une autre. Un devenir produit de nouvelles capacités et lignes de variation entre termes hétérogènes.",
+    "kind": "concept",
+    "senses": [
+      "Les formules « devenir-animal », « devenir-femme » ou « devenir-minoritaire » ne désignent pas une identification littérale ou une ressemblance extérieure.",
+      "Le devenir se pense à partir de processus, intensités et relations plutôt que d’essences fixes."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Les devenirs sont des processus de transformation moléculaire qui échappent aux identités molaires et aux filiations représentatives."
+      }
+    ],
+    "related": [
+      "Multiplicité",
+      "Agencement",
+      "Déterritorialisation",
+      "Identité"
+    ]
+  },
+  {
+    "term": "Multiplicité",
+    "aliases": "multiplicité multiplicite",
+    "category": "Concept deleuzien / métaphysique",
+    "lead": "Une multiplicité est, chez Deleuze, un ensemble de dimensions, singularités et relations qui n’a pas besoin d’être rapporté à une unité supérieure pour exister. Le concept doit beaucoup aux analyses bergsoniennes et mathématiques de la multiplicité.",
+    "kind": "concept",
+    "senses": [
+      "Une multiplicité change de nature lorsque ses dimensions ou connexions changent ; elle n’est pas seulement un grand nombre d’unités identiques.",
+      "Le concept soutient une ontologie opposée aux modèles qui subordonnent le multiple à l’identité de l’Un."
+    ],
+    "authors": [
+      {
+        "name": "Bergson",
+        "text": "Il distingue multiplicités quantitatives et qualitatives dans son analyse de la durée."
+      },
+      {
+        "name": "Deleuze",
+        "text": "Il généralise la multiplicité comme concept ontologique de différences et singularités sans unité préalable."
+      }
+    ],
+    "related": [
+      "Multiplicité qualitative",
+      "Rhizome",
+      "Devenir",
+      "Différence"
+    ]
+  },
+  {
+    "term": "Plan d’immanence",
+    "aliases": "plan d’immanence plan d immanence",
+    "category": "Concept deleuzien / métaphysique",
+    "lead": "Le plan d’immanence est chez Deleuze le champ préphilosophique sur lequel des concepts peuvent être créés et se connecter sans être subordonnés à un principe transcendant extérieur. Il n’est pas un concept particulier parmi les autres.",
+    "kind": "concept",
+    "senses": [
+      "Chaque philosophie trace un plan qui détermine ce que signifie penser, orienter et connecter des concepts.",
+      "L’immanence ne signifie pas que « tout se vaut », mais que l’explication ne fait pas appel à un principe situé hors du plan des relations qu’elle cherche à penser."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Qu’est-ce que la philosophie ? distingue le plan d’immanence, les concepts philosophiques et les personnages conceptuels."
+      }
+    ],
+    "related": [
+      "Immanence",
+      "Concept",
+      "Rhizome",
+      "Virtuel"
+    ]
+  },
+  {
+    "term": "Virtuel",
+    "aliases": "virtuel",
+    "category": "Concept deleuzien / métaphysique",
+    "lead": "Le virtuel est chez Deleuze une dimension réelle mais non actuelle, structurée par des problèmes, singularités et potentialités qui s’actualisent de manières diverses. Il ne se réduit ni au possible ni à l’irréel.",
+    "kind": "concept",
+    "senses": [
+      "Le possible est généralement pensé comme ressemblant à sa réalisation ; le virtuel s’actualise par différenciation et création de formes nouvelles.",
+      "Le couple virtuel/actuel permet de penser le devenir sans faire de l’avenir une simple copie d’un modèle déjà donné."
+    ],
+    "authors": [
+      {
+        "name": "Bergson",
+        "text": "Sa distinction entre virtuel et actuel inspire fortement Deleuze."
+      },
+      {
+        "name": "Deleuze",
+        "text": "Le virtuel est pleinement réel comme structure problématique, même lorsqu’il n’est pas actuellement incarné sous une forme déterminée."
+      }
+    ],
+    "related": [
+      "Actuel",
+      "Possible",
+      "Devenir",
+      "Différence"
+    ]
+  },
+  {
+    "term": "Actuel",
+    "aliases": "actuel",
+    "category": "Concept deleuzien / métaphysique",
+    "lead": "L’actuel désigne ce qui possède une forme déterminée et effectuée dans une situation présente, en corrélation avec un virtuel réel dont il constitue une actualisation.",
+    "kind": "concept",
+    "senses": [
+      "Actuel ne signifie pas simplement « contemporain » ou « maintenant » : il s’oppose techniquement au virtuel.",
+      "L’actualisation sélectionne et différencie des potentialités sans épuiser le champ virtuel qui les sous-tend."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze",
+        "text": "Le réel se compose de l’actuel et du virtuel plutôt que d’opposer simplement réalité et possibilité."
+      }
+    ],
+    "related": [
+      "Virtuel",
+      "Actualisation",
+      "Devenir",
+      "Possible"
+    ]
+  },
+  {
+    "term": "Machine désirante",
+    "aliases": "machine désirante machine desirante",
+    "category": "Concept deleuzo-guattarien",
+    "lead": "La machine désirante est un concept de L’Anti-Œdipe qui présente le désir comme production réelle de connexions et de flux plutôt que comme manque d’un objet absent.",
+    "kind": "concept",
+    "senses": [
+      "Une « machine » n’est pas ici une mécanique fermée : c’est une connexion fonctionnelle où un flux est produit, coupé et relié à d’autres machines.",
+      "Le concept critique à la fois certaines conceptions psychanalytiques du manque et l’idée d’un désir essentiellement privé et familial."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze et Guattari",
+        "text": "Ils décrivent l’inconscient comme productif et machinique plutôt que comme théâtre représentant principalement le drame œdipien."
+      }
+    ],
+    "related": [
+      "Désir",
+      "Corps sans organes",
+      "Agencement",
+      "Production"
+    ]
+  },
+  {
+    "term": "Image de la pensée",
+    "aliases": "image de la pensée image de la pensee",
+    "category": "Concept deleuzien / philosophie",
+    "lead": "L’image de la pensée est l’ensemble des présupposés implicites sur ce que signifie penser : bonne volonté du penseur, sens commun, reconnaissance d’identités, erreur comme principal obstacle, etc. Deleuze critique cette image « dogmatique ».",
+    "kind": "concept",
+    "senses": [
+      "Penser véritablement commence souvent, selon Deleuze, par une rencontre ou un problème qui force la pensée plutôt que par une disposition naturellement tournée vers le vrai.",
+      "La critique de l’image de la pensée vise à libérer la philosophie de modèles de reconnaissance qui réduisent la nouveauté à l’identique."
+    ],
+    "authors": [
+      {
+        "name": "Deleuze",
+        "text": "Différence et répétition oppose une pensée forcée par le problème à l’image dogmatique qui suppose d’avance les bonnes facultés du penseur."
+      }
+    ],
+    "related": [
+      "Pensée",
+      "Différence",
+      "Problème",
+      "Création"
+    ]
+  },
+  {
+    "term": "Performatif de genre",
+    "aliases": "performatif de genre",
+    "category": "Concept de philosophie du genre",
+    "lead": "La performativité du genre, chez Judith Butler, désigne le processus par lequel les normes de genre se matérialisent à travers la répétition d’actes, gestes, discours et pratiques qui donnent l’impression d’une identité naturelle antérieure.",
+    "kind": "concept",
+    "senses": [
+      "« Performatif » ne signifie pas que le genre serait un rôle librement choisi à volonté ou une simple performance théâtrale individuelle.",
+      "La répétition des normes ouvre aussi la possibilité de déplacements, échecs et resignifications qui peuvent transformer leur autorité."
+    ],
+    "authors": [
+      {
+        "name": "Judith Butler",
+        "text": "Trouble dans le genre analyse le genre comme effet répétitif de normes plutôt que comme expression extérieure d’une essence intérieure fixe."
+      }
+    ],
+    "related": [
+      "Performatif",
+      "Genre",
+      "Subjectivation",
+      "Norme"
+    ]
+  },
+  {
+    "term": "Intersectionnalité",
+    "aliases": "intersectionnalité intersectionnalite",
+    "category": "Concept de philosophie sociale / théorie critique",
+    "lead": "L’intersectionnalité analyse la manière dont plusieurs rapports de pouvoir et catégories sociales — par exemple sexe, race, classe, handicap ou statut migratoire — se croisent et produisent des expériences qui ne peuvent être expliquées par un seul axe pris isolément.",
+    "kind": "concept",
+    "senses": [
+      "Il ne s’agit pas simplement d’additionner plusieurs discriminations : leur intersection peut produire une forme spécifique d’exclusion ou d’invisibilité.",
+      "Le concept vient d’analyses juridiques et féministes noires et s’est ensuite étendu à de nombreux domaines des sciences sociales et de la philosophie politique."
+    ],
+    "authors": [
+      {
+        "name": "Kimberlé Crenshaw",
+        "text": "Elle forge le terme pour analyser notamment la manière dont le droit pouvait rendre invisibles les discriminations spécifiques subies par des femmes noires lorsqu’il séparait strictement race et sexe."
+      }
+    ],
+    "related": [
+      "Discrimination",
+      "Pouvoir",
+      "Identité",
+      "Justice"
+    ]
+  },
+  {
+    "term": "Modalité",
+    "aliases": "modalité modalite",
+    "category": "Concept métaphysique / logique",
+    "lead": "La modalité concerne les manières dont une proposition ou un état de choses peut être : possible, nécessaire, impossible ou contingent. La logique modale formalise ces notions, tandis que la métaphysique modale interroge ce qui les rend vraies.",
+    "kind": "concept",
+    "senses": [
+      "La nécessité logique, métaphysique, physique ou normative ne doit pas être automatiquement confondue : elles peuvent avoir des domaines différents.",
+      "Les mondes possibles constituent un outil majeur pour représenter les modalités, sans imposer une ontologie unique de ces mondes."
+    ],
+    "related": [
+      "Monde possible",
+      "Nécessité de re",
+      "Nécessité de dicto",
+      "Contingence"
+    ]
+  },
+  {
+    "term": "Réalisme modal",
+    "aliases": "réalisme modal realisme modal",
+    "category": "Doctrine métaphysique",
+    "lead": "Le réalisme modal, au sens fort de David Lewis, soutient que les mondes possibles sont des mondes concrets aussi réels que le nôtre, mais causalement et spatiotemporellement isolés de lui. Notre monde n’est « actuel » que de manière indexicale, parce que c’est celui que nous habitons.",
+    "kind": "concept",
+    "senses": [
+      "Cette théorie donne une analyse uniforme de possibilité et nécessité mais paie un coût ontologique élevé en postulant une pluralité de mondes concrets.",
+      "D’autres réalismes modaux traitent les mondes possibles comme entités abstraites et ne doivent pas être confondus avec la position de Lewis."
+    ],
+    "authors": [
+      {
+        "name": "David Lewis",
+        "text": "De la pluralité des mondes défend une théorie des mondes possibles concrets et analyse les modalités par quantification sur ces mondes."
+      }
+    ],
+    "related": [
+      "Monde possible",
+      "Théorie des contreparties",
+      "Modalité",
+      "Actualité"
+    ]
+  },
+  {
+    "term": "Essentialisme",
+    "aliases": "essentialisme",
+    "category": "Doctrine métaphysique",
+    "lead": "L’essentialisme soutient qu’au moins certaines choses possèdent des propriétés qu’elles ne pourraient pas perdre sans cesser d’être ce qu’elles sont, ou qui leur appartiennent nécessairement.",
+    "kind": "concept",
+    "senses": [
+      "Il faut distinguer essence et simple nécessité : une propriété peut être nécessaire à un objet sans constituer pour autant une explication de ce qu’il est, selon certaines théories contemporaines.",
+      "Le renouveau de l’essentialisme au XXe siècle est lié à la logique modale, aux désignateurs rigides et aux débats sur les espèces naturelles."
+    ],
+    "authors": [
+      {
+        "name": "Kripke",
+        "text": "Il défend notamment des nécessités d’origine et des identités nécessaires associées à la désignation rigide."
+      },
+      {
+        "name": "Kit Fine",
+        "text": "Il soutient que l’essence ne doit pas être réduite à la seule nécessité modale."
+      }
+    ],
+    "related": [
+      "Nécessité de re",
+      "Désignateur rigide",
+      "Espèce naturelle",
+      "Quiddité"
+    ]
+  },
+  {
+    "term": "Théorie des contreparties",
+    "aliases": "théorie des contreparties theorie des contreparties",
+    "category": "Concept métaphysique / modalité",
+    "lead": "La théorie des contreparties de David Lewis analyse les énoncés sur ce qu’un individu aurait pu être en parlant non d’un même individu présent dans plusieurs mondes, mais d’individus suffisamment similaires qui sont ses contreparties dans d’autres mondes possibles.",
+    "kind": "concept",
+    "senses": [
+      "Elle accompagne le réalisme modal de Lewis, puisque les mondes possibles concrets sont spatiotemporellement disjoints et ne partagent pas littéralement leurs habitants.",
+      "La relation de contrepartie dépend de critères de ressemblance pertinents au contexte et peut ne pas être strictement unique."
+    ],
+    "authors": [
+      {
+        "name": "David Lewis",
+        "text": "La théorie des contreparties remplace l’identité transmondaine par des relations de similarité entre individus appartenant à des mondes distincts."
+      }
+    ],
+    "related": [
+      "Réalisme modal",
+      "Monde possible",
+      "Identité",
+      "Essentialisme"
+    ]
+  },
+  {
+    "term": "Endurantisme",
+    "aliases": "endurantisme",
+    "category": "Doctrine métaphysique / identité temporelle",
+    "lead": "L’endurantisme soutient qu’un objet persistant est entièrement présent à chacun des moments où il existe, sans être composé de parties temporelles distinctes correspondant à chaque instant.",
+    "kind": "concept",
+    "senses": [
+      "Le défi classique est d’expliquer le changement : comment le même objet peut-il posséder des propriétés incompatibles à des moments différents ?",
+      "Les réponses endurantistes invoquent notamment des propriétés temporalisées, des relations aux temps ou d’autres analyses du prédicat."
+    ],
+    "related": [
+      "Perdurantisme",
+      "Identité",
+      "Temps",
+      "Parties temporelles"
+    ]
+  },
+  {
+    "term": "Perdurantisme",
+    "aliases": "perdurantisme",
+    "category": "Doctrine métaphysique / identité temporelle",
+    "lead": "Le perdurantisme soutient qu’un objet persiste à travers le temps en ayant différentes parties temporelles, de même qu’un objet étendu possède des parties spatiales. L’objet entier est ainsi étendu dans le temps.",
+    "kind": "concept",
+    "senses": [
+      "Chaque partie temporelle peut posséder des propriétés différentes, ce qui offre une manière de traiter le changement sans attribuer simultanément des prédicats incompatibles à une seule partie.",
+      "Il existe plusieurs versions, notamment théories des vers temporels et théories des stades."
+    ],
+    "related": [
+      "Endurantisme",
+      "Identité",
+      "Temps",
+      "Méréologie"
+    ]
+  },
+  {
+    "term": "Trope",
+    "aliases": "trope",
+    "category": "Concept métaphysique",
+    "lead": "Un trope est une propriété particulière et non universelle, par exemple la rougeur particulière de cette pomme, distincte numériquement de la rougeur particulière d’une autre pomme même si elles se ressemblent parfaitement.",
+    "kind": "concept",
+    "senses": [
+      "Les théories des tropes cherchent à expliquer propriétés et ressemblances sans postuler nécessairement des universaux partagés numériquement par plusieurs objets.",
+      "Selon les théories, les objets peuvent être analysés comme faisceaux de tropes ou comme substances qui possèdent des tropes."
+    ],
+    "related": [
+      "Universaux",
+      "Théorie du faisceau",
+      "Propriété",
+      "Particulier"
+    ]
+  },
+  {
+    "term": "Grounding",
+    "aliases": "grounding",
+    "category": "Concept métaphysique contemporain",
+    "lead": "Le grounding, souvent traduit par « fondation métaphysique », est une relation de dépendance explicative non causale : un fait est le cas en vertu d’un autre fait plus fondamental.",
+    "kind": "concept",
+    "senses": [
+      "Dire qu’un fait A fonde B ne signifie pas simplement qu’A cause B dans le temps : la relation est généralement pensée comme constitutive ou métaphysique.",
+      "Le grounding sert à structurer des niveaux de réalité et à formuler des questions de priorité ontologique."
+    ],
+    "related": [
+      "Dépendance ontologique",
+      "Survenance",
+      "Fondement",
+      "Réductionnisme"
+    ]
+  },
+  {
+    "term": "Dépendance ontologique",
+    "aliases": "dépendance ontologique dependance ontologique",
+    "category": "Concept métaphysique",
+    "lead": "La dépendance ontologique décrit le fait qu’une entité ne puisse exister, être ce qu’elle est ou être individuée sans une autre entité ou structure plus fondamentale. Plusieurs formes de dépendance doivent être distinguées.",
+    "kind": "concept",
+    "senses": [
+      "Une dépendance existentielle peut signifier que A ne peut exister sans B ; une dépendance d’essence peut signifier que l’identité ou la nature de A fait référence à B.",
+      "La dépendance ontologique n’est pas identique au grounding, même si les deux notions sont étroitement liées dans la métaphysique contemporaine."
+    ],
+    "related": [
+      "Grounding",
+      "Survenance",
+      "Essence",
+      "Fondement"
+    ]
+  },
+  {
+    "term": "Survenance",
+    "aliases": "survenance",
+    "category": "Concept métaphysique / philosophie de l’esprit",
+    "lead": "La survenance exprime l’idée qu’il ne peut y avoir de différence à un niveau A sans différence correspondante à un niveau B. Dire que le mental survient sur le physique signifie par exemple qu’aucun changement mental n’est possible sans quelque changement physique pertinent.",
+    "kind": "concept",
+    "senses": [
+      "La survenance établit une covariation modale, mais n’explique pas à elle seule pourquoi le niveau supérieur dépend du niveau inférieur.",
+      "Elle est donc plus faible qu’une réduction ou qu’une relation de grounding et reste compatible avec plusieurs métaphysiques différentes."
+    ],
+    "related": [
+      "Grounding",
+      "Dépendance ontologique",
+      "Physicalisme",
+      "Émergence"
+    ]
+  },
+  {
+    "term": "Causation contrefactuelle",
+    "aliases": "causation contrefactuelle",
+    "category": "Théorie de la causalité",
+    "lead": "Une théorie contrefactuelle de la causalité analyse « A cause B » en relation avec ce qui se serait produit si A n’avait pas eu lieu. Dans une version simple : si A n’avait pas eu lieu, B n’aurait pas eu lieu.",
+    "kind": "concept",
+    "senses": [
+      "Les cas de préemption et de surdétermination montrent qu’une simple dépendance contrefactuelle n’est pas toujours suffisante pour capturer toutes nos intuitions causales.",
+      "Les théories contemporaines raffinent l’approche par chaînes, interventions, mondes possibles ou modèles causaux structurels."
+    ],
+    "authors": [
+      {
+        "name": "David Lewis",
+        "text": "Il développe une théorie influente de la causalité à partir de la dépendance contrefactuelle entre événements."
+      }
+    ],
+    "related": [
+      "Causalité",
+      "Monde possible",
+      "Contrefactuel",
+      "Pouvoir causal"
+    ]
+  },
+  {
+    "term": "Disposition",
+    "aliases": "disposition",
+    "category": "Concept métaphysique",
+    "lead": "Une disposition est une propriété caractérisée par ce qu’un objet tendrait à faire dans certaines conditions : fragilité, solubilité, inflammabilité, élasticité. Elle soulève la question du statut des pouvoirs non manifestés.",
+    "kind": "concept",
+    "senses": [
+      "Un verre peut être fragile sans jamais se casser ; la disposition ne se réduit donc pas à sa manifestation actuelle.",
+      "Les analyses conditionnelles simples rencontrent des problèmes de masquage, de finking et de conditions perturbatrices, ce qui motive des théories plus robustes des pouvoirs."
+    ],
+    "related": [
+      "Pouvoir causal",
+      "Causalité",
+      "Contrefactuel",
+      "Propriété"
+    ]
+  },
+  {
+    "term": "Pouvoir causal",
+    "aliases": "pouvoir causal",
+    "category": "Concept métaphysique",
+    "lead": "Un pouvoir causal est une capacité réelle d’un objet ou système à produire certains effets dans des conditions appropriées. Les théories des pouvoirs traitent souvent les dispositions comme des traits fondamentaux plutôt que comme de simples résumés de régularités.",
+    "kind": "concept",
+    "senses": [
+      "Une charge électrique, par exemple, peut être conçue comme pouvoir de produire ou subir certains effets électromagnétiques.",
+      "Le débat oppose notamment conceptions dispositionalistes et conceptions plus humiennes où les propriétés fondamentales n’impliquent pas intrinsèquement leurs effets."
+    ],
+    "related": [
+      "Disposition",
+      "Causalité",
+      "Causation contrefactuelle",
+      "Propriété"
+    ]
+  },
+  {
+    "term": "Espèce naturelle",
+    "aliases": "espèce naturelle espece naturelle",
+    "category": "Concept métaphysique / philosophie des sciences",
+    "lead": "Une espèce naturelle est une catégorie censée correspondre à une structure réelle du monde plutôt qu’à une classification purement conventionnelle, par exemple certaines espèces chimiques ou biologiques selon les théories.",
+    "kind": "concept",
+    "senses": [
+      "Kripke et Putnam relient les termes d’espèces naturelles à des références fixées causalement et à des propriétés essentielles découvertes empiriquement.",
+      "La biologie contemporaine complique l’idée d’essences strictes pour les espèces vivantes, dont les frontières reposent souvent sur histoire évolutive, populations et relations généalogiques."
+    ],
+    "authors": [
+      {
+        "name": "Kripke",
+        "text": "Il utilise des exemples comme « eau » et « or » pour défendre des nécessités a posteriori liées aux espèces naturelles."
+      },
+      {
+        "name": "Hilary Putnam",
+        "text": "Il développe l’externalisme sémantique et l’idée que la référence de termes naturels dépend du monde et de la division sociale du travail linguistique."
+      }
+    ],
+    "related": [
+      "Essentialisme",
+      "Désignateur rigide",
+      "Référence",
+      "Science"
+    ]
+  },
+  {
+    "term": "Méréologie",
+    "aliases": "méréologie mereologie",
+    "category": "Branche de la métaphysique / logique",
+    "lead": "La méréologie est l’étude formelle et métaphysique des relations entre parties et touts : inclusion, chevauchement, fusion, composition et décomposition.",
+    "kind": "concept",
+    "etymology": "Du grec meros, « partie ».",
+    "senses": [
+      "Elle se distingue de la théorie des ensembles : une partie d’un objet n’est pas simplement un élément d’un ensemble.",
+      "Les débats portent notamment sur les conditions dans lesquelles plusieurs choses composent un nouvel objet."
+    ],
+    "related": [
+      "Nihilisme méréologique",
+      "Composition",
+      "Partie",
+      "Perdurantisme"
+    ]
+  },
+  {
+    "term": "Nihilisme méréologique",
+    "aliases": "nihilisme méréologique nihilisme mereologique",
+    "category": "Doctrine métaphysique",
+    "lead": "Le nihilisme méréologique soutient, dans sa forme standard, qu’il n’existe pas d’objets composites : seuls existent des simples fondamentaux arrangés de certaines manières. Une table ne serait donc pas un objet supplémentaire au-delà de particules disposées « tablement ».",
+    "kind": "concept",
+    "senses": [
+      "La position cherche à éviter l’arbitraire des questions de composition mais doit expliquer pourquoi notre discours quotidien sur les objets composites reste utile ou approximativement vrai.",
+      "Le nihilisme ne porte pas sur l’existence en général et ne doit pas être confondu avec le nihilisme moral ou existentiel."
+    ],
+    "related": [
+      "Méréologie",
+      "Composition",
+      "Ontologie",
+      "Substrat"
+    ]
+  },
+  {
+    "term": "Théorie du faisceau",
+    "aliases": "théorie du faisceau theorie du faisceau",
+    "category": "Doctrine métaphysique",
+    "lead": "La théorie du faisceau analyse un objet comme un ensemble ou faisceau de propriétés co-instanciées, sans postuler nécessairement un substrat nu distinct qui les porterait.",
+    "kind": "concept",
+    "senses": [
+      "Elle doit expliquer l’unité du faisceau et la possibilité de deux objets qualitativement indiscernables.",
+      "Des versions fondées sur les tropes permettent de distinguer deux objets ayant des propriétés exactement semblables par la particularité numérique de leurs tropes."
+    ],
+    "related": [
+      "Substrat",
+      "Trope",
+      "Propriété",
+      "Substance"
+    ]
+  },
+  {
+    "term": "Substrat",
+    "aliases": "substrat",
+    "category": "Concept métaphysique",
+    "lead": "Un substrat est ce qui est supposé sous-jacent aux propriétés d’un objet et qui les porte tout en n’étant pas lui-même réductible à l’une d’elles.",
+    "kind": "concept",
+    "etymology": "Du latin substratum, « ce qui est étendu dessous ».",
+    "senses": [
+      "La théorie du substrat répond au besoin d’expliquer l’unité et l’identité d’un objet à travers ses propriétés.",
+      "Ses critiques demandent comment un « particulier nu » dépourvu de propriétés pourrait être intelligible ou jouer un rôle explicatif."
+    ],
+    "related": [
+      "Théorie du faisceau",
+      "Substance",
+      "Propriété",
+      "Suppôt"
+    ]
+  },
+  {
+    "term": "Physicalisme",
+    "aliases": "physicalisme",
+    "category": "Doctrine de philosophie de l’esprit / métaphysique",
+    "lead": "Le physicalisme soutient que tout ce qui existe est physique ou dépend entièrement du physique, selon différentes formulations. Appliqué à l’esprit, il affirme qu’il n’existe pas de domaine mental fondamental indépendant du monde physique.",
+    "kind": "concept",
+    "senses": [
+      "Le physicalisme peut prendre des formes réductives, non réductives, fonctionnalistes ou éliminativistes.",
+      "La difficulté consiste notamment à expliquer conscience phénoménale, intentionalité et normativité sans réintroduire un dualisme substantiel."
+    ],
+    "related": [
+      "Matérialisme",
+      "Survenance",
+      "Fonctionnalisme",
+      "Qualia"
+    ]
+  },
+  {
+    "term": "Fonctionnalisme",
+    "aliases": "fonctionnalisme",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "Le fonctionnalisme identifie les états mentaux par leur rôle causal ou fonctionnel dans un système : relations entre entrées sensorielles, autres états internes et comportements, plutôt que par une matière physique précise.",
+    "kind": "concept",
+    "senses": [
+      "Un même état mental pourrait ainsi être réalisé dans des supports physiques différents, ce qui explique la thèse de réalisation multiple.",
+      "Les objections portent notamment sur la conscience qualitative et sur la possibilité de reproduire le rôle fonctionnel sans l’expérience subjective correspondante."
+    ],
+    "related": [
+      "Réalisation multiple",
+      "Physicalisme",
+      "Qualia",
+      "Chambre chinoise"
+    ]
+  },
+  {
+    "term": "Béhaviorisme logique",
+    "aliases": "béhaviorisme logique behaviorisme logique",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "Le béhaviorisme logique analyse les énoncés mentaux en termes de comportements observables ou de dispositions à se comporter dans certaines circonstances, plutôt que comme descriptions d’états internes privés.",
+    "kind": "concept",
+    "senses": [
+      "Dire qu’une personne croit ou souffre reviendrait, dans une version forte, à parler d’un ensemble complexe de tendances comportementales.",
+      "La théorie évite un théâtre mental inaccessible mais peine à rendre compte de l’expérience subjective et de la possibilité de masquer volontairement un état mental."
+    ],
+    "authors": [
+      {
+        "name": "Gilbert Ryle",
+        "text": "La critique du « fantôme dans la machine » combat la conception cartésienne de l’esprit comme substance intérieure parallèle au corps, même si son rapport au béhaviorisme strict est nuancé."
+      }
+    ],
+    "related": [
+      "Comportement",
+      "Fonctionnalisme",
+      "Dualisme",
+      "Esprit"
+    ]
+  },
+  {
+    "term": "Théorie de l’identité esprit-cerveau",
+    "aliases": "théorie de l’identité esprit-cerveau theorie de l identite esprit cerveau",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "La théorie de l’identité esprit-cerveau soutient que les types ou occurrences d’états mentaux sont identiques à des états ou processus cérébraux, et non simplement corrélés avec eux.",
+    "kind": "concept",
+    "senses": [
+      "Les théories d’identité de type identifient par exemple douleur et un type neurophysiologique ; la réalisation multiple met en difficulté cette version si des organismes différents peuvent éprouver la douleur avec des structures différentes.",
+      "Les identités d’occurrence sont plus souples et peuvent admettre des réalisations physiques variées."
+    ],
+    "authors": [
+      {
+        "name": "J. J. C. Smart",
+        "text": "Il défend une théorie matérialiste de l’identité pour éviter de multiplier inutilement les propriétés non physiques."
+      },
+      {
+        "name": "U. T. Place",
+        "text": "Il contribue à formuler l’idée que les processus conscients puissent être des processus cérébraux."
+      }
+    ],
+    "related": [
+      "Physicalisme",
+      "Réalisation multiple",
+      "Fonctionnalisme",
+      "Qualia"
+    ]
+  },
+  {
+    "term": "Matérialisme éliminativiste",
+    "aliases": "matérialisme éliminativiste materialisme eliminativiste",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "Le matérialisme éliminativiste soutient que certaines catégories de la psychologie ordinaire — croyance, désir ou autres selon les versions — pourraient appartenir à une théorie radicalement fausse et être remplacées plutôt que réduites par une neuroscientifique plus adéquate.",
+    "kind": "concept",
+    "senses": [
+      "La position compare parfois la psychologie populaire à des théories historiques abandonnées comme le phlogistique.",
+      "Ses critiques soulignent la difficulté de nier les croyances en formulant soi-même des affirmations et le rôle explicatif durable de la psychologie intentionnelle."
+    ],
+    "authors": [
+      {
+        "name": "Paul Churchland",
+        "text": "Il défend l’idée que la psychologie du sens commun pourrait être une théorie empirique appelée à être profondément révisée ou éliminée."
+      },
+      {
+        "name": "Patricia Churchland",
+        "text": "Elle développe une philosophie neurobiologique critique des catégories mentales tenues pour évidentes."
+      }
+    ],
+    "related": [
+      "Physicalisme",
+      "Psychologie populaire",
+      "Fonctionnalisme",
+      "Neurosciences"
+    ]
+  },
+  {
+    "term": "Dualisme des propriétés",
+    "aliases": "dualisme des propriétés dualisme des proprietes",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "Le dualisme des propriétés soutient qu’il n’existe qu’un type fondamental de substance ou au moins pas deux substances séparées, mais que certaines propriétés mentales sont irréductibles aux propriétés physiques.",
+    "kind": "concept",
+    "senses": [
+      "Une personne peut donc être entièrement constituée de matière tout en possédant des propriétés phénoménales qui ne s’identifient à aucune propriété physique selon la théorie.",
+      "Le défi majeur concerne la causalité mentale : si le domaine physique est causalement clos, quel rôle causal reste-t-il aux propriétés mentales irréductibles ?"
+    ],
+    "related": [
+      "Dualisme",
+      "Physicalisme",
+      "Épiphénoménisme",
+      "Qualia"
+    ]
+  },
+  {
+    "term": "Épiphénoménisme",
+    "aliases": "épiphénoménisme epiphenomenisme",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "L’épiphénoménisme soutient que les états mentaux conscients sont produits par des processus physiques mais n’exercent eux-mêmes aucun effet causal sur le monde physique.",
+    "kind": "concept",
+    "senses": [
+      "La théorie préserve une dépendance du mental à l’égard du cerveau tout en acceptant un écart ontologique ou phénoménal.",
+      "Elle rencontre l’objection selon laquelle nos paroles sur la conscience semblent alors ne pas être causées par nos expériences conscientes elles-mêmes."
+    ],
+    "related": [
+      "Dualisme des propriétés",
+      "Physicalisme",
+      "Causalité mentale",
+      "Qualia"
+    ]
+  },
+  {
+    "term": "Panpsychisme",
+    "aliases": "panpsychisme",
+    "category": "Doctrine de philosophie de l’esprit / métaphysique",
+    "lead": "Le panpsychisme soutient que la dimension mentale ou expérientielle est fondamentale et largement répandue dans la nature, plutôt que d’apparaître soudainement seulement dans certains cerveaux complexes.",
+    "kind": "concept",
+    "etymology": "Du grec pan, « tout », et psychè, « âme, esprit ».",
+    "senses": [
+      "Les formes contemporaines n’attribuent pas nécessairement pensées ou personnalités aux particules : elles parlent souvent de propriétés proto-phénoménales ou d’expériences extrêmement simples.",
+      "Le principal défi est le problème de combinaison : comment des micro-expériences composeraient-elles une conscience unifiée de haut niveau ?"
+    ],
+    "related": [
+      "Qualia",
+      "Conscience",
+      "Physicalisme",
+      "Problème difficile de la conscience"
+    ]
+  },
+  {
+    "term": "Qualia",
+    "aliases": "qualia",
+    "category": "Concept de philosophie de l’esprit",
+    "lead": "Les qualia sont les aspects qualitatifs et vécus de l’expérience : ce que cela fait de voir du rouge, sentir une douleur, goûter du café ou entendre un timbre particulier.",
+    "kind": "concept",
+    "etymology": "Latin quale, « de quelle sorte ».",
+    "senses": [
+      "Le terme devient central dans les débats sur la possibilité de réduire la conscience à des fonctions ou états physiques.",
+      "Certains philosophes contestent que les qualia constituent des propriétés intrinsèques privées telles qu’ils sont souvent décrits."
+    ],
+    "related": [
+      "Conscience",
+      "Problème difficile de la conscience",
+      "Fossé explicatif",
+      "Zombie philosophique"
+    ]
+  },
+  {
+    "term": "Problème difficile de la conscience",
+    "aliases": "problème difficile de la conscience probleme difficile de la conscience",
+    "category": "Concept de philosophie de l’esprit",
+    "lead": "Le « problème difficile » de la conscience demande pourquoi et comment des processus physiques ou fonctionnels s’accompagnent d’une expérience subjective qualitative. Il se distingue des problèmes fonctionnels concernant discrimination, rapport verbal, mémoire ou attention.",
+    "kind": "concept",
+    "senses": [
+      "Résoudre les mécanismes permettant de traiter l’information ne semble pas, selon Chalmers, expliquer à lui seul pourquoi il y a quelque chose que cela fait d’être le système.",
+      "De nombreux physicalistes contestent toutefois la formulation du problème ou soutiennent qu’une explication scientifique appropriée finira par dissoudre l’écart apparent."
+    ],
+    "authors": [
+      {
+        "name": "David Chalmers",
+        "text": "Il popularise la distinction entre problèmes « faciles » des fonctions cognitives et problème difficile de l’expérience phénoménale."
+      }
+    ],
+    "related": [
+      "Qualia",
+      "Fossé explicatif",
+      "Zombie philosophique",
+      "Physicalisme"
+    ]
+  },
+  {
+    "term": "Fossé explicatif",
+    "aliases": "fossé explicatif fosse explicatif",
+    "category": "Concept de philosophie de l’esprit",
+    "lead": "Le fossé explicatif désigne la difficulté à comprendre comment une description complète des mécanismes physiques pourrait expliquer pourquoi une expérience possède telle qualité subjective.",
+    "kind": "concept",
+    "senses": [
+      "Même si l’on connaissait toutes les corrélations neuronales de la douleur, certains soutiennent qu’il resterait à expliquer pourquoi ces processus « font mal ».",
+      "Le fossé peut être interprété comme limite de nos concepts, indice d’un dualisme ou problème provisoire de la science selon les théories."
+    ],
+    "authors": [
+      {
+        "name": "Joseph Levine",
+        "text": "Il popularise l’expression explanatory gap pour caractériser la difficulté explicative entre faits physiques et caractère qualitatif de l’expérience."
+      }
+    ],
+    "related": [
+      "Qualia",
+      "Problème difficile de la conscience",
+      "Physicalisme",
+      "Dualisme des propriétés"
+    ]
+  },
+  {
+    "term": "Zombie philosophique",
+    "aliases": "zombie philosophique",
+    "category": "Expérience de pensée / philosophie de l’esprit",
+    "lead": "Un zombie philosophique est un être hypothétique physiquement et fonctionnellement identique à un humain normal mais dépourvu de toute expérience consciente. La concevabilité d’un tel être est utilisée dans certains arguments contre le physicalisme.",
+    "kind": "concept",
+    "senses": [
+      "Un zombie philosophique ne se comporte pas comme un monstre : il parle, agit et rapporte des expériences exactement comme nous mais « il n’y a rien que cela fait » d’être lui.",
+      "Le débat porte sur le passage de la concevabilité à la possibilité métaphysique : les physicalistes contestent souvent cette inférence."
+    ],
+    "authors": [
+      {
+        "name": "David Chalmers",
+        "text": "L’argument des zombies vise à montrer que les faits physiques pourraient ne pas déterminer conceptuellement ou métaphysiquement les faits phénoménaux."
+      }
+    ],
+    "related": [
+      "Qualia",
+      "Problème difficile de la conscience",
+      "Physicalisme",
+      "Modalité"
+    ]
+  },
+  {
+    "term": "Chambre chinoise",
+    "aliases": "chambre chinoise",
+    "category": "Expérience de pensée / philosophie de l’esprit",
+    "lead": "La chambre chinoise est une expérience de pensée de John Searle destinée à contester l’idée que l’exécution d’un programme symbolique suffise à produire une compréhension sémantique.",
+    "kind": "concept",
+    "senses": [
+      "Une personne ne connaissant pas le chinois pourrait suivre un manuel de règles pour manipuler des symboles et produire des réponses indistinguables de celles d’un locuteur, sans comprendre leur sens selon Searle.",
+      "Les réponses invoquent notamment le système entier, l’incarnation robotique, la simulation cérébrale ou des conceptions fonctionnelles de la compréhension."
+    ],
+    "authors": [
+      {
+        "name": "John Searle",
+        "text": "Il oppose syntaxe formelle et sémantique intentionnelle pour critiquer ce qu’il appelle l’intelligence artificielle forte."
+      }
+    ],
+    "related": [
+      "Fonctionnalisme",
+      "Intelligence artificielle",
+      "Compréhension",
+      "Test de Turing"
+    ]
+  },
+  {
+    "term": "Réalisation multiple",
+    "aliases": "réalisation multiple realisation multiple",
+    "category": "Concept de philosophie de l’esprit",
+    "lead": "La réalisation multiple est l’idée qu’un même type d’état mental ou fonction peut être réalisé par des structures physiques différentes chez des organismes ou systèmes différents.",
+    "kind": "concept",
+    "senses": [
+      "La douleur pourrait par exemple jouer un rôle fonctionnel analogue chez des espèces dont les mécanismes neurobiologiques diffèrent sensiblement.",
+      "L’argument a été utilisé contre les théories d’identité de type trop strictes et en faveur du fonctionnalisme."
+    ],
+    "authors": [
+      {
+        "name": "Hilary Putnam",
+        "text": "Il utilise la possibilité de multiples réalisations pour critiquer l’identification simple de chaque état mental à un type neurophysiologique unique."
+      },
+      {
+        "name": "Jerry Fodor",
+        "text": "Il relie la réalisation multiple à l’autonomie relative des sciences spéciales par rapport à la physique."
+      }
+    ],
+    "related": [
+      "Fonctionnalisme",
+      "Théorie de l’identité esprit-cerveau",
+      "Physicalisme",
+      "Niveau d’organisation"
+    ]
+  },
+  {
+    "term": "Cognition incarnée",
+    "aliases": "cognition incarnée cognition incarnee",
+    "category": "Courant de sciences cognitives / philosophie",
+    "lead": "La cognition incarnée soutient que les processus cognitifs dépendent constitutivement du corps, de ses capacités sensorimotrices et de son engagement dans un environnement, et ne doivent pas être modélisés uniquement comme calcul abstrait dans le cerveau.",
+    "kind": "concept",
+    "senses": [
+      "Les versions faibles soulignent que le corps influence la cognition ; les versions fortes soutiennent que certaines structures corporelles participent à la constitution même des processus cognitifs.",
+      "Le courant dialogue avec phénoménologie, psychologie écologique, robotique et théories énactives."
+    ],
+    "related": [
+      "Énaction",
+      "Corps propre",
+      "Esprit étendu",
+      "Perception"
+    ]
+  },
+  {
+    "term": "Énaction",
+    "aliases": "énaction enaction",
+    "category": "Courant de sciences cognitives / philosophie",
+    "lead": "L’énaction conçoit la cognition comme production ou « mise en acte » d’un monde de significations à travers l’activité autonome et sensorimotrice d’un organisme engagé dans son environnement.",
+    "kind": "concept",
+    "etymology": "Du verbe anglais enact, « mettre en acte, faire advenir ».",
+    "senses": [
+      "La cognition n’est pas simplement réception d’informations préconstituées : organisme et environnement se déterminent relationnellement dans l’activité.",
+      "Les approches énactives accordent une place centrale au corps vivant, à l’autonomie, à l’action et parfois à la phénoménologie."
+    ],
+    "authors": [
+      {
+        "name": "Francisco Varela, Evan Thompson et Eleanor Rosch",
+        "text": "The Embodied Mind articule sciences cognitives, phénoménologie et bouddhisme autour d’une approche énactive de la cognition."
+      }
+    ],
+    "related": [
+      "Cognition incarnée",
+      "Autopoïèse",
+      "Perception",
+      "Phénoménologie"
+    ]
+  },
+  {
+    "term": "Esprit étendu",
+    "aliases": "esprit étendu esprit etendu",
+    "category": "Thèse de philosophie de l’esprit",
+    "lead": "La thèse de l’esprit étendu soutient que, dans certaines conditions, des éléments externes au cerveau et au corps peuvent faire partie du processus cognitif lui-même, et pas seulement servir d’outils causaux externes.",
+    "kind": "concept",
+    "senses": [
+      "Le cas classique d’Otto utilise un carnet de notes de manière fonctionnellement intégrée à sa mémoire, ce qui invite à considérer le carnet comme composant d’un système cognitif étendu.",
+      "Les critiques demandent quels critères distinguent une véritable extension cognitive d’une simple dépendance instrumentale."
+    ],
+    "authors": [
+      {
+        "name": "Andy Clark et David Chalmers",
+        "text": "Ils défendent le principe de parité : si un processus externe joue le même rôle pertinent qu’un processus interne que nous qualifierions de cognitif, son emplacement ne devrait pas suffire à l’exclure de la cognition."
+      }
+    ],
+    "related": [
+      "Cognition incarnée",
+      "Externalisme mental",
+      "Mémoire",
+      "Fonctionnalisme"
+    ]
+  },
+  {
+    "term": "Externalisme mental",
+    "aliases": "externalisme mental",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "L’externalisme mental soutient que le contenu de certains états mentaux dépend en partie de facteurs situés hors de l’individu, par exemple l’environnement physique ou les pratiques linguistiques d’une communauté.",
+    "kind": "concept",
+    "senses": [
+      "L’expérience de la Terre jumelle de Putnam vise à montrer que deux individus intérieurement identiques peuvent avoir des pensées référant à des substances différentes selon leur environnement.",
+      "L’externalisme du contenu ne signifie pas automatiquement que les processus mentaux eux-mêmes s’étendent dans l’environnement, contrairement à la thèse de l’esprit étendu."
+    ],
+    "authors": [
+      {
+        "name": "Hilary Putnam",
+        "text": "Son slogan « meanings just ain’t in the head » résume un externalisme sémantique fondé sur l’environnement et la division sociale du travail linguistique."
+      },
+      {
+        "name": "Tyler Burge",
+        "text": "Il développe un externalisme social selon lequel le contenu mental dépend aussi des normes linguistiques de la communauté."
+      }
+    ],
+    "related": [
+      "Esprit étendu",
+      "Référence",
+      "Contenu mental",
+      "Externalisme épistémique"
+    ]
+  },
+  {
+    "term": "Représentationnalisme",
+    "aliases": "représentationnalisme representationnalisme",
+    "category": "Doctrine de philosophie de l’esprit",
+    "lead": "Le représentationnalisme soutient, selon les versions, que le caractère ou le contenu de l’expérience perceptive est déterminé par ce qu’elle représente comme étant le cas.",
+    "kind": "concept",
+    "senses": [
+      "Une version forte « transparente » des qualia affirme que les qualités phénoménales sont entièrement constituées par le contenu représenté, plutôt que par des propriétés mentales supplémentaires.",
+      "Les objections mobilisent illusions, hallucinations, expériences supposées de même contenu mais de caractère différent ou phénomènes attentionnels."
+    ],
+    "related": [
+      "Perception",
+      "Qualia",
+      "Intentionnalité",
+      "Contenu mental"
+    ]
+  },
+  {
+    "term": "Désintéressement",
+    "aliases": "désintéressement desinteressement",
+    "category": "Concept esthétique",
+    "lead": "Le désintéressement est l’idée qu’un jugement esthétique authentique porte sur la manière dont une chose plaît sans dépendre d’un désir de la posséder, de son utilité ou d’un avantage personnel. Le concept est particulièrement central chez Kant.",
+    "kind": "concept",
+    "senses": [
+      "Un plaisir désintéressé n’est pas un plaisir sans émotion : il signifie que le jugement de beauté n’est pas fondé sur l’existence désirée de l’objet.",
+      "Le concept a été critiqué par des esthétiques qui insistent sur l’engagement corporel, social et politique de l’expérience artistique."
+    ],
+    "authors": [
+      {
+        "name": "Kant",
+        "text": "Le jugement de goût est lié à une satisfaction sans intérêt, distincte de l’agréable et du bon moral ou utile."
+      }
+    ],
+    "related": [
+      "Sensus communis",
+      "Beauté",
+      "Expérience esthétique",
+      "Jugement de goût"
+    ]
+  },
+  {
+    "term": "Aura",
+    "aliases": "aura",
+    "category": "Concept esthétique / Walter Benjamin",
+    "lead": "L’aura désigne chez Walter Benjamin l’apparition singulière d’un lointain, si proche soit-il, liée à l’unicité, à la présence et à l’inscription traditionnelle d’une œuvre ou d’un objet.",
+    "kind": "concept",
+    "senses": [
+      "La reproduction technique moderne tend à détacher l’œuvre de son hic et nunc et à transformer son mode d’autorité et de réception.",
+      "Benjamin ne décrit pas simplement une « ambiance magique » : l’aura renvoie à une structure historique de distance, unicité et tradition."
+    ],
+    "authors": [
+      {
+        "name": "Walter Benjamin",
+        "text": "L’Œuvre d’art à l’époque de sa reproductibilité technique analyse le déclin de l’aura dans les médias reproductibles comme photographie et cinéma."
+      }
+    ],
+    "related": [
+      "Reproductibilité technique",
+      "Art",
+      "Original",
+      "Photographie"
+    ]
+  },
+  {
+    "term": "Reproductibilité technique",
+    "aliases": "reproductibilité technique reproductibilite technique",
+    "category": "Concept esthétique / théorie des médias",
+    "lead": "La reproductibilité technique désigne la capacité moderne de produire et diffuser massivement des copies d’images, sons ou œuvres par photographie, cinéma, enregistrement et autres technologies. Chez Benjamin, elle transforme le statut social et perceptif de l’art.",
+    "kind": "concept",
+    "senses": [
+      "La reproduction détache l’œuvre de son lieu et de sa tradition, ce qui contribue au déclin de l’aura.",
+      "Elle ouvre aussi des possibilités politiques et collectives nouvelles de réception, sans être pensée seulement comme perte."
+    ],
+    "authors": [
+      {
+        "name": "Walter Benjamin",
+        "text": "La reproduction technique modifie la valeur cultuelle, la valeur d’exposition et les formes de perception de l’œuvre moderne."
+      }
+    ],
+    "related": [
+      "Aura",
+      "Technique",
+      "Cinéma",
+      "Art"
+    ]
+  },
+  {
+    "term": "Expérience esthétique",
+    "aliases": "expérience esthétique experience esthetique",
+    "category": "Concept esthétique",
+    "lead": "L’expérience esthétique est le mode d’attention, de perception et d’affect engagé dans la rencontre avec une œuvre, un paysage ou une forme sensible considérée pour ses qualités propres et les significations qu’elle ouvre.",
+    "kind": "concept",
+    "senses": [
+      "Les théories divergent : contemplation désintéressée, expérience unifiée, engagement corporel, interprétation culturelle, affect ou transformation perceptive.",
+      "Le concept permet d’élargir l’esthétique au-delà de la seule définition institutionnelle des œuvres tout en posant la question de ce qui distingue l’expérience esthétique d’autres expériences."
+    ],
+    "authors": [
+      {
+        "name": "John Dewey",
+        "text": "L’Art comme expérience insiste sur la continuité entre expérience esthétique et vie ordinaire, lorsque l’expérience acquiert une unité rythmique et accomplie."
+      }
+    ],
+    "related": [
+      "Désintéressement",
+      "Art",
+      "Perception",
+      "Esthétique"
+    ]
+  },
+  {
+    "term": "Formalisme",
+    "aliases": "formalisme",
+    "category": "Courant esthétique",
+    "lead": "Le formalisme esthétique met l’accent sur l’organisation sensible ou structurelle de l’œuvre — lignes, couleurs, rythmes, rapports, composition, syntaxe — comme source principale de sa valeur artistique ou esthétique.",
+    "kind": "concept",
+    "senses": [
+      "Les formalismes varient selon les arts et ne nient pas toujours tout contenu ou contexte, mais refusent de faire de la biographie ou du message représenté la clé exclusive de l’œuvre.",
+      "Les critiques soulignent que certaines œuvres conceptuelles, politiques ou contextuelles résistent à une analyse purement formelle."
+    ],
+    "authors": [
+      {
+        "name": "Clive Bell",
+        "text": "Il défend l’idée de « forme signifiante » comme source de l’émotion esthétique dans les arts visuels."
+      },
+      {
+        "name": "Clement Greenberg",
+        "text": "Il développe un modernisme critique centré sur la spécificité du médium et les propriétés formelles de la peinture."
+      }
+    ],
+    "related": [
+      "Expressionnisme",
+      "Art",
+      "Forme",
+      "Théorie institutionnelle de l’art"
+    ]
+  },
+  {
+    "term": "Expressionnisme",
+    "aliases": "expressionnisme",
+    "category": "Théorie esthétique",
+    "lead": "Dans une théorie expressionniste de l’art, l’œuvre est comprise en relation avec l’expression, la clarification ou la mise en forme d’émotions et d’états affectifs. Le terme désigne aussi un mouvement artistique historique distinct.",
+    "kind": "concept",
+    "senses": [
+      "Une œuvre peut exprimer une émotion sans être simplement le déversement spontané d’un état psychologique déjà formé.",
+      "Collingwood, par exemple, conçoit l’expression artistique comme clarification imaginative d’une émotion plutôt que transmission mécanique d’un sentiment."
+    ],
+    "authors": [
+      {
+        "name": "R. G. Collingwood",
+        "text": "Il distingue l’art véritable, qui clarifie l’émotion dans l’expression imaginative, de l’artisanat ou du divertissement conçu comme production d’un effet prédéterminé."
+      }
+    ],
+    "related": [
+      "Formalisme",
+      "Émotion",
+      "Art",
+      "Expression"
+    ]
+  },
+  {
+    "term": "Erreur intentionnelle",
+    "aliases": "erreur intentionnelle",
+    "category": "Concept esthétique / critique littéraire",
+    "lead": "L’erreur intentionnelle est, chez Wimsatt et Beardsley, l’erreur consistant à traiter l’intention privée de l’auteur comme critère décisif de la signification ou de la valeur d’une œuvre littéraire.",
+    "kind": "concept",
+    "senses": [
+      "Le texte publié doit être interprété à partir des éléments accessibles dans l’œuvre et de conventions pertinentes, pas d’une autorité psychologique absolue de l’auteur.",
+      "La critique de l’intentionnalisme fort n’implique pas que tout contexte de production soit toujours sans pertinence."
+    ],
+    "authors": [
+      {
+        "name": "Wimsatt et Beardsley",
+        "text": "The Intentional Fallacy défend l’autonomie critique du poème contre l’identification de son sens à ce que l’auteur affirme avoir voulu faire."
+      }
+    ],
+    "related": [
+      "Auteur",
+      "Interprétation",
+      "Monde du texte",
+      "Œuvre"
+    ]
+  },
+  {
+    "term": "Théorie institutionnelle de l’art",
+    "aliases": "théorie institutionnelle de l’art theorie institutionnelle de l art",
+    "category": "Théorie esthétique",
+    "lead": "La théorie institutionnelle de l’art explique le statut artistique d’un objet par sa place dans des pratiques et institutions du monde de l’art : artistes, musées, critiques, publics, traditions et procédures de présentation.",
+    "kind": "concept",
+    "senses": [
+      "Elle vise notamment à expliquer comment des objets ordinaires comme les ready-made peuvent devenir œuvres sans posséder une propriété esthétique visible commune à tout art.",
+      "Les critiques lui reprochent parfois circularité ou dépendance excessive envers les institutions existantes."
+    ],
+    "authors": [
+      {
+        "name": "George Dickie",
+        "text": "Il formalise une théorie selon laquelle être œuvre d’art dépend d’un statut conféré dans le cadre du monde de l’art."
+      },
+      {
+        "name": "Arthur Danto",
+        "text": "Son analyse du monde de l’art et des indiscernables perceptuels prépare un cadre voisin mais distinct de l’institutionnalisme de Dickie."
+      }
+    ],
+    "related": [
+      "Artworld",
+      "Ready-made",
+      "Définition de l’art",
+      "Institution"
+    ]
+  },
+  {
+    "term": "Artworld",
+    "aliases": "artworld",
+    "category": "Concept esthétique / Danto",
+    "lead": "L’Artworld, ou monde de l’art, désigne chez Arthur Danto le réseau de théories, connaissances historiques et pratiques grâce auquel un objet peut être vu et compris comme œuvre d’art.",
+    "kind": "concept",
+    "senses": [
+      "Deux objets perceptivement indiscernables peuvent avoir des statuts artistiques différents parce qu’ils occupent des places différentes dans l’histoire et le discours de l’art.",
+      "Le concept ne désigne pas seulement le marché de l’art ou un groupe social de professionnels, même si ces institutions peuvent en faire partie."
+    ],
+    "authors": [
+      {
+        "name": "Arthur Danto",
+        "text": "The Artworld soutient qu’une atmosphère de théorie et d’histoire de l’art est nécessaire pour voir certains objets comme œuvres."
+      }
+    ],
+    "related": [
+      "Théorie institutionnelle de l’art",
+      "Ready-made",
+      "Interprétation",
+      "Art"
+    ]
+  },
+  {
+    "term": "Ready-made",
+    "aliases": "ready-made ready made",
+    "category": "Concept / pratique artistique",
+    "lead": "Le ready-made est un objet manufacturé ordinaire sélectionné et présenté comme œuvre d’art, pratique associée à Marcel Duchamp. Il déplace l’attention de la fabrication manuelle vers le choix, le contexte et le statut artistique.",
+    "kind": "concept",
+    "senses": [
+      "Fountain, urinoir signé « R. Mutt », devient l’exemple emblématique des problèmes posés à la définition de l’art par propriétés sensibles ou savoir-faire.",
+      "Le ready-made ne signifie pas que tout objet est automatiquement art : le geste, le contexte et l’histoire de sa présentation jouent un rôle crucial."
+    ],
+    "authors": [
+      {
+        "name": "Marcel Duchamp",
+        "text": "Ses ready-made transforment la question « comment cette œuvre est-elle faite ? » en « qu’est-ce qui fait qu’un objet compte comme art ? »."
+      }
+    ],
+    "related": [
+      "Artworld",
+      "Théorie institutionnelle de l’art",
+      "Art conceptuel",
+      "Auteur"
+    ]
+  },
+  {
+    "term": "Punctum",
+    "aliases": "punctum",
+    "category": "Concept esthétique / photographie",
+    "lead": "Le punctum est, chez Roland Barthes, le détail d’une photographie qui « point » personnellement le spectateur, le touche ou le blesse de manière singulière au-delà de l’intérêt culturel général de l’image.",
+    "kind": "concept",
+    "etymology": "Latin punctum, « point, piqûre ».",
+    "senses": [
+      "Le punctum n’est pas nécessairement intentionnellement placé par le photographe ni universellement perceptible par tous.",
+      "Il s’oppose au studium, intérêt culturel, codé et partageable avec lequel on aborde une photographie."
+    ],
+    "authors": [
+      {
+        "name": "Roland Barthes",
+        "text": "La Chambre claire distingue le studium de l’impact singulier et imprévisible du punctum."
+      }
+    ],
+    "related": [
+      "Studium",
+      "Photographie",
+      "Aura",
+      "Affect"
+    ]
+  },
+  {
+    "term": "Studium",
+    "aliases": "studium",
+    "category": "Concept esthétique / photographie",
+    "lead": "Le studium est, chez Roland Barthes, l’intérêt culturel, informé et relativement partageable qu’un spectateur porte à une photographie : sujet, contexte, codes, intentions et informations qu’elle propose.",
+    "kind": "concept",
+    "etymology": "Latin studium, « application, étude, goût ».",
+    "senses": [
+      "Le studium permet de comprendre et apprécier une photographie à travers des compétences culturelles.",
+      "Il se distingue du punctum, détail singulier qui atteint le spectateur de manière plus personnelle et involontaire."
+    ],
+    "authors": [
+      {
+        "name": "Roland Barthes",
+        "text": "La Chambre claire oppose le champ culturel du studium à la blessure subjective et imprévisible du punctum."
+      }
+    ],
+    "related": [
+      "Punctum",
+      "Photographie",
+      "Interprétation",
+      "Culture"
+    ]
+  },
+  {
+    "term": "Inconscient optique",
+    "aliases": "inconscient optique",
+    "category": "Concept esthétique / théorie des médias",
+    "lead": "L’inconscient optique désigne, chez Walter Benjamin, les aspects du visible que les dispositifs photographiques et cinématographiques révèlent au-delà des capacités ordinaires de perception consciente : ralenti, agrandissement, cadrage, arrêt sur image, etc.",
+    "kind": "concept",
+    "senses": [
+      "Le concept ne signifie pas que l’appareil possède un inconscient psychique ; il indique que la technique fait apparaître des structures visuelles qui échappaient à l’œil nu ou à l’attention ordinaire.",
+      "Il rapproche transformation technique de la perception et découverte psychanalytique de processus psychiques non conscients."
+    ],
+    "authors": [
+      {
+        "name": "Walter Benjamin",
+        "text": "La photographie et le cinéma ouvrent selon lui un champ perceptif analogue, par métaphore, à celui que la psychanalyse ouvre pour la vie pulsionnelle."
+      }
+    ],
+    "related": [
+      "Photographie",
+      "Cinéma",
+      "Technique",
+      "Inconscient"
+    ]
+  },
+  {
+    "term": "Kitsch",
+    "aliases": "kitsch",
+    "category": "Concept esthétique",
+    "lead": "Le kitsch désigne des productions culturelles perçues comme sentimentales, conventionnelles, faciles ou imitant des effets artistiques consacrés sans la tension formelle ou critique qui les avait produits. Le concept est historiquement chargé et souvent normatif.",
+    "kind": "concept",
+    "senses": [
+      "Des critiques modernistes opposent le kitsch à l’avant-garde ; d’autres analyses montrent que le jugement de kitsch dépend aussi de hiérarchies sociales de goût.",
+      "Le terme ne fournit donc pas à lui seul un critère objectif universel de mauvaise qualité artistique."
+    ],
+    "authors": [
+      {
+        "name": "Clement Greenberg",
+        "text": "Dans Avant-Garde and Kitsch, il oppose l’expérimentation de l’avant-garde à une culture de masse standardisée et immédiatement consommable."
+      },
+      {
+        "name": "Milan Kundera",
+        "text": "Il utilise le kitsch comme catégorie esthétique et existentielle de refus de ce qui trouble une image édifiante du monde."
+      }
+    ],
+    "related": [
+      "Avant-garde",
+      "Industrie culturelle",
+      "Goût",
+      "Art"
+    ]
+  },
+  {
+    "term": "Avant-garde",
+    "aliases": "avant-garde avant garde",
+    "category": "Concept esthétique / histoire de l’art",
+    "lead": "L’avant-garde désigne des mouvements artistiques qui cherchent à rompre avec des conventions établies, expérimenter de nouveaux médiums ou transformer le rapport entre art et société.",
+    "kind": "concept",
+    "etymology": "Terme militaire désignant initialement les troupes placées en avant ; repris politiquement et artistiquement au XIXe siècle.",
+    "senses": [
+      "Les avant-gardes historiques du XXe siècle incluent futurisme, dada, constructivisme, surréalisme, entre autres, avec des projets très différents.",
+      "Le concept pose le paradoxe de la nouveauté : une rupture peut être institutionnalisée, devenir canonique puis perdre sa force subversive."
+    ],
+    "related": [
+      "Kitsch",
+      "Modernisme",
+      "Dada",
+      "Art"
+    ]
+  },
+  {
+    "term": "Gesamtkunstwerk",
+    "aliases": "gesamtkunstwerk",
+    "category": "Concept esthétique / arts",
+    "lead": "Gesamtkunstwerk signifie « œuvre d’art totale » : projet d’unifier plusieurs arts — musique, poésie, théâtre, architecture, image, geste — dans une expérience artistique intégrée.",
+    "kind": "concept",
+    "etymology": "Allemand Gesamt, « total », Kunst, « art », Werk, « œuvre ».",
+    "senses": [
+      "Le terme est particulièrement associé à Wagner et à son projet de drame musical, mais l’idéal d’intégration des arts possède des antécédents et prolongements plus larges.",
+      "Les usages contemporains peuvent s’étendre à l’installation, au spectacle total ou à l’environnement, sans être identiques au projet wagnérien."
+    ],
+    "authors": [
+      {
+        "name": "Richard Wagner",
+        "text": "Ses écrits théoriques et ses drames musicaux visent une synthèse de poésie, musique et scène dans une œuvre commune."
+      }
+    ],
+    "related": [
+      "Art",
+      "Musique",
+      "Théâtre",
+      "Œuvre"
+    ]
+  },
+  {
+    "term": "Théodicée",
+    "aliases": "théodicée theodicee",
+    "category": "Concept de philosophie de la religion",
+    "lead": "La théodicée est la tentative de montrer comment l’existence d’un Dieu tout-puissant, omniscient et parfaitement bon peut être compatible avec l’existence du mal et de la souffrance.",
+    "kind": "concept",
+    "etymology": "Du grec theos, « Dieu », et dikè, « justice » ; le terme est popularisé par Leibniz.",
+    "senses": [
+      "Une théodicée propose une explication positive du pourquoi du mal, tandis qu’une « défense » peut se contenter de montrer qu’il n’y a pas contradiction logique démontrée entre Dieu et le mal.",
+      "Les réponses invoquent libre arbitre, formation morale, ordre global, limites cognitives humaines ou autres biens supposés, chacune suscitant des objections."
+    ],
+    "authors": [
+      {
+        "name": "Leibniz",
+        "text": "Les Essais de Théodicée soutiennent que Dieu choisit le meilleur des mondes possibles compatible avec l’ensemble des compossibles."
+      },
+      {
+        "name": "Plantinga",
+        "text": "Sa défense du libre arbitre vise surtout à répondre au problème logique du mal sans prétendre fournir une théodicée complète."
+      }
+    ],
+    "related": [
+      "Problème du mal",
+      "Argument ontologique",
+      "Dieu",
+      "Compossibilité"
+    ]
+  },
+  {
+    "term": "Argument ontologique",
+    "aliases": "argument ontologique",
+    "category": "Argument de philosophie de la religion",
+    "lead": "Un argument ontologique cherche à établir l’existence de Dieu à partir du concept même de Dieu ou de l’être absolument parfait, sans partir d’un fait empirique particulier sur le monde.",
+    "kind": "concept",
+    "senses": [
+      "La version d’Anselme raisonne à partir de « ce dont rien de plus grand ne peut être pensé » ; des versions modales contemporaines reformulent l’argument en termes de possibilité et de nécessité.",
+      "Les critiques célèbres incluent Gaunilon, Kant et de nombreux débats contemporains sur l’existence comme prédicat ou sur la prémisse de possibilité."
+    ],
+    "authors": [
+      {
+        "name": "Anselme de Cantorbéry",
+        "text": "Le Proslogion soutient qu’un être tel que rien de plus grand ne peut être pensé ne peut exister seulement dans l’intellect."
+      },
+      {
+        "name": "Kant",
+        "text": "Il critique l’idée que l’existence soit un prédicat réel ajoutant une propriété au concept d’une chose."
+      }
+    ],
+    "related": [
+      "Argument cosmologique",
+      "Argument téléologique",
+      "Nécessité",
+      "Dieu"
+    ]
+  },
+  {
+    "term": "Argument cosmologique",
+    "aliases": "argument cosmologique",
+    "category": "Argument de philosophie de la religion",
+    "lead": "Un argument cosmologique part de l’existence, de la causalité, de la contingence ou du devenir du monde pour conclure à un fondement premier, une cause première ou un être nécessaire.",
+    "kind": "concept",
+    "senses": [
+      "Il existe plusieurs familles : argument du premier moteur, cause première, raison suffisante, kalām ou argument de la contingence.",
+      "Les critiques portent sur la possibilité d’une régression infinie, la portée du principe de causalité ou de raison suffisante, et l’identification du fondement obtenu au Dieu des religions."
+    ],
+    "authors": [
+      {
+        "name": "Aristote",
+        "text": "Le Premier moteur immobile conclut une analyse du mouvement et de l’actualité."
+      },
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Plusieurs des « cinq voies » partent du mouvement, de la causalité ou de la contingence pour argumenter vers un premier principe."
+      },
+      {
+        "name": "Leibniz",
+        "text": "L’argument de la contingence mobilise le principe de raison suffisante pour demander pourquoi il existe quelque chose plutôt que rien."
+      }
+    ],
+    "related": [
+      "Argument ontologique",
+      "Argument téléologique",
+      "Principe de raison suffisante",
+      "Cause première"
+    ]
+  },
+  {
+    "term": "Argument téléologique",
+    "aliases": "argument téléologique argument teleologique",
+    "category": "Argument de philosophie de la religion",
+    "lead": "Un argument téléologique infère à partir de l’ordre, de l’ajustement ou de la complexité du monde l’existence d’une intelligence ordonnatrice ou d’un dessein.",
+    "kind": "concept",
+    "etymology": "Du grec telos, « fin ».",
+    "senses": [
+      "L’analogie classique de la montre chez Paley compare les organismes complexes à des objets conçus par une intelligence.",
+      "La théorie de l’évolution par sélection naturelle a profondément modifié le débat sur le dessein biologique ; des arguments contemporains se concentrent plutôt sur le « réglage fin » cosmologique, lui-même très débattu."
+    ],
+    "authors": [
+      {
+        "name": "William Paley",
+        "text": "Il formule une version influente de l’argument par analogie entre organisation du vivant et artefact conçu."
+      },
+      {
+        "name": "Hume",
+        "text": "Les Dialogues sur la religion naturelle développent de fortes critiques de l’inférence du monde à un concepteur parfait."
+      }
+    ],
+    "related": [
+      "Téléologie",
+      "Argument cosmologique",
+      "Évolution",
+      "Dieu"
+    ]
+  },
+  {
+    "term": "Fidéisme",
+    "aliases": "fidéisme fideisme",
+    "category": "Position en philosophie de la religion",
+    "lead": "Le fidéisme accorde à la foi une autonomie ou une priorité telle que les vérités religieuses fondamentales ne dépendent pas d’une démonstration rationnelle préalable et peuvent excéder les critères ordinaires de la raison théorique.",
+    "kind": "concept",
+    "etymology": "Du latin fides, « foi ».",
+    "senses": [
+      "Le terme recouvre des positions variées et souvent attribuées rétrospectivement ; Pascal, Kierkegaard ou Wittgenstein ne sont pas simplement interchangeables sous cette étiquette.",
+      "Le fidéisme peut critiquer la prétention de la raison à tout fonder sans nécessairement glorifier l’irrationalité ou n’importe quelle croyance arbitraire."
+    ],
+    "related": [
+      "Foi",
+      "Saut de la foi",
+      "Raison",
+      "Théologie négative"
+    ]
+  },
+  {
+    "term": "Théologie apophatique",
+    "aliases": "théologie apophatique theologie apophatique",
+    "category": "Concept théologique",
+    "lead": "La théologie apophatique parle de Dieu par négation et retrait des prédicats limités : Dieu est dit au-delà de nos catégories, plutôt que décrit positivement comme un objet parmi les autres.",
+    "kind": "concept",
+    "etymology": "Du grec apophasis, « négation ».",
+    "senses": [
+      "Elle ne signifie pas qu’on ne puisse absolument rien dire de Dieu, mais que les affirmations positives doivent être dépassées ou qualifiées pour préserver la transcendance divine.",
+      "Elle est souvent articulée à une voie cataphatique qui emploie aussi des noms et analogies positifs."
+    ],
+    "authors": [
+      {
+        "name": "Pseudo-Denys l’Aréopagite",
+        "text": "La Théologie mystique mène du discours affirmatif à la négation et au dépassement des noms divins."
+      }
+    ],
+    "related": [
+      "Théologie négative",
+      "Théologie cataphatique",
+      "Transcendance",
+      "Mystique"
+    ]
+  },
+  {
+    "term": "Théologie cataphatique",
+    "aliases": "théologie cataphatique theologie cataphatique",
+    "category": "Concept théologique",
+    "lead": "La théologie cataphatique parle positivement de Dieu à partir de noms, attributs et analogies — bon, sage, être, amour — tout en déterminant souvent comment ces prédicats doivent être compris lorsqu’ils s’appliquent au divin.",
+    "kind": "concept",
+    "etymology": "Du grec kataphasis, « affirmation ».",
+    "senses": [
+      "Dans de nombreuses traditions, la voie affirmative n’exclut pas la voie apophatique : les attributs peuvent être affirmés puis purifiés de leurs limitations créées.",
+      "L’analogie de l’être fournit une manière scolastique de penser ce type de prédication sans simple univocité."
+    ],
+    "authors": [
+      {
+        "name": "Thomas d’Aquin",
+        "text": "Il soutient que certains noms se disent de Dieu et des créatures de manière analogique plutôt qu’univoque ou purement équivoque."
+      },
+      {
+        "name": "Pseudo-Denys l’Aréopagite",
+        "text": "Ses hiérarchies de noms divins positifs s’articulent à une théologie négative qui les dépasse."
+      }
+    ],
+    "related": [
+      "Théologie apophatique",
+      "Analogie de l’être",
+      "Dieu",
+      "Attribut"
+    ]
+  },
+  {
+    "term": "Panenthéisme",
+    "aliases": "panenthéisme panentheisme",
+    "category": "Concept de philosophie de la religion",
+    "lead": "Le panenthéisme soutient que tout est en Dieu, tout en maintenant que Dieu excède la totalité du monde. Il se distingue ainsi du panthéisme qui identifie plus directement Dieu et la totalité de la nature.",
+    "kind": "concept",
+    "etymology": "Du grec pan, « tout », en, « dans », et theos, « Dieu ».",
+    "senses": [
+      "Les versions panenthéistes diffèrent fortement sur le rapport entre dépendance du monde, liberté divine, temporalité et changement en Dieu.",
+      "Le terme peut être appliqué à certaines théologies du processus, mystiques ou métaphysiques, mais ces traditions ne sont pas identiques."
+    ],
+    "related": [
+      "Panthéisme",
+      "Immanence",
+      "Transcendance",
+      "Dieu"
+    ]
+  },
+  {
+    "term": "Panthéisme",
+    "aliases": "panthéisme pantheisme",
+    "category": "Concept de philosophie de la religion",
+    "lead": "Le panthéisme identifie Dieu avec la totalité de la nature ou soutient que Dieu n’est pas un être personnel séparé du monde mais la réalité divine immanente à tout ce qui est.",
+    "kind": "concept",
+    "etymology": "Du grec pan, « tout », et theos, « Dieu ».",
+    "senses": [
+      "Toutes les formes de panthéisme ne sont pas identiques : certaines insistent sur unité substantielle, d’autres sur sacralité de la nature.",
+      "Spinoza est souvent qualifié de panthéiste, mais l’adéquation de cette étiquette à Deus sive Natura fait l’objet de débats interprétatifs."
+    ],
+    "authors": [
+      {
+        "name": "Spinoza",
+        "text": "Dieu ou la Nature est l’unique substance infinie dont tous les êtres finis sont des modes, position souvent lue comme forme de panthéisme ou d’immanentisme radical."
+      }
+    ],
+    "related": [
+      "Panenthéisme",
+      "Natura naturans",
+      "Immanence",
+      "Monisme"
+    ]
+  },
+  {
+    "term": "Sécularisation",
+    "aliases": "sécularisation secularisation",
+    "category": "Concept de philosophie sociale / religion",
+    "lead": "La sécularisation désigne les transformations par lesquelles institutions, pratiques ou domaines de sens deviennent moins directement organisés par l’autorité religieuse. Le concept peut viser différenciation institutionnelle, baisse de pratique, pluralisation ou transformation des croyances.",
+    "kind": "concept",
+    "senses": [
+      "Il n’existe pas une « thèse de sécularisation » unique : les sociétés modernes suivent des trajectoires différentes et la religion peut se recomposer plutôt que simplement disparaître.",
+      "En philosophie, le terme désigne aussi parfois la transformation de concepts théologiques en catégories politiques ou historiques."
+    ],
+    "authors": [
+      {
+        "name": "Max Weber",
+        "text": "Ses analyses de rationalisation et de désenchantement sont souvent mobilisées dans les théories de la sécularisation."
+      },
+      {
+        "name": "Charles Taylor",
+        "text": "Il analyse la sécularité moderne comme transformation des conditions du croire dans un monde où la foi devient une option parmi d’autres."
+      }
+    ],
+    "related": [
+      "Religion",
+      "Désenchantement",
+      "Modernité",
+      "Laïcité"
+    ]
+  },
+  {
+    "term": "Anattā",
+    "aliases": "anattā anatta",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Anattā, ou non-soi, est l’enseignement bouddhique selon lequel aucun soi permanent, indépendant et substantiel ne peut être trouvé dans les cinq agrégats qui composent l’expérience d’une personne.",
+    "kind": "concept",
+    "etymology": "Pāli anattā ; sanskrit anātman, « non-soi ».",
+    "senses": [
+      "La doctrine ne dit pas simplement « la personne n’existe pas » : elle critique l’attachement à un noyau permanent et autonome comme fondement ultime de l’identité.",
+      "Les différentes écoles bouddhiques articulent de manière diverse continuité personnelle, responsabilité karmique et absence de soi substantiel."
+    ],
+    "authors": [
+      {
+        "name": "Bouddha",
+        "text": "Les discours anciens analysent corps, sensations, perceptions, formations et conscience comme impermanents et non appropriables comme un soi stable."
+      }
+    ],
+    "related": [
+      "Anicca",
+      "Dukkha",
+      "Production conditionnée",
+      "Śūnyatā"
+    ]
+  },
+  {
+    "term": "Anicca",
+    "aliases": "anicca",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Anicca est l’impermanence : tous les phénomènes conditionnés apparaissent, se transforment et cessent. La compréhension de cette instabilité est centrale dans l’analyse bouddhique de la souffrance et du non-soi.",
+    "kind": "concept",
+    "etymology": "Pāli anicca ; sanskrit anitya, « impermanent ».",
+    "senses": [
+      "L’impermanence ne signifie pas seulement que « tout change » de manière banale ; elle remet en cause l’attachement à des choses supposées stables comme source durable de satisfaction.",
+      "Avec dukkha et anattā, elle appartient aux marques fondamentales de l’existence conditionnée dans de nombreuses traditions bouddhiques."
+    ],
+    "related": [
+      "Anattā",
+      "Dukkha",
+      "Production conditionnée",
+      "Saṃsāra"
+    ]
+  },
+  {
+    "term": "Dukkha",
+    "aliases": "dukkha",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Dukkha désigne l’insatisfaction, la souffrance ou le caractère fondamentalement instable de l’existence conditionnée lorsqu’elle est saisie par l’attachement. Le traduire seulement par « douleur » est trop étroit.",
+    "kind": "concept",
+    "etymology": "Pāli dukkha ; sanskrit duḥkha.",
+    "senses": [
+      "La première noble vérité analyse plusieurs formes de dukkha : douleur manifeste, changement des plaisirs et insatisfaction plus structurelle liée aux phénomènes conditionnés.",
+      "Le diagnostic bouddhique relie dukkha au désir avide, à l’ignorance et à l’attachement, et propose une voie de cessation."
+    ],
+    "related": [
+      "Anicca",
+      "Anattā",
+      "Nirvāṇa",
+      "Saṃsāra"
+    ]
+  },
+  {
+    "term": "Production conditionnée",
+    "aliases": "production conditionnée production conditionnee",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "La production conditionnée, pratītyasamutpāda, affirme que les phénomènes apparaissent en dépendance de causes et conditions : « ceci étant, cela devient ». Rien de conditionné ne possède une existence totalement indépendante.",
+    "kind": "concept",
+    "etymology": "Sanskrit pratītyasamutpāda ; pāli paṭiccasamuppāda, souvent traduit par « coproduction conditionnée » ou « origine dépendante ».",
+    "senses": [
+      "Dans les formulations des douze liens, elle explique le cycle de l’ignorance, des formations, de la conscience, du désir, de l’appropriation et de la naissance.",
+      "Dans le bouddhisme mahāyāna, la dépendance conditionnée est souvent mise en relation avec la vacuité : ce qui dépend de conditions est vide d’existence propre indépendante."
+    ],
+    "related": [
+      "Śūnyatā",
+      "Anattā",
+      "Saṃsāra",
+      "Causalité"
+    ]
+  },
+  {
+    "term": "Śūnyatā",
+    "aliases": "śūnyatā sunyata",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Śūnyatā, la vacuité, désigne surtout dans le bouddhisme mahāyāna l’absence de nature propre indépendante et autosuffisante des phénomènes. Elle ne signifie pas que rien n’existe ou que tout serait néant.",
+    "kind": "concept",
+    "etymology": "Sanskrit śūnyatā, « vacuité ».",
+    "senses": [
+      "Chez Nāgārjuna, ce qui apparaît en dépendance de conditions est précisément vide d’existence intrinsèque.",
+      "La vacuité elle-même ne doit pas être transformée en substance absolue : elle est « vide » d’une nature propre séparée."
+    ],
+    "authors": [
+      {
+        "name": "Nāgārjuna",
+        "text": "La philosophie madhyamaka relie étroitement production conditionnée, vacuité et voie médiane entre substantialisme et nihilisme."
+      }
+    ],
+    "related": [
+      "Production conditionnée",
+      "Deux vérités",
+      "Anattā",
+      "Nirvāṇa"
+    ]
+  },
+  {
+    "term": "Nirvāṇa",
+    "aliases": "nirvāṇa nirvana",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Le nirvāṇa est la cessation de l’avidité, de l’aversion et de l’ignorance qui entretiennent le cycle de la souffrance et des renaissances. Il est la libération visée par la voie bouddhique.",
+    "kind": "concept",
+    "etymology": "Sanskrit nirvāṇa ; pāli nibbāna, littéralement associé à l’extinction ou au fait de souffler une flamme.",
+    "senses": [
+      "Le nirvāṇa ne doit pas être identifié simplement à l’anéantissement d’une âme, puisque le bouddhisme nie précisément un soi substantiel permanent.",
+      "Les traditions bouddhiques donnent des formulations différentes du rapport entre nirvāṇa, saṃsāra et vacuité."
+    ],
+    "related": [
+      "Saṃsāra",
+      "Dukkha",
+      "Śūnyatā",
+      "Libération"
+    ]
+  },
+  {
+    "term": "Saṃsāra",
+    "aliases": "saṃsāra samsara",
+    "category": "Concept indien / philosophie comparée",
+    "lead": "Saṃsāra désigne le cycle des naissances, morts et renaissances conditionné par le karma, l’ignorance et l’attachement dans plusieurs traditions indiennes. La libération consiste à sortir de ce cycle, mais chaque tradition en propose une analyse différente.",
+    "kind": "concept",
+    "etymology": "Sanskrit saṃsāra, « circulation, errance ».",
+    "senses": [
+      "Dans le bouddhisme, le saṃsāra est inséparable de dukkha et de la production conditionnée.",
+      "Dans l’hindouisme et le jaïnisme, les conceptions du soi, du karma et de la libération diffèrent fortement de celles du bouddhisme."
+    ],
+    "related": [
+      "Nirvāṇa",
+      "Dukkha",
+      "Karma",
+      "Production conditionnée"
+    ]
+  },
+  {
+    "term": "Deux vérités",
+    "aliases": "deux vérités deux verites",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "La doctrine des deux vérités distingue une vérité conventionnelle, liée aux pratiques, distinctions et discours ordinaires, et une vérité ultime concernant l’absence de nature propre des phénomènes.",
+    "kind": "concept",
+    "senses": [
+      "Chez Nāgārjuna, la vérité ultime n’abolit pas la convention : elle ne peut être enseignée qu’à partir d’elle.",
+      "La distinction ne correspond pas simplement à une opposition entre « mensonge ordinaire » et « vérité cachée » : le conventionnel peut être valide dans son domaine."
+    ],
+    "authors": [
+      {
+        "name": "Nāgārjuna",
+        "text": "Il affirme que l’enseignement du Bouddha s’appuie sur deux vérités et que méconnaître leur distinction empêche de comprendre la doctrine profonde."
+      }
+    ],
+    "related": [
+      "Śūnyatā",
+      "Production conditionnée",
+      "Vérité",
+      "Madhyamaka"
+    ]
+  },
+  {
+    "term": "Upāya",
+    "aliases": "upāya upaya",
+    "category": "Concept bouddhique / philosophie comparée",
+    "lead": "Upāya, ou « moyen habile », désigne dans le mahāyāna l’adaptation de l’enseignement aux capacités et situations des êtres afin de les conduire progressivement vers la compréhension et la libération.",
+    "kind": "concept",
+    "etymology": "Sanskrit upāya, « moyen, méthode, procédé ».",
+    "senses": [
+      "Un enseignement peut être provisoire ou adapté sans être simplement mensonger : sa valeur dépend de sa capacité à orienter efficacement vers une compréhension plus profonde.",
+      "Le concept joue un rôle majeur dans le Sūtra du Lotus et dans les traditions qui pensent la pluralité des enseignements bouddhiques."
+    ],
+    "related": [
+      "Deux vérités",
+      "Compassion",
+      "Bouddhisme",
+      "Pédagogie"
+    ]
+  },
+  {
+    "term": "Wu wei",
+    "aliases": "wu wei",
+    "category": "Concept taoïste / philosophie comparée",
+    "lead": "Wu wei signifie « non-agir » ou « agir sans forcer » : une manière d’agir accordée au cours des choses, sans intervention artificielle, crispation volontaire ou contrôle excessif.",
+    "kind": "concept",
+    "etymology": "Chinois 無為, wúwéi : « ne pas agir » au sens de ne pas imposer une action forcée.",
+    "senses": [
+      "Le wu wei ne recommande pas l’inaction absolue : il valorise une efficacité spontanée et ajustée qui évite la surintervention.",
+      "Dans le Dao De Jing, il possède aussi une dimension politique : le bon gouvernement agit avec retenue et ne multiplie pas inutilement les contraintes."
+    ],
+    "authors": [
+      {
+        "name": "Laozi",
+        "text": "Le Dao De Jing présente le non-agir comme manière d’accomplir sans forcer, en accord avec le Dao."
+      },
+      {
+        "name": "Zhuangzi",
+        "text": "Ses récits valorisent des gestes experts devenus spontanés parce qu’ils suivent les articulations propres de la situation."
+      }
+    ],
+    "related": [
+      "Dao",
+      "Spontanéité",
+      "Action",
+      "Nature"
+    ]
+  },
+  {
     "term": "Bouddha",
     "aliases": "buddha siddhartha gautama bouddhisme",
     "category": "Auteur · Antiquité indienne",

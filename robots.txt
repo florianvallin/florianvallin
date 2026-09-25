@@ -5,4 +5,4 @@ Allow: /
 # Elles ne sont volontairement pas listées ici afin de ne pas révéler leurs chemins
 # et pour permettre aux moteurs de lire la directive noindex.
 
-Sitemap: https://florianvallin.fr/sitemap.xml
+Sitemap: https://philosophal.fr/sitemap.xml

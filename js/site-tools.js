@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260923-alt-only1";
+  const VERSION = "20260925-dict683";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -92,10 +92,6 @@
   }
 
   function openPrivateLibrary() {
-    // Le lecteur /lecture/ est volontairement caché. Le mot-clé « Livre »
-    // accordait déjà cet accès ; les raccourcis doivent faire exactement pareil.
-    try { localStorage.setItem("fv-private-library", "1"); } catch (_) {}
-    try { sessionStorage.setItem("fv-private-library", "1"); } catch (_) {}
     go("/lecture/?view=library");
   }
 
@@ -846,10 +842,6 @@
         feedback.textContent = "Mot de passe non reconnu.";
         return;
       }
-      if (key === "livre" || key === "livres") {
-        try { localStorage.setItem("fv-private-library", "1"); } catch (_) {}
-        try { sessionStorage.setItem("fv-private-library", "1"); } catch (_) {}
-      }
       feedback.textContent = "Accès reconnu — ouverture de votre espace…";
       window.location.href = resolveSitePath(destination);
     });
@@ -859,10 +851,6 @@
       if (!portals[key]) {
         feedback.textContent = "";
         return;
-      }
-      if (key === "livre" || key === "livres") {
-        try { localStorage.setItem("fv-private-library", "1"); } catch (_) {}
-        try { sessionStorage.setItem("fv-private-library", "1"); } catch (_) {}
       }
       window.location.href = resolveSitePath(portals[key]);
     });

@@ -12,6 +12,7 @@
 
   const DATA = window.FV_MEDIATHEQUE_DATA || (window.FV_MEDIATHEQUE_DATA = { resources: [], dossiers: [] });
   if (!Array.isArray(DATA.resources)) DATA.resources = [];
+  const SELF_SRC = (document.currentScript && document.currentScript.src) || location.href;
 
   const TERMINALE_THEMES = [
     "Art", "Bonheur", "Conscience", "Devoir", "État", "Inconscient", "Justice",
@@ -49,10 +50,7 @@
 
   const splitMeta = (meta = "") => {
     const parts = cleanText(meta).split(/\s+[—–]\s+/).filter(Boolean);
-    return {
-      creator: parts.shift() || "",
-      subtitle: parts.join(" — ")
-    };
+    return { creator: parts.shift() || "", subtitle: parts.join(" — ") };
   };
 
   const inferSection = (item) => {
@@ -79,70 +77,106 @@
     const slug = slugFromUrl(item.url);
     if (!slug) return null;
     const { creator, subtitle } = splitMeta(item.meta);
-    const keywords = cleanText(item.keywords || "")
-      .split(/\s*·\s*/)
-      .map((value) => value.trim())
-      .filter(Boolean);
-
-    return {
-      id: `texte:${slug}`,
-      kind: "texte",
-      title: cleanText(item.title || slug),
-      creator,
-      subtitle,
-      description: "",
-      url: normalizeUrl(item.url),
-      source: "Textes",
-      section: inferSection(item),
-      themes: inferThemes(item),
-      people: creator ? [creator] : [],
-      keywords: [...new Set(keywords)]
-    };
+    const keywords = cleanText(item.keywords || "").split(/\s*·\s*/).map(v => v.trim()).filter(Boolean);
+    return { id:`texte:${slug}`, kind:"texte", title:cleanText(item.title || slug), creator, subtitle, description:"",
+      url:normalizeUrl(item.url), source:"Textes", section:inferSection(item), themes:inferThemes(item),
+      people:creator ? [creator] : [], keywords:[...new Set(keywords)] };
   };
 
   async function synchronize() {
-    const response = await fetch(`/js/site-search-index.json?v=${Date.now()}`, {
-      cache: "no-store",
-      credentials: "same-origin"
-    });
+    const response = await fetch(`/js/site-search-index.json?v=${Date.now()}`, { cache:"no-store", credentials:"same-origin" });
     if (!response.ok) throw new Error(`Index des textes indisponible (${response.status})`);
-
     const index = await response.json();
     if (!Array.isArray(index)) throw new Error("Index des textes invalide");
-
-    const existingIds = new Set(DATA.resources.map((item) => item && item.id).filter(Boolean));
-    const existingUrls = new Set(DATA.resources.map((item) => normalizeUrl(item && item.url || "")).filter(Boolean));
-
-    let added = 0;
-    index.forEach((item) => {
-      if (!item || item.kind !== "texte" || !item.url || !item.title) return;
-      const resource = toMediaResource(item);
-      if (!resource) return;
+    const existingIds = new Set(DATA.resources.map(item => item && item.id).filter(Boolean));
+    const existingUrls = new Set(DATA.resources.map(item => normalizeUrl(item && item.url || "")).filter(Boolean));
+    let added=0;
+    index.forEach(item => {
+      if (!item || item.kind!=="texte" || !item.url || !item.title) return;
+      const resource=toMediaResource(item); if (!resource) return;
       if (existingIds.has(resource.id) || existingUrls.has(resource.url)) return;
-      DATA.resources.push(resource);
-      existingIds.add(resource.id);
-      existingUrls.add(resource.url);
-      added += 1;
+      DATA.resources.push(resource); existingIds.add(resource.id); existingUrls.add(resource.url); added += 1;
     });
-
-    const totalTexts = DATA.resources.filter((item) => item && item.kind === "texte").length;
-    window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS = {
-      ok: true,
-      added,
-      totalTexts,
-      sourceTexts: index.filter((item) => item && item.kind === "texte").length
-    };
-
-    document.documentElement.dataset.textSync = "ready";
-    document.documentElement.dataset.textCount = String(totalTexts);
+    const totalTexts=DATA.resources.filter(item => item && item.kind==="texte").length;
+    window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS={ ok:true, added, totalTexts, sourceTexts:index.filter(item => item && item.kind==="texte").length };
+    document.documentElement.dataset.textSync="ready"; document.documentElement.dataset.textCount=String(totalTexts);
     return window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS;
   }
 
-  window.FV_MEDIATHEQUE_TEXT_SYNC = synchronize().catch((error) => {
+  function loadS1Courses() {
+    if (window.FV_S1_COURSES_STATUS) return Promise.resolve(window.FV_S1_COURSES_STATUS);
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./s1-courses.js?v=20260924-s1', SELF_SRC).href;
+      script.async=true; script.dataset.s1Courses='1';
+      script.onload=() => resolve(window.FV_S1_COURSES_STATUS || { ok:true });
+      script.onerror=() => reject(new Error('Import S1 indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadS2Courses() {
+    if (window.FV_S2_COURSES_STATUS) return Promise.resolve(window.FV_S2_COURSES_STATUS);
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./s2-courses.js?v=20260924-s2', SELF_SRC).href;
+      script.async=true; script.dataset.s2Courses='1';
+      script.onload=() => resolve(window.FV_S2_COURSES_STATUS || { ok:true });
+      script.onerror=() => reject(new Error('Import S2 indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadS3Courses() {
+    if (window.FV_S3_COURSES_STATUS) return Promise.resolve(window.FV_S3_COURSES_STATUS);
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./s3-courses.js?v=20260924-s3', SELF_SRC).href;
+      script.async=true; script.dataset.s3Courses='1';
+      script.onload=() => resolve(window.FV_S3_COURSES_STATUS || { ok:true });
+      script.onerror=() => reject(new Error('Import S3 indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadResearchCourses() {
+    if (window.FV_RESEARCH_COURSES_STATUS) return Promise.resolve(window.FV_RESEARCH_COURSES_STATUS);
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./research-courses.js?v=20260924-research1', SELF_SRC).href;
+      script.async=true; script.dataset.researchCourses='1';
+      script.onload=() => resolve(window.FV_RESEARCH_COURSES_STATUS || { ok:true });
+      script.onerror=() => reject(new Error('Import Études & recherches indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadCourseBrowser() {
+    if (document.querySelector('script[data-course-browser="1"]')) return Promise.resolve({ ok:true });
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./course-browser.js?v=20260924-browser3-native', SELF_SRC).href;
+      script.async=true; script.dataset.courseBrowser='1';
+      script.onload=() => resolve({ ok:true });
+      script.onerror=() => reject(new Error('Navigateur des cours indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  const textSync = synchronize().catch((error) => {
     console.warn("[Médiathèque] Synchronisation des textes impossible :", error);
-    window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS = { ok: false, error: String(error && error.message || error) };
-    document.documentElement.dataset.textSync = "fallback";
-    // La médiathèque reste parfaitement utilisable avec data.js même si l'index global ne charge pas.
+    window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS={ ok:false, error:String(error && error.message || error) };
+    document.documentElement.dataset.textSync="fallback";
     return window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS;
+  });
+  window.FV_MEDIATHEQUE_TEXT_SYNC = Promise.all([
+    textSync,
+    loadS1Courses().catch((error) => { console.warn("[Médiathèque] Import S1 impossible :", error); return { ok:false }; }),
+    loadS2Courses().catch((error) => { console.warn("[Médiathèque] Import S2 impossible :", error); return { ok:false }; }),
+    loadS3Courses().catch((error) => { console.warn("[Médiathèque] Import S3 impossible :", error); return { ok:false }; }),
+    loadResearchCourses().catch((error) => { console.warn("[Médiathèque] Import Études & recherches impossible :", error); return { ok:false }; })
+  ]).then(async ([status]) => {
+    try { await loadCourseBrowser(); } catch (error) { console.warn("[Médiathèque] Navigateur des cours impossible :", error); }
+    return status;
   });
 })();

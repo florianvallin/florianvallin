@@ -1,0 +1,17 @@
+{
+  "newResources": 144,
+  "images": 0,
+  "conversionErrors": [],
+  "byUE": {
+    "Compléments S1 — Notes & analyses personnelles": 60,
+    "UE1 — Histoire et thèmes de la psychologie": 10,
+    "UE2 — Introduction et champs de la psychologie": 20,
+    "UE3 — Sciences de l’éducation": 14,
+    "UE4 — Sociologie": 23,
+    "UE5 — Introduction méthodologique": 17
+  },
+  "excluded": 57,
+  "imageExtensions": {},
+  "policy": "Version texte uniquement : aucune illustration embarquée.",
+  "illustrationsRemoved": 157
+}

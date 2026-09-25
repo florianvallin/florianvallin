@@ -496,8 +496,8 @@
     const connections = text.hlpConnections?.length ? `<div class="text-detail-hlp-connections"><em>Aussi utile pour</em>${text.hlpConnections.map((entry) => `<a href="${hlpCompassUrlForEntry(text, entry)}">${entry.level} · ${entry.object} · ${entry.subtheme}</a>`).join("")}</div>` : "";
     return `<nav class="text-detail-hlp-meta" aria-label="Position de ce texte dans le programme HLP">${primaryLine}${connections}</nav>`;
   })() : "";
-  const seoTitle = hasHlp(text) ? `${text.title} — ${textCredit(text)} | HLP ${hlpLevel(text)} | Florian Vallin` : `${text.title} — ${textCredit(text)} | Florian Vallin`;
-  const seoUrl = `https://florianvallin.fr${cleanTextUrl}`;
+  const seoTitle = hasHlp(text) ? `${text.title} — ${textCredit(text)} | HLP ${hlpLevel(text)} | Philosophal` : `${text.title} — ${textCredit(text)} | Philosophal`;
+  const seoUrl = `https://philosophal.fr${cleanTextUrl}`;
   document.title = seoTitle;
   let canonical = document.querySelector('link[rel="canonical"]');
   if (!canonical) {
