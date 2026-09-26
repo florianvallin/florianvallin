@@ -5,23 +5,7 @@
   
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <script>
-    (() => {
-      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
-      let refreshing = false;
-      navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if (refreshing) return;
-        refreshing = true;
-        location.reload();
-      });
-      navigator.serviceWorker
-        .register("/sw.js?v=20260925-publish1", { scope: "/", updateViaCache: "none" })
-        .then((registration) => registration.update())
-        .catch(() => {});
-    })();
-  </script>
-<meta charset="UTF-8">
+  <meta http-equiv="Expires" content="0"><meta charset="UTF-8">
 
   <meta
     name="viewport"
@@ -48,7 +32,7 @@
   <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie générale à Montpellier ou à distance. Accompagnement personnalisé pour Terminale, Licence et Prépa.">
   <meta property="og:site_name" content="Philosophal">
 
-  <link rel="stylesheet" href="css/style.css?v=20260925-publish1">
+  <link rel="stylesheet" href="css/style.css?v=20260926-prod4">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1428,7 +1412,7 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260925-publish1" defer></script>
+<script src="js/script.js?v=20260926-prod4" defer></script>
 <script src="js/protected-phone.js?v=20260925-publish1" defer></script>
 <script src="js/contact-form.js?v=20260925-publish1" defer></script>
 

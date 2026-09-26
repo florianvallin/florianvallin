@@ -1,9 +1,9 @@
 (() => {
+  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
-  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
   const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260923-github-refresh1`;
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260926-prod4`;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -22,6 +22,7 @@
 
   ready(() => {
     ensureBlogLinks();
+    enhanceNavigationShortcuts();
     initNavigation();
     initFaq();
     initBackToTop();
@@ -49,6 +50,29 @@
     if (footerTexts && !footerTexts.querySelector(".footer-blog-link")) {
       footerTexts.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
     }
+  }
+
+  function enhanceNavigationShortcuts() {
+    const shortcuts = [
+      [".nav-texts-link", "T", "extes"],
+      [".nav-blog-link", "B", "log"]
+    ];
+
+    shortcuts.forEach(([selector, key, rest]) => {
+      document.querySelectorAll(selector).forEach((link) => {
+        if (link.querySelector(".nav-shortcut-letter")) return;
+        const label = `${key}${rest}`;
+        if (link.textContent.trim() !== label) return;
+        link.replaceChildren();
+        const letter = document.createElement("span");
+        letter.className = "nav-shortcut-letter";
+        letter.textContent = key;
+        letter.setAttribute("aria-hidden", "true");
+        link.append(letter, document.createTextNode(rest));
+        link.setAttribute("aria-label", `${label} — raccourci clavier ${key}`);
+        link.title = `Raccourci clavier : ${key}`;
+      });
+    });
   }
 
   function initNavigation() {
@@ -281,8 +305,23 @@
     });
 
     document.querySelectorAll(".footer-right").forEach((column) => {
-      if (!column.querySelector("[data-student-access]")) {
-        column.insertAdjacentHTML("beforeend", '<button class="footer-student-access" type="button" data-student-access>S\'identifier</button>');
+      let stack = column.querySelector(".footer-access-stack");
+      if (!stack) {
+        stack = document.createElement("div");
+        stack.className = "footer-access-stack";
+        column.appendChild(stack);
+      }
+
+      let accessButton = column.querySelector("[data-student-access]");
+      if (!accessButton) {
+        stack.insertAdjacentHTML("beforeend", '<button class="footer-student-access" type="button" data-student-access>S\'identifier</button>');
+        accessButton = stack.querySelector("[data-student-access]");
+      } else if (!stack.contains(accessButton)) {
+        stack.appendChild(accessButton);
+      }
+
+      if (!stack.querySelector(".footer-shortcut-hint")) {
+        stack.insertAdjacentHTML("beforeend", '<p class="footer-shortcut-hint" aria-label="Afficher les raccourcis clavier : Maj plus point d’interrogation"><span>Raccourcis</span><kbd>Maj</kbd><i>+</i><kbd>?</kbd></p>');
       }
     });
   }

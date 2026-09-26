@@ -5,11 +5,40 @@
   try { await (window.FV_MEDIATHEQUE_TEXT_SYNC || Promise.resolve()); } catch (_) {}
 
   const DATA = window.FV_MEDIATHEQUE_DATA || { resources: [], dossiers: [] };
+  const MINDMAP_CUSTOM_KEY = "fv-mindmap-custom-v2";
+  const MINDMAP_SESSION_KEY = "fv-mindmap-session-v2";
+  const MINDMAP_RELATIONS_KEY = "fv-mindmap-relations-v2";
+
+  function readMindmapJson(key, fallback) {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(key) || "null");
+      return parsed == null ? fallback : parsed;
+    } catch (_) {
+      return fallback;
+    }
+  }
+
+  function readCustomMindmaps() {
+    const list = readMindmapJson(MINDMAP_CUSTOM_KEY, []);
+    if (!Array.isArray(list)) return [];
+    return list.filter((item) => item && typeof item === "object" && item.tree && item.title).map((item) => ({
+      ...item,
+      id: String(item.id || `mindmap:personal:${Date.now()}`),
+      kind: "mindmap",
+      mindmapCategory: "custom",
+      isPersonalMindmap: true
+    }));
+  }
+
   const baseResources = Array.isArray(DATA.resources) ? DATA.resources : [];
   const mindmapResources = Array.isArray(window.FV_MEDIATHEQUE_MINDMAPS) ? window.FV_MEDIATHEQUE_MINDMAPS : [];
-  const resources = [...baseResources, ...mindmapResources];
+  const builtInMindmapIds = new Set(mindmapResources.map((item) => item.id));
+  const customMindmapResources = readCustomMindmaps().filter((item) => !builtInMindmapIds.has(item.id));
+  const resources = [...baseResources, ...mindmapResources, ...customMindmapResources];
   const dossiers = Array.isArray(DATA.dossiers) ? DATA.dossiers : [];
   const byId = new Map(resources.map((item) => [item.id, item]));
+  let mindmapManualRelations = readMindmapJson(MINDMAP_RELATIONS_KEY, {});
+  if (!mindmapManualRelations || typeof mindmapManualRelations !== "object" || Array.isArray(mindmapManualRelations)) mindmapManualRelations = {};
 
   const $ = (selector) => document.querySelector(selector);
   const search = $("[data-media-search]");
@@ -80,6 +109,29 @@
     try { localStorage.setItem("fv-mindmap-view", value); } catch (_) {}
   }
 
+  function readMindmapPalette() {
+    try {
+      const saved = localStorage.getItem("fv-mindmap-palette");
+      return ["color", "violet"].includes(saved) ? saved : "color";
+    } catch (_) {
+      return "color";
+    }
+  }
+
+  function saveMindmapPalette(value) {
+    try { localStorage.setItem("fv-mindmap-palette", value); } catch (_) {}
+  }
+
+  const MINDMAP_PALETTES = {
+    color: ["#6c5a91", "#526fa4", "#a05f83", "#9b7048", "#6b63a7", "#9a645c", "#7d5f9e", "#657b9f"],
+    violet: ["#665584", "#756391", "#826fa0", "#5b4c78", "#8d79aa", "#6d5c8d", "#9a88b4", "#79669a"]
+  };
+
+  function mindmapBranchColor(branch) {
+    const palette = MINDMAP_PALETTES[state.mindmapPalette] || MINDMAP_PALETTES.color;
+    return palette[((Number(branch) % palette.length) + palette.length) % palette.length];
+  }
+
   const state = {
     access: "public",
     kind: "all",
@@ -103,12 +155,21 @@
     mindmapId: "",
     mindmapQuery: "",
     mindmapView: readMindmapView(),
+    mindmapPalette: readMindmapPalette(),
     mindmapExpanded: new Set(),
     mindmapExpansionOwner: "",
     mindmapSelectedPath: "",
+    mindmapFocusPath: "",
     mindmapScale: 1,
     mindmapPanX: 0,
     mindmapPanY: 0,
+    mindmapViewportRestored: false,
+    mindmapFullscreen: false,
+    mindmapRelationsVisible: true,
+    mindmapRevision: false,
+    mindmapRevisionRevealed: new Set(),
+    mindmapRevisionScope: "",
+    mindmapLinkSourcePath: "",
     expandedSections: new Set()
   };
 
@@ -848,7 +909,8 @@
   const MINDMAP_CATEGORY_META = {
     programme: { label: "Programme & notions", description: "Programme, architecture des notions et connexions conceptuelles." },
     reperes: { label: "Repères conceptuels", description: "Repères structurants associés aux notions et aux thèmes du programme." },
-    methodologie: { label: "Méthodologie", description: "Cartes de méthode pour analyser, problématiser et construire un travail philosophique." }
+    methodologie: { label: "Méthodologie", description: "Cartes de méthode pour analyser, problématiser et construire un travail philosophique." },
+    custom: { label: "Mes cartes", description: "Mind-maps personnelles importées ou sauvegardées dans ce navigateur." }
   };
 
   function mindmapNodeCount(tree) {
@@ -892,6 +954,10 @@
     return node;
   }
 
+  function mindmapChildPath(parentPath, index) {
+    return !parentPath || parentPath === "root" ? String(index) : `${parentPath}.${index}`;
+  }
+
   function mindmapPathLabels(tree, path) {
     const labels = [];
     if (!tree) return labels;
@@ -907,30 +973,96 @@
     return labels.filter(Boolean);
   }
 
+  function mindmapPathPrefixes(path) {
+    if (!path || path === "root") return [];
+    const parts = String(path).split(".");
+    return parts.map((_, index) => parts.slice(0, index + 1).join("."));
+  }
+
   function mindmapExpandablePaths(tree) {
     const paths = [];
     const visit = (entry, path) => {
       const item = mindmapEntry(entry);
       const children = item.children || [];
       if (path !== "root" && children.length) paths.push(path);
-      children.forEach((child, index) => visit(child, path === "root" ? String(index) : `${path}.${index}`));
+      children.forEach((child, index) => visit(child, mindmapChildPath(path, index)));
     };
     if (tree) visit(tree, "root");
     return paths;
+  }
+
+  function mindmapFlatNodes(tree) {
+    const rows = [];
+    const visit = (entry, path, depth = 0) => {
+      const item = mindmapEntry(entry);
+      rows.push({ path, entry: item, depth });
+      (item.children || []).forEach((child, index) => visit(child, mindmapChildPath(path, index), depth + 1));
+    };
+    if (tree) visit(tree, "root");
+    return rows;
+  }
+
+  function canonicalMindmapLabel(value) {
+    return normalize(String(value || "")
+      .replace(/^\s*\d+[.)-]?\s*/u, "")
+      .replace(/^\s*[\/—–-]+\s*/u, "")
+      .replace(/^(le|la|les|l'|l’|un|une|des)\s+/iu, "")
+      .replace(/[^\p{L}\p{N}\s'-]/gu, " ")
+      .replace(/\s+/g, " ")
+      .trim());
+  }
+
+  function readMindmapSession(id) {
+    const all = readMindmapJson(MINDMAP_SESSION_KEY, {});
+    return all && typeof all === "object" ? (all[id] || null) : null;
+  }
+
+  let mindmapPersistTimer = 0;
+  function persistMindmapSessionNow() {
+    if (!state.mindmapId) return;
+    const all = readMindmapJson(MINDMAP_SESSION_KEY, {});
+    const safe = all && typeof all === "object" && !Array.isArray(all) ? all : {};
+    safe[state.mindmapId] = {
+      scale: state.mindmapScale,
+      panX: state.mindmapPanX,
+      panY: state.mindmapPanY,
+      expanded: [...state.mindmapExpanded],
+      focusPath: state.mindmapFocusPath || "",
+      relationsVisible: Boolean(state.mindmapRelationsVisible)
+    };
+    try { localStorage.setItem(MINDMAP_SESSION_KEY, JSON.stringify(safe)); } catch (_) {}
+  }
+
+  function queueMindmapPersist() {
+    clearTimeout(mindmapPersistTimer);
+    mindmapPersistTimer = window.setTimeout(persistMindmapSessionNow, 180);
   }
 
   function initializeMindmapExpansion(item, force = false) {
     if (!item?.tree) return;
     if (!force && state.mindmapExpansionOwner === item.id) return;
     state.mindmapExpansionOwner = item.id;
-    state.mindmapExpanded = new Set();
-    (item.tree.children || []).forEach((child, index) => {
-      if ((mindmapEntry(child).children || []).length) state.mindmapExpanded.add(String(index));
-    });
+    const saved = readMindmapSession(item.id);
+    const validPaths = new Set(mindmapExpandablePaths(item.tree));
+    if (saved?.expanded && Array.isArray(saved.expanded)) {
+      state.mindmapExpanded = new Set(saved.expanded.filter((path) => validPaths.has(path)));
+    } else {
+      state.mindmapExpanded = new Set();
+      (item.tree.children || []).forEach((child, index) => {
+        if ((mindmapEntry(child).children || []).length) state.mindmapExpanded.add(String(index));
+      });
+    }
     state.mindmapSelectedPath = "";
-    state.mindmapScale = 1;
-    state.mindmapPanX = 0;
-    state.mindmapPanY = 0;
+    state.mindmapFocusPath = saved?.focusPath && mindmapEntryAtPath(item.tree, saved.focusPath) ? saved.focusPath : "";
+    state.mindmapScale = Number.isFinite(saved?.scale) ? Math.max(0.32, Math.min(2.2, saved.scale)) : 1;
+    state.mindmapPanX = Number.isFinite(saved?.panX) ? saved.panX : 0;
+    state.mindmapPanY = Number.isFinite(saved?.panY) ? saved.panY : 0;
+    state.mindmapViewportRestored = Boolean(saved && Number.isFinite(saved.scale));
+    state.mindmapRelationsVisible = saved?.relationsVisible !== false;
+    state.mindmapRevision = false;
+    state.mindmapRevisionRevealed = new Set();
+    state.mindmapRevisionScope = "";
+    state.mindmapLinkSourcePath = "";
   }
 
   function mindmapPathsRelated(pathA, pathB) {
@@ -938,41 +1070,80 @@
     return pathA === pathB || pathA.startsWith(`${pathB}.`) || pathB.startsWith(`${pathA}.`);
   }
 
-  function renderMindmapNode(entry, query = "", depth = 0) {
+  function mindmapFocusedRoot(item) {
+    const path = state.mindmapFocusPath && mindmapEntryAtPath(item?.tree, state.mindmapFocusPath) ? state.mindmapFocusPath : "root";
+    return { path, entry: mindmapEntryAtPath(item?.tree, path) || item?.tree };
+  }
+
+  function mindmapRevisionShouldHide(path, relativeDepth) {
+    if (!state.mindmapRevision || state.mindmapRevisionRevealed.has(path)) return false;
+    const focused = Boolean(state.mindmapFocusPath);
+    return focused ? relativeDepth >= 0 : relativeDepth >= 1;
+  }
+
+  function mindmapRevisionProgress(item) {
+    if (!state.mindmapRevision) return { hidden: 0, revealed: 0, total: 0 };
+    const root = mindmapFocusedRoot(item);
+    const rows = [];
+    const visit = (entry, path, depth) => {
+      (mindmapEntry(entry).children || []).forEach((child, index) => {
+        const childPath = mindmapChildPath(path, index);
+        const childDepth = depth + 1;
+        if (mindmapRevisionShouldHide(childPath, childDepth - 1) || state.mindmapRevisionRevealed.has(childPath)) rows.push(childPath);
+        visit(child, childPath, childDepth);
+      });
+    };
+    visit(root.entry, root.path, 0);
+    const revealed = rows.filter((path) => state.mindmapRevisionRevealed.has(path)).length;
+    return { hidden: Math.max(0, rows.length - revealed), revealed, total: rows.length };
+  }
+
+  function renderMindmapNode(entry, query = "", depth = 0, branch = 0, path = "") {
     if (!entry || !mindmapNodeMatches(entry, query)) return "";
     const item = mindmapEntry(entry);
-    const children = (item.children || []).filter((child) => mindmapNodeMatches(child, query));
-    const note = item.note ? `<small>${esc(item.note)}</small>` : "";
+    const children = (item.children || []).map((child, index) => ({ child, index })).filter(({ child }) => mindmapNodeMatches(child, query));
+    const hidden = mindmapRevisionShouldHide(path, depth);
+    const label = hidden ? "À retrouver…" : (item.label || "");
+    const note = !hidden && item.note ? `<small>${esc(item.note)}</small>` : "";
     const hit = query && mindmapOwnMatches(item, query) ? " is-search-hit" : "";
+    const color = mindmapBranchColor(branch);
+    const hiddenClass = hidden ? " is-revision-hidden" : "";
+    const revealAttr = hidden ? ` data-mindmap-reveal-path="${esc(path)}"` : "";
     if (!children.length) {
-      return `<div class="media-mindmap-leaf${hit}" style="--mindmap-depth:${Math.min(depth, 8)}"><span aria-hidden="true"></span><div><strong>${esc(item.label || "")}</strong>${note}</div></div>`;
+      return `<div class="media-mindmap-leaf${hit}${hiddenClass}" data-mindmap-plan-path="${esc(path)}"${revealAttr} style="--mindmap-depth:${Math.min(depth, 8)};--branch:${color}" tabindex="0"><span aria-hidden="true"></span><div><strong>${esc(label)}</strong>${note}</div></div>`;
     }
-    return `<details class="media-mindmap-node${hit}" ${query || depth < 1 ? "open" : ""} style="--mindmap-depth:${Math.min(depth, 8)}">
-      <summary><span class="media-mindmap-toggle" aria-hidden="true">+</span><div><strong>${esc(item.label || "")}</strong>${note}</div><em>${children.length}</em></summary>
-      <div class="media-mindmap-children">${children.map((child) => renderMindmapNode(child, query, depth + 1)).join("")}</div>
+    return `<details class="media-mindmap-node${hit}${hiddenClass}" ${query || depth < 1 ? "open" : ""} style="--mindmap-depth:${Math.min(depth, 8)};--branch:${color}">
+      <summary data-mindmap-plan-path="${esc(path)}"${revealAttr}><span class="media-mindmap-toggle" aria-hidden="true">+</span><div><strong>${esc(label)}</strong>${note}</div><em>${children.length}</em></summary>
+      <div class="media-mindmap-children">${children.map(({ child, index }) => renderMindmapNode(child, query, depth + 1, branch, mindmapChildPath(path, index))).join("")}</div>
     </details>`;
   }
 
-  function renderMindmapTree(item, rawQuery = "") {
+  function renderMindmapTree(item, rawQuery = "", showInspector = false) {
     const query = normalize(rawQuery);
-    const tree = item?.tree;
+    const focused = mindmapFocusedRoot(item);
+    const tree = focused.entry;
     if (!tree) return '<p class="media-mindmap-empty">Cette mind-map ne contient pas encore de données.</p>';
-    const children = (tree.children || []).filter((child) => mindmapNodeMatches(child, query));
+    const children = (mindmapEntry(tree).children || []).map((child, index) => ({ child, index, path: mindmapChildPath(focused.path, index) })).filter(({ child }) => mindmapNodeMatches(child, query));
     if (query && !children.length && !mindmapOwnMatches(tree, query)) {
       return `<p class="media-mindmap-empty">Aucun élément ne correspond à « ${esc(rawQuery)} » dans cette mind-map.</p>`;
     }
-    return `${tree.label ? `<div class="media-mindmap-root"><span aria-hidden="true">${icon("mindmap")}</span><strong>${esc(tree.label)}</strong></div>` : ""}
-      <div class="media-mindmap-tree">${children.map((child) => renderMindmapNode(child, query, 0)).join("")}</div>`;
+    const rootBranch = focused.path === "root" ? -1 : Number(String(focused.path).split(".")[0]);
+    return `${tree.label ? `<div class="media-mindmap-root" style="--branch:${rootBranch >= 0 ? mindmapBranchColor(rootBranch) : "#51416f"}"><span aria-hidden="true">${icon("mindmap")}</span><strong>${esc(tree.label)}</strong></div>` : ""}
+      <div class="media-mindmap-tree">${children.map(({ child, index, path }) => renderMindmapNode(child, query, 0, focused.path === "root" ? index : rootBranch, path)).join("")}</div>
+      ${showInspector ? renderMindmapInspector(item, true) : ""}`;
   }
 
   function buildMindmapGraph(item, rawQuery = "") {
     initializeMindmapExpansion(item);
     const query = normalize(rawQuery);
-    const tree = item?.tree;
+    const focus = mindmapFocusedRoot(item);
+    const tree = focus.entry;
     if (!tree) return { nodes: [], edges: [], width: 1200, height: 760 };
 
     const root = mindmapEntry(tree);
-    const nodes = [{ path: "root", entry: root, depth: 0, branch: -1, parent: "", x: 0, y: 0, hasChildren: Boolean((root.children || []).length), expanded: true }];
+    const rootPath = focus.path;
+    const rootBranch = rootPath === "root" ? -1 : Number(String(rootPath).split(".")[0]);
+    const nodes = [{ path: rootPath, entry: root, depth: 0, branch: rootBranch, parent: "", x: 0, y: 0, hasChildren: Boolean((root.children || []).length), expanded: true, graphRoot: true }];
     const edgePairs = [];
 
     const include = (entry, path, depth, branch, parentPath) => {
@@ -980,16 +1151,20 @@
       const node = mindmapEntry(entry);
       const children = node.children || [];
       const expanded = Boolean(query) || state.mindmapExpanded.has(path);
-      const graphNode = { path, entry: node, depth, branch, parent: parentPath, x: 0, y: 0, hasChildren: Boolean(children.length), expanded };
+      const graphNode = { path, entry: node, depth, branch, parent: parentPath, x: 0, y: 0, hasChildren: Boolean(children.length), expanded, graphRoot: false };
       nodes.push(graphNode);
       edgePairs.push([parentPath, path]);
       if (expanded) {
-        children.forEach((child, index) => include(child, `${path}.${index}`, depth + 1, branch, path));
+        children.forEach((child, index) => include(child, mindmapChildPath(path, index), depth + 1, branch, path));
       }
       return graphNode;
     };
 
-    (root.children || []).forEach((child, index) => include(child, String(index), 1, index, "root"));
+    (root.children || []).forEach((child, index) => {
+      const path = mindmapChildPath(rootPath, index);
+      const branch = rootPath === "root" ? index : rootBranch;
+      include(child, path, 1, branch, rootPath);
+    });
 
     const childrenByParent = new Map();
     nodes.forEach((node) => {
@@ -1007,7 +1182,7 @@
       return Math.max(1, value);
     };
 
-    const top = childrenByParent.get("root") || [];
+    const top = childrenByParent.get(rootPath) || [];
     const totalWeight = Math.max(1, top.reduce((sum, node) => sum + weightFor(node.path), 0));
     let cursor = -Math.PI / 2;
     const radialGap = 235;
@@ -1044,38 +1219,141 @@
     const height = Math.max(820, Math.ceil(maxY * 2 + 340));
     const nodeMap = new Map(nodes.map((node) => [node.path, node]));
     const edges = edgePairs.map(([from, to]) => ({ from: nodeMap.get(from), to: nodeMap.get(to) })).filter((edge) => edge.from && edge.to);
-    return { nodes, edges, width, height };
+    return { nodes, edges, width, height, rootPath };
   }
 
-  function renderMindmapInspector(item) {
+  function mindmapRelatedResources(entry, limit = 6) {
+    const node = mindmapEntry(entry);
+    const rawLabel = String(node.label || "").replace(/^\s*\d+[.)-]?\s*/u, "").trim();
+    const needle = canonicalMindmapLabel(rawLabel);
+    if (!needle || needle.length < 3) return [];
+    const generic = new Set(["programme", "notions", "philosophie", "methode", "methodologie", "ancien programme", "cours"]);
+    if (generic.has(needle)) return [];
+    const tokens = needle.split(" ").filter((token) => token.length >= 4);
+    return resources.filter((resource) => groupOf(resource) !== "mindmap" && resourceInCurrentAccess(resource)).map((resource) => {
+      const title = normalize(resource.title || "");
+      const creator = normalize(resource.creator || "");
+      const themes = (resource.themes || []).map(normalize);
+      const keywords = (resource.keywords || []).map(normalize);
+      const people = (resource.people || []).map(normalize);
+      const haystack = normalize([resource.title, resource.creator, resource.subtitle, resource.description, resource.source, ...(resource.themes || []), ...(resource.keywords || []), ...(resource.people || [])].filter(Boolean).join(" "));
+      let score = 0;
+      if (title === needle || title.includes(needle)) score += 9;
+      if (themes.some((value) => value === needle || value.includes(needle))) score += 7;
+      if (keywords.some((value) => value === needle || value.includes(needle))) score += 6;
+      if (people.some((value) => value === needle || value.includes(needle)) || creator.includes(needle)) score += 5;
+      tokens.forEach((token) => { if (haystack.includes(token)) score += 1.4; });
+      if (haystack.includes(needle)) score += 3;
+      return { resource, score };
+    }).filter(({ score }) => score >= 4).sort((a, b) => b.score - a.score || String(a.resource.title).localeCompare(String(b.resource.title), "fr")).slice(0, limit).map(({ resource }) => resource);
+  }
+
+  function mindmapManualRelationsFor(id) {
+    const list = mindmapManualRelations[id];
+    return Array.isArray(list) ? list.filter((rel) => rel && rel.from && rel.to) : [];
+  }
+
+  function saveMindmapManualRelations() {
+    try { localStorage.setItem(MINDMAP_RELATIONS_KEY, JSON.stringify(mindmapManualRelations)); } catch (_) {}
+  }
+
+  function addMindmapManualRelation(id, from, to) {
+    if (!id || !from || !to || from === to) return;
+    const list = mindmapManualRelationsFor(id).slice();
+    const exists = list.some((rel) => (rel.from === from && rel.to === to) || (rel.from === to && rel.to === from));
+    if (!exists) list.push({ from, to, manual: true });
+    mindmapManualRelations[id] = list;
+    saveMindmapManualRelations();
+  }
+
+  function mindmapRelationsFor(item) {
+    if (!item?.tree) return [];
+    const rows = mindmapFlatNodes(item.tree);
+    const byCanonical = new Map();
+    rows.forEach(({ path, entry }) => {
+      const key = canonicalMindmapLabel(entry.label);
+      if (!key || key.length < 3) return;
+      if (!byCanonical.has(key)) byCanonical.set(key, []);
+      byCanonical.get(key).push(path);
+    });
+    const relations = [];
+    const add = (from, to, type = "inferred", label = "") => {
+      if (!from || !to || from === to) return;
+      const key = [from, to].sort().join("|");
+      if (relations.some((rel) => rel.key === key)) return;
+      relations.push({ key, from, to, type, label });
+    };
+    const resolveLabel = (value, sourcePath) => {
+      const key = canonicalMindmapLabel(value);
+      if (!key) return "";
+      const exact = (byCanonical.get(key) || []).find((path) => path !== sourcePath);
+      if (exact) return exact;
+      const candidate = rows.find(({ path, entry }) => path !== sourcePath && (canonicalMindmapLabel(entry.label).includes(key) || key.includes(canonicalMindmapLabel(entry.label))));
+      return candidate?.path || "";
+    };
+    rows.forEach(({ path, entry }) => {
+      if (Array.isArray(entry.relations)) entry.relations.forEach((target) => add(path, mindmapEntryAtPath(item.tree, target) ? target : resolveLabel(target, path), "explicit"));
+      const note = String(entry.note || "");
+      const match = note.match(/liens?\s*:\s*(.+)$/i);
+      if (match) match[1].split(/[\/,;·]|\bet\b/i).map((value) => value.trim()).filter(Boolean).forEach((target) => add(path, resolveLabel(target, path), "note", target));
+    });
+    byCanonical.forEach((paths, key) => {
+      if (paths.length > 1 && key.length >= 4) paths.slice(1).forEach((path) => add(paths[0], path, "same-concept"));
+    });
+    mindmapManualRelationsFor(item.id).forEach((rel) => add(rel.from, rel.to, "manual"));
+    return relations;
+  }
+
+  function mindmapRelationsForPath(item, path) {
+    return mindmapRelationsFor(item).filter((rel) => rel.from === path || rel.to === path).map((rel) => ({ ...rel, other: rel.from === path ? rel.to : rel.from }));
+  }
+
+  function renderMindmapInspector(item, isStatic = false) {
     if (!state.mindmapSelectedPath) return "";
     const entry = mindmapEntryAtPath(item.tree, state.mindmapSelectedPath);
     if (!entry) return "";
     const node = mindmapEntry(entry);
     const trail = mindmapPathLabels(item.tree, state.mindmapSelectedPath);
-    return `<aside class="media-mindmap-inspector">
-      <button type="button" data-mindmap-focus-clear aria-label="Retirer la sélection">×</button>
-      <span>Branche sélectionnée</span>
+    const related = mindmapRelatedResources(node, 6);
+    const relations = mindmapRelationsForPath(item, state.mindmapSelectedPath);
+    return `<aside class="media-mindmap-inspector${isStatic ? " is-static" : ""}">
+      <button type="button" data-mindmap-focus-clear aria-label="Fermer les détails">×</button>
+      <span>Nœud sélectionné</span>
       <strong>${esc(node.label || "")}</strong>
       ${node.note ? `<p>${esc(node.note)}</p>` : ""}
       <small>${trail.map(esc).join(" <i>›</i> ")}</small>
-      ${(node.children || []).length ? `<em>${node.children.length} sous-branche${node.children.length > 1 ? "s" : ""} · cliquer sur le nœud pour ${state.mindmapExpanded.has(state.mindmapSelectedPath) ? "replier" : "déplier"}</em>` : `<em>Extrémité de branche</em>`}
+      <div class="media-mindmap-inspector-actions">
+        <button type="button" data-mindmap-focus-path="${esc(state.mindmapSelectedPath)}">Focus</button>
+        <button type="button" data-mindmap-revision-path="${esc(state.mindmapSelectedPath)}">Réviser cette branche</button>
+        <button type="button" data-mindmap-link-start="${esc(state.mindmapSelectedPath)}">Relier à…</button>
+      </div>
+      ${relations.length ? `<section class="media-mindmap-inspector-section"><h4>Connexions <small>${relations.length}</small></h4><div class="media-mindmap-related-nodes">${relations.slice(0, 7).map((rel) => { const other = mindmapEntryAtPath(item.tree, rel.other); return other ? `<button type="button" data-mindmap-select-path="${esc(rel.other)}"><i aria-hidden="true"></i>${esc(mindmapEntry(other).label || "")}</button>` : ""; }).join("")}</div></section>` : ""}
+      ${related.length ? `<section class="media-mindmap-inspector-section"><h4>Ressources liées <small>${related.length}</small></h4><div class="media-mindmap-related-resources">${related.map((resource) => `<button type="button" data-mindmap-related-resource="${esc(resource.id)}"><span>${esc(groupLabel(resource))}</span><strong>${esc(resource.title)}</strong>${resource.creator ? `<small>${esc(resource.creator)}</small>` : ""}</button>`).join("")}</div></section>` : `<em>Aucune ressource directement liée trouvée dans la médiathèque.</em>`}
     </aside>`;
+  }
+
+  function renderMindmapLegend(item) {
+    const branches = (item?.tree?.children || []).map((entry, index) => ({ entry: mindmapEntry(entry), index }));
+    if (branches.length < 2) return "";
+    return `<div class="media-mindmap-legend" aria-label="Légende des branches">
+      <span>Branches</span>
+      <div>${branches.map(({ entry, index }) => `<button type="button" data-mindmap-legend-path="${index}" style="--branch:${mindmapBranchColor(index)}" title="Centrer l’attention sur ${esc(entry.label || `Branche ${index + 1}`)}"><i aria-hidden="true"></i>${esc(entry.label || `Branche ${index + 1}`)}</button>`).join("")}</div>
+    </div>`;
   }
 
   function renderMindmapMap(item, rawQuery = "", compact = false) {
     const query = normalize(rawQuery);
     const graph = buildMindmapGraph(item, rawQuery);
     if (!graph.nodes.length) return '<p class="media-mindmap-empty">Cette mind-map ne contient pas encore de données.</p>';
-    if (query && graph.nodes.length === 1 && !mindmapOwnMatches(item.tree, query)) {
+    if (query && graph.nodes.length === 1 && !mindmapOwnMatches(graph.nodes[0].entry, query)) {
       return `<p class="media-mindmap-empty">Aucun élément ne correspond à « ${esc(rawQuery)} » dans cette mind-map.</p>`;
     }
 
     const cx = graph.width / 2;
     const cy = graph.height / 2;
     const selected = state.mindmapSelectedPath;
-    const palette = ["#665584", "#756391", "#826fa0", "#5b4c78", "#8d79aa", "#6d5c8d", "#9a88b4", "#79669a"];
-    const branchColor = (branch) => palette[((branch % palette.length) + palette.length) % palette.length];
+    const branchColor = (branch) => mindmapBranchColor(branch);
+    const nodeMap = new Map(graph.nodes.map((node) => [node.path, node]));
 
     const edges = graph.edges.map(({ from, to }) => {
       const x1 = cx + from.x;
@@ -1088,26 +1366,50 @@
       return `<path class="media-mindmap-edge${dim}" d="M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${mx.toFixed(1)} ${y1.toFixed(1)}, ${mx.toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}" style="--branch:${color}"/>`;
     }).join("");
 
+    const relationEdges = state.mindmapRelationsVisible ? mindmapRelationsFor(item).map((relation) => {
+      const from = nodeMap.get(relation.from);
+      const to = nodeMap.get(relation.to);
+      if (!from || !to) return "";
+      const x1 = cx + from.x;
+      const y1 = cy + from.y;
+      const x2 = cx + to.x;
+      const y2 = cy + to.y;
+      const dx = x2 - x1;
+      const dy = y2 - y1;
+      const bend = Math.max(38, Math.min(120, Math.hypot(dx, dy) * .15));
+      const nx = -dy / (Math.hypot(dx, dy) || 1);
+      const ny = dx / (Math.hypot(dx, dy) || 1);
+      const mx = (x1 + x2) / 2 + nx * bend;
+      const my = (y1 + y2) / 2 + ny * bend;
+      const selectedRelation = selected && (relation.from === selected || relation.to === selected) ? " is-related-selected" : "";
+      return `<path class="media-mindmap-relation is-${relation.type}${selectedRelation}" d="M ${x1.toFixed(1)} ${y1.toFixed(1)} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}"/>`;
+    }).join("") : "";
+
     const nodes = graph.nodes.map((node) => {
-      const root = node.path === "root";
-      const color = root ? "#51416f" : branchColor(node.branch);
+      const root = node.graphRoot;
+      const color = root ? (node.branch >= 0 ? branchColor(node.branch) : "#51416f") : branchColor(node.branch);
       const hit = query && mindmapOwnMatches(node.entry, query);
       const selectedClass = selected === node.path ? " is-selected" : "";
       const dim = selected && !mindmapPathsRelated(node.path, selected) ? " is-dimmed" : "";
       const hitClass = hit ? " is-search-hit" : "";
-      const note = node.entry.note ? `<small>${esc(node.entry.note)}</small>` : "";
-      const expander = !root && node.hasChildren ? `<i aria-hidden="true">${node.expanded ? "−" : "+"}</i>` : "";
+      const relativeDepth = Math.max(0, node.depth - 1);
+      const hidden = !root && mindmapRevisionShouldHide(node.path, relativeDepth);
+      const hiddenClass = hidden ? " is-revision-hidden" : "";
+      const label = hidden ? "À retrouver…" : (node.entry.label || "");
+      const note = !hidden && node.entry.note ? `<small>${esc(node.entry.note)}</small>` : "";
+      const expander = !root && node.hasChildren && !hidden ? `<i aria-hidden="true">${node.expanded ? "−" : "+"}</i>` : (hidden ? `<i aria-hidden="true">?</i>` : "");
       const tag = root ? "div" : "button";
-      const attrs = root ? "" : ` type="button" data-mindmap-node-path="${esc(node.path)}" aria-label="${esc(node.entry.label || "Branche")}${node.hasChildren ? node.expanded ? ", replier" : ", déplier" : ""}"`;
-      return `<${tag}${attrs} class="media-mindmap-graph-node${root ? " is-root" : ""}${selectedClass}${dim}${hitClass}" style="left:${(cx + node.x).toFixed(1)}px;top:${(cy + node.y).toFixed(1)}px;--branch:${color}">${expander}<span><strong>${esc(node.entry.label || "")}</strong>${note}</span></${tag}>`;
+      const attrs = root ? ` data-mindmap-root-path="${esc(node.path)}"` : hidden ? ` type="button" data-mindmap-reveal-path="${esc(node.path)}" aria-label="Révéler ce nœud"` : ` type="button" data-mindmap-node-path="${esc(node.path)}" aria-label="${esc(node.entry.label || "Branche")}${node.hasChildren ? node.expanded ? ", replier" : ", déplier" : ""}"`;
+      return `<${tag}${attrs} class="media-mindmap-graph-node${root ? " is-root" : ""}${selectedClass}${dim}${hitClass}${hiddenClass}" style="left:${(cx + node.x).toFixed(1)}px;top:${(cy + node.y).toFixed(1)}px;--branch:${color}">${expander}<span><strong>${esc(label)}</strong>${note}</span></${tag}>`;
     }).join("");
 
     return `<div class="media-mindmap-map-shell${compact ? " is-compact" : ""}">
-      <div class="media-mindmap-map-hint"><span>Glisser pour déplacer</span><span>Molette pour zoomer</span><span>Cliquer sur une branche pour la déplier</span></div>
+      <div class="media-mindmap-map-hint"><span>Glisser pour déplacer</span><span><kbd>Espace</kbd> + glisser depuis un nœud</span><span>Double-clic : focus</span><span>Clic droit : actions</span></div>
+      ${renderMindmapLegend(item)}
       <div class="media-mindmap-viewport" data-mindmap-viewport>
         <div class="media-mindmap-stage" data-mindmap-stage style="transform:translate(${state.mindmapPanX}px,${state.mindmapPanY}px) scale(${state.mindmapScale})">
           <div class="media-mindmap-canvas" style="width:${graph.width}px;height:${graph.height}px;transform:translate(-50%,-50%)">
-            <svg class="media-mindmap-lines" width="${graph.width}" height="${graph.height}" viewBox="0 0 ${graph.width} ${graph.height}" aria-hidden="true">${edges}</svg>
+            <svg class="media-mindmap-lines" width="${graph.width}" height="${graph.height}" viewBox="0 0 ${graph.width} ${graph.height}" aria-hidden="true">${edges}${relationEdges}</svg>
             ${nodes}
           </div>
         </div>
@@ -1116,35 +1418,136 @@
     </div>`;
   }
 
+  function renderMindmapFocusBar(item) {
+    if (!state.mindmapFocusPath) return "";
+    const labels = mindmapPathLabels(item.tree, state.mindmapFocusPath);
+    const prefixes = mindmapPathPrefixes(state.mindmapFocusPath);
+    return `<nav class="media-mindmap-focusbar" aria-label="Focus dans la mind-map"><button type="button" data-mindmap-focus-home>Carte complète</button>${prefixes.map((path, index) => `<span aria-hidden="true">›</span><button type="button" data-mindmap-focus-path="${esc(path)}" ${index === prefixes.length - 1 ? 'aria-current="page"' : ""}>${esc(labels[index + 1] || "Branche")}</button>`).join("")}</nav>`;
+  }
+
+  function renderMindmapRevisionBar(item) {
+    if (!state.mindmapRevision) return "";
+    const progress = mindmapRevisionProgress(item);
+    return `<div class="media-mindmap-revisionbar"><div><span>Mode révision</span><strong>Rappel actif</strong><p>Les sous-notions sont masquées. Essayez de les retrouver puis cliquez pour révéler.</p></div><div><b>${progress.revealed}/${progress.total}</b><button type="button" data-mindmap-revision-reveal-all>Tout révéler</button><button type="button" data-mindmap-revision-reset>Recommencer</button><button type="button" data-mindmap-revision-off>Quitter</button></div></div>`;
+  }
+
+  function renderMindmapLinkBanner(item) {
+    if (!state.mindmapLinkSourcePath) return "";
+    const source = mindmapEntryAtPath(item.tree, state.mindmapLinkSourcePath);
+    return `<div class="media-mindmap-link-banner"><span>Créer une relation depuis <strong>${esc(mindmapEntry(source).label || "ce nœud")}</strong></span><span>Cliquez sur un autre nœud pour terminer.</span><button type="button" data-mindmap-link-cancel>Annuler</button></div>`;
+  }
+
   function renderMindmapContent(item) {
     if (state.mindmapView === "map") return renderMindmapMap(item, state.mindmapQuery);
     if (state.mindmapView === "mixed") {
       return `<div class="media-mindmap-mixed-grid">
         <section class="media-mindmap-mixed-panel"><header><span>Vue schématique</span><strong>Mind-map</strong></header>${renderMindmapMap(item, state.mindmapQuery, true)}</section>
-        <section class="media-mindmap-mixed-panel"><header><span>Vue détaillée</span><strong>Plan</strong></header>${renderMindmapTree(item, state.mindmapQuery)}</section>
+        <section class="media-mindmap-mixed-panel"><header><span>Vue détaillée</span><strong>Plan</strong></header>${renderMindmapTree(item, state.mindmapQuery, false)}</section>
       </div>`;
     }
-    return renderMindmapTree(item, state.mindmapQuery);
+    return renderMindmapTree(item, state.mindmapQuery, true);
+  }
+
+  function persistCustomMindmaps() {
+    const list = resources.filter((item) => groupOf(item) === "mindmap" && item.isPersonalMindmap).map((item) => ({
+      id: item.id, kind: "mindmap", title: item.title, creator: item.creator || "", subtitle: item.subtitle || "Carte personnelle",
+      description: item.description || "", mindmapCategory: "custom", themes: item.themes || ["Philosophie"], people: item.people || [], keywords: item.keywords || ["mind-map"],
+      tree: item.tree, isPersonalMindmap: true
+    }));
+    try { localStorage.setItem(MINDMAP_CUSTOM_KEY, JSON.stringify(list)); } catch (_) {}
+  }
+
+  function cloneMindmapData(value) {
+    try { return JSON.parse(JSON.stringify(value)); } catch (_) { return value; }
+  }
+
+  function uniquePersonalMindmapId() {
+    return `mindmap:personal:${Date.now()}:${Math.random().toString(36).slice(2, 7)}`;
+  }
+
+  function saveMindmapSnapshot(item) {
+    if (!item?.tree) return;
+    if (item.isPersonalMindmap) {
+      persistCustomMindmaps();
+      return item.id;
+    }
+    const id = uniquePersonalMindmapId();
+    const copy = {
+      ...cloneMindmapData(item), id, kind: "mindmap", title: `${item.title} — copie personnelle`, subtitle: "Carte personnelle",
+      mindmapCategory: "custom", isPersonalMindmap: true
+    };
+    resources.push(copy); byId.set(id, copy);
+    const rels = mindmapManualRelationsFor(item.id);
+    if (rels.length) { mindmapManualRelations[id] = cloneMindmapData(rels); saveMindmapManualRelations(); }
+    persistCustomMindmaps();
+    return id;
+  }
+
+  function exportMindmap(item) {
+    if (!item?.tree) return;
+    const payload = {
+      format: "philosophal-mindmap", version: 2,
+      mindmap: { title: item.title, creator: item.creator || "", subtitle: item.subtitle || "", description: item.description || "", themes: item.themes || [], keywords: item.keywords || [], tree: item.tree },
+      relations: mindmapManualRelationsFor(item.id)
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = `${String(item.title || "mindmap").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase() || "mindmap"}.json`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function importMindmapFile() {
+    const input = document.createElement("input");
+    input.type = "file"; input.accept = ".json,application/json"; input.hidden = true;
+    input.addEventListener("change", async () => {
+      const file = input.files?.[0]; input.remove(); if (!file) return;
+      try {
+        const parsed = JSON.parse(await file.text());
+        const source = parsed?.mindmap || parsed;
+        if (!source || typeof source !== "object" || !source.tree || !source.title) throw new Error("Format invalide");
+        const id = uniquePersonalMindmapId();
+        const item = {
+          id, kind: "mindmap", title: String(source.title), creator: String(source.creator || ""), subtitle: String(source.subtitle || "Carte personnelle"),
+          description: String(source.description || "Mind-map importée."), mindmapCategory: "custom", themes: Array.isArray(source.themes) ? source.themes : ["Philosophie"],
+          people: Array.isArray(source.people) ? source.people : [], keywords: Array.isArray(source.keywords) ? source.keywords : ["mind-map", "import"], tree: cloneMindmapData(source.tree), isPersonalMindmap: true
+        };
+        resources.push(item); byId.set(id, item);
+        if (Array.isArray(parsed.relations)) { mindmapManualRelations[id] = parsed.relations.filter((rel) => rel?.from && rel?.to); saveMindmapManualRelations(); }
+        persistCustomMindmaps();
+        state.kind = "mindmap"; state.mindmapId = id; state.mindmapExpansionOwner = ""; state.mindmapQuery = ""; render();
+      } catch (_) { window.alert("Ce fichier ne correspond pas à une mind-map Philosophal valide."); }
+    }, { once: true });
+    document.body.appendChild(input); input.click();
+  }
+
+  function deletePersonalMindmap(item) {
+    if (!item?.isPersonalMindmap) return;
+    if (!window.confirm(`Supprimer « ${item.title} » de ce navigateur ?`)) return;
+    const index = resources.findIndex((entry) => entry.id === item.id);
+    if (index >= 0) resources.splice(index, 1);
+    byId.delete(item.id); delete mindmapManualRelations[item.id]; saveMindmapManualRelations(); persistCustomMindmaps();
+    state.mindmapId = ""; state.mindmapExpansionOwner = ""; render();
   }
 
   function renderMindmapDirectory(list) {
-    const categoryOrder = ["programme", "reperes", "methodologie"];
+    const categoryOrder = ["programme", "reperes", "methodologie", "custom"];
     return `<div class="media-mindmap-library">
       <section class="media-mindmap-intro">
-        <span>MIND-MAPS</span>
-        <h3>Cartes mentales à deux lectures</h3>
-        <p>Chaque carte existe à la fois comme plan textuel léger et comme véritable mind-map interactive : notion centrale, branches autour, zoom, déplacement et dépliage progressif.</p>
+        <div><span>MIND-MAPS</span><h3>Cartes mentales interactives</h3><p>Explorez, focalisez une branche, révisez en rappel actif, visualisez les connexions et reliez chaque notion aux ressources de la médiathèque.</p></div>
+        <div class="media-mindmap-library-actions"><button type="button" data-mindmap-import>Importer JSON</button></div>
       </section>
       ${categoryOrder.map((key) => {
         const meta = MINDMAP_CATEGORY_META[key];
-        const entries = list.filter((item) => item.mindmapCategory === key);
+        const entries = list.filter((item) => (item.mindmapCategory || (item.isPersonalMindmap ? "custom" : "")) === key);
         if (!entries.length) return "";
         return `<section class="media-mindmap-category">
           <header><div><span>Collection</span><h3>${esc(meta.label)}</h3><p>${esc(meta.description)}</p></div><strong>${entries.length}</strong></header>
           <div class="media-mindmap-grid">
             ${entries.map((item) => `<button class="media-mindmap-card" type="button" data-mindmap-open="${esc(item.id)}">
               <span class="media-mindmap-card-icon" aria-hidden="true">${icon("mindmap")}</span>
-              <span class="media-mindmap-card-copy"><small>${esc(item.subtitle || meta.label)}</small><strong>${esc(item.title)}</strong><em>${esc(item.description || "")}</em></span>
+              <span class="media-mindmap-card-copy"><small>${esc(item.isPersonalMindmap ? "Carte personnelle" : (item.subtitle || meta.label))}</small><strong>${esc(item.title)}</strong><em>${esc(item.description || "")}</em></span>
               <span class="media-mindmap-card-meta">${mindmapNodeCount(item.tree)} éléments <i aria-hidden="true">→</i></span>
             </button>`).join("")}
           </div>
@@ -1158,19 +1561,29 @@
     initializeMindmapExpansion(item);
     const category = MINDMAP_CATEGORY_META[item.mindmapCategory] || { label: "Mind-map" };
     const isMapView = state.mindmapView === "map" || state.mindmapView === "mixed";
-    return `<section class="media-mindmap-workspace" data-mindmap-workspace>
-      <button class="media-mindmap-back" type="button" data-mindmap-back>← Toutes les mind-maps</button>
+    const relationsCount = mindmapRelationsFor(item).length;
+    return `<section class="media-mindmap-workspace${state.mindmapFullscreen ? " is-pseudo-fullscreen" : ""}" data-mindmap-workspace>
+      <div class="media-mindmap-topline"><button class="media-mindmap-back" type="button" data-mindmap-back>← Toutes les mind-maps</button><div class="media-mindmap-data-actions"><button type="button" data-mindmap-save>${item.isPersonalMindmap ? "Sauvegarder" : "Sauvegarder une copie"}</button><button type="button" data-mindmap-export>Exporter JSON</button><button type="button" data-mindmap-import>Importer</button>${item.isPersonalMindmap ? '<button class="is-danger" type="button" data-mindmap-delete>Supprimer</button>' : ""}</div></div>
       <header class="media-mindmap-workspace-head">
-        <div><span>${esc(category.label)}</span><h3>${esc(item.title)}</h3><p>${esc(item.description || "")}</p></div>
+        <div><span>${esc(item.isPersonalMindmap ? "Carte personnelle" : category.label)}</span><h3>${esc(item.title)}</h3><p>${esc(item.description || "")}</p></div>
         <strong>${mindmapNodeCount(item.tree)}<small> éléments</small></strong>
       </header>
+      ${renderMindmapFocusBar(item)}
+      ${renderMindmapRevisionBar(item)}
+      ${renderMindmapLinkBanner(item)}
       <div class="media-mindmap-viewbar">
-        <div class="media-mindmap-view-switch" role="group" aria-label="Mode d’affichage de la mind-map">
-          <button type="button" data-mindmap-view="plan" aria-pressed="${state.mindmapView === "plan"}"><span aria-hidden="true">☷</span> Plan</button>
-          <button type="button" data-mindmap-view="map" aria-pressed="${state.mindmapView === "map"}"><span aria-hidden="true">⌘</span> Mind-map</button>
-          <button type="button" data-mindmap-view="mixed" aria-pressed="${state.mindmapView === "mixed"}"><span aria-hidden="true">◫</span> Mixte</button>
+        <div class="media-mindmap-view-controls">
+          <div class="media-mindmap-view-switch" role="group" aria-label="Mode d’affichage de la mind-map">
+            <button type="button" data-mindmap-view="plan" aria-pressed="${state.mindmapView === "plan"}"><span aria-hidden="true">☷</span> Plan</button>
+            <button type="button" data-mindmap-view="map" aria-pressed="${state.mindmapView === "map"}"><span aria-hidden="true">⌘</span> Mind-map</button>
+            <button type="button" data-mindmap-view="mixed" aria-pressed="${state.mindmapView === "mixed"}"><span aria-hidden="true">◫</span> Mixte</button>
+          </div>
+          <div class="media-mindmap-palette-switch" role="group" aria-label="Couleurs de la mind-map">
+            <button type="button" data-mindmap-palette="color" aria-pressed="${state.mindmapPalette === "color"}"><span class="media-mindmap-palette-dots" aria-hidden="true"><i></i><i></i><i></i></span> Couleurs</button>
+            <button type="button" data-mindmap-palette="violet" aria-pressed="${state.mindmapPalette === "violet"}"><span class="media-mindmap-palette-one" aria-hidden="true"></span> Violet</button>
+          </div>
         </div>
-        <small>${state.mindmapView === "plan" ? "Lecture linéaire, rapide et précise." : state.mindmapView === "map" ? "Vue d’ensemble spatiale : branches autour du noyau central." : "Schéma et plan détaillé réunis."}</small>
+        <small>${state.mindmapView === "plan" ? "Lecture linéaire, rapide et précise." : state.mindmapView === "map" ? "Vue spatiale : double-clic pour focaliser une branche." : "Schéma et plan détaillé réunis."}</small>
       </div>
       <div class="media-mindmap-toolbar">
         <label class="media-mindmap-search">
@@ -1179,12 +1592,15 @@
           <input type="search" data-mindmap-search value="${esc(state.mindmapQuery)}" autocomplete="off" spellcheck="false" placeholder="Rechercher dans cette carte…">
         </label>
         <div class="media-mindmap-toolbar-actions">
-          <button type="button" data-mindmap-expand>Tout déplier</button>
-          <button type="button" data-mindmap-collapse>Tout replier</button>
-          ${isMapView ? `<span class="media-mindmap-zoom-group"><button type="button" data-mindmap-zoom-out aria-label="Dézoomer">−</button><button type="button" data-mindmap-center>Centrer</button><button type="button" data-mindmap-zoom-in aria-label="Zoomer">+</button></span>` : ""}
+          <button type="button" data-mindmap-expand>Tout ouvrir</button>
+          <button type="button" data-mindmap-collapse>Tout fermer</button>
+          <button type="button" data-mindmap-revision-toggle class="${state.mindmapRevision ? "is-active" : ""}">Révision</button>
+          ${isMapView ? `<button type="button" data-mindmap-relations-toggle class="${state.mindmapRelationsVisible ? "is-active" : ""}" title="Afficher ou masquer les relations transversales">Relations <small>${relationsCount}</small></button><span class="media-mindmap-zoom-group"><button type="button" data-mindmap-zoom-out aria-label="Dézoomer">−</button><span class="media-mindmap-zoom-value" data-mindmap-zoom-value>${Math.round(state.mindmapScale * 100)}%</span><button type="button" data-mindmap-zoom-in aria-label="Zoomer">+</button><button type="button" data-mindmap-fit>Ajuster</button><button type="button" data-mindmap-center>Centrer</button></span>` : ""}
+          <button class="media-mindmap-fullscreen-button${state.mindmapFullscreen ? " is-active" : ""}" type="button" data-mindmap-fullscreen aria-label="${state.mindmapFullscreen ? "Quitter le plein écran" : "Afficher la mind-map en plein écran"}"><span aria-hidden="true">⛶</span><b>${state.mindmapFullscreen ? "Réduire" : "Plein écran"}</b></button>
         </div>
       </div>
       <div data-mindmap-view-shell>${renderMindmapContent(item)}</div>
+      <div class="media-mindmap-shortcuts"><span><kbd>F</kbd> plein écran</span><span><kbd>0</kbd> ajuster</span><span><kbd>R</kbd> recentrer</span><span><kbd>+</kbd>/<kbd>−</kbd> zoom</span><span><kbd>Espace</kbd> + glisser</span><span>double-clic : focus</span><span>clic droit : actions</span></div>
     </section>`;
   }
 
@@ -1470,6 +1886,8 @@
   }
 
   function render() {
+    if (state.kind !== "mindmap" || !state.mindmapId) state.mindmapFullscreen = false;
+    document.body.classList.toggle("has-mindmap-pseudo-fullscreen", Boolean(state.mindmapFullscreen));
     renderTypes();
     renderAdvancedFilters();
     renderActiveFilters();
@@ -1724,16 +2142,18 @@
       state.mindmapQuery = "";
       state.mindmapExpansionOwner = "";
       state.mindmapSelectedPath = "";
-      state.mindmapScale = 1;
-      state.mindmapPanX = 0;
-      state.mindmapPanY = 0;
+      state.mindmapFocusPath = "";
+      state.mindmapViewportRestored = false;
       state.query = "";
       state.person = "";
       state.theme = "";
       state.dossier = "";
       state.pinnedOnly = false;
       render();
-      requestAnimationFrame(() => listShell?.scrollIntoView({ behavior: "smooth", block: "start" }));
+      requestAnimationFrame(() => {
+        listShell?.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (state.mindmapView !== "plan") requestAnimationFrame(() => state.mindmapViewportRestored ? applyMindmapTransform() : fitMindmapToView());
+      });
       return;
     }
     const embed = getEmbed(item);
@@ -1913,14 +2333,30 @@
     const mindmapOpen = event.target.closest("[data-mindmap-open]");
     if (mindmapOpen) { event.preventDefault(); openResource(mindmapOpen.dataset.mindmapOpen); return; }
 
+    if (event.target.closest("[data-mindmap-import]")) { event.preventDefault(); importMindmapFile(); return; }
+
     if (event.target.closest("[data-mindmap-back]")) {
+      persistMindmapSessionNow();
       state.mindmapId = "";
       state.mindmapQuery = "";
       state.mindmapExpansionOwner = "";
       state.mindmapSelectedPath = "";
+      state.mindmapFocusPath = "";
+      state.mindmapRevision = false;
       render();
       return;
     }
+
+    if (event.target.closest("[data-mindmap-save]")) {
+      const item = byId.get(state.mindmapId);
+      const id = saveMindmapSnapshot(item);
+      if (id && id !== item?.id) { state.mindmapId = id; state.mindmapExpansionOwner = ""; render(); }
+      else if (id) { const button = event.target.closest("[data-mindmap-save]"); const old = button.textContent; button.textContent = "Sauvegardé ✓"; setTimeout(() => { if (button.isConnected) button.textContent = old; }, 1200); }
+      return;
+    }
+
+    if (event.target.closest("[data-mindmap-export]")) { exportMindmap(byId.get(state.mindmapId)); return; }
+    if (event.target.closest("[data-mindmap-delete]")) { deletePersonalMindmap(byId.get(state.mindmapId)); return; }
 
     const mindmapView = event.target.closest("[data-mindmap-view]");
     if (mindmapView) {
@@ -1928,75 +2364,99 @@
       if (["plan", "map", "mixed"].includes(value)) {
         state.mindmapView = value;
         saveMindmapView(value);
-        state.mindmapPanX = 0;
-        state.mindmapPanY = 0;
-        state.mindmapScale = 1;
         render();
+        if (value !== "plan") requestAnimationFrame(() => requestAnimationFrame(() => state.mindmapViewportRestored ? applyMindmapTransform() : fitMindmapToView()));
       }
       return;
     }
+
+    const mindmapPalette = event.target.closest("[data-mindmap-palette]");
+    if (mindmapPalette) {
+      const value = mindmapPalette.dataset.mindmapPalette;
+      if (["color", "violet"].includes(value)) {
+        state.mindmapPalette = value;
+        saveMindmapPalette(value);
+        renderResults();
+      }
+      return;
+    }
+
+    const mindmapLegend = event.target.closest("[data-mindmap-legend-path]");
+    if (mindmapLegend) {
+      const path = mindmapLegend.dataset.mindmapLegendPath;
+      state.mindmapSelectedPath = state.mindmapSelectedPath === path ? "" : path;
+      if (path) state.mindmapExpanded.add(path);
+      queueMindmapPersist(); renderResults(); return;
+    }
+
+    if (event.target.closest("[data-mindmap-fullscreen]")) { toggleMindmapFullscreen(); return; }
+
+    const focusHome = event.target.closest("[data-mindmap-focus-home]");
+    if (focusHome) { setMindmapFocus(""); return; }
+    const focusPathButton = event.target.closest("[data-mindmap-focus-path]");
+    if (focusPathButton) { setMindmapFocus(focusPathButton.dataset.mindmapFocusPath || ""); return; }
+    const revisionPathButton = event.target.closest("[data-mindmap-revision-path]");
+    if (revisionPathButton) { setMindmapFocus(revisionPathButton.dataset.mindmapRevisionPath || "", true); return; }
+
+    const relatedResource = event.target.closest("[data-mindmap-related-resource]");
+    if (relatedResource) { openResource(relatedResource.dataset.mindmapRelatedResource); return; }
+    const selectPath = event.target.closest("[data-mindmap-select-path]");
+    if (selectPath) { state.mindmapSelectedPath = selectPath.dataset.mindmapSelectPath || ""; renderResults(); return; }
+
+    const reveal = event.target.closest("[data-mindmap-reveal-path]");
+    if (reveal) {
+      event.preventDefault(); event.stopPropagation();
+      state.mindmapRevisionRevealed.add(reveal.dataset.mindmapRevealPath);
+      renderResults(); return;
+    }
+
+    const linkStart = event.target.closest("[data-mindmap-link-start]");
+    if (linkStart) { state.mindmapLinkSourcePath = linkStart.dataset.mindmapLinkStart || ""; state.mindmapRelationsVisible = true; closeMindmapContextMenu(); renderResults(); return; }
+    if (event.target.closest("[data-mindmap-link-cancel]")) { state.mindmapLinkSourcePath = ""; renderResults(); return; }
 
     const mindmapGraphNode = event.target.closest("[data-mindmap-node-path]");
     if (mindmapGraphNode) {
       const path = mindmapGraphNode.dataset.mindmapNodePath;
-      const item = byId.get(state.mindmapId);
-      const entry = item ? mindmapEntryAtPath(item.tree, path) : null;
-      state.mindmapSelectedPath = path;
-      if (entry && (mindmapEntry(entry).children || []).length) {
-        state.mindmapExpanded.has(path) ? state.mindmapExpanded.delete(path) : state.mindmapExpanded.add(path);
+      if (state.mindmapLinkSourcePath && path !== state.mindmapLinkSourcePath) {
+        addMindmapManualRelation(state.mindmapId, state.mindmapLinkSourcePath, path);
+        state.mindmapLinkSourcePath = ""; state.mindmapRelationsVisible = true; state.mindmapSelectedPath = path; renderResults(); return;
       }
-      renderResults();
-      updateUrl();
+      scheduleMindmapNodeClick(path);
       return;
     }
 
-    if (event.target.closest("[data-mindmap-focus-clear]")) {
-      state.mindmapSelectedPath = "";
-      renderResults();
-      return;
-    }
+    if (event.target.closest("[data-mindmap-focus-clear]")) { state.mindmapSelectedPath = ""; renderResults(); return; }
 
     if (event.target.closest("[data-mindmap-expand]")) {
       const item = byId.get(state.mindmapId);
       if (item?.tree) state.mindmapExpanded = new Set(mindmapExpandablePaths(item.tree));
-      document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = true; });
-      if (state.mindmapView !== "plan") {
-        renderResults();
-        requestAnimationFrame(() => document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = true; }));
-      }
+      queueMindmapPersist(); renderResults();
+      requestAnimationFrame(() => document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = true; }));
       return;
     }
 
     if (event.target.closest("[data-mindmap-collapse]")) {
-      state.mindmapExpanded = new Set();
-      state.mindmapSelectedPath = "";
-      document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = false; });
-      if (state.mindmapView !== "plan") {
-        renderResults();
-        requestAnimationFrame(() => document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = false; }));
-      }
+      state.mindmapExpanded = new Set(); state.mindmapSelectedPath = "";
+      queueMindmapPersist(); renderResults();
+      requestAnimationFrame(() => document.querySelectorAll("[data-mindmap-view-shell] details").forEach((details) => { details.open = false; }));
       return;
     }
 
-    if (event.target.closest("[data-mindmap-zoom-in]")) {
-      state.mindmapScale = Math.min(2.2, Number((state.mindmapScale + 0.15).toFixed(2)));
-      applyMindmapTransform();
-      return;
+    if (event.target.closest("[data-mindmap-revision-toggle]")) {
+      state.mindmapRevision = !state.mindmapRevision; state.mindmapRevisionRevealed = new Set(); state.mindmapSelectedPath = ""; renderResults(); return;
     }
+    if (event.target.closest("[data-mindmap-revision-reveal-all]")) {
+      const item = byId.get(state.mindmapId); if (item?.tree) mindmapFlatNodes(item.tree).forEach(({ path }) => { if (path !== "root") state.mindmapRevisionRevealed.add(path); }); renderResults(); return;
+    }
+    if (event.target.closest("[data-mindmap-revision-reset]")) { state.mindmapRevisionRevealed = new Set(); renderResults(); return; }
+    if (event.target.closest("[data-mindmap-revision-off]")) { state.mindmapRevision = false; state.mindmapRevisionRevealed = new Set(); renderResults(); return; }
 
-    if (event.target.closest("[data-mindmap-zoom-out]")) {
-      state.mindmapScale = Math.max(0.45, Number((state.mindmapScale - 0.15).toFixed(2)));
-      applyMindmapTransform();
-      return;
-    }
+    if (event.target.closest("[data-mindmap-relations-toggle]")) { state.mindmapRelationsVisible = !state.mindmapRelationsVisible; queueMindmapPersist(); renderResults(); return; }
 
-    if (event.target.closest("[data-mindmap-center]")) {
-      state.mindmapScale = 1;
-      state.mindmapPanX = 0;
-      state.mindmapPanY = 0;
-      applyMindmapTransform();
-      return;
-    }
+    if (event.target.closest("[data-mindmap-zoom-in]")) { state.mindmapScale = Math.min(2.2, Number((state.mindmapScale + 0.15).toFixed(2))); state.mindmapViewportRestored = true; applyMindmapTransform(); queueMindmapPersist(); return; }
+    if (event.target.closest("[data-mindmap-zoom-out]")) { state.mindmapScale = Math.max(0.32, Number((state.mindmapScale - 0.15).toFixed(2))); state.mindmapViewportRestored = true; applyMindmapTransform(); queueMindmapPersist(); return; }
+    if (event.target.closest("[data-mindmap-fit]")) { fitMindmapToView(); return; }
+    if (event.target.closest("[data-mindmap-center]")) { centerMindmapView(); return; }
 
     const play = event.target.closest("[data-play]");
     if (play) { event.preventDefault(); openPlayer(play.dataset.play); return; }
@@ -2100,39 +2560,152 @@
     document.querySelectorAll("[data-mindmap-stage]").forEach((stage) => {
       stage.style.transform = `translate(${state.mindmapPanX}px,${state.mindmapPanY}px) scale(${state.mindmapScale})`;
     });
+    document.querySelectorAll("[data-mindmap-zoom-value]").forEach((label) => { label.textContent = `${Math.round(state.mindmapScale * 100)}%`; });
   }
 
+  function fitMindmapToView() {
+    const viewport = document.querySelector("[data-mindmap-viewport]");
+    const canvas = viewport?.querySelector(".media-mindmap-canvas");
+    if (!viewport || !canvas) return;
+    const vw = Math.max(1, viewport.clientWidth), vh = Math.max(1, viewport.clientHeight), cw = Math.max(1, canvas.offsetWidth), ch = Math.max(1, canvas.offsetHeight);
+    const horizontalPadding = vw < 640 ? 36 : 90, verticalPadding = vh < 520 ? 36 : 90;
+    const scale = Math.min((vw - horizontalPadding) / cw, (vh - verticalPadding) / ch, 1.25);
+    state.mindmapScale = Math.max(0.32, Math.min(1.25, Number(scale.toFixed(2))));
+    state.mindmapPanX = 0; state.mindmapPanY = 0; state.mindmapViewportRestored = true;
+    applyMindmapTransform(); queueMindmapPersist();
+  }
+
+  function centerMindmapView() {
+    state.mindmapScale = 1; state.mindmapPanX = 0; state.mindmapPanY = 0; state.mindmapViewportRestored = true;
+    applyMindmapTransform(); queueMindmapPersist();
+  }
+
+  function setMindmapFocus(path = "", revision = false) {
+    const item = byId.get(state.mindmapId); if (!item?.tree) return;
+    const valid = path && mindmapEntryAtPath(item.tree, path) ? path : "";
+    state.mindmapFocusPath = valid; state.mindmapSelectedPath = ""; state.mindmapLinkSourcePath = "";
+    if (revision) { state.mindmapRevision = true; state.mindmapRevisionRevealed = new Set(); }
+    state.mindmapPanX = 0; state.mindmapPanY = 0; state.mindmapScale = 1; state.mindmapViewportRestored = false;
+    queueMindmapPersist(); renderResults();
+    if (state.mindmapView !== "plan") requestAnimationFrame(() => requestAnimationFrame(fitMindmapToView));
+  }
+
+  function mindmapFullscreenActive() { return Boolean(state.mindmapFullscreen); }
+  function syncMindmapFullscreenButton() {
+    const workspace = document.querySelector("[data-mindmap-workspace]");
+    const active = mindmapFullscreenActive(); const button = workspace?.querySelector("[data-mindmap-fullscreen]"); if (!button) return;
+    const label = button.querySelector("b"); if (label) label.textContent = active ? "Réduire" : "Plein écran";
+    button.setAttribute("aria-label", active ? "Quitter le plein écran" : "Afficher la mind-map en plein écran"); button.classList.toggle("is-active", active);
+  }
+  function toggleMindmapFullscreen() {
+    const workspace = document.querySelector("[data-mindmap-workspace]"); if (!workspace) return;
+    state.mindmapFullscreen = !state.mindmapFullscreen; workspace.classList.toggle("is-pseudo-fullscreen", state.mindmapFullscreen);
+    document.body.classList.toggle("has-mindmap-pseudo-fullscreen", state.mindmapFullscreen); syncMindmapFullscreenButton();
+    requestAnimationFrame(() => { if (state.mindmapView !== "plan") applyMindmapTransform(); });
+  }
+
+  let mindmapNodeClickTimer = 0;
+  function scheduleMindmapNodeClick(path) {
+    clearTimeout(mindmapNodeClickTimer);
+    mindmapNodeClickTimer = window.setTimeout(() => {
+      const item = byId.get(state.mindmapId); const entry = item ? mindmapEntryAtPath(item.tree, path) : null;
+      state.mindmapSelectedPath = path;
+      if (entry && (mindmapEntry(entry).children || []).length) state.mindmapExpanded.has(path) ? state.mindmapExpanded.delete(path) : state.mindmapExpanded.add(path);
+      queueMindmapPersist(); renderResults(); updateUrl();
+    }, 230);
+  }
+
+  let mindmapContextMenu = null;
+  function closeMindmapContextMenu() { mindmapContextMenu?.remove(); mindmapContextMenu = null; }
+  function showMindmapContextMenu(path, x, y) {
+    closeMindmapContextMenu();
+    const item = byId.get(state.mindmapId); const entry = item ? mindmapEntryAtPath(item.tree, path) : null; if (!entry) return;
+    const node = mindmapEntry(entry); const menu = document.createElement("div"); menu.className = "media-mindmap-context"; menu.setAttribute("role", "menu"); menu.dataset.mindmapContextPath = path;
+    menu.innerHTML = `<div><span>Actions</span><strong>${esc(node.label || "Nœud")}</strong></div><button type="button" data-mindmap-context-action="focus">Focus sur cette branche</button><button type="button" data-mindmap-context-action="revision">Réviser cette branche</button><button type="button" data-mindmap-context-action="resources">Voir les ressources liées</button><button type="button" data-mindmap-context-action="link">Créer une relation depuis ici</button><button type="button" data-mindmap-context-action="copy">Copier le titre</button>`;
+    document.body.appendChild(menu); mindmapContextMenu = menu;
+    const rect = menu.getBoundingClientRect(); menu.style.left = `${Math.max(8, Math.min(x, window.innerWidth - rect.width - 8))}px`; menu.style.top = `${Math.max(8, Math.min(y, window.innerHeight - rect.height - 8))}px`;
+    requestAnimationFrame(() => menu.querySelector("button")?.focus({ preventScroll: true }));
+  }
+
+  document.addEventListener("contextmenu", (event) => {
+    if (state.kind !== "mindmap" || !state.mindmapId) return;
+    const node = event.target.closest?.("[data-mindmap-node-path],[data-mindmap-plan-path]"); if (!node) return;
+    const path = node.dataset.mindmapNodePath || node.dataset.mindmapPlanPath; if (!path) return;
+    event.preventDefault(); showMindmapContextMenu(path, event.clientX, event.clientY);
+  });
+
+  document.addEventListener("click", async (event) => {
+    const action = event.target.closest?.("[data-mindmap-context-action]");
+    if (action && mindmapContextMenu) {
+      const path = mindmapContextMenu.dataset.mindmapContextPath || ""; const item = byId.get(state.mindmapId); const entry = item ? mindmapEntryAtPath(item.tree, path) : null;
+      const type = action.dataset.mindmapContextAction; closeMindmapContextMenu();
+      if (type === "focus") { setMindmapFocus(path); return; }
+      if (type === "revision") { setMindmapFocus(path, true); return; }
+      if (type === "resources") { state.mindmapSelectedPath = path; renderResults(); return; }
+      if (type === "link") { state.mindmapLinkSourcePath = path; state.mindmapRelationsVisible = true; renderResults(); return; }
+      if (type === "copy" && entry) { try { await navigator.clipboard.writeText(mindmapEntry(entry).label || ""); } catch (_) {} return; }
+    }
+    if (mindmapContextMenu && !event.target.closest?.(".media-mindmap-context")) closeMindmapContextMenu();
+  });
+
+  document.addEventListener("dblclick", (event) => {
+    if (state.kind !== "mindmap" || !state.mindmapId) return;
+    const node = event.target.closest?.("[data-mindmap-node-path],[data-mindmap-plan-path]"); if (!node) return;
+    const path = node.dataset.mindmapNodePath || node.dataset.mindmapPlanPath; if (!path) return;
+    event.preventDefault(); clearTimeout(mindmapNodeClickTimer); setMindmapFocus(path);
+  });
+
+  let mindmapSpaceDown = false;
   let mindmapDrag = null;
   document.addEventListener("pointerdown", (event) => {
-    const viewport = event.target.closest?.("[data-mindmap-viewport]");
-    if (!viewport || event.target.closest("button,a,input,summary")) return;
+    const viewport = event.target.closest?.("[data-mindmap-viewport]"); if (!viewport) return;
+    const overInteractive = Boolean(event.target.closest("button,a,input,summary"));
+    if (overInteractive && !mindmapSpaceDown) return;
     mindmapDrag = { pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, panX: state.mindmapPanX, panY: state.mindmapPanY, viewport };
-    viewport.classList.add("is-dragging");
-    try { viewport.setPointerCapture(event.pointerId); } catch (_) {}
+    viewport.classList.add("is-dragging"); try { viewport.setPointerCapture(event.pointerId); } catch (_) {}
+    if (mindmapSpaceDown) event.preventDefault();
   });
-
   document.addEventListener("pointermove", (event) => {
     if (!mindmapDrag || event.pointerId !== mindmapDrag.pointerId) return;
-    state.mindmapPanX = mindmapDrag.panX + (event.clientX - mindmapDrag.startX);
-    state.mindmapPanY = mindmapDrag.panY + (event.clientY - mindmapDrag.startY);
-    applyMindmapTransform();
+    state.mindmapPanX = mindmapDrag.panX + (event.clientX - mindmapDrag.startX); state.mindmapPanY = mindmapDrag.panY + (event.clientY - mindmapDrag.startY); state.mindmapViewportRestored = true; applyMindmapTransform();
   });
-
   const endMindmapDrag = (event) => {
     if (!mindmapDrag || (event.pointerId != null && event.pointerId !== mindmapDrag.pointerId)) return;
-    mindmapDrag.viewport?.classList.remove("is-dragging");
-    mindmapDrag = null;
+    mindmapDrag.viewport?.classList.remove("is-dragging"); mindmapDrag = null; queueMindmapPersist();
   };
-  document.addEventListener("pointerup", endMindmapDrag);
-  document.addEventListener("pointercancel", endMindmapDrag);
+  document.addEventListener("pointerup", endMindmapDrag); document.addEventListener("pointercancel", endMindmapDrag);
+
+  document.addEventListener("keydown", (event) => {
+    if (state.kind !== "mindmap" || !state.mindmapId) return;
+    const tag = event.target?.tagName?.toLowerCase(); const typing = ["input", "textarea", "select"].includes(tag) || event.target?.isContentEditable;
+    if (event.code === "Space" && !typing && state.mindmapView !== "plan") { event.preventDefault(); mindmapSpaceDown = true; document.querySelector("[data-mindmap-viewport]")?.classList.add("is-space-pan"); }
+    if (typing) return;
+    const key = event.key.toLocaleLowerCase("fr");
+    if (event.key === "Escape") {
+      closeMindmapContextMenu(); state.mindmapLinkSourcePath = "";
+      const workspace = document.querySelector("[data-mindmap-workspace]");
+      if (state.mindmapFullscreen) { state.mindmapFullscreen = false; workspace?.classList.remove("is-pseudo-fullscreen"); document.body.classList.remove("has-mindmap-pseudo-fullscreen"); syncMindmapFullscreenButton(); return; }
+      if (state.mindmapSelectedPath) { state.mindmapSelectedPath = ""; renderResults(); }
+      return;
+    }
+    if (key === "f") { event.preventDefault(); event.stopPropagation(); toggleMindmapFullscreen(); return; }
+    if (key === "r") { event.preventDefault(); event.stopImmediatePropagation(); if (state.mindmapView !== "plan") centerMindmapView(); return; }
+    if (state.mindmapView === "plan") return;
+    if (event.key === "0") { event.preventDefault(); fitMindmapToView(); return; }
+    if (event.key === "+" || event.key === "=") { event.preventDefault(); state.mindmapScale = Math.min(2.2, Number((state.mindmapScale + 0.15).toFixed(2))); state.mindmapViewportRestored = true; applyMindmapTransform(); queueMindmapPersist(); return; }
+    if (event.key === "-" || event.key === "_") { event.preventDefault(); state.mindmapScale = Math.max(0.32, Number((state.mindmapScale - 0.15).toFixed(2))); state.mindmapViewportRestored = true; applyMindmapTransform(); queueMindmapPersist(); }
+  }, true);
+
+  document.addEventListener("keyup", (event) => {
+    if (event.code === "Space") { mindmapSpaceDown = false; document.querySelector("[data-mindmap-viewport]")?.classList.remove("is-space-pan"); }
+  }, true);
+
+  window.addEventListener("blur", () => { mindmapSpaceDown = false; document.querySelector("[data-mindmap-viewport]")?.classList.remove("is-space-pan"); });
 
   document.addEventListener("wheel", (event) => {
-    const viewport = event.target.closest?.("[data-mindmap-viewport]");
-    if (!viewport) return;
-    event.preventDefault();
-    const delta = event.deltaY < 0 ? 0.1 : -0.1;
-    state.mindmapScale = Math.max(0.45, Math.min(2.2, Number((state.mindmapScale + delta).toFixed(2))));
-    applyMindmapTransform();
+    const viewport = event.target.closest?.("[data-mindmap-viewport]"); if (!viewport) return;
+    event.preventDefault(); const delta = event.deltaY < 0 ? 0.1 : -0.1;
+    state.mindmapScale = Math.max(0.32, Math.min(2.2, Number((state.mindmapScale + delta).toFixed(2)))); state.mindmapViewportRestored = true; applyMindmapTransform(); queueMindmapPersist();
   }, { passive: false });
 
   document.addEventListener("keydown", (event) => {

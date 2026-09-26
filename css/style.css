@@ -1597,3 +1597,61 @@ body.site-search-open { overflow:hidden; }
 .legal-withdrawal-form { margin:20px 0 28px; padding:22px 24px; border:1px solid var(--border); border-left:3px solid var(--primary); border-radius:12px; background:rgba(255,255,255,.72); }
 .legal-withdrawal-form p { margin-bottom:10px; }
 .legal-withdrawal-form p:last-child { margin-bottom:0; }
+
+
+/* ==========================================================================
+   Navigation + footer — indices de raccourcis (20260926-shortcuts-textfix2)
+   ========================================================================== */
+.nav-shortcut-letter {
+  /* À peine plus sombre que la teinte du lien : perceptible sans casser la couleur de la page. */
+  color:color-mix(in srgb, currentColor 92%, #1c1c28 8%);
+  font-weight:600;
+  filter:none;
+}
+@supports not (color:color-mix(in srgb, currentColor 92%, #1c1c28 8%)) {
+  .nav-shortcut-letter { color:inherit; filter:brightness(.92); }
+}
+
+/* Le bloc reste compact, mais les deux lignes sont espacées comme les autres
+   éléments du footer. Sur tablette, il reste à droite du copyright ; sur mobile,
+   il repasse naturellement dessous. */
+.footer-right { gap:10px; }
+.footer-access-stack {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:10px;
+  min-width:0;
+}
+.footer-student-access { margin:0; }
+.footer-shortcut-hint {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin:0;
+  color:#858585;
+  font-size:10px;
+  line-height:1.35;
+  white-space:nowrap;
+}
+.footer-shortcut-hint > span { margin-right:2px; }
+.footer-shortcut-hint i { color:#666; font-style:normal; }
+.footer-shortcut-hint kbd {
+  min-width:18px;
+  height:18px;
+  display:inline-grid;
+  place-items:center;
+  padding:0 4px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:5px;
+  background:rgba(255,255,255,.04);
+  color:#aaa;
+  box-shadow:none;
+  font:600 9px/1 Inter,Arial,sans-serif;
+}
+@media (max-width:900px) {
+  .footer-access-stack { align-items:flex-end; }
+}
+@media (max-width:500px) {
+  .footer-access-stack { align-items:flex-start; }
+}

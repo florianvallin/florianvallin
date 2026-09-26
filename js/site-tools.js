@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260925-dict683";
+  const VERSION = "20260926-prod4";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -16,6 +16,12 @@
 
   const keyLabel = (name) => KEY_LABELS[name] || name;
 
+  // Le service worker n'a besoin de contrôler que le lecteur /lecture/.
+  // Les anciennes versions l'enregistraient à la racine du site, ce qui pouvait
+  // interférer avec des pages comme /textes/. On migre silencieusement vers un
+  // scope limité au lecteur, sans rechargement automatique de la page courante.
+  manageReaderServiceWorker();
+
   ready(() => {
     ensureStylesheet();
     document.body.classList.add("fv-site-tools-ready");
@@ -23,6 +29,36 @@
     initShortcuts();
     initFloatingTools();
   });
+
+  function manageReaderServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+
+    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+    const migrate = async () => {
+      try {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map(async (registration) => {
+          const scopePath = new URL(registration.scope).pathname;
+          const worker = registration.active || registration.waiting || registration.installing;
+          const scriptPath = worker ? new URL(worker.scriptURL).pathname : "";
+          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || scopePath === "/" || scopePath === "/main/";
+          const isReaderScope = scopePath === "/lecture/" || scopePath === "/main/lecture/";
+          if (isPhilosophalWorker && !isReaderScope) await registration.unregister();
+        }));
+
+        // Live Server doit lire directement les fichiers du disque.
+        if (localHost) return;
+
+        await navigator.serviceWorker.register("/sw.js?v=20260926-prod4", {
+          scope: "/lecture/",
+          updateViaCache: "none"
+        });
+      } catch (_) {}
+    };
+
+    if (document.readyState === "complete") migrate();
+    else window.addEventListener("load", migrate, { once: true });
+  }
 
   function ensureStylesheet() {
     if (document.querySelector('link[data-fv-site-tools-css], link[href*="site-tools.css"]')) return;

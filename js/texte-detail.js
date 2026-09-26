@@ -7,6 +7,7 @@
   const reservedPaths = new Set(["lire", "philosophie", "mythologie", "theologie", "autres"]);
   const cleanPathId = cleanPathMatch && !reservedPaths.has(cleanPathMatch[1]) ? decodeURIComponent(cleanPathMatch[1]) : null;
   const id = params.get("id") || cleanPathId;
+
   const text = (window.FV_TEXT_CATALOG || []).find((item) => item.id === id);
   if (!text) {
     target.innerHTML = `<div class="text-detail-inner"><p class="text-breadcrumb"><a href="/textes/">Textes</a></p><h1>Texte introuvable</h1><div class="text-placeholder"><p>Cette référence n’existe pas ou n’est plus disponible.</p></div></div>`;

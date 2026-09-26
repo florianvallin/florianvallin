@@ -4,23 +4,7 @@
 <head>
 <meta content="no-cache, must-revalidate" http-equiv="Cache-Control"/>
 <meta content="no-cache" http-equiv="Pragma"/>
-<meta content="0" http-equiv="Expires"/>
-<script>
-    (() => {
-      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
-      let refreshing = false;
-      navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if (refreshing) return;
-        refreshing = true;
-        location.reload();
-      });
-      navigator.serviceWorker
-        .register("/sw.js?v=20260924-logo1", { scope: "/", updateViaCache: "none" })
-        .then((registration) => registration.update())
-        .catch(() => {});
-    })();
-  </script>
-<meta charset="utf-8"/>
+<meta content="0" http-equiv="Expires"/><meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <title>10 expériences de pensée et dilemmes pour entrer en philosophie — Philosophal</title>
@@ -28,7 +12,7 @@
 <link href="https://philosophal.fr/blog/experiences-de-pensee-philosophie/" rel="canonical"/>
 <link href="/favicon.svg?v=20260924-logo1" rel="icon" type="image/svg+xml"/>
 <link href="/favicon-48.png?v=20260924-logo1" rel="icon" sizes="48x48" type="image/png"/>
-<link href="/css/style.css?v=20260924-logo1" rel="stylesheet"/>
+<link href="/css/style.css?v=20260926-prod4" rel="stylesheet"/>
 <link href="/css/blog.css?v=20260923-github-refresh1" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -293,7 +277,7 @@
 <div class="footer-bottom"><hr class="footer-divider"/><p class="footer-legal">Tous droits réservés.</p></div>
 </footer>
 <button aria-label="Retour en haut" class="back-to-top" id="backToTop"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></button>
-<script defer="" src="/js/script.js?v=20260923-github-refresh1"></script>
+<script defer="" src="/js/script.js?v=20260926-prod4"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"10 expériences de pensée et dilemmes pour entrer en philosophie","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@type":"Organization","name":"Philosophal"},"mainEntityOfPage":"https://philosophal.fr/blog/experiences-de-pensee-philosophie/","description":"Dix expériences de pensée, dilemmes et situations classiques pour découvrir simplement de grandes questions de philosophie."}
 </script>
