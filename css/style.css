@@ -256,7 +256,7 @@ button { color: inherit; }
 #philosophie { padding:105px 20px 120px; }
 #philosophie::after { content:""; position:absolute; left:50%; bottom:32px; width:min(760px,calc(100% - 70px)); height:1px; transform:translateX(-50%); background:linear-gradient(90deg,transparent,rgba(108,99,255,.25),transparent); }
 
-/* Motifs géométriques d’arrière-plan — très légers, décoratifs et responsifs */
+/* Motifs géométriques d’arrière-plan — distincts par section */
 .section-geometry {
   position:absolute;
   inset:0;
@@ -268,70 +268,115 @@ button { color: inherit; }
 .geo-shape {
   position:absolute;
   display:block;
-  opacity:.7;
-  filter:blur(.15px);
+  opacity:.86;
+  filter:blur(.1px);
   transform-origin:center;
 }
-.geo-triangle {
-  background:linear-gradient(145deg,rgba(74,72,92,.075),rgba(108,99,255,.018) 72%,transparent);
-  clip-path:polygon(50% 0,100% 100%,0 100%);
-}
-.geo-triangle--1 {
-  width:clamp(160px,18vw,300px);
-  aspect-ratio:1.03;
-  left:max(-72px,-4vw);
-  top:12%;
-  transform:rotate(-13deg);
-}
-.geo-triangle--2 {
-  width:clamp(95px,11vw,185px);
-  aspect-ratio:1.03;
-  right:7%;
-  top:9%;
-  transform:rotate(18deg);
-  opacity:.52;
-}
-.geo-triangle--3 {
-  width:clamp(135px,15vw,245px);
-  aspect-ratio:1.03;
-  right:max(-58px,-2.5vw);
-  bottom:8%;
-  transform:rotate(-28deg);
-  opacity:.58;
-}
+
+/* SECTION 1 — PHILOSOPHIE : uniquement des ronds */
 .geo-circle {
   border-radius:50%;
-  border:1px solid rgba(74,72,92,.095);
-  background:radial-gradient(circle at 42% 38%,rgba(108,99,255,.046),rgba(74,72,92,.018) 58%,transparent 72%);
-  box-shadow:inset 0 0 38px rgba(74,72,92,.018);
+  border:1.2px solid rgba(98,92,152,.18);
+  background:radial-gradient(circle at 42% 38%,rgba(108,99,255,.1),rgba(108,99,255,.035) 60%,transparent 74%);
+  box-shadow:inset 0 0 48px rgba(108,99,255,.028);
 }
-.geo-circle--1 {
-  width:clamp(190px,20vw,330px);
+.geo-circle--philo-1 {
+  width:clamp(210px,20vw,340px);
   aspect-ratio:1;
-  left:max(-86px,-5vw);
+  left:max(-92px,-5vw);
+  top:10%;
+}
+.geo-circle--philo-2 {
+  width:clamp(72px,7vw,122px);
+  aspect-ratio:1;
+  left:23%;
+  top:16%;
+  opacity:.72;
+}
+.geo-circle--philo-3 {
+  width:clamp(118px,11vw,188px);
+  aspect-ratio:1;
+  right:16%;
+  top:29%;
+  opacity:.76;
+}
+.geo-circle--philo-4 {
+  width:clamp(150px,14vw,250px);
+  aspect-ratio:1;
+  right:max(-58px,-2vw);
+  bottom:9%;
+  opacity:.74;
+}
+.geo-circle--philo-5 {
+  width:clamp(82px,8vw,136px);
+  aspect-ratio:1;
+  left:14%;
+  bottom:15%;
+  opacity:.68;
+}
+
+/* SECTION 2 — MÉTHODOLOGIE : uniquement des triangles */
+.geo-triangle {
+  background:linear-gradient(145deg,rgba(var(--methodo-accent-rgb),.17),rgba(var(--methodo-accent-rgb),.08) 58%,rgba(255,255,255,.02) 84%);
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+  box-shadow:0 14px 34px rgba(86,76,152,.06);
+}
+.geo-triangle--method-1 {
+  width:clamp(188px,18vw,300px);
+  aspect-ratio:1.03;
+  left:max(-70px,-4vw);
   top:11%;
+  transform:rotate(-10deg);
 }
-.geo-circle--2 {
-  width:clamp(90px,10vw,170px);
-  aspect-ratio:1;
-  right:9%;
-  top:8%;
-  opacity:.62;
+.geo-triangle--method-2 {
+  width:clamp(86px,9vw,142px);
+  aspect-ratio:1.03;
+  right:12%;
+  top:12%;
+  transform:rotate(10deg);
+  opacity:.74;
 }
-.geo-circle--3 {
-  width:clamp(145px,16vw,260px);
-  aspect-ratio:1;
-  right:max(-54px,-2vw);
-  bottom:7%;
-  opacity:.54;
+.geo-triangle--method-3 {
+  width:clamp(134px,13vw,212px);
+  aspect-ratio:1.03;
+  left:12%;
+  bottom:16%;
+  transform:rotate(12deg);
+  opacity:.7;
+}
+.geo-triangle--method-4 {
+  width:clamp(158px,15vw,248px);
+  aspect-ratio:1.03;
+  right:max(-50px,-2vw);
+  bottom:9%;
+  transform:rotate(-14deg);
+  opacity:.76;
+}
+.geo-triangle--method-5 {
+  width:clamp(102px,10vw,164px);
+  aspect-ratio:1.03;
+  right:24%;
+  top:34%;
+  transform:rotate(-6deg);
+  opacity:.69;
+}
+
+@media (max-width:980px) {
+  .geo-circle--philo-2,
+  .geo-triangle--method-5 { display:none; }
 }
 @media (max-width:760px) {
-  .section-geometry { opacity:.62; }
-  .geo-triangle--2, .geo-circle--2 { display:none; }
-  .geo-triangle--1 { left:-85px; top:8%; }
-  .geo-triangle--3 { right:-95px; bottom:5%; }
-  .geo-circle--1 { left:-115px; top:10%; }
-  .geo-circle--3 { right:-95px; bottom:6%; }
+  .section-geometry { opacity:.8; }
+  .geo-circle--philo-3,
+  .geo-triangle--method-2 { display:none; }
+  .geo-circle--philo-1 { left:-118px; top:9%; }
+  .geo-circle--philo-4 { right:-102px; bottom:6%; }
+  .geo-triangle--method-1 { left:-90px; top:10%; }
+  .geo-triangle--method-4 { right:-92px; bottom:7%; }
+}
+@media (max-width:560px) {
+  .geo-circle--philo-5,
+  .geo-triangle--method-3 { display:none; }
 }
 @media (prefers-reduced-motion:reduce) {
   .geo-shape { filter:none; }
@@ -419,18 +464,105 @@ button { color: inherit; }
 .philo-pack-button:hover, .philo-pack-button--featured { color:#fff; background:var(--primary); }
 .philo-pack-button--featured:hover { background:var(--primary-dark); }
 
-/* Methodology */
-#methodologie { padding:100px 20px 115px; }
-.methodologie-center { margin-top:0; }
-.methodologie-steps-grid { max-width:920px; margin:48px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:30px 52px; position:relative; }
-.methodologie-steps-grid::before { content:""; position:absolute; top:8px; bottom:8px; left:50%; width:1px; background:linear-gradient(transparent,rgba(28,28,40,.08),transparent); }
-.stepper-step { display:flex; gap:18px; padding:8px; border-radius:15px; opacity:0; transform:translateY(10px); transition:.5s ease; }
-.stepper-step.is-visible { opacity:1; transform:none; }
-.stepper-step:hover { background:rgba(108,99,255,.04); }
-.stepper-circle { flex:0 0 40px; width:40px; height:40px; display:grid; place-items:center; border:1px solid rgba(108,99,255,.55); border-radius:50%; color:var(--primary); background:#fff; box-shadow:0 8px 18px rgba(108,99,255,.1); font-size:13px; font-weight:700; }
-.stepper-title { font-weight:700; line-height:1.3; }
-.stepper-status { display:inline-flex; margin:5px 0 7px; padding:2px 9px; border-radius:999px; color:var(--primary); background:rgba(108,99,255,.06); border:1px solid rgba(108,99,255,.13); font-size:11px; font-weight:600; }
-.stepper-time { color:var(--text-medium); font-size:13px; line-height:1.6; }
+/* Methodology — visual twin of the philosophy block */
+#methodologie {
+  --methodo-accent:#7047eb;
+  --methodo-accent-dark:#5432c6;
+  --methodo-accent-rgb:112,71,235;
+  padding:96px 20px 108px;
+  background:linear-gradient(180deg,var(--accent-bg) 0%,#faf9ff 100%);
+}
+.bloc4-accroche { margin:34px auto 0; text-align:center; font-size:23px; line-height:1.45; }
+.bloc4-intro-strong { max-width:720px; margin:28px auto 0; text-align:center; font-size:18px; line-height:1.65; }
+.methodo-reveal { opacity:0; transform:translateY(14px); transition:opacity .5s ease, transform .5s cubic-bezier(.22,.61,.36,1); }
+.methodo-reveal.is-visible { opacity:1; transform:none; }
+
+.methodo-cards { max-width:980px; margin:58px auto 48px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.methodo-card {
+  position:relative;
+  overflow:hidden;
+  min-height:246px;
+  padding:34px 28px 30px;
+  border:1px solid rgba(28,28,40,.08);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 22px 60px rgba(28,28,40,.09);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.methodo-card:hover { transform:translateY(-3px); border-color:rgba(var(--methodo-accent-rgb),.32); box-shadow:0 30px 72px rgba(48,33,112,.13); }
+.methodo-card::after { content:""; position:absolute; width:250px; height:250px; top:-120px; right:-120px; border-radius:50%; background:radial-gradient(circle,rgba(var(--methodo-accent-rgb),.20),transparent 68%); }
+.methodo-card > * { position:relative; z-index:1; }
+.methodo-badge {
+  position:absolute;
+  z-index:2;
+  top:-18px;
+  right:-18px;
+  width:92px;
+  height:92px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+  border-radius:50%;
+  background:var(--methodo-accent);
+  transform:scale(1);
+  transform-origin:top right;
+  transition:transform 420ms cubic-bezier(.22,.61,.36,1),background-color 340ms ease,box-shadow 420ms cubic-bezier(.22,.61,.36,1);
+}
+.methodo-badge-number { padding:0 0 18px 22px; color:#fff; font-size:22px; transition:transform 420ms cubic-bezier(.22,.61,.36,1); }
+.methodo-card:hover .methodo-badge { background:var(--methodo-accent-dark); transform:scale(1.055); box-shadow:0 10px 24px rgba(var(--methodo-accent-rgb),.23); }
+.methodo-card:hover .methodo-badge-number { transform:scale(1.03); }
+.methodo-icon { width:46px; height:46px; display:grid; place-items:center; margin-bottom:16px; color:var(--methodo-accent); }
+.methodo-icon svg { width:44px; height:44px; overflow:visible; }
+.methodo-icon svg * { vector-effect:non-scaling-stroke; }
+.methodo-card-title { font-size:18px; line-height:1.3; }
+.methodo-card-text { max-width:270px; margin-top:10px; color:var(--text-medium); font-size:14px; line-height:1.68; }
+
+.methodo-pricing { max-width:1000px; margin-top:48px; padding:32px 48px; }
+.methodo-pricing-right { display:flex; flex-direction:column; justify-content:center; }
+.methodo-check-list { margin-top:0; }
+.methodo-check-list .check-list-item { font-size:13px; }
+.methodo-resources-link {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-top:18px;
+  padding:13px 15px;
+  border:1px solid rgba(var(--methodo-accent-rgb),.20);
+  border-radius:13px;
+  background:linear-gradient(135deg,rgba(var(--methodo-accent-rgb),.075),rgba(var(--methodo-accent-rgb),.025));
+  color:var(--text-dark);
+  text-decoration:none;
+  transition:transform .2s ease,border-color .2s ease,background-color .2s ease,box-shadow .2s ease;
+}
+.methodo-resources-link__label { display:flex; min-width:0; flex-direction:column; gap:2px; }
+.methodo-resources-link__label small { color:var(--methodo-accent); font-size:9px; font-weight:750; letter-spacing:.08em; text-transform:uppercase; }
+.methodo-resources-link__label strong { font-size:11.5px; font-weight:700; line-height:1.35; }
+.methodo-resources-link__arrow { flex:0 0 auto; color:var(--methodo-accent); font-size:17px; transition:transform .2s ease; }
+.methodo-resources-link:hover { transform:translateY(-1px); border-color:rgba(var(--methodo-accent-rgb),.36); background:rgba(var(--methodo-accent-rgb),.09); box-shadow:0 10px 24px rgba(57,38,132,.08); }
+.methodo-resources-link:hover .methodo-resources-link__arrow { transform:translateX(3px); }
+
+@media (max-width:980px) {
+  .methodo-cards { grid-template-columns:1fr; max-width:700px; }
+  .methodo-card { min-height:0; }
+  .methodo-card-text { max-width:none; }
+}
+
+@media (max-width:700px) {
+  #methodologie { padding:82px 20px 88px; }
+  .bloc4-accroche { font-size:20px; }
+  .bloc4-intro-strong { margin-top:24px; font-size:17px; line-height:1.6; }
+  .methodo-cards { margin-top:44px; gap:18px; }
+  .methodo-pricing { margin-top:40px; padding:28px; }
+}
+
+@media (max-width:620px) {
+  .methodo-card { padding:30px 24px 25px; }
+  .methodo-pricing { padding:24px 22px; }
+  .methodo-resources-link { padding:12px 13px; }
+  .methodo-resources-link__label strong { font-size:11px; }
+}
 
 /* About */
 .bloc-5 { padding:90px 20px 80px; background:#fff; }
@@ -798,8 +930,7 @@ button { color: inherit; }
   .hero-feature-icon { margin:auto; }
   .pricing-card-grid { grid-template-columns:1fr; }
   .pricing-right { padding:22px 0 0; border-left:0; border-top:1px solid var(--border); }
-  .collective-pricing-options, .methodologie-steps-grid { grid-template-columns:1fr; }
-  .methodologie-steps-grid::before { display:none; }
+  .collective-pricing-options { grid-template-columns:1fr; }
   .about-card { grid-template-columns:1fr; text-align:left; }
   .about-photo { width:min(280px,100%); margin:auto; }
   .footer-container { grid-template-columns:1fr; gap:28px; }
@@ -851,7 +982,6 @@ button { color: inherit; }
   .pricing-pack-separator { margin-inline:18px; }
   .pricing-packs-area { padding:32px 16px 24px; }
   .philo-pack-top { flex-direction:column; }
-  .methodologie-steps-grid { gap:18px; }
   .about-card { padding:26px 20px; }
   .about-photo img {
     height:300px;
@@ -1009,8 +1139,8 @@ button { color: inherit; }
 
 #methodologie .pricing-card:hover {
   transform: translateY(-6px) scale(1.006);
-  border-color: rgba(108, 99, 255, .24);
-  box-shadow: 0 30px 72px rgba(55, 48, 130, .14);
+  border-color: rgba(var(--methodo-accent-rgb), .28);
+  box-shadow: 0 30px 72px rgba(55, 38, 132, .14);
 }
 
 /* Accessibilité : ne neutralise pas les transitions des boutons et cartes */
@@ -1019,7 +1149,7 @@ button { color: inherit; }
     scroll-behavior: auto;
   }
 
-  .stepper-step {
+  .methodo-reveal {
     opacity: 1;
     transform: none;
   }

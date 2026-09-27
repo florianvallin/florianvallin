@@ -36,6 +36,12 @@
   const customMindmapResources = readCustomMindmaps().filter((item) => !builtInMindmapIds.has(item.id));
   const resources = [...baseResources, ...mindmapResources, ...customMindmapResources];
   const dossiers = Array.isArray(DATA.dossiers) ? DATA.dossiers : [];
+  const peopleProfiles = Array.isArray(DATA.peopleProfiles) ? DATA.peopleProfiles : [];
+  const profileByName = new Map(peopleProfiles.map((profile) => [profile.name, profile]));
+  const profileAliasMap = new Map();
+  peopleProfiles.forEach((profile) => {
+    [profile.name, profile.displayName, ...(profile.aliases || [])].filter(Boolean).forEach((alias) => profileAliasMap.set(normalize(alias), profile.name));
+  });
   const byId = new Map(resources.map((item) => [item.id, item]));
   let mindmapManualRelations = readMindmapJson(MINDMAP_RELATIONS_KEY, {});
   if (!mindmapManualRelations || typeof mindmapManualRelations !== "object" || Array.isArray(mindmapManualRelations)) mindmapManualRelations = {};
@@ -82,6 +88,16 @@
   const privatePassword = $("[data-private-password]");
   const privateError = $("[data-private-error]");
   const PRIVATE_KINDS = new Set(["livre", "manuel", "cours", "cours-video", "mindmap"]);
+  const STUDENT_RESOURCE_IDS = new Set([
+    "video:florian-explication-texte",
+    "video:florian-dissertation",
+    "video:florian-methodologie-etudier-ia-fichage-memorisation",
+    "video:florian-outils-sites-etudiants-philosophie",
+    "mindmap:programme-terminale",
+    "mindmap:notions-liens-simples",
+    "mindmap:notions-liens-complexes",
+    "mindmap:reperes-avec-themes"
+  ]);
 
   const FILTERS = [
     { key: "all", label: "Tout", plural: "Toutes les ressources", description: "Une vue simple de l’ensemble de la médiathèque." },
@@ -177,11 +193,16 @@
     return PRIVATE_KINDS.has(groupOf(item));
   }
 
+  function isStudentResource(item) {
+    return STUDENT_RESOURCE_IDS.has(item?.id);
+  }
+
   function resourceInCurrentAccess(item) {
     if (groupOf(item) === "hidden") return false;
-    // La version privée est la médiathèque complète :
-    // ressources publiques + ressources réservées.
+    // Propriétaire : médiathèque complète.
     if (state.access === "private") return true;
+    // Élève : ressources publiques + sélection pédagogique réservée.
+    if (state.access === "student") return !isPrivateResource(item) || isStudentResource(item);
     return !isPrivateResource(item);
   }
 
@@ -190,9 +211,10 @@
   }
 
   function availableFilters() {
-    // En privé, tous les rayons restent accessibles afin d'éviter
-    // d'avoir à basculer constamment entre les deux versions.
     if (state.access === "private") return FILTERS;
+    if (state.access === "student") {
+      return FILTERS.filter((meta) => meta.key === "all" || !PRIVATE_KINDS.has(meta.key) || ["cours-video", "mindmap"].includes(meta.key));
+    }
     return FILTERS.filter((meta) => meta.key === "all" || !PRIVATE_KINDS.has(meta.key));
   }
 
@@ -235,12 +257,14 @@
   }
 
   function setAccessMode(mode) {
-    state.access = mode === "private" ? "private" : "public";
+    state.access = ["private", "student"].includes(mode) ? mode : "public";
     resetAccessFilters();
     accessSwitch?.querySelectorAll("[data-access-mode]").forEach((button) => {
-      const active = button.dataset.accessMode === state.access;
+      const wantsPrivate = button.dataset.accessMode === "private";
+      const active = wantsPrivate ? state.access !== "public" : state.access === "public";
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
+      if (wantsPrivate) button.textContent = state.access === "student" ? "Élève" : "Privé";
     });
     document.body.dataset.mediaAccess = state.access;
     render();
@@ -505,6 +529,7 @@
   }
 
   function groupLabel(item) {
+    if (Array.isArray(item.episodes) && item.episodes.length) return `${groupOf(item) === "video" ? "Série vidéo" : "Série"} · ${item.episodes.length}`;
     if (item.kind === "podcast") return "Podcast";
     if (item.kind === "article") return "Article";
     if (item.kind === "cours") return "Cours écrit";
@@ -518,6 +543,7 @@
   }
 
   function actionLabel(item) {
+    if (item.actionLabel) return item.actionLabel;
     return ({ texte: "Lire", livre: "Lire", manuel: "Consulter", audio: "Écouter", video: "Regarder", cours: "Ouvrir", "cours-video": "Regarder", mindmap: "Explorer" })[groupOf(item)] || "Consulter";
   }
 
@@ -586,12 +612,69 @@
     return /^https?:\/\//i.test(String(url));
   }
 
+  function canonicalPerson(name = "") {
+    return profileAliasMap.get(normalize(name)) || name;
+  }
+
+  function profileForPerson(name = "") {
+    return profileByName.get(canonicalPerson(name)) || null;
+  }
+
+  function itemMatchesPerson(item, person) {
+    const canonical = canonicalPerson(person);
+    if (!canonical) return true;
+    return (item.people || []).some((name) => canonicalPerson(name) === canonical) || canonicalPerson(item.creator || "") === canonical;
+  }
+
+  function aliasesForItem(item) {
+    const aliases = new Set();
+    [...(item.people || []), item.creator].filter(Boolean).forEach((name) => {
+      const profile = profileForPerson(name);
+      if (!profile) return;
+      [profile.name, profile.displayName, ...(profile.aliases || [])].filter(Boolean).forEach((alias) => aliases.add(alias));
+    });
+    return [...aliases];
+  }
+
+  function matchingProfile(query = "") {
+    const q = normalize(query);
+    if (!q) return null;
+    const exact = profileAliasMap.get(q);
+    if (exact) return profileByName.get(exact) || null;
+    return peopleProfiles.find((profile) => [profile.name, profile.displayName, ...(profile.aliases || [])].filter(Boolean).some((name) => normalize(name).includes(q) || q.includes(normalize(name)))) || null;
+  }
+
+  function contentCategory(item) {
+    if (item.contentCategory) return item.contentCategory;
+    const group = groupOf(item);
+    if (["texte", "livre"].includes(group)) return "oeuvre";
+    if (group === "cours") return "cours";
+    if (group === "audio") return "emission";
+    if (group === "video") return videoType(item) === "cours" ? "cours" : "documentaire";
+    return "recherche";
+  }
+
+  function contentTypeLabel(item) {
+    return item.contentTypeLabel || groupLabel(item);
+  }
+
+  const PROFILE_CATEGORY_META = [
+    ["oeuvre", "Textes & œuvres", "Textes, livres et œuvres à lire"],
+    ["documentaire", "Documentaires", "Biographies, contextes et grands récits documentaires"],
+    ["cours", "Cours & conférences", "Cours, conférences, colloques et présentations approfondies"],
+    ["emission", "Émissions & podcasts", "Émissions radiophoniques, séries et conversations"],
+    ["entretien", "Entretiens & archives", "Entretiens, témoignages et documents d’archives"],
+    ["fiction", "Fictions, lectures & adaptations", "Mises en voix, fictions radiophoniques et adaptations"],
+    ["film", "Films", "Films de fiction, adaptations et œuvres cinématographiques"],
+    ["recherche", "Recherche & ressources", "Projets, articles et ressources de référence"]
+  ];
+
   function searchable(item) {
     return normalize([
       item.title, item.creator, item.subtitle, item.description, item.source, item.section,
       item.formation, item.degree, item.year, item.semester, item.ue, item.module, item.subject, item.format,
-      item.teacher, item.enseignant, item.courseTeacher, item.sourceType, mindmapTreeText(item.tree),
-      ...(item.themes || []), ...(item.people || []), ...(item.keywords || []),
+      item.teacher, item.enseignant, item.courseTeacher, item.sourceType, item.contentTypeLabel, item.contentCategory, mindmapTreeText(item.tree),
+      ...(item.themes || []), ...(item.people || []), ...aliasesForItem(item), ...(item.keywords || []),
       ...conceptsFor(item, { expanded: true }), ...levelsFor(item), ...usagesFor(item),
       difficultyFor(item) ? DIFFICULTY_LABELS[difficultyFor(item)] : ""
     ].filter(Boolean).join(" "));
@@ -667,8 +750,8 @@
     const dossierIds = currentDossierIds();
     let list = scopedResources().filter((item) => {
       if (state.kind !== "all" && groupOf(item) !== state.kind) return false;
-      if (state.person && !(item.people || []).includes(state.person) && item.creator !== state.person) return false;
-      if (state.author && !(item.people || []).includes(state.author) && item.creator !== state.author) return false;
+      if (state.person && !itemMatchesPerson(item, state.person)) return false;
+      if (state.author && !itemMatchesPerson(item, state.author)) return false;
       if (state.theme && !(item.themes || []).includes(state.theme)) return false;
       if (state.concept && !conceptMatches(item, state.concept)) return false;
       if (state.level && !levelsFor(item).includes(state.level)) return false;
@@ -792,13 +875,19 @@
   function sourceLine(item) {
     if (item.kind === "cours") return [item.sourceType, item.format, item.module || item.subject].filter(Boolean).slice(0, 3).join(" · ");
     const parts = [item.creator, item.subtitle || item.source].filter(Boolean);
-    return parts.slice(0, 2).join(" · ");
+    if (Array.isArray(item.episodes) && item.episodes.length && !parts.some((part) => /épisodes?/i.test(part))) parts.push(`${item.episodes.length} épisodes`);
+    return parts.slice(0, 3).join(" · ");
   }
 
   function resourceAction(item) {
     const embed = getEmbed(item);
     const group = groupOf(item);
     const label = actionLabel(item);
+    if (Array.isArray(item.episodes) && item.episodes.length) {
+      const key = `series:${item.id}`;
+      const expanded = state.expandedSections.has(key);
+      return `<button class="media-row-action is-series" type="button" data-toggle-series="${esc(item.id)}" aria-expanded="${expanded}">${expanded ? "Masquer" : "Épisodes"} · ${item.episodes.length}</button>`;
+    }
     if (group === "mindmap") {
       return `<button class="media-row-action" type="button" data-mindmap-open="${esc(item.id)}">${esc(label)} →</button>`;
     }
@@ -817,13 +906,27 @@
     const courseMeta = group === "cours"
       ? `<div class="media-course-row-meta"><span class="media-course-domain-badge">${esc(item.formation || "Cours")}</span><span class="media-course-theme-badge">${esc(courseThemeLabel(item))}</span></div>`
       : "";
-    return `<article class="media-resource-row is-${group}${courseClass(item)}" data-open-resource="${esc(item.id)}" tabindex="0" role="link" aria-label="${esc(`${actionLabel(item)} : ${item.title}`)}">
+    const profileNames = [...new Set([...(item.people || []), item.creator].filter(Boolean).map(canonicalPerson).filter((name) => profileByName.has(name)))];
+    const profileLink = !state.person && profileNames.length ? `<div class="media-row-people">${profileNames.slice(0, 2).map((name) => { const profile = profileByName.get(name); return `<button type="button" data-person="${esc(name)}">${esc(profile?.displayName || name)}</button>`; }).join("")}</div>` : "";
+    const seriesKey = `series:${item.id}`;
+    const seriesExpanded = Array.isArray(item.episodes) && item.episodes.length && state.expandedSections.has(seriesKey);
+    const seriesPanel = Array.isArray(item.episodes) && item.episodes.length ? `<div class="media-series-panel" ${seriesExpanded ? "" : "hidden"}>
+      <div class="media-series-head"><strong>${esc(item.title)}</strong><span>${item.episodes.length} épisode${item.episodes.length > 1 ? "s" : ""}</span></div>
+      <div class="media-series-list">${item.episodes.map((episode, index) => {
+        const href = resolveUrl(episode.url || item.url || "#");
+        const external = isExternal(episode.url || item.url);
+        return `<a href="${esc(href)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}><span>${esc(episode.title || `Épisode ${index + 1}`)}</span>${episode.duration ? `<small>${esc(episode.duration)}</small>` : ""}<i aria-hidden="true">↗</i></a>`;
+      }).join("")}</div>
+      <a class="media-series-source" href="${esc(resolveUrl(item.url || "#"))}" ${isExternal(item.url) ? 'target="_blank" rel="noopener noreferrer"' : ""}>Page de la série / source ↗</a>
+    </div>` : "";
+    return `<article class="media-resource-row is-${group}${courseClass(item)}${Array.isArray(item.episodes) && item.episodes.length ? " has-series" : ""}" data-open-resource="${esc(item.id)}" tabindex="0" role="link" aria-label="${esc(`${actionLabel(item)} : ${item.title}`)}">
       <span class="media-row-icon" aria-hidden="true">${icon(item.kind)}</span>
       <div class="media-row-main">
-        ${showKind ? `<span class="media-row-kind">${esc(groupLabel(item))}</span>` : ""}
+        ${showKind ? `<span class="media-row-kind">${esc(contentTypeLabel(item))}</span>` : ""}
         ${courseMeta}
         <h3>${esc(item.title)}</h3>
         ${sourceLine(item) ? `<p>${esc(sourceLine(item))}</p>` : ""}
+        ${profileLink}
         ${pedagogyMeta(item)}
       </div>
       <div class="media-row-themes">${themes.map((theme) => `<span>${esc(theme)}</span>`).join("")}</div>
@@ -832,13 +935,17 @@
         <button class="media-row-pin${state.pinned.has(item.id) ? " is-pinned" : ""}" type="button" data-pin="${esc(item.id)}" aria-label="${state.pinned.has(item.id) ? "Retirer des favoris" : "Ajouter aux favoris"}">${state.pinned.has(item.id) ? "★" : "☆"}</button>
         ${resourceAction(item)}
       </div>
+      ${seriesPanel}
     </article>`;
   }
 
   function browseGroup(item, kind) {
     if (kind === "mindmap") return ({ programme: "Programme & notions", reperes: "Repères conceptuels", methodologie: "Méthodologie" })[item.mindmapCategory] || "Autres";
     if (kind === "cours") return [item.formation, item.year].filter(Boolean).join(" · ") || item.subject || "Cours non classés";
-    if (kind === "audio") return item.source || item.creator || "Autres";
+    if (kind === "audio") {
+      const profileName = [...(item.people || []), item.creator].filter(Boolean).map(canonicalPerson).find((name) => profileByName.has(name));
+      return profileName ? (profileByName.get(profileName)?.displayName || profileName) : item.figure || item.source || item.creator || "Autres";
+    }
     if (kind === "video") {
       const type = videoType(item);
       if (type === "cours-video") return "Cours vidéo";
@@ -1686,6 +1793,83 @@
       }).join("")}</div>`;
   }
 
+  function renderRayonProfileStrip(list) {
+    const counts = new Map();
+    list.forEach((item) => {
+      [...new Set([...(item.people || []), item.creator].filter(Boolean).map(canonicalPerson))].forEach((name) => {
+        if (profileByName.has(name)) counts.set(name, (counts.get(name) || 0) + 1);
+      });
+    });
+    const entries = [...counts.entries()].sort((a, b) => b[1] - a[1] || (profileByName.get(a[0])?.displayName || a[0]).localeCompare(profileByName.get(b[0])?.displayName || b[0], "fr"));
+    if (!entries.length) return "";
+    return `<section class="media-rayon-people"><span>Par figure / auteur</span><div>${entries.map(([name,total]) => { const profile = profileByName.get(name); return `<button type="button" data-person="${esc(name)}"><strong>${esc(profile?.displayName || name)}</strong><small>${total}</small></button>`; }).join("")}</div></section>`;
+  }
+
+  function profileResourceCount(profile) {
+    return scopedResources().filter((item) => itemMatchesPerson(item, profile.name)).length;
+  }
+
+  function renderProfileHub() {
+    const visible = peopleProfiles.map((profile) => ({ profile, total: profileResourceCount(profile) })).filter(({ total }) => total > 0);
+    if (!visible.length) return "";
+    return `<section class="media-profile-hub">
+      <header class="media-profile-hub-head">
+        <div><span>Explorer autrement</span><h3>Figures & auteurs</h3><p>Une personne = une fiche qui rassemble automatiquement tous ses textes, émissions, vidéos, cours et ressources.</p></div>
+        <button type="button" data-open-explorer="people">Voir toutes les personnes →</button>
+      </header>
+      <div class="media-profile-grid">${visible.map(({ profile, total }) => `<button type="button" class="media-profile-card" data-person="${esc(profile.name)}">
+        <span class="media-profile-card-kicker">${esc(profile.era || "")}</span>
+        <strong>${esc(profile.displayName || profile.name)}</strong>
+        <small>${esc(profile.descriptor || "")}</small>
+        <i>${total} ressource${total > 1 ? "s" : ""} →</i>
+      </button>`).join("")}</div>
+    </section>`;
+  }
+
+  function renderProfileSearchSuggestion(profile) {
+    if (!profile) return "";
+    const total = profileResourceCount(profile);
+    if (!total) return "";
+    return `<button type="button" class="media-profile-search-hit" data-person="${esc(profile.name)}">
+      <span><small>Fiche personne</small><strong>${esc(profile.displayName || profile.name)}</strong><i>${esc(profile.dates || "")} · ${esc(profile.descriptor || "")}</i></span>
+      <b>${total} ressource${total > 1 ? "s" : ""} →</b>
+    </button>`;
+  }
+
+  function renderPersonProfile(profile, list) {
+    const grouped = new Map(PROFILE_CATEGORY_META.map(([key]) => [key, []]));
+    list.forEach((item) => {
+      const key = contentCategory(item);
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(item);
+    });
+    grouped.forEach((entries) => entries.sort((a, b) => a.title.localeCompare(b.title, "fr")));
+    const activeCategories = PROFILE_CATEGORY_META.filter(([key]) => (grouped.get(key) || []).length);
+    const seriesCount = list.filter((item) => Array.isArray(item.episodes) && item.episodes.length).length;
+    const mediaCount = new Set(list.map(groupOf)).size;
+    return `<article class="media-person-profile">
+      <header class="media-person-hero">
+        <button type="button" class="media-person-back" data-clear-person>← Toutes les ressources</button>
+        <div class="media-person-identity">
+          <div class="media-person-period"><span>${esc(profile.era || "")}</span>${profile.dates ? `<b>${esc(profile.dates)}</b>` : ""}</div>
+          <h2>${esc(profile.displayName || profile.name)}</h2>
+          <p class="media-person-descriptor">${esc(profile.descriptor || "")}</p>
+          <p class="media-person-bio">${esc(profile.bio || "")}</p>
+          <div class="media-person-themes">${(profile.themes || []).map((theme) => `<button type="button" data-theme="${esc(theme)}">${esc(theme)}</button>`).join("")}</div>
+        </div>
+        <div class="media-person-stats"><span><strong>${list.length}</strong> ressources</span><span><strong>${activeCategories.length}</strong> catégories</span><span><strong>${seriesCount}</strong> séries</span><span><strong>${mediaCount}</strong> formats</span></div>
+      </header>
+      <nav class="media-person-nav" aria-label="Catégories de la fiche">${activeCategories.map(([key,label]) => `<a href="#person-${key}">${esc(label)} <span>${grouped.get(key).length}</span></a>`).join("")}</nav>
+      <div class="media-person-sections">${activeCategories.map(([key,label,desc]) => {
+        const entries = grouped.get(key);
+        return `<section class="media-person-section" id="person-${key}">
+          <header><div><span>${esc(label)}</span><p>${esc(desc)}</p></div><strong>${entries.length}</strong></header>
+          <div class="media-resource-list">${entries.map((item) => resourceRow(item, { showKind: true })).join("")}</div>
+        </section>`;
+      }).join("")}</div>
+    </article>`;
+  }
+
   function renderHome() {
     const grouped = new Map(["texte", "livre", "manuel", "audio", "video", "cours", "cours-video", "mindmap"].map((kind) => [kind, []]));
     scopedResources().forEach((item) => {
@@ -1698,6 +1882,7 @@
 
     home.innerHTML = `
       ${pinned.length ? `<section class="media-resume"><div class="media-resume-head"><span>Favoris</span><small>${pinned.length} ressource${pinned.length > 1 ? "s" : ""}</small></div><div class="media-resume-list">${pinned.map((item) => resourceRow(item, { showKind: true })).join("")}</div></section>` : ""}
+      ${renderProfileHub()}
       <div class="media-shelves">
         ${availableFilters().filter((meta) => meta.key !== "all").map(({ key: kind }) => kind === "video" ? videoHomeShelf(grouped.get(kind)) : kind === "cours" ? courseHomeShelf(grouped.get(kind)) : homeShelf(kind, grouped.get(kind))).join("")}
       </div>`;
@@ -1845,8 +2030,9 @@
     const dossier = dossiers.find((item) => item.id === state.dossier);
     const meta = filterMeta.get(state.kind);
     const activeMindmap = state.mindmapId ? byId.get(state.mindmapId) : null;
-    summaryKicker.textContent = activeMindmap ? "Mind-map" : state.courseQuery && state.kind === "cours" ? "Résultats dans les cours" : state.query ? "Résultats" : state.kind !== "all" ? "Rayon" : "Sélection";
-    summaryTitle.textContent = activeMindmap?.title || dossier?.title || state.person || state.author || state.theme || state.concept || (state.pinnedOnly ? "Favoris" : meta?.plural || "Ressources");
+    summaryKicker.textContent = activeMindmap ? "Mind-map" : state.person && profileForPerson(state.person) ? "Fiche personne" : state.courseQuery && state.kind === "cours" ? "Résultats dans les cours" : state.query ? "Résultats" : state.kind !== "all" ? "Rayon" : "Sélection";
+    const summaryProfile = state.person ? profileForPerson(state.person) : null;
+    summaryTitle.textContent = activeMindmap?.title || dossier?.title || summaryProfile?.displayName || state.person || state.author || state.theme || state.concept || (state.pinnedOnly ? "Favoris" : meta?.plural || "Ressources");
     count.innerHTML = activeMindmap
       ? `<strong>${mindmapNodeCount(activeMindmap.tree)}</strong> éléments`
       : `<strong>${list.length}</strong> ressource${list.length > 1 ? "s" : ""}`;
@@ -1854,14 +2040,19 @@
     const shouldGroupByKind = state.kind === "all";
     const shouldDirectory = state.kind !== "all" && !state.query && !state.courseQuery && !state.person && !state.theme && !state.dossier && !state.pinnedOnly && !state.author && !state.concept && !state.level && !state.difficulty && !state.duration && !state.usage;
 
-    if (state.kind === "mindmap" && activeMindmap) listShell.innerHTML = renderMindmapViewer(activeMindmap);
-    else if (shouldGroupByKind) listShell.innerHTML = renderGroupedSections(list);
-    else if (shouldDirectory && state.kind === "video") listShell.innerHTML = renderVideoDirectory(list);
-    else if (shouldDirectory && state.kind === "cours") listShell.innerHTML = renderCourseDirectory(list);
-    else if (shouldDirectory && state.kind === "manuel") listShell.innerHTML = renderManualDirectory(list);
-    else if (shouldDirectory && state.kind === "mindmap") listShell.innerHTML = renderMindmapDirectory(list);
-    else if (shouldDirectory) listShell.innerHTML = renderDirectory(list, state.kind);
-    else listShell.innerHTML = `<div class="media-resource-list is-standalone">${list.map((item) => resourceRow(item, { showKind: false })).join("")}</div>`;
+    const activeProfile = state.person ? profileForPerson(state.person) : null;
+    const queryProfile = !state.person && state.query ? matchingProfile(state.query) : null;
+    const profileSuggestion = queryProfile ? renderProfileSearchSuggestion(queryProfile) : "";
+
+    if (activeProfile && state.kind === "all") listShell.innerHTML = renderPersonProfile(activeProfile, list);
+    else if (state.kind === "mindmap" && activeMindmap) listShell.innerHTML = profileSuggestion + renderMindmapViewer(activeMindmap);
+    else if (shouldGroupByKind) listShell.innerHTML = profileSuggestion + renderGroupedSections(list);
+    else if (shouldDirectory && state.kind === "video") listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderVideoDirectory(list);
+    else if (shouldDirectory && state.kind === "cours") listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderCourseDirectory(list);
+    else if (shouldDirectory && state.kind === "manuel") listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderManualDirectory(list);
+    else if (shouldDirectory && state.kind === "mindmap") listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderMindmapDirectory(list);
+    else if (shouldDirectory) listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderDirectory(list, state.kind);
+    else listShell.innerHTML = profileSuggestion + `<div class="media-resource-list is-standalone">${list.map((item) => resourceRow(item, { showKind: false })).join("")}</div>`;
   }
 
   function updateUrl() {
@@ -2076,18 +2267,27 @@
     }
 
     if (state.explorerView === "dossiers") {
-      const list = dossiers.filter((dossier) => !query || normalize([dossier.title, dossier.description, ...(dossier.themes || [])].join(" ")).includes(query));
+      const visibleIds = new Set(scopedResources().map((item) => item.id));
+      const list = dossiers.map((dossier) => ({ ...dossier, visibleResourceIds: (dossier.resourceIds || []).filter((id) => visibleIds.has(id)) }))
+        .filter((dossier) => dossier.visibleResourceIds.length && (!query || normalize([dossier.title, dossier.description, ...(dossier.themes || [])].join(" ")).includes(query)));
       explorerList.innerHTML = list.length
-        ? list.map((dossier) => `<button class="media-explore-item media-explore-dossier" type="button" data-dossier="${esc(dossier.id)}"><strong>${esc(dossier.title)}</strong><p>${esc(dossier.description || "")}</p><span>${(dossier.resourceIds || []).length} ressources</span></button>`).join("")
+        ? list.map((dossier) => `<button class="media-explore-item media-explore-dossier" type="button" data-dossier="${esc(dossier.id)}"><strong>${esc(dossier.title)}</strong><p>${esc(dossier.description || "")}</p><span>${dossier.visibleResourceIds.length} ressource${dossier.visibleResourceIds.length > 1 ? "s" : ""}</span></button>`).join("")
         : '<div class="media-explore-empty">Aucun dossier.</div>';
       return;
     }
 
     const key = state.explorerView;
+    if (key === "people") {
+      const curated = peopleProfiles.map((profile) => ({ profile, total: profileResourceCount(profile) }))
+        .filter(({ profile, total }) => total && (!query || normalize([profile.name, profile.displayName, profile.descriptor, ...(profile.aliases || [])].join(" ")).includes(query)));
+      const curatedNames = new Set(curated.map(({ profile }) => profile.name));
+      const others = entityCounts("people").filter(([name]) => !curatedNames.has(canonicalPerson(name)) && (!query || normalize(name).includes(query))).slice(0, 180);
+      explorerList.innerHTML = (curated.length || others.length) ? `${curated.length ? `<div class="media-explore-profile-group"><div class="media-explore-profile-label">Fiches structurées</div>${curated.map(({ profile, total }) => `<button class="media-explore-item media-explore-profile" type="button" data-person="${esc(profile.name)}"><span><strong>${esc(profile.displayName || profile.name)}</strong><small>${esc(profile.descriptor || "")}</small></span><b>${total}</b></button>`).join("")}</div>` : ""}${others.length ? `<div class="media-explore-profile-group"><div class="media-explore-profile-label">Autres personnes</div>${others.map(([name,total]) => `<button class="media-explore-item" type="button" data-person="${esc(name)}"><strong>${esc(name)}</strong><span>${total} ressource${total > 1 ? "s" : ""}</span></button>`).join("")}</div>` : ""}` : '<div class="media-explore-empty">Aucun résultat.</div>';
+      return;
+    }
     const list = entityCounts(key).filter(([name]) => !query || normalize(name).includes(query)).slice(0, 180);
-    const attr = key === "people" ? "person" : "theme";
     explorerList.innerHTML = list.length
-      ? list.map(([name, total]) => `<button class="media-explore-item" type="button" data-${attr}="${esc(name)}"><strong>${esc(name)}</strong><span>${total} ressource${total > 1 ? "s" : ""}</span></button>`).join("")
+      ? list.map(([name, total]) => `<button class="media-explore-item" type="button" data-theme="${esc(name)}"><strong>${esc(name)}</strong><span>${total} ressource${total > 1 ? "s" : ""}</span></button>`).join("")
       : '<div class="media-explore-empty">Aucun résultat.</div>';
   }
 
@@ -2132,8 +2332,12 @@
     const item = byId.get(id);
     if (!item) return;
     if (!resourceInCurrentAccess(item)) {
-      if (isPrivateResource(item) && window.FV_PRIVATE_ACCESS?.isUnlocked()) setAccessMode("private");
-      else if (isPrivateResource(item)) openPrivateGate();
+      if (isPrivateResource(item)) {
+        const role = window.FV_PRIVATE_ACCESS?.role?.() || (window.FV_PRIVATE_ACCESS?.isUnlocked?.() ? "private" : "");
+        if (role === "private") setAccessMode("private");
+        else if (role === "student" && isStudentResource(item)) setAccessMode("student");
+        else openPrivateGate();
+      }
       return;
     }
     if (groupOf(item) === "mindmap") {
@@ -2171,20 +2375,29 @@
     if (!button) return;
     const mode = button.dataset.accessMode;
     if (mode === "public") { setAccessMode("public"); return; }
-    if (window.FV_PRIVATE_ACCESS?.isUnlocked()) { setAccessMode("private"); return; }
+    const role = window.FV_PRIVATE_ACCESS?.role?.() || (window.FV_PRIVATE_ACCESS?.isUnlocked?.() ? "private" : "");
+    if (role === "private") { setAccessMode("private"); return; }
+    if (role === "student") { setAccessMode("student"); return; }
     openPrivateGate();
   });
 
   privateGateForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const valid = await window.FV_PRIVATE_ACCESS?.unlock(privatePassword?.value || "");
-    if (!valid) {
-      if (privateError) privateError.hidden = false;
-      privatePassword?.select();
+    const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(privatePassword?.value || "");
+    if (!role) {
+      // Compatibilité si le module d'accès ancien est encore en cache.
+      const ownerValid = await window.FV_PRIVATE_ACCESS?.unlock?.(privatePassword?.value || "");
+      if (!ownerValid) {
+        if (privateError) privateError.hidden = false;
+        privatePassword?.select();
+        return;
+      }
+      closePrivateGate();
+      setAccessMode("private");
       return;
     }
     closePrivateGate();
-    setAccessMode("private");
+    setAccessMode(role);
   });
 
   search.addEventListener("input", () => {
@@ -2292,6 +2505,16 @@
 
     const detailsTrigger = event.target.closest("[data-resource-details]");
     if (detailsTrigger) { event.preventDefault(); event.stopPropagation(); openResourceDetail(detailsTrigger.dataset.resourceDetails); return; }
+
+    const seriesToggle = event.target.closest("[data-toggle-series]");
+    if (seriesToggle) {
+      event.preventDefault();
+      event.stopPropagation();
+      const key = `series:${seriesToggle.dataset.toggleSeries}`;
+      state.expandedSections.has(key) ? state.expandedSections.delete(key) : state.expandedSections.add(key);
+      renderResults();
+      return;
+    }
 
     const mapConcept = event.target.closest("[data-map-concept]");
     if (mapConcept) { state.mapConcept = mapConcept.dataset.mapConcept; state.explorerQuery = ""; explorerSearch.value = ""; renderExplorer(); return; }
@@ -2471,9 +2694,15 @@
       return;
     }
 
+    const openExplorerButton = event.target.closest("[data-open-explorer]");
+    if (openExplorerButton) { state.explorerView = openExplorerButton.dataset.openExplorer || "people"; openExplorer(); return; }
+
+    const clearPerson = event.target.closest("[data-clear-person]");
+    if (clearPerson) { state.person = ""; state.kind = "all"; state.query = ""; render(); return; }
+
     const person = event.target.closest("[data-person]");
     if (person) {
-      state.person = person.dataset.person;
+      state.person = canonicalPerson(person.dataset.person);
       state.theme = "";
       state.dossier = "";
       state.query = "";

@@ -1,15 +1,3 @@
-/*
- * MÉDIATHÈQUE PERSONNELLE PHILOSOPHAL
- * ----------------------------------
- * Index léger : les textes complets restent dans /textes/ et les livres dans /lecture/.
- * Pour ajouter une ressource personnelle, ajouter un objet à resources avec :
- * id, kind (texte|livre|podcast|audio|video|cours|article), title, creator, description, url, themes, people, keywords.
- * Pour les vidéos : videoType = "film" (film/documentaire/extrait), "cours" (cours/conférence externe) ou "cours-video" (cours vidéo Philosophal).
- * Pour les cours écrits : formation, year, subject, format sont recommandés.
- * Les liens YouTube et SoundCloud sont détectés automatiquement et lus dans la médiathèque.
- * Pour une autre source qui fournit un lecteur embarqué, ajouter optionnellement :
- * embedUrl: "https://…", embedType: "generic" (ou "youtube" / "soundcloud").
- */
 window.FV_MEDIATHEQUE_DATA = {
   "resources": [
     {
@@ -1480,7 +1468,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "Religion · misère et quête de sens",
         "Pensées",
         "1670 posth., éd. L. Brunschvicg, 693 (Lafuma 198), dans Pensées et opuscules, Hachette, 1967, p. 646"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:anselme-preuve-ontologique-dieu",
@@ -1609,7 +1599,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "« le cœur a ses raisons »",
         "Pensées",
         "1670 posth., éd. L. Brunschvicg, 282 (Lafuma 110), dans Pensées et opuscules, Hachette, 1967, p. 459–460"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:robespierre-sentiment-religieux-morale-sociale",
@@ -1788,7 +1780,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "Démonstration · principes",
         "De l’esprit géométrique",
         "1776 posth., section I, dans Pensées et opuscules, Hachette, 1967, p. 164–167"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:kant-existence-pas-predicat",
@@ -2091,7 +2085,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "justice et force",
         "Pensées",
         "posth., Lafuma 103 et 81 (Br. 298–299), Le Seuil, 1962, p. 63–64 et 57"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:kant-justice-instituee-imparfaite",
@@ -2317,7 +2313,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "Relativité des coutumes",
         "Pensées",
         "1669 posth., fragment 294 (Brunschvicg), Hachette, 1967, p. 465–467"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:kant-humanite-fin-en-soi",
@@ -2789,7 +2787,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "Temps · création",
         "Les Confessions",
         "v. 397–400, livre XI, chap. XIII, §§ 15–16, éd. Poujoulat et Raulx, 1864"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:augustin-dieu-bonheur",
@@ -2813,7 +2813,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "Antiquité tardive",
         "La Vie heureuse",
         "IVe s., conclusion, §§ 33–36, trad. S. Dupuy-Trudelle, Gallimard, 1998, p. 112–114"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:pascal-bonheur-avenir",
@@ -2837,7 +2839,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "XVIIe siècle",
         "Pensées",
         "1670, publication posthume, Laf. 47 (Br. 172), Le Seuil, 1962, p. 47–48"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:freud-bonheur-episodique",
@@ -3283,7 +3287,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "le divertissement pascalien",
         "Pensées",
         "1670, publication posthume, Br. 139, Laf. 136, Hachette, 1967, p. 390–391 et 394"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:sartre-existence-precede-essence",
@@ -3774,7 +3780,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "« Qu’est-ce que le moi ? »",
         "Pensées",
         "1670 posth., Br. 323 (Laf. 688), Hachette, 1967, p. 478–479"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte"
     },
     {
       "id": "texte:marx-conscience-vie-materielle",
@@ -4998,7 +5006,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "lecture",
         "livre",
         "Spiritualité · Mystique"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Œuvre / livre"
     },
     {
       "id": "livre:therese-avila-chemin-perfection",
@@ -5023,7 +5033,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "lecture",
         "livre",
         "Spiritualité · Mystique"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Œuvre / livre"
     },
     {
       "id": "livre:therese-avila-chateau-ame",
@@ -5047,7 +5059,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "lecture",
         "livre",
         "Spiritualité · Mystique"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Œuvre / livre"
     },
     {
       "id": "livre:therese-avila-livre-vie",
@@ -5071,7 +5085,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "lecture",
         "livre",
         "Spiritualité · Mystique"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Œuvre / livre"
     },
     {
       "id": "livre:jean-croix-oeuvres-completes",
@@ -5096,7 +5112,9 @@ window.FV_MEDIATHEQUE_DATA = {
         "lecture",
         "livre",
         "Spiritualité · Mystique"
-      ]
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Œuvre / livre"
     },
     {
       "id": "video:the-chosen-parabole-du-pecheur",
@@ -5155,7 +5173,10 @@ window.FV_MEDIATHEQUE_DATA = {
         "avila",
         "racines du ciel",
         "carmelite"
-      ]
+      ],
+      "figure": "Thérèse d’Avila",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
     },
     {
       "id": "podcast:france-inter-marche-histoire-therese-avila",
@@ -5183,7 +5204,10 @@ window.FV_MEDIATHEQUE_DATA = {
         "avila",
         "marche de histoire",
         "xvie siecle"
-      ]
+      ],
+      "figure": "Thérèse d’Avila",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission historique"
     },
     {
       "id": "podcast:rcf-chretiens-histoire-therese-avila",
@@ -5211,7 +5235,10 @@ window.FV_MEDIATHEQUE_DATA = {
         "teresa de jesus",
         "avila",
         "siecle dor espagnol"
-      ]
+      ],
+      "figure": "Thérèse d’Avila",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
     },
     {
       "id": "podcast:radio-maria-therese-avila-union-dieu",
@@ -5242,7 +5269,10 @@ window.FV_MEDIATHEQUE_DATA = {
         "7eme demeures",
         "septieme demeure",
         "union divine"
-      ]
+      ],
+      "figure": "Thérèse d’Avila",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission spirituelle"
     },
     {
       "id": "cours:psy-l1-s1-ue1-cm01-clinique-pathologie",
@@ -6919,6 +6949,1660 @@ window.FV_MEDIATHEQUE_DATA = {
         "Lycée / FAC",
         "PDF"
       ]
+    },
+    {
+      "id": "podcast:fc-augustin-passe-aux-aveux",
+      "kind": "podcast",
+      "title": "Saint Augustin passe aux aveux",
+      "creator": "France Culture · Les Chemins de la philosophie",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre émissions pour parcourir les Confessions : récit de soi, origine du mal, conversion, temps et éternité.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/livres-i-a-iv-peut-on-tout-raconter-4695191",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Conversion",
+        "Mal",
+        "Temps",
+        "Mémoire",
+        "Religion",
+        "Mystique"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "augustin",
+        "confessions",
+        "conversion",
+        "mal",
+        "temps",
+        "eternite",
+        "france culture"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · Livres I à IV : peut-on tout raconter ?",
+          "duration": "54 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/livres-i-a-iv-peut-on-tout-raconter-4695191"
+        },
+        {
+          "title": "2/4 · Livres V à VII : d’où vient le mal ?",
+          "duration": "54 min",
+          "url": "https://www.radiofrance.fr/recherche?term=Saint%20Augustin%20passe%20aux%20aveux%20Livres%20V%20%C3%A0%20VII%20d%27o%C3%B9%20vient%20le%20mal"
+        },
+        {
+          "title": "3/4 · Livre VII à X : de la crise à la conversion",
+          "duration": "53 min",
+          "url": "https://www.radiofrance.fr/recherche?term=Saint%20Augustin%20passe%20aux%20aveux%20Livre%20VII%20%C3%A0%20X%20de%20la%20crise%20%C3%A0%20la%20conversion"
+        },
+        {
+          "title": "4/4 · Livre XI à XIII : l’éternité retrouvée",
+          "duration": "54 min",
+          "url": "https://www.radiofrance.fr/recherche?term=Saint%20Augustin%20passe%20aux%20aveux%20Livre%20XI%20%C3%A0%20XIII%20l%27%C3%A9ternit%C3%A9%20retrouv%C3%A9e"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série France Culture"
+    },
+    {
+      "id": "podcast:institut-france-dialogue-augustin-jerphagnon",
+      "kind": "podcast",
+      "title": "Dialogue autour de saint Augustin avec Lucien Jerphagnon",
+      "creator": "Institut de France · Lucien Jerphagnon",
+      "subtitle": "16 min",
+      "description": "Un échange bref et dense avec Lucien Jerphagnon pour entrer dans la pensée et les Confessions de saint Augustin.",
+      "url": "https://podcasts.institutdefrance.fr/emissions/temps-contre-temps/dialogue-autour-de-saint-augustin-avec-lucien-jerphagnon",
+      "source": "Institut de France",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Philosophie",
+        "Christianisme"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Entretien"
+    },
+    {
+      "id": "podcast:fc-francois-assise-sport-combat",
+      "kind": "podcast",
+      "title": "François d’Assise, la sainteté est un sport de combat",
+      "creator": "France Culture · Les Grandes Traversées",
+      "subtitle": "Série · 5 épisodes",
+      "description": "Grande Traversée consacrée à la vie, la pauvreté, la fraternité, les épreuves et la postérité de François d’Assise.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "François d’Assise",
+      "themes": [
+        "François d’Assise",
+        "Pauvreté",
+        "Conversion",
+        "Nature",
+        "Fraternité",
+        "Sainteté",
+        "Christianisme"
+      ],
+      "people": [
+        "François d’Assise"
+      ],
+      "keywords": [
+        "francois assise",
+        "franciscains",
+        "pauvrete",
+        "saintete",
+        "grande traversee"
+      ],
+      "episodes": [
+        {
+          "title": "1/5 · Mettre la barre haut",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat"
+        },
+        {
+          "title": "2/5 · Avoir le goût du risque",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat"
+        },
+        {
+          "title": "3/5 · Savoir bien s’entourer",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat"
+        },
+        {
+          "title": "4/5 · Ployer mais ne pas rompre",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat"
+        },
+        {
+          "title": "5/5 · Devenir une légende",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-francois-d-assise-la-saintete-est-un-sport-de-combat"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Grande Traversée"
+    },
+    {
+      "id": "podcast:fc-hildegarde-genie-cosmique",
+      "kind": "podcast",
+      "title": "Hildegarde de Bingen, génie cosmique",
+      "creator": "France Culture · Les Grandes Traversées",
+      "subtitle": "Série · 5 épisodes",
+      "description": "Cinq heures de documentaire sur Hildegarde : visions, musique, médecine, nature, autorité et postérité.",
+      "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Hildegarde de Bingen",
+      "themes": [
+        "Hildegarde de Bingen",
+        "Mystique",
+        "Nature",
+        "Musique",
+        "Vision",
+        "Moyen Âge",
+        "Christianisme"
+      ],
+      "people": [
+        "Hildegarde de Bingen"
+      ],
+      "keywords": [
+        "hildegarde",
+        "bingen",
+        "visionnaire",
+        "musique",
+        "nature",
+        "mystique"
+      ],
+      "episodes": [
+        {
+          "title": "1/5 · Une enfance hors norme",
+          "duration": "~ 1 h",
+          "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen"
+        },
+        {
+          "title": "2/5 · La compositrice visionnaire",
+          "duration": "~ 1 h",
+          "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen"
+        },
+        {
+          "title": "3/5 · La mère nature",
+          "duration": "~ 1 h",
+          "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen"
+        },
+        {
+          "title": "4/5 · Et Dieu créa le matriarcat",
+          "duration": "~ 1 h",
+          "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen"
+        },
+        {
+          "title": "5/5 · Hildegardemania",
+          "duration": "~ 1 h",
+          "url": "https://www.radiofrance.fr/personnes/hildegard-von-bingen"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Grande Traversée"
+    },
+    {
+      "id": "video:kto-hildegarde-vision-monde",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Hildegarde de Bingen ou la vision du monde",
+      "creator": "KTO · François Marxer",
+      "subtitle": "Conférence · 2 parties",
+      "description": "Conférence de François Marxer sur la vision du monde et la spiritualité d’Hildegarde de Bingen.",
+      "url": "https://www.ktotv.com/video/00195421/hildegarde-de-bingen-ou-la-vision-du-monde-partie-1-2",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Hildegarde de Bingen",
+      "themes": [
+        "Hildegarde de Bingen",
+        "Mystique",
+        "Vision",
+        "Cosmos",
+        "Christianisme"
+      ],
+      "people": [
+        "Hildegarde de Bingen"
+      ],
+      "keywords": [
+        "hildegarde",
+        "francois marxer",
+        "conference"
+      ],
+      "episodes": [
+        {
+          "title": "1/2 · Hildegarde de Bingen ou la vision du monde",
+          "url": "https://www.ktotv.com/video/00195421/hildegarde-de-bingen-ou-la-vision-du-monde-partie-1-2"
+        },
+        {
+          "title": "2/2 · Hildegarde de Bingen ou la vision du monde",
+          "url": "https://www.ktotv.com/video/00210316/hildegarde-de-bingen-ou-la-vision-du-monde-partie-2-2"
+        }
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence"
+    },
+    {
+      "id": "podcast:porete-et-le-miroir-brula",
+      "kind": "podcast",
+      "title": "Et le miroir brûla — Marguerite Porete",
+      "creator": "Charlotte Jousseaume",
+      "subtitle": "Série · 13 épisodes",
+      "description": "Mise en voix littéraire et musicale en treize épisodes autour de Marguerite Porete et du Miroir des âmes simples.",
+      "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix",
+      "source": "Charlotte Jousseaume",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Béguines",
+        "Mystique",
+        "Amour",
+        "Anéantissement",
+        "Moyen Âge"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "miroir des ames simples",
+        "beguines",
+        "amour mystique"
+      ],
+      "episodes": [
+        {
+          "title": "1/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "2/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "3/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "4/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "5/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "6/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "7/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "8/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "9/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "10/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "11/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "12/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        },
+        {
+          "title": "13/13 · Et le miroir brûla",
+          "url": "https://charlotte-jousseaume.fr/livres/mise-en-voix"
+        }
+      ],
+      "contentCategory": "fiction",
+      "contentTypeLabel": "Mise en voix"
+    },
+    {
+      "id": "video:arte-porete-1310",
+      "kind": "video",
+      "videoType": "film",
+      "title": "1310 : Marguerite Porete est brûlée en place de Grève",
+      "creator": "ARTE · Quand l’histoire fait dates",
+      "subtitle": "26 min",
+      "description": "Un documentaire historique pour replacer Marguerite Porete, les béguines, son procès et l’Inquisition dans leur contexte.",
+      "url": "https://educ.arte.tv/program/quand-lhistoire-fait-date-1310-marguerite-poret-est-brulee-en-place-de-greve",
+      "source": "ARTE",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Béguines",
+        "Inquisition",
+        "Moyen Âge",
+        "Mystique"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Documentaire"
+    },
+    {
+      "id": "video:kto-hadewijch-secret-monde",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Hadewijch d’Anvers ou le secret du monde",
+      "creator": "KTO · François Marxer",
+      "subtitle": "Conférence · 2 parties",
+      "description": "Deux conférences consacrées à Hadewijch, aux béguines et à la Minne, l’amour mystique.",
+      "url": "https://www.ktotv.com/video/00195423/hadewijch-danvers-ou-le-secret-du-monde-partie-1-2",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Hadewijch d’Anvers",
+      "themes": [
+        "Hadewijch d’Anvers",
+        "Béguines",
+        "Minne",
+        "Amour",
+        "Mystique",
+        "Moyen Âge"
+      ],
+      "people": [
+        "Hadewijch d’Anvers"
+      ],
+      "keywords": [],
+      "episodes": [
+        {
+          "title": "1/2 · Hadewijch d’Anvers ou le secret du monde",
+          "url": "https://www.ktotv.com/video/00195423/hadewijch-danvers-ou-le-secret-du-monde-partie-1-2"
+        },
+        {
+          "title": "2/2 · Hadewijch d’Anvers ou le secret du monde",
+          "url": "https://www.ktotv.com/video/00211086/hadewijch-danvers-ou-le-secret-du-monde-partie-2-2"
+        }
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence"
+    },
+    {
+      "id": "podcast:fc-eckhart-retour-moyen-age",
+      "kind": "podcast",
+      "title": "Retour vers le Moyen Âge — Maître Eckhart",
+      "creator": "France Culture · Les Chemins de la philosophie",
+      "subtitle": "",
+      "description": "Un épisode consacré à Maître Eckhart, sa pensée du détachement et la mystique rhénane.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/retour-vers-le-moyen-age-3-4-maitre-eckhart-4434070",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Maître Eckhart",
+      "themes": [
+        "Maître Eckhart",
+        "Mystique rhénane",
+        "Détachement",
+        "Dieu",
+        "Moyen Âge"
+      ],
+      "people": [
+        "Maître Eckhart"
+      ],
+      "keywords": [],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission philosophique"
+    },
+    {
+      "id": "video:kto-maitre-eckhart",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Maître Eckhart",
+      "creator": "KTO · Marie-Anne Vannier",
+      "subtitle": "Émission",
+      "description": "Émission consacrée au détachement, à l’union de l’âme à Dieu, à la mystique rhénane et aux controverses entourant Eckhart.",
+      "url": "https://www.ktotv.com/video/00455119/maitre-eckhart",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Maître Eckhart",
+      "themes": [
+        "Maître Eckhart",
+        "Mystique rhénane",
+        "Détachement",
+        "Âme",
+        "Dieu"
+      ],
+      "people": [
+        "Maître Eckhart"
+      ],
+      "keywords": [],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
+    },
+    {
+      "id": "podcast:fc-therese-avila-dujovne",
+      "kind": "podcast",
+      "title": "Thérèse d’Avila avec Alicia Dujovne Ortiz",
+      "creator": "France Culture · Les Racines du ciel",
+      "subtitle": "54 min",
+      "description": "Une émission autour de Thérèse d’Avila, de l’expérience mystique et du Château intérieur.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-racines-du-ciel/therese-d-avila-avec-alicia-dujovne-ortiz-5746644",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Carmel",
+        "Mystique",
+        "Oraison",
+        "Château intérieur"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
+    },
+    {
+      "id": "podcast:rcf-jean-croix-ils-crieront-joie",
+      "kind": "podcast",
+      "title": "Ils crieront de joie — Saint Jean de la Croix",
+      "creator": "RCF · Halte spirituelle",
+      "subtitle": "Série · 5 épisodes",
+      "description": "Cinq courts épisodes sur le silence, la contemplation, la joie et l’union à Dieu chez Jean de la Croix.",
+      "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle",
+      "source": "RCF",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Jean de la Croix",
+      "themes": [
+        "Jean de la Croix",
+        "Carmel",
+        "Mystique",
+        "Nuit",
+        "Silence",
+        "Contemplation"
+      ],
+      "people": [
+        "Jean de la Croix"
+      ],
+      "keywords": [
+        "jean de la croix",
+        "carmel",
+        "nuit obscure",
+        "silence",
+        "contemplation"
+      ],
+      "episodes": [
+        {
+          "title": "1/5 · Encore plus de silence",
+          "duration": "~ 12 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle?episode=669315"
+        },
+        {
+          "title": "2/5 · Cette flamme inoubliable",
+          "duration": "~ 12 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle?episode=669319"
+        },
+        {
+          "title": "3/5 · Contempler encore",
+          "duration": "~ 12 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle?episode=669322"
+        },
+        {
+          "title": "4/5 · Jésus frère joyeux ?",
+          "duration": "~ 12 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle?episode=669321"
+        },
+        {
+          "title": "5/5 · L’heureuse aventure",
+          "duration": "~ 12 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/halte-spirituelle?episode=669324"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série audio"
+    },
+    {
+      "id": "video:kto-jean-croix-nuit-montee",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Jean de la Croix : La Nuit obscure et La Montée du Carmel",
+      "creator": "KTO",
+      "subtitle": "52 min",
+      "description": "Approfondissement consacré aux grands textes de Jean de la Croix : La Nuit obscure et La Montée du Carmel.",
+      "url": "https://www.ktotv.com/video/00254938/jean-de-la-croix-la-nuit-obscure-et-la-montee-du-carmel",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Jean de la Croix",
+      "themes": [
+        "Jean de la Croix",
+        "Nuit obscure",
+        "Montée du Carmel",
+        "Mystique",
+        "Dépouillement"
+      ],
+      "people": [
+        "Jean de la Croix"
+      ],
+      "keywords": [],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Cours / conférence"
+    },
+    {
+      "id": "podcast:rcf-ignace-loyola-pelerins-dieu",
+      "kind": "podcast",
+      "title": "Saint Ignace de Loyola",
+      "creator": "RCF · Pèlerins de Dieu",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre épisodes sur la conversion d’Ignace, la fondation des jésuites et son itinéraire spirituel.",
+      "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france",
+      "source": "RCF",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Ignace de Loyola",
+      "themes": [
+        "Ignace de Loyola",
+        "Jésuites",
+        "Conversion",
+        "Discernement",
+        "Exercices spirituels"
+      ],
+      "people": [
+        "Ignace de Loyola"
+      ],
+      "keywords": [
+        "ignace loyola",
+        "jesuites",
+        "discernement",
+        "exercices spirituels"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · La conversion d’un chevalier espagnol",
+          "duration": "~ 26 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france?episode=524510&page=4"
+        },
+        {
+          "title": "2/4 · Le fondateur de la Compagnie de Jésus",
+          "duration": "~ 25 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france"
+        },
+        {
+          "title": "3/4 · Difficultés et succès de la Compagnie de Jésus",
+          "duration": "~ 25 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france?episode=526691"
+        },
+        {
+          "title": "4/4 · L’apôtre de Jésus Christ",
+          "duration": "~ 25 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série audio"
+    },
+    {
+      "id": "video:kto-ignace-loyola",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Ignace de Loyola",
+      "creator": "KTO",
+      "subtitle": "53 min",
+      "description": "Une présentation de la vie, de la conversion, de la Compagnie de Jésus et des Exercices spirituels d’Ignace de Loyola.",
+      "url": "https://www.ktotv.com/video/00058967/saint-ignace-de-loyola",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Ignace de Loyola",
+      "themes": [
+        "Ignace de Loyola",
+        "Jésuites",
+        "Conversion",
+        "Discernement",
+        "Exercices spirituels"
+      ],
+      "people": [
+        "Ignace de Loyola"
+      ],
+      "keywords": [],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
+    },
+    {
+      "id": "article:jesuites-exercices-spirituels",
+      "kind": "article",
+      "title": "Les Exercices spirituels",
+      "creator": "Jésuites",
+      "subtitle": "Ressource associée",
+      "description": "Présentation des Exercices spirituels et de la tradition ignatienne du discernement.",
+      "url": "https://www.jesuites.com/exercices-spirituels/",
+      "source": "Jésuites",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Ignace de Loyola",
+      "themes": [
+        "Ignace de Loyola",
+        "Discernement",
+        "Exercices spirituels",
+        "Jésuites"
+      ],
+      "people": [
+        "Ignace de Loyola"
+      ],
+      "keywords": [
+        "ignace",
+        "exercices spirituels",
+        "discernement",
+        "jesuites"
+      ],
+      "contentCategory": "recherche",
+      "contentTypeLabel": "Ressource de référence"
+    },
+    {
+      "id": "podcast:fc-pascal-infini-au-dela",
+      "kind": "podcast",
+      "title": "Blaise Pascal, vers l’infini et au-delà",
+      "creator": "France Culture · Les Chemins de la philosophie",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre émissions pour parcourir Pascal : divertissement, Dieu, raison mathématique, joie et conversion.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/comment-parler-a-dieu-3411690",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Blaise Pascal",
+      "themes": [
+        "Blaise Pascal",
+        "Foi",
+        "Raison",
+        "Dieu",
+        "Divertissement",
+        "Mathématiques",
+        "Conversion"
+      ],
+      "people": [
+        "Blaise Pascal"
+      ],
+      "keywords": [
+        "pascal",
+        "pensees",
+        "foi",
+        "raison",
+        "divertissement",
+        "mathematiques"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · Portrait d’un homme contrarié",
+          "duration": "~ 58 min",
+          "url": "https://www.franceculture.fr/emissions/les-chemins-de-la-philosophie/blaise-pascal-vers-linfini-et-au-dela-14-portrait-dun-homme-contrarie"
+        },
+        {
+          "title": "2/4 · Comment parler à Dieu ?",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/comment-parler-a-dieu-3411690"
+        },
+        {
+          "title": "3/4 · Les mathématiques peuvent-elles nous aider à connaître le réel ?",
+          "duration": "~ 58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/les-mathematiques-peuvent-elles-nous-aider-a-connaitre-le-reel-2144778"
+        },
+        {
+          "title": "4/4 · Portrait d’un homme joyeux",
+          "duration": "~ 58 min",
+          "url": "https://www.franceculture.fr/emissions/les-chemins-de-la-philosophie/blaise-pascal-vers-linfini-et-au-dela-44-portrait-dun-homme-joyeux"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série France Culture"
+    },
+    {
+      "id": "video:kto-pascal-quatre-conversions",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Quatre conversions — Blaise Pascal",
+      "creator": "KTO",
+      "subtitle": "53 min",
+      "description": "Épisode consacré à Blaise Pascal dans la série Quatre conversions, notamment autour de la Nuit de feu.",
+      "url": "https://www.ktotv.com/video/00413424/blaise-pascal-1",
+      "source": "KTO",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Blaise Pascal",
+      "themes": [
+        "Blaise Pascal",
+        "Conversion",
+        "Nuit de feu",
+        "Foi",
+        "Mystique"
+      ],
+      "people": [
+        "Blaise Pascal"
+      ],
+      "keywords": [],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission"
+    },
+    {
+      "id": "podcast:fc-simone-weil-dieu-sans-dogme",
+      "kind": "podcast",
+      "title": "Simone Weil, Dieu sans le dogme",
+      "creator": "France Culture · Les Nuits de France Culture",
+      "subtitle": "Série · 9 épisodes",
+      "description": "Neuf archives et émissions sur la vie, l’engagement, la pensée religieuse et la mystique de Simone Weil.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-simone-weil-dieu-sans-le-dogme",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Simone Weil",
+      "themes": [
+        "Simone Weil",
+        "Mystique",
+        "Attention",
+        "Grâce",
+        "Christianisme",
+        "Engagement",
+        "Décréation"
+      ],
+      "people": [
+        "Simone Weil"
+      ],
+      "keywords": [
+        "simone weil",
+        "attention",
+        "grace",
+        "decreation",
+        "mystique",
+        "christianisme"
+      ],
+      "episodes": [
+        {
+          "title": "1/9 · Présentation — Simone Weil, Dieu sans le dogme",
+          "duration": "4 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-simone-weil-dieu-sans-le-dogme"
+        },
+        {
+          "title": "2/9 · Simone Weil, « témoin de l’absolu »",
+          "duration": "2 h 03",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/hommage-a-simone-weil-1ere-diffusion-05-10-1968-4908790"
+        },
+        {
+          "title": "3/9 · Le refus de tout écart entre la pensée et l’action",
+          "duration": "48 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/simone-weil-le-refus-de-tout-ecart-entre-la-pensee-et-l-action-9459763"
+        },
+        {
+          "title": "4/9 · Figure contestataire d’un dogme chrétien dominant",
+          "duration": "47 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/simone-weil-figure-contestataire-d-un-dogme-chretien-dominant-4307655"
+        },
+        {
+          "title": "5/9 · Philosophie du refus et quête mystique de vérité",
+          "duration": "19 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/simone-weil-philosophie-du-refus-et-quete-mystique-de-verite-8533685"
+        },
+        {
+          "title": "6/9 · Simone Weil, Rome et son Église",
+          "duration": "19 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-simone-weil-dieu-sans-le-dogme"
+        },
+        {
+          "title": "7/9 · Portrait d’une philosophe mystique",
+          "duration": "1 h 25",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/simone-weil-portrait-d-une-philosophe-mystique-3261308"
+        },
+        {
+          "title": "8/9 · Simone Weil, « une femme de l’au-delà »",
+          "duration": "30 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-nuits-de-france-culture/simone-weil-une-femme-de-l-au-dela-8527170"
+        },
+        {
+          "title": "9/9 · Le détour mystique indien",
+          "duration": "32 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-simone-weil-dieu-sans-le-dogme"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Collection France Culture"
+    },
+    {
+      "id": "podcast:rcf-edith-stein-pelerins-dieu",
+      "kind": "podcast",
+      "title": "Sainte Edith Stein",
+      "creator": "RCF · Pèlerins de Dieu",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre épisodes sur la conversion, la pensée, le martyre et la doctrine spirituelle d’Edith Stein.",
+      "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france",
+      "source": "RCF",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Edith Stein",
+      "themes": [
+        "Edith Stein",
+        "Phénoménologie",
+        "Carmel",
+        "Mystique",
+        "Empathie",
+        "Conversion"
+      ],
+      "people": [
+        "Edith Stein"
+      ],
+      "keywords": [
+        "edith stein",
+        "phenomenologie",
+        "carmel",
+        "empathie",
+        "conversion"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · La découverte de Jésus Christ",
+          "duration": "~ 25 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france"
+        },
+        {
+          "title": "2/4 · Transmettre la Vérité",
+          "duration": "~ 25 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france?episode=510690"
+        },
+        {
+          "title": "3/4 · Une intellectuelle et une martyre",
+          "duration": "~ 26 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france?episode=515309"
+        },
+        {
+          "title": "4/4 · Sa doctrine spirituelle",
+          "duration": "~ 24 min",
+          "url": "https://www.rcf.fr/vie-spirituelle/pelerins-de-dieu-rcf-hauts-de-france?episode=515325"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série audio"
+    },
+    {
+      "id": "podcast:zeteo-edith-stein-marion-lucas",
+      "kind": "podcast",
+      "title": "Édith Stein, le mystère d’une belle âme",
+      "creator": "Zeteo · Marion Lucas",
+      "subtitle": "42 min",
+      "description": "Entretien avec la philosophe Marion Lucas autour de l’intériorité, de la personne et de l’œuvre d’Edith Stein.",
+      "url": "https://www.zeteo.fr/post/marion-lucas-%C3%A9dith-stein-le-myst%C3%A8re-d-une-belle-%C3%A2me",
+      "source": "Zeteo",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Edith Stein",
+      "themes": [
+        "Edith Stein",
+        "Phénoménologie",
+        "Intériorité",
+        "Personne",
+        "Mystique"
+      ],
+      "people": [
+        "Edith Stein"
+      ],
+      "keywords": [],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Entretien philosophique"
+    },
+    {
+      "id": "video:dante-arte-2006",
+      "kind": "video",
+      "title": "Dante — Qu’est-ce que la Divine Comédie ?",
+      "creator": "Dante Alighieri",
+      "description": "Documentaire de 2006 proposant une porte d’entrée générale dans Dante et la Divine Comédie.",
+      "url": "https://www.youtube.com/watch?v=wdih8bFxYRg",
+      "source": "ARTE",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Documentaire",
+      "videoType": "film",
+      "year": 2006
+    },
+    {
+      "id": "video:dante-culture-prime-artistes-enfer",
+      "kind": "video",
+      "title": "Les artistes dans l’« Enfer » de Dante",
+      "creator": "Dante Alighieri",
+      "description": "Comment les artistes se sont emparés de l’imaginaire de l’Enfer de Dante.",
+      "url": "https://www.youtube.com/watch?v=5ahz5oM8kY8",
+      "source": "Culture Prime",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Capsule culturelle",
+      "videoType": "film"
+    },
+    {
+      "id": "video:dante-une-vie-une-oeuvre-archive",
+      "kind": "video",
+      "title": "Dante Alighieri : Une vie, une œuvre [archive]",
+      "creator": "Dante Alighieri",
+      "description": "Archive de l’émission Une vie, une œuvre consacrée à Dante, avec notamment Jacqueline Risset et plusieurs écrivains et penseurs.",
+      "url": "https://www.youtube.com/watch?v=jbf41mjhwtQ",
+      "source": "France Culture — archive",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Archive radiophonique",
+      "videoType": "cours",
+      "year": 1986
+    },
+    {
+      "id": "video:dante-voyage-une-vie-une-oeuvre",
+      "kind": "video",
+      "title": "Le voyage de Dante — Une vie, une œuvre [archive]",
+      "creator": "Dante Alighieri",
+      "description": "Archive consacrée à la vie, au voyage intellectuel et à l’œuvre de Dante.",
+      "url": "https://www.youtube.com/watch?v=Lrxc1t95qWY",
+      "source": "France Culture — archive",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Archive radiophonique",
+      "videoType": "cours",
+      "year": 1986
+    },
+    {
+      "id": "video:dante-barbero-vraie-vie",
+      "kind": "video",
+      "title": "La vraie vie de Dante Alighieri — Alessandro Barbero",
+      "creator": "Dante Alighieri",
+      "description": "Alessandro Barbero revient sur la biographie historique de Dante et sur ce que les sources permettent réellement d’en savoir.",
+      "url": "https://www.youtube.com/watch?v=UhVSx-6USow",
+      "source": "Italissimo",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Rencontre / conférence",
+      "videoType": "cours"
+    },
+    {
+      "id": "video:dante-risset-traductrice",
+      "kind": "video",
+      "title": "Entretien avec Jacqueline Risset, grande traductrice de Dante",
+      "creator": "Dante Alighieri",
+      "description": "Jacqueline Risset parle de Dante, de sa langue et de son travail de traduction de la Divine Comédie.",
+      "url": "https://www.youtube.com/watch?v=H8EyFsQmjKQ",
+      "source": "YouTube",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Entretien",
+      "videoType": "cours"
+    },
+    {
+      "id": "video:dante-au-dela-poete",
+      "kind": "video",
+      "title": "Au-delà du poète, qui était Dante ?",
+      "creator": "Dante Alighieri",
+      "description": "Une ressource biographique pour replacer Dante dans la Florence de son temps et dans son engagement politique.",
+      "url": "https://www.youtube.com/watch?v=YM89vqQyivU",
+      "source": "YouTube",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "entretien",
+      "contentTypeLabel": "Entretien / biographie",
+      "videoType": "cours"
+    },
+    {
+      "id": "video:dante-france-culture-1980",
+      "kind": "video",
+      "title": "Dante — Grande introduction à la Divine Comédie [archive]",
+      "creator": "Dante Alighieri",
+      "description": "Grande introduction radiophonique à la Divine Comédie, issue des archives de France Culture.",
+      "url": "https://www.youtube.com/watch?v=M2MM-ZKEYec",
+      "source": "France Culture — archive",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Archive France Culture",
+      "videoType": "cours",
+      "year": 1980
+    },
+    {
+      "id": "video:dante-arte-voyage-2021",
+      "kind": "video",
+      "title": "Dante : voyage au bout de l’Enfer et du Paradis",
+      "creator": "Dante Alighieri",
+      "description": "Documentaire consacré aux visions de Dante et au voyage de la Divine Comédie.",
+      "url": "https://www.youtube.com/watch?v=Nt9HULjvN34",
+      "source": "ARTE",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Documentaire",
+      "videoType": "film",
+      "year": 2021
+    },
+    {
+      "id": "video:dante-enfer-documentaire-2016",
+      "kind": "video",
+      "title": "L’Enfer de Dante",
+      "creator": "Dante Alighieri",
+      "description": "Documentaire centré sur l’Enfer de Dante et son imaginaire.",
+      "url": "https://www.youtube.com/watch?v=r97G9WXHNhY",
+      "source": "YouTube",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Documentaire",
+      "videoType": "film",
+      "year": 2016
+    },
+    {
+      "id": "podcast:dante-fc-divine-comedie-chemins",
+      "kind": "podcast",
+      "title": "La Divine Comédie de Dante",
+      "creator": "Dante Alighieri",
+      "description": "Les Chemins de la philosophie parcourent les trois royaumes de la Divine Comédie et les enjeux philosophiques de l’œuvre.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-la-divine-comedie-de-dante",
+      "source": "France Culture",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série philosophique · 4 épisodes",
+      "episodes": [
+        {
+          "title": "1/4 — De l’Enfer au Paradis",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-la-divine-comedie-de-dante"
+        },
+        {
+          "title": "2/4 — Mauvaises rencontres en Enfer",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-la-divine-comedie-de-dante"
+        },
+        {
+          "title": "3/4 — Entre l’âme et le corps, le Purgatoire",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-la-divine-comedie-de-dante"
+        },
+        {
+          "title": "4/4 — La naissance de l’humanisme",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-la-divine-comedie-de-dante"
+        }
+      ]
+    },
+    {
+      "id": "podcast:dante-france-musique-descente-enfers",
+      "kind": "podcast",
+      "title": "La Divine Comédie ou une descente aux enfers",
+      "creator": "Dante Alighieri",
+      "description": "Une lecture de la Divine Comédie par l’histoire de la musique et ses résonances artistiques.",
+      "url": "https://www.radiofrance.fr/francemusique/podcasts/histoires-de-musique/la-divine-comedie-ou-une-descente-aux-enfers-1209996",
+      "source": "France Musique",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission musicale"
+    },
+    {
+      "id": "video:dante-luxembourg-certain-regard",
+      "kind": "video",
+      "title": "Dante : un certain regard sur la Divine Comédie",
+      "creator": "Dante Alighieri",
+      "description": "Conférence universitaire consacrée à la Divine Comédie et à ses grands axes de lecture.",
+      "url": "https://www.youtube.com/watch?v=h-ZDZJ8H2zg",
+      "source": "Université du Luxembourg",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence",
+      "videoType": "cours"
+    },
+    {
+      "id": "video:dante-voyage-initiatique-ohmann",
+      "kind": "video",
+      "title": "Dante et le voyage initiatique de la Divine Comédie",
+      "creator": "Dante Alighieri",
+      "description": "Isabelle Ohmann propose une lecture symbolique et initiatique du voyage de Dante à travers l’Enfer, le Purgatoire et le Paradis.",
+      "url": "https://www.youtube.com/watch?v=ITitHgeX-Ek",
+      "source": "Nouvelle Acropole",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence philosophique",
+      "videoType": "cours",
+      "year": 2021
+    },
+    {
+      "id": "video:dante-ossola-introduction",
+      "kind": "video",
+      "title": "Introduction à la Divine Comédie — Carlo Ossola",
+      "creator": "Dante Alighieri",
+      "description": "Carlo Ossola introduit la structure, la pensée et les grands motifs de la Divine Comédie.",
+      "url": "https://www.youtube.com/watch?v=zQHvDwGutJM",
+      "source": "Carlo Ossola",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Cours / conférence",
+      "videoType": "cours",
+      "year": 2016
+    },
+    {
+      "id": "video:dante-divine-comedie-fa5",
+      "kind": "video",
+      "title": "Dante — La Divine Comédie",
+      "creator": "Dante Alighieri",
+      "description": "Présentation vidéo consacrée à Dante et à la Divine Comédie.",
+      "url": "https://www.youtube.com/watch?v=FA5znAbvzDA",
+      "source": "YouTube",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Présentation / cours vidéo",
+      "videoType": "cours"
+    },
+    {
+      "id": "video:dante-le-verbe-enfer-paradis",
+      "kind": "video",
+      "title": "La Divine Comédie : de l’Enfer au Paradis avec Dante",
+      "creator": "Dante Alighieri",
+      "description": "Émission consacrée à la vie et à l’œuvre de Dante, de l’Enfer au Paradis.",
+      "url": "https://www.youtube.com/watch?v=mdx64XVal50",
+      "source": "Le Verbe médias",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission / entretien",
+      "videoType": "cours",
+      "year": 2026
+    },
+    {
+      "id": "podcast:dante-fc-enfer-centre-soi",
+      "kind": "podcast",
+      "title": "« L’Enfer » de Dante, voyage au centre de soi-même",
+      "creator": "Dante Alighieri",
+      "description": "Série 2026 d’Avec philosophie : Dante comme guide existentiel, Virgile, vengeance politique et pitié.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie",
+      "source": "France Culture",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série philosophique · 4 épisodes",
+      "year": 2026,
+      "episodes": [
+        {
+          "title": "1/4 — Dante, philosophe pour les égaré·es de l’existence",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie",
+          "duration": "58 min 41"
+        },
+        {
+          "title": "2/4 — Virgile et le cercle des poètes suspendus",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie",
+          "duration": "58 min 27"
+        },
+        {
+          "title": "3/4 — Comment se venger de ses ennemis ?",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie",
+          "duration": "58 min 07"
+        },
+        {
+          "title": "4/4 — « Si tu ne pleures pas, de quoi donc pleures-tu ? »",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie",
+          "duration": "57 min 45"
+        }
+      ]
+    },
+    {
+      "id": "podcast:dante-fc-bienvenue-en-enfer",
+      "kind": "podcast",
+      "title": "Dante, bienvenue en Enfer",
+      "creator": "Dante Alighieri",
+      "description": "Quatre épisodes des Chemins de la philosophie consacrés à l’Enfer : entrée, amour, connaissance et Satan.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-dante-bienvenue-en-enfer",
+      "source": "France Culture",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série philosophique · 4 épisodes",
+      "year": 2022,
+      "episodes": [
+        {
+          "title": "1/4 — « Vous qui entrez, laissez toute espérance »",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/vous-qui-entrez-laissez-toute-esperance-4047384",
+          "duration": "58 min"
+        },
+        {
+          "title": "2/4 — Maudit soit l’amour !",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-dante-bienvenue-en-enfer",
+          "duration": "58 min"
+        },
+        {
+          "title": "3/4 — Mort d’avoir trop voulu connaître",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-dante-bienvenue-en-enfer",
+          "duration": "58 min"
+        },
+        {
+          "title": "4/4 — Satan prisonnier des glaces",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-dante-bienvenue-en-enfer",
+          "duration": "58 min"
+        }
+      ]
+    },
+    {
+      "id": "podcast:dante-fc-foret-divine",
+      "kind": "podcast",
+      "title": "Dans la forêt divine de Dante Alighieri",
+      "creator": "Dante Alighieri",
+      "description": "La Compagnie des œuvres explore la biographie de Dante, son œuvre, la Divine Comédie et ses lectures.",
+      "url": "https://www.franceculture.fr/emissions/series/dans-la-foret-divine-de-dante-alighieri",
+      "source": "France Culture",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série littéraire · 4 épisodes",
+      "year": 2020,
+      "episodes": [
+        {
+          "title": "1/4 — La vraie vie de Dante",
+          "url": "https://www.franceculture.fr/emissions/la-compagnie-des-oeuvres/dans-la-foret-divine-de-dante-alighieri-14-la-vraie-vie-de-dante",
+          "duration": "58 min"
+        },
+        {
+          "title": "2/4 — L’œuvre d’une vie",
+          "url": "https://www.franceculture.fr/emissions/la-compagnie-des-oeuvres/dans-la-foret-divine-de-dante-alighieri-24-loeuvre-dune-vie"
+        },
+        {
+          "title": "3/4 — La Divine Comédie",
+          "url": "https://www.franceculture.fr/emissions/la-compagnie-des-oeuvres/dans-la-foret-divine-de-dante-alighieri-34-la-divine-comedie"
+        },
+        {
+          "title": "4/4 — Les lectures de Dante",
+          "url": "https://www.franceculture.fr/emissions/la-compagnie-des-oeuvres/dans-la-foret-divine-de-dante-alighieri-44-les-lectures-de-dante",
+          "duration": "59 min"
+        }
+      ]
+    },
+    {
+      "id": "audio:dante-college-france-manguel",
+      "kind": "audio",
+      "title": "Dante — La Divine Comédie",
+      "creator": "Alberto Manguel",
+      "description": "Alberto Manguel consacre une séance de son cours Le mythe comme métaphore d’identité à Dante et à la Divine Comédie.",
+      "url": "https://www.college-de-france.fr/fr/agenda/cours/le-mythe-comme-metaphore-identite/dante-la-divine-comedie",
+      "source": "Collège de France",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Cours",
+      "year": 2022,
+      "duration": "1 h"
+    },
+    {
+      "id": "video:dante-bnf-biographie-pensee",
+      "kind": "video",
+      "title": "Biographie, pensée politique et philosophique de Dante",
+      "creator": "Dante Alighieri",
+      "description": "Deux séquences du colloque Dante en France consacrées à la biographie et à la pensée politique et philosophique de Dante.",
+      "url": "https://www.bnf.fr/fr/mediatheque/biographie-pensee-politique-et-philosophique-de-dante-12",
+      "source": "BnF · École nationale des chartes",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Colloque · 2 parties",
+      "videoType": "cours",
+      "year": 2021,
+      "episodes": [
+        {
+          "title": "1/2 — Biographie, pensée politique et philosophique de Dante",
+          "url": "https://www.bnf.fr/fr/mediatheque/biographie-pensee-politique-et-philosophique-de-dante-12",
+          "duration": "1 h 48"
+        },
+        {
+          "title": "2/2 — Biographie, pensée politique et philosophique de Dante",
+          "url": "https://www.bnf.fr/fr/mediatheque/biographie-pensee-politique-et-philosophique-de-dante-22"
+        }
+      ]
+    },
+    {
+      "id": "podcast:dante-fc-epopee-musicale",
+      "kind": "podcast",
+      "title": "De Sepultura à Liszt, l’épopée musicale de « La Divine Comédie »",
+      "creator": "Dante Alighieri",
+      "description": "Une heure sur les réinventions musicales de la Divine Comédie, de Liszt à Sepultura et aux créations contemporaines.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/la-serie-musicale/la-divine-comedie-de-dante-2392086",
+      "source": "France Culture",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission musicale",
+      "year": 2025,
+      "duration": "59 min"
+    },
+    {
+      "id": "article:dante-divine-politique",
+      "kind": "video",
+      "title": "Dante, la divine politique",
+      "creator": "Dante Alighieri",
+      "description": "Docu-fiction de Jesus Garces Lambert sur Dante, son engagement politique, l’exil et la genèse de son œuvre.",
+      "url": "https://www.film-documentaire.fr/4DACTION/w_fiche_film/68057_0",
+      "source": "Film-documentaire.fr",
+      "themes": [
+        "Dante",
+        "Divine Comédie"
+      ],
+      "people": [
+        "Dante Alighieri"
+      ],
+      "keywords": [
+        "Dante",
+        "Dante Alighieri",
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Documentaire / docu-fiction",
+      "year": 2022,
+      "actionLabel": "Consulter la fiche",
+      "videoType": "film"
     }
   ],
   "dossiers": [
@@ -6943,38 +8627,46 @@ window.FV_MEDIATHEQUE_DATA = {
       ]
     },
     {
-      "id": "therese-avila",
-      "title": "Thérèse d’Avila",
-      "eyebrow": "Dossier personnel",
-      "description": "Réunir au même endroit ses œuvres présentes dans la bibliothèque, les podcasts déjà repérés et les futurs textes, vidéos ou documentaires.",
+      "id": "parcours-beguines",
+      "title": "Les Béguines",
+      "eyebrow": "Parcours spirituel",
+      "description": "Hadewijch et Marguerite Porete : amour mystique, liberté intérieure et voix féminines du Moyen Âge.",
       "themes": [
+        "Béguines",
         "Mystique",
-        "Carmel",
-        "Oraison",
-        "Contemplation"
+        "Amour"
       ],
       "resourceIds": [
-        "livre:therese-avila-chemins-perfection",
-        "livre:therese-avila-chemin-perfection",
-        "livre:therese-avila-chateau-ame",
-        "livre:therese-avila-livre-vie",
-        "podcast:france-culture-vie-spirituelle-therese-avila",
-        "podcast:france-inter-marche-histoire-therese-avila",
-        "podcast:rcf-chretiens-histoire-therese-avila",
-        "podcast:radio-maria-therese-avila-union-dieu"
+        "video:kto-hadewijch-secret-monde",
+        "podcast:porete-et-le-miroir-brula",
+        "video:arte-porete-1310"
       ]
     },
     {
-      "id": "mystique-carmelitaine",
-      "title": "Mystique carmélitaine",
-      "eyebrow": "Parcours transversal",
-      "description": "Passer de Thérèse d’Avila à Jean de la Croix en mêlant lecture, écoute et ressources de travail autour de l’oraison et de la contemplation.",
+      "id": "parcours-mystique-rhenane",
+      "title": "Mystique rhénane",
+      "eyebrow": "Parcours spirituel",
+      "description": "Du détachement à l’union : entrer dans l’univers de Maître Eckhart et de la mystique rhénane.",
       "themes": [
-        "Mystique",
+        "Mystique rhénane",
+        "Détachement",
+        "Moyen Âge"
+      ],
+      "resourceIds": [
+        "podcast:fc-eckhart-retour-moyen-age",
+        "video:kto-maitre-eckhart",
+        "video:kto-hadewijch-secret-monde"
+      ]
+    },
+    {
+      "id": "parcours-carmel",
+      "title": "Le Carmel",
+      "eyebrow": "Parcours spirituel",
+      "description": "Thérèse d’Avila, Jean de la Croix et Edith Stein : textes, oraison, nuit, intériorité, phénoménologie et union.",
+      "themes": [
         "Carmel",
-        "Oraison",
-        "Jean de la Croix",
-        "Thérèse d’Avila"
+        "Mystique",
+        "Oraison"
       ],
       "resourceIds": [
         "livre:therese-avila-chemins-perfection",
@@ -6985,7 +8677,324 @@ window.FV_MEDIATHEQUE_DATA = {
         "podcast:france-culture-vie-spirituelle-therese-avila",
         "podcast:france-inter-marche-histoire-therese-avila",
         "podcast:rcf-chretiens-histoire-therese-avila",
-        "podcast:radio-maria-therese-avila-union-dieu"
+        "podcast:radio-maria-therese-avila-union-dieu",
+        "podcast:fc-therese-avila-dujovne",
+        "podcast:rcf-jean-croix-ils-crieront-joie",
+        "video:kto-jean-croix-nuit-montee",
+        "podcast:rcf-edith-stein-pelerins-dieu",
+        "podcast:zeteo-edith-stein-marion-lucas"
+      ]
+    },
+    {
+      "id": "parcours-nuit-depouillement",
+      "title": "La nuit et le dépouillement",
+      "eyebrow": "Parcours transversal",
+      "description": "Porete, Eckhart, Jean de la Croix et Simone Weil autour du détachement, de l’effacement de soi et de l’absolu.",
+      "themes": [
+        "Dépouillement",
+        "Détachement",
+        "Mystique"
+      ],
+      "resourceIds": [
+        "podcast:porete-et-le-miroir-brula",
+        "video:kto-maitre-eckhart",
+        "video:kto-jean-croix-nuit-montee",
+        "podcast:fc-simone-weil-dieu-sans-dogme"
+      ]
+    },
+    {
+      "id": "parcours-dieu-philosophie",
+      "title": "Dieu et la philosophie",
+      "eyebrow": "Parcours transversal",
+      "description": "Augustin, Pascal, Simone Weil et Edith Stein : penser Dieu avec les outils de la philosophie.",
+      "themes": [
+        "Dieu",
+        "Philosophie",
+        "Foi",
+        "Raison"
+      ],
+      "resourceIds": [
+        "podcast:fc-augustin-passe-aux-aveux",
+        "podcast:fc-pascal-infini-au-dela",
+        "podcast:fc-simone-weil-dieu-sans-dogme",
+        "podcast:zeteo-edith-stein-marion-lucas"
+      ]
+    },
+    {
+      "id": "parcours-creation-nature",
+      "title": "Création et nature",
+      "eyebrow": "Parcours transversal",
+      "description": "François d’Assise et Hildegarde de Bingen : création, vivant, cosmos et relation au monde.",
+      "themes": [
+        "Création",
+        "Nature",
+        "Cosmos"
+      ],
+      "resourceIds": [
+        "podcast:fc-francois-assise-sport-combat",
+        "podcast:fc-hildegarde-genie-cosmique",
+        "video:kto-hildegarde-vision-monde"
+      ]
+    }
+  ],
+  "peopleProfiles": [
+    {
+      "name": "Saint Augustin",
+      "displayName": "Saint Augustin",
+      "dates": "354–430",
+      "era": "Antiquité tardive",
+      "descriptor": "Philosophe · Père de l’Église",
+      "bio": "De la quête de soi à la quête de Dieu : Augustin articule conversion, mémoire, désir, temps, mal et grâce dans une œuvre devenue centrale pour la philosophie et le christianisme latin.",
+      "themes": [
+        "Temps",
+        "Mémoire",
+        "Conversion",
+        "Mal",
+        "Grâce",
+        "Désir"
+      ],
+      "aliases": [
+        "Augustin",
+        "Augustin d’Hippone",
+        "Saint Augustin d’Hippone"
+      ]
+    },
+    {
+      "name": "François d’Assise",
+      "displayName": "Saint François d’Assise",
+      "dates": "v. 1181–1226",
+      "era": "Moyen Âge",
+      "descriptor": "Mystique · Fondateur des franciscains",
+      "bio": "Une vie de rupture, de pauvreté volontaire et de fraternité radicale, où la relation à Dieu passe aussi par les pauvres, la paix et l’ensemble du vivant.",
+      "themes": [
+        "Pauvreté",
+        "Fraternité",
+        "Nature",
+        "Conversion",
+        "Paix"
+      ],
+      "aliases": [
+        "François d'Assise",
+        "Saint François",
+        "Saint François d’Assise"
+      ]
+    },
+    {
+      "name": "Hildegarde de Bingen",
+      "displayName": "Sainte Hildegarde de Bingen",
+      "dates": "1098–1179",
+      "era": "Moyen Âge",
+      "descriptor": "Abbesse · Mystique · Compositrice",
+      "bio": "Visionnaire, compositrice et femme de lettres, Hildegarde pense ensemble création, cosmos, corps, musique et vie spirituelle.",
+      "themes": [
+        "Vision",
+        "Musique",
+        "Nature",
+        "Cosmos",
+        "Création"
+      ],
+      "aliases": [
+        "Hildegarde",
+        "Sainte Hildegarde",
+        "Sainte Hildegarde de Bingen"
+      ]
+    },
+    {
+      "name": "Marguerite Porete",
+      "displayName": "Marguerite Porete",
+      "dates": "?–1310",
+      "era": "Moyen Âge",
+      "descriptor": "Béguine · Mystique · Écrivaine",
+      "bio": "Autrice du Miroir des âmes simples, Porete explore l’amour divin, l’anéantissement de la volonté propre et une liberté intérieure qui la conduira au conflit avec l’Inquisition.",
+      "themes": [
+        "Amour",
+        "Anéantissement",
+        "Béguines",
+        "Liberté",
+        "Mystique"
+      ],
+      "aliases": [
+        "Porete",
+        "Marguerite Porète"
+      ]
+    },
+    {
+      "name": "Hadewijch d’Anvers",
+      "displayName": "Hadewijch d’Anvers",
+      "dates": "XIIIe siècle",
+      "era": "Moyen Âge",
+      "descriptor": "Béguine · Mystique · Poétesse",
+      "bio": "Figure majeure de la mystique en moyen néerlandais, Hadewijch fait de la Minne — l’amour — une expérience exigeante qui engage tout l’être.",
+      "themes": [
+        "Minne",
+        "Amour mystique",
+        "Béguines",
+        "Poésie"
+      ],
+      "aliases": [
+        "Hadewijch",
+        "Hadewijch d’Anvers"
+      ]
+    },
+    {
+      "name": "Maître Eckhart",
+      "displayName": "Maître Eckhart",
+      "dates": "v. 1260–v. 1328",
+      "era": "Moyen Âge",
+      "descriptor": "Dominicain · Philosophe · Mystique",
+      "bio": "Sa prédication et sa pensée interrogent le détachement, le fond de l’âme, la naissance de Dieu en l’homme et la possibilité d’une union au divin.",
+      "themes": [
+        "Détachement",
+        "Fond de l’âme",
+        "Dieu",
+        "Néant",
+        "Mystique rhénane"
+      ],
+      "aliases": [
+        "Eckhart",
+        "Meister Eckhart"
+      ]
+    },
+    {
+      "name": "Thérèse d’Avila",
+      "displayName": "Sainte Thérèse d’Avila",
+      "dates": "1515–1582",
+      "era": "Renaissance",
+      "descriptor": "Carmélite · Mystique · Écrivaine",
+      "bio": "Réformatrice du Carmel et grande écrivaine de l’intériorité, Thérèse décrit l’oraison comme un chemin progressif vers le centre de l’âme et l’union à Dieu.",
+      "themes": [
+        "Oraison",
+        "Intériorité",
+        "Château intérieur",
+        "Carmel",
+        "Union"
+      ],
+      "aliases": [
+        "Sainte Thérèse d’Avila",
+        "Thérèse d’Avila",
+        "Teresa de Ávila",
+        "Thérèse de Jésus"
+      ]
+    },
+    {
+      "name": "Jean de la Croix",
+      "displayName": "Saint Jean de la Croix",
+      "dates": "1542–1591",
+      "era": "Renaissance",
+      "descriptor": "Carme · Mystique · Poète",
+      "bio": "Jean de la Croix pense et chante la nuit, le dépouillement et la transformation du désir qui conduisent vers l’union divine.",
+      "themes": [
+        "Nuit",
+        "Dépouillement",
+        "Contemplation",
+        "Carmel",
+        "Union"
+      ],
+      "aliases": [
+        "Saint Jean de la Croix",
+        "Jean de la Croix",
+        "San Juan de la Cruz"
+      ]
+    },
+    {
+      "name": "Ignace de Loyola",
+      "displayName": "Saint Ignace de Loyola",
+      "dates": "1491–1556",
+      "era": "Renaissance",
+      "descriptor": "Fondateur des jésuites · Maître du discernement",
+      "bio": "Ancien soldat devenu pèlerin, Ignace élabore avec les Exercices spirituels une méthode de discernement destinée à reconnaître les mouvements intérieurs et orienter l’action.",
+      "themes": [
+        "Discernement",
+        "Exercices spirituels",
+        "Décision",
+        "Conversion",
+        "Action"
+      ],
+      "aliases": [
+        "Saint Ignace de Loyola",
+        "Ignace de Loyola",
+        "Ignace Loyola"
+      ]
+    },
+    {
+      "name": "Blaise Pascal",
+      "displayName": "Blaise Pascal",
+      "dates": "1623–1662",
+      "era": "XVIIe siècle",
+      "descriptor": "Philosophe · Mathématicien · Penseur chrétien",
+      "bio": "Pascal confronte raison, cœur, divertissement, misère et grandeur humaines à l’expérience de la foi et de la grâce.",
+      "themes": [
+        "Foi",
+        "Raison",
+        "Cœur",
+        "Grâce",
+        "Divertissement"
+      ],
+      "aliases": [
+        "Pascal",
+        "Blaise Pascal"
+      ]
+    },
+    {
+      "name": "Simone Weil",
+      "displayName": "Simone Weil",
+      "dates": "1909–1943",
+      "era": "XXe siècle",
+      "descriptor": "Philosophe · Écrivaine · Mystique",
+      "bio": "Une pensée de l’attention, du malheur, de la décréation et de la grâce, au croisement de la philosophie, de l’engagement politique et d’une expérience spirituelle hors des appartenances établies.",
+      "themes": [
+        "Attention",
+        "Décréation",
+        "Malheur",
+        "Grâce",
+        "Mystique"
+      ],
+      "aliases": [
+        "Simone Weil"
+      ]
+    },
+    {
+      "name": "Edith Stein",
+      "displayName": "Sainte Edith Stein",
+      "dates": "1891–1942",
+      "era": "XXe siècle",
+      "descriptor": "Philosophe · Carmélite · Mystique",
+      "bio": "Élève de Husserl, Edith Stein relie phénoménologie, empathie, personne et intériorité avant son entrée au Carmel sous le nom de Thérèse-Bénédicte de la Croix.",
+      "themes": [
+        "Phénoménologie",
+        "Empathie",
+        "Intériorité",
+        "Carmel",
+        "Mystique"
+      ],
+      "aliases": [
+        "Sainte Edith Stein",
+        "Édith Stein",
+        "Edith Stein",
+        "Thérèse-Bénédicte de la Croix"
+      ]
+    },
+    {
+      "name": "Dante Alighieri",
+      "displayName": "Dante Alighieri",
+      "dates": "1265–1321",
+      "era": "Moyen Âge",
+      "descriptor": "Poète · Philosophe · Penseur politique",
+      "bio": "Poète de l’exil et auteur de la Divine Comédie, Dante fait dialoguer littérature, philosophie, théologie, politique, langue et expérience spirituelle dans un voyage de l’Enfer au Paradis.",
+      "themes": [
+        "Divine Comédie",
+        "Enfer",
+        "Purgatoire",
+        "Paradis",
+        "Exil",
+        "Béatrice",
+        "Politique",
+        "Amour"
+      ],
+      "aliases": [
+        "Dante",
+        "Dante Alighieri",
+        "Durante Alighieri"
       ]
     }
   ]

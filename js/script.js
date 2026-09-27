@@ -3,7 +3,7 @@
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
   const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260926-prod4`;
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260927-methodo2`;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -123,10 +123,10 @@
   }
 
   function initMethodologyReveal() {
-    const steps = [...document.querySelectorAll(".methodologie-steps-grid .stepper-step")];
-    if (!steps.length) return;
+    const items = [...document.querySelectorAll("#methodologie .methodo-reveal")];
+    if (!items.length) return;
     if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      steps.forEach((step) => step.classList.add("is-visible"));
+      items.forEach((item) => item.classList.add("is-visible"));
       return;
     }
     const observer = new IntersectionObserver((entries) => {
@@ -136,9 +136,10 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
-    steps.forEach((step) => observer.observe(step));
+    }, { threshold: 0.09, rootMargin: "0px 0px -40px" });
+    items.forEach((item) => observer.observe(item));
   }
+
 
   function initReviews() {
     const root = document.querySelector("[data-carousel]");
@@ -334,15 +335,36 @@
     const cards = [...document.querySelectorAll("[data-blog-card]")];
     const count = document.querySelector("[data-blog-count]");
     const empty = document.querySelector("[data-blog-empty]");
-    let topic = "all";
+    const validTopics = new Set(buttons.map((button) => button.dataset.blogFilter || "all"));
+    const requestedTopic = normalizeSearch(new URLSearchParams(window.location.search).get("categorie") || "all");
+    let topic = validTopics.has(requestedTopic) ? requestedTopic : "all";
+
+    const syncButtons = () => {
+      buttons.forEach((item) => {
+        const active = (item.dataset.blogFilter || "all") === topic;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+    };
+
+    const syncUrl = () => {
+      const url = new URL(window.location.href);
+      if (topic === "all") url.searchParams.delete("categorie");
+      else url.searchParams.set("categorie", topic);
+      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+    };
 
     const render = () => {
       const query = normalizeSearch(input?.value);
       let visible = 0;
       cards.forEach((card) => {
-        const topics = normalizeSearch(card.dataset.blogTopic).split(" ");
+        // La rubrique principale est exclusive : un billet hybride Philosophie + Méthodologie
+        // reste dans sa rubrique principale et ne pollue pas le filtre Méthodologie.
+        const primaryCategory = normalizeSearch(card.dataset.blogCategory || "");
+        const legacyTopics = normalizeSearch(card.dataset.blogTopic).split(" ").filter(Boolean);
+        const category = primaryCategory || legacyTopics[0] || "all";
         const haystack = normalizeSearch(`${card.textContent} ${card.dataset.blogSearch || ""}`);
-        const topicMatch = topic === "all" || topics.includes(topic);
+        const topicMatch = topic === "all" || category === topic;
         const queryMatch = !query || query.split(" ").every((word) => haystack.includes(word));
         const show = topicMatch && queryMatch;
         card.hidden = !show;
@@ -354,14 +376,12 @@
 
     buttons.forEach((button) => button.addEventListener("click", () => {
       topic = button.dataset.blogFilter || "all";
-      buttons.forEach((item) => {
-        const active = item === button;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
+      syncButtons();
+      syncUrl();
       render();
     }));
     input?.addEventListener("input", render);
+    syncButtons();
     render();
   }
 
