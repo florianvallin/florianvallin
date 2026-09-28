@@ -860,7 +860,7 @@
       if (/(^|\.)youtube\.com$/.test(parsed.hostname) || /(^|\.)youtu\.be$/.test(parsed.hostname)) {
         let id = parsed.hostname.includes("youtu.be") ? parsed.pathname.split("/").filter(Boolean)[0] : parsed.searchParams.get("v");
         if (!id && parsed.pathname.includes("/embed/")) id = parsed.pathname.split("/embed/")[1]?.split("/")[0];
-        if (id) return { url: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`, type: "youtube" };
+        if (id) return { url: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1`, type: "youtube" };
       }
       if (/(^|\.)soundcloud\.com$/.test(parsed.hostname)) {
         return {
@@ -2315,7 +2315,7 @@
     $("[data-player-source]").href = resolveUrl(item.url);
     $("[data-player-tags]").innerHTML = (item.themes || []).slice(0, 5).map((theme) => `<span>${esc(theme)}</span>`).join("");
     playerFrame.className = `media-player-frame is-${embed.type}`;
-    playerFrame.innerHTML = `<iframe src="${esc(embed.url)}" title="${esc(item.title)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen loading="eager"></iframe>`;
+    playerFrame.innerHTML = `<iframe src="${esc(embed.url)}" title="${esc(item.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="eager"></iframe>`;
     player.hidden = false;
     document.body.classList.add("media-modal-open");
     requestAnimationFrame(() => player.querySelector("[data-close-player]")?.focus({ preventScroll: true }));

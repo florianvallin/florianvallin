@@ -8603,6 +8603,1461 @@ window.FV_MEDIATHEQUE_DATA = {
       "year": 2022,
       "actionLabel": "Consulter la fiche",
       "videoType": "film"
+    },
+    {
+      "id": "video:porete-mr2wk85w6wc",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 1",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=MR2wK85W6Wc",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-eroixe-dz08",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 2",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=ErOixE-DZ08",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-9pswz1upHmy",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 3",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=9PSwZ1upHmY",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-bm5ezc-x-mu",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Les Béguines — contexte autour de Marguerite Porete",
+      "description": "Ressource de contexte sur les béguines et la mystique médiévale, utile pour situer Marguerite Porete.",
+      "url": "https://www.youtube.com/watch?v=Bm5EzC-x_MU",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Contexte historique",
+      "creator": "Silvana Panciera"
+    },
+    {
+      "id": "video:porete-ylauvnmfxcg",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Béguines et mystique médiévale — contexte autour de Marguerite Porete",
+      "description": "Ressource de contexte sur les béguines et la mystique médiévale, utile pour situer Marguerite Porete.",
+      "url": "https://www.youtube.com/watch?v=ylAuvnMfxcg",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "documentaire",
+      "contentTypeLabel": "Contexte historique"
+    },
+    {
+      "id": "video:porete-9mvvd1w30-s",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Le Miroir des simples âmes — résumé / analyse",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=9mVvd1w30_s&t=394s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Résumé / analyse"
+    },
+    {
+      "id": "video:porete-ob18ixc-s2c",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 4",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=OB18ixC-s2c",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-xdnie8r230w",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 5",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=xDNIe8R230w",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-bpkt-ou-aru",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 6",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=Bpkt_Ou_arU",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:porete-kjsdnzbtrie",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Marguerite Porete — conférence / présentation 7",
+      "description": "Ressource vidéo consacrée à Marguerite Porete, à sa pensée et au Miroir des simples âmes.",
+      "url": "https://www.youtube.com/watch?v=KjSDnzbtriE",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Béguines",
+        "Moyen Âge",
+        "Le Miroir des simples âmes"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "porete",
+        "miroir des simples âmes",
+        "beguines",
+        "mystique médiévale"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "podcast:porete-radio-libertaire-2026-23",
+      "kind": "podcast",
+      "title": "Marguerite Porete — émission Radio Libertaire",
+      "description": "Émission radiophonique autour de Marguerite Porete et de son contexte.",
+      "url": "https://www.anarchiste.info/radio/libertaire/podcast/semaine/2026-23.html",
+      "source": "Radio Libertaire",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Moyen Âge"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "radio libertaire",
+        "mystique"
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission / podcast"
+    },
+    {
+      "id": "texte:porete-miroir-wikisource",
+      "kind": "texte",
+      "title": "Le Miroir des simples âmes",
+      "creator": "Marguerite Porete",
+      "subtitle": "Texte intégral · PDF",
+      "description": "Texte intégral du Miroir des simples âmes, accessible librement sur Wikisource.",
+      "url": "https://fr.wikisource.org/wiki/Livre:Porete_-_Le_Miroir_des_simples_%C3%A2mes.pdf",
+      "source": "Wikisource",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Marguerite Porete",
+      "themes": [
+        "Marguerite Porete",
+        "Mystique",
+        "Amour",
+        "Anéantissement",
+        "Liberté"
+      ],
+      "people": [
+        "Marguerite Porete"
+      ],
+      "keywords": [
+        "marguerite porete",
+        "miroir des simples âmes",
+        "texte intégral",
+        "wikisource"
+      ],
+      "contentCategory": "oeuvre",
+      "contentTypeLabel": "Texte intégral · PDF",
+      "actionLabel": "Lire le PDF"
+    },
+    {
+      "id": "video:therese-kuaqeluofc",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence 1",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=_KUAQELUoFc&t=1113s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence"
+    },
+    {
+      "id": "video:therese-i-acsgkrcyu",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence 2",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=i-AcsgkRCyU&t=189s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence"
+    },
+    {
+      "id": "video:therese-d7ciwdcvsqk",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 3",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=D7CiWDcVsqk",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-64c1otews1q",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 4",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=64C1OteWS1Q",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-pn-62zpbu4",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 5",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=Pn-62zPbZU4",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-4czudkcw-ss",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — lecture",
+      "description": "Lecture / mise en voix consacrée à un texte de Thérèse d’Avila.",
+      "url": "https://www.youtube.com/watch?v=4czudkcW_Ss",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "fiction",
+      "contentTypeLabel": "Lecture / mise en voix"
+    },
+    {
+      "id": "video:therese-inslv3zollc",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — résumé / analyse",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=INslv3ZOlLc",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Résumé / analyse"
+    },
+    {
+      "id": "video:therese-t9dg5-2isqo",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — analyse approfondie",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=t9dg5_2iSqo&t=2969s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Analyse"
+    },
+    {
+      "id": "video:therese-jy9ssqqscn0",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 6",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=Jy9SsQqscN0",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-brzg-bwd8a",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 7",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=BRzG--bwd8A&t=486s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-9fvbygbsiVo",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 8",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=9fVbygBSiVo&t=6s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-5xamb7-t6qc",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 9",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=5XAMb7-T6Qc",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-dqs3fmsewmy",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 10",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=dQs3fMsewMY",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-m3r1dklk5bq",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 11",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=m3R1Dklk5BQ&t=8s",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-o46y8ueawv4",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 12",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=o46y8ueAwV4",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "video:therese-u7ftt5jnzzw",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Aimer et servir l’Église de son temps : le témoignage de sainte Thérèse d’Avila",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=U7fTT5jnZzw",
+      "source": "Studium de Notre-Dame de Vie / YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence",
+      "creator": "Jean-Marie Laurier"
+    },
+    {
+      "id": "video:therese-lfop8whb8zo",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Thérèse d’Avila — conférence / présentation 13",
+      "description": "Ressource vidéo consacrée à Thérèse d’Avila, à sa vie, son œuvre et sa pensée mystique.",
+      "url": "https://www.youtube.com/watch?v=LfoP8wHb8Zo",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Thérèse d’Avila",
+      "themes": [
+        "Thérèse d’Avila",
+        "Mystique",
+        "Oraison",
+        "Intériorité",
+        "Carmel"
+      ],
+      "people": [
+        "Thérèse d’Avila"
+      ],
+      "keywords": [
+        "therese d'avila",
+        "sainte therese d'avila",
+        "therese de jesus",
+        "mystique",
+        "oraison",
+        "carmel"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Conférence / présentation"
+    },
+    {
+      "id": "audio:loyola-journee-saint-augustin",
+      "kind": "audio",
+      "title": "Journée Saint Augustin — des Dialogues philosophiques aux Confessions et à la Cité de Dieu",
+      "creator": "Facultés Loyola Paris",
+      "subtitle": "Journée d’étude · 7 conférences",
+      "description": "Journée d’étude consacrée à la pensée philosophique d’Augustin, avec sept conférences audio directement accessibles.",
+      "url": "https://www.loyolaparis.fr/audio/journee-saint-augustin/",
+      "source": "Facultés Loyola Paris",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Connaissance",
+        "Libre arbitre",
+        "Temps",
+        "Éternité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "loyola",
+        "dialogues philosophiques",
+        "libre arbitre",
+        "temps",
+        "cité de dieu"
+      ],
+      "episodes": [
+        {
+          "title": "1/7 · Vérité et révélation dans les Dialogues philosophiques — Laurent Lavaud",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/verite-et-revelation-dans-les-dialogues-philosophiques-laurent-lavaud.mp3"
+        },
+        {
+          "title": "2/7 · L’idée de connaissance dans les Dialogues de Cassiciacum — Anne-Isabelle Bouton-Touboulic",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/lidee-de-connaissance-dans-les-dialogues-cassiciacum-anne-isabelle-bouton-touboulic.mp3"
+        },
+        {
+          "title": "3/7 · Porphyre et Cicéron dans le dialogue intérieur d’Augustin — Catherine Lefort",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/porphyre-et-ciceron-dans-le-dialogue-interieur-daugustin-une-lecture-des-soliloques-catherine-lefort.mp3"
+        },
+        {
+          "title": "4/7 · Des catégories de l’âme ? — Kristell Trego",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/des-categories-de-lame-kristell-trego.mp3"
+        },
+        {
+          "title": "5/7 · Augustin entre libre arbitre et faiblesse de la volonté — Olivier Boulnois",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/augustin-entre-libre-arbitre-et-faiblesse-de-la-volonte-olivier-boulnois.mp3"
+        },
+        {
+          "title": "6/7 · Temps et éternité : Plotin, Porphyre et Augustin — Philippe Hoffmann",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/temps-et-eternite-plotin-porphyre-et-augustin-philippe-hoffmann.mp3"
+        },
+        {
+          "title": "7/7 · La Cité de Dieu : la religion chrétienne comme vraie philosophie — Isabelle Bochet",
+          "url": "https://www.loyolaparis.fr/wp-content/uploads/2016/11/la-cite-de-dieu-la-religion-chretienne-comme-vraie-philosophie-isabelle-bochet.mp3"
+        }
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Journée d’étude · 7 conférences audio"
+    },
+    {
+      "id": "video:augustin-et48nc8zddo",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin — émission / conférence KTO 1",
+      "description": "Ressource vidéo consacrée à saint Augustin, à sa vie et à sa pensée.",
+      "url": "https://www.youtube.com/watch?v=ET48Nc8ZdDo",
+      "source": "KTO / YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Temps",
+        "Intériorité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone",
+        "confessions",
+        "temps",
+        "cité de dieu"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Émission / conférence"
+    },
+    {
+      "id": "video:augustin-xkn-uddnlxa",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin aujourd’hui",
+      "description": "Ressource vidéo consacrée à saint Augustin, à sa vie et à sa pensée.",
+      "url": "https://www.youtube.com/watch?v=Xkn-uDDnlxA",
+      "source": "KTO / YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Temps",
+        "Intériorité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone",
+        "confessions",
+        "temps",
+        "cité de dieu"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Émission / conférence"
+    },
+    {
+      "id": "video:augustin-gk3r6jluqwu",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin — conférence / présentation 1",
+      "description": "Ressource vidéo consacrée à saint Augustin, à sa vie et à sa pensée.",
+      "url": "https://www.youtube.com/watch?v=gK3R6jLuqWU",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Temps",
+        "Intériorité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone",
+        "confessions",
+        "temps",
+        "cité de dieu"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Émission / conférence"
+    },
+    {
+      "id": "video:augustin-xlbu7tsm3ru",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin — conférence / présentation 2",
+      "description": "Ressource vidéo consacrée à saint Augustin, à sa vie et à sa pensée.",
+      "url": "https://www.youtube.com/watch?v=xlbu7TSm3RU",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Temps",
+        "Intériorité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone",
+        "confessions",
+        "temps",
+        "cité de dieu"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Émission / conférence"
+    },
+    {
+      "id": "video:augustin-r17zerdbdi8",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin — conférence / présentation 3",
+      "description": "Ressource vidéo consacrée à saint Augustin, à sa vie et à sa pensée.",
+      "url": "https://www.youtube.com/watch?v=r17ZeRdbDi8",
+      "source": "YouTube",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Confessions",
+        "Temps",
+        "Intériorité",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone",
+        "confessions",
+        "temps",
+        "cité de dieu"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Émission / conférence"
+    },
+    {
+      "id": "video:canal-u-augustin-lem-une",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Saint Augustin — ressource du Laboratoire d’études sur les monothéismes",
+      "description": "Ressource universitaire du Laboratoire d’études sur les monothéismes consacrée à Augustin.",
+      "url": "https://www.canal-u.tv/chaines/cnrs-service-audiovisuel-d-ardis-uar2259/laboratoires-d-etudes-sur-les-monotheismes-lem/une",
+      "source": "Canal-U · CNRS / LEM",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Christianisme",
+        "Antiquité tardive",
+        "Théologie"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "canal-u",
+        "cnrs",
+        "lem",
+        "monotheismes"
+      ],
+      "contentCategory": "cours",
+      "contentTypeLabel": "Ressource universitaire"
+    },
+    {
+      "id": "podcast:fc-augustin-temps-basile-cesaree",
+      "kind": "podcast",
+      "title": "Philosophie et théologie du temps, de Basile de Césarée à Augustin d’Hippone",
+      "creator": "France Culture · L’Éloge du savoir",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/l-eloge-du-savoir/philosophie-et-theologie-du-temps-de-basile-de-cesaree-a-augustin-d-hippone-1715905",
+      "source": "France Culture",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission / cours radiophonique",
+      "description": "Émission sur les conceptions philosophiques et théologiques du temps, de Basile de Césarée à Augustin d’Hippone.",
+      "themes": [
+        "Saint Augustin",
+        "Temps",
+        "Théologie",
+        "Antiquité tardive"
+      ],
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone"
+      ]
+    },
+    {
+      "id": "video:cdf-dire-deuil-augustin-ambroise-bernard",
+      "kind": "video",
+      "videoType": "cours",
+      "title": "Dire le deuil : saint Augustin, saint Ambroise et saint Bernard",
+      "creator": "Collège de France",
+      "url": "https://www.college-de-france.fr/fr/agenda/seminaire/ecrire-la-vie-ii/dire-le-deuil-saint-augustin-saint-ambroise-et-saint-bernard",
+      "source": "Collège de France",
+      "contentCategory": "cours",
+      "contentTypeLabel": "Séminaire",
+      "description": "Séminaire du Collège de France consacré aux manières de dire le deuil chez saint Augustin, saint Ambroise et saint Bernard.",
+      "themes": [
+        "Saint Augustin",
+        "Deuil",
+        "Écriture",
+        "Christianisme"
+      ],
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone"
+      ]
+    },
+    {
+      "id": "podcast:fc-force-intacte-saint-augustin",
+      "kind": "podcast",
+      "title": "La force intacte de saint Augustin",
+      "creator": "France Culture · Concordance des temps",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/concordance-des-temps/la-force-intacte-de-saint-augustin-2781567",
+      "source": "France Culture",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission France Culture",
+      "description": "Émission consacrée à la postérité et à l’actualité intellectuelle de saint Augustin.",
+      "themes": [
+        "Saint Augustin",
+        "Histoire",
+        "Réception"
+      ],
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone"
+      ]
+    },
+    {
+      "id": "podcast:fc-espace-interieur-augustin",
+      "kind": "podcast",
+      "title": "À quoi ressemble notre espace intérieur ?",
+      "creator": "France Culture · La Grande Table",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/la-grande-table-2eme-partie/a-quoi-ressemble-notre-espace-interieur-8810180",
+      "source": "France Culture",
+      "contentCategory": "emission",
+      "contentTypeLabel": "Émission France Culture",
+      "description": "Émission autour de l’intériorité, avec saint Augustin parmi les grandes références mobilisées.",
+      "themes": [
+        "Saint Augustin",
+        "Intériorité",
+        "Mémoire",
+        "Conscience"
+      ],
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "augustin d'hippone"
+      ]
+    },
+    {
+      "id": "podcast:fc-sacre-saint-augustin",
+      "kind": "podcast",
+      "title": "Sacré Saint Augustin",
+      "creator": "France Culture · Les Chemins de la philosophie",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre émissions consacrées à l’amour, au temps, à la conversion et à la Cité de Dieu chez saint Augustin.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/sacre-saint-augustin-1-4-amour-de-soi-amour-de-dieu-3525310",
+      "source": "France Culture",
+      "section": "Saints, mystiques & pensée religieuse",
+      "figure": "Saint Augustin",
+      "themes": [
+        "Saint Augustin",
+        "Amour",
+        "Temps",
+        "Conversion",
+        "Cité de Dieu"
+      ],
+      "people": [
+        "Saint Augustin"
+      ],
+      "keywords": [
+        "saint augustin",
+        "sacre saint augustin",
+        "amour",
+        "temps",
+        "conversion",
+        "cité de dieu"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · Amour de soi, amour de Dieu",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/sacre-saint-augustin-1-4-amour-de-soi-amour-de-dieu-3525310"
+        },
+        {
+          "title": "2/4 · Qu’est-ce que le temps ?",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/sacre-saint-augustin-qu-est-ce-que-le-temps-4234019"
+        },
+        {
+          "title": "3/4 · La conversion comme chemin",
+          "url": "https://www.youtube.com/watch?v=wKNIUqRQ5UM"
+        },
+        {
+          "title": "4/4 · Dans la cité",
+          "url": "https://www.youtube.com/watch?v=TMuLVh8rmZA"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série France Culture · 4 épisodes"
+    },
+    {
+      "id": "podcast:fc-serie-peut-on-expliquer-le-charme",
+      "kind": "podcast",
+      "title": "Peut-on expliquer le charme ?",
+      "creator": "France Culture · Avec philosophie",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Série philosophique en quatre volets sur la grâce, l’attrait amoureux, le charisme et la séduction.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-peut-on-expliquer-le-charme",
+      "source": "France Culture",
+      "section": "Philosophie",
+      "themes": [
+        "Charme",
+        "Grâce",
+        "Amour",
+        "Charisme",
+        "Séduction"
+      ],
+      "people": [
+        "Jean Baudrillard"
+      ],
+      "keywords": [
+        "charme",
+        "grace",
+        "amour",
+        "charisme",
+        "séduction",
+        "baudrillard"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · L’énigme de la grâce",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie/l-enigme-de-la-grace-7211531"
+        },
+        {
+          "title": "2/4 · L’attrait amoureux est-il magique ?",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie/l-attrait-amoureux-est-il-magique-4458236"
+        },
+        {
+          "title": "3/4 · Le charisme des chefs existe-t-il ?",
+          "duration": "59 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie/le-charisme-des-chefs-existe-t-il-8526128"
+        },
+        {
+          "title": "4/4 · La séduction selon Baudrillard",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/avec-philosophie/la-seduction-selon-baudrillard-1711929"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série philosophique · 4 épisodes"
+    },
+    {
+      "id": "podcast:fm-serie-musique-philosophes",
+      "kind": "podcast",
+      "title": "La musique et les philosophes",
+      "creator": "France Musique · Arabesques",
+      "subtitle": "Série · 5 épisodes",
+      "description": "Cinq émissions sur les relations entre philosophie et musique, de l’Antiquité au XXe siècle.",
+      "url": "https://www.radiofrance.fr/francemusique/podcasts/serie-la-musique-et-les-philosophes",
+      "source": "France Musique",
+      "section": "Philosophie",
+      "themes": [
+        "Musique",
+        "Esthétique",
+        "Philosophie",
+        "Antiquité",
+        "Modernité"
+      ],
+      "people": [
+        "Pythagore",
+        "Platon",
+        "Aristote",
+        "Saint Augustin",
+        "Boèce",
+        "René Descartes",
+        "Friedrich Nietzsche"
+      ],
+      "keywords": [
+        "musique",
+        "philosophie",
+        "pythagore",
+        "aristote",
+        "saint augustin",
+        "boece",
+        "descartes",
+        "nietzsche"
+      ],
+      "episodes": [
+        {
+          "title": "1/5 · Les Antiques, de Pythagore à Aristote",
+          "duration": "1 h 28",
+          "url": "https://www.radiofrance.fr/francemusique/podcasts/arabesques/les-philosophes-et-la-musique-1-5-6295359"
+        },
+        {
+          "title": "2/5 · Les Médiévaux, Saint-Augustin et Boèce",
+          "duration": "1 h 29",
+          "url": "https://www.radiofrance.fr/francemusique/podcasts/arabesques/les-philosophes-et-la-musique-2-5-3531446"
+        },
+        {
+          "title": "3/5 · XVe et XVIe siècles, exprimer les sentiments et les passions",
+          "duration": "1 h 28",
+          "url": "https://www.radiofrance.fr/francemusique/podcasts/arabesques/les-philosophes-et-la-musique-3-5-8170293"
+        },
+        {
+          "title": "4/5 · Les Cartésiens : « Les passions sont le sel de la vie. »",
+          "duration": "1 h 29",
+          "url": "https://www.radiofrance.fr/francemusique/podcasts/arabesques/les-philosophes-et-la-musique-4-5-3224418"
+        },
+        {
+          "title": "5/5 · XVIIIe, XIXe et XXe siècles : la musique et l’ineffable",
+          "duration": "1 h 28",
+          "url": "https://www.radiofrance.fr/francemusique/podcasts/arabesques/les-philosophes-et-la-musique-5-5-3007932"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série France Musique · 5 épisodes"
+    },
+    {
+      "id": "podcast:fc-serie-quand-philosophes-segarent",
+      "kind": "podcast",
+      "title": "Quand les philosophes s’égarent",
+      "creator": "France Culture · Les Chemins de la philosophie",
+      "subtitle": "Série · 4 épisodes",
+      "description": "Quatre émissions consacrées à Machiavel, saint Augustin, Kant et Nietzsche.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/serie-quand-les-philosophes-s-egarent",
+      "source": "France Culture",
+      "section": "Philosophie",
+      "themes": [
+        "Philosophie",
+        "Machiavel",
+        "Saint Augustin",
+        "Kant",
+        "Nietzsche"
+      ],
+      "people": [
+        "Nicolas Machiavel",
+        "Saint Augustin",
+        "Immanuel Kant",
+        "Friedrich Nietzsche"
+      ],
+      "keywords": [
+        "machiavel",
+        "saint augustin",
+        "kant",
+        "nietzsche",
+        "france culture"
+      ],
+      "episodes": [
+        {
+          "title": "1/4 · « Le Prince » de Machiavel, conseils d’un politicien raté",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/le-prince-de-machiavel-conseils-d-un-politicien-rate-7269306"
+        },
+        {
+          "title": "2/4 · Saint Augustin face à « cette pute d’âme humaine »",
+          "duration": "57 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/saint-augustin-face-a-cette-pute-d-ame-humaine-7525816"
+        },
+        {
+          "title": "3/4 · Kant, il faut sauver la reine métaphysique !",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/kant-il-faut-sauver-la-reine-metaphysique-2136563"
+        },
+        {
+          "title": "4/4 · Nietzsche, l’échec rend-il plus fort ?",
+          "duration": "58 min",
+          "url": "https://www.radiofrance.fr/franceculture/podcasts/les-chemins-de-la-philosophie/nietzsche-l-aurore-d-un-outsider-9151590"
+        }
+      ],
+      "contentCategory": "emission",
+      "contentTypeLabel": "Série philosophique · 4 épisodes"
     }
   ],
   "dossiers": [

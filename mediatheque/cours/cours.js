@@ -13,6 +13,7 @@
   const aside = $("[data-course-aside]");
   const toc = $("[data-course-toc]");
   const focusButtons = [...document.querySelectorAll("[data-course-focus]")];
+  const editLink = $("[data-course-edit]");
   function applyCourseFocus(active) {
     const enabled = Boolean(active);
     document.body.classList.toggle("course-focus", enabled);
@@ -133,6 +134,11 @@
     if(!item){ loading.hidden=true; error.hidden=false; return; }
 
     document.body.dataset.theme=item.courseTheme||"general";
+    if(editLink){
+      const courseId=String(item.id||"").split(":").pop();
+      editLink.href=`../../editeurtexte/?course=${encodeURIComponent(courseId)}`;
+      editLink.title="Créer ou rouvrir une copie de travail locale de ce cours dans l’éditeur Philosophal";
+    }
     document.title=`${item.title} — Médiathèque`;
     title.textContent=item.title;
     description.textContent=item.description||"";

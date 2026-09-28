@@ -33,6 +33,15 @@
     return na - nb || String(a).localeCompare(String(b), "fr", { numeric: true });
   }
 
+
+  function levelDisplayLabel(level = "") {
+    const value = String(level);
+    if (/\bL1\b/.test(value)) return `${value} — Première année`;
+    if (/\bL2\b/.test(value)) return `${value} — Deuxième année`;
+    if (/\bL3\b/.test(value)) return `${value} — Troisième année`;
+    return value;
+  }
+
   function groupBy(items, keyFn) {
     const map = new Map();
     items.forEach((item) => {
@@ -82,7 +91,7 @@
         <header class="fvc-formation-head"><div><span>FORMATION</span><h4>${esc(formation)}</h4></div><strong>${formationItems.length}<small> docs</small></strong></header>
         ${[...levels.entries()].sort((a,b)=>a[0].localeCompare(b[0],"fr",{numeric:true})).map(([level, levelItems]) => {
           const semesters = groupBy(levelItems, (item) => item.semester || "Sans semestre");
-          return `<div class="fvc-level"><div class="fvc-level-label">${esc(level)}</div>
+          return `<div class="fvc-level"><div class="fvc-level-label">${esc(levelDisplayLabel(level))}</div>
             <div class="fvc-semester-grid">${[...semesters.entries()].sort((a,b)=>sortLabel(a[0],b[0])).map(([semester, semesterItems]) => {
               const ues = groupBy(semesterItems, (item) => item.ue || "Enseignement non précisé");
               return `<details class="fvc-semester">

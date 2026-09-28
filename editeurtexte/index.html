@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="theme-color" content="#f5f3f8">
+  <title>Éditeur de texte — Philosophal</title>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./editor.css?v=20260928-tools1">
+  <link rel="stylesheet" href="./editor-v3.css?v=20260928-tools1">
+</head>
+<body>
+  <header class="editor-topbar">
+    <div class="editor-topbar-left">
+      <div class="editor-brand" aria-label="Éditeur Philosophal">
+        <span class="editor-brand-mark" aria-hidden="true">✎</span>
+        <span><strong>Éditeur</strong><small>Philosophal</small></span>
+      </div>
+    </div>
+    <div class="editor-topbar-actions">
+      <span class="editor-save-state" data-save-state>Prêt</span>
+      <button class="editor-quiet-button" type="button" data-open-search title="Rechercher dans le document (Ctrl+F)">Rechercher</button>
+      <button class="editor-quiet-button" type="button" data-preview-document>Aperçu</button>
+      <button class="editor-quiet-button" type="button" data-outline-toggle aria-pressed="false">Plan</button>
+      <button class="editor-quiet-button" type="button" data-open-versions>Versions</button>
+      <button class="editor-icon-top" type="button" data-theme-toggle aria-label="Mode sombre" title="Mode sombre">◐</button>
+      <button class="editor-quiet-button" type="button" data-focus-mode aria-pressed="false">Mode écriture</button>
+      <button class="editor-quiet-button" type="button" data-fullscreen aria-pressed="false">Plein écran</button>
+    </div>
+  </header>
+
+  <main class="editor-app" data-editor-app aria-hidden="false">
+    <aside class="editor-library" data-library>
+      <div class="editor-library-head">
+        <div>
+          <span>Bibliothèque locale</span>
+          <strong>Mes documents</strong>
+        </div>
+        <button type="button" class="editor-icon-button" data-close-library aria-label="Fermer la bibliothèque">×</button>
+      </div>
+
+      <div class="editor-library-actions">
+        <button type="button" class="editor-primary-small" data-new-document>＋ Nouveau</button>
+        <button type="button" class="editor-secondary-small" data-import-document>Importer</button>
+        <input type="file" data-file-input accept=".html,.htm,.txt,.md,.markdown,.json,.phil,.philosophal" hidden>
+      </div>
+      <div class="editor-library-tools">
+        <button type="button" data-backup-library>⇩ Sauvegarder tout</button>
+        <button type="button" data-open-trash>Corbeille <span data-trash-count>0</span></button>
+      </div>
+
+
+      <label class="editor-library-search">
+        <span class="sr-only">Rechercher un document</span>
+        <input type="search" data-document-search placeholder="Rechercher…" autocomplete="off">
+      </label>
+
+      <div class="editor-document-list" data-document-list></div>
+      <div class="editor-library-empty" data-library-empty hidden>
+        <strong>Aucun document</strong>
+        <p>Crée une note ou importe un fichier.</p>
+      </div>
+
+      <div class="editor-library-note">
+        <strong>Sauvegarde automatique locale</strong>
+        <p>Les documents restent sur cet appareil. « Sauvegarder tout » crée une copie transportable de ta bibliothèque.</p>
+      </div>
+    </aside>
+
+    <button class="editor-library-backdrop" type="button" data-library-backdrop aria-label="Fermer la bibliothèque" hidden></button>
+
+    <section class="editor-workspace">
+      <div class="editor-document-bar">
+        <button type="button" class="editor-library-trigger" data-open-library aria-expanded="false">☰ <span>Documents</span></button>
+        <input class="editor-title-input" data-document-title type="text" autocomplete="off" spellcheck="true" placeholder="Sans titre" aria-label="Titre du document">
+        <div class="editor-document-actions">
+          <button type="button" class="editor-icon-text" data-create-version title="Créer un point de restauration">Version</button>
+          <button type="button" class="editor-icon-text" data-duplicate-document title="Dupliquer le document">Dupliquer</button>
+          <button type="button" class="editor-icon-text is-danger" data-delete-document title="Déplacer dans la corbeille">Corbeille</button>
+        </div>
+      </div>
+
+      <div class="editor-tabs" data-tabs aria-label="Documents ouverts"></div>
+
+      <div class="editor-toolbar" data-toolbar role="toolbar" aria-label="Mise en forme du document">
+        <div class="editor-toolbar-group">
+          <button type="button" data-command="undo" title="Annuler (Ctrl+Z)" aria-label="Annuler">↶</button>
+          <button type="button" data-command="redo" title="Rétablir (Ctrl+Y)" aria-label="Rétablir">↷</button>
+        </div>
+
+        <div class="editor-toolbar-group editor-format-select-wrap">
+          <label class="sr-only" for="editor-format">Style de paragraphe</label>
+          <select id="editor-format" data-format-block title="Style de paragraphe">
+            <option value="p">Paragraphe</option>
+            <option value="h1">Titre 1</option>
+            <option value="h2">Titre 2</option>
+            <option value="h3">Titre 3</option>
+            <option value="blockquote">Citation longue</option>
+          </select>
+        </div>
+
+        <div class="editor-toolbar-group editor-font-select-wrap">
+          <label class="sr-only" for="editor-font">Police d’écriture</label>
+          <select id="editor-font" data-font-family title="Police d’écriture" aria-label="Police d’écriture">
+            <option value="">Police</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Arial">Arial</option>
+            <option value="Calibri">Calibri</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Courier New">Courier New</option>
+          </select>
+          <select data-font-size title="Taille du texte" aria-label="Taille du texte">
+            <option value="">Taille</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="28">28</option>
+            <option value="32">32</option>
+          </select>
+        </div>
+
+        <div class="editor-toolbar-group">
+          <button type="button" data-command="bold" title="Gras (Ctrl+B)" aria-label="Gras"><strong>G</strong></button>
+          <button type="button" data-command="italic" title="Italique (Ctrl+I)" aria-label="Italique"><em>I</em></button>
+          <button type="button" data-command="underline" title="Souligné (Ctrl+U)" aria-label="Souligné"><u>S</u></button>
+          <button type="button" data-command="strikeThrough" title="Barré" aria-label="Barré"><s>abc</s></button>
+          <button type="button" data-command="superscript" title="Exposant" aria-label="Exposant">x²</button>
+          <button type="button" data-command="subscript" title="Indice" aria-label="Indice">x₂</button>
+          <button type="button" data-command="removeFormat" title="Effacer la mise en forme" aria-label="Effacer la mise en forme">Tx</button>
+        </div>
+
+        <div class="editor-toolbar-group editor-color-tools">
+          <label class="editor-color-button" title="Couleur du texte">
+            <span>A</span><i data-text-color-preview></i>
+            <input type="color" data-text-color value="#242229" aria-label="Couleur du texte">
+          </label>
+          <label class="editor-color-button" title="Surlignage">
+            <span class="editor-highlight-icon">A</span><i data-highlight-color-preview></i>
+            <input type="color" data-highlight-color value="#fff2a8" aria-label="Couleur de surlignage">
+          </label>
+        </div>
+
+        <div class="editor-toolbar-group">
+          <button type="button" data-command="insertUnorderedList" title="Liste à puces" aria-label="Liste à puces">•≡</button>
+          <button type="button" data-command="insertOrderedList" title="Liste numérotée" aria-label="Liste numérotée">1≡</button>
+          <button type="button" data-command="outdent" title="Diminuer le retrait" aria-label="Diminuer le retrait">⇤</button>
+          <button type="button" data-command="indent" title="Augmenter le retrait" aria-label="Augmenter le retrait">⇥</button>
+        </div>
+
+        <div class="editor-toolbar-group">
+          <button type="button" data-command="justifyLeft" title="Aligner à gauche" aria-label="Aligner à gauche">☰</button>
+          <button type="button" data-command="justifyCenter" title="Centrer" aria-label="Centrer">≡</button>
+          <button type="button" data-command="justifyRight" title="Aligner à droite" aria-label="Aligner à droite">☷</button>
+          <button type="button" data-command="justifyFull" title="Justifier" aria-label="Justifier">▤</button>
+        </div>
+
+        <div class="editor-toolbar-group">
+          <button type="button" data-link title="Insérer un lien (Ctrl+K)" aria-label="Insérer un lien">🔗</button>
+          <button type="button" data-insert-table title="Insérer un tableau" aria-label="Insérer un tableau">▦</button>
+          <button type="button" data-footnote title="Ajouter une note de bas de page" aria-label="Note de bas de page">¹</button>
+          <button type="button" data-symbols title="Caractères spéciaux" aria-label="Caractères spéciaux">Ω</button>
+          <button type="button" data-command="insertHorizontalRule" title="Séparateur" aria-label="Insérer un séparateur">—</button>
+          <button type="button" data-insert-date title="Insérer la date" aria-label="Insérer la date">Date</button>
+        </div>
+
+        <div class="editor-toolbar-group">
+          <button type="button" class="editor-blocks-trigger" data-blocks-trigger title="Insérer un bloc Philosophal">＋ Bloc</button>
+          <div class="editor-inline-popover editor-blocks-popover" data-blocks-popover hidden>
+            <button type="button" data-block="definition">Définition</button>
+            <button type="button" data-block="citation">Citation</button>
+            <button type="button" data-block="example">Exemple</button>
+            <button type="button" data-block="author">Auteur</button>
+            <button type="button" data-block="remember">À retenir</button>
+            <button type="button" data-block="warning">Attention</button>
+            <button type="button" data-block="problem">Problème</button>
+            <button type="button" data-block="reference">Référence</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor-searchbar" data-searchbar hidden>
+        <input type="search" data-find-input placeholder="Rechercher dans le document…" autocomplete="off">
+        <span data-find-count>0 résultat</span>
+        <button type="button" data-find-prev title="Résultat précédent">↑</button>
+        <button type="button" data-find-next title="Résultat suivant">↓</button>
+        <span class="editor-search-divider"></span>
+        <input type="text" data-replace-input placeholder="Remplacer par…" autocomplete="off">
+        <button type="button" data-replace-one>Remplacer</button>
+        <button type="button" data-replace-all>Tout remplacer</button>
+        <button type="button" data-close-search aria-label="Fermer">×</button>
+      </div>
+
+      <div class="editor-secondary-bar">
+        <div class="editor-source-pill" data-source-pill hidden></div>
+        <div class="editor-view-settings">
+          <label>Interligne
+            <select data-line-height>
+              <option value="1.35">1,35</option>
+              <option value="1.5">1,5</option>
+              <option value="1.72" selected>1,72</option>
+              <option value="2">2</option>
+            </select>
+          </label>
+          <label>Paragraphes
+            <select data-paragraph-spacing>
+              <option value="0.45">Serré</option>
+              <option value="0.72" selected>Normal</option>
+              <option value="1">Aéré</option>
+              <option value="1.35">Très aéré</option>
+            </select>
+          </label>
+          <label>Marges
+            <select data-page-margin>
+              <option value="compact">Compactes</option>
+              <option value="normal" selected>Normales</option>
+              <option value="wide">Larges</option>
+            </select>
+          </label>
+          <label>Zoom
+            <select data-page-zoom>
+              <option value="0.8">80 %</option>
+              <option value="0.9">90 %</option>
+              <option value="1" selected>100 %</option>
+              <option value="1.1">110 %</option>
+              <option value="1.25">125 %</option>
+            </select>
+          </label>
+        </div>
+        <div class="editor-export-menu" data-export-menu>
+          <button type="button" class="editor-export-trigger" data-export-trigger aria-expanded="false">Exporter <span aria-hidden="true">▾</span></button>
+          <div class="editor-export-popover" data-export-popover hidden>
+            <button type="button" data-export="docx"><strong>Word (.docx)</strong><small>Document Word modifiable</small></button>
+            <button type="button" data-export="pdf"><strong>PDF</strong><small>Ouvre la version imprimable</small></button>
+            <button type="button" data-export="html"><strong>HTML</strong><small>Conserve la mise en forme</small></button>
+            <button type="button" data-export="markdown"><strong>Cours (.md)</strong><small>Markdown portable</small></button>
+            <button type="button" data-export="backup"><strong>Sauvegarde Philosophal</strong><small>Copie complète réimportable</small></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor-page-scroll" data-page-scroll>
+        <article class="editor-paper" aria-label="Document" data-paper>
+          <div class="editor-canvas" data-editor contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" data-placeholder="Commence à écrire ici… Tape / pour insérer rapidement un bloc."></div>
+        </article>
+      </div>
+
+      <footer class="editor-statusbar">
+        <span data-word-count>0 mot</span>
+        <span data-char-count>0 caractère</span>
+        <span class="editor-status-spacer"></span>
+        <span class="editor-shortcut-hint">/ commandes · Ctrl+F recherche · Ctrl+S sauvegarde</span>
+        <span data-last-save>Non enregistré</span>
+      </footer>
+    </section>
+
+    <aside class="editor-outline-panel" data-outline-panel aria-label="Plan du document">
+      <div class="editor-outline-head">
+        <div><span>Navigation</span><strong>Plan du document</strong></div>
+        <button type="button" data-close-outline aria-label="Fermer le plan">×</button>
+      </div>
+      <p class="editor-outline-help">Titres H1–H3. Fais glisser une section pour réorganiser le cours.</p>
+      <div class="editor-outline-list" data-outline-list></div>
+      <div class="editor-outline-empty" data-outline-empty>Aucun titre pour l’instant.</div>
+    </aside>
+  </main>
+
+  <div class="editor-command-palette" data-command-palette hidden>
+    <div class="editor-command-head"><span>/</span><input data-command-query type="text" placeholder="Insérer…" autocomplete="off"></div>
+    <div class="editor-command-list" data-command-list></div>
+  </div>
+
+  <div class="editor-modal" data-template-modal hidden role="dialog" aria-modal="true" aria-labelledby="template-title">
+    <button class="editor-modal-backdrop" type="button" data-close-template aria-label="Fermer"></button>
+    <section class="editor-modal-card editor-template-card">
+      <div class="editor-modal-head">
+        <div><span>Nouveau document</span><h2 id="template-title">Choisir un modèle</h2></div>
+        <button type="button" data-close-template aria-label="Fermer">×</button>
+      </div>
+      <div class="editor-template-grid" data-template-grid></div>
+    </section>
+  </div>
+
+  <div class="editor-modal" data-versions-modal hidden role="dialog" aria-modal="true" aria-labelledby="versions-title">
+    <button class="editor-modal-backdrop" type="button" data-close-versions aria-label="Fermer"></button>
+    <section class="editor-modal-card editor-versions-card">
+      <div class="editor-modal-head">
+        <div><span>Sécurité</span><h2 id="versions-title">Historique des versions</h2></div>
+        <button type="button" data-close-versions aria-label="Fermer">×</button>
+      </div>
+      <div class="editor-modal-actions"><button type="button" class="editor-primary-small" data-manual-version>＋ Créer une version maintenant</button></div>
+      <div class="editor-version-list" data-version-list></div>
+    </section>
+  </div>
+
+  <div class="editor-modal" data-trash-modal hidden role="dialog" aria-modal="true" aria-labelledby="trash-title">
+    <button class="editor-modal-backdrop" type="button" data-close-trash aria-label="Fermer"></button>
+    <section class="editor-modal-card editor-trash-card">
+      <div class="editor-modal-head">
+        <div><span>Récupération</span><h2 id="trash-title">Corbeille</h2></div>
+        <button type="button" data-close-trash aria-label="Fermer">×</button>
+      </div>
+      <p class="editor-modal-intro">Les documents supprimés restent ici jusqu’à leur suppression définitive.</p>
+      <div class="editor-trash-list" data-trash-list></div>
+    </section>
+  </div>
+
+  <div class="editor-modal editor-preview-modal" data-preview-modal hidden role="dialog" aria-modal="true" aria-labelledby="preview-title">
+    <button class="editor-modal-backdrop" type="button" data-close-preview aria-label="Fermer"></button>
+    <section class="editor-preview-shell">
+      <header class="editor-preview-head">
+        <div><span>Aperçu Philosophal</span><h2 id="preview-title" data-preview-title>Document</h2></div>
+        <button type="button" data-close-preview>Fermer ×</button>
+      </header>
+      <article class="editor-course-preview" data-preview-content></article>
+    </section>
+  </div>
+
+  <div class="editor-symbols" data-symbols-popover hidden>
+    <div class="editor-symbols-head"><strong>Caractères spéciaux</strong><button type="button" data-close-symbols>×</button></div>
+    <div class="editor-symbol-grid" data-symbol-grid></div>
+  </div>
+
+  <div class="editor-toast" data-toast hidden role="status"></div>
+
+  <script src="../mediatheque/data.js?v=20260928-tools1"></script>
+  <script src="../mediatheque/s1-courses.js?v=20260928-tools1"></script>
+  <script src="../mediatheque/s2-courses.js?v=20260928-tools1"></script>
+  <script src="../mediatheque/s3-courses.js?v=20260928-tools1"></script>
+  <script src="../mediatheque/s4-courses.js?v=20260928-tools1"></script>
+  <script src="../mediatheque/research-courses.js?v=20260928-tools1"></script>
+  <script src="./editor.js?v=20260928-tools1"></script>
+  <script src="./editor-v2.js?v=20260928-tools1"></script>
+  <script src="./editor-v3.js?v=20260928-tools1"></script>
+  <script src="../js/site-tools.js?v=20260928-tools1" defer></script>
+</body>
+</html>

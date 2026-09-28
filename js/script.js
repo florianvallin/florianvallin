@@ -3,7 +3,7 @@
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
   const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260927-methodo2`;
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260928-study2`;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -131,15 +131,14 @@
     }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        const index = items.indexOf(entry.target);
+        window.setTimeout(() => entry.target.classList.add("is-visible"), Math.max(0, index) * 70);
+        observer.unobserve(entry.target);
       });
-    }, { threshold: 0.09, rootMargin: "0px 0px -40px" });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px" });
     items.forEach((item) => observer.observe(item));
   }
-
 
   function initReviews() {
     const root = document.querySelector("[data-carousel]");
@@ -335,36 +334,15 @@
     const cards = [...document.querySelectorAll("[data-blog-card]")];
     const count = document.querySelector("[data-blog-count]");
     const empty = document.querySelector("[data-blog-empty]");
-    const validTopics = new Set(buttons.map((button) => button.dataset.blogFilter || "all"));
-    const requestedTopic = normalizeSearch(new URLSearchParams(window.location.search).get("categorie") || "all");
-    let topic = validTopics.has(requestedTopic) ? requestedTopic : "all";
-
-    const syncButtons = () => {
-      buttons.forEach((item) => {
-        const active = (item.dataset.blogFilter || "all") === topic;
-        item.classList.toggle("is-active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
-    };
-
-    const syncUrl = () => {
-      const url = new URL(window.location.href);
-      if (topic === "all") url.searchParams.delete("categorie");
-      else url.searchParams.set("categorie", topic);
-      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-    };
+    let topic = "all";
 
     const render = () => {
       const query = normalizeSearch(input?.value);
       let visible = 0;
       cards.forEach((card) => {
-        // La rubrique principale est exclusive : un billet hybride Philosophie + Méthodologie
-        // reste dans sa rubrique principale et ne pollue pas le filtre Méthodologie.
-        const primaryCategory = normalizeSearch(card.dataset.blogCategory || "");
-        const legacyTopics = normalizeSearch(card.dataset.blogTopic).split(" ").filter(Boolean);
-        const category = primaryCategory || legacyTopics[0] || "all";
+        const topics = normalizeSearch(card.dataset.blogTopic).split(" ");
         const haystack = normalizeSearch(`${card.textContent} ${card.dataset.blogSearch || ""}`);
-        const topicMatch = topic === "all" || category === topic;
+        const topicMatch = topic === "all" || topics.includes(topic);
         const queryMatch = !query || query.split(" ").every((word) => haystack.includes(word));
         const show = topicMatch && queryMatch;
         card.hidden = !show;
@@ -376,12 +354,14 @@
 
     buttons.forEach((button) => button.addEventListener("click", () => {
       topic = button.dataset.blogFilter || "all";
-      syncButtons();
-      syncUrl();
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
       render();
     }));
     input?.addEventListener("input", render);
-    syncButtons();
     render();
   }
 
