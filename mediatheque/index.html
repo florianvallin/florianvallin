@@ -11,17 +11,18 @@
   <meta name="theme-color" content="#f8f8fa">
   <title>Médiathèque — Philosophal</title>
   <meta name="description" content="Médiathèque Philosophal : ressources et outils de travail.">
-  <link rel="icon" href="../favicon.ico" sizes="any">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./mediatheque.css?v=20260928-tools1">
+  <link rel="stylesheet" href="./mobile-20260929.css?v=20260929-clean4">
 </head>
 <body id="top" class="media-page">
   <header class="media-topbar">
-    <a class="media-brand" href="./" aria-label="Accueil de la médiathèque">
+    <a class="media-brand" href="/mediatheque/" aria-label="Accueil de la médiathèque">
       <span class="media-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
       <span><strong>Médiathèque</strong><small>cabinet personnel</small></span>
     </a>
-    <a class="media-return" href="../">← <span>Retour au site</span></a>
+    <a class="media-return" href="/">← <span>Retour au site</span></a>
   </header>
 
   <main class="media-shell">
@@ -38,40 +39,45 @@
           </div>
         </div>
         <div class="media-title-actions">
-          <details class="media-useful-links" data-useful-links>
-            <summary>Liens utiles <span aria-hidden="true">▾</span></summary>
-            <div class="media-useful-links-menu">
-              <section class="media-useful-links-group" aria-labelledby="useful-pdf">
-                <h3 id="useful-pdf">PDF &amp; documents</h3>
-                <a href="https://tools.pdf24.org/fr/tous-les-outils" target="_blank" rel="noopener noreferrer"><strong>PDF24</strong><small>Convertir, fusionner, compresser, OCR…</small></a>
-                <a href="https://www.ilovepdf.com/fr" target="_blank" rel="noopener noreferrer"><strong>iLovePDF</strong><small>Modifier, convertir et organiser des PDF</small></a>
-              </section>
-              <section class="media-useful-links-group" aria-labelledby="useful-design">
-                <h3 id="useful-design">Création graphique</h3>
-                <a href="https://www.photopea.com/" target="_blank" rel="noopener noreferrer"><strong>Photopea</strong><small>Retouche d’images et fichiers PSD dans le navigateur</small></a>
-                <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer"><strong>Canva</strong><small>Présentations, affiches, visuels et documents</small></a>
-              </section>
-              <section class="media-useful-links-group" aria-labelledby="useful-diagrams">
-                <h3 id="useful-diagrams">Schémas &amp; cartes mentales</h3>
-                <a href="https://www.drawio.com/" target="_blank" rel="noopener noreferrer"><strong>draw.io</strong><small>Diagrammes, organigrammes et schémas structurés</small></a>
-                <a href="https://excalidraw.com/" target="_blank" rel="noopener noreferrer"><strong>Excalidraw</strong><small>Schémas rapides au style manuscrit</small></a>
-                <a href="https://www.mindmeister.com/fr" target="_blank" rel="noopener noreferrer"><strong>MindMeister</strong><small>Cartes mentales et organisation d’idées</small></a>
-              </section>
-              <section class="media-useful-links-group" aria-labelledby="useful-focus">
-                <h3 id="useful-focus">Concentration &amp; temps</h3>
-                <a href="https://studiestimer.com/" target="_blank" rel="noopener noreferrer"><strong>StudiesTimer</strong><small>Minuteur d’étude et sessions de concentration</small></a>
-              </section>
-              <section class="media-useful-links-group" aria-labelledby="useful-resources">
-                <h3 id="useful-resources">Ressources &amp; découverte</h3>
-                <a class="media-useful-featured" href="https://fmhy.net/" target="_blank" rel="noopener noreferrer"><strong>FMHY <span aria-hidden="true">↗</span></strong><small>Grand répertoire communautaire de ressources gratuites, outils et médias accessibles sur le web.</small></a>
-              </section>
-            </div>
-          </details>
-          <a class="media-reader-trigger media-editor-trigger media-tool-trigger is-text" href="../editeurtexte/" title="Ouvrir l’éditeur de texte"><span class="media-tool-icon" aria-hidden="true">✎</span><span>Éditeur</span></a>
-          <a class="media-reader-trigger media-tool-trigger is-image" href="../editeurimage/" title="Ouvrir l’éditeur d’image"><span class="media-tool-icon" aria-hidden="true">▧</span><span>Images</span></a>
-          <a class="media-reader-trigger media-pomodoro-trigger media-tool-trigger is-pomodoro" href="../pomodoro/" title="Ouvrir le Pomodoro"><span class="media-tool-icon" aria-hidden="true">◷</span><span>Pomodoro</span></a>
-          <a class="media-reader-trigger media-tool-trigger is-epub" href="./lecteur/" title="Ouvrir le lecteur EPUB"><span class="media-tool-icon" aria-hidden="true">Aa</span><span>Lecteur EPUB</span></a>
-          <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
+          <div class="media-tool-strip" aria-label="Outils de travail">
+            <a class="media-reader-trigger media-editor-trigger media-tool-trigger is-text" href="/editeurtexte/" title="Ouvrir l’éditeur de texte"><span class="media-tool-icon" aria-hidden="true">✎</span><span>Éditeur</span></a>
+            <a class="media-reader-trigger media-tool-trigger is-image" href="/editeurimage/" title="Ouvrir l’éditeur d’image"><span class="media-tool-icon" aria-hidden="true">▧</span><span>Images</span></a>
+            <a class="media-reader-trigger media-tool-trigger is-pdf" href="/pdf/" title="Ouvrir les outils PDF"><span class="media-tool-icon" aria-hidden="true">PDF</span><span>PDF</span></a>
+            <a class="media-reader-trigger media-pomodoro-trigger media-tool-trigger is-pomodoro" href="/pomodoro/" title="Ouvrir le Pomodoro"><span class="media-tool-icon" aria-hidden="true">◷</span><span>Pomodoro</span></a>
+            <a class="media-reader-trigger media-tool-trigger is-epub" href="/epub/" title="Ouvrir le lecteur EPUB"><span class="media-tool-icon" aria-hidden="true">Aa</span><span>EPUB</span></a>
+          </div>
+          <div class="media-action-strip">
+            <details class="media-useful-links" data-useful-links>
+              <summary>Liens utiles <span aria-hidden="true">▾</span></summary>
+              <div class="media-useful-links-menu">
+                <section class="media-useful-links-group" aria-labelledby="useful-pdf">
+                  <h3 id="useful-pdf">PDF &amp; documents</h3>
+                  <a href="https://tools.pdf24.org/fr/tous-les-outils" target="_blank" rel="noopener noreferrer"><strong>PDF24</strong><small>Convertir, fusionner, compresser, OCR…</small></a>
+                  <a href="https://www.ilovepdf.com/fr" target="_blank" rel="noopener noreferrer"><strong>iLovePDF</strong><small>Modifier, convertir et organiser des PDF</small></a>
+                </section>
+                <section class="media-useful-links-group" aria-labelledby="useful-design">
+                  <h3 id="useful-design">Création graphique</h3>
+                  <a href="https://www.photopea.com/" target="_blank" rel="noopener noreferrer"><strong>Photopea</strong><small>Retouche d’images et fichiers PSD dans le navigateur</small></a>
+                  <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer"><strong>Canva</strong><small>Présentations, affiches, visuels et documents</small></a>
+                </section>
+                <section class="media-useful-links-group" aria-labelledby="useful-diagrams">
+                  <h3 id="useful-diagrams">Schémas &amp; cartes mentales</h3>
+                  <a href="https://www.drawio.com/" target="_blank" rel="noopener noreferrer"><strong>draw.io</strong><small>Diagrammes, organigrammes et schémas structurés</small></a>
+                  <a href="https://excalidraw.com/" target="_blank" rel="noopener noreferrer"><strong>Excalidraw</strong><small>Schémas rapides au style manuscrit</small></a>
+                  <a href="https://www.mindmeister.com/fr" target="_blank" rel="noopener noreferrer"><strong>MindMeister</strong><small>Cartes mentales et organisation d’idées</small></a>
+                </section>
+                <section class="media-useful-links-group" aria-labelledby="useful-focus">
+                  <h3 id="useful-focus">Concentration &amp; temps</h3>
+                  <a href="https://studiestimer.com/" target="_blank" rel="noopener noreferrer"><strong>StudiesTimer</strong><small>Minuteur d’étude et sessions de concentration</small></a>
+                </section>
+                <section class="media-useful-links-group" aria-labelledby="useful-resources">
+                  <h3 id="useful-resources">Ressources &amp; découverte</h3>
+                  <a class="media-useful-featured" href="https://fmhy.net/" target="_blank" rel="noopener noreferrer"><strong>FMHY <span aria-hidden="true">↗</span></strong><small>Grand répertoire communautaire de ressources gratuites, outils et médias accessibles sur le web.</small></a>
+                </section>
+              </div>
+            </details>
+            <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
+          </div>
         </div>
       </div>
 
@@ -89,11 +95,6 @@
 
       <div class="media-context-row">
         <div class="media-active-filters" data-active-filters hidden></div>
-        <div class="media-utility-actions">
-          <button class="media-quiet-button" type="button" data-toggle-advanced aria-expanded="false">Filtres pédagogiques</button>
-          <button class="media-quiet-button" type="button" data-toggle-pinned aria-pressed="false"><span aria-hidden="true">☆</span> Favoris</button>
-          <button class="media-reset" type="button" data-media-reset hidden>Réinitialiser</button>
-        </div>
       </div>
 
       <section class="media-advanced-filters" data-advanced-filters hidden aria-label="Filtres pédagogiques">
@@ -122,11 +123,18 @@
 
     <section class="media-results" aria-live="polite" aria-label="Ressources">
       <div class="media-summary-row">
-        <div>
+        <div class="media-summary-copy">
           <span class="media-summary-kicker" data-summary-kicker>Vue d’ensemble</span>
           <h2 data-summary-title>Rayons</h2>
         </div>
-        <p class="media-count" data-media-count></p>
+        <div class="media-summary-meta">
+          <div class="media-summary-actions media-utility-actions">
+            <button class="media-quiet-button" type="button" data-toggle-advanced aria-expanded="false">Filtres pédagogiques</button>
+            <button class="media-quiet-button" type="button" data-toggle-pinned aria-pressed="false"><span aria-hidden="true">☆</span> Favoris</button>
+            <button class="media-reset" type="button" data-media-reset hidden>Réinitialiser</button>
+          </div>
+          <p class="media-count" data-media-count></p>
+        </div>
       </div>
 
       <div class="media-home" data-media-home></div>
@@ -203,7 +211,7 @@
   <script src="./mindmaps-data.js?v=20260925-titres1"></script>
   <script src="./textes-sync.js?v=20260923-github-refresh1"></script>
   <script src="./mediatheque.js?v=20260928-study1"></script>
-  <script src="../js/site-tools.js?v=20260928-study2" defer></script>
+  <script src="../js/site-tools.js?v=20260929-clean4" defer></script>
   <div class="media-private-gate" data-private-gate hidden>
     <div class="media-private-gate-backdrop" data-private-gate-close></div>
     <section class="media-private-gate-card" role="dialog" aria-modal="true" aria-labelledby="private-gate-title">

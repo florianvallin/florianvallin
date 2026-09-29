@@ -102,28 +102,7 @@
     window.location.assign(resolveSitePath(path));
   }
 
-  async function openBlogHub() {
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-
-    // En local, d'anciens service workers / caches de Live Server peuvent servir
-    // une ancienne copie de /blog/index.html. On nettoie uniquement l'environnement
-    // de développement avant d'ouvrir une route dédiée, non ambiguë.
-    if (localHost) {
-      try {
-        if ("serviceWorker" in navigator) {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(registrations.map((registration) => registration.unregister()));
-        }
-        if ("caches" in window) {
-          const keys = await caches.keys();
-          await Promise.all(keys.map((key) => caches.delete(key)));
-        }
-      } catch (_) {}
-
-      window.location.assign(resolveSitePath("/blog/tous-les-billets.html?v=20260923-github-refresh1"));
-      return;
-    }
-
+  function openBlogHub() {
     go("/blog/");
   }
 
@@ -185,6 +164,7 @@
           ["KeyA", "a", "/art/"],
           ["KeyL", "l", "__library__"],
           ["KeyC", "c", "/mediatheque/"],
+          ["KeyH", "h", "/"],
           ["KeyB", "b", "/textes/theologie/boussole/"],
           ["KeyM", "m", "/textes/mythologie/boussole/"],
           ["KeyP", "p", "/textes/philosophie/boussole/"]
@@ -260,7 +240,7 @@
   }
 
   function openMediatheque() {
-    if (window.location.pathname.startsWith("/mediatheque/")) {
+    if (window.location.pathname === "/mediatheque/" || window.location.pathname === "/mediatheque/index.html") {
       const input = document.querySelector("[data-media-search]");
       if (input) {
         input.focus({ preventScroll: true });
