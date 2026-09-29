@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="theme-color" content="#f7f4fa">
+  <title>PDF — Philosophal</title>
+  <meta name="description" content="Boîte à outils PDF Philosophal : fusionner, organiser, extraire, compresser, convertir et annoter localement dans le navigateur.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/pdf/pdf.css?v=20260929-pdf2">
+</head>
+<body>
+  <header class="pdf-topbar">
+    <a class="pdf-brand" href="./" aria-label="Accueil des outils PDF">
+      <span class="pdf-brand-mark" aria-hidden="true">PDF</span>
+      <span><strong>PDF</strong><small>Philosophal</small></span>
+    </a>
+    <nav class="pdf-top-actions" aria-label="Navigation">
+      <a href="../mediatheque/">Médiathèque</a>
+      <a href="../">Site</a>
+    </nav>
+  </header>
+
+  <main class="pdf-shell">
+    <section class="pdf-hero">
+      <div>
+        <p class="pdf-eyebrow">Boîte à outils locale</p>
+        <h1>PDF</h1>
+        <p class="pdf-lead">Les opérations essentielles pour corriger, réorganiser et convertir un PDF sans envoyer tes fichiers sur un serveur.</p>
+      </div>
+      <div class="pdf-privacy-card" aria-label="Confidentialité">
+        <span aria-hidden="true">◇</span>
+        <div><strong>Traitement dans le navigateur</strong><small>Les fichiers que tu sélectionnes restent sur ton appareil.</small></div>
+      </div>
+    </section>
+
+    <nav class="pdf-tool-grid" data-tool-grid aria-label="Choisir un outil PDF">
+      <button type="button" class="pdf-tool-card is-active" data-tool="organize" aria-pressed="true"><span class="pdf-tool-symbol">▦</span><strong>Organiser</strong><small>Déplacer, tourner, supprimer</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="merge" aria-pressed="false"><span class="pdf-tool-symbol">＋</span><strong>Fusionner</strong><small>Assembler plusieurs PDF</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="split" aria-pressed="false"><span class="pdf-tool-symbol">✂</span><strong>Extraire / diviser</strong><small>Pages ou lots séparés</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="compress" aria-pressed="false"><span class="pdf-tool-symbol">⇣</span><strong>Compresser</strong><small>Alléger le fichier</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="images-to-pdf" aria-pressed="false"><span class="pdf-tool-symbol">▧</span><strong>Images → PDF</strong><small>JPG / PNG vers PDF</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="pdf-to-images" aria-pressed="false"><span class="pdf-tool-symbol">◫</span><strong>PDF → images</strong><small>PNG / JPG par page</small></button>
+      <button type="button" class="pdf-tool-card" data-tool="mark" aria-pressed="false"><span class="pdf-tool-symbol">Aa</span><strong>Marquer</strong><small>Filigrane et numéros</small></button>
+    </nav>
+
+    <section class="pdf-workbench" data-workbench>
+      <header class="pdf-workbench-head">
+        <div><span data-tool-kicker>Pages</span><h2 data-tool-title>Organiser un PDF</h2><p data-tool-description>Réorganise les pages, tourne-les ou retire celles dont tu n’as plus besoin.</p></div>
+        <button class="pdf-reset" type="button" data-reset>Recommencer</button>
+      </header>
+
+      <div class="pdf-dropzone" data-dropzone role="button" tabindex="0" aria-label="Choisir ou déposer des fichiers">
+        <input data-file-input type="file" accept="application/pdf,.pdf" hidden>
+        <span class="pdf-drop-icon" aria-hidden="true">⇧</span>
+        <strong data-drop-title>Choisir un PDF</strong>
+        <p data-drop-copy>ou dépose-le ici</p>
+        <small data-drop-note>PDF uniquement · traitement local</small>
+      </div>
+
+      <div class="pdf-panel" data-panel hidden>
+        <div class="pdf-file-summary" data-file-summary></div>
+        <div class="pdf-controls" data-controls></div>
+        <div class="pdf-content" data-content></div>
+        <div class="pdf-action-row" data-action-row></div>
+      </div>
+
+      <div class="pdf-progress" data-progress hidden aria-live="polite">
+        <div><strong data-progress-label>Traitement…</strong><span data-progress-percent></span></div>
+        <progress data-progress-bar max="100" value="0"></progress>
+      </div>
+      <div class="pdf-message" data-message hidden role="status"></div>
+    </section>
+
+    <section class="pdf-guide">
+      <div><span>01</span><strong>Choisis l’outil</strong><p>Une seule tâche à la fois, avec les réglages utiles au bon moment.</p></div>
+      <div><span>02</span><strong>Ajoute tes fichiers</strong><p>Le contenu est lu et transformé directement dans ton navigateur.</p></div>
+      <div><span>03</span><strong>Télécharge le résultat</strong><p>Le fichier final est généré sur ton appareil.</p></div>
+    </section>
+
+    <details class="pdf-limits">
+      <summary>À savoir sur les fonctions avancées</summary>
+      <p>La compression « forte » reconstruit chaque page comme une image : elle réduit souvent davantage le poids, mais le texte n’est alors plus sélectionnable. L’OCR, la signature électronique certifiée, la réparation de fichiers très endommagés et certaines protections cryptographiques ne sont volontairement pas intégrés à cette version locale.</p>
+    </details>
+  </main>
+
+  <footer class="pdf-footer"><span>Philosophal · outils PDF</span><span>Fonctionne sur ordinateur, tablette et téléphone</span></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="/pdf/pdf.js?v=20260929-pdf2"></script>
+  <script src="/js/site-tools.js?v=20260929-clean4" defer></script>
+</body>
+</html>

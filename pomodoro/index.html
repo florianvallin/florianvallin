@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="theme-color" content="#ba4949" data-theme-color>
+  <title>Pomodoro — Philosophal</title>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./pomodoro.css?v=20260928-study3">
+</head>
+<body data-pomo-mode="work">
+  <header class="pomo-topbar">
+    <div class="pomo-topbar-left">
+      <div class="pomo-brand" aria-label="Pomodoro Philosophal"><span class="pomo-brand-dot" aria-hidden="true"></span><strong>Pomodoro</strong><small>Philosophal</small></div>
+    </div>
+    <div class="pomo-top-actions">
+      <button type="button" class="pomo-top-button" data-auto-toggle aria-pressed="false" title="Enchaîner automatiquement travail et pauses"><span class="pomo-auto-dot" aria-hidden="true"></span><span data-auto-label>Auto : non</span></button>
+      <button type="button" class="pomo-top-button" data-open-report>Rapport</button>
+      <button type="button" class="pomo-top-button" data-open-settings>Réglages</button>
+      <button type="button" class="pomo-top-button" data-fullscreen aria-pressed="false">Plein écran</button>
+    </div>
+  </header>
+
+  <main class="pomo-app">
+    <section class="pomo-focus" aria-label="Minuteur Pomodoro">
+      <div class="pomo-mode-tabs" role="tablist" aria-label="Type de phase">
+        <button type="button" role="tab" aria-selected="true" class="is-active" data-mode="work">Pomodoro</button>
+        <button type="button" role="tab" aria-selected="false" data-mode="short">Pause courte</button>
+        <button type="button" role="tab" aria-selected="false" data-mode="long">Pause longue</button>
+      </div>
+
+      <section class="pomo-timer-card">
+        <div class="pomo-session-line">
+          <span data-session-label>Session 1</span>
+          <span data-phase-duration>25 min</span>
+        </div>
+
+        <div class="pomo-time" data-time aria-live="polite">25:00</div>
+        <p class="pomo-phase-copy" data-phase-copy>Concentrez-vous sur une seule tâche.</p>
+
+        <div class="pomo-main-actions">
+          <button type="button" class="pomo-start" data-start>Démarrer</button>
+          <button type="button" class="pomo-skip" data-skip aria-label="Passer à la phase suivante" title="Passer à la phase suivante">»</button>
+        </div>
+        <div class="pomo-sub-actions">
+          <button type="button" data-reset>Réinitialiser</button>
+          <button type="button" data-notifications>Notifications</button>
+        </div>
+      </section>
+
+      <div class="pomo-cycle-card">
+        <div>
+          <span>Progression</span>
+          <strong data-cycle-summary>0 / 4 pomodoros avant la pause longue</strong>
+        </div>
+        <div class="pomo-cycle-dots" data-cycle-dots aria-label="Progression du cycle"></div>
+      </div>
+
+      <div class="pomo-active-task" data-active-task hidden>
+        <span>Tâche active</span>
+        <strong data-active-task-title></strong>
+        <small data-active-task-progress></small>
+      </div>
+    </section>
+
+    <aside class="pomo-sidebar" aria-label="Tâches et statistiques">
+      <section class="pomo-stats">
+        <div><span>Aujourd’hui</span><strong data-today-pomos>0</strong><small>pomodoros</small></div>
+        <div><span>Concentration</span><strong data-today-minutes>0</strong><small>minutes</small></div>
+      </section>
+
+      <section class="pomo-tasks">
+        <header>
+          <div><span>Plan de travail</span><h1>Tâches</h1></div>
+          <div class="pomo-task-head-actions"><button type="button" data-open-templates>Modèles</button><button type="button" data-add-task>＋ Ajouter</button></div>
+        </header>
+
+        <form class="pomo-task-form" data-task-form hidden>
+          <label>Nom de la tâche<input type="text" data-task-title maxlength="160" placeholder="Ex. Relire le chapitre 3" autocomplete="off"></label>
+          <label>Pomodoros prévus<input type="number" data-task-estimate min="1" max="20" step="1" value="1"></label>
+          <div><button type="button" data-cancel-task>Annuler</button><button type="submit" class="is-primary">Ajouter la tâche</button></div>
+        </form>
+
+        <div class="pomo-task-list" data-task-list></div>
+        <div class="pomo-task-empty" data-task-empty>
+          <strong>Aucune tâche</strong>
+          <p>Ajoutez ce que vous voulez accomplir, puis sélectionnez une tâche avant de lancer le minuteur.</p>
+        </div>
+
+        <footer class="pomo-task-footer">
+          <span data-task-footer>0 tâche · 0 pomodoro prévu</span>
+          <button type="button" data-clear-done>Effacer les terminées</button>
+        </footer>
+      </section>
+
+      <section class="pomo-shortcuts">
+        <span><kbd>Espace</kbd> démarrer / pause</span>
+        <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> changer de phase</span>
+        <span><kbd>F</kbd> plein écran</span>
+        <span><kbd>H</kbd> accueil</span>
+        <span><kbd>Alt</kbd><kbd>C</kbd> médiathèque</span>
+      </section>
+    </aside>
+  </main>
+
+  <dialog class="pomo-settings" data-settings>
+    <form method="dialog" class="pomo-settings-card" data-settings-form>
+      <header><div><span>Pomodoro</span><h2>Réglages</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <section>
+        <h3>Durées</h3>
+        <div class="pomo-settings-grid">
+          <label>Pomodoro <span>minutes</span><input type="number" min="1" max="180" step="1" data-setting-work></label>
+          <label>Pause courte <span>minutes</span><input type="number" min="1" max="60" step="1" data-setting-short></label>
+          <label>Pause longue <span>minutes</span><input type="number" min="1" max="90" step="1" data-setting-long></label>
+          <label>Pause longue après <span>pomodoros</span><input type="number" min="1" max="12" step="1" data-setting-interval></label>
+        </div>
+      </section>
+      <section>
+        <h3>Enchaînement</h3>
+        <label class="pomo-switch-row"><span><strong>Démarrer automatiquement les pauses</strong><small>Après la fin d’un Pomodoro</small></span><input type="checkbox" data-setting-auto-breaks></label>
+        <label class="pomo-switch-row"><span><strong>Démarrer automatiquement les Pomodoros</strong><small>Après la fin d’une pause</small></span><input type="checkbox" data-setting-auto-work></label>
+      </section>
+      <section>
+        <h3>Son &amp; écran</h3>
+        <label class="pomo-select-row"><span><strong>Son de fin</strong><small>Choisissez le type d’alarme</small></span><select data-setting-alarm><option value="digital">Digital</option><option value="bell">Cloche</option><option value="soft">Doux</option></select></label>
+        <label class="pomo-range-row"><span><strong>Volume de l’alarme</strong><small data-volume-label>60 %</small></span><input type="range" min="0" max="100" step="5" data-setting-volume></label>
+        <label class="pomo-select-row"><span><strong>Fond sonore</strong><small>Joué pendant les Pomodoros</small></span><select data-setting-background><option value="off">Aucun</option><option value="white">Bruit blanc</option><option value="brown">Bruit brun</option></select></label>
+        <label class="pomo-range-row"><span><strong>Volume du fond</strong><small data-background-volume-label>18 %</small></span><input type="range" min="0" max="60" step="2" data-setting-background-volume></label>
+        <label class="pomo-switch-row"><span><strong>Garder l’écran actif</strong><small>Si votre navigateur le permet</small></span><input type="checkbox" data-setting-wakelock></label>
+      </section>
+      <footer><button value="cancel">Annuler</button><button value="default" class="is-primary" data-save-settings>Enregistrer</button></footer>
+    </form>
+  </dialog>
+
+
+  <dialog class="pomo-settings pomo-report" data-report>
+    <section class="pomo-settings-card">
+      <header><div><span>Concentration</span><h2>Rapport local</h2></div><button type="button" data-close-report aria-label="Fermer">×</button></header>
+      <section class="pomo-report-controls"><div class="pomo-report-tabs" role="tablist" aria-label="Période du rapport"><button type="button" class="is-active" data-report-range="day">Aujourd’hui</button><button type="button" data-report-range="week">7 jours</button><button type="button" data-report-range="month">30 jours</button></div></section>
+      <section class="pomo-report-summary" data-report-summary></section>
+      <section><h3 data-report-title>7 derniers jours</h3><div class="pomo-report-chart" data-report-chart></div></section>
+      <footer><small>Ces données restent uniquement dans ce navigateur.</small><button type="button" data-close-report>Fermer</button></footer>
+    </section>
+  </dialog>
+
+  <dialog class="pomo-settings pomo-templates" data-templates>
+    <section class="pomo-settings-card">
+      <header><div><span>Plan de travail</span><h2>Modèles de tâches</h2></div><button type="button" data-close-templates aria-label="Fermer">×</button></header>
+      <section class="pomo-template-save">
+        <h3>Enregistrer les tâches actuelles</h3>
+        <div><input type="text" data-template-name maxlength="80" placeholder="Ex. Révisions du matin"><button type="button" data-save-template>Enregistrer</button></div>
+      </section>
+      <section><div class="pomo-template-list" data-template-list></div><p class="pomo-template-empty" data-template-empty>Aucun modèle enregistré.</p></section>
+      <footer><small>Les modèles sont sauvegardés localement.</small><button type="button" data-close-templates>Fermer</button></footer>
+    </section>
+  </dialog>
+
+  <div class="pomo-toast" data-toast hidden role="status"></div>
+  <script src="./pomodoro.js?v=20260928-study3"></script>
+</body>
+</html>

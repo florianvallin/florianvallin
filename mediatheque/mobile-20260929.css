@@ -1,0 +1,405 @@
+/* Philosophal — Médiathèque : responsive mobile/tablette — 2026-09-29
+   Fichier additif : il surcharge uniquement la disposition, sans toucher aux données. */
+
+:root{
+  --media-mobile-gap:10px;
+  --media-mobile-radius:16px;
+}
+
+html,body{max-width:100%;overflow-x:hidden}
+.media-title-actions{min-width:0}
+.media-tool-strip,.media-action-strip{display:flex;align-items:center;gap:8px;min-width:0}
+.media-tool-strip{flex-wrap:wrap;justify-content:flex-end}
+.media-action-strip{justify-content:flex-end}
+.media-title-actions>.media-useful-links{margin:0}
+
+/* Nouvelle tuile PDF, cohérente avec la gamme des outils. */
+.media-tool-trigger.is-pdf:hover{border-color:#c7b4e6;background:#faf7ff;color:#67547c}
+.media-tool-trigger.is-pdf .media-tool-icon{
+  background:#735995;
+  color:#fff;
+  font-size:.42rem;
+  font-weight:800;
+  letter-spacing:-.03em;
+}
+
+/* Le menu ne doit jamais sortir de la fenêtre. */
+.media-useful-links{position:relative;min-width:0}
+.media-useful-links-menu{
+  max-width:min(390px,calc(100vw - 28px));
+  max-height:min(72vh,620px);
+  overflow:auto;
+  overscroll-behavior:contain;
+}
+
+@media (max-width:980px){
+  .media-shell{width:min(100% - 34px,1180px)}
+  .media-title-row{gap:20px}
+  .media-title-actions{max-width:420px}
+  .media-tool-strip{gap:6px}
+}
+
+/* Tablettes et téléphones : les outils deviennent un vrai tableau de bord,
+   au lieu d'une colonne flottante à droite. */
+@media (max-width:760px){
+  .media-topbar{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+  .media-shell{
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    padding-left:max(14px,env(safe-area-inset-left))!important;
+    padding-right:max(14px,env(safe-area-inset-right))!important;
+  }
+  .media-intro{padding-top:28px!important}
+  .media-title-row{
+    display:block!important;
+    width:100%;
+  }
+  .media-heading-line{min-width:0;flex-wrap:wrap;gap:8px 12px}
+  .media-heading-line h1{font-size:clamp(2.55rem,14vw,4.25rem);line-height:.92}
+  .media-access-switch{flex:0 0 auto}
+
+  .media-title-actions{
+    width:100%!important;
+    max-width:none!important;
+    margin:20px 0 0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:10px!important;
+    align-items:stretch!important;
+    justify-items:stretch!important;
+  }
+  .media-tool-strip{
+    width:100%;
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:7px;
+    align-items:stretch;
+    justify-content:stretch;
+  }
+  .media-title-actions .media-tool-trigger{
+    box-sizing:border-box;
+    width:100%!important;
+    min-width:0!important;
+    min-height:62px;
+    margin:0!important;
+    padding:8px 4px 7px!important;
+    display:flex!important;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center!important;
+    gap:5px!important;
+    border-radius:15px!important;
+    text-align:center;
+    overflow:hidden;
+  }
+  .media-title-actions .media-tool-trigger>span:last-child{
+    display:block!important;
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size:clamp(.56rem,2.45vw,.7rem);
+    line-height:1;
+  }
+  .media-title-actions .media-tool-icon{
+    width:28px!important;
+    height:28px!important;
+    flex:0 0 28px;
+    border-radius:9px!important;
+    font-size:.71rem!important;
+  }
+  .media-title-actions .is-pdf .media-tool-icon{font-size:.42rem!important}
+  .media-title-actions .is-epub .media-tool-icon{font-size:.55rem!important}
+
+  .media-action-strip{
+    width:100%;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:8px;
+    align-items:stretch;
+  }
+  .media-action-strip>.media-useful-links,
+  .media-action-strip>.media-explore-trigger{width:100%;min-width:0;margin:0!important}
+  .media-action-strip>.media-useful-links>summary,
+  .media-action-strip>.media-explore-trigger{
+    box-sizing:border-box;
+    min-height:45px!important;
+    height:45px!important;
+    border-radius:14px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:8px;
+    padding:0 12px!important;
+    font-size:.82rem!important;
+    white-space:nowrap;
+  }
+  .media-useful-links-menu{
+    left:0!important;
+    right:auto!important;
+    top:calc(100% + 8px)!important;
+    width:min(370px,calc(100vw - 28px))!important;
+    max-width:calc(100vw - 28px)!important;
+    border-radius:16px!important;
+  }
+
+  .media-search{
+    margin-top:28px!important;
+    min-height:54px!important;
+    border-radius:17px!important;
+  }
+  .media-search input{min-width:0;font-size:1rem!important}
+  .media-search kbd{display:none!important}
+
+  /* Les catégories restent en une ligne mais se balayent au doigt. */
+  .media-type-row{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:7px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    scrollbar-width:none;
+    padding:2px 1px 6px!important;
+    scroll-snap-type:x proximity;
+  }
+  .media-type-row::-webkit-scrollbar{display:none}
+  .media-type-row>*{flex:0 0 auto;scroll-snap-align:start}
+
+  .media-context-row{align-items:flex-start!important}
+  .media-utility-actions{display:flex;flex-wrap:wrap;gap:8px!important}
+  .media-quiet-button{min-height:42px}
+
+  .media-summary-row{align-items:flex-end!important;gap:12px}
+  .media-summary-row h2{font-size:clamp(2.15rem,11vw,3.25rem)}
+  .media-count{white-space:nowrap;font-size:.83rem!important}
+
+  .media-side-panel,.media-player-panel,.media-detail-panel{
+    width:min(100%,560px)!important;
+    max-width:100%!important;
+    border-radius:20px 20px 0 0!important;
+  }
+  .media-explorer[hidden],.media-player[hidden],.media-resource-detail[hidden]{display:none!important}
+}
+
+@media (max-width:420px){
+  .media-shell{padding-left:max(11px,env(safe-area-inset-left))!important;padding-right:max(11px,env(safe-area-inset-right))!important}
+  .media-title-actions{margin-top:16px!important}
+  .media-tool-strip{gap:5px}
+  .media-title-actions .media-tool-trigger{min-height:57px;padding:7px 2px 6px!important;border-radius:13px!important}
+  .media-title-actions .media-tool-icon{width:26px!important;height:26px!important;flex-basis:26px}
+  .media-title-actions .media-tool-trigger>span:last-child{font-size:.56rem!important}
+  .media-action-strip>.media-useful-links>summary,.media-action-strip>.media-explore-trigger{font-size:.76rem!important;padding:0 8px!important}
+  .media-search{margin-top:23px!important}
+  .media-search input::placeholder{font-size:.91rem}
+}
+
+@media (max-width:340px){
+  .media-tool-strip{
+    grid-template-columns:repeat(5,58px);
+    overflow-x:auto;
+    justify-content:flex-start;
+    scrollbar-width:none;
+    padding-bottom:2px;
+  }
+  .media-tool-strip::-webkit-scrollbar{display:none}
+}
+
+/* ==========================================================
+   Desktop / tablette paysage — harmonisation du bandeau outils
+   Correctif 2026-09-29b
+   - aucun changement sur le rendu mobile <= 760 px
+   - tous les outils restent sur une ligne
+   - Liens utiles + Explorer sont centrés sur une seconde ligne
+   - une 6e fonction peut être ajoutée sans recréer un "orphelin"
+   ========================================================== */
+@media (min-width:761px){
+  .media-title-row{
+    align-items:center!important;
+    gap:34px!important;
+  }
+
+  .media-title-actions{
+    display:grid!important;
+    grid-template-columns:minmax(0,auto)!important;
+    grid-template-rows:auto auto!important;
+    justify-items:center!important;
+    align-items:center!important;
+    align-self:center!important;
+    gap:9px!important;
+    width:max-content!important;
+    max-width:none!important;
+    margin-left:auto!important;
+  }
+
+  .media-tool-strip{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:8px!important;
+    width:max-content!important;
+    max-width:none!important;
+  }
+
+  .media-title-actions .media-tool-trigger{
+    flex:0 0 auto!important;
+    white-space:nowrap!important;
+  }
+
+  .media-action-strip{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:10px!important;
+    width:100%!important;
+  }
+
+  .media-action-strip>.media-useful-links,
+  .media-action-strip>.media-explore-trigger{
+    flex:0 0 auto!important;
+    margin:0!important;
+  }
+
+  .media-action-strip>.media-useful-links>summary{
+    min-width:132px!important;
+    justify-content:center!important;
+    white-space:nowrap!important;
+    text-align:center!important;
+  }
+
+  .media-action-strip>.media-explore-trigger{
+    min-width:126px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    white-space:nowrap!important;
+  }
+
+  /* Le menu s'ouvre sous le centre du bouton, pas décalé sur la gauche. */
+  .media-title-actions .media-useful-links-menu{
+    left:50%!important;
+    right:auto!important;
+    transform:translateX(-50%)!important;
+  }
+}
+
+/* Sur les petits PC / tablettes paysage, on évite de compresser le titre
+   et les outils : le bloc outils passe proprement sous le titre. */
+@media (min-width:761px) and (max-width:1180px){
+  .media-title-row{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    align-items:start!important;
+    gap:20px!important;
+  }
+
+  .media-title-actions{
+    justify-self:center!important;
+    margin-left:0!important;
+    max-width:100%!important;
+  }
+}
+/* ==========================================================
+   Résumé + filtres/favoris sur une même hauteur — 2026-09-29c
+   ========================================================== */
+.media-context-row{
+  min-height:0!important;
+  padding-top:8px!important;
+}
+/* Quand aucun filtre actif n'est affiché, la ligne ne prend plus aucune place. */
+.media-context-row:has(.media-active-filters[hidden]){
+  display:none!important;
+}
+.media-results{
+  margin-top:28px!important;
+}
+.media-summary-row{
+  min-height:58px!important;
+  align-items:stretch!important;
+}
+.media-summary-copy{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.media-summary-meta{
+  margin-left:auto;
+  display:grid;
+  grid-template-rows:auto auto;
+  justify-items:end;
+  align-content:end;
+  gap:7px;
+}
+.media-summary-actions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:7px!important;
+  margin:0!important;
+}
+.media-summary-actions .media-quiet-button,
+.media-summary-actions .media-reset{
+  min-height:30px!important;
+  height:30px!important;
+  padding:0 11px!important;
+  font-size:.68rem!important;
+  line-height:1!important;
+}
+.media-summary-meta .media-count{
+  min-height:18px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  white-space:nowrap;
+}
+
+@media (max-width:760px){
+  .media-results{margin-top:22px!important}
+  .media-summary-row{
+    gap:10px!important;
+    padding-bottom:13px!important;
+  }
+  .media-summary-meta{
+    min-width:0;
+    gap:6px;
+  }
+  .media-summary-actions{
+    max-width:min(58vw,330px);
+    overflow-x:auto;
+    overflow-y:hidden;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+    justify-content:flex-start!important;
+    padding-bottom:1px;
+  }
+  .media-summary-actions::-webkit-scrollbar{display:none}
+  .media-summary-actions .media-quiet-button,
+  .media-summary-actions .media-reset{
+    flex:0 0 auto;
+    min-height:29px!important;
+    height:29px!important;
+    padding:0 9px!important;
+    font-size:.63rem!important;
+  }
+}
+
+@media (max-width:430px){
+  .media-summary-row{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:end!important;
+  }
+  .media-summary-actions{
+    max-width:52vw;
+  }
+  .media-summary-actions .media-quiet-button:first-child{
+    max-width:118px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+}

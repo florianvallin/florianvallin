@@ -1,0 +1,100 @@
+.media-title-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.media-deals-trigger {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #d9dadd;
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  padding: 0 13px;
+  color: #65696d;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 640;
+  transition: border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease;
+}
+.media-deals-trigger:hover {
+  border-color: #c6c8cc;
+  background: #fff;
+  color: #404448;
+}
+.media-deals-trigger:active { transform: translateY(1px); }
+.media-deals-trigger span {
+  font-size: .78rem;
+  opacity: .62;
+}
+
+.media-reader-trigger {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #d7d0c7;
+  border-radius: 999px;
+  background: #fbf7f0;
+  padding: 0 14px;
+  color: #6e5336;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 680;
+  transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+.media-reader-trigger:hover { border-color: #c6b9aa; background: #fffaf3; }
+.media-reader-trigger:active { transform: translateY(1px); }
+.media-reader-trigger span {
+  padding: 3px 6px;
+  border-radius: 999px;
+  background: rgba(138,100,61,.1);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.media-book-drop-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(247,247,245,.82);
+  backdrop-filter: blur(11px);
+}
+.media-book-drop-card {
+  width: min(620px, 92vw);
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 13px;
+  border: 1px dashed #b9a58d;
+  border-radius: 26px;
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 28px 90px rgba(31,35,40,.12);
+  text-align: center;
+}
+.media-book-drop-icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f5eee5;
+  color: #755638;
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+}
+.media-book-drop-card strong { font-size: 1.18rem; }
+.media-book-drop-card small { color: #7d817f; font-size: .78rem; }
+
+@media (max-width: 720px) {
+  .media-title-row { align-items: flex-start; }
+  .media-title-actions { align-items: stretch; flex-direction: column; }
+  .media-deals-trigger, .media-reader-trigger, .media-explore-trigger { justify-content: center; }
+}
