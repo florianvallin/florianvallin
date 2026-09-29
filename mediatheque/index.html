@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
@@ -13,35 +13,7 @@
   <meta name="description" content="Médiathèque Philosophal : ressources et outils de travail.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./mediatheque.css?v=20260927-preupload-v4">
-  <script data-philosophal-freshness>
-    (() => {
-      const BUILD = "20260927-preupload-v4";
-      try {
-        const previous = sessionStorage.getItem("philosophal-media-build");
-        if (previous !== BUILD) {
-          sessionStorage.setItem("philosophal-media-build", BUILD);
-          if ("caches" in window) {
-            caches.keys().then((keys) => Promise.all(
-              keys.filter((key) => !key.startsWith("fv-reader-")).map((key) => caches.delete(key))
-            )).catch(() => {});
-          }
-        }
-      } catch (_) {}
-
-      fetch(`../version.json?fresh=${Date.now()}`, { cache: "no-store" })
-        .then((response) => response.ok ? response.json() : null)
-        .then((payload) => {
-          const remote = payload && String(payload.version || payload.build || "");
-          if (!remote || remote === BUILD) return;
-          const next = new URL(window.location.href);
-          if (next.searchParams.get("build") === remote) return;
-          next.searchParams.set("build", remote);
-          window.location.replace(next.toString());
-        })
-        .catch(() => {});
-    })();
-  </script>
+  <link rel="stylesheet" href="./mediatheque.css?v=20260928-tools1">
 </head>
 <body id="top" class="media-page">
   <header class="media-topbar">
@@ -89,10 +61,16 @@
                 <h3 id="useful-focus">Concentration &amp; temps</h3>
                 <a href="https://studiestimer.com/" target="_blank" rel="noopener noreferrer"><strong>StudiesTimer</strong><small>Minuteur d’étude et sessions de concentration</small></a>
               </section>
+              <section class="media-useful-links-group" aria-labelledby="useful-resources">
+                <h3 id="useful-resources">Ressources &amp; découverte</h3>
+                <a class="media-useful-featured" href="https://fmhy.net/" target="_blank" rel="noopener noreferrer"><strong>FMHY <span aria-hidden="true">↗</span></strong><small>Grand répertoire communautaire de ressources gratuites, outils et médias accessibles sur le web.</small></a>
+              </section>
             </div>
           </details>
-          <a class="media-utility-link" href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">fmhy <span aria-hidden="true">↗</span></a>
-          <a class="media-reader-trigger" href="./lecteur/">Lecteur EPUB</a>
+          <a class="media-reader-trigger media-editor-trigger media-tool-trigger is-text" href="../editeurtexte/" title="Ouvrir l’éditeur de texte"><span class="media-tool-icon" aria-hidden="true">✎</span><span>Éditeur</span></a>
+          <a class="media-reader-trigger media-tool-trigger is-image" href="../editeurimage/" title="Ouvrir l’éditeur d’image"><span class="media-tool-icon" aria-hidden="true">▧</span><span>Images</span></a>
+          <a class="media-reader-trigger media-pomodoro-trigger media-tool-trigger is-pomodoro" href="../pomodoro/" title="Ouvrir le Pomodoro"><span class="media-tool-icon" aria-hidden="true">◷</span><span>Pomodoro</span></a>
+          <a class="media-reader-trigger media-tool-trigger is-epub" href="./lecteur/" title="Ouvrir le lecteur EPUB"><span class="media-tool-icon" aria-hidden="true">Aa</span><span>Lecteur EPUB</span></a>
           <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
         </div>
       </div>
@@ -220,20 +198,20 @@
     <span><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>?</kbd> aide complète</span>
   </footer>
 
-  <script src="../js/private-access.js?v=20260927-preupload-v4"></script>
-  <script src="./data.js?v=20260927-preupload-v4"></script>
-  <script src="./mindmaps-data.js?v=20260927-preupload-v4"></script>
-  <script src="./textes-sync.js?v=20260927-preupload-v4"></script>
-  <script src="./mediatheque.js?v=20260927-preupload-v4"></script>
-  <script src="../js/site-tools.js?v=20260927-preupload-v4" defer></script>
+  <script src="../js/private-access.js?v=20260925-titres1"></script>
+  <script src="./data.js?v=20260925-titres1"></script>
+  <script src="./mindmaps-data.js?v=20260925-titres1"></script>
+  <script src="./textes-sync.js?v=20260923-github-refresh1"></script>
+  <script src="./mediatheque.js?v=20260928-study1"></script>
+  <script src="../js/site-tools.js?v=20260928-study2" defer></script>
   <div class="media-private-gate" data-private-gate hidden>
     <div class="media-private-gate-backdrop" data-private-gate-close></div>
     <section class="media-private-gate-card" role="dialog" aria-modal="true" aria-labelledby="private-gate-title">
       <button class="media-private-gate-close" type="button" data-private-gate-close aria-label="Fermer">×</button>
       <span class="media-private-gate-icon" aria-hidden="true">◇</span>
       <p class="media-private-gate-kicker">Accès réservé</p>
-      <h2 id="private-gate-title">Accès privé</h2>
-      <p>Entrez votre mot de passe. L’espace correspondant à votre accès s’ouvrira automatiquement.</p>
+      <h2 id="private-gate-title">Version privée</h2>
+      <p>Entrez le mot de passe pour continuer.</p>
       <form data-private-gate-form>
         <label for="media-private-password">Mot de passe</label>
         <div class="media-private-password-row">

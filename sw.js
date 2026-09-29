@@ -1,12 +1,12 @@
-const RELEASE = "philosophal-20260926-prod4";
-const READER_CACHE = "fv-reader-v21-20260926-prod4";
+const RELEASE = "philosophal-20260928-editor1";
+const READER_CACHE = "fv-reader-v21-20260928-editor1";
 const CORE = [
   "/lecture/",
   "/lecture/index.html",
-  "/lecture/reader.css?v=20260926-prod4",
-  "/lecture/reader.js?v=20260926-prod4",
-  "/lecture/library.js?v=20260926-prod4",
-  "/favicon.svg?v=20260926-prod4"
+  "/lecture/reader.css?v=20260928-editor1",
+  "/lecture/reader.js?v=20260928-editor1",
+  "/lecture/library.js?v=20260928-editor1",
+  "/favicon.svg?v=20260928-editor1"
 ];
 
 self.addEventListener("install", (event) => {

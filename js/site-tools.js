@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260926-prod4";
+  const VERSION = "20260928-study2";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -49,7 +49,7 @@
         // Live Server doit lire directement les fichiers du disque.
         if (localHost) return;
 
-        await navigator.serviceWorker.register("/sw.js?v=20260926-prod4", {
+        await navigator.serviceWorker.register("/sw.js?v=20260928-study2", {
           scope: "/lecture/",
           updateViaCache: "none"
         });
@@ -229,6 +229,12 @@
         consumeShortcut(event);
         closeShortcutHelp();
         openBlogHub();
+        return;
+      }
+      if (codeMatches(event, "KeyP", "p")) {
+        consumeShortcut(event);
+        closeShortcutHelp();
+        go("/pomodoro/");
         return;
       }
       if (codeMatches(event, "KeyH", "h")) {
@@ -749,6 +755,7 @@
       shortcutRow("D", "Dictionnaires"),
       shortcutRow("T", "Textes"),
       shortcutRow("B", "Blog"),
+      shortcutRow("P", "Pomodoro"),
       shortcutRow("C", "Contact"),
       shortcutRow("S", "Espace élève · S’identifier"),
       shortcutRow(keyLabel("shift"), "?", "Afficher cette aide")

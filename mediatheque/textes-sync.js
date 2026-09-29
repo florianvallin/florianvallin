@@ -131,10 +131,22 @@
     if (window.FV_S3_COURSES_STATUS) return Promise.resolve(window.FV_S3_COURSES_STATUS);
     return new Promise((resolve,reject) => {
       const script=document.createElement('script');
-      script.src=new URL('./s3-courses.js?v=20260924-s3', SELF_SRC).href;
+      script.src=new URL('./s3-courses.js?v=20260928-s3-l2', SELF_SRC).href;
       script.async=true; script.dataset.s3Courses='1';
       script.onload=() => resolve(window.FV_S3_COURSES_STATUS || { ok:true });
       script.onerror=() => reject(new Error('Import S3 indisponible'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadS4Courses() {
+    if (window.FV_S4_COURSES_STATUS) return Promise.resolve(window.FV_S4_COURSES_STATUS);
+    return new Promise((resolve,reject) => {
+      const script=document.createElement('script');
+      script.src=new URL('./s4-courses.js?v=20260928-s4-v1', SELF_SRC).href;
+      script.async=true; script.dataset.s4Courses='1';
+      script.onload=() => resolve(window.FV_S4_COURSES_STATUS || { ok:true });
+      script.onerror=() => reject(new Error('Import S4 indisponible'));
       document.head.appendChild(script);
     });
   }
@@ -155,7 +167,7 @@
     if (document.querySelector('script[data-course-browser="1"]')) return Promise.resolve({ ok:true });
     return new Promise((resolve,reject) => {
       const script=document.createElement('script');
-      script.src=new URL('./course-browser.js?v=20260924-browser3-native', SELF_SRC).href;
+      script.src=new URL('./course-browser.js?v=20260928-browser-l1l2', SELF_SRC).href;
       script.async=true; script.dataset.courseBrowser='1';
       script.onload=() => resolve({ ok:true });
       script.onerror=() => reject(new Error('Navigateur des cours indisponible'));
@@ -174,6 +186,7 @@
     loadS1Courses().catch((error) => { console.warn("[Médiathèque] Import S1 impossible :", error); return { ok:false }; }),
     loadS2Courses().catch((error) => { console.warn("[Médiathèque] Import S2 impossible :", error); return { ok:false }; }),
     loadS3Courses().catch((error) => { console.warn("[Médiathèque] Import S3 impossible :", error); return { ok:false }; }),
+    loadS4Courses().catch((error) => { console.warn("[Médiathèque] Import S4 impossible :", error); return { ok:false }; }),
     loadResearchCourses().catch((error) => { console.warn("[Médiathèque] Import Études & recherches impossible :", error); return { ok:false }; })
   ]).then(async ([status]) => {
     try { await loadCourseBrowser(); } catch (error) { console.warn("[Médiathèque] Navigateur des cours impossible :", error); }

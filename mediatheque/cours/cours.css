@@ -108,3 +108,9 @@ body[data-theme="methodologie"]{--psy:var(--methodologie);--psy-soft:#f0f3f0}
   .course-content table { min-width:620px; }
   .course-content th,.course-content td { padding:8px 9px; }
 }
+
+
+/* Pont vers l’éditeur personnel — 20260928-editor1 */
+.course-top-actions .course-editor-link{display:inline-flex;align-items:center;min-height:33px;padding:0 11px;border:1px solid #d8d0e0;border-radius:999px;background:#f5f0fa;color:#5d4b77;font-weight:720;font-size:.68rem}
+.course-top-actions .course-editor-link:hover{border-color:#bcaecb;background:#eee6f6;color:#4e3b69}
+@media(max-width:680px){.course-top-actions .course-editor-link{min-height:31px;padding:0 9px;font-size:.63rem}.course-top-actions .course-media-link{display:none}}

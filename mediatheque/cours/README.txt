@@ -10,12 +10,18 @@ Organisation actuelle
 ---------------------
 Psychologie
 └─ Licence
-   └─ L1
-      └─ Semestre 1
-         └─ UE1 — Thèmes et histoire de la psychologie
+   ├─ L1 — Première année
+   │  ├─ Semestre 1
+   │  └─ Semestre 2
+   └─ L2 — Deuxième année
+      ├─ Semestre 3
+      └─ Semestre 4
 
-Chemin des contenus :
-/mediatheque/cours/contenus/psycho/l1/s1/ue1/
+Chemins des contenus :
+/mediatheque/cours/contenus/psycho/l1/s1/
+/mediatheque/cours/contenus/psycho/l1/s2/
+/mediatheque/cours/contenus/psycho/l1/s3/  (héritage technique ; affiché comme L2)
+/mediatheque/cours/contenus/psycho/l2/s4/
 
 Pour ajouter un cours
 ---------------------
