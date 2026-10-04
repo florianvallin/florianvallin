@@ -8,52 +8,69 @@
   <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-  <meta name="theme-color" content="#f7f4fa">
+  <meta name="theme-color" content="#f6f3f8">
   <title>PDF — Philosophal</title>
-  <meta name="description" content="Boîte à outils PDF Philosophal : fusionner, organiser, extraire, compresser, convertir et annoter localement dans le navigateur.">
+  <meta name="description" content="Atelier PDF Philosophal : organiser, fusionner, recadrer, diviser, compresser, convertir et modifier visuellement des PDF dans le navigateur.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/pdf/pdf.css?v=20260929-pdf2">
-</head>
+  <link rel="stylesheet" href="./pdf.css?v=20261004-pdf4-editor">
+<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"></head>
 <body>
   <header class="pdf-topbar">
     <a class="pdf-brand" href="./" aria-label="Accueil des outils PDF">
       <span class="pdf-brand-mark" aria-hidden="true">PDF</span>
-      <span><strong>PDF</strong><small>Philosophal</small></span>
+      <span><strong>Atelier PDF</strong><small>Philosophal</small></span>
     </a>
+    <div class="pdf-top-center"><span>Local</span><small>fichiers traités dans ton navigateur</small></div>
     <nav class="pdf-top-actions" aria-label="Navigation">
-      <a href="../mediatheque/">Médiathèque</a>
+      <a href="/outils/">Tous les outils</a>
       <a href="../">Site</a>
     </nav>
   </header>
 
   <main class="pdf-shell">
     <section class="pdf-hero">
-      <div>
-        <p class="pdf-eyebrow">Boîte à outils locale</p>
+      <div class="pdf-hero-copy">
+        <p class="pdf-eyebrow">Modifier sans travailler à l’aveugle</p>
         <h1>PDF</h1>
-        <p class="pdf-lead">Les opérations essentielles pour corriger, réorganiser et convertir un PDF sans envoyer tes fichiers sur un serveur.</p>
+        <p class="pdf-lead">Un atelier visuel pour agir page par page : regarde d’abord, réorganise ensuite, puis exporte seulement ce dont tu as besoin.</p>
+        <div class="pdf-hero-pills"><span>Miniatures réelles</span><span>Recadrage</span><span>Page par page</span><span>Sans compte</span></div>
       </div>
-      <div class="pdf-privacy-card" aria-label="Confidentialité">
-        <span aria-hidden="true">◇</span>
-        <div><strong>Traitement dans le navigateur</strong><small>Les fichiers que tu sélectionnes restent sur ton appareil.</small></div>
+      <div class="pdf-hero-side">
+        <div class="pdf-privacy-card">
+          <span aria-hidden="true">◇</span>
+          <div><strong>Traitement local</strong><small>Les PDF sélectionnés ne sont pas envoyés à Philosophal.</small></div>
+        </div>
+        <button class="pdf-library-open pdf-library-open-hero" type="button" data-open-tools>
+          <span>＋</span><div><strong>Tous les outils</strong><small>Conversions, mise en page, métadonnées…</small></div>
+        </button>
       </div>
     </section>
 
-    <nav class="pdf-tool-grid" data-tool-grid aria-label="Choisir un outil PDF">
-      <button type="button" class="pdf-tool-card is-active" data-tool="organize" aria-pressed="true"><span class="pdf-tool-symbol">▦</span><strong>Organiser</strong><small>Déplacer, tourner, supprimer</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="merge" aria-pressed="false"><span class="pdf-tool-symbol">＋</span><strong>Fusionner</strong><small>Assembler plusieurs PDF</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="split" aria-pressed="false"><span class="pdf-tool-symbol">✂</span><strong>Extraire / diviser</strong><small>Pages ou lots séparés</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="compress" aria-pressed="false"><span class="pdf-tool-symbol">⇣</span><strong>Compresser</strong><small>Alléger le fichier</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="images-to-pdf" aria-pressed="false"><span class="pdf-tool-symbol">▧</span><strong>Images → PDF</strong><small>JPG / PNG vers PDF</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="pdf-to-images" aria-pressed="false"><span class="pdf-tool-symbol">◫</span><strong>PDF → images</strong><small>PNG / JPG par page</small></button>
-      <button type="button" class="pdf-tool-card" data-tool="mark" aria-pressed="false"><span class="pdf-tool-symbol">Aa</span><strong>Marquer</strong><small>Filigrane et numéros</small></button>
-    </nav>
+    <section class="pdf-tool-section" aria-labelledby="essential-title">
+      <header class="pdf-section-label"><div><span>Essentiels</span><strong id="essential-title">Les opérations que tu utilises le plus</strong></div><button type="button" data-open-tools>Voir les 17 outils →</button></header>
+      <nav class="pdf-tool-grid" data-tool-grid aria-label="Outils PDF essentiels">
+        <button type="button" class="pdf-tool-card is-active" data-tool="organize" aria-pressed="true"><span class="pdf-tool-symbol">▦</span><strong>Pages</strong><small>Voir · déplacer · tourner · recadrer</small></button>
+        <button type="button" class="pdf-tool-card" data-tool="merge" aria-pressed="false"><span class="pdf-tool-symbol">＋</span><strong>Fusionner</strong><small>Aperçu avant assemblage</small></button>
+        <button type="button" class="pdf-tool-card" data-tool="split" aria-pressed="false"><span class="pdf-tool-symbol">✂</span><strong>Diviser</strong><small>Choisir visuellement les pages</small></button>
+        <button type="button" class="pdf-tool-card" data-tool="compress" aria-pressed="false"><span class="pdf-tool-symbol">⇣</span><strong>Compresser</strong><small>Alléger sans deviner</small></button>
+        <button type="button" class="pdf-tool-card" data-tool="compose" aria-pressed="false"><span class="pdf-tool-symbol">2→1</span><strong>2 pages → 1</strong><small>Vertical ou côte à côte</small></button>
+        <button type="button" class="pdf-tool-card pdf-more-card" data-open-tools aria-label="Afficher tous les outils"><span class="pdf-tool-symbol">＋</span><strong>Plus</strong><small>12 outils supplémentaires</small></button>
+      </nav>
+      <div class="pdf-favorites" data-favorites hidden></div>
+    </section>
 
     <section class="pdf-workbench" data-workbench>
       <header class="pdf-workbench-head">
-        <div><span data-tool-kicker>Pages</span><h2 data-tool-title>Organiser un PDF</h2><p data-tool-description>Réorganise les pages, tourne-les ou retire celles dont tu n’as plus besoin.</p></div>
-        <button class="pdf-reset" type="button" data-reset>Recommencer</button>
+        <div class="pdf-workbench-title">
+          <span data-tool-kicker>Pages</span>
+          <h2 data-tool-title>Voir et organiser un PDF</h2>
+          <p data-tool-description>Réorganise, duplique, tourne, supprime ou recadre chaque page en voyant réellement son contenu.</p>
+        </div>
+        <div class="pdf-workbench-actions">
+          <button type="button" class="pdf-fav-current" data-fav-current title="Ajouter cet outil aux favoris">☆</button>
+          <button class="pdf-reset" type="button" data-reset>Recommencer</button>
+        </div>
       </header>
 
       <div class="pdf-dropzone" data-dropzone role="button" tabindex="0" aria-label="Choisir ou déposer des fichiers">
@@ -79,23 +96,78 @@
     </section>
 
     <section class="pdf-guide">
-      <div><span>01</span><strong>Choisis l’outil</strong><p>Une seule tâche à la fois, avec les réglages utiles au bon moment.</p></div>
-      <div><span>02</span><strong>Ajoute tes fichiers</strong><p>Le contenu est lu et transformé directement dans ton navigateur.</p></div>
-      <div><span>03</span><strong>Télécharge le résultat</strong><p>Le fichier final est généré sur ton appareil.</p></div>
+      <div><span>01 · VISUEL</span><strong>Regarde les pages</strong><p>Les miniatures évitent de travailler uniquement à partir de noms de fichiers peu parlants.</p></div>
+      <div><span>02 · PRÉCIS</span><strong>Modifie seulement ce qu’il faut</strong><p>Recadre, tourne, extrait ou assemble sans reconstruire inutilement tout le document.</p></div>
+      <div><span>03 · LOCAL</span><strong>Garde le contrôle</strong><p>Le traitement principal se fait dans ton navigateur ; tu choisis ce qui est téléchargé.</p></div>
     </section>
 
     <details class="pdf-limits">
-      <summary>À savoir sur les fonctions avancées</summary>
-      <p>La compression « forte » reconstruit chaque page comme une image : elle réduit souvent davantage le poids, mais le texte n’est alors plus sélectionnable. L’OCR, la signature électronique certifiée, la réparation de fichiers très endommagés et certaines protections cryptographiques ne sont volontairement pas intégrés à cette version locale.</p>
+      <summary>À savoir avant une modification avancée</summary>
+      <p>La compression forte reconstruit les pages comme images et fait perdre la sélection du texte. La suppression de métadonnées proposée ici est pratique, mais ne doit pas être considérée comme un outil d’anonymisation forensique. Le chiffrement par mot de passe, la signature certifiée et l’OCR ne sont pas inclus dans cet atelier local.</p>
     </details>
   </main>
 
-  <footer class="pdf-footer"><span>Philosophal · outils PDF</span><span>Fonctionne sur ordinateur, tablette et téléphone</span></footer>
+  <aside class="pdf-tool-library" data-tool-library hidden aria-label="Tous les outils PDF">
+    <button class="pdf-library-backdrop" type="button" data-close-tools aria-label="Fermer"></button>
+    <section class="pdf-library-panel" role="dialog" aria-modal="true" aria-labelledby="library-title">
+      <header>
+        <div><span>Tous les outils</span><h2 id="library-title">Que veux-tu faire au PDF ?</h2><p>Recherche une action ou parcours les catégories. Les outils favoris remontent en premier.</p></div>
+        <button type="button" data-close-tools aria-label="Fermer">×</button>
+      </header>
+      <div class="pdf-library-search"><span>⌕</span><input type="search" data-tool-search placeholder="Fusionner, A4, métadonnées, 4 pages par feuille…" autocomplete="off"></div>
+      <div class="pdf-library-fav" data-library-favorites></div>
+      <div class="pdf-library-groups" data-library-groups>
+        <section data-tool-category="organiser"><h3>Organiser</h3><div>
+          <button data-library-tool="organize" data-search="pages organiser réorganiser recadrer rotation supprimer dupliquer"><span>▦</span><strong>Organiser les pages</strong><small>Miniatures · ordre · rotation · recadrage</small><b data-star-tool="organize">☆</b></button>
+          <button data-library-tool="merge" data-search="fusionner joindre assembler plusieurs pdf"><span>＋</span><strong>Fusionner</strong><small>Plusieurs PDF avec aperçu visuel</small><b data-star-tool="merge">☆</b></button>
+          <button data-library-tool="split" data-search="diviser extraire pages découper selection"><span>✂</span><strong>Extraire / diviser</strong><small>Sélection visuelle · lots · pages séparées</small><b data-star-tool="split">☆</b></button>
+          <button data-library-tool="interleave" data-search="intercaler recto verso scans alterner deux pdf"><span>⇵</span><strong>Intercaler 2 PDF</strong><small>A1 · B1 · A2 · B2…</small><b data-star-tool="interleave">☆</b></button>
+        </div></section>
+
+        <section data-tool-category="mise-en-page"><h3>Mise en page</h3><div>
+          <button data-library-tool="compose" data-search="deux pages une 2 1 cote a cote vertical assembler"><span>2→1</span><strong>2 pages → 1</strong><small>Assembler deux pages sur une feuille</small><b data-star-tool="compose">☆</b></button>
+          <button data-library-tool="nup" data-search="pages par feuille 2 4 6 miniatures imprimer"><span>▦▦</span><strong>Pages par feuille</strong><small>2 · 4 · 6 pages sur A4</small><b data-star-tool="nup">☆</b></button>
+          <button data-library-tool="resize" data-search="a4 a5 letter taille page redimensionner format"><span>↔</span><strong>Changer la taille</strong><small>A4 · A5 · Letter · ajuster / couvrir</small><b data-star-tool="resize">☆</b></button>
+          <button data-library-tool="mark" data-search="filigrane pagination numeros pages marquer"><span>Aa</span><strong>Filigrane & numéros</strong><small>Texte discret et pagination</small><b data-star-tool="mark">☆</b></button>
+        </div></section>
+
+        <section data-tool-category="convertir"><h3>Convertir</h3><div>
+          <button data-library-tool="images-to-pdf" data-search="images jpg jpeg png vers pdf convertir"><span>▧</span><strong>Images → PDF</strong><small>JPG / PNG vers un document</small><b data-star-tool="images-to-pdf">☆</b></button>
+          <button data-library-tool="pdf-to-images" data-search="pdf vers images png jpg convertir pages"><span>◫</span><strong>PDF → images</strong><small>Une image par page</small><b data-star-tool="pdf-to-images">☆</b></button>
+        </div></section>
+
+        <section data-tool-category="editer"><h3>Éditer & automatiser</h3><div>
+          <button data-library-tool="edit" data-search="editer annoter texte forme fleche surligner cache blanc image signature"><span>✎</span><strong>Éditeur visuel</strong><small>Texte · formes · image · signature</small><b data-star-tool="edit">☆</b></button>
+          <button data-library-tool="outline" data-search="signets sommaire chapitres table des matieres bookmarks"><span>≡</span><strong>Signets & sommaire</strong><small>Repères PDF et page de sommaire</small><b data-star-tool="outline">☆</b></button>
+          <button data-library-tool="presets" data-search="preset reglages workflow automatiser cours scan impression"><span>⚙</span><strong>Mes presets</strong><small>Enregistrer et réutiliser des traitements</small><b data-star-tool="presets">☆</b></button>
+        </div></section>
+
+        <section data-tool-category="optimiser"><h3>Optimiser & nettoyer</h3><div>
+          <button data-library-tool="scan" data-search="scan nettoyer redresser deskew contraste niveaux gris noir blanc fond"><span>◐</span><strong>Nettoyer un scan</strong><small>Redresser · contraste · niveaux de gris</small><b data-star-tool="scan">☆</b></button>
+          <button data-library-tool="compress" data-search="compresser reduire poids optimiser"><span>⇣</span><strong>Compresser</strong><small>Léger ou reconstruction forte</small><b data-star-tool="compress">☆</b></button>
+          <button data-library-tool="metadata" data-search="metadata metadonnees auteur titre sujet nettoyer confidentialite"><span>i</span><strong>Métadonnées</strong><small>Voir, modifier ou nettoyer</small><b data-star-tool="metadata">☆</b></button>
+          <button data-library-tool="flatten" data-search="aplatir formulaire champs formulaire pdf figer"><span>▤</span><strong>Aplatir un formulaire</strong><small>Figer les champs remplis dans la page</small><b data-star-tool="flatten">☆</b></button>
+        </div></section>
+      </div>
+      <div class="pdf-library-empty" data-library-empty hidden>Aucun outil ne correspond à cette recherche.</div>
+    </section>
+  </aside>
+
+  <aside class="pdf-final-preview" data-final-preview hidden aria-label="Aperçu du PDF final">
+    <button class="pdf-final-backdrop" type="button" data-final-cancel aria-label="Fermer"></button>
+    <section class="pdf-final-panel" role="dialog" aria-modal="true" aria-labelledby="final-preview-title">
+      <header><div><span>Dernière vérification</span><h2 id="final-preview-title">Aperçu du PDF final</h2><p data-final-summary>Vérifie l’ordre et l’aspect avant de télécharger.</p></div><button type="button" data-final-cancel>×</button></header>
+      <div class="pdf-final-stats" data-final-stats></div>
+      <div class="pdf-final-pages" data-final-pages></div>
+      <footer><button type="button" class="pdf-secondary" data-final-cancel>Revenir modifier</button><button type="button" class="pdf-primary" data-final-download>Télécharger ce PDF</button></footer>
+    </section>
+  </aside>
+
+  <footer class="pdf-footer"><span>Philosophal · Atelier PDF</span><span>Ordinateur · tablette · téléphone</span></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-  <script src="/pdf/pdf.js?v=20260929-pdf2"></script>
-  <script src="/js/site-tools.js?v=20260929-clean4" defer></script>
-</body>
+  <script src="./pdf.js?v=20261004-pdf4-editor"></script>
+<script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

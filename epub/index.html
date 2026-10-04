@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="theme-color" content="#f4f1eb">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' ; style-src 'self' 'unsafe-inline' blob:; img-src 'self' blob: data:; font-src 'self' blob: data:; media-src 'self' blob: data:; connect-src 'self' blob: data: ; frame-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self';">
   <title>Lecteur de livres — Médiathèque Philosophal</title>
-  <meta name="description" content="Lecteur local EPUB, texte, HTML, Markdown et FB2 de la médiathèque Philosophal.">
+  <script src="/epub/boot.js?v=20261005-v32" defer></script>
+  <meta name="description" content="Lecteur local EPUB, AZW3, MOBI, CBZ, texte, HTML, Markdown et FB2 de la médiathèque Philosophal.">
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="stylesheet" href="/epub/reader.css?v=20260929-clean4">
-</head>
+  <link rel="stylesheet" href="/epub/reader.css?v=20261005-v32">
+<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"></head>
 <body class="reader-page">
   <header class="reader-topbar">
-    <a class="reader-back" href="/mediatheque/">← <span>Médiathèque</span></a>
+    <a class="reader-back" href="/outils/">← <span>Outils</span></a>
     <div class="reader-book-heading" aria-live="polite">
       <strong data-head-title>Lecteur</strong>
       <small data-head-author>Bibliothèque locale</small>
@@ -23,6 +28,7 @@
       <button type="button" data-import-book title="Importer un livre">Importer</button>
       <button type="button" data-toggle-settings aria-expanded="false" title="Réglages de lecture">Aa</button>
       <button type="button" data-focus-reader aria-pressed="false" title="Mode focus">Focus</button>
+      <button type="button" data-open-shortcuts title="Raccourcis clavier" aria-label="Raccourcis clavier">?</button>
       <button type="button" data-fullscreen title="Plein écran" aria-label="Plein écran">⛶</button>
     </div>
   </header>
@@ -35,7 +41,7 @@
         <p>Glissez un fichier ici, puis reprenez votre lecture plus tard au même endroit. Le livre reste stocké localement dans ce navigateur.</p>
         <div class="reader-welcome-actions">
           <button class="reader-primary" type="button" data-import-book>Choisir un livre</button>
-          <span>EPUB · TXT · HTML · Markdown · FB2</span>
+          <span>EPUB · AZW3 · MOBI · CBZ · TXT · HTML · Markdown · FB2</span>
         </div>
       </div>
 
@@ -62,6 +68,11 @@
 
     <section class="reader-workspace" data-workspace hidden>
       <div class="reader-stage" data-stage>
+        <div class="reader-stage-tools" aria-label="Affichage et zoom"><select data-page-view-quick aria-label="Nombre de pages affichées"><option value="auto">Auto</option><option value="single">1 page</option><option value="double">2 pages</option></select>
+          <button type="button" data-zoom-out title="Dézoomer">−</button>
+          <span data-zoom-label>100 %</span>
+          <button type="button" data-zoom-in title="Zoomer">+</button>
+          </div>
         <button class="reader-page-nav reader-page-prev" type="button" data-prev aria-label="Page précédente">‹</button>
         <div class="reader-render" data-render aria-label="Livre"></div>
         <article class="reader-plain" data-plain hidden></article>
@@ -72,9 +83,26 @@
       </div>
 
       <footer class="reader-progressbar">
-        <button type="button" data-open-toc class="reader-progress-menu">Sommaire</button>
-        <input data-progress type="range" min="0" max="1000" value="0" aria-label="Progression dans le livre">
-        <span data-progress-label>0 %</span>
+        <div class="reader-progress-tools" aria-label="Outils de lecture">
+          <button type="button" data-open-toc class="reader-progress-menu">Sommaire</button>
+          <button type="button" data-open-pages class="reader-progress-menu">▦ Pages</button>
+          <button type="button" data-open-search class="reader-progress-menu">⌕ Recherche</button>
+          <button type="button" data-add-bookmark class="reader-progress-menu" title="Ajouter un marque-page">☆</button>
+          <button type="button" data-open-bookmarks class="reader-progress-menu">Marque-pages</button>
+          <button type="button" data-open-notes class="reader-progress-menu">Notes</button>
+          <span class="reader-history-tools">
+            <button type="button" data-history-back title="Position précédente" disabled>↶</button>
+            <button type="button" data-history-forward title="Position suivante" disabled>↷</button>
+          </span>
+        </div>
+        <div class="reader-progress-track">
+          <input data-progress type="range" min="0" max="1000" value="0" aria-label="Progression dans le livre">
+          <span data-progress-label>0 %</span>
+        </div>
+        <div class="reader-position-meta">
+          <strong data-current-position>Début du livre</strong>
+          <small data-reading-meta></small>
+        </div>
       </footer>
     </section>
   </main>
@@ -104,8 +132,115 @@
     </section>
   </aside>
 
+  <aside class="reader-drawer reader-pages-drawer" data-pages-drawer hidden aria-label="Pages">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel reader-drawer-panel-wide">
+      <header>
+        <div><span>Navigation visuelle</span><h2>Pages</h2><p data-pages-summary>Création des miniatures…</p></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-pages-toolbar">
+        <label>Taille <input type="range" data-thumb-size min="90" max="190" step="10" value="130"></label>
+        <label>Aller à <input type="number" data-go-page min="1" placeholder="Page"></label>
+        <button type="button" data-go-page-button>Aller</button>
+      </div>
+      <div class="reader-spread-locker" data-spread-locker hidden>
+        <div>
+          <strong>Doubles pages</strong>
+          <small>Cochez deux pages voisines, puis associez-les. Les deux pages affichées sont encadrées ; vos choix sont mémorisés pour ce livre.</small>
+        </div>
+        <label class="reader-spread-start">Début des doubles pages <select data-spread-start><option value="cover">Couverture seule, puis 2 + 3…</option><option value="first">Dès la première page : 1 + 2…</option></select></label><div class="reader-spread-locker-actions">
+          <span data-spread-selection>Aucune page sélectionnée</span>
+          <button type="button" data-lock-spread disabled>Associer les 2 pages</button>
+          <button type="button" data-unlock-spread disabled>Dissocier</button>
+          <button type="button" data-clear-spread-locks>Tout réinitialiser</button>
+        </div>
+        <div class="reader-spread-lock-list" data-spread-lock-list></div>
+      </div>
+      <div class="reader-page-thumbs" data-page-thumbs></div>
+      <p class="reader-empty-library" data-pages-empty hidden>Aucune miniature disponible.</p>
+    </section>
+  </aside>
+
+  <aside class="reader-drawer" data-search-drawer hidden aria-label="Recherche dans le livre">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel reader-drawer-panel-search">
+      <header>
+        <div><span>Dans ce livre</span><h2>Recherche</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-book-search">
+        <input type="search" data-book-search autocomplete="off" placeholder="Un mot, un nom, une notion…">
+        <button type="button" data-run-search>Rechercher</button>
+      </div>
+      <p class="reader-search-status" data-search-status>Saisis au moins 2 caractères.</p>
+      <div class="reader-search-results" data-search-results></div>
+    </section>
+  </aside>
+
+  <aside class="reader-drawer" data-bookmarks-drawer hidden aria-label="Marque-pages">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel">
+      <header>
+        <div><span>Repères personnels</span><h2>Marque-pages</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-bookmark-actions">
+        <button type="button" data-add-bookmark-drawer>＋ Marquer la position actuelle</button>
+      </div>
+      <div class="reader-bookmarks-list" data-bookmarks-list></div>
+      <p class="reader-empty-library" data-bookmarks-empty>Aucun marque-page dans ce livre.</p>
+    </section>
+  </aside>
+
+  <aside class="reader-drawer" data-notes-drawer hidden aria-label="Notes et surlignages">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel reader-drawer-panel-wide">
+      <header>
+        <div><span>Lecture active</span><h2>Notes & surlignages</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-notes-actions">
+        <button type="button" data-note-current>＋ Note à la position actuelle</button>
+        <button type="button" data-export-notes="md">Exporter .md</button>
+        <button type="button" data-export-notes="txt">Exporter .txt</button>
+      </div>
+      <div class="reader-notes-list" data-notes-list></div>
+      <p class="reader-empty-library" data-notes-empty>Aucune note ou citation enregistrée.</p>
+    </section>
+  </aside>
+
+  <aside class="reader-drawer" data-shortcuts-drawer hidden aria-label="Raccourcis du lecteur">
+    <button class="reader-drawer-overlay" type="button" data-close-drawers aria-label="Fermer"></button>
+    <section class="reader-drawer-panel reader-shortcuts-panel">
+      <header>
+        <div><span>Aide rapide</span><h2>Raccourcis</h2></div>
+        <button type="button" data-close-drawers aria-label="Fermer">×</button>
+      </header>
+      <div class="reader-shortcuts-grid">
+        <div><kbd>←</kbd><span>Page précédente</span></div>
+        <div><kbd>→</kbd><span>Page suivante</span></div>
+        <div><kbd>↑</kbd><span>+10 pages</span></div>
+        <div><kbd>↓</kbd><span>−10 pages</span></div>
+        <div><kbd>+</kbd><span>Zoom avant</span></div>
+        <div><kbd>−</kbd><span>Zoom arrière</span></div>
+        <div><kbd>S</kbd><span>Sommaire</span></div>
+        <div><kbd>P</kbd><span>Pages</span></div>
+        <div><kbd>F</kbd><span>Recherche</span></div>
+        <div><kbd>M</kbd><span>Ajouter un marque-page</span></div>
+        <div><kbd>N</kbd><span>Notes</span></div>
+        <div><kbd>Échap</kbd><span>Fermer / quitter le focus</span></div>
+      </div>
+      <p class="reader-shortcuts-hint">Sur téléphone : toucher le tiers gauche/droit de la page change de page ; toucher le centre masque ou affiche les commandes.</p>
+    </section>
+  </aside>
+
   <aside class="reader-settings" data-settings hidden aria-label="Réglages de lecture">
     <div class="reader-settings-grid">
+      <label>
+        <span>Zoom</span>
+        <input data-zoom type="range" min="70" max="220" step="10" value="100">
+      </label>
       <label>
         <span>Taille du texte</span>
         <input data-font-size type="range" min="80" max="160" step="5" value="100">
@@ -125,8 +260,37 @@
         <span>Ambiance</span>
         <select data-theme>
           <option value="paper">Papier</option>
+          <option value="sepia">Sépia</option>
           <option value="white">Blanc</option>
           <option value="night">Nuit</option>
+        </select>
+      </label>
+      <label>
+        <span>Luminosité</span>
+        <input data-brightness type="range" min="70" max="125" step="5" value="100">
+      </label>
+      <label>
+        <span>Largeur du texte</span>
+        <select data-text-width>
+          <option value="narrow">Étroite</option>
+          <option value="normal" selected>Normale</option>
+          <option value="wide">Large</option>
+          <option value="full">Pleine largeur</option>
+        </select>
+      </label>
+      <label>
+        <span>Marges</span>
+        <input data-page-margin type="range" min="0" max="64" step="8" value="24">
+      </label>
+      <label>
+        <span>Paragraphes</span>
+        <input data-paragraph-space type="range" min="0" max="1.8" step="0.2" value="0.8">
+      </label>
+      <label>
+        <span>Alignement</span>
+        <select data-text-align>
+          <option value="left">Aligné à gauche</option>
+          <option value="justify">Justifié</option>
         </select>
       </label>
       <label>
@@ -136,21 +300,45 @@
           <option value="scrolled-doc">Défilement</option>
         </select>
       </label>
+      <label>
+        <span>Affichage</span>
+        <select data-page-view>
+          <option value="auto">Auto · selon l’écran et le livre</option>
+          <option value="single">Toujours 1 page</option>
+          <option value="double">2 pages</option>
+        </select>
+      </label>
+      <label>
+        <span>BD · sens</span>
+        <select data-comic-direction>
+          <option value="ltr">Gauche → droite</option>
+          <option value="rtl">Droite → gauche (manga)</option>
+        </select>
+      </label>
     </div>
   </aside>
 
   <div class="reader-drop-overlay" data-global-drop hidden>
-    <div><span aria-hidden="true">↧</span><strong>Déposez votre livre pour l’ouvrir</strong><small>EPUB · TXT · HTML · Markdown · FB2</small></div>
+    <div><span aria-hidden="true">↧</span><strong>Déposez votre livre pour l’ouvrir</strong><small>EPUB · AZW3 · MOBI · CBZ · TXT · HTML · Markdown · FB2</small></div>
   </div>
 
+
+  <div class="reader-selection-tools" data-selection-tools hidden>
+    <button type="button" data-selection-highlight>Surligner</button>
+    <button type="button" data-selection-note>Note</button>
+    <button type="button" data-selection-cite>Copier citation</button>
+    <button type="button" data-selection-dictionary>Dictionnaire</button>
+    <button type="button" data-selection-close aria-label="Fermer">×</button>
+  </div>
   <button class="reader-focus-exit" type="button" data-focus-reader aria-pressed="false" hidden>Quitter le focus</button>
   <div class="reader-toast" data-toast hidden role="status" aria-live="polite"></div>
-  <input data-file-input type="file" accept=".epub,.txt,.text,.html,.htm,.xhtml,.md,.markdown,.fb2" hidden>
+  <input data-file-input type="file" accept=".epub,.azw,.azw3,.mobi,.cbz,.txt,.text,.html,.htm,.xhtml,.md,.markdown,.fb2" hidden>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js" crossorigin="anonymous"></script>
-  <script src="/epub/storage.js?v=20260929-clean4"></script>
-  <script src="/epub/reader.js?v=20260929-clean4"></script>
-  <script src="/js/site-tools.js?v=20260929-clean4" defer></script>
-</body>
+  <script src="/epub/vendor/jszip.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/epub/vendor/epub.min.js" crossorigin="anonymous"></script>
+  <script src="/epub/storage.js?v=20261005-v32"></script>
+  <script src="/epub/pagination.js?v=20261005-v32"></script>
+  <script src="/epub/reader.js?v=20261005-v32"></script>
+  <script src="/js/site-tools.js?v=20261004-v31" defer></script>
+<script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

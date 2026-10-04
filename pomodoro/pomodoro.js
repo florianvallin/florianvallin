@@ -11,7 +11,9 @@
     alarm: "digital",
     background: "off",
     backgroundVolume: 18,
-    wakeLock: true
+    wakeLock: true,
+    continueWhenClosed: true,
+    newDayPrompt: true
   };
   const MODE_COPY = {
     work: "Concentrez-vous sur une seule tâche.",
@@ -36,10 +38,11 @@
   const state = {
     settings: normalizeSettings(stored.settings),
     mode: ["work", "short", "long"].includes(stored.mode) ? stored.mode : "work",
-    running: false,
+    running: Boolean(stored.running),
     remainingMs: 0,
-    endAt: 0,
+    endAt: Number(stored.endAt) || 0,
     workInCycle: clamp(stored.workInCycle, 0, 50, 0),
+    treeComplete: Boolean(stored.treeComplete),
     sessionNumber: Math.max(1, clamp(stored.sessionNumber, 1, 9999, 1)),
     tasks: Array.isArray(stored.tasks) ? stored.tasks.map(normalizeTask).filter(Boolean) : [],
     activeTaskId: stored.activeTaskId || "",
@@ -47,6 +50,14 @@
     history: normalizeHistory(stored.history),
     templates: Array.isArray(stored.templates) ? stored.templates.map(normalizeTemplate).filter(Boolean) : [],
     reportRange: "week",
+    sessionDate: /^\d{4}-\d{2}-\d{2}$/.test(String(stored.sessionDate || "")) ? String(stored.sessionDate) : todayKey(),
+    lastTouched: Number(stored.lastTouched) || Date.now(),
+    intention: String(stored.intention || "").slice(0, 180),
+    resumeNote: String(stored.resumeNote || "").slice(0, 180),
+    interruptions: Array.isArray(stored.interruptions) ? stored.interruptions.slice(-100) : [],
+    overrideMinutes: clamp(stored.overrideMinutes, 0, 180, 0),
+    phaseStartedAt: Number(stored.phaseStartedAt) || 0,
+    phaseInitialMs: Number(stored.phaseInitialMs) || 0,
     ambient: null,
     wakeLock: null,
     tickHandle: null,
@@ -59,7 +70,16 @@
       focusMinutes: clamp(stored.stats.focusMinutes, 0, 999999, 0)
     };
   }
-  state.remainingMs = durationMs(state.mode);
+  const storedRemaining = Number(stored.remainingMs);
+  state.remainingMs = Number.isFinite(storedRemaining) && storedRemaining >= 0 ? storedRemaining : durationMs(state.mode);
+  const staleSession = state.sessionDate !== todayKey();
+  state.staleOnLoad = staleSession && (state.workInCycle > 0 || state.sessionNumber > 1 || state.mode !== "work" || state.remainingMs < durationMs(state.mode));
+  state.expiredOnLoad = false;
+  if (state.running) {
+    if (state.settings.continueWhenClosed && state.endAt > Date.now() && !state.staleOnLoad) state.remainingMs = Math.max(0, state.endAt - Date.now());
+    else if (state.settings.continueWhenClosed && state.endAt > 0 && state.endAt <= Date.now() && !state.staleOnLoad) { state.remainingMs = 0; state.running = false; state.expiredOnLoad = true; }
+    else { state.running = false; state.endAt = 0; }
+  }
 
   const timeEl = $("[data-time]");
   const startBtn = $("[data-start]");
@@ -85,7 +105,9 @@
       alarm: ["digital", "bell", "soft"].includes(input.alarm) ? input.alarm : DEFAULTS.alarm,
       background: ["off", "white", "brown"].includes(input.background) ? input.background : DEFAULTS.background,
       backgroundVolume: clamp(input.backgroundVolume, 0, 60, DEFAULTS.backgroundVolume),
-      wakeLock: input.wakeLock !== false
+      wakeLock: input.wakeLock !== false,
+      continueWhenClosed: input.continueWhenClosed !== false,
+      newDayPrompt: input.newDayPrompt !== false
     };
   }
   function normalizeTask(t) {
@@ -140,7 +162,19 @@
       localStorage.setItem(STORAGE, JSON.stringify({
         settings: state.settings,
         mode: state.mode,
+        running: state.running,
+        remainingMs: state.running ? Math.max(0, state.endAt - Date.now()) : state.remainingMs,
+        endAt: state.endAt,
+        sessionDate: state.sessionDate,
+        lastTouched: Date.now(),
+        intention: state.intention,
+        resumeNote: state.resumeNote,
+        interruptions: state.interruptions,
+        overrideMinutes: state.overrideMinutes,
+        phaseStartedAt: state.phaseStartedAt,
+        phaseInitialMs: state.phaseInitialMs,
         workInCycle: state.workInCycle,
+        treeComplete: state.treeComplete,
         sessionNumber: state.sessionNumber,
         tasks: state.tasks,
         activeTaskId: state.activeTaskId,
@@ -150,7 +184,30 @@
       }));
     } catch (_) {}
   }
-  function durationMs(mode = state.mode) { return state.settings.durations[mode] * 60_000; }
+  function durationMs(mode = state.mode) {
+    if (mode === "work" && state.overrideMinutes > 0) return state.overrideMinutes * 60_000;
+    return state.settings.durations[mode] * 60_000;
+  }
+  function durationMinutes(mode = state.mode) { return Math.round(durationMs(mode) / 60_000); }
+  function stageLabel() {
+    if (state.mode === "work") return `T${Math.min(state.settings.longInterval, state.workInCycle + 1)}`;
+    if (state.mode === "long") return "Pause longue";
+    return `P${Math.max(1, state.workInCycle)}`;
+  }
+  function remainingSessionMs() {
+    const interval = state.settings.longInterval;
+    let total = state.remainingMs;
+    if (state.mode === "work") {
+      const afterThis = Math.max(0, interval - (state.workInCycle + 1));
+      if (afterThis === 0) total += state.settings.durations.long * 60_000;
+      else total += afterThis * state.settings.durations.work * 60_000 + Math.max(0, afterThis - 1) * state.settings.durations.short * 60_000 + state.settings.durations.short * 60_000 + state.settings.durations.long * 60_000;
+    } else if (state.mode === "short") {
+      const remainingWork = Math.max(0, interval - state.workInCycle);
+      total += remainingWork * state.settings.durations.work * 60_000 + Math.max(0, remainingWork - 1) * state.settings.durations.short * 60_000 + state.settings.durations.long * 60_000;
+    }
+    return total;
+  }
+  function humanDuration(ms) { const m=Math.max(0,Math.round(ms/60000)); const h=Math.floor(m/60),r=m%60; return h ? `${h} h ${String(r).padStart(2,"0")}` : `${m} min`; }
   function formatTime(ms) {
     const total = Math.max(0, Math.ceil(ms / 1000));
     const m = Math.floor(total / 60);
@@ -159,14 +216,104 @@
   }
   function activeTask() { return state.tasks.find(t => t.id === state.activeTaskId) || null; }
 
+  const TREE_ART = [
+    "                   .       .                   ",
+    "            .     ***     .       .            ",
+    "          *****  *****  *****   .              ",
+    "        **   \\ *****|***** /   **             ",
+    "      .***    \\  ***|***  /    ***.           ",
+    "    .******----\\---*|*---/----******.         ",
+    "        ****     \\  |  /     ****             ",
+    "      *******-----\\-|-/-----*******           ",
+    "         *****     \\|/     *****               ",
+    "            ***----\\|/----***                  ",
+    "              **   /|\\   **                    ",
+    "                  / | \\                        ",
+    "                    |                          ",
+    "                    |                          ",
+    "                    |                          ",
+    "                 ___|___                      ",
+    "              __/   |   \\__                   ",
+    "           __/      |      \\__                "
+  ];
+
+  function treeGrowthProgress() {
+    const interval = Math.max(1, state.settings.longInterval);
+    if (state.treeComplete) return 1;
+    const completed = Math.max(0, Math.min(interval, state.workInCycle));
+    let current = 0;
+    if (state.mode === "work") {
+      const total = Math.max(1, durationMs("work"));
+      current = Math.max(0, Math.min(1, 1 - state.remainingMs / total));
+    }
+    return Math.max(0, Math.min(1, (completed + current) / interval));
+  }
+
+  function revealTree(progress) {
+    const rows = TREE_ART;
+    const height = rows.length;
+    const width = Math.max(...rows.map(r => r.length));
+    const center = width / 2;
+    return rows.map((row, y) => {
+      const level = (height - 1 - y) / Math.max(1, height - 1);
+      return [...row.padEnd(width, " ")].map((ch, x) => {
+        if (ch === " ") return " ";
+        const distance = Math.min(1, Math.abs(x - center) / Math.max(1, center));
+        const leaf = ch === "*" || ch === ".";
+        const root = y >= height - 3;
+        let threshold;
+        if (root) threshold = 0.015 + distance * 0.045;
+        else if (leaf) threshold = 0.10 + level * 0.72 + distance * 0.15;
+        else threshold = 0.025 + level * 0.50 + distance * 0.10;
+        return progress + 0.002 >= threshold ? ch : " ";
+      }).join("").replace(/\s+$/,"");
+    }).join("\n");
+  }
+
+  function renderTree() {
+    const art = $("[data-tree-art]");
+    if (!art) return;
+    const progress = treeGrowthProgress();
+    art.textContent = revealTree(progress);
+    const percent = Math.round(progress * 100);
+    const p = $("[data-tree-progress]");
+    if (p) p.textContent = `${percent} %`;
+    const interval = Math.max(1, state.settings.longInterval);
+    const caption = $("[data-tree-caption]");
+    if (caption) {
+      if (progress >= 0.999) caption.textContent = "Arbre complet · cycle terminé.";
+      else if (state.mode === "work") caption.textContent = `T${Math.min(interval, state.workInCycle + 1)} fait pousser l’arbre.`;
+      else if (state.mode === "short") caption.textContent = `Pause · ${state.workInCycle} branche${state.workInCycle > 1 ? "s" : ""} consolidée${state.workInCycle > 1 ? "s" : ""}.`;
+      else caption.textContent = "Pause longue · la croissance est conservée.";
+    }
+    const steps = $("[data-tree-steps]");
+    if (steps) {
+      steps.innerHTML = Array.from({length: interval}, (_, i) => {
+        const done = state.treeComplete || i < state.workInCycle;
+        const current = !state.treeComplete && state.mode === "work" && i === state.workInCycle;
+        return `<span class="${done ? "is-grown" : current ? "is-growing" : ""}" title="T${i+1}">T${i+1}</span>`;
+      }).join("");
+    }
+  }
+
   function render() {
     syncStatsDay();
     document.body.dataset.pomoMode = state.mode;
     themeMeta?.setAttribute("content", state.mode === "work" ? "#ba4949" : state.mode === "short" ? "#3d7f91" : "#4f7d5b");
     timeEl.textContent = formatTime(state.remainingMs);
     $("[data-phase-copy]").textContent = MODE_COPY[state.mode];
-    $("[data-phase-duration]").textContent = `${state.settings.durations[state.mode]} min`;
+    $("[data-phase-duration]").textContent = `${durationMinutes(state.mode)} min`;
     $("[data-session-label]").textContent = state.mode === "work" ? `Session ${state.sessionNumber}` : MODE_NAMES[state.mode];
+    const totalForPhase = Math.max(1, durationMs(state.mode));
+    const progress = Math.max(0, Math.min(1, 1 - state.remainingMs / totalForPhase));
+    $("[data-ring]")?.style.setProperty("--progress", `${progress * 360}deg`);
+    const phaseEnd = new Date(Date.now() + state.remainingMs);
+    if ($("[data-end-time]")) $("[data-end-time]").textContent = `Fin ${phaseEnd.toLocaleTimeString("fr-FR", { hour:"2-digit", minute:"2-digit" })}`;
+    if ($("[data-session-total]")) $("[data-session-total]").textContent = humanDuration(remainingSessionMs());
+    if ($("[data-session-finish]")) $("[data-session-finish]").textContent = new Date(Date.now() + remainingSessionMs()).toLocaleTimeString("fr-FR", { hour:"2-digit", minute:"2-digit" });
+    if ($("[data-step-label]")) $("[data-step-label]").textContent = stageLabel();
+    if ($("[data-intention]") && document.activeElement !== $("[data-intention]")) $("[data-intention]").value = state.intention;
+    if ($("[data-resume-note]") && document.activeElement !== $("[data-resume-note]")) $("[data-resume-note]").value = state.resumeNote;
     startBtn.textContent = state.running ? "Pause" : "Démarrer";
     startBtn.setAttribute("aria-pressed", String(state.running));
 
@@ -178,7 +325,8 @@
 
     const interval = state.settings.longInterval;
     $("[data-cycle-summary]").textContent = `${Math.min(state.workInCycle, interval)} / ${interval} pomodoros avant la pause longue`;
-    $("[data-cycle-dots]").innerHTML = Array.from({ length: interval }, (_, i) => `<i class="${i < state.workInCycle ? "is-done" : ""}" aria-hidden="true"></i>`).join("");
+    $("[data-cycle-dots]").innerHTML = Array.from({ length: interval }, (_, i) => `<button type="button" data-cycle-jump="${i}" class="${i < state.workInCycle ? "is-done" : i === state.workInCycle && state.mode === "work" ? "is-current" : ""}" aria-label="Aller à T${i+1}" title="Aller à T${i+1}"></button>`).join("");
+    renderTree();
 
     const bothAuto = state.settings.autoBreaks && state.settings.autoWork;
     const autoSome = state.settings.autoBreaks || state.settings.autoWork;
@@ -237,6 +385,9 @@
     if (state.running) return pauseTimer();
     if (state.remainingMs <= 0) state.remainingMs = durationMs();
     state.running = true;
+    if (!state.phaseStartedAt) state.phaseStartedAt = Date.now();
+    if (!state.phaseInitialMs) state.phaseInitialMs = Math.max(state.remainingMs, durationMs());
+    state.sessionDate = todayKey();
     state.endAt = Date.now() + state.remainingMs;
     state.tickHandle = window.setInterval(tick, 250);
     await requestWakeLock();
@@ -268,17 +419,23 @@
       return;
     }
     timeEl.textContent = formatTime(state.remainingMs);
+    const liveTotal = Math.max(1, durationMs(state.mode));
+    const liveProgress = Math.max(0, Math.min(1, 1 - state.remainingMs / liveTotal));
+    $("[data-ring]")?.style.setProperty("--progress", `${liveProgress * 360}deg`);
+    renderTree();
     document.title = `${formatTime(state.remainingMs)} · ${MODE_NAMES[state.mode]} — Philosophal`;
   }
 
-  function completePhase() {
+  function completePhase(opts = {}) {
     const completedMode = state.mode;
     playAlarm();
     notifyCompletion(completedMode);
+    state.phaseStartedAt = 0;
+    state.phaseInitialMs = 0;
     if (completedMode === "work") {
       syncStatsDay();
       state.stats.pomodoros += 1;
-      state.stats.focusMinutes += state.settings.durations.work;
+      state.stats.focusMinutes += clamp(opts.focusMinutes, 0, 9999, durationMinutes("work"));
       const task = activeTask();
       if (task) {
         task.completed += 1;
@@ -286,10 +443,13 @@
       }
       state.workInCycle += 1;
       state.sessionNumber += 1;
+      state.overrideMinutes = 0;
       if (state.workInCycle >= state.settings.longInterval) {
+        state.treeComplete = true;
         state.workInCycle = 0;
         switchMode("long", { auto: state.settings.autoBreaks, completed: true });
       } else {
+        state.treeComplete = false;
         switchMode("short", { auto: state.settings.autoBreaks, completed: true });
       }
     } else {
@@ -299,19 +459,53 @@
 
   function switchMode(mode, opts = {}) {
     if (!MODE_NAMES[mode]) return;
+    const previousMode = state.mode;
     pauseTimer();
+    if (mode !== "work" || !opts.keepOverride) state.overrideMinutes = 0;
+    if (mode === "work" && previousMode === "long" && state.treeComplete) state.treeComplete = false;
     state.mode = mode;
+    state.phaseStartedAt = 0;
+    state.phaseInitialMs = 0;
     state.remainingMs = durationMs(mode);
     render();
-    if (opts.completed) toast(`${MODE_NAMES[mode]} · ${state.settings.durations[mode]} min`);
+    if (opts.completed) toast(`${MODE_NAMES[mode]} · ${durationMinutes(mode)} min`);
     if (opts.auto) window.setTimeout(() => { if (!state.running && state.mode === mode) startTimer(); }, 550);
   }
 
   function resetTimer() {
     pauseTimer();
+    state.phaseStartedAt = 0;
+    state.phaseInitialMs = 0;
     state.remainingMs = durationMs();
     render();
-    toast("Minuteur réinitialisé.");
+    toast("Bloc actuel réinitialisé.");
+  }
+  function resetSession(force = false) {
+    if (!force && !window.confirm("Recommencer toute la session à T1 ? Les réglages, tâches et statistiques seront conservés.")) return;
+    pauseTimer();
+    state.mode = "work";
+    state.workInCycle = 0;
+    state.treeComplete = false;
+    state.sessionNumber = 1;
+    state.overrideMinutes = 0;
+    state.phaseStartedAt = 0;
+    state.phaseInitialMs = 0;
+    state.remainingMs = state.settings.durations.work * 60_000;
+    state.sessionDate = todayKey();
+    state.intention = "";
+    state.resumeNote = "";
+    render();
+    toast("Nouvelle session prête · T1.");
+  }
+  function finishEarly() {
+    if (state.mode !== "work") return skipPhase();
+    if (state.running) pauseTimer();
+    const total = state.phaseInitialMs || durationMs("work");
+    const elapsed = Math.max(0, total - state.remainingMs);
+    if (elapsed < 30_000 && !window.confirm("Très peu de temps s’est écoulé. Compter quand même ce bloc comme terminé ?")) return;
+    state.remainingMs = 0;
+    completePhase({ focusMinutes: Math.max(1, Math.round(elapsed / 60_000)) });
+    toast("Bloc compté comme terminé.");
   }
   function skipPhase() {
     const from = state.mode;
@@ -345,6 +539,8 @@
     $("[data-setting-background-volume]").value = state.settings.backgroundVolume;
     $("[data-background-volume-label]").textContent = `${state.settings.backgroundVolume} %`;
     $("[data-setting-wakelock]").checked = state.settings.wakeLock;
+    $("[data-setting-continue-closed]").checked = state.settings.continueWhenClosed;
+    $("[data-setting-new-day]").checked = state.settings.newDayPrompt;
     if (typeof settingsDialog.showModal === "function") settingsDialog.showModal();
     else settingsDialog.setAttribute("open", "");
   }
@@ -363,7 +559,9 @@
       volume: $("[data-setting-volume]").value,
       background: $("[data-setting-background]").value,
       backgroundVolume: $("[data-setting-background-volume]").value,
-      wakeLock: $("[data-setting-wakelock]").checked
+      wakeLock: $("[data-setting-wakelock]").checked,
+      continueWhenClosed: $("[data-setting-continue-closed]").checked,
+      newDayPrompt: $("[data-setting-new-day]").checked
     });
     pauseTimer();
     state.settings = next;
@@ -373,6 +571,46 @@
     render();
     toast("Réglages enregistrés.");
   }
+
+  const PRESETS = {
+    classic: { work:25, short:5, long:15, interval:4, label:"Classique 25/5" },
+    deep: { work:50, short:10, long:20, interval:4, label:"Concentration 50/10" },
+    light: { work:20, short:5, long:15, interval:4, label:"Léger 20/5" },
+    focus: { work:45, short:10, long:20, interval:4, label:"Profond 45/10" }
+  };
+  function applyPreset(name, fromSettings = false) {
+    const p = PRESETS[name]; if (!p) return;
+    if (fromSettings) {
+      $("[data-setting-work]").value=p.work; $("[data-setting-short]").value=p.short; $("[data-setting-long]").value=p.long; $("[data-setting-interval]").value=p.interval;
+      return;
+    }
+    pauseTimer();
+    state.settings.durations={work:p.work,short:p.short,long:p.long}; state.settings.longInterval=p.interval; resetSession(true); toast(`${p.label} appliqué.`);
+  }
+  function buildAvailablePlan() {
+    const minutes=clamp($("[data-available-minutes]")?.value,10,360,50);
+    let cycles=minutes<35?1:minutes<75?2:minutes<110?3:4;
+    const short=minutes<30?5:Math.min(10,Math.max(5,Math.round(minutes*.08)));
+    const work=Math.max(5,Math.floor((minutes-Math.max(0,cycles-1)*short)/cycles));
+    pauseTimer(); state.settings.durations.work=work; state.settings.durations.short=short; state.settings.longInterval=cycles; state.settings.durations.long=Math.min(30,Math.max(15,short*2)); resetSession(true);
+    toast(`${cycles} bloc${cycles>1?"s":""} de ${work} min · pause ${short} min.`);
+  }
+  function quickTen() { pauseTimer(); state.mode="work"; state.overrideMinutes=10; state.remainingMs=600_000; state.phaseStartedAt=0; state.phaseInitialMs=0; render(); toast("Bloc libre de 10 min prêt."); }
+  function jumpCycle(index) { pauseTimer(); const i=clamp(index,0,state.settings.longInterval-1,0); state.mode="work"; state.workInCycle=i; state.treeComplete=false; state.sessionNumber=i+1; state.overrideMinutes=0; state.remainingMs=durationMs("work"); state.phaseStartedAt=0; state.phaseInitialMs=0; render(); toast(`T${i+1} prêt.`); }
+  function changeCycleCount(delta) { pauseTimer(); state.settings.longInterval=clamp(state.settings.longInterval+delta,1,12,4); state.workInCycle=Math.min(state.workInCycle,state.settings.longInterval-1); render(); }
+  function logInterruption(reason) { state.interruptions.push({time:Date.now(),reason,mode:state.mode,step:stageLabel()}); state.interruptions=state.interruptions.slice(-100); persist(); $("[data-interruption-dialog]")?.close?.(); toast(`Interruption notée : ${reason}.`); }
+  function openInterruption() { if(state.running) pauseTimer(); const d=$("[data-interruption-dialog]"); if(typeof d?.showModal==="function") d.showModal(); else d?.setAttribute("open",""); }
+  function maybeOfferResume() {
+    if (!state.settings.newDayPrompt || !state.staleOnLoad) return;
+    const d=$("[data-resume-dialog]");
+    const c=$("[data-resume-copy]"); if(c)c.textContent=`La session sauvegardée date d’un autre jour et se trouve à ${stageLabel()}. Tu peux la continuer ou repartir proprement à T1.`;
+    if(typeof d?.showModal==="function") d.showModal(); else d?.setAttribute("open","");
+  }
+  function restoreDefaultSettings() {
+    state.settings=normalizeSettings(DEFAULTS); resetSession(true); openSettings(); toast("Réglages d’origine restaurés.");
+  }
+  function exportPomo() { const blob=new Blob([JSON.stringify({version:4,exportedAt:new Date().toISOString(),data:JSON.parse(localStorage.getItem(STORAGE)||"{}")},null,2)],{type:"application/json"}); const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`philosophal-pomodoro-${todayKey()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000); }
+  async function importPomo(file) { if(!file)return; const parsed=JSON.parse(await file.text()); if(!parsed?.data)throw new Error("Format non reconnu"); localStorage.setItem(STORAGE,JSON.stringify(parsed.data)); window.location.reload(); }
 
   function addTask(e) {
     e.preventDefault();
@@ -628,10 +866,31 @@
 
   startBtn.addEventListener("click", startTimer);
   $("[data-reset]").addEventListener("click", resetTimer);
+  $("[data-reset-session]").addEventListener("click", () => resetSession(false));
+  $("[data-new-session]").addEventListener("click", () => resetSession(false));
+  $("[data-finish-early]").addEventListener("click", finishEarly);
+  $("[data-interruption]").addEventListener("click", openInterruption);
   $("[data-skip]").addEventListener("click", skipPhase);
   $("[data-auto-toggle]").addEventListener("click", toggleAuto);
   $("[data-open-settings]").addEventListener("click", openSettings);
   $("[data-save-settings]").addEventListener("click", saveSettings);
+  $$('[data-setting-preset]').forEach(btn => btn.addEventListener("click", () => applyPreset(btn.dataset.settingPreset, true)));
+  $$('[data-preset]').forEach(btn => btn.addEventListener("click", () => applyPreset(btn.dataset.preset)));
+  $("[data-test-alarm]")?.addEventListener("click", playAlarm);
+  $("[data-default-settings]")?.addEventListener("click", restoreDefaultSettings);
+  $("[data-export-pomo]")?.addEventListener("click", exportPomo);
+  $("[data-import-pomo]")?.addEventListener("change", async e => { try { await importPomo(e.target.files?.[0]); } catch (_) { toast("Import impossible."); } });
+  $("[data-build-available]")?.addEventListener("click", buildAvailablePlan);
+  $("[data-quick-ten]")?.addEventListener("click", quickTen);
+  $("[data-cycle-minus]")?.addEventListener("click", () => changeCycleCount(-1));
+  $("[data-cycle-plus]")?.addEventListener("click", () => changeCycleCount(1));
+  $("[data-cycle-dots]")?.addEventListener("click", e => { const b=e.target.closest("[data-cycle-jump]"); if(b) jumpCycle(Number(b.dataset.cycleJump)); });
+  $("[data-intention]")?.addEventListener("input", e => { state.intention=e.target.value.slice(0,180); persist(); });
+  $("[data-resume-note]")?.addEventListener("input", e => { state.resumeNote=e.target.value.slice(0,180); persist(); });
+  $("[data-close-interruption]")?.addEventListener("click", () => $("[data-interruption-dialog]")?.close?.());
+  $$('[data-interruption-reason]').forEach(btn => btn.addEventListener("click", () => logInterruption(btn.dataset.interruptionReason)));
+  $("[data-resume-continue]")?.addEventListener("click", () => { state.sessionDate=todayKey(); state.staleOnLoad=false; $("[data-resume-dialog]")?.close?.(); render(); });
+  $("[data-resume-new]")?.addEventListener("click", () => { $("[data-resume-dialog]")?.close?.(); resetSession(true); });
   $("[data-fullscreen]").addEventListener("click", toggleFullscreen);
   $("[data-notifications]").addEventListener("click", requestNotifications);
   $("[data-setting-volume]").addEventListener("input", e => $("[data-volume-label]").textContent = `${e.target.value} %`);
@@ -657,7 +916,11 @@
       if (state.running) requestWakeLock();
     }
   });
-  window.addEventListener("beforeunload", () => { stopAmbient(); persist(); });
+  window.addEventListener("beforeunload", () => {
+    stopAmbient();
+    if (state.running && !state.settings.continueWhenClosed) { state.remainingMs=Math.max(0,state.endAt-Date.now()); state.running=false; state.endAt=0; }
+    persist();
+  });
   function appPath(path) {
     const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
     const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
@@ -665,28 +928,42 @@
   }
 
   window.addEventListener("keydown", e => {
-    const key = String(e.key || "").toLowerCase();
-    const code = e.code || "";
-    if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code === "KeyC" || key === "c")) {
-      e.preventDefault(); e.stopImmediatePropagation(); window.location.assign(appPath("/mediatheque/")); return;
-    }
-    if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code === "KeyH" || key === "h")) {
-      e.preventDefault(); e.stopImmediatePropagation(); window.location.assign(appPath("/")); return;
-    }
-
-    const typing = e.target instanceof HTMLElement && (e.target.matches("input,textarea,select") || e.target.isContentEditable);
-    const dialogOpen = $$("dialog").some(dialog => dialog.open);
+    const key=String(e.key||"").toLowerCase(),code=e.code||"";
+    const typing=e.target instanceof HTMLElement && (e.target.matches("input,textarea,select") || e.target.isContentEditable);
+    const dialogOpen=$$("dialog").some(dialog=>dialog.open);
     if (typing || dialogOpen) return;
-    if (!e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code === "KeyH" || key === "h")) {
-      e.preventDefault(); e.stopImmediatePropagation(); window.location.assign(appPath("/")); return;
-    }
-    if (e.code === "Space") { e.preventDefault(); startTimer(); }
-    else if (e.key === "1") switchMode("work");
-    else if (e.key === "2") switchMode("short");
-    else if (e.key === "3") switchMode("long");
-    else if (key === "f") toggleFullscreen();
-    else if (key === "s") openSettings();
-  });
+    let handled=true;
+    if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyC"||key==="c")) window.location.assign(appPath("/mediatheque/"));
+    else if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
+    else if (!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
+    else if (e.code==="Space") startTimer();
+    else if (e.key==="ArrowRight") skipPhase();
+    else if (key==="r") resetTimer();
+    else if (key==="f") toggleFullscreen();
+    else if (key==="s") openSettings();
+    else handled=false;
+    if(handled){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation()}
+  }, true);
 
+  function consumeAtelierTask() {
+    try {
+      const h = JSON.parse(localStorage.getItem("philosophal-pomodoro-handoff-v1") || "null");
+      if (!h || Date.now() - Number(h.createdAt || 0) > 30 * 60 * 1000 || !String(h.title || "").trim()) return;
+      localStorage.removeItem("philosophal-pomodoro-handoff-v1");
+      const title = String(h.title).trim().slice(0, 160);
+      let task = state.tasks.find(t => !t.done && t.title === title);
+      if (!task) {
+        task = { id: uid(), title, estimate: clamp(h.estimate, 1, 20, 1), completed: 0, done: false, createdAt: Date.now() };
+        state.tasks.unshift(task);
+      }
+      state.activeTaskId = task.id;
+      state.intention = title.slice(0, 180);
+      persist();
+    } catch (_) {}
+  }
+  consumeAtelierTask();
   render();
+  if (state.running && !state.staleOnLoad) { state.tickHandle=window.setInterval(tick,250); requestWakeLock(); }
+  if (state.expiredOnLoad) window.setTimeout(() => completePhase(), 150);
+  window.setTimeout(maybeOfferResume, 180);
 })();

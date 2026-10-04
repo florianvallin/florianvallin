@@ -41,7 +41,7 @@
           const scopePath = new URL(registration.scope).pathname;
           const worker = registration.active || registration.waiting || registration.installing;
           const scriptPath = worker ? new URL(worker.scriptURL).pathname : "";
-          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || scopePath === "/" || scopePath === "/main/";
+          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || (scopePath === "/" && !scriptPath.endsWith("/sw-atelier.js"));
           const isReaderScope = scopePath === "/lecture/" || scopePath === "/main/lecture/";
           if (isPhilosophalWorker && !isReaderScope) await registration.unregister();
         }));
@@ -49,10 +49,8 @@
         // Live Server doit lire directement les fichiers du disque.
         if (localHost) return;
 
-        await navigator.serviceWorker.register("/sw.js?v=20260928-study2", {
-          scope: "/lecture/",
-          updateViaCache: "none"
-        });
+        // La bibliothèque privée est déchiffrée en mémoire ; elle n’est jamais mise en cache en clair.
+
       } catch (_) {}
     };
 
@@ -164,7 +162,7 @@
           ["KeyA", "a", "/art/"],
           ["KeyL", "l", "__library__"],
           ["KeyC", "c", "/mediatheque/"],
-          ["KeyH", "h", "/"],
+          ["KeyH", "h", "/index.html"],
           ["KeyB", "b", "/textes/theologie/boussole/"],
           ["KeyM", "m", "/textes/mythologie/boussole/"],
           ["KeyP", "p", "/textes/philosophie/boussole/"]
@@ -220,7 +218,7 @@
       if (codeMatches(event, "KeyH", "h")) {
         consumeShortcut(event);
         closeShortcutHelp();
-        go("/");
+        go("/index.html");
         return;
       }
       if (codeMatches(event, "KeyC", "c")) {

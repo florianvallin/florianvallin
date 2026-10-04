@@ -4,7 +4,7 @@
   const DB_NAME = "philosophal-local-books";
   const DB_VERSION = 1;
   const STORE = "books";
-  const SUPPORTED_EXTENSIONS = ["epub", "txt", "text", "html", "htm", "xhtml", "md", "markdown", "fb2"];
+  const SUPPORTED_EXTENSIONS = ["epub", "azw", "azw3", "mobi", "cbz", "txt", "text", "html", "htm", "xhtml", "md", "markdown", "fb2"];
 
   function extensionOf(name = "") {
     const part = String(name).toLowerCase().split(".").pop();
@@ -91,7 +91,7 @@
 
   async function saveFile(file) {
     if (!isSupported(file)) {
-      throw new Error("Format non pris en charge. Utilisez EPUB, TXT, HTML, Markdown ou FB2.");
+      throw new Error("Format non pris en charge. Utilisez EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown ou FB2.");
     }
 
     const id = idForFile(file);

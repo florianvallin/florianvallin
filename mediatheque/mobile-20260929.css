@@ -403,3 +403,110 @@ html,body{max-width:100%;overflow-x:hidden}
     white-space:nowrap;
   }
 }
+
+
+/* ==========================================================
+   Accès privé : Liens utiles · Apprendre · Explorer
+   ========================================================== */
+[data-private-only]{display:none!important}
+body[data-media-access="private"] [data-private-only]{display:block!important}
+
+.media-action-strip>.media-useful-links,
+.media-action-strip>.media-explore-trigger{
+  box-sizing:border-box;
+}
+.media-action-strip>.media-useful-links>summary,
+.media-action-strip>.media-explore-trigger{
+  box-sizing:border-box;
+}
+.media-learn-menu .media-useful-links-group{padding-bottom:4px}
+.media-learn-course strong{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.media-learn-levels{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+  padding:8px 10px 10px;
+}
+.media-learn-levels a{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  min-height:54px;
+  border:1px solid rgba(104,82,130,.16);
+  border-radius:12px;
+  background:#faf8ff;
+  color:#544765;
+  text-decoration:none;
+}
+.media-learn-levels a:hover{border-color:#b8a3d4;background:#f6f1fc}
+.media-learn-levels strong{font-size:.82rem}
+.media-learn-levels small{font-size:.58rem;color:#8a8095}
+.media-learn-open{
+  display:flex!important;
+  justify-content:center!important;
+  margin:5px 10px 10px!important;
+  border-radius:12px!important;
+  background:#f5f1fa!important;
+  color:#5f5272!important;
+  font-weight:700!important;
+}
+
+@media (min-width:761px){
+  .media-action-strip>.media-useful-links,
+  .media-action-strip>.media-explore-trigger{
+    width:132px!important;
+    min-width:132px!important;
+    max-width:132px!important;
+  }
+  .media-action-strip>.media-useful-links>summary,
+  .media-action-strip>.media-explore-trigger{
+    width:132px!important;
+    min-width:132px!important;
+    max-width:132px!important;
+    justify-content:center!important;
+  }
+}
+
+@media (max-width:760px){
+  body[data-media-access="private"] .media-action-strip{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .media-action-strip>.media-useful-links,
+  .media-action-strip>.media-explore-trigger{
+    width:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+  }
+  .media-action-strip>.media-useful-links>summary,
+  .media-action-strip>.media-explore-trigger{
+    width:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+  }
+  .media-learn-menu{
+    left:50%!important;
+    right:auto!important;
+    transform:translateX(-50%)!important;
+  }
+}
+
+@media (max-width:420px){
+  body[data-media-access="private"] .media-action-strip{gap:6px!important}
+  body[data-media-access="private"] .media-action-strip>.media-useful-links>summary,
+  body[data-media-access="private"] .media-action-strip>.media-explore-trigger{
+    font-size:.69rem!important;
+    padding:0 5px!important;
+  }
+}
+
+/* Apprendre v2 : quatre niveaux dans le menu */
+.media-learn-levels{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media(max-width:420px){
+  .media-learn-levels{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+
+/* Anglais V5 : A1 → C1 */
+.media-learn-levels{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+@media(max-width:520px){.media-learn-levels{grid-template-columns:repeat(3,minmax(0,1fr))!important}}

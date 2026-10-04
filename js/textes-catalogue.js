@@ -19749,7 +19749,8 @@
   const root = document.querySelector("[data-text-catalog]");
   if (!root) return;
 
-  const fixedSection = document.body.dataset.catalogSection || "all";
+  const rootCatalogPath = /^\/textes\/(?:index\.html)?$/.test(window.location.pathname);
+  const fixedSection = rootCatalogPath ? "all" : (document.body.dataset.catalogSection || "all");
   const grid = root.querySelector("[data-text-grid]");
   const count = root.querySelector("[data-text-count]");
   const search = root.querySelector("[data-text-search]");
@@ -19769,10 +19770,23 @@
 
   const availableSections = new Set(TEXTS.flatMap(textSections));
   availableSections.add("mythologie");
+  if (rootCatalogPath) {
+    document.body.dataset.catalogSection = "all";
+    const heroTitle = document.querySelector(".texts-title");
+    const heroIntro = document.querySelector(".texts-intro");
+    if (heroTitle) heroTitle.textContent = "Tous les textes";
+    if (heroIntro) heroIntro.textContent = "Explorez les textes librement ou affinez la sélection parmi les thèmes et les auteurs déjà disponibles.";
+  }
+
   const sectionTabs = document.querySelector(".texts-section-tabs");
   sectionTabs?.querySelectorAll("a[href]").forEach((link) => {
-    const match = link.getAttribute("href")?.match(/^\/textes\/([^/]+)\/?$/);
+    const href = link.getAttribute("href") || "";
+    const match = href.match(/^\/textes\/([^/]+)\/?$/);
     if (match && !availableSections.has(match[1])) link.hidden = true;
+    if (rootCatalogPath) {
+      if (href === "/textes/" || href === "/textes/index.html") link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    }
   });
   if (sectionTabs) sectionTabs.hidden = availableSections.size < 2;
 
@@ -20007,7 +20021,8 @@
     const match = [...control.options].find((option) => normalize(option.value) === normalize(value));
     if (match) control.value = match.value;
   };
-  if (fixedSection === "all") setFromQuery(section, params.get("section"));
+  if (fixedSection === "all" && !rootCatalogPath) setFromQuery(section, params.get("section"));
+  if (rootCatalogPath && section) section.value = "all";
   if (multiThemeEnabled) {
     selectedThemes = params.getAll("theme")
       .map((value) => isHlpFilter(value) ? value : catalogThemes.find((item) => normalize(item) === normalize(value)))

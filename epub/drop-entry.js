@@ -49,7 +49,7 @@
     const files = Array.from(event.dataTransfer?.files || []);
     const file = files.find((candidate) => Books.isSupported(candidate));
     if (!file) {
-      show("Format non pris en charge — EPUB, TXT, HTML, Markdown ou FB2");
+      show("Format non pris en charge — EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown ou FB2");
       setTimeout(hide, 1700);
       return;
     }

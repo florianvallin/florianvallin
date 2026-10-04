@@ -1,0 +1,41 @@
+name: Vérifier puis publier Philosophal
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: philosophal-pages
+  cancel-in-progress: false
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier les liens, scripts et fichiers privés
+        run: |
+          python3 scripts/verifier_site.py --require-node
+          node scripts/tests_public.mjs
+  publication:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: verification
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Préparer la version publique et les archives chiffrées
+        run: python3 scripts/preparer_publication.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publier la version vérifiée
+        id: deployment
+        uses: actions/deploy-pages@v4

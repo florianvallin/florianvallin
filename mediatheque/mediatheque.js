@@ -4,6 +4,12 @@
   // Attendre la synchronisation du catalogue /textes/ avant de construire la médiathèque.
   try { await (window.FV_MEDIATHEQUE_TEXT_SYNC || Promise.resolve()); } catch (_) {}
 
+  await window.FV_PRIVATE_ACCESS.ready;
+  if (window.FV_PRIVATE_ACCESS.role()) {
+    await window.FV_PRIVATE_ACCESS.execute("/mediatheque/data.js");
+    await window.FV_PRIVATE_ACCESS.execute("/mediatheque/mindmaps-data.js");
+    if(window.FV_PRIVATE_ACCESS.role()==="private")for(const name of ["s1-courses","s2-courses","s3-courses","s4-courses","research-courses"])await window.FV_PRIVATE_ACCESS.execute("/mediatheque/"+name+".js");
+  }
   const DATA = window.FV_MEDIATHEQUE_DATA || { resources: [], dossiers: [] };
   const MINDMAP_CUSTOM_KEY = "fv-mindmap-custom-v2";
   const MINDMAP_SESSION_KEY = "fv-mindmap-session-v2";
@@ -2383,7 +2389,7 @@
 
   privateGateForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(privatePassword?.value || "");
+    const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(privatePassword?.value || "", !!document.querySelector("[data-media-remember]")?.checked);
     if (!role) {
       // Compatibilité si le module d'accès ancien est encore en cache.
       const ownerValid = await window.FV_PRIVATE_ACCESS?.unlock?.(privatePassword?.value || "");
@@ -2397,7 +2403,7 @@
       return;
     }
     closePrivateGate();
-    setAccessMode(role);
+    window.location.reload();
   });
 
   search.addEventListener("input", () => {
@@ -2983,7 +2989,22 @@
     }
   });
 
-  document.body.dataset.mediaAccess = "public";
+  // Restaurer automatiquement le dernier accès autorisé.
+  // Ainsi, après un déverrouillage propriétaire, revenir à la médiathèque
+  // réaffiche directement la version privée sans nouveau clic.
+  const rememberedRole = window.FV_PRIVATE_ACCESS?.role?.()
+    || (window.FV_PRIVATE_ACCESS?.isUnlocked?.() ? "private" : "");
+  if (rememberedRole === "private") state.access = "private";
+  else if (rememberedRole === "student") state.access = "student";
+
+  accessSwitch?.querySelectorAll("[data-access-mode]").forEach((button) => {
+    const wantsPrivate = button.dataset.accessMode === "private";
+    const active = wantsPrivate ? state.access !== "public" : state.access === "public";
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+    if (wantsPrivate) button.textContent = state.access === "student" ? "Élève" : "Privé";
+  });
+  document.body.dataset.mediaAccess = state.access;
   initFromUrl();
   render();
 })();

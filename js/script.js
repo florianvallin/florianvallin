@@ -3,7 +3,7 @@
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
   const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260928-study2`;
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20261004-home-index1`;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -368,14 +368,14 @@
   function initGlobalSearch() {
     const nav = document.querySelector(".nav-links");
     if (nav && !nav.querySelector("[data-site-search-open]")) {
-      const blog = nav.querySelector(".nav-blog-link");
+      const anchor = nav.querySelector(".nav-tools-link") || nav.querySelector(".nav-blog-link");
       const button = document.createElement("button");
       button.type = "button";
       button.className = "nav-search-trigger";
       button.dataset.siteSearchOpen = "";
       button.setAttribute("aria-label", "Rechercher sur le site");
       button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg><kbd>R</kbd>';
-      if (blog) blog.insertAdjacentElement("afterend", button); else nav.prepend(button);
+      if (anchor) anchor.insertAdjacentElement("afterend", button); else nav.prepend(button);
     }
 
     if (!document.querySelector("[data-site-search-dialog]")) {
@@ -552,23 +552,6 @@
   }
 
   function initStudentAccess() {
-    const STUDENT_PORTALS = {
-      didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
-      art: "/art/",
-      livre: "/lecture/",
-      livres: "/lecture/",
-      media: "/mediatheque/",
-      mediatheque: "/mediatheque/",
-      bible: "/textes/theologie/boussole/"
-    };
-
-    const resolveStudentDestination = (destination) => {
-      if (!destination?.startsWith("/")) return destination;
-      const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-      const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-      return `${localMain ? "/main" : ""}${destination}`;
-    };
-
     if (!document.querySelector("[data-student-dialog]")) {
       document.body.insertAdjacentHTML("beforeend", `
         <div class="student-access-shell" data-student-dialog hidden>
@@ -616,41 +599,16 @@
     // API légère utilisée par les raccourcis globaux (touche S).
     window.FVStudentAccess = { open, close };
 
-    const grantLibraryAccess = () => {
+    const enter = async () => {
+      if (navigating) return;
+      navigating=true;
+      if(feedback)feedback.textContent="Vérification…";
       try {
-        localStorage.setItem("fv-private-library", "1");
-      } catch (_) {}
-
-      try {
-        sessionStorage.setItem("fv-private-library", "1");
-      } catch (_) {}
-    };
-
-    const enter = (showError = true) => {
-      if (navigating) return false;
-
-      const key = normalizeSearch(input?.value).replace(/\s+/g, "");
-      const destination = STUDENT_PORTALS[key];
-
-      if (!destination) {
-        if (showError && feedback) {
-          feedback.textContent = "Mot de passe non reconnu.";
-        }
-        return false;
-      }
-
-      navigating = true;
-
-      if (key === "livre" || key === "livres") {
-        grantLibraryAccess();
-      }
-
-      if (feedback) {
-        feedback.textContent = "Accès reconnu — ouverture de votre espace…";
-      }
-
-      window.location.href = resolveStudentDestination(destination);
-      return true;
+        await window.FV_PRIVATE_ACCESS.ready;
+        const role=await window.FV_PRIVATE_ACCESS.unlockRole(input.value);
+        if(!role){if(feedback)feedback.textContent="Mot de passe incorrect.";navigating=false;return;}
+        window.location.href=role==="private"?"/atelier/":"/mediatheque/";
+      }catch(error){if(feedback)feedback.textContent=error.message;navigating=false;}
     };
 
     document
@@ -668,16 +626,7 @@
         enter(true);
       });
 
-    // Les mots d’accès exacts ouvrent directement l’espace correspondant.
-    input?.addEventListener("input", () => {
-      const key = normalizeSearch(input.value).replace(/\s+/g, "");
-
-      if (STUDENT_PORTALS[key]) {
-        enter(false);
-      } else if (feedback) {
-        feedback.textContent = "";
-      }
-    });
+    input?.addEventListener("input",()=>{if(feedback)feedback.textContent="";});
 
     shell?.addEventListener("keydown", (event) => {
       if (event.key === "Escape") close();

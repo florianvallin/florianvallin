@@ -72,7 +72,7 @@ button { color: inherit; }
 .nav-links { display: flex; flex: 1; align-items: center; gap: 12px; }
 .nav-links a { padding: 7px 10px; border-radius: 9px; text-decoration: none; font-size: 14px; font-weight: 500; transition: .2s ease; }
 .nav-links a:hover { color: var(--primary); background: rgba(108,99,255,.07); }
-.nav-links a:last-child { color: var(--primary); font-weight: 600; }
+.nav-links .nav-contact-link { color: var(--primary); font-weight: 600; }
 .nav-texts-link { position:relative; margin-left:18px; }
 .nav-texts-link::before { content:""; position:absolute; left:-14px; top:50%; width:1px; height:20px; border-radius:1px; background:rgba(28,28,40,.14); transform:translateY(-50%); }
 .nav-blog-link { margin-right:0; }

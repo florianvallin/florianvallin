@@ -189,6 +189,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       const formData = new FormData(form);
+      if (form.dataset.contactDelivery === "email") {
+        const offer=String(formData.get("offre")||formData.get("prestation")||"Demande de cours");
+        const body=`Adresse de réponse : ${formData.get("email")}\nOffre : ${offer}\n\n${formData.get("message")}`;
+        window.location.href="mailto:florianvallin@free.fr?subject="+encodeURIComponent("Philosophal — "+offer)+"&body="+encodeURIComponent(body);
+        showPopup("success","E-mail préparé",["Votre application de messagerie s’ouvre. Validez l’envoi de l’e-mail pour transmettre votre demande."],6500);
+        return;
+      }
+
       const action = form.getAttribute("action");
       const url = action && action.trim() !== "" ? action : "/";
 

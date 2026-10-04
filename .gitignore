@@ -1,1 +1,9 @@
 .history/
+/main/
+/_site/
+*.zip
+*ACCES-PRIVES*
+*v31-credentials*
+*-prive-source/
+.env*
+__pycache__/

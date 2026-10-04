@@ -1,0 +1,47 @@
+{
+  "name": "Philosophal Atelier",
+  "short_name": "Atelier",
+  "description": "Espace personnel Philosophal pour apprendre, pratiquer, créer et s'organiser.",
+  "start_url": "/atelier/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f4f8",
+  "theme_color": "#6d557d",
+  "lang": "fr",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Atelier",
+      "short_name": "Atelier",
+      "url": "/atelier/"
+    },
+    {
+      "name": "Pomodoro",
+      "short_name": "Pomodoro",
+      "url": "/pomodoro/"
+    },
+    {
+      "name": "Création",
+      "short_name": "Création",
+      "url": "/apprendre/creation/?view=home"
+    },
+    {
+      "name": "Sport",
+      "short_name": "Sport",
+      "url": "/apprendre/sport/?view=today"
+    }
+  ],
+  "id": "/atelier/"
+}

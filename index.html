@@ -44,22 +44,22 @@
 <script
     src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
   ></script>
-</head>
+<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"><script src="/js/private-access.js?v=20261004-v31"></script></head>
 
 <body id="top">
 
 <header class="navbar" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="/" aria-label="Accueil — Philosophal"><img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20260925-publish1" alt="Philosophal" width="46" height="46" decoding="async"></a>
+    <a class="nav-brand" href="/index.html" aria-label="Accueil — Philosophal"><img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20260925-publish1" alt="Philosophal" width="46" height="46" decoding="async"></a>
     <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a>
+      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a><a class="nav-tools-link" href="/outils/">Outils</a>
       <a href="#philosophie">Prestations</a>
       <a href="#quisuisje">Qui suis-je ?</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact">Contactez-moi</a>
+      <a class="nav-contact-link" href="#contact">Contactez-moi</a>
     </nav>
   </div>
 </header>
@@ -298,7 +298,7 @@
       Tarif TTC — séance individuelle
     </p>
 
-    <a href="#contact" class="btn-primary btn-primary--small">
+    <a href="/?offre=individuel#contact" data-contact-offer-id="individuel" class="btn-primary btn-primary--small">
       Réserver une séance
     </a>
   </div>
@@ -473,7 +473,7 @@
 
   </div>
 
-  <a href="#contact" class="collective-pricing-button">
+  <a href="/?offre=collectif#contact" data-contact-offer-id="collectif" class="collective-pricing-button">
     Organiser un cours collectif
   </a>
 
@@ -580,7 +580,7 @@
         </ul>
     
         <a
-          href="#contact"
+          href="/?offre=express#contact" data-contact-offer-id="express"
           class="philo-pack-button"
         >
           Choisir ce pack
@@ -675,7 +675,7 @@
     
         </ul>
     
-        <a href="#contact" class="philo-pack-button philo-pack-button--featured">
+        <a href="/?offre=remise#contact" data-contact-offer-id="remise" class="philo-pack-button philo-pack-button--featured">
           Choisir ce pack
         </a>
     
@@ -763,7 +763,7 @@
     
         </ul>
     
-        <a href="#contact" class="philo-pack-button">
+        <a href="/?offre=excellence#contact" data-contact-offer-id="excellence" class="philo-pack-button">
           Choisir ce pack
         </a>
     
@@ -860,7 +860,7 @@
             <span class="price-unit">/ heure</span>
           </div>
           <p class="pricing-note">Tarif TTC — séance individuelle, ponctuelle ou régulière</p>
-          <a href="#contact" class="btn-primary btn-primary--small">Prendre contact</a>
+          <a href="/?offre=methodologie#contact" data-contact-offer-id="methodologie" class="btn-primary btn-primary--small">Prendre contact</a>
         </div>
 
         <div class="pricing-right methodo-pricing-right">
@@ -891,7 +891,7 @@
     <div class="about-card">
       <div class="about-photo">
         <img 
-          src="images/hero-florian.jpg" 
+          src="images/hero-florian.jpg?v=20261004-about-photo3" 
           alt="Professeur de philosophie à Montpellier"
           loading="lazy"
           >
@@ -1218,8 +1218,8 @@
           name="contact"
           method="POST"
           class="contact-form"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
+          data-contact-delivery="email"
+          
         >
           <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="subject" data-remove-prefix value="[%{siteName}] Nouveau message" id="subject" />
@@ -1266,7 +1266,7 @@
             <p id="prestation-help" class="contact-field-help"></p>
           </div>
 
-          <div class="contact-field">
+          <input type="hidden" name="offre" value=""><p class="contact-offer-summary" data-offer-summary aria-live="polite" hidden></p><div class="contact-field"><label for="offre-choisie">Offre souhaitée</label><div class="contact-select-wrapper"><select id="offre-choisie" data-contact-offer><option value="">Je souhaite être conseillé</option><option value="individuel">Séance individuelle de philosophie</option><option value="collectif">Cours collectif de philosophie</option><option value="express">Pack Express — 175 €</option><option value="remise">Pack Remise à niveau — 250 €</option><option value="excellence">Pack Excellence — 320 €</option><option value="methodologie">Séance de méthodologie — 40 € / h</option></select></div></div><div class="contact-field">
             <label for="message">Message *</label>
             <textarea
               id="message"
@@ -1279,17 +1279,17 @@
             <span id="message-error" class="sr-only" role="alert" aria-live="polite"></span>
           </div>
 
-          <div data-netlify-recaptcha="true" class="contact-recaptcha"></div>
+          
 
           <div class="contact-submit-wrap">
             <button type="submit" class="contact-submit" id="contact-submit-btn">
-              <span id="contact-submit-text">Envoyer le message</span>
+              <span id="contact-submit-text">Préparer l’e-mail</span>
               <span id="contact-submit-spinner" class="contact-submit-spinner" aria-hidden="true"></span>
             </button>
           </div>
 
           <p class="contact-response-time">
-            Je vous réponds par e-mail dans un délai de 48 heures.
+            Le bouton ouvre votre application de messagerie : validez l’envoi de l’e-mail. Je vous réponds dans un délai de 48 heures.
           </p>
         </form>
       </div>
@@ -1376,9 +1376,9 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20260928-study2" defer></script>
+<script src="js/script.js?v=20261004-v31" defer></script>
 <script src="js/protected-phone.js?v=20260925-publish1" defer></script>
-<script src="js/contact-form.js?v=20260925-publish1" defer></script>
+<script src="js/contact-form.js?v=20261004-v31" defer></script>
 
 <script type="application/ld+json">
 {
@@ -1425,5 +1425,5 @@
   </svg>
 </button>
 
-</body>
+<script src="/js/contact-offers.js?v=20261004-v31" defer></script><script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

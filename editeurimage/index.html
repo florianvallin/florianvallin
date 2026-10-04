@@ -13,11 +13,11 @@
   <meta name="description" content="Éditeur d’image léger et privé : recadrage, annotations, retouches et export directement dans le navigateur.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./image-editor.css?v=20260928-image1">
-</head>
+  <link rel="stylesheet" href="./image-editor.css?v=20261003-image2">
+<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"></head>
 <body>
   <header class="image-topbar">
-    <div class="image-brand" aria-label="Éditeur d’image Philosophal">
+    <a class="public-tool-back" href="/outils/">← Outils</a><div class="image-brand" aria-label="Éditeur d’image Philosophal">
       <span class="image-brand-mark" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M5 4.5h14A2.5 2.5 0 0 1 21.5 7v10A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17V7A2.5 2.5 0 0 1 5 4.5Z"/><circle cx="8" cy="9" r="1.7"/><path d="m4.5 17 4.2-4.3 3.1 3 2.5-2.5 5.2 4.8"/></svg>
       </span>
@@ -32,6 +32,7 @@
       <button type="button" class="image-icon-button" data-undo aria-label="Annuler" title="Annuler (Ctrl+Z)" disabled>↶</button>
       <button type="button" class="image-icon-button" data-redo aria-label="Rétablir" title="Rétablir (Ctrl+Y)" disabled>↷</button>
       <span class="image-top-separator" aria-hidden="true"></span>
+      <button type="button" class="image-top-secondary" data-a4-image title="Placer l’image sur une page A4">A4</button>
       <button type="button" class="image-top-secondary" data-resize-image>Redimensionner</button>
       <button type="button" class="image-top-secondary" data-rotate-image title="Rotation de 90° vers la droite">↻ 90°</button>
       <button type="button" class="image-icon-button image-top-secondary" data-flip-image aria-label="Retourner horizontalement" title="Retourner horizontalement">⇋</button>
@@ -39,6 +40,11 @@
       <button type="button" class="image-export-button" data-export-image>Exporter</button>
     </nav>
   </header>
+
+  <div class="image-document-tabs" data-document-tabs aria-label="Images ouvertes">
+    <div class="image-document-tab-list" data-document-tab-list></div>
+    <button type="button" class="image-document-tab-add" data-tab-add title="Ouvrir d’autres images">＋</button>
+  </div>
 
   <main class="image-app">
     <aside class="image-toolrail" aria-label="Outils d’édition">
@@ -159,6 +165,7 @@
         <button type="button" data-tool="ellipse"><span>○</span>Ellipse</button>
         <button type="button" data-tool="number"><span>1</span>Numéro</button>
         <button type="button" data-tool="blur"><span>◫</span>Flou</button>
+        <button type="button" data-a4-image><span>A4</span>Format A4</button>
       </div>
       <button type="button" class="image-mobile-sheet-action" data-mobile-properties>Réglages et calques</button>
     </div>
@@ -208,14 +215,36 @@
         <button type="button" data-new-preset="1080x1080">1080 × 1080</button>
         <button type="button" data-new-preset="1080x1350">1080 × 1350</button>
         <button type="button" data-new-preset="1200x630">1200 × 630</button>
+        <button type="button" data-new-preset="1654x2339">A4 · 200 dpi</button>
       </div>
       <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Créer</button></footer>
     </form>
   </dialog>
 
-  <input type="file" accept="image/png,image/jpeg,image/webp" data-file-input hidden>
+  <dialog class="image-dialog" data-a4-dialog>
+    <form method="dialog" class="image-dialog-card image-a4-dialog-card" data-a4-form>
+      <header><div><span>Mise en page</span><h2>Transformer en format A4</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <p>Choisissez la page puis ajustez l’image avant d’appliquer. « Contenir » garde toute l’image ; « Couvrir » remplit la feuille et peut couper les bords.</p>
+      <div class="image-a4-layout">
+        <div class="image-a4-preview-wrap"><canvas data-a4-preview width="260" height="360"></canvas></div>
+        <div class="image-a4-controls">
+          <label>Orientation<select data-a4-orientation><option value="portrait">Portrait</option><option value="landscape">Paysage</option></select></label>
+          <label>Résolution<select data-a4-dpi><option value="150">150 dpi · léger</option><option value="200" selected>200 dpi · équilibré</option><option value="300">300 dpi · impression</option></select></label>
+          <label>Ajustement<select data-a4-mode><option value="contain">Contenir toute l’image</option><option value="cover">Couvrir toute la page</option><option value="free">Libre</option></select></label>
+          <label>Fond<select data-a4-background><option value="white">Blanc</option><option value="transparent">Transparent</option></select></label>
+          <label>Échelle <output data-a4-scale-output>100 %</output><input type="range" min="30" max="250" value="100" step="1" data-a4-scale></label>
+          <label>Décalage horizontal <output data-a4-x-output>0 %</output><input type="range" min="-100" max="100" value="0" step="1" data-a4-x></label>
+          <label>Décalage vertical <output data-a4-y-output>0 %</output><input type="range" min="-100" max="100" value="0" step="1" data-a4-y></label>
+        </div>
+      </div>
+      <div class="image-a4-note" data-a4-summary>—</div>
+      <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Appliquer le format A4</button></footer>
+    </form>
+  </dialog>
+
+  <input type="file" accept="image/png,image/jpeg,image/webp" data-file-input multiple hidden>
   <div class="image-toast" data-toast role="status" aria-live="polite" hidden></div>
 
-  <script src="./image-editor.js?v=20260928-image1"></script>
-</body>
+  <script src="./image-editor.js?v=20261003-image2"></script>
+<script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

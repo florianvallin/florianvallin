@@ -29,6 +29,9 @@
   const resizeDialog = $("[data-resize-dialog]");
   const exportDialog = $("[data-export-dialog]");
   const newDialog = $("[data-new-dialog]");
+  const a4Dialog = $("[data-a4-dialog]");
+  const tabsNode = $("[data-document-tabs]");
+  const tabList = $("[data-document-tab-list]");
   const mobileSheet = $("[data-mobile-sheet]");
 
   const assets = new Map();
@@ -36,6 +39,8 @@
   let blurScratchCtx = blurScratch.getContext("2d");
   let toastTimer = 0;
   let busy = false;
+  const documents = [];
+  let activeDocumentId = "";
 
   const state = {
     hasDocument: false,
@@ -161,6 +166,93 @@
       nextNumber: state.nextNumber,
       name: state.name
     };
+  }
+
+
+  function documentRecordFromState(id = activeDocumentId || uid("doc")) {
+    if (!state.hasDocument) return null;
+    return {
+      id,
+      name: state.name || "Image",
+      snapshot: currentSnapshot(),
+      history: deepClone(state.history || []),
+      historyIndex: state.historyIndex,
+      zoom: state.zoom || 1,
+      selectedId: state.selectedId || null
+    };
+  }
+
+  function saveActiveDocument() {
+    if (!activeDocumentId || !state.hasDocument) return;
+    const index = documents.findIndex((doc) => doc.id === activeDocumentId);
+    if (index < 0) return;
+    documents[index] = documentRecordFromState(activeDocumentId);
+    renderDocumentTabs();
+  }
+
+  function registerCurrentDocument() {
+    if (!state.hasDocument) return;
+    const id = uid("doc");
+    activeDocumentId = id;
+    documents.push(documentRecordFromState(id));
+    renderDocumentTabs();
+  }
+
+  function loadDocumentRecord(id) {
+    if (id === activeDocumentId) return;
+    saveActiveDocument();
+    const doc = documents.find((entry) => entry.id === id);
+    if (!doc) return;
+    activeDocumentId = id;
+    state.hasDocument = true;
+    state.history = deepClone(doc.history || []);
+    state.historyIndex = Number.isInteger(doc.historyIndex) ? doc.historyIndex : Math.max(0, state.history.length - 1);
+    state.zoom = doc.zoom || 1;
+    restoreSnapshot(doc.snapshot);
+    state.selectedId = doc.selectedId || null;
+    showDocument();
+    renderAll();
+    renderLayerList();
+    renderSelectionOptions();
+    updateHistoryButtons();
+    renderDocumentTabs();
+    requestAnimationFrame(fitZoom);
+  }
+
+  function closeDocument(id) {
+    saveActiveDocument();
+    const index = documents.findIndex((doc) => doc.id === id);
+    if (index < 0) return;
+    const wasActive = id === activeDocumentId;
+    documents.splice(index, 1);
+    if (!wasActive) { renderDocumentTabs(); return; }
+    const next = documents[Math.min(index, documents.length - 1)];
+    activeDocumentId = "";
+    if (next) loadDocumentRecord(next.id);
+    else showEmptyDocument();
+  }
+
+  function showEmptyDocument() {
+    state.hasDocument = false;
+    activeDocumentId = "";
+    stage.hidden = true;
+    emptyState.hidden = false;
+    state.layers = [];
+    state.selectedId = null;
+    state.crop = null;
+    state.history = [];
+    state.historyIndex = -1;
+    canvas.width = overlay.width = 1;
+    canvas.height = overlay.height = 1;
+    updateStatus();
+    updateHistoryButtons();
+    renderDocumentTabs();
+  }
+
+  function renderDocumentTabs() {
+    if (!tabList) return;
+    tabList.innerHTML = documents.map((doc, index) => `<button type="button" class="image-document-tab ${doc.id === activeDocumentId ? "is-active" : ""}" data-doc-tab="${doc.id}" title="${escapeHtml(doc.name)}"><span>${escapeHtml(doc.name || `Image ${index + 1}`)}</span><i data-doc-close="${doc.id}" aria-label="Fermer">×</i></button>`).join("");
+    tabsNode?.classList.toggle("is-empty", documents.length === 0);
   }
 
   function pushHistory() {
@@ -618,6 +710,11 @@
     }
     statusNode.textContent = state.name || "Image";
     sizeNode.textContent = `${state.width} × ${state.height} px`;
+    if (activeDocumentId) {
+      const doc = documents.find((entry) => entry.id === activeDocumentId);
+      if (doc) doc.name = state.name || doc.name;
+      renderDocumentTabs();
+    }
   }
 
   function syncAdjustmentControls() {
@@ -634,6 +731,7 @@
       toast("Choisissez une image JPG, PNG ou WebP.");
       return;
     }
+    saveActiveDocument();
     setBusy(true, "Ouverture…");
     try {
       const { id, image } = await registerAssetFromFile(file);
@@ -663,6 +761,7 @@
       renderToolOptions();
       updateStatus();
       resetHistory();
+      registerCurrentDocument();
       requestAnimationFrame(fitZoom);
     } catch (_) {
       toast("Impossible d’ouvrir cette image.");
@@ -675,6 +774,7 @@
   }
 
   async function createBlank(width, height, background = "white") {
+    saveActiveDocument();
     width = clamp(Math.round(width), 32, 12000);
     height = clamp(Math.round(height), 32, 12000);
     setBusy(true, "Création…");
@@ -688,6 +788,7 @@
       state.layers = []; state.selectedId = null; state.crop = null; state.draftLayer = null; state.nextNumber = 1;
       state.adjust = { brightness: 100, contrast: 100, saturation: 100, grayscale: 0 };
       syncAdjustmentControls(); showDocument(); resizeCanvases(); renderAll(); renderLayerList(); renderToolOptions(); updateStatus(); resetHistory();
+      registerCurrentDocument();
       requestAnimationFrame(fitZoom);
     } finally { setBusy(false); }
   }
@@ -949,6 +1050,94 @@
     finally { setBusy(false); }
   }
 
+
+  function a4TargetSize() {
+    const dpi = clamp(Number($("[data-a4-dpi]")?.value || 200), 72, 600);
+    const portrait = $("[data-a4-orientation]")?.value !== "landscape";
+    let width = Math.round((210 / 25.4) * dpi);
+    let height = Math.round((297 / 25.4) * dpi);
+    if (!portrait) [width, height] = [height, width];
+    return { width, height, dpi, portrait };
+  }
+
+  function a4Placement() {
+    if (!state.hasDocument) return null;
+    const target = a4TargetSize();
+    const mode = $("[data-a4-mode]")?.value || "contain";
+    const userScale = clamp(Number($("[data-a4-scale]")?.value || 100), 30, 250) / 100;
+    const xPct = clamp(Number($("[data-a4-x]")?.value || 0), -100, 100) / 100;
+    const yPct = clamp(Number($("[data-a4-y]")?.value || 0), -100, 100) / 100;
+    const contain = Math.min(target.width / state.width, target.height / state.height);
+    const cover = Math.max(target.width / state.width, target.height / state.height);
+    const baseScale = mode === "cover" ? cover : contain;
+    const scale = baseScale * userScale;
+    const w = state.width * scale, h = state.height * scale;
+    const x = (target.width - w) / 2 + xPct * target.width * .42;
+    const y = (target.height - h) / 2 + yPct * target.height * .42;
+    return { ...target, mode, scale, x, y, w, h };
+  }
+
+  function updateA4Preview() {
+    if (!state.hasDocument || !a4Dialog?.open) return;
+    const preview = $("[data-a4-preview]");
+    const pctx = preview.getContext("2d", { alpha: true });
+    const place = a4Placement();
+    const bg = $("[data-a4-background]")?.value || "white";
+    const maxW = 260, maxH = 360;
+    const ratio = Math.min(maxW / place.width, maxH / place.height);
+    preview.width = Math.max(1, Math.round(place.width * ratio));
+    preview.height = Math.max(1, Math.round(place.height * ratio));
+    pctx.clearRect(0, 0, preview.width, preview.height);
+    if (bg === "white") { pctx.fillStyle = "#fff"; pctx.fillRect(0, 0, preview.width, preview.height); }
+    pctx.save();
+    pctx.scale(ratio, ratio);
+    drawDocument();
+    pctx.drawImage(canvas, place.x, place.y, place.w, place.h);
+    pctx.restore();
+    $("[data-a4-scale-output]").textContent = `${Math.round(Number($("[data-a4-scale]").value))} %`;
+    $("[data-a4-x-output]").textContent = `${Math.round(Number($("[data-a4-x]").value))} %`;
+    $("[data-a4-y-output]").textContent = `${Math.round(Number($("[data-a4-y]").value))} %`;
+    $("[data-a4-summary]").textContent = `A4 ${place.portrait ? "portrait" : "paysage"} · ${place.width} × ${place.height} px · ${place.dpi} dpi · ${place.mode === "cover" ? "image couvrante" : place.mode === "free" ? "placement libre" : "image contenue"}`;
+  }
+
+  function openA4Dialog() {
+    if (!state.hasDocument) { toast("Ouvrez d’abord une image."); return; }
+    $("[data-a4-scale]").value = 100;
+    $("[data-a4-x]").value = 0;
+    $("[data-a4-y]").value = 0;
+    a4Dialog.showModal();
+    requestAnimationFrame(updateA4Preview);
+  }
+
+  async function applyA4() {
+    if (!state.hasDocument || busy) return;
+    const place = a4Placement();
+    const bg = $("[data-a4-background]")?.value || "white";
+    setBusy(true, "Mise en page A4…");
+    try {
+      const source = document.createElement("canvas");
+      source.width = place.width; source.height = place.height;
+      const sctx = source.getContext("2d", { alpha: true });
+      if (bg === "white") { sctx.fillStyle = "#fff"; sctx.fillRect(0, 0, source.width, source.height); }
+      sctx.imageSmoothingEnabled = true; sctx.imageSmoothingQuality = "high";
+      sctx.save(); sctx.filter = filterString();
+      sctx.drawImage(state.baseImage, place.x, place.y, place.w, place.h);
+      sctx.restore();
+      const transformedLayers = deepClone(state.layers);
+      transformedLayers.forEach((layer) => { scaleLayer(layer, place.scale, place.scale); translateLayer(layer, place.x, place.y); });
+      const asset = await registerAssetFromCanvas(source);
+      state.assetId = asset.id; state.baseImage = asset.image;
+      state.width = place.width; state.height = place.height;
+      state.layers = transformedLayers;
+      state.adjust = { brightness: 100, contrast: 100, saturation: 100, grayscale: 0 };
+      state.crop = null; state.selectedId = null;
+      syncAdjustmentControls(); resizeCanvases(); renderAll(); renderLayerList(); renderToolOptions(); updateStatus(); pushHistory(); fitZoom();
+      saveActiveDocument();
+      toast(`Format A4 appliqué : ${place.width} × ${place.height} px.`);
+    } catch (_) { toast("La mise en page A4 n’a pas pu être appliquée."); }
+    finally { setBusy(false); }
+  }
+
   async function resizeDocument(width, height) {
     if (!state.hasDocument || busy) return;
     width = clamp(Math.round(width), 1, 12000); height = clamp(Math.round(height), 1, 12000);
@@ -1129,13 +1318,18 @@
   }
 
   document.addEventListener("click", (event) => {
+    const closeHit = event.target.closest("[data-doc-close]");
+    if (closeHit) { event.preventDefault(); event.stopPropagation(); closeDocument(closeHit.dataset.docClose); return; }
     const target = event.target.closest("button,a");
     if (!target) return;
+    if (target.matches("[data-doc-tab]")) { loadDocumentRecord(target.dataset.docTab); return; }
+    if (target.matches("[data-tab-add]")) { fileInput.click(); return; }
     if (target.matches("[data-open-image]")) fileInput.click();
     if (target.matches("[data-paste-image]")) pasteFromClipboard();
     if (target.matches("[data-new-image]")) newDialog.showModal();
     if (target.matches("[data-undo]")) undo();
     if (target.matches("[data-redo]")) redo();
+    if (target.matches("[data-a4-image]")) openA4Dialog();
     if (target.matches("[data-resize-image]")) openResizeDialog();
     if (target.matches("[data-rotate-image]")) rotateDocument();
     if (target.matches("[data-flip-image]")) flipDocument();
@@ -1195,6 +1389,7 @@
       const key=target.dataset.adjust; state.adjust[key]=Number(target.value); $(`[data-adjust-output="${key}"]`).textContent=`${target.value} %`; renderAll();
     }
     if (target.matches("[data-export-format],[data-export-quality],[data-export-maxwidth]")) updateExportSummary();
+    if (target.matches("[data-a4-scale],[data-a4-x],[data-a4-y]")) updateA4Preview();
     if (target.matches("[data-resize-width],[data-resize-height]")) {
       const lock=$("[data-resize-lock]").checked, ratio=Number(resizeDialog.dataset.ratio||1);
       if(lock){ if(target.matches("[data-resize-width]")) $("[data-resize-height]").value=Math.max(1,Math.round(Number(target.value)/ratio)); else $("[data-resize-width]").value=Math.max(1,Math.round(Number(target.value)*ratio)); }
@@ -1207,9 +1402,10 @@
     if (target.matches("[data-selected-text],[data-setting-range^='selected']")) pushHistory();
     if (target.matches("[data-setting-color='selectedColor'],[data-setting-textcolor='selectedColor']")) pushHistory();
     if (target.matches("[data-fill-toggle]")) { state.settings.fill = target.checked ? ($('[data-setting-color="fill"]')?.value || "#ffffff") : "transparent"; }
+    if (target.matches("[data-a4-orientation],[data-a4-dpi],[data-a4-mode],[data-a4-background]")) updateA4Preview();
   });
 
-  fileInput.addEventListener("change", () => { const file=fileInput.files?.[0]; if(file)openImageFile(file); fileInput.value=""; });
+  fileInput.addEventListener("change", async () => { const files=[...(fileInput.files||[])].filter((file)=>file.type.startsWith("image/")); for(const file of files) await openImageFile(file); fileInput.value=""; });
 
   $("[data-resize-form]").addEventListener("submit", (event) => {
     event.preventDefault();
@@ -1220,6 +1416,7 @@
   $("[data-new-form]").addEventListener("submit", (event) => {
     event.preventDefault(); const w=Number($("[data-new-width]").value),h=Number($("[data-new-height]").value),bg=$("[data-new-background]").value;newDialog.close();createBlank(w,h,bg);
   });
+  $("[data-a4-form]").addEventListener("submit", (event) => { event.preventDefault(); a4Dialog.close(); applyA4(); });
 
   overlay.addEventListener("pointerdown", onPointerDown);
   overlay.addEventListener("pointermove", onPointerMove);
@@ -1236,7 +1433,7 @@
   window.addEventListener("dragenter", (event) => { if ([...event.dataTransfer?.types||[]].includes("Files")) { dragDepth++; dropHint.hidden=false; } });
   window.addEventListener("dragleave", () => { dragDepth=Math.max(0,dragDepth-1); if(!dragDepth)dropHint.hidden=true; });
   window.addEventListener("dragover", (event) => { if ([...event.dataTransfer?.types||[]].includes("Files")) { event.preventDefault(); if(event.dataTransfer)event.dataTransfer.dropEffect="copy"; } });
-  window.addEventListener("drop", (event) => { event.preventDefault(); dragDepth=0;dropHint.hidden=true;const file=[...(event.dataTransfer?.files||[])].find((entry)=>entry.type.startsWith("image/"));if(file)openImageFile(file); });
+  window.addEventListener("drop", async (event) => { event.preventDefault(); dragDepth=0;dropHint.hidden=true;const files=[...(event.dataTransfer?.files||[])].filter((entry)=>entry.type.startsWith("image/"));for(const file of files)await openImageFile(file); });
 
   window.addEventListener("keydown", (event) => {
     const typing = event.target instanceof HTMLElement && (event.target.matches("input,textarea,select,[contenteditable='true'],[role='textbox']") || event.target.isContentEditable);
@@ -1262,10 +1459,11 @@
   window.addEventListener("resize", () => { if(state.hasDocument && state.zoom <= 1)setTimeout(()=>{ if(window.innerWidth<=620) fitZoom(); },80); });
   document.addEventListener("fullscreenchange", () => { if(!document.fullscreenElement){document.body.classList.remove("image-fullscreen");$$('[data-fullscreen]').forEach(b=>b.setAttribute("aria-pressed","false"));setTimeout(fitZoom,70);} });
 
-  window.addEventListener("beforeunload", () => { assets.forEach((asset) => { if(asset.revoke) try{URL.revokeObjectURL(asset.src);}catch(_){}}); });
+  window.addEventListener("beforeunload", () => { saveActiveDocument(); assets.forEach((asset) => { if(asset.revoke) try{URL.revokeObjectURL(asset.src);}catch(_){}}); });
 
   renderToolOptions();
   renderLayerList();
+  renderDocumentTabs();
   updateHistoryButtons();
   updateStatus();
 })();
