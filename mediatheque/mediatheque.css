@@ -2206,3 +2206,4 @@ body[data-media-access="student"] .media-editor-trigger{display:inline-flex}
 .media-useful-featured strong span{font-size:.64rem;opacity:.65}
 @media(max-width:760px){.media-tool-trigger{padding-left:5px!important;padding-right:8px!important;gap:5px}.media-tool-icon{width:22px;height:22px;border-radius:7px;font-size:.65rem}.media-tool-trigger.is-epub .media-tool-icon{font-size:.51rem}}
 @media(max-width:520px){.media-title-actions .media-tool-trigger>span:last-child{display:none}.media-title-actions .media-tool-trigger{padding:4px!important;min-width:32px;justify-content:center}.media-tool-icon{width:23px;height:23px}}
+

@@ -1,26 +1,31 @@
-# Philosophal — V32
+# Philosophal — corrections du 8 octobre 2026
 
-Cette version corrige le menu public, supprime le comparateur philosophique et améliore le lecteur EPUB. Les autres fonctions de la V31 sont conservées : formulaire prérempli, sauvegarde globale, contenus privés chiffrés et vérifications avant publication.
+## Corrections
 
-## Installation
+- Header : retour à Inter, avec une graisse plus légère et un espacement plus naturel. La police est incluse dans le site et préchargée sur les 326 pages du menu principal.
+- Bouton « Contactez-moi » : forme arrondie, dégradé lavande légèrement rosé, texte violet lisible et petite bulle de discussion. Le survol conserve ces teintes lumineuses.
+- Médiathèque : icônes présentes dès l’ouverture, styles des commandes flottantes chargés avant leur affichage et emplacements sobres pendant la préparation du catalogue. Le dernier accès autorisé reste restauré.
+- Contact : « Je vous réponds dans un délai de 48 heures. »
+- Qui suis-je : les cours actuels à titre privé, via Acadomia et MyMaxicours sont distingués du tutorat universitaire passé.
+- Accroche : « Bénéficiez d’un accompagnement personnalisé pour structurer votre réflexion, maîtriser les exercices et gagner en autonomie. »
+- Deux chemins de fichiers du téléprompteur ont été rétablis ; le contrôle des outils publics a été adapté à leur page actuelle.
 
-1. Conservez votre précédente archive ZIP.
-2. Décompressez **philosophal-v32.zip** dans un dossier temporaire.
-3. Ouvrez le dossier actuel du site, celui qui contient `index.html` et votre dépôt Git — votre dossier `main` habituel.
-4. Copiez tout le contenu de cette archive dans ce dossier, en acceptant le remplacement. Le dossier `.github` fait partie de la mise à jour.
-5. Double-cliquez sur **NETTOYER-ANCIENNE-VERSION.cmd**. Il retire l’ancien comparateur, les anciens fichiers privés en clair et l’éventuel second dossier `main/`. Ils sont archivés à côté du site ; votre dossier Git est conservé. Cette étape est nécessaire après une copie par-dessus une ancienne version.
-6. Lancez **VERIFIER-AVANT-ENVOI.cmd** si Python est installé. Le résultat attendu est « Publication autorisée par le contrôle ». Les mêmes contrôles sont exécutés sur GitHub.
-7. Ouvrez `index.html` avec Live Server dans VS Code. Testez le menu, la page Outils et le lecteur à `/epub/` avec un de vos livres.
-8. Envoyez les changements à GitHub comme pour la V31. Conservez **GitHub Actions** comme source de GitHub Pages. Si cela n’a pas encore été configuré : dépôt → **Settings** → **Pages** → **Source** → **GitHub Actions**. Gardez le domaine `philosophal.fr`.
+## Installation dans le dossier existant du site
 
-Le fichier personnel **ACCES-PRIVES-PHILOSOPHAL-V31.txt** reste valable. Conservez-le hors du dossier publié. Aucun mot de passe n’est inclus dans ce ZIP.
+1. Décompressez **florianvallin.zip** dans un dossier temporaire.
+2. Ouvrez votre dossier habituel du site dans VS Code : il contient `index.html`.
+3. Copiez le contenu du dossier **florianvallin** de l’archive dans ce dossier, en acceptant le remplacement des fichiers.
+4. Vérifiez l’accueil et la médiathèque avec Live Server, puis envoyez les modifications à GitHub selon votre procédure habituelle.
+
+Les références des fichiers modifiés ont été mises à jour pour renouveler le cache après publication.
 
 ## Menu
 
-- **Outils** se trouve juste avant la recherche sur les 326 pages qui utilisent le menu principal, sur ordinateur et dans le menu mobile. Il utilise les couleurs habituelles des liens.
-- **Contactez-moi** conserve son violet, indépendamment de sa place dans le menu.
-- Le comparateur philosophique et ses liens sont supprimés. Outils propose l’éditeur de texte, l’éditeur d’image, les outils PDF, le Pomodoro et le lecteur.
-- La sauvegarde complète reste accessible depuis Outils. Elle inclut les livres importés, les documents et les données de lecture, y compris les associations de doubles pages.
+- **Explorer** regroupe Textes et Blog.
+- **Outils** reste accessible dans la navigation principale.
+- **À propos** regroupe Qui suis-je ? et FAQ.
+- Le bouton **Contactez-moi** conserve sa couleur violette.
+- Le menu mobile conserve les mêmes liens et la recherche.
 
 ## Lecteur EPUB
 
@@ -36,12 +41,10 @@ Le fichier personnel **ACCES-PRIVES-PHILOSOPHAL-V31.txt** reste valable. Conserv
 
 Avant de changer d’appareil ou de navigateur, emportez vos livres et vos notes avec **Outils → Sauvegarde complète**.
 
-## Vérifications effectuées
+## Vérifications de cette mise à jour
 
-- 350 pages contrôlées : liens locaux, références CSS, syntaxe JavaScript, archives chiffrées et fichiers obsolètes.
-- 326 menus principaux contrôlés ; ordre et couleurs testés dans le navigateur sur plusieurs pages et sur mobile.
-- Lecteur testé dans Chromium avec cinq livres de contrôle : EPUB de texte, EPUB illustré, EPUB mixte, manga EPUB et CBZ. Les essais couvrent les miniatures, la pagination, les paires personnalisées et leur conservation, les panoramas, le zoom, le clavier, le défilement, les polices et marges, les clics rapides, le mobile et le paysage.
-- Accès propriétaire et élève vérifiés avec les archives de cette version ; sauvegarde globale et restauration vérifiées.
-- Nettoyage testé sur une copie contenant un ancien comparateur et un dossier `main/` imbriqué.
+- Contrôle des 354 pages, des liens locaux, de la syntaxe JavaScript et des empreintes des archives privées : aucune erreur ni note.
+- Tests publics : offres du formulaire, liens des cinq outils et séparation des ressources publiques et personnelles.
+- Essais dans Chromium sur des écrans de 320 à 1 440 pixels : header, menus, recherche, filtres et ouverture de l’accès élève.
+- Chargement ralenti simulé : les emplacements de la médiathèque restent affichés jusqu’à la fin de l’initialisation. Un échec du script propose de réessayer.
 
-L’archive est prête à installer. La publication sur votre dépôt et votre domaine est à effectuer depuis votre PC.

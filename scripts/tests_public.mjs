@@ -15,7 +15,9 @@ assert(fields.get('[name="offre"]').value.includes('320'),'offre transmise mise 
 fields.get('#prestation').value='Méthodologie';fields.get('#prestation').listeners.change();assert(fields.get('[data-contact-offer]').value==='','offre incompatible retirée');
 assert(fields.get('#message').value==='Message rédigé par le visiteur','message conservé au changement de prestation');
 const index=fs.readFileSync(path.join(root,'index.html'),'utf8'),tools=fs.readFileSync(path.join(root,'outils/index.html'),'utf8');
-assert(index.includes('nav-tools-link'),'entrée Outils dans la navigation publique');assert((tools.match(/class="hub-card"/g)||[]).length===5,'cinq outils présentés dans le menu public');
+assert(index.includes('nav-tools-link'),'entrée Outils dans la navigation publique');
+const toolDestinations=new Set([...tools.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/g)].map(match=>match[1]));
+assert(['/editeurtexte/','/editeurimage/','/pdf/','/pomodoro/','/epub/'].every(url=>toolDestinations.has(url)),'les cinq outils publics disposent de liens');
 assert(!tools.includes('/atelier/')&&!tools.includes('/apprendre/'),'outils publics sans promotion des espaces personnels');
 assert(!fs.existsSync(path.join(root,'textes/comparer')),'comparateur retiré du site');
 assert(index.includes('nav-contact-link'),'couleur du contact indépendante de la position du lien');

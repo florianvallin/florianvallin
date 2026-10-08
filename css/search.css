@@ -1,0 +1,22 @@
+/* Lisibilité et navigation au clavier de la recherche, sans modifier le header. */
+.site-search-head span { color:#58439a; font-size:12px; letter-spacing:.06em; }
+.site-search-close { width:44px; height:44px; flex-shrink:0; }
+.site-search-field input { min-width:0; font-size:16px; }
+.site-search-field { grid-template-columns:22px minmax(0,1fr) auto; }
+.site-search-field:focus-within { outline:2px solid #6b53a6; outline-offset:2px; }
+.site-search-field kbd { font-size:11px; color:#625572; }
+.site-search-hints button { min-height:36px; padding:8px 12px; font-size:12px; color:#59428d; }
+.site-search-status { color:#655b72; font-size:13px; line-height:1.5; }
+.site-search-result-type { color:#58439a; font-size:11px; letter-spacing:.06em; }
+.site-search-result strong { font-size:16px; line-height:1.4; }
+.site-search-result small { color:#655b72; font-size:12px; line-height:1.45; }
+.site-search-result p { color:#655b72; font-size:13px; line-height:1.5; }
+.site-search-result mark { color:#3e2a55; background:#eae2f5; }
+.site-search-result:focus-visible, .site-search-close:focus-visible, .site-search-hints button:focus-visible { outline:3px solid #6b53a6; outline-offset:3px; }
+@media(pointer:coarse) { .site-search-hints button { min-height:44px; } }
+@media(max-width:450px) {
+  .site-search-head { gap:10px; }
+  .site-search-field { padding:0 10px; gap:8px; }
+  .site-search-field kbd { display:none; }
+  .site-search-result { padding-right:32px; }
+}

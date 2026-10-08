@@ -299,7 +299,7 @@
   function render() {
     syncStatsDay();
     document.body.dataset.pomoMode = state.mode;
-    themeMeta?.setAttribute("content", state.mode === "work" ? "#ba4949" : state.mode === "short" ? "#3d7f91" : "#4f7d5b");
+    themeMeta?.setAttribute("content", "#f7f7fb");
     timeEl.textContent = formatTime(state.remainingMs);
     $("[data-phase-copy]").textContent = MODE_COPY[state.mode];
     $("[data-phase-duration]").textContent = `${durationMinutes(state.mode)} min`;
@@ -308,7 +308,7 @@
     const progress = Math.max(0, Math.min(1, 1 - state.remainingMs / totalForPhase));
     $("[data-ring]")?.style.setProperty("--progress", `${progress * 360}deg`);
     const phaseEnd = new Date(Date.now() + state.remainingMs);
-    if ($("[data-end-time]")) $("[data-end-time]").textContent = `Fin ${phaseEnd.toLocaleTimeString("fr-FR", { hour:"2-digit", minute:"2-digit" })}`;
+    if ($("[data-end-time]")) $("[data-end-time]").textContent = `Fin du bloc ${phaseEnd.toLocaleTimeString("fr-FR", { hour:"2-digit", minute:"2-digit" })}`;
     if ($("[data-session-total]")) $("[data-session-total]").textContent = humanDuration(remainingSessionMs());
     if ($("[data-session-finish]")) $("[data-session-finish]").textContent = new Date(Date.now() + remainingSessionMs()).toLocaleTimeString("fr-FR", { hour:"2-digit", minute:"2-digit" });
     if ($("[data-step-label]")) $("[data-step-label]").textContent = stageLabel();
@@ -353,13 +353,15 @@
 
   function renderTasks() {
     const list = $("[data-task-list]");
+    const active=document.activeElement,taskId=active?.closest?.("[data-task-id]")?.dataset.taskId,focusAttribute=["data-task-select","data-task-done","data-task-minus","data-task-plus","data-task-delete"].find(name=>active?.hasAttribute?.(name));
     const empty = $("[data-task-empty]");
     list.innerHTML = state.tasks.map(task => `
-      <article class="pomo-task${task.id === state.activeTaskId ? " is-active" : ""}${task.done ? " is-done" : ""}" data-task-id="${escapeHtml(task.id)}" tabindex="0">
+      <article class="pomo-task${task.id === state.activeTaskId ? " is-active" : ""}${task.done ? " is-done" : ""}" data-task-id="${escapeHtml(task.id)}">
         <button type="button" class="pomo-task-check${task.done ? " is-done" : ""}" data-task-done aria-label="${task.done ? "Rouvrir" : "Terminer"} la tâche">${task.done ? "✓" : ""}</button>
-        <div class="pomo-task-copy"><strong>${escapeHtml(task.title)}</strong><small>${task.completed} / ${task.estimate} pomodoro${task.estimate > 1 ? "s" : ""}</small></div>
-        <div class="pomo-task-actions"><button type="button" data-task-minus title="Retirer un Pomodoro">−</button><button type="button" data-task-plus title="Ajouter un Pomodoro">＋</button><button type="button" data-task-delete title="Supprimer">×</button></div>
+        <button type="button" class="pomo-task-copy" data-task-select aria-pressed="${task.id===state.activeTaskId}"><strong>${escapeHtml(task.title)}</strong><small>${task.completed} / ${task.estimate} pomodoro${task.estimate > 1 ? "s" : ""}</small></button>
+        <div class="pomo-task-actions"><button type="button" data-task-minus title="Retirer un Pomodoro">−</button><button type="button" data-task-plus title="Ajouter un Pomodoro">+</button><button type="button" data-task-delete title="Supprimer">×</button></div>
       </article>`).join("");
+    if(taskId&&focusAttribute)list.querySelector(`[data-task-id="${CSS.escape(taskId)}"] [${focusAttribute}]`)?.focus({preventScroll:true});
     empty.hidden = state.tasks.length > 0;
     const estimates = state.tasks.filter(t => !t.done).reduce((sum, t) => sum + Math.max(0, t.estimate - t.completed), 0);
     let finish = "";
@@ -672,7 +674,7 @@
       <div><span>Concentration</span><strong>${totalMinutes}</strong><small>minutes cumulées</small></div>
       <div><span>Moyenne</span><strong>${avg}</strong><small>min / jour actif</small></div>`;
     $(`[data-report-title]`).textContent = range === "day" ? "Aujourd’hui" : range === "month" ? "30 derniers jours" : "7 derniers jours";
-    $$(`[data-report-range]`).forEach(btn => btn.classList.toggle("is-active", btn.dataset.reportRange === range));
+    $$(`[data-report-range]`).forEach(btn => {const selected=btn.dataset.reportRange===range;btn.classList.toggle("is-active",selected);btn.setAttribute("aria-selected",String(selected));});
     const chart = $(`[data-report-chart]`);
     chart.classList.toggle("is-day", range === "day");
     chart.classList.toggle("is-month", range === "month");
@@ -931,7 +933,7 @@
     const key=String(e.key||"").toLowerCase(),code=e.code||"";
     const typing=e.target instanceof HTMLElement && (e.target.matches("input,textarea,select") || e.target.isContentEditable);
     const dialogOpen=$$("dialog").some(dialog=>dialog.open);
-    if (typing || dialogOpen) return;
+    if (typing || dialogOpen || e.defaultPrevented || e.target.closest?.("button,a,summary,[data-task-id]")) return;
     let handled=true;
     if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyC"||key==="c")) window.location.assign(appPath("/mediatheque/"));
     else if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
@@ -967,3 +969,4 @@
   if (state.expiredOnLoad) window.setTimeout(() => completePhase(), 150);
   window.setTimeout(maybeOfferResume, 180);
 })();
+

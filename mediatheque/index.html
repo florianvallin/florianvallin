@@ -3,52 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.add("media-loading");
+      const finish = () => {
+        root.classList.remove("media-loading");
+        document.getElementById("library-main")?.setAttribute("aria-busy", "false");
+      };
+      const fail = () => {
+        finish();
+        const loading = document.querySelector("[data-library-loading]");
+        if (!loading) return;
+        loading.hidden = false;
+        loading.innerHTML = '<p>La médiathèque n’a pas pu se charger. <a href="">Réessayer</a></p>';
+        document.querySelector(".media-results").hidden = true;
+      };
+      window.FV_MEDIATHEQUE_BOOT = { finish, fail };
+    })();
+  </script>
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-  <meta name="theme-color" content="#f8f8fa">
+  <meta name="theme-color" content="#f7f8fc">
   <title>Médiathèque — Philosophal</title>
   <meta name="description" content="Médiathèque Philosophal : ressources et outils de travail.">
+  <link rel="preload" href="./fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site-tools.css?v=20260928-study2">
   <link rel="stylesheet" href="./mediatheque.css?v=20260928-tools1">
-  <link rel="stylesheet" href="./mobile-20260929.css?v=20260930-english-v5">
+  <link rel="stylesheet" href="./bibliotheque.css?v=20261008-mediatheque-fluide1">
 </head>
-<body id="top" class="media-page" data-media-access="public">
+<body id="top" class="media-page library-redesign" data-media-access="public" data-library-view="home">
+  <a class="library-skip" href="#media-search">Aller à la recherche</a>
+  <aside class="library-sidebar" aria-label="Médiathèque et outils">
+    <a class="library-brand" href="/mediatheque/" aria-label="Accueil de la médiathèque"><img src="/images/logo-philosophal.png" alt="" width="44" height="44"><span><strong>Philosophal</strong><small>Médiathèque philosophique</small></span></a>
+    <nav class="library-nav" aria-label="Navigation principale">
+      <button type="button" data-library-nav="library" aria-current="page"><span data-library-icon="library" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span>Bibliothèque</span></button>
+      <button type="button" data-library-nav="favorites" data-toggle-pinned aria-pressed="false"><span data-library-icon="bookmark" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-6-4-6 4z"/></svg></span><span>Favoris</span></button>
+      <button type="button" data-open-explorer="people"><span data-library-icon="explorer" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 11 6-4m-6 6 6 4"/></svg></span><span>Explorer</span></button>
+      <button type="button" data-library-open="atelier" data-private-only><span data-library-icon="atelier" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 15a6 6 0 1 1 8 0l-1 3H9zM9 21h6M12 1v-1M3 5 1 3M21 5l2-2M2 12H0M24 12h-2"/></svg></span><span>Atelier</span></button>
+    </nav>
+    <div class="library-sidebar-tools"><h2>Outils</h2><a class="library-tool-link" href="/editeurtexte/"><span data-library-icon="editor" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 3 5 5-12 12-6 1 1-6zM13 6l5 5"/></svg></span><span><strong>Éditeur</strong></span></a><a class="library-tool-link" href="/editeurimage/"><span data-library-icon="image" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="2"/><path d="m3 17 5-5 4 4 4-6 5 7"/></svg></span><span><strong>Images</strong></span></a><a class="library-tool-link" href="/pdf/"><span data-library-icon="pdf" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h5"/></svg></span><span><strong>PDF</strong></span></a><a class="library-tool-link" href="/pomodoro/"><span data-library-icon="clock" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 8v5l-3 2M9 2h6M12 2v3m7 1 2 2"/></svg></span><span><strong>Pomodoro</strong></span></a><a class="library-tool-link" href="/epub/"><span data-library-icon="epub" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span><strong>EPUB</strong></span></a><a class="library-tool-link" href="/apprendre/creation/teleprompteur/"><span data-library-icon="prompter" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M7 8h10M7 11h10M7 14h6M9 22h6M12 19v3"/></svg></span><span><strong>Téléprompteur</strong></span></a></div>
+    <button class="library-useful-trigger" type="button" data-library-open="links"><span data-library-icon="external" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 3h8v8M21 3 10 14M10 3H3v18h18v-7"/></svg></span><span>Liens utiles</span></button>
+    <a class="library-sidebar-return" href="/"><span data-library-icon="back" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span><span>Retour au site</span></a>
+  </aside>
   <header class="media-topbar">
-    <a class="media-brand" href="/mediatheque/" aria-label="Accueil de la médiathèque">
-      <span class="media-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span><strong>Médiathèque</strong><small>cabinet personnel</small></span>
-    </a>
-    <a class="media-return" href="/">← <span>Retour au site</span></a>
+    <div class="library-mobile-brand"><a class="library-brand" href="/mediatheque/" aria-label="Accueil de la médiathèque"><img src="/images/logo-philosophal.png" alt="" width="44" height="44"><span><strong>Philosophal</strong><small>Médiathèque philosophique</small></span></a><button type="button" class="library-menu-trigger" data-library-open="menu" aria-label="Ouvrir le menu"><span data-library-icon="menu" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span></button></div>
+    <div class="library-access"><span>Mode d’accès :</span><div class="media-access-switch" data-media-access-switch aria-label="Version de la médiathèque"><button class="media-access-button is-active" type="button" data-access-mode="public" aria-pressed="true">Public</button><button class="media-access-button" type="button" data-access-mode="private" aria-pressed="false">Élève</button></div></div>
+    <a class="media-return" href="/"><span data-library-icon="back" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span><span>Retour au site</span></a>
   </header>
-
-  <main class="media-shell">
+  <main class="media-shell" id="library-main" aria-busy="true">
     <section class="media-intro" aria-labelledby="media-title">
-      <div class="media-title-row">
-        <div>
-          <p class="media-eyebrow">Retrouver, comprendre, relier</p>
-          <div class="media-heading-line">
-            <h1 id="media-title">Médiathèque</h1>
-            <div class="media-access-switch" data-media-access-switch aria-label="Version de la médiathèque">
-              <button class="media-access-button is-active" type="button" data-access-mode="public" aria-pressed="true">Public</button>
-              <button class="media-access-button" type="button" data-access-mode="private" aria-pressed="false">Privé</button>
-            </div>
-          </div>
-        </div>
-        <div class="media-title-actions">
-          <div class="media-tool-strip" aria-label="Outils de travail">
-            <a class="media-reader-trigger media-editor-trigger media-tool-trigger is-text" href="/editeurtexte/" title="Ouvrir l’éditeur de texte"><span class="media-tool-icon" aria-hidden="true">✎</span><span>Éditeur</span></a>
-            <a class="media-reader-trigger media-tool-trigger is-image" href="/editeurimage/" title="Ouvrir l’éditeur d’image"><span class="media-tool-icon" aria-hidden="true">▧</span><span>Images</span></a>
-            <a class="media-reader-trigger media-tool-trigger is-pdf" href="/pdf/" title="Ouvrir les outils PDF"><span class="media-tool-icon" aria-hidden="true">PDF</span><span>PDF</span></a>
-            <a class="media-reader-trigger media-pomodoro-trigger media-tool-trigger is-pomodoro" href="/pomodoro/" title="Ouvrir le Pomodoro"><span class="media-tool-icon" aria-hidden="true">◷</span><span>Pomodoro</span></a>
-            <a class="media-reader-trigger media-tool-trigger is-epub" href="/epub/" title="Ouvrir le lecteur EPUB"><span class="media-tool-icon" aria-hidden="true">Aa</span><span>EPUB</span></a>
-          </div>
-          <div class="media-action-strip">
-            <details class="media-useful-links" data-useful-links>
-              <summary>Liens utiles <span aria-hidden="true">▾</span></summary>
+      <div class="media-title-row"><div><h1 id="media-title">Médiathèque</h1><p class="library-subtitle">Retrouver, comprendre, relier.</p></div></div>
+      <div class="library-search-row">
+        <div class="media-search"><span data-library-icon="search" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></span><label class="sr-only" for="media-search">Rechercher dans la médiathèque</label><input id="media-search" data-media-search type="search" autocomplete="off" spellcheck="false" placeholder="Rechercher une œuvre, un auteur, une notion…"><kbd aria-hidden="true">/</kbd><button class="media-search-clear" data-media-clear type="button" aria-label="Effacer la recherche" hidden><span data-library-icon="close" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></div>
+        <button class="library-filter-button" type="button" data-toggle-advanced aria-expanded="false" aria-controls="library-filters"><span data-library-icon="filters" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2" fill="var(--panel,#fff)"/><circle cx="16" cy="12" r="2" fill="var(--panel,#fff)"/><circle cx="10" cy="18" r="2" fill="var(--panel,#fff)"/></svg></span><span>Filtrer</span></button>
+      </div>
+      <nav class="media-type-row" data-media-types aria-label="Rayons de la médiathèque"></nav>
+      <div class="media-context-row"><div class="media-active-filters" data-active-filters hidden></div></div>
+      <section class="media-advanced-filters" data-advanced-filters id="library-filters" hidden aria-label="Filtres pédagogiques">
+        <div class="media-filter-field"><label for="media-filter-author">Auteur</label><select id="media-filter-author" data-filter-author><option value="">Tous</option></select></div>
+        <div class="media-filter-field"><label for="media-filter-concept">Notion / concept</label><select id="media-filter-concept" data-filter-concept><option value="">Toutes</option></select></div>
+        <div class="media-filter-field"><label for="media-filter-level">Niveau</label><select id="media-filter-level" data-filter-level><option value="">Tous</option></select></div>
+        <div class="media-filter-field" data-difficulty-field><label for="media-filter-difficulty">Difficulté</label><select id="media-filter-difficulty" data-filter-difficulty><option value="">Toutes</option></select></div>
+        <div class="media-filter-field"><label for="media-filter-duration">Durée</label><select id="media-filter-duration" data-filter-duration><option value="">Toutes</option></select></div>
+        <div class="media-filter-field"><label for="media-filter-usage">Usage</label><select id="media-filter-usage" data-filter-usage><option value="">Tous</option></select></div>
+      </section>
+    </section>
+    <section class="media-course-search-panel" data-course-search-shell hidden aria-label="Recherche dans les cours écrits">
+      <div class="media-course-search-copy"><span>Cours écrits</span><strong>Rechercher dans mes cours</strong><small data-course-search-status>Recherche par titre, matière, année, thème et contenu.</small></div>
+      <div class="media-course-search"><span data-library-icon="search" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></span><label class="sr-only" for="media-course-search">Rechercher uniquement dans les cours écrits</label><input id="media-course-search" data-course-search type="search" autocomplete="off" spellcheck="false" placeholder="Ex. Wundt, diagnostic, empirisme…"><button class="media-course-search-clear" data-course-search-clear type="button" aria-label="Effacer la recherche dans les cours" hidden>×</button></div>
+    </section>
+    <section class="library-loading" data-library-loading hidden role="status" aria-label="Chargement de la médiathèque">
+      <p class="sr-only">Chargement des ressources…</p>
+      <div class="library-loading-heading" aria-hidden="true"><span class="library-loading-line"></span></div>
+      <div class="library-rayons" aria-hidden="true">
+        <div class="library-loading-card"><i></i><span><b class="library-loading-line"></b><small class="library-loading-line"></small></span></div>
+        <div class="library-loading-card"><i></i><span><b class="library-loading-line"></b><small class="library-loading-line"></small></span></div>
+        <div class="library-loading-card"><i></i><span><b class="library-loading-line"></b><small class="library-loading-line"></small></span></div>
+      </div>
+      <div class="library-loading-favorites" aria-hidden="true"><span class="library-loading-line"></span><div></div></div>
+      <div class="library-loading-worktools" aria-hidden="true"><span class="library-loading-line"></span><div class="library-tools-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    </section>
+    <section class="media-results" aria-label="Ressources">
+      <div class="media-summary-row"><div class="media-summary-copy"><span class="media-summary-kicker" data-summary-kicker>Vue d’ensemble</span><h2 data-summary-title>Parcourir les rayons</h2></div><div class="media-summary-meta"><p class="media-count" data-media-count role="status" aria-live="polite"></p><button class="media-reset" type="button" data-media-reset hidden>Réinitialiser</button><button class="library-back-button" type="button" data-library-nav="library"><span data-library-icon="back" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span><span>Les rayons</span></button></div></div>
+      <div class="media-home" data-media-home></div><div class="media-list-shell" data-media-list-shell hidden></div>
+      <div class="media-empty" data-media-empty hidden><span data-library-icon="search" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></span><h3>Aucune ressource</h3><p>Essayez un autre terme ou retirez un filtre.</p><button type="button" data-empty-reset>Tout afficher</button></div>
+    </section>
+  </main>
+  <footer class="media-footer"><span><kbd>/</kbd> rechercher</span><span>Personnes et notions dans <strong>Explorer</strong></span></footer>
+  <nav class="library-mobile-nav" aria-label="Navigation mobile">
+    <button type="button" data-library-nav="library" data-library-mobile="library" aria-current="page"><span data-library-icon="library" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span>Bibliothèque</span></button>
+    <button type="button" data-open-explorer="people" data-library-mobile="explorer"><span data-library-icon="explorer" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 11 6-4m-6 6 6 4"/></svg></span><span>Explorer</span></button>
+    <button type="button" data-library-open="atelier" data-library-mobile="atelier" data-private-only><span data-library-icon="atelier" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 15a6 6 0 1 1 8 0l-1 3H9zM9 21h6M12 1v-1M3 5 1 3M21 5l2-2M2 12H0M24 12h-2"/></svg></span><span>Atelier</span></button>
+    <button type="button" data-library-open="tools" data-library-mobile="tools"><span data-library-icon="tools" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span>Outils</span></button>
+  </nav>
+  <dialog class="library-dialog library-menu-dialog" id="library-menu" data-library-dialog="menu" aria-labelledby="library-menu-title"><header><h2 id="library-menu-title">Médiathèque</h2><button type="button" data-library-close aria-label="Fermer le menu"><span data-library-icon="close" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></header><nav class="library-nav" aria-label="Navigation du menu">
+      <button type="button" data-library-nav="library" aria-current="page"><span data-library-icon="library" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span>Bibliothèque</span></button>
+      <button type="button" data-library-nav="favorites" data-toggle-pinned aria-pressed="false"><span data-library-icon="bookmark" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-6-4-6 4z"/></svg></span><span>Favoris</span></button>
+      <button type="button" data-open-explorer="people"><span data-library-icon="explorer" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 11 6-4m-6 6 6 4"/></svg></span><span>Explorer</span></button>
+      <button type="button" data-library-open="atelier" data-private-only><span data-library-icon="atelier" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 15a6 6 0 1 1 8 0l-1 3H9zM9 21h6M12 1v-1M3 5 1 3M21 5l2-2M2 12H0M24 12h-2"/></svg></span><span>Atelier</span></button>
+    </nav><div class="library-sidebar-tools"><h3>Outils de travail</h3><a class="library-tool-link" href="/editeurtexte/"><span data-library-icon="editor" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 3 5 5-12 12-6 1 1-6zM13 6l5 5"/></svg></span><span><strong>Éditeur</strong></span></a><a class="library-tool-link" href="/editeurimage/"><span data-library-icon="image" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="2"/><path d="m3 17 5-5 4 4 4-6 5 7"/></svg></span><span><strong>Images</strong></span></a><a class="library-tool-link" href="/pdf/"><span data-library-icon="pdf" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h5"/></svg></span><span><strong>PDF</strong></span></a><a class="library-tool-link" href="/pomodoro/"><span data-library-icon="clock" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 8v5l-3 2M9 2h6M12 2v3m7 1 2 2"/></svg></span><span><strong>Pomodoro</strong></span></a><a class="library-tool-link" href="/epub/"><span data-library-icon="epub" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span><strong>EPUB</strong></span></a><a class="library-tool-link" href="/apprendre/creation/teleprompteur/"><span data-library-icon="prompter" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M7 8h10M7 11h10M7 14h6M9 22h6M12 19v3"/></svg></span><span><strong>Téléprompteur</strong></span></a></div><button class="library-useful-trigger" type="button" data-library-open="links"><span data-library-icon="external" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 3h8v8M21 3 10 14M10 3H3v18h18v-7"/></svg></span><span>Liens utiles</span></button><a class="library-sidebar-return" href="/"><span data-library-icon="back" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg></span><span>Retour au site</span></a></dialog>
+  <dialog class="library-dialog" id="library-tools" data-library-dialog="tools" aria-labelledby="library-tools-title"><header><div><p>Écrire, lire, créer</p><h2 id="library-tools-title">Mes outils de travail</h2></div><button type="button" data-library-close aria-label="Fermer les outils"><span data-library-icon="close" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></header><div class="library-dialog-tools"><a class="library-dialog-tool" href="/editeurtexte/"><span data-library-icon="editor" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 3 5 5-12 12-6 1 1-6zM13 6l5 5"/></svg></span><span><strong>Éditeur</strong><small>Écrire et mettre en forme</small></span></a><a class="library-dialog-tool" href="/editeurimage/"><span data-library-icon="image" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="2"/><path d="m3 17 5-5 4 4 4-6 5 7"/></svg></span><span><strong>Images</strong><small>Recadrer et retoucher</small></span></a><a class="library-dialog-tool" href="/pdf/"><span data-library-icon="pdf" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h5"/></svg></span><span><strong>PDF</strong><small>Organiser les documents</small></span></a><a class="library-dialog-tool" href="/pomodoro/"><span data-library-icon="clock" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 8v5l-3 2M9 2h6M12 2v3m7 1 2 2"/></svg></span><span><strong>Pomodoro</strong><small>Trouver son rythme</small></span></a><a class="library-dialog-tool" href="/epub/"><span data-library-icon="epub" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5c3-2 6-2 9 0 3-2 6-2 9 0v15c-3-2-6-2-9 0-3-2-6-2-9 0zM12 5v15"/></svg></span><span><strong>EPUB</strong><small>Lire ses livres</small></span></a><a class="library-dialog-tool" href="/apprendre/creation/teleprompteur/"><span data-library-icon="prompter" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M7 8h10M7 11h10M7 14h6M9 22h6M12 19v3"/></svg></span><span><strong>Téléprompteur</strong><small>Préparer une prise</small></span></a></div></dialog>
+  <dialog class="library-dialog library-links-dialog" id="library-links" data-library-dialog="links" aria-labelledby="library-links-title"><header><div><p>Pour aller plus loin</p><h2 id="library-links-title">Liens utiles</h2></div><button type="button" data-library-close aria-label="Fermer les liens utiles"><span data-library-icon="close" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></header><div class="library-useful-links">
               <div class="media-useful-links-menu">
                 <section class="media-useful-links-group" aria-labelledby="useful-pdf">
                   <h3 id="useful-pdf">PDF &amp; documents</h3>
@@ -76,10 +137,8 @@
                   <a class="media-useful-featured" href="https://old.reddit.com/r/Piracy/wiki/megathread#wiki_.1FA99_.279C_other_treasures" target="_blank" rel="noopener noreferrer"><strong>Other Treasures <span aria-hidden="true">↗</span></strong><small>Sélection « Other Treasures » du megathread communautaire de r/Piracy.</small></a>
                 </section>
               </div>
-            </details>
-            <details class="media-useful-links media-learn-links" data-learning-menu data-private-only>
-              <summary>Atelier <span aria-hidden="true">▾</span></summary>
-              <div class="media-useful-links-menu media-learn-menu">
+            </div></dialog>
+  <dialog class="library-dialog library-atelier-dialog" id="library-atelier" data-library-dialog="atelier" aria-labelledby="library-atelier-title"><header><div><p>Apprendre & créer</p><h2 id="library-atelier-title">Votre atelier</h2></div><button type="button" data-library-close aria-label="Fermer l’atelier"><span data-library-icon="close" aria-hidden="true"><svg class="library-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18"/></svg></span></button></header><div class="library-learning-content">
                 <section class="media-useful-links-group" aria-labelledby="learn-languages">
                   <h3 id="learn-languages">Langues &amp; expression</h3>
                   <a class="media-learn-course" href="/apprendre/anglais/">
@@ -107,85 +166,13 @@
                 <section class="media-useful-links-group" aria-labelledby="learn-tools">
                   <h3 id="learn-tools">Créer &amp; s’organiser</h3>
                   <a href="/apprendre/arts-musique/"><strong>Musique · atelier personnel</strong><small>Théorie, piano, guitare, oreille, rythme et pratique.</small></a>
-                  <a href="/apprendre/creation/"><strong>Création de contenu</strong><small>Idées, scripts TikTok, storyboard, téléprompteur et publication.</small></a>
+                  <a href="/apprendre/creation/"><strong>Création de contenu</strong><small>Idées, scripts TikTok, storyboard et publication.</small></a>
+                  <a href="/apprendre/creation/teleprompteur/"><strong>Téléprompteur · création de contenu</strong><small>Texte défilant, vitesse, miroir, repères et durée de lecture.</small></a>
                   <a href="/apprendre/methodes/"><strong>Méthodes de travail</strong><small>Rappel actif, répétition espacée, planification, notes et lecture active.</small></a>
                 </section>
                 <a class="media-learn-open" href="/atelier/">Ouvrir l’Atelier →</a>
               </div>
-            </details>
-            <button class="media-explore-trigger" type="button" data-open-explorer>Explorer <span aria-hidden="true">⌘</span></button>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <label class="media-search" for="media-search">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path></svg>
-        <span class="sr-only">Rechercher dans la médiathèque</span>
-        <input id="media-search" data-media-search type="search" autocomplete="off" spellcheck="false" placeholder="Rechercher une œuvre, un auteur, une notion ou un concept…">
-        <kbd>/</kbd>
-        <button class="media-search-clear" data-media-clear type="button" aria-label="Effacer la recherche" hidden>×</button>
-      </label>
-
-      <nav class="media-type-row" data-media-types aria-label="Rayons de la médiathèque"></nav>
-
-      <div class="media-context-row">
-        <div class="media-active-filters" data-active-filters hidden></div>
-      </div>
-
-      <section class="media-advanced-filters" data-advanced-filters hidden aria-label="Filtres pédagogiques">
-        <div class="media-filter-field"><label for="media-filter-author">Auteur</label><select id="media-filter-author" data-filter-author><option value="">Tous</option></select></div>
-        <div class="media-filter-field"><label for="media-filter-concept">Notion / concept</label><select id="media-filter-concept" data-filter-concept><option value="">Toutes</option></select></div>
-        <div class="media-filter-field"><label for="media-filter-level">Niveau</label><select id="media-filter-level" data-filter-level><option value="">Tous</option></select></div>
-        <div class="media-filter-field" data-difficulty-field><label for="media-filter-difficulty">Difficulté</label><select id="media-filter-difficulty" data-filter-difficulty><option value="">Toutes</option></select></div>
-        <div class="media-filter-field"><label for="media-filter-duration">Durée</label><select id="media-filter-duration" data-filter-duration><option value="">Toutes</option></select></div>
-        <div class="media-filter-field"><label for="media-filter-usage">Usage</label><select id="media-filter-usage" data-filter-usage><option value="">Tous</option></select></div>
-      </section>
-    </section>
-
-    <section class="media-course-search-panel" data-course-search-shell hidden aria-label="Recherche dans les cours écrits">
-      <div class="media-course-search-copy">
-        <span>Cours écrits</span>
-        <strong>Rechercher dans mes cours</strong>
-        <small data-course-search-status>Recherche par titre, matière, année, thème et contenu.</small>
-      </div>
-      <label class="media-course-search" for="media-course-search">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path></svg>
-        <span class="sr-only">Rechercher uniquement dans les cours écrits</span>
-        <input id="media-course-search" data-course-search type="search" autocomplete="off" spellcheck="false" placeholder="Ex. Wundt, diagnostic, empirisme, discrimination…">
-        <button class="media-course-search-clear" data-course-search-clear type="button" aria-label="Effacer la recherche dans les cours" hidden>×</button>
-      </label>
-    </section>
-
-    <section class="media-results" aria-live="polite" aria-label="Ressources">
-      <div class="media-summary-row">
-        <div class="media-summary-copy">
-          <span class="media-summary-kicker" data-summary-kicker>Vue d’ensemble</span>
-          <h2 data-summary-title>Rayons</h2>
-        </div>
-        <div class="media-summary-meta">
-          <div class="media-summary-actions media-utility-actions">
-            <button class="media-quiet-button" type="button" data-toggle-advanced aria-expanded="false">Filtres pédagogiques</button>
-            <button class="media-quiet-button" type="button" data-toggle-pinned aria-pressed="false"><span aria-hidden="true">☆</span> Favoris</button>
-            <button class="media-reset" type="button" data-media-reset hidden>Réinitialiser</button>
-          </div>
-          <p class="media-count" data-media-count></p>
-        </div>
-      </div>
-
-      <div class="media-home" data-media-home></div>
-      <div class="media-list-shell" data-media-list-shell hidden></div>
-
-      <div class="media-empty" data-media-empty hidden>
-        <span aria-hidden="true">⌕</span>
-        <h3>Aucune ressource</h3>
-        <p>Essayez un autre terme ou retirez un filtre.</p>
-        <button type="button" data-empty-reset>Tout afficher</button>
-      </div>
-    </section>
-  </main>
-
+            </dialog>
   <aside class="media-explorer" data-media-explorer hidden aria-label="Explorer la médiathèque">
     <button class="media-overlay" type="button" data-close-explorer aria-label="Fermer"></button>
     <section class="media-side-panel" role="dialog" aria-modal="true" aria-labelledby="media-explorer-title">
@@ -203,6 +190,10 @@
         <span class="sr-only">Filtrer l’exploration</span>
         <input type="search" data-explorer-search placeholder="Filtrer…" autocomplete="off">
       </label>
+      <div class="library-author-controls library-explorer-organise" data-explorer-organise>
+        <label>Ranger par<select data-author-sort><option value="era">Époque</option><option value="name">Nom · A–Z</option><option value="count">Nombre de ressources</option></select></label>
+        <button type="button" data-author-fold="open">Tout déplier</button><button type="button" data-author-fold="close">Tout replier</button>
+      </div>
       <div class="media-explorer-list" data-explorer-list></div>
     </section>
   </aside>
@@ -237,30 +228,18 @@
     </section>
   </aside>
 
-  <footer class="media-footer">
-    <span><kbd>/</kbd> rechercher</span>
-    <span>Carte des concepts dans <strong>Explorer</strong></span>
-    <span><kbd>Alt</kbd> + <kbd>Maj</kbd> + <kbd>?</kbd> aide complète</span>
-  </footer>
-
-  <script src="../js/private-access.js?v=20261004-v31"></script>
-  <script src="./data.js?v=20260925-titres1"></script>
-  <script src="./mindmaps-data.js?v=20260925-titres1"></script>
-  <script src="./textes-sync.js?v=20260923-github-refresh1"></script>
-  <script src="./mediatheque.js?v=20260930-private-persist1"></script>
-  <script src="../js/site-tools.js?v=20261004-v31" defer></script>
   <div class="media-private-gate" data-private-gate hidden>
     <div class="media-private-gate-backdrop" data-private-gate-close></div>
     <section class="media-private-gate-card" role="dialog" aria-modal="true" aria-labelledby="private-gate-title">
       <button class="media-private-gate-close" type="button" data-private-gate-close aria-label="Fermer">×</button>
       <span class="media-private-gate-icon" aria-hidden="true">◇</span>
       <p class="media-private-gate-kicker">Accès réservé</p>
-      <h2 id="private-gate-title">Version privée</h2>
-      <p>Entrez le mot de passe pour continuer.</p>
+      <h2 id="private-gate-title">Accès élève</h2>
+      <p>Entrez votre mot de passe pour consulter vos ressources.</p>
       <form data-private-gate-form>
         <label for="media-private-password">Mot de passe</label>
         <div class="media-private-password-row">
-          <input id="media-private-password" data-private-password type="password" autocomplete="current-password" spellcheck="false">
+          <input id="media-private-password" data-private-password type="password" autocomplete="current-password" spellcheck="false" required>
           <label style="display:flex;gap:8px;align-items:center;font-size:12px"><input type="checkbox" data-media-remember> Rester connecté sur cet appareil personnel</label><button type="submit">Accéder</button>
         </div>
         <p class="media-private-error" data-private-error role="alert" hidden>Mot de passe incorrect.</p>
@@ -268,5 +247,13 @@
     </section>
   </div>
 
-<script src="/js/global-backup.js?v=20261004-v31" defer></script><script src="/js/private-session.js?v=20261004-v31" defer></script></body>
+
+  <script src="../js/private-access.js?v=20261007-creation1-20261004-v31"></script>
+  <script src="./data.js?v=20260925-titres1"></script>
+  <script src="./mindmaps-data.js?v=20260925-titres1"></script>
+  <script src="./textes-sync.js?v=20260923-github-refresh1"></script>
+  <script src="./bibliotheque-ui.js?v=20261007-creation1"></script>
+  <script src="./mediatheque.js?v=20261008-mediatheque-fluide1" onerror="window.FV_MEDIATHEQUE_BOOT?.fail()"></script>
+  <script src="../js/site-tools.js?v=20261004-v31" defer></script>
+</body>
 </html>

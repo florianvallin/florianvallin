@@ -1178,3 +1178,4 @@ body[data-theme="sepia"] .reader-settings{
 .reader-pages-toolbar label,.reader-pages-toolbar button,.reader-drawer-panel>header p{font-size:12px}
 @media(max-width:720px){.reader-visual-spread{padding:8px 28px}.reader-progress-tools{flex-wrap:wrap}.reader-stage-tools select{max-width:85px}.reader-spread-start{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.reader-visual-spread-canvas{transition:none}}
+

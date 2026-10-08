@@ -4,8 +4,10 @@
   // Attendre la synchronisation du catalogue /textes/ avant de construire la médiathèque.
   try { await (window.FV_MEDIATHEQUE_TEXT_SYNC || Promise.resolve()); } catch (_) {}
 
-  await window.FV_PRIVATE_ACCESS.ready;
-  if (window.FV_PRIVATE_ACCESS.role()) {
+  // Les anciens catalogues sont chargés directement ; les versions récentes
+  // déchiffrent leurs ressources au moyen du gestionnaire d’accès existant.
+  await window.FV_PRIVATE_ACCESS?.ready;
+  if (typeof window.FV_PRIVATE_ACCESS?.execute === "function" && window.FV_PRIVATE_ACCESS.role()) {
     await window.FV_PRIVATE_ACCESS.execute("/mediatheque/data.js");
     await window.FV_PRIVATE_ACCESS.execute("/mediatheque/mindmaps-data.js");
     if(window.FV_PRIVATE_ACCESS.role()==="private")for(const name of ["s1-courses","s2-courses","s3-courses","s4-courses","research-courses"])await window.FV_PRIVATE_ACCESS.execute("/mediatheque/"+name+".js");
@@ -87,7 +89,6 @@
   const detail = $("[data-resource-detail]");
   const detailTitle = $("[data-detail-title]");
   const detailContent = $("[data-detail-content]");
-  const usefulLinks = $("[data-useful-links]");
   const accessSwitch = $("[data-media-access-switch]");
   const privateGate = $("[data-private-gate]");
   const privateGateForm = $("[data-private-gate-form]");
@@ -111,7 +112,7 @@
     { key: "livre", label: "Livres", plural: "Livres", description: "Bibliothèque de lecture personnelle.", glyph: "L" },
     { key: "manuel", label: "Manuels", plural: "Manuels", description: "Manuels scolaires et universitaires réunis dans un même rayon.", glyph: "M" },
     { key: "audio", label: "Audio", plural: "Audio", description: "Podcasts, émissions et conférences audio.", glyph: "A" },
-    { key: "video", label: "Vidéo", plural: "Vidéos", description: "Films, extraits, documentaires, cours et conférences externes.", glyph: "V" },
+    { key: "video", label: "Vidéos", plural: "Vidéos", description: "Films, extraits, documentaires, cours et conférences externes.", glyph: "V" },
     { key: "cours", label: "Cours écrits", plural: "Cours écrits", description: "Archives de Licence, Master et autres enseignements.", glyph: "C" },
     { key: "cours-video", label: "Cours vidéo", plural: "Cours vidéo", description: "Cours et ressources pédagogiques vidéo réalisés pour Philosophal.", glyph: "▶" },
     { key: "mindmap", label: "Mind-maps", plural: "Mind-maps", description: "Cartes mentales en mode plan ou schéma interactif, navigables et légères.", glyph: "⌘" }
@@ -166,6 +167,11 @@
     pinned: readPinned(),
     explorerView: "people",
     explorerQuery: "",
+    authorQuery: "",
+    authorSort: (() => { try { return ["era", "name", "count"].includes(localStorage.getItem("fv-library-author-sort")) ? localStorage.getItem("fv-library-author-sort") : "era"; } catch (_) { return "era"; } })(),
+    authorFolders: new Set(),
+    resourceFolderState: new Map(),
+    resourceFolderScope: "",
     author: "",
     concept: "",
     level: "",
@@ -270,7 +276,7 @@
       const active = wantsPrivate ? state.access !== "public" : state.access === "public";
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
-      if (wantsPrivate) button.textContent = state.access === "student" ? "Élève" : "Privé";
+      if (wantsPrivate) button.textContent = window.FV_PRIVATE_ACCESS?.role?.() === "private" ? "Prof" : "Élève";
     });
     document.body.dataset.mediaAccess = state.access;
     render();
@@ -351,6 +357,13 @@
   const LEVEL_LABELS = { terminale: "Terminale", hlp: "HLP", licence: "Licence", master: "Master", general: "Tous niveaux" };
   const USAGE_LABELS = { dissertation: "Dissertation", cours: "Cours", revision: "Révision", exemple: "Exemple", approfondir: "Approfondir" };
   const DURATION_LABELS = { short5: "≤ 5 min", short15: "≤ 15 min", short30: "≤ 30 min", hour: "≤ 1 h", long: "Long" };
+  const conceptAliasIndex = new Map();
+  new Set([...Object.keys(CONCEPT_GRAPH), ...Object.values(CONCEPT_GRAPH).flat(), ...PROGRAM_NOTIONS]).forEach((name) => {
+    [name, ...(CONCEPT_ALIASES[name] || [])].forEach((alias) => {
+      const key = normalize(alias);
+      if (key && !conceptAliasIndex.has(key)) conceptAliasIndex.set(key, name);
+    });
+  });
 
   function mindmapTreeText(tree) {
     if (!tree) return "";
@@ -371,14 +384,7 @@
   }
 
   function canonicalConcept(value = "") {
-    const token = normalize(value);
-    if (!token) return "";
-    const names = new Set([...Object.keys(CONCEPT_GRAPH), ...Object.values(CONCEPT_GRAPH).flat(), ...PROGRAM_NOTIONS]);
-    for (const name of names) {
-      if (normalize(name) === token) return name;
-      if ((CONCEPT_ALIASES[name] || []).some((alias) => normalize(alias) === token)) return name;
-    }
-    return "";
+    return conceptAliasIndex.get(normalize(value)) || "";
   }
 
   function relatedConceptNames(concept = "") {
@@ -582,19 +588,10 @@
     return ` is-domain-${courseDomain(item)} is-theme-${courseThemeKey(item)}`;
   }
 
+  function libraryIcon(name) { return window.PhilosophalLibraryIcons.svg(name); }
   function icon(kind) {
     const group = ["podcast", "audio"].includes(kind) ? "audio" : kind === "article" ? "texte" : kind;
-    const icons = {
-      texte: '<svg viewBox="0 0 24 24"><path d="M6 3.5h9l3 3V20.5H6z"/><path d="M15 3.5v4h3M9 11h6M9 14h6M9 17h4"/></svg>',
-      livre: '<svg viewBox="0 0 24 24"><path d="M4.5 5.5A2.5 2.5 0 0 1 7 3h5v17H7a2.5 2.5 0 0 0-2.5 2z"/><path d="M19.5 5.5A2.5 2.5 0 0 0 17 3h-5v17h5a2.5 2.5 0 0 1 2.5 2z"/></svg>',
-      manuel: '<svg viewBox="0 0 24 24"><path d="M5 4.5h10.5A2.5 2.5 0 0 1 18 7v12.5H7.5A2.5 2.5 0 0 1 5 17z"/><path d="M8 8h7M8 11h7M8 14h5"/><path d="M18 7h1.5v12.5H8"/></svg>',
-      audio: '<svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M7.5 14.5a6.3 6.3 0 1 1 9 0M5 17a9.5 9.5 0 1 1 14 0M10 15.5l-1 5M14 15.5l1 5"/></svg>',
-      video: '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg>',
-      cours: '<svg viewBox="0 0 24 24"><path d="M5 3.5h11l3 3v14H5z"/><path d="M16 3.5v4h3M8 11h8M8 14h8M8 17h5"/></svg>',
-      "cours-video": '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/><path d="M7 3h10"/></svg>',
-      mindmap: '<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="19" cy="4" r="2"/><circle cx="19" cy="10" r="2"/><circle cx="12" cy="18" r="2"/><circle cx="19" cy="20" r="2"/><path d="M7 11l3.5-4M7 13l3.5 4M14 6l3-1.5M14 7l3 2M14 18l3-6.5M14 18.5l3 1"/></svg>'
-    };
-    return icons[group] || icons.texte;
+    return libraryIcon(group);
   }
 
   // Compatible avec philosophal.fr (racine /) et un Live Server qui sert /main/.
@@ -687,6 +684,90 @@
   }
 
   const searchIndex = new Map(resources.map((item) => [item.id, searchable(item)]));
+  const searchFields = new WeakMap();
+  const searchJobs = new Map();
+  const searchVersions = new Map();
+  const composingSearches = new Set();
+  let catalogueRevision = 0;
+  let profileCountsCache = null;
+  const profileSearchIndex = new Map(peopleProfiles.map((profile) => [profile.name,
+    normalize([profile.name, profile.displayName, profile.era, profile.descriptor,
+      ...(profile.aliases || []), ...(profile.themes || [])].join(" "))]));
+
+  function cancelSearchJob(key) {
+    clearTimeout(searchJobs.get(key)?.timer);
+    searchJobs.delete(key);
+    searchVersions.set(key, (searchVersions.get(key) || 0) + 1);
+  }
+
+  function cancelPendingSearches() {
+    [...searchVersions.keys()].forEach(cancelSearchJob);
+  }
+
+  function scheduleSearch(key, callback) {
+    cancelSearchJob(key);
+    const version = searchVersions.get(key);
+    const run = () => {
+      searchJobs.delete(key);
+      callback(() => version === searchVersions.get(key));
+    };
+    searchJobs.set(key, { run, timer: setTimeout(run, 160) });
+  }
+
+  function flushSearch(key) {
+    const job = searchJobs.get(key);
+    if (!job) return;
+    clearTimeout(job.timer);
+    job.run();
+  }
+
+  function bindSearchInput(field, key, readValue, updateView) {
+    if (!field) return;
+    field.addEventListener("compositionstart", () => {
+      composingSearches.add(key);
+      cancelSearchJob(key);
+    });
+    field.addEventListener("compositionend", () => {
+      composingSearches.delete(key);
+      readValue();
+      scheduleSearch(key, updateView);
+    });
+    field.addEventListener("input", (event) => {
+      readValue();
+      if (event.isComposing || composingSearches.has(key)) return;
+      scheduleSearch(key, updateView);
+    });
+    field.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.isComposing && !composingSearches.has(key)) {
+        event.preventDefault();
+        flushSearch(key);
+      }
+    });
+  }
+
+  function queryParts(value) {
+    const query = normalize(value);
+    return { query, terms: query.split(" ").filter(Boolean), concept: canonicalConcept(query) };
+  }
+
+  function fieldsFor(item) {
+    if (!searchFields.has(item)) searchFields.set(item, {
+      title: normalize(item.title), creator: normalize(item.creator),
+      themes: normalize((item.themes || []).join(" "))
+    });
+    return searchFields.get(item);
+  }
+
+  function invalidateCatalogueSearch() {
+    catalogueRevision += 1;
+    profileCountsCache = null;
+    const currentIds = new Set(resources.map((item) => item.id));
+    [...searchIndex.keys()].forEach((id) => { if (!currentIds.has(id)) searchIndex.delete(id); });
+    resources.filter((item) => item.isPersonalMindmap).forEach((item) => {
+      searchIndex.set(item.id, searchable(item));
+      searchFields.delete(item);
+    });
+  }
   let courseContentIndex = null;
   let courseContentIndexPromise = null;
 
@@ -709,41 +790,34 @@
     return courseContentIndexPromise;
   }
 
-  function courseMatchesQuery(item) {
-    const query = normalize(state.courseQuery);
-    if (!query) return true;
+  function courseMatchesQuery(item, terms) {
+    if (!terms.length) return true;
     const meta = searchIndex.get(item.id) || "";
     const content = courseContentIndex?.get(item.id) || "";
     const haystack = `${meta} ${content}`;
-    return query.split(" ").filter(Boolean).every((term) => haystack.includes(term));
+    return terms.every((term) => haystack.includes(term));
   }
 
-  function relevance(item, query) {
+  function relevance(item, { query, terms, concept }) {
     if (!query) return 0;
-    const title = normalize(item.title);
-    const creator = normalize(item.creator);
-    const themes = normalize((item.themes || []).join(" "));
-    const haystack = searchIndex.get(item.id) || "";
+    const { title, creator, themes } = fieldsFor(item);
     let score = 0;
     if (title === query) score += 100;
     if (title.startsWith(query)) score += 65;
     if (title.includes(query)) score += 45;
     if (creator.includes(query)) score += 34;
     if (themes.includes(query)) score += 25;
-    const queryConcept = canonicalConcept(query);
-    if (queryConcept && conceptMatches(item, queryConcept)) score += 38;
-    query.split(" ").filter(Boolean).forEach((term) => { if (semanticTermMatches(item, term)) score += 8; });
+    if (concept && conceptMatches(item, concept)) score += 38;
+    terms.forEach((term) => { if (semanticTermMatches(item, term)) score += 8; });
     return score;
   }
 
-  function matchesQuery(item) {
-    const query = normalize(state.query);
+  function matchesQuery(item, { query, terms, concept }) {
     if (!query) return true;
     const haystack = searchIndex.get(item.id) || "";
     if (haystack.includes(query)) return true;
-    const fullConcept = canonicalConcept(query);
-    if (fullConcept && conceptMatches(item, fullConcept)) return true;
-    return query.split(" ").filter(Boolean).every((term) => semanticTermMatches(item, term));
+    if (concept && conceptMatches(item, concept)) return true;
+    return terms.every((term) => semanticTermMatches(item, term));
   }
 
   function currentDossierIds() {
@@ -754,6 +828,8 @@
 
   function filteredResources() {
     const dossierIds = currentDossierIds();
+    const parts = queryParts(state.query);
+    const courseTerms = queryParts(state.courseQuery).terms;
     let list = scopedResources().filter((item) => {
       if (state.kind !== "all" && groupOf(item) !== state.kind) return false;
       if (state.person && !itemMatchesPerson(item, state.person)) return false;
@@ -766,13 +842,13 @@
       if (state.usage && !usagesFor(item).includes(state.usage)) return false;
       if (dossierIds && !dossierIds.has(item.id)) return false;
       if (state.pinnedOnly && !state.pinned.has(item.id)) return false;
-      if (state.kind === "cours" && item.kind === "cours" && !courseMatchesQuery(item)) return false;
-      return matchesQuery(item);
+      if (state.kind === "cours" && item.kind === "cours" && !courseMatchesQuery(item, courseTerms)) return false;
+      return matchesQuery(item, parts);
     });
 
-    const query = normalize(state.query);
-    if (query) {
-      list.sort((a, b) => relevance(b, query) - relevance(a, query) || a.title.localeCompare(b.title, "fr"));
+    if (parts.query) {
+      const scores = new Map(list.map((item) => [item.id, relevance(item, parts)]));
+      list.sort((a, b) => scores.get(b.id) - scores.get(a.id) || a.title.localeCompare(b.title, "fr"));
     } else if (state.dossier) {
       const dossier = dossiers.find((item) => item.id === state.dossier);
       const order = new Map((dossier?.resourceIds || []).map((id, index) => [id, index]));
@@ -799,7 +875,7 @@
     types.innerHTML = availableFilters().map((meta) => {
       const active = state.kind === meta.key;
       return `<button type="button" class="media-type-button is-${meta.key}${active ? " is-active" : ""}" data-kind="${meta.key}" aria-pressed="${active}">
-        ${meta.key !== "all" ? `<span class="media-type-glyph">${meta.glyph}</span>` : ""}
+        ${meta.key !== "all" ? `<span class="media-type-glyph">${icon(meta.key)}</span>` : ""}
         <span>${esc(meta.label)}</span><small>${counts[meta.key] || 0}</small>
       </button>`;
     }).join("");
@@ -898,11 +974,26 @@
       return `<button class="media-row-action" type="button" data-mindmap-open="${esc(item.id)}">${esc(label)} →</button>`;
     }
     if (embed && ["audio", "video", "cours-video"].includes(group)) {
-      return `<button class="media-row-action is-play" type="button" data-play="${esc(item.id)}">▶ ${esc(label)}</button>`;
+      return `<button class="media-row-action is-play" type="button" data-play="${esc(item.id)}">${libraryIcon("video")}<span>${esc(label)}</span></button>`;
     }
     const href = resolveUrl(item.url || "#");
     const external = isExternal(item.url);
     return `<a class="media-row-action" href="${esc(href)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}>${esc(label)}${external ? " ↗" : ""}</a>`;
+  }
+
+  function resourceSeriesPanel(item) {
+    const seriesKey = `series:${item.id}`;
+    const seriesExpanded = Array.isArray(item.episodes) && item.episodes.length && state.expandedSections.has(seriesKey);
+    if (!seriesExpanded) return "";
+    return `<div class="media-series-panel">
+      <div class="media-series-head"><strong>${esc(item.title)}</strong><span>${item.episodes.length} épisode${item.episodes.length > 1 ? "s" : ""}</span></div>
+      <div class="media-series-list">${item.episodes.map((episode, index) => {
+        const href = resolveUrl(episode.url || item.url || "#");
+        const external = isExternal(episode.url || item.url);
+        return `<a href="${esc(href)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}><span>${esc(episode.title || `Épisode ${index + 1}`)}</span>${episode.duration ? `<small>${esc(episode.duration)}</small>` : ""}<i aria-hidden="true">↗</i></a>`;
+      }).join("")}</div>
+      <a class="media-series-source" href="${esc(resolveUrl(item.url || "#"))}" ${isExternal(item.url) ? 'target="_blank" rel="noopener noreferrer"' : ""}>Page de la série / source ↗</a>
+    </div>`;
   }
 
   function resourceRow(item, options = {}) {
@@ -914,23 +1005,13 @@
       : "";
     const profileNames = [...new Set([...(item.people || []), item.creator].filter(Boolean).map(canonicalPerson).filter((name) => profileByName.has(name)))];
     const profileLink = !state.person && profileNames.length ? `<div class="media-row-people">${profileNames.slice(0, 2).map((name) => { const profile = profileByName.get(name); return `<button type="button" data-person="${esc(name)}">${esc(profile?.displayName || name)}</button>`; }).join("")}</div>` : "";
-    const seriesKey = `series:${item.id}`;
-    const seriesExpanded = Array.isArray(item.episodes) && item.episodes.length && state.expandedSections.has(seriesKey);
-    const seriesPanel = Array.isArray(item.episodes) && item.episodes.length ? `<div class="media-series-panel" ${seriesExpanded ? "" : "hidden"}>
-      <div class="media-series-head"><strong>${esc(item.title)}</strong><span>${item.episodes.length} épisode${item.episodes.length > 1 ? "s" : ""}</span></div>
-      <div class="media-series-list">${item.episodes.map((episode, index) => {
-        const href = resolveUrl(episode.url || item.url || "#");
-        const external = isExternal(episode.url || item.url);
-        return `<a href="${esc(href)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}><span>${esc(episode.title || `Épisode ${index + 1}`)}</span>${episode.duration ? `<small>${esc(episode.duration)}</small>` : ""}<i aria-hidden="true">↗</i></a>`;
-      }).join("")}</div>
-      <a class="media-series-source" href="${esc(resolveUrl(item.url || "#"))}" ${isExternal(item.url) ? 'target="_blank" rel="noopener noreferrer"' : ""}>Page de la série / source ↗</a>
-    </div>` : "";
-    return `<article class="media-resource-row is-${group}${courseClass(item)}${Array.isArray(item.episodes) && item.episodes.length ? " has-series" : ""}" data-open-resource="${esc(item.id)}" tabindex="0" role="link" aria-label="${esc(`${actionLabel(item)} : ${item.title}`)}">
+    const seriesPanel = resourceSeriesPanel(item);
+    return `<article class="media-resource-row is-${group}${courseClass(item)}${Array.isArray(item.episodes) && item.episodes.length ? " has-series" : ""}" data-open-resource="${esc(item.id)}" >
       <span class="media-row-icon" aria-hidden="true">${icon(item.kind)}</span>
       <div class="media-row-main">
         ${showKind ? `<span class="media-row-kind">${esc(contentTypeLabel(item))}</span>` : ""}
         ${courseMeta}
-        <h3>${esc(item.title)}</h3>
+        <h3><button type="button" class="media-row-title" data-open-resource="${esc(item.id)}">${esc(item.title)}</button></h3>
         ${sourceLine(item) ? `<p>${esc(sourceLine(item))}</p>` : ""}
         ${profileLink}
         ${pedagogyMeta(item)}
@@ -938,7 +1019,7 @@
       <div class="media-row-themes">${themes.map((theme) => `<span>${esc(theme)}</span>`).join("")}</div>
       <div class="media-row-tools">
         <button class="media-row-relate" type="button" data-resource-details="${esc(item.id)}" aria-label="Explorer les connexions de cette ressource">Relier</button>
-        <button class="media-row-pin${state.pinned.has(item.id) ? " is-pinned" : ""}" type="button" data-pin="${esc(item.id)}" aria-label="${state.pinned.has(item.id) ? "Retirer des favoris" : "Ajouter aux favoris"}">${state.pinned.has(item.id) ? "★" : "☆"}</button>
+        <button class="media-row-pin${state.pinned.has(item.id) ? " is-pinned" : ""}" type="button" data-pin="${esc(item.id)}" aria-pressed="${state.pinned.has(item.id)}" aria-label="${esc((state.pinned.has(item.id) ? "Retirer des favoris : " : "Ajouter aux favoris : ") + item.title)}">${libraryIcon("bookmark")}</button>
         ${resourceAction(item)}
       </div>
       ${seriesPanel}
@@ -1562,6 +1643,7 @@
   }
 
   function persistCustomMindmaps() {
+    invalidateCatalogueSearch();
     const list = resources.filter((item) => groupOf(item) === "mindmap" && item.isPersonalMindmap).map((item) => ({
       id: item.id, kind: "mindmap", title: item.title, creator: item.creator || "", subtitle: item.subtitle || "Carte personnelle",
       description: item.description || "", mindmapCategory: "custom", themes: item.themes || ["Philosophie"], people: item.people || [], keywords: item.keywords || ["mind-map"],
@@ -1808,28 +1890,64 @@
     });
     const entries = [...counts.entries()].sort((a, b) => b[1] - a[1] || (profileByName.get(a[0])?.displayName || a[0]).localeCompare(profileByName.get(b[0])?.displayName || b[0], "fr"));
     if (!entries.length) return "";
-    return `<section class="media-rayon-people"><span>Par figure / auteur</span><div>${entries.map(([name,total]) => { const profile = profileByName.get(name); return `<button type="button" data-person="${esc(name)}"><strong>${esc(profile?.displayName || name)}</strong><small>${total}</small></button>`; }).join("")}</div></section>`;
+    return `<details class="media-rayon-people library-rayon-authors"><summary><strong>Par figure / auteur</strong><small>${entries.length} personnes</small><span aria-hidden="true">⌄</span></summary><div>${entries.map(([name,total]) => { const profile = profileByName.get(name); return `<button type="button" data-person="${esc(name)}"><strong>${esc(profile?.displayName || name)}</strong><small>${total}</small></button>`; }).join("")}</div></details>`;
   }
 
   function profileResourceCount(profile) {
-    return scopedResources().filter((item) => itemMatchesPerson(item, profile.name)).length;
+    const key = `${state.access}:${catalogueRevision}`;
+    if (profileCountsCache?.key !== key) {
+      const counts = new Map();
+      scopedResources().forEach((item) => {
+        const names = new Set([...(item.people || []), item.creator].filter(Boolean).map(canonicalPerson));
+        names.forEach((name) => { if (profileByName.has(name)) counts.set(name, (counts.get(name) || 0) + 1); });
+      });
+      profileCountsCache = { key, counts };
+    }
+    return profileCountsCache.counts.get(profile.name) || 0;
+  }
+
+  function visibleProfiles(query = "") {
+    const terms = normalize(query).split(" ").filter(Boolean);
+    return peopleProfiles.map((profile) => ({profile, total: profileResourceCount(profile)}))
+      .filter(({profile,total}) => total && terms.every(term => profileSearchIndex.get(profile.name).includes(term)));
+  }
+
+  function authorCards(entries) {
+    return `<div class="library-author-grid">${entries.map(({profile,total}) => `<button type="button" class="library-author-card" data-person="${esc(profile.name)}"><span><strong>${esc(profile.displayName || profile.name)}</strong><small>${esc(profile.descriptor || profile.era || "")}</small></span><span class="library-author-count" aria-label="${total} ressource${total > 1 ? "s" : ""}">${total}</span>${libraryIcon("arrow")}</button>`).join("")}</div>`;
+  }
+
+  function authorDirectory(entries, query = "", prefix = "hub") {
+    const alphabetical = (a,b) => (a.profile.displayName || a.profile.name).localeCompare(b.profile.displayName || b.profile.name, "fr");
+    const sorted = entries.slice().sort(state.authorSort === "count" ? (a,b) => b.total-a.total || alphabetical(a,b) : alphabetical);
+    if (!sorted.length) return '<p class="library-author-empty" role="status">Aucun auteur trouvé. Essayez un nom ou une époque.</p>';
+    if (state.authorSort !== "era") return authorCards(sorted);
+    const eraOrder = [...new Set(peopleProfiles.map(profile => profile.era || "Autres"))];
+    const groups = new Map();
+    sorted.forEach(entry => { const era=entry.profile.era || "Autres"; if(!groups.has(era))groups.set(era,[]); groups.get(era).push(entry); });
+    return `<div class="library-author-groups">${[...groups].sort((a,b) => eraOrder.indexOf(a[0])-eraOrder.indexOf(b[0])).map(([era,list]) => {
+      const key=prefix+":"+era, opened=query.trim() || state.authorFolders.has(key);
+      return `<details class="library-author-group" data-author-folder="${esc(key)}" ${opened?"open":""}><summary><strong>${esc(era)}</strong><small>${list.length} auteur${list.length>1?"s":""}</small><span aria-hidden="true">⌄</span></summary>${authorCards(list)}</details>`;
+    }).join("")}</div>`;
   }
 
   function renderProfileHub() {
-    const visible = peopleProfiles.map((profile) => ({ profile, total: profileResourceCount(profile) })).filter(({ total }) => total > 0);
+    const visible=visibleProfiles();
     if (!visible.length) return "";
+    const filtered = visibleProfiles(state.authorQuery);
     return `<section class="media-profile-hub">
-      <header class="media-profile-hub-head">
-        <div><span>Explorer autrement</span><h3>Figures & auteurs</h3><p>Une personne = une fiche qui rassemble automatiquement tous ses textes, émissions, vidéos, cours et ressources.</p></div>
-        <button type="button" data-open-explorer="people">Voir toutes les personnes →</button>
-      </header>
-      <div class="media-profile-grid">${visible.map(({ profile, total }) => `<button type="button" class="media-profile-card" data-person="${esc(profile.name)}">
-        <span class="media-profile-card-kicker">${esc(profile.era || "")}</span>
-        <strong>${esc(profile.displayName || profile.name)}</strong>
-        <small>${esc(profile.descriptor || "")}</small>
-        <i>${total} ressource${total > 1 ? "s" : ""} →</i>
-      </button>`).join("")}</div>
+      <header class="media-profile-hub-head"><div><p>Retrouvez une personne, puis ouvrez seulement les catégories qui vous intéressent.</p></div><button type="button" data-open-explorer="people">Explorer toutes les personnes ${libraryIcon("arrow")}</button></header>
+      <div class="library-author-controls"><label class="library-author-search"><span>Rechercher un auteur</span><input type="search" data-author-search value="${esc(state.authorQuery)}" placeholder="Nom, époque, thème…" autocomplete="off"></label><label>Ranger par<select data-author-sort><option value="era" ${state.authorSort==="era"?"selected":""}>Époque</option><option value="name" ${state.authorSort==="name"?"selected":""}>Nom · A–Z</option><option value="count" ${state.authorSort==="count"?"selected":""}>Nombre de ressources</option></select></label></div>
+      <div class="library-fold-actions"><p data-author-count role="status">${filtered.length} auteurs</p><button type="button" data-author-fold="open" ${state.authorSort!=="era"?"hidden":""}>Tout déplier</button><button type="button" data-author-fold="close" ${state.authorSort!=="era"?"hidden":""}>Tout replier</button></div>
+      <div data-author-directory>${authorDirectory(filtered,state.authorQuery)}</div>
     </section>`;
+  }
+
+  function refreshAuthorDirectory() {
+    const list=visibleProfiles(state.authorQuery), directory=document.querySelector("[data-author-directory]");
+    if(directory)directory.innerHTML=authorDirectory(list,state.authorQuery);
+    const count=document.querySelector("[data-author-count]");if(count)count.textContent=`${list.length} auteur${list.length>1?"s":""}`;
+    document.querySelectorAll("[data-author-sort]").forEach(select => {select.value=state.authorSort;});
+    document.querySelectorAll(".media-profile-hub [data-author-fold]").forEach(button=>button.hidden=state.authorSort!=="era");
   }
 
   function renderProfileSearchSuggestion(profile) {
@@ -1865,33 +1983,39 @@
         </div>
         <div class="media-person-stats"><span><strong>${list.length}</strong> ressources</span><span><strong>${activeCategories.length}</strong> catégories</span><span><strong>${seriesCount}</strong> séries</span><span><strong>${mediaCount}</strong> formats</span></div>
       </header>
-      <nav class="media-person-nav" aria-label="Catégories de la fiche">${activeCategories.map(([key,label]) => `<a href="#person-${key}">${esc(label)} <span>${grouped.get(key).length}</span></a>`).join("")}</nav>
+      <div class="library-fold-actions"><span>Choisissez une catégorie</span><button type="button" data-resource-fold="open">Tout déplier</button><button type="button" data-resource-fold="close">Tout replier</button></div>
       <div class="media-person-sections">${activeCategories.map(([key,label,desc]) => {
         const entries = grouped.get(key);
-        return `<section class="media-person-section" id="person-${key}">
-          <header><div><span>${esc(label)}</span><p>${esc(desc)}</p></div><strong>${entries.length}</strong></header>
-          <div class="media-resource-list">${entries.map((item) => resourceRow(item, { showKind: true })).join("")}</div>
-        </section>`;
+        return `<details class="media-person-section library-resource-folder" id="person-${key}"><summary><span><strong>${esc(label)}</strong><small>${esc(desc)}</small></span><b>${entries.length}</b><i aria-hidden="true">⌄</i></summary><div class="media-resource-list">${entries.map(item => resourceRow(item,{showKind:true})).join("")}</div></details>`;
       }).join("")}</div>
     </article>`;
   }
 
+  function favoriteCard(item) {
+    const group = groupOf(item);
+    const label = ({texte:"Texte", livre:"Livre", manuel:"Manuel", audio:"Audio", video:"Vidéo", cours:"Cours écrit", "cours-video":"Cours vidéo", mindmap:"Mind-map"})[group] || contentTypeLabel(item);
+    return `<article class="library-favorite-card is-${group}">
+      <div class="library-cover is-${group}" aria-hidden="true">${icon(group)}</div>
+      <div class="library-favorite-content"><span class="library-kind">${esc(label)}</span>
+        <h3><button type="button" class="media-row-title" data-open-resource="${esc(item.id)}">${esc(item.title)}</button></h3>
+        <p>${esc(item.creator || item.formation || item.source || "")}</p><div class="library-favorite-action">${resourceAction(item)}</div>
+      </div>
+      <button type="button" class="media-row-pin library-favorite-pin is-pinned" data-pin="${esc(item.id)}" aria-pressed="true" aria-label="${esc(`Retirer des favoris : ${item.title}`)}">${libraryIcon("bookmark")}</button>
+      ${resourceSeriesPanel(item)}
+    </article>`;
+  }
+
   function renderHome() {
-    const grouped = new Map(["texte", "livre", "manuel", "audio", "video", "cours", "cours-video", "mindmap"].map((kind) => [kind, []]));
-    scopedResources().forEach((item) => {
-      const group = groupOf(item);
-      if (grouped.has(group)) grouped.get(group).push(item);
-    });
-    grouped.forEach((list) => list.sort((a, b) => a.title.localeCompare(b.title, "fr")));
-
-    const pinned = scopedResources().filter((item) => state.pinned.has(item.id)).slice(0, 5);
-
+    const counts = countGroups();
+    const pinned = scopedResources().filter(item => state.pinned.has(item.id)).slice(0, 3);
     home.innerHTML = `
-      ${pinned.length ? `<section class="media-resume"><div class="media-resume-head"><span>Favoris</span><small>${pinned.length} ressource${pinned.length > 1 ? "s" : ""}</small></div><div class="media-resume-list">${pinned.map((item) => resourceRow(item, { showKind: true })).join("")}</div></section>` : ""}
-      ${renderProfileHub()}
-      <div class="media-shelves">
-        ${availableFilters().filter((meta) => meta.key !== "all").map(({ key: kind }) => kind === "video" ? videoHomeShelf(grouped.get(kind)) : kind === "cours" ? courseHomeShelf(grouped.get(kind)) : homeShelf(kind, grouped.get(kind))).join("")}
-      </div>`;
+      <div class="library-rayons">${availableFilters().filter(meta => meta.key !== "all").map(meta => `<button class="library-rayon" type="button" data-kind-focus="${meta.key}"><span class="library-rayon-icon">${icon(meta.key)}</span><span class="library-rayon-copy"><strong>${esc(meta.label)}</strong><small>${(counts[meta.key] || 0).toLocaleString("fr-FR")} ressource${counts[meta.key] === 1 ? "" : "s"}</small></span><span class="library-rayon-arrow">${libraryIcon("arrow")}</span></button>`).join("")}</div>
+      <section class="library-favorites" aria-labelledby="library-favorites-title"><header><h3 id="library-favorites-title" tabindex="-1">Vos favoris</h3><button type="button" data-library-nav="favorites">Voir tous ${libraryIcon("arrow")}</button></header>
+        ${pinned.length ? `<div class="library-favorite-grid">${pinned.map(favoriteCard).join("")}</div>` : `<div class="library-favorites-empty">${libraryIcon("bookmark")}<p>Gardez vos ressources à portée de main.<span>Utilisez le marque-page d’une ressource pour la retrouver ici.</span></p></div>`}
+      </section>
+      <section class="library-worktools" aria-labelledby="library-worktools-title"><header><h3 id="library-worktools-title">Mes outils de travail</h3><button type="button" data-library-open="links">Liens utiles ${libraryIcon("external")}</button></header><div class="library-tools-grid"><a class="library-worktool" href="/editeurtexte/"><span data-library-icon="editor" aria-hidden="true"></span><span><strong>Éditeur</strong></span></a><a class="library-worktool" href="/editeurimage/"><span data-library-icon="image" aria-hidden="true"></span><span><strong>Images</strong></span></a><a class="library-worktool" href="/pdf/"><span data-library-icon="pdf" aria-hidden="true"></span><span><strong>PDF</strong></span></a><a class="library-worktool" href="/pomodoro/"><span data-library-icon="clock" aria-hidden="true"></span><span><strong>Pomodoro</strong></span></a><a class="library-worktool" href="/epub/"><span data-library-icon="epub" aria-hidden="true"></span><span><strong>EPUB</strong></span></a><a class="library-worktool" href="/apprendre/creation/teleprompteur/"><span data-library-icon="prompter" aria-hidden="true"></span><span><strong>Téléprompteur</strong></span></a></div></section>
+      ${peopleProfiles.length ? `<details class="library-figures"><summary><span>${libraryIcon("explorer")} Figures & auteurs</span><span>Explorer autrement</span></summary>${renderProfileHub()}</details>` : ""}`;
+    window.PhilosophalLibraryIcons.paint();
   }
 
   function renderGroupedSections(list) {
@@ -1906,14 +2030,7 @@
       const entries = grouped.get(kind);
       if (!entries.length) return "";
       const meta = filterMeta.get(kind);
-      const sectionKey = `results:${kind}`;
-      const expanded = state.expandedSections.has(sectionKey);
-      const visible = expanded ? entries : entries.slice(0, 8);
-      return `<section class="media-result-section is-${kind}">
-        <header class="media-result-section-head"><div><span class="media-section-icon">${icon(kind)}</span><h3>${esc(meta.plural)}</h3></div><small>${entries.length}</small></header>
-        <div class="media-resource-list">${visible.map((item) => resourceRow(item, { showKind: ["video", "cours-video"].includes(kind) })).join("")}</div>
-        ${entries.length > 8 ? `<button class="media-section-more" type="button" data-expand-section="${sectionKey}">${expanded ? "Réduire" : `Afficher les ${entries.length} ${meta.plural.toLowerCase()}`}</button>` : ""}
-      </section>`;
+      return `<details class="media-result-section is-${kind} library-resource-folder" ${state.query?"open":""}><summary class="media-result-section-head"><span class="media-section-icon">${icon(kind)}</span><h3>${esc(meta.plural)}</h3><small>${entries.length}</small><i aria-hidden="true">⌄</i></summary><div class="media-resource-list">${entries.map(item=>resourceRow(item,{showKind:["video","cours-video"].includes(kind)})).join("")}</div></details>`;
     }).join("");
   }
 
@@ -1985,7 +2102,7 @@
           if (ai !== -1 || bi !== -1) return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
           return a[0].localeCompare(b[0], "fr");
         });
-        return `<details class="media-directory-group is-manuel is-manual-methodology" open>
+        return `<details class="media-directory-group is-manuel is-manual-methodology">
           <summary>
             <span>${esc(group.label)}</span>
             <small>${group.entries.length} références · ${sortedSubgroups.length} sources</small>
@@ -1999,7 +2116,7 @@
           </div>
         </details>`;
       }
-      return `<details class="media-directory-group is-manuel" ${["00-annales", "05-reperes-conceptuels", "06-sujets-philosophie"].includes(key) ? "open" : ""}>
+      return `<details class="media-directory-group is-manuel">
         <summary>
           <span>${esc(group.label)}</span>
           <small>${group.entries.length} référence${group.entries.length > 1 ? "s" : ""}</small>
@@ -2017,7 +2134,11 @@
   }
 
   function renderResults() {
-    const list = filteredResources();
+    const folderScope=[state.access,state.kind,state.person,state.query,state.pinnedOnly,state.author,state.theme,state.dossier,state.concept,state.courseQuery,state.level,state.difficulty,state.duration,state.usage].join("|");
+    if(folderScope!==state.resourceFolderScope){state.resourceFolderState.clear();state.resourceFolderScope=folderScope;state.searchLimit=60;}
+    const allResults = filteredResources();
+    const searching = Boolean(state.query || (state.kind === "cours" && state.courseQuery));
+    const list = searching ? allResults.slice(0, state.searchLimit) : allResults;
     const homeView = isHomeView();
     home.hidden = !homeView;
     const courseEmptyView = !homeView && state.kind === "cours" && !state.query && !state.courseQuery && !state.person && !state.theme && !state.dossier && !state.pinnedOnly && !state.author && !state.concept && !state.level && !state.difficulty && !state.duration && !state.usage;
@@ -2028,7 +2149,7 @@
     if (homeView) {
       renderHome();
       summaryKicker.textContent = "Vue d’ensemble";
-      summaryTitle.textContent = "Rayons";
+      summaryTitle.textContent = "Parcourir les rayons";
       count.innerHTML = `<strong>${scopedResources().length}</strong> ressources`;
       return;
     }
@@ -2041,7 +2162,7 @@
     summaryTitle.textContent = activeMindmap?.title || dossier?.title || summaryProfile?.displayName || state.person || state.author || state.theme || state.concept || (state.pinnedOnly ? "Favoris" : meta?.plural || "Ressources");
     count.innerHTML = activeMindmap
       ? `<strong>${mindmapNodeCount(activeMindmap.tree)}</strong> éléments`
-      : `<strong>${list.length}</strong> ressource${list.length > 1 ? "s" : ""}`;
+      : `<strong>${allResults.length}</strong> ressource${allResults.length > 1 ? "s" : ""}`;
 
     const shouldGroupByKind = state.kind === "all";
     const shouldDirectory = state.kind !== "all" && !state.query && !state.courseQuery && !state.person && !state.theme && !state.dossier && !state.pinnedOnly && !state.author && !state.concept && !state.level && !state.difficulty && !state.duration && !state.usage;
@@ -2059,6 +2180,12 @@
     else if (shouldDirectory && state.kind === "mindmap") listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderMindmapDirectory(list);
     else if (shouldDirectory) listShell.innerHTML = profileSuggestion + renderRayonProfileStrip(list) + renderDirectory(list, state.kind);
     else listShell.innerHTML = profileSuggestion + `<div class="media-resource-list is-standalone">${list.map((item) => resourceRow(item, { showKind: false })).join("")}</div>`;
+    if (searching && allResults.length > 60) {
+      listShell.insertAdjacentHTML("beforeend", `<div class="library-search-progress"><p role="status">${list.length} ressources affichées sur ${allResults.length}.</p>${list.length < allResults.length ? '<button type="button" data-search-more>Afficher 60 ressources supplémentaires</button>' : ""}</div>`);
+    }
+    const folders=[...listShell.querySelectorAll("details:not(.media-series-panel)")];
+    folders.forEach((folder,index)=>{const key=String(index);folder.dataset.resourceFolder=key;if(state.resourceFolderState.has(key))folder.open=state.resourceFolderState.get(key);else state.resourceFolderState.set(key,folder.open);});
+    if(folders.length && !activeProfile){const bar=document.createElement("div");bar.className="library-fold-actions";bar.innerHTML='<span>Ouvrez les groupes à votre rythme</span><button type="button" data-resource-fold="open">Tout déplier</button><button type="button" data-resource-fold="close">Tout replier</button>';listShell.prepend(bar);}
   }
 
   function updateUrl() {
@@ -2083,19 +2210,42 @@
   }
 
   function render() {
+    cancelPendingSearches();
+    const active = document.activeElement;
+    const focusAttribute = ["data-pin", "data-kind", "data-kind-focus"].find(key => active?.hasAttribute?.(key));
+    const focusValue = focusAttribute ? active.getAttribute(focusAttribute) : "";
     if (state.kind !== "mindmap" || !state.mindmapId) state.mindmapFullscreen = false;
     document.body.classList.toggle("has-mindmap-pseudo-fullscreen", Boolean(state.mindmapFullscreen));
     renderTypes();
     renderAdvancedFilters();
     renderActiveFilters();
     renderResults();
-    search.value = state.query;
+    if (search.value.trim() !== state.query) search.value = state.query;
     clearSearch.hidden = !state.query;
     if (courseSearchShell) courseSearchShell.hidden = state.kind !== "cours";
     if (courseSearch && document.activeElement !== courseSearch) courseSearch.value = state.courseQuery;
     if (courseSearchClear) courseSearchClear.hidden = !state.courseQuery;
     pinnedToggle.setAttribute("aria-pressed", String(state.pinnedOnly));
-    pinnedToggle.querySelector("span").textContent = state.pinnedOnly ? "★" : "☆";
+    window.PhilosophalLibraryIcons.paint();
+    document.body.dataset.libraryView = isHomeView() ? "home" : "resources";
+    document.querySelectorAll("[data-library-nav]").forEach(button => {
+      const selected = button.dataset.libraryMobile === "library" || button.dataset.libraryNav === (state.pinnedOnly ? "favorites" : "library");
+      button.classList.toggle("is-active", selected);
+      if (selected) button.setAttribute("aria-current", "page"); else button.removeAttribute("aria-current");
+      if (button.hasAttribute("data-toggle-pinned")) button.setAttribute("aria-pressed", String(state.pinnedOnly));
+    });
+    if (focusAttribute) {
+      const replacement = document.querySelector(`[${focusAttribute}="${CSS.escape(focusValue)}"]`);
+      (replacement || (focusAttribute === "data-pin" ? document.querySelector("#library-favorites-title") || pinnedToggle : null))?.focus({preventScroll: true});
+    }
+    updateUrl();
+  }
+
+  function renderSearchResults() {
+    renderActiveFilters();
+    renderResults();
+    document.body.dataset.libraryView = isHomeView() ? "home" : "resources";
+    window.PhilosophalLibraryIcons.paint();
     updateUrl();
   }
 
@@ -2130,7 +2280,7 @@
     state.query = params.get("q") || "";
     const type = params.get("type");
     const requestedKind = FILTERS.some((item) => item.key === type) ? type : "all";
-    state.kind = requestedKind !== "all" && PRIVATE_KINDS.has(requestedKind) ? "all" : requestedKind;
+    state.kind = availableFilters().some(meta => meta.key === requestedKind) ? requestedKind : "all";
     state.person = params.get("personne") || "";
     state.author = params.get("auteur") || "";
     state.theme = params.get("theme") || "";
@@ -2265,6 +2415,8 @@
       button.classList.toggle("is-active", button.dataset.explorerView === state.explorerView);
     });
     const query = normalize(state.explorerQuery);
+    const organise=document.querySelector("[data-explorer-organise]");if(organise)organise.hidden=state.explorerView!=="people";
+    document.querySelectorAll("[data-author-sort]").forEach(select=>select.value=state.authorSort);
     explorerSearch.placeholder = state.explorerView === "map" ? "Rechercher un concept…" : "Filtrer…";
 
     if (state.explorerView === "map") {
@@ -2284,11 +2436,11 @@
 
     const key = state.explorerView;
     if (key === "people") {
-      const curated = peopleProfiles.map((profile) => ({ profile, total: profileResourceCount(profile) }))
-        .filter(({ profile, total }) => total && (!query || normalize([profile.name, profile.displayName, profile.descriptor, ...(profile.aliases || [])].join(" ")).includes(query)));
-      const curatedNames = new Set(curated.map(({ profile }) => profile.name));
-      const others = entityCounts("people").filter(([name]) => !curatedNames.has(canonicalPerson(name)) && (!query || normalize(name).includes(query))).slice(0, 180);
-      explorerList.innerHTML = (curated.length || others.length) ? `${curated.length ? `<div class="media-explore-profile-group"><div class="media-explore-profile-label">Fiches structurées</div>${curated.map(({ profile, total }) => `<button class="media-explore-item media-explore-profile" type="button" data-person="${esc(profile.name)}"><span><strong>${esc(profile.displayName || profile.name)}</strong><small>${esc(profile.descriptor || "")}</small></span><b>${total}</b></button>`).join("")}</div>` : ""}${others.length ? `<div class="media-explore-profile-group"><div class="media-explore-profile-label">Autres personnes</div>${others.map(([name,total]) => `<button class="media-explore-item" type="button" data-person="${esc(name)}"><strong>${esc(name)}</strong><span>${total} ressource${total > 1 ? "s" : ""}</span></button>`).join("")}</div>` : ""}` : '<div class="media-explore-empty">Aucun résultat.</div>';
+      const curated=visibleProfiles(state.explorerQuery);
+      const curatedNames=new Set(peopleProfiles.map(profile=>profile.name));
+      const others=entityCounts("people").filter(([name])=>!curatedNames.has(canonicalPerson(name))&&(!query||normalize(name).includes(query)));
+      others.sort(state.authorSort==="count"?(a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],"fr"):(a,b)=>a[0].localeCompare(b[0],"fr"));
+      explorerList.innerHTML=(curated.length||others.length)?`${curated.length?authorDirectory(curated,state.explorerQuery,"explorer"):""}${others.length?`<details class="library-author-group" data-author-folder="explorer:others" ${query||state.authorFolders.has("explorer:others")?"open":""}><summary><strong>Autres personnes</strong><small>${others.length}</small><span aria-hidden="true">⌄</span></summary>${authorCards(others.map(([name,total])=>({profile:{name,displayName:name,descriptor:"Ressources associées"},total})))}</details>`:""}`:'<p class="library-author-empty" role="status">Aucune personne trouvée.</p>';
       return;
     }
     const list = entityCounts(key).filter(([name]) => !query || normalize(name).includes(query)).slice(0, 180);
@@ -2307,6 +2459,7 @@
   }
 
   function closeExplorer() {
+    cancelSearchJob("explorer");
     explorer.hidden = true;
     if (player.hidden && (!detail || detail.hidden)) document.body.classList.remove("media-modal-open");
   }
@@ -2389,28 +2542,23 @@
 
   privateGateForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(privatePassword?.value || "", !!document.querySelector("[data-media-remember]")?.checked);
-    if (!role) {
-      // Compatibilité si le module d'accès ancien est encore en cache.
-      const ownerValid = await window.FV_PRIVATE_ACCESS?.unlock?.(privatePassword?.value || "");
-      if (!ownerValid) {
-        if (privateError) privateError.hidden = false;
-        privatePassword?.select();
-        return;
-      }
-      closePrivateGate();
-      setAccessMode("private");
-      return;
-    }
-    closePrivateGate();
-    window.location.reload();
+    const password=privatePassword?.value||"";
+    if(password.trim().toLocaleLowerCase("fr-FR")==="didier"){window.location.assign('https://app.notion.com/p/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link');return;}
+    const submit=privateGateForm.querySelector('[type="submit"]');submit.disabled=true;if(privateError)privateError.hidden=true;
+    try {
+      const api=window.FV_PRIVATE_ACCESS;
+      const role=api?.unlockRole?await api.unlockRole(password,!!document.querySelector("[data-media-remember]")?.checked):await api?.unlock?.(password)?"private":"";
+      if(!role){if(privateError){privateError.textContent="Mot de passe incorrect.";privateError.hidden=false;}privatePassword?.select();return;}
+      closePrivateGate();window.location.reload();
+    }catch(error){if(privateError){privateError.textContent=error?.message||"Impossible de vérifier l’accès. Réessayez.";privateError.hidden=false;}}
+    finally{submit.disabled=false;}
   });
 
-  search.addEventListener("input", () => {
+  bindSearchInput(search, "resources", () => {
     state.query = search.value.trim();
     state.expandedSections.clear();
-    render();
-  });
+    clearSearch.hidden = !search.value;
+  }, renderSearchResults);
 
   clearSearch.addEventListener("click", () => {
     state.query = "";
@@ -2420,12 +2568,14 @@
     search.focus();
   });
 
-  courseSearch?.addEventListener("input", async () => {
+  bindSearchInput(courseSearch, "courses", () => {
     state.courseQuery = courseSearch.value.trim();
     courseSearchClear.hidden = !state.courseQuery;
+  }, async (isCurrent) => {
     if (state.courseQuery && !courseContentIndex) {
       renderResults();
       await ensureCourseContentIndex();
+      if (!isCurrent() || state.kind !== "cours") return;
       renderResults();
       return;
     }
@@ -2433,6 +2583,7 @@
   });
 
   courseSearchClear?.addEventListener("click", () => {
+    cancelSearchJob("courses");
     state.courseQuery = "";
     courseSearch.value = "";
     courseSearchClear.hidden = true;
@@ -2478,13 +2629,7 @@
     render();
   });
 
-  pinnedToggle.addEventListener("click", () => {
-    state.pinnedOnly = !state.pinnedOnly;
-    state.expandedSections.clear();
-    render();
-  });
 
-  $("[data-open-explorer]").addEventListener("click", openExplorer);
   resetButton.addEventListener("click", resetFilters);
   $("[data-empty-reset]")?.addEventListener("click", resetFilters);
 
@@ -2497,14 +2642,70 @@
     renderExplorer();
   });
 
-  explorerSearch.addEventListener("input", () => {
-    state.explorerQuery = explorerSearch.value;
-    renderExplorer();
+  document.addEventListener("input", event=>{
+    if(event.target.matches("[data-author-search]")){
+      state.authorQuery=event.target.value;
+      if (!event.isComposing && !composingSearches.has("authors")) scheduleSearch("authors", refreshAuthorDirectory);
+    }
+  });
+  document.addEventListener("compositionstart", (event) => {
+    if (!event.target.matches("[data-author-search]")) return;
+    composingSearches.add("authors"); cancelSearchJob("authors");
+  });
+  document.addEventListener("compositionend", (event) => {
+    if (!event.target.matches("[data-author-search]")) return;
+    composingSearches.delete("authors"); state.authorQuery=event.target.value;
+    scheduleSearch("authors", refreshAuthorDirectory);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && event.target.matches("[data-author-search]") && !event.isComposing && !composingSearches.has("authors")) {
+      event.preventDefault(); flushSearch("authors");
+    }
+  });
+  document.addEventListener("change",event=>{
+    if(!event.target.matches("[data-author-sort]"))return;
+    state.authorSort=event.target.value;try{localStorage.setItem("fv-library-author-sort",state.authorSort);}catch(_){}
+    refreshAuthorDirectory();if(!explorer.hidden)renderExplorer();
+  });
+  document.addEventListener("toggle",event=>{
+    const folder=event.target;
+    if(folder.matches?.("[data-author-folder]")&&folder.isConnected){folder.open?state.authorFolders.add(folder.dataset.authorFolder):state.authorFolders.delete(folder.dataset.authorFolder);}
+    if(folder.matches?.("[data-resource-folder]")&&listShell.contains(folder)){state.resourceFolderState.set(folder.dataset.resourceFolder,folder.open);}
+  },true);
+  document.addEventListener("click",event=>{
+    const author=event.target.closest("[data-author-fold]");
+    if(author){const scope=author.closest(".media-profile-hub,.media-side-panel");scope?.querySelectorAll("[data-author-folder]").forEach(folder=>{folder.open=author.dataset.authorFold==="open";folder.open?state.authorFolders.add(folder.dataset.authorFolder):state.authorFolders.delete(folder.dataset.authorFolder);});}
+    const resource=event.target.closest("[data-resource-fold]");
+    if(resource)listShell.querySelectorAll("[data-resource-folder]").forEach(folder=>{folder.open=resource.dataset.resourceFold==="open";state.resourceFolderState.set(folder.dataset.resourceFolder,folder.open);});
   });
 
+  bindSearchInput(explorerSearch, "explorer", () => {
+    state.explorerQuery = explorerSearch.value;
+  }, renderExplorer);
+
   document.addEventListener("click", (event) => {
+    const more = event.target.closest("[data-search-more]");
+    if (more) {
+      cancelPendingSearches();
+      const visibleIds = new Set([...listShell.querySelectorAll("article[data-open-resource]")].map((row) => row.dataset.openResource));
+      state.searchLimit += 60;
+      renderResults();
+      const next = [...listShell.querySelectorAll("article[data-open-resource]")].find((row) => !visibleIds.has(row.dataset.openResource));
+      next?.querySelector(".media-row-title")?.focus({ preventScroll: true });
+      window.PhilosophalLibraryIcons.paint();
+      return;
+    }
+    const navigation = event.target.closest("[data-library-nav]");
+    if (navigation) {
+      event.preventDefault();
+      window.PhilosophalLibraryUI.closeDialogs();
+      resetAccessFilters();
+      state.pinnedOnly = navigation.dataset.libraryNav === "favorites";
+      render();
+      window.scrollTo({top: 0, behavior: "instant"});
+      return;
+    }
     if (event.target.closest("[data-private-gate-close]")) { closePrivateGate(); return; }
-    if (usefulLinks?.open && !usefulLinks.contains(event.target)) usefulLinks.removeAttribute("open");
     if (event.target.closest("[data-close-explorer]")) { closeExplorer(); return; }
     if (event.target.closest("[data-close-player]")) { closePlayer(); return; }
     if (event.target.closest("[data-close-resource-detail]")) { closeResourceDetail(); return; }
@@ -2519,6 +2720,7 @@
       const key = `series:${seriesToggle.dataset.toggleSeries}`;
       state.expandedSections.has(key) ? state.expandedSections.delete(key) : state.expandedSections.add(key);
       renderResults();
+      document.querySelector(`[data-toggle-series="${CSS.escape(seriesToggle.dataset.toggleSeries)}"]`)?.focus({preventScroll:true});
       return;
     }
 
@@ -2966,6 +3168,7 @@
       if (!player.hidden) { closePlayer(); return; }
       if (!explorer.hidden) { closeExplorer(); return; }
       if (document.activeElement === courseSearch && state.courseQuery) {
+        cancelSearchJob("courses");
         state.courseQuery = "";
         courseSearch.value = "";
         if (courseSearchClear) courseSearchClear.hidden = true;
@@ -3002,9 +3205,13 @@
     const active = wantsPrivate ? state.access !== "public" : state.access === "public";
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
-    if (wantsPrivate) button.textContent = state.access === "student" ? "Élève" : "Privé";
+    if (wantsPrivate) button.textContent = window.FV_PRIVATE_ACCESS?.role?.() === "private" ? "Prof" : "Élève";
   });
   document.body.dataset.mediaAccess = state.access;
   initFromUrl();
   render();
-})();
+  window.FV_MEDIATHEQUE_BOOT?.finish();
+})().catch((error) => {
+  console.error("[Médiathèque] Chargement impossible :", error);
+  window.FV_MEDIATHEQUE_BOOT?.fail();
+});

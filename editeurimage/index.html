@@ -13,7 +13,7 @@
   <meta name="description" content="Éditeur d’image léger et privé : recadrage, annotations, retouches et export directement dans le navigateur.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./image-editor.css?v=20261003-image2">
+  <link rel="stylesheet" href="./image-editor.css?v=20261007-creation1">
 <link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"></head>
 <body>
   <header class="image-topbar">
@@ -29,13 +29,13 @@
       <button type="button" data-open-image title="Ouvrir une image (Ctrl+O)">Ouvrir</button>
       <button type="button" class="image-top-secondary" data-paste-image title="Coller une image depuis le presse-papiers">Coller</button>
       <span class="image-top-separator" aria-hidden="true"></span>
-      <button type="button" class="image-icon-button" data-undo aria-label="Annuler" title="Annuler (Ctrl+Z)" disabled>↶</button>
-      <button type="button" class="image-icon-button" data-redo aria-label="Rétablir" title="Rétablir (Ctrl+Y)" disabled>↷</button>
+      <button type="button" class="image-icon-button" data-undo aria-label="Annuler" title="Annuler (Ctrl+Z)" disabled><span data-icon="undo"></span></button>
+      <button type="button" class="image-icon-button" data-redo aria-label="Rétablir" title="Rétablir (Ctrl+Y)" disabled><span data-icon="redo"></span></button>
       <span class="image-top-separator" aria-hidden="true"></span>
       <button type="button" class="image-top-secondary" data-a4-image title="Placer l’image sur une page A4">A4</button>
       <button type="button" class="image-top-secondary" data-resize-image>Redimensionner</button>
-      <button type="button" class="image-top-secondary" data-rotate-image title="Rotation de 90° vers la droite">↻ 90°</button>
-      <button type="button" class="image-icon-button image-top-secondary" data-flip-image aria-label="Retourner horizontalement" title="Retourner horizontalement">⇋</button>
+      <button type="button" class="image-top-secondary" data-rotate-image title="Rotation de 90° vers la droite"><span data-icon="rotate"></span>90°</button>
+      <button type="button" class="image-icon-button image-top-secondary" data-flip-image aria-label="Retourner horizontalement" title="Retourner horizontalement"><span data-icon="flip"></span></button>
       <button type="button" class="image-top-secondary" data-fullscreen aria-pressed="false">Plein écran</button>
       <button type="button" class="image-export-button" data-export-image>Exporter</button>
     </nav>
@@ -43,33 +43,35 @@
 
   <div class="image-document-tabs" data-document-tabs aria-label="Images ouvertes">
     <div class="image-document-tab-list" data-document-tab-list></div>
-    <button type="button" class="image-document-tab-add" data-tab-add title="Ouvrir d’autres images">＋</button>
+    <button type="button" class="image-document-tab-add" data-tab-add title="Ouvrir d’autres images">+</button>
   </div>
 
   <main class="image-app">
     <aside class="image-toolrail" aria-label="Outils d’édition">
-      <button type="button" class="is-active" data-tool="select" aria-pressed="true" title="Sélectionner et déplacer (V)"><span>↖</span><small>Sélection</small></button>
-      <button type="button" data-tool="crop" aria-pressed="false" title="Recadrer (C)"><span>⌗</span><small>Recadrer</small></button>
-      <button type="button" data-tool="text" aria-pressed="false" title="Ajouter du texte (T)"><span>T</span><small>Texte</small></button>
-      <button type="button" data-tool="brush" aria-pressed="false" title="Pinceau (B)"><span>✎</span><small>Pinceau</small></button>
-      <button type="button" data-tool="highlight" aria-pressed="false" title="Surligneur (M)"><span>▰</span><small>Surligner</small></button>
-      <button type="button" data-tool="eraser" aria-pressed="false" title="Gomme (X)"><span>⌫</span><small>Gomme</small></button>
-      <button type="button" data-tool="arrow" aria-pressed="false" title="Flèche (A)"><span>➜</span><small>Flèche</small></button>
-      <button type="button" data-tool="line" aria-pressed="false" title="Ligne (L)"><span>╱</span><small>Ligne</small></button>
-      <button type="button" data-tool="rect" aria-pressed="false" title="Rectangle (R)"><span>□</span><small>Rectangle</small></button>
-      <button type="button" data-tool="ellipse" aria-pressed="false" title="Ellipse (E)"><span>○</span><small>Ellipse</small></button>
-      <button type="button" data-tool="number" aria-pressed="false" title="Repère numéroté (N)"><span>1</span><small>Numéro</small></button>
-      <button type="button" data-tool="blur" aria-pressed="false" title="Flouter une zone (U)"><span>◫</span><small>Flou</small></button>
+      <button type="button" class="is-active" data-tool="select" aria-pressed="true" title="Sélectionner et déplacer (V)"><span data-icon="select"></span><small>Sélection</small></button>
+      <button type="button" data-tool="crop" aria-pressed="false" title="Recadrer (C)"><span data-icon="crop"></span><small>Recadrer</small></button>
+      <button type="button" data-tool="text" aria-pressed="false" title="Ajouter du texte (T)"><span data-icon="text"></span><small>Texte</small></button>
+      <button type="button" data-tool="brush" aria-pressed="false" title="Pinceau (B)"><span data-icon="brush"></span><small>Pinceau</small></button>
+      <button type="button" data-tool="highlight" aria-pressed="false" title="Surligneur (M)"><span data-icon="highlight"></span><small>Surligner</small></button>
+      <button type="button" data-tool="eraser" aria-pressed="false" title="Gomme (X)"><span data-icon="eraser"></span><small>Gomme</small></button>
+      <button type="button" data-tool="arrow" aria-pressed="false" title="Flèche (A)"><span data-icon="arrow"></span><small>Flèche</small></button>
+      <button type="button" data-tool="line" aria-pressed="false" title="Ligne (L)"><span data-icon="line"></span><small>Ligne</small></button>
+      <button type="button" data-tool="rect" aria-pressed="false" title="Rectangle (R)"><span data-icon="rect"></span><small>Rectangle</small></button>
+      <button type="button" data-tool="ellipse" aria-pressed="false" title="Ellipse (E)"><span data-icon="ellipse"></span><small>Ellipse</small></button>
+      <button type="button" data-tool="number" aria-pressed="false" title="Repère numéroté (N)"><span data-icon="number"></span><small>Numéro</small></button>
+      <button type="button" data-tool="blur" aria-pressed="false" title="Flouter une zone (U)"><span data-icon="blur"></span><small>Flou</small></button>
+<button type="button" data-tool="marquee" aria-pressed="false" title="Zone"><span data-icon="marquee"></span><small>Zone</small></button><button type="button" data-tool="eyedropper" aria-pressed="false" title="Pipette"><span data-icon="eyedropper"></span><small>Pipette</small></button><button type="button" data-tool="hand" aria-pressed="false" title="Main"><span data-icon="hand"></span><small>Main</small></button>
     </aside>
 
     <section class="image-stage-shell" aria-label="Zone de travail">
+<nav class="image-quickbar" aria-label="Actions rapides"><button type="button" data-exact-format class="is-primary"><span data-icon="crop"></span>Formats & cadrage</button><button type="button" data-import-layer class=""><span data-icon="image"></span>Ajouter une image</button><button type="button" data-copy-pixels class=""><span data-icon="duplicate"></span>Copier</button><button type="button" data-paste-layer class=""><span data-icon="duplicate"></span>Coller la sélection</button><button type="button" data-duplicate-layer class=""><span data-icon="duplicate"></span>Dupliquer</button><button type="button" data-canvas-size class=""><span data-icon="resize"></span>Toile</button></nav>
       <div class="image-empty" data-empty-state>
         <div class="image-empty-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64"><rect x="7" y="10" width="50" height="44" rx="8"/><circle cx="23" cy="26" r="5"/><path d="m12 47 13-13 9 9 8-8 10 12"/></svg>
         </div>
         <h1>Ouvrez une image</h1>
-        <p>JPG, PNG ou WebP. Tout reste dans votre navigateur : aucune image n’est envoyée sur un serveur.</p>
-        <div class="image-empty-actions">
+        <p>JPG, PNG, WebP, GIF, BMP ou SVG. Les images animées sont importées comme images fixes. Tout reste dans votre navigateur : aucune image n’est envoyée sur un serveur.</p>
+        <div class="image-empty-actions"><button type="button" data-new-image>Créer un format prédéfini</button>
           <button type="button" class="is-primary" data-open-image>Choisir une image</button>
           <button type="button" data-paste-image>Coller depuis le presse-papiers</button>
         </div>
@@ -99,7 +101,7 @@
           <button type="button" data-zoom-out aria-label="Réduire le zoom">−</button>
           <button type="button" data-zoom-fit title="Ajuster à l’écran">Ajuster</button>
           <button type="button" data-zoom-value title="Revenir à 100 %">100 %</button>
-          <button type="button" data-zoom-in aria-label="Augmenter le zoom">＋</button>
+          <button type="button" data-zoom-in aria-label="Augmenter le zoom">+</button>
         </div>
       </footer>
     </section>
@@ -120,17 +122,19 @@
         </section>
 
         <section class="image-inspector-panel" data-inspector-panel="adjust" hidden>
-          <header class="image-panel-header"><span>Image</span><h2>Ajustements</h2><p>Les réglages modifient l’image de fond sans altérer vos annotations.</p></header>
+          <header class="image-panel-header"><span>Image</span><h2>Ajustements</h2><p>Les réglages modifient les images sans altérer le texte et les formes.</p></header>
           <div class="image-adjustments">
             <label><span>Luminosité <output data-adjust-output="brightness">100 %</output></span><input type="range" min="0" max="200" value="100" step="1" data-adjust="brightness"></label>
             <label><span>Contraste <output data-adjust-output="contrast">100 %</output></span><input type="range" min="0" max="200" value="100" step="1" data-adjust="contrast"></label>
             <label><span>Saturation <output data-adjust-output="saturation">100 %</output></span><input type="range" min="0" max="200" value="100" step="1" data-adjust="saturation"></label>
             <label><span>Noir &amp; blanc <output data-adjust-output="grayscale">0 %</output></span><input type="range" min="0" max="100" value="0" step="1" data-adjust="grayscale"></label>
+            <label><span>Sépia <output data-adjust-output="sepia">0 %</output></span><input type="range" min="0" max="100" value="0" step="1" data-adjust="sepia"></label>
+            <label><span>Teinte <output data-adjust-output="hue">0°</output></span><input type="range" min="-180" max="180" value="0" step="1" data-adjust="hue"></label>
           </div>
-          <div class="image-preset-grid">
+          <label class="image-check-row"><input type="checkbox" data-smoothing checked><span><strong>Lissage de haute qualité</strong><small>Désactivez pour le pixel art.</small></span></label><div class="image-preset-grid">
             <button type="button" data-preset="clean">Net</button>
             <button type="button" data-preset="soft">Doux</button>
-            <button type="button" data-preset="bw">N&amp;B</button>
+            <button type="button" data-preset="bw">N&amp;B</button><button type="button" data-preset="warm">Vintage</button><button type="button" data-preset="cool">Frais</button>
             <button type="button" data-preset="reset">Original</button>
           </div>
           <button type="button" class="image-secondary-wide" data-reset-adjustments>Réinitialiser les réglages</button>
@@ -145,10 +149,10 @@
   </main>
 
   <nav class="image-mobile-tools" aria-label="Outils sur mobile">
-    <button type="button" class="is-active" data-mobile-tool="select"><span>↖</span><small>Sélection</small></button>
-    <button type="button" data-mobile-tool="crop"><span>⌗</span><small>Recadrer</small></button>
-    <button type="button" data-mobile-tool="text"><span>T</span><small>Texte</small></button>
-    <button type="button" data-mobile-tool="brush"><span>✎</span><small>Dessiner</small></button>
+    <button type="button" class="is-active" data-mobile-tool="select"><span data-icon="select"></span><small>Sélection</small></button>
+    <button type="button" data-mobile-tool="crop"><span data-icon="crop"></span><small>Recadrer</small></button>
+    <button type="button" data-mobile-tool="text"><span data-icon="text"></span><small>Texte</small></button>
+    <button type="button" data-mobile-tool="brush"><span data-icon="brush"></span><small>Dessiner</small></button>
     <button type="button" data-mobile-more><span>•••</span><small>Plus</small></button>
     <button type="button" class="image-mobile-export" data-export-image><span>⇩</span><small>Exporter</small></button>
   </nav>
@@ -157,73 +161,69 @@
     <div class="image-mobile-sheet-card">
       <header><strong>Outils</strong><button type="button" data-close-mobile-sheet aria-label="Fermer">×</button></header>
       <div class="image-mobile-tool-grid">
-        <button type="button" data-tool="highlight"><span>▰</span>Surligner</button>
-        <button type="button" data-tool="eraser"><span>⌫</span>Gomme</button>
-        <button type="button" data-tool="arrow"><span>➜</span>Flèche</button>
-        <button type="button" data-tool="line"><span>╱</span>Ligne</button>
-        <button type="button" data-tool="rect"><span>□</span>Rectangle</button>
-        <button type="button" data-tool="ellipse"><span>○</span>Ellipse</button>
-        <button type="button" data-tool="number"><span>1</span>Numéro</button>
-        <button type="button" data-tool="blur"><span>◫</span>Flou</button>
+        <button type="button" data-tool="highlight"><span data-icon="highlight"></span>Surligner</button>
+        <button type="button" data-tool="eraser"><span data-icon="eraser"></span>Gomme</button>
+        <button type="button" data-tool="arrow"><span data-icon="arrow"></span>Flèche</button>
+        <button type="button" data-tool="line"><span data-icon="line"></span>Ligne</button>
+        <button type="button" data-tool="rect"><span data-icon="rect"></span>Rectangle</button>
+        <button type="button" data-tool="ellipse"><span data-icon="ellipse"></span>Ellipse</button>
+        <button type="button" data-tool="number"><span data-icon="number"></span>Numéro</button>
+        <button type="button" data-tool="blur"><span data-icon="blur"></span>Flou</button>
         <button type="button" data-a4-image><span>A4</span>Format A4</button>
       </div>
+<div class="image-mobile-sheet-grid"><button type="button" data-tool="marquee"><span data-icon="marquee"></span>Zone de pixels</button><button type="button" data-tool="eyedropper"><span data-icon="eyedropper"></span>Pipette</button><button type="button" data-tool="hand"><span data-icon="hand"></span>Main</button></div>
       <button type="button" class="image-mobile-sheet-action" data-mobile-properties>Réglages et calques</button>
     </div>
   </div>
 
-  <dialog class="image-dialog" data-resize-dialog>
+  <dialog aria-labelledby="editeurimage-resize-dialog-title" class="image-dialog" data-resize-dialog>
     <form method="dialog" class="image-dialog-card" data-resize-form>
-      <header><div><span>Document</span><h2>Redimensionner</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <header><div><span>Document</span><h2 id="editeurimage-resize-dialog-title">Redimensionner</h2></div><button value="cancel" formnovalidate aria-label="Fermer">×</button></header>
       <p>Les annotations et leurs épaisseurs sont redimensionnées proportionnellement.</p>
       <div class="image-size-grid">
         <label>Largeur <span>px</span><input type="number" min="1" max="12000" step="1" data-resize-width></label>
         <label>Hauteur <span>px</span><input type="number" min="1" max="12000" step="1" data-resize-height></label>
       </div>
       <label class="image-check-row"><input type="checkbox" checked data-resize-lock><span><strong>Conserver les proportions</strong><small>Évite de déformer l’image.</small></span></label>
-      <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Redimensionner</button></footer>
+      <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Redimensionner</button></footer>
     </form>
   </dialog>
 
-  <dialog class="image-dialog" data-export-dialog>
+  <dialog aria-labelledby="editeurimage-export-dialog-title" class="image-dialog" data-export-dialog>
     <form method="dialog" class="image-dialog-card image-export-dialog-card" data-export-form>
-      <header><div><span>Export</span><h2>Enregistrer l’image</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <header><div><span>Export</span><h2 id="editeurimage-export-dialog-title">Enregistrer l’image</h2></div><button value="cancel" formnovalidate aria-label="Fermer">×</button></header>
       <div class="image-export-grid">
         <label>Nom du fichier<input type="text" data-export-name value="image-philosophal" autocomplete="off"></label>
-        <label>Format<select data-export-format><option value="image/webp">WebP</option><option value="image/png">PNG</option><option value="image/jpeg">JPG</option></select></label>
+        <label>Format<select data-export-format><option value="image/webp">WebP</option><option value="image/png" selected>PNG</option><option value="image/jpeg">JPG</option></select></label>
         <label>Qualité <span data-export-quality-label>82 %</span><input type="range" min="40" max="100" value="82" step="1" data-export-quality></label>
         <label>Largeur maximale <span>px</span><input type="number" min="0" max="12000" value="0" step="10" data-export-maxwidth placeholder="0 = taille originale"></label>
       </div>
+      <div class="image-export-presets" aria-label="Préréglages d’export"><button type="button" data-export-preset="transparent">PNG · transparence</button><button type="button" data-export-preset="photo">JPG · photo</button><button type="button" data-export-preset="web">WebP · web</button></div>
       <div class="image-export-preset">
         <button type="button" data-export-web>Optimiser pour le web</button>
         <span>WebP · 82 % · max. 1600 px</span>
       </div>
       <div class="image-export-summary"><span>Sortie</span><strong data-export-summary>—</strong><small data-export-note>Le traitement reste local.</small></div>
-      <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Télécharger</button></footer>
+      <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Télécharger</button></footer>
     </form>
   </dialog>
 
-  <dialog class="image-dialog" data-new-dialog>
+  <dialog aria-labelledby="editeurimage-new-dialog-title" class="image-dialog" data-new-dialog>
     <form method="dialog" class="image-dialog-card" data-new-form>
-      <header><div><span>Nouveau</span><h2>Créer une toile</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <header><div><span>Nouveau</span><h2 id="editeurimage-new-dialog-title">Créer une toile</h2></div><button value="cancel" formnovalidate aria-label="Fermer">×</button></header>
       <div class="image-size-grid">
-        <label>Largeur <span>px</span><input type="number" min="32" max="12000" value="1200" step="1" data-new-width></label>
-        <label>Hauteur <span>px</span><input type="number" min="32" max="12000" value="800" step="1" data-new-height></label>
+        <label>Largeur <span>px</span><input type="number" min="1" max="12000" value="1200" step="1" data-new-width></label>
+        <label>Hauteur <span>px</span><input type="number" min="1" max="12000" value="800" step="1" data-new-height></label>
       </div>
       <label class="image-field">Fond<select data-new-background><option value="white">Blanc</option><option value="transparent">Transparent</option></select></label>
-      <div class="image-preset-grid image-new-presets">
-        <button type="button" data-new-preset="1920x1080">1920 × 1080</button>
-        <button type="button" data-new-preset="1080x1080">1080 × 1080</button>
-        <button type="button" data-new-preset="1080x1350">1080 × 1350</button>
-        <button type="button" data-new-preset="1200x630">1200 × 630</button>
-        <button type="button" data-new-preset="1654x2339">A4 · 200 dpi</button>
-      </div>
-      <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Créer</button></footer>
+      <div data-format-catalogue="new"></div>
+      <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Créer</button></footer>
     </form>
   </dialog>
 
-  <dialog class="image-dialog" data-a4-dialog>
+  <dialog aria-labelledby="editeurimage-a-title" class="image-dialog" data-a4-dialog>
     <form method="dialog" class="image-dialog-card image-a4-dialog-card" data-a4-form>
-      <header><div><span>Mise en page</span><h2>Transformer en format A4</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <header><div><span>Mise en page</span><h2 id="editeurimage-a-title">Transformer en format A4</h2></div><button value="cancel" formnovalidate aria-label="Fermer">×</button></header>
       <p>Choisissez la page puis ajustez l’image avant d’appliquer. « Contenir » garde toute l’image ; « Couvrir » remplit la feuille et peut couper les bords.</p>
       <div class="image-a4-layout">
         <div class="image-a4-preview-wrap"><canvas data-a4-preview width="260" height="360"></canvas></div>
@@ -238,13 +238,38 @@
         </div>
       </div>
       <div class="image-a4-note" data-a4-summary>—</div>
-      <footer><button value="cancel">Annuler</button><button type="submit" class="is-primary">Appliquer le format A4</button></footer>
+      <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Appliquer le format A4</button></footer>
     </form>
   </dialog>
 
-  <input type="file" accept="image/png,image/jpeg,image/webp" data-file-input multiple hidden>
+    <dialog class="image-dialog image-format-dialog" data-format-dialog aria-labelledby="format-title">
+    <form method="dialog" data-format-form>
+      <header><h2 id="format-title">Créer un format précis</h2><p>Choisissez la taille, puis déplacez l’image dans l’aperçu pour cadrer le sujet.</p></header>
+      <div data-format-catalogue="crop"></div>
+      <div class="image-form-grid"><label class="image-field"><span>Largeur (px)</span><input type="number" min="1" max="12000" value="96" data-format-width required></label><label class="image-field"><span>Hauteur (px)</span><input type="number" min="1" max="12000" value="96" data-format-height required></label></div>
+      <div class="image-form-grid"><label class="image-field"><span>Placement</span><select data-format-mode><option value="cover">Remplir et recadrer</option><option value="contain">Tout conserver, avec marges</option></select></label><label class="image-field"><span>Fond</span><select data-format-background><option value="transparent">Transparent</option><option value="white">Blanc</option></select></label></div>
+      <div class="image-format-preview-wrap"><canvas data-format-preview aria-label="Aperçu du cadrage, déplaçable à la souris ou au doigt"></canvas></div>
+      <label class="image-field"><span>Zoom de l’image <output data-format-scale-output>100 %</output></span><input type="range" min="25" max="400" value="100" data-format-scale></label>
+      <div class="image-form-grid"><label class="image-field"><span>Position horizontale</span><input type="range" min="-150" max="150" value="0" step=".1" data-format-x></label><label class="image-field"><span>Position verticale</span><input type="range" min="-150" max="150" value="0" step=".1" data-format-y></label></div>
+      <button type="button" class="image-secondary-wide" data-format-center>Centrer l’image</button>
+      <p class="image-format-summary" data-format-summary role="status"></p>
+      <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Appliquer ce format</button></footer>
+    </form>
+  </dialog>
+  <dialog class="image-dialog" data-canvas-dialog aria-labelledby="canvas-title"><form method="dialog" data-canvas-form>
+    <header><h2 id="canvas-title">Taille de la toile</h2><p>Changez le cadre sans étirer l’image. Les calques restent modifiables.</p></header>
+    <div class="image-form-grid"><label class="image-field"><span>Largeur (px)</span><input type="number" min="1" max="12000" data-canvas-width required></label><label class="image-field"><span>Hauteur (px)</span><input type="number" min="1" max="12000" data-canvas-height required></label></div>
+    <label class="image-field"><span>Position des calques</span><select data-canvas-anchor><option value="center">Centrer dans la nouvelle toile</option><option value="origin">Conserver le coin supérieur gauche</option></select></label>
+    <footer><button value="cancel" formnovalidate>Annuler</button><button type="submit" class="is-primary">Changer la toile</button></footer>
+  </form></dialog>
+  <input type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/svg+xml" data-layer-file multiple hidden>
+
+  <input type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/svg+xml" data-file-input multiple hidden>
   <div class="image-toast" data-toast role="status" aria-live="polite" hidden></div>
 
-  <script src="./image-editor.js?v=20261003-image2"></script>
+  <script src="/js/tool-icons.js?v=20261007-creation1"></script>
+  <script src="./formats.js?v=20261007-creation1"></script>
+  <script src="./image-editor.js?v=20261007-creation1"></script>
 <script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>
+

@@ -532,3 +532,36 @@ body{
 @media(max-width:700px){.pdf-selection-bar{top:60px;display:block}.pdf-selection-bar>div{justify-content:flex-start;margin-top:6px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}.pdf-selection-bar button{flex:0 0 auto}.pdf-scan-compare{grid-template-columns:1fr}.pdf-outline-list article{grid-template-columns:28px 1fr 70px}.pdf-outline-list article select,.pdf-outline-list article>button{grid-column:auto}.pdf-outline-list article>button{justify-self:end}.pdf-final-panel{width:100%;height:94vh;max-height:94vh;margin:6vh 0 0;border-radius:22px 22px 0 0}.pdf-final-pages{grid-template-columns:repeat(2,minmax(0,1fr));padding:4px 10px 14px}.pdf-final-stats{padding:10px}.pdf-preset-list{grid-template-columns:1fr}.pdf-editor-stage-wrap{padding:6px}.pdf-editor-tools .pdf-quick-tools{overflow-x:auto;flex-wrap:nowrap}.pdf-editor-tools .pdf-quick-tools>*{flex:0 0 auto}}
 @media(max-width:430px){.pdf-final-stats{grid-template-columns:1fr 1fr}.pdf-final-pages{grid-template-columns:1fr 1fr}.pdf-outline-list article{grid-template-columns:24px 1fr}.pdf-outline-list article label,.pdf-outline-list article select,.pdf-outline-list article>button{grid-column:2}.pdf-signature-modal canvas{height:150px}}
 .pdf-ann-ellipse i{border:2px solid var(--ann-color);border-radius:50%}
+
+
+/* Atelier V33 : des pictogrammes dessinés, des propriétés lisibles. */
+.tool-icon{display:block;width:24px;height:24px;flex-shrink:0}
+.pdf-tool-symbol,.pdf-library-groups button>span,.pdf-library-fav button>span{display:grid;place-items:center;background:#f3edf8;color:#60467b;border-radius:12px}
+.pdf-tool-card .tool-icon{width:27px;height:27px}
+.pdf-tool-card{border:1px solid #e0d8e9;box-shadow:0 4px 16px #39224505}
+.pdf-tool-card.is-active{background:#f8f2fc;border-color:#aa8abd}
+.pdf-tool-card:hover{border-color:#a88cbb;transform:translateY(-2px)}
+.pdf-tool-card strong{color:#342740;font-size:.98rem}
+.pdf-tool-card small{color:#63596e;line-height:1.45}
+.pdf-drop-icon{display:grid;place-items:center}.pdf-drop-icon .tool-icon{width:32px;height:32px}
+.pdf-library-groups button small{color:#63596e}
+.pdf-field input,.pdf-field select,.pdf-field textarea{font-size:.9rem}
+.pdf-text-result{display:grid;gap:10px;width:100%;font-size:.9rem;color:#473c52}
+.pdf-text-result textarea{width:100%;min-height:300px;padding:16px;border:1px solid #c9bfd2;border-radius:12px;line-height:1.6;background:#fff;resize:vertical;box-sizing:border-box}
+.pdf-spread-preview{position:relative;width:max-content;max-width:100%;margin:18px auto;box-shadow:0 10px 30px #38224320}
+.pdf-spread-preview canvas{display:block;max-width:100%;height:auto}
+[data-spread-line]{position:absolute;display:block;background:#c32f73;box-shadow:0 0 0 1px white;pointer-events:none}
+.pdf-booklet-order{overflow-x:auto;background:#fcfafd;border:1px solid #e0d7e7;border-radius:12px;padding:14px}
+.pdf-booklet-order p{margin:0 0 12px}.pdf-booklet-order table{width:100%;border-collapse:collapse;font-size:.88rem}.pdf-booklet-order th,.pdf-booklet-order td{text-align:left;padding:9px 12px;border-bottom:1px solid #e6dfea}.pdf-booklet-order th{color:#5b456d}
+.pdf-compare-result{display:grid;place-items:start center;gap:18px;overflow:auto;padding:12px;background:#eae6ef;border-radius:12px}
+.pdf-compare-result.is-side{grid-template-columns:1fr 1fr}.pdf-compare-result figure{margin:0;min-width:0}.pdf-compare-result figcaption{padding:5px 0 10px;font-weight:650}.pdf-compare-result canvas{width:100%;height:auto;max-width:100%;background:white;box-shadow:0 5px 20px #352a441b}
+.pdf-editor-history{display:flex;gap:8px;flex-wrap:wrap;width:100%;border-top:1px solid #e2d9e8;padding-top:14px}.pdf-editor-history button{display:flex;align-items:center;gap:7px}.pdf-editor-history .tool-icon{width:17px;height:17px}
+.pdf-editor-properties{width:100%;padding:12px 0}.pdf-editor-property-grid{display:grid;grid-template-columns:repeat(6,minmax(90px,1fr));gap:10px}.pdf-ann-content-field{grid-column:span 3}.pdf-editor-properties textarea{padding:8px;border:1px solid #d3c7dc;border-radius:8px;min-height:65px;width:100%;resize:vertical}
+.pdf-ann-text span{padding:0;font-family:Arial,Helvetica,sans-serif;font-weight:400;white-space:pre;line-height:1.2}
+.pdf-ann-highlight i{opacity:1}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #456faf;outline-offset:3px}
+@media(max-width:700px){.pdf-editor-property-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pdf-ann-content-field{grid-column:span 2}.pdf-compare-result.is-side{grid-template-columns:1fr}.pdf-library-groups button{min-height:86px}.pdf-editor-history button{min-height:40px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+.pdf-library-open small{color:#65516f!important}.pdf-library-open-icon{display:grid;place-items:center}
+.pdf-new-tools{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0 0}.pdf-new-tools>span{font-size:.67rem;font-weight:750;color:#6b5979;margin-right:4px}.pdf-new-tools button{display:flex;align-items:center;gap:7px;min-height:36px;padding:7px 11px;background:#fff;border:1px solid #d8cce3;border-radius:9px;color:#614976;font-size:.77rem;font-weight:650}.pdf-new-tools .tool-icon{width:17px;height:17px}.pdf-new-tools button:hover{background:#f7f1fa}.pdf-new-tools button.is-active{background:#6a5081;color:#fff;border-color:#6a5081}
+.pdf-file-chip small{color:#685973!important}

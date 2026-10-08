@@ -21,6 +21,7 @@
   };
 
   ready(() => {
+    initOrganisedHeader();
     ensureBlogLinks();
     enhanceNavigationShortcuts();
     initNavigation();
@@ -34,6 +35,105 @@
     initGlobalSearch();
     initStudentAccess();
   });
+
+  function initOrganisedHeader() {
+    const navbar = document.querySelector(".navbar");
+    const container = navbar?.querySelector(".nav-container");
+    const nav = container?.querySelector(".nav-links");
+    const brand = container?.querySelector(".nav-brand");
+    const toggle = container?.querySelector(".nav-toggle");
+    if (!container || !nav || !brand || !toggle || navbar.classList.contains("ph-header-organised")) return;
+
+    const script = document.querySelector('script[src*="js/script.js"]');
+    const siteRoot = script ? new URL("../", script.src).pathname : "/";
+    const existingLinks = [...nav.querySelectorAll("a")];
+    const takeLink = (className, label, destination, hash = "") => {
+      const link = existingLinks.find((item) => item.classList.contains(className) ||
+        (hash && new URL(item.href).hash === hash)) || document.createElement("a");
+      link.classList.add(className);
+      link.href = destination;
+      link.textContent = label;
+      return link;
+    };
+    const home = `${siteRoot}index.html`;
+    const onHome = window.location.pathname === siteRoot || window.location.pathname === home;
+    const homeAnchor = (hash) => onHome ? hash : `${home}${hash}`;
+    const texts = takeLink("nav-texts-link", "Textes", `${siteRoot}textes/`);
+    const blog = takeLink("nav-blog-link", "Blog", `${siteRoot}blog/`);
+    const services = takeLink("nav-services-link", "Prestations", homeAnchor("#philosophie"), "#philosophie");
+    const about = takeLink("nav-about-link", "Qui suis-je ?", homeAnchor("#quisuisje"), "#quisuisje");
+    const faq = takeLink("nav-faq-link", "FAQ", homeAnchor("#faq"), "#faq");
+    const tools = takeLink("nav-tools-link", "Outils", `${siteRoot}outils/`);
+    const contact = takeLink("nav-contact-link", "Contactez-moi", homeAnchor("#contact"), "#contact");
+
+    const makeGroup = (label, className, links) => {
+      const group = document.createElement("details");
+      group.className = `nav-group ${className}`;
+      const summary = document.createElement("summary");
+      summary.textContent = label;
+      const chevron = document.createElement("span");
+      chevron.className = "nav-group-chevron";
+      chevron.setAttribute("aria-hidden", "true");
+      summary.append(chevron);
+      const panel = document.createElement("div");
+      panel.className = "nav-group-links";
+      panel.append(...links);
+      group.append(summary, panel);
+      return group;
+    };
+    const explorer = makeGroup("Explorer", "nav-group-explorer", [texts, blog]);
+    const information = makeGroup("À propos", "nav-group-about", [about, faq]);
+    const mobileContact = contact.cloneNode(true);
+    mobileContact.classList.add("nav-contact-mobile");
+    contact.classList.add("nav-contact-desktop");
+    nav.replaceChildren(explorer, tools, services, information, mobileContact);
+    nav.id ||= "primary-navigation";
+
+    brand.href = home;
+    const logo = brand.querySelector(".nav-brand-logo");
+    if (logo) {
+      logo.alt = "";
+      logo.width = 40;
+      logo.height = 40;
+    }
+    const wordmark = document.createElement("span");
+    wordmark.className = "nav-brand-name";
+    wordmark.textContent = "Philosophal";
+    brand.append(wordmark);
+
+    const search = document.createElement("button");
+    search.type = "button";
+    search.className = "nav-search-trigger";
+    search.dataset.siteSearchOpen = "";
+    search.setAttribute("aria-label", "Rechercher sur le site");
+    search.setAttribute("aria-keyshortcuts", "R");
+    search.title = "Rechercher sur le site — raccourci R";
+    search.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>';
+    toggle.setAttribute("aria-controls", nav.id);
+    toggle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span>';
+    const actions = document.createElement("div");
+    actions.className = "nav-header-actions";
+    actions.append(search, contact, toggle);
+    container.replaceChildren(brand, nav, actions);
+    navbar.classList.add("ph-header-organised");
+
+    const canonicalPath = (pathname) => pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "");
+    const updateCurrentLinks = () => {
+      const currentPath = canonicalPath(window.location.pathname);
+      navbar.querySelectorAll("nav a, .nav-contact-desktop").forEach((link) => {
+        const url = new URL(link.href);
+        const samePath = canonicalPath(url.pathname) === currentPath;
+        const current = samePath && (url.hash ? url.hash === window.location.hash : !window.location.hash);
+        if (current) link.setAttribute("aria-current", url.hash ? "location" : "page");
+        else link.removeAttribute("aria-current");
+      });
+      explorer.classList.toggle("has-current-link", window.location.pathname.startsWith(`${siteRoot}textes/`) ||
+        window.location.pathname.startsWith(`${siteRoot}blog/`));
+      information.classList.toggle("has-current-link", !!information.querySelector("[aria-current]"));
+    };
+    updateCurrentLinks();
+    window.addEventListener("hashchange", updateCurrentLinks);
+  }
 
   function ensureBlogLinks() {
     const textsLink = document.querySelector(".nav-links .nav-texts-link");
@@ -78,26 +178,67 @@
   function initNavigation() {
     const navbar = document.querySelector(".navbar");
     const toggle = document.querySelector(".nav-toggle");
-    const links = document.querySelectorAll(".nav-links a");
     if (!navbar) return;
+    const groups = [...navbar.querySelectorAll(".nav-group")];
+    const mobile = window.matchMedia("(max-width: 900px)");
 
+    const closeGroups = () => groups.forEach((group) => { group.open = false; });
     const closeMenu = () => {
+      closeGroups();
       navbar.classList.remove("nav-open");
       toggle?.setAttribute("aria-expanded", "false");
+      toggle?.setAttribute("aria-label", "Ouvrir le menu");
     };
 
     toggle?.addEventListener("click", () => {
       const open = navbar.classList.toggle("nav-open");
+      if (!open) closeGroups();
       toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
     });
 
-    links.forEach((link) => link.addEventListener("click", closeMenu));
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 860) closeMenu();
+    groups.forEach((group) => group.addEventListener("toggle", () => {
+      if (!group.open || mobile.matches) return;
+      groups.forEach((other) => { if (other !== group) other.open = false; });
+    }));
+    navbar.querySelectorAll("a, [data-site-search-open]").forEach((link) => link.addEventListener("click", closeMenu));
+    document.addEventListener("philosophal:searchopen", closeMenu);
+    document.addEventListener("click", (event) => {
+      if (!navbar.contains(event.target)) closeMenu();
     });
+    navbar.addEventListener("focusout", () => {
+      window.setTimeout(() => {
+        if (!navbar.contains(document.activeElement)) closeMenu();
+      }, 0);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || event.defaultPrevented || document.querySelector(".site-search-shell:not([hidden])")) return;
+      const openGroup = event.target.closest?.(".nav-group[open]") || groups.find((group) => group.open);
+      if (openGroup) {
+        closeGroups();
+        openGroup.querySelector("summary")?.focus();
+        event.preventDefault();
+      } else if (navbar.classList.contains("nav-open")) {
+        closeMenu();
+        toggle?.focus();
+        event.preventDefault();
+      }
+    });
+    mobile.addEventListener("change", closeMenu);
 
-    const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 70);
-    window.addEventListener("scroll", updateNavbar, { passive: true });
+    const updateNavbar = () => {
+      const compact = navbar.classList.contains("scrolled");
+      navbar.classList.toggle("scrolled", window.scrollY > (compact ? 12 : 48));
+    };
+    let scrollFramePending = false;
+    window.addEventListener("scroll", () => {
+      if (scrollFramePending) return;
+      scrollFramePending = true;
+      window.requestAnimationFrame(() => {
+        scrollFramePending = false;
+        updateNavbar();
+      });
+    }, { passive: true });
     updateNavbar();
   }
 
@@ -366,8 +507,15 @@
   }
 
   function initGlobalSearch() {
+    if (!document.getElementById("philosophal-search-style")) {
+      const stylesheet = document.createElement("link");
+      stylesheet.id = "philosophal-search-style";
+      stylesheet.rel = "stylesheet";
+      stylesheet.href = "/css/search.css?v=20261008-recherche1";
+      document.head.append(stylesheet);
+    }
     const nav = document.querySelector(".nav-links");
-    if (nav && !nav.querySelector("[data-site-search-open]")) {
+    if (nav && !document.querySelector(".navbar [data-site-search-open]")) {
       const anchor = nav.querySelector(".nav-tools-link") || nav.querySelector(".nav-blog-link");
       const button = document.createElement("button");
       button.type = "button";
@@ -389,11 +537,11 @@
             </header>
             <label class="site-search-field">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
-              <input type="search" autocomplete="off" spellcheck="false" placeholder="Ex. liberté, désir, Kant, bonheur…" data-site-search-input>
+              <input type="search" autocomplete="off" spellcheck="false" placeholder="Ex. liberté, désir, Kant, bonheur…" aria-label="Rechercher sur le site" data-site-search-input>
               <kbd>Esc</kbd>
             </label>
             <div class="site-search-hints" data-site-search-hints><button type="button" data-site-search-example="liberté">Liberté</button><button type="button" data-site-search-example="désir">Désir</button><button type="button" data-site-search-example="Kant">Kant</button><button type="button" data-site-search-example="religion">Religion</button></div>
-            <div class="site-search-status" data-site-search-status>Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.</div>
+            <div class="site-search-status" role="status" data-site-search-status>Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.</div>
             <div class="site-search-results" data-site-search-results></div>
           </section>
         </div>`);
@@ -404,6 +552,19 @@
     const results = shell?.querySelector("[data-site-search-results]");
     const status = shell?.querySelector("[data-site-search-status]");
     let dataPromise = null;
+    let indexPromise = null;
+    let searchTimer = null;
+    let searchVersion = 0;
+    let composing = false;
+    let opener = null;
+    const inertElements = new Map();
+    const yieldToInput = () => new Promise((resolve) => setTimeout(resolve, 0));
+
+    const cancelSearch = () => {
+      clearTimeout(searchTimer);
+      searchTimer = null;
+      searchVersion += 1;
+    };
 
     const ensureData = () => {
       if (window.FV_SITE_SEARCH_DATA) return Promise.resolve(window.FV_SITE_SEARCH_DATA);
@@ -412,8 +573,11 @@
         const script = document.createElement("script");
         script.src = "/js/site-search-data.js?v=20260923-github-refresh1";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
-        script.onerror = reject;
+        script.onerror = () => { script.remove(); reject(new Error("site-search-data")); };
         document.head.append(script);
+      }).catch((error) => {
+        dataPromise = null;
+        throw error;
       });
       return dataPromise;
     };
@@ -438,25 +602,41 @@
       "verite":["verite","vrai","certitude"]
     };
 
-    const scoreItem = (item, query) => {
-      const q = normalizeSearch(query);
-      const queryTerms = q.split(" ").filter(Boolean);
-      if (!q || !queryTerms.length) return 0;
-      const title = normalizeSearch(item.title);
-      const meta = normalizeSearch(item.meta);
-      const keywords = normalizeSearch(item.keywords);
-      const excerpt = normalizeSearch(item.excerpt);
-      const all = `${title} ${meta} ${keywords} ${excerpt}`;
-      const groups = queryTerms.map((term) => synonymMap[term] || [term]);
+    const ensureIndex = () => {
+      if (indexPromise) return indexPromise;
+      indexPromise = (async () => {
+        const data = await ensureData();
+        const index = [];
+        let deadline = performance.now() + 6;
+        for (const item of data) {
+          const title = normalizeSearch(item.title);
+          const meta = normalizeSearch(item.meta);
+          const keywords = normalizeSearch(item.keywords);
+          const excerpt = normalizeSearch(item.excerpt);
+          index.push({ item, title, meta, keywords, excerpt,
+            all: `${title} ${meta} ${keywords} ${excerpt}`,
+            titleWords: new Set(title.split(" ")), keywordWords: new Set(keywords.split(" ")) });
+          if (performance.now() >= deadline) {
+            await yieldToInput();
+            deadline = performance.now() + 6;
+          }
+        }
+        return index;
+      })().catch((error) => { indexPromise = null; throw error; });
+      return indexPromise;
+    };
+
+    const scoreItem = (entry, q, groups) => {
+      const { item, title, meta, keywords, excerpt, all, titleWords, keywordWords } = entry;
       if (!groups.every((variants) => variants.some((variant) => all.includes(variant)))) return 0;
       let score = Number(item.boost || 0);
       if (title === q) score += 220;
       if (title.includes(q)) score += 130;
-      groups.forEach((variants, groupIndex) => variants.forEach((term, variantIndex) => {
+      groups.forEach((variants) => variants.forEach((term, variantIndex) => {
         const synonymFactor = variantIndex === 0 ? 1 : .42;
-        if (title.split(" ").includes(term)) score += 70 * synonymFactor;
+        if (titleWords.has(term)) score += 70 * synonymFactor;
         else if (title.includes(term)) score += 45 * synonymFactor;
-        if (keywords.split(" ").includes(term)) score += 60 * synonymFactor;
+        if (keywordWords.has(term)) score += 60 * synonymFactor;
         else if (keywords.includes(term)) score += 28 * synonymFactor;
         if (meta.includes(term)) score += 20 * synonymFactor;
         if (excerpt.includes(term)) score += 8 * synonymFactor;
@@ -466,8 +646,10 @@
       return score;
     };
 
-    const renderResults = async () => {
+    const renderResults = async (version = searchVersion) => {
       if (!input || !results || !status) return;
+      const isCurrent = () => version === searchVersion && !shell.hidden;
+      if (!isCurrent()) return;
       const query = input.value.trim();
       if (query.length < 2) {
         results.innerHTML = "";
@@ -475,9 +657,29 @@
         return;
       }
       status.textContent = "Recherche…";
+      results.setAttribute("aria-busy", "true");
       try {
-        const data = await ensureData();
-        const found = data.map((item) => ({ item, score:scoreItem(item, query) })).filter((entry) => entry.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
+        const index = await ensureIndex();
+        if (!isCurrent()) return;
+        const q = normalizeSearch(query);
+        const groups = q.split(" ").filter(Boolean).map((term) => synonymMap[term] || [term]);
+        const found = [];
+        let deadline = performance.now() + 6;
+        for (const entry of index) {
+          const score = groups.length ? scoreItem(entry, q, groups) : 0;
+          if (score > 0) {
+            const place = found.findIndex((candidate) => score > candidate.score);
+            if (place >= 0) found.splice(place, 0, { item: entry.item, score });
+            else if (found.length < 12) found.push({ item: entry.item, score });
+            if (found.length > 12) found.pop();
+          }
+          if (performance.now() >= deadline) {
+            await yieldToInput();
+            if (!isCurrent()) return;
+            deadline = performance.now() + 6;
+          }
+        }
+        if (!isCurrent()) return;
         status.textContent = found.length ? `${found.length} résultat${found.length > 1 ? "s" : ""} parmi les plus pertinents.` : "Aucun résultat. Essayez un auteur, une notion ou un mot voisin.";
         results.innerHTML = found.map(({item}) => `
           <a class="site-search-result" href="${escapeHtml(item.url)}">
@@ -488,22 +690,56 @@
             <i aria-hidden="true">→</i>
           </a>`).join("");
       } catch (_) {
-        status.textContent = "La recherche n’a pas pu être chargée.";
+        if (isCurrent()) status.textContent = "La recherche n’a pas pu être chargée.";
+      } finally {
+        if (isCurrent()) results.removeAttribute("aria-busy");
       }
+    };
+
+    const queueSearch = (immediate = false) => {
+      cancelSearch();
+      results?.removeAttribute("aria-busy");
+      if (composing) return;
+      if (input?.value.trim().length < 2 || immediate) {
+        renderResults(searchVersion);
+        return;
+      }
+      const version = searchVersion;
+      searchTimer = setTimeout(() => { searchTimer = null; renderResults(version); }, 160);
     };
 
     const open = (seed = "") => {
       if (!shell || !input) return;
+      if (shell.hidden) opener = document.activeElement;
+      document.dispatchEvent(new Event("philosophal:searchopen"));
       shell.hidden = false;
+      for (const element of document.body.children) {
+        if (element === shell || element.contains(shell) || element.matches("script,style,link")) continue;
+        if (!inertElements.has(element)) inertElements.set(element, element.inert);
+        element.inert = true;
+      }
       document.body.classList.add("site-search-open");
       if (seed) input.value = seed;
-      requestAnimationFrame(() => input.focus({preventScroll:true}));
-      renderResults();
+      input.focus({preventScroll:true});
+      ensureIndex().catch(() => {});
+      queueSearch(true);
     };
     const close = () => {
       if (!shell) return;
+      cancelSearch();
+      composing = false;
+      results?.removeAttribute("aria-busy");
       shell.hidden = true;
       document.body.classList.remove("site-search-open");
+      inertElements.forEach((wasInert, element) => { element.inert = wasInert; });
+      inertElements.clear();
+      if (opener?.isConnected) {
+        const summary = opener.closest(".nav-group")?.querySelector("summary");
+        const toggle = opener.closest(".navbar")?.querySelector(".nav-toggle");
+        const collapsedGroup = opener.closest(".nav-group:not([open]) .nav-group-links");
+        const target = [collapsedGroup ? summary : opener, summary, toggle].find((element) => element?.getClientRects().length);
+        target?.focus({ preventScroll: true });
+      }
     };
 
     window.FVSiteSearch = { open, close };
@@ -514,13 +750,10 @@
         open();
         // Le clic sur le bouton / la touche visuelle « R » doit permettre
         // de commencer à taper immédiatement, sans second clic dans le champ.
-        requestAnimationFrame(() => {
-          input?.focus({preventScroll:true});
-          if (input && typeof input.setSelectionRange === "function") {
-            const end = input.value.length;
-            input.setSelectionRange(end, end);
-          }
-        });
+        if (input && typeof input.setSelectionRange === "function") {
+          const end = input.value.length;
+          input.setSelectionRange(end, end);
+        }
       });
     });
     shell?.querySelectorAll("[data-site-search-close]").forEach((button) => button.addEventListener("click", close));
@@ -528,9 +761,19 @@
       if (!input) return;
       input.value = button.dataset.siteSearchExample || "";
       input.focus();
-      renderResults();
+      queueSearch(true);
     }));
-    input?.addEventListener("input", renderResults);
+    input?.addEventListener("input", (event) => {
+      if (event.isComposing) { cancelSearch(); return; }
+      queueSearch();
+    });
+    input?.addEventListener("compositionstart", () => { composing = true; cancelSearch(); });
+    input?.addEventListener("compositionend", () => { composing = false; queueSearch(); });
+    input?.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.isComposing && !composing) {
+        event.preventDefault(); queueSearch(true);
+      }
+    });
 
     try {
       if (sessionStorage.getItem("fv-open-site-search") === "1") {
@@ -540,6 +783,16 @@
     } catch (_) {}
 
     document.addEventListener("keydown", (event) => {
+      if (event.key === "Tab" && shell && !shell.hidden) {
+        const controls = [...shell.querySelectorAll('.site-search-panel a[href], .site-search-panel button, .site-search-panel input')]
+          .filter((element) => !element.disabled && element.getClientRects().length);
+        const first = controls[0], last = controls.at(-1);
+        if (event.shiftKey && (document.activeElement === first || !shell.contains(document.activeElement))) {
+          event.preventDefault(); last?.focus();
+        } else if (!event.shiftKey && (document.activeElement === last || !shell.contains(document.activeElement))) {
+          event.preventDefault(); first?.focus();
+        }
+      }
       const target = event.target;
       const typing = target instanceof HTMLElement && (target.matches("input,textarea,select") || target.isContentEditable);
       if (!typing && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.toLocaleLowerCase("fr") === "r") {

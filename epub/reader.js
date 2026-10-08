@@ -496,16 +496,22 @@
     if (strong) strong.textContent = message;
   }
 
+  let drawerOrigin=null;
   function openDrawer(drawer) {
-    closeDrawers();
-    drawer.hidden = false;
-    document.body.classList.add("reader-drawer-open");
+    const origin=document.activeElement;closeDrawers(false);drawerOrigin=origin;
+    drawer.hidden=false;document.body.classList.add("reader-drawer-open");
+    requestAnimationFrame(()=>{const panel=drawer.querySelector('.reader-drawer-panel');(panel?.querySelector('input:not([type="file"]),button')||panel)?.focus({preventScroll:true});});
   }
-
-  function closeDrawers() {
-    [libraryDrawer, tocDrawer, pagesDrawer, searchDrawer, bookmarksDrawer, notesDrawer, shortcutsDrawer].forEach((item) => { if (item) item.hidden = true; });
-    document.body.classList.remove("reader-drawer-open");
+  function closeDrawers(restoreFocus=true) {
+    const drawers=[libraryDrawer,tocDrawer,pagesDrawer,searchDrawer,bookmarksDrawer,notesDrawer,shortcutsDrawer],wasOpen=drawers.some(item=>item&&!item.hidden);
+    drawers.forEach(item=>{if(item)item.hidden=true;});document.body.classList.remove("reader-drawer-open");
+    if(restoreFocus&&wasOpen&&drawerOrigin?.isConnected&&drawerOrigin.getClientRects().length)drawerOrigin.focus({preventScroll:true});
   }
+  document.addEventListener('keydown',event=>{
+    if(event.key!=='Tab')return;const drawer=[libraryDrawer,tocDrawer,pagesDrawer,searchDrawer,bookmarksDrawer,notesDrawer,shortcutsDrawer].find(item=>item&&!item.hidden);if(!drawer)return;
+    const controls=[...drawer.querySelectorAll('.reader-drawer-panel button,.reader-drawer-panel input,.reader-drawer-panel select,.reader-drawer-panel textarea,.reader-drawer-panel a[href]')].filter(el=>!el.disabled&&el.getClientRects().length),first=controls[0],last=controls.at(-1);if(!first)return;
+    if(event.shiftKey&&(document.activeElement===first||!drawer.contains(document.activeElement))){event.preventDefault();last.focus();}else if(!event.shiftKey&&(document.activeElement===last||!drawer.contains(document.activeElement))){event.preventDefault();first.focus();}
+  },true);
 
   function setSettingsOpen(open) {
     settingsPanel.hidden = !open;
@@ -513,7 +519,7 @@
   }
 
   function formatLabel(format) {
-    return ({ epub: "EPUB", azw: "AZW", azw3: "AZW3", mobi: "MOBI", cbz: "CBZ", txt: "TXT", html: "HTML", md: "Markdown", fb2: "FB2" })[format] || String(format || "Livre").toUpperCase();
+    return ({ epub: "EPUB", azw: "AZW", azw3: "AZW3", mobi: "MOBI", cbz: "CBZ", txt: "TXT", html: "HTML", md: "Markdown", fb2: "FB2", docx: "Word · DOCX", odt: "OpenDocument · ODT" })[format] || String(format || "Livre").toUpperCase();
   }
 
   function bookCard(book) {
@@ -629,6 +635,7 @@
     render.hidden = false;
     workspace.hidden = true;
     welcome.hidden = false;
+    document.body.classList.add("reader-empty");
     headTitle.textContent = "Lecteur";
     headAuthor.textContent = "Bibliothèque locale";
     progress.value = 0;
@@ -639,7 +646,7 @@
 
   async function importFile(file) {
     if (!Books.isSupported(file)) {
-       showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown ou FB2.", 3600);
+       showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown, FB2, DOCX ou ODT.", 3600);
       return;
     }
     try {
@@ -695,6 +702,7 @@
     plain.hidden = true;
     render.hidden = false;
     welcome.hidden = true;
+    document.body.classList.remove("reader-empty");
     workspace.hidden = false;
     setLoading(true);
     currentRecord = record;
@@ -732,8 +740,9 @@
       console.error(error);
       setLoading(false);
       const kindleProtected = KINDLE_FORMATS.has(record.format);
+      const documentFormat=["docx","odt"].includes(record.format);
       showToast(
-        kindleProtected
+        documentFormat ? error?.message || "Impossible de lire ce document." : kindleProtected
           ? "Impossible d’ouvrir ce livre Kindle. Les fichiers AZW/AZW3/MOBI sans DRM sont pris en charge ; les fichiers protégés ne peuvent pas être lus."
           : "Impossible d’ouvrir ce livre. Le fichier est peut-être endommagé ou protégé.",
         5200
@@ -1280,6 +1289,9 @@
       render.innerHTML = "";
       visualSpreadRoot = document.createElement("div");
       visualSpreadRoot.className = "reader-visual-spread";
+      visualSpreadRoot.tabIndex = 0;
+      visualSpreadRoot.setAttribute("role", "region");
+      visualSpreadRoot.setAttribute("aria-label", "Pages de la bande dessinée ou du livre illustré");
       render.appendChild(visualSpreadRoot);
     }
     nodes.forEach((node) => canvas.appendChild(node));
@@ -1749,10 +1761,15 @@
     plain.innerHTML = "";
     toc.innerHTML = "";
     tocEmpty.hidden = false;
-    const text = await record.blob.text();
+    const documentFormat=["docx","odt"].includes(record.format);
+    const text=documentFormat?"":await record.blob.text();
     let html = "";
 
-    if (record.format === "html") html = sanitizeHtml(text);
+    if(documentFormat){
+      const result=await window.PhilosophalDocuments.read(record.blob,record.format);html=result.html;
+      const metadata={title:result.title||record.title,author:result.author||record.author,metadataReady:true};await Books.updateBook(record.id,metadata);Object.assign(record,metadata);headTitle.textContent=record.title;headAuthor.textContent=record.author||formatLabel(record.format);
+    }
+    else if (record.format === "html") html = sanitizeHtml(text);
     else if (record.format === "md") html = markdownToHtml(text);
     else if (record.format === "fb2") html = fb2ToHtml(text);
     else html = `<pre>${esc(text)}</pre>`;
@@ -2852,6 +2869,7 @@
   }
 
   function wireImportButtons() {
+    $('[data-open-example]')?.addEventListener('click',()=>{const text="# Lire à son rythme\n\nUn livre peut ouvrir une question avant d’apporter une réponse. Prenez le temps de lire, puis de revenir sur une phrase.\n\n## Une idée à suivre\n\nCe lecteur vous permet de changer la taille du texte, de choisir un thème et de garder votre place.\n\n## Quelques repères\n\n- Ouvrez le sommaire pour changer de partie.\n- Ajoutez un marque-page à un passage.\n- Sélectionnez une phrase pour la surligner et prendre une note.\n\n## Une question pour continuer\n\nQu’est-ce qui change dans notre manière de penser quand nous prenons le temps de lire ?";importFile(new File([text],'Découvrir le lecteur.md',{type:'text/markdown',lastModified:0}));});
     $$('[data-import-book]').forEach((button) => {
       button.addEventListener("click", (event) => {
         event.preventDefault();
@@ -2890,7 +2908,7 @@
       globalDrop.hidden = true;
       const file = Array.from(event.dataTransfer?.files || []).find((candidate) => Books.isSupported(candidate));
       if (file) importFile(file);
-      else showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown ou FB2.");
+      else showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown, FB2, DOCX ou ODT.");
     });
   }
 
@@ -3032,7 +3050,7 @@
         if (document.body.classList.contains("reader-focus")) applyFocusMode(false);
         return;
       }
-      if (isField || workspace.hidden || !currentRecord) return;
+      if (isField || workspace.hidden || !currentRecord || [libraryDrawer,tocDrawer,pagesDrawer,searchDrawer,bookmarksDrawer,notesDrawer,shortcutsDrawer].some(item=>item&&!item.hidden) || target.closest?.("button,a,summary")) return;
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() !== "f") return;
       if ((event.shiftKey || event.altKey) && /^Arrow/.test(event.key)) return;
       if (!pagesDrawer.hidden && !["Escape", "p", "P"].includes(event.key)) return;
@@ -3146,3 +3164,4 @@
     showToast("Le lecteur n’a pas pu s’initialiser.", 4000);
   });
 })();
+

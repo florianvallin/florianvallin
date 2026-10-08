@@ -27,3 +27,4 @@
 @media(max-width:850px){.hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-hub{padding-top:110px}}
 @media(max-width:550px){.hub-grid{grid-template-columns:1fr}.tool-hub{padding:100px 16px 45px}.hub-card{padding:21px}.backup-panel{padding:18px}.public-tool-back{font-size:11px;padding:6px 8px}.pomo-topbar-left{gap:8px;flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.hub-card{transition:none}}
+

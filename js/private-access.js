@@ -103,6 +103,10 @@
   async function renderPrivate(path){
     await ready;const entry=files.get(path);if(!entry||!entry.mime.startsWith('text/html'))throw new Error('Cet accès ne permet pas d’ouvrir cette page.');
     const html=decoder.decode(decode(entry.data));const doc=new DOMParser().parseFromString(html,'text/html');
+    if(path==="/apprendre/creation/index.html"){
+      const style=doc.createElement("link");style.rel="stylesheet";style.href=prefix+"/css/creator-tools.css?v=20261006";doc.head.append(style);
+      const entry=doc.createElement("div");entry.innerHTML='<nav class="creator-tools-entry" aria-label="Outils de création"><div><strong>Préparer et lire un script</strong><small>Téléprompteur, vitesse réglable, mode miroir et estimation de durée.</small></div><a href="/apprendre/creation/teleprompteur/">Ouvrir le téléprompteur →</a></nav>';doc.body.prepend(entry.firstElementChild);
+    }
     for(const n of doc.querySelectorAll('script[src],link[rel="stylesheet"][href],img[src],source[src]')){
       const attr=n.hasAttribute('src')?'src':'href';const url=new URL(n.getAttribute(attr),location.href).href;n.setAttribute(attr,assetURL(url));
     }

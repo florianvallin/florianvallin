@@ -823,7 +823,7 @@
     if (fallbackStudentShell) return fallbackStudentShell;
 
     const portals = {
-      didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
+      didier: "https://app.notion.com/p/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
       art: "/art/",
       livre: "/lecture/",
       livres: "/lecture/",
@@ -842,7 +842,7 @@
         <span>Espace élève</span>
         <h2 id="fv-student-title">S’identifier</h2>
         <form data-fv-student-form>
-          <label for="fv-student-password">Mot de passe</label>
+          <label for="fv-student-password">Identifiant ou mot de passe</label>
           <div><input id="fv-student-password" type="password" autocomplete="current-password" placeholder="Mot de passe" data-fv-student-password><button type="submit">Accéder <span aria-hidden="true">→</span></button></div>
           <p data-fv-student-feedback aria-live="polite"></p>
         </form>
@@ -869,6 +869,7 @@
 
     input.addEventListener("input", () => {
       const key = normalize(input.value).replace(/\s+/g, "");
+      if (key === "didier") { feedback.textContent = ""; return; }
       if (!portals[key]) {
         feedback.textContent = "";
         return;

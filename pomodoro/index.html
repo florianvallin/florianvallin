@@ -7,31 +7,33 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
-  <meta name="theme-color" content="#ba4949" data-theme-color>
+  <meta name="theme-color" content="#f7f7fb" data-theme-color>
   <title>Pomodoro — Philosophal</title>
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./pomodoro.css?v=20261004-pomo6-integrated-tree">
-<link rel="manifest" href="/manifest.webmanifest?v=20261004-atelier2">
-<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32"></head>
-<body data-pomo-mode="work">
+<link rel="stylesheet" href="/css/public-tools.css?v=20261005-v32">
+<link rel="stylesheet" href="./calme.css?v=20261007-lecture1"></head>
+<body class="pomo-calm" data-pomo-mode="work">
   <header class="pomo-topbar">
     <div class="pomo-topbar-left"><a class="public-tool-back" href="/outils/">← Outils</a>
-      <div class="pomo-brand" aria-label="Pomodoro Philosophal"><span class="pomo-brand-dot" aria-hidden="true"></span><strong>Pomodoro</strong><small>Philosophal</small></div>
+      <div class="pomo-brand" aria-label="Pomodoro Philosophal"><span class="pomo-brand-dot" aria-hidden="true"></span><h1>Pomodoro</h1><small>Philosophal</small></div>
     </div>
-    <div class="pomo-top-actions">
-      <button type="button" class="pomo-top-button" data-auto-toggle aria-pressed="false" title="Enchaîner automatiquement travail et pauses"><span class="pomo-auto-dot" aria-hidden="true"></span><span data-auto-label>Auto : non</span></button>
-      <button type="button" class="pomo-top-button" data-new-session>Nouvelle session</button>
-      <button type="button" class="pomo-top-button" data-open-report>Rapport</button>
+    <nav class="pomo-top-actions" aria-label="Options du minuteur">
       <button type="button" class="pomo-top-button" data-open-settings>Réglages</button>
-      <button type="button" class="pomo-top-button" data-fullscreen aria-pressed="false">Plein écran</button>
-    </div>
+      <button type="button" class="pomo-top-button" data-open-report>Rapport</button>
+      <details class="pomo-header-more"><summary>Plus <span aria-hidden="true">⌄</span></summary><div>
+        <button type="button" class="pomo-top-button" data-auto-toggle aria-pressed="false" title="Enchaîner automatiquement travail et pauses"><span class="pomo-auto-dot" aria-hidden="true"></span><span data-auto-label>Auto : non</span></button>
+        <button type="button" class="pomo-top-button" data-new-session>Nouvelle session</button>
+        <button type="button" class="pomo-top-button" data-fullscreen aria-pressed="false">Plein écran</button>
+      </div></details>
+    </nav>
   </header>
 
   <main class="pomo-app">
     <section class="pomo-focus" aria-label="Minuteur Pomodoro">
       <div class="pomo-mode-tabs" role="tablist" aria-label="Type de phase">
-        <button type="button" role="tab" aria-selected="true" class="is-active" data-mode="work">Pomodoro</button>
+        <button type="button" role="tab" aria-selected="true" class="is-active" data-mode="work">Concentration</button>
         <button type="button" role="tab" aria-selected="false" data-mode="short">Pause courte</button>
         <button type="button" role="tab" aria-selected="false" data-mode="long">Pause longue</button>
       </div>
@@ -44,76 +46,38 @@
 
         <div class="pomo-ring" data-ring style="--progress:0deg">
           <div class="pomo-tree-backdrop" aria-hidden="true">
-            <pre data-tree-art></pre>
+            <span data-tree-art hidden></span>
           </div>
-          <div class="pomo-tree-mini" aria-hidden="true">
-            <span data-tree-caption>La pousse commence avec T1.</span>
-            <b data-tree-progress>0 %</b>
-          </div>
-          <div class="pomo-time" data-time aria-live="polite">25:00</div>
-          <small data-end-time>Fin —</small>
-          <div class="pomo-tree-steps" data-tree-steps aria-label="Progression de l’arbre"></div>
+          <div class="pomo-time" data-time role="timer" aria-live="off" aria-label="Temps restant">25:00</div>
+          <small data-end-time>Fin du bloc —</small>
         </div>
         <p class="pomo-phase-copy" data-phase-copy>Concentrez-vous sur une seule tâche.</p>
-
-        <div class="pomo-main-actions">
-          <button type="button" class="pomo-start" data-start>Démarrer</button>
-          <button type="button" class="pomo-skip" data-skip aria-label="Passer à la phase suivante" title="Passer à la phase suivante">»</button>
-        </div>
-        <div class="pomo-sub-actions">
-          <button type="button" data-reset title="Remet uniquement le bloc actuel à sa durée de départ">Réinitialiser le bloc</button>
-          <button type="button" data-reset-session title="Retourne à T1 et remet la progression de session à zéro">Recommencer la session</button>
-          <button type="button" data-finish-early title="Compte le bloc de travail comme terminé maintenant">Terminer le bloc</button>
-          <button type="button" data-interruption>Interruption</button>
-          <button type="button" data-notifications>Notifications</button>
-        </div>
-      </section>
-
-      <div class="pomo-cycle-card">
-        <div>
-          <span>Progression</span>
-          <strong data-cycle-summary>0 / 4 pomodoros avant la pause longue</strong>
-        </div>
-        <div class="pomo-cycle-controls"><button type="button" data-cycle-minus aria-label="Retirer un cycle">−</button><div class="pomo-cycle-dots" data-cycle-dots aria-label="Progression du cycle"></div><button type="button" data-cycle-plus aria-label="Ajouter un cycle">＋</button></div>
-      </div>
-
-      <div class="pomo-session-overview">
-        <div><span>Session restante</span><strong data-session-total>—</strong></div>
-        <div><span>Fin estimée</span><strong data-session-finish>—</strong></div>
-        <div><span>Étape</span><strong data-step-label>T1</strong></div>
-      </div>
-
-      <div class="pomo-quick-card">
-        <div class="pomo-presets" aria-label="Préréglages rapides">
-          <button type="button" data-preset="classic">25 / 5</button>
-          <button type="button" data-preset="deep">50 / 10</button>
-          <button type="button" data-preset="light">20 / 5</button>
-          <button type="button" data-preset="focus">45 / 10</button>
-        </div>
-        <div class="pomo-available"><label>Temps disponible <input type="number" min="10" max="360" value="50" data-available-minutes> min</label><button type="button" data-build-available>Proposer</button><button type="button" data-quick-ten>10 min maintenant</button></div>
-      </div>
 
       <div class="pomo-active-task" data-active-task hidden>
         <span>Tâche active</span>
         <strong data-active-task-title></strong>
         <small data-active-task-progress></small>
       </div>
-      <div class="pomo-session-notes">
-        <label><span>Intention du bloc</span><input type="text" data-intention maxlength="180" placeholder="Facultatif — ce que tu veux avoir fait à la fin"></label>
-        <label><span>Où reprendre ensuite ?</span><input type="text" data-resume-note maxlength="180" placeholder="Facultatif — une note pour ton futur toi"></label>
-      </div>
+
+        <div class="pomo-main-actions">
+          <button type="button" class="pomo-start" data-start>Démarrer</button>
+          <button type="button" class="pomo-skip" data-skip aria-label="Passer à la phase suivante" title="Passer à la phase suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m7 5 10 7-10 7V5ZM19 5v14"/></svg></button><button type="button" class="pomo-reset-button" data-reset title="Réinitialiser le bloc" aria-label="Réinitialiser le bloc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 10a8 8 0 1 1 0 5M4 4v6h6"/></svg></button>
+        </div>
+        <details class="pomo-secondary-actions"><summary>Actions du bloc</summary><div class="pomo-sub-actions">
+          <button type="button" data-reset-session title="Retourne à T1 et remet la progression de session à zéro">Recommencer la session</button>
+          <button type="button" data-finish-early title="Compte le bloc de travail comme terminé maintenant">Terminer le bloc</button>
+          <button type="button" data-interruption>Interruption</button>
+          <button type="button" data-notifications>Notifications</button>
+        </div></details>
+      </section>
+
     </section>
 
     <aside class="pomo-sidebar" aria-label="Tâches et statistiques">
-      <section class="pomo-stats">
-        <div><span>Aujourd’hui</span><strong data-today-pomos>0</strong><small>pomodoros</small></div>
-        <div><span>Concentration</span><strong data-today-minutes>0</strong><small>minutes</small></div>
-      </section>
-
       <section class="pomo-tasks">
         <header>
-          <div><span>Plan de travail</span><h1>Tâches</h1></div>
-          <div class="pomo-task-head-actions"><button type="button" data-open-templates>Modèles</button><button type="button" data-add-task>＋ Ajouter</button></div>
+          <div><span>Plan de travail</span><h2>Tâches</h2></div>
+          <div class="pomo-task-head-actions"><button type="button" data-open-templates>Modèles</button><button type="button" data-add-task>+ Ajouter</button></div>
         </header>
 
         <form class="pomo-task-form" data-task-form hidden>
@@ -125,7 +89,7 @@
         <div class="pomo-task-list" data-task-list></div>
         <div class="pomo-task-empty" data-task-empty>
           <strong>Aucune tâche</strong>
-          <p>Ajoutez ce que vous voulez accomplir, puis sélectionnez une tâche avant de lancer le minuteur.</p>
+          <p>Ajoutez ce que vous voulez accomplir. Sélectionnez une tâche pour lui attribuer vos blocs.</p>
         </div>
 
         <footer class="pomo-task-footer">
@@ -134,20 +98,68 @@
         </footer>
       </section>
 
-      <section class="pomo-shortcuts">
+      <details class="pomo-fold pomo-day-summary"><summary><span>Bilan du jour</span><small>Concentration et blocs terminés</small></summary>
+<section class="pomo-stats">
+        <div><span>Aujourd’hui</span><strong data-today-pomos>0</strong><small>pomodoros</small></div>
+        <div><span>Concentration</span><strong data-today-minutes>0</strong><small>minutes</small></div>
+      </section>
+      </details>
+
+      <details class="pomo-fold"><summary><span>Raccourcis clavier</span></summary><div class="pomo-shortcuts">
         <span><kbd>Espace</kbd> démarrer / pause</span>
         <span><kbd>→</kbd> phase suivante</span>
         <span><kbd>R</kbd> réinitialiser le bloc</span>
         <span><kbd>F</kbd> plein écran</span>
         <span><kbd>H</kbd> accueil</span>
         <span><kbd>Alt</kbd><kbd>C</kbd> médiathèque</span>
-      </section>
+      </div></details>
     </aside>
+    <section class="pomo-organisation" aria-label="Organiser la session">
+      <details class="pomo-fold pomo-session-plan"><summary><span>Plan de la session</span><small>Cycles et progression</small></summary><div class="pomo-plan-content">
+      <div class="pomo-cycle-card">
+        <div>
+          <span>Progression</span>
+          <strong data-cycle-summary>0 / 4 pomodoros avant la pause longue</strong>
+        </div>
+        <div class="pomo-cycle-controls"><button type="button" data-cycle-minus aria-label="Retirer un cycle">−</button><div class="pomo-cycle-dots" data-cycle-dots aria-label="Progression du cycle"></div><button type="button" data-cycle-plus aria-label="Ajouter un cycle">+</button></div>
+      </div>
+
+      <div class="pomo-session-overview">
+        <div><span>Session restante</span><strong data-session-total>—</strong></div>
+        <div><span>Fin de la session</span><strong data-session-finish>—</strong></div>
+        <div><span>Étape</span><strong data-step-label>T1</strong></div>
+      </div>
+
+        <div class="pomo-growth-summary">
+          <div class="pomo-tree-mini">
+            <svg class="pomo-plant" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 28V12M16 20C5 21 4 12 4 12s11-2 12 8Zm0-5C28 16 28 5 28 5S16 4 16 15ZM10 29h12"/></svg><span data-tree-caption>La pousse commence avec T1.</span>
+            <b data-tree-progress>0 %</b>
+          </div>
+          <div class="pomo-tree-steps" data-tree-steps aria-label="Progression de l’arbre"></div>
+        </div>
+      </div></details>
+
+      <details class="pomo-fold pomo-planning"><summary><span>Durées et organisation</span><small>Préréglages et temps disponible</small></summary><div class="pomo-quick-card">
+        <div class="pomo-presets" aria-label="Préréglages rapides">
+          <button type="button" data-preset="classic">25 / 5</button>
+          <button type="button" data-preset="deep">50 / 10</button>
+          <button type="button" data-preset="light">20 / 5</button>
+          <button type="button" data-preset="focus">45 / 10</button>
+        </div>
+        <div class="pomo-available"><label>Temps disponible <input type="number" min="10" max="360" value="50" data-available-minutes> min</label><button type="button" data-build-available>Proposer</button><button type="button" data-quick-ten>10 min maintenant</button></div>
+      </div>
+
+      </details>
+      <details class="pomo-fold"><summary><span>Notes de session</span><small>Intention et point de reprise</small></summary><div class="pomo-session-notes">
+        <label><span>Intention du bloc</span><input type="text" data-intention maxlength="180" placeholder="Facultatif — ce que tu veux avoir fait à la fin"></label>
+        <label><span>Où reprendre ensuite ?</span><input type="text" data-resume-note maxlength="180" placeholder="Facultatif — une note pour ton futur toi"></label>
+      </div></details>
+    </section>
   </main>
 
-  <dialog class="pomo-settings" data-settings>
+  <dialog aria-labelledby="pomodoro-settings-title" class="pomo-settings" data-settings>
     <form method="dialog" class="pomo-settings-card" data-settings-form>
-      <header><div><span>Pomodoro</span><h2>Réglages</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
+      <header><div><span>Pomodoro</span><h2 id="pomodoro-settings-title">Réglages</h2></div><button value="cancel" aria-label="Fermer">×</button></header>
       <section>
         <h3>Préréglages</h3>
         <div class="pomo-setting-presets"><button type="button" data-setting-preset="classic">Classique 25/5</button><button type="button" data-setting-preset="deep">Concentration 50/10</button><button type="button" data-setting-preset="light">Léger 20/5</button><button type="button" data-setting-preset="focus">Profond 45/10</button></div>
@@ -183,19 +195,19 @@
   </dialog>
 
 
-  <dialog class="pomo-settings pomo-report" data-report>
+  <dialog aria-labelledby="pomodoro-report-title" class="pomo-settings pomo-report" data-report>
     <section class="pomo-settings-card">
-      <header><div><span>Concentration</span><h2>Rapport local</h2></div><button type="button" data-close-report aria-label="Fermer">×</button></header>
-      <section class="pomo-report-controls"><div class="pomo-report-tabs" role="tablist" aria-label="Période du rapport"><button type="button" class="is-active" data-report-range="day">Aujourd’hui</button><button type="button" data-report-range="week">7 jours</button><button type="button" data-report-range="month">30 jours</button></div></section>
+      <header><div><span>Concentration</span><h2 id="pomodoro-report-title">Rapport local</h2></div><button type="button" data-close-report aria-label="Fermer">×</button></header>
+      <section class="pomo-report-controls"><div class="pomo-report-tabs" role="tablist" aria-label="Période du rapport"><button type="button" class="is-active" data-report-range="day" role="tab" aria-selected="true">Aujourd’hui</button><button type="button" data-report-range="week" role="tab" aria-selected="false">7 jours</button><button type="button" data-report-range="month" role="tab" aria-selected="false">30 jours</button></div></section>
       <section class="pomo-report-summary" data-report-summary></section>
-      <section><h3 data-report-title>7 derniers jours</h3><div class="pomo-report-chart" data-report-chart></div></section>
+      <section><h3 id="pomo-report-chart-title" data-report-title>7 derniers jours</h3><div class="pomo-report-chart" data-report-chart tabindex="0" role="region" aria-labelledby="pomo-report-chart-title"></div></section>
       <footer><small>Ces données restent uniquement dans ce navigateur.</small><button type="button" data-close-report>Fermer</button></footer>
     </section>
   </dialog>
 
-  <dialog class="pomo-settings pomo-templates" data-templates>
+  <dialog aria-labelledby="pomodoro-templates-title" class="pomo-settings pomo-templates" data-templates>
     <section class="pomo-settings-card">
-      <header><div><span>Plan de travail</span><h2>Modèles de tâches</h2></div><button type="button" data-close-templates aria-label="Fermer">×</button></header>
+      <header><div><span>Plan de travail</span><h2 id="pomodoro-templates-title">Modèles de tâches</h2></div><button type="button" data-close-templates aria-label="Fermer">×</button></header>
       <section class="pomo-template-save">
         <h3>Enregistrer les tâches actuelles</h3>
         <div><input type="text" data-template-name maxlength="80" placeholder="Ex. Révisions du matin"><button type="button" data-save-template>Enregistrer</button></div>
@@ -205,16 +217,16 @@
     </section>
   </dialog>
 
-  <dialog class="pomo-settings pomo-resume" data-resume-dialog>
-    <section class="pomo-settings-card"><header><div><span>Session précédente</span><h2>Reprendre ou recommencer ?</h2></div></header><section><p data-resume-copy>Une session précédente a été trouvée.</p><div class="pomo-resume-actions"><button type="button" data-resume-continue>Continuer</button><button type="button" class="is-primary" data-resume-new>Nouvelle session · T1</button></div></section></section>
+  <dialog aria-labelledby="pomodoro-resume-dialog-title" class="pomo-settings pomo-resume" data-resume-dialog>
+    <section class="pomo-settings-card"><header><div><span>Session précédente</span><h2 id="pomodoro-resume-dialog-title">Reprendre ou recommencer ?</h2></div></header><section><p data-resume-copy>Une session précédente a été trouvée.</p><div class="pomo-resume-actions"><button type="button" data-resume-continue>Continuer</button><button type="button" class="is-primary" data-resume-new>Nouvelle session · T1</button></div></section></section>
   </dialog>
 
-  <dialog class="pomo-settings pomo-interruption" data-interruption-dialog>
-    <section class="pomo-settings-card"><header><div><span>Pause imprévue</span><h2>Interruption</h2></div><button type="button" data-close-interruption>×</button></header><section><p>Le minuteur est mis en pause. Tu peux simplement fermer, ou noter une raison pour repérer les interruptions récurrentes sans gamification.</p><div class="pomo-interruption-reasons"><button type="button" data-interruption-reason="Téléphone">Téléphone</button><button type="button" data-interruption-reason="Personne">Personne</button><button type="button" data-interruption-reason="Fatigue">Fatigue</button><button type="button" data-interruption-reason="Autre">Autre</button></div></section></section>
+  <dialog aria-labelledby="pomodoro-interruption-dialog-title" class="pomo-settings pomo-interruption" data-interruption-dialog>
+    <section class="pomo-settings-card"><header><div><span>Pause imprévue</span><h2 id="pomodoro-interruption-dialog-title">Interruption</h2></div><button type="button" data-close-interruption>×</button></header><section><p>Le minuteur est mis en pause. Tu peux simplement fermer, ou noter une raison pour repérer les interruptions récurrentes sans gamification.</p><div class="pomo-interruption-reasons"><button type="button" data-interruption-reason="Téléphone">Téléphone</button><button type="button" data-interruption-reason="Personne">Personne</button><button type="button" data-interruption-reason="Fatigue">Fatigue</button><button type="button" data-interruption-reason="Autre">Autre</button></div></section></section>
   </dialog>
 
   <div class="pomo-toast" data-toast hidden role="status"></div>
-  <script src="./pomodoro.js?v=20261004-pomo7-atelier"></script>
-<script src="/js/atelier-bridge.js?v=20261004-atelier2"></script>
+  <script src="./pomodoro.js?v=20261007-lecture1"></script>
+  <script src="./calme-ui.js?v=20261007-lecture1"></script>
 <script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

@@ -1,1 +1,60 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Espace privé — Philosophal</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/css/private-page.css?v=20261004-v31"><script src="/js/private-access.js?v=20261004-v31" defer></script><script src="/js/private-page.js?v=20261004-v31" defer></script></head><body data-private-path="/apprendre/creation/index.html"><main class="vault-card"><span class="vault-mark">◇</span><h1>Espace privé</h1><p>Entrez votre mot de passe pour ouvrir cet espace.</p><form data-vault-form><label for="vault-password">Mot de passe</label><input id="vault-password" type="password" data-vault-password autocomplete="current-password" required><label class="remember"><input type="checkbox" data-vault-remember> Rester connecté sur cet appareil personnel</label><button type="submit">Ouvrir mon espace</button><p class="vault-status" data-vault-status role="status" aria-live="polite"></p></form><a href="/mediatheque/">← Médiathèque</a> · <a href="/">Accueil</a></main></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#152235"><meta name="robots" content="noindex,nofollow">
+  <title>Téléprompteur — Philosophal</title>
+  <meta name="description" content="Préparez un script et lisez-le avec un défilement réglable, un mode miroir et des repères de lecture. Tout reste sur votre appareil.">
+  <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="./teleprompteur/teleprompteur.css?v=20261006">
+</head>
+<body>
+  <header class="prompt-header">
+    <div><nav aria-label="Fil d’Ariane"><a href="/mediatheque/">Médiathèque</a><span>/</span><a href="/apprendre/creation/">Création de contenu</a></nav><h1><span class="prompt-mark" data-icon="play"></span>Téléprompteur <span class="prompt-local">Sur votre appareil</span></h1></div>
+    <div class="prompt-header-actions"><button type="button" data-focus-mode aria-pressed="false">Mode lecture</button><button type="button" data-fullscreen><span data-icon="fullscreen"></span>Plein écran</button></div>
+  </header>
+  <main class="prompt-workspace">
+    <aside class="prompt-panel" aria-label="Script et réglages">
+      <section class="prompt-script">
+        <div class="prompt-panel-title"><span>01</span><h2>Préparer le script</h2><span data-save-state role="status">Prêt</span></div>
+        <label class="sr-only" for="script">Texte à faire défiler</label>
+        <textarea id="script" data-script maxlength="250000" placeholder="Collez ou écrivez votre texte ici…&#10;&#10;Séparez les paragraphes par une ligne vide pour créer des repères."></textarea>
+        <div class="prompt-script-actions"><button type="button" data-import>Importer .txt / .md</button><button type="button" data-download>Exporter</button><button type="button" data-copy>Copier</button></div>
+        <input type="file" accept=".txt,.md,text/plain,text/markdown" data-script-file hidden>
+        <div class="prompt-metrics"><div><strong data-word-count>0</strong><span>mots</span></div><div><strong data-reading-duration>0:00</strong><span>de lecture estimée</span></div><label>Débit estimé<select data-rate aria-label="Débit estimé en mots par minute"><option value="120">120 mots/min</option><option value="150" selected>150 mots/min</option><option value="180">180 mots/min</option></select></label></div>
+      </section>
+      <section class="prompt-settings">
+        <div class="prompt-panel-title"><span>02</span><h2>Régler la lecture</h2></div>
+        <label class="prompt-range"><span>Vitesse du défilement <output data-speed-value>40 px/s</output></span><input type="range" min="5" max="180" step="1" value="40" data-speed></label>
+        <button type="button" class="prompt-calibrate" data-calibrate>Caler la vitesse sur le débit estimé</button>
+        <div class="prompt-settings-grid"><label>Départ différé<select data-countdown><option value="0">Immédiat</option><option value="3" selected>3 secondes</option><option value="5">5 secondes</option><option value="10">10 secondes</option></select></label><label>Thème<select data-theme><option value="dark">Sombre</option><option value="light">Clair</option><option value="sepia">Papier</option></select></label></div>
+        <details open><summary>Confort de lecture</summary><div class="prompt-detail-content">
+          <label class="prompt-range"><span>Taille du texte <output data-size-value>48 px</output></span><input type="range" min="24" max="100" value="48" data-size></label>
+          <label class="prompt-range"><span>Interligne <output data-line-value>1,6</output></span><input type="range" min="1.2" max="2.4" step=".1" value="1.6" data-line></label>
+          <label class="prompt-range"><span>Largeur du texte <output data-width-value>80 %</output></span><input type="range" min="45" max="95" value="80" data-width></label>
+          <label>Police<select data-font><option value="sans">Sans empattement</option><option value="serif">Avec empattement</option></select></label>
+          <label class="prompt-check"><input type="checkbox" data-mirror>Mode miroir horizontal</label>
+          <label class="prompt-check"><input type="checkbox" data-guide checked>Afficher le repère de lecture</label>
+          <label class="prompt-check"><input type="checkbox" data-loop>Recommencer à la fin</label>
+        </div></details>
+        <label>Aller à un paragraphe<select data-paragraph><option value="">Repères du script…</option></select></label>
+      </section>
+      <details class="prompt-preparation"><summary>Préparer une prise</summary><div class="prompt-detail-content"><p>Un outil rapide pour structurer vos vidéos.</p><button type="button" data-template>Insérer un plan à la position du curseur</button><ul><li>Une accroche claire dans les premières secondes.</li><li>Une idée par paragraphe, avec des phrases faciles à dire.</li><li>Une pause entre les parties, puis une conclusion précise.</li></ul><p><kbd>Espace</kbd> lecture/pause · <kbd>↑</kbd> / <kbd>↓</kbd> vitesse · <kbd>←</kbd> / <kbd>→</kbd> avancer/reculer · <kbd>Début</kbd> revenir au début · <kbd>F</kbd> plein écran.</p></div></details>
+    </aside>
+    <section class="prompt-player" aria-label="Téléprompteur" data-player data-theme="dark">
+      <div class="prompt-player-meta"><span class="prompt-status" data-play-status role="status">À votre rythme</span><div><span data-elapsed>0:00</span><span class="prompt-meta-divider">/</span><span data-remaining>0:00</span><span>restant</span></div></div>
+      <div class="prompt-reader" data-reader tabindex="0" aria-label="Zone de lecture, défilable au clavier">
+        <div class="prompt-spacer" data-top-spacer></div><div class="prompt-text" data-prompt-text><p class="prompt-placeholder">Votre prochaine idée mérite d’être bien racontée.</p><p class="prompt-placeholder-small">Ajoutez un script à gauche, réglez votre rythme, puis lancez la lecture.</p></div><div class="prompt-spacer" data-bottom-spacer></div>
+      </div>
+      <div class="prompt-reading-guide" data-reading-guide aria-hidden="true"><span></span></div>
+      <div class="prompt-countdown" data-countdown-overlay hidden aria-hidden="true"></div>
+      <footer class="prompt-transport">
+        <label class="prompt-progress"><span class="sr-only">Position dans le script</span><input type="range" min="0" max="100" step=".1" value="0" data-position><output data-position-value>0 %</output></label>
+        <div class="prompt-transport-row"><button type="button" class="prompt-reset" data-reset aria-label="Revenir au début"><span data-icon="undo"></span></button><button type="button" class="prompt-play" data-play><span data-icon="play"></span><span data-play-label>Lancer la lecture</span></button><div class="prompt-speed-mini"><button type="button" data-slower aria-label="Ralentir le défilement">−</button><span data-mini-speed>40 px/s</span><button type="button" data-faster aria-label="Accélérer le défilement">+</button></div></div>
+      </footer>
+    </section>
+  </main>
+  <div class="prompt-toast" data-toast role="status" hidden></div>
+  <script src="/js/tool-icons.js?v=20261006"></script><script src="./teleprompteur/teleprompteur.js?v=20261006"></script>
+  <script src="/js/global-backup.js?v=20261004-v31" defer></script>
+</body>
+</html>
