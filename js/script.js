@@ -21,7 +21,7 @@
   };
 
   ready(() => {
-    initOrganisedHeader();
+    initHeaderCurrentLinks();
     ensureBlogLinks();
     enhanceNavigationShortcuts();
     initNavigation();
@@ -36,100 +36,26 @@
     initStudentAccess();
   });
 
-  function initOrganisedHeader() {
+  // Le bandeau est livré dans le HTML : son contenu et sa géométrie restent
+  // identiques avant et après le chargement des scripts.
+  function initHeaderCurrentLinks() {
     const navbar = document.querySelector(".navbar");
-    const container = navbar?.querySelector(".nav-container");
-    const nav = container?.querySelector(".nav-links");
-    const brand = container?.querySelector(".nav-brand");
-    const toggle = container?.querySelector(".nav-toggle");
-    if (!container || !nav || !brand || !toggle || navbar.classList.contains("ph-header-organised")) return;
-
+    if (!navbar) return;
     const script = document.querySelector('script[src*="js/script.js"]');
     const siteRoot = script ? new URL("../", script.src).pathname : "/";
-    const existingLinks = [...nav.querySelectorAll("a")];
-    const takeLink = (className, label, destination, hash = "") => {
-      const link = existingLinks.find((item) => item.classList.contains(className) ||
-        (hash && new URL(item.href).hash === hash)) || document.createElement("a");
-      link.classList.add(className);
-      link.href = destination;
-      link.textContent = label;
-      return link;
-    };
-    const home = `${siteRoot}index.html`;
-    const onHome = window.location.pathname === siteRoot || window.location.pathname === home;
-    const homeAnchor = (hash) => onHome ? hash : `${home}${hash}`;
-    const texts = takeLink("nav-texts-link", "Textes", `${siteRoot}textes/`);
-    const blog = takeLink("nav-blog-link", "Blog", `${siteRoot}blog/`);
-    const services = takeLink("nav-services-link", "Prestations", homeAnchor("#philosophie"), "#philosophie");
-    const about = takeLink("nav-about-link", "Qui suis-je ?", homeAnchor("#quisuisje"), "#quisuisje");
-    const faq = takeLink("nav-faq-link", "FAQ", homeAnchor("#faq"), "#faq");
-    const tools = takeLink("nav-tools-link", "Outils", `${siteRoot}outils/`);
-    const contact = takeLink("nav-contact-link", "Contactez-moi", homeAnchor("#contact"), "#contact");
-
-    const makeGroup = (label, className, links) => {
-      const group = document.createElement("details");
-      group.className = `nav-group ${className}`;
-      const summary = document.createElement("summary");
-      summary.textContent = label;
-      const chevron = document.createElement("span");
-      chevron.className = "nav-group-chevron";
-      chevron.setAttribute("aria-hidden", "true");
-      summary.append(chevron);
-      const panel = document.createElement("div");
-      panel.className = "nav-group-links";
-      panel.append(...links);
-      group.append(summary, panel);
-      return group;
-    };
-    const explorer = makeGroup("Explorer", "nav-group-explorer", [texts, blog]);
-    const information = makeGroup("À propos", "nav-group-about", [about, faq]);
-    const mobileContact = contact.cloneNode(true);
-    mobileContact.classList.add("nav-contact-mobile");
-    contact.classList.add("nav-contact-desktop");
-    nav.replaceChildren(explorer, tools, services, information, mobileContact);
-    nav.id ||= "primary-navigation";
-
-    brand.href = home;
-    const logo = brand.querySelector(".nav-brand-logo");
-    if (logo) {
-      logo.alt = "";
-      logo.width = 40;
-      logo.height = 40;
-    }
-    const wordmark = document.createElement("span");
-    wordmark.className = "nav-brand-name";
-    wordmark.textContent = "Philosophal";
-    brand.append(wordmark);
-
-    const search = document.createElement("button");
-    search.type = "button";
-    search.className = "nav-search-trigger";
-    search.dataset.siteSearchOpen = "";
-    search.setAttribute("aria-label", "Rechercher sur le site");
-    search.setAttribute("aria-keyshortcuts", "R");
-    search.title = "Rechercher sur le site — raccourci R";
-    search.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>';
-    toggle.setAttribute("aria-controls", nav.id);
-    toggle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span>';
-    const actions = document.createElement("div");
-    actions.className = "nav-header-actions";
-    actions.append(search, contact, toggle);
-    container.replaceChildren(brand, nav, actions);
-    navbar.classList.add("ph-header-organised");
-
+    const information = navbar.querySelector(".nav-group-about");
     const canonicalPath = (pathname) => pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "");
     const updateCurrentLinks = () => {
       const currentPath = canonicalPath(window.location.pathname);
       navbar.querySelectorAll("nav a, .nav-contact-desktop").forEach((link) => {
         const url = new URL(link.href);
         const samePath = canonicalPath(url.pathname) === currentPath;
+        const inSection = !url.hash && url.pathname !== siteRoot && window.location.pathname.startsWith(`${canonicalPath(url.pathname)}/`);
         const current = samePath && (url.hash ? url.hash === window.location.hash : !window.location.hash);
-        if (current) link.setAttribute("aria-current", url.hash ? "location" : "page");
+        if (current || inSection) link.setAttribute("aria-current", current && !url.hash ? "page" : "location");
         else link.removeAttribute("aria-current");
       });
-      explorer.classList.toggle("has-current-link", window.location.pathname.startsWith(`${siteRoot}textes/`) ||
-        window.location.pathname.startsWith(`${siteRoot}blog/`));
-      information.classList.toggle("has-current-link", !!information.querySelector("[aria-current]"));
+      if (information) information.classList.toggle("has-current-link", !!information.querySelector("[aria-current]"));
     };
     updateCurrentLinks();
     window.addEventListener("hashchange", updateCurrentLinks);
@@ -239,7 +165,15 @@
         updateNavbar();
       });
     }, { passive: true });
-    updateNavbar();
+    // Éviter une animation de mise en place à l’ouverture ou à la restauration
+    // d’une page ; les transitions sont ensuite réservées au défilement.
+    const settleNavbar = () => {
+      navbar.classList.remove("ph-header-ready");
+      updateNavbar();
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => navbar.classList.add("ph-header-ready")));
+    };
+    window.addEventListener("pageshow", settleNavbar);
+    settleNavbar();
   }
 
   function initFaq() {

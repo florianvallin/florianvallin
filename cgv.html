@@ -9,7 +9,7 @@
   <title>Conditions générales de vente | Philosophal</title>
 
   <link rel="preload" href="assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261008-contact-doux1" />
+  <link rel="stylesheet" href="css/style.css?v=20261009-navigation2" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/site-tools.css?v=20260923-github-refresh1">
@@ -17,27 +17,26 @@
 
 <body id="top">
 
-<header class="navbar" id="site-header">
+<header class="navbar ph-header-organised" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="/" aria-label="Accueil — Philosophal"><img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20260924-logo1" alt="Philosophal" width="46" height="46" decoding="async"></a>
-
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Ouvrir le menu"
-      aria-controls="primary-navigation"
-      aria-expanded="false"
-    >
-      <span></span><span></span><span></span>
-    </button>
-
+    <a class="nav-brand" href="index.html" aria-label="Accueil — Philosophal" title="Accueil"><img class="nav-brand-logo" src="images/logo-philosophal.png?v=20260925-publish1" alt="" width="40" height="40" decoding="async"></a>
     <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a><a class="nav-tools-link" href="/outils/">Outils</a>
-      <a href="/#philosophie">Prestations</a>
-      <a href="/#quisuisje">Qui suis-je ?</a>
-      <a href="/#faq">FAQ</a>
-      <a class="nav-contact-link" href="/#contact">Contactez-moi</a>
+      <a class="nav-texts-link" href="textes/" aria-label="Textes — raccourci clavier T" title="Raccourci clavier : T"><span class="nav-shortcut-letter" aria-hidden="true">T</span>extes</a>
+      <a class="nav-blog-link" href="blog/" aria-label="Blog — raccourci clavier B" title="Raccourci clavier : B"><span class="nav-shortcut-letter" aria-hidden="true">B</span>log</a>
+      <a class="nav-tools-link" href="outils/">Outils</a>
+      <button class="nav-search-trigger nav-search-desktop" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="nav-services-link" href="index.html#philosophie">Prestations</a>
+      <details class="nav-group nav-group-about">
+        <summary>À propos<span class="nav-group-chevron" aria-hidden="true"></span></summary>
+        <div class="nav-group-links"><a class="nav-about-link" href="index.html#quisuisje">Qui suis-je ?</a><a class="nav-faq-link" href="index.html#faq">FAQ</a></div>
+      </details>
+      <a class="nav-contact-link nav-contact-mobile" href="index.html#contact">Contactez-moi</a>
     </nav>
+    <div class="nav-header-actions">
+      <button class="nav-search-trigger nav-search-mobile" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="nav-contact-link nav-contact-desktop" href="index.html#contact">Contactez-moi</a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span></button>
+    </div>
   </div>
 </header>
 
@@ -306,6 +305,6 @@
     </div>
   </footer>
 
-  <script src="js/script.js?v=20261008-header-chaleureux1" defer></script>
+  <script src="js/script.js?v=20261009-navigation1" defer></script>
 <script src="/js/global-backup.js?v=20261004-v31" defer></script></body>
 </html>

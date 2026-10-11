@@ -33,7 +33,7 @@
   <meta property="og:site_name" content="Philosophal">
 
   <link rel="preload" href="assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261008-contact-doux1">
+  <link rel="stylesheet" href="css/style.css?v=20261009-navigation2">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,19 +49,26 @@
 
 <body id="top">
 
-<header class="navbar" id="site-header">
+<header class="navbar ph-header-organised" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="/index.html" aria-label="Accueil — Philosophal"><img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20260925-publish1" alt="Philosophal" width="46" height="46" decoding="async"></a>
-    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="nav-brand" href="index.html" aria-label="Accueil — Philosophal" title="Accueil"><img class="nav-brand-logo" src="images/logo-philosophal.png?v=20260925-publish1" alt="" width="40" height="40" decoding="async"></a>
     <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a class="nav-texts-link" href="/textes/">Textes</a><a class="nav-blog-link" href="/blog/">Blog</a><a class="nav-tools-link" href="/outils/">Outils</a>
-      <a href="#philosophie">Prestations</a>
-      <a href="#quisuisje">Qui suis-je ?</a>
-      <a href="#faq">FAQ</a>
-      <a class="nav-contact-link" href="#contact">Contactez-moi</a>
+      <a class="nav-texts-link" href="textes/" aria-label="Textes — raccourci clavier T" title="Raccourci clavier : T"><span class="nav-shortcut-letter" aria-hidden="true">T</span>extes</a>
+      <a class="nav-blog-link" href="blog/" aria-label="Blog — raccourci clavier B" title="Raccourci clavier : B"><span class="nav-shortcut-letter" aria-hidden="true">B</span>log</a>
+      <a class="nav-tools-link" href="outils/">Outils</a>
+      <button class="nav-search-trigger nav-search-desktop" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="nav-services-link" href="#philosophie">Prestations</a>
+      <details class="nav-group nav-group-about">
+        <summary>À propos<span class="nav-group-chevron" aria-hidden="true"></span></summary>
+        <div class="nav-group-links"><a class="nav-about-link" href="#quisuisje">Qui suis-je ?</a><a class="nav-faq-link" href="#faq">FAQ</a></div>
+      </details>
+      <a class="nav-contact-link nav-contact-mobile" href="#contact">Contactez-moi</a>
     </nav>
+    <div class="nav-header-actions">
+      <button class="nav-search-trigger nav-search-mobile" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="nav-contact-link nav-contact-desktop" href="#contact">Contactez-moi</a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span></button>
+    </div>
   </div>
 </header>
 
@@ -907,11 +914,11 @@
         <p>
           Mon travail s’organise autour de deux axes : la <strong>philosophie</strong> (dissertation, explication de texte)
           et la <strong>méthodologie générale</strong> (apprendre à apprendre, organisation, mémorisation, outils).
-          Je me suis beaucoup intéressé aux méthodes de travail afin d’optimiser mon quotidien et mes études : techniques d’apprentissage et de mémorisation avancées, intégration de l’IA pour les étudiants, usage des macros dans le traitement de texte, etc.
+          Je me suis beaucoup intéressé aux méthodes de travail afin d’optimiser mon quotidien et mes études : techniques d’apprentissage et de mémorisation avancées, intégration de l’IA dans le travail au quotidien, usage des macros dans le traitement de texte, etc.
         </p>
 
         <p>
-          Aujourd’hui, j’accompagne des élèves en <strong>cours particuliers</strong>, <strong>à titre privé</strong> ainsi que via <strong>Acadomia</strong> et <strong>MyMaxicours</strong>. Par le passé, j’ai également assuré un <strong>tutorat universitaire</strong> auprès d’étudiants en <strong>licence de philosophie à distance</strong> à l’Université de Montpellier.
+          Aujourd’hui, j’accompagne des élèves en <strong>cours particuliers</strong>, <strong>à titre privé</strong> ainsi que via <strong>Acadomia</strong> et <strong>MyMaxicours</strong>. Par le passé, j’ai également assuré un <strong>tutorat universitaire</strong> auprès d’étudiants en <strong>licence de philosophie à distance</strong> à l’Université.
         </p>
 
         <div class="about-social-links" aria-label="Profils et réseaux">
@@ -938,6 +945,12 @@
           >
             <span class="about-social-link__icon" aria-hidden="true">
               <iconify-icon icon="mdi:web" width="19" height="19"></iconify-icon>
+            </span>
+          </a>
+
+          <a class="about-social-link about-social-link--links" href="links/" aria-label="Ouvrir la page Mes liens" title="Mes liens — me retrouver sur Internet">
+            <span class="about-social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v5M5 16v-5h14v5"></path><rect x="9" y="2" width="6" height="4" rx="1.5"></rect><rect x="2" y="16" width="6" height="5" rx="1.5"></rect><rect x="16" y="16" width="6" height="5" rx="1.5"></rect></svg>
             </span>
           </a>
 
@@ -1008,7 +1021,8 @@
         <p>
           Aux <strong>élèves de Terminale</strong>, <strong>étudiants</strong>, 
           <strong>candidats aux concours</strong> et personnes en 
-          <strong>reprise d’études</strong>. L’accompagnement s’adapte au niveau et aux objectifs de chacun.
+          <strong>reprise d’études</strong>, ainsi qu’à toute personne souhaitant apprendre
+          <strong>par intérêt personnel ou par passion</strong>. L’accompagnement s’adapte au niveau et aux objectifs de chacun.
         </p>
       </div>
     </div>
@@ -1021,9 +1035,9 @@
       </button>
       <div class="faq-answer">
         <p>
-          En <strong>présentiel à Montpellier (34000)</strong> ou à 
-          <strong>distance</strong> via <strong>Discord</strong>, 
-          <strong>Google Meet</strong> ou <strong>Zoom</strong>.
+          À <strong>distance</strong>, via <strong>Discord</strong>,
+          <strong>Google Meet</strong> ou <strong>Zoom</strong>, ou en
+          <strong>présentiel à Montpellier (34000)</strong>.
         </p>
       </div>
     </div>
@@ -1267,7 +1281,31 @@
             <p id="prestation-help" class="contact-field-help"></p>
           </div>
 
-          <input type="hidden" name="offre" value=""><p class="contact-offer-summary" data-offer-summary aria-live="polite" hidden></p><div class="contact-field"><label for="offre-choisie">Offre souhaitée</label><div class="contact-select-wrapper"><select id="offre-choisie" data-contact-offer><option value="">Je souhaite être conseillé</option><option value="individuel">Séance individuelle de philosophie</option><option value="collectif">Cours collectif de philosophie</option><option value="express">Pack Express — 175 €</option><option value="remise">Pack Remise à niveau — 250 €</option><option value="excellence">Pack Excellence — 320 €</option><option value="methodologie">Séance de méthodologie — 40 € / h</option></select></div></div><div class="contact-field">
+          <input type="hidden" name="offre" value="">
+          <p class="contact-offer-summary" data-offer-summary aria-live="polite" hidden></p>
+          <div class="contact-field contact-field--select">
+            <label for="offre-choisie">Offre souhaitée</label>
+            <div class="contact-select-wrapper">
+              <select id="offre-choisie" data-contact-offer aria-describedby="offre-help">
+                <option value="">Je souhaite être conseillé</option>
+                <optgroup label="Philosophie — séances">
+                  <option value="individuel">Séance individuelle — 50 € / h</option>
+                  <option value="collectif">Cours collectif — 25 à 35 € / élève</option>
+                </optgroup>
+                <optgroup label="Philosophie — packs">
+                  <option value="express">Express · 2 × 2 h — 175 €</option>
+                  <option value="remise">Remise à niveau · 6 × 1 h — 250 €</option>
+                  <option value="excellence">Excellence · 8 × 1 h — 320 €</option>
+                </optgroup>
+                <optgroup label="Méthodologie">
+                  <option value="methodologie">Séance de méthodologie — 40 € / h</option>
+                </optgroup>
+              </select>
+              <span class="contact-select-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M5.5 7.5L10 12L14.5 7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            </div>
+            <p id="offre-help" class="contact-field-help">Vous hésitez ? Choisissez « Je souhaite être conseillé ».</p>
+          </div>
+          <div class="contact-field">
             <label for="message">Message *</label>
             <textarea
               id="message"
@@ -1377,7 +1415,7 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20261008-header-chaleureux1" defer></script>
+<script src="js/script.js?v=20261009-navigation1" defer></script>
 <script src="js/protected-phone.js?v=20260925-publish1" defer></script>
 <script src="js/contact-form.js?v=20261004-v31" defer></script>
 

@@ -1387,6 +1387,21 @@ button { color: inherit; }
   box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
 }
 
+.about-social-link--links .about-social-link__icon {
+  border:1px solid #dfd1ed;
+  background:#f5edf9;
+  color:#80529c;
+  box-shadow:0 5px 14px rgba(28,28,40,.06);
+}
+.about-social-link--links svg { width:20px; height:20px; }
+
+.contact-field-help:not(:empty) {
+  margin-top:8px;
+  color:#81738a;
+  font-size:13px;
+  line-height:1.55;
+}
+
 .about-social-divider {
   width: 1px;
   height: 36px;
@@ -1841,7 +1856,6 @@ body.site-search-open { overflow:hidden; }
   color:#342541;
 }
 .navbar.ph-header-organised .nav-brand-logo { width:40px; height:40px; }
-.navbar.ph-header-organised .nav-brand-name { font-size:20px; font-weight:600; letter-spacing:-.025em; }
 .navbar.ph-header-organised .nav-links {
   position:static;
   display:flex;
@@ -1926,16 +1940,25 @@ body.site-search-open { overflow:hidden; }
 .navbar.ph-header-organised .nav-group[open] .nav-group-chevron { margin-top:3px; transform:rotate(225deg); }
 .navbar.ph-header-organised .nav-group-links {
   position:absolute;
-  top:calc(100% + 9px);
-  left:-8px;
-  width:190px;
-  padding:7px;
-  border:1px solid #e1d7ec;
-  border-radius:9px;
+  top:calc(100% + 7px);
+  left:50%;
+  width:max-content;
+  min-width:136px;
+  padding:4px;
+  border:1px solid #e9e0f0;
+  border-radius:12px;
   background:#fff;
-  box-shadow:0 10px 28px #30233f12;
+  box-shadow:0 6px 20px #30233f0e;
+  transform:translateX(-50%);
 }
-.navbar.ph-header-organised .nav-group-links a { width:100%; padding:10px 12px; }
+.navbar.ph-header-organised .nav-group-links a {
+  justify-content:center;
+  width:100%;
+  min-height:40px;
+  padding:8px 12px;
+  text-align:center;
+  font-size:13px;
+}
 .navbar.ph-header-organised .nav-links a:hover,
 .navbar.ph-header-organised .nav-group summary:hover,
 .navbar.ph-header-organised .nav-group[open] > summary,
@@ -1964,6 +1987,7 @@ body.site-search-open { overflow:hidden; }
 }
 .navbar.ph-header-organised .nav-search-trigger:hover { color:#624093; background:#faf8fd; }
 .navbar.ph-header-organised .nav-search-trigger svg { width:20px; height:20px; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; }
+.navbar.ph-header-organised .nav-search-mobile { display:none; }
 .navbar.ph-header-organised a.nav-contact-link,
 .navbar.ph-header-organised .nav-links a.nav-contact-link {
   display:inline-flex;
@@ -2006,6 +2030,8 @@ body.site-search-open { overflow:hidden; }
 .navbar.ph-header-organised .nav-links a.nav-contact-mobile { display:none; }
 .navbar.ph-header-organised .nav-toggle { display:none; }
 .navbar.ph-header-organised :is(a,button,summary):focus-visible { outline:2px solid #624093; outline-offset:4px; }
+.navbar.ph-header-organised:not(.ph-header-ready),
+.navbar.ph-header-organised:not(.ph-header-ready) .nav-container { transition:none; }
 
 @media (min-width:901px) and (max-width:1050px) {
   .navbar.ph-header-organised .nav-container { gap:14px; padding-inline:18px; }
@@ -2020,8 +2046,9 @@ body.site-search-open { overflow:hidden; }
   .navbar.ph-header-organised.scrolled .nav-container { min-height:66px; padding-inline:10px; }
   .navbar.ph-header-organised .nav-brand { gap:7px; }
   .navbar.ph-header-organised .nav-brand-logo { width:34px; height:34px; }
-  .navbar.ph-header-organised .nav-brand-name { font-size:19px; }
   .navbar.ph-header-organised .nav-header-actions { margin-left:auto; gap:6px; }
+  .navbar.ph-header-organised .nav-search-mobile { display:inline-flex; }
+  .navbar.ph-header-organised .nav-search-desktop { display:none; }
   .navbar.ph-header-organised a.nav-contact-desktop { display:none; }
   .navbar.ph-header-organised .nav-toggle {
     position:static;
@@ -2074,18 +2101,19 @@ body.site-search-open { overflow:hidden; }
   }
   .navbar.ph-header-organised.nav-open .nav-links { display:grid; }
   .navbar.ph-header-organised.scrolled .nav-links { border-radius:0 0 13px 13px; }
-  .navbar.ph-header-organised .nav-group-explorer { grid-column:1; grid-row:1; }
-  .navbar.ph-header-organised .nav-group-about { grid-column:2; grid-row:2; }
-  .navbar.ph-header-organised .nav-services-link { grid-column:1; grid-row:2; margin-left:0; }
-  .navbar.ph-header-organised .nav-tools-link { grid-column:2; grid-row:1; }
+  .navbar.ph-header-organised .nav-texts-link { grid-column:1; grid-row:1; }
+  .navbar.ph-header-organised .nav-blog-link { grid-column:2; grid-row:1; }
+  .navbar.ph-header-organised .nav-tools-link { grid-column:1 / -1; grid-row:2; }
+  .navbar.ph-header-organised .nav-group-about { grid-column:2; grid-row:3; }
+  .navbar.ph-header-organised .nav-services-link { grid-column:1; grid-row:3; margin-left:0; }
   .navbar.ph-header-organised .nav-links > a,
   .navbar.ph-header-organised .nav-group summary { width:100%; padding:8px 10px; font-size:14px; white-space:normal; }
   .navbar.ph-header-organised .nav-links > a:not(.nav-contact-link)::after { left:10px; right:10px; }
   .navbar.ph-header-organised .nav-group > summary::after { left:10px; right:26px; }
   .navbar.ph-header-organised .nav-group summary { justify-content:space-between; }
-  .navbar.ph-header-organised .nav-group-links { position:static; width:auto; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; }
+  .navbar.ph-header-organised .nav-group-links { position:static; left:auto; width:auto; min-width:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; transform:none; }
   .navbar.ph-header-organised .nav-group-links a { padding:8px 10px; white-space:normal; }
-  .navbar.ph-header-organised .nav-links a.nav-contact-mobile { display:flex; grid-column:1 / -1; grid-row:3; margin-top:4px; font-size:13px; }
+  .navbar.ph-header-organised .nav-links a.nav-contact-mobile { display:flex; grid-column:1 / -1; grid-row:4; margin-top:4px; font-size:13px; }
 }
 @media (max-width:360px) {
   .navbar.ph-header-organised { padding:0; }
@@ -2094,7 +2122,6 @@ body.site-search-open { overflow:hidden; }
   .navbar.ph-header-organised.scrolled .nav-container { min-height:64px; padding-inline:8px; }
   .navbar.ph-header-organised .nav-brand { gap:6px; }
   .navbar.ph-header-organised .nav-brand-logo { width:30px; height:30px; }
-  .navbar.ph-header-organised .nav-brand-name { font-size:17.5px; }
   .navbar.ph-header-organised .nav-header-actions { gap:4px; }
   .navbar.ph-header-organised .nav-toggle { gap:4px; padding-inline:8px; font-size:12px; }
   .navbar.ph-header-organised .nav-toggle svg { width:16px; height:16px; }
