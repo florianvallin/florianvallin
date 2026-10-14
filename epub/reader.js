@@ -242,6 +242,14 @@
   }
 
   let readerSettings = loadSettings();
+  function syncSiteReadingTheme() {
+    const dark = window.PHILOSOPHAL_THEME?.get() === "dark";
+    readerSettings.theme = dark ? "night" : readerSettings.theme === "night" ? "paper" : readerSettings.theme;
+  }
+  syncSiteReadingTheme();
+  window.addEventListener("philosophal:themechange", () => {
+    syncSiteReadingTheme();syncSettingsControls();applyReadingSettings();
+  });
 
   function syncSettingsControls() {
     if (settingsInputs.zoom) settingsInputs.zoom.value = readerSettings.zoom;
@@ -3009,6 +3017,7 @@
         const numeric = new Set(["zoom","fontSize","lineHeight","brightness","pageMargin","paragraphSpace"]);
         const value = numeric.has(key) ? Number(input.value) : input.value;
         readerSettings = { ...readerSettings, [key]: value };
+        if (key === "theme") window.PHILOSOPHAL_THEME?.set(value === "night" ? "dark" : "light");
         saveSettings(readerSettings);
         const affectsLayout = ["fontSize","fontFamily","lineHeight","textWidth","pageMargin","paragraphSpace","textAlign","flow","theme"].includes(key);
         if (affectsLayout) invalidatePageModels();

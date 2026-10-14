@@ -14197,3 +14197,1706 @@ body.bible-reader-pathway-modal-open{overflow:hidden}
 .text-focus-controls{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin:0 0 12px}.text-focus-toggle,.text-focus-tools button{border:1px solid #e2e0dc;border-radius:999px;background:#fff;color:#666b69;min-height:32px;padding:0 10px;font:650 .66rem/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}.text-focus-tools{display:flex;align-items:center;gap:5px}.text-focus-tools[hidden]{display:none!important}.text-focus-tools button{min-width:32px;padding:0 8px}.text-focus-toggle:hover,.text-focus-tools button:hover{border-color:#cfc9d7;color:#71527d}
 .text-focus-mode{background:#f7f3eb}.text-focus-mode #site-header,.text-focus-mode .navbar,.text-focus-mode .site-header,.text-focus-mode .site-footer,.text-focus-mode .text-breadcrumb,.text-focus-mode .text-detail-tags,.text-focus-mode .text-detail-section,.text-focus-mode .text-detail-context,.text-focus-mode .text-hlp-study,.text-focus-mode .text-detail-related,.text-focus-mode .text-reading-notes,.text-focus-mode .text-detail-cta,.text-focus-mode .text-path-navigation,.text-focus-mode .text-bible-cycle-nav,.text-focus-mode .text-bible-view-toggle,.text-focus-mode .text-bible-anatomy,.text-focus-mode .text-artwork-gallery,.text-focus-mode .text-bible-bottom-navigation{display:none!important}.text-focus-mode .text-detail-inner{max-width:var(--text-focus-width,780px);padding-top:34px;padding-bottom:90px}.text-focus-mode .text-focus-controls{position:sticky;z-index:25;top:10px;margin-left:auto;width:max-content;padding:5px;border:1px solid rgba(30,30,28,.08);border-radius:999px;background:rgba(247,243,235,.88);backdrop-filter:blur(11px);box-shadow:0 5px 22px rgba(25,25,23,.06)}.text-focus-mode .text-detail-inner>h1,.text-focus-mode .text-detail-author{max-width:var(--text-focus-width,780px);margin-left:auto;margin-right:auto}.text-focus-mode .text-reading,.text-focus-mode .text-reading-part-title,.text-focus-mode .text-reading-part-divider{max-width:var(--text-focus-width,780px);margin-left:auto;margin-right:auto}.text-focus-mode .text-reading-content{font-size:var(--text-focus-font-size,100%);line-height:var(--text-focus-leading,1.72)}.text-focus-mode[data-text-focus-width="narrow"]{--text-focus-width:650px}.text-focus-mode[data-text-focus-width="normal"]{--text-focus-width:780px}.text-focus-mode[data-text-focus-width="wide"]{--text-focus-width:960px}.text-focus-mode[data-text-focus-leading="compact"]{--text-focus-leading:1.5}.text-focus-mode[data-text-focus-leading="comfort"]{--text-focus-leading:1.72}.text-focus-mode[data-text-focus-leading="airy"]{--text-focus-leading:1.95}.text-focus-mode[data-text-focus-theme="white"]{background:#fff}.text-focus-mode[data-text-focus-theme="white"] .text-focus-controls{background:rgba(255,255,255,.9)}.text-focus-mode[data-text-focus-theme="night"]{background:#20211f;color:#e9e5dc}.text-focus-mode[data-text-focus-theme="night"] .text-detail-inner h1,.text-focus-mode[data-text-focus-theme="night"] .text-detail-author,.text-focus-mode[data-text-focus-theme="night"] .text-reading-content,.text-focus-mode[data-text-focus-theme="night"] .text-reading-part-title{color:#e9e5dc}.text-focus-mode[data-text-focus-theme="night"] .text-focus-controls{background:rgba(32,33,31,.9);border-color:rgba(255,255,255,.1)}.text-focus-mode[data-text-focus-theme="night"] .text-focus-toggle,.text-focus-mode[data-text-focus-theme="night"] .text-focus-tools button{background:#2b2d2a;border-color:#444642;color:#e6e0d7}.text-focus-mode[data-text-focus-theme="night"] .text-reading{--text-color:#e9e5dc}
 @media(max-width:700px){.text-focus-controls{margin-top:4px}.text-focus-mode .text-detail-inner{padding:16px 18px 70px}.text-focus-mode .text-focus-controls{top:7px;max-width:calc(100vw - 28px);overflow-x:auto}.text-focus-tools{gap:3px}.text-focus-tools button{min-width:30px;padding:0 6px}}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--catalog-philo:#22203a;--catalog-myth:#a1672b;--catalog-myth-dark:#76491f;--catalog-myth-soft:#2a2218;--catalog-theo:#913b47;--catalog-theo-soft:#29171a;--catalog-other:#30739c;--catalog-other-soft:#172229}
+html[data-site-theme="dark"] .texts-page{background:#151526}
+html[data-site-theme="dark"] body[data-catalog-section="mythologie"] .texts-hero{background:linear-gradient(145deg,#282117 0%,#1d1921 58%,#2b2318 100%)}
+html[data-site-theme="dark"] body[data-catalog-section="theologie"] .texts-hero{background:linear-gradient(145deg,#28161a 0%,#1d1921 58%,#29171b 100%)}
+html[data-site-theme="dark"] body[data-catalog-section="autres"] .texts-hero{background:linear-gradient(145deg,#172328 0%,#1d1921 58%,#172329 100%)}
+html[data-site-theme="dark"] .texts-hero{background:linear-gradient(145deg,#181627 0%,#1d1921 58%,#171627 100%)}
+html[data-site-theme="dark"] .texts-hero::before{color:rgba(158,154,223,0.07)}
+html[data-site-theme="dark"] .texts-section-tab{border:1px solid rgba(192,185,203,0.18);background:rgba(29,25,33,0.78)}
+html[data-site-theme="dark"] .texts-section-tab:hover,html[data-site-theme="dark"] .texts-section-tab[aria-current="page"]{background:var(--ph-action-bg);color:#e5e2e9}
+html[data-site-theme="dark"] .texts-tools{background:#1d1921}
+html[data-site-theme="dark"] .texts-search:focus{border-color:rgba(73,69,135,0.6);background:#1d1921}
+html[data-site-theme="dark"] .texts-select{background:#1d1921}
+html[data-site-theme="dark"] .texts-theme-multi-trigger{background:#1d1921}
+html[data-site-theme="dark"] .texts-theme-multi-menu{background:#1d1921}
+html[data-site-theme="dark"] .texts-theme-multi-chip:hover,html[data-site-theme="dark"] .texts-theme-multi-chip:focus-visible{background:color-mix(in srgb,var(--ph-action-bg) 10%,#1d1921)}
+html[data-site-theme="dark"] .texts-theme-multi-option.is-selected{background:color-mix(in srgb,var(--ph-action-bg) 7%,#1d1921)}
+html[data-site-theme="dark"] .texts-reset{border:1px solid rgba(192,185,203,0.22)}
+html[data-site-theme="dark"] .texts-reset:hover{background:var(--ph-action-bg);color:#e5e2e9}
+html[data-site-theme="dark"] .texts-course-cta{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-linked-set{background:#1d1921}
+html[data-site-theme="dark"] .text-linked-set-heading{background:linear-gradient(100deg,color-mix(in srgb,var(--linked-color) 10%,#1d1921),#1d1921 68%)}
+html[data-site-theme="dark"] .text-linked-set-center-mark{background:color-mix(in srgb,var(--linked-color) 4%,#1d1921)}
+html[data-site-theme="dark"] .text-linked-set .text-card:hover{background:color-mix(in srgb,var(--linked-color) 2.5%,#1d1921)}
+html[data-site-theme="dark"] .text-card{background:#1d1921}
+html[data-site-theme="dark"] .text-card::before{background:var(--card-accent,var(--card-color,var(--ph-action-bg)))}
+html[data-site-theme="dark"] .text-card--dual{--card-color:#cdacc4;--card-ink:#d1a8cb}
+html[data-site-theme="dark"] .text-tag:hover,html[data-site-theme="dark"] .text-tag:focus-visible{border-color:rgba(192,185,203,0.24)}
+html[data-site-theme="dark"] .text-tag--program{border-color:rgba(192,185,203,0.18);background:rgba(34,32,58,0.09)}
+html[data-site-theme="dark"] .text-tag--program::after{background:var(--ph-action-bg)}
+html[data-site-theme="dark"] .text-card--dual .text-tag--program{border-color:color-mix(in srgb,#7f4d71 28%,transparent);background:linear-gradient(100deg,color-mix(in srgb,var(--catalog-philo) 9%,#1d1921),color-mix(in srgb,var(--catalog-theo) 9%,#1d1921))}
+html[data-site-theme="dark"] .text-card--dual .text-tag--program::after{background:#7f4d71}
+html[data-site-theme="dark"] .texts-empty{border:1px dashed rgba(192,185,203,0.25);background:#1d1921}
+html[data-site-theme="dark"] .texts-page-number{border:1px solid rgba(192,185,203,0.2);background:#1d1921}
+html[data-site-theme="dark"] .texts-page-number.is-current{background:var(--ph-action-bg);color:#e5e2e9}
+html[data-site-theme="dark"] .text-detail{background:linear-gradient(120deg,#191627 0%,#1d1921 48%,#191627 100%)}
+html[data-site-theme="dark"] .text-detail--mythologie{background:linear-gradient(120deg,#282117 0%,#1d1921 48%,#2a2218 100%)}
+html[data-site-theme="dark"] .text-detail--theologie{background:linear-gradient(120deg,#28161a 0%,#1d1921 48%,#29171b 100%)}
+html[data-site-theme="dark"] .text-detail--autres{background:linear-gradient(120deg,#172228 0%,#1d1921 48%,#172328 100%)}
+html[data-site-theme="dark"] .text-detail-inner{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .text-detail-section--dual > span:last-child{color:#cdacc4}
+html[data-site-theme="dark"] .text-detail-work-reference{border:1px solid rgba(192,185,203,0.16)}
+html[data-site-theme="dark"] .text-glossary-term{border-bottom:1px dotted rgba(73,69,135,0.68)}
+html[data-site-theme="dark"] .text-glossary-term:focus-visible{outline:2px solid rgba(192,185,203,0.34)}
+html[data-site-theme="dark"] .text-glossary-tooltip{border:1px solid rgba(192,185,203,0.22);color:#e5e2e9}
+html[data-site-theme="dark"] .text-context{background:linear-gradient(90deg,rgba(34,32,58,0.075),rgba(34,32,58,0.018))}
+html[data-site-theme="dark"] .text-context-questions{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-reading-notes{border:1px solid rgba(192,185,203,0.16);background:linear-gradient(90deg,rgba(34,32,58,0.055),rgba(34,32,58,0.014))}
+html[data-site-theme="dark"] .text-reading-notes .text-disclosure-trigger:hover{background:rgba(34,32,58,0.06)}
+html[data-site-theme="dark"] .text-reading-notes-content{border-top:0 solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-note-poles{border:1px solid rgba(192,185,203,0.16);background:rgba(34,32,58,0.055)}
+html[data-site-theme="dark"] .text-note-poles > div{background:rgba(29,25,33,0.58)}
+html[data-site-theme="dark"] .text-note-poles > div + div{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-note-poles > div:first-child strong{color:#cfaab3}
+html[data-site-theme="dark"] .text-note-term-link{text-decoration-color:rgba(158,154,223,0.38)}
+html[data-site-theme="dark"] .text-note-comparison-wrap{border:1px solid rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .text-note-comparison-wrap th{background:rgba(34,32,58,0.07)}
+html[data-site-theme="dark"] .text-note-comparison-wrap th + th,html[data-site-theme="dark"] .text-note-comparison-wrap td + td{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-note-comparison-wrap td{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-reading-notes a{text-decoration-color:rgba(158,154,223,0.4)}
+html[data-site-theme="dark"] .text-relation-group{background:var(--relation-bg,#1d1921)}
+html[data-site-theme="dark"] .text-relation-group-heading:hover{background:rgba(29,25,33,0.34)}
+html[data-site-theme="dark"] .text-relation-group a{text-decoration-color:rgba(158,154,223,0.45)}
+html[data-site-theme="dark"] .text-relation-group--suite{--relation-border:rgba(192,185,203,0.24);--relation-bg:linear-gradient(90deg,rgba(34,32,58,0.095),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--identique{--relation-color:#b5a1d8;--relation-border:rgba(192,185,203,0.22);--relation-bg:linear-gradient(90deg,rgba(90,60,144,0.08),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--proche{--relation-color:#a8d1bf;--relation-border:rgba(192,185,203,0.23);--relation-bg:linear-gradient(90deg,rgba(70,134,106,0.085),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--adverse{--relation-color:#d5a4ab;--relation-border:rgba(192,185,203,0.25);--relation-bg:linear-gradient(90deg,rgba(139,65,75,0.085),#1d1921 58%)}
+html[data-site-theme="dark"] .text-reading{color:#d3ced9}
+html[data-site-theme="dark"] .text-reading-quote{color:rgba(158,154,223,0.16)}
+html[data-site-theme="dark"] .text-reading-line-numbers{border-right:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-reading-line-numbers span{color:rgba(180,175,202,0.56)}
+html[data-site-theme="dark"] .text-scripture-heading{color:#d3ced9}
+html[data-site-theme="dark"] .text-scripture-heading:not(:first-child){border-top:1px solid rgba(192,185,203,0.16)}
+html[data-site-theme="dark"] .text-scripture-movement-title{color:#d0a9b2}
+html[data-site-theme="dark"] .text-scripture-movement-range{color:#c8b1b6}
+html[data-site-theme="dark"] .text-scripture-inline-marker{color:rgba(206,171,176,0.66)}
+html[data-site-theme="dark"] .text-scripture-marker{color:rgba(206,171,176,0.66)}
+html[data-site-theme="dark"] .text-scripture-chapter-divider{background:linear-gradient(90deg,var(--catalog-theo),rgba(145,59,71,0.13) 72%,transparent)}
+html[data-site-theme="dark"] .text-reading .text-scripture-omission{color:rgba(206,171,176,0.52)}
+html[data-site-theme="dark"] .text-scripture-pause{border-top:1px solid #874553;border-bottom:1px solid #874553;background:linear-gradient(90deg,rgba(41,23,27,0.78),rgba(38,30,22,0.88) 48%,rgba(41,23,27,0.34))}
+html[data-site-theme="dark"] .text-scripture-pause::before{color:#d3a6af;background:#261e15}
+html[data-site-theme="dark"] .text-reading .text-scripture-pause-title{color:#d1a8b2}
+html[data-site-theme="dark"] .text-scripture-pause-title span{color:#bbb5c5}
+html[data-site-theme="dark"] .text-reading .text-scripture-pause-intro{color:#bbb5c5}
+html[data-site-theme="dark"] .text-scripture-pause blockquote{color:#bbb5c5}
+html[data-site-theme="dark"] .text-art-gallery{border:1px solid rgba(192,185,203,0.15);background:#1d1921}
+html[data-site-theme="dark"] .text-detail--theologie .text-art-gallery{border-color:rgba(192,185,203,0.16)}
+html[data-site-theme="dark"] .text-detail--theologie .text-art-gallery-heading{background:linear-gradient(112deg,rgba(145,59,71,0.075),rgba(145,59,71,0.012) 65%)}
+html[data-site-theme="dark"] .text-detail--theologie .text-art-gallery-progress{background:rgba(145,59,71,0.09)}
+html[data-site-theme="dark"] .text-detail--theologie .text-art-gallery-progress i{background:linear-gradient(90deg,var(--catalog-theo),#8e3e4f)}
+html[data-site-theme="dark"] .text-art-gallery-heading{background:linear-gradient(112deg,rgba(34,32,58,0.08),rgba(34,32,58,0.014) 65%)}
+html[data-site-theme="dark"] .text-art-gallery-progress{background:rgba(34,32,58,0.09)}
+html[data-site-theme="dark"] .text-art-gallery-progress i{background:linear-gradient(90deg,var(--ph-action-bg),#1f1d34)}
+html[data-site-theme="dark"] .text-art-gallery-stage{background:radial-gradient(circle at 50% 35%,#272416 0,#292518 54%,#2a261b 100%)}
+html[data-site-theme="dark"] .text-art-gallery-count{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.82)}
+html[data-site-theme="dark"] .text-art-zoom{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .text-art-zoom-hint{border:1px solid rgba(192,185,203,0.16);background:rgba(37,32,43,0.82);color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-description{color:#bbb5c5}
+html[data-site-theme="dark"] .text-art-gallery-controls{border-top:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1d1921,#1a1526)}
+html[data-site-theme="dark"] .text-art-gallery-arrow{border:1px solid rgba(192,185,203,0.18);background:linear-gradient(145deg,#1d1921,#181627)}
+html[data-site-theme="dark"] .text-art-gallery-arrow::before{background:linear-gradient(135deg,var(--ph-action-bg),#222038)}
+html[data-site-theme="dark"] .text-art-gallery-arrow:hover,html[data-site-theme="dark"] .text-art-gallery-arrow:focus-visible{color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-gallery-thumbnails button{border:1px solid rgba(192,185,203,0.14);background:#282419}
+html[data-site-theme="dark"] .text-art-gallery-thumbnails button img{background:#272416}
+html[data-site-theme="dark"] .text-art-gallery-thumbnails button span{background:rgba(30,27,35,0.72);color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox{border:1px solid rgba(192,185,203,0.16);background:#18161b;color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox::backdrop{background:rgba(21,18,26,0.88)}
+html[data-site-theme="dark"] .text-art-lightbox-viewport{background:#151319}
+html[data-site-theme="dark"] .text-art-lightbox-tools{border:1px solid rgba(192,185,203,0.22);background:rgba(21,18,25,0.84)}
+html[data-site-theme="dark"] .text-art-lightbox-tools button{color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox-tools button:hover,html[data-site-theme="dark"] .text-art-lightbox-tools button:focus-visible{background:rgba(29,25,33,0.15)}
+html[data-site-theme="dark"] .text-art-lightbox-zoom-value{color:rgba(229,226,233,0.86)}
+html[data-site-theme="dark"] .text-art-lightbox-tools .text-art-lightbox-fit{border-left:1px solid rgba(192,185,203,0.18)}
+html[data-site-theme="dark"] .text-art-lightbox-close{border:1px solid rgba(192,185,203,0.3);background:rgba(21,18,25,0.8);color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox-close:hover,html[data-site-theme="dark"] .text-art-lightbox-close:focus-visible{background:#1d1921;color:#d3ced9}
+html[data-site-theme="dark"] .text-art-lightbox-arrow{border:1px solid rgba(192,185,203,0.22);background:rgba(21,18,25,0.72);color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox-arrow:hover,html[data-site-theme="dark"] .text-art-lightbox-arrow:focus-visible{background:#1d1921;color:#d3ced9}
+html[data-site-theme="dark"] .text-art-lightbox-footer{background:#231f28}
+html[data-site-theme="dark"] .text-art-lightbox-caption span{color:rgba(229,226,233,0.67)}
+html[data-site-theme="dark"] .text-art-lightbox-caption a{color:rgba(229,226,233,0.86)}
+html[data-site-theme="dark"] .text-art-lightbox-caption a:hover,html[data-site-theme="dark"] .text-art-lightbox-caption a:focus-visible{color:#e5e2e9}
+html[data-site-theme="dark"] .text-art-lightbox-original{color:rgba(229,226,233,0.7)}
+html[data-site-theme="dark"] .text-art-lightbox-original:hover,html[data-site-theme="dark"] .text-art-lightbox-original:focus-visible{color:#e5e2e9}
+html[data-site-theme="dark"] .text-reading-part-divider{background:linear-gradient(90deg,transparent,rgba(34,32,58,0.32) 18%,rgba(34,32,58,0.32) 82%,transparent)}
+html[data-site-theme="dark"] .text-path-navigation{border:1px solid rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .text-path-navigation-copy{background:linear-gradient(110deg,rgba(34,32,58,0.085),rgba(34,32,58,0.025))}
+html[data-site-theme="dark"] .text-path-navigation-copy:hover,html[data-site-theme="dark"] .text-path-navigation-copy:focus-visible{background:linear-gradient(110deg,rgba(34,32,58,0.13),rgba(34,32,58,0.045))}
+html[data-site-theme="dark"] .text-path-navigation-copy:focus-visible{outline:2px solid rgba(192,185,203,0.2)}
+html[data-site-theme="dark"] .text-path-navigation > a:not(.text-path-navigation-copy){border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-path-navigation > a:not(.text-path-navigation-copy):hover,html[data-site-theme="dark"] .text-path-navigation > a:not(.text-path-navigation-copy):focus-visible{background:rgba(34,32,58,0.045)}
+html[data-site-theme="dark"] .text-detail-cta{border:1px solid rgba(192,185,203,0.18);background:linear-gradient(115deg,rgba(34,32,58,0.095),rgba(34,32,58,0.025))}
+html[data-site-theme="dark"] .text-detail-cta-link{background:var(--ph-action-bg);color:#e5e2e9}
+html[data-site-theme="dark"] .text-detail-cta-link:hover,html[data-site-theme="dark"] .text-detail-cta-link:focus-visible{background:var(--ph-action-bg)}
+html[data-site-theme="dark"] .text-detail-author-link:hover,html[data-site-theme="dark"] .text-detail-author-link:focus-visible{border-color:rgba(73,69,135,0.45)}
+html[data-site-theme="dark"] .text-context a{text-decoration-color:rgba(158,154,223,0.48)}
+@media (max-width:620px){html[data-site-theme="dark"] .text-note-poles > div + div{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-path-navigation > a:not(.text-path-navigation-copy){border-top:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .texts-bible-compass-strip{border:1px solid rgba(192,185,203,0.16);background:rgba(138,66,79,0.035);color:#d1a9b1}
+html[data-site-theme="dark"] .texts-bible-compass-strip:hover,html[data-site-theme="dark"] .texts-bible-compass-strip:focus-visible{border-color:rgba(192,185,203,0.3);background:rgba(138,66,79,0.065)}
+html[data-site-theme="dark"] .texts-bible-compass-icon{background:rgba(138,66,79,0.065)}
+html[data-site-theme="dark"] .texts-bible-compass-icon .compass-needle-south{fill:#e5e2e9}
+html[data-site-theme="dark"] .text-context-bible-compass{border:1px solid rgba(192,185,203,0.14);background:rgba(38,22,24,0.72);color:#d1a8b1}
+html[data-site-theme="dark"] .text-context-bible-compass:hover,html[data-site-theme="dark"] .text-context-bible-compass:focus-visible{border-color:rgba(192,185,203,0.3);background:#271618}
+html[data-site-theme="dark"] .text-context-bible-compass > span:first-child{color:#d4a5ae}
+html[data-site-theme="dark"] .text-context-bible-compass > span:first-child .compass-needle-south{fill:#e5e2e9}
+html[data-site-theme="dark"] .text-context-bible-compass-meta{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-page{background:#272116}
+html[data-site-theme="dark"] .bible-compass-breadcrumb a:hover{color:#d2a8b0}
+html[data-site-theme="dark"] .bible-compass-hero{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(128deg,#1d1921 0%,#261816 58%,#241827 100%)}
+html[data-site-theme="dark"] .bible-compass-hero::after{color:rgba(216,161,168,0.07)}
+html[data-site-theme="dark"] .bible-compass-kicker{color:#d3a7af}
+html[data-site-theme="dark"] .bible-compass-hero h1{color:#d3ced9}
+html[data-site-theme="dark"] .bible-compass-hero > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-jump{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.9)}
+html[data-site-theme="dark"] .bible-compass-jump a{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-jump a:hover,html[data-site-theme="dark"] .bible-compass-jump a:focus-visible{background:#29171b;color:#d2a7b0}
+html[data-site-theme="dark"] .bible-compass-section-head span{color:#d1a8af}
+html[data-site-theme="dark"] .bible-compass-section-head h2{color:#d3ced9}
+html[data-site-theme="dark"] .bible-compass-section-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-quick-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-quick-card span{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-quick-card strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-quick-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-quick-card code{background:#271e18;color:#d0aab2}
+html[data-site-theme="dark"] .bible-method-note{border:1px solid rgba(192,185,203,0.17);background:#272216}
+html[data-site-theme="dark"] .bible-method-note i{color:#dfc49a}
+html[data-site-theme="dark"] .bible-method-note strong{color:#cfc0aa}
+html[data-site-theme="dark"] .bible-method-note p{color:#cabfb0}
+html[data-site-theme="dark"] .bible-timeline::before{background:linear-gradient(#8d3f4e,#24202a 70%,#2b2635)}
+html[data-site-theme="dark"] .bible-timeline li::before{border:2px solid #4a4a4a;background:#8b414e}
+html[data-site-theme="dark"] .bible-timeline-time{color:#ceabb2}
+html[data-site-theme="dark"] .bible-timeline-copy{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-timeline-copy strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-timeline-copy p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-timeline-links a{border:1px solid rgba(192,185,203,0.14);background:#261618;color:#d2a7b0}
+html[data-site-theme="dark"] .bible-timeline-links a:hover{border-color:rgba(135,69,78,0.35)}
+html[data-site-theme="dark"] .bible-chrono-intro-card{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,rgba(38,21,21,0.94),rgba(39,22,26,0.92))}
+html[data-site-theme="dark"] .bible-chrono-intro-card strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-intro-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-period{border:1px solid rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .bible-chrono-period summary::after{color:#d0a9b2}
+html[data-site-theme="dark"] .bible-chrono-period[open] summary{background:linear-gradient(180deg,rgba(38,21,25,0.95),rgba(40,22,27,0.92));border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-chrono-period-num{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-chrono-period-copy strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-chrono-period-copy small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-legend{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-legend span:nth-child(2){color:#d3a6af}
+html[data-site-theme="dark"] .bible-chrono-date{background:linear-gradient(180deg,#271618,#29171a);color:#d3a6af}
+html[data-site-theme="dark"] .bible-chrono-entry{border:1px solid rgba(192,185,203,0.14);background:#1d1a22}
+html[data-site-theme="dark"] .bible-chrono-entry:empty{border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-chrono-entry strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-chrono-entry p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-entry--bible{background:linear-gradient(180deg,#261515,#271616)}
+html[data-site-theme="dark"] .bible-chrono-entry--world{background:linear-gradient(180deg,#151b26,#161c27)}
+html[data-site-theme="dark"] .bible-chrono-row--full .bible-chrono-entry--world{background:linear-gradient(180deg,#151b26,#161d26)}
+html[data-site-theme="dark"] .bible-chrono-table::before{background:linear-gradient(180deg,rgba(136,68,81,0.18),#894351 8%,#894351 92%,rgba(136,68,81,0.18))}
+html[data-site-theme="dark"] .bible-chrono-table::after{border:2px solid #4a4a4a;background:#894351}
+html[data-site-theme="dark"] .bible-chrono-date{border:1px solid rgba(192,185,203,0.18);background:#1d1921;color:#d4a6ae}
+html[data-site-theme="dark"] .bible-chrono-date::before,html[data-site-theme="dark"] .bible-chrono-date::after{background:rgba(137,67,81,0.28)}
+html[data-site-theme="dark"] .bible-chrono-entry--bible{border-left:2px solid rgba(192,185,203,0.28)}
+html[data-site-theme="dark"] .bible-chrono-entry--world{border-right:2px solid rgba(192,185,203,0.2)}
+html[data-site-theme="dark"] .bible-books-tabs{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-books-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-tabs button[aria-selected="true"]{background:#29171b;color:#d2a7b0}
+html[data-site-theme="dark"] .bible-books-tabs button:hover,html[data-site-theme="dark"] .bible-books-tabs button:focus-visible{color:#d2a7b0}
+html[data-site-theme="dark"] .bible-books-view-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-cluster{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-book-cluster.has-open-book{border-color:rgba(192,185,203,0.16)}
+html[data-site-theme="dark"] .bible-book-cluster-head{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-book-cluster-head strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-book-cluster-head small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-chip{background:#261c19;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-chip:hover,html[data-site-theme="dark"] .bible-book-chip:focus-visible{border-color:rgba(192,185,203,0.18);color:#d2a7b0}
+html[data-site-theme="dark"] .bible-book-chip.is-active{border-color:rgba(192,185,203,0.22);background:#27161a;color:#d3a6af}
+html[data-site-theme="dark"] .bible-book-preview{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(120deg,#1d1921 0%,#261618 100%)}
+html[data-site-theme="dark"] .bible-book-preview-kicker{color:#d1a8af}
+html[data-site-theme="dark"] .bible-book-preview h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-book-topics span{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#ceacb2}
+html[data-site-theme="dark"] .bible-book-coordinates div{background:rgba(38,28,25,0.72)}
+html[data-site-theme="dark"] .bible-book-coordinates span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-coordinates strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-preview-block{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .bible-book-preview-block--lead{background:#1d1921}
+html[data-site-theme="dark"] .bible-book-preview-block > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-book-preview-block p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-preview-block--wide p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-local-link{color:#d2a7b0}
+html[data-site-theme="dark"] .bible-book-neighbors button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-neighbors button:hover,html[data-site-theme="dark"] .bible-book-neighbors button:focus-visible{border-color:rgba(192,185,203,0.2);color:#d2a7b0}
+html[data-site-theme="dark"] .bible-book-neighbors small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-map{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(90deg,rgba(25,41,45,0.78) 0 31%,rgba(42,37,24,0.9) 31% 100%)}
+html[data-site-theme="dark"] .bible-space-map::before{background:linear-gradient(90deg,rgba(25,41,45,0.75),rgba(43,37,24,0.72))}
+html[data-site-theme="dark"] .bible-map-water{color:rgba(165,198,212,0.38)}
+html[data-site-theme="dark"] .bible-map-region{color:rgba(203,186,175,0.25)}
+html[data-site-theme="dark"] .bible-map-route .route-patriarchs{stroke:rgba(206,190,171,0.38)}
+html[data-site-theme="dark"] .bible-map-route .route-exodus{stroke:rgba(213,178,164,0.46)}
+html[data-site-theme="dark"] .bible-map-route .route-exile{stroke:rgba(187,173,205,0.4)}
+html[data-site-theme="dark"] .bible-map-route .route-nt{stroke:rgba(170,191,208,0.42)}
+html[data-site-theme="dark"] .bible-map-node{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.92);color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-node small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-node--hub{border-color:rgba(192,185,203,0.24);background:#271618}
+html[data-site-theme="dark"] .bible-map-node--hub strong{color:#d3a7af}
+html[data-site-theme="dark"] .bible-map-node--city{border-color:rgba(192,185,203,0.17)}
+html[data-site-theme="dark"] .bible-map-node--empire{background:rgba(40,35,22,0.96)}
+html[data-site-theme="dark"] .bible-map-node--soft{background:rgba(23,38,38,0.94)}
+html[data-site-theme="dark"] .bible-map-scale{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-route-panel{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-route-kicker{color:#d0aab1}
+html[data-site-theme="dark"] .bible-route-panel article{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-route-panel strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-route-panel p{color:#bbb5c5}
+html[data-site-theme="dark"] .route-dot{background:#796853}
+html[data-site-theme="dark"] .route-dot--exodus{background:#8d543f}
+html[data-site-theme="dark"] .route-dot--exile{background:#664f7d}
+html[data-site-theme="dark"] .route-dot--nt{background:#4a6c82}
+html[data-site-theme="dark"] .bible-place-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-place-card > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-place-card strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-place-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-context-era{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-context-era span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-context-era strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-context-era p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-group-head > span{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-resource-group-head h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-group-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-card{border:1px solid rgba(192,185,203,0.14);background:#241e18}
+html[data-site-theme="dark"] .bible-resource-card::after{color:#cfabb2}
+html[data-site-theme="dark"] .bible-resource-card:hover,html[data-site-theme="dark"] .bible-resource-card:focus-visible{border-color:rgba(192,185,203,0.24)}
+html[data-site-theme="dark"] .bible-resource-card > span{color:#d1a8af}
+html[data-site-theme="dark"] .bible-resource-title strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resources-aside{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#261618,#272116)}
+html[data-site-theme="dark"] .bible-resources-aside-kicker{color:#d1a8af}
+html[data-site-theme="dark"] .bible-resources-aside > h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resources-aside-intro{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-card--aside{background:#1d1921}
+html[data-site-theme="dark"] .bible-compass-end{border:1px solid rgba(192,185,203,0.14);background:#261618}
+html[data-site-theme="dark"] .bible-compass-end p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-end a{color:#d2a7b0}
+@media (max-width:600px){html[data-site-theme="dark"] .bible-route-panel article:nth-of-type(2){border-top:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .bible-compass-jump a{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-compass-jump a:hover,html[data-site-theme="dark"] .bible-compass-jump a:focus-visible{border-color:rgba(192,185,203,0.18);background:#261519}
+html[data-site-theme="dark"] .bible-jump-num{color:#ceabb2}
+html[data-site-theme="dark"] .bible-jump-icon{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-compass-jump .bible-jump-copy strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-jump-copy small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-heading-icon{border:1px solid rgba(192,185,203,0.14);background:#261618;color:#d1a9b0}
+html[data-site-theme="dark"] #express .bible-quick-card{background:#1d1921}
+html[data-site-theme="dark"] #express .bible-method-note{background:#272216}
+html[data-site-theme="dark"] .bible-books-search{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.95)}
+html[data-site-theme="dark"] .bible-books-search:focus-within{border-color:rgba(192,185,203,0.3)}
+html[data-site-theme="dark"] .bible-books-search-icon{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-search input{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-search input::placeholder{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-search kbd{border:1px solid rgba(192,185,203,0.14);background:#241d1a;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-cluster-head{background:#1d1921}
+html[data-site-theme="dark"] .bible-book-cluster-head small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-cluster-head em{background:#271b18;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-cluster-head i{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-cluster-panel{border-top:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-orient{border:1px solid rgba(192,185,203,0.14);background:rgba(38,28,24,0.82)}
+html[data-site-theme="dark"] .bible-geo-axis{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.93)}
+html[data-site-theme="dark"] .bible-geo-axis--center{border-color:rgba(192,185,203,0.22);background:#271618}
+html[data-site-theme="dark"] .bible-geo-direction{color:#cfaab1}
+html[data-site-theme="dark"] .bible-geo-axis strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-axis p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-memory-head{color:#e5e2e9}
+html[data-site-theme="dark"] .bible-geo-memory-head small{color:#c5bfcd}
+html[data-site-theme="dark"] .bible-geo-route-list article{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-route-list article > span{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-geo-route-list strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-route-list p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-names article{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.94)}
+html[data-site-theme="dark"] .bible-geo-names span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-geo-names strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-names p{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-chrono-entry--bible::before{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-chrono-entry--world::before{color:#afb8ca}
+html[data-site-theme="dark"] .bible-chrono-entry--bible{border-left:2px solid rgba(192,185,203,0.28)}
+html[data-site-theme="dark"] .bible-chrono-entry--world{border-right:1px solid rgba(192,185,203,0.14);border-left:2px solid rgba(192,185,203,0.2)}}
+html[data-site-theme="dark"] .bible-compass-section-head > span:first-child{color:#d1a8af}
+html[data-site-theme="dark"] .bible-compass-section-head h2{color:#d3ced9}
+html[data-site-theme="dark"] .bible-heading-icon{background:#29171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-compass-section-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-view-note{border:1px solid rgba(192,185,203,0.14);background:#27161a;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-view-note::before{background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-geo-key{border:1px solid rgba(192,185,203,0.14);background:#241919}
+html[data-site-theme="dark"] .bible-geo-key-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-key-card--center{border-color:rgba(192,185,203,0.25);background:linear-gradient(180deg,#26161a,#1d1921)}
+html[data-site-theme="dark"] .bible-geo-key-direction{color:#cfaab1}
+html[data-site-theme="dark"] .bible-geo-key-card strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-geo-key-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-key-card small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-center-details{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-geo-center-details span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-center-details b{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-geo-arrow{background:#1d1921;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-geo-formula{color:#e5e2e9}
+html[data-site-theme="dark"] .bible-geo-formula small{color:#c6c1ce}
+html[data-site-theme="dark"] .bible-geo-routes{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-routes-head{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-geo-routes-head span{color:#d0aab1}
+html[data-site-theme="dark"] .bible-geo-routes-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-routes-grid article{background:#261c18}
+html[data-site-theme="dark"] .bible-geo-routes-grid article > span{background:#1d1921;color:#d2a8b0}
+html[data-site-theme="dark"] .bible-geo-routes-grid strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-routes-grid p{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-geo-routes-grid small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-politics-sequence{background:#271b18}
+html[data-site-theme="dark"] .bible-politics-sequence span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-politics-sequence i{color:#d0a9b0}
+html[data-site-theme="dark"] .bible-politics-era{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-politics-era > div + div{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-politics-era small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-politics-date{background:#27161a}
+html[data-site-theme="dark"] .bible-politics-date span{background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-politics-date strong{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-politics-name strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-politics-impact p,html[data-site-theme="dark"] .bible-politics-read p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-politics-read b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-politics-memory{border-left:3px solid #864651;background:#27161a}
+html[data-site-theme="dark"] .bible-politics-memory strong{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-politics-memory p{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-politics-era > div + div{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-politics-impact,html[data-site-theme="dark"] .bible-politics-read{border-top:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .bible-geo-map{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(rgba(29,25,33,0.84),rgba(29,25,33,0.84)),
+    linear-gradient(90deg,rgba(138,66,79,0.025) 1px,transparent 1px),
+    linear-gradient(rgba(138,66,79,0.025) 1px,transparent 1px)}
+html[data-site-theme="dark"] .bible-geo-map-top{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-geo-map-caption{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-north{color:#d0a9b0}
+html[data-site-theme="dark"] .bible-geo-map-node{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.96)}
+html[data-site-theme="dark"] .bible-geo-map-node--center{border-color:rgba(192,185,203,0.23);background:linear-gradient(180deg,#27161a,#1d1921)}
+html[data-site-theme="dark"] .bible-geo-map-direction{color:#d0aab1}
+html[data-site-theme="dark"] .bible-geo-map-node strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-geo-map-node p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-map-node small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-map-node em{background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-geo-map-link{color:#cfaab1}
+html[data-site-theme="dark"] .bible-geo-map-link::before{background:rgba(138,66,79,0.18)}
+html[data-site-theme="dark"] .bible-geo-map-link--south span{background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-zoom{border:1px solid rgba(192,185,203,0.14);background:#241919}
+html[data-site-theme="dark"] .bible-geo-zoom-head > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-geo-zoom-head > strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-zoom-head > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-zoom-axis::before{background:linear-gradient(#874551,#2f1d21)}
+html[data-site-theme="dark"] .bible-geo-zoom-axis article{background:#1d1921}
+html[data-site-theme="dark"] .bible-geo-zoom-dot{border:1px solid rgba(192,185,203,0.16);background:#1d1921;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-geo-zoom-axis strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-zoom-axis p{color:#d0aab1}
+html[data-site-theme="dark"] .bible-geo-zoom-axis small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-geo-routes--v9 .bible-geo-routes-grid article::after{color:rgba(212,165,174,0.13)}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-geo-map{background:#1e1a23}}
+html[data-site-theme="dark"] .bible-map-tabs{border:1px solid rgba(192,185,203,0.14);background:#261c18}
+html[data-site-theme="dark"] .bible-map-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-tabs button:hover,html[data-site-theme="dark"] .bible-map-tabs button:focus-visible{background:rgba(29,25,33,0.7)}
+html[data-site-theme="dark"] .bible-map-tabs button[aria-selected="true"]{border-color:rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-map-tab-icon{background:#2a181c;color:#d1a9b0}
+html[data-site-theme="dark"] .bible-map-tabs strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-tabs small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-atlas-intro{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-atlas-intro > div > span{color:#d0a9b0}
+html[data-site-theme="dark"] .bible-atlas-intro strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-atlas-intro p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-atlas-intro a{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-atlas-presets button{border:1px solid rgba(192,185,203,0.14);background:#261c18;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-atlas-presets button:hover,html[data-site-theme="dark"] .bible-atlas-presets button:focus-visible{border-color:rgba(192,185,203,0.18)}
+html[data-site-theme="dark"] .bible-atlas-presets button.is-active{border-color:rgba(192,185,203,0.21);background:#27161a}
+html[data-site-theme="dark"] .bible-atlas-presets button > span{background:#1d1921;color:#d0a9b0}
+html[data-site-theme="dark"] .bible-atlas-presets strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-atlas-presets small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-real-map-shell{border:1px solid rgba(192,185,203,0.14);background:#26211b}
+html[data-site-theme="dark"] .bible-map-loading{background:#272118;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-loading span{border:2px solid rgba(192,185,203,0.18);border-top-color:#844853}
+html[data-site-theme="dark"] .bible-map-source-note,html[data-site-theme="dark"] .bible-map-caution{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-caution{background:#282016;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-time-map-controls{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-time-map-head > span{color:#d0aab1}
+html[data-site-theme="dark"] .bible-time-map-head > strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-time-map-head > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-time-map-slider-wrap input{accent-color:#d1a8af}
+html[data-site-theme="dark"] .bible-time-map-ends{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-time-map-event{background:#261c18}
+html[data-site-theme="dark"] .bible-time-map-event span{color:#d0a9b0}
+html[data-site-theme="dark"] .bible-time-map-event p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-time-map-nav button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#d0a9b0}
+html[data-site-theme="dark"] .bible-via-link{color:#d0aab1}
+html[data-site-theme="dark"] .bible-real-map .leaflet-control-zoom a{color:#c9b1b6}
+html[data-site-theme="dark"] .bible-map-marker{border:2px solid #4a4a4a;background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-map-marker--world{background:#51607b}
+html[data-site-theme="dark"] .bible-map-popup strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-popup span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-reading-key li{background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .bible-chrono-reading-key b{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-chrono-reading-key span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-guide{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1d1921,#241818)}
+html[data-site-theme="dark"] .bible-space-guide-head{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-space-guide-head > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-space-guide-head strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-space-guide-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-zone{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-space-zone--center{border-color:rgba(192,185,203,0.23);background:linear-gradient(180deg,#27161a,#1d1921)}
+html[data-site-theme="dark"] .bible-space-zone > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-space-zone > strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-space-zone > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-zone > small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-zone > small b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-connector{color:#d1a9b0}
+html[data-site-theme="dark"] .bible-space-connector i{background:rgba(138,66,79,0.2)}
+html[data-site-theme="dark"] .bible-space-connector b{background:#1d1a22}
+html[data-site-theme="dark"] .bible-space-center-axis::before{background:linear-gradient(#894350,#2f1b20)}
+html[data-site-theme="dark"] .bible-space-center-axis > div{background:rgba(29,25,33,0.78)}
+html[data-site-theme="dark"] .bible-space-center-axis i{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#d1a9b0}
+html[data-site-theme="dark"] .bible-space-center-axis b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-center-axis small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-center-axis .is-key{background:#27161a}
+html[data-site-theme="dark"] .bible-map-label{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.92);color:#d3ced9}
+html[data-site-theme="dark"] .bible-map-label--world{color:#ccadb3;border-color:rgba(192,185,203,0.17);background:rgba(39,22,26,0.94)}
+html[data-site-theme="dark"] .bible-empires-track{border:1px solid rgba(192,185,203,0.14);background:#261c18}
+html[data-site-theme="dark"] .bible-empires-track > span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-empires-track > span b{background:#1d1921;color:#d0aab1}
+html[data-site-theme="dark"] .bible-empires-track > span small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-empires-track > i{color:#ccadb4}
+html[data-site-theme="dark"] .bible-empires-timeline::before{background:linear-gradient(#894350,#2e1b1f)}
+html[data-site-theme="dark"] .bible-empire-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-empire-card:hover{border-color:rgba(192,185,203,0.16)}
+html[data-site-theme="dark"] .bible-empire-spine span{border:3px solid #4a4a4a;background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-empire-title{border-right:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-empire-title small{color:#cfaab1}
+html[data-site-theme="dark"] .bible-empire-title strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-empire-title em{background:#29171b;color:#d0a9b0}
+html[data-site-theme="dark"] .bible-empire-body > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-empire-body > div{background:#261c18}
+html[data-site-theme="dark"] .bible-empire-body span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-empire-body b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-empires-summary{color:#e5e2e9}
+html[data-site-theme="dark"] .bible-empires-summary p{color:#e0dde4}
+html[data-site-theme="dark"] .bible-empires-summary b{color:#e5e2e9}
+html[data-site-theme="dark"] .bible-resource-group--maps{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-books-importance-legend{border-top:1px solid rgba(192,185,203,0.14);border-bottom:1px solid rgba(192,185,203,0.14);color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-importance-legend i{color:#d1a8af}
+html[data-site-theme="dark"] .bible-books-importance-legend b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-importance-legend small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-chip--major{border-color:rgba(192,185,203,0.16);background:#27161a;color:#d2a8b0}
+html[data-site-theme="dark"] .bible-book-chip--major:hover,html[data-site-theme="dark"] .bible-book-chip--major:focus-visible{border-color:rgba(192,185,203,0.34);background:#27161a}
+html[data-site-theme="dark"] .bible-book-chip-star{color:#d2a7af}
+html[data-site-theme="dark"] .bible-book-importance{border:1px solid rgba(192,185,203,0.14);background:#271619;color:#d2a7af}
+html[data-site-theme="dark"] .bible-book-history section{border:1px solid rgba(192,185,203,0.14);background:#261c18}
+html[data-site-theme="dark"] .bible-book-history section:first-child{border-left:2px solid rgba(192,185,203,0.3)}
+html[data-site-theme="dark"] .bible-book-history section:last-child{border-left:2px solid rgba(192,185,203,0.24)}
+html[data-site-theme="dark"] .bible-book-history span{color:#d1a9b1}
+html[data-site-theme="dark"] .bible-book-history section:last-child span{color:#b1b8c9}
+html[data-site-theme="dark"] .bible-book-history p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-book-history-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-map-shell{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1d1921,#271616)}
+html[data-site-theme="dark"] .bible-space-toolbar button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-toolbar button:hover,html[data-site-theme="dark"] .bible-space-toolbar button:focus-visible{border-color:rgba(192,185,203,0.22);background:#271618;color:#d2a8b0}
+html[data-site-theme="dark"] .bible-space-toolbar button.is-active{border-color:rgba(192,185,203,0.28);background:#864651;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-schematic-map{border:1px solid rgba(192,185,203,0.14);background:radial-gradient(circle at 20% 18%, rgba(29,25,33,0.95), rgba(29,25,33,0.7) 40%, transparent 63%),
+    linear-gradient(180deg,#172328 0%,#162027 26%,#282117 74%,#241818 100%)}
+html[data-site-theme="dark"] .bible-schematic-sea{fill:rgba(154,199,223,0.28)}
+html[data-site-theme="dark"] .bible-schematic-land{fill:rgba(233,220,193,0.75);stroke:rgba(204,190,173,0.24)}
+html[data-site-theme="dark"] .bible-schematic-egypt{fill:rgba(232,213,182,0.84);stroke:rgba(204,190,173,0.18)}
+html[data-site-theme="dark"] .bible-schematic-east{fill:rgba(225,214,192,0.72);stroke:rgba(204,190,173,0.18)}
+html[data-site-theme="dark"] .bible-route--patriarches{stroke:#c1a4d5}
+html[data-site-theme="dark"] .bible-route--exode{stroke:#dfbc9a}
+html[data-site-theme="dark"] .bible-route--exil{stroke:#9fbada}
+html[data-site-theme="dark"] .bible-route--paul{stroke:#d7a2af}
+html[data-site-theme="dark"] .bible-route-node--patriarches{fill:#c1a4d5}
+html[data-site-theme="dark"] .bible-route-node--exode{fill:#dfbc9a}
+html[data-site-theme="dark"] .bible-route-node--exil{fill:#9fbada}
+html[data-site-theme="dark"] .bible-route-node--paul{fill:#d7a2af}
+html[data-site-theme="dark"] .bible-map-region{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.84)}
+html[data-site-theme="dark"] .bible-map-region span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-map-region strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-map-region small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-map-city{color:#d3ced9}
+html[data-site-theme="dark"] .bible-map-city i{border:2px solid #4a4a4a;background:#1e1d1f}
+html[data-site-theme="dark"] .bible-map-city span{background:rgba(29,25,33,0.8)}
+html[data-site-theme="dark"] .bible-map-city:hover span,html[data-site-theme="dark"] .bible-map-city:focus-visible span{background:#1d1921;color:#d2a8b0}
+html[data-site-theme="dark"] .bible-space-legend{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-legend .is-bible{background:#1e1d1f}
+html[data-site-theme="dark"] .bible-space-legend .is-world{border:2px solid #4a4a4a;background:#1e1d1f}
+html[data-site-theme="dark"] .bible-space-legend .is-line.is-patriarches{background:#6d408c}
+html[data-site-theme="dark"] .bible-space-legend .is-line.is-exode{background:#9e652e}
+html[data-site-theme="dark"] .bible-space-legend .is-line.is-exil{background:#396293}
+html[data-site-theme="dark"] .bible-space-legend .is-line.is-paul{background:#8e3e51}
+html[data-site-theme="dark"] .bible-space-reading-block{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-space-reading-block span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-space-reading-block strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-reading-block p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-route-cards article{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-space-route-cards article.is-active{border-color:rgba(192,185,203,0.18)}
+html[data-site-theme="dark"] .bible-space-route-cards span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-space-route-cards strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-space-route-cards p{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-schematic-map{background:linear-gradient(180deg,#172328 0%,#161f27 32%,#282116 72%,#241818 100%)}}
+html[data-site-theme="dark"] .bible-resource-directory{border:1px solid rgba(192,185,203,0.14);background:#241d1a}
+html[data-site-theme="dark"] .bible-resource-directory a{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-directory a:hover,html[data-site-theme="dark"] .bible-resource-directory a:focus-visible{background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-directory > a > span{color:#cdacb2}
+html[data-site-theme="dark"] .bible-resource-directory i{background:#1d1921;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-resource-directory small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-shelf{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-shelf-head{border-bottom:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#271c16,#1d1921)}
+html[data-site-theme="dark"] .bible-resource-shelf-num{background:#2a171b;color:#d1a8b0}
+html[data-site-theme="dark"] .bible-resource-shelf-head small{color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-shelf-head h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-shelf-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-row + .bible-resource-row{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-row:hover,html[data-site-theme="dark"] .bible-resource-row:focus-visible{background:#27161a}
+html[data-site-theme="dark"] .bible-resource-row div strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-row div p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-row > span{background:#271b19;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-row > b{color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-study-card + .bible-resource-study-card{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-study-card:hover,html[data-site-theme="dark"] .bible-resource-study-card:focus-visible{background:#27161b}
+html[data-site-theme="dark"] .bible-resource-card-type{color:#d0aab1}
+html[data-site-theme="dark"] .bible-resource-card-name strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-study-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-open{color:#d1a8b0}
+html[data-site-theme="dark"] .bible-resource-shelf--images{border-color:rgba(192,185,203,0.14);background:#271b16}
+html[data-site-theme="dark"] .bible-iconography-featured{background:rgba(82,69,76,0.07)}
+html[data-site-theme="dark"] .bible-iconography-card--featured{background:#1d1921}
+html[data-site-theme="dark"] .bible-iconography-card--featured:hover,html[data-site-theme="dark"] .bible-iconography-card--featured:focus-visible{background:#26161a}
+html[data-site-theme="dark"] .bible-iconography-card-top > span{color:#d2a8b0}
+html[data-site-theme="dark"] .bible-iconography-card-top small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-iconography-card--featured > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-iconography-secondary{border-top:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-iconography-secondary > a + a{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-iconography-secondary > a:hover,html[data-site-theme="dark"] .bible-iconography-secondary > a:focus-visible{background:#271a16}
+html[data-site-theme="dark"] .bible-iconography-secondary strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-iconography-secondary p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-iconography-secondary > a > b{color:#cfabb1}
+html[data-site-theme="dark"] .bible-resource-map-links > a{border:1px solid rgba(192,185,203,0.14);background:#261c18}
+html[data-site-theme="dark"] .bible-resource-map-links > a:hover,html[data-site-theme="dark"] .bible-resource-map-links > a:focus-visible{border-color:rgba(192,185,203,0.16);background:#261519}
+html[data-site-theme="dark"] .bible-resource-map-links > a > span{color:#d0aab1}
+html[data-site-theme="dark"] .bible-resource-map-links strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-map-links p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-map-links > a > b{color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-paths{background:rgba(82,69,76,0.07)}
+html[data-site-theme="dark"] .bible-resource-paths > a{background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-paths > a:hover,html[data-site-theme="dark"] .bible-resource-paths > a:focus-visible{background:#27161b}
+html[data-site-theme="dark"] .bible-resource-path-index{color:#e5e2e9}
+html[data-site-theme="dark"] .bible-resource-paths p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-paths > a > span{color:#d1a8b0}
+@media (max-width:900px){html[data-site-theme="dark"] .bible-iconography-card--featured + .bible-iconography-card--featured{border-top:1px solid rgba(192,185,203,0.14)}}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-resource-study-card + .bible-resource-study-card,html[data-site-theme="dark"] .bible-iconography-secondary > a + a{border-top:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .bible-space-keypoints article{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-space-keypoints span{background:#2a181c;color:#d0a9b0}
+html[data-site-theme="dark"] .bible-space-keypoints strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-space-keypoints p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-toolbar-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-legend-group{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-space-legend-group > strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-reading-block{background:#1d1921}
+html[data-site-theme="dark"] .bible-space-reading-block--main{border-color:rgba(192,185,203,0.14);background:linear-gradient(180deg,#27161a,#1d1921)}
+html[data-site-theme="dark"] .bible-space-reading-block li{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-reading-block li b{color:#d0a9b0}
+html[data-site-theme="dark"] .bible-space-route-cards article::before{background:#2e1a20}
+html[data-site-theme="dark"] .bible-space-route-cards article.is-active::before,html[data-site-theme="dark"] .bible-space-route-cards article[data-route-card="patriarches"]::before{background:#6d408c}
+html[data-site-theme="dark"] .bible-space-route-cards article[data-route-card="exode"]::before{background:#9e652e}
+html[data-site-theme="dark"] .bible-space-route-cards article[data-route-card="exil"]::before{background:#396293}
+html[data-site-theme="dark"] .bible-space-route-cards article[data-route-card="paul"]::before{background:#8e3e51}
+html[data-site-theme="dark"] .bible-space-route-cards article[data-route-card="all"]::before{background:#824a57}
+html[data-site-theme="dark"] .bible-space-route-cards article p b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-space-toolbar-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-compact-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-compact-num{background:#29171b;color:#d0a9b1}
+html[data-site-theme="dark"] .bible-resource-compact-card header small{color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-compact-card header h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-compact-list li a{border:1px solid rgba(192,185,203,0.14);background:#1d1a22}
+html[data-site-theme="dark"] .bible-resource-compact-list li a:hover,html[data-site-theme="dark"] .bible-resource-compact-list li a:focus-visible{border-color:rgba(192,185,203,0.18);background:#27161a}
+html[data-site-theme="dark"] .bible-resource-compact-list strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-compact-list p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-compact-list b{color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-compact-list li.is-priority a{border-color:rgba(192,185,203,0.14);background:linear-gradient(180deg,#26151c,#1d1921)}
+html[data-site-theme="dark"] .bible-resource-compact-list li.is-priority strong::before{color:#d3a6ae}
+html[data-site-theme="dark"] .bible-resource-featured-card{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#26161a 0%, #1d1921 100%)}
+html[data-site-theme="dark"] .bible-resource-featured-card:hover,html[data-site-theme="dark"] .bible-resource-featured-card:focus-visible{border-color:rgba(192,185,203,0.24)}
+html[data-site-theme="dark"] .bible-resource-featured-tag{background:#29171d;color:#d0a9b1}
+html[data-site-theme="dark"] .bible-resource-featured-card strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-featured-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-featured-card b{color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-group{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-group summary::after{background:#28181f;color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-group-num{background:#29171b;color:#d0a9b1}
+html[data-site-theme="dark"] .bible-resource-group-headline small{color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-group-headline strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-resource-group-headline p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-count{background:#26191c;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body a{border:1px solid rgba(192,185,203,0.14);background:#1d1a22}
+html[data-site-theme="dark"] .bible-resource-group-body a:hover,html[data-site-theme="dark"] .bible-resource-group-body a:focus-visible{border-color:rgba(192,185,203,0.2);background:#26161a}
+html[data-site-theme="dark"] .bible-resource-group-body strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body span{color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-featured-kind{color:#c8b1b8}
+html[data-site-theme="dark"] .bible-resource-featured-kind-icon{background:#29171d;color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-featured-favicon{background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-group-icon{background:#27161a;color:#cfaab2}
+html[data-site-theme="dark"] .bible-resource-group summary:hover{background:#27161a}
+html[data-site-theme="dark"] .bible-resource-group-headline strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-intro{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body a{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-group-body a:hover,html[data-site-theme="dark"] .bible-resource-group-body a:focus-visible{border-color:rgba(192,185,203,0.14);background:#27161a}
+html[data-site-theme="dark"] .bible-glossary-grid article{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-glossary-grid article:hover{border-color:rgba(192,185,203,0.16);background:#261519}
+html[data-site-theme="dark"] .bible-glossary-grid strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-glossary-grid p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-glossary-grid em{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-site-favicon{background:#1d1921}
+html[data-site-theme="dark"] .bible-deep-glossary{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#27161c 0%,#1d1921 34%)}
+html[data-site-theme="dark"] .bible-deep-glossary-head > div > span{color:#cfaab1}
+html[data-site-theme="dark"] .bible-deep-glossary-head h3{color:#d3ced9}
+html[data-site-theme="dark"] .bible-deep-glossary-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-count{background:#2a171c;color:#ccaeb4}
+html[data-site-theme="dark"] .bible-deep-glossary-search{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-deep-glossary-search:focus-within{border-color:rgba(192,185,203,0.3)}
+html[data-site-theme="dark"] .bible-deep-glossary-search > span{color:#cbaeb4}
+html[data-site-theme="dark"] .bible-deep-glossary-search input{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-search input::placeholder{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-search kbd{border:1px solid rgba(192,185,203,0.14);background:#241a1a;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-results{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.98)}
+html[data-site-theme="dark"] .bible-deep-glossary-results button:hover,html[data-site-theme="dark"] .bible-deep-glossary-results button.is-active{background:#28171c}
+html[data-site-theme="dark"] .bible-deep-glossary-results strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-results small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-results i{color:#cfaab1}
+html[data-site-theme="dark"] .bible-glossary-no-result{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-starters > span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-starters button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-starters button:hover,html[data-site-theme="dark"] .bible-deep-glossary-starters button:focus-visible{border-color:rgba(192,185,203,0.19);background:#271619;color:#d1a9b0}
+html[data-site-theme="dark"] .bible-deep-glossary-detail{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-deep-glossary-empty > span{background:#29171c;color:#cfaab1}
+html[data-site-theme="dark"] .bible-deep-glossary-empty strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-empty p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-content header{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-deep-glossary-content header span,html[data-site-theme="dark"] .bible-deep-glossary-meta span,html[data-site-theme="dark"] .bible-deep-glossary-related > span{color:#cfabb1}
+html[data-site-theme="dark"] .bible-deep-glossary-content h4{color:#d3ced9}
+html[data-site-theme="dark"] .bible-deep-glossary-content header small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-definition{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-meta section{background:#271b17}
+html[data-site-theme="dark"] .bible-deep-glossary-meta p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-related button{background:#29171b;color:#ccaeb4}
+html[data-site-theme="dark"] .bible-deep-glossary-related button:hover,html[data-site-theme="dark"] .bible-deep-glossary-related button:focus-visible{background:#2c191d}
+html[data-site-theme="dark"] .bible-deep-glossary-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body a{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-group-body a:hover,html[data-site-theme="dark"] .bible-resource-group-body a:focus-visible{border-color:rgba(192,185,203,0.14);background:#27161a}
+html[data-site-theme="dark"] .bible-resource-site-favicon{background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-group-body strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body a{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-group-body a:hover,html[data-site-theme="dark"] .bible-resource-group-body a:focus-visible{background:#27161a;border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-resource-site-favicon{background:#1d1921}
+html[data-site-theme="dark"] .bible-resource-site-main strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-site-main p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-group-body a > .bible-resource-site-main > strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-resource-group-body a > .bible-resource-site-main > p{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-resource-media-meta{color:#cfaab1}
+html[data-site-theme="dark"] .bible-resource-media-divider{border-top:1px solid rgba(192,185,203,0.14);color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-media-divider > span{color:#d5a4ae}
+html[data-site-theme="dark"] .bible-resource-media-divider small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-resource-media-star{color:#d5a4ae}
+html[data-site-theme="dark"] .bible-resource-media-top{background:linear-gradient(90deg,rgba(140,64,79,0.045),transparent 55%) !important}
+html[data-site-theme="dark"] .bible-resource-media-meta{color:#caafb5}
+html[data-site-theme="dark"] .bible-compass-hero--raphael::after{background:linear-gradient(135deg,rgba(29,25,33,0.08),rgba(39,25,33,0.26))}
+html[data-site-theme="dark"] .bible-books-tabs{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .bible-books-tab-divider{background:linear-gradient(180deg,rgba(82,69,76,0.04),rgba(82,69,76,0.14),rgba(82,69,76,0.04))}
+html[data-site-theme="dark"] .bible-books-view-note-legend{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .bible-books-view-note-legend > span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-view-note-legend i{color:#d1a8af}
+html[data-site-theme="dark"] .bible-books-view-note-legend b{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-books-view-note-legend small{color:#bbb5c5}
+@media (max-width:900px){html[data-site-theme="dark"] .bible-books-tab-divider{background:linear-gradient(90deg,rgba(82,69,76,0.04),rgba(82,69,76,0.14),rgba(82,69,76,0.04))}}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-compass-jump a{border:1px solid rgba(192,185,203,0.14);background:#1d1921}}
+html[data-site-theme="dark"] .bible-compass-hero--raphael::after{background:linear-gradient(90deg,
+    rgba(38,26,21,1.0) 0%,
+    rgba(38,26,21,0.995) 34%,
+    rgba(38,26,21,0.97) 47%,
+    rgba(38,26,21,0.9) 58%,
+    rgba(38,26,21,0.68) 69%,
+    rgba(38,26,21,0.34) 82%,
+    rgba(38,26,21,0.08) 94%,
+    rgba(38,26,21,0.0) 100%) !important}
+html[data-site-theme="dark"] .bible-deep-glossary-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-search input{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-chrono-search input:focus{border-color:rgba(192,185,203,0.28)}
+html[data-site-theme="dark"] .bible-chrono-search button{border:1px solid rgba(192,185,203,0.14);background:#271618;color:#d1a9b0}
+html[data-site-theme="dark"] .bible-chrono-search-feedback{color:#cab0b6}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-compass-hero--raphael::after{background:linear-gradient(90deg,
+      rgba(38,26,21,1.0) 0%,
+      rgba(38,26,21,0.995) 45%,
+      rgba(38,26,21,0.97) 57%,
+      rgba(38,26,21,0.9) 67%,
+      rgba(38,26,21,0.58) 77%,
+      rgba(38,26,21,0.18) 90%,
+      rgba(38,26,21,0.0) 100%) !important}}
+html[data-site-theme="dark"] .bible-compass-hero--raphael::after{background:linear-gradient(
+      90deg,
+      rgba(38,26,21,1.0) 0%,
+      rgba(38,26,21,0.995) 31%,
+      rgba(38,26,21,0.97) 42%,
+      rgba(38,26,21,0.86) 53%,
+      rgba(38,26,21,0.6) 64%,
+      rgba(38,26,21,0.27) 76%,
+      rgba(38,26,21,0.07) 89%,
+      rgba(38,26,21,0.0) 100%
+    ) !important}
+html[data-site-theme="dark"] .texts-philo-compass-strip{border:1px solid rgba(192,185,203,0.17);background:rgba(34,32,58,0.035);color:#9e9adf}
+html[data-site-theme="dark"] .texts-philo-compass-strip:hover,html[data-site-theme="dark"] .texts-philo-compass-strip:focus-visible{border-color:rgba(192,185,203,0.32);background:rgba(34,32,58,0.065)}
+html[data-site-theme="dark"] .texts-philo-compass-icon{background:rgba(34,32,58,0.075)}
+html[data-site-theme="dark"] .texts-philo-compass-icon .compass-needle-south{fill:#e5e2e9}
+html[data-site-theme="dark"] .text-context-philo-compass{border:1px solid rgba(192,185,203,0.15);background:rgba(22,22,38,0.86);color:#9e9adf}
+html[data-site-theme="dark"] .text-context-philo-compass:hover,html[data-site-theme="dark"] .text-context-philo-compass:focus-visible{border-color:rgba(192,185,203,0.32);background:#181627}
+html[data-site-theme="dark"] .text-context-philo-compass > span:first-child{color:#9e9adf}
+html[data-site-theme="dark"] .text-context-philo-compass > span:first-child .compass-needle-south{fill:#e5e2e9}
+html[data-site-theme="dark"] .text-context-philo-compass-meta{color:#b3b0c9}
+html[data-site-theme="dark"] .philo-compass-page{--philo-compass:#22203a;--philo-compass-dark:#37309c;--philo-compass-ink:#d3ced9;--philo-compass-muted:#bbb5c5;--philo-compass-line:rgba(192,185,203,0.14);--philo-compass-wash:#181627;background:#1e1726}
+html[data-site-theme="dark"] .philo-compass-hero{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(128deg,#1d1921 0%,#191526 58%,#181628 100%)}
+html[data-site-theme="dark"] .philo-compass-hero::after{background:linear-gradient(90deg,#1d1921 0%,rgba(29,25,33,0.99) 34%,rgba(29,25,33,0.91) 52%,rgba(29,25,33,0.48) 72%,rgba(29,25,33,0.0) 100%)}
+html[data-site-theme="dark"] .philo-compass-hero p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-hero-mark{color:rgba(162,158,220,0.17)}
+html[data-site-theme="dark"] .philo-compass-jump{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.92)}
+html[data-site-theme="dark"] .philo-compass-jump a{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-jump a:hover,html[data-site-theme="dark"] .philo-compass-jump a:focus-visible{background:#191627}
+html[data-site-theme="dark"] .philo-compass-jump a > span{background:rgba(34,32,58,0.07);color:#9f9adf}
+html[data-site-theme="dark"] .philo-compass-jump small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-section-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-timeline-key{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-key-dot{background:#22203a}
+html[data-site-theme="dark"] .philo-key-star{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-time-map{background:#1d1921}
+html[data-site-theme="dark"] .philo-era-axis{background:linear-gradient(145deg,#181626,#191627)}
+html[data-site-theme="dark"] .philo-era-axis::after{border:1px solid rgba(192,185,203,0.32);background:#1d1921}
+html[data-site-theme="dark"] .philo-era-number{color:#9e9adf}
+html[data-site-theme="dark"] .philo-era-axis time{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-content header > div > span{color:#9f9adf}
+html[data-site-theme="dark"] .philo-era-content h3{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-content header p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-shift{background:#191627;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-shift strong{color:#a19cdd}
+html[data-site-theme="dark"] .philo-author-chip{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] a.philo-author-chip:hover{border-color:rgba(192,185,203,0.28);background:#191627;color:#a19ddc}
+html[data-site-theme="dark"] .philo-author-chip.is-local{border-color:rgba(192,185,203,0.14);background:#191526;color:#9f9bde}
+html[data-site-theme="dark"] .philo-author-chip.is-local::before{background:#22203a}
+html[data-site-theme="dark"] .philo-author-chip.is-major::after{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-timeline-note{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-timeline-note strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-traditions{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-era-traditions-head strong{color:#a09cde}
+html[data-site-theme="dark"] .philo-era-traditions-head span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-tradition{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#1a1526,#1d1921)}
+html[data-site-theme="dark"] .philo-era-tradition .philo-tradition-domain{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-tradition h4{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-tradition > p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-family{background:#1d1921}
+html[data-site-theme="dark"] .philo-tradition-family > header{background:linear-gradient(130deg,#191526,#1d1921)}
+html[data-site-theme="dark"] .philo-tradition-family > header > span{background:#181628;color:#9e9adf}
+html[data-site-theme="dark"] .philo-tradition-family > header small{color:#a09bdf}
+html[data-site-theme="dark"] .philo-tradition-family > header h3{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-family > header p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-cards{background:#191526}
+html[data-site-theme="dark"] .philo-tradition-cards article{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-tradition-domain{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-cards h4{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-cards p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-figures{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-tradition-figures a,html[data-site-theme="dark"] .philo-tradition-figures span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-figures a{color:#9f9bde}
+html[data-site-theme="dark"] .philo-tradition-note{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-tradition-note strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-question-grid article{background:linear-gradient(145deg,#1d1921,#1a1526)}
+html[data-site-theme="dark"] .philo-question-grid article > span{color:rgba(165,161,217,0.22)}
+html[data-site-theme="dark"] .philo-question-grid h3{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-question-grid p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-question-grid a{background:#181628;color:#9f9bde}
+html[data-site-theme="dark"] .philo-question-grid a:hover{background:#191729}
+html[data-site-theme="dark"] .philo-debate-grid article{background:#1d1921}
+html[data-site-theme="dark"] .philo-debate-question{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-debate-sides > a{border:1px solid rgba(192,185,203,0.14);background:#1a1627}
+html[data-site-theme="dark"] .philo-debate-sides > a:hover{border-color:rgba(192,185,203,0.22);background:#191627}
+html[data-site-theme="dark"] .philo-debate-sides small{color:#9f9adf}
+html[data-site-theme="dark"] .philo-debate-sides strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-debate-sides > i{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-paths-section{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#181627,#1d1921 54%)}
+html[data-site-theme="dark"] .philo-paths-loading,html[data-site-theme="dark"] .philo-paths-empty{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-path-card > summary:hover{background:#191526}
+html[data-site-theme="dark"] .philo-path-number{background:#181628;color:#9e9adf}
+html[data-site-theme="dark"] .philo-path-title small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-title strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-toggle::before,html[data-site-theme="dark"] .philo-path-toggle::after{background:#615b71}
+html[data-site-theme="dark"] .philo-path-body{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-path-body li{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-path-body li > a:hover{background:#181626}
+html[data-site-theme="dark"] .philo-path-body li > a > span:first-child{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-body strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-body small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-body i{color:#9f9adf}
+html[data-site-theme="dark"] .philo-path-start{color:#9f9bde}
+html[data-site-theme="dark"] .philo-lineage-stack{background:#1d1921}
+html[data-site-theme="dark"] .philo-lineage-label{background:#181626;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-lineage-flow > a,html[data-site-theme="dark"] .philo-lineage-flow > span:not(.philo-lineage-branch){border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-lineage-flow > a{border-color:rgba(192,185,203,0.15);background:#181627;color:#9f9bde}
+html[data-site-theme="dark"] .philo-lineage-flow > a:hover{border-color:rgba(192,185,203,0.28);background:#181628}
+html[data-site-theme="dark"] .philo-lineage-flow > i{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-lineage-branch{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-lineage-row--converge{background:linear-gradient(90deg,#1d1921,#1a1526)}
+html[data-site-theme="dark"] .philo-dictionary-toolbar{background:#1d1921}
+html[data-site-theme="dark"] .philo-dictionary-toolbar > label{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-toolbar input{border:1px solid rgba(192,185,203,0.14);background:#191526;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-toolbar input:focus{border-color:rgba(192,185,203,0.32)}
+html[data-site-theme="dark"] .philo-dictionary-toolbar span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-grid details{background:#1d1921}
+html[data-site-theme="dark"] .philo-dictionary-grid summary{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-grid summary::after{color:#b3afcb}
+html[data-site-theme="dark"] .philo-dictionary-grid details[open] summary{background:#181626}
+html[data-site-theme="dark"] .philo-dictionary-grid p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-grid p strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-empty{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-end{border:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-compass-end span{color:#9f9adf}
+html[data-site-theme="dark"] .philo-compass-end strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-end a{color:#a09cdd}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-compass-hero::after{background:linear-gradient(90deg,#1d1921 0%,rgba(29,25,33,0.99) 48%,rgba(29,25,33,0.82) 66%,rgba(29,25,33,0.24) 86%,rgba(29,25,33,0.0) 100%)}
+html[data-site-theme="dark"] .philo-compass-jump a{border:1px solid rgba(192,185,203,0.14);background:#1d1921}}
+html[data-site-theme="dark"] .philo-orientation-tabs{background:#191627}
+html[data-site-theme="dark"] .philo-orientation-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-tabs button > span:first-child{background:#1a1729;color:#a19cdd}
+html[data-site-theme="dark"] .philo-orientation-tabs strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-tabs small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-tabs button:hover,html[data-site-theme="dark"] .philo-orientation-tabs button:focus-visible{background:rgba(29,25,33,0.65)}
+html[data-site-theme="dark"] .philo-orientation-tabs button.is-active{border-color:rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .philo-orientation-tabs button.is-active > span:first-child{background:#181628;color:#a09bde}
+html[data-site-theme="dark"] .philo-chrono-subtabs{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-chrono-subtabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-chrono-subtabs button strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-chrono-subtabs button small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-chrono-subtabs button.is-active{background:#181628}
+html[data-site-theme="dark"] .philo-chrono-subtabs button.is-active strong{color:#a19cdd}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era-axis{border-bottom:1px solid rgba(192,185,203,0.14);background:linear-gradient(90deg,#191627 0%,#181626 56%,#1d1921 100%)}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era-number{background:#191729;color:#a19cdd}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era-axis time{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era-content header p{border-left:3px solid rgba(192,185,203,0.32);background:#181626;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-intro{background:#1d1921}
+html[data-site-theme="dark"] .philo-master-timeline-intro > div:first-child > span{color:#a09bdf}
+html[data-site-theme="dark"] .philo-master-timeline-intro strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-intro p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-legend{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-shell{background:linear-gradient(#1d1921,#181626)}
+html[data-site-theme="dark"] .philo-master-axis{background:linear-gradient(90deg,#292430,#22203a 55%,#292430)}
+html[data-site-theme="dark"] .philo-master-tick i{background:#27232e}
+html[data-site-theme="dark"] .philo-master-tick b{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-author{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-author-dot{border:2px solid #4a4a4a;background:#615b71}
+html[data-site-theme="dark"] .philo-master-author.is-local .philo-master-author-dot{background:#22203a}
+html[data-site-theme="dark"] .philo-master-author-name{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-author-name em{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-master-author:hover,html[data-site-theme="dark"] .philo-master-author:focus-visible{background:#181628}
+html[data-site-theme="dark"] .philo-master-tooltip{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-tooltip small{color:#aeaad0}
+html[data-site-theme="dark"] .philo-master-tooltip strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-tooltip b{color:#a19bde}
+html[data-site-theme="dark"] .philo-master-timeline-hint{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-intro{background:#1d1921}
+html[data-site-theme="dark"] .philo-space-intro span{color:#a09bdf}
+html[data-site-theme="dark"] .philo-space-intro strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-intro p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button{border:1px solid rgba(192,185,203,0.14);background:#1a1627;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button > span{background:#1d1921;color:#9f9adf}
+html[data-site-theme="dark"] .philo-space-presets strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button.is-active{border-color:rgba(192,185,203,0.2);background:#181628}
+html[data-site-theme="dark"] .philo-real-map-shell{border:1px solid rgba(192,185,203,0.14);background:#1f1b26}
+html[data-site-theme="dark"] .philo-map-loading{background:#1e1b24;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-loading > span{border:2px solid rgba(192,185,203,0.15);border-top-color:#494587}
+html[data-site-theme="dark"] .philo-map-note{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-marker{border:2px solid #4a4a4a;background:#22203a;color:#e5e2e9}
+html[data-site-theme="dark"] .philo-map-label{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.92);color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-popup strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-popup span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-relations-legend{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-relations-legend b{color:#a09cde}
+html[data-site-theme="dark"] .philo-idea-thread{background:#1d1921}
+html[data-site-theme="dark"] .philo-idea-thread > header{border-bottom:1px solid rgba(192,185,203,0.14);background:linear-gradient(120deg,#181626,#1d1921)}
+html[data-site-theme="dark"] .philo-idea-thread > header > span{color:#9f9adf}
+html[data-site-theme="dark"] .philo-idea-thread h3{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-idea-thread header p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-flow{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-thread-flow > a,html[data-site-theme="dark"] .philo-thread-flow > span{border:1px solid rgba(192,185,203,0.14);background:#191526;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-flow > a{color:#a19cdd}
+html[data-site-theme="dark"] .philo-thread-flow > a:hover{border-color:rgba(192,185,203,0.25);background:#181627}
+html[data-site-theme="dark"] .philo-thread-flow > i{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-debates > a{border:1px solid rgba(192,185,203,0.14);background:#1a1627}
+html[data-site-theme="dark"] .philo-thread-debates > a:hover{border-color:rgba(192,185,203,0.22);background:#191627}
+html[data-site-theme="dark"] .philo-thread-debates small{color:#a09bde}
+html[data-site-theme="dark"] .philo-thread-debates strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-debates > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-note{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-thread-note strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-title em{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-question{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-path-question > header{border-bottom:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-path-question > header > span{color:#9f9adf}
+html[data-site-theme="dark"] .philo-path-question h4{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-question header p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-step{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-page .philo-path-body .philo-path-item-copy strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-page .philo-path-body .philo-path-item-copy small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-body li.is-targeted{background:#181628}
+html[data-site-theme="dark"] .philo-compass-hero--socrates::after{background:linear-gradient(135deg,rgba(29,25,33,0.05),rgba(24,22,40,0.16))}
+html[data-site-theme="dark"] .philo-view-tabs{background:#191627}
+html[data-site-theme="dark"] .philo-view-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-view-tabs button:hover,html[data-site-theme="dark"] .philo-view-tabs button:focus-visible{background:rgba(29,25,33,0.7)}
+html[data-site-theme="dark"] .philo-view-tabs button.is-active{border-color:rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .philo-view-tabs button > span:first-child{background:#1a1729;color:#a19cdd}
+html[data-site-theme="dark"] .philo-view-tabs button.is-active > span:first-child{background:#191728;color:#9f9adf}
+html[data-site-theme="dark"] .philo-view-tabs strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-view-tabs small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-intro{background:#1d1921}
+html[data-site-theme="dark"] .philo-master-timeline-intro > div:first-child > span{color:#a09bdf}
+html[data-site-theme="dark"] .philo-master-timeline-intro strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-intro p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-legend{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-timeline-shell{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1d1921,#191526)}
+html[data-site-theme="dark"] .philo-master-axis{background:linear-gradient(90deg,#292430,#22203a 55%,#292430)}
+html[data-site-theme="dark"] .philo-master-era{border-right:1px dashed rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-master-era footer{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-master-era footer strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-era footer small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-author-dot{border:2px solid #4a4a4a;background:#615b71}
+html[data-site-theme="dark"] .philo-master-author.is-local .philo-master-author-dot{background:#22203a}
+html[data-site-theme="dark"] .philo-master-author-star{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-master-tooltip{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-tooltip small{color:#aeaad0}
+html[data-site-theme="dark"] .philo-master-tooltip strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-tooltip b{color:#a19bde}
+html[data-site-theme="dark"] .philo-master-timeline-hint{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-heading{background:#1d1921}
+html[data-site-theme="dark"] .philo-space-heading strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-heading span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button:hover,html[data-site-theme="dark"] .philo-space-presets button:focus-visible{background:#191627}
+html[data-site-theme="dark"] .philo-space-presets button > span{background:#181628;color:#9f9adf}
+html[data-site-theme="dark"] .philo-space-presets strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-space-presets button.is-active{border-color:rgba(192,185,203,0.25);background:#181628}
+html[data-site-theme="dark"] .philo-map-note{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-popup > div > a,html[data-site-theme="dark"] .philo-map-popup > div > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-map-popup > div > a{color:#a19cdd}
+html[data-site-theme="dark"] .philo-compass-page .philo-paths-section{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#181627,#1d1921 54%)}
+html[data-site-theme="dark"] .philo-paths-tabs{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-paths-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-paths-tabs button span{background:#1b1728;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-paths-tabs button.is-active{background:#181628;color:#a09bde}
+html[data-site-theme="dark"] .philo-paths-tabs button.is-active span{background:#1d1921;color:#9f9bdf}
+html[data-site-theme="dark"] .philo-path-search{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-search svg{stroke:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-search input{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-search input:focus{border-color:rgba(73,69,135,0.35)}
+html[data-site-theme="dark"] .philo-path-search button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-search button:hover{background:#181627;color:#a09bde}
+html[data-site-theme="dark"] .philo-path-search-feedback{background:#181627;color:#a9a5d5}
+html[data-site-theme="dark"] .philo-compass-page .philo-path-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-compass-page .philo-path-card.is-open{border-color:rgba(192,185,203,0.19)}
+html[data-site-theme="dark"] .philo-path-card-trigger:hover,html[data-site-theme="dark"] .philo-path-card-trigger:focus-visible{background:#191526}
+html[data-site-theme="dark"] .philo-path-card .philo-path-number{background:#181628;color:#9e9adf}
+html[data-site-theme="dark"] .philo-path-card .philo-path-title small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-card .philo-path-title strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-card .philo-path-title em{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-toggle::before,html[data-site-theme="dark"] .philo-path-toggle::after{background:#615b71}
+html[data-site-theme="dark"] .philo-path-body{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-path-question{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-path-question-trigger{background:#181626}
+html[data-site-theme="dark"] .philo-path-question-trigger:hover,html[data-site-theme="dark"] .philo-path-question-trigger:focus-visible{background:#191627}
+html[data-site-theme="dark"] .philo-path-question-trigger > span{color:#9f9adf}
+html[data-site-theme="dark"] .philo-path-question-trigger > strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-question-trigger > i::before,html[data-site-theme="dark"] .philo-path-question-trigger > i::after{background:#615b71}
+html[data-site-theme="dark"] .philo-path-question-panel-inner{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-path-question-panel-inner > p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-flow > a{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-path-flow > a:hover,html[data-site-theme="dark"] .philo-path-flow > a:focus-visible{border-color:rgba(192,185,203,0.22);background:#1a1627}
+html[data-site-theme="dark"] .philo-path-flow > a small{color:#a09cde}
+html[data-site-theme="dark"] .philo-path-flow > a strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-connector{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-flow > a.is-targeted{border-color:rgba(73,69,135,0.35);background:#191729}
+html[data-site-theme="dark"] .philo-path-no-text{border:1px dashed rgba(192,185,203,0.14);background:#1b1627}
+html[data-site-theme="dark"] .philo-path-no-text strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-no-text span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-no-text a{color:#a09cde}
+html[data-site-theme="dark"] .philo-dialogue-board{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend{border-bottom:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend > span{border-right:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend b{background:#181628;color:#a09bde}
+html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dialogue-item{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dialogue-trigger{background:#1d1921}
+html[data-site-theme="dark"] .philo-dialogue-trigger:hover,html[data-site-theme="dark"] .philo-dialogue-trigger:focus-visible{background:#191526}
+html[data-site-theme="dark"] .philo-dialogue-number{background:#181628;color:#9e9adf}
+html[data-site-theme="dark"] .philo-dialogue-trigger small{color:#a19cde}
+html[data-site-theme="dark"] .philo-dialogue-trigger strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dialogue-trigger > i::before,html[data-site-theme="dark"] .philo-dialogue-trigger > i::after{background:#615b71}
+html[data-site-theme="dark"] .philo-dialogue-panel-inner{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dialogue-panel-inner > p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dialogue-panel-inner .philo-thread-flow{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dialogue-panel-inner .philo-thread-note{background:#181626}
+html[data-site-theme="dark"] .philo-compass-end{border:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-compass-end > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-end > a{color:#9f9bde}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-dialogue-board .philo-relations-legend > span{border-bottom:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .philo-compass-hero--socrates{background:linear-gradient(135deg,#1d1921 0%,#191526 68%,#191627 100%)}
+html[data-site-theme="dark"] .philo-compass-hero--socrates::after{background:linear-gradient(90deg,rgba(29,25,33,0.06) 0%,rgba(29,25,33,0.02) 55%,rgba(25,22,39,0.1) 100%)}
+html[data-site-theme="dark"] .philo-orientation-search{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-orientation-search > label{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-search-icon{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-search input{border:1px solid rgba(192,185,203,0.14);background:#181626;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-search input:focus{border-color:rgba(192,185,203,0.34);background:#1d1921}
+html[data-site-theme="dark"] .philo-orientation-search button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-orientation-search button:hover,html[data-site-theme="dark"] .philo-orientation-search button:focus-visible{background:#181628;color:#9f9bdf}
+html[data-site-theme="dark"] .philo-orientation-search-feedback{color:#a6a1d8}
+html[data-site-theme="dark"] .philo-era-accordion-list{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-era-accordion{border-bottom:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-era-trigger{background:#1d1921}
+html[data-site-theme="dark"] .philo-era-trigger:hover,html[data-site-theme="dark"] .philo-era-trigger:focus-visible{background:#191526}
+html[data-site-theme="dark"] .philo-era-accordion.is-open .philo-era-trigger{background:linear-gradient(90deg,#1a1627,#1d1921)}
+html[data-site-theme="dark"] .philo-era-trigger .philo-era-number{background:#181628;color:#9f9adf}
+html[data-site-theme="dark"] .philo-era-trigger-copy small{color:#a39edb}
+html[data-site-theme="dark"] .philo-era-trigger-copy strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-trigger time{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-era-trigger > i::before,html[data-site-theme="dark"] .philo-era-trigger > i::after{background:#645f6d}
+html[data-site-theme="dark"] .philo-era-panel-inner{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-era-intro{border-left:2px solid rgba(73,69,135,0.36);background:#181626;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-guided-timeline .philo-author-chip.is-search-match{border-color:rgba(73,69,135,0.38);background:#191729}
+html[data-site-theme="dark"] .philo-master-timeline-shell{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1d1921,#191526)}
+html[data-site-theme="dark"] .philo-master-author.is-search-match .philo-master-author-dot{background:#332ba1}
+html[data-site-theme="dark"] .philo-master-focus{border-top:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-master-focus > span{color:#a59fda}
+html[data-site-theme="dark"] .philo-master-focus > strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-focus > strong i{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-master-focus > p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-focus > a{background:#191728;color:#a09cde}
+html[data-site-theme="dark"] .philo-master-focus > a:hover{background:#19182a}
+html[data-site-theme="dark"] .philo-paths-tabs button[data-philo-path-tab="all"]{border-left:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-deep-dictionary{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#181626,#1d1921 54%)}
+html[data-site-theme="dark"] .philo-deep-dictionary-head > div > span{color:#a09bde}
+html[data-site-theme="dark"] .philo-deep-dictionary-head h3{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-count{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-search{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-deep-dictionary-search:focus-within{border-color:rgba(192,185,203,0.34)}
+html[data-site-theme="dark"] .philo-deep-dictionary-search > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-search input{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-search input::placeholder{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-results{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-deep-dictionary-results button:hover,html[data-site-theme="dark"] .philo-deep-dictionary-results button:focus-visible{background:#191627}
+html[data-site-theme="dark"] .philo-deep-dictionary-results strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-results small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-results i{color:#a09bdf}
+html[data-site-theme="dark"] .philo-dictionary-no-result{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-starters > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-starters button,html[data-site-theme="dark"] .philo-deep-dictionary-related button{border:1px solid rgba(192,185,203,0.14);background:#191627;color:#a09cde}
+html[data-site-theme="dark"] .philo-deep-dictionary-starters button:hover,html[data-site-theme="dark"] .philo-deep-dictionary-related button:hover,html[data-site-theme="dark"] .philo-deep-dictionary-starters button:focus-visible,html[data-site-theme="dark"] .philo-deep-dictionary-related button:focus-visible{border-color:rgba(192,185,203,0.3);background:#191728}
+html[data-site-theme="dark"] .philo-deep-dictionary-detail,html[data-site-theme="dark"] .philo-deep-dictionary-empty{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-deep-dictionary-empty > span{background:#181628;color:#9f9adf}
+html[data-site-theme="dark"] .philo-deep-dictionary-empty strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-empty p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-content header{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-deep-dictionary-content header > span{color:#a19cde}
+html[data-site-theme="dark"] .philo-deep-dictionary-content h4{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-definition{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-related{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-deep-dictionary-related > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-related > div > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-deep-dictionary-note{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-compass-hero--socrates{background:linear-gradient(180deg,#1d1921 0%,#191526 100%)}
+html[data-site-theme="dark"] .philo-compass-hero--socrates::after{background:linear-gradient(180deg,rgba(29,25,33,0.05),rgba(29,25,33,0.18))}
+html[data-site-theme="dark"] .philo-master-era{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-master-era footer{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-master-era-plot .philo-master-author,html[data-site-theme="dark"] .philo-master-era-plot .philo-master-author:nth-child(even){border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-master-author-label{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-author-star{color:#dfcd9a}
+html[data-site-theme="dark"] .philo-master-author.is-search-match{border-color:rgba(192,185,203,0.28);background:#181628}}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump a{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump small{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-master-era-plot .philo-master-author,html[data-site-theme="dark"] .philo-master-era-plot .philo-master-author:nth-child(even){border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-master-author-label{color:#bbb5c5}}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-compass-hero--socrates::after{background:linear-gradient(90deg,rgba(29,25,33,0.04) 0%,rgba(29,25,33,0.02) 58%,rgba(25,22,39,0.08) 100%)}
+html[data-site-theme="dark"] .philo-path-connector::before{color:#bbb5c5}}
+html[data-site-theme="dark"] .philo-author-tooltip{border:1px solid rgba(192,185,203,0.14);background:rgba(49,44,57,0.97);color:#e5e2e9}
+html[data-site-theme="dark"] .philo-deep-dictionary-detail{background:linear-gradient(180deg,#1d1921,#1b1526)}
+html[data-site-theme="dark"] .philo-deep-dictionary-content > header{background:linear-gradient(135deg,#191627,#1d1921 62%)}
+html[data-site-theme="dark"] .philo-dict-lead{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-card{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-dict-card h5,html[data-site-theme="dark"] .philo-dict-subhead h5{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-card li{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-card li::before{background:#23213a}
+html[data-site-theme="dark"] .philo-dict-authors{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dict-subhead span{color:#a09bdf}
+html[data-site-theme="dark"] .philo-dict-author-grid article{border:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-dict-author-grid strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-author-grid p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-inline-link{color:#a09adf;text-decoration-color:rgba(160,154,223,0.22)}
+html[data-site-theme="dark"] .philo-dict-inline-link:hover,html[data-site-theme="dark"] .philo-dict-inline-link:focus-visible{color:#a09bdf}
+html[data-site-theme="dark"] .philo-dict-concept-static{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-related-static{background:#1c1826;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-browser{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(180deg,#1a1526,#1d1921)}
+html[data-site-theme="dark"] .philo-dictionary-filters > span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-filters button{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-filters button:hover,html[data-site-theme="dark"] .philo-dictionary-filters button:focus-visible{border-color:rgba(192,185,203,0.27);color:#9f9bdf}
+html[data-site-theme="dark"] .philo-dictionary-filters button.is-active{border-color:rgba(192,185,203,0.2);background:#181628;color:#9f9adf}
+html[data-site-theme="dark"] .philo-dictionary-alphabet{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dictionary-alphabet button{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dictionary-alphabet button:hover,html[data-site-theme="dark"] .philo-dictionary-alphabet button:focus-visible,html[data-site-theme="dark"] .philo-dictionary-alphabet button.is-active{background:#181628;color:#9f9adf}
+html[data-site-theme="dark"] .philo-deep-dictionary-results button em{color:#a09bdf}
+html[data-site-theme="dark"] .philo-dictionary-more{border-top:1px solid rgba(192,185,203,0.14);color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-author-dates{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#181627,#181626)}
+html[data-site-theme="dark"] .philo-dict-author-dates span{color:#a09bdf}
+html[data-site-theme="dark"] .philo-dict-author-dates strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-chip,html[data-site-theme="dark"] .philo-dict-author-section .philo-dict-related-static{border:1px solid rgba(192,185,203,0.14);background:#191627;color:#a09adf}
+html[data-site-theme="dark"] button.philo-dict-chip:hover,html[data-site-theme="dark"] button.philo-dict-chip:focus-visible{border-color:rgba(192,185,203,0.28);background:#191728}
+html[data-site-theme="dark"] .philo-dict-author-works{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .philo-dict-author-works li{border:1px solid rgba(192,185,203,0.14);background:#191526;color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-author-works li::before{background:#23213a}
+html[data-site-theme="dark"] .philo-dict-site-author{border:1px solid rgba(192,185,203,0.14);background:#191627}
+html[data-site-theme="dark"] .philo-dict-site-author:hover,html[data-site-theme="dark"] .philo-dict-site-author:focus-visible{border-color:rgba(192,185,203,0.26);background:#191728}
+html[data-site-theme="dark"] .philo-dict-site-author span{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-dict-site-author strong{color:#9f9adf}
+html[data-site-theme="dark"] .philo-dict-author-link{color:#9f9adf;text-decoration-color:rgba(159,154,223,0.2)}
+html[data-site-theme="dark"] .philo-dict-author-link:hover,html[data-site-theme="dark"] .philo-dict-author-link:focus-visible{color:#a09bdf}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-dictionary-alphabet button{background:#1a1627}}
+html[data-site-theme="dark"] .compass-context-cta{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(135deg,#1d1921 0%,#1e1824 100%)}
+html[data-site-theme="dark"] .compass-context-cta-copy > strong{color:#bbb5c5}
+html[data-site-theme="dark"] .compass-context-cta--bible{border-color:rgba(192,185,203,0.14);background:linear-gradient(135deg,#1d1921 0%,#261618 100%)}
+html[data-site-theme="dark"] .compass-context-cta--bible .compass-context-cta-copy > span{color:#cfaab1}
+html[data-site-theme="dark"] .compass-context-cta--bible > a{background:#29171b;color:#d3a7af}
+html[data-site-theme="dark"] .compass-context-cta--bible > a:hover,html[data-site-theme="dark"] .compass-context-cta--bible > a:focus-visible{background:#2b181c}
+html[data-site-theme="dark"] .compass-context-cta--philo{border-color:rgba(192,185,203,0.14);background:linear-gradient(135deg,#1d1921 0%,#181626 100%)}
+html[data-site-theme="dark"] .compass-context-cta--philo .compass-context-cta-copy > span{color:#9f9adf}
+html[data-site-theme="dark"] .compass-context-cta--philo > a{background:#181628;color:#9e9adf}
+html[data-site-theme="dark"] .compass-context-cta--philo > a:hover,html[data-site-theme="dark"] .compass-context-cta--philo > a:focus-visible{background:#191729}
+html[data-site-theme="dark"] .bible-deep-glossary-definition{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-meta section{border:1px solid rgba(192,185,203,0.14);background:#261c18}
+html[data-site-theme="dark"] .bible-deep-glossary-meta p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-content header small{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-compass-hero--raphael::after{background:linear-gradient(90deg,
+      rgba(38,26,21,1.0) 0%,
+      rgba(38,26,21,0.995) 48%,
+      rgba(38,26,21,0.975) 60%,
+      rgba(38,26,21,0.89) 70%,
+      rgba(38,26,21,0.56) 80%,
+      rgba(38,26,21,0.18) 91%,
+      rgba(38,26,21,0.0) 100%) !important}
+html[data-site-theme="dark"] .bible-compass-hero--raphael > p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-hero--raphael > p strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-compass-jump a{border:1px solid rgba(192,185,203,0.14) !important;background:#1d1921 !important}
+html[data-site-theme="dark"] .bible-compass-jump .bible-jump-copy strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-jump .bible-jump-copy small{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-jump.is-floating{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(38,26,21,0.88) !important}
+html[data-site-theme="dark"] .bible-compass-jump.is-floating a{background:rgba(40,23,26,0.92) !important}
+html[data-site-theme="dark"] .bible-compass-jump.is-floating .bible-jump-icon{color:#d0a9b1 !important}
+html[data-site-theme="dark"] .bible-compass-jump.is-floating a::before{color:#e5e2e9}}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-hero p,html[data-site-theme="dark"] .philo-compass-page .philo-compass-hero p strong{color:#d3ced9 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(25,21,38,0.94) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump a:focus-visible{background:#181628 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump .philo-jump-icon{background:#181728 !important;color:#9f9adf !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump small{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .compass-context-cta.compass-context-cta--merged{color:#e5e2e9 !important}
+html[data-site-theme="dark"] .compass-context-cta--philo.compass-context-cta--merged{border-color:rgba(192,185,203,0.25) !important;background:linear-gradient(135deg,#47427e 0%,#4c4785 100%) !important}
+html[data-site-theme="dark"] .compass-context-cta--bible.compass-context-cta--merged{border-color:rgba(192,185,203,0.25) !important;background:linear-gradient(135deg,#67434c 0%,#7e4e5c 100%) !important}
+html[data-site-theme="dark"] .compass-context-cta--merged .compass-context-cta-copy > span{color:rgba(229,226,233,0.7) !important}
+html[data-site-theme="dark"] .compass-context-cta--merged .compass-context-cta-copy > strong{color:#e5e2e9 !important}
+html[data-site-theme="dark"] .compass-context-cta-back{border:1px solid rgba(192,185,203,0.2);background:rgba(29,25,33,0.08);color:#e5e2e9}
+html[data-site-theme="dark"] .compass-context-cta-back:hover,html[data-site-theme="dark"] .compass-context-cta-back:focus-visible{background:rgba(29,25,33,0.14)}
+html[data-site-theme="dark"] .compass-context-cta-primary{background:#1d1921;color:#aeaacf}
+html[data-site-theme="dark"] .compass-context-cta--bible .compass-context-cta-primary{color:#cdacb5}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(38,26,21,0.95) !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump .bible-jump-copy strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump .bible-jump-copy small{color:#bbb5c5 !important}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-floating{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(38,26,21,0.94) !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-floating a:hover,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-floating a:focus-visible,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump a:hover,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump a:focus-visible{background:#29171c !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump .bible-jump-icon,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-floating .bible-jump-icon{color:#d0a9b1 !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump .bible-jump-copy strong,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-floating .bible-jump-copy strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-hero--raphael::after{background:linear-gradient(90deg,rgba(38,26,21,1.0) 0%,rgba(38,26,21,0.995) 43%,rgba(38,26,21,0.965) 56%,rgba(38,26,21,0.84) 68%,rgba(38,26,21,0.5) 80%,rgba(38,26,21,0.14) 92%,rgba(38,26,21,0.0) 100%) !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-hero--raphael > p{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-hero--raphael > p strong{color:#d3ced9 !important}}
+html[data-site-theme="dark"] .philo-compass-page,html[data-site-theme="dark"] .philo-compass-page p,html[data-site-theme="dark"] .philo-compass-page span,html[data-site-theme="dark"] .philo-compass-page small,html[data-site-theme="dark"] .philo-compass-page label,html[data-site-theme="dark"] .philo-compass-page li,html[data-site-theme="dark"] .philo-compass-page time{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-section-head p,html[data-site-theme="dark"] .philo-compass-page .philo-hero-copy,html[data-site-theme="dark"] .philo-compass-page .philo-era-intro,html[data-site-theme="dark"] .philo-compass-page .philo-path-question-panel-inner > p,html[data-site-theme="dark"] .philo-compass-page .philo-path-card-summary,html[data-site-theme="dark"] .philo-compass-page .philo-dialogue-panel p,html[data-site-theme="dark"] .philo-compass-page .philo-timeline-note,html[data-site-theme="dark"] .philo-compass-page .philo-map-copy,html[data-site-theme="dark"] .philo-compass-page .philo-dict-result p{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-view-tabs strong{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-view-tabs small{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-era-trigger-copy small,html[data-site-theme="dark"] .philo-compass-page .philo-era-trigger time{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-path-question-trigger > strong{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-orientation-search > label{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-view-tabs{border:1px solid rgba(192,185,203,0.14);background:#191627}
+html[data-site-theme="dark"] .philo-compass-page .philo-view-panel.is-active > .philo-orientation-search{border:1px solid rgba(192,185,203,0.14);border-top:1px solid rgba(192,185,203,0.14);background:#191627}
+html[data-site-theme="dark"] .philo-compass-page{--philo-violet:#a09bde;--philo-violet-soft:#39329a;--philo-violet-deep:#a39fda}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-section-head p,html[data-site-theme="dark"] .philo-compass-page .philo-timeline-note,html[data-site-theme="dark"] .philo-compass-page .philo-path-question header p,html[data-site-theme="dark"] .philo-compass-page .philo-path-title em,html[data-site-theme="dark"] .philo-compass-page .philo-deep-dictionary-note,html[data-site-theme="dark"] .philo-compass-page .philo-deep-dictionary-related > div > span,html[data-site-theme="dark"] .philo-compass-page .philo-orientation-search-feedback,html[data-site-theme="dark"] .philo-compass-page .philo-timeline-key,html[data-site-theme="dark"] .philo-compass-page .philo-view-tabs small,html[data-site-theme="dark"] .philo-compass-page .philo-era-trigger time{color:#b6b2c7 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-deep-dictionary-head h2{color:#d3ced9}
+html[data-site-theme="dark"] .philo-compass-page .philo-deep-dictionary-search input::placeholder{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump > a{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(29,25,33,0.97) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump > a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump > a:focus-visible{border-color:rgba(192,185,203,0.28) !important;background:#191627 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump .philo-jump-icon{background:#181728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump strong{color:#d3ced9 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(25,21,38,0.94) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible{background:#191728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed .philo-jump-icon{background:#181728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a::after{background:#322d39;color:#e5e2e9}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-hero--socrates::after{background:linear-gradient(90deg,rgba(29,25,33,0.06) 0%,rgba(29,25,33,0.02) 55%,rgba(25,22,39,0.1) 100%) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) > a{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(29,25,33,0.98) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:focus-visible{border-color:rgba(192,185,203,0.28) !important;background:#191627 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-icon{background:#181728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) strong{color:#d3ced9 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(25,21,38,0.95) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed .philo-jump-icon{background:#181728 !important}
+@media (hover:hover) and (pointer:fine){html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible{background:#191728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:hover strong,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump.is-condensed > a:focus-visible strong{color:#d3ced9 !important}}
+@media (max-width:700px){html[data-site-theme="dark"] .philo-compass-page .philo-compass-hero--socrates::after{background:linear-gradient(90deg,rgba(29,25,33,0.04) 0%,rgba(29,25,33,0.02) 58%,rgba(25,22,39,0.08) 100%) !important}}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed){border:1px solid rgba(192,185,203,0.14) !important;background:rgba(26,21,38,0.96) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) > a:focus-visible{background:#181628 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) .philo-jump-icon{background:#181728 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) strong{color:#d3ced9 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-compass-jump:not(.is-condensed) small{color:#9f9adf !important}
+html[data-site-theme="dark"] .bible-deep-glossary-groups{border:1px solid rgba(192,185,203,0.14);background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .bible-deep-glossary-groups > span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-groups button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-groups button:hover,html[data-site-theme="dark"] .bible-deep-glossary-groups button:focus-visible{border-color:rgba(192,185,203,0.14);background:#28161a;color:#d0a9b1}
+html[data-site-theme="dark"] .bible-deep-glossary-groups button.is-active{border-color:rgba(192,185,203,0.14);background:#2a181c;color:#d0a9b0}
+html[data-site-theme="dark"] .bible-deep-glossary-bridges > section{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(135deg,#261519 0%,#1d1921 100%)}
+html[data-site-theme="dark"] .bible-deep-glossary-bridges > section > span{color:#cfabb1}
+html[data-site-theme="dark"] .bible-deep-glossary-bridges p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-deep-glossary-bridges a{border:1px solid rgba(192,185,203,0.14);background:#29171c;color:#ceacb3}
+html[data-site-theme="dark"] .bible-deep-glossary-bridges a:hover,html[data-site-theme="dark"] .bible-deep-glossary-bridges a:focus-visible{border-color:rgba(192,185,203,0.18);background:#2b181d}
+html[data-site-theme="dark"] .bible-reader-secret-link{color:rgba(187,181,197,0.36)}
+html[data-site-theme="dark"] .bible-reader-secret-link:hover,html[data-site-theme="dark"] .bible-reader-secret-link:focus-visible{color:#d7a2a8;background:rgba(142,62,70,0.055)}
+html[data-site-theme="dark"] .bible-reader-page{background:#241e18;color:#ccccdb}
+html[data-site-theme="dark"] .bible-reader-breadcrumb{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-breadcrumb a:hover{color:#d9a1a7}
+html[data-site-theme="dark"] .bible-reader-breadcrumb span:last-child{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-kicker{color:#d9a0a6}
+html[data-site-theme="dark"] .bible-reader-hero p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-controls{border:1px solid #62517b;background:rgba(38,21,21,0.94)}
+html[data-site-theme="dark"] .bible-reader-controls-head>div>span{color:#d8a1a6}
+html[data-site-theme="dark"] .bible-reader-status{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-field>span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-field select{border:1px solid #483d57;background-color:#1d1921;color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-field select:hover{border-color:#473b58}
+html[data-site-theme="dark"] .bible-reader-field select:focus{border-color:#87454b}
+html[data-site-theme="dark"] .bible-reader-field option:disabled{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-license-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-license-note strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-progress span{background:#933942}
+html[data-site-theme="dark"] .bible-reader-book-head{border-bottom:1px solid #484054}
+html[data-site-theme="dark"] .bible-reader-book-head>span{color:#d9a0a6}
+html[data-site-theme="dark"] .bible-reader-book-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-chapter{border-bottom:1px solid #484054}
+html[data-site-theme="dark"] .bible-reader-chapter>header span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-verse{color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-verse sup{color:#d9a0a5}
+html[data-site-theme="dark"] .bible-reader-moment{border-top:1px solid #483d57}
+html[data-site-theme="dark"] .bible-reader-moment span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-moment small{color:#d6a4a8}
+html[data-site-theme="dark"] .bible-reader-loading{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-loading span{border:2px solid #824a54;border-top-color:#87454c}
+html[data-site-theme="dark"] .bible-reader-error{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-error strong{color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-error a{color:#d7a2a8}
+html[data-site-theme="dark"] .bible-reader-nav-wrap{border-top:1px solid #7f4d56}
+html[data-site-theme="dark"] .bible-reader-nav-button,html[data-site-theme="dark"] .bible-reader-current{border:1px solid #62507c;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-nav-button:hover:not(:disabled),html[data-site-theme="dark"] .bible-reader-current:hover{border-color:#473b58;background:#261515;color:#d6a4a9}
+html[data-site-theme="dark"] .bible-reader-current small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-current strong{color:#d8a1a6}
+html[data-site-theme="dark"] .bible-reader-current>span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-chapter-index{border:1px solid #62507c;background:rgba(38,21,21,0.985)}
+html[data-site-theme="dark"] .bible-reader-chapter-index-head{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-chapter-index-head button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-chapter-grid button{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-chapter-grid button strong{background:#27161a;color:#d7a3a7}
+html[data-site-theme="dark"] .bible-reader-chapter-grid button:hover,html[data-site-theme="dark"] .bible-reader-chapter-grid button.is-active{border-color:#814b55;background:#261618;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-chapter-grid button.is-active strong{background:#913b43;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-reader-chapter>header p{color:#d6a4a9}
+html[data-site-theme="dark"] .bible-reader-inline-nav{border-top:1px solid #473c58}
+html[data-site-theme="dark"] .bible-reader-inline-nav button{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-inline-nav button:hover:not(:disabled){color:#d6a4a9;border-color:#7f4d55;background:#261618}
+@media(max-width:720px){html[data-site-theme="dark"] .bible-reader-chapter-index{background:#1d1921}}
+html[data-site-theme="dark"] .bible-reader-page .bible-reader-meta-line{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-page .bible-reader-keyboard-hint{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-quiet-entry{border:1px solid rgba(192,185,203,0.14);color:rgba(187,181,197,0.25);background:rgba(29,25,33,0.22)}
+html[data-site-theme="dark"] .bible-reader-quiet-entry:hover,html[data-site-theme="dark"] .bible-reader-quiet-entry:focus-visible{color:#d6a3a9;border-color:rgba(192,185,203,0.25);background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .bible-reader-search-toggle{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-toggle:hover,html[data-site-theme="dark"] .bible-reader-search-toggle[aria-expanded="true"]{background:#271619;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-search-panel{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-search-head span{color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-search-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-head>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-form input,html[data-site-theme="dark"] .bible-reader-search-form select{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-form input:focus,html[data-site-theme="dark"] .bible-reader-search-form select:focus{border-color:#87454c}
+html[data-site-theme="dark"] .bible-reader-search-form>button{border:1px solid #814b53;background:#261618;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-search-feedback{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-result{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-result:hover{border-color:#624e7e;background:#261519}
+html[data-site-theme="dark"] .bible-reader-search-result strong{color:#d6a4a8}
+html[data-site-theme="dark"] .bible-reader-search-result small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-search-result i{color:#c0bac9}
+html[data-site-theme="dark"] .bible-reader-outline{border-top:1px solid #483d57}
+html[data-site-theme="dark"] .bible-reader-outline-head span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-outline-head small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-outline-track button{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-outline-track button:hover{border-color:#624f7d;background:#261519}
+html[data-site-theme="dark"] .bible-reader-outline-track button.is-active{border-color:#814b54;background:#271618}
+html[data-site-theme="dark"] .bible-reader-outline-track small{color:#d4a5aa}
+html[data-site-theme="dark"] .bible-reader-outline-track span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-related{border:1px solid #62517b;background:#261515}
+html[data-site-theme="dark"] .bible-reader-related>span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-related a{color:#bbb5c5;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-related a:hover{color:#d6a4a9}
+html[data-site-theme="dark"] .bible-reader-related small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-related i{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-verse.is-linked{background:linear-gradient(90deg,rgba(147,57,66,0.085),rgba(147,57,66,0.018))}
+html[data-site-theme="dark"] .bible-reader-verse-link{color:#d9a0a5}
+html[data-site-theme="dark"] .bible-reader-verse-link:hover,html[data-site-theme="dark"] .bible-reader-verse.is-linked .bible-reader-verse-link{background:#903c44;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-reader-verse-link:focus-visible{outline:2px solid rgba(192,185,203,0.25)}
+html[data-site-theme="dark"] .bible-reader-tool-toggle{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-tool-toggle:hover,html[data-site-theme="dark"] .bible-reader-tool-toggle[aria-expanded="true"],html[data-site-theme="dark"] .bible-reader-tool-toggle[aria-pressed="true"]{background:#271619;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-compare-panel{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-head span{color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-compare-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-head>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-loading,html[data-site-theme="dark"] .bible-reader-compare-empty{background:#27161b;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-loading span{border:1.5px solid #824a54;border-top-color:#87454c}
+html[data-site-theme="dark"] .bible-reader-compare-scroll{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-headrow{background:#27161a;border-bottom:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-compare-headrow>span{border-right:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-compare-column-head{border-right:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-compare-column-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-column-head small{color:#d6a4a8}
+html[data-site-theme="dark"] .bible-reader-compare-column-head.is-current{background:#271618}
+html[data-site-theme="dark"] .bible-reader-compare-row{border-bottom:1px solid #473c58}
+html[data-site-theme="dark"] .bible-reader-compare-row.is-linked{background:linear-gradient(90deg,rgba(144,60,68,0.055),rgba(144,60,68,0.01))}
+html[data-site-theme="dark"] .bible-reader-compare-ref{border-right:1px solid #62517b;background:#27161b;color:#d6a3a8}
+html[data-site-theme="dark"] .bible-reader-compare-ref:hover{background:#271619;color:#d8a1a7}
+html[data-site-theme="dark"] .bible-reader-compare-cell{border-right:1px solid #473c58;color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-compare-cell.is-current{background:rgba(39,22,24,0.48)}
+html[data-site-theme="dark"] .bible-reader-compare-missing{color:#c1bbca}
+html[data-site-theme="dark"] .bible-reader-floating-nav{border:1px solid rgba(98,81,123,0.9);background:rgba(38,21,21,0.91)}
+html[data-site-theme="dark"] .bible-reader-floating-nav>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-floating-nav>button:hover:not(:disabled){background:#271619;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-floating-current strong{color:#d6a4a8}
+html[data-site-theme="dark"] .bible-reader-floating-current span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref-toggle{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref-toggle:hover,html[data-site-theme="dark"] .bible-reader-xref-toggle[aria-expanded="true"]{background:#28161a;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-xrefs{border-left:1px solid #473c58;background:linear-gradient(90deg,rgba(39,22,25,0.7),rgba(29,25,33,0.0) 82%)}
+html[data-site-theme="dark"] .bible-reader-xrefs-head>span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xrefs-head>small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref:hover{background:#271619;color:#d8a2a8}
+html[data-site-theme="dark"] .bible-reader-xref-type{border:1px solid #624e7e;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref--citation .bible-reader-xref-type{border-color:#834953;color:#d6a4a9}
+html[data-site-theme="dark"] .bible-reader-xref small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-xref i{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-self-context{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-self-context:hover,html[data-site-theme="dark"] .bible-reader-self-context[aria-expanded="true"]{background:#28161a;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-context-trigger{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-trigger:hover,html[data-site-theme="dark"] .bible-reader-context-trigger[aria-expanded="true"]{border-color:#7f4d57;background:#271618;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-context-preview{border:1px solid #7f4d56;background:rgba(38,21,21,0.96)}
+html[data-site-theme="dark"] .bible-reader-context-head{border-bottom:1px solid #624e7e;background:#27161a}
+html[data-site-theme="dark"] .bible-reader-context-head span{color:#d2a7ac}
+html[data-site-theme="dark"] .bible-reader-context-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-head small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-head button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-head button:hover{background:#29171a;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-context-verse{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-verse:hover{background:#261618}
+html[data-site-theme="dark"] .bible-reader-context-verse small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-verse.is-target{background:linear-gradient(90deg,rgba(144,60,68,0.09),rgba(144,60,68,0.025))}
+html[data-site-theme="dark"] .bible-reader-context-verse.is-target small{color:#d6a4a9}
+html[data-site-theme="dark"] .bible-reader-context-verse.is-target span{color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-context-foot{border-top:1px solid #624e7e;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-foot>a{color:#d5a4aa}
+html[data-site-theme="dark"] .bible-reader-context-loading,html[data-site-theme="dark"] .bible-reader-context-empty{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-context-loading span{border:1.5px solid #824a54;border-top-color:#87454c}
+html[data-site-theme="dark"] .bible-reader-context-trigger--search{border-color:#62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-modes{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-modes button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-modes button.is-active{background:#29171a;color:#d8a1a7}
+html[data-site-theme="dark"] .bible-reader-compare-translation span{border:1px solid #624f7d;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-translation:hover span{border-color:#624f7d;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-translation.is-selected span{border-color:#874550;background:#271618;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav>button:first-child{border-right:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav>button:last-child{border-left:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav>button:not(:disabled):hover{background:#271617;color:#d8a1a7}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-focus-nav span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-card{border:1px solid #483c58;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-compare-card.is-current{border-color:#87454e;background:linear-gradient(145deg,#1d1921 0%,#261618 100%)}
+html[data-site-theme="dark"] .bible-reader-compare-card header{border-bottom:1px solid #62507c}
+html[data-site-theme="dark"] .bible-reader-compare-card header strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-card header span{color:#d6a4a8}
+html[data-site-theme="dark"] .bible-reader-compare-card>p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-card.is-error{background:#26171e}
+html[data-site-theme="dark"] .bible-reader-compare-card.is-error>p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-compare-card>button,html[data-site-theme="dark"] .bible-reader-compare-retry,html[data-site-theme="dark"] .bible-reader-compare-column-head button{border:1px solid #62507c;background:#1d1921;color:#d1a8ad}
+html[data-site-theme="dark"] .bible-reader-compare-column-head.is-error{background:#26171e}
+html[data-site-theme="dark"] .bible-reader-compare-column-head.is-error strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-panel{border:1px solid #473c58;background:linear-gradient(145deg,rgba(29,25,33,0.985),rgba(39,22,26,0.985))}
+html[data-site-theme="dark"] .bible-reader-collections-head span{color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-collections-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-head>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-tabs button{border:1px solid #473c58;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-tabs button.is-active{border-color:#874550;background:#271617;color:#d8a1a7}
+html[data-site-theme="dark"] .bible-reader-collections-description{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-tools input,html[data-site-theme="dark"] .bible-reader-collections-tools select{border:1px solid #473c58;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collections-tools input:focus,html[data-site-theme="dark"] .bible-reader-collections-tools select:focus{border-color:#87454e}
+html[data-site-theme="dark"] .bible-reader-collections-status{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-item{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-collection-copy>span{color:#ccadb1}
+html[data-site-theme="dark"] .bible-reader-collection-copy h3{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-copy p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-read{background:#281619;color:#d2a7ac}
+html[data-site-theme="dark"] .bible-reader-collection-refs button{border:1px solid #624f7d;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-refs button:hover,html[data-site-theme="dark"] .bible-reader-collection-refs button.is-active{border-color:#874550;background:#271618;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-collection-preview{border-top:1px solid #62517b;background:#261616}
+html[data-site-theme="dark"] .bible-reader-collection-passage+ .bible-reader-collection-passage{border-top:1px dashed #62517b}
+html[data-site-theme="dark"] .bible-reader-collection-passage header strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-passage header span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-passage>div p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-collection-passage sup{color:#d2a7ac}
+html[data-site-theme="dark"] .bible-reader-collection-passage>a{color:#d1a8ae}
+html[data-site-theme="dark"] .bible-reader-collection-passage.is-error>p,html[data-site-theme="dark"] .bible-reader-collection-empty,html[data-site-theme="dark"] .bible-reader-collections-empty{color:#bbb5c5}
+@media (max-width:700px){html[data-site-theme="dark"] .bible-reader-compare-ref{border:1px solid #624f7d}
+html[data-site-theme="dark"] .bible-reader-compare-cell{border-bottom:1px solid #624f7d}
+html[data-site-theme="dark"] .bible-reader-compare-cell::before{color:#cfaaaf}}
+html[data-site-theme="dark"] .text-bible-coordinate{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-coordinate i{color:#cab0b4}
+html[data-site-theme="dark"] .text-bible-cycle{border:1px solid rgba(192,185,203,0.15);background:linear-gradient(135deg,rgba(40,22,26,0.94),rgba(29,25,33,0.96) 50%,rgba(40,22,26,0.55))}
+html[data-site-theme="dark"] .text-bible-cycle-head{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-bible-cycle-head>span{color:#cbaeb4}
+html[data-site-theme="dark"] .text-bible-cycle-head>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-cycle-head>small{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-cycle li{border-right:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-bible-cycle li.is-current{background:rgba(145,59,71,0.075)}
+html[data-site-theme="dark"] .text-bible-cycle li a:hover,html[data-site-theme="dark"] .text-bible-cycle li a:focus-visible{background:rgba(145,59,71,0.06)}
+html[data-site-theme="dark"] .text-bible-cycle li a>span{color:#ccaeb3}
+html[data-site-theme="dark"] .text-bible-cycle li a>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-cycle li.is-current a>strong{color:#d4a6ae}
+html[data-site-theme="dark"] .text-bible-view-toggle{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .text-bible-view-toggle>span{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-view-toggle button{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-view-toggle button[aria-pressed="true"]{background:#844852;color:#e5e2e9}
+html[data-site-theme="dark"] .text-bible-view-toggle button:focus-visible{outline:2px solid rgba(192,185,203,0.3)}
+html[data-site-theme="dark"] .text-bible-genealogy{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-bible-genealogy>span{color:#cdacb2}
+html[data-site-theme="dark"] .text-bible-genealogy p{color:#bbb5c5!important}
+html[data-site-theme="dark"] .text-bible-genealogy p::before{background:#2f1a1e}
+html[data-site-theme="dark"] .text-bible-genealogy p::after{border:1px solid #874551;background:#1d1921}
+html[data-site-theme="dark"] .text-bible-genealogy p strong{color:#d3a6ae}
+html[data-site-theme="dark"] .text-bible-genealogy p i{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-anatomy{border:1px solid rgba(192,185,203,0.14);background:#261515}
+html[data-site-theme="dark"] .text-bible-anatomy>div>span{color:#d2a8af}
+html[data-site-theme="dark"] .text-bible-anatomy>div>small{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-anatomy li a:hover,html[data-site-theme="dark"] .text-bible-anatomy li a:focus-visible{background:#28171a}
+html[data-site-theme="dark"] .text-bible-anatomy li a>span{color:#d0aab0}
+html[data-site-theme="dark"] .text-bible-anatomy li a>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-anatomy li a>small{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-entity-term{color:#cfaab2;border-bottom:1px dotted rgba(135,69,78,0.5)}
+html[data-site-theme="dark"] .text-bible-entity-term:focus-visible{outline:2px solid rgba(192,185,203,0.26)}
+html[data-site-theme="dark"] .text-bible-prevnext{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .text-bible-prevnext>a:hover,html[data-site-theme="dark"] .text-bible-prevnext>a:focus-visible{background:#28161a}
+html[data-site-theme="dark"] .text-bible-prevnext-side>span{color:#ceabb1}
+html[data-site-theme="dark"] .text-bible-prevnext-side>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-prevnext-center{border-right:1px solid rgba(192,185,203,0.14);border-left:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,#28161a,#1d1921)}
+html[data-site-theme="dark"] .text-bible-prevnext-center>span{color:#d0a9b0}
+html[data-site-theme="dark"] .text-bible-prevnext-center>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-prevnext-side.is-empty{background:#261616}
+@media (max-width:700px){html[data-site-theme="dark"] .text-bible-prevnext-center{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-bible-prevnext-next{border-left:1px solid rgba(192,185,203,0.14)}}
+html[data-site-theme="dark"] .text-glossary-tooltip.is-entity strong{color:#e5e2e9}
+html[data-site-theme="dark"] .text-glossary-tooltip.is-entity p{color:rgba(229,226,233,0.86)}
+html[data-site-theme="dark"] .text-bible-compare-trigger{border:1px solid rgba(192,185,203,0.16);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-trigger:hover,html[data-site-theme="dark"] .text-bible-compare-trigger:focus-visible{border-color:rgba(192,185,203,0.34);background:#28161a;color:#d3a7ae}
+html[data-site-theme="dark"] .text-bible-prevnext-center>small{color:#c9b0b5}
+html[data-site-theme="dark"] .text-bible-compare-backdrop{background:rgba(28,24,34,0.16)}
+html[data-site-theme="dark"] .text-bible-compare-drawer{border-left:1px solid rgba(192,185,203,0.16);background:#1d1921}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header{border-bottom:1px solid #473c58;background:linear-gradient(180deg,#261515 0,#1d1921 100%)}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header span{color:#ccadb2}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header h2{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header p{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header button{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-drawer>header button:hover,html[data-site-theme="dark"] .text-bible-compare-drawer>header button:focus-visible{background:#29171a}
+html[data-site-theme="dark"] .text-bible-compare-frame-wrap{background:#1d1921}
+html[data-site-theme="dark"] .text-bible-compare-frame-wrap iframe{background:#1d1921}
+html[data-site-theme="dark"] .text-bible-compare-frame-loading{background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-frame-loading>span{border:2px solid #814b52;border-top-color:#844852}
+html[data-site-theme="dark"] .text-bible-compare-drawer>footer{border-top:1px solid #473c58;background:#26161b}
+html[data-site-theme="dark"] .text-bible-compare-drawer>footer p{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-drawer>footer p strong{color:#bbb5c5}
+html[data-site-theme="dark"] .text-bible-compare-drawer>footer a{color:#d1a8af}
+@media (max-width:700px){html[data-site-theme="dark"] .text-bible-compare-drawer{border-top:1px solid rgba(192,185,203,0.18)}}
+html[data-site-theme="dark"] .bible-reader-pathways-heading>div>span{color:#d4a5aa}
+html[data-site-theme="dark"] .bible-reader-pathways-heading h2{color:#d3ced9}
+html[data-site-theme="dark"] .bible-reader-pathways-heading p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-card{border:1px solid #473c58;background:linear-gradient(145deg,#1d1921,#26161b);color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-card:hover,html[data-site-theme="dark"] .bible-reader-pathway-card.is-active{border-color:#86464f;background:linear-gradient(145deg,#1d1921,#271618)}
+html[data-site-theme="dark"] .bible-reader-pathway-num{color:#caafb4}
+html[data-site-theme="dark"] .bible-reader-pathway-icon{background:#281618;color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-pathway-copy strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-copy small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-arrow{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-card:hover .bible-reader-pathway-arrow,html[data-site-theme="dark"] .bible-reader-pathway-card.is-active .bible-reader-pathway-arrow{color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-rosary-panel{border:1px solid #62507c;background:linear-gradient(145deg,rgba(29,25,33,0.99),rgba(39,22,25,0.99))}
+html[data-site-theme="dark"] .bible-reader-rosary-head span{color:#d5a4a9}
+html[data-site-theme="dark"] .bible-reader-rosary-head strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-head>button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-today{border:1px solid #7f4d57;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-rosary-today span{color:#d4a6ab}
+html[data-site-theme="dark"] .bible-reader-rosary-today strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-days button{border:1px solid #473c58;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-days button small{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-days button i{background:#8a424a;color:#e5e2e9}
+html[data-site-theme="dark"] .bible-reader-rosary-days button:hover,html[data-site-theme="dark"] .bible-reader-rosary-days button.is-active{border-color:#87454f;background:#271618;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-rosary-series-wrap{border-bottom:1px solid #62517b}
+html[data-site-theme="dark"] .bible-reader-rosary-series-wrap>span{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-series button{border:1px solid #473c58;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-series button:hover,html[data-site-theme="dark"] .bible-reader-rosary-series button.is-active{border-color:#87454e;background:#271617;color:#d5a4aa}
+html[data-site-theme="dark"] .bible-reader-rosary-content>header>span{color:#d4a6ab}
+html[data-site-theme="dark"] .bible-reader-rosary-content h3{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-content>header p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-item{border:1px solid #62517b;background:#1d1921}
+html[data-site-theme="dark"] .bible-reader-rosary-item-num{background:#281618;color:#d3a6ab}
+html[data-site-theme="dark"] .bible-reader-rosary-item-copy>small{color:#ceacb0}
+html[data-site-theme="dark"] .bible-reader-rosary-item-copy h4{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-item-copy p{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-rosary-read{background:#281619;color:#d4a6ab}
+html[data-site-theme="dark"] .bible-reader-rosary-read span{color:#cbaeb2}
+html[data-site-theme="dark"] .bible-reader-rosary-item--tradition{background:#261616}
+html[data-site-theme="dark"] .bible-reader-rosary-related a{border:1px solid #62517b;background:#1d1921;color:#ceacb0}
+html[data-site-theme="dark"] .bible-reader-rosary-note{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathways{border-top:1px solid #62507c}
+html[data-site-theme="dark"] .bible-reader-pathways::before{background:#8c4048}
+html[data-site-theme="dark"] .bible-reader-pathway-modal-backdrop{background:rgba(30,26,35,0.46)}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog{border:1px solid rgba(98,81,123,0.96);background:#261515}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-head{border-bottom:1px solid #7f4d56;background:rgba(38,21,21,0.98)}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-title span{color:#d4a5aa}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-title strong{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-close{border:1px solid #62517b;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-close:hover{border-color:#854750;background:#271618;color:#d5a4aa}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-tabs{border-bottom:1px solid #62517b;background:#27161a}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-tabs button:hover{background:#1d1921;color:#d5a4aa}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog-tabs button.is-active{border-color:#844851;background:#1d1921;color:#d6a3a9}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog .bible-reader-collections-head,html[data-site-theme="dark"] .bible-reader-pathway-dialog .bible-reader-rosary-head{border-bottom:1px solid #62507c}
+html[data-site-theme="dark"] .bible-reader-pathway-dialog .bible-reader-collections-tools{background:linear-gradient(#261515 75%,rgba(38,21,21,0.94))}
+@media (min-width:721px){html[data-site-theme="dark"] .bible-reader-page .bible-reader-controls.is-condensed{background:rgba(38,21,21,0.97)}}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary{background:linear-gradient(105deg,#181626,#1d1921 72%)}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary:hover,html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary:focus-visible{background:#191627}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix-icon{background:#181628;color:#a09bde !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary small{color:#a19cdd !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary > i::before,html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix > summary > i::after{background:#645f6d}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix[open] > summary{border-bottom:1px solid rgba(192,185,203,0.14);background:#181626}
+html[data-site-theme="dark"] .philo-compass-page .philo-dialogues-appendix-body > p{color:var(--philo-readable,#d3ced9) !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-heading-icon{background:#181628;color:#a09bde !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card{border-color:rgba(192,185,203,0.14);background:linear-gradient(160deg,#181626,#1d1921 70%)}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card:hover,html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card:focus-visible{border-color:rgba(192,185,203,0.25)}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-kind{color:#a09cde}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-kind-icon{background:#181628;color:#a09bde}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card p{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-featured .bible-resource-featured-card > b{color:#a09bdf}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group{border-color:rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group summary:hover{background:#181626}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-num,html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-icon{background:#181628;color:#a09bde}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-headline strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-count{background:#181627;color:#a29ddc !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group summary::after{color:#a29ddc;background:#191627}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-intro{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-body a:hover,html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-group-body a:focus-visible{background:#181626}
+html[data-site-theme="dark"] .philo-compass-page .philo-resource-groups .bible-resource-site-badge{color:#a29ddc !important}
+:root[data-site-theme="dark"]{--hlp:#443e8e;--hlp-soft:#181627}
+html[data-site-theme="dark"] .text-hlp-badge{border:1px solid rgba(192,185,203,0.2)}
+html[data-site-theme="dark"] .text-detail-hlp-meta{color:#bbb5c5}
+html[data-site-theme="dark"] .text-detail-hlp-meta>span{color:#aca8d1}
+html[data-site-theme="dark"] .text-detail-hlp-meta small{border:1px solid #534587;background:#191626;color:#bbb5c5}
+html[data-site-theme="dark"] .texts-theme-multi-group--hlp{border-top:1px solid #534686}
+html[data-site-theme="dark"] .texts-theme-multi-group--hlp .texts-theme-multi-group-title{color:#aca8d1}
+html[data-site-theme="dark"] .texts-theme-multi-hlp-object{border:1px solid #524587;background:#191526}
+html[data-site-theme="dark"] .texts-theme-multi-hlp-object>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-hlp-mini{background:#181628;color:#a5a0d9}
+:root[data-site-theme="dark"]{--hlp-premiere:#5d408c;--hlp-premiere-soft:#1f1728;--hlp-terminale:#1e706a;--hlp-terminale-soft:#172926;--hlp-transversal-soft:#292317}
+html[data-site-theme="dark"] .text-hlp-badge--premiere{border-color:rgba(192,185,203,0.23)}
+html[data-site-theme="dark"] .text-hlp-badge--terminale{border-color:rgba(192,185,203,0.23)}
+html[data-site-theme="dark"] .text-hlp-badge--transversal{border-color:rgba(192,185,203,0.22)}
+html[data-site-theme="dark"] .text-detail-translator{border:1px solid rgba(192,185,203,0.14);background:#1e1a23}
+html[data-site-theme="dark"] .text-detail-hlp-meta small{border-color:rgba(192,185,203,0.14);background:#1d1a22}
+html[data-site-theme="dark"] .text-hlp-study{border:1px solid rgba(192,185,203,0.14);background:linear-gradient(145deg,rgba(93,64,140,0.055),rgba(29,25,33,0.96) 46%,rgba(30,112,106,0.025))}
+html[data-site-theme="dark"] .text-hlp-tier{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .text-hlp-tier--essential{border-color:rgba(192,185,203,0.2)}
+html[data-site-theme="dark"] .text-hlp-tier--transversal{border-color:rgba(192,185,203,0.18)}
+html[data-site-theme="dark"] .text-hlp-central-question{background:#1d1921}
+html[data-site-theme="dark"] .text-hlp-study-grid{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-hlp-keywords small{border:1px solid rgba(192,185,203,0.14);background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .text-hlp-oppositions small{background:#1d1921}
+html[data-site-theme="dark"] .text-context-guide-wrap{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .texts-theme-multi-group--hlp-overview{background:linear-gradient(90deg,rgba(93,64,140,0.025),rgba(30,112,106,0.018))}
+html[data-site-theme="dark"] .texts-theme-multi-group--hlp-premiere .texts-theme-multi-hlp-object{border-color:rgba(192,185,203,0.14);background:#1c1526}
+html[data-site-theme="dark"] .texts-theme-multi-group--hlp-terminale .texts-theme-multi-hlp-object{border-color:rgba(192,185,203,0.14);background:#162722}
+html[data-site-theme="dark"] .text-hlp-study{border:1px solid rgba(192,185,203,0.14);background:#1d1921}
+html[data-site-theme="dark"] .text-hlp-study-trigger{background:#1b1526}
+html[data-site-theme="dark"] .text-hlp-study-trigger:hover,html[data-site-theme="dark"] .text-hlp-study-trigger:focus-visible{background:#1c1627}
+html[data-site-theme="dark"] .text-hlp-study-toggle::before,html[data-site-theme="dark"] .text-hlp-study-toggle::after{background:#665f6d}
+html[data-site-theme="dark"] .text-hlp-study.is-open .text-hlp-study-panel{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-hlp-central-question{border-left:2px solid rgba(95,69,135,0.55);background:#1b1627}
+html[data-site-theme="dark"] .philo-path-card--hlp-cluster{--hlp-path-tint:#1a1526;background:linear-gradient(145deg,#1d1921 0%,var(--hlp-path-tint) 100%)!important}
+html[data-site-theme="dark"] .philo-path-card--hlp-cluster.philo-path-card--hlp-terminale{--hlp-path-tint:#162722}
+html[data-site-theme="dark"] .philo-path-card--hlp-cluster .philo-path-question--hlp-section{background:#1d1921}
+html[data-site-theme="dark"] .philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger{background:#1d1921}
+html[data-site-theme="dark"] .philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger:hover,html[data-site-theme="dark"] .philo-path-card--hlp-cluster .philo-path-question--hlp-section .philo-path-question-trigger:focus-visible{background:color-mix(in srgb,var(--hlp-path-accent) 4%,#1d1921)}
+html[data-site-theme="dark"] .philo-path-subquestion{color:#bbb5c5!important}
+html[data-site-theme="dark"] .philo-path-question--hlp-section .philo-path-question-panel-inner{background:#1e1526}
+html[data-site-theme="dark"] .philo-path-question--hlp-section .philo-path-question-panel-inner>p{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-path-flow--section>a{background:#1d1921}
+html[data-site-theme="dark"] .philo-path-flow--section>a::before{color:#bbb5c5}
+html[data-site-theme="dark"] .texts-myth-compass-strip{border:1px solid rgba(192,185,203,0.17);background:rgba(161,103,43,0.035);color:#dfbd9a}
+html[data-site-theme="dark"] .texts-myth-compass-strip:hover,html[data-site-theme="dark"] .texts-myth-compass-strip:focus-visible{border-color:rgba(192,185,203,0.32);background:rgba(161,103,43,0.065)}
+html[data-site-theme="dark"] .texts-myth-compass-icon{background:rgba(161,103,43,0.075)}
+html[data-site-theme="dark"] .texts-myth-compass-icon .compass-needle-south{fill:#e5e2e9}
+html[data-site-theme="dark"] .compass-context-cta--myth.compass-context-cta--merged{border-color:rgba(192,185,203,0.26)!important}
+html[data-site-theme="dark"] .compass-context-cta--myth .compass-context-cta-primary{color:#dfbc9a}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed{border:1px solid rgba(192,185,203,0.14) !important;background:rgba(38,26,21,0.96) !important}
+@media (hover:hover) and (pointer:fine){html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:hover,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible{background:#29171c !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:hover .bible-jump-copy strong,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible .bible-jump-copy strong{color:#bbb5c5 !important}
+html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:hover .bible-jump-copy small,html[data-site-theme="dark"] .bible-compass-page .bible-compass-jump.is-condensed > a:focus-visible .bible-jump-copy small{color:#d0a9b1 !important}}
+html[data-site-theme="dark"] .text-relation-group--prolonger{--relation-border:rgba(192,185,203,0.24);--relation-bg:linear-gradient(90deg,rgba(34,32,58,0.095),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--meme-probleme{--relation-color:#b5a1d8;--relation-border:rgba(192,185,203,0.22);--relation-bg:linear-gradient(90deg,rgba(90,60,144,0.08),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--autre-approche{--relation-color:#a8d1bf;--relation-border:rgba(192,185,203,0.23);--relation-bg:linear-gradient(90deg,rgba(70,134,106,0.085),#1d1921 58%)}
+html[data-site-theme="dark"] .text-relation-group--confronter{--relation-color:#d5a4ab;--relation-border:rgba(192,185,203,0.25);--relation-bg:linear-gradient(90deg,rgba(139,65,75,0.085),#1d1921 58%)}
+html[data-site-theme="dark"] .text-detail-hlp-path{border:1px solid rgba(192,185,203,0.14);background:#162722;color:#bbb5c5}
+html[data-site-theme="dark"] .text-detail-hlp-path:hover{background:#162822;border-color:rgba(192,185,203,0.25)}
+html[data-site-theme="dark"] .text-detail-hlp-path i{color:#bbb5c5}
+html[data-site-theme="dark"] .text-detail-hlp-path b{color:#bbb5c5}
+html[data-site-theme="dark"] .text-detail-hlp-connections a{border:1px solid rgba(192,185,203,0.14);background:#1d1a22}
+html[data-site-theme="dark"] .text-detail-hlp-connections a:hover{border-color:rgba(192,185,203,0.2)}
+html[data-site-theme="dark"] .philo-hlp-stage{background:color-mix(in srgb,var(--hlp-path-accent) 2.5%,#1d1921)}
+html[data-site-theme="dark"] .philo-hlp-stage-head>strong{color:#d3ced9}
+html[data-site-theme="dark"] .philo-hlp-stage-head>em{color:#bbb5c5}
+html[data-site-theme="dark"] .philo-hlp-stage>p{color:#bbb5c5}
+html[data-site-theme="dark"] .text-focus-toggle,html[data-site-theme="dark"] .text-focus-tools button{border:1px solid #494351;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .text-focus-toggle:hover,html[data-site-theme="dark"] .text-focus-tools button:hover{border-color:#483f55;color:#c3afca}
+html[data-site-theme="dark"] .text-focus-mode{background:#292317}
+html[data-site-theme="dark"] .text-focus-mode .text-focus-controls{border:1px solid rgba(192,185,203,0.14);background:rgba(41,35,23,0.88)}
+html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="white"]{background:#1d1921}
+html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="white"] .text-focus-controls{background:rgba(29,25,33,0.9)}
+html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="night"]{background:#201f21}
+html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="night"] .text-focus-controls{background:rgba(32,31,33,0.9);border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="night"] .text-focus-toggle,html[data-site-theme="dark"] .text-focus-mode[data-text-focus-theme="night"] .text-focus-tools button{background:#2b2a2d;border-color:#4a484c}
+}

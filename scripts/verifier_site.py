@@ -79,8 +79,11 @@ for directory in ['js','mediatheque','apprendre','lecture','private']:
    text=p.read_text(errors='replace')
    if re.search(r'Ph-[A-Za-z0-9_-]{24,}',text):errors.append('Un mot de passe semble figurer dans '+str(p.relative_to(ROOT)))
    if 'OWNER_SHA256' in text:errors.append('Ancien contrôle propriétaire contournable dans '+str(p.relative_to(ROOT)))
+from verifier_navigation import run_checks
+navigation=run_checks(ROOT)
+errors.extend(navigation['errors'])
 errors=list(dict.fromkeys(errors));warnings=list(dict.fromkeys(warnings))
-report={'version':32,'pagesChecked':count,'errors':errors,'warnings':warnings,'passed':not errors}
+report={'version':35,'pagesChecked':count,'navigation':navigation,'errors':errors,'warnings':warnings,'passed':not errors}
 if args.json:args.json.write_text(json.dumps(report,ensure_ascii=False,indent=2))
 for message in errors:print('ERREUR : '+message)
 for message in warnings:print('NOTE : '+message)

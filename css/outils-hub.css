@@ -325,3 +325,24 @@
   .tool-tile, .tools-backup, .tool-action-arrow { border-color: CanvasText; }
   .tool-tile:focus-visible, .tools-backup-link:focus-visible, .tools-skip-link:focus-visible { outline-color: Highlight; }
 }
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .tools-page{--tools-ink:#d1ccdb;--tools-muted:#bbb5c5;--tools-purple:#a89edb;background:#191627}
+html[data-site-theme="dark"] .tools-directory{background:radial-gradient(ellipse at 79% 8%, #1b172a 0, transparent 42%),
+    radial-gradient(ellipse at 4% 45%, #1a1728 0, transparent 38%),
+    #191627}
+html[data-site-theme="dark"] .tools-kicker::before{background:#25213a}
+html[data-site-theme="dark"] .tool-tile{--tool-accent:#a89edb;--tool-tint:#1a1628;--tool-edge:#5b4587;background:#1d1921}
+html[data-site-theme="dark"] .tool-tile--books{--tool-accent:#a7d3ba;--tool-tint:#172a1d;--tool-edge:#624f7d;background:linear-gradient(120deg, #1d1921 38%, #16271a)}
+html[data-site-theme="dark"] .tool-tile--text{background:linear-gradient(120deg, #1d1921 38%, #1a1627)}
+html[data-site-theme="dark"] .tool-tile--image{--tool-accent:#dfb39a;--tool-tint:#291f17;--tool-edge:#876245}
+html[data-site-theme="dark"] .tool-tile--pdf{--tool-accent:#d8a1a9;--tool-tint:#29171a;--tool-edge:#87455a}
+html[data-site-theme="dark"] .tool-art{background:linear-gradient(120deg, var(--tool-tint), #1d1921)}
+html[data-site-theme="dark"] .tool-tile:focus-visible{outline:3px solid #504587}
+html[data-site-theme="dark"] .tools-backup{border:1px solid #5e4587;background:rgba(29,25,33,0.659)}
+html[data-site-theme="dark"] .tools-backup-icon{background:#1c1729}
+html[data-site-theme="dark"] .tools-backup-link:focus-visible,html[data-site-theme="dark"] .tools-skip-link:focus-visible{outline:3px solid #504587}
+html[data-site-theme="dark"] .tools-skip-link{background:#1d1921;color:#a69bde}
+@media (max-width: 860px){html[data-site-theme="dark"] .tool-tile--featured .tool-art{background:linear-gradient(120deg, var(--tool-tint), #1d1921)}}
+}

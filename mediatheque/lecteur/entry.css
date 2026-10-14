@@ -98,3 +98,16 @@
   .media-title-actions { align-items: stretch; flex-direction: column; }
   .media-deals-trigger, .media-reader-trigger, .media-explore-trigger { justify-content: center; }
 }
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .media-deals-trigger{border:1px solid #49464e;background:rgba(29,25,33,0.72);color:#bbb5c5}
+html[data-site-theme="dark"] .media-deals-trigger:hover{border-color:#49464e;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .media-reader-trigger{border:1px solid #483e56;background:#282216;color:#d3bea6}
+html[data-site-theme="dark"] .media-reader-trigger:hover{border-color:#473b59;background:#272016}
+html[data-site-theme="dark"] .media-reader-trigger span{background:rgba(138,100,61,0.1)}
+html[data-site-theme="dark"] .media-book-drop-overlay{background:rgba(30,27,35,0.82)}
+html[data-site-theme="dark"] .media-book-drop-card{border:1px dashed #624e7e;background:rgba(29,25,33,0.9)}
+html[data-site-theme="dark"] .media-book-drop-icon{background:#2a2218;color:#d4bca5}
+html[data-site-theme="dark"] .media-book-drop-card small{color:#bbb5c5}
+}

@@ -35,3 +35,65 @@ button,a,input,select,textarea{touch-action:manipulation}button:focus-visible,a:
 
 /* V34 — dix ambiances de lecture */
 .prompt-moods{border:0;padding:0;margin:18px 0 20px;min-width:0}.prompt-moods legend{font-size:.85rem;font-weight:650;color:#40324e}.prompt-moods>p{font-size:.76rem;color:#6d6475;margin:4px 0 12px}.prompt-mood-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.prompt-mood-grid button{display:flex;gap:9px;align-items:center;padding:7px 9px;min-height:46px;border:1px solid #dfd8e9;border-radius:9px;background:#fff;color:#443b51;text-align:left;font:500 .8rem/1.3 system-ui,sans-serif;cursor:pointer}.prompt-mood-grid button:hover{background:#f7f3fb;border-color:#a792bd}.prompt-mood-grid button[aria-pressed="true"]{outline:2px solid #715093;outline-offset:1px;background:#f7f2fc}.prompt-mood-swatch{display:grid;place-items:center;min-width:32px;height:30px;border-radius:5px;background:var(--mood-bg);color:var(--mood-ink);box-shadow:inset 0 0 0 1px #00000012;font:650 15px/1 system-ui,sans-serif}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--ink:#c6d1e1;--muted:#bbb5c5;--line:#624f7d;--accent:#9cddc7;--accent-soft:#182a21;--reader-bg:#151b24;--reader-text:#dae3f1;--reader-muted:#adbacd}
+html[data-site-theme="dark"],html[data-site-theme="dark"] body{background:#191e27}
+html[data-site-theme="dark"] button:focus-visible,html[data-site-theme="dark"] a:focus-visible,html[data-site-theme="dark"] input:focus-visible,html[data-site-theme="dark"] select:focus-visible,html[data-site-theme="dark"] textarea:focus-visible{outline:3px solid #456087}
+html[data-site-theme="dark"] button{background:#1d1921}
+html[data-site-theme="dark"] button:hover{background:#161d27}
+html[data-site-theme="dark"] .prompt-header nav{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-header nav a{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-mark{background:#1c271f;border:1px solid #483d57}
+html[data-site-theme="dark"] .prompt-local{background:#1b2227;color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-header-actions button[aria-pressed=true]{border-color:#4d7f61;color:#9adfc7}
+html[data-site-theme="dark"] .prompt-panel{background:#1d1921}
+html[data-site-theme="dark"] .prompt-panel-title>span:first-child{background:#181d28;color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-panel-title [data-save-state]{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-script textarea{border:1px solid #4d627f;background:#151b26;color:#c8d1df}
+html[data-site-theme="dark"] .prompt-script textarea::placeholder{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-range>span{color:#b0bac9}
+html[data-site-theme="dark"] .prompt-range output{color:#b0bcc9}
+html[data-site-theme="dark"] select{background:#1d1921;border:1px solid #4b6281;color:#adb8cc}
+html[data-site-theme="dark"] label:has(select){color:#b0bac9}
+html[data-site-theme="dark"] .prompt-calibrate{background:#18281f;color:#9cddc7;border-color:#4d7f65}
+html[data-site-theme="dark"] summary{color:#afb9cb}
+html[data-site-theme="dark"] .prompt-check{color:#b1bbc8}
+html[data-site-theme="dark"] kbd{background:#181f28;border:1px solid #624e7e}
+html[data-site-theme="dark"] .prompt-player{border:1px solid #465e86}
+html[data-site-theme="dark"] .prompt-player-meta{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .prompt-status::before{background:#576375}
+html[data-site-theme="dark"] .is-playing .prompt-status::before{background:#20392d}
+html[data-site-theme="dark"] .prompt-reading-guide{border-top:1px solid rgba(192,185,203,0.149)}
+html[data-site-theme="dark"] .prompt-reading-guide span{border-left:9px solid #876345}
+html[data-site-theme="dark"] .prompt-countdown{background:rgba(21,27,36,0.851);color:#e5e2e9}
+html[data-site-theme="dark"] .prompt-transport{border-top:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .prompt-progress input{accent-color:#a1d8bb}
+html[data-site-theme="dark"] .prompt-transport button{border-color:#473b59;background:#232c3a;color:#dbe3f0}
+html[data-site-theme="dark"] .prompt-transport .prompt-play{background:#182a1e;border-color:#46865d;color:#c3e4d5}
+html[data-site-theme="dark"] .prompt-transport .prompt-play:hover{background:#1a2e23}
+html[data-site-theme="dark"] .prompt-player[data-theme=light]{--reader-bg:#1d1921;--reader-text:#c2d0e5;--reader-muted:#b2bbc8;border-color:#496383}
+html[data-site-theme="dark"] .prompt-player[data-theme=sepia]{--reader-bg:#2a2418;--reader-text:#dcd4cb;--reader-muted:#bbb5c5;border-color:#846f48}
+html[data-site-theme="dark"] .prompt-player[data-theme=light] .prompt-player-meta,html[data-site-theme="dark"] .prompt-player[data-theme=sepia] .prompt-player-meta{border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .prompt-player[data-theme=light] .prompt-transport,html[data-site-theme="dark"] .prompt-player[data-theme=sepia] .prompt-transport{border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .prompt-player[data-theme=light] .prompt-progress input,html[data-site-theme="dark"] .prompt-player[data-theme=sepia] .prompt-progress input{accent-color:#9cddc7}
+html[data-site-theme="dark"] .prompt-toast{color:#e5e2e9}
+html[data-site-theme="dark"] .prompt-panel-title>span:first-child{color:#b0bac9}
+html[data-site-theme="dark"] .prompt-colors{background:#151b26}
+html[data-site-theme="dark"] .prompt-colors legend{color:#afb9cb}
+html[data-site-theme="dark"] .prompt-color-field>label{color:#b0bac9}
+html[data-site-theme="dark"] .prompt-color-inputs input[type=color]{border:1px solid #4c6280;background:#1d1921}
+html[data-site-theme="dark"] .prompt-color-inputs input[type=text]{border:1px solid #4c6280;color:#adb8cc;background:#1d1921}
+html[data-site-theme="dark"] .prompt-colors>p{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-color-contrast{color:#9cddc7}
+html[data-site-theme="dark"] .prompt-color-contrast.is-low-contrast{color:#dfb79a}
+html[data-site-theme="dark"] .prompt-player .prompt-player-meta,html[data-site-theme="dark"] .prompt-player .prompt-transport{border-color:var(--reader-rule,rgba(192,185,203,0.14))}
+html[data-site-theme="dark"] .prompt-player .prompt-reading-guide{border-color:var(--reader-rule,rgba(192,185,203,0.149))}
+html[data-site-theme="dark"] .prompt-player .prompt-reading-guide span{border-left-color:var(--reader-guide,#876345)}
+html[data-site-theme="dark"] .prompt-moods legend{color:#bdaecb}
+html[data-site-theme="dark"] .prompt-moods>p{color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-mood-grid button{border:1px solid #614a82;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .prompt-mood-grid button:hover{background:#1f1628;border-color:#654d7f}
+html[data-site-theme="dark"] .prompt-mood-grid button[aria-pressed="true"]{outline:2px solid #664884;background:#1f1628}
+}

@@ -1,9 +1,7 @@
 (() => {
-  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
-  const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20261004-home-index1`;
+  script.src = new URL("site-tools.js?v=20261014-navigation1", document.currentScript.src).href;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -505,7 +503,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20260923-github-refresh1";
+        script.src = new URL("site-search-data.js?v=20261014-navigation1", document.querySelector('script[src*="js/script.js"]').src).href;
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = () => { script.remove(); reject(new Error("site-search-data")); };
         document.head.append(script);
@@ -750,7 +748,7 @@
             <h2 id="student-access-title">S’identifier</h2>
 
             <form data-student-form>
-              <label for="student-password">Mot de passe</label>
+              <label for="student-password">Identifiant ou mot de passe</label>
               <div>
                 <input
                   id="student-password"
@@ -789,6 +787,9 @@
     const enter = async () => {
       if (navigating) return;
       navigating=true;
+      if (input.value.trim().toLocaleLowerCase("fr-FR") === "didier") {
+        window.location.assign("https://app.notion.com/p/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link"); return;
+      }
       if(feedback)feedback.textContent="Vérification…";
       try {
         await window.FV_PRIVATE_ACCESS.ready;

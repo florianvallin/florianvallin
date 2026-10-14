@@ -54,3 +54,47 @@
 .reader-refined .reader-notes-actions button{color:var(--reader-ink);background:var(--reader-panel);font-size:.78rem;min-height:40px}
 
 .reader-refined.reader-empty .reader-back{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .reader-refined.reader-empty{background:#282217;color:#d2cadd;--reader-ink:#d2cadd;--reader-muted:#bbb5c5;--reader-accent:#bcaad0;--reader-line:#62517b}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-topbar{background:#262116;border-bottom:1px solid #484054}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-top-actions button{border:1px solid #664785;background:#1d1921;color:#bfaccd}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-book-heading small{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-back{color:#bfb1c9}
+html[data-site-theme="dark"] .reader-refined .reader-kicker{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-refined .reader-welcome h1{color:#c3adcc}
+html[data-site-theme="dark"] .reader-refined .reader-welcome-copy>p:not(.reader-kicker){color:#c1b1c8}
+html[data-site-theme="dark"] .reader-refined .reader-welcome-actions .reader-primary{border:1px solid #664983;background:#664983;color:#e5e2e9}
+html[data-site-theme="dark"] .reader-refined .reader-welcome-actions .reader-primary:hover{border-color:#694686}
+html[data-site-theme="dark"] .reader-example{border-bottom:1px solid #6c4a82;color:#c1b1c8}
+html[data-site-theme="dark"] .reader-example:hover{color:#c3a7d3}
+html[data-site-theme="dark"] .reader-refined .reader-welcome-copy>p.reader-welcome-privacy{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-refined .reader-dropzone{border:1px dashed #6c4b81;background:radial-gradient(ellipse at 50% 38%,#23182a 0%,#231627 65%);color:#c1abce}
+html[data-site-theme="dark"] .reader-refined .reader-dropzone:hover{border-color:#6b4d7f;background:#221729}
+html[data-site-theme="dark"] .reader-refined .reader-dropzone strong{color:#c0accd}
+html[data-site-theme="dark"] .reader-refined .reader-dropzone small{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-book-illustration{color:#c2a9d0}
+html[data-site-theme="dark"] .reader-drop-types{color:#c1b1c8;border:1px solid #6d4587;background:rgba(29,25,33,0.533)}
+html[data-site-theme="dark"] .reader-welcome-features{border-bottom:1px solid #62507c;border-top:1px solid #62507c}
+html[data-site-theme="dark"] .reader-welcome-features>span{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-welcome-features svg{color:#bfaecb}
+html[data-site-theme="dark"] .reader-refined .reader-library-head span{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-refined .reader-library-head h2{color:#c0abce}
+html[data-site-theme="dark"] .reader-refined .reader-library-head button{border:1px solid #624f7d;color:#c1b1c8}
+html[data-site-theme="dark"] .reader-shelf-empty{border:1px solid #62517b;background:rgba(29,25,33,0.533);color:#c1b1c8}
+html[data-site-theme="dark"] .reader-shelf-empty>span{border:1px solid #6f4587;border-left:4px solid #6c4c80;background:#23172a;color:#c1b1c8}
+html[data-site-theme="dark"] .reader-shelf-empty strong{color:#c0aecc}
+html[data-site-theme="dark"] .reader-shelf-empty p{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-format-guide{border:1px solid #6d4c80;background:rgba(29,25,33,0.333);color:#c1b1c8}
+html[data-site-theme="dark"] .reader-format-guide>summary::after{color:#c2aecb}
+html[data-site-theme="dark"] .reader-format-guide[open]>summary{border-bottom:1px solid #6c4785}
+html[data-site-theme="dark"] .reader-format-guide p{color:#c1b1c8}
+html[data-site-theme="dark"] .reader-format-guide a{color:#c3a4d5}
+html[data-site-theme="dark"] .reader-refined :focus-visible{outline:3px solid #6d4587}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-book-card-copy em{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-refined:not(.reader-empty){--reader-muted:#bbb5c5}
+html[data-site-theme="dark"] .reader-refined:not(.reader-empty)[data-theme="night"]{--reader-muted:#bbb5c5}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-book-card{background:#261e15;color:#d2cadd}
+html[data-site-theme="dark"] .reader-refined.reader-empty .reader-drawer-panel,html[data-site-theme="dark"] .reader-refined.reader-empty .reader-library-row{background:#261e15;color:#d2cadd}
+}

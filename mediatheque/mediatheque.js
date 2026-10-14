@@ -95,16 +95,9 @@
   const privatePassword = $("[data-private-password]");
   const privateError = $("[data-private-error]");
   const PRIVATE_KINDS = new Set(["livre", "manuel", "cours", "cours-video", "mindmap"]);
-  const STUDENT_RESOURCE_IDS = new Set([
-    "video:florian-explication-texte",
-    "video:florian-dissertation",
-    "video:florian-methodologie-etudier-ia-fichage-memorisation",
-    "video:florian-outils-sites-etudiants-philosophie",
-    "mindmap:programme-terminale",
-    "mindmap:notions-liens-simples",
-    "mindmap:notions-liens-complexes",
-    "mindmap:reperes-avec-themes"
-  ]);
+  const ACCESS_VIEW_KEY = "philosophal-library-view-v20261014";
+  let requestedAccessMode = "student";
+
 
   const FILTERS = [
     { key: "all", label: "Tout", plural: "Toutes les ressources", description: "Une vue simple de l’ensemble de la médiathèque." },
@@ -206,14 +199,14 @@
   }
 
   function isStudentResource(item) {
-    return STUDENT_RESOURCE_IDS.has(item?.id);
+    return item?.kind === "manuel" || (item?.kind === "mindmap" && !item.isPersonalMindmap);
   }
 
   function resourceInCurrentAccess(item) {
     if (groupOf(item) === "hidden") return false;
     // Propriétaire : médiathèque complète.
     if (state.access === "private") return true;
-    // Élève : ressources publiques + sélection pédagogique réservée.
+    // Élève : ressources publiques, manuels et cartes mentales du programme.
     if (state.access === "student") return !isPrivateResource(item) || isStudentResource(item);
     return !isPrivateResource(item);
   }
@@ -225,7 +218,7 @@
   function availableFilters() {
     if (state.access === "private") return FILTERS;
     if (state.access === "student") {
-      return FILTERS.filter((meta) => meta.key === "all" || !PRIVATE_KINDS.has(meta.key) || ["cours-video", "mindmap"].includes(meta.key));
+      return FILTERS.filter((meta) => meta.key === "all" || !PRIVATE_KINDS.has(meta.key) || ["manuel", "mindmap"].includes(meta.key));
     }
     return FILTERS.filter((meta) => meta.key === "all" || !PRIVATE_KINDS.has(meta.key));
   }
@@ -272,13 +265,13 @@
     state.access = ["private", "student"].includes(mode) ? mode : "public";
     resetAccessFilters();
     accessSwitch?.querySelectorAll("[data-access-mode]").forEach((button) => {
-      const wantsPrivate = button.dataset.accessMode === "private";
-      const active = wantsPrivate ? state.access !== "public" : state.access === "public";
+      const active = button.dataset.accessMode === state.access;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
-      if (wantsPrivate) button.textContent = window.FV_PRIVATE_ACCESS?.role?.() === "private" ? "Prof" : "Élève";
+
     });
     document.body.dataset.mediaAccess = state.access;
+    try { sessionStorage.setItem(ACCESS_VIEW_KEY, state.access); } catch (_) {}
     render();
   }
 
@@ -504,9 +497,11 @@
 
   function semanticTermMatches(item, term) {
     const haystack = searchIndex?.get(item.id) || rawConceptHaystack(item);
-    if (haystack.includes(term)) return true;
+    if (literalTermMatches(haystack, term)) return true;
+    // Un nom propre ne devient jamais un synonyme d'une notion.
+    if (personForQuery(term)) return itemMatchesPerson(item, personForQuery(term));
     const concept = canonicalConcept(term);
-    return concept ? conceptMatches(item, concept) : false;
+    return concept ? directConcepts(item).includes(concept) : false;
   }
 
   function readPinned() {
@@ -678,7 +673,7 @@
       item.formation, item.degree, item.year, item.semester, item.ue, item.module, item.subject, item.format,
       item.teacher, item.enseignant, item.courseTeacher, item.sourceType, item.contentTypeLabel, item.contentCategory, mindmapTreeText(item.tree),
       ...(item.themes || []), ...(item.people || []), ...aliasesForItem(item), ...(item.keywords || []),
-      ...conceptsFor(item, { expanded: true }), ...levelsFor(item), ...usagesFor(item),
+      ...(item.episodes || []).map(episode => episode.title || ""), ...levelsFor(item), ...usagesFor(item),
       difficultyFor(item) ? DIFFICULTY_LABELS[difficultyFor(item)] : ""
     ].filter(Boolean).join(" "));
   }
@@ -745,9 +740,34 @@
     });
   }
 
+  const searchablePeople = [...new Set(resources.flatMap(item => [
+    ...(item.people || []), ...(["texte", "livre"].includes(item.kind) ? [item.creator] : [])
+  ]).filter(Boolean))];
+  const personSearchAliases = new Map();
+  function addPersonAlias(alias, person) {
+    const key = normalize(alias); if (!key) return;
+    if (!personSearchAliases.has(key)) personSearchAliases.set(key, new Set());
+    personSearchAliases.get(key).add(canonicalPerson(person));
+  }
+  searchablePeople.forEach(person => {
+    addPersonAlias(person, person);
+    const last = normalize(person).split(" ").at(-1);
+    if (last.length > 2) addPersonAlias(last, person);
+  });
+  peopleProfiles.forEach(profile => [profile.name, profile.displayName, ...(profile.aliases || [])]
+    .filter(Boolean).forEach(alias => addPersonAlias(alias, profile.name)));
+  function personForQuery(value) {
+    const matches = personSearchAliases.get(normalize(value));
+    return matches?.size === 1 ? [...matches][0] : "";
+  }
+  function literalTermMatches(haystack, term) {
+    return haystack.split(" ").some(word => word === term || word.startsWith(term));
+  }
   function queryParts(value) {
     const query = normalize(value);
-    return { query, terms: query.split(" ").filter(Boolean), concept: canonicalConcept(query) };
+    const person = personForQuery(query);
+    const terms = query.split(" ").filter(term => !["le","la","les","de","des","du","et","sur","un","une","l","d"].includes(term));
+    return { query, terms: terms.length ? terms : query.split(" ").filter(Boolean), person, concept: person ? "" : canonicalConcept(query) };
   }
 
   function fieldsFor(item) {
@@ -798,26 +818,25 @@
     return terms.every((term) => haystack.includes(term));
   }
 
-  function relevance(item, { query, terms, concept }) {
+  function relevance(item, { query, terms, person }) {
     if (!query) return 0;
     const { title, creator, themes } = fieldsFor(item);
     let score = 0;
+    if (person && itemMatchesPerson(item, person)) score += 180;
     if (title === query) score += 100;
     if (title.startsWith(query)) score += 65;
     if (title.includes(query)) score += 45;
     if (creator.includes(query)) score += 34;
     if (themes.includes(query)) score += 25;
-    if (concept && conceptMatches(item, concept)) score += 38;
-    terms.forEach((term) => { if (semanticTermMatches(item, term)) score += 8; });
+    terms.forEach(term => { if (literalTermMatches(title, term)) score += 20; else if (semanticTermMatches(item, term)) score += 4; });
     return score;
   }
-
-  function matchesQuery(item, { query, terms, concept }) {
+  function matchesQuery(item, { query, terms, person }) {
     if (!query) return true;
+    if (person && itemMatchesPerson(item, person)) return true;
     const haystack = searchIndex.get(item.id) || "";
-    if (haystack.includes(query)) return true;
-    if (concept && conceptMatches(item, concept)) return true;
-    return terms.every((term) => semanticTermMatches(item, term));
+    if (person) return terms.every(term => literalTermMatches(haystack, term));
+    return terms.every(term => semanticTermMatches(item, term));
   }
 
   function currentDossierIds() {
@@ -2533,10 +2552,19 @@
     const button = event.target.closest("[data-access-mode]");
     if (!button) return;
     const mode = button.dataset.accessMode;
-    if (mode === "public") { setAccessMode("public"); return; }
-    const role = window.FV_PRIVATE_ACCESS?.role?.() || (window.FV_PRIVATE_ACCESS?.isUnlocked?.() ? "private" : "");
-    if (role === "private") { setAccessMode("private"); return; }
-    if (role === "student") { setAccessMode("student"); return; }
+    const api = window.FV_PRIVATE_ACCESS;
+    const role = api?.role?.() || "";
+    if (mode === "public") {
+      try { sessionStorage.setItem(ACCESS_VIEW_KEY, "public"); } catch (_) {}
+      if (role) { resetAccessFilters(); updateUrl(); api.lock(); return; }
+      setAccessMode("public"); return;
+    }
+    if (role === "private" || (role === "student" && mode === "student")) {
+      setAccessMode(mode); return;
+    }
+    requestedAccessMode = mode;
+    const title = privateGate?.querySelector("h2");
+    if (title) title.textContent = mode === "private" ? "Accès professeur" : "Accès élève";
     openPrivateGate();
   });
 
@@ -2549,6 +2577,11 @@
       const api=window.FV_PRIVATE_ACCESS;
       const role=api?.unlockRole?await api.unlockRole(password,!!document.querySelector("[data-media-remember]")?.checked):await api?.unlock?.(password)?"private":"";
       if(!role){if(privateError){privateError.textContent="Mot de passe incorrect.";privateError.hidden=false;}privatePassword?.select();return;}
+      if (requestedAccessMode === "private" && role !== "private") {
+        if (privateError) { privateError.textContent="Cet accès ouvre le mode Élève. Le mode Prof demande le mot de passe professeur."; privateError.hidden=false; }
+        return;
+      }
+      try { sessionStorage.setItem(ACCESS_VIEW_KEY, requestedAccessMode); } catch (_) {}
       closePrivateGate();window.location.reload();
     }catch(error){if(privateError){privateError.textContent=error?.message||"Impossible de vérifier l’accès. Réessayez.";privateError.hidden=false;}}
     finally{submit.disabled=false;}
@@ -3192,22 +3225,23 @@
     }
   });
 
-  // Restaurer automatiquement le dernier accès autorisé.
-  // Ainsi, après un déverrouillage propriétaire, revenir à la médiathèque
-  // réaffiche directement la version privée sans nouveau clic.
-  const rememberedRole = window.FV_PRIVATE_ACCESS?.role?.()
-    || (window.FV_PRIVATE_ACCESS?.isUnlocked?.() ? "private" : "");
-  if (rememberedRole === "private") state.access = "private";
+  // Restaurer la vue autorisée ; seul un clic sur Public verrouille la session.
+  const rememberedRole = window.FV_PRIVATE_ACCESS?.role?.() || "";
+  let savedView = "";
+  try { savedView = sessionStorage.getItem(ACCESS_VIEW_KEY) || ""; } catch (_) {}
+  if (rememberedRole === "private") state.access = savedView === "student" ? "student" : "private";
   else if (rememberedRole === "student") state.access = "student";
-
-  accessSwitch?.querySelectorAll("[data-access-mode]").forEach((button) => {
-    const wantsPrivate = button.dataset.accessMode === "private";
-    const active = wantsPrivate ? state.access !== "public" : state.access === "public";
+  accessSwitch?.querySelectorAll("[data-access-mode]").forEach(button => {
+    const active = button.dataset.accessMode === state.access;
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
-    if (wantsPrivate) button.textContent = window.FV_PRIVATE_ACCESS?.role?.() === "private" ? "Prof" : "Élève";
   });
   document.body.dataset.mediaAccess = state.access;
+  if (search && !document.getElementById("media-author-suggestions")) {
+    const suggestions = document.createElement("datalist"); suggestions.id = "media-author-suggestions";
+    suggestions.innerHTML = searchablePeople.sort((a,b)=>a.localeCompare(b,"fr")).map(name=>`<option value="${esc(name)}"></option>`).join("");
+    search.setAttribute("list", suggestions.id); search.after(suggestions);
+  }
   initFromUrl();
   render();
   window.FV_MEDIATHEQUE_BOOT?.finish();

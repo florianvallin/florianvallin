@@ -9,7 +9,7 @@
   let currentRole = '', manifestPromise, failedAttempts = 0;
   const decode = value => Uint8Array.from(atob(value), c => c.charCodeAt(0));
   const pathOf = url => { const u = new URL(url, location.href); if(u.origin !== location.origin)return ''; return prefix && u.pathname.startsWith(prefix+'/') ? u.pathname.slice(prefix.length) : u.pathname; };
-  const manifest = () => manifestPromise ||= originalFetch(`${prefix}/private/manifest.json?v=31`, {cache:'no-store'}).then(r => { if(!r.ok)throw new Error('Fichiers privés indisponibles.'); return r.json(); });
+  const manifest = () => manifestPromise ||= originalFetch(`${prefix}/private/manifest.json?v=20261014-navigation1`, {cache:'no-store'}).then(r => { if(!r.ok)throw new Error('Fichiers privés indisponibles.'); return r.json(); });
   async function openPack(path, key64) {
     const response = await originalFetch(prefix + path, {cache:'no-store'});
     if(!response.ok)throw new Error('Une archive privée est manquante.');
@@ -32,7 +32,7 @@
     files.clear();for(const [path,entry] of next)files.set(path,entry);
     currentRole=credentials.role;
     sessionStorage.setItem(SESSION,JSON.stringify(credentials));
-    if(remember&&currentRole==='private')localStorage.setItem(REMEMBER,JSON.stringify(credentials));
+    if(remember)localStorage.setItem(REMEMBER,JSON.stringify(credentials));
     else localStorage.removeItem(REMEMBER);
     window.dispatchEvent(new CustomEvent('philosophal:unlocked',{detail:{role:currentRole}}));
     return currentRole;
@@ -124,7 +124,7 @@
           if(path.endsWith("/sw.js")||path.endsWith("/english-offline.js"))await registration.unregister();
         }
         if(window.caches)for(const name of await caches.keys())if(/^(fv-reader|philosophal-reader|philosophal-english|philosophal-atelier)/.test(name))await caches.delete(name);
-        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261004-v31",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
+        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261014-navigation1",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
       }
     }catch{}
 

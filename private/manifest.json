@@ -18,13 +18,13 @@
   "packs": {
     "owner": {
       "path": "/private/owner.vault",
-      "sha256": "26833fcfff874ec5dea8c2c5efe8b4da1934c5fcd6acf3ba011d427461b59032",
-      "size": 5094334
+      "sha256": "7b504395b0e684739e751823e463e018cc96d4e19738e6cddd0b2a28616f1111",
+      "size": 5123655
     },
     "student": {
       "path": "/private/student.vault",
-      "sha256": "c6e9166af694726f5227d4aa01af21567e148f452272b47ef34567d97fb1871b",
-      "size": 72472
+      "sha256": "f8c8070c8d4ef1659c92026edc162b6572e79a93fea18aa9f3b9ec3518f30063",
+      "size": 89641
     }
   },
   "virtualPaths": [

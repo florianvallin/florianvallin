@@ -1,7 +1,11 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260928-study2";
+  const VERSION = "20261014-navigation1";
+  const sourceScript = document.currentScript || document.querySelector('script[src*="/js/site-tools.js"]');
+  const sitePrefix = sourceScript?.src
+    ? new URL("../", sourceScript.src).pathname.replace(/\/$/, "")
+    : (["localhost", "127.0.0.1", "::1"].includes(window.location.hostname) && /^\/main(?:\/|$)/.test(window.location.pathname) ? "/main" : "");
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -87,12 +91,8 @@
     const value = String(path || "");
     if (!value.startsWith("/")) return value;
 
-    // Quand Live Server sert le dossier parent et que le site se trouve dans /main/,
-    // on conserve les mêmes routes logiques tout en ajoutant le préfixe local.
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-    if (localHost && /^\/main(?:\/|$)/.test(window.location.pathname) && !value.startsWith("/main/")) {
-      return `/main${value}`;
-    }
+    // Les raccourcis suivent la racine de leur script, même dans un sous-dossier.
+    if (sitePrefix && !value.startsWith("//") && value !== sitePrefix && !value.startsWith(`${sitePrefix}/`)) return `${sitePrefix}${value}`;
     return value;
   }
 
@@ -137,13 +137,13 @@
         return;
       }
 
-      if (isTypingTarget(event.target)) return;
+      if (event.repeat || event.isComposing || isTypingTarget(event.target)) return;
       if (event.metaKey) return;
 
       const questionMark = event.key === "?" || (event.shiftKey && ["Slash", "Comma"].includes(event.code));
 
       // Aide complète : Alt + Maj + ?
-      if (event.altKey && event.shiftKey && questionMark) {
+      if (event.altKey && !event.ctrlKey && event.shiftKey && questionMark) {
         consumeShortcut(event);
         openShortcutHelp("complete");
         return;
@@ -238,7 +238,7 @@
   }
 
   function openMediatheque() {
-    if (window.location.pathname === "/mediatheque/" || window.location.pathname === "/mediatheque/index.html") {
+    if ([resolveSitePath("/mediatheque/"), resolveSitePath("/mediatheque/index.html")].includes(window.location.pathname)) {
       const input = document.querySelector("[data-media-search]");
       if (input) {
         input.focus({ preventScroll: true });

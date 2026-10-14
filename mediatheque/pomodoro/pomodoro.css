@@ -24,3 +24,82 @@ body.is-immersive .pomo-topbar{display:none}body.is-immersive .pomo-app{min-heig
 /* Le rapport reste accessible sur mobile. */
 @media(max-width:620px){.pomo-top-button[data-open-report]{display:inline-flex;align-items:center;justify-content:center}.pomo-report-chart.is-month .pomo-report-bar::after{display:none}}
 @media(max-width:480px){.pomo-top-button[data-open-report]{width:34px;padding:0;font-size:0}.pomo-top-button[data-open-report]::after{content:'▥';font-size:.9rem}}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--bg:#943838;--bg-deep:#943838;--panel:rgba(29,25,33,0.11);--panel-strong:rgba(29,25,33,0.16);--line:rgba(192,185,203,0.22);--ink:#e5e2e9;--muted:rgba(229,226,233,0.74)}
+html[data-site-theme="dark"] body[data-pomo-mode="work"]{--bg:#943838;--bg-deep:#923a3a}
+html[data-site-theme="dark"] body[data-pomo-mode="short"]{--bg:#3c7e90}
+html[data-site-theme="dark"] .pomo-topbar{border-bottom:1px solid rgba(192,185,203,0.14);background:rgba(22,22,22,0.055)}
+html[data-site-theme="dark"] .pomo-back:hover{color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-separator{background:rgba(29,25,33,0.2)}
+html[data-site-theme="dark"] .pomo-brand-dot{border:2px solid #4a4a4a}
+html[data-site-theme="dark"] .pomo-top-button{border:1px solid rgba(192,185,203,0.2);background:rgba(29,25,33,0.09)}
+html[data-site-theme="dark"] .pomo-top-button:hover{background:rgba(29,25,33,0.16)}
+html[data-site-theme="dark"] .pomo-auto-dot{background:rgba(29,25,33,0.38)}
+html[data-site-theme="dark"] .pomo-top-button[aria-pressed="true"] .pomo-auto-dot{background:#1d1921}
+html[data-site-theme="dark"] .pomo-mode-tabs{background:rgba(22,22,22,0.08)}
+html[data-site-theme="dark"] .pomo-mode-tabs button{color:rgba(229,226,233,0.78)}
+html[data-site-theme="dark"] .pomo-mode-tabs button:hover{background:rgba(29,25,33,0.08);color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-mode-tabs button.is-active{background:rgba(29,25,33,0.2);color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-start{background:#1d1921}
+html[data-site-theme="dark"] .pomo-skip{border:1px solid rgba(192,185,203,0.2);background:rgba(29,25,33,0.08)}
+html[data-site-theme="dark"] .pomo-sub-actions button:hover{color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-cycle-card,html[data-site-theme="dark"] .pomo-active-task{border:1px solid rgba(192,185,203,0.14);background:rgba(22,22,22,0.07)}
+html[data-site-theme="dark"] .pomo-cycle-dots i{border:1px solid rgba(74,74,74,0.42)}
+html[data-site-theme="dark"] .pomo-cycle-dots i.is-done{background:#1d1921;border-color:#4a4a4a}
+html[data-site-theme="dark"] .pomo-stats>div{border:1px solid rgba(192,185,203,0.16);background:rgba(29,25,33,0.08)}
+html[data-site-theme="dark"] .pomo-tasks{border:1px solid rgba(192,185,203,0.16);background:rgba(29,25,33,0.09)}
+html[data-site-theme="dark"] .pomo-tasks>header{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .pomo-tasks>header button{border:1px solid rgba(192,185,203,0.18);background:rgba(29,25,33,0.09)}
+html[data-site-theme="dark"] .pomo-task-form{border-bottom:1px solid rgba(192,185,203,0.14);background:rgba(22,22,22,0.06)}
+html[data-site-theme="dark"] .pomo-task-form input{border:1px solid rgba(192,185,203,0.2);background:rgba(29,25,33,0.1);color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-task-form input:focus{border-color:rgba(74,74,74,0.5)}
+html[data-site-theme="dark"] .pomo-task-form button,html[data-site-theme="dark"] .pomo-task-footer button{background:rgba(29,25,33,0.08)}
+html[data-site-theme="dark"] .pomo-task-form button.is-primary{background:#1d1921}
+html[data-site-theme="dark"] .pomo-task{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .pomo-task:hover{background:rgba(29,25,33,0.055)}
+html[data-site-theme="dark"] .pomo-task.is-active{background:rgba(29,25,33,0.12)}
+html[data-site-theme="dark"] .pomo-task-check{border:1px solid rgba(192,185,203,0.34)}
+html[data-site-theme="dark"] .pomo-task-check.is-done{background:#1d1921}
+html[data-site-theme="dark"] .pomo-task-actions button:hover{background:rgba(29,25,33,0.1);color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-shortcuts kbd{border:1px solid rgba(192,185,203,0.2);background:rgba(29,25,33,0.07)}
+html[data-site-theme="dark"] .pomo-settings{color:#d3ced9}
+html[data-site-theme="dark"] .pomo-settings::backdrop{background:rgba(22,21,24,0.52)}
+html[data-site-theme="dark"] .pomo-settings-card{background:#1d1921}
+html[data-site-theme="dark"] .pomo-settings-card>header{border-bottom:1px solid #49464e}
+html[data-site-theme="dark"] .pomo-settings-card>header span{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-settings-card>header button{border:1px solid #494350;background:#1d1921}
+html[data-site-theme="dark"] .pomo-settings-card>section{border-bottom:1px solid #49464e}
+html[data-site-theme="dark"] .pomo-settings-card h3{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-settings-grid label{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-settings-grid label span{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-settings-grid input{border:1px solid #494450;background:#1f1b24}
+html[data-site-theme="dark"] .pomo-switch-row small,html[data-site-theme="dark"] .pomo-range-row small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-switch-row input{accent-color:#db9f9f}
+html[data-site-theme="dark"] .pomo-range-row input{accent-color:#db9f9f}
+html[data-site-theme="dark"] .pomo-settings-card>footer button{border:1px solid #49454f;background:#1d1921}
+html[data-site-theme="dark"] .pomo-settings-card>footer button.is-primary{border-color:#4a4a4a;color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-toast{border:1px solid rgba(192,185,203,0.2);background:rgba(25,24,26,0.9);color:#e5e2e9}
+html[data-site-theme="dark"] .pomo-task-head-actions button{border:1px solid rgba(192,185,203,0.18);background:rgba(29,25,33,0.09)}
+html[data-site-theme="dark"] .pomo-task-head-actions button:hover{background:rgba(29,25,33,0.15)}
+html[data-site-theme="dark"] .pomo-report-summary>div{border:1px solid #484153;background:#1e1b23}
+html[data-site-theme="dark"] .pomo-report-summary span{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-report-summary small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-report-bar-wrap{border-bottom:1px solid #494450}
+html[data-site-theme="dark"] .pomo-report-bar{background:#943838}
+html[data-site-theme="dark"] .pomo-report-bar::after{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-report-day small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-settings-card>footer small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-template-save input{border:1px solid #494450;background:#1f1b24}
+html[data-site-theme="dark"] .pomo-template-save button,html[data-site-theme="dark"] .pomo-template-row button{border:1px solid #494450;background:#1d1921}
+html[data-site-theme="dark"] .pomo-template-row{border:1px solid #484153}
+html[data-site-theme="dark"] .pomo-template-row small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-template-row button.is-danger{color:#d4a5a5}
+html[data-site-theme="dark"] .pomo-template-empty{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-select-row small{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-select-row select{border:1px solid #494450;background:#1f1b24;color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-report-tabs{background:#1f1c25}
+html[data-site-theme="dark"] .pomo-report-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .pomo-report-tabs button.is-active{background:#1d1921;color:#d3ced9}
+}

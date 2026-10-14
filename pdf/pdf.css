@@ -565,3 +565,277 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .pdf-library-open small{color:#65516f!important}.pdf-library-open-icon{display:grid;place-items:center}
 .pdf-new-tools{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0 0}.pdf-new-tools>span{font-size:.67rem;font-weight:750;color:#6b5979;margin-right:4px}.pdf-new-tools button{display:flex;align-items:center;gap:7px;min-height:36px;padding:7px 11px;background:#fff;border:1px solid #d8cce3;border-radius:9px;color:#614976;font-size:.77rem;font-weight:650}.pdf-new-tools .tool-icon{width:17px;height:17px}.pdf-new-tools button:hover{background:#f7f1fa}.pdf-new-tools button.is-active{background:#6a5081;color:#fff;border-color:#6a5081}
 .pdf-file-chip small{color:#685973!important}
+
+
+/* Recadrage avec aperçu immédiat, indépendant du déplacement des pages. */
+.pdf-drag-handle {cursor:grab;touch-action:none;user-select:none;}
+.pdf-drag-handle:active {cursor:grabbing;}
+.pdf-page-card:not([draggable="true"]) {cursor:default;}
+.pdf-crop-dialog {width:min(1180px,calc(100vw - 24px));max-height:calc(100dvh - 24px);margin:auto;padding:20px;border:1px solid var(--line);border-radius:20px;background:#fff;color:var(--ink);overflow:auto;}
+.pdf-crop-dialog::backdrop {background:rgba(18,15,24,.65);}
+.pdf-crop-dialog > header {display:flex;align-items:center;justify-content:space-between;gap:15px;}
+.pdf-crop-dialog h2 {margin:5px 0 0;font-size:1.5rem;}
+.pdf-crop-dialog h3 {margin:0 0 12px;font-size:.9rem;font-weight:650;}
+.pdf-crop-dialog header small,.pdf-crop-help {color:var(--muted);font-size:.85rem;}
+.pdf-crop-dialog header button {width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:#faf8fc;color:inherit;font-size:1.4rem;cursor:pointer;}
+.pdf-crop-help {margin:12px 0 20px;}
+.pdf-crop-workspace {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 240px;gap:24px;align-items:start;}
+.pdf-crop-original {position:relative;width:min(100%,360px);margin:auto;background:#e9e5ef;}
+.pdf-crop-original > canvas {display:block;width:100%;height:auto;}
+.pdf-crop-result {display:flex;align-items:flex-start;justify-content:center;min-height:120px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#f5f2f8;}
+.pdf-crop-result canvas {display:block;max-width:100%;max-height:420px;width:auto;height:auto;box-shadow:0 3px 12px #0002;}
+.pdf-crop-shade {position:absolute;background:rgba(20,12,32,.52);pointer-events:none;}
+.pdf-crop-shade.is-top {top:0;left:0;right:0;}.pdf-crop-shade.is-bottom {bottom:0;left:0;right:0;}
+.pdf-crop-shade.is-left {left:0;}.pdf-crop-shade.is-right {right:0;}
+.pdf-crop-frame {position:absolute;border:2px solid #7652aa;pointer-events:none;}
+.pdf-crop-edge {position:absolute;pointer-events:auto;padding:0;border:2px solid #7652aa;background:#fff;border-radius:4px;touch-action:none;}
+.pdf-crop-edge.is-top,.pdf-crop-edge.is-bottom {width:44px;height:14px;left:50%;transform:translateX(-50%);cursor:ns-resize;}
+.pdf-crop-edge.is-top {top:-8px;}.pdf-crop-edge.is-bottom {bottom:-8px;}
+.pdf-crop-edge.is-left,.pdf-crop-edge.is-right {width:14px;height:44px;top:50%;transform:translateY(-50%);cursor:ew-resize;}
+.pdf-crop-edge.is-left {left:-8px;}.pdf-crop-edge.is-right {right:-8px;}
+.pdf-crop-controls {display:grid;gap:18px;}
+.pdf-crop-controls > label:not(.pdf-crop-selection-option) {display:grid;grid-template-columns:minmax(0,1fr) 72px;gap:8px;align-items:center;}
+.pdf-crop-controls label > span:first-child {grid-column:1/-1;font-size:.85rem;font-weight:650;}
+.pdf-crop-controls input[type="range"] {width:100%;height:36px;margin:0;cursor:ew-resize;accent-color:#7652aa;touch-action:pan-y;}
+.pdf-crop-controls label > div {display:flex;align-items:center;gap:4px;}
+.pdf-crop-controls input[type="number"] {width:58px;padding:6px 4px;border:1px solid var(--line);border-radius:7px;background:#fff;color:inherit;font:inherit;font-size:.8rem;}
+.pdf-crop-controls > small,.pdf-crop-controls .pdf-crop-selection-option {font-size:.8rem;line-height:1.5;color:var(--muted);}
+.pdf-crop-controls .pdf-crop-selection-option {display:flex;align-items:start;gap:8px;}
+.pdf-crop-dialog [data-crop-size] {font-size:.78rem;line-height:1.5;color:var(--muted);}
+.pdf-crop-dialog > footer {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);}
+.pdf-crop-dialog footer > div {display:flex;gap:8px;}
+.pdf-crop-dialog :is(button,input):focus-visible {outline:3px solid #9673c3;outline-offset:3px;}
+@media(max-width:900px){.pdf-crop-workspace {grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;}.pdf-crop-controls {grid-column:1/-1;grid-template-columns:1fr 1fr;}.pdf-crop-controls > small,.pdf-crop-controls .pdf-crop-selection-option {grid-column:1/-1;}}
+@media(max-width:520px){.pdf-crop-dialog {padding:14px;}.pdf-crop-workspace {gap:12px;}.pdf-crop-dialog h3 {font-size:.78rem;}.pdf-crop-result {padding:6px;}.pdf-crop-controls {gap:12px;}.pdf-crop-dialog footer {flex-wrap:wrap;}.pdf-crop-dialog footer > div {margin-left:auto;}}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--ink:#d3ced9;--muted:#bbb5c5;--line:#483f55;--soft:#221728;--soft-2:#1e1726;--purple:#bcb0c9;--purple-2:#e6dbf0;--green:#a9d0be;--red:#d5a4ab}
+html[data-site-theme="dark"]{background:#1e1a23}
+html[data-site-theme="dark"] body{background:radial-gradient(circle at 90% 4%,#21172a 0,transparent 28rem),#1e1a23}
+html[data-site-theme="dark"] .pdf-topbar{border-bottom:1px solid rgba(192,185,203,0.18);background:rgba(30,24,36,0.88)}
+html[data-site-theme="dark"] .pdf-brand-mark{background:#66527a;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-top-actions a{background:#1d1921}
+html[data-site-theme="dark"] .pdf-top-actions a:hover{border-color:#473b59;background:#1e1627}
+html[data-site-theme="dark"] .pdf-eyebrow{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-lead{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-privacy-card{border:1px solid #62507c;background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .pdf-privacy-card>span{background:#22182a;color:#bdafca}
+html[data-site-theme="dark"] .pdf-tool-card{background:rgba(29,25,33,0.78)}
+html[data-site-theme="dark"] .pdf-tool-card:hover{border-color:#483d57;background:#1d1921}
+html[data-site-theme="dark"] .pdf-tool-card.is-active{border-color:#483d57;background:#211729}
+html[data-site-theme="dark"] .pdf-tool-symbol{background:#201a27;color:#bbb5c5}
+html[data-site-theme="dark"] .is-active .pdf-tool-symbol{background:#66527a;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-tool-card small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-workbench{background:#1d1921;border:1px solid #484054}
+html[data-site-theme="dark"] .pdf-workbench-head{border-bottom:1px solid #483f55}
+html[data-site-theme="dark"] .pdf-workbench-head span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-workbench-head p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-reset{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-dropzone{border:1.5px dashed #483f55;background:linear-gradient(180deg,#1e1626,#211627)}
+html[data-site-theme="dark"] .pdf-dropzone:hover,html[data-site-theme="dark"] .pdf-dropzone:focus-visible,html[data-site-theme="dark"] .pdf-dropzone.is-dragover{border-color:#473c58;background:#211728}
+html[data-site-theme="dark"] .pdf-drop-icon{background:#24192c;color:#beafcb}
+html[data-site-theme="dark"] .pdf-dropzone p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-dropzone small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-file-chip{border:1px solid #483d56;background:#211627}
+html[data-site-theme="dark"] .pdf-file-chip span:first-child{background:#23182a;color:#bdb0c9}
+html[data-site-theme="dark"] .pdf-file-chip small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-field label,html[data-site-theme="dark"] .pdf-field>span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-field input[type="text"],html[data-site-theme="dark"] .pdf-field input[type="number"],html[data-site-theme="dark"] .pdf-field select,html[data-site-theme="dark"] .pdf-field textarea{border:1px solid #484054;background:#1d1921}
+html[data-site-theme="dark"] .pdf-field input:focus,html[data-site-theme="dark"] .pdf-field select:focus,html[data-site-theme="dark"] .pdf-field textarea:focus{border-color:#483d57}
+html[data-site-theme="dark"] .pdf-field input[type="range"]{accent-color:#bdb0ca}
+html[data-site-theme="dark"] .pdf-range-value{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-radio-row label{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-radio-row input{accent-color:#bdafcb}
+html[data-site-theme="dark"] .pdf-empty-inline{border:1px solid #484054;background:#1e1726;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-file-row{border:1px solid #484053;background:#1d1921}
+html[data-site-theme="dark"] .pdf-file-index{background:#231829;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-file-meta small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-mini-btn{border:1px solid #483f55;background:#1e1824}
+html[data-site-theme="dark"] .pdf-mini-btn:hover{background:#21172a}
+html[data-site-theme="dark"] .pdf-mini-btn.is-danger{color:#d4a5ac}
+html[data-site-theme="dark"] .pdf-page-card{border:1px solid #483f55;background:#1e1824}
+html[data-site-theme="dark"] .pdf-page-preview{background:#201d26}
+html[data-site-theme="dark"] .pdf-page-actions button{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-page-actions button:hover{background:#221829}
+html[data-site-theme="dark"] .pdf-page-actions .is-danger{color:#d6a4ab}
+html[data-site-theme="dark"] .pdf-action-row{border-top:1px solid #483f55}
+html[data-site-theme="dark"] .pdf-primary{border:1px solid #624f7d;background:#66517b;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-secondary{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-secondary:hover{background:#231826}
+html[data-site-theme="dark"] .pdf-progress{border:1px solid #483f55;background:#211627}
+html[data-site-theme="dark"] .pdf-progress span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-progress progress{accent-color:#bdafca}
+html[data-site-theme="dark"] .pdf-message{background:#17281e;border:1px solid #4d7f5f;color:#adcdbb}
+html[data-site-theme="dark"] .pdf-message.is-error{background:#271617;border-color:#87454f;color:#d1a9ae}
+html[data-site-theme="dark"] .pdf-message.is-warning{background:#282216;border-color:#877445;color:#dbca9e}
+html[data-site-theme="dark"] .pdf-guide>div{border:1px solid #484153;background:rgba(29,25,33,0.66)}
+html[data-site-theme="dark"] .pdf-guide span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-guide p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-limits{border-top:1px solid #484054;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-limits summary{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-footer{border-top:1px solid #484054;color:#bbb5c5}
+@media(max-width:700px){html[data-site-theme="dark"] .pdf-action-row{background:rgba(29,25,33,0.94);border-top:1px solid #483f55}}
+html[data-site-theme="dark"] .pdf-inline-note{color:#bbb5c5;background:#211627;border:1px solid #483e56}
+html[data-site-theme="dark"] .meta{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-drag-handle{background:rgba(40,35,47,0.72);color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-page-crop{background:#231728;border:1px solid #6e4d7f}
+html[data-site-theme="dark"] .pdf-page-crop>small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-page-crop label,html[data-site-theme="dark"] .pdf-compose-picks label{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-page-crop input,html[data-site-theme="dark"] .pdf-compose-picks input{accent-color:#bdafcb}
+html[data-site-theme="dark"] .pdf-merge-card{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-merge-card>header small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-merge-previews figure>div{background:#231b26}
+html[data-site-theme="dark"] .pdf-merge-previews figcaption{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-select-card{border:1px solid #483f55;background:#1e1824}
+html[data-site-theme="dark"] .pdf-select-card:hover{border-color:#483c57}
+html[data-site-theme="dark"] .pdf-select-card.is-selected{border-color:#473c58;background:#221729}
+html[data-site-theme="dark"] .pdf-check-mark{background:#66507c;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-select-number{background:rgba(34,31,38,0.72);color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-compose-picks article{background:#1d1921;border:1px solid #484153}
+html[data-site-theme="dark"] .pdf-compose-crop-preview{background:#201c26}
+html[data-site-theme="dark"] .pdf-page-actions.seven button[data-act="autocrop"]{color:#bdb0ca;background:#221628}
+:root[data-site-theme="dark"]{--pdf-purple:#bdafca;--pdf-purple-dark:#bfafcb;--pdf-purple-soft:#22182a;--pdf-blue:#b1bdc9;--pdf-green:#bbb5c5;--pdf-amber:#886a44;--pdf-bg:#1e1b24}
+html[data-site-theme="dark"] body{background:radial-gradient(circle at 84% 0,#22182a 0,transparent 30rem),
+    linear-gradient(180deg,#1e1824 0,#1e1b24 42rem)}
+html[data-site-theme="dark"] .pdf-topbar{background:rgba(30,23,38,0.91)}
+html[data-site-theme="dark"] .pdf-top-center{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-top-center>span{background:#1a281d;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-hero-pills span{border:1px solid #483d57;background:rgba(29,25,33,0.72);color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-open{border:1px solid #624e7e;background:#221729;color:#bfb0c9}
+html[data-site-theme="dark"] .pdf-library-open:hover{border-color:#624e7e;background:#23172a}
+html[data-site-theme="dark"] .pdf-library-open>span{background:#67507c;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-library-open small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-section-label span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-section-label>button{color:#bfb0c9}
+html[data-site-theme="dark"] .pdf-tool-card.is-active{background:linear-gradient(160deg,#221729,#22182b);border-color:#483c58}
+html[data-site-theme="dark"] .pdf-more-card{background:rgba(34,22,40,0.82)}
+html[data-site-theme="dark"] .pdf-more-card .pdf-tool-symbol{background:#68517b;color:#e5e2e9}
+html[data-site-theme="dark"] .pdf-favorites::before{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-favorites button{border:1px solid #483d57;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-favorites button:hover{background:#231729}
+html[data-site-theme="dark"] .pdf-workbench-head{background:linear-gradient(180deg,#1d1921,#241824)}
+html[data-site-theme="dark"] .pdf-fav-current{border:1px solid #483d57;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-fav-current.is-active{background:#23182a;color:#bfafca}
+html[data-site-theme="dark"] .pdf-reset:hover{background:#211827}
+html[data-site-theme="dark"] .pdf-dropzone{background:radial-gradient(circle at 50% 45%,rgba(104,80,124,0.055),transparent 13rem),
+    linear-gradient(180deg,#1e1526,#231627)}
+html[data-site-theme="dark"] .pdf-drop-icon{background:linear-gradient(145deg,#23182a,#25192d)}
+html[data-site-theme="dark"] .pdf-guide>div{background:rgba(29,25,33,0.73)}
+html[data-site-theme="dark"] .pdf-guide span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-backdrop{background:rgba(26,23,31,0.42)}
+html[data-site-theme="dark"] .pdf-library-panel{border:1px solid #483d57;background:#1e1726}
+html[data-site-theme="dark"] .pdf-library-panel>header span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-panel>header p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-panel>header>button{border:1px solid #483d57;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-search{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-library-search>span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-fav::before{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups>section{border:1px solid #483e56;background:#1d1921}
+html[data-site-theme="dark"] .pdf-library-groups h3{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups button,html[data-site-theme="dark"] .pdf-library-fav button{border:1px solid #483f55;background:#1e1726}
+html[data-site-theme="dark"] .pdf-library-groups button:hover,html[data-site-theme="dark"] .pdf-library-fav button:hover{border-color:#473b59;background:#221728}
+html[data-site-theme="dark"] .pdf-library-groups button>span,html[data-site-theme="dark"] .pdf-library-fav button>span{background:#231a28;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups button>small,html[data-site-theme="dark"] .pdf-library-fav button>small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups button>b,html[data-site-theme="dark"] .pdf-library-fav button>b{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups button>b.is-active,html[data-site-theme="dark"] .pdf-library-fav button>b.is-active{background:#24182b;color:#bfb0c9}
+html[data-site-theme="dark"] .pdf-library-empty{border:1px dashed #483f55;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-preview-strip figure{border:1px solid #483f55;background:#1e1824}
+html[data-site-theme="dark"] .pdf-preview-strip figure>div{background:#231b26}
+html[data-site-theme="dark"] .pdf-preview-strip figcaption{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-tool-info-grid>div{background:#211925;border:1px solid #484054}
+html[data-site-theme="dark"] .pdf-tool-info-grid span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-flatten-card{border:1px solid #483e56;background:#211627}
+html[data-site-theme="dark"] .pdf-flatten-card>span{background:#22182a;color:#beb1c9}
+html[data-site-theme="dark"] .pdf-flatten-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-warning-box{border:1px solid #877345;background:#282216;color:#dbc99e}
+html[data-site-theme="dark"] .pdf-quick-tools button{border:1px solid #483e55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-quick-tools button:hover{background:#221729}
+html[data-site-theme="dark"] .pdf-page-card.is-selected{border-color:#483d57}
+html[data-site-theme="dark"] .pdf-page-check{background:rgba(29,25,33,0.93);border:1px solid #483d57}
+html[data-site-theme="dark"] .pdf-page-check input:checked+span{color:#bfb0c9}
+html[data-site-theme="dark"] .pdf-selection-bar{border:1px solid #62507c;background:rgba(33,22,40,0.96)}
+html[data-site-theme="dark"] .pdf-selection-bar>strong{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-selection-bar button{border:1px solid #473c58;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-selection-bar button.is-danger{color:#ceabae;background:#261616}
+html[data-site-theme="dark"] .pdf-blank-badge{background:#2b2518;color:#dfc99a}
+html[data-site-theme="dark"] .pdf-page-card.is-blank-detected{border-color:#877345;background:#262216}
+html[data-site-theme="dark"] .pdf-final-backdrop{background:rgba(23,20,28,0.5)}
+html[data-site-theme="dark"] .pdf-final-panel{background:#1e1726;border:1px solid #483f55}
+html[data-site-theme="dark"] .pdf-final-panel>header{border-bottom:1px solid #483f55;background:rgba(30,23,38,0.96)}
+html[data-site-theme="dark"] .pdf-final-panel>header span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-panel>header p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-panel>header>button{border:1px solid #483d57;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-stats>div{background:#221927}
+html[data-site-theme="dark"] .pdf-final-stats span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-pages figure{border:1px solid #483e56;background:#1d1921}
+html[data-site-theme="dark"] .pdf-final-pages figure>div{background:#231b26}
+html[data-site-theme="dark"] .pdf-final-pages figcaption{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-more,html[data-site-theme="dark"] .pdf-final-loading{border:1px dashed #483f55;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-final-panel>footer{border-top:1px solid #484053;background:rgba(30,23,38,0.97)}
+html[data-site-theme="dark"] .pdf-scan-compare article{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-scan-compare article>span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-scan-compare canvas{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-scan-compare small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-check-inline{border:1px solid #483e56;background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-check-inline input{accent-color:#bfafca}
+html[data-site-theme="dark"] .pdf-editor-nav button{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-editor-nav label{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-editor-stage-wrap{border:1px solid #483f55;background:linear-gradient(135deg,#221c27,#221a25)}
+html[data-site-theme="dark"] .pdf-editor-stage{background:#1d1921}
+html[data-site-theme="dark"] .pdf-ann.is-selected{border-color:#473b59}
+html[data-site-theme="dark"] .pdf-ann-text span{background:rgba(29,25,33,0.04)}
+html[data-site-theme="dark"] .pdf-ann-whiteout i{background:#1d1921}
+html[data-site-theme="dark"] .pdf-ann-del{border:1px solid #473c58;background:#271616;color:#cdadaf}
+html[data-site-theme="dark"] .pdf-ann-resize{background:#69517b;border:2px solid #4a4a4a}
+html[data-site-theme="dark"] .pdf-signature-modal{background:rgba(23,20,28,0.48)}
+html[data-site-theme="dark"] .pdf-signature-modal>section{background:#1d1921;border:1px solid #483e56}
+html[data-site-theme="dark"] .pdf-signature-modal canvas{border:1px solid #484252;background:#1d1921}
+html[data-site-theme="dark"] .pdf-signature-modal footer button{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-outline-list article{border:1px solid #483f55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-outline-list article>span{background:#231829;color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-outline-list article label{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-outline-list article>button{border:1px solid #473b59;background:#261616;color:#cdadaf}
+html[data-site-theme="dark"] .pdf-preset-builder{border:1px solid #483d57;background:linear-gradient(145deg,#1d1921,#221628)}
+html[data-site-theme="dark"] .pdf-preset-builder p{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-preset-list article{border:1px solid #483e56;background:#1d1921}
+html[data-site-theme="dark"] .pdf-preset-list article span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-preset-list article small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-preset-list button{border:1px solid #483e55;background:#1d1921}
+html[data-site-theme="dark"] .pdf-preset-list button.is-danger{color:#ceacae}
+html[data-site-theme="dark"] .pdf-tool-symbol,html[data-site-theme="dark"] .pdf-library-groups button>span,html[data-site-theme="dark"] .pdf-library-fav button>span{background:#211729;color:#bcaacf}
+html[data-site-theme="dark"] .pdf-tool-card{border:1px solid #644a82}
+html[data-site-theme="dark"] .pdf-tool-card.is-active{background:#211628;border-color:#6d4a82}
+html[data-site-theme="dark"] .pdf-tool-card:hover{border-color:#6b4c80}
+html[data-site-theme="dark"] .pdf-tool-card strong{color:#d4c9de}
+html[data-site-theme="dark"] .pdf-tool-card small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-library-groups button small{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-text-result{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-text-result textarea{border:1px solid #483d57;background:#1d1921}
+html[data-site-theme="dark"] [data-spread-line]{background:#a12b61}
+html[data-site-theme="dark"] .pdf-booklet-order{background:#211626;border:1px solid #694d80}
+html[data-site-theme="dark"] .pdf-booklet-order th,html[data-site-theme="dark"] .pdf-booklet-order td{border-bottom:1px solid #62517b}
+html[data-site-theme="dark"] .pdf-booklet-order th{color:#beaecc}
+html[data-site-theme="dark"] .pdf-compare-result{background:#211a29}
+html[data-site-theme="dark"] .pdf-compare-result canvas{background:#1d1921}
+html[data-site-theme="dark"] .pdf-editor-history{border-top:1px solid #6b4d7f}
+html[data-site-theme="dark"] .pdf-editor-properties textarea{border:1px solid #624e7e}
+html[data-site-theme="dark"] button:focus-visible,html[data-site-theme="dark"] a:focus-visible,html[data-site-theme="dark"] input:focus-visible,html[data-site-theme="dark"] select:focus-visible,html[data-site-theme="dark"] textarea:focus-visible{outline:3px solid #455f87}
+html[data-site-theme="dark"] .pdf-library-open small{color:#bbb5c5!important}
+html[data-site-theme="dark"] .pdf-new-tools>span{color:#bbb5c5}
+html[data-site-theme="dark"] .pdf-new-tools button{background:#1d1921;border:1px solid #674884;color:#beadcc}
+html[data-site-theme="dark"] .pdf-new-tools button:hover{background:#221628}
+html[data-site-theme="dark"] .pdf-new-tools button.is-active{background:#674e7e;color:#e5e2e9;border-color:#624e7e}
+html[data-site-theme="dark"] .pdf-file-chip small{color:#bbb5c5!important}
+html[data-site-theme="dark"] .pdf-crop-dialog{background:#1d1921}
+html[data-site-theme="dark"] .pdf-crop-dialog::backdrop{background:rgba(20,17,27,0.65)}
+html[data-site-theme="dark"] .pdf-crop-dialog header button{background:#1e1627}
+html[data-site-theme="dark"] .pdf-crop-original{background:#201a2a}
+html[data-site-theme="dark"] .pdf-crop-result{background:#1f1728}
+html[data-site-theme="dark"] .pdf-crop-shade{background:rgba(21,16,28,0.52)}
+html[data-site-theme="dark"] .pdf-crop-frame{border:2px solid #604587}
+html[data-site-theme="dark"] .pdf-crop-edge{border:2px solid #604587;background:#1d1921}
+html[data-site-theme="dark"] .pdf-crop-controls input[type="range"]{accent-color:#b8a6d4}
+html[data-site-theme="dark"] .pdf-crop-controls input[type="number"]{background:#1d1921}
+html[data-site-theme="dark"] .pdf-crop-dialog :is(button,input):focus-visible{outline:3px solid #624587}
+}

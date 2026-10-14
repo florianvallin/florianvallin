@@ -1,57 +1,20 @@
-const RELEASE = "philosophal-20260928-editor1";
-const READER_CACHE = "fv-reader-v21-20260928-editor1";
-const CORE = [
-  "/lecture/",
-  "/lecture/index.html",
-  "/lecture/reader.css?v=20260928-editor1",
-  "/lecture/reader.js?v=20260928-editor1",
-  "/lecture/library.js?v=20260928-editor1",
-  "/favicon.svg?v=20260928-editor1"
-];
-
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(READER_CACHE)
-      .then(async (cache) => {
-        for (const path of CORE) {
-          try {
-            const response = await fetch(path, { cache: "reload" });
-            if (response.ok) await cache.put(path, response);
-          } catch (_) {}
-        }
-      })
-      .then(() => self.skipWaiting())
-  );
+/* Migration des anciens workers : chaque URL conserve sa propre page.
+   Le worker actuel, sw-atelier.js, gère le cache public du site. */
+self.addEventListener('install', event => {
+  event.waitUntil(self.skipWaiting());
 });
-
-self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys()
-      .then((keys) => Promise.all(keys.map((key) => {
-        const isOldReader = key.startsWith("fv-reader-") && key !== READER_CACHE;
-        const isOldRelease = key.startsWith("philosophal-") && key !== RELEASE;
-        return (isOldReader || isOldRelease) ? caches.delete(key) : Promise.resolve(false);
-      })))
-      .then(() => self.clients.claim())
-  );
-});
-
-self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
-  const url = new URL(event.request.url);
-  if (url.origin !== self.location.origin || !url.pathname.startsWith("/lecture/")) return;
-
-  event.respondWith((async () => {
-    try {
-      const response = await fetch(event.request, { cache: "reload" });
-      if (response && response.ok) {
-        const cache = await caches.open(READER_CACHE);
-        await cache.put(event.request, response.clone());
-      }
-      return response;
-    } catch (_) {
-      const cached = await caches.match(event.request);
-      return cached || caches.match("/lecture/index.html");
-    }
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const names = await caches.keys();
+    await Promise.all(names.filter(name => name.startsWith('fv-reader-') ||
+      (name.startsWith('philosophal-') && !name.startsWith('philosophal-public-'))
+    ).map(name => caches.delete(name)));
+    await self.clients.claim();
   })());
+});
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  if (new URL(event.request.url).origin !== self.location.origin) return;
+  // Aucun remplacement par index.html d’une autre rubrique, même hors ligne.
+  event.respondWith(fetch(event.request, {cache:'no-cache'}));
 });

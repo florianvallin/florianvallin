@@ -1179,3 +1179,112 @@ body[data-theme="sepia"] .reader-settings{
 @media(max-width:720px){.reader-visual-spread{padding:8px 28px}.reader-progress-tools{flex-wrap:wrap}.reader-stage-tools select{max-width:85px}.reader-spread-start{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.reader-visual-spread-canvas{transition:none}}
 
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--reader-bg:#2a2317;--reader-panel:#262116;--reader-ink:#d3ced9;--reader-muted:#bbb5c5;--reader-line:#483d57;--reader-line-strong:#62527a;--reader-accent:#d5bda5;--reader-accent-soft:#2d2419}
+html[data-site-theme="dark"] .reader-topbar{border-bottom:1px solid rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] .reader-back{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-top-actions button,html[data-site-theme="dark"] .reader-progress-menu,html[data-site-theme="dark"] .reader-library-head button{background:rgba(29,25,33,0.62);color:#bbb5c5}
+html[data-site-theme="dark"] .reader-top-actions button:hover,html[data-site-theme="dark"] .reader-progress-menu:hover,html[data-site-theme="dark"] .reader-library-head button:hover{background:#1d1921}
+html[data-site-theme="dark"] .reader-kicker,html[data-site-theme="dark"] .reader-library-head span,html[data-site-theme="dark"] .reader-drawer-panel header span{color:#cabdb0}
+html[data-site-theme="dark"] .reader-welcome-copy > p:not(.reader-kicker){color:#bbb5c5}
+html[data-site-theme="dark"] .reader-welcome-actions > span{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-primary{background:#2a2a2b;color:#e5e2e9}
+html[data-site-theme="dark"] .reader-primary:hover{background:#161616}
+html[data-site-theme="dark"] .reader-dropzone{border:1px dashed #7f694d;background:radial-gradient(circle at 20% 25%, rgba(139,103,63,0.07), transparent 27%),
+    radial-gradient(circle at 78% 72%, rgba(86,83,121,0.05), transparent 28%),
+    rgba(29,25,33,0.55)}
+html[data-site-theme="dark"] .reader-dropzone:hover{border-color:#624e7e;background-color:rgba(29,25,33,0.85)}
+html[data-site-theme="dark"] .reader-book-card{background:rgba(29,25,33,0.72)}
+html[data-site-theme="dark"] .reader-book-card:hover{border-color:#7f684d;background:#1d1921}
+html[data-site-theme="dark"] .reader-book-card-format{background:#2b2418;color:#d2bea7}
+html[data-site-theme="dark"] .reader-empty-library{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-local-note{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-page-nav{background:rgba(42,35,23,0.72);color:#bbb5c5}
+html[data-site-theme="dark"] .reader-page-nav:hover{background:rgba(44,37,25,0.94)}
+html[data-site-theme="dark"] .reader-loading{background:rgba(42,35,23,0.88)}
+html[data-site-theme="dark"] .reader-loading span{border:2px solid #624e7e;border-top-color:#876745}
+html[data-site-theme="dark"] .reader-loading strong{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-progressbar{border-top:1px solid rgba(192,185,203,0.14);background:color-mix(in srgb, var(--reader-bg) 94%, #1d1921)}
+html[data-site-theme="dark"] .reader-progressbar input{accent-color:#d3bda7}
+html[data-site-theme="dark"] .reader-progressbar > span{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-drawer-overlay{background:rgba(24,23,26,0.26)}
+html[data-site-theme="dark"] .reader-drawer-panel{background:#272316}
+html[data-site-theme="dark"] .reader-drawer-panel > header > button{background:#1d1921}
+html[data-site-theme="dark"] .reader-storage{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-library-row{background:#1d1921}
+html[data-site-theme="dark"] .reader-library-delete{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-library-delete:hover{background:#2a1e17;color:#ceb4ac}
+html[data-site-theme="dark"] .reader-toc button{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-toc button:hover{background:#2a2418;color:#d3ced9}
+html[data-site-theme="dark"] .reader-settings{background:rgba(38,33,22,0.97)}
+html[data-site-theme="dark"] .reader-settings label > span{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-settings input{accent-color:#d3bda6}
+html[data-site-theme="dark"] .reader-settings select{background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .reader-drop-overlay{background:rgba(42,35,23,0.84)}
+html[data-site-theme="dark"] .reader-drop-overlay > div{border:1px dashed #80674c;background:rgba(38,33,22,0.92)}
+html[data-site-theme="dark"] .reader-toast{border:1px solid rgba(192,185,203,0.14);background:rgba(37,36,38,0.94);color:#e5e2e9}
+html[data-site-theme="dark"] body[data-theme="night"]{--reader-bg:#181819;--reader-panel:#201f21;--reader-muted:#bbb5c5;--reader-line:#49474d;--reader-line-strong:#49474d}
+html[data-site-theme="dark"] body[data-theme="night"] .reader-top-actions button,html[data-site-theme="dark"] body[data-theme="night"] .reader-progress-menu,html[data-site-theme="dark"] body[data-theme="night"] .reader-library-head button,html[data-site-theme="dark"] body[data-theme="night"] .reader-book-card,html[data-site-theme="dark"] body[data-theme="night"] .reader-drawer-panel,html[data-site-theme="dark"] body[data-theme="night"] .reader-library-row,html[data-site-theme="dark"] body[data-theme="night"] .reader-drawer-panel > header > button,html[data-site-theme="dark"] body[data-theme="night"] .reader-settings{background:#222124}
+html[data-site-theme="dark"] body[data-theme="night"] .reader-primary{background:#2e281d;color:#d3ced9}
+html[data-site-theme="dark"] body[data-theme="white"]{--reader-bg:#1e1b23;--reader-panel:#1d1921}
+html[data-site-theme="dark"] .reader-focus-exit{border:1px solid rgba(192,185,203,0.14);background:rgba(40,35,22,0.92);color:#bbb5c5}
+html[data-site-theme="dark"] body[data-theme="night"].reader-focus .reader-focus-exit{background:rgba(34,33,36,0.9);border-color:rgba(192,185,203,0.14)}
+html[data-site-theme="dark"] body[data-theme="night"] .reader-foliate-view{background:#201f21}
+html[data-site-theme="dark"] .reader-stage-tools{border:1px solid rgba(192,185,203,0.14);background:rgba(40,35,22,0.82)}
+html[data-site-theme="dark"] .reader-stage:hover .reader-stage-tools,html[data-site-theme="dark"] .reader-stage-tools:focus-within{background:rgba(40,35,22,0.96)}
+html[data-site-theme="dark"] .reader-stage-tools button{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-stage-tools button:hover{background:#2b241a;color:#d3ced9}
+html[data-site-theme="dark"] .reader-stage-tools [data-zoom-label]{color:#bbb5c5}
+html[data-site-theme="dark"] body[data-theme="sepia"]{--reader-bg:#2d2619;--reader-panel:#2c2519;--reader-ink:#dcd4cb;--reader-muted:#bbb5c5;--reader-line:#866a46;--reader-line-strong:#836949}
+html[data-site-theme="dark"] body[data-theme="sepia"] .reader-top-actions button,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-progress-menu,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-library-head button,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-book-card,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-drawer-panel,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-library-row,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-drawer-panel > header > button,html[data-site-theme="dark"] body[data-theme="sepia"] .reader-settings{background:#2b2418;color:#dcd4cb}
+html[data-site-theme="dark"] .reader-book-card-copy em,html[data-site-theme="dark"] .reader-library-open em{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-book-card-progress,html[data-site-theme="dark"] .reader-library-progress{background:#2c251c}
+html[data-site-theme="dark"] .reader-history-tools button{background:rgba(29,25,33,0.62);color:#bbb5c5}
+html[data-site-theme="dark"] .reader-progress-track input{accent-color:#d3bda7}
+html[data-site-theme="dark"] .reader-progress-track span{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-position-meta strong{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-position-meta small{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-drawer-panel > header p{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-pages-toolbar{background:linear-gradient(#272316 78%,rgba(39,35,22,0.0))}
+html[data-site-theme="dark"] .reader-pages-toolbar label{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-pages-toolbar input[type="range"]{accent-color:#d3bda7}
+html[data-site-theme="dark"] .reader-pages-toolbar input[type="number"]{background:#1d1921}
+html[data-site-theme="dark"] .reader-pages-toolbar button,html[data-site-theme="dark"] .reader-book-search button,html[data-site-theme="dark"] .reader-bookmark-actions button,html[data-site-theme="dark"] .reader-notes-actions button{background:#1d1921}
+html[data-site-theme="dark"] .reader-page-thumb:hover{background:#2b2318}
+html[data-site-theme="dark"] .reader-page-thumb.is-current{border-color:#81664b;background:#2a2218}
+html[data-site-theme="dark"] .reader-page-thumb-paper{border:1px solid #473c58;background:#262116}
+html[data-site-theme="dark"] .reader-page-thumb-paper i{background:#25212c}
+html[data-site-theme="dark"] .reader-page-thumb-paper em{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-page-thumb-comic{background:#211d27}
+html[data-site-theme="dark"] .reader-page-thumb small{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-page-thumb.is-thumb-error .reader-page-thumb-paper::after{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-book-search input{background:#1d1921}
+html[data-site-theme="dark"] .reader-book-search input:focus{border-color:#624f7d}
+html[data-site-theme="dark"] .reader-search-status{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-search-result{background:#1d1921}
+html[data-site-theme="dark"] .reader-search-result:hover{background:#2a2317}
+html[data-site-theme="dark"] .reader-search-result span{color:#ccbdad}
+html[data-site-theme="dark"] .reader-search-result strong{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-saved-item,html[data-site-theme="dark"] .reader-note-item{background:#1d1921}
+html[data-site-theme="dark"] .reader-saved-open small,html[data-site-theme="dark"] .reader-note-open small{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-saved-item>div button,html[data-site-theme="dark"] .reader-note-item>div button{background:#292217;color:#bbb5c5}
+html[data-site-theme="dark"] .reader-note-open>span{color:#cdbdac}
+html[data-site-theme="dark"] .reader-note-open blockquote{border-left:2px solid #876845;color:#bbb5c5}
+html[data-site-theme="dark"] .reader-note-open p{color:#bbb5c5}
+html[data-site-theme="dark"] .philosophal-reader-highlight{background:#393620}
+html[data-site-theme="dark"] .reader-selection-tools{border:1px solid rgba(192,185,203,0.14);background:rgba(34,32,36,0.96)}
+html[data-site-theme="dark"] .reader-selection-tools button{color:#eee8dd}
+html[data-site-theme="dark"] .reader-selection-tools button:hover{background:rgba(29,25,33,0.1)}
+html[data-site-theme="dark"] .reader-selection-tools [data-selection-close]{color:#c1bbc9}
+html[data-site-theme="dark"] .reader-shortcuts-grid>div{background:#2a2217}
+html[data-site-theme="dark"] .reader-shortcuts-grid kbd{border:1px solid #483c58;background:#1d1921}
+html[data-site-theme="dark"] .reader-shortcuts-grid span{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-shortcuts-hint{color:#bbb5c5}
+html[data-site-theme="dark"] .reader-visual-page iframe{background:#1d1921}
+html[data-site-theme="dark"] .reader-thumb-open:focus-visible{outline:2px solid #82654a}
+html[data-site-theme="dark"] .reader-page-thumb-comic iframe{background:#1d1921}
+html[data-site-theme="dark"] .reader-pair-select{background:rgba(38,33,22,0.95)}
+html[data-site-theme="dark"] .reader-pair-select input{accent-color:#cfbcaa}
+html[data-site-theme="dark"] .reader-page-thumb.is-pair-locked .reader-thumb-caption::after{color:#cfbcaa}
+}

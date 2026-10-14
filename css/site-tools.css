@@ -847,3 +847,58 @@ body.fv-shortcuts-open { overflow: hidden; }
   letter-spacing:.02em;
   white-space:nowrap;
 }
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+:root[data-site-theme="dark"]{--fv-tools-accent:#9e9adf;--fv-tools-accent-dark:#9f9adf;--fv-tools-text:#d3ced9;--fv-tools-muted:#bbb5c5;--fv-tools-border:rgba(192,185,203,0.14);--fv-tools-bg:rgba(29,25,33,0.97)}
+html[data-site-theme="dark"] .fv-tools-fab,html[data-site-theme="dark"] .fv-tools-up{border:1px solid rgba(192,185,203,0.23)}
+html[data-site-theme="dark"] .fv-tools-fab.is-visible:hover,html[data-site-theme="dark"] .fv-tools-fab.is-visible:focus-visible,html[data-site-theme="dark"] .fv-tools-up.is-visible:hover,html[data-site-theme="dark"] .fv-tools-up.is-visible:focus-visible{border-color:rgba(73,69,135,0.48);background:#1d1921}
+html[data-site-theme="dark"] .fv-tools-fab::after,html[data-site-theme="dark"] .fv-tools-up::after{background:#28232f;color:#e5e2e9}
+html[data-site-theme="dark"] .fv-dictionary-backdrop,html[data-site-theme="dark"] .fv-shortcuts-backdrop,html[data-site-theme="dark"] .fv-student-backdrop{background:rgba(21,17,26,0.38)}
+html[data-site-theme="dark"] .fv-dictionary-panel{border:1px solid rgba(74,74,74,0.82);background:#161626}
+html[data-site-theme="dark"] .fv-dictionary-head{background:rgba(29,25,33,0.92)}
+html[data-site-theme="dark"] .fv-dictionary-brand-icon{border:1px solid rgba(192,185,203,0.18);background:linear-gradient(145deg, rgba(34,32,58,0.1), rgba(34,32,58,0.035))}
+html[data-site-theme="dark"] .fv-dictionary-close,html[data-site-theme="dark"] .fv-shortcuts-head > button,html[data-site-theme="dark"] .fv-student-close{background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-intro{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-search > svg{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-search input{background:#1d1921}
+html[data-site-theme="dark"] .fv-dictionary-search input:focus{border-color:rgba(73,69,135,0.48)}
+html[data-site-theme="dark"] .fv-dictionary-clear{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-tabs{background:#1b1927}
+html[data-site-theme="dark"] .fv-dictionary-tabs button{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-tabs button.is-active{background:#1d1921;color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-source-card{background:#1d1921}
+html[data-site-theme="dark"] .fv-dictionary-source-card:hover{border-color:rgba(192,185,203,0.34)}
+html[data-site-theme="dark"] .fv-dictionary-hint{background:rgba(34,32,58,0.055);color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-result{background:#1d1921}
+html[data-site-theme="dark"] .fv-dictionary-result:hover{border-color:rgba(192,185,203,0.34);background:#151526}
+html[data-site-theme="dark"] .fv-dictionary-result-category{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-result-preview{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-source-badge{border:1px solid rgba(192,185,203,0.15);background:rgba(34,32,58,0.065);color:#9e9adf}
+html[data-site-theme="dark"] .fv-dictionary-source-badge--mythology{border-color:rgba(192,185,203,0.18);background:rgba(157,100,47,0.07);color:#dcbc9d}
+html[data-site-theme="dark"] .fv-dictionary-source-badge--bible{border-color:rgba(192,185,203,0.18);background:rgba(56,116,108,0.07);color:#a5d4ce}
+html[data-site-theme="dark"] .fv-dictionary-detail{border:1px solid rgba(192,185,203,0.17);background:#1d1921}
+html[data-site-theme="dark"] .fv-dictionary-detail-meta{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-detail p,html[data-site-theme="dark"] .fv-dictionary-detail dd{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-detail dt{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-related > span{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-related button{background:#1a1627;color:#bbb5c5}
+html[data-site-theme="dark"] .fv-dictionary-footer{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-shortcuts-panel{border:1px solid rgba(74,74,74,0.75);background:#161626}
+html[data-site-theme="dark"] .fv-shortcut-row{background:#1d1921}
+html[data-site-theme="dark"] .fv-shortcut-row i{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-shortcut-row kbd,html[data-site-theme="dark"] .fv-shortcuts-note kbd{border:1px solid rgba(192,185,203,0.16);background:#1a1627;color:#bbb5c5}
+html[data-site-theme="dark"] .fv-shortcut-row strong{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-student-panel{border:1px solid rgba(74,74,74,0.75);background:#161626}
+html[data-site-theme="dark"] .fv-student-panel label{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-student-panel input:focus{border-color:rgba(73,69,135,0.48)}
+html[data-site-theme="dark"] .fv-student-panel form button{color:#e5e2e9}
+html[data-site-theme="dark"] .fv-student-panel form p{color:#caafb8}
+html[data-site-theme="dark"] .fv-shortcuts-section-head span{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-shortcuts-section-head h3{color:#bbb5c5}
+html[data-site-theme="dark"] .fv-shortcuts-section.is-compasses{border:1px solid rgba(192,185,203,0.16);background:rgba(67,119,106,0.055)}
+html[data-site-theme="dark"] .fv-shortcuts-section.is-compasses .fv-shortcuts-section-head span,html[data-site-theme="dark"] .fv-shortcuts-section.is-compasses .fv-shortcuts-section-head h3{color:#a9d0c8}
+html[data-site-theme="dark"] .fv-shortcuts-section.is-compasses .fv-shortcut-row{border-color:rgba(192,185,203,0.15);background:rgba(29,25,33,0.82)}
+html[data-site-theme="dark"] .fv-shortcuts-section.is-compasses .fv-shortcut-row kbd{border-color:rgba(192,185,203,0.2);background:rgba(67,119,106,0.08);color:#a8d1c8}
+html[data-site-theme="dark"] .fv-shortcuts-panel > p .fv-shortcuts-platform{border:1px solid rgba(192,185,203,0.14);background:#191627;color:#bbb5c5}
+}

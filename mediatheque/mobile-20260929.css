@@ -510,3 +510,13 @@ body[data-media-access="private"] [data-private-only]{display:block!important}
 /* Anglais V5 : A1 → C1 */
 .media-learn-levels{grid-template-columns:repeat(5,minmax(0,1fr))!important}
 @media(max-width:520px){.media-learn-levels{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .media-tool-trigger.is-pdf:hover{border-color:#5e4587;background:#1c1627;color:#bcb0c9}
+html[data-site-theme="dark"] .media-tool-trigger.is-pdf .media-tool-icon{background:#634c80;color:#e5e2e9}
+html[data-site-theme="dark"] .media-learn-levels a{border:1px solid rgba(192,185,203,0.16);background:#1a1626;color:#bbb1c8}
+html[data-site-theme="dark"] .media-learn-levels a:hover{border-color:#614587;background:#1e1628}
+html[data-site-theme="dark"] .media-learn-levels small{color:#bbb5c5}
+html[data-site-theme="dark"] .media-learn-open{background:#1e1628!important;color:#bbb2c8!important}
+}

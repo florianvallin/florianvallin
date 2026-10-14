@@ -28,3 +28,22 @@
 @media(max-width:550px){.hub-grid{grid-template-columns:1fr}.tool-hub{padding:100px 16px 45px}.hub-card{padding:21px}.backup-panel{padding:18px}.public-tool-back{font-size:11px;padding:6px 8px}.pomo-topbar-left{gap:8px;flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.hub-card{transition:none}}
 
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .public-tool-back{border:1px solid #664c80;background:#201627}
+html[data-site-theme="dark"] .tool-hub{--purple:#c1abcf;color:#d3ced9}
+html[data-site-theme="dark"] .tool-hub .hub-intro{color:#bbb5c5}
+html[data-site-theme="dark"] .hub-card{border:1px solid #6a4c80;background:#1d1921}
+html[data-site-theme="dark"] .hub-card p{color:#bbb5c5}
+html[data-site-theme="dark"] .hub-note{background:#231728;color:#bbb5c5}
+html[data-site-theme="dark"] .backup-panel{border:1px solid #6d4c80;background:#1d1921}
+html[data-site-theme="dark"] .backup-panel p,html[data-site-theme="dark"] .backup-panel li{color:#bbb5c5}
+html[data-site-theme="dark"] .backup-actions button,html[data-site-theme="dark"] .backup-file-label{background:#6c4a82;color:#e5e2e9;border:1px solid #6c4a82}
+html[data-site-theme="dark"] .backup-actions .secondary,html[data-site-theme="dark"] .backup-file-label{background:#201627;color:#c2aacf;border-color:#694884}
+html[data-site-theme="dark"] .backup-status{color:#c2aacf}
+html[data-site-theme="dark"] .backup-preview{background:#211627}
+html[data-site-theme="dark"] .backup-preview label{color:#bbb5c5}
+html[data-site-theme="dark"] .backup-preview button{color:#e5e2e9;background:#6c4a82}
+html[data-site-theme="dark"] .backup-file-label:focus-within{outline:2px solid #6c4a82}
+html[data-site-theme="dark"] .contact-offer-summary{border:1px solid #6b4587;background:#211628;color:#c2a7d2}
+}

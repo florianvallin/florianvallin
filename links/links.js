@@ -28,6 +28,7 @@
     panels.forEach((panel) => { panel.hidden = panel.id !== selected; });
     document.title = selected === 'perso' ? 'Apocalupso — Mes liens · Philosophal' : 'Philosophal — Mes liens pro';
     theme.content = selected === 'perso' ? '#1c1a22' : '#f7f5fc';
+    window.PHILOSOPHAL_THEME?.syncChrome();
     toast.textContent = '';
     if (updateUrl && location.hash !== `#${selected}`) {
       try { history.pushState(null, '', `#${selected}`); }

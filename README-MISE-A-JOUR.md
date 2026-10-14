@@ -1,50 +1,63 @@
-# Philosophal — corrections du 8 octobre 2026
+# Philosophal — version complète corrigée du 14 octobre 2026
 
-## Corrections
+## Ouvrir la bonne version dans VS Code
 
-- Header : retour à Inter, avec une graisse plus légère et un espacement plus naturel. La police est incluse dans le site et préchargée sur les 326 pages du menu principal.
-- Bouton « Contactez-moi » : forme arrondie, dégradé lavande légèrement rosé, texte violet lisible et petite bulle de discussion. Le survol conserve ces teintes lumineuses.
-- Médiathèque : icônes présentes dès l’ouverture, styles des commandes flottantes chargés avant leur affichage et emplacements sobres pendant la préparation du catalogue. Le dernier accès autorisé reste restauré.
-- Contact : « Je vous réponds dans un délai de 48 heures. »
-- Qui suis-je : les cours actuels à titre privé, via Acadomia et MyMaxicours sont distingués du tutorat universitaire passé.
-- Accroche : « Bénéficiez d’un accompagnement personnalisé pour structurer votre réflexion, maîtriser les exercices et gagner en autonomie. »
-- Deux chemins de fichiers du téléprompteur ont été rétablis ; le contrôle des outils publics a été adapté à leur page actuelle.
+1. Décompressez `philosophal-site-corrige-2026-10-14.zip` dans un nouveau dossier.
+2. Le dossier obtenu s’appelle `philosophal`. Il contient directement `index.html`, `blog`, `outils`, `mediatheque`, `textes`, etc.
+3. Dans VS Code : **Fichier → Ouvrir le dossier…**, puis choisissez ce dossier `philosophal`.
+4. Ouvrez son `index.html` avec **Live Server**.
+5. Le site doit être servi à la racine de Live Server : par exemple `http://127.0.0.1:5500/`. Testez `/blog/`, `/outils/`, `/mediatheque/` et `/textes/`.
 
-## Installation dans le dossier existant du site
+Il s’agit d’une version complète, et non d’un petit correctif à imbriquer dans l’ancien projet. Gardez votre ancienne copie à part. Ne placez pas ce nouveau dossier dans l’ancien `main`, et n’ouvrez pas le dossier parent contenant plusieurs versions avec Live Server.
 
-1. Décompressez **florianvallin.zip** dans un dossier temporaire.
-2. Ouvrez votre dossier habituel du site dans VS Code : il contient `index.html`.
-3. Copiez le contenu du dossier **florianvallin** de l’archive dans ce dossier, en acceptant le remplacement des fichiers.
-4. Vérifiez l’accueil et la médiathèque avec Live Server, puis envoyez les modifications à GitHub selon votre procédure habituelle.
+Pour la publication, la source est le contenu de ce nouveau dossier. Si vous l’intégrez dans votre copie Git existante, conservez son dossier `.git` et utilisez le nettoyage des anciens fichiers fourni dans `scripts/nettoyer_ancienne_version.py` après sauvegarde de votre ancienne copie. Ce nettoyage retire notamment l’ancien `main` imbriqué et les fichiers privés remplacés par des archives chiffrées.
 
-Les références des fichiers modifiés ont été mises à jour pour renouveler le cache après publication.
+Si votre navigateur affiche encore une ancienne page pendant le test, rechargez avec **Ctrl + F5**. Pour contrôler le premier affichage clair, utilisez une fenêtre de navigation privée : votre choix sombre volontaire reste mémorisé dans votre fenêtre habituelle.
 
-## Menu
+## Ce qui est corrigé
 
-- **Explorer** regroupe Textes et Blog.
-- **Outils** reste accessible dans la navigation principale.
-- **À propos** regroupe Qui suis-je ? et FAQ.
-- Le bouton **Contactez-moi** conserve sa couleur violette.
-- Le menu mobile conserve les mêmes liens et la recherche.
+- Première visite : **mode clair**, même si Windows ou le téléphone préfère le mode sombre. La lune active le sombre ; le soleil rétablit le clair. Votre choix est mémorisé et partagé entre les pages.
+- `/blog/` : liste des **huit billets**, dont le cinéma et « Le désir nous rend-il heureux ? ». Les filtres et la recherche utilisent cette liste complète. L’ancienne adresse `/blog/tous-les-billets.html` présente la même liste.
+- `/outils/` : annuaire des cinq outils et lien vers la sauvegarde/restauration. La sauvegarde conserve son adresse propre : `/outils/sauvegarde/`.
+- `/mediatheque/` : accueil de la médiathèque, séparé de Pomodoro et des cours.
+- `/textes/` : accueil des textes, séparé des fiches individuelles.
+- Menus, ancres, liens internes et raccourcis vérifiés. Les raccourcis respectent aussi la racine de leur script dans un sous-dossier. Ils ne se déclenchent pas pendant la saisie, la composition de caractères ou la répétition d’une touche maintenue.
+- Les outils sont également accessibles depuis la recherche globale.
+- Les versions de fichiers et du cache sont renouvelées. Les anciens workers ne remplacent plus une page demandée par un autre index.
 
-## Lecteur EPUB
+Les derniers correctifs sont conservés : logo de l’artiste et icônes mobiles, modes Public/Élève/Prof, accès Notion Didier, manuels et cartes mentales élèves, recherche Milgram et recadrage PDF amélioré. Les archives privées chiffrées et les mots de passe restent identiques à ceux de la version corrigée précédente.
 
-- **Auto / 1 page / 2 pages** : le choix est disponible directement dans la barre de zoom et dans les réglages **Aa**. Il est mémorisé pour chaque livre.
-- **Pages** ouvre les miniatures. Cliquez sur une miniature pour rejoindre sa position. Les deux pages affichées sont encadrées ensemble. Le curseur **Taille** ajuste la grille ; **Aller à** permet de saisir un numéro.
-- Pour les **EPUB de texte**, les aperçus et la numérotation correspondent à l’écran, à la police, aux marges et au zoom. Le calcul est renouvelé après un changement de mise en page. Ces numéros peuvent différer d’une édition imprimée. Le mode défilement conserve des aperçus du mode paginé.
-- Pour les **livres illustrés**, choisissez le début des doubles pages : couverture seule, puis 2 + 3 ; ou dès la première page, 1 + 2. Les images panoramiques restent entières. Les indications gauche/droite du livre sont prises en compte en mode automatique.
-- Pour **associer deux pages**, cochez deux miniatures voisines, puis cliquez sur **Associer les 2 pages**. La paire est conservée après rechargement. **Dissocier**, la croix d’une paire et **Tout réinitialiser** permettent de retirer ces associations. Créer une paire en mode 1 page active l’affichage à deux pages.
-- Le **zoom** recalcule les colonnes d’un EPUB de texte. Dans un livre illustré, il agrandit les pages et permet de parcourir l’image. À 100 %, les doubles pages sont entièrement visibles.
-- **Clavier** : gauche/droite pour tourner les pages ; haut pour avancer de dix pages et bas pour reculer de dix pages. Ces touches fonctionnent aussi après un clic dans le texte du livre. Les champs de saisie gardent leurs touches habituelles.
-- Les **pages mixtes** conservent leur mise en page complète, leurs images et leurs textes superposés. Les mangas gardent leur sens de lecture ; les CBZ restent pris en charge.
-- Les moteurs de lecture sont inclus dans le site et chargés localement avec des versions fixes. Le dossier complet du lecteur pèse environ **0,85 Mo**. Vos livres restent dans le navigateur ; aucun livre importé n’est envoyé au site.
+## Raccourcis principaux
 
-Avant de changer d’appareil ou de navigateur, emportez vos livres et vos notes avec **Outils → Sauvegarde complète**.
+| Touche | Destination ou action |
+| --- | --- |
+| H | Accueil |
+| T | Textes |
+| B | Tous les billets du blog |
+| P | Pomodoro |
+| C | Contact |
+| R | Recherche du site |
+| D | Dictionnaires |
+| S | S’identifier / espace élève |
+| Alt + C | Médiathèque |
+| Alt + L | Bibliothèque de lecture |
+| Alt + A | Art |
+| Alt + P | Boussole philosophique |
+| Alt + M | Boussole mythologique |
+| Alt + B | Boussole biblique |
+| Maj + ? | Aide des raccourcis |
+| Alt + Maj + ? | Aide complète |
 
-## Vérifications de cette mise à jour
+## Contrôles avant publication
 
-- Contrôle des 354 pages, des liens locaux, de la syntaxe JavaScript et des empreintes des archives privées : aucune erreur ni note.
-- Tests publics : offres du formulaire, liens des cinq outils et séparation des ressources publiques et personnelles.
-- Essais dans Chromium sur des écrans de 320 à 1 440 pixels : header, menus, recherche, filtres et ouverture de l’accès élève.
-- Chargement ralenti simulé : les emplacements de la médiathèque restent affichés jusqu’à la fin de l’initialisation. Un échec du script propose de réessayer.
+Dans le terminal de VS Code, à la racine du nouveau dossier :
 
+```text
+python scripts/verifier_site.py --require-node
+node scripts/tests_public.mjs
+node scripts/tests_navigation.mjs
+```
+
+Ces commandes vérifient les fichiers, les liens, les index de rubriques, la liste complète des billets, les ancres, la syntaxe JavaScript, les archives chiffrées et les comportements du thème et des raccourcis. Le contrôle GitHub fourni les exécutera aussi avant la publication.
+
+Une vérification visuelle finale avec Live Server reste nécessaire : ces contrôles automatiques ne remplacent pas l’observation du site dans un navigateur.

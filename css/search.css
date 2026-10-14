@@ -20,3 +20,17 @@
   .site-search-field kbd { display:none; }
   .site-search-result { padding-right:32px; }
 }
+
+/* PHILOSOPHAL DARK V1 */
+@media screen {
+html[data-site-theme="dark"] .site-search-head span{color:#afa3d7}
+html[data-site-theme="dark"] .site-search-field:focus-within{outline:2px solid #584587}
+html[data-site-theme="dark"] .site-search-field kbd{color:#bbb5c5}
+html[data-site-theme="dark"] .site-search-hints button{color:#b3a5d5}
+html[data-site-theme="dark"] .site-search-status{color:#bbb5c5}
+html[data-site-theme="dark"] .site-search-result-type{color:#afa3d7}
+html[data-site-theme="dark"] .site-search-result small{color:#bbb5c5}
+html[data-site-theme="dark"] .site-search-result p{color:#bbb5c5}
+html[data-site-theme="dark"] .site-search-result mark{color:#bba6d3;background:#20182b}
+html[data-site-theme="dark"] .site-search-result:focus-visible,html[data-site-theme="dark"] .site-search-close:focus-visible,html[data-site-theme="dark"] .site-search-hints button:focus-visible{outline:3px solid #584587}
+}
