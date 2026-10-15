@@ -20,13 +20,13 @@ Ce résultat a été obtenu grâce au [[fmt:green]]financement[[/fmt]] (plusieur
 
 On va avoir [[fmt:yellow]]l’organisation HUGO[[/fmt]] qui va mener ces recherches sur les génomes (Human Genom Organisation).
 
-Comment arriver à un tel financement ? On sait depuis les années 50, beaucoup d’argent est distribué dans les [[fmt:yellow]]sciences nucléaires [[/fmt]]et [[fmt:yellow]]autre physique [[/fmt]](qui sont très couteux). Par exemple, le MHC (Suisse) à couter du point de vue e al construction représente 4,5Milliard et annuellement 1 Milliard.
+Comment arriver à un tel financement ? On sait depuis les années 50, beaucoup d’argent est distribué dans les [[fmt:yellow]]sciences nucléaires [[/fmt]]et [[fmt:yellow]]autre physique [[/fmt]](qui sont très couteux). Par exemple, le MHC (Suisse) à couter du point de vue e al construction représente 4,5Milliard et annuellement 1 Milliard.
 
 On va avoir une [[fmt:yellow]]course engagé[[/fmt]] a partir de [[fmt:red]]95’[[/fmt]] entre une entreprise privé et cette organisation. Le premier qui arrive au résultat va dire si la connaissance sera privée ou public. C’est ce qui explique pourquoi on va avoir des niveaux de financement qui augmente. Les deux équipe sont arrivé au résultat a quelques semaines d’écart.
 
 ### [[fmt:underline,green-text]]Facteurs juridique[[/fmt]]
 
-On voit donc une reslation forte entre les investissements et les recherches produites. Ce n’est pas pourtant nécessairement en donnant de l’argent qu’on va avoir un résultat scientifique. Il n’y a [[fmt:yellow]]pas de détermination [[/fmt]]des connaissances scientifiques [[fmt:yellow]]par l’argent[[/fmt]]. Il y a une [[fmt:green]]relation de conditionnement[[/fmt]]. (Certains domaines avec une somme d’argent importante n’ont pas donné de résultat). On a donc un [[fmt:yellow]]contexte favorable[[/fmt]] (pas de liens nécessaire entre la cause et la conséquence, on offre la possibilité mais pas la nécessité d’avoir un résultat) (ex : thèse onde / particule → patine sur le sujet depuis les années 20’, pas d’avancer significative).
+On voit donc une reslation forte entre les investissements et les recherches produites. Ce n’est pas pourtant nécessairement en donnant de l’argent qu’on va avoir un résultat scientifique. Il n’y a [[fmt:yellow]]pas de détermination [[/fmt]]des connaissances scientifiques [[fmt:yellow]]par l’argent[[/fmt]]. Il y a une [[fmt:green]]relation de conditionnement[[/fmt]]. (Certains domaines avec une somme d’argent importante n’ont pas donné de résultat). On a donc un [[fmt:yellow]]contexte favorable[[/fmt]] (pas de liens nécessaire entre la cause et la conséquence, on offre la possibilité mais pas la nécessité d’avoir un résultat) (ex : thèse onde / particule → patine sur le sujet depuis les années 20’, pas d’avancer significative).
 
 Parfois, [[fmt:green]]l’origine douteuse des financements[[/fmt]] peut avoir un impact sur le résultat. [[fmt:pink]]Rylander[[/fmt]][[fmt:pink]] [[/fmt]]va par exemple attaquer [[fmt:pink]]Niethelm[[/fmt]][[fmt:pink]] [[/fmt]]et [[fmt:pink]]Rielle[[/fmt]][[fmt:pink]] [[/fmt]]car il s’attaquait à son travail pour diffamation. Le comportement déviant de ce chercheur va être sanctionné (pour le caractère nocif du tabac) avec plusieurs milliers de dollars. Lorsqu’il y a une [[fmt:green]]transgression[[/fmt]], on peut arriver à un [[fmt:yellow]]cas de sanction[[/fmt]] y compris devant les tribunaux. La science ne la désengage pas, c’est une production contextualisé qui peut interagir sur différent plans (économique, juridique…).
 
@@ -34,7 +34,7 @@ Parfois, [[fmt:green]]l’origine douteuse des financements[[/fmt]] peut avoir u
 
 On a une [[fmt:yellow]]différence[[/fmt]] entre la science fondamentale, la science appliqué et le développement.
 
-Comment se fait-il qu’un pays met de l’argent dans un projet ? Tout [[fmt:yellow]]dépend de l’influence[[/fmt]], de l’intérêt, des idéologies qui vont naitre de l’un de ces pôles. En 2000, il y a eu une poussée, une revendication de la rechercher appliqué par rapport à la recherche fondamentale.
+Comment se fait-il qu’un pays met de l’argent dans un projet ? Tout [[fmt:yellow]]dépend de l’influence[[/fmt]], de l’intérêt, des idéologies qui vont naitre de l’un de ces pôles. En 2000, il y a eu une poussée, une revendication de la rechercher appliqué par rapport à la recherche fondamentale.
 
 On a une idée d’association entre les chercheurs & les entreprises pour avoir de meilleurs résultats. On cherche à rapprocher le monde industriel et le monde économique.
 
@@ -60,6 +60,6 @@ S’il y a des [[fmt:green]]groupes sociaux[[/fmt]], il y a des [[fmt:yellow]]no
 
 Les [[fmt:green]]sociologues[[/fmt]] ont de bonnes raisons de s’intéresser aux [[fmt:yellow]]sciences[[/fmt]][[fmt:yellow]] et techniques[[/fmt]] car on a des [[fmt:yellow]]influences de la société[[/fmt]] toute entière. Un seul sujet (assez petit) arrive à réunir toutes les perspectives classiques de la sociologie en général.
 
-Qu’est-ce qui fait la différence entre le texte technophile et technophobe ? Ce n’est pas l’aspect qui permet de savoir l’intérieur du texte. C’est par nous même que l’on arriverait à faire du [[fmt:yellow]]tri entre les discours[[/fmt]]. Il y a que nous qui avons le [[fmt:yellow]]pouvoir de critiqué[[/fmt]] et à formuler des objections contre la thèse d’un auteur. On forme la critique on rassemblant des éléments pour savoir si c’est nous ou l’auteur qui a raison. Nous serons comme cela toujours en mesure de trouver un point de vue très précis sur la chose.
+Qu’est-ce qui fait la différence entre le texte technophile et technophobe ? Ce n’est pas l’aspect qui permet de savoir l’intérieur du texte. C’est par nous même que l’on arriverait à faire du [[fmt:yellow]]tri entre les discours[[/fmt]]. Il y a que nous qui avons le [[fmt:yellow]]pouvoir de critiqué[[/fmt]] et à formuler des objections contre la thèse d’un auteur. On forme la critique on rassemblant des éléments pour savoir si c’est nous ou l’auteur qui a raison. Nous serons comme cela toujours en mesure de trouver un point de vue très précis sur la chose.
 
 Il faut que l’on nous fasse cette héritage.

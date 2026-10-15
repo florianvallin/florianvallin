@@ -19,6 +19,9 @@ jobs:
           python3 scripts/verifier_site.py --require-node
           node scripts/tests_public.mjs
           node scripts/tests_navigation.mjs
+          node scripts/tests_quality.mjs
+          node scripts/test_integrite_textes.mjs
+          python3 scripts/auditer_qualite.py
   publication:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: verification

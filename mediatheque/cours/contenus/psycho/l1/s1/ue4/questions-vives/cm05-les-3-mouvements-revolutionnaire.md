@@ -30,10 +30,10 @@ Elle a pour conséquence de nous questionner sur la question du parent: mère es
 
 Ces révolutions ont des conséquences sur la précarité des couples. Il y a également des conséquences d’éloignement de leurs enfant (les pères sont les perdant, les enfants vont plus rester avec la mère). Il y a une constellation familiale (je dois gérer les relations avec la personne). La famille est profondément transformé (reconstitution…).
 
-Il y a 3 caractéristiques de la famille contemporaine ([[fmt:pink]]Durkheim[[/fmt]])
+Il y a 3 caractéristiques de la famille contemporaine ([[fmt:pink]]Durkheim[[/fmt]])
 
-- [[fmt:green]]Relationnel[[/fmt]] : basé sur leurs identité
+- [[fmt:green]]Relationnel[[/fmt]] : basé sur leurs identité
 
-- [[fmt:green]]Individualiste[[/fmt]] : individu respecté
+- [[fmt:green]]Individualiste[[/fmt]] : individu respecté
 
-- [[fmt:green]]Paradoxe[[/fmt]] : se privatise / se socialise
+- [[fmt:green]]Paradoxe[[/fmt]] : se privatise / se socialise

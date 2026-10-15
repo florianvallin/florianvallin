@@ -1,7 +1,7 @@
 /* Médiathèque V33 — bibliothèque claire. Les vues de contenu existantes sont conservées. */
 @font-face {
   font-family: "Manrope";
-  src: url("./fonts/Manrope-Variable.ttf") format("truetype");
+  src: url("./fonts/Manrope-Variable.woff2") format("woff2");
   font-style: normal;
   font-weight: 200 800;
   font-display: optional;

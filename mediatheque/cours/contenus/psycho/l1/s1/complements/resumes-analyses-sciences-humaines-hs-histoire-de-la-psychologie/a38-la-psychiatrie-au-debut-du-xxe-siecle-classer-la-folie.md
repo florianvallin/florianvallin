@@ -22,12 +22,12 @@ Les [[fmt:green]]approches[[/fmt]] se multiplient, mais l’idée [[fmt:green]]d
 
 [[fmt:pink]]C.Beers[[/fmt]] (1876-1943) (ancien interné) donne une légitimité à la réhabilitation du malade. Mais les partisans de l’hygiène mentale comme [[fmt:pink]]E.Toulouse[[/fmt]] axent discours sur prévention des troubles mentaux & dépistage généralisé. Il ne faut pas oublier la dimension éthique quant au métier de psychiatre.
 
-[[fmt:underline,green-text]]J-C.Coffin[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]]prof Paris-V. La Transmission de la folie.
+[[fmt:underline,green-text]]J-C.Coffin[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]]prof Paris-V. La Transmission de la folie.
 
-[[fmt:underline,green-text]]Eugen Bleuler (1857-1939) :[[/fmt]][[fmt:green-text]] [[/fmt]]prof de psychiatrie & directeur de la clinique du Burgholzli. Propose terme de schizophrène (voit grand variable de l’état schizophrène) & autisme. Ces idées sont discutés fin des années 20 (aujourd’hui, schizophrénie renverrait à la folie).
+[[fmt:underline,green-text]]Eugen Bleuler (1857-1939) :[[/fmt]][[fmt:green-text]] [[/fmt]]prof de psychiatrie & directeur de la clinique du Burgholzli. Propose terme de schizophrène (voit grand variable de l’état schizophrène) & autisme. Ces idées sont discutés fin des années 20 (aujourd’hui, schizophrénie renverrait à la folie).
 
-[[fmt:underline,green-text]]Patients célèbre : [[/fmt]][[fmt:underline,green-text]]Phineas[[/fmt]][[fmt:underline,green-text]] Gage (1848)[[/fmt]][[fmt:green-text]] [[/fmt]]: barre de fer traverse son crâne de part en part. Il survit mais devient incapable de respecter usages sociaux, émotions.
+[[fmt:underline,green-text]]Patients célèbre : [[/fmt]][[fmt:underline,green-text]]Phineas[[/fmt]][[fmt:underline,green-text]] Gage (1848)[[/fmt]][[fmt:green-text]] [[/fmt]]: barre de fer traverse son crâne de part en part. Il survit mais devient incapable de respecter usages sociaux, émotions.
 
-[[fmt:underline,green-text]]« [[/fmt]][[fmt:underline,green-text]]M.Tan[[/fmt]][[fmt:underline,green-text]] » :[[/fmt]][[fmt:green-text]] [[/fmt]]Aphasique qui ne peut dire la syllabe « tan ».
+[[fmt:underline,green-text]]« [[/fmt]][[fmt:underline,green-text]]M.Tan[[/fmt]][[fmt:underline,green-text]] » :[[/fmt]][[fmt:green-text]] [[/fmt]]Aphasique qui ne peut dire la syllabe « tan ».
 
-[[fmt:underline,green-text]]H.M. :[[/fmt]][[fmt:green-text]] [[/fmt]]homme devenu incapable d’enregistrer un nouveau souvenir (50’). Vu par psychologue Brenda Milner. Il ne se souvenait pas l’avoir rencontrer durant les trois décennies qu’il l’a vu.
+[[fmt:underline,green-text]]H.M. :[[/fmt]][[fmt:green-text]] [[/fmt]]homme devenu incapable d’enregistrer un nouveau souvenir (50’). Vu par psychologue Brenda Milner. Il ne se souvenait pas l’avoir rencontrer durant les trois décennies qu’il l’a vu.

@@ -2,25 +2,25 @@
 
 ## [[fmt:red-text]]Erreurs, réalité & interprétation[[/fmt]]
 
-Une illusion visuelle est-elle une erreur perceptive ?
+Une illusion visuelle est-elle une erreur perceptive ?
 
 On ne va pas l’interpréter comme une erreur d’interprétation. On fonctionne normalement, c’est l’environnement qui n’est pas adapté. Notre système fonctionne parfaitement.
 
-[[fmt:underline]]Bibliographie :[[/fmt]]
+[[fmt:underline]]Bibliographie :[[/fmt]]
 
 - L’homme qui prenait sa femme pour un chapeau, Olivier Sacks (neurologue, étude sur l’incapacité à reconnaitre un objet)
 
 - Une anthropologue sur Mars, Olivier Sacks (peintre qui perd la perception de la couleur)
 
-- L’essentiel Cerveau & Psycho, Les illusions : pourquoi le cerveau se trompe
+- L’essentiel Cerveau & Psycho, Les illusions : pourquoi le cerveau se trompe
 
 - Akiyoshi’s illysion page (www.ritsumei.ac.jp/~akitaoka/index-e.html)
 
 - Michael Bach ([www.michaelbach.de/at/](http://www.michaelbach.de/at/))
 
-## [[fmt:underline,red-text]]Introdu[[/fmt]][[fmt:underline,red-text]]ction : qu’est-ce que la perception ?[[/fmt]]
+## [[fmt:underline,red-text]]Introdu[[/fmt]][[fmt:underline,red-text]]ction : qu’est-ce que la perception ?[[/fmt]]
 
-Le problème ne vient pas du système perceptif. Comment se construit la perception ?
+Le problème ne vient pas du système perceptif. Comment se construit la perception ?
 
 La [[fmt:green]]perception[[/fmt]] est un [[fmt:yellow]]accès au monde[[/fmt]]. On peut penser que c’est accès à la réalité du monde. La perception doit extraire les invariants de manière de les représenter à nous et de pouvoir les utiliser. Le monde est une création, une construction de notre environnement.
 
@@ -34,7 +34,7 @@ La [[fmt:green]]perception des couleurs[[/fmt]] ne dépend pas juste de l’imag
 
 La perception de la [[fmt:yellow]]couleur du poisson[[/fmt]] est construite par [[fmt:green]]l’environnement[[/fmt]] dans lequel on le voit. Pourtant, le poisson du haut est pareil en haut qu’en bas. Pourtant on va croire qu’ils sont différents.
 
-Mais à quoi ça sert ?
+Mais à quoi ça sert ?
 
 Cette illusion est un [[fmt:green]]phénomène normal[[/fmt]]. Par exemple, la couleur de notre t-shirt est la même le [[fmt:yellow]]jour [[/fmt]]et la [[fmt:yellow]]nuit [[/fmt]]et pourtant, c’est toujours la [[fmt:green]]même couleur[[/fmt]].
 
@@ -68,15 +68,15 @@ Perception = sens * connaissances.
 
 Ce n’est pas une fenêtre sur la réalité, c’est une reconstruction plausible de la réalité.
 
-La [[fmt:green]]construction[[/fmt]] est [[fmt:yellow]]purement [[/fmt]][[fmt:yellow]]individuelle[[/fmt]]. Cela veut dire qu’il y a autant de réalité que de monde. Donc on peut se dire : avons-nous la même réalité ? A-t-on besoin d’une représentation véridique du monde réel ?
+La [[fmt:green]]construction[[/fmt]] est [[fmt:yellow]]purement [[/fmt]][[fmt:yellow]]individuelle[[/fmt]]. Cela veut dire qu’il y a autant de réalité que de monde. Donc on peut se dire : avons-nous la même réalité ? A-t-on besoin d’une représentation véridique du monde réel ?
 
 Cf. Le monde animaux et monde humain (JV Uexkull) (monde que la perception des animaux n’est pas la mêmes entre eux et que nous).
 
-## [[fmt:underline,red-text]]Monde rétinien – monde perçus ?[[/fmt]]
+## [[fmt:underline,red-text]]Monde rétinien – monde perçus ?[[/fmt]]
 
 Un objet est quelque chose que l’on va déconstruire.
 
-On pense que l’on a un monde net. Nous avons une expérience qui fait que l’on croit qu’on a un monde :
+On pense que l’on a un monde net. Nous avons une expérience qui fait que l’on croit qu’on a un monde :
 
 - Net
 
@@ -90,11 +90,11 @@ Pourtant ce n’est pas le cas.
 
 Nous somme [[fmt:yellow]]achromate[[/fmt]], [[fmt:yellow]]ultra-myope[[/fmt]].
 
-[[fmt:underline]]Expérience 1 :[[/fmt]]
+[[fmt:underline]]Expérience 1 :[[/fmt]]
 
-[[fmt:yellow]]Matériel[[/fmt]] : yeux, crayons de couleurs et un partenaire compréhensif
+[[fmt:yellow]]Matériel[[/fmt]] : yeux, crayons de couleurs et un partenaire compréhensif
 
-[[fmt:yellow]]Méthode[[/fmt]] : fixez droit devant vous, sans bouger ni la tête ni les yeux. Votre partenaire vous montre un crayon et vous devenir sa valeur. Il peut mettre en face de vous (facile), a 45° (moins facile) et sur le côté, 80° (impossible).
+[[fmt:yellow]]Méthode[[/fmt]] : fixez droit devant vous, sans bouger ni la tête ni les yeux. Votre partenaire vous montre un crayon et vous devenir sa valeur. Il peut mettre en face de vous (facile), a 45° (moins facile) et sur le côté, 80° (impossible).
 
 On perçoit la couleur qu’au centre de notre regard, tout le reste est en noir et blanc.
 
@@ -102,7 +102,7 @@ Les cônes sont les seuls photorécepteurs actifs pendant la journée. IL en exi
 
 Les cônes ne sont situés que dans la [[fmt:yellow]]partie centrale de la rétine.[[/fmt]]
 
-[[fmt:underline]]Expérience 2 :[[/fmt]] (dépend de la distance à l’écran)
+[[fmt:underline]]Expérience 2 :[[/fmt]] (dépend de la distance à l’écran)
 
 On a deux croix, une avec une croix simple et une avec une croix et rond. On va fixer la croix simple pendant une trentaine de seconde et on va ensuite regarder l’autre.
 
@@ -110,9 +110,9 @@ On va créer la crée et ne plus voir le rond. On va remplir la croix, on a un m
 
 Le [[fmt:green]]monde n’est pas net[[/fmt]]. On considère qu’on est [[fmt:yellow]]mal voyant[[/fmt]]. L’information arrive à notre cerveau n’est pas net.
 
-[[fmt:underline]]Expérience 3 :[[/fmt]][[fmt:underline]] Grille d’Hermann[[/fmt]]
+[[fmt:underline]]Expérience 3 :[[/fmt]][[fmt:underline]] Grille d’Hermann[[/fmt]]
 
-Notre environnement n’est également pas stable. Notre perception du monde à changer. On va avoir de temps en temps un faux mouvement. Notre œil bouge (ex : si on ferme un œil et qu’on touche l’autre œil, on va voir que notre vision bouge réellement). On a donc des [[fmt:yellow]]mouvements oculaires[[/fmt]]. On a besoin de ces mouvements parce que nous sommes aveugles, achromate, on a besoin de ces mouvements pour avoir la couleur & l’entièreté du monde.
+Notre environnement n’est également pas stable. Notre perception du monde à changer. On va avoir de temps en temps un faux mouvement. Notre œil bouge (ex : si on ferme un œil et qu’on touche l’autre œil, on va voir que notre vision bouge réellement). On a donc des [[fmt:yellow]]mouvements oculaires[[/fmt]]. On a besoin de ces mouvements parce que nous sommes aveugles, achromate, on a besoin de ces mouvements pour avoir la couleur & l’entièreté du monde.
 
 Nous n’avons pas conscience du mouvement de l’œil.
 
@@ -126,23 +126,23 @@ C’est [[fmt:green]]l’esprit[[/fmt]] qui crée le [[fmt:yellow]]mouvement de 
 
 Le [[fmt:green]]mouvement[[/fmt]] est une [[fmt:yellow]]propriété propre[[/fmt]]. Parfois, on va s’empêcher de percevoir du mouvement. On a des mécanismes qui vont supprimer l’information que l’œil bouge.
 
-Quand on bouge notre œil, tout notre [[fmt:green]]environnement[[/fmt]] est [[fmt:green]]flou[[/fmt]]. Il existe un ou des mécanismes qui [[fmt:yellow]]supprime la perception[[/fmt]] pendant la saccade ou qui annule l’effet du déplacement de l’œil sur l’image rétinienne. On a des hypothèses :
+Quand on bouge notre œil, tout notre [[fmt:green]]environnement[[/fmt]] est [[fmt:green]]flou[[/fmt]]. Il existe un ou des mécanismes qui [[fmt:yellow]]supprime la perception[[/fmt]] pendant la saccade ou qui annule l’effet du déplacement de l’œil sur l’image rétinienne. On a des hypothèses :
 
-- [[fmt:yellow]]Perception visuelle [[/fmt]]: le mouvement global des champs visuels peut servir d’estimation du mouvement et éventuellement compenser le mouvement de l’œil (illusion du train)
+- [[fmt:yellow]]Perception visuelle [[/fmt]]: le mouvement global des champs visuels peut servir d’estimation du mouvement et éventuellement compenser le mouvement de l’œil (illusion du train)
 
-- [[fmt:yellow]]Proprioception [[/fmt]]: sensibilité aux élongations des muscles et tendons oculomoteurs. C’est une information de la position de l’œil, donc de la différence de position donc du déplacement (on peut donc compenser)
+- [[fmt:yellow]]Proprioception [[/fmt]]: sensibilité aux élongations des muscles et tendons oculomoteurs. C’est une information de la position de l’œil, donc de la différence de position donc du déplacement (on peut donc compenser)
 
-- [[fmt:yellow]]Prédiction [[/fmt]]: une copie de la commande motrice est envoyée afin d’anticiper les conséquences du mouvement (chatouille)
+- [[fmt:yellow]]Prédiction [[/fmt]]: une copie de la commande motrice est envoyée afin d’anticiper les conséquences du mouvement (chatouille)
 
 Ces mécanismes peuvent collaborer ensemble.
 
-## [[fmt:underline,red-text]]Un objet : une mosaïque de couleur et de traits[[/fmt]]
+## [[fmt:underline,red-text]]Un objet : une mosaïque de couleur et de traits[[/fmt]]
 
 Il n’y a [[fmt:yellow]]jamais deux fois[[/fmt]] un objet qui se présente de la même manière à nous.
 
-C’est quoi un objet ?
+C’est quoi un objet ?
 
-Nous sommes [[fmt:green]]incapables[[/fmt]] de voir les [[fmt:yellow]]anges [[/fmt]]et la [[fmt:yellow]]chauve-souris [[/fmt]]en même temps. Mais qu’est-ce qu’un objet ? Le problème est que deux objets [[fmt:yellow]]partagent un contour[[/fmt]].
+Nous sommes [[fmt:green]]incapables[[/fmt]] de voir les [[fmt:yellow]]anges [[/fmt]]et la [[fmt:yellow]]chauve-souris [[/fmt]]en même temps. Mais qu’est-ce qu’un objet ? Le problème est que deux objets [[fmt:yellow]]partagent un contour[[/fmt]].
 
 Un objet est un contour avec des [[fmt:yellow]]frontières [[/fmt]]et des [[fmt:yellow]]propriétés à l’intérieur[[/fmt]]. Pour construire un objet, cela ne vient pas immédiatement, on va avoir un ensemble de propriété. Dans nos vies de tous les jours, il y a plusieurs qui se cache et qu’on ne voit pas. Nous voyons des lignes que nous continuons mentalement. Par exemple, on peut voir des personnes assises sans voir les jambes mais nous les continuons.
 
@@ -150,7 +150,7 @@ On va croire que l’intérieur est orange et que l’extérieur est blanc, mais
 
 On est capable de mesurer  ces phénomènes.
 
-Percevoir n’est pas voir mais construire un monde à partir de nos sensations. Mais [[fmt:yellow]]comment se construit la[[/fmt]] [[fmt:green]]perception[[/fmt]] ? On va d’abord extraire le [[fmt:yellow]]contour[[/fmt]] (ils suffisent pour comprendre l’objet) de l’objet et voir sa surface (avec l’ajout de propriété (taille, couleur, forme, utilisation…)).
+Percevoir n’est pas voir mais construire un monde à partir de nos sensations. Mais [[fmt:yellow]]comment se construit la[[/fmt]] [[fmt:green]]perception[[/fmt]] ? On va d’abord extraire le [[fmt:yellow]]contour[[/fmt]] (ils suffisent pour comprendre l’objet) de l’objet et voir sa surface (avec l’ajout de propriété (taille, couleur, forme, utilisation…)).
 
 Cela peut nous permettre de comprendre certaines pathologies. Certains sujets vont avoir du mal à reconnaitre l’objet avec le contour. On va pouvoir faire [[fmt:yellow]]tester[[/fmt]] pour comprendre les déficits de certains patients et ainsi mettre en place des mécanismes de compensation. Des sujets vont être capables de recopier des objets et le dénommer.
 
@@ -158,7 +158,7 @@ Le patient est donc capable de voir les traits mais est [[fmt:green]]incapable d
 
 Percevoir n’est pas voir mais construire un monde à partir de nos sensations Si une [[fmt:yellow]]étape de la construction est déficiente[[/fmt]], c’est de [[fmt:green]]l’agnosie perceptive[[/fmt]] (=caractérisée par une incapacité à reconnaitre visuellement les objets malgré une connaissance des caractéristiques de ces objets et une reconnaissance tactile ou auditive de ces objets, trouble purement visuel).
 
-EXAMEN, il faut savoir :
+EXAMEN, il faut savoir :
 
 - Décrire une illusion (manière rigoureuse et compréhensible)
 
@@ -168,11 +168,11 @@ EXAMEN, il faut savoir :
 
 - Expliquer la différence entre sensation et perception à partir des exemples présentés
 
-- En quoi cela peut aider un psychologue de connaitre les mécanismes de construction de la perception ?
+- En quoi cela peut aider un psychologue de connaitre les mécanismes de construction de la perception ?
 
-Bibliographie : L’homme qui prenant sa femme pour un chapeau
+Bibliographie : L’homme qui prenant sa femme pour un chapeau
 
-- Oliver Sack :
+- Oliver Sack :
 
 - Un marin qui, ayant perdu le sens de la continuité du temps, vit prisonnier d’un instant perpétuel
 

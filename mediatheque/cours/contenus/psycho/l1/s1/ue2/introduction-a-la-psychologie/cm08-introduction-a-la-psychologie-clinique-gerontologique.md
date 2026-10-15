@@ -2,9 +2,9 @@
 
 ## [[fmt:red-text]]Clinique gérontologique[[/fmt]]
 
-Qu’est-ce qu’on entend par la [[fmt:italic,green]]psychologie clinique[[/fmt]] ? Qu’est-ce qu’on connait comme méthode sur la psychologie du vieillissement ? Comment peut-on définir le psychisme de personnes âgées ?
+Qu’est-ce qu’on entend par la [[fmt:italic,green]]psychologie clinique[[/fmt]] ? Qu’est-ce qu’on connait comme méthode sur la psychologie du vieillissement ? Comment peut-on définir le psychisme de personnes âgées ?
 
-Objectif du cours : donner des repères sur la [[fmt:green]]Ψ gérontologiques[[/fmt]]
+Objectif du cours : donner des repères sur la [[fmt:green]]Ψ gérontologiques[[/fmt]]
 
 - La psychologie clinique & ses méthodes
 
@@ -18,11 +18,11 @@ La [[fmt:italic]]psychologie[[/fmt]] est une [[fmt:green]]étude du psychisme[[/
 
 ### [[fmt:underline,green-text]]Les comportements comme source de la Ψ clinique[[/fmt]]
 
-Comment on va pouvoir [[fmt:yellow]]mesurer [[/fmt]]/ [[fmt:yellow]]observer [[/fmt]]ce qu’il se passe dans la [[fmt:green]]boite noire[[/fmt]] ?
+Comment on va pouvoir [[fmt:yellow]]mesurer [[/fmt]]/ [[fmt:yellow]]observer [[/fmt]]ce qu’il se passe dans la [[fmt:green]]boite noire[[/fmt]] ?
 
 Les [[fmt:yellow]]comportements[[/fmt]] peuvent renvoyer au [[fmt:green]]langage[[/fmt]].
 
-La [[fmt:green]]psychologie clinique[[/fmt]] (sous discipline de la Ψ) veut littéralement dire « [[fmt:yellow]]au chevet du patient[[/fmt]] ». On va donc aider la personne [[fmt:yellow]]malade[[/fmt]] (=ensemble des personnes qui souffrent d’une pathologie : maladie psychiatrique, maladie neurologique, maladie somatique (du corps), maladie chronique…).
+La [[fmt:green]]psychologie clinique[[/fmt]] (sous discipline de la Ψ) veut littéralement dire « [[fmt:yellow]]au chevet du patient[[/fmt]] ». On va donc aider la personne [[fmt:yellow]]malade[[/fmt]] (=ensemble des personnes qui souffrent d’une pathologie : maladie psychiatrique, maladie neurologique, maladie somatique (du corps), maladie chronique…).
 
 ### [[fmt:underline,green-text]]Les méthodes utilisées[[/fmt]]
 
@@ -62,7 +62,7 @@ Les échelles d’évaluations sont standardisées. Les données restent essenti
 
 Les [[fmt:green]]tests psychométriques[[/fmt]] caractérisent l’individu par rapport à une [[fmt:yellow]]norme[[/fmt]] (la WAIS). Elle renvoie aux questions du [[fmt:yellow]]normal[[/fmt]] & du [[fmt:yellow]]pathologique[[/fmt]].
 
-On a besoin de savoir si la personne à un état « normal » ou « pathologique » pour ensuite crée un diagnostic.
+On a besoin de savoir si la personne à un état « normal » ou « pathologique » pour ensuite crée un diagnostic.
 
 Le psychologue doit avoir une connaissance globale de toutes les méthodes pour ensuite pouvoir [[fmt:yellow]]s’adapter[[/fmt]] en fonction de ce qu’il a besoin.
 
@@ -86,17 +86,17 @@ C’est un phénomène [[fmt:yellow]]lent[[/fmt]] & [[fmt:yellow]]progressif[[/f
 
 ### [[fmt:underline,green-text]]Les caractéristiques de la vieillesse[[/fmt]]
 
-A partir de quel âge peut-on dire qu’une personne est âgée ?
+A partir de quel âge peut-on dire qu’une personne est âgée ?
 
-Les définitions changent en fonction de plusieurs choses :
+Les définitions changent en fonction de plusieurs choses :
 
-- OMS : 65 ans et +
+- OMS : 65 ans et +
 
-- Définition sociale : retraite
+- Définition sociale : retraite
 
-- Age moyen constaté dans les institutions gérontologie : 85 ans et +
+- Age moyen constaté dans les institutions gérontologie : 85 ans et +
 
-Il y a ainsi [[fmt:yellow]]4 types d’âge[[/fmt]] :
+Il y a ainsi [[fmt:yellow]]4 types d’âge[[/fmt]] :
 
 - Age chronologique
 
@@ -112,27 +112,27 @@ On va avoir des stéréotypes sur les personnes âgés. On va avoir un nombre de
 
 L’une des premières théories est le [[fmt:yellow]]modèle[[/fmt]][[fmt:yellow]] de développement[[/fmt]] [[fmt:pink]]d’Erikson[[/fmt]]. Il dit qu’on est dans un [[fmt:green]]processus évolutif[[/fmt]] qui passe par un certains nombres de stades / étapes qu’on peut définir.
 
-- [[fmt:yellow]]Enfance [[/fmt]]: apprendre à faire confiance quand il y a frustration
+- [[fmt:yellow]]Enfance [[/fmt]]: apprendre à faire confiance quand il y a frustration
 
-- [[fmt:yellow]]Adolescence [[/fmt]]: trouver sa propre identité
+- [[fmt:yellow]]Adolescence [[/fmt]]: trouver sa propre identité
 
-- [[fmt:yellow]]Age adulte [[/fmt]]: intimité, partage des premiers sentiments
+- [[fmt:yellow]]Age adulte [[/fmt]]: intimité, partage des premiers sentiments
 
-- [[fmt:yellow]]Age [[/fmt]][[fmt:yellow]]mû[[/fmt]][[fmt:yellow]]r [[/fmt]]: produire de nouvelles activités quand les anciennes sont dépassées
+- [[fmt:yellow]]Age [[/fmt]][[fmt:yellow]]mû[[/fmt]][[fmt:yellow]]r [[/fmt]]: produire de nouvelles activités quand les anciennes sont dépassées
 
-- [[fmt:yellow]]Age avancé [[/fmt]]: terminer sa vie
+- [[fmt:yellow]]Age avancé [[/fmt]]: terminer sa vie
 
 ### [[fmt:underline,green-text]]Typologies de vieillissement[[/fmt]]
 
 On peut ainsi [[fmt:green]]différencier le vieillissement[[/fmt]] normal / pathologique / réussi et optimal.
 
-- [[fmt:yellow]]Vieillissement normal [[/fmt]]: ensemble des processus moléculaires, histologiques et psychologiques qui accompagnent l’avancée en âge
+- [[fmt:yellow]]Vieillissement normal [[/fmt]]: ensemble des processus moléculaires, histologiques et psychologiques qui accompagnent l’avancée en âge
 
-- [[fmt:yellow]]Vieillissement pathologique [[/fmt]]: pathologies propres au vieillissement (notamment démences)
+- [[fmt:yellow]]Vieillissement pathologique [[/fmt]]: pathologies propres au vieillissement (notamment démences)
 
-- [[fmt:yellow]]Vieillissement réussi [[/fmt]]: vieillissement adapté aux difficultés rencontrées
+- [[fmt:yellow]]Vieillissement réussi [[/fmt]]: vieillissement adapté aux difficultés rencontrées
 
-- [[fmt:yellow]]Vieillissement optimal [[/fmt]]: concerne les performances identiques ou supérieures à des sujets plus jeunes et de même niveau d’éducation
+- [[fmt:yellow]]Vieillissement optimal [[/fmt]]: concerne les performances identiques ou supérieures à des sujets plus jeunes et de même niveau d’éducation
 
 [[fmt:green]]L’hétérogénéité[[/fmt]] est une question fondamentale. Le vieillissement va approfondir l’hétérogénéité.
 

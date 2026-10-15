@@ -1,7 +1,7 @@
 (() => {
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
-  script.src = new URL("site-tools.js?v=20261014-navigation1", document.currentScript.src).href;
+  script.src = new URL("site-tools.js?v=20261014-audit1", document.currentScript.src).href;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -503,7 +503,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = new URL("site-search-data.js?v=20261014-navigation1", document.querySelector('script[src*="js/script.js"]').src).href;
+        script.src = new URL("site-search-data.js?v=20261014-audit1", document.querySelector('script[src*="js/script.js"]').src).href;
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = () => { script.remove(); reject(new Error("site-search-data")); };
         document.head.append(script);

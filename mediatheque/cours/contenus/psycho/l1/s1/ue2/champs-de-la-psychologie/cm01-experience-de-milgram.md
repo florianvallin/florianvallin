@@ -2,13 +2,13 @@
 
 ## [[fmt:bold,red-text]]et[[/fmt]][[fmt:bold,red-text]] champs[[/fmt]]
 
-[[fmt:bold]]	[[/fmt]][[fmt:bold,green]]Psychologie sociale :[[/fmt]][[fmt:bold]] [[/fmt]]Elle étudie les comportements sociaux, les influences, le contexte sociale lointain … Nos comportements sont influencé par le contexte social même dans le contexte privé (dût à son appartenance sociale et à ces conditions). Elle se rapproche fortement de la sociologie.
+[[fmt:bold]]	[[/fmt]][[fmt:bold,green]]Psychologie sociale :[[/fmt]][[fmt:bold]] [[/fmt]]Elle étudie les comportements sociaux, les influences, le contexte sociale lointain … Nos comportements sont influencé par le contexte social même dans le contexte privé (dût à son appartenance sociale et à ces conditions). Elle se rapproche fortement de la sociologie.
 
 ## [[fmt:bold,underline,red-text]]Stanley Milgram et l’Obéissance[[/fmt]]
 
 ## [[fmt:bold,underline,red-text]]Imaginez que...[[/fmt]]
 
-[[fmt:bold,yellow]]Expérience de Milgram :[[/fmt]]
+[[fmt:bold,yellow]]Expérience de Milgram :[[/fmt]]
 
 Trois personnes présentes pour l’expérience
 
@@ -24,13 +24,13 @@ La seul personne choisit est en réalité un [[fmt:bold,yellow]]candidat[[/fmt]]
 
 Le professeur va donc s’assoir sur sa chaise et réciter à l’élève [[fmt:bold,yellow]]des paires de mots[[/fmt]] (ciel > bleu…). L’élève va devoir [[fmt:bold,yellow]]retenir chaque association de mots[[/fmt]][[fmt:yellow]].[[/fmt]]
 
-Après avoir retenu, l’élève va être soit disant tester. Le professeur va donc dire « ciel » et l’élève aura un choix de réponse ou il devra choisir parmi 4 propositions. Si la réponse est juste, la personne passe à la question suivante jusqu’à arriver à la fois. Si la personne répond faux, la personne va recevoir une [[fmt:bold,yellow]]décharge électrique[[/fmt]]. En réalité, il ne recevra pas de décharge mais le professeur va croire qu’il en reçoit car l’élève et le professeur sont séparés dans [[fmt:bold,yellow]]deux pièces différentes.[[/fmt]]
+Après avoir retenu, l’élève va être soit disant tester. Le professeur va donc dire « ciel » et l’élève aura un choix de réponse ou il devra choisir parmi 4 propositions. Si la réponse est juste, la personne passe à la question suivante jusqu’à arriver à la fois. Si la personne répond faux, la personne va recevoir une [[fmt:bold,yellow]]décharge électrique[[/fmt]]. En réalité, il ne recevra pas de décharge mais le professeur va croire qu’il en reçoit car l’élève et le professeur sont séparés dans [[fmt:bold,yellow]]deux pièces différentes.[[/fmt]]
 
 Devant le professeur, il y aura [[fmt:bold,yellow]]30 leviers[[/fmt]] pour 30 questions. Chaque levier correspond à un palier de volts (15V > 30 V > … 435V > 450V). En dessous des boutons, la correspondance du danger est écrite. Vers les 15 / 30V, le choc est léger, et plus on avance et plus c’est dangereux pour la personne jusqu’à arriver à la [[fmt:bold,yellow]]décharge mortel[[/fmt]]. Le professeur va donc envoyer des charges en sachant la dangerosité de l’expérience.
 
-[[fmt:bold]]SONDAGE[[/fmt]] sur 200 personnes de l’amphi:
+[[fmt:bold]]SONDAGE[[/fmt]] sur 200 personnes de l’amphi:
 
-- 190p. > S’arrête au moment où la personne veut s’arrêter (choc fort : 150V)
+- 190p. > S’arrête au moment où la personne veut s’arrêter (choc fort : 150V)
 
 - 10p. > continue jusqu’à la fin.
 
@@ -42,12 +42,12 @@ En vérité, sur 200 personnes, [[fmt:yellow]]beaucoup plus de personne irait ju
 
 [[fmt:pink]]Stanley MILGRAM[[/fmt]] (1933-1984) a d’abord fait science po. et n’a pas intégrer la psychologie au départ. Ce n’est qu’au doctorat qu’il a accéder à la psychologie sous condition à Harvard. Il l’a fait en 1960 avec [[fmt:pink]]Salomon Asch. [[/fmt]] Il a démontré des expériences de perceptions (notamment une avec laquelle il a montré qu’on a tendance quand on se sent mal à répondre comme les autres).
 
-Ces recherches ont été réalisées à [[fmt:yellow]]l’université de Yale[[/fmt]] (juste après son doctorat). En [[fmt:red]]1974[[/fmt]][[fmt:pink]], [[/fmt]][[fmt:pink]]S.Milgram[[/fmt]] à rassembler ces expérience dans un livre qui se nomme : « 	Obedience to Authority = An experimental » ce qui a plus tard donner [[fmt:italic]]« soumission à l’autorité[[/fmt]] ».
+Ces recherches ont été réalisées à [[fmt:yellow]]l’université de Yale[[/fmt]] (juste après son doctorat). En [[fmt:red]]1974[[/fmt]][[fmt:pink]], [[/fmt]][[fmt:pink]]S.Milgram[[/fmt]] à rassembler ces expérience dans un livre qui se nomme : « 	Obedience to Authority = An experimental » ce qui a plus tard donner [[fmt:italic]]« soumission à l’autorité[[/fmt]] ».
 
-Son expérience est passée dans la culture populaire et est discuter dans pleins de domaines différents. Ces recherches ont suscité beaucoup de controverses et de débats pour trois raison :
+Son expérience est passée dans la culture populaire et est discuter dans pleins de domaines différents. Ces recherches ont suscité beaucoup de controverses et de débats pour trois raison :
 
 - Les résultats sont contre-intuitifs (cela va à l’encontre de ce que l’on veut croire)
 
-- Soulève des enjeux moraux et politiques fort ([[fmt:red]]1963[[/fmt]] – [[fmt:pink]]Hanna [[/fmt]][[fmt:pink]]Ahrendt[[/fmt]] [[fmt:italic]]: Eichmann à Jérusalem, rapport sur la banalité du mal[[/fmt]])
+- Soulève des enjeux moraux et politiques fort ([[fmt:red]]1963[[/fmt]] – [[fmt:pink]]Hanna [[/fmt]][[fmt:pink]]Ahrendt[[/fmt]] [[fmt:italic]]: Eichmann à Jérusalem, rapport sur la banalité du mal[[/fmt]])
 
 - Soulève des questions d’éthique de la recherche (déontologie)

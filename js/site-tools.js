@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20261014-navigation1";
+  const VERSION = "20261014-audit1";
   const sourceScript = document.currentScript || document.querySelector('script[src*="/js/site-tools.js"]');
   const sitePrefix = sourceScript?.src
     ? new URL("../", sourceScript.src).pathname.replace(/\/$/, "")

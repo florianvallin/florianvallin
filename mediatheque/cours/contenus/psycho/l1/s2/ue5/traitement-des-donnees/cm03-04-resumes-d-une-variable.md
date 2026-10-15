@@ -14,15 +14,15 @@ Indices de dispersion
 
 Entropie et écarts entre observations
 
-Pour résumé un ensemble (une situation), on va utiliser des indices statistiques. Ainsi on va avoir plusieurs options qui dépendent du [[fmt:yellow]]niveau d’échelle[[/fmt]] (qualitative, quantitative) et on se demander de faire un résumé de quoi ?
+Pour résumé un ensemble (une situation), on va utiliser des indices statistiques. Ainsi on va avoir plusieurs options qui dépendent du [[fmt:yellow]]niveau d’échelle[[/fmt]] (qualitative, quantitative) et on se demander de faire un résumé de quoi ?
 
-On va avoir [[fmt:green]]plusieurs indices[[/fmt]] : de position (moyenne), de dispersion (écart type), de forme (symétrie).
+On va avoir [[fmt:green]]plusieurs indices[[/fmt]] : de position (moyenne), de dispersion (écart type), de forme (symétrie).
 
 ## [[fmt:underline,red-text]]L’indice de position[[/fmt]]
 
 L’indice de position va permettre d’avoir [[fmt:yellow]]pleins de calculs possibles[[/fmt]]. Tout dépend de la question qu’on se pose et du type de données dont on dispose.
 
-On a plusieurs [[fmt:yellow]]sous-programme[[/fmt]] (de qualitative à quantitatif): mode, extrêmes, médiane (=partager autant de personnes moitié/moitié), quartiles, déciles, centiles, milieu, moyenne (=permet de pondérer les écarts).
+On a plusieurs [[fmt:yellow]]sous-programme[[/fmt]] (de qualitative à quantitatif): mode, extrêmes, médiane (=partager autant de personnes moitié/moitié), quartiles, déciles, centiles, milieu, moyenne (=permet de pondérer les écarts).
 
 ## [[fmt:underline,red-text]]Le mode[[/fmt]]
 
@@ -34,7 +34,7 @@ Il y a le [[fmt:yellow]]mode absolu[[/fmt]], sur tout l’histogramme, c’est c
 
 ### [[fmt:underline,red-text]]Le quantile[[/fmt]]
 
-Le [[fmt:green]]quantile[[/fmt]] est un moyen de couper l’histogramme en différentes position. On parle de quantile d’ordre [[fmt:italic]]p [[/fmt]](avec p dans [0 ; 1]). Par exemple, si on veut le quantile 0,6, on va prendre la valeur de 60%. On va compter les fréquences, faire la somme des fréquences. Si on a des intervalles, on va se déplacer dans les intervalles, se placer dans le bon et chercher dans plus fin.
+Le [[fmt:green]]quantile[[/fmt]] est un moyen de couper l’histogramme en différentes position. On parle de quantile d’ordre [[fmt:italic]]p [[/fmt]](avec p dans [0 ; 1]). Par exemple, si on veut le quantile 0,6, on va prendre la valeur de 60%. On va compter les fréquences, faire la somme des fréquences. Si on a des intervalles, on va se déplacer dans les intervalles, se placer dans le bon et chercher dans plus fin.
 
 On va réaliser une interpolation linéaire.
 
@@ -42,25 +42,25 @@ Q6 → 60% ont un âge inférieur
 
 1 sera la dernière valeur. Le quantile d’ordre 1 sera le maximum de la distribution. Le quantile d’ordre 0 sera le minimum.
 
-- [[fmt:yellow]]Maximum [[/fmt]]: p=1, Q(1) = max ([[fmt:italic]]x[[/fmt]][[fmt:italic]]i[[/fmt]][[fmt:italic]]) = [[/fmt]][[fmt:italic]]x[[/fmt]][[fmt:italic]]n[[/fmt]]
+- [[fmt:yellow]]Maximum [[/fmt]]: p=1, Q(1) = max ([[fmt:italic]]x[[/fmt]][[fmt:italic]]i[[/fmt]][[fmt:italic]]) = [[/fmt]][[fmt:italic]]x[[/fmt]][[fmt:italic]]n[[/fmt]]
 
-- [[fmt:yellow]]Minimum [[/fmt]]: p=0, Q(0) = min ([[fmt:italic]]x[[/fmt]][[fmt:italic]]i[[/fmt]]) = [[fmt:italic]]x[[/fmt]][[fmt:italic]]1[[/fmt]]
+- [[fmt:yellow]]Minimum [[/fmt]]: p=0, Q(0) = min ([[fmt:italic]]x[[/fmt]][[fmt:italic]]i[[/fmt]]) = [[fmt:italic]]x[[/fmt]][[fmt:italic]]1[[/fmt]]
 
-- [[fmt:yellow]]Médiane [[/fmt]]: p=0,5, Q(0,5) = Me (c’est une des « tendances centrales »).
+- [[fmt:yellow]]Médiane [[/fmt]]: p=0,5, Q(0,5) = Me (c’est une des « tendances centrales »).
 
-- Si n impair : on prend la valeur centrale
+- Si n impair : on prend la valeur centrale
 
-- Si n pair : on a 2 valeurs centrales
+- Si n pair : on a 2 valeurs centrales
 
 - Soit on prend les 2 valeurs (intervalle médian)
 
 - Soit on prend la moyenne des deux valeurs
 
-- [[fmt:yellow]]Quartile [[/fmt]]: p appartient (0.25, 0.5, 0.75), par exemple Q1 = Q(0.25) = premier quartile
+- [[fmt:yellow]]Quartile [[/fmt]]: p appartient (0.25, 0.5, 0.75), par exemple Q1 = Q(0.25) = premier quartile
 
-- [[fmt:yellow]]Décile [[/fmt]]: p appartient (0.1, 0.2 … 0,99), par exemple C7 = Q(0.07) = septième centile
+- [[fmt:yellow]]Décile [[/fmt]]: p appartient (0.1, 0.2 … 0,99), par exemple C7 = Q(0.07) = septième centile
 
-- [[fmt:yellow]]Centile[[/fmt]] : p appartient (0,01, 0,02 … 0,99), par exemple C7 = Q(0.07) = septième centile
+- [[fmt:yellow]]Centile[[/fmt]] : p appartient (0,01, 0,02 … 0,99), par exemple C7 = Q(0.07) = septième centile
 
 Il y a d’autre façon de trouver le centre que la médiane.
 
@@ -72,7 +72,7 @@ Sur une [[fmt:green]]échelle ordinale[[/fmt]] (ou mieux), on va avoir la [[fmt:
 
 Sur une [[fmt:green]]échelle intervalle[[/fmt]] (ou rapport), on va prendre le [[fmt:yellow]]milieu[[/fmt]] (centre au sens des distances). Par exemple, pour un tableau de 4 mètre, on va prendre 2 mètre qui est le milieu. On va aussi avoir la [[fmt:yellow]]moyenne[[/fmt]] (centre qui combine la distance et la fréquence).
 
-Formule de la moyenne :
+Formule de la moyenne :
 
 Pour calculer une moyenne, l’une des méthodes est de prendre toutes les valeurs, de les additionner et de les diviser par le total. On peut aussi multiplier les nombres entre eux.
 
@@ -82,9 +82,9 @@ Il existe la [[fmt:green]]notion d’associativité[[/fmt]]. On peut prendre l�
 
 La [[fmt:green]]notion d’intermédiarité[[/fmt]] est de la logique, puisque le centre n’est pas un extrême (min < moyenne < max)
 
-La [[fmt:green]]p[[/fmt]][[fmt:green]]ropriété barycentrique[[/fmt]] est la [[fmt:yellow]]somme des écarts à la moyenne est nul[[/fmt]]. On peut penser à l’équilibre des poids sur une balance (notion de couple en physique).
+La [[fmt:green]]p[[/fmt]][[fmt:green]]ropriété barycentrique[[/fmt]] est la [[fmt:yellow]]somme des écarts à la moyenne est nul[[/fmt]]. On peut penser à l’équilibre des poids sur une balance (notion de couple en physique).
 
-La [[fmt:green]]notion de linéarité[[/fmt]] est :
+La [[fmt:green]]notion de linéarité[[/fmt]] est :
 
 ## [[fmt:underline,red-text]]Indices de dispersion[[/fmt]]
 
@@ -96,13 +96,13 @@ Si les valeurs s’étalent sur plus de classe ou sont équilibrées entre class
 
 Il n’y a [[fmt:yellow]]pas besoin d’ordre[[/fmt]], cela s’applique même sur du nominal. On retrouve l’entropie en physique, chimie, médecine, biologie, traitement du signal…
 
-On a plusieurs écarts entre les observations :
+On a plusieurs écarts entre les observations :
 
 - Etendue = max – min
 
 - Intervalle inter-quartile = IQ = Q3 – Q1
 
-- Ecart quadratique :
+- Ecart quadratique :
 
 ## Encadrés et annotations du document
 

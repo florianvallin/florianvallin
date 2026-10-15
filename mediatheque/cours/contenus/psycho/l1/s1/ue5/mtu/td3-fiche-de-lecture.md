@@ -4,11 +4,11 @@ Au jour d’aujourd’hui, il y a une publication toute les 20 secondes qui sont
 
 ## [[fmt:bold,underline,red-text]]Objectif[[/fmt]]
 
-- Qu’est-ce que l’objectif d’une fiche de lecture ?
+- Qu’est-ce que l’objectif d’une fiche de lecture ?
 
-- A quoi ça sert ?
+- A quoi ça sert ?
 
-- Comment je la construis ?
+- Comment je la construis ?
 
 - [[fmt:yellow]]Comprendre[[/fmt]] et [[fmt:yellow]]mémoriser[[/fmt]] des acquis en psychologie
 
@@ -20,7 +20,7 @@ Au jour d’aujourd’hui, il y a une publication toute les 20 secondes qui sont
 
 ## [[fmt:bold,underline,red-text]]Utilité d’une fiche de lecture[[/fmt]]
 
-Les utilités de la fiche de lecture sont multiples :
+Les utilités de la fiche de lecture sont multiples :
 
 - Lire [[fmt:yellow]]mieux[[/fmt]] et [[fmt:yellow]]plus vite[[/fmt]] un document
 
@@ -30,11 +30,11 @@ Les utilités de la fiche de lecture sont multiples :
 
 ## [[fmt:bold,underline,red-text]]Ce que doit être une fiche de lecture[[/fmt]]
 
-Elle doit :
+Elle doit :
 
 - Etre [[fmt:yellow]]courte[[/fmt]] (pas 15 pages)
 
-- Utiliser des style [[fmt:yellow]]télégraphique[[/fmt]] : phrases courtes, flèches, croquis, mots-clés
+- Utiliser des style [[fmt:yellow]]télégraphique[[/fmt]] : phrases courtes, flèches, croquis, mots-clés
 
 - Plan [[fmt:yellow]]visible[[/fmt]], articulations et conclusions
 
@@ -62,17 +62,17 @@ On doit [[fmt:yellow]]comprendre[[/fmt]] et [[fmt:yellow]]abréger[[/fmt]] le te
 
 ## [[fmt:bold,underline,red-text]]Modèle de fiche[[/fmt]]
 
-Il faut dans sa fiche mettre deux types d’information :
+Il faut dans sa fiche mettre deux types d’information :
 
-- [[fmt:bold,underline,green-text]]Informations de nature signalétique et analytique : domaine, référence, mots-clés, résumé[[/fmt]][[fmt:bold,underline,green-text]])[[/fmt]]
+- [[fmt:bold,underline,green-text]]Informations de nature signalétique et analytique : domaine, référence, mots-clés, résumé[[/fmt]][[fmt:bold,underline,green-text]])[[/fmt]]
 
-Il faudrait d’abord mettre le [[fmt:yellow]]secteur[[/fmt]] de la psychologie concerné : cognitive, social, développement, clinique…
+Il faudrait d’abord mettre le [[fmt:yellow]]secteur[[/fmt]] de la psychologie concerné : cognitive, social, développement, clinique…
 
-[[fmt:yellow]]Nature[[/fmt]] et référence du document : type de document, chapitre, ouvrage, thèse, article
+[[fmt:yellow]]Nature[[/fmt]] et référence du document : type de document, chapitre, ouvrage, thèse, article
 
 [[fmt:yellow]]Référence[[/fmt]] complète aux normes APA
 
-[[fmt:yellow]]Mots-clés : [[/fmt]]
+[[fmt:yellow]]Mots-clés : [[/fmt]]
 
 - Exploiter les mots-clés par l’auteur du document
 
@@ -80,23 +80,23 @@ Il faudrait d’abord mettre le [[fmt:yellow]]secteur[[/fmt]] de la psychologie 
 
 - Donner ses propres mots-clés
 
-[[fmt:yellow]]Résumé :[[/fmt]]
+[[fmt:yellow]]Résumé :[[/fmt]]
 
 - Exploiter le résumé proposé par la BU
 
-- Elaborer son propre résumé : s’aider du sommaire, de la table de matières et de la préface
+- Elaborer son propre résumé : s’aider du sommaire, de la table de matières et de la préface
 
 - Faire attention à être bref
 
-[[fmt:yellow]]Puis enfin :[[/fmt]]
+[[fmt:yellow]]Puis enfin :[[/fmt]]
 
 - L’auteur (identifier à qui il est affilié, son adresse courriel, sa page web…
 
 - [[fmt:bold,underline,green-text]]Informations descriptives [[/fmt]][[fmt:bold,underline,green-text]](analytiques) [[/fmt]][[fmt:bold,underline,green-text]]et évaluatives[[/fmt]]
 
-Les [[fmt:yellow]]points forts[[/fmt]] à retenir d’une lecture :
+Les [[fmt:yellow]]points forts[[/fmt]] à retenir d’une lecture :
 
-- Courant théoriques évoqués associés aux auteurs / dates
+- Courant théoriques évoqués associés aux auteurs / dates
 
 - Types d’études évoquées (théorique, expérimentale)
 
@@ -108,17 +108,17 @@ Les [[fmt:yellow]]points forts[[/fmt]] à retenir d’une lecture :
 
 - Orientation futures des recherches
 
-[[fmt:yellow]]Votre évaluation :[[/fmt]]
+[[fmt:yellow]]Votre évaluation :[[/fmt]]
 
 - Décider de l’utilité d’ensemble du document dans le cadre de votre travail (important, incontournable, clair …)
 
 - Indiquer les pages ou les passages qu’il sera bon de relire
 
-[[fmt:yellow]]Citation[[/fmt]] : Indiquer les pages (de la manière suivante, format de citation
+[[fmt:yellow]]Citation[[/fmt]] : Indiquer les pages (de la manière suivante, format de citation
 
-Référence : recopier les références des auteurs clés cités par les auteurs du document
+Référence : recopier les références des auteurs clés cités par les auteurs du document
 
-L’enseignant attend donc :
+L’enseignant attend donc :
 
 - Une preuve qu’on a bien lu
 

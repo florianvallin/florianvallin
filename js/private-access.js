@@ -9,7 +9,7 @@
   let currentRole = '', manifestPromise, failedAttempts = 0;
   const decode = value => Uint8Array.from(atob(value), c => c.charCodeAt(0));
   const pathOf = url => { const u = new URL(url, location.href); if(u.origin !== location.origin)return ''; return prefix && u.pathname.startsWith(prefix+'/') ? u.pathname.slice(prefix.length) : u.pathname; };
-  const manifest = () => manifestPromise ||= originalFetch(`${prefix}/private/manifest.json?v=20261014-navigation1`, {cache:'no-store'}).then(r => { if(!r.ok)throw new Error('Fichiers privés indisponibles.'); return r.json(); });
+  const manifest = () => manifestPromise ||= originalFetch(`${prefix}/private/manifest.json?v=20261014-audit1`, {cache:'no-store'}).then(r => { if(!r.ok)throw new Error('Fichiers privés indisponibles.'); return r.json(); });
   async function openPack(path, key64) {
     const response = await originalFetch(prefix + path, {cache:'no-store'});
     if(!response.ok)throw new Error('Une archive privée est manquante.');
@@ -53,7 +53,7 @@
     failedAttempts++;return '';
   }
   function cssSource(entry,path){
-    return decoder.decode(decode(entry.data)).replace(/url\(\s*(['"]?)([^)'"\s]+)\1\s*\)/g,(all,q,url)=>{
+    return decoder.decode(decode(entry.data)).replace(/@import\s+[^;]*fonts\.(?:googleapis|gstatic)\.com[^;]*;/gi,'').replace(/url\(\s*(['"]?)([^)'"\s]+)\1\s*\)/g,(all,q,url)=>{
       if(/^(data:|https?:|#|blob:)/i.test(url))return all;
       const absolute=new URL(url,location.origin+prefix+path).href;
       return `url("${assetURL(absolute)}")`;
@@ -67,8 +67,19 @@
     }
     return objectURLs.get(path);
   }
+  // Une page publique peut afficher l’état d’accès sans retélécharger les cours privés.
+  const isPublicPage=()=>/^(?:\/(?:index\.html)?$|\/(?:blog|textes|outils|links|cgu|confidentialite)(?:\/|$)|\/cgv\.html$)/.test(pathOf(location.href));
+  let deferredRestore;
+  async function ensureDecrypted(){
+    await ready;if(files.size||!currentRole)return;
+    if(!deferredRestore)deferredRestore=(async()=>{
+      const saved=JSON.parse(sessionStorage.getItem(SESSION)||localStorage.getItem(REMEMBER)||'null');
+      if(saved)await activate(saved,localStorage.getItem(REMEMBER)!==null);
+    })().catch(error=>{currentRole='';sessionStorage.removeItem(SESSION);localStorage.removeItem(REMEMBER);throw error;});
+    await deferredRestore;
+  }
   async function execute(path){
-    await ready;if(!files.has(path))return false;
+    await ensureDecrypted();if(!files.has(path))return false;
     await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=assetURL(location.origin+prefix+path);script.onload=resolve;script.onerror=()=>reject(new Error('Chargement privé impossible.'));document.head.append(script);});return true;
   }
   window.fetch=async(input,init)=>{
@@ -101,8 +112,19 @@
     location.reload();
   }
   async function renderPrivate(path){
-    await ready;const entry=files.get(path);if(!entry||!entry.mime.startsWith('text/html'))throw new Error('Cet accès ne permet pas d’ouvrir cette page.');
+    await ensureDecrypted();const entry=files.get(path);if(!entry||!entry.mime.startsWith('text/html'))throw new Error('Cet accès ne permet pas d’ouvrir cette page.');
     const html=decoder.decode(decode(entry.data));const doc=new DOMParser().parseFromString(html,'text/html');
+    for(const link of doc.querySelectorAll('link[href]'))if(/fonts\.(?:googleapis|gstatic)\.com/.test(link.href))link.remove();
+    for(const style of doc.querySelectorAll('style'))style.textContent=style.textContent.replace(/@import\s+[^;]*fonts\.(?:googleapis|gstatic)\.com[^;]*;/gi,'');
+    for(const link of doc.querySelectorAll('link[rel="preload"][as="font"]'))if(/Manrope-Variable\.(?:ttf|woff2)/.test(link.href)){link.href=prefix+'/assets/fonts/Manrope-Variable.woff2';link.type='font/woff2';}
+    // Les sources chiffrées gardent leur identité ; les règles communes sont injectées à l’ouverture.
+    const qualityScript=doc.createElement('script');qualityScript.src=prefix+'/js/site-quality.js?v=20261014-audit1';doc.head.prepend(qualityScript);
+    const qualityStyle=doc.createElement('link');qualityStyle.rel='stylesheet';qualityStyle.href=prefix+'/css/site-quality.css?v=20261014-audit1';doc.head.append(qualityStyle);
+    for(const frame of doc.querySelectorAll('iframe[src]')){
+      const src=frame.getAttribute('src');if(window.PHILOSOPHAL_QUALITY?.mediaHost(src)){frame.setAttribute('data-external-src',src);frame.removeAttribute('src');}
+    }
+    const footer=doc.querySelector('.site-footer');
+    if(footer&&!footer.querySelector('.footer-legal-links'))footer.insertAdjacentHTML('beforeend','<nav class="footer-legal-links" aria-label="Informations légales"><a href="'+prefix+'/cgu/">CGU</a><a href="'+prefix+'/confidentialite/">Confidentialité</a></nav>');
     if(path==="/apprendre/creation/index.html"){
       const style=doc.createElement("link");style.rel="stylesheet";style.href=prefix+"/css/creator-tools.css?v=20261006";doc.head.append(style);
       const entry=doc.createElement("div");entry.innerHTML='<nav class="creator-tools-entry" aria-label="Outils de création"><div><strong>Préparer et lire un script</strong><small>Téléprompteur, vitesse réglable, mode miroir et estimation de durée.</small></div><a href="/apprendre/creation/teleprompteur/">Ouvrir le téléprompteur →</a></nav>';doc.body.prepend(entry.firstElementChild);
@@ -124,13 +146,16 @@
           if(path.endsWith("/sw.js")||path.endsWith("/english-offline.js"))await registration.unregister();
         }
         if(window.caches)for(const name of await caches.keys())if(/^(fv-reader|philosophal-reader|philosophal-english|philosophal-atelier)/.test(name))await caches.delete(name);
-        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261014-navigation1",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
+        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261014-audit1",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
       }
     }catch{}
 
     for(const store of [localStorage,sessionStorage])for(const key of ['philosophal-owner-access-v1','philosophal-access-state-v2','fv-private-library'])store.removeItem(key);
     let saved;try{saved=JSON.parse(sessionStorage.getItem(SESSION)||localStorage.getItem(REMEMBER)||'null');}catch{}
-    if(saved){try{await activate(saved,localStorage.getItem(REMEMBER)!==null);}catch{sessionStorage.removeItem(SESSION);localStorage.removeItem(REMEMBER);}}
+    if(saved){try{
+      if(isPublicPage()&&['private','student'].includes(saved.role)&&typeof saved.keys?.student==='string'&&(saved.role!=='private'||typeof saved.keys?.owner==='string'))currentRole=saved.role;
+      else await activate(saved,localStorage.getItem(REMEMBER)!==null);
+    }catch{currentRole='';sessionStorage.removeItem(SESSION);localStorage.removeItem(REMEMBER);}}
     return currentRole;
   })();
   window.FV_PRIVATE_ACCESS=Object.freeze({version:31,ready,unlockRole,unlock:async p=>(await unlockRole(p))==='private',role:()=>currentRole,isUnlocked:()=>currentRole==='private',isStudentUnlocked:()=>currentRole==='student',isRemembered:()=>localStorage.getItem(REMEMBER)!==null,lock,assetURL,execute,renderPrivate,getText:path=>files.has(path)?decoder.decode(decode(files.get(path).data)):null});

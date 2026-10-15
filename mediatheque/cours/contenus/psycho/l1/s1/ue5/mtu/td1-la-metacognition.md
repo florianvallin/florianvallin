@@ -6,19 +6,19 @@ La [[fmt:green]]métacognition[[/fmt]] est l’ensemble des [[fmt:yellow]]action
 
 - [[fmt:green]]Prospective[[/fmt]] (self-probing)
 
-- Est-ce que j’ai les ressources cognitives pour le savoir / l’apprendre ? (OUI / NON)
+- Est-ce que j’ai les ressources cognitives pour le savoir / l’apprendre ? (OUI / NON)
 
-- On est capable de savoir si on peu ou non apprendre quelque chose ([[fmt:blue]]ex[[/fmt]] : apprendre le dictionnaire)
+- On est capable de savoir si on peu ou non apprendre quelque chose ([[fmt:blue]]ex[[/fmt]] : apprendre le dictionnaire)
 
 - [[fmt:green]]Retrospec[[/fmt]][[fmt:green]]tive[[/fmt]] (post-evaluating)
 
-- Savoir après apprendre si nos résultat son bon ([[fmt:blue]]ex[[/fmt]] : faire des QCM)
+- Savoir après apprendre si nos résultat son bon ([[fmt:blue]]ex[[/fmt]] : faire des QCM)
 
 - C’est une [[fmt:yellow]]autoévaluation[[/fmt]] / test de soi
 
 - La [[fmt:yellow]]surconfiance[[/fmt]] est le fait de croire qu’on connait alors que non
 
-Brainstorming d’idée pour apprendre :
+Brainstorming d’idée pour apprendre :
 
 - Ecrire pour apprendre
 
@@ -28,7 +28,7 @@ Brainstorming d’idée pour apprendre :
 
 - Faire des schémas / être capable de les décrire / interpréter par l’écrit
 
-- Alternance : apprentissage / test
+- Alternance : apprentissage / test
 
 - Revoir ces cours
 

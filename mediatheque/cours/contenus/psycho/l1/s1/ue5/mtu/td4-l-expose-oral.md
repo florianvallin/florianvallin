@@ -1,10 +1,10 @@
 # [[fmt:red-text]]L’exposé oral[[/fmt]]
 
-## [[fmt:underline,red-text]]Quel est l’intérêt de l’exposé oral ?[[/fmt]]
+## [[fmt:underline,red-text]]Quel est l’intérêt de l’exposé oral ?[[/fmt]]
 
 Il sert à augmenter la structuration et la concision de votre exposé, à fournir des informations complémentaires et à fournir des illustrations de votre exposé.
 
-Ce que l’on doit [[fmt:green]]éviter[[/fmt]] dans un diaporama :
+Ce que l’on doit [[fmt:green]]éviter[[/fmt]] dans un diaporama :
 
 - Ecrire tout ce que l’on dit
 
@@ -22,7 +22,7 @@ Ce que l’on doit [[fmt:green]]éviter[[/fmt]] dans un diaporama :
 
 - Les couleurs trop claires
 
-Ce que l’on doit [[fmt:green]]favoriser[[/fmt]] pour un diaporama :
+Ce que l’on doit [[fmt:green]]favoriser[[/fmt]] pour un diaporama :
 
 - Augmenter la lisibilité de vos diapos
 
@@ -36,11 +36,11 @@ Ce que l’on doit [[fmt:green]]favoriser[[/fmt]] pour un diaporama :
 
 - Homogénéité, cohérence et sobriété des diapos
 
-- Pour 10 minutes : 9 à 10 diapos
+- Pour 10 minutes : 9 à 10 diapos
 
 ## [[fmt:underline,red-text]]L’organisation du diaporama[[/fmt]]
 
-Comment doit-on [[fmt:green]]organiser[[/fmt]] un power point ?
+Comment doit-on [[fmt:green]]organiser[[/fmt]] un power point ?
 
 - Titre de la communication, nom, affiliation – diapo 1
 

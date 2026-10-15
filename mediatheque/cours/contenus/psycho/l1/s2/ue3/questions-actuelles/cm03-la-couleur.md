@@ -1,32 +1,32 @@
 # [[fmt:red-text]]La couleur[[/fmt]]
 
-## [[fmt:red-text]]Voyons-nous tous les mêmes couleurs ?[[/fmt]]
+## [[fmt:red-text]]Voyons-nous tous les mêmes couleurs ?[[/fmt]]
 
 ## [[fmt:underline,red-text]]Introduction[[/fmt]]
 
-Parmi la population, il  10% de [[fmt:green]]daltonien[[/fmt]] (manque de photorécepteurs). Est-ce qu’une couleur est la même pour tout le monde ?
+Parmi la population, il  10% de [[fmt:green]]daltonien[[/fmt]] (manque de photorécepteurs). Est-ce qu’une couleur est la même pour tout le monde ?
 
 Il se peut que les couleurs soit différentes mais que vu que nous avons mis un [[fmt:yellow]]mot[[/fmt]] sur un stimulus, la couleur sera [[fmt:yellow]]rouge[[/fmt]] (car on l’a dénommé comme cela). Le langage va s’adapter aux besoins pour [[fmt:yellow]]survivre[[/fmt]] et à [[fmt:yellow]]l’environnement[[/fmt]] (les personnes qui ont beaucoup de soleil ne vont pas avoir les mêmes mots que les personnes qui ne le voient pas beaucoup).
 
-On va donc avoir [[fmt:green]]deux [[/fmt]][[fmt:green]]parties[[/fmt]] quand on va voir la couleur :
+On va donc avoir [[fmt:green]]deux [[/fmt]][[fmt:green]]parties[[/fmt]] quand on va voir la couleur :
 
 - Activité cérébrale
 
 - Normalisation pour dénommer la couleur
 
-On va avoir [[fmt:green]]trois photorécepteurs[[/fmt]] : [[fmt:yellow]]rouge[[/fmt]], [[fmt:yellow]]vert [[/fmt]]ou [[fmt:yellow]]bleu[[/fmt]]. Les individus peuvent avoir différents photorécepteurs pour la vision (certains avoir plus de photorécepteurs dans le rouge ect…) Chacun à une activité cérébrale différente de l’autre.
+On va avoir [[fmt:green]]trois photorécepteurs[[/fmt]] : [[fmt:yellow]]rouge[[/fmt]], [[fmt:yellow]]vert [[/fmt]]ou [[fmt:yellow]]bleu[[/fmt]]. Les individus peuvent avoir différents photorécepteurs pour la vision (certains avoir plus de photorécepteurs dans le rouge ect…) Chacun à une activité cérébrale différente de l’autre.
 
 L’œil n’est donc [[fmt:yellow]]pas identique pour les personnes[[/fmt]]. Nous n’avons pas la même [[fmt:green]]hérédité[[/fmt]] biologique. Notre traitement neuronal est différent.
 
 Nous ne pouvons donc pas savoir à ce niveau-là si on perçoit tous la même couleur ou non.
 
-- Comment voyons-nous les couleurs/formes ?
+- Comment voyons-nous les couleurs/formes ?
 
 Le système visuel est l’œil et le cerveau décode les informations qui viennent de l’œil.
 
 Les deux jaunes ci-dessus sont complètement identique. Vu qu’on les met dans un contexte, il change légèrement. La perception humain sera différente en fonction du contexte.
 
-L’apparence d’une couleur est lié au contexte. Mais comment le système visuel encode ces informations pour avoir des qualités physiques ?
+L’apparence d’une couleur est lié au contexte. Mais comment le système visuel encode ces informations pour avoir des qualités physiques ?
 
 Pour l’exercice du dessus, il faut fixer la croix à gauche. A un certain moment, des ondulations vont apparaitre et on pourra passer à la croix de droite. On va avoir les couleurs qui vont apparaitre alors qu’elles ne sont pas réelles, c’est le cerveau qui les crée.
 
@@ -46,7 +46,7 @@ On va avoir tendance à [[fmt:green]]voir[[/fmt]][[fmt:green]] des contours[[/fm
 
 Pour [[fmt:green]]Mitsuo Katsuo[[/fmt]], on va avoir l’impression que les [[fmt:yellow]]lignes ne sont pas droites[[/fmt]] alors que pourtant, elle [[fmt:yellow]]sont totalement droite[[/fmt]]. C’est le [[fmt:green]]globale local[[/fmt]], on va avoir la sensation globale d’une ligne qui n’est pas droite. Notre système visuel nous fait percevoir des choses qui ne sont pas vraiment réel.
 
-- Qu’est-ce qu’une couleur ?
+- Qu’est-ce qu’une couleur ?
 
 On a eu beaucoup de définition sur la couleur depuis l’Antiquité. Pour la connaissance scientifique / technologique, l’apport de la couleur est Newton.
 
@@ -68,15 +68,15 @@ On peut faire la [[fmt:yellow]]même chose pour l[[/fmt]][[fmt:yellow]]a couleur
 
 Les courbes varient en fonction du [[fmt:yellow]]primaire[[/fmt]] que l’on choisit.
 
-Avec cela, on va définir une [[fmt:green]]norme de la vision.[[/fmt]] Les scientifiques ont essayé de transformer ces courbes (en soustrayant, addition…) pour que ces [[fmt:green]]trois courbes[[/fmt]] soit positif : [[fmt:yellow]]X, Y & Z[[/fmt]]. Il faut qu’elle soit positif pour pouvoir les exploiter (on n’aurait pas pu créer des couleurs si on avait que les négatifs).
+Avec cela, on va définir une [[fmt:green]]norme de la vision.[[/fmt]] Les scientifiques ont essayé de transformer ces courbes (en soustrayant, addition…) pour que ces [[fmt:green]]trois courbes[[/fmt]] soit positif : [[fmt:yellow]]X, Y & Z[[/fmt]]. Il faut qu’elle soit positif pour pouvoir les exploiter (on n’aurait pas pu créer des couleurs si on avait que les négatifs).
 
 Il faut regarder les [[fmt:yellow]]3 courbes[[/fmt]] en [[fmt:yellow]]3D[[/fmt]] (cf. [[fmt:green]]spectre blocus[[/fmt]]). Ce n’est [[fmt:yellow]]pas très pratique[[/fmt]] d’avoir cet objet 3D donc on va projet les couleurs sur un plan. Si on le retourne, on va avoir un [[fmt:green]]diagramme chromatique[[/fmt]].
 
-Pourquoi peut-on dire que toutes les couleurs sont dans ce diagramme ?
+Pourquoi peut-on dire que toutes les couleurs sont dans ce diagramme ?
 
 On a donc définit la [[fmt:green]]colométrie[[/fmt]] (espace vu par l’espace humain). Les scientifiques en ont fait quelque chose de réalisable et d’utilisable.
 
-On va présenter [[fmt:yellow]]deux couleurs[[/fmt]] : la couleur de [[fmt:yellow]]test[[/fmt]] et la couleur de [[fmt:yellow]]références[[/fmt]]. On va essayer de se rapprocher de plus e plus de la couleur de référence. Le centre de l’ellipse est le centre de référence. A l’intérieur de cette ellipse, toutes les couleurs vont paraitre identique (a l’extérieur, différente). On va avoir des [[fmt:green]]ellipses de discriminations[[/fmt]].
+On va présenter [[fmt:yellow]]deux couleurs[[/fmt]] : la couleur de [[fmt:yellow]]test[[/fmt]] et la couleur de [[fmt:yellow]]références[[/fmt]]. On va essayer de se rapprocher de plus e plus de la couleur de référence. Le centre de l’ellipse est le centre de référence. A l’intérieur de cette ellipse, toutes les couleurs vont paraitre identique (a l’extérieur, différente). On va avoir des [[fmt:green]]ellipses de discriminations[[/fmt]].
 
 Par exemple, il est difficile de reproduire une couleur déjà existante en les égalisant. On ne peut pas mesurer de différence (/identique), ce qui pose des problèmes (on ne peut repeindre une voiture à la même couleur que celle de base…).
 
@@ -88,7 +88,7 @@ METTRE IMAGE DIFFERENTE COURBE
 
 ## [[fmt:underline,red-text]]Qu’est-ce qui nous permet de voir les couleurs [[/fmt]]
 
-Il y a plusieurs étapes dans la vision des couleurs : la rétine, le système optique (ritallin…). Elle permet de laisser passer la lumière à travers la pupille qui va se contacter ou se rétracter.
+Il y a plusieurs étapes dans la vision des couleurs : la rétine, le système optique (ritallin…). Elle permet de laisser passer la lumière à travers la pupille qui va se contacter ou se rétracter.
 
 La [[fmt:yellow]]rétine[[/fmt]] utilise les premiers neurones, ce n’est pas seulement passif mais aussi actif qui vont nous permettre d’encoder l’information lumineuse et la transmettre entre neurones entre neuromédiateurs. Il y a un échange d’ions et de potentiel électrique ce qui fait que la lumière par le photorécepteur va être transformée en messager, puis en excitation électrique. Elle va ensuite aller jusqu’au corps genouillé latérale (=premier relais entre un œil gauche & droit).
 

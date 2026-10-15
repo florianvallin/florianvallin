@@ -1,6 +1,6 @@
 # [[fmt:red-text]]La psychologie de la santé[[/fmt]]
 
-La [[fmt:green]]Ψ de la santé[[/fmt]] s’intéresse à la [[fmt:yellow]]maladie[[/fmt]]. Elle s’intéresse à tous les [[fmt:yellow]]facteurs psychiques[[/fmt]] et [[fmt:yellow]]sociaux[[/fmt]] dans les situations de maladie :
+La [[fmt:green]]Ψ de la santé[[/fmt]] s’intéresse à la [[fmt:yellow]]maladie[[/fmt]]. Elle s’intéresse à tous les [[fmt:yellow]]facteurs psychiques[[/fmt]] et [[fmt:yellow]]sociaux[[/fmt]] dans les situations de maladie :
 
 - [[fmt:yellow]]Bouleversement[[/fmt]] émotionnel (= la personne fait face à une menace qui vient à l’intérieur de nous-même)
 
@@ -36,41 +36,41 @@ Le [[fmt:green]]Ψ[[/fmt]] ne [[fmt:yellow]]peut pas se blinder[[/fmt]] contre c
 
 ## [[fmt:underline,red-text]]Les principales causes de l’évitement[[/fmt]]
 
-[[fmt:pink]]Wotman[[/fmt]][[fmt:pink]] [[/fmt]]& [[fmt:pink]]Lehman[[/fmt]][[fmt:pink]] [[/fmt]]voit trois causes principales dans ces [[fmt:yellow]]comportements d’évitement[[/fmt]] :
+[[fmt:pink]]Wotman[[/fmt]][[fmt:pink]] [[/fmt]]& [[fmt:pink]]Lehman[[/fmt]][[fmt:pink]] [[/fmt]]voit trois causes principales dans ces [[fmt:yellow]]comportements d’évitement[[/fmt]] :
 
-- [[fmt:green]]L’ignorance[[/fmt]] : nous sommes confronté à une situation qui ne nous est pas habituelle (nous ne savons pas quel comportements adapter). Les gens évaluent mal le temps que le handicapé a besoin pour surmonter cette détresse (le deuil peut être présent plusieurs années)
+- [[fmt:green]]L’ignorance[[/fmt]] : nous sommes confronté à une situation qui ne nous est pas habituelle (nous ne savons pas quel comportements adapter). Les gens évaluent mal le temps que le handicapé a besoin pour surmonter cette détresse (le deuil peut être présent plusieurs années)
 
-- Sentiment de [[fmt:green]]vulnérabilité[[/fmt]][[fmt:green]] [[/fmt]]: on persiste à se sentir invulnérable (surtout quand on est jeune). La vision de la détresse des autres met en péril se sentiment d’invulnérabilité (angoisse, prend conscience du danger)
+- Sentiment de [[fmt:green]]vulnérabilité[[/fmt]][[fmt:green]] [[/fmt]]: on persiste à se sentir invulnérable (surtout quand on est jeune). La vision de la détresse des autres met en péril se sentiment d’invulnérabilité (angoisse, prend conscience du danger)
 
-- [[fmt:green]]Aliénation[[/fmt]][[fmt:green]] [[/fmt]]: la personne qui est malade appartient à un autre monde : « le monde des malades ». On va avoir du mal à parler avec de monde. C’est terrible pour la personne en question (l’handicapé).
+- [[fmt:green]]Aliénation[[/fmt]][[fmt:green]] [[/fmt]]: la personne qui est malade appartient à un autre monde : « le monde des malades ». On va avoir du mal à parler avec de monde. C’est terrible pour la personne en question (l’handicapé).
 
-La [[fmt:yellow]]théorie du monde juste[[/fmt]] est magnifique pour les biens portant. Les personnes disent « [[fmt:yellow]]il le mérite[[/fmt]] ». Cette situation est terrible pour la personne qui est en détresse. Elle doit faire face à l’accusation implicite des autres. C’est un puissant outil Ψ mais ça ne laisse pas de place à l’altruisme.
+La [[fmt:yellow]]théorie du monde juste[[/fmt]] est magnifique pour les biens portant. Les personnes disent « [[fmt:yellow]]il le mérite[[/fmt]] ». Cette situation est terrible pour la personne qui est en détresse. Elle doit faire face à l’accusation implicite des autres. C’est un puissant outil Ψ mais ça ne laisse pas de place à l’altruisme.
 
 ## [[fmt:underline,red-text]]Les réponses inappropriées[[/fmt]]
 
-Il y a de [[fmt:yellow]]nombreuses réponses[[/fmt]] face à la détresse d’autrui :
+Il y a de [[fmt:yellow]]nombreuses réponses[[/fmt]] face à la détresse d’autrui :
 
-- Prise de [[fmt:green]]distance[[/fmt]] : traduise le désengagement émotionnel de la personne bien-portante.
+- Prise de [[fmt:green]]distance[[/fmt]] : traduise le désengagement émotionnel de la personne bien-portante.
 
-- [[fmt:green]]Maladresse[[/fmt]] : le bien-portant ne sais pas comment réagir et manifeste cette gêne. Il va y avoir un comportement inverse (trop regarder « l’alien »).
+- [[fmt:green]]Maladresse[[/fmt]] : le bien-portant ne sais pas comment réagir et manifeste cette gêne. Il va y avoir un comportement inverse (trop regarder « l’alien »).
 
-- [[fmt:green]]Minimisation[[/fmt]] : la personne bien portante va dire : « ça aurait pu être pire » / « ce n’est pas si grave » / « c’est le destin » ou peut apporter du déni.
+- [[fmt:green]]Minimisation[[/fmt]] : la personne bien portante va dire : « ça aurait pu être pire » / « ce n’est pas si grave » / « c’est le destin » ou peut apporter du déni.
 
-- [[fmt:green]]Réprobation[[/fmt]] : expression de blâme (« c’est par faute de t’avoir prévenu »).
+- [[fmt:green]]Réprobation[[/fmt]] : expression de blâme (« c’est par faute de t’avoir prévenu »).
 
 Les biens portants voient la [[fmt:yellow]]maladie[[/fmt]] et la [[fmt:yellow]]personne[[/fmt]]. Elle va donc penser plus la personne que la maladie (elle va essayer d’influencer la personne) mais ce n’est pas la solution.
 
 ## [[fmt:underline,red-text]]Les différentes formes de soutien social[[/fmt]]
 
-« L’ensemble des relations interpersonnels qui procurent à l’individu un lien affectif positif (sympathie, amitié, amour), une aide pratique (instrumental, financière) mais aussi des informations et des évaluations relatives à la situation menaçante ».
+« L’ensemble des relations interpersonnels qui procurent à l’individu un lien affectif positif (sympathie, amitié, amour), une aide pratique (instrumental, financière) mais aussi des informations et des évaluations relatives à la situation menaçante ».
 
-Il y a donc [[fmt:yellow]]3 formes de soutiens[[/fmt]] sociales :
+Il y a donc [[fmt:yellow]]3 formes de soutiens[[/fmt]] sociales :
 
-- [[fmt:green]]Soutien informationnel[[/fmt]] : faire évoluer le regard de la personne sur la situation qu’elle vit. Faire prendre du recul sur la situation de la personne (il faut qu’elle prenne de la distance sur ce qu’elle a)
+- [[fmt:green]]Soutien informationnel[[/fmt]] : faire évoluer le regard de la personne sur la situation qu’elle vit. Faire prendre du recul sur la situation de la personne (il faut qu’elle prenne de la distance sur ce qu’elle a)
 
-- [[fmt:green]]Soutien instrumental[[/fmt]] : les personnes malades ont besoin d’une aide concrète et c’est se soutien qui va le faire. (s’engager à l’aider dans la vie de tous les jours)
+- [[fmt:green]]Soutien instrumental[[/fmt]] : les personnes malades ont besoin d’une aide concrète et c’est se soutien qui va le faire. (s’engager à l’aider dans la vie de tous les jours)
 
-- [[fmt:green]]Soutien émotionnel[[/fmt]] : manifestation d’affect positive (rappeler à quelqu’un qu’on l’aime
+- [[fmt:green]]Soutien émotionnel[[/fmt]] : manifestation d’affect positive (rappeler à quelqu’un qu’on l’aime
 
 ## [[fmt:underline,red-text]]La qualité du soutien[[/fmt]]
 

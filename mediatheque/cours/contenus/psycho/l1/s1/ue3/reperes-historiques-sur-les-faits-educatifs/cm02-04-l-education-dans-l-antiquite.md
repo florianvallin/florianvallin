@@ -32,9 +32,9 @@ Une [[fmt:yellow]]éducation fondée[[/fmt]] sur l’exemple héroïque, la pré
 
 ### [[fmt:underline,red-text]]LE MONDE GREC[[/fmt]]
 
-L’éducation dans le monde grec se décompose en deux éducations :
+L’éducation dans le monde grec se décompose en deux éducations :
 
-[[fmt:green]]L’éducation spartiate[[/fmt]] (VIII-VI avant JC) :
+[[fmt:green]]L’éducation spartiate[[/fmt]] (VIII-VI avant JC) :
 
 - Militaire et civique
 
@@ -50,7 +50,7 @@ L’éducation dans le monde grec se décompose en deux éducations :
 
 - Education des filles
 
-[[fmt:green]]L’ancienne éducation athénienne[[/fmt]] :
+[[fmt:green]]L’ancienne éducation athénienne[[/fmt]] :
 
 - Plus uniquement militaire
 
@@ -64,13 +64,13 @@ L’éducation dans le monde grec se décompose en deux éducations :
 
 - Education littéraire
 
-Les personnes dans le monde grec ont [[fmt:yellow]]plusieurs fonctions[[/fmt]] :
+Les personnes dans le monde grec ont [[fmt:yellow]]plusieurs fonctions[[/fmt]] :
 
 - Le [[fmt:green]]grammairien[[/fmt]], le maître (didascalos)
 
 - Le [[fmt:green]]cithariste[[/fmt]]
 
-- Le [[fmt:green]]pédagogue [[/fmt]]: serviteur chargé d’accompagné l’enfant à l’école
+- Le [[fmt:green]]pédagogue [[/fmt]]: serviteur chargé d’accompagné l’enfant à l’école
 
 Il n’y avait pas [[fmt:yellow]]d’accès à l’école[[/fmt]] pour les [[fmt:green]]filles[[/fmt]] (sauf pour les familles nobles). Le local utilisé était des sièges, chaire, fauteuil à dossier pour le maitre, tablettes rigides à mettre sur les genoux pour écrire.
 
@@ -88,7 +88,7 @@ De [[fmt:yellow]]7 à 12 ans[[/fmt]], l’enfant avait une [[fmt:yellow]]éducat
 
 Il y avait des [[fmt:yellow]]vertus paysannes[[/fmt]] dans ces éducations avec une [[fmt:yellow]]pratique physique[[/fmt]]. Il existait des métiers de propriétaire foncier avec une importance pour l’application pratique des connaissances.
 
-Rome adopta une [[fmt:green]]éducation grecque[[/fmt]] avec plusieurs points. Le préceptorat était présent dans certaines grandes familles (véritables écoles). Il y avait une adaptions à l’esprit latin, une opposition à l’athlétisme. Les écoles latines ont été créées avec [[fmt:yellow]]3 formes[[/fmt]] :
+Rome adopta une [[fmt:green]]éducation grecque[[/fmt]] avec plusieurs points. Le préceptorat était présent dans certaines grandes familles (véritables écoles). Il y avait une adaptions à l’esprit latin, une opposition à l’athlétisme. Les écoles latines ont été créées avec [[fmt:yellow]]3 formes[[/fmt]] :
 
 - 3 degrés primaires (7-12)
 
@@ -96,9 +96,9 @@ Rome adopta une [[fmt:green]]éducation grecque[[/fmt]] avec plusieurs points. L
 
 - Supérieur (15-20)
 
-L’ancienne éducation romaine se base sur un idéal collectif qui consacre l’individu à l’état :
+L’ancienne éducation romaine se base sur un idéal collectif qui consacre l’individu à l’état :
 
-« Dulce et decorum est pro patria mori » - Horace
+« Dulce et decorum est pro patria mori » - Horace
 
 [[fmt:green]]L’aristocratie rurale[[/fmt]] était présente dans [[fmt:yellow]]l’éducation paysanne[[/fmt]] et le [[fmt:green]]mode de vie traditionnel[[/fmt]] fut de plus de plus en plus adopté. Le fondement était le [[fmt:yellow]]respect de la coutume[[/fmt]] ancestrale.
 
@@ -110,7 +110,7 @@ A partir de 16 ans, l’enfant acquis son [[fmt:green]]statut de citoyen[[/fmt]]
 
 [[fmt:green]]L’enseignement[[/fmt]] et [[fmt:green]]l’éducation[[/fmt]] sont du domaine du [[fmt:yellow]]travail pénible[[/fmt]]. Le processus éducatif consiste à extraire de sa nature sauvage l’homme pour le faire vivre de manière sociale. L’éducation et l’enseignement sont une conquête de l’homme pour le faire passer de la nature à la culture.
 
-[[fmt:green]]L’eruditio [[/fmt]]: entreprise de dégrossissement de l’homme pour le faire passer de la rudesse agreste à l’esprit policé (polis=ville), de la violence à la paix...
+[[fmt:green]]L’eruditio [[/fmt]]: entreprise de dégrossissement de l’homme pour le faire passer de la rudesse agreste à l’esprit policé (polis=ville), de la violence à la paix...
 
 [[fmt:green]]Educere[[/fmt]] : tirer, extraire du sol
 
@@ -144,7 +144,7 @@ On [[fmt:yellow]]apprend à lire et écrire[[/fmt]]. La [[fmt:green]]pédagogie[
 
 - Toutefois possibilité d’aller plus loin auprès d’un enseignant spécialisé le calculator
 
-Il va y avoir une pédagogie « passive » qui est fondée sur la [[fmt:yellow]]mémoire[[/fmt]] et [[fmt:yellow]]l’imitation[[/fmt]]. On va avoir recours à [[fmt:green]]l’émulation[[/fmt]] mais surtout aux [[fmt:green]]réprimandes[[/fmt]] et aux châtiments avec la férule pour les punitions habituelles et le fouet pour les cas plu graves. La [[fmt:yellow]]pratique des châtiments[[/fmt]] corporels sera petit à petit remise en cause et la discipline s’humanisera.
+Il va y avoir une pédagogie « passive » qui est fondée sur la [[fmt:yellow]]mémoire[[/fmt]] et [[fmt:yellow]]l’imitation[[/fmt]]. On va avoir recours à [[fmt:green]]l’émulation[[/fmt]] mais surtout aux [[fmt:green]]réprimandes[[/fmt]] et aux châtiments avec la férule pour les punitions habituelles et le fouet pour les cas plu graves. La [[fmt:yellow]]pratique des châtiments[[/fmt]] corporels sera petit à petit remise en cause et la discipline s’humanisera.
 
 Au III / IV siècle, [[fmt:yellow]]l’augmentation du nombre d’élèves[[/fmt]] entraine l’apparition de [[fmt:green]]classe de niveau[[/fmt]] (qui n’est pas seulement divisé avec l’âge). On va avoir une forme d’enseignement mutuel, les élèves les plus grands servent de [[fmt:yellow]]répétiteurs[[/fmt]] aux plus jeunes. Le [[fmt:yellow]]tableau[[/fmt]] apparait dans les salles de classes.
 
@@ -158,7 +158,7 @@ Peu avant J.C. (-20) le [[fmt:yellow]]programme se stabilise[[/fmt]] avec Virgil
 
 Le [[fmt:green]]programme[[/fmt]] se résume à des études théoriques de la bonne langue et des explications des poètes classiques. La [[fmt:green]]grammaire[[/fmt]] était à l’époque une analyse des éléments du langage (lettres, mots…). On va avoir une évolution d’une approche théorique vers une approche par l’usage. L’essentiel reste l’explication des auteurs (y compris contemporains).
 
-Le [[fmt:green]]quadrige[[/fmt]] : Virgile (poète), Térence (comique), Sallustre (historien) et Cicéron (orateur)
+Le [[fmt:green]]quadrige[[/fmt]] : Virgile (poète), Térence (comique), Sallustre (historien) et Cicéron (orateur)
 
 La [[fmt:green]]méthode[[/fmt]] était principalement les lectures expliquée par le maitre, la lecture expressive par l’élève et la récitation, le commentaire de la forme et du fond.
 
@@ -198,25 +198,25 @@ On peut remarquer une [[fmt:yellow]]forte influence[[/fmt]] sur la [[fmt:green]]
 
 C’est [[fmt:yellow]]l’origine[[/fmt]] de la tradition pédagogique qui donne au savoir le rôle d’éveil aux vérités de [[fmt:green]]l’Eternelle Sagesse[[/fmt]].
 
-### [[fmt:underline,green-text]]LES CONFESSIONS : FIN DE L’INNOCENCE DU NOURRISSON :[[/fmt]]
+### [[fmt:underline,green-text]]LES CONFESSIONS : FIN DE L’INNOCENCE DU NOURRISSON :[[/fmt]]
 
-« Ainsi est-ce la faiblesse du corps de l’enfant qui est innocente, et non l’âme des enfants. Je l’ai vu de mes yeux, et j’ai fait l’expérience de la jalousie d’un tout petit : il ne parlait pas encore, mais il regardait, tout pâle et l’œil amer, son frère de lait.
+« Ainsi est-ce la faiblesse du corps de l’enfant qui est innocente, et non l’âme des enfants. Je l’ai vu de mes yeux, et j’ai fait l’expérience de la jalousie d’un tout petit : il ne parlait pas encore, mais il regardait, tout pâle et l’œil amer, son frère de lait.
 
 Est-ce là l’innocence enfantine ? Non, Seigneur, elle n’existe pas.
 
-En sortant du premier âge, et en poursuivant vers celui que j’ai, n’ai-je pas abordé l’enfance ?[…] Je n’étais plus, de fait, un nouveau-né qui ne saurait parler, mais déjà un enfant doué de parole. »
+En sortant du premier âge, et en poursuivant vers celui que j’ai, n’ai-je pas abordé l’enfance ?[…] Je n’étais plus, de fait, un nouveau-né qui ne saurait parler, mais déjà un enfant doué de parole. »
 
-### [[fmt:underline,green-text]]LES CONFESSIONS : APPRENTISSAGE DE LA LANGUE[[/fmt]]
+### [[fmt:underline,green-text]]LES CONFESSIONS : APPRENTISSAGE DE LA LANGUE[[/fmt]]
 
 Il y a un [[fmt:green]]apprentissage implicite[[/fmt]] fondé sur les capacités de la [[fmt:yellow]]mémoire[[/fmt]] et qui procède par [[fmt:yellow]]association[[/fmt]] entre des paroles, des actions et des mots.
 
-«  Comment j’ai appris à parler, je l’ai remarqué par la suite. Ce n’étaient pas les grandes personnes qui me l’enseignaient en me fournissant des mots selon l’ordre déterminé d’une science, comme, peu après, pour les lettres. Mais c’est moi-même qui, […], l’apprenais, lorsque par des gémissements et des cris variés, ainsi que par des mouvements variés de mes membres, je voulais mettre au jour les sentiments de mon cœur afin que l’on obéît à ma volonté, et que je ne pouvais ni exprimer tout ce que je voulais, ni l’exprimer à tous ceux que je voulais. »
+«  Comment j’ai appris à parler, je l’ai remarqué par la suite. Ce n’étaient pas les grandes personnes qui me l’enseignaient en me fournissant des mots selon l’ordre déterminé d’une science, comme, peu après, pour les lettres. Mais c’est moi-même qui, […], l’apprenais, lorsque par des gémissements et des cris variés, ainsi que par des mouvements variés de mes membres, je voulais mettre au jour les sentiments de mon cœur afin que l’on obéît à ma volonté, et que je ne pouvais ni exprimer tout ce que je voulais, ni l’exprimer à tous ceux que je voulais. »
 
-« Lorsqu’ils dénommaient quelque chose et mouvaient leur corps vers un objet en accord avec cette parole, je m’en emparais dans ma mémoire ; je voyais et je retenais que telle chose était appelée du nom qu’ils faisaient résonner lorsqu’ils voulaient la montrer. Que c’était là ce qu’ils voulaient, me le révélaient le mouvement de leur corps, aussi bien que ce langage naturel de tous les peuples qui apparaît sur le visage, dans les signes des yeux, les autres gestes et le ton de la voix, dénotant les sentiments que l’âme éprouve en recherchant, en possédant, en rejetant ou en évitant les choses. »
+« Lorsqu’ils dénommaient quelque chose et mouvaient leur corps vers un objet en accord avec cette parole, je m’en emparais dans ma mémoire ; je voyais et je retenais que telle chose était appelée du nom qu’ils faisaient résonner lorsqu’ils voulaient la montrer. Que c’était là ce qu’ils voulaient, me le révélaient le mouvement de leur corps, aussi bien que ce langage naturel de tous les peuples qui apparaît sur le visage, dans les signes des yeux, les autres gestes et le ton de la voix, dénotant les sentiments que l’âme éprouve en recherchant, en possédant, en rejetant ou en évitant les choses. »
 
-« Ainsi recueillais-je peu à peu […] ces mots qui les représentaient dans des phrases variées, et fréquemment entendues. Grâce à eux, j’énonçais mes volontés désormais, par une bouche dressée à l’usage de ces signes. »
+« Ainsi recueillais-je peu à peu […] ces mots qui les représentaient dans des phrases variées, et fréquemment entendues. Grâce à eux, j’énonçais mes volontés désormais, par une bouche dressée à l’usage de ces signes. »
 
-### [[fmt:underline,green-text]]LES CONFESSIONS : L’ECOLE ET LES CHATIMENTS[[/fmt]]
+### [[fmt:underline,green-text]]LES CONFESSIONS : L’ECOLE ET LES CHATIMENTS[[/fmt]]
 
 Les [[fmt:green]]châtiments[[/fmt]] n’émeuvent pas les adultes car ils supposés permettent un [[fmt:yellow]]bien futur[[/fmt]] en arrêtant un plaisir actuel néfaste à cet objectif. Les [[fmt:green]]adultes[[/fmt]] reproduisent ce qu’ils ont [[fmt:yellow]]eux-mêmes[[/fmt]] vécus en tant qu’enfants.
 
@@ -226,27 +226,27 @@ Les [[fmt:green]]châtiments[[/fmt]] n’émeuvent pas les adultes car ils suppo
 
 « Ce qui manquait, Seigneur, ce n’était ni la mémoire ni l’intelligence, dont tu as voulu que nous les eussions satisfaisantes pour cet âge, mais il y avait aussi le plaisir de jouer, et il était puni en nous par des gens qui, de toute façon, agissaient comme nous. Mais les bagatelles des grandes personnes, on les appelle des affaires, et, alors que celles des enfants sont de même sorte, elles sont châtiées par les grandes personnes. Et personne n’a pitié ni des enfants, ni d’elles, ni des deux à la fois. »
 
-### [[fmt:underline,green-text]]LES CONFESSIONS : LECTURE VS RHETORIQUE[[/fmt]]
+### [[fmt:underline,green-text]]LES CONFESSIONS : LECTURE VS RHETORIQUE[[/fmt]]
 
-« J’avais passionnément aimé le latin, non pas celui qu’enseignent les premiers maîtres, mais ceux qu’on appelle grammairiens.
+« J’avais passionnément aimé le latin, non pas celui qu’enseignent les premiers maîtres, mais ceux qu’on appelle grammairiens.
 
 De telles études, en leur folie, passent pour plus honorables et plus fécondes que celles par lesquelles j’ai appris à lire et à écrire.
 
 Meilleur est assurément ce premier enseignement, car voici que je suis plus près d’oublier les égarements d’Énée et toutes les choses de ce genre, que d’écrire et de lire.
 
-Des voiles pendent devant le seuil des écoles des grammairiens, mais ils signalent moins le prestige du secret que le vêtement de l’erreur. »
+Des voiles pendent devant le seuil des écoles des grammairiens, mais ils signalent moins le prestige du secret que le vêtement de l’erreur. »
 
-« Permets-moi, mon Dieu, de dire quelque chose de cette intelligence dont tu m’as doté, et des délires où je la gaspillais. On me proposait une occupation qui était source d’inquiétude pour mon âme, vu le prix attaché à la louange ou au déshonneur ou vu la crainte des coups.
+« Permets-moi, mon Dieu, de dire quelque chose de cette intelligence dont tu m’as doté, et des délires où je la gaspillais. On me proposait une occupation qui était source d’inquiétude pour mon âme, vu le prix attaché à la louange ou au déshonneur ou vu la crainte des coups.
 
 Nous nous exercions à suivre, en divaguant, les traces des fictions poétiques, et à dire en termes de prose ce que le poète avait dit en vers.
 
 Et celui-là parlait de la manière la plus digne d’éloges chez qui, en accord avec la dignité du personnage représenté, s’exprimait le sentiment le plus proche de la colère et de la douleur, en des termes capables d’habiller le plus justement les pensées.
 
-A quoi bon, lorsque je déclamais, être acclamé devant de nombreux condisciples de mon âge ? Tout cela n’est-il pas fumée et vent ? N’y avait-il rien d’autre à quoi exercer mon intelligence et ma langue ? »
+A quoi bon, lorsque je déclamais, être acclamé devant de nombreux condisciples de mon âge ? Tout cela n’est-il pas fumée et vent ? N’y avait-il rien d’autre à quoi exercer mon intelligence et ma langue ? »
 
-« Ne me donnait-on pas à imiter des hommes, qui étaient confondus de honte s’ils exposaient avec un barbarisme ou un solécisme certaines de leurs actions, aussi bonnes qu’elles fussent, mais qui étaient glorifiés de louanges s’ils racontaient abondamment et de la belle manière, en termes propres et convenablement liés, leurs débauches ?
+« Ne me donnait-on pas à imiter des hommes, qui étaient confondus de honte s’ils exposaient avec un barbarisme ou un solécisme certaines de leurs actions, aussi bonnes qu’elles fussent, mais qui étaient glorifiés de louanges s’ils racontaient abondamment et de la belle manière, en termes propres et convenablement liés, leurs débauches ?
 
-A tel point que, si quelqu’un qui possède et enseigne ces antiques conventions sur les sons prononce le mot « homme » sans aspirer la première syllabe, cela déplaît plus aux hommes que si, à l’encontre de tes préceptes, il hait, lui qui est un homme, un autre homme. »
+A tel point que, si quelqu’un qui possède et enseigne ces antiques conventions sur les sons prononce le mot « homme » sans aspirer la première syllabe, cela déplaît plus aux hommes que si, à l’encontre de tes préceptes, il hait, lui qui est un homme, un autre homme. »
 
 ### [[fmt:underline,green-text]]ST AUGUSTUN PERIODE PHILOSOPHIQUE (386 – 391)[[/fmt]]
 
@@ -372,7 +372,7 @@ Les quatre vertus :
 
 - amour du travail
 
-### [[fmt:underline,green-text]]LES DEGRES SUPERIEUR [[/fmt]]
+### [[fmt:underline,green-text]]LES DEGRES SUPERIEUR [[/fmt]]
 
 Il existait un [[fmt:green]]degré supérieur[[/fmt]], les Académies Shuyuan.
 

@@ -268,7 +268,7 @@
   const hlpTierLabels = { essential:"Essentiel HLP", deepening:"Approfondissement", transversal:"Transversal" };
   const hlpStudy = hasHlp(text) && (text.pedagogicalHook || text.hlpQuestion || text.problematisations?.length || text.keywords?.length || text.hlpOppositions?.length) ? `<section class="text-hlp-study text-disclosure" aria-label="Pourquoi lire ce texte en HLP">
     <button class="text-hlp-study-trigger text-disclosure-trigger" type="button" aria-expanded="false">
-      <span class="text-hlp-study-trigger-copy"><small>Repère HLP</small><strong>Pourquoi lire ce texte&nbsp;?</strong></span>
+      <span class="text-hlp-study-trigger-copy"><small>Repère HLP</small><strong>Pourquoi lire ce texte ?</strong></span>
       ${text.hlpTier ? `<small class="text-hlp-tier text-hlp-tier--${text.hlpTier}">${hlpTierLabels[text.hlpTier] || text.hlpTier}</small>` : ""}
       <i class="text-hlp-study-toggle" aria-hidden="true"></i>
     </button>
@@ -560,7 +560,7 @@
     <aside class="text-detail-cta" aria-label="Accompagnement sur ce texte">
       <div class="text-detail-cta-copy">
         <span class="text-detail-cta-eyebrow">Cours particulier</span>
-        <h2>Besoin d’aller plus loin sur ce texte ou ce thème&nbsp;?</h2>
+        <h2>Besoin d’aller plus loin sur ce texte ou ce thème ?</h2>
         <p>Approfondissons les notions, les enjeux du texte et le thème auquel il se rattache, à votre rythme.</p>
       </div>
       <a class="text-detail-cta-link" href="/#contact">Travailler ce texte avec moi <span aria-hidden="true">→</span></a>

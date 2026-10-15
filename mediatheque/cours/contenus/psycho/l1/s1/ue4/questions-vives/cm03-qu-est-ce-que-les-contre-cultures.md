@@ -1,6 +1,6 @@
 # [[fmt:red-text]]Qu’est-ce que les[[/fmt]]
 
-## [[fmt:red-text]]contre-cultures ?[[/fmt]]
+## [[fmt:red-text]]contre-cultures ?[[/fmt]]
 
 ## [[fmt:underline,red-text]]LES UTOPIES[[/fmt]]
 
@@ -8,7 +8,7 @@
 
 Les [[fmt:green]]utopies[[/fmt]] ne sont pas [[fmt:yellow]]fatalisme[[/fmt]] (Doctrine qui considère tous les événements comme irrévocablement fixés à l'avance par une cause unique et surnaturelle) et [[fmt:green]]pragmatisme[[/fmt]] (Doctrine qui prend pour critère de vérité le fait de fonctionner réellement, de réussir pratiquement) [[fmt:green]]politique[[/fmt]]
 
-Les utopies littéraires :
+Les utopies littéraires :
 
 [[fmt:pink]]Thomas More[[/fmt]], (1478-1535), L’utopie. Société imaginée contre la société ([[fmt:red]]1516[[/fmt]]) monarchique du 16ème siècle.
 
@@ -42,7 +42,7 @@ Ces projets sont maintenant [[fmt:yellow]]faisables[[/fmt]] grâce à la techniq
 
 [[fmt:green]]Faisabilité scientifique[[/fmt]] ouvre des [[fmt:yellow]]utopies cauchemar[[/fmt]] : [[fmt:red]]1984[[/fmt]][[fmt:underline]] [[/fmt]]([[fmt:blue]]big [[/fmt]][[fmt:blue]]brother is watching you[[/fmt]]). Cela peut conduire à des [[fmt:yellow]]sociétés totalitaires[[/fmt]]. Il y a des [[fmt:green]]m[[/fmt]][[fmt:green]]utations anthropologiques[[/fmt]]. Ces techniques permettent des [[fmt:green]]mutations [[/fmt]][[fmt:green]]quantitatives[[/fmt]] mais la qualité de la vie n'y est pas forcément.
 
-Les contre cultures veulent maîtriser ces technologies (ex : [[fmt:blue]]l'altermondialisme[[/fmt]][[fmt:blue]] [[/fmt]]: contestation du monde libéral). Les [[fmt:green]]contre cultures[[/fmt]][[fmt:yellow]] ne peuvent avoir de réelle influence[[/fmt]] que si elles s'accordent avec le [[fmt:yellow]]futur[[/fmt]].
+Les contre cultures veulent maîtriser ces technologies (ex : [[fmt:blue]]l'altermondialisme[[/fmt]][[fmt:blue]] [[/fmt]]: contestation du monde libéral). Les [[fmt:green]]contre cultures[[/fmt]][[fmt:yellow]] ne peuvent avoir de réelle influence[[/fmt]] que si elles s'accordent avec le [[fmt:yellow]]futur[[/fmt]].
 
 ## [[fmt:underline,red-text]]LA FETE[[/fmt]]
 
@@ -54,8 +54,8 @@ La fête est [[fmt:green]]antisociale[[/fmt]],  alors que la culture [[fmt:yello
 
 ## [[fmt:underline,red-text]]L'HYBRIS (L'EXCES, LA DEMESURE, EN GREC), AVEC L'EXEMPLE DU ROCK METAL.[[/fmt]]
 
-Les [[fmt:green]]contre cultures[[/fmt]] sont des [[fmt:yellow]]manifestations[[/fmt]] ou s'expriment « l'homo sapiens demens » : la capacité de l'homme à [[fmt:yellow]]faire surgir de la démesure[[/fmt]], être dans [[fmt:yellow]]l'excès[[/fmt]].
+Les [[fmt:green]]contre cultures[[/fmt]] sont des [[fmt:yellow]]manifestations[[/fmt]] ou s'expriment « l'homo sapiens demens » : la capacité de l'homme à [[fmt:yellow]]faire surgir de la démesure[[/fmt]], être dans [[fmt:yellow]]l'excès[[/fmt]].
 
-Def : l'Homme ne peut être réduit  son visage technicien d'Homo Faber, ni à son visage rationaliste d'Homo sapiens, [[fmt:yellow]]il faut[[/fmt]], dans le visage de l'H, [[fmt:yellow]]considérer le mythe, la fête, la danse, le chant, l'extase[[/fmt]][[fmt:yellow]], l'amour, la mort, la démesure[[/fmt]][[fmt:yellow]], la guerre[[/fmt]]. Il ne faut [[fmt:yellow]]pas rejeter comme bruit, résidu, déchet, l'affectivité, la névrose, le désordre, l'aléa.[[/fmt]]
+Def : l'Homme ne peut être réduit  son visage technicien d'Homo Faber, ni à son visage rationaliste d'Homo sapiens, [[fmt:yellow]]il faut[[/fmt]], dans le visage de l'H, [[fmt:yellow]]considérer le mythe, la fête, la danse, le chant, l'extase[[/fmt]][[fmt:yellow]], l'amour, la mort, la démesure[[/fmt]][[fmt:yellow]], la guerre[[/fmt]]. Il ne faut [[fmt:yellow]]pas rejeter comme bruit, résidu, déchet, l'affectivité, la névrose, le désordre, l'aléa.[[/fmt]]
 
-[[fmt:bold,red-text]]Ex : rock metaaaaaal[[/fmt]]
+[[fmt:bold,red-text]]Ex : rock metaaaaaal[[/fmt]]

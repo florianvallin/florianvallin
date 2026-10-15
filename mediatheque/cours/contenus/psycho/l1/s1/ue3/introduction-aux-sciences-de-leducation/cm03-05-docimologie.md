@@ -2,17 +2,17 @@
 
 ## [[fmt:underline,red-text]]Introduction[[/fmt]]
 
-La [[fmt:green]]docimologie[[/fmt]] est la « science qui étudie les différents moyens de contrôle des connaissances » (Petit Robert, 2014).
+La [[fmt:green]]docimologie[[/fmt]] est la « science qui étudie les différents moyens de contrôle des connaissances » (Petit Robert, 2014).
 
-On peut également dire que c’est une « [[fmt:yellow]]étude scientifique[[/fmt]] de la [[fmt:yellow]]fiabilité [[/fmt]]et de la [[fmt:yellow]]fidélité [[/fmt]]du jugement des connaissance porté au cours des différentes procédures d’examens, de notations, de classement et d’évaluations » (De Peretti, 2005)
+On peut également dire que c’est une « [[fmt:yellow]]étude scientifique[[/fmt]] de la [[fmt:yellow]]fiabilité [[/fmt]]et de la [[fmt:yellow]]fidélité [[/fmt]]du jugement des connaissance porté au cours des différentes procédures d’examens, de notations, de classement et d’évaluations » (De Peretti, 2005)
 
 ### [[fmt:underline,green-text]]Des résultats fondateurs[[/fmt]]
 
-Laugier et Weinberg en fait une expérience de « multicorrection » en 1936.
+Laugier et Weinberg en fait une expérience de « multicorrection » en 1936.
 
 Sur 100 copies (avec 6 disciplines), ils ont fait 6 notes par copie (5 correcteur + la note du bac).
 
-On peut voit 9000 écarts de notation (100x6x15) :
+On peut voit 9000 écarts de notation (100x6x15) :
 
 1-2 1-3 1-4 1-5 1-6
 
@@ -34,13 +34,13 @@ On peut voir des écarts de notes surprenants.
 
 Une expérience a été faite avec 3 copies pour 66 correcteurs (note et commentaires). On peut voir qu’il n’y a pas d’effet de sévérité ou d’indulgence. Les notes faibles auront plus de commentaires que les copies élevés. On a une forte réaction à l’égard de ce travail.
 
-## [[fmt:underline,red-text]]Comment expliquer ce phénomène ?[[/fmt]]
+## [[fmt:underline,red-text]]Comment expliquer ce phénomène ?[[/fmt]]
 
-Est-ce que le niveau d’une copie est stable ? La copie ne bougera pas mais la perception de celle-ci elle change. Est-ce que tout le monde mesure-t-il la même chose ? Comment peut-on expliquer que le résultat ne sera pas le même en fonction correcteur ?
+Est-ce que le niveau d’une copie est stable ? La copie ne bougera pas mais la perception de celle-ci elle change. Est-ce que tout le monde mesure-t-il la même chose ? Comment peut-on expliquer que le résultat ne sera pas le même en fonction correcteur ?
 
 ### [[fmt:underline,green-text]]Quelques pistes[[/fmt]]
 
-Il y a des [[fmt:green]]effets sur l’évaluateur[[/fmt]] :
+Il y a des [[fmt:green]]effets sur l’évaluateur[[/fmt]] :
 
 - On ne peut avoir [[fmt:yellow]]localement des effets évaluateur[[/fmt]] – n’apparait pas toujours globalement ([[fmt:pink]]Suchaut[[/fmt]], [[fmt:red]]2004[[/fmt]])
 
@@ -50,17 +50,17 @@ Il y a des [[fmt:green]]effets sur l’évaluateur[[/fmt]] :
 
 - [[fmt:yellow]]Variabilité des critère[[/fmt]]s
 
-- [[fmt:yellow]]Nouvelle notation après 12-19 mois[[/fmt]] : 92 avis différents sur 210
+- [[fmt:yellow]]Nouvelle notation après 12-19 mois[[/fmt]] : 92 avis différents sur 210
 
 Il y a également des [[fmt:yellow]]effets[[/fmt]] concernant le [[fmt:green]]sujet et le type d’examen[[/fmt]]. Il peut y avoir des [[fmt:yellow]]variables[[/fmt]] en fonction du sujet lui-même. La personne va avoir [[fmt:yellow]]des résultats différents[[/fmt]] (variation de l’indicateur). Il y aura des résultats différents en fonction du sujet mais il n‘est [[fmt:yellow]]pas en lien direct[[/fmt]] en fonction de la chose qui mesure.). [[fmt:yellow]]Les épreuves orales[[/fmt]] accentuent encore dans la notation.
 
 Il y a aussi des [[fmt:yellow]]effets de l’évalué sur la performance[[/fmt]] (état de forme, de stress…). Il va également y avoir une [[fmt:yellow]]fluctuation par rapport aux attributs physiques, sociaux, sexués, niveau et statut scolaire[[/fmt]]… Les deux sources sont qu’on questionne la stabilité mais n’apportent pas de réponse aux constats précédents. Il peut y avoir des [[fmt:yellow]]interactions avec l’effet évaluateur[[/fmt]]. Tout cela rentre en compte.
 
-## [[fmt:underline,green-text]]La « constante macabre » (A.Antibi, 2003)[[/fmt]]
+## [[fmt:underline,green-text]]La « constante macabre » (A.Antibi, 2003)[[/fmt]]
 
-Un professeur va créer un examen en choisissant un certain niveau pour qu’il y a un ensemble de bonnes et de mauvaise notes. On peut donc apercevoir deux courbes différentes : [[fmt:green]]la courbe d’aptitude et la courbe de connaissance.[[/fmt]]
+Un professeur va créer un examen en choisissant un certain niveau pour qu’il y a un ensemble de bonnes et de mauvaise notes. On peut donc apercevoir deux courbes différentes : [[fmt:green]]la courbe d’aptitude et la courbe de connaissance.[[/fmt]]
 
-### [[fmt:underline,green-text]]3[[/fmt]][[fmt:underline,green-text]]) Des critères « métrologique »pour la docimologie[[/fmt]]
+### [[fmt:underline,green-text]]3[[/fmt]][[fmt:underline,green-text]]) Des critères « métrologique »pour la docimologie[[/fmt]]
 
 Le mètre étalon définissait le mètre (grande règle). Quand deux personnes ne sont pas en accord avec le mètre, on se referait à la règle. Quand on veut mesurer une longueur, il faut se mettre en accord avec le mètre et de le représenter pareille. Il faut donc pour cela avoir un exemple que tout le monde peut prendre en compte.
 
@@ -74,15 +74,15 @@ Le problème est donc un [[fmt:yellow]]problème de correspondance entre la mesu
 
 Il y a également une [[fmt:green]]notion prédictive[[/fmt]] de la validité. Si elle nous permet de faire des bonnes prédictions, on pourra avoir confiance à nos mesures.
 
-[[fmt:green]]Métrologie[[/fmt]] : sciences des (poids) et mesures.
+[[fmt:green]]Métrologie[[/fmt]] : sciences des (poids) et mesures.
 
-[[fmt:green]]Mesurande[[/fmt]] : grandeur que l’on veut mesurer.
+[[fmt:green]]Mesurande[[/fmt]] : grandeur que l’on veut mesurer.
 
-Pour pouvoir [[fmt:yellow]]spécifier une grandeur que l’on veut[[/fmt]], on a besoin de [[fmt:yellow]]connaitre la grandeur de l’objet, la description de l’état du phénomène, le contexte, [[/fmt]][[fmt:yellow]]les phénomènes[[/fmt]] qui touche cette chose. Est-ce que [[fmt:green]]l’on connait bien ce qu’on est censé mesurer[[/fmt]] ? La mesure ne donne pas la connaissance de la grandeur.
+Pour pouvoir [[fmt:yellow]]spécifier une grandeur que l’on veut[[/fmt]], on a besoin de [[fmt:yellow]]connaitre la grandeur de l’objet, la description de l’état du phénomène, le contexte, [[/fmt]][[fmt:yellow]]les phénomènes[[/fmt]] qui touche cette chose. Est-ce que [[fmt:green]]l’on connait bien ce qu’on est censé mesurer[[/fmt]] ? La mesure ne donne pas la connaissance de la grandeur.
 
 [[fmt:green-text]]5) La fidélité[[/fmt]]
 
-C’est le fait qu’un résultat se répète dans le temps. Comment savoir que ce que l’on prend comme mesure n’a pas changé dans les mêmes conditions ? Il peut y avoir une indépendance de validité. Par exemple, un mètre restera toujours un mètre.
+C’est le fait qu’un résultat se répète dans le temps. Comment savoir que ce que l’on prend comme mesure n’a pas changé dans les mêmes conditions ? Il peut y avoir une indépendance de validité. Par exemple, un mètre restera toujours un mètre.
 
 [[fmt:green-text]]6) La sensibilité[[/fmt]]
 
@@ -94,13 +94,13 @@ C’est la qualité de la mesure à répercuter les variations de la grandeur. L
 
 Les notes journalières sont une mauvaise solution car la différence de niveau sera considérable. (sur 409 élève, les résultats sont étalé de 43 à 80/100). Il y aura des désaccords sur les objectifs de l’enseignement.
 
-On pense que certains types d’évaluation auront plus d’effets que d’autre (lettres, couleurs, appréciation verbales…) Est-ce que l’augmentation de la précision des barèmes sera bénéfique ? Multiplier les correcteurs ? Les épreuves QCM ? Supprimer les notes ? Szeretlek
+On pense que certains types d’évaluation auront plus d’effets que d’autre (lettres, couleurs, appréciation verbales…) Est-ce que l’augmentation de la précision des barèmes sera bénéfique ? Multiplier les correcteurs ? Les épreuves QCM ? Supprimer les notes ? Szeretlek
 
 ### [[fmt:underline,green-text]]Des améliorations possibles[[/fmt]]
 
-Le fait de connaitre les phénomènes qui influence les jugements peut aider aux améliorations (contrôler les effets d’ordre, reprendre les objectifs, connaitre les effets (de type Pygmalion (=influence des croyances sur les performances de ces élèves)…)
+Le fait de connaitre les phénomènes qui influence les jugements peut aider aux améliorations (contrôler les effets d’ordre, reprendre les objectifs, connaitre les effets (de type Pygmalion (=influence des croyances sur les performances de ces élèves)…)
 
-On a une solution technique : standardiser une série de note, on peut rendre comparable les distributions.
+On a une solution technique : standardiser une série de note, on peut rendre comparable les distributions.
 
 ## [[fmt:underline,red-text]]Vers le champ de l’évaluation[[/fmt]]
 

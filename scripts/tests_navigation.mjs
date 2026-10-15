@@ -7,6 +7,7 @@ import {fileURLToPath} from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const themeKey = 'philosophal-site-theme-v1';
+const release = JSON.parse(read('version.json')).version;
 let checks = 0;
 function check(value, expected, message) {
   assert.deepEqual(value, expected, message);
@@ -180,7 +181,7 @@ for (const attr of ['js/script.js?v=test', '/js/script.js?v=test', '../js/script
   window.__searchTest(); window.FVSiteSearch.open('outils');
   const results = shell.querySelector('[data-site-search-results]');
   for (let i = 0; i < 30 && !results.innerHTML; i++) await new Promise(resolve => setTimeout(resolve, 10));
-  check(loaded[0], 'https://philosophal.fr/js/site-search-data.js?v=20261014-navigation1', 'Index de recherche chargé depuis toutes les formes de script');
+  check(loaded[0], `https://philosophal.fr/js/site-search-data.js?v=${release}`, 'Index de recherche chargé depuis toutes les formes de script');
   check(results.innerHTML?.includes('href="/outils/"'), true, 'Recherche « outils » : lien vers l’annuaire');
 }
 

@@ -1,6 +1,6 @@
 # [[fmt:red-text]]Le mariage[[/fmt]]
 
-Les [[fmt:green]]anthropologues[[/fmt]] (comprendre des sociétés éloignées) n’ont pas beaucoup débattue sur le mariage pour tous. Il ne dit pas : « c’est mieux ailleurs ». Il y a des façons de faire pour voir les autres sociétés.  Les autres personnes se comportent autrement mais il n’y a pas de jugements, de mieux ou non.
+Les [[fmt:green]]anthropologues[[/fmt]] (comprendre des sociétés éloignées) n’ont pas beaucoup débattue sur le mariage pour tous. Il ne dit pas : « c’est mieux ailleurs ». Il y a des façons de faire pour voir les autres sociétés.  Les autres personnes se comportent autrement mais il n’y a pas de jugements, de mieux ou non.
 
 ## [[fmt:underline,red-text]]Le mariage[[/fmt]]
 
@@ -18,7 +18,7 @@ I.T à créer un concept de [[fmt:green]]démariage[[/fmt]]. C’est pour elle u
 
 ## [[fmt:red-text]]II)      [[/fmt]][[fmt:underline,red-text]]La prohibition de l’inceste[[/fmt]]
 
-D’un point de vue anthropologique, [[fmt:pink]]Claude [[/fmt]][[fmt:pink]]Lévistrauss[[/fmt]] est l’un des premiers à s’être intéresser à cela. Il a publié en 1949 « les structure élémentaires de la parenté » pour essayer de comprendre les formes d’alliances. Il a abordé le sens social du mariage a partir de sa théorie de la [[fmt:green]]prohibition de l’inceste[[/fmt]] (cela concerne le mariage et non les relations sexuelles). L’interdit de l’inceste touche un interdit du mariage.
+D’un point de vue anthropologique, [[fmt:pink]]Claude [[/fmt]][[fmt:pink]]Lévistrauss[[/fmt]] est l’un des premiers à s’être intéresser à cela. Il a publié en 1949 « les structure élémentaires de la parenté » pour essayer de comprendre les formes d’alliances. Il a abordé le sens social du mariage a partir de sa théorie de la [[fmt:green]]prohibition de l’inceste[[/fmt]] (cela concerne le mariage et non les relations sexuelles). L’interdit de l’inceste touche un interdit du mariage.
 
 Les hommes se sont attachés à [[fmt:yellow]]contrôler les femmes[[/fmt]] car ce sont elles qui font les enfants. La société est soumise à des contraintes sociales qui établissent des règles et des interdits dans la prohibition de l’inceste. La règle culturel va entrer en jeu et est pour [[fmt:pink]]Lévi Strauss[[/fmt]] la [[fmt:yellow]]première règle sociale[[/fmt]] (règle d’échange des femmes) pour obliger le groupe à s’ouvrir à d’autres groupes. Il y a des échanges des femmes (qui marquent le passage de l’hostilité à l’alliance pour LS → agrandissement de groupe).
 
@@ -32,7 +32,7 @@ Dans une union femme / femme, l’enfant va s’adresser à l’une des deux fem
 
 Dans toutes ces situations, le géniteur est généralement représenté. Toutes les sociétés s’arrangent pour permettre une [[fmt:yellow]]organisation sociale cohérente[[/fmt]] (ni le sexe des partenaires, ni la paternité biologique ne sont important). La représentation des rôles féminins et masculins sont important (la femme peut prendre la place de l’homme quand il y a une relation la relation femme / femme).
 
-Nous sommes aujourd’hui sur une métamorphose de la parenté. MB dit que la société a toujours inventé de nouvelles formes de mariages, c’est le résultat de 4 révolutions indépendantes :
+Nous sommes aujourd’hui sur une métamorphose de la parenté. MB dit que la société a toujours inventé de nouvelles formes de mariages, c’est le résultat de 4 révolutions indépendantes :
 
 - L’homosexualité est de plus en plus reconnue comme une sexualité normale.
 

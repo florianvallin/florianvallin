@@ -1,8 +1,8 @@
-# [[fmt:red-text]]L’adolescent à l’école :[[/fmt]]
+# [[fmt:red-text]]L’adolescent à l’école :[[/fmt]]
 
 ## [[fmt:red-text]]Attentes personnelles et intentions professionnelles, motivation, violence, décrochage[[/fmt]]
 
-Objectif du cours :
+Objectif du cours :
 
 - Prendre conscience de l’évolution du concept d’orientation au fil des siècles
 
@@ -12,17 +12,17 @@ Objectif du cours :
 
 ## [[fmt:underline,red-text]]Introduction historique du concept d’orientation[[/fmt]]
 
-- Sous l’ancien régime : le travail était une affaire de famille, une affaire de tradition
+- Sous l’ancien régime : le travail était une affaire de famille, une affaire de tradition
 
-- [[fmt:yellow]]Révolution politique [[/fmt]]de 1789 : droit de l’homme. Le citoyen a le droit de s’autodéterminer librement, il ne « répond plus à sa destinée »
+- [[fmt:yellow]]Révolution politique [[/fmt]]de 1789 : droit de l’homme. Le citoyen a le droit de s’autodéterminer librement, il ne « répond plus à sa destinée »
 
-- [[fmt:yellow]]Révolution sociale [[/fmt]]de 1848 : doit au travail. On parle de métier et la question des aptitudes professionnelles est au centre de l’orientation.
+- [[fmt:yellow]]Révolution sociale [[/fmt]]de 1848 : doit au travail. On parle de métier et la question des aptitudes professionnelles est au centre de l’orientation.
 
-- [[fmt:yellow]]Révolution industrielle [[/fmt]]et travail à la chaine : la technicité est mise en avant. La qualification est référée à un poste de travail et pas à l’ouvrier. La question d’adaptation au poste de travail est au centre de l’orientation. On ne parle plus de métier mais d’emploi.
+- [[fmt:yellow]]Révolution industrielle [[/fmt]]et travail à la chaine : la technicité est mise en avant. La qualification est référée à un poste de travail et pas à l’ouvrier. La question d’adaptation au poste de travail est au centre de l’orientation. On ne parle plus de métier mais d’emploi.
 
-- [[fmt:yellow]]Révolution informatique [[/fmt]]: l’activité du travial prend la forme d’une fonction professionnelle, le travailleur est considéré comme détenteur de compétences. On ne parle plus d’emploi, on parle de compétences.
+- [[fmt:yellow]]Révolution informatique [[/fmt]]: l’activité du travial prend la forme d’une fonction professionnelle, le travailleur est considéré comme détenteur de compétences. On ne parle plus d’emploi, on parle de compétences.
 
-- [[fmt:yellow]]Révolution scolaire [[/fmt]]: école pour tous et obligatoire jusqu’à 16 ans. L’orientation dépend de la filière choisie et repose sur les évaluations scolaires. ON ne parle plus d’orientation professionnelle mais d’orientation scolaire. L’orientation se focalise sur les nouveaux enjeux de la sélection sociale par le biais du diplôme obtenu par les jeunes.
+- [[fmt:yellow]]Révolution scolaire [[/fmt]]: école pour tous et obligatoire jusqu’à 16 ans. L’orientation dépend de la filière choisie et repose sur les évaluations scolaires. ON ne parle plus d’orientation professionnelle mais d’orientation scolaire. L’orientation se focalise sur les nouveaux enjeux de la sélection sociale par le biais du diplôme obtenu par les jeunes.
 
 Les [[fmt:yellow]]questions d’orientation[[/fmt]] du début du siècle étaient déterminées par l’organisation du travail, de nos jours, elles le sont par [[fmt:green]]l’organisation scolaire[[/fmt]].
 
@@ -42,7 +42,7 @@ L’enjeu du [[fmt:yellow]]processus d’orientation[[/fmt]] devrait être de pe
 
 ### [[fmt:underline,green-text]]Le poids des représentations scolaires sur les représentations d’avenir de l’ado[[/fmt]]
 
-Les [[fmt:yellow]]élèves en échec scolaire[[/fmt]] ont du mal à décrire des professions qu’ils souhaitent exercer, leur représentation se base sur une dichotomie entre le vrai métier inaccessible (ex : médecin) et le métier accessible mais sans intérêt (ex : vendeur).
+Les [[fmt:yellow]]élèves en échec scolaire[[/fmt]] ont du mal à décrire des professions qu’ils souhaitent exercer, leur représentation se base sur une dichotomie entre le vrai métier inaccessible (ex : médecin) et le métier accessible mais sans intérêt (ex : vendeur).
 
 [[fmt:green]]L’accessibilité[[/fmt]] repose évidemment sur [[fmt:yellow]]l’image de soi[[/fmt]] et le [[fmt:yellow]]sentiment de compétence[[/fmt]], rabaissés par les échecs répétés, amis tributaires aussi du sexe et de la section de terminale.
 
@@ -60,7 +60,7 @@ Il n’y a [[fmt:green]]pas de classification scientifique des professions[[/fmt
 
 Ce qui renvoie à des [[fmt:yellow]]catégorisations réductrices[[/fmt]] et la représentation que se construit le sujet est biaisée et stéréotypée.
 
-« En grandissant, les représentations s’enrichissent (l’ado peut citer un plus grand nombre de métiers), deviennent de plus en plus flexibles (capacité à classer les métiers selon différents points de vue) et de plus en plus décentrées par rapport à la perception ou à l’action (la nature des critères pour désigner l’activité professionnelle évolue) » (Guichard & Huteau (2001))
+« En grandissant, les représentations s’enrichissent (l’ado peut citer un plus grand nombre de métiers), deviennent de plus en plus flexibles (capacité à classer les métiers selon différents points de vue) et de plus en plus décentrées par rapport à la perception ou à l’action (la nature des critères pour désigner l’activité professionnelle évolue) » (Guichard & Huteau (2001))
 
 Dumora révèle que les adolescents [[fmt:yellow]]p[[/fmt]][[fmt:yellow]]a[[/fmt]][[fmt:yellow]]ssent des mythes[[/fmt]] qu’ils partagent avec les pairs (préférence professionnelle) [[fmt:yellow]]aux normes de l’[[/fmt]][[fmt:yellow]]institution[[/fmt]] auxquelles ils se soumettent consciemment ou inconsciemment (stratégie scolaire).
 
@@ -72,7 +72,7 @@ La [[fmt:yellow]]réussite scolaire[[/fmt]] est devenue une véritable obsession
 
 - On demande à l’adolescent d’être de plus en plus [[fmt:green]]acteur de son apprentissage[[/fmt]] (apprendre à apprendre, motivation, intérêt…). Il prend peu à peu conscience de sa responsabilité dans la réussite scolaire.
 
-3 acteurs dans la réussite scolaire :
+3 acteurs dans la réussite scolaire :
 
 - Elève
 
@@ -86,17 +86,17 @@ La [[fmt:yellow]]réussite scolaire[[/fmt]] est devenue une véritable obsession
 
 Mais ce qui ressort surtout des enquêtes c’est [[fmt:green]]redonner le gout d’apprendre[[/fmt]] aux élèves, et diminuer les inégalités sociales.
 
-Les [[fmt:yellow]]adolescents demandent[[/fmt]] des [[fmt:yellow]]savoirs vraiment utiles[[/fmt]] pour être motivés :
+Les [[fmt:yellow]]adolescents demandent[[/fmt]] des [[fmt:yellow]]savoirs vraiment utiles[[/fmt]] pour être motivés :
 
-- N’est-ce pas considérer l’école sous son seul aspect utilitariste ?
+- N’est-ce pas considérer l’école sous son seul aspect utilitariste ?
 
-- N’est-ce pas le risque de justifier l’école que par sa seule fonction de préparation à l’insertion socioprofessionnelle ?
+- N’est-ce pas le risque de justifier l’école que par sa seule fonction de préparation à l’insertion socioprofessionnelle ?
 
 - N’est-ce pas empêcher les élèves de considérer l’école comme un lieu permettant de construire des compétences, d’avoir accès au sens et au plaisir d’apprendre
 
 L’école doit permettre de [[fmt:yellow]]construire du sens[[/fmt]] au travers des [[fmt:yellow]]pratiques scolaires[[/fmt]] en n’oubliant pas le sens que certains donnent à cette expérience.
 
-### [[fmt:underline,green-text]]Climat scolaire : classe et établissement[[/fmt]]
+### [[fmt:underline,green-text]]Climat scolaire : classe et établissement[[/fmt]]
 
 De même que le [[fmt:yellow]]style parental[[/fmt]] le plus efficace est celui qui prône autorité et affection contrôle et soutien, la [[fmt:yellow]]classe[[/fmt]], mais aussi [[fmt:yellow]]l’établissement[[/fmt]], se doit de proposer aux élèves un [[fmt:green]]climat positif, bienveillant et protecteur[[/fmt]].
 
@@ -104,11 +104,11 @@ Les classes avec un [[fmt:green]]climat émotionnel de classe[[/fmt]] (CEC) de [
 
 Les classes avec un CEC faible se caractérisent par des relations, entre enseignants et élèves, mais aussi élèves entre eux, irrespectueuses, méprisantes, moqueuse et craintives.
 
-Les classes « [[fmt:yellow]]neutres[[/fmt]] » ou « [[fmt:yellow]]indifférenciées[[/fmt]] » renvoient à des relations mixtes, contradictoires, d’humeur changeant, passant du respect et de l’attention émotionnelle à l’irrespect et indifférence.
+Les classes « [[fmt:yellow]]neutres[[/fmt]] » ou « [[fmt:yellow]]indifférenciées[[/fmt]] » renvoient à des relations mixtes, contradictoires, d’humeur changeant, passant du respect et de l’attention émotionnelle à l’irrespect et indifférence.
 
 ### [[fmt:underline,green-text]]La famille[[/fmt]]
 
-- Les [[fmt:yellow]]parents qui poussent[[/fmt]] sont ceux qui :
+- Les [[fmt:yellow]]parents qui poussent[[/fmt]] sont ceux qui :
 
 - Veillent à ce que les devoirs soient faits ou qui les aident à les faire
 
@@ -142,21 +142,21 @@ Pour certains, c’est [[fmt:yellow]]aller aux cours[[/fmt]], écouter les profs
 
 Pour d’autres, c’est [[fmt:yellow]]apprendre[[/fmt]], s’approprier des savoirs, réfléchir. Ils énumèrent les disciplines en les argumentants, en décrivant ce que ça leur apporte en termes de connaissance mais aussi en termes de capacités.
 
-L’étude de Préteur, de Leonardis et Leyrit (2011) est très instructive pour bien comprendre le profil des élèves de 3) en termes de mobilisations scolaires :
+L’étude de Préteur, de Leonardis et Leyrit (2011) est très instructive pour bien comprendre le profil des élèves de 3) en termes de mobilisations scolaires :
 
-- Profil 1 (9,5%) : peu mobilisé, en manque de soutien parental
+- Profil 1 (9,5%) : peu mobilisé, en manque de soutien parental
 
-- Profil 2 (16%) : en rupture avec l’école et en manque de soutien parental
+- Profil 2 (16%) : en rupture avec l’école et en manque de soutien parental
 
-- Profil 3 (15,7%) : peu performant malgré un rapport à l’école et un soutien parental positifs
+- Profil 3 (15,7%) : peu performant malgré un rapport à l’école et un soutien parental positifs
 
-- Profil 4 (24,5%) : performant avec un rapport à l’école et osutien familial très positifs
+- Profil 4 (24,5%) : performant avec un rapport à l’école et osutien familial très positifs
 
-- Profil 5 (24,33) : une élève en avance, très mobilisée dans les apprentissages et soutenue par ses parents
+- Profil 5 (24,33) : une élève en avance, très mobilisée dans les apprentissages et soutenue par ses parents
 
 ### [[fmt:underline,green-text]]Motivation et auto-détermination[[/fmt]]
 
-Selon les modèles, le [[fmt:green]]comportement[[/fmt]] peut être vu comme étant [[fmt:green]]motivé [[/fmt]][[fmt:yellow]]intrinsèquement[[/fmt]] ou [[fmt:yellow]]extrinsèquement[[/fmt]] (Vallerand, 1997 ; Vallerand, Blais, Brière & Pelletier, 1989) ou [[fmt:yellow]]autodéterminé[[/fmt]] ou [[fmt:yellow]]non autodéterminé[[/fmt]] (Déci and Ryan, 1985, 1991, 2000).
+Selon les modèles, le [[fmt:green]]comportement[[/fmt]] peut être vu comme étant [[fmt:green]]motivé [[/fmt]][[fmt:yellow]]intrinsèquement[[/fmt]] ou [[fmt:yellow]]extrinsèquement[[/fmt]] (Vallerand, 1997 ; Vallerand, Blais, Brière & Pelletier, 1989) ou [[fmt:yellow]]autodéterminé[[/fmt]] ou [[fmt:yellow]]non autodéterminé[[/fmt]] (Déci and Ryan, 1985, 1991, 2000).
 
 ## Encadrés et annotations du document
 

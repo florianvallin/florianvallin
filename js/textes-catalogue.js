@@ -19794,7 +19794,7 @@
     summary.insertAdjacentHTML("beforebegin", `
       <aside class="texts-course-cta" aria-label="Accompagnement sur un texte">
         <div class="texts-course-cta-copy">
-          <strong>Un texte vous résiste&nbsp;?</strong>
+          <strong>Un texte vous résiste ?</strong>
           <span>Je vous aide à le comprendre et à construire une explication solide.</span>
         </div>
         <a class="texts-course-cta-link" href="/#contact">Prendre un cours <span aria-hidden="true">→</span></a>

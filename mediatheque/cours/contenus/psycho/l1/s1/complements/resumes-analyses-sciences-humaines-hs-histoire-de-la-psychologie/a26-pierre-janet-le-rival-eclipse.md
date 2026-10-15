@@ -6,7 +6,7 @@ P.Janet (1859-1947) décrit comme grand Ψ et [[fmt:green]]psychothérapeute[[/f
 
 ## [[fmt:underline,red-text]]Le début de [[/fmt]][[fmt:underline,red-text]]P.Janet[[/fmt]]
 
-[[fmt:pink]]P.Janet[[/fmt]][[fmt:pink]] [[/fmt]]est φ et μ. Carrière favorisé par [[fmt:green]]triple parrainage[[/fmt]] : Paul Janet (1823-1899) (φ universitaire) influent [[fmt:pink]]T.Ribot[[/fmt]][[fmt:pink]] [[/fmt]](1839-1916) (=oriente psychologie française vers pathologie mentale) & celui de [[fmt:pink]]J.[[/fmt]]M.Charcot (1825-1893).
+[[fmt:pink]]P.Janet[[/fmt]][[fmt:pink]] [[/fmt]]est φ et μ. Carrière favorisé par [[fmt:green]]triple parrainage[[/fmt]] : Paul Janet (1823-1899) (φ universitaire) influent [[fmt:pink]]T.Ribot[[/fmt]][[fmt:pink]] [[/fmt]](1839-1916) (=oriente psychologie française vers pathologie mentale) & celui de [[fmt:pink]]J.[[/fmt]]M.Charcot (1825-1893).
 
 Succède à [[fmt:pink]]T.Ribot[[/fmt]][[fmt:pink]] [[/fmt]]au collège de France (1902) jusqu’à 2nd GM (considéré comme prestigieux Ψ Fr).
 
@@ -30,10 +30,10 @@ S’affirme comme [[fmt:green]]théoricien[[/fmt]] (élabore système de l’év
 
 [[fmt:green]]Tombe dans l’oubli[[/fmt]] après 2nd GM (à cause du succès de psychanalyse). Ojd redécouverte aux US avec personnalité multiples
 
-[[fmt:underline,green-text]]J.Carroy[[/fmt]][[fmt:underline,green-text]] & [[/fmt]][[fmt:underline,green-text]]R.Plas[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]][[fmt:italic]]Histoire de la psychologie en France, XIX°-XX°.[[/fmt]]
+[[fmt:underline,green-text]]J.Carroy[[/fmt]][[fmt:underline,green-text]] & [[/fmt]][[fmt:underline,green-text]]R.Plas[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]][[fmt:italic]]Histoire de la psychologie en France, XIX°-XX°.[[/fmt]]
 
-[[fmt:underline,green-text]]Janet & Freud :[[/fmt]][[fmt:green-text]] [[/fmt]]tous deux élève de Charcot & célèbre. Elobre théorie sur hystérie, inconscient. Janet opposant de psychanalyse (mais accepte idée de psychanalyse). Janet perçu comme Freud français. Freud souligne sa différence avec ces conceptions.
+[[fmt:underline,green-text]]Janet & Freud :[[/fmt]][[fmt:green-text]] [[/fmt]]tous deux élève de Charcot & célèbre. Elobre théorie sur hystérie, inconscient. Janet opposant de psychanalyse (mais accepte idée de psychanalyse). Janet perçu comme Freud français. Freud souligne sa différence avec ces conceptions.
 
-[[fmt:underline,green-text]]G.Gatian[[/fmt]][[fmt:underline,green-text]] de Clérambault (1872-1934) :[[/fmt]][[fmt:green-text]] [[/fmt]]décrit « automatisme mental » (=phénomène consécutif suite à troubles cérébraux de manière mécaniste, à la source du délire). Décrit l’érotomanie (illusion délirante d’être aimé par une personne).
+[[fmt:underline,green-text]]G.Gatian[[/fmt]][[fmt:underline,green-text]] de Clérambault (1872-1934) :[[/fmt]][[fmt:green-text]] [[/fmt]]décrit « automatisme mental » (=phénomène consécutif suite à troubles cérébraux de manière mécaniste, à la source du délire). Décrit l’érotomanie (illusion délirante d’être aimé par une personne).
 
-[[fmt:underline,green-text]]H.Ey[[/fmt]][[fmt:underline,green-text]] (1900-1977) :[[/fmt]][[fmt:green-text]] [[/fmt]]dit que « folie est virtuelle dans l’homme », « protégé que par sa propre organisation ». Fondateur de l’association mondiale de psychiatrie (inspiré de P.Janet).
+[[fmt:underline,green-text]]H.Ey[[/fmt]][[fmt:underline,green-text]] (1900-1977) :[[/fmt]][[fmt:green-text]] [[/fmt]]dit que « folie est virtuelle dans l’homme », « protégé que par sa propre organisation ». Fondateur de l’association mondiale de psychiatrie (inspiré de P.Janet).

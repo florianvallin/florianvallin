@@ -2493,7 +2493,7 @@
     $("[data-player-source]").href = resolveUrl(item.url);
     $("[data-player-tags]").innerHTML = (item.themes || []).slice(0, 5).map((theme) => `<span>${esc(theme)}</span>`).join("");
     playerFrame.className = `media-player-frame is-${embed.type}`;
-    playerFrame.innerHTML = `<iframe src="${esc(embed.url)}" title="${esc(item.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="eager"></iframe>`;
+    playerFrame.innerHTML = `<iframe data-external-src="${esc(embed.url)}" title="${esc(item.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="eager"></iframe>`;
     player.hidden = false;
     document.body.classList.add("media-modal-open");
     requestAnimationFrame(() => player.querySelector("[data-close-player]")?.focus({ preventScroll: true }));
