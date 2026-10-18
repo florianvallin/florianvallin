@@ -1,6 +1,6 @@
 # [[fmt:red-text]]Du con[[/fmt]][[fmt:red-text]]cept de jeunesse au concept d’adolescence[[/fmt]]
 
-Le cours de psychologie de l’adolescence est composé de 10 chapitres :
+Le cours de psychologie de l’adolescence est composé de 10 chapitres :
 
 Chapitre 1 – Du concept de jeunesse au concept d’adolescence
 
@@ -40,19 +40,19 @@ L’implication de [[fmt:green]]l’hypothalamus[[/fmt]] (liaison entre système
 
 On va également avoir une profonde [[fmt:green]]maturation cérébrale[[/fmt]]. La [[fmt:yellow]]matière grise[[/fmt]] va se réduire (les neurones) et on va avoir une augmentation de la [[fmt:yellow]]matière blanche[[/fmt]] (qui est les connexions entre les neurones) avec l’âge.
 
-- Du point de vue [[fmt:green]]structurel[[/fmt]] : la maturation du système limbique est plus précoce que celle du cortex frontal
+- Du point de vue [[fmt:green]]structurel[[/fmt]] : la maturation du système limbique est plus précoce que celle du cortex frontal
 
-- Du point de vue [[fmt:green]]fonctionnel[[/fmt]] : Les études en IRMf ont permis de mieux définir les structures corticales des fonctions cognitives et leur altération
+- Du point de vue [[fmt:green]]fonctionnel[[/fmt]] : Les études en IRMf ont permis de mieux définir les structures corticales des fonctions cognitives et leur altération
 
 ### [[fmt:underline,green-text]]Les transformations cognitives[[/fmt]]
 
-Les [[fmt:yellow]]transformations mentales[[/fmt]] vont être importantes à l’adolescente tout comme les transformations physiques :
+Les [[fmt:yellow]]transformations mentales[[/fmt]] vont être importantes à l’adolescente tout comme les transformations physiques :
 
-- [[fmt:green]]Pensée formelle[[/fmt]] : c’est le fait de se dégager du concret pour envisager le réel dans un ensemble de transformation possible, comme un cas particulier de tous les possibles (cf. Piaget). On va avoir un raisonnement hypothético-déducitf élaboré.
+- [[fmt:green]]Pensée formelle[[/fmt]] : c’est le fait de se dégager du concret pour envisager le réel dans un ensemble de transformation possible, comme un cas particulier de tous les possibles (cf. Piaget). On va avoir un raisonnement hypothético-déducitf élaboré.
 
-- [[fmt:green]]Métacognition[[/fmt]] : c’est le fait de connaître son fonctionnement cognitif et les tentatives que l’on met en œuvre pour contrôler ce processus
+- [[fmt:green]]Métacognition[[/fmt]] : c’est le fait de connaître son fonctionnement cognitif et les tentatives que l’on met en œuvre pour contrôler ce processus
 
-- [[fmt:green]]Cognition sociale[[/fmt]] : c’est le fait de comprendre la pensée & le point de vue des autres, leurs émotions & leurs sentiments, leurs intentions & leurs attitudes.
+- [[fmt:green]]Cognition sociale[[/fmt]] : c’est le fait de comprendre la pensée & le point de vue des autres, leurs émotions & leurs sentiments, leurs intentions & leurs attitudes.
 
 L’adolescence va [[fmt:yellow]]changer sa vision[[/fmt]] des choses sur le mondes et sur les autres grâce à l’acquisition de [[fmt:yellow]]nouvelles capacités[[/fmt]] cognitives (connaissance de soi, connaissance d’autrui, sens critique, argumentation, négociation, conviction…).
 
@@ -66,7 +66,7 @@ L’adolescent va vouloir [[fmt:yellow]]voir au-dessus[[/fmt]] de ces parents. C
 
 Il va construire de [[fmt:yellow]]nouveaux attachements[[/fmt]] et ainsi s’identifier aux groupes sociaux (et va choisir le sien). Cela va devenir important pour la personne de construire des relations et de s’attacher, s’identifier aux parents et à la famille.
 
-Les [[fmt:green]]pairs[[/fmt]] vont être importants pour le [[fmt:yellow]]développement de l’adolescent[[/fmt]], car il l’aide l’ado dans son processus d’individualisation et de sa formation identitaire (« quelles sont les croyances et les principes de mon groupe d’amis ? Comment puis-je être accepté par ce groupe ? »).
+Les [[fmt:green]]pairs[[/fmt]] vont être importants pour le [[fmt:yellow]]développement de l’adolescent[[/fmt]], car il l’aide l’ado dans son processus d’individualisation et de sa formation identitaire (« quelles sont les croyances et les principes de mon groupe d’amis ? Comment puis-je être accepté par ce groupe ? »).
 
 ## [[fmt:underline,red-text]]L’évolution de la vision du jeune[[/fmt]]
 
@@ -80,17 +80,17 @@ A cet époque, les [[fmt:yellow]]intellectuels[[/fmt]] vont s’opposer à la pl
 
 On est dans une [[fmt:green]]époque consumériste[[/fmt]], [[fmt:green]]matérialiste[[/fmt]], [[fmt:green]]compétitive [[/fmt]]& [[fmt:green]]individualiste[[/fmt]]. Le mineur qui va avancer avec l’âge va pouvoir prendre des décisions, faire un certain nombre d’actes (parfois contre les parents), mais [[fmt:yellow]]l’autonomie est illusoire[[/fmt]] car le droit ne leur accorde pas grand-chose.
 
-- [[fmt:green]]Scolaire [[/fmt]](16 ans) : l’ado peut quitter l’école, il peut chercher un emploi, commencé à travailler mais il lui faudra l’accord parental pour conclure le contrat de travail
+- [[fmt:green]]Scolaire [[/fmt]](16 ans) : l’ado peut quitter l’école, il peut chercher un emploi, commencé à travailler mais il lui faudra l’accord parental pour conclure le contrat de travail
 
-- [[fmt:green]]Economique [[/fmt]](16 ans) : il peut avoir une carte bleue et avoir un sentiment de liberté totale en pensant dépenser autant qu’il le veut, mais il lui faudra l’accord parental pour ouvrir le compte et se porter caution
+- [[fmt:green]]Economique [[/fmt]](16 ans) : il peut avoir une carte bleue et avoir un sentiment de liberté totale en pensant dépenser autant qu’il le veut, mais il lui faudra l’accord parental pour ouvrir le compte et se porter caution
 
-- [[fmt:green]]Social [[/fmt]](16 ans) : il obtient son code, peut conduire en conduite accompagnée, mais doit attendre 18 ans pour obtenir le droit de conduire de façon autonome.
+- [[fmt:green]]Social [[/fmt]](16 ans) : il obtient son code, peut conduire en conduite accompagnée, mais doit attendre 18 ans pour obtenir le droit de conduire de façon autonome.
 
-- [[fmt:green]]Sexualité [[/fmt]]: on va avoir une distribution de préservatifs et d’information sur la contraception mais on va avoir une pression des pairs, des normes sociales et du contrôle parent (+important).
+- [[fmt:green]]Sexualité [[/fmt]]: on va avoir une distribution de préservatifs et d’information sur la contraception mais on va avoir une pression des pairs, des normes sociales et du contrôle parent (+important).
 
 80% des adultes pensant que les [[fmt:yellow]]jeunes sont mal[[/fmt]] dans leurs peaux, 70% des jeunes se déclare [[fmt:yellow]]satisfait de leur vie[[/fmt]] et 74% sont [[fmt:yellow]]confiants[[/fmt]] de leur capacité à réussir (beaucoup d’estime de soi).
 
-90% des personnes pensent que le [[fmt:yellow]]monde va mal[[/fmt]] mais qu’ils pourront s’en sortir. Ils savent qu’ils sont dans un système où ils acquièrent des protections et des statuts. D’après une enquête de l’Inserm (2013) :
+90% des personnes pensent que le [[fmt:yellow]]monde va mal[[/fmt]] mais qu’ils pourront s’en sortir. Ils savent qu’ils sont dans un système où ils acquièrent des protections et des statuts. D’après une enquête de l’Inserm (2013) :
 
 - 50% ont confiance en leur avenir
 

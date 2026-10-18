@@ -2,7 +2,7 @@
 
 ## [[fmt:underline,red-text]]Les dimensions historiques: lien avec inégalité de traitement[[/fmt]]
 
-Il y a une [[fmt:green]]discrimination [[/fmt]]et une [[fmt:green]]inégalité [[/fmt]]de traitement : le 1er usage est dans le champ de [[fmt:yellow]]l’économie[[/fmt]]. ([[fmt:red]]1950[[/fmt]])
+Il y a une [[fmt:green]]discrimination [[/fmt]]et une [[fmt:green]]inégalité [[/fmt]]de traitement : le 1er usage est dans le champ de [[fmt:yellow]]l’économie[[/fmt]]. ([[fmt:red]]1950[[/fmt]])
 
 - [[fmt:green]]Discriminé [[/fmt]]à un sens [[fmt:yellow]]neutre[[/fmt]] (=distinction) ou il n’y a pas d’effet négatif sur la personne (à la base, il y avait le même produit qui était vendu différemment = naissance d’une inégalité de traitement).  Une inégalité peut venir de [[fmt:yellow]]facteurs intérieurs[[/fmt]] (âge, sexe…) et la [[fmt:green]]discrimination [[/fmt]]renvoie à des actes.
 
@@ -18,11 +18,11 @@ Une [[fmt:green]]carte d’étranger[[/fmt]] (d’identité) permettait aux étr
 
 Depuis [[fmt:red]]2001[[/fmt]], certaines professions ont été accessibles aux étrangers, et depuis 2010, d’autres professions ont encore été ouverte aux personnes étrangères. Aujourd’hui, il reste environ plus de 5M d’emplois fermé à l’étranger. (4,5M fonctions publics, 800k dans le privées (infirmiers, médecins, pharmaciens…).
 
-- Il y a eu une discrimination en raison de [[fmt:green]]l’origine[[/fmt]] : une réalité sociologique mis à jour (1990’). Au départ on s’interrogeait sur les [[fmt:yellow]]difficultés[[/fmt]] de certaines catégories de la population en France de l’accès à l’emploi. Il serait peut-être lier à la notion d’origine (=discrimination). Cela se voit notamment sur les jeunes qui essayent de trouver un emploi.
+- Il y a eu une discrimination en raison de [[fmt:green]]l’origine[[/fmt]] : une réalité sociologique mis à jour (1990’). Au départ on s’interrogeait sur les [[fmt:yellow]]difficultés[[/fmt]] de certaines catégories de la population en France de l’accès à l’emploi. Il serait peut-être lier à la notion d’origine (=discrimination). Cela se voit notamment sur les jeunes qui essayent de trouver un emploi.
 
 - En France, il existe un [[fmt:green]]principe de [[/fmt]][[fmt:green]]non-discrimination[[/fmt]] qui permet de résister contre cette problématique. On a un objet historique de droit (du principe d’égalité au principe de non-discrimination).
 
-[[fmt:yellow]]Principaux textes de références[[/fmt]] (nationaux, européens, internationaux) :
+[[fmt:yellow]]Principaux textes de références[[/fmt]] (nationaux, européens, internationaux) :
 
 - 1789 – Déclaration des droits de l’homme et du citoyen
 
@@ -40,7 +40,7 @@ Depuis [[fmt:red]]2001[[/fmt]], certaines professions ont été accessibles aux 
 
 - 1997 – Traité d’Amsterdam
 
-- 2000 – Directives dites « race » et « emploi »
+- 2000 – Directives dites « race » et « emploi »
 
 [[fmt:yellow]]Normes nationales[[/fmt]]
 
@@ -56,21 +56,21 @@ Depuis [[fmt:red]]2001[[/fmt]], certaines professions ont été accessibles aux 
 
 ## [[fmt:underline,red-text]]Discriminations dans le travail aujourd’hui[[/fmt]]
 
-- Les champs concernés et motifs prohibés :
+- Les champs concernés et motifs prohibés :
 
-« Article L1132-1 : Aucune personne ne peut être écartée d’une procédure de recrutement ou de [[fmt:yellow]]l’accès à un stage[[/fmt]] ou à une [[fmt:yellow]]période de formation en entreprise[[/fmt]], aucun salarié ne peut être [[fmt:green]]sanctionné[[/fmt]], [[fmt:green]]licencié[[/fmt]] ou faire l’objet d’une mesure discriminatoire, directe ou indirecte, …, notamment en matière de rémunération, … de mesures d’intéressement ou de distribution d’actions, de [[fmt:yellow]]formation[[/fmt]], de [[fmt:yellow]]reclassement[[/fmt]], [[fmt:yellow]]d’affectation[[/fmt]], de [[fmt:yellow]]qualification[[/fmt]], de [[fmt:yellow]]classification[[/fmt]], de promotion de professionnelles, de mutation ou de renouvellement de contrat… »
+« Article L1132-1 : Aucune personne ne peut être écartée d’une procédure de recrutement ou de [[fmt:yellow]]l’accès à un stage[[/fmt]] ou à une [[fmt:yellow]]période de formation en entreprise[[/fmt]], aucun salarié ne peut être [[fmt:green]]sanctionné[[/fmt]], [[fmt:green]]licencié[[/fmt]] ou faire l’objet d’une mesure discriminatoire, directe ou indirecte, …, notamment en matière de rémunération, … de mesures d’intéressement ou de distribution d’actions, de [[fmt:yellow]]formation[[/fmt]], de [[fmt:yellow]]reclassement[[/fmt]], [[fmt:yellow]]d’affectation[[/fmt]], de [[fmt:yellow]]qualification[[/fmt]], de [[fmt:yellow]]classification[[/fmt]], de promotion de professionnelles, de mutation ou de renouvellement de contrat… »
 
 Le droit contre les discriminations protège du moment [[fmt:yellow]]d’embauche[[/fmt]] jusqu’à la [[fmt:yellow]]sortie[[/fmt]].
 
 Il existe aujourd’hui 20 motifs de discrimination
 
-« … en raison de son [[fmt:yellow]]origine[[/fmt]], de son [[fmt:yellow]]sexe[[/fmt]], de ses [[fmt:yellow]]mœurs[[/fmt]], de son [[fmt:yellow]]orientation [[/fmt]]ou [[fmt:yellow]]identité [[/fmt]]sexuelles, de son [[fmt:yellow]]âge[[/fmt]], de sa situation de famille ou de sa grossesse, de ses caractéristiques génétiques, de son appartenance ou de sa non-appartenance, vraie ou supposée, à une ethnie, une nation ou une race, de ses opinions politiques, de ses activités syndicales ou mutualistes, de ses convictions religieuses, de son apparence… »
+« … en raison de son [[fmt:yellow]]origine[[/fmt]], de son [[fmt:yellow]]sexe[[/fmt]], de ses [[fmt:yellow]]mœurs[[/fmt]], de son [[fmt:yellow]]orientation [[/fmt]]ou [[fmt:yellow]]identité [[/fmt]]sexuelles, de son [[fmt:yellow]]âge[[/fmt]], de sa situation de famille ou de sa grossesse, de ses caractéristiques génétiques, de son appartenance ou de sa non-appartenance, vraie ou supposée, à une ethnie, une nation ou une race, de ses opinions politiques, de ses activités syndicales ou mutualistes, de ses convictions religieuses, de son apparence… »
 
 - Discrimination [[fmt:green]]directe[[/fmt]] et [[fmt:green]]indirecte[[/fmt]]
 
 La discrimination directe est visible et manifeste. La discrimination indirecte s’intéresse aux résultats discriminatoire et non à l’intention discriminatoire.
 
-- [[fmt:green]]Toute différence[[/fmt]] de traitement n’est [[fmt:green]]pas discrimination[[/fmt]] (les différences « admises »).
+- [[fmt:green]]Toute différence[[/fmt]] de traitement n’est [[fmt:green]]pas discrimination[[/fmt]] (les différences « admises »).
 
 [[fmt:blue]]Par exemple,[[/fmt]] il y a une différence de traitement en fonction de l’âge. Certains métiers sont interdits aux moins de 18 ans. Certains travaux sont réglé par rapport à leurs pénibilité, ainsi les restrictions sont plus certaines (comme le handicap), également en fonctions (acteurs, mannequinat …)
 
@@ -92,7 +92,7 @@ Il y a eu 4535 réclamations en matière de discriminations. Les principaux doma
 
 - Focus sur les discriminations dont sont victimes [[fmt:yellow]]les jeunes[[/fmt]] au travail (perception par les actifs)
 
-- Principal inconvénient à l’embauche des jeunes et dans leurs évolution professionnelle : apparence physique non conventionnelle (70%), les idées reçus et les moyens de lutte : formation alternance, sanctionner recours abusif stages.
+- Principal inconvénient à l’embauche des jeunes et dans leurs évolution professionnelle : apparence physique non conventionnelle (70%), les idées reçus et les moyens de lutte : formation alternance, sanctionner recours abusif stages.
 
 - [[fmt:yellow]]Expériences, témoignages[[/fmt]]
 
@@ -106,16 +106,16 @@ Il y a eu 4535 réclamations en matière de discriminations. Les principaux doma
 
 - [[fmt:green]]1[[/fmt]][[fmt:green]]er[[/fmt]][[fmt:green]] dispositif d’action[[/fmt]] publique en France (fin 1990’).
 
-- [[fmt:green]]Acteurs[[/fmt]] mobilisés et mobilisables (dans le domaine du travail) sont multiples : employeurs, organisation syndicales et instances représentatives du personnel, inspection du travail, associations de LCD, défenseur des droits, avocats…
+- [[fmt:green]]Acteurs[[/fmt]] mobilisés et mobilisables (dans le domaine du travail) sont multiples : employeurs, organisation syndicales et instances représentatives du personnel, inspection du travail, associations de LCD, défenseur des droits, avocats…
 
 - [[fmt:green]]Recours[[/fmt]] (pénal / civil / saisine Défenseur Des Droits) et sanctions prévus par le droit
 
-- La personne reconnus coupable de discrimination encourt : une [[fmt:yellow]]sanction disciplinaire[[/fmt]], s’il s’agit d’un salarié de l’entreprise, des [[fmt:yellow]]sanctions pénales[[/fmt]] (3 ans de prison et 45k euros d’amende). Les personnes morales peuvent aussi être déclarées responsables pénalement d’actes de discriminations.
+- La personne reconnus coupable de discrimination encourt : une [[fmt:yellow]]sanction disciplinaire[[/fmt]], s’il s’agit d’un salarié de l’entreprise, des [[fmt:yellow]]sanctions pénales[[/fmt]] (3 ans de prison et 45k euros d’amende). Les personnes morales peuvent aussi être déclarées responsables pénalement d’actes de discriminations.
 
-- [[fmt:green]]Outils[[/fmt]] : le testings, CV anonymes, promotion de la diversité, action de groupe (proposition de loi en cours)
+- [[fmt:green]]Outils[[/fmt]] : le testings, CV anonymes, promotion de la diversité, action de groupe (proposition de loi en cours)
 
 ## [[fmt:underline,red-text]]Conclusion[[/fmt]]
 
-C’est un phénomène, une pratiques difficiles à appréhender, à se révéler et à prouver : notamment autour de la problématique de l’origine. Il y a une certitude : la souffrance des personnes se ressentent comme victime. Les « invisibles » du champ de la ).
+C’est un phénomène, une pratiques difficiles à appréhender, à se révéler et à prouver : notamment autour de la problématique de l’origine. Il y a une certitude : la souffrance des personnes se ressentent comme victime. Les « invisibles » du champ de la ).
 
 <3

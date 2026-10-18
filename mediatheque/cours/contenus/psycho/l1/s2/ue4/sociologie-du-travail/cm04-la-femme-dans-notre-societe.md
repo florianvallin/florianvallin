@@ -8,9 +8,9 @@ Les [[fmt:green]]professions intellectuelles supérieur[[/fmt]] (profession lib�
 
 ## [[fmt:underline,red-text]]Le développement de l’activité féminine salarié[[/fmt]]
 
-La progression de l’activité féminine est liée en partie à la [[fmt:yellow]]montée des femmes[[/fmt]] dans le travailler à l’emploi des femmes. Elles étaient souvent [[fmt:yellow]]considérés comme des non actives[[/fmt]] (est-ce que c’est un travail de s’occuper d’un enfant ?). Les femmes jusqu’à les 70’, n’avait pas le droit de travailler sans l’accord de leurs maris (et n’avaient pas le droit d’avoir un chéquier).
+La progression de l’activité féminine est liée en partie à la [[fmt:yellow]]montée des femmes[[/fmt]] dans le travailler à l’emploi des femmes. Elles étaient souvent [[fmt:yellow]]considérés comme des non actives[[/fmt]] (est-ce que c’est un travail de s’occuper d’un enfant ?). Les femmes jusqu’à les 70’, n’avait pas le droit de travailler sans l’accord de leurs maris (et n’avaient pas le droit d’avoir un chéquier).
 
-On a un [[fmt:yellow]]mouvement des femmes[[/fmt]] qui était considéré comme non active à active. Cela pose quelques problèmes : est-ce qu’elles sont les mêmes payent ? Est-ce qu’elles sont traité pareille ? Les femmes se réalisent aussi dans le travail & dans un travail nécessaire dans leurs reconnaissances sociales.
+On a un [[fmt:yellow]]mouvement des femmes[[/fmt]] qui était considéré comme non active à active. Cela pose quelques problèmes : est-ce qu’elles sont les mêmes payent ? Est-ce qu’elles sont traité pareille ? Les femmes se réalisent aussi dans le travail & dans un travail nécessaire dans leurs reconnaissances sociales.
 
 Dans les années 60’, 1/3 salariés est une femme. On a aujourd’hui [[fmt:green]]presque 50% des femmes[[/fmt]] (dans la partie actif salarié). Elle interrompt moins longtemps et moins souvent leur travail pour les charges familiales (notamment pour s’occuper de l’enfant). (C’est contradictoire → enfant a besoin de la mère).
 
@@ -24,7 +24,7 @@ On a eu la [[fmt:yellow]]création d’autre emploi[[/fmt]] de service notamment
 
 Le travail à temps partiel n’est pas le travail à mi-temps.
 
-Le développement du travail à temps partiel a été [[fmt:yellow]]tardif en France[[/fmt]] alors qu’il existait déjà dans beaucoup de pays. Jusque dans les 80’, le temps partiels était plutôt « [[fmt:yellow]]traditionnel[[/fmt]] » : aide familiale dans l’agriculture, artisanat/commerce, service domestiques.
+Le développement du travail à temps partiel a été [[fmt:yellow]]tardif en France[[/fmt]] alors qu’il existait déjà dans beaucoup de pays. Jusque dans les 80’, le temps partiels était plutôt « [[fmt:yellow]]traditionnel[[/fmt]] » : aide familiale dans l’agriculture, artisanat/commerce, service domestiques.
 
 On a assisté à un [[fmt:yellow]]développement[[/fmt]] dans les années 80’, on est passé de 8% en 80 à 16% en 87. Les temps partiels restent [[fmt:green]]essentiellement féminins[[/fmt]] (même si on trouve de plus en plus d’homme) avec plus de 31% de femme.
 

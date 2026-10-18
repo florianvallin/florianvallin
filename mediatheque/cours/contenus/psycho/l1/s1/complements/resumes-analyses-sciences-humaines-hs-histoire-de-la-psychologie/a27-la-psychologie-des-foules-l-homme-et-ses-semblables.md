@@ -10,13 +10,13 @@ Se dvlp entre histoire & littérature (ressort sociologie, Ψ collective, Ψ soc
 
 [[fmt:pink]]E.Zola[[/fmt]][[fmt:pink]] [[/fmt]]décrit grève ouvrière proche d’idée noire de Taine.
 
-[[fmt:pink]]G.Tarde[[/fmt]][[fmt:pink]] [[/fmt]](1843-1904) propose théorie qui privilégie individu. Dit que grp sociale est une collection d’être qui s’imite entre eux. Se réfère à Taine et décrit « ramassis » d’individu qui peut produire une sorte d’organisation subite & devenir une foule.
+[[fmt:pink]]G.Tarde[[/fmt]][[fmt:pink]] [[/fmt]](1843-1904) propose théorie qui privilégie individu. Dit que grp sociale est une collection d’être qui s’imite entre eux. Se réfère à Taine et décrit « ramassis » d’individu qui peut produire une sorte d’organisation subite & devenir une foule.
 
-[[fmt:pink]]G.Le[[/fmt]][[fmt:pink]] Bon [[/fmt]]invente la « psychologie des foules » (1895) (best-seller, notorité, richesse)
+[[fmt:pink]]G.Le[[/fmt]][[fmt:pink]] Bon [[/fmt]]invente la « psychologie des foules » (1895) (best-seller, notorité, richesse)
 
 ## [[fmt:underline,red-text]]II)[[/fmt]][[fmt:red-text]]     [[/fmt]][[fmt:underline,red-text]]Une sorte d’organisation subite[[/fmt]]
 
-[[fmt:pink]]Le Bon [[/fmt]]dit qu’individu a un psychisme inférieur à celui de chacun d’eux pris isolement. Individu possède « une âme collective ».
+[[fmt:pink]]Le Bon [[/fmt]]dit qu’individu a un psychisme inférieur à celui de chacun d’eux pris isolement. Individu possède « une âme collective ».
 
 Les foules selon lui, sont impulsives, mobiles, irritables, suggestibles, crédules comme sujets hypnotiques, intolérants, fanatique.
 
@@ -32,14 +32,14 @@ Elève reproche de concevoir social comme addition de liens interindividuels & a
 
 Description des foules de [[fmt:pink]]Tard [[/fmt]]& [[fmt:pink]]Le Bon [[/fmt]]repris par [[fmt:pink]]Freud [[/fmt]](1921) (qui se montre critique)
 
-[[fmt:underline,green-text]]J.Carroy[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]][[fmt:italic]]Alfred Maury, érudit & rêveur. Les sciences de l’homme au milieu du XIX°.[[/fmt]]
+[[fmt:underline,green-text]]J.Carroy[[/fmt]][[fmt:underline,green-text]] :[[/fmt]][[fmt:green-text]] [[/fmt]][[fmt:italic]]Alfred Maury, érudit & rêveur. Les sciences de l’homme au milieu du XIX°.[[/fmt]]
 
-[[fmt:underline,green-text]]Foule, nationalisme, démocratie & politique :[[/fmt]][[fmt:green-text]] [[/fmt]]Tarde hostile à démocratie. S’engage pour la monarchie. Le Bon antidémocrate, antidreyfusard. Taine, Tarde & Le Bon sont Ψ plus de droite (Zola & Sighele plus de gauche).
+[[fmt:underline,green-text]]Foule, nationalisme, démocratie & politique :[[/fmt]][[fmt:green-text]] [[/fmt]]Tarde hostile à démocratie. S’engage pour la monarchie. Le Bon antidémocrate, antidreyfusard. Taine, Tarde & Le Bon sont Ψ plus de droite (Zola & Sighele plus de gauche).
 
-[[fmt:underline,green-text]]Bestiaire de la Ψ :[[/fmt]]
+[[fmt:underline,green-text]]Bestiaire de la Ψ :[[/fmt]]
 
-- Hans le Malin : 1904, cheval Hans(capable de compter, donner date, discriminer couleur)
+- Hans le Malin : 1904, cheval Hans(capable de compter, donner date, discriminer couleur)
 
-- Washoe : chimpanzé femelle appris langage humain grâce a langue des signes
+- Washoe : chimpanzé femelle appris langage humain grâce a langue des signes
 
-- Alex : Perroquet qui reconnaissait 50’ d’objet. Savait compter jusqu’à 7, distingue forme..
+- Alex : Perroquet qui reconnaissait 50’ d’objet. Savait compter jusqu’à 7, distingue forme..

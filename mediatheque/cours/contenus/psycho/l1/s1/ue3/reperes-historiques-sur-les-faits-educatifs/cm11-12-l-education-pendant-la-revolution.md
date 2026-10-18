@@ -14,7 +14,7 @@
 
 ## [[fmt:underline,red-text]]L’ECOLE MATERNELLE[[/fmt]]
 
-### [[fmt:underline,green-text]]ECOLE MATERNELLE LAIQUE DE 1881 A 1887 [[/fmt]]
+### [[fmt:underline,green-text]]ECOLE MATERNELLE LAIQUE DE 1881 A 1887 [[/fmt]]
 
 ### [[fmt:bold,underline]]PROGRAMMES[[/fmt]]
 
@@ -24,7 +24,7 @@ On va avoir 2 sections (petits enfants 2-5, classe enfantine 5-7).
 
 Les matières principales seront l’éducation morale, connaissance des objets usuels (leçons de choses, histoire naturelle, parties du corps, objets familiers, animaux et plantes rencontrés, temps, saisons, exercices des sens (couleurs, formes, son, odeurs)), dessin, écriture, exercice du langage, prononciation, mémorisation, vocabulaire, calcul, histoire, géographie
 
-En 1887, la propriété est donnée au développement physique et en particulier à celui des dents !
+En 1887, la propriété est donnée au développement physique et en particulier à celui des dents !
 
 ### [[fmt:bold,underline]]ARCHITECTURE[[/fmt]]
 
@@ -234,7 +234,7 @@ L’enfant va utiliser sa voix et l’écoute, le regard et le geste.
 
 ### [[fmt:underline,green-text]]LES PROGREAMMES DE 2008 EN MATERNELLE[[/fmt]]
 
-On va avoir 2 parties :
+On va avoir 2 parties :
 
 - Les programmes
 
@@ -266,7 +266,7 @@ Se préparer à apprendre à lire et écrire
 
 ### [[fmt:bold,underline]]DEVENIR ELEVE[[/fmt]]
 
-Le fait de devenir élève est principalement basé sur le vivre ensemble : apprendre les règles de civilité et les principes d’un comportement conforme à la morale. La coopération et le devenir autonome est important.
+Le fait de devenir élève est principalement basé sur le vivre ensemble : apprendre les règles de civilité et les principes d’un comportement conforme à la morale. La coopération et le devenir autonome est important.
 
 ### [[fmt:bold,underline]]AGIR ET S’EXPRIMER AVEC SON CORPS[[/fmt]]
 

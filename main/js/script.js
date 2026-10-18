@@ -1,0 +1,648 @@
+(() => {
+  if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
+  const script = document.createElement("script");
+  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+  const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
+  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260919-publish2`;
+  script.defer = true;
+  script.dataset.fvSiteTools = "";
+  document.head.append(script);
+})();
+
+(() => {
+  "use strict";
+
+  const ready = (callback) => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback, { once: true });
+    } else {
+      callback();
+    }
+  };
+
+  ready(() => {
+    ensureBlogLinks();
+    initNavigation();
+    initFaq();
+    initBackToTop();
+    initMethodologyReveal();
+    initReviews();
+    initTooltips();
+    enhanceFooter();
+    initBlogIndexFilters();
+    initGlobalSearch();
+    initStudentAccess();
+  });
+
+  function ensureBlogLinks() {
+    const textsLink = document.querySelector(".nav-links .nav-texts-link");
+    if (textsLink && !document.querySelector(".nav-links .nav-blog-link")) {
+      const blogLink = document.createElement("a");
+      blogLink.className = "nav-blog-link";
+      blogLink.href = "/blog/";
+      blogLink.textContent = "Blog";
+      if (window.location.pathname.startsWith("/blog")) blogLink.setAttribute("aria-current", "page");
+      textsLink.insertAdjacentElement("afterend", blogLink);
+    }
+
+    const footerTexts = document.querySelector(".footer-container .footer-textes");
+    if (footerTexts && !footerTexts.querySelector(".footer-blog-link")) {
+      footerTexts.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
+    }
+  }
+
+  function initNavigation() {
+    const navbar = document.querySelector(".navbar");
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelectorAll(".nav-links a");
+    if (!navbar) return;
+
+    const closeMenu = () => {
+      navbar.classList.remove("nav-open");
+      toggle?.setAttribute("aria-expanded", "false");
+    };
+
+    toggle?.addEventListener("click", () => {
+      const open = navbar.classList.toggle("nav-open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+
+    links.forEach((link) => link.addEventListener("click", closeMenu));
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 860) closeMenu();
+    });
+
+    const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 70);
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
+  }
+
+  function initFaq() {
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.setAttribute("aria-expanded", "false");
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        if (!item) return;
+        const open = item.classList.toggle("active");
+        button.setAttribute("aria-expanded", String(open));
+      });
+    });
+  }
+
+  function initBackToTop() {
+    const button = document.getElementById("backToTop");
+    if (!button) return;
+    const update = () => button.classList.toggle("visible", window.scrollY > 400);
+    window.addEventListener("scroll", update, { passive: true });
+    button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    update();
+  }
+
+  function initMethodologyReveal() {
+    const steps = [...document.querySelectorAll(".methodologie-steps-grid .stepper-step")];
+    if (!steps.length) return;
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      steps.forEach((step) => step.classList.add("is-visible"));
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    steps.forEach((step) => observer.observe(step));
+  }
+
+  function initReviews() {
+    const root = document.querySelector("[data-carousel]");
+    if (!root) return;
+    const track = root.querySelector("[data-track]");
+    const viewport = root.querySelector("[data-viewport]");
+    const previous = root.querySelector("[data-prev]");
+    const next = root.querySelector("[data-next]");
+    const dots = document.querySelector("[data-dots]");
+    if (!track || !viewport) return;
+
+    const reviews = [
+      { name: "Didier Marlot", date: "16/09/2026", rating: 5, text: "Quand la philosophie devient un vrai plaisir d\'apprendre ! Tout est là : convivialité, rigueur, explications structurées et approfondies, connaissances inépuisables... Un vrai bonheur pour l\'adulte que je suis d\'avoir trouvé la perle « philosophique » en la personne de Florian !", url: "https://share.google/2xTdqNWDUXxZtW5YY" },
+      { name: "Élodie Jannin", date: "28/02/2025", rating: 5, text: "Explications claires et structurées. Une aide précieuse pour préparer mes échéances en licence de philosophie. On sent l'exigence, mais aussi l'envie sincère de faire progresser." },
+      { name: "Olivier Le Pioufle", date: "01/03/2025", rating: 5, text: "Les conseils reçus ont été déterminants pour l'obtention de mon master et la réalisation de mon mémoire. Un travail rigoureux, avec beaucoup de pédagogie et de patience." },
+      { name: "Louna Schroetter", date: "21/03/2026", rating: 5, text: "Je recommande vivement pour les études de philosophie. Florian est de très bon conseil, très pédagogue et passionné par son travail." },
+      { name: "Marion Wright", date: "23/03/2026", rating: 5, text: "Un professeur attentif, rigoureux et à l'écoute. Ses cours sont clairs et répondent aux besoins personnels. Les méthodes apprises me servent encore aujourd'hui." }
+    ];
+
+    const googleBusinessUrl = "https://share.google/fLWaP9lVpo7r8feO4";
+    const initials = (name) => name.split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
+
+    track.innerHTML = reviews.map((review) => `
+      <a
+        class="review-card"
+        href="${review.url || googleBusinessUrl}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Voir l’avis de ${review.name} sur Google"
+      >
+        <div class="review-head">
+          <div class="review-person">
+            <span class="review-avatar" aria-hidden="true">${initials(review.name)}</span>
+            <div><div class="review-name">${review.name}</div>${review.date ? `<div class="review-date">${review.date}</div>` : ""}</div>
+          </div>
+          <span class="review-google-mini" aria-hidden="true">G</span>
+        </div>
+        <div class="review-stars" aria-label="${review.rating} étoiles">${"★".repeat(review.rating)}</div>
+        <p class="review-text">${review.text}</p>
+      </a>`).join("");
+
+    let active = 0;
+    let perView = 3;
+    let timer = null;
+
+    const cards = () => [...track.querySelectorAll(".review-card")];
+    const calculatePerView = () => viewport.clientWidth <= 620 ? 1 : viewport.clientWidth <= 980 ? 2 : 3;
+
+    const renderDots = () => {
+      if (!dots) return;
+      dots.innerHTML = reviews.map((_, index) => `<button type="button" class="reviews-dot${index === active ? " is-active" : ""}" data-review-dot="${index}" aria-label="Afficher l'avis ${index + 1}"></button>`).join("");
+      dots.querySelectorAll("[data-review-dot]").forEach((dot) => dot.addEventListener("click", () => {
+        active = Number(dot.dataset.reviewDot);
+        update();
+        restart();
+      }));
+    };
+
+    const update = () => {
+      perView = calculatePerView();
+      const allCards = cards();
+      const first = allCards[0];
+      const step = first ? first.getBoundingClientRect().width + 18 : 0;
+      const maxStart = Math.max(0, reviews.length - perView);
+      const start = Math.min(maxStart, Math.max(0, active - (perView > 1 ? 1 : 0)));
+      track.style.transform = `translateX(${-start * step}px)`;
+      allCards.forEach((card, index) => card.classList.toggle("is-active", index === active));
+      previous && (previous.disabled = active === 0);
+      next && (next.disabled = active === reviews.length - 1);
+      dots?.querySelectorAll(".reviews-dot").forEach((dot, index) => dot.classList.toggle("is-active", index === active));
+    };
+
+    const go = (direction) => {
+      active = Math.max(0, Math.min(reviews.length - 1, active + direction));
+      update();
+      restart();
+    };
+    previous?.addEventListener("click", () => go(-1));
+    next?.addEventListener("click", () => go(1));
+
+    let startX = 0;
+    viewport.addEventListener("touchstart", (event) => { startX = event.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener("touchend", (event) => {
+      const delta = event.changedTouches[0].clientX - startX;
+      if (Math.abs(delta) > 40) go(delta < 0 ? 1 : -1);
+    }, { passive: true });
+
+    const restart = () => {
+      clearInterval(timer);
+      timer = setInterval(() => {
+        active = active >= reviews.length - 1 ? 0 : active + 1;
+        update();
+      }, 6000);
+    };
+
+    renderDots();
+    update();
+    restart();
+    window.addEventListener("resize", update);
+  }
+
+  function initTooltips() {
+    const targets = [...document.querySelectorAll(".info-tooltip")];
+    if (!targets.length) return;
+    const tooltip = document.createElement("div");
+    tooltip.className = "floating-tooltip";
+    tooltip.setAttribute("role", "tooltip");
+    tooltip.setAttribute("aria-hidden", "true");
+    document.body.appendChild(tooltip);
+    let activeTarget = null;
+
+    const position = (target) => {
+      const targetRect = target.getBoundingClientRect();
+      const tooltipRect = tooltip.getBoundingClientRect();
+      const margin = 14;
+      let left = targetRect.left + targetRect.width / 2;
+      left = Math.max(margin + tooltipRect.width / 2, Math.min(window.innerWidth - margin - tooltipRect.width / 2, left));
+      const below = targetRect.top < tooltipRect.height + 18;
+      tooltip.classList.toggle("is-below", below);
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${below ? targetRect.bottom : targetRect.top}px`;
+    };
+
+    const show = (target) => {
+      const text = target.dataset.tooltip;
+      if (!text) return;
+      activeTarget = target;
+      tooltip.textContent = text;
+      tooltip.classList.add("is-visible");
+      tooltip.setAttribute("aria-hidden", "false");
+      requestAnimationFrame(() => position(target));
+    };
+    const hide = () => {
+      activeTarget = null;
+      tooltip.classList.remove("is-visible", "is-below");
+      tooltip.setAttribute("aria-hidden", "true");
+    };
+
+    targets.forEach((target) => {
+      target.addEventListener("mouseenter", () => show(target));
+      target.addEventListener("mouseleave", hide);
+      target.addEventListener("focus", () => show(target));
+      target.addEventListener("blur", hide);
+    });
+    window.addEventListener("scroll", () => activeTarget && position(activeTarget), { passive: true });
+    window.addEventListener("resize", () => activeTarget && position(activeTarget));
+  }
+
+  function normalizeSearch(value) {
+    return String(value || "").toLocaleLowerCase("fr").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " ").replace(/[^a-z0-9\s-]/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function enhanceFooter() {
+    document.querySelectorAll(".footer-textes").forEach((column) => {
+      if (!column.querySelector(".footer-blog-link")) {
+        column.insertAdjacentHTML("beforeend", '<p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p>');
+      }
+    });
+
+    // L’espace Art reste volontairement discret : aucun lien public dans le footer.
+    document.querySelectorAll(".footer-art-link").forEach((item) => item.remove());
+    document.querySelectorAll("[data-student-access]").forEach((item) => {
+      if (!item.closest(".footer-right")) item.remove();
+    });
+
+    document.querySelectorAll(".footer-right").forEach((column) => {
+      if (!column.querySelector("[data-student-access]")) {
+        column.insertAdjacentHTML("beforeend", '<button class="footer-student-access" type="button" data-student-access>S\'identifier</button>');
+      }
+    });
+  }
+
+  function initBlogIndexFilters() {
+    const root = document.querySelector("[data-blog-tools]");
+    if (!root) return;
+    const buttons = [...root.querySelectorAll("[data-blog-filter]")];
+    const input = root.querySelector("[data-blog-search]");
+    const cards = [...document.querySelectorAll("[data-blog-card]")];
+    const count = document.querySelector("[data-blog-count]");
+    const empty = document.querySelector("[data-blog-empty]");
+    let topic = "all";
+
+    const render = () => {
+      const query = normalizeSearch(input?.value);
+      let visible = 0;
+      cards.forEach((card) => {
+        const topics = normalizeSearch(card.dataset.blogTopic).split(" ");
+        const haystack = normalizeSearch(`${card.textContent} ${card.dataset.blogSearch || ""}`);
+        const topicMatch = topic === "all" || topics.includes(topic);
+        const queryMatch = !query || query.split(" ").every((word) => haystack.includes(word));
+        const show = topicMatch && queryMatch;
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+      if (count) count.textContent = `${visible} billet${visible > 1 ? "s" : ""}`;
+      if (empty) empty.hidden = visible !== 0;
+    };
+
+    buttons.forEach((button) => button.addEventListener("click", () => {
+      topic = button.dataset.blogFilter || "all";
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      render();
+    }));
+    input?.addEventListener("input", render);
+    render();
+  }
+
+  function initGlobalSearch() {
+    const nav = document.querySelector(".nav-links");
+    if (nav && !nav.querySelector("[data-site-search-open]")) {
+      const blog = nav.querySelector(".nav-blog-link");
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "nav-search-trigger";
+      button.dataset.siteSearchOpen = "";
+      button.setAttribute("aria-label", "Rechercher sur le site");
+      button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg><kbd>R</kbd>';
+      if (blog) blog.insertAdjacentElement("afterend", button); else nav.prepend(button);
+    }
+
+    if (!document.querySelector("[data-site-search-dialog]")) {
+      document.body.insertAdjacentHTML("beforeend", `
+        <div class="site-search-shell" data-site-search-dialog hidden>
+          <button class="site-search-backdrop" type="button" data-site-search-close aria-label="Fermer la recherche"></button>
+          <section class="site-search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+            <header class="site-search-head">
+              <div><span>Recherche du site</span><h2 id="site-search-title">Que cherchez-vous ?</h2></div>
+              <button class="site-search-close" type="button" data-site-search-close aria-label="Fermer">×</button>
+            </header>
+            <label class="site-search-field">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg>
+              <input type="search" autocomplete="off" spellcheck="false" placeholder="Ex. liberté, désir, Kant, bonheur…" data-site-search-input>
+              <kbd>Esc</kbd>
+            </label>
+            <div class="site-search-hints" data-site-search-hints><button type="button" data-site-search-example="liberté">Liberté</button><button type="button" data-site-search-example="désir">Désir</button><button type="button" data-site-search-example="Kant">Kant</button><button type="button" data-site-search-example="religion">Religion</button></div>
+            <div class="site-search-status" data-site-search-status>Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.</div>
+            <div class="site-search-results" data-site-search-results></div>
+          </section>
+        </div>`);
+    }
+
+    const shell = document.querySelector("[data-site-search-dialog]");
+    const input = shell?.querySelector("[data-site-search-input]");
+    const results = shell?.querySelector("[data-site-search-results]");
+    const status = shell?.querySelector("[data-site-search-status]");
+    let dataPromise = null;
+
+    const ensureData = () => {
+      if (window.FV_SITE_SEARCH_DATA) return Promise.resolve(window.FV_SITE_SEARCH_DATA);
+      if (dataPromise) return dataPromise;
+      dataPromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "/js/site-search-data.js?v=20260919-publish2";
+        script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
+        script.onerror = reject;
+        document.head.append(script);
+      });
+      return dataPromise;
+    };
+
+    const escapeHtml = (value) => String(value || "").replace(/[&<>\"]/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
+    const highlight = (value, query) => {
+      const tokens = normalizeSearch(query).split(" ").filter((token) => token.length > 1);
+      if (!tokens.length) return escapeHtml(value);
+      return String(value || "").split(/([\p{L}\p{N}’'-]+)/gu).map((part) => {
+        const normalized = normalizeSearch(part);
+        const match = normalized && tokens.some((token) => normalized.includes(token));
+        return match ? `<mark>${escapeHtml(part)}</mark>` : escapeHtml(part);
+      }).join("");
+    };
+
+    const synonymMap = {
+      "liberte":["liberte","libre","autonomie","emancipation"],
+      "desir":["desir","passion","manque","appetit"],
+      "bonheur":["bonheur","heureux","plaisir"],
+      "religion":["religion","dieu","foi","croyance"],
+      "travail":["travail","labeur","activite"],
+      "verite":["verite","vrai","certitude"]
+    };
+
+    const scoreItem = (item, query) => {
+      const q = normalizeSearch(query);
+      const queryTerms = q.split(" ").filter(Boolean);
+      if (!q || !queryTerms.length) return 0;
+      const title = normalizeSearch(item.title);
+      const meta = normalizeSearch(item.meta);
+      const keywords = normalizeSearch(item.keywords);
+      const excerpt = normalizeSearch(item.excerpt);
+      const all = `${title} ${meta} ${keywords} ${excerpt}`;
+      const groups = queryTerms.map((term) => synonymMap[term] || [term]);
+      if (!groups.every((variants) => variants.some((variant) => all.includes(variant)))) return 0;
+      let score = Number(item.boost || 0);
+      if (title === q) score += 220;
+      if (title.includes(q)) score += 130;
+      groups.forEach((variants, groupIndex) => variants.forEach((term, variantIndex) => {
+        const synonymFactor = variantIndex === 0 ? 1 : .42;
+        if (title.split(" ").includes(term)) score += 70 * synonymFactor;
+        else if (title.includes(term)) score += 45 * synonymFactor;
+        if (keywords.split(" ").includes(term)) score += 60 * synonymFactor;
+        else if (keywords.includes(term)) score += 28 * synonymFactor;
+        if (meta.includes(term)) score += 20 * synonymFactor;
+        if (excerpt.includes(term)) score += 8 * synonymFactor;
+      }));
+      const typeBoost = {"Parcours":80,"Thème":65,"Blog":20,"Texte":15,"Dictionnaire":5,"Bible":0};
+      score += typeBoost[item.type] || 0;
+      return score;
+    };
+
+    const renderResults = async () => {
+      if (!input || !results || !status) return;
+      const query = input.value.trim();
+      if (query.length < 2) {
+        results.innerHTML = "";
+        status.textContent = "Commencez à écrire pour chercher dans les parcours, les textes, le blog et les dictionnaires.";
+        return;
+      }
+      status.textContent = "Recherche…";
+      try {
+        const data = await ensureData();
+        const found = data.map((item) => ({ item, score:scoreItem(item, query) })).filter((entry) => entry.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
+        status.textContent = found.length ? `${found.length} résultat${found.length > 1 ? "s" : ""} parmi les plus pertinents.` : "Aucun résultat. Essayez un auteur, une notion ou un mot voisin.";
+        results.innerHTML = found.map(({item}) => `
+          <a class="site-search-result" href="${escapeHtml(item.url)}">
+            <span class="site-search-result-type">${escapeHtml(item.type || "Ressource")}</span>
+            <strong>${highlight(item.title, query)}</strong>
+            ${item.meta ? `<small>${highlight(item.meta, query)}</small>` : ""}
+            ${item.excerpt ? `<p>${highlight(item.excerpt, query)}</p>` : ""}
+            <i aria-hidden="true">→</i>
+          </a>`).join("");
+      } catch (_) {
+        status.textContent = "La recherche n’a pas pu être chargée.";
+      }
+    };
+
+    const open = (seed = "") => {
+      if (!shell || !input) return;
+      shell.hidden = false;
+      document.body.classList.add("site-search-open");
+      if (seed) input.value = seed;
+      requestAnimationFrame(() => input.focus({preventScroll:true}));
+      renderResults();
+    };
+    const close = () => {
+      if (!shell) return;
+      shell.hidden = true;
+      document.body.classList.remove("site-search-open");
+    };
+
+    window.FVSiteSearch = { open, close };
+
+    document.querySelectorAll("[data-site-search-open]").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        open();
+        // Le clic sur le bouton / la touche visuelle « R » doit permettre
+        // de commencer à taper immédiatement, sans second clic dans le champ.
+        requestAnimationFrame(() => {
+          input?.focus({preventScroll:true});
+          if (input && typeof input.setSelectionRange === "function") {
+            const end = input.value.length;
+            input.setSelectionRange(end, end);
+          }
+        });
+      });
+    });
+    shell?.querySelectorAll("[data-site-search-close]").forEach((button) => button.addEventListener("click", close));
+    shell?.querySelectorAll("[data-site-search-example]").forEach((button) => button.addEventListener("click", () => {
+      if (!input) return;
+      input.value = button.dataset.siteSearchExample || "";
+      input.focus();
+      renderResults();
+    }));
+    input?.addEventListener("input", renderResults);
+
+    try {
+      if (sessionStorage.getItem("fv-open-site-search") === "1") {
+        sessionStorage.removeItem("fv-open-site-search");
+        open();
+      }
+    } catch (_) {}
+
+    document.addEventListener("keydown", (event) => {
+      const target = event.target;
+      const typing = target instanceof HTMLElement && (target.matches("input,textarea,select") || target.isContentEditable);
+      if (!typing && !event.ctrlKey && !event.metaKey && !event.altKey && event.key.toLocaleLowerCase("fr") === "r") {
+        event.preventDefault();
+        open();
+      } else if (event.key === "Escape" && !shell?.hidden) {
+        close();
+      }
+    });
+  }
+
+  function initStudentAccess() {
+    const STUDENT_PORTALS = {
+      didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
+      art: "/art/",
+      livre: "/lecture/",
+      livres: "/lecture/",
+      media: "/mediatheque/",
+      mediatheque: "/mediatheque/",
+      bible: "/textes/theologie/boussole/"
+    };
+
+    const resolveStudentDestination = (destination) => {
+      if (!destination?.startsWith("/")) return destination;
+      const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+      const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
+      return `${localMain ? "/main" : ""}${destination}`;
+    };
+
+    if (!document.querySelector("[data-student-dialog]")) {
+      document.body.insertAdjacentHTML("beforeend", `
+        <div class="student-access-shell" data-student-dialog hidden>
+          <button class="student-access-backdrop" type="button" data-student-close aria-label="Fermer"></button>
+
+          <section class="student-access-panel" role="dialog" aria-modal="true" aria-labelledby="student-access-title">
+            <button class="student-access-close" type="button" data-student-close aria-label="Fermer">×</button>
+            <span>Espace élève</span>
+            <h2 id="student-access-title">S’identifier</h2>
+
+            <form data-student-form>
+              <label for="student-password">Mot de passe</label>
+              <div>
+                <input
+                  id="student-password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Mot de passe"
+                  data-student-password
+                >
+                <button type="submit">Accéder <span aria-hidden="true">→</span></button>
+              </div>
+              <p data-student-feedback aria-live="polite"></p>
+            </form>
+          </section>
+        </div>`);
+    }
+
+    const shell = document.querySelector("[data-student-dialog]");
+    const input = shell?.querySelector("[data-student-password]");
+    const feedback = shell?.querySelector("[data-student-feedback]");
+    let navigating = false;
+
+    const open = () => {
+      if (!shell || !input) return;
+      shell.hidden = false;
+      if (feedback) feedback.textContent = "";
+      requestAnimationFrame(() => input.focus({ preventScroll: true }));
+    };
+
+    const close = () => {
+      if (shell) shell.hidden = true;
+    };
+
+    // API légère utilisée par les raccourcis globaux (touche S).
+    window.FVStudentAccess = { open, close };
+
+    const grantLibraryAccess = () => {
+      try {
+        localStorage.setItem("fv-private-library", "1");
+      } catch (_) {}
+
+      try {
+        sessionStorage.setItem("fv-private-library", "1");
+      } catch (_) {}
+    };
+
+    const enter = (showError = true) => {
+      if (navigating) return false;
+
+      const key = normalizeSearch(input?.value).replace(/\s+/g, "");
+      const destination = STUDENT_PORTALS[key];
+
+      if (!destination) {
+        if (showError && feedback) {
+          feedback.textContent = "Mot de passe non reconnu.";
+        }
+        return false;
+      }
+
+      navigating = true;
+
+      if (key === "livre" || key === "livres") {
+        grantLibraryAccess();
+      }
+
+      if (feedback) {
+        feedback.textContent = "Accès reconnu — ouverture de votre espace…";
+      }
+
+      window.location.href = resolveStudentDestination(destination);
+      return true;
+    };
+
+    document
+      .querySelectorAll("[data-student-access]")
+      .forEach((button) => button.addEventListener("click", open));
+
+    shell
+      ?.querySelectorAll("[data-student-close]")
+      .forEach((button) => button.addEventListener("click", close));
+
+    shell
+      ?.querySelector("[data-student-form]")
+      ?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        enter(true);
+      });
+
+    // Les mots d’accès exacts ouvrent directement l’espace correspondant.
+    input?.addEventListener("input", () => {
+      const key = normalizeSearch(input.value).replace(/\s+/g, "");
+
+      if (STUDENT_PORTALS[key]) {
+        enter(false);
+      } else if (feedback) {
+        feedback.textContent = "";
+      }
+    });
+
+    shell?.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+  }
+
+})();

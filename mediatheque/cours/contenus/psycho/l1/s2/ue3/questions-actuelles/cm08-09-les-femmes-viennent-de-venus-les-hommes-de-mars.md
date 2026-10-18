@@ -4,9 +4,9 @@
 
 Les préjugés sur les hommes et les femmes ont toujours existé.
 
-«  Je crois qu’une telle idée ne peut germer que dans un cerveau féminin et notamment dans le vôtre »
+«  Je crois qu’une telle idée ne peut germer que dans un cerveau féminin et notamment dans le vôtre »
 
-Les [[fmt:yellow]]préjugés[[/fmt]] sont présent autant dans le cerveau des hommes que le cerveau des femmes. Ils existent une réalité scientifique sur les stéréotypes. Ils sont [[fmt:yellow]]encrés[[/fmt]], mais comment ont-ils été testés ? Les neurosciences cognitives ont toujours une démarche expérimentale.
+Les [[fmt:yellow]]préjugés[[/fmt]] sont présent autant dans le cerveau des hommes que le cerveau des femmes. Ils existent une réalité scientifique sur les stéréotypes. Ils sont [[fmt:yellow]]encrés[[/fmt]], mais comment ont-ils été testés ? Les neurosciences cognitives ont toujours une démarche expérimentale.
 
 ## [[fmt:underline,red-text]]Introduction cerveau et fonctions cognitives[[/fmt]]
 
@@ -26,7 +26,7 @@ Il a fallu qu’on divise les [[fmt:yellow]]lobes en régions[[/fmt]]. On a déf
 
 Broadmann s’est intéresser au-delà des gyris et l’a divisé en [[fmt:yellow]]55 aires[[/fmt]] qu’on appelle les [[fmt:green]]aires de Broa[[/fmt]][[fmt:green]]dmann[[/fmt]].
 
-Il existe 3 coupes :
+Il existe 3 coupes :
 
 - Horizontal
 
@@ -42,17 +42,17 @@ Nous avons de la [[fmt:yellow]]substance blanche[[/fmt]] et de la [[fmt:yellow]]
 
 Chaque hémisphère traite l’information en provenance de l’hémicorps et de l’hémi-espace opposés pour les fonctions primaires.
 
-[[fmt:green]]Fonction primaire[[/fmt]] : 5 sens
+[[fmt:green]]Fonction primaire[[/fmt]] : 5 sens
 
 Lorsque je touche ou lorsqu’on me touche, les fonctions vont s’activer du côté controlatéral (quand on regarde dans le champ visuel droit, notre côté gauche est activité). Seul la motricité est particulière (cela joue dans l’autre sens).
 
 Une des fonctions qui n’est pas croiser est [[fmt:yellow]]l’olfaction[[/fmt]].
 
-Est-ce qu’une fonction représenté dans un hémisphère est représenté dans l’autre ? Ce n’est pas le cas. Chacun est spécialisé dans sa fonction.
+Est-ce qu’une fonction représenté dans un hémisphère est représenté dans l’autre ? Ce n’est pas le cas. Chacun est spécialisé dans sa fonction.
 
 Il y a une [[fmt:yellow]]prédominance[[/fmt]] de certaines fonctions. On a longtemps penser que l’hémisphère droit ne faisait rien, ce n’est pas le cas.
 
-Hémisphère gauche :
+Hémisphère gauche :
 
 - Verbal
 
@@ -66,7 +66,7 @@ Hémisphère gauche :
 
 - Rationnel
 
-Hémisphère droit :
+Hémisphère droit :
 
 - Non-verbal (VS)
 
@@ -88,7 +88,7 @@ Il y a des choses qui peuvent faire varier la [[fmt:green]]dominance cérébral[
 
 Nous avons des différences aux [[fmt:green]]niveaux des structures cérébrales H/F[[/fmt]].
 
-Le [[fmt:green]]cerveau de la femme[[/fmt]] à un cerveau [[fmt:yellow]]plus petit et plus léger[[/fmt]] que celui de l’homme. (1130 cc VS 1260 cc). Cela a servi à un tas de liaison pseudo-scientifique (« les femmes ont moins de cellules nerveuses »).
+Le [[fmt:green]]cerveau de la femme[[/fmt]] à un cerveau [[fmt:yellow]]plus petit et plus léger[[/fmt]] que celui de l’homme. (1130 cc VS 1260 cc). Cela a servi à un tas de liaison pseudo-scientifique (« les femmes ont moins de cellules nerveuses »).
 
 Les hommes ont [[fmt:yellow]]16% de cellule nerveuse de plus[[/fmt]] que les femmes (prouvé avec la taille plus grande). Le raccourcit pseudo-scientifique peut se faire très rapidement. Pourtant, la différence structurel n’agit pas sur le QI, les [[fmt:yellow]]raccourcit ne doivent pas être fait[[/fmt]] (il faut prouver l’effet des variables en faisant des liens).
 
@@ -104,9 +104,9 @@ Les [[fmt:green]]femmes[[/fmt]] sont plus [[fmt:yellow]]performant[[/fmt]] au ni
 
 Exp kimura
 
-Est-ce qu’il n’y aurait pas une différence de latéralisation ? Est-ce que les hommes ne seront pas très latéralisation et les femmes plus bilatérales ?
+Est-ce qu’il n’y aurait pas une différence de latéralisation ? Est-ce que les hommes ne seront pas très latéralisation et les femmes plus bilatérales ?
 
-Quelques [[fmt:yellow]]faits cliniques[[/fmt]] sont allés dans ce sens :
+Quelques [[fmt:yellow]]faits cliniques[[/fmt]] sont allés dans ce sens :
 
 En général, il y a plus de lésion cérébrale gauche chez les hommes. Chez les femmes, c’est les deux.
 

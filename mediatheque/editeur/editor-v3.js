@@ -37,12 +37,6 @@
   function setMeta(patch, id = currentId()) { if (!id) return; metaAll[id] = { ...getMeta(id), ...patch }; writeJson(META_KEY, metaAll); decorateLibrary(); renderInspector(); }
   function updateMetaNested(key, patch, id = currentId()) { const m = getMeta(id); setMeta({ [key]: { ...(m[key] || {}), ...patch } }, id); }
   function toast(msg) { API.toast(msg); }
-  function appPath(path) {
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-    const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-    return `${localMain ? "/main" : ""}${path}`;
-  }
-  function goApp(path) { window.location.assign(appPath(path)); }
   function closeV3Overlays(except = "") { if (except !== "inspector") closeInspector(); if (except !== "source") closeSource(); }
 
   function defaultStyles() {
@@ -78,9 +72,7 @@
       const toggle = document.createElement("div");
       toggle.className = "v3-toolbar-group v3-toolbar-toggle-group";
       toggle.innerHTML = `<button type="button" class="v3-tool-chip v3-tool-chip-toggle" data-v3-toggle-toolbar aria-expanded="true" title="Afficher ou masquer la barre d’outils avancée"><span aria-hidden="true">▾</span><span>Outils −</span></button>`;
-      const firstPrimaryGroup = primaryRow.querySelector(".editor-toolbar-group");
-      if (firstPrimaryGroup) firstPrimaryGroup.after(toggle);
-      else primaryRow.appendChild(toggle);
+      primaryRow.appendChild(toggle);
 
       advancedRow.insertAdjacentHTML("beforeend", `
         <div class="v3-toolbar-group v3-toolbar-group-main">
@@ -103,8 +95,7 @@
     if (libTools && !$("[data-v3-library-view]")) libTools.insertAdjacentHTML("beforeend", `<button type="button" class="v3-library-view" data-v3-library-view>▦ Cartes</button>`);
     const ui = readJson(UI_KEY, {});
     if (ui.libraryView === "cards") document.body.classList.add("v3-library-cards");
-    const compactByDefault = !("toolbarCollapsed" in ui) && window.matchMedia("(max-width: 760px)").matches;
-    if (ui.toolbarCollapsed || compactByDefault) document.body.classList.add("v3-toolbar-collapsed");
+    if (ui.toolbarCollapsed) document.body.classList.add("v3-toolbar-collapsed");
     updateLibraryViewButton();
     updateToolbarToggleButton();
 
@@ -251,7 +242,7 @@
   function clickBlock(kind){const trigger=$(`[data-blocks-trigger]`);trigger?.click();setTimeout(()=>$(`[data-block="${kind}"]`)?.click(),0);}
   function renderFavorites(){const root=$(`[data-v3-favorites]`);if(!root)return;root.innerHTML=favorites.filter(id=>favoriteActions[id]).map(id=>`<button type="button" class="v3-favorite-btn" data-v3-favorite="${id}" title="Favori : ${esc(favoriteActions[id].label)}"><span>${favoriteActions[id].label}</span></button>`).join('');}
   function renderFavoriteOptions(){const root=$(`[data-v3-favorite-options]`);root.innerHTML=Object.entries(favoriteActions).map(([id,a])=>`<label class="v3-style-row"><span>${esc(a.label)}</span><span></span><input type="checkbox" data-v3-fav-check="${id}" ${favorites.includes(id)?'checked':''}></label>`).join('');}
-  function insertWikiPrompt(){const title=prompt('Titre du document à lier :');if(!title)return;API.restoreSelection?.();document.execCommand('insertHTML',false,`<a href="#" class="ph-wikilink" data-wiki-title="${esc(title)}">${esc(title)}</a> `);API.scheduleSave();}
+  function insertWikiPrompt(){const title=prompt('Titre du document à lier :');if(!title)return;API.restoreSelection?.();document.execCommand('insertHTML',false,`<a href="#" class="ph-wikilink" data-wiki-title="${esc(title)}">${esc(title)}</a>&nbsp;`);API.scheduleSave();}
 
   async function globalSearch(){openModal('global');$(`[data-v3-global-q]`).focus();await renderGlobalSearch();}
   function snippet(text,q){if(!q)return text.slice(0,170);const n=normalize(text),k=normalize(q),idx=n.indexOf(k);const start=Math.max(0,idx-65);return text.slice(start,start+190)+(text.length>start+190?'…':'');}
@@ -272,7 +263,7 @@
   function openSource(){closeInspector();const m=getMeta(),s=m.source;$(`[data-v3-source-panel]`).hidden=false;document.body.classList.add('v3-source-open');$(`[data-v3-source-kind]`).value=s.kind||'url';$(`[data-v3-source-url]`).value=s.url||'';renderSource();}
   function closeSource(){const p=$(`[data-v3-source-panel]`);if(p)p.hidden=true;document.body.classList.remove('v3-source-open');}
   function youtubeEmbed(url){try{const u=new URL(url);let id='';if(u.hostname.includes('youtu.be'))id=u.pathname.slice(1);else if(u.hostname.includes('youtube.com'))id=u.searchParams.get('v')||u.pathname.split('/').filter(Boolean).pop();return id?`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`:'';}catch(_){return'';}}
-  function renderSource(){const m=getMeta(),s=m.source,stage=$(`[data-v3-source-stage]`);$(`[data-v3-source-kind]`).value=s.kind||'url';$(`[data-v3-source-url]`).disabled=s.kind==='text';if(s.kind==='text'){stage.innerHTML=`<textarea data-v3-source-text placeholder="Colle ici un texte, un extrait, une transcription…">${esc(s.text||'')}</textarea>`;return;}const url=s.url||'';if(!url){stage.innerHTML=`<div class="v3-source-empty">Colle une URL de PDF, de vidéo YouTube ou de page web. Certains sites empêchent leur affichage dans une iframe : le bouton « Nouvel onglet » reste alors disponible.</div>`;return;}const yt=youtubeEmbed(url);stage.innerHTML=`<iframe data-external-src="${esc(yt||url)}" title="Source de travail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;}
+  function renderSource(){const m=getMeta(),s=m.source,stage=$(`[data-v3-source-stage]`);$(`[data-v3-source-kind]`).value=s.kind||'url';$(`[data-v3-source-url]`).disabled=s.kind==='text';if(s.kind==='text'){stage.innerHTML=`<textarea data-v3-source-text placeholder="Colle ici un texte, un extrait, une transcription…">${esc(s.text||'')}</textarea>`;return;}const url=s.url||'';if(!url){stage.innerHTML=`<div class="v3-source-empty">Colle une URL de PDF, de vidéo YouTube ou de page web. Certains sites empêchent leur affichage dans une iframe : le bouton « Nouvel onglet » reste alors disponible.</div>`;return;}const yt=youtubeEmbed(url);stage.innerHTML=`<iframe src="${esc(yt||url)}" title="Source de travail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;}
   function loadSource(){const kind=$(`[data-v3-source-kind]`).value,url=$(`[data-v3-source-url]`).value.trim();updateMetaNested('source',{kind,url});renderSource();}
   function pickSourceFile(file){if(sourceObjectUrl){URL.revokeObjectURL(sourceObjectUrl);sourceObjectUrl='';}if(!file)return;if(file.type==='application/pdf'||/\.pdf$/i.test(file.name)){sourceObjectUrl=URL.createObjectURL(file);const stage=$(`[data-v3-source-stage]`);stage.innerHTML=`<iframe src="${sourceObjectUrl}" title="${esc(file.name)}"></iframe>`;}else{const r=new FileReader();r.onload=()=>{updateMetaNested('source',{kind:'text',text:String(r.result||''),title:file.name});renderSource();};r.readAsText(file);}}
 
@@ -360,17 +351,7 @@
     window.addEventListener('philosophal:documentsaved',()=>{recordActivity(false);decorateLibrary();});
     const obs=new MutationObserver(()=>decorateLibrary());if(API.documentList)obs.observe(API.documentList,{childList:true,subtree:true});
 
-    window.addEventListener('keydown',e=>{
-      const key=String(e.key||'').toLowerCase();
-      const code=e.code||'';
-      if(e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyC'||key==='c')){e.preventDefault();e.stopImmediatePropagation();goApp('/mediatheque/');return;}
-      if(e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyH'||key==='h')){e.preventDefault();e.stopImmediatePropagation();goApp('/');return;}
-      const typing=e.target instanceof HTMLElement&&(e.target.matches('input,textarea,select,[role="textbox"]')||e.target.isContentEditable);
-      if(!typing&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyP'||key==='p')){e.preventDefault();e.stopImmediatePropagation();goApp('/pomodoro/');return;}
-      const mod=e.ctrlKey||e.metaKey;
-      if(mod&&e.shiftKey&&key==='f'){e.preventDefault();e.stopImmediatePropagation();globalSearch();return;}
-      if(e.key==='Escape'){closeInspector();closeSource();$$('[data-v3-modal]').forEach(m=>m.hidden=true);}
-    },true);
+    window.addEventListener('keydown',e=>{const mod=e.ctrlKey||e.metaKey;if(mod&&e.shiftKey&&e.key.toLowerCase()==='f'){e.preventDefault();e.stopImmediatePropagation();globalSearch();}if(e.key==='Escape'){closeInspector();closeSource();$$('[data-v3-modal]').forEach(m=>m.hidden=true);}},true);
   }
 
   function exposeForSlash(){window.PhilosophalEditorV3={openGlobalSearch:globalSearch,openInspector,openSource,openRevision,insertToc,generateBibliography,openComment:openCommentModal,openCitation:openCitationModal,insertWiki:insertWikiPrompt,openStyles:()=>{renderStylesModal();openModal('styles');},openExport:()=>{loadExportSettings();openModal('export');},openContext:()=>openInspector('context'),toggleLibraryView};}

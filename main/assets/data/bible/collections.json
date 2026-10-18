@@ -1,0 +1,5076 @@
+{
+  "version": 1,
+  "prayers": {
+    "label": "Toutes les prières",
+    "shortLabel": "Prières",
+    "description": "Inventaire des prières effectivement formulées dans le texte. Les simples mentions de prière ne sont pas comptées. Les textes deutérocanoniques et supplémentaires sont distingués.",
+    "items": [
+      {
+        "id": "p-1",
+        "title": "Pour un héritier",
+        "speaker": "Abraham",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "15",
+            "verses": "2-3"
+          }
+        ]
+      },
+      {
+        "id": "p-2",
+        "title": "Pour Ismaël",
+        "speaker": "Abraham",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "17",
+            "verses": "18"
+          }
+        ]
+      },
+      {
+        "id": "p-3",
+        "title": "Intercession pour Sodome",
+        "speaker": "Abraham",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "18",
+            "verses": "23-32"
+          }
+        ]
+      },
+      {
+        "id": "p-4",
+        "title": "Pour trouver une épouse à Isaac",
+        "speaker": "Serviteur d’Abraham",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "24",
+            "verses": "12-14"
+          }
+        ]
+      },
+      {
+        "id": "p-5",
+        "title": "Vœu de Jacob",
+        "speaker": "Jacob",
+        "type": "Vœu",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "28",
+            "verses": "20-22"
+          }
+        ]
+      },
+      {
+        "id": "p-6",
+        "title": "Pour être délivré d’Ésaü",
+        "speaker": "Jacob",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Gen",
+            "chapter": "32",
+            "verses": "9-12"
+          }
+        ]
+      },
+      {
+        "id": "p-7",
+        "title": "Demander qu’un autre soit envoyé",
+        "speaker": "Moïse",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Exod",
+            "chapter": "4",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-8",
+        "title": "Plainte devant le retard de la délivrance",
+        "speaker": "Moïse",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Exod",
+            "chapter": "5",
+            "verses": "22-23"
+          }
+        ]
+      },
+      {
+        "id": "p-9",
+        "title": "Pour le pardon d’Israël",
+        "speaker": "Moïse",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Exod",
+            "chapter": "32",
+            "verses": "31-32"
+          }
+        ]
+      },
+      {
+        "id": "p-10",
+        "title": "Pour que Dieu accompagne Israël",
+        "speaker": "Moïse",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Exod",
+            "chapter": "33",
+            "verses": "12-16"
+          }
+        ]
+      },
+      {
+        "id": "p-11",
+        "title": "Bénédiction sacerdotale",
+        "speaker": "Aaron",
+        "type": "Bénédiction",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "6",
+            "verses": "24-26"
+          }
+        ]
+      },
+      {
+        "id": "p-12",
+        "title": "Prière au départ et au repos de l’Arche",
+        "speaker": "Moïse",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "10",
+            "verses": "35-36"
+          }
+        ]
+      },
+      {
+        "id": "p-13",
+        "title": "Le poids de la charge",
+        "speaker": "Moïse",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "11",
+            "verses": "10-15"
+          }
+        ]
+      },
+      {
+        "id": "p-14",
+        "title": "Comment nourrir le peuple ?",
+        "speaker": "Moïse",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "11",
+            "verses": "21-22"
+          }
+        ]
+      },
+      {
+        "id": "p-15",
+        "title": "Pour la guérison de Miryam",
+        "speaker": "Moïse",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "12",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-16",
+        "title": "Pour qu’Israël soit épargné",
+        "speaker": "Moïse",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "14",
+            "verses": "13-19"
+          }
+        ]
+      },
+      {
+        "id": "p-17",
+        "title": "Contre la rébellion",
+        "speaker": "Moïse",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "16",
+            "verses": "15"
+          }
+        ]
+      },
+      {
+        "id": "p-18",
+        "title": "Confession après les serpents",
+        "speaker": "Israël",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "21",
+            "verses": "7"
+          }
+        ]
+      },
+      {
+        "id": "p-19",
+        "title": "Pour un nouveau chef",
+        "speaker": "Moïse",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Num",
+            "chapter": "27",
+            "verses": "16-17"
+          }
+        ]
+      },
+      {
+        "id": "p-20",
+        "title": "Entrer dans la Terre promise",
+        "speaker": "Moïse",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Deut",
+            "chapter": "3",
+            "verses": "24-25"
+          }
+        ]
+      },
+      {
+        "id": "p-21",
+        "title": "Pour qu’Israël soit épargné",
+        "speaker": "Moïse",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Deut",
+            "chapter": "9",
+            "verses": "26-29"
+          }
+        ]
+      },
+      {
+        "id": "p-22",
+        "title": "Après la défaite d’Aï",
+        "speaker": "Josué",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Josh",
+            "chapter": "7",
+            "verses": "7-9"
+          }
+        ]
+      },
+      {
+        "id": "p-23",
+        "title": "Soleil, arrête-toi",
+        "speaker": "Josué",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Josh",
+            "chapter": "10",
+            "verses": "12"
+          }
+        ]
+      },
+      {
+        "id": "p-24",
+        "title": "Qui montera le premier ?",
+        "speaker": "Israël",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "1",
+            "verses": "1"
+          }
+        ]
+      },
+      {
+        "id": "p-25",
+        "title": "Demande de signe et de direction",
+        "speaker": "Gédéon",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "6",
+            "verses": "13-22"
+          }
+        ]
+      },
+      {
+        "id": "p-26",
+        "title": "Confession et demande de délivrance",
+        "speaker": "Israël",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "10",
+            "verses": "10-15"
+          }
+        ]
+      },
+      {
+        "id": "p-27",
+        "title": "Vœu avant la bataille",
+        "speaker": "Jephté",
+        "type": "Vœu",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "11",
+            "verses": "30-31"
+          }
+        ]
+      },
+      {
+        "id": "p-28",
+        "title": "Comment élever l’enfant annoncé ?",
+        "speaker": "Manoah",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "13",
+            "verses": "8-17"
+          }
+        ]
+      },
+      {
+        "id": "p-29",
+        "title": "Une dernière force",
+        "speaker": "Samson",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "16",
+            "verses": "28"
+          }
+        ]
+      },
+      {
+        "id": "p-30",
+        "title": "Faut-il reprendre le combat ?",
+        "speaker": "Israël",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "20",
+            "verses": "23"
+          }
+        ]
+      },
+      {
+        "id": "p-31",
+        "title": "Nouvelle demande avant la bataille",
+        "speaker": "Israël",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "20",
+            "verses": "28"
+          }
+        ]
+      },
+      {
+        "id": "p-32",
+        "title": "Pourquoi une tribu manque-t-elle ?",
+        "speaker": "Israël",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "21",
+            "verses": "3"
+          }
+        ]
+      },
+      {
+        "id": "p-33",
+        "title": "Pour obtenir un fils",
+        "speaker": "Anne",
+        "type": "Vœu",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "1",
+            "verses": "11"
+          }
+        ]
+      },
+      {
+        "id": "p-34",
+        "title": "Cantique d’Anne",
+        "speaker": "Anne",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "2",
+            "verses": "1-10"
+          }
+        ]
+      },
+      {
+        "id": "p-35",
+        "title": "Demande de direction",
+        "speaker": "Saül",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "14",
+            "verses": "37"
+          }
+        ]
+      },
+      {
+        "id": "p-36",
+        "title": "Faut-il combattre à Qeïla ?",
+        "speaker": "David",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "23",
+            "verses": "2"
+          }
+        ]
+      },
+      {
+        "id": "p-37",
+        "title": "Demande de révélation à Qeïla",
+        "speaker": "David",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "23",
+            "verses": "10-12"
+          }
+        ]
+      },
+      {
+        "id": "p-38",
+        "title": "Faut-il poursuivre les pillards ?",
+        "speaker": "David",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Sam",
+            "chapter": "30",
+            "verses": "8"
+          }
+        ]
+      },
+      {
+        "id": "p-39",
+        "title": "Où monter en Juda ?",
+        "speaker": "David",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "2",
+            "verses": "1"
+          }
+        ]
+      },
+      {
+        "id": "p-40",
+        "title": "Faut-il combattre les Philistins ?",
+        "speaker": "David",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "5",
+            "verses": "19"
+          }
+        ]
+      },
+      {
+        "id": "p-41",
+        "title": "Réponse à l’alliance davidique",
+        "speaker": "David",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "7",
+            "verses": "18-29"
+          }
+        ]
+      },
+      {
+        "id": "p-42",
+        "title": "Confession après le recensement",
+        "speaker": "David",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "24",
+            "verses": "10"
+          }
+        ]
+      },
+      {
+        "id": "p-43",
+        "title": "Demande de sagesse",
+        "speaker": "Salomon",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "3",
+            "verses": "6-9"
+          }
+        ]
+      },
+      {
+        "id": "p-44",
+        "title": "Dédicace du Temple",
+        "speaker": "Salomon",
+        "type": "Dédicace",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "8",
+            "verses": "23-53"
+          }
+        ]
+      },
+      {
+        "id": "p-45",
+        "title": "Pour le fils de la veuve",
+        "speaker": "Élie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "17",
+            "verses": "20-21"
+          }
+        ]
+      },
+      {
+        "id": "p-46",
+        "title": "Au Carmel : que Dieu réponde",
+        "speaker": "Élie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "18",
+            "verses": "36-37"
+          }
+        ]
+      },
+      {
+        "id": "p-47",
+        "title": "Demande de mourir",
+        "speaker": "Élie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "19",
+            "verses": "4"
+          }
+        ]
+      },
+      {
+        "id": "p-48",
+        "title": "Ouvrir les yeux de son serviteur",
+        "speaker": "Élisée",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Kgs",
+            "chapter": "6",
+            "verses": "17"
+          }
+        ]
+      },
+      {
+        "id": "p-49",
+        "title": "Délivrance face à l’Assyrie",
+        "speaker": "Ézéchias",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Kgs",
+            "chapter": "19",
+            "verses": "15-19"
+          }
+        ]
+      },
+      {
+        "id": "p-50",
+        "title": "Pour la guérison et la vie",
+        "speaker": "Ézéchias",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Kgs",
+            "chapter": "20",
+            "verses": "3"
+          }
+        ]
+      },
+      {
+        "id": "p-51",
+        "title": "Prière de Yabès",
+        "speaker": "Yabès",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Chr",
+            "chapter": "4",
+            "verses": "10"
+          }
+        ]
+      },
+      {
+        "id": "p-52",
+        "title": "Louange et prière pour Salomon",
+        "speaker": "David",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "1Chr",
+            "chapter": "29",
+            "verses": "10-19"
+          }
+        ]
+      },
+      {
+        "id": "p-53",
+        "title": "Pour la victoire",
+        "speaker": "Asa",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Chr",
+            "chapter": "14",
+            "verses": "11"
+          }
+        ]
+      },
+      {
+        "id": "p-54",
+        "title": "Face à l’invasion",
+        "speaker": "Josaphat",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "2Chr",
+            "chapter": "20",
+            "verses": "6-12"
+          }
+        ]
+      },
+      {
+        "id": "p-55",
+        "title": "Action de grâce",
+        "speaker": "Esdras",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ezra",
+            "chapter": "7",
+            "verses": "27-28"
+          }
+        ]
+      },
+      {
+        "id": "p-56",
+        "title": "Confession pour le peuple",
+        "speaker": "Esdras",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ezra",
+            "chapter": "9",
+            "verses": "5-15"
+          }
+        ]
+      },
+      {
+        "id": "p-57",
+        "title": "Confession et demande de faveur",
+        "speaker": "Néhémie",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "1",
+            "verses": "5-11"
+          }
+        ]
+      },
+      {
+        "id": "p-58",
+        "title": "Contre les moqueurs",
+        "speaker": "Néhémie",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "4",
+            "verses": "4-5"
+          }
+        ]
+      },
+      {
+        "id": "p-59",
+        "title": "Fortifie mes mains",
+        "speaker": "Néhémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "6",
+            "verses": "9"
+          }
+        ]
+      },
+      {
+        "id": "p-60",
+        "title": "Souviens-toi de mes adversaires",
+        "speaker": "Néhémie",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "6",
+            "verses": "14"
+          }
+        ]
+      },
+      {
+        "id": "p-61",
+        "title": "Grande confession nationale",
+        "speaker": "Lévites et Israël",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "9",
+            "verses": "5-38"
+          }
+        ]
+      },
+      {
+        "id": "p-62",
+        "title": "Souviens-toi de moi",
+        "speaker": "Néhémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "13",
+            "verses": "14"
+          }
+        ]
+      },
+      {
+        "id": "p-63",
+        "title": "Prends-moi en pitié",
+        "speaker": "Néhémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "13",
+            "verses": "22"
+          }
+        ]
+      },
+      {
+        "id": "p-64",
+        "title": "Contre les profanateurs",
+        "speaker": "Néhémie",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "13",
+            "verses": "29"
+          }
+        ]
+      },
+      {
+        "id": "p-65",
+        "title": "Souviens-toi de moi pour le bien",
+        "speaker": "Néhémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Neh",
+            "chapter": "13",
+            "verses": "31"
+          }
+        ]
+      },
+      {
+        "id": "p-66",
+        "title": "Adoration au milieu de la perte",
+        "speaker": "Job",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "1",
+            "verses": "20-22"
+          }
+        ]
+      },
+      {
+        "id": "p-67",
+        "title": "Plainte et demande de répit",
+        "speaker": "Job",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "7",
+            "verses": "17-21"
+          }
+        ]
+      },
+      {
+        "id": "p-68",
+        "title": "Longue plainte de Job",
+        "speaker": "Job",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "9",
+            "verses": "25-end"
+          },
+          {
+            "book": "Job",
+            "chapter": "10",
+            "verses": "1-22"
+          }
+        ],
+        "joined": true
+      },
+      {
+        "id": "p-69",
+        "title": "Espérance et plainte devant la mort",
+        "speaker": "Job",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "14",
+            "verses": "13-22"
+          }
+        ]
+      },
+      {
+        "id": "p-70",
+        "title": "Obtenir audience devant Dieu",
+        "speaker": "Job",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "23",
+            "verses": "3-5"
+          }
+        ]
+      },
+      {
+        "id": "p-71",
+        "title": "Confession de petitesse",
+        "speaker": "Job",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "40",
+            "verses": "3-5"
+          }
+        ]
+      },
+      {
+        "id": "p-72",
+        "title": "Rétractation et repentir",
+        "speaker": "Job",
+        "type": "Repentance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Job",
+            "chapter": "42",
+            "verses": "1-6"
+          }
+        ]
+      },
+      {
+        "id": "p-73",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "3",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-74",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "4",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-75",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "5",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-76",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "6",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-77",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "7",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-78",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "9",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-79",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "10",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-80",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "12",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-81",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "13",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-82",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "16",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-83",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "17",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-84",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "19",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-85",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "20",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-86",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "22",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-87",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "25",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-88",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "26",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-89",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "27",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-90",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "28",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-91",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "29",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-92",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "30",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-93",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "31",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-94",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "33",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-95",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "35",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-96",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "36",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-97",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "38",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-98",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "39",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-99",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "40",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-100",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "41",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-101",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "43",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-102",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "44",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-103",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "51",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-104",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "54",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-105",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "55",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-106",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "56",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-107",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "57",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-108",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "58",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-109",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "59",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-110",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "60",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-111",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "61",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-112",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "64",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-113",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "69",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-114",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "70",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-115",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "71",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-116",
+        "title": "Prière pour le roi",
+        "speaker": "Salomon / tradition royale",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "72",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-117",
+        "title": "Psaume-prière d’Asaph",
+        "speaker": "Asaph",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "74",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-118",
+        "title": "Psaume-prière d’Asaph",
+        "speaker": "Asaph",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "79",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-119",
+        "title": "Psaume-prière d’Asaph",
+        "speaker": "Asaph",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "80",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-120",
+        "title": "Psaume-prière d’Asaph",
+        "speaker": "Asaph",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "82",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-121",
+        "title": "Psaume-prière d’Asaph",
+        "speaker": "Asaph",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "83",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-122",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "85",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-123",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "86",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-124",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "88",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-125",
+        "title": "Psaume-prière d’Éthan",
+        "speaker": "Éthan",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "89",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-126",
+        "title": "Prière de Moïse",
+        "speaker": "Moïse",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "90",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-127",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "102",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-128",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "106",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-129",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "108",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-130",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "109",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-131",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "118",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-132",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "119",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-133",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "120",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-134",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "123",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-135",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "124",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-136",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "125",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-137",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "129",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-138",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "132",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-139",
+        "title": "Psaume-prière",
+        "speaker": "Psalmiste",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "137",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-140",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "139",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-141",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "140",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-142",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "141",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-143",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "142",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-144",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "143",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-145",
+        "title": "Psaume-prière de David",
+        "speaker": "David",
+        "type": "Psaume-prière",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ps",
+            "chapter": "144",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-146",
+        "title": "Malheur à moi : confession devant le Saint",
+        "speaker": "Isaïe",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Isa",
+            "chapter": "6",
+            "verses": "5"
+          }
+        ]
+      },
+      {
+        "id": "p-147",
+        "title": "Pour la délivrance de Jérusalem",
+        "speaker": "Ézéchias",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Isa",
+            "chapter": "37",
+            "verses": "16-20"
+          }
+        ]
+      },
+      {
+        "id": "p-148",
+        "title": "Pour la guérison",
+        "speaker": "Ézéchias",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Isa",
+            "chapter": "38",
+            "verses": "3"
+          }
+        ]
+      },
+      {
+        "id": "p-149",
+        "title": "Je ne sais pas parler",
+        "speaker": "Jérémie",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "1",
+            "verses": "6"
+          }
+        ]
+      },
+      {
+        "id": "p-150",
+        "title": "Plainte devant Dieu",
+        "speaker": "Jérémie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "4",
+            "verses": "10"
+          }
+        ]
+      },
+      {
+        "id": "p-151",
+        "title": "Corrige-moi avec mesure",
+        "speaker": "Jérémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "10",
+            "verses": "23-25"
+          }
+        ]
+      },
+      {
+        "id": "p-152",
+        "title": "Pourquoi les méchants prospèrent-ils ?",
+        "speaker": "Jérémie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "12",
+            "verses": "1-4"
+          }
+        ]
+      },
+      {
+        "id": "p-153",
+        "title": "Au temps de la sécheresse",
+        "speaker": "Jérémie",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "14",
+            "verses": "7-9"
+          }
+        ]
+      },
+      {
+        "id": "p-154",
+        "title": "Confession et supplication pour Juda",
+        "speaker": "Jérémie",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "14",
+            "verses": "20-22"
+          }
+        ]
+      },
+      {
+        "id": "p-155",
+        "title": "Plainte du prophète persécuté",
+        "speaker": "Jérémie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "15",
+            "verses": "15-18"
+          }
+        ]
+      },
+      {
+        "id": "p-156",
+        "title": "Pour être délivré des persécuteurs",
+        "speaker": "Jérémie",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "17",
+            "verses": "13-18"
+          }
+        ]
+      },
+      {
+        "id": "p-157",
+        "title": "Contre ses adversaires",
+        "speaker": "Jérémie",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "18",
+            "verses": "19-23"
+          }
+        ]
+      },
+      {
+        "id": "p-158",
+        "title": "Tu m’as séduit, Seigneur",
+        "speaker": "Jérémie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "20",
+            "verses": "7-12"
+          }
+        ]
+      },
+      {
+        "id": "p-159",
+        "title": "Prière au cœur du siège",
+        "speaker": "Jérémie",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "32",
+            "verses": "17-25"
+          }
+        ]
+      },
+      {
+        "id": "p-160",
+        "title": "Détresse de Jérusalem",
+        "speaker": "Jérémie / Jérusalem",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Lam",
+            "chapter": "1",
+            "verses": "20-22"
+          }
+        ]
+      },
+      {
+        "id": "p-161",
+        "title": "Vois, Seigneur, notre ruine",
+        "speaker": "Jérémie / Jérusalem",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Lam",
+            "chapter": "2",
+            "verses": "20-22"
+          }
+        ]
+      },
+      {
+        "id": "p-162",
+        "title": "Du fond de la fosse",
+        "speaker": "Jérémie",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Lam",
+            "chapter": "3",
+            "verses": "55-66"
+          }
+        ]
+      },
+      {
+        "id": "p-163",
+        "title": "Souviens-toi de ce qui nous est arrivé",
+        "speaker": "Communauté de Juda",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Lam",
+            "chapter": "5",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-164",
+        "title": "Objection devant l’ordre reçu",
+        "speaker": "Ézéchiel",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "4",
+            "verses": "14"
+          }
+        ]
+      },
+      {
+        "id": "p-165",
+        "title": "Pour le reste d’Israël",
+        "speaker": "Ézéchiel",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "9",
+            "verses": "8"
+          }
+        ]
+      },
+      {
+        "id": "p-166",
+        "title": "Vas-tu exterminer le reste ?",
+        "speaker": "Ézéchiel",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "11",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-167",
+        "title": "Grande confession et supplication",
+        "speaker": "Daniel",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Dan",
+            "chapter": "9",
+            "verses": "1-19"
+          }
+        ]
+      },
+      {
+        "id": "p-168",
+        "title": "Comprendre la vision",
+        "speaker": "Daniel",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Dan",
+            "chapter": "12",
+            "verses": "8"
+          }
+        ]
+      },
+      {
+        "id": "p-169",
+        "title": "Pardonne, je t’en prie",
+        "speaker": "Amos",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Amos",
+            "chapter": "7",
+            "verses": "2"
+          }
+        ]
+      },
+      {
+        "id": "p-170",
+        "title": "Arrête, je t’en prie",
+        "speaker": "Amos",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Amos",
+            "chapter": "7",
+            "verses": "5"
+          }
+        ]
+      },
+      {
+        "id": "p-171",
+        "title": "Ne nous fais pas périr",
+        "speaker": "Les marins",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jonah",
+            "chapter": "1",
+            "verses": "14"
+          }
+        ]
+      },
+      {
+        "id": "p-172",
+        "title": "Prière depuis le poisson",
+        "speaker": "Jonas",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jonah",
+            "chapter": "2",
+            "verses": "1-9"
+          }
+        ]
+      },
+      {
+        "id": "p-173",
+        "title": "Prends-moi la vie",
+        "speaker": "Jonas",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Jonah",
+            "chapter": "4",
+            "verses": "2-3"
+          }
+        ]
+      },
+      {
+        "id": "p-174",
+        "title": "Jusqu’à quand ?",
+        "speaker": "Habaquq",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Hab",
+            "chapter": "1",
+            "verses": "2-4"
+          }
+        ]
+      },
+      {
+        "id": "p-175",
+        "title": "Comment Dieu peut-il employer le méchant ?",
+        "speaker": "Habaquq",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Hab",
+            "chapter": "1",
+            "verses": "12-17"
+          }
+        ]
+      },
+      {
+        "id": "p-176",
+        "title": "Prière et cantique d’Habaquq",
+        "speaker": "Habaquq",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Hab",
+            "chapter": "3",
+            "verses": "2-19"
+          }
+        ]
+      },
+      {
+        "id": "p-177",
+        "title": "Notre Père",
+        "speaker": "Jésus",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "6",
+            "verses": "9-13"
+          }
+        ]
+      },
+      {
+        "id": "p-178",
+        "title": "Seigneur, si tu le veux, tu peux me purifier",
+        "speaker": "Un lépreux",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "8",
+            "verses": "2"
+          }
+        ]
+      },
+      {
+        "id": "p-179",
+        "title": "Pour son serviteur",
+        "speaker": "Un centurion",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "8",
+            "verses": "6-9"
+          }
+        ]
+      },
+      {
+        "id": "p-180",
+        "title": "Sauve-nous, nous périssons",
+        "speaker": "Les disciples",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "8",
+            "verses": "25"
+          }
+        ]
+      },
+      {
+        "id": "p-181",
+        "title": "Demande adressée à Jésus",
+        "speaker": "Des démons",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "8",
+            "verses": "29-31"
+          }
+        ]
+      },
+      {
+        "id": "p-182",
+        "title": "Pour sa fille",
+        "speaker": "Un chef",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "18"
+          }
+        ]
+      },
+      {
+        "id": "p-183",
+        "title": "Être guérie",
+        "speaker": "Une femme malade",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "21"
+          }
+        ]
+      },
+      {
+        "id": "p-184",
+        "title": "Aie pitié de nous",
+        "speaker": "Deux aveugles",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "27"
+          }
+        ]
+      },
+      {
+        "id": "p-185",
+        "title": "Je te loue, Père",
+        "speaker": "Jésus",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "11",
+            "verses": "25"
+          }
+        ]
+      },
+      {
+        "id": "p-186",
+        "title": "Ordonne-moi de venir vers toi",
+        "speaker": "Pierre",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "14",
+            "verses": "28"
+          }
+        ]
+      },
+      {
+        "id": "p-187",
+        "title": "Seigneur, sauve-moi",
+        "speaker": "Pierre",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "14",
+            "verses": "30"
+          }
+        ]
+      },
+      {
+        "id": "p-188",
+        "title": "Pour sa fille",
+        "speaker": "Une Cananéenne",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "15",
+            "verses": "22-27"
+          }
+        ]
+      },
+      {
+        "id": "p-189",
+        "title": "Pour son fils",
+        "speaker": "Un père",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "17",
+            "verses": "15-16"
+          }
+        ]
+      },
+      {
+        "id": "p-190",
+        "title": "Pour l’honneur de ses fils",
+        "speaker": "Mère de Jacques et Jean",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "20",
+            "verses": "21"
+          }
+        ]
+      },
+      {
+        "id": "p-191",
+        "title": "Que nos yeux s’ouvrent",
+        "speaker": "Deux aveugles",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "20",
+            "verses": "30-33"
+          }
+        ]
+      },
+      {
+        "id": "p-192",
+        "title": "Gethsémani",
+        "speaker": "Jésus",
+        "type": "Soumission",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "26",
+            "verses": "39-44"
+          }
+        ]
+      },
+      {
+        "id": "p-193",
+        "title": "Mon Dieu, pourquoi m’as-tu abandonné ?",
+        "speaker": "Jésus",
+        "type": "Lamentation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "27",
+            "verses": "46"
+          }
+        ]
+      },
+      {
+        "id": "p-194",
+        "title": "Demande adressée à Jésus",
+        "speaker": "Un esprit impur",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Mark",
+            "chapter": "1",
+            "verses": "23-24"
+          }
+        ]
+      },
+      {
+        "id": "p-195",
+        "title": "Ephphatha",
+        "speaker": "Jésus",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Mark",
+            "chapter": "7",
+            "verses": "34"
+          }
+        ]
+      },
+      {
+        "id": "p-196",
+        "title": "Cantique de Syméon",
+        "speaker": "Syméon",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "2",
+            "verses": "29-32"
+          }
+        ]
+      },
+      {
+        "id": "p-197",
+        "title": "Supplication dans la parabole",
+        "speaker": "L’homme riche",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "16",
+            "verses": "24-31"
+          }
+        ]
+      },
+      {
+        "id": "p-198",
+        "title": "Jésus, aie pitié de nous",
+        "speaker": "Dix lépreux",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "17",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-199",
+        "title": "Prière du pharisien",
+        "speaker": "Un pharisien",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "18",
+            "verses": "11-12"
+          }
+        ]
+      },
+      {
+        "id": "p-200",
+        "title": "Prends pitié du pécheur",
+        "speaker": "Un publicain",
+        "type": "Confession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "18",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-201",
+        "title": "Père, pardonne-leur",
+        "speaker": "Jésus",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "23",
+            "verses": "34"
+          }
+        ]
+      },
+      {
+        "id": "p-202",
+        "title": "Entre tes mains je remets mon esprit",
+        "speaker": "Jésus",
+        "type": "Soumission",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "23",
+            "verses": "46"
+          }
+        ]
+      },
+      {
+        "id": "p-203",
+        "title": "Pour son enfant",
+        "speaker": "Un officier royal",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "4",
+            "verses": "49"
+          }
+        ]
+      },
+      {
+        "id": "p-204",
+        "title": "Donne-nous toujours ce pain",
+        "speaker": "La foule",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "6",
+            "verses": "34"
+          }
+        ]
+      },
+      {
+        "id": "p-205",
+        "title": "Avant la résurrection de Lazare",
+        "speaker": "Jésus",
+        "type": "Action de grâce",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "11",
+            "verses": "41-43"
+          }
+        ]
+      },
+      {
+        "id": "p-206",
+        "title": "Père, glorifie ton nom",
+        "speaker": "Jésus",
+        "type": "Soumission",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "12",
+            "verses": "27-28"
+          }
+        ]
+      },
+      {
+        "id": "p-207",
+        "title": "Prière sacerdotale",
+        "speaker": "Jésus",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "17",
+            "verses": "1-26"
+          }
+        ]
+      },
+      {
+        "id": "p-208",
+        "title": "Pour choisir le successeur de Judas",
+        "speaker": "Les disciples",
+        "type": "Guidance",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "1",
+            "verses": "24-25"
+          }
+        ]
+      },
+      {
+        "id": "p-209",
+        "title": "Au boiteux, au nom de Jésus",
+        "speaker": "Pierre",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "3",
+            "verses": "6"
+          }
+        ]
+      },
+      {
+        "id": "p-210",
+        "title": "Pour l’assurance et la force",
+        "speaker": "Église de Jérusalem",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "4",
+            "verses": "24-30"
+          }
+        ]
+      },
+      {
+        "id": "p-211",
+        "title": "Pour lui-même et ses bourreaux",
+        "speaker": "Étienne",
+        "type": "Intercession",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "7",
+            "verses": "59-60"
+          }
+        ]
+      },
+      {
+        "id": "p-212",
+        "title": "Que veux-tu que je fasse ?",
+        "speaker": "Saul",
+        "type": "Soumission",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "9",
+            "verses": "5-6"
+          }
+        ]
+      },
+      {
+        "id": "p-213",
+        "title": "Pour Tabitha",
+        "speaker": "Pierre",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Acts",
+            "chapter": "9",
+            "verses": "40"
+          }
+        ]
+      },
+      {
+        "id": "p-214",
+        "title": "Pour la santé et la prospérité du destinataire",
+        "speaker": "Jean",
+        "type": "Bénédiction",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "3John",
+            "chapter": "1",
+            "verses": "2"
+          }
+        ]
+      },
+      {
+        "id": "p-215",
+        "title": "Adoration du Créateur",
+        "speaker": "Les vingt-quatre anciens",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "4",
+            "verses": "11"
+          }
+        ]
+      },
+      {
+        "id": "p-216",
+        "title": "Adoration de l’Agneau",
+        "speaker": "Les anges",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "5",
+            "verses": "12"
+          }
+        ]
+      },
+      {
+        "id": "p-217",
+        "title": "À Dieu et à l’Agneau",
+        "speaker": "Toute créature",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "5",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "p-218",
+        "title": "Jusqu’à quand ?",
+        "speaker": "Les martyrs",
+        "type": "Imprécation",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "6",
+            "verses": "10"
+          }
+        ]
+      },
+      {
+        "id": "p-219",
+        "title": "Le salut appartient à notre Dieu",
+        "speaker": "Une foule immense",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "7",
+            "verses": "10"
+          }
+        ]
+      },
+      {
+        "id": "p-220",
+        "title": "Bénédiction et gloire à Dieu",
+        "speaker": "Les anges",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "7",
+            "verses": "12"
+          }
+        ]
+      },
+      {
+        "id": "p-221",
+        "title": "Alléluia",
+        "speaker": "La foule céleste",
+        "type": "Louange",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "19",
+            "verses": "1-6"
+          }
+        ]
+      },
+      {
+        "id": "p-222",
+        "title": "Viens, Seigneur Jésus",
+        "speaker": "Jean",
+        "type": "Pétition",
+        "tradition": "canon-commun",
+        "refs": [
+          {
+            "book": "Rev",
+            "chapter": "22",
+            "verses": "20"
+          }
+        ]
+      },
+      {
+        "id": "p-223",
+        "title": "Prière de Tobit dans l’épreuve",
+        "speaker": "Tobit",
+        "type": "Lamentation",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Tob",
+            "chapter": "3",
+            "verses": "2-6"
+          }
+        ]
+      },
+      {
+        "id": "p-224",
+        "title": "Prière de Sara",
+        "speaker": "Sara",
+        "type": "Lamentation",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Tob",
+            "chapter": "3",
+            "verses": "11-15"
+          }
+        ]
+      },
+      {
+        "id": "p-225",
+        "title": "Prière des époux",
+        "speaker": "Tobias et Sara",
+        "type": "Bénédiction",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Tob",
+            "chapter": "8",
+            "verses": "5-8"
+          }
+        ]
+      },
+      {
+        "id": "p-226",
+        "title": "Action de grâce après la nuit de noces",
+        "speaker": "Ragouël et les siens",
+        "type": "Action de grâce",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Tob",
+            "chapter": "8",
+            "verses": "15-17"
+          }
+        ]
+      },
+      {
+        "id": "p-227",
+        "title": "Cantique de Tobit",
+        "speaker": "Tobit",
+        "type": "Louange",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Tob",
+            "chapter": "13",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-228",
+        "title": "Prière de Judith avant d’affronter Holopherne",
+        "speaker": "Judith",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Jdt",
+            "chapter": "9",
+            "verses": "1-14"
+          }
+        ]
+      },
+      {
+        "id": "p-229",
+        "title": "Prière de Mardochée",
+        "speaker": "Mardochée",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "AddEsth",
+            "chapter": "C",
+            "verses": "1-11"
+          }
+        ]
+      },
+      {
+        "id": "p-230",
+        "title": "Prière d’Esther",
+        "speaker": "Esther",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "AddEsth",
+            "chapter": "C",
+            "verses": "12-30"
+          }
+        ]
+      },
+      {
+        "id": "p-231",
+        "title": "Prière pour obtenir la Sagesse",
+        "speaker": "Salomon (voix sapientielle)",
+        "type": "Pétition",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Wis",
+            "chapter": "9",
+            "verses": "1-18"
+          }
+        ]
+      },
+      {
+        "id": "p-232",
+        "title": "Garde ma bouche et mon cœur, I",
+        "speaker": "Ben Sira",
+        "type": "Pétition",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Sir",
+            "chapter": "22",
+            "verses": "27-end"
+          }
+        ]
+      },
+      {
+        "id": "p-233",
+        "title": "Garde ma bouche et mon cœur, II",
+        "speaker": "Ben Sira",
+        "type": "Pétition",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Sir",
+            "chapter": "23",
+            "verses": "1-6"
+          }
+        ]
+      },
+      {
+        "id": "p-234",
+        "title": "Prière pour Israël",
+        "speaker": "Ben Sira",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Sir",
+            "chapter": "36",
+            "verses": "1-17"
+          }
+        ]
+      },
+      {
+        "id": "p-235",
+        "title": "Action de grâce pour la délivrance",
+        "speaker": "Ben Sira",
+        "type": "Action de grâce",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Sir",
+            "chapter": "51",
+            "verses": "1-12"
+          }
+        ]
+      },
+      {
+        "id": "p-236",
+        "title": "Confession de Baruch, I",
+        "speaker": "Communauté exilée",
+        "type": "Confession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Bar",
+            "chapter": "1",
+            "verses": "15-end"
+          }
+        ]
+      },
+      {
+        "id": "p-237",
+        "title": "Confession et supplication, II",
+        "speaker": "Communauté exilée",
+        "type": "Confession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Bar",
+            "chapter": "2",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-238",
+        "title": "Supplication de Baruch, III",
+        "speaker": "Communauté exilée",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "Bar",
+            "chapter": "3",
+            "verses": "1-8"
+          }
+        ]
+      },
+      {
+        "id": "p-239",
+        "title": "Prière d’Azarya dans la fournaise",
+        "speaker": "Azarya",
+        "type": "Confession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "AddDan",
+            "chapter": "3",
+            "verses": "25-45"
+          }
+        ]
+      },
+      {
+        "id": "p-240",
+        "title": "Cantique des trois jeunes gens",
+        "speaker": "Les trois jeunes gens",
+        "type": "Louange",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "AddDan",
+            "chapter": "3",
+            "verses": "52-90"
+          }
+        ]
+      },
+      {
+        "id": "p-241",
+        "title": "Prière avant le combat",
+        "speaker": "Judas et le peuple",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "1Macc",
+            "chapter": "3",
+            "verses": "50-53"
+          }
+        ]
+      },
+      {
+        "id": "p-242",
+        "title": "Appel au Ciel avant la bataille",
+        "speaker": "Judas",
+        "type": "Pétition",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "1Macc",
+            "chapter": "4",
+            "verses": "10-11"
+          }
+        ]
+      },
+      {
+        "id": "p-243",
+        "title": "Pour le Temple menacé",
+        "speaker": "Prêtres / peuple",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "1Macc",
+            "chapter": "7",
+            "verses": "37-38"
+          }
+        ]
+      },
+      {
+        "id": "p-244",
+        "title": "Prière au sacrifice",
+        "speaker": "Prêtres et peuple",
+        "type": "Dédicace",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "2Macc",
+            "chapter": "1",
+            "verses": "24-29"
+          }
+        ]
+      },
+      {
+        "id": "p-245",
+        "title": "Prière avant le combat",
+        "speaker": "Judas et les siens",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "2Macc",
+            "chapter": "8",
+            "verses": "14-15"
+          }
+        ]
+      },
+      {
+        "id": "p-246",
+        "title": "Prière pour les morts",
+        "speaker": "Judas et les siens",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "2Macc",
+            "chapter": "12",
+            "verses": "42-45"
+          }
+        ]
+      },
+      {
+        "id": "p-247",
+        "title": "Prière pour le sanctuaire",
+        "speaker": "Prêtres",
+        "type": "Intercession",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "2Macc",
+            "chapter": "14",
+            "verses": "34-36"
+          }
+        ]
+      },
+      {
+        "id": "p-248",
+        "title": "Prière avant la bataille décisive",
+        "speaker": "Judas",
+        "type": "Pétition",
+        "tradition": "deuterocanonique",
+        "refs": [
+          {
+            "book": "2Macc",
+            "chapter": "15",
+            "verses": "22-24"
+          }
+        ]
+      },
+      {
+        "id": "p-249",
+        "title": "Prière de Manassé",
+        "speaker": "Manassé",
+        "type": "Repentance",
+        "tradition": "supplementaire",
+        "refs": [
+          {
+            "book": "PrMan",
+            "chapter": "1",
+            "verses": "1-end"
+          }
+        ]
+      },
+      {
+        "id": "p-250",
+        "title": "Prière contre la profanation du Temple",
+        "speaker": "Simon, grand prêtre",
+        "type": "Intercession",
+        "tradition": "supplementaire",
+        "refs": [
+          {
+            "book": "3Macc",
+            "chapter": "2",
+            "verses": "1-20"
+          }
+        ]
+      },
+      {
+        "id": "p-251",
+        "title": "Prière pour les Juifs menacés",
+        "speaker": "Éléazar",
+        "type": "Intercession",
+        "tradition": "supplementaire",
+        "refs": [
+          {
+            "book": "3Macc",
+            "chapter": "6",
+            "verses": "1-15"
+          }
+        ]
+      },
+      {
+        "id": "p-252",
+        "title": "Prière pour la miséricorde",
+        "speaker": "Esdras",
+        "type": "Intercession",
+        "tradition": "supplementaire",
+        "refs": [
+          {
+            "book": "2Esd",
+            "chapter": "8",
+            "verses": "20-36"
+          }
+        ]
+      }
+    ]
+  },
+  "parables": {
+    "label": "Toutes les paraboles",
+    "shortLabel": "Paraboles",
+    "description": "Inventaire au sens large : paraboles narratives, similitudes, fables, allégories et grandes images paraboliques. Le type est indiqué pour éviter de tout confondre.",
+    "items": [
+      {
+        "id": "pa-1",
+        "title": "Les deux maisons",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "24-27"
+          },
+          {
+            "book": "Luke",
+            "chapter": "6",
+            "verses": "46-49"
+          }
+        ]
+      },
+      {
+        "id": "pa-2",
+        "title": "Le semeur",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "3-9"
+          },
+          {
+            "book": "Mark",
+            "chapter": "4",
+            "verses": "3-9"
+          },
+          {
+            "book": "Luke",
+            "chapter": "8",
+            "verses": "4-8"
+          }
+        ]
+      },
+      {
+        "id": "pa-3",
+        "title": "L’explication du semeur",
+        "type": "Explication",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "18-23"
+          },
+          {
+            "book": "Mark",
+            "chapter": "4",
+            "verses": "13-20"
+          },
+          {
+            "book": "Luke",
+            "chapter": "8",
+            "verses": "11-15"
+          }
+        ]
+      },
+      {
+        "id": "pa-4",
+        "title": "Le bon grain et l’ivraie",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "24-30"
+          }
+        ]
+      },
+      {
+        "id": "pa-5",
+        "title": "L’explication de l’ivraie",
+        "type": "Explication",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "36-43"
+          }
+        ]
+      },
+      {
+        "id": "pa-6",
+        "title": "Le grain de moutarde",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "31-32"
+          },
+          {
+            "book": "Mark",
+            "chapter": "4",
+            "verses": "30-32"
+          },
+          {
+            "book": "Luke",
+            "chapter": "13",
+            "verses": "18-19"
+          }
+        ]
+      },
+      {
+        "id": "pa-7",
+        "title": "Le levain",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "33"
+          },
+          {
+            "book": "Luke",
+            "chapter": "13",
+            "verses": "20-21"
+          }
+        ]
+      },
+      {
+        "id": "pa-8",
+        "title": "Le trésor caché",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "44"
+          }
+        ]
+      },
+      {
+        "id": "pa-9",
+        "title": "La perle de grand prix",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "45-46"
+          }
+        ]
+      },
+      {
+        "id": "pa-10",
+        "title": "Le filet",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "47-50"
+          }
+        ]
+      },
+      {
+        "id": "pa-11",
+        "title": "Le maître de maison : du neuf et de l’ancien",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "13",
+            "verses": "52"
+          }
+        ]
+      },
+      {
+        "id": "pa-12",
+        "title": "La semence qui pousse d’elle-même",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Mark",
+            "chapter": "4",
+            "verses": "26-29"
+          }
+        ]
+      },
+      {
+        "id": "pa-13",
+        "title": "La brebis perdue",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "18",
+            "verses": "12-14"
+          },
+          {
+            "book": "Luke",
+            "chapter": "15",
+            "verses": "3-7"
+          }
+        ]
+      },
+      {
+        "id": "pa-14",
+        "title": "La drachme perdue",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "15",
+            "verses": "8-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-15",
+        "title": "Le fils perdu et retrouvé",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "15",
+            "verses": "11-32"
+          }
+        ]
+      },
+      {
+        "id": "pa-16",
+        "title": "Le serviteur impitoyable",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "18",
+            "verses": "23-35"
+          }
+        ]
+      },
+      {
+        "id": "pa-17",
+        "title": "Les ouvriers de la vigne",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "20",
+            "verses": "1-16"
+          }
+        ]
+      },
+      {
+        "id": "pa-18",
+        "title": "Les deux fils",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "21",
+            "verses": "28-32"
+          }
+        ]
+      },
+      {
+        "id": "pa-19",
+        "title": "Les vignerons meurtriers",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "21",
+            "verses": "33-46"
+          },
+          {
+            "book": "Mark",
+            "chapter": "12",
+            "verses": "1-12"
+          },
+          {
+            "book": "Luke",
+            "chapter": "20",
+            "verses": "9-19"
+          }
+        ]
+      },
+      {
+        "id": "pa-20",
+        "title": "Le festin de noces",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "22",
+            "verses": "1-14"
+          },
+          {
+            "book": "Luke",
+            "chapter": "14",
+            "verses": "15-24"
+          }
+        ]
+      },
+      {
+        "id": "pa-21",
+        "title": "Les dix jeunes filles",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "25",
+            "verses": "1-13"
+          }
+        ]
+      },
+      {
+        "id": "pa-22",
+        "title": "Les talents et les mines",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "25",
+            "verses": "14-30"
+          },
+          {
+            "book": "Luke",
+            "chapter": "19",
+            "verses": "11-27"
+          }
+        ]
+      },
+      {
+        "id": "pa-23",
+        "title": "Les brebis et les boucs",
+        "type": "Scène parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "25",
+            "verses": "31-46"
+          }
+        ]
+      },
+      {
+        "id": "pa-24",
+        "title": "Le bon Samaritain",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "10",
+            "verses": "25-37"
+          }
+        ]
+      },
+      {
+        "id": "pa-25",
+        "title": "L’ami importun",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "5-8"
+          }
+        ]
+      },
+      {
+        "id": "pa-26",
+        "title": "Le riche insensé",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "12",
+            "verses": "13-21"
+          }
+        ]
+      },
+      {
+        "id": "pa-27",
+        "title": "Les serviteurs vigilants",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "12",
+            "verses": "35-40"
+          }
+        ]
+      },
+      {
+        "id": "pa-28",
+        "title": "Le serviteur fidèle ou infidèle",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "24",
+            "verses": "45-51"
+          },
+          {
+            "book": "Luke",
+            "chapter": "12",
+            "verses": "41-48"
+          }
+        ]
+      },
+      {
+        "id": "pa-29",
+        "title": "Le figuier stérile",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "13",
+            "verses": "6-9"
+          }
+        ]
+      },
+      {
+        "id": "pa-30",
+        "title": "Les invités et les premières places",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "14",
+            "verses": "7-11"
+          }
+        ]
+      },
+      {
+        "id": "pa-31",
+        "title": "Construire une tour et partir en guerre",
+        "type": "Double similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "14",
+            "verses": "28-33"
+          }
+        ]
+      },
+      {
+        "id": "pa-32",
+        "title": "L’intendant malhonnête",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "16",
+            "verses": "1-13"
+          }
+        ]
+      },
+      {
+        "id": "pa-33",
+        "title": "Le riche et Lazare",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "16",
+            "verses": "19-31"
+          }
+        ]
+      },
+      {
+        "id": "pa-34",
+        "title": "Le serviteur qui n’a fait que son devoir",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "17",
+            "verses": "7-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-35",
+        "title": "La veuve et le juge injuste",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "18",
+            "verses": "1-8"
+          }
+        ]
+      },
+      {
+        "id": "pa-36",
+        "title": "Le pharisien et le publicain",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "18",
+            "verses": "9-14"
+          }
+        ]
+      },
+      {
+        "id": "pa-37",
+        "title": "Les deux débiteurs",
+        "type": "Parabole",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "7",
+            "verses": "41-43"
+          }
+        ]
+      },
+      {
+        "id": "pa-38",
+        "title": "Les enfants sur la place",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "11",
+            "verses": "16-19"
+          },
+          {
+            "book": "Luke",
+            "chapter": "7",
+            "verses": "31-35"
+          }
+        ]
+      },
+      {
+        "id": "pa-39",
+        "title": "Le figuier : savoir lire les signes",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "24",
+            "verses": "32-35"
+          },
+          {
+            "book": "Mark",
+            "chapter": "13",
+            "verses": "28-31"
+          },
+          {
+            "book": "Luke",
+            "chapter": "21",
+            "verses": "29-33"
+          }
+        ]
+      },
+      {
+        "id": "pa-40",
+        "title": "L’homme fort",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "12",
+            "verses": "29"
+          },
+          {
+            "book": "Mark",
+            "chapter": "3",
+            "verses": "27"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "21-22"
+          }
+        ]
+      },
+      {
+        "id": "pa-41",
+        "title": "La maison divisée",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "12",
+            "verses": "25-28"
+          },
+          {
+            "book": "Mark",
+            "chapter": "3",
+            "verses": "23-26"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "17-20"
+          }
+        ]
+      },
+      {
+        "id": "pa-42",
+        "title": "L’esprit impur qui revient",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "12",
+            "verses": "43-45"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "24-26"
+          }
+        ]
+      },
+      {
+        "id": "pa-43",
+        "title": "Le vêtement neuf et le vieux vêtement",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "16"
+          },
+          {
+            "book": "Mark",
+            "chapter": "2",
+            "verses": "21"
+          },
+          {
+            "book": "Luke",
+            "chapter": "5",
+            "verses": "36"
+          }
+        ]
+      },
+      {
+        "id": "pa-44",
+        "title": "Le vin nouveau et les vieilles outres",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "17"
+          },
+          {
+            "book": "Mark",
+            "chapter": "2",
+            "verses": "22"
+          },
+          {
+            "book": "Luke",
+            "chapter": "5",
+            "verses": "37-39"
+          }
+        ]
+      },
+      {
+        "id": "pa-45",
+        "title": "L’époux et les invités de la noce",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "9",
+            "verses": "14-15"
+          },
+          {
+            "book": "Mark",
+            "chapter": "2",
+            "verses": "18-20"
+          },
+          {
+            "book": "Luke",
+            "chapter": "5",
+            "verses": "33-35"
+          }
+        ]
+      },
+      {
+        "id": "pa-46",
+        "title": "L’aveugle qui guide un aveugle",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "15",
+            "verses": "13-14"
+          },
+          {
+            "book": "Luke",
+            "chapter": "6",
+            "verses": "39-42"
+          }
+        ]
+      },
+      {
+        "id": "pa-47",
+        "title": "La paille et la poutre",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "1-5"
+          },
+          {
+            "book": "Luke",
+            "chapter": "6",
+            "verses": "41-42"
+          }
+        ]
+      },
+      {
+        "id": "pa-48",
+        "title": "L’arbre et ses fruits",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "15-20"
+          },
+          {
+            "book": "Matt",
+            "chapter": "12",
+            "verses": "33-37"
+          },
+          {
+            "book": "Luke",
+            "chapter": "6",
+            "verses": "43-45"
+          }
+        ]
+      },
+      {
+        "id": "pa-49",
+        "title": "La lampe sous le boisseau",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "5",
+            "verses": "14-16"
+          },
+          {
+            "book": "Mark",
+            "chapter": "4",
+            "verses": "21-23"
+          },
+          {
+            "book": "Luke",
+            "chapter": "8",
+            "verses": "16-18"
+          }
+        ]
+      },
+      {
+        "id": "pa-50",
+        "title": "La lampe du corps",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "6",
+            "verses": "22-23"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "34-36"
+          }
+        ]
+      },
+      {
+        "id": "pa-51",
+        "title": "Le sel de la terre",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "5",
+            "verses": "13"
+          },
+          {
+            "book": "Mark",
+            "chapter": "9",
+            "verses": "49-50"
+          },
+          {
+            "book": "Luke",
+            "chapter": "14",
+            "verses": "34-35"
+          }
+        ]
+      },
+      {
+        "id": "pa-52",
+        "title": "Les trésors sur la terre et dans le ciel",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "6",
+            "verses": "19-21"
+          },
+          {
+            "book": "Luke",
+            "chapter": "12",
+            "verses": "33-34"
+          }
+        ]
+      },
+      {
+        "id": "pa-53",
+        "title": "Les deux maîtres",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "6",
+            "verses": "24"
+          },
+          {
+            "book": "Luke",
+            "chapter": "16",
+            "verses": "13"
+          }
+        ]
+      },
+      {
+        "id": "pa-54",
+        "title": "Demandez, cherchez, frappez",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "7-12"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "9-13"
+          }
+        ]
+      },
+      {
+        "id": "pa-55",
+        "title": "La porte étroite",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "13-14"
+          },
+          {
+            "book": "Luke",
+            "chapter": "13",
+            "verses": "23-24"
+          }
+        ]
+      },
+      {
+        "id": "pa-56",
+        "title": "Les perles devant les porcs",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "7",
+            "verses": "6"
+          }
+        ]
+      },
+      {
+        "id": "pa-57",
+        "title": "Les renards ont des terriers",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "8",
+            "verses": "19-20"
+          },
+          {
+            "book": "Luke",
+            "chapter": "9",
+            "verses": "57-58"
+          }
+        ]
+      },
+      {
+        "id": "pa-58",
+        "title": "Mettre la main à la charrue",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Luke",
+            "chapter": "9",
+            "verses": "62"
+          }
+        ]
+      },
+      {
+        "id": "pa-59",
+        "title": "L’œil d’une aiguille",
+        "type": "Image parabolique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "19",
+            "verses": "23-24"
+          },
+          {
+            "book": "Mark",
+            "chapter": "10",
+            "verses": "23-27"
+          },
+          {
+            "book": "Luke",
+            "chapter": "18",
+            "verses": "24-27"
+          }
+        ]
+      },
+      {
+        "id": "pa-60",
+        "title": "Le voleur dans la nuit",
+        "type": "Similitude",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "24",
+            "verses": "42-44"
+          },
+          {
+            "book": "Luke",
+            "chapter": "12",
+            "verses": "39-40"
+          }
+        ]
+      },
+      {
+        "id": "pa-61",
+        "title": "Les jours de Noé et de Lot",
+        "type": "Comparaison",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "24",
+            "verses": "37-41"
+          },
+          {
+            "book": "Luke",
+            "chapter": "17",
+            "verses": "26-30"
+          }
+        ]
+      },
+      {
+        "id": "pa-62",
+        "title": "Le signe de Jonas",
+        "type": "Image typologique",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "Matt",
+            "chapter": "12",
+            "verses": "39-42"
+          },
+          {
+            "book": "Luke",
+            "chapter": "11",
+            "verses": "29-32"
+          }
+        ]
+      },
+      {
+        "id": "pa-63",
+        "title": "Le berger et la porte des brebis",
+        "type": "Figure",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "10",
+            "verses": "1-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-64",
+        "title": "Le bon berger",
+        "type": "Figure",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "10",
+            "verses": "11-18"
+          }
+        ]
+      },
+      {
+        "id": "pa-65",
+        "title": "La vigne et les sarments",
+        "type": "Allégorie",
+        "tradition": "canon-commun",
+        "section": "nouveau",
+        "note": "",
+        "refs": [
+          {
+            "book": "John",
+            "chapter": "15",
+            "verses": "1-8"
+          }
+        ]
+      },
+      {
+        "id": "pa-66",
+        "title": "Les arbres cherchent un roi",
+        "type": "Fable",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Judg",
+            "chapter": "9",
+            "verses": "7-15"
+          }
+        ]
+      },
+      {
+        "id": "pa-67",
+        "title": "La brebis du pauvre",
+        "type": "Parabole prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "12",
+            "verses": "1-4"
+          }
+        ]
+      },
+      {
+        "id": "pa-68",
+        "title": "La femme de Teqoa et les deux fils",
+        "type": "Récit parabolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "2Sam",
+            "chapter": "14",
+            "verses": "5-11"
+          }
+        ]
+      },
+      {
+        "id": "pa-69",
+        "title": "Le prisonnier échappé",
+        "type": "Récit parabolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "1Kgs",
+            "chapter": "20",
+            "verses": "35-43"
+          }
+        ]
+      },
+      {
+        "id": "pa-70",
+        "title": "Le chardon et le cèdre",
+        "type": "Fable",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "2Kgs",
+            "chapter": "14",
+            "verses": "8-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-71",
+        "title": "La vigne qui ne donne que des raisins sauvages",
+        "type": "Parabole prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Isa",
+            "chapter": "5",
+            "verses": "1-7"
+          }
+        ]
+      },
+      {
+        "id": "pa-72",
+        "title": "Le laboureur",
+        "type": "Parabole prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Isa",
+            "chapter": "28",
+            "verses": "23-29"
+          }
+        ]
+      },
+      {
+        "id": "pa-73",
+        "title": "La ceinture de lin",
+        "type": "Action symbolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "13",
+            "verses": "1-11"
+          }
+        ]
+      },
+      {
+        "id": "pa-74",
+        "title": "Le potier et l’argile",
+        "type": "Parabole prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Jer",
+            "chapter": "18",
+            "verses": "1-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-75",
+        "title": "Les deux aigles et la vigne",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "17",
+            "verses": "1-10"
+          }
+        ]
+      },
+      {
+        "id": "pa-76",
+        "title": "La lionne et ses petits",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "19",
+            "verses": "1-9"
+          }
+        ]
+      },
+      {
+        "id": "pa-77",
+        "title": "Les deux sœurs infidèles",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "23",
+            "verses": "1-21"
+          }
+        ]
+      },
+      {
+        "id": "pa-78",
+        "title": "La marmite",
+        "type": "Parabole prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "24",
+            "verses": "3-14"
+          }
+        ]
+      },
+      {
+        "id": "pa-79",
+        "title": "Les mauvais bergers et le troupeau",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "34",
+            "verses": "1-31"
+          }
+        ]
+      },
+      {
+        "id": "pa-80",
+        "title": "Le grand cèdre",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "31",
+            "verses": "1-18"
+          }
+        ]
+      },
+      {
+        "id": "pa-81",
+        "title": "Le monstre marin",
+        "type": "Allégorie prophétique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "32",
+            "verses": "1-16"
+          }
+        ]
+      },
+      {
+        "id": "pa-82",
+        "title": "La vallée des ossements desséchés",
+        "type": "Vision symbolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "37",
+            "verses": "1-14"
+          }
+        ]
+      },
+      {
+        "id": "pa-83",
+        "title": "Le torrent qui sort du Temple",
+        "type": "Vision symbolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Ezek",
+            "chapter": "47",
+            "verses": "1-12"
+          }
+        ]
+      },
+      {
+        "id": "pa-84",
+        "title": "Le paresseux et son champ",
+        "type": "Tableau sapientiel",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Prov",
+            "chapter": "24",
+            "verses": "30-34"
+          }
+        ]
+      },
+      {
+        "id": "pa-85",
+        "title": "La petite ville et l’homme pauvre mais sage",
+        "type": "Récit sapientiel",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Eccl",
+            "chapter": "9",
+            "verses": "13-18"
+          }
+        ]
+      },
+      {
+        "id": "pa-86",
+        "title": "Le vrai et le faux berger",
+        "type": "Action symbolique",
+        "tradition": "canon-commun",
+        "section": "ancien",
+        "note": "",
+        "refs": [
+          {
+            "book": "Zech",
+            "chapter": "11",
+            "verses": "4-17"
+          }
+        ]
+      }
+    ]
+  }
+}

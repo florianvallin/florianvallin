@@ -18,11 +18,11 @@ Il n’y a pas chez les scientifiques un [[fmt:yellow]]discours global sur la ch
 
 ## [[fmt:underline,red-text]]Technophiles et technophobes[[/fmt]]
 
-Technophile est composé du mot techno et philia (amour des techniques). La [[fmt:green]]technophobie[[/fmt]] est la [[fmt:green]]peur[[/fmt]] (la fuite) des [[fmt:yellow]]technologies[[/fmt]] (fuite de la société). Doit-on traiter les traitements différents en les séparant ?
+Technophile est composé du mot techno et philia (amour des techniques). La [[fmt:green]]technophobie[[/fmt]] est la [[fmt:green]]peur[[/fmt]] (la fuite) des [[fmt:yellow]]technologies[[/fmt]] (fuite de la société). Doit-on traiter les traitements différents en les séparant ?
 
 ### [[fmt:underline,green-text]]Audience des thèses[[/fmt]]
 
-On va avoir une [[fmt:green]]méthode bibliométrique[[/fmt]] (=sélection de livres qui traite du sujet). Il faut prendre en compte la date de publication des textes ainsi que sa source (internet ? Livres ? Google ?). On va devoir voir si le texte est ancien et quand a-t-il été publier.
+On va avoir une [[fmt:green]]méthode bibliométrique[[/fmt]] (=sélection de livres qui traite du sujet). Il faut prendre en compte la date de publication des textes ainsi que sa source (internet ? Livres ? Google ?). On va devoir voir si le texte est ancien et quand a-t-il été publier.
 
 On peut regarder le nombre de citations par ans du mot technophile et technophobe. Des personnes humaines vont devoir compter le nombre de [[fmt:yellow]]citations[[/fmt]] qu’il y a dans un texte. Il faut passer plus de temps sur des [[fmt:yellow]]textes technophobes[[/fmt]] que sur des textes technophiles.
 
@@ -32,7 +32,7 @@ On peut regarder le nombre de citations par ans du mot technophile et technophob
 
 Les deux premières personnes à avoir étudié  sont [[fmt:pink]]Heidegger [[/fmt]](1953) et [[fmt:pink]]Ellul [[/fmt]](1954). [[fmt:pink]]Heidegger [[/fmt]]est classé parmi les [[fmt:green]]phénoménologues[[/fmt]] (On cherche le sens de l’expérience à travers les yeux d’un sujet qui rend compte de cette expérience dans un entretien ou dans un rapport écrit). C’est un phénoménologue qui est à la marge de celle-ci, il ne représente pas toute la phénoménologie mais qu’une seule partie. [[fmt:pink]]Heidegger [[/fmt]]a été [[fmt:yellow]]membre du parti nazi[[/fmt]] (sur l’intégralité de ce mouvement). Il n’a jamais renié cela.
 
-Son texte [[fmt:italic]]la question de la technique[[/fmt]] a été remanié et réélaborer pour donner naissance à un autre texte. Un trouve un certain nombre de points et de thèmes qui ont été plusieurs fois répété. On peut voir quelque chose de récurent : « la mise à disposition » qu’on peut traduire par [[fmt:green]]disponibilité[[/fmt]] (dans la technique).
+Son texte [[fmt:italic]]la question de la technique[[/fmt]] a été remanié et réélaborer pour donner naissance à un autre texte. Un trouve un certain nombre de points et de thèmes qui ont été plusieurs fois répété. On peut voir quelque chose de récurent : « la mise à disposition » qu’on peut traduire par [[fmt:green]]disponibilité[[/fmt]] (dans la technique).
 
 La disponibilité est le fait d’avoir quelque chose qu’on peut manier à volonté. Tout est disponible autour de nous, il suffit juste de cliquer pour avoir le résultat. Il considère que cela est une menace.
 
@@ -44,13 +44,13 @@ Il y a des idées sur le [[fmt:yellow]]rapport avec l’Homme[[/fmt]] et la noti
 
 ### [[fmt:underline,green-text]]Jacques Ellul[[/fmt]]
 
-[[fmt:pink]]Ellul[[/fmt]] est un juriste qui est devenu sociologue. C’est un [[fmt:yellow]]protestant[[/fmt]] qui a été engagé pour publier des revues pendant de nombreuses années. Il est [[fmt:yellow]]marxistes[[/fmt]] (parfois dissident sur certains points). Il va exprimer ces idées avec 3 livres (volumineux) en 1954 : [[fmt:italic]]la technique o l’enjeu du siècle[[/fmt]] (pose le problème de la décision du développement de la technique dans le monde moderne), 1977 avec [[fmt:italic]]la technique et le système technicien[[/fmt]] et en 1988 le [[fmt:italic]]bluff technologique[[/fmt]].
+[[fmt:pink]]Ellul[[/fmt]] est un juriste qui est devenu sociologue. C’est un [[fmt:yellow]]protestant[[/fmt]] qui a été engagé pour publier des revues pendant de nombreuses années. Il est [[fmt:yellow]]marxistes[[/fmt]] (parfois dissident sur certains points). Il va exprimer ces idées avec 3 livres (volumineux) en 1954 : [[fmt:italic]]la technique o l’enjeu du siècle[[/fmt]] (pose le problème de la décision du développement de la technique dans le monde moderne), 1977 avec [[fmt:italic]]la technique et le système technicien[[/fmt]] et en 1988 le [[fmt:italic]]bluff technologique[[/fmt]].
 
 Il a présenté un [[fmt:yellow]]tableau très noir de la technique.[[/fmt]] Les [[fmt:green]]thèmes centraux[[/fmt]] sont [[fmt:yellow]]l’autonomie[[/fmt]], la [[fmt:yellow]]totalisation[[/fmt]], la [[fmt:yellow]]prolifération[[/fmt]].
 
 La technique aurait cette capacité [[fmt:green]]d’autonomie[[/fmt]]. Elle peut s’émanciper du contrôle de l’Homme.
 
-[[fmt:yellow]]« Facteurs premiers »[[/fmt]] veut dire qu’il y a des facteurs prépondérant par rapport à d’autre. C’est celui qui explique tous les autres. La technique devient [[fmt:green]]autonome[[/fmt]] car elle est [[fmt:yellow]]fondée sur la science qui est logique[[/fmt]] (qui n’est donc pas contestable s’il n’y a pas de faille logique). On est obligé d’admettre une technique comme l’électricité.
+[[fmt:yellow]]« Facteurs premiers »[[/fmt]] veut dire qu’il y a des facteurs prépondérant par rapport à d’autre. C’est celui qui explique tous les autres. La technique devient [[fmt:green]]autonome[[/fmt]] car elle est [[fmt:yellow]]fondée sur la science qui est logique[[/fmt]] (qui n’est donc pas contestable s’il n’y a pas de faille logique). On est obligé d’admettre une technique comme l’électricité.
 
 La technique constitue un système. Il y a des interactions entre tous les domaines techniques qui ne peuvent pas être séparé les uns des autres.
 
@@ -68,7 +68,7 @@ La science et la technique repose sur un [[fmt:yellow]]raisonnement commun[[/fmt
 
 [[fmt:pink]]Habermas [[/fmt]]va donc dire qu’à chaque fois qu’il y a un développement des sciences et techniques, on à faire a des sous-produits de la [[fmt:yellow]]pensée capitaliste[[/fmt]]. Ce n’est pas un phénomène neutre mais il est marqué avec des attaches sur le capitalisme.
 
-Pour [[fmt:pink]]Habermas[[/fmt]], elles ont deux visages : permet [[fmt:green]]d’émanciper l’homme[[/fmt]] de certaines contraintes (contrairement aux deux autres sociologues) et le fait de [[fmt:green]]restreindre la liberté[[/fmt]]. Les sciences et techniques vont faire disparaitre l’espoir politique. L’opinion accepte bien la dépolitisation car selon lui, [[fmt:yellow]]l’opinion publique[[/fmt]] est manipulée. Nous sommes devenus tous des [[fmt:yellow]]consommateurs d’objets techniques[[/fmt]] sur lesquels nous n’avons pas de recul. Il y a aussi une [[fmt:yellow]]disparition de la liberté[[/fmt]]. Le fait de suivre des règles finit par se propager à tous les domaines. On a une instrumentalisation de l’Homme. Habermas finit par se rattacher aux thèses de Heidegger.
+Pour [[fmt:pink]]Habermas[[/fmt]], elles ont deux visages : permet [[fmt:green]]d’émanciper l’homme[[/fmt]] de certaines contraintes (contrairement aux deux autres sociologues) et le fait de [[fmt:green]]restreindre la liberté[[/fmt]]. Les sciences et techniques vont faire disparaitre l’espoir politique. L’opinion accepte bien la dépolitisation car selon lui, [[fmt:yellow]]l’opinion publique[[/fmt]] est manipulée. Nous sommes devenus tous des [[fmt:yellow]]consommateurs d’objets techniques[[/fmt]] sur lesquels nous n’avons pas de recul. Il y a aussi une [[fmt:yellow]]disparition de la liberté[[/fmt]]. Le fait de suivre des règles finit par se propager à tous les domaines. On a une instrumentalisation de l’Homme. Habermas finit par se rattacher aux thèses de Heidegger.
 
 Nous serons dans des [[fmt:yellow]]sociétés plus sécuritaires[[/fmt]]. Le fait de prendre des éléments et de les mettre bout à bout donne aussi le fait qu’il peut y avoir des [[fmt:yellow]]biais de sélection[[/fmt]]. On va tracer des choses qui font peur alors qu’on pourrait faire une [[fmt:yellow]]sélection différente[[/fmt]] pour avoir une conclusion différente.
 

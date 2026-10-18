@@ -78,7 +78,7 @@ window.PHILOSOPHAL_ATELIER={
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();installPrompt=e;window.dispatchEvent(new CustomEvent("atelier:install-ready"))});
 window.addEventListener("appinstalled",()=>{installPrompt=null;window.dispatchEvent(new CustomEvent("atelier:installed"))});
 if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost"||location.hostname==="127.0.0.1")){
-  navigator.serviceWorker.register("/sw-atelier.js?v=20261014-audit1").catch(()=>{});
+  navigator.serviceWorker.register("/sw-atelier.js?v=20261018-v9").catch(()=>{});
 }
 function applyRequestedView(){
  const params=new URLSearchParams(location.search),v=params.get("view");if(!v)return;

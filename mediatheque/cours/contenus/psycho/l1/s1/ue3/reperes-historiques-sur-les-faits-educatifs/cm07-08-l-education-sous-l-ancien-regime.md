@@ -106,7 +106,7 @@ L'éducation des filles est assez réduite mais certaines institutions existent 
 
 Le contrat de fondation de l’école attribuait une somme qui devait être affectée à l’entretien du maître ou de la maîtresse. Les autres enseignants percevaient de leurs élèves une faible rétribution, qui variait suivant que l’enfant lisait dans les livres imprimés, qu’il écrivait ou qu’il comptait.
 
-- LES PETITES ECOLES : PROGRAMMES
+- LES PETITES ECOLES : PROGRAMMES
 
 La plus large place était réservée à l’enseignement et aux exercices religieux.
 
@@ -118,7 +118,7 @@ Avant d’apprendre à écrire, il fallait savoir lire; avant d’apprendre à c
 
 Jusqu’au XVIII°, le mode individuel était à peu près le seul en usage.
 
-- LES PETITES ECOLES : ORGANISATION
+- LES PETITES ECOLES : ORGANISATION
 
 Généralement, l’école se divisait en trois classes ou trois leçons :
 
@@ -234,7 +234,7 @@ Contenu:
 
 - Livre V – L’âge adulte : le mariage, la famille, et l’éducation des femmes
 
-### [[fmt:underline,green-text]]L’OPPOSITION HOMME / NATURE[[/fmt]]
+### [[fmt:underline,green-text]]L’OPPOSITION HOMME / NATURE[[/fmt]]
 
 « Tout est bien sortant des mains de l'Auteur des choses, tout dégénère entre les mains de l'homme. Il force une terre à nourrir les productions d'une autre, un arbre à porter les fruits d'un autre […] il bouleverse tout, il défigure tout, il aime la difformité, les monstres ; il ne veut rien tel que l'a fait la nature, pas même l'homme ; il le faut dresser pour lui, comme un cheval de manège ; il le faut contourner à sa mode, comme un arbre de son jardin. » - Livre I, page 9
 
@@ -264,15 +264,15 @@ Contenu:
 
 « L'inaction, la contrainte où l'on retient les membres d'un enfant, ne peuvent que gêner la circulation du sang, des humeurs, empêcher l'enfant de se fortifier, de croître, et altérer sa constitution. Dans les lieux où l'on n'a point ces précautions extravagantes, les hommes sont tous grands, forts, bien proportionnés. Les pays où l'on emmaillote les enfants sont ceux qui fourmillent de bossus, de boiteux, de cagneux, de noués, de rachitiques, de gens contrefaits de toute espèce. De peur que les corps ne se déforment par des mouvements libres, on se hâte de les déformer en les mettant en presse. On les rendrait volontiers perclus pour les empêcher de s'estropier. »
 
-« Depuis que les mères, méprisant leur premier devoir, n'ont plus voulu nourrir leurs enfants, il a fallu les confier à des femmes mercenaires, qui, se trouvant ainsi mères d'enfants étrangers pour qui la nature ne leur disait rien, n'ont cherché qu'à s'épargner de la peine… »
+« Depuis que les mères, méprisant leur premier devoir, n'ont plus voulu nourrir leurs enfants, il a fallu les confier à des femmes mercenaires, qui, se trouvant ainsi mères d'enfants étrangers pour qui la nature ne leur disait rien, n'ont cherché qu'à s'épargner de la peine… »
 
-« Il eût fallu veiller sans cesse sur un enfant en liberté ; mais, quand il est bien lié, on le jette dans un coin sans s'embarrasser de ses cris. Pourvu qu'il n'y ait pas de preuves de la négligence de la nourrice, pourvu que le nourrisson ne se casse ni bras ni jambe, qu'importe, au surplus, qu'il périsse ou qu'il demeure infirme le reste de ses jours ? »
+« Il eût fallu veiller sans cesse sur un enfant en liberté ; mais, quand il est bien lié, on le jette dans un coin sans s'embarrasser de ses cris. Pourvu qu'il n'y ait pas de preuves de la négligence de la nourrice, pourvu que le nourrisson ne se casse ni bras ni jambe, qu'importe, au surplus, qu'il périsse ou qu'il demeure infirme le reste de ses jours ? »
 
-« Ces douces mères qui, débarrassées de leurs enfants, se livrent gaiement aux amusements de la ville, saventelles cependant quel traitement l'enfant dans son maillot reçoit au village ? Au moindre tracas qui survient, on le suspend à un clou comme un paquet de hardes ; et tandis que, sans se presser, la nourrice vaque à ses affaires, le malheureux reste ainsi crucifié. Tous ceux qu'on a trouvés dans cette situation avaient le visage violet ; la poitrine fortement comprimée ne laissant pas circuler le sang, il remontait à la tête ; et l'on croyait le patient fort tranquille, parce qu'il n'avait pas la force de crier. »
+« Ces douces mères qui, débarrassées de leurs enfants, se livrent gaiement aux amusements de la ville, saventelles cependant quel traitement l'enfant dans son maillot reçoit au village ? Au moindre tracas qui survient, on le suspend à un clou comme un paquet de hardes ; et tandis que, sans se presser, la nourrice vaque à ses affaires, le malheureux reste ainsi crucifié. Tous ceux qu'on a trouvés dans cette situation avaient le visage violet ; la poitrine fortement comprimée ne laissant pas circuler le sang, il remontait à la tête ; et l'on croyait le patient fort tranquille, parce qu'il n'avait pas la force de crier. »
 
 ### [[fmt:underline,green-text]]ET DE L’EXCES INVERSE[[/fmt]]
 
-« On en sort encore par une route opposée, lorsqu'au lieu de négliger les soins de mère, une femme les porte à l'excès ; lorsqu'elle fait de son enfant son idole, qu'elle augmente et nourrit sa faiblesse pour l'empêcher de la sentir, et qu'espérant le soustraire aux lois de la nature, elle écarte de lui des atteintes pénibles, sans songer combien, pour quelques incommodités dont elle le préserve un moment, elle accumule au loin d'accidents et de périls sur sa tête, et combien c'est une précaution barbare de prolonger la faiblesse de l'enfance sous les fatigues des hommes faits. […]Les mères cruelles […] ; à force de plonger leurs enfants dans la mollesse, elles les préparent à la souffrance ; elles ouvrent leurs pores aux maux de toute espèce, dont ils ne manqueront pas d'être la proie étant grands. »
+« On en sort encore par une route opposée, lorsqu'au lieu de négliger les soins de mère, une femme les porte à l'excès ; lorsqu'elle fait de son enfant son idole, qu'elle augmente et nourrit sa faiblesse pour l'empêcher de la sentir, et qu'espérant le soustraire aux lois de la nature, elle écarte de lui des atteintes pénibles, sans songer combien, pour quelques incommodités dont elle le préserve un moment, elle accumule au loin d'accidents et de périls sur sa tête, et combien c'est une précaution barbare de prolonger la faiblesse de l'enfance sous les fatigues des hommes faits. […]Les mères cruelles […] ; à force de plonger leurs enfants dans la mollesse, elles les préparent à la souffrance ; elles ouvrent leurs pores aux maux de toute espèce, dont ils ne manqueront pas d'être la proie étant grands. »
 
 ### [[fmt:underline,green-text]]CRITIQUE DES PRECEPTEURS[[/fmt]]
 
@@ -284,7 +284,7 @@ Contenu:
 
 « Observez la nature, et suivez la route qu'elle vous trace. Elle exerce continuellement les enfants ; elle endurcit leur tempérament par des épreuves de toute espèce ; elle leur apprend de bonne heure ce que c'est que peine et douleur. Les dents qui percent leur donnent la fièvre ; des coliques aiguës leur donnent des convulsions ; de longues toux les suffoquent ; les vers les tourmentent ; la pléthore corrompt leur sang ; des levains divers y fermentent, et causent des éruptions périlleuses. Presque tout le premier âge est maladie et danger : la moitié des enfants qui naissent périt avant la huitième année. Les épreuves faites, l'enfant a gagné des forces ; et sitôt qu'il peut user de la vie, le principe en devient plus assuré. »
 
-« Voilà la règle de la nature. Pourquoi la contrariez-vous ? Ne voyez-vous pas qu'en pensant la corriger, vous détruisez son ouvrage, vous empêchez l'effet de ses soins ? […] L'expérience apprend qu'il meurt encore plus d'enfants élevés délicatement que d'autres. Pourvu qu'on ne passe pas la mesure de leurs forces, on risque moins à les employer qu'à les ménager. Exercez-les donc aux atteintes qu'ils auront à supporter un jour. Endurcissez leurs corps aux intempéries des saisons, des climats, des éléments, à la faim, à la soif, à la fatigue... »
+« Voilà la règle de la nature. Pourquoi la contrariez-vous ? Ne voyez-vous pas qu'en pensant la corriger, vous détruisez son ouvrage, vous empêchez l'effet de ses soins ? […] L'expérience apprend qu'il meurt encore plus d'enfants élevés délicatement que d'autres. Pourvu qu'on ne passe pas la mesure de leurs forces, on risque moins à les employer qu'à les ménager. Exercez-les donc aux atteintes qu'ils auront à supporter un jour. Endurcissez leurs corps aux intempéries des saisons, des climats, des éléments, à la faim, à la soif, à la fatigue... »
 
 ## [[fmt:underline,red-text]]EMILE, UN ELEVE IMAGINAIRE[[/fmt]]
 

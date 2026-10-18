@@ -2,10 +2,12 @@
 <html lang="fr">
 
 <head>
+<script src="/js/theme-prepaint.js?v=20261018-v9"></script>
+
   
   <meta charset="UTF-8">
   <script src="/js/site-quality.js?v=20261014-audit1"></script>
-  <script src="js/site-theme.js?v=20261014-audit1"></script>
+  <script src="js/site-theme.js?v=20261018-v9"></script>
   <link rel="stylesheet" href="css/site-theme.css?v=20261014-audit1">
 
 
@@ -20,7 +22,7 @@
   <meta property="og:site_name" content="Philosophal">
 
   <link rel="preload" href="assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261014-audit1">
+  <link rel="stylesheet" href="css/style.css?v=20261018-v9">
 
   
   
@@ -51,29 +53,32 @@
 <meta property="og:description" content="Cours particuliers de philosophie et de méthodologie à Montpellier ou à distance. Terminale, licence, prépa : comprendre, argumenter et progresser.">
 <meta property="og:url" content="https://philosophal.fr/">
 <meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/site-theme-v4.css?v=20261018-v9" data-ph-dark-v4>
 </head>
 
 <body id="top">
 
-<header class="navbar ph-header-organised" id="site-header">
+<header class="navbar ph-minimal-ready" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="index.html" aria-label="Accueil — Philosophal" title="Accueil"><img class="nav-brand-logo" src="images/logo-philosophal.png?v=20261014-audit1" alt="" width="40" height="40" decoding="async"></a>
-    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a class="nav-texts-link" href="textes/" aria-label="Textes — raccourci clavier T" title="Raccourci clavier : T"><span class="nav-shortcut-letter" aria-hidden="true">T</span>extes</a>
-      <a class="nav-blog-link" href="blog/" aria-label="Blog — raccourci clavier B" title="Raccourci clavier : B"><span class="nav-shortcut-letter" aria-hidden="true">B</span>log</a>
-      <a class="nav-tools-link" href="outils/">Outils</a>
-      <button class="nav-search-trigger nav-search-desktop" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
-      <a class="nav-services-link" href="#philosophie">Prestations</a>
-      <details class="nav-group nav-group-about">
-        <summary>À propos<span class="nav-group-chevron" aria-hidden="true"></span></summary>
-        <div class="nav-group-links"><a class="nav-about-link" href="#quisuisje">Qui suis-je ?</a><a class="nav-faq-link" href="#faq">FAQ</a></div>
-      </details>
-      <a class="nav-contact-link nav-contact-mobile" href="#contact">Contactez-moi</a>
+    <a class="nav-brand" href="/" aria-label="Accueil — Philosophal" title="Accueil">
+      <img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20261018-v9" alt="" width="74" height="45" decoding="async">
+      <span class="nav-brand-wordmark" aria-hidden="true">Philosophal<span class="nav-brand-wordmark-dot">.</span></span>
+    </a>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale" data-minimal-ready="1">
+      <a class="nav-texts-link" href="/textes/">Textes</a>
+      <a class="nav-blog-link" href="/blog/">Blog</a>
+      <a class="nav-tools-link" href="/outils/">Outils</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-services-link" href="/#philosophie">Prestations</a>
+      <a class="nav-about-link" href="/#quisuisje">Qui suis-je ?</a>
+      <a class="nav-faq-link" href="/#faq">FAQ</a>
+      <a class="nav-contact-link nav-contact-mobile" href="/#contact">Contactez-moi</a>
     </nav>
     <div class="nav-header-actions">
-      <button class="nav-search-trigger nav-search-mobile" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
-      <a class="nav-contact-link nav-contact-desktop" href="#contact">Contactez-moi</a>
-      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span></button>
+      <button class="nav-search-trigger" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site (R)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4 4"/></svg></button>
+      <button class="nav-theme-toggle" type="button" data-site-theme-toggle aria-label="Activer le mode sombre" aria-pressed="false" title="Changer le thème"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.5 13.1A8.5 8.5 0 0 1 10.9 3.5a8.5 8.5 0 1 0 9.6 9.6Z"/></svg></button>
+      <a class="nav-contact-link nav-contact-desktop" href="/#contact">Contactez-moi</a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -1159,39 +1164,14 @@
 <section id="contact" class="contact-section">
   <div class="contact-wrapper">
     <div class="contact-stage">
-      <div class="contact-side-portrait" aria-hidden="true">
-        <img srcset="/images/contact-lowpoly-512.webp 512w, /images/contact-lowpoly-768.webp 768w, /images/contact-lowpoly.webp 1086w" sizes="(max-width: 680px) 80vw, 440px"
-          src="images/contact-lowpoly.webp?v=20260925-publish1"
-          alt=""
-          width="1086"
-          height="1448"
-          loading="lazy"
-          decoding="async"
-        >
-      </div>
 
       <div class="contact-card">
-        <div class="contact-card-header">
+        <div class="contact-card-header contact-card-header--with-portrait">
+          <div class="contact-header-portrait" aria-hidden="true">
+            <img src="/images/contact-lowpoly-512.webp?v=20261018-v9" width="512" height="683" alt="" decoding="async" loading="lazy">
+          </div>
           <div class="contact-header-copy">
             <h2 class="bloc-7-title">Me joindre</h2>
-            <p class="contact-intro">
-              Pour toute question ou demande de cours, vous pouvez m’écrire directement avec le formulaire ci-dessous
-              ou me joindre par téléphone :
-              <span
-                class="protected-content"
-                data-encoded="@X}QjXmPjLWRjnGQj\GP"
-                data-content-type="phone"
-              >
-                <button
-                  type="button"
-                  class="phone-reveal-btn protected-trigger"
-                  id="revealPhoneBtn"
-                  aria-expanded="false"
-                >
-                  afficher le numéro
-                </button>
-              </span>.
-            </p>
           </div>
         </div>
 
@@ -1213,7 +1193,7 @@
         >
           <p class="contact-alert__title">Une erreur s’est produite</p>
           <p class="contact-alert__text">
-            Vous pouvez aussi me contacter directement par e-mail ou par téléphone.
+            Vous pouvez aussi me contacter directement par e-mail.
           </p>
           <p class="contact-alert__actions">
             <span
@@ -1222,14 +1202,6 @@
               data-content-type="email"
             >
               <button type="button" class="contact-alert__link protected-trigger" aria-expanded="false">afficher l’e-mail</button>
-            </span>
-            <span class="contact-alert__sep">·</span>
-            <span
-              class="protected-content"
-              data-encoded="@X}QjXmPjLWRjnGQj\GP"
-              data-content-type="phone"
-            >
-              <button type="button" class="contact-alert__link protected-trigger" aria-expanded="false">voir le numéro</button>
             </span>
           </p>
         </div>
@@ -1335,8 +1307,7 @@
 
           <p class="contact-response-time">
             Je vous réponds dans un délai de 48 heures.
-          </p>
-        <p class="contact-privacy-note">Vos coordonnées servent à répondre à votre demande et à préparer votre accompagnement. <a href="/confidentialite/">Utilisation de vos données</a>.</p></form>
+          </p></form>
       </div>
     </div>
   </div>
@@ -1421,7 +1392,7 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=20261014-audit1" defer></script>
+<script src="js/script.js?v=20261018-v9" defer></script>
 <script src="js/protected-phone.js?v=20261014-audit1" defer></script>
 <script src="js/contact-form.js?v=20261014-audit1" defer></script>
 

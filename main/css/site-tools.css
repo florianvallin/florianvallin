@@ -1,0 +1,833 @@
+:root {
+  --fv-tools-accent: #6c63ff;
+  --fv-tools-accent-dark: #5148cf;
+  --fv-tools-text: #22212d;
+  --fv-tools-muted: #777487;
+  --fv-tools-border: rgba(44, 40, 75, .14);
+  --fv-tools-bg: rgba(255, 255, 255, .97);
+  --fv-tools-shadow: 0 10px 26px rgba(28, 28, 40, .10);
+}
+
+/* Les trois commandes flottantes forment une seule colonne :
+   dictionnaire au-dessus, retour en haut au centre, contact en dessous. */
+body.fv-site-tools-ready .back-to-top,
+.fv-tools-up {
+  right: 24px !important;
+  bottom: 78px !important;
+}
+
+.fv-tools-fab,
+.fv-tools-up {
+  position: fixed;
+  z-index: 910;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(108, 99, 255, .23);
+  border-radius: 50%;
+  background: var(--fv-tools-bg);
+  color: var(--fv-tools-accent);
+  box-shadow: var(--fv-tools-shadow);
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity .25s ease, transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.fv-tools-fab.is-visible,
+.fv-tools-up.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
+.fv-tools-fab.is-visible:hover,
+.fv-tools-fab.is-visible:focus-visible,
+.fv-tools-up.is-visible:hover,
+.fv-tools-up.is-visible:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(108, 99, 255, .48);
+  background: #fff;
+  box-shadow: 0 14px 32px rgba(28, 28, 40, .16);
+  outline: none;
+}
+
+.fv-tools-fab svg,
+.fv-tools-up svg {
+  width: 21px;
+  height: 21px;
+}
+
+.fv-tools-dictionary { bottom: 134px; }
+.fv-tools-contact { bottom: 22px; }
+
+.fv-tools-dictionary svg { width: 22px; height: 22px; }
+
+.fv-tools-fab::after,
+.fv-tools-up::after {
+  content: attr(data-fv-label);
+  position: absolute;
+  right: 58px;
+  top: 50%;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #25232f;
+  color: #fff;
+  font: 600 11px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(5px, -50%);
+  transition: opacity .15s ease, transform .15s ease;
+}
+
+.fv-tools-fab:hover::after,
+.fv-tools-fab:focus-visible::after,
+.fv-tools-up:hover::after,
+.fv-tools-up:focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+/* =========================
+   Dictionnaire transversal
+   ========================= */
+.fv-dictionary-shell[hidden],
+.fv-shortcuts-shell[hidden],
+.fv-student-shell[hidden] { display: none !important; }
+
+.fv-dictionary-shell,
+.fv-shortcuts-shell,
+.fv-student-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 10050;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.fv-dictionary-backdrop,
+.fv-shortcuts-backdrop,
+.fv-student-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: rgba(15, 14, 21, .38);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.fv-dictionary-panel {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  width: min(500px, calc(100vw - 36px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .82);
+  border-radius: 24px;
+  background: #fbfbfd;
+  color: var(--fv-tools-text);
+  box-shadow: 0 30px 90px rgba(16, 14, 31, .24);
+  animation: fv-dictionary-enter .24s cubic-bezier(.22, .61, .36, 1) both;
+}
+
+@keyframes fv-dictionary-enter {
+  from { opacity: 0; transform: translateX(18px) scale(.992); }
+}
+
+.fv-dictionary-head {
+  padding: 20px 20px 15px;
+  border-bottom: 1px solid var(--fv-tools-border);
+  background: rgba(255, 255, 255, .92);
+}
+
+.fv-dictionary-head-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fv-dictionary-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.fv-dictionary-brand-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(108, 99, 255, .18);
+  border-radius: 13px;
+  background: linear-gradient(145deg, rgba(108,99,255,.10), rgba(108,99,255,.035));
+  color: var(--fv-tools-accent);
+}
+
+.fv-dictionary-brand-icon svg { width: 25px; height: 25px; }
+
+.fv-dictionary-eyebrow {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--fv-tools-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-head h2 {
+  margin: 0;
+  font: 700 23px/1.08 Georgia, "Times New Roman", serif;
+}
+
+.fv-dictionary-close,
+.fv-shortcuts-head > button,
+.fv-student-close {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 50%;
+  background: #fff;
+  color: #514e60;
+  font-size: 21px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fv-dictionary-intro {
+  margin: 11px 0 0;
+  color: #777487;
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+.fv-dictionary-search {
+  position: relative;
+  margin-top: 13px;
+}
+
+.fv-dictionary-search > svg {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  transform: translateY(-50%);
+  color: #8a8794;
+  pointer-events: none;
+}
+
+.fv-dictionary-search input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 13px;
+  padding: 12px 39px 12px 40px;
+  background: #fff;
+  color: var(--fv-tools-text);
+  outline: none;
+  font: 500 13px/1.3 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.fv-dictionary-search input:focus {
+  border-color: rgba(108, 99, 255, .48);
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, .08);
+}
+
+.fv-dictionary-clear {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #8a8794;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.fv-dictionary-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 12px;
+  background: #f0eff5;
+}
+
+.fv-dictionary-tabs button {
+  min-width: 0;
+  border: 0;
+  border-radius: 9px;
+  padding: 8px 4px;
+  background: transparent;
+  color: #716e7e;
+  font-size: 10.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, box-shadow .16s ease;
+}
+
+.fv-dictionary-tabs button.is-active {
+  background: #fff;
+  color: #383548;
+  box-shadow: 0 2px 8px rgba(28, 28, 40, .08);
+}
+
+.fv-dictionary-content {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  padding: 15px 17px 20px;
+}
+
+.fv-dictionary-status {
+  margin: 1px 2px 10px;
+  color: var(--fv-tools-muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.fv-dictionary-results { display: grid; gap: 8px; }
+
+.fv-dictionary-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.fv-dictionary-source-card {
+  min-width: 0;
+  padding: 13px 11px;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 14px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .17s ease, border-color .17s ease, box-shadow .17s ease;
+}
+
+.fv-dictionary-source-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(108,99,255,.34);
+  box-shadow: 0 9px 20px rgba(28,28,40,.06);
+}
+
+.fv-dictionary-source-name {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--fv-tools-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-source-card strong {
+  display: block;
+  margin-bottom: 2px;
+  font: 700 20px/1 Georgia, "Times New Roman", serif;
+}
+
+.fv-dictionary-source-card small {
+  color: var(--fv-tools-muted);
+  font-size: 9.5px;
+  line-height: 1.35;
+}
+
+.fv-dictionary-hint {
+  margin-top: 10px;
+  padding: 12px 13px;
+  border-radius: 12px;
+  background: rgba(108,99,255,.055);
+  color: #646071;
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.fv-dictionary-result {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 13px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .16s ease, background .16s ease, transform .16s ease;
+}
+
+.fv-dictionary-result:hover {
+  transform: translateY(-1px);
+  border-color: rgba(108,99,255,.34);
+  background: #fdfdff;
+}
+
+.fv-dictionary-result-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fv-dictionary-result-top strong {
+  min-width: 0;
+  font-size: 13.5px;
+  line-height: 1.25;
+}
+
+.fv-dictionary-result-category {
+  display: block;
+  margin-top: 3px;
+  color: #8a8794;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-result-preview {
+  display: block;
+  margin-top: 7px;
+  color: #5b5768;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.fv-dictionary-source-badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 0 7px;
+  border: 1px solid rgba(108,99,255,.15);
+  border-radius: 999px;
+  background: rgba(108,99,255,.065);
+  color: #5d55d9;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-source-badge--mythology {
+  border-color: rgba(176,112,52,.18);
+  background: rgba(176,112,52,.07);
+  color: #906033;
+}
+
+.fv-dictionary-source-badge--bible {
+  border-color: rgba(56,116,108,.18);
+  background: rgba(56,116,108,.07);
+  color: #39786f;
+}
+
+.fv-dictionary-detail {
+  margin-top: 2px;
+  padding: 18px;
+  border: 1px solid rgba(108,99,255,.17);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(28,28,40,.05);
+}
+
+.fv-dictionary-back {
+  margin: 0 0 13px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--fv-tools-accent);
+  font-size: 10.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fv-dictionary-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8a8794;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-detail h3 {
+  margin: 10px 0 9px;
+  font: 700 22px/1.15 Georgia, "Times New Roman", serif;
+}
+
+.fv-dictionary-detail p,
+.fv-dictionary-detail dd {
+  color: #4b4858;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.fv-dictionary-detail p { margin: 0; }
+.fv-dictionary-detail dl { margin: 13px 0 0; }
+
+.fv-dictionary-detail dt {
+  margin-top: 12px;
+  color: #85818f;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-detail dd { margin: 4px 0 0; }
+
+.fv-dictionary-related {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.fv-dictionary-related > span {
+  width: 100%;
+  color: #85818f;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.fv-dictionary-related button {
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 999px;
+  padding: 5px 8px;
+  background: #f8f7fb;
+  color: #5c586b;
+  font-size: 9.5px;
+  cursor: pointer;
+}
+
+.fv-dictionary-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--fv-tools-border);
+  color: #8a8794;
+  font-size: 9.5px;
+}
+
+.fv-dictionary-footer > div { display: flex; gap: 10px; }
+.fv-dictionary-footer a {
+  color: var(--fv-tools-accent);
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fv-dictionary-empty {
+  padding: 28px 16px;
+  text-align: center;
+  color: var(--fv-tools-muted);
+  font-size: 12px;
+}
+
+body.fv-dictionary-open,
+body.fv-shortcuts-open { overflow: hidden; }
+
+/* =========================
+   Aide raccourcis clavier
+   ========================= */
+.fv-shortcuts-panel {
+  position: relative;
+  z-index: 1;
+  width: min(520px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  margin: 7vh auto 0;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,.75);
+  border-radius: 22px;
+  background: #fbfbfd;
+  color: var(--fv-tools-text);
+  box-shadow: 0 28px 80px rgba(16,14,31,.24);
+  animation: fv-modal-enter .2s ease both;
+}
+
+@keyframes fv-modal-enter {
+  from { opacity: 0; transform: translateY(8px) scale(.992); }
+}
+
+.fv-shortcuts-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fv-shortcuts-head span,
+.fv-student-panel > span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--fv-tools-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.fv-shortcuts-head h2,
+.fv-student-panel h2 {
+  margin: 0;
+  font: 700 24px/1.15 Georgia, "Times New Roman", serif;
+}
+
+.fv-shortcuts-panel > p {
+  margin: 10px 0 17px;
+  color: var(--fv-tools-muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.fv-shortcuts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.fv-shortcut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 43px;
+  padding: 8px 10px;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 11px;
+  background: #fff;
+}
+
+.fv-shortcut-row > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fv-shortcut-row i {
+  color: #aaa6b3;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.fv-shortcut-row kbd,
+.fv-shortcuts-note kbd {
+  min-width: 24px;
+  box-sizing: border-box;
+  padding: 5px 7px;
+  border: 1px solid rgba(62,58,77,.16);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: #f7f6fa;
+  color: #504c5e;
+  font: 700 9px/1 system-ui, sans-serif;
+  text-align: center;
+}
+
+.fv-shortcut-row strong {
+  color: #4e4a5b;
+  font-size: 10.5px;
+  font-weight: 650;
+  text-align: right;
+}
+
+.fv-shortcuts-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--fv-tools-muted);
+  font-size: 10px;
+}
+
+/* =========================
+   Fallback espace élève
+   ========================= */
+.fv-student-panel {
+  position: relative;
+  z-index: 1;
+  width: min(430px, calc(100vw - 32px));
+  margin: 12vh auto 0;
+  box-sizing: border-box;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,.75);
+  border-radius: 22px;
+  background: #fbfbfd;
+  color: var(--fv-tools-text);
+  box-shadow: 0 28px 80px rgba(16,14,31,.24);
+  animation: fv-modal-enter .2s ease both;
+}
+
+.fv-student-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.fv-student-panel form { margin-top: 20px; }
+.fv-student-panel label {
+  display: block;
+  margin-bottom: 7px;
+  color: #6d6878;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.fv-student-panel form > div {
+  display: flex;
+  gap: 7px;
+}
+
+.fv-student-panel input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid var(--fv-tools-border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  outline: none;
+  font: 500 12px/1.2 system-ui, sans-serif;
+}
+
+.fv-student-panel input:focus {
+  border-color: rgba(108,99,255,.48);
+  box-shadow: 0 0 0 3px rgba(108,99,255,.08);
+}
+
+.fv-student-panel form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 14px;
+  background: var(--fv-tools-accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fv-student-panel form p {
+  min-height: 16px;
+  margin: 8px 0 0;
+  color: #7c5260;
+  font-size: 10px;
+}
+
+@media (max-width: 700px) {
+  body.fv-site-tools-ready .back-to-top,
+  .fv-tools-up {
+    right: 14px !important;
+    bottom: 70px !important;
+  }
+
+  .fv-tools-fab,
+  .fv-tools-up {
+    right: 14px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .fv-tools-dictionary { bottom: 120px; }
+  .fv-tools-contact { bottom: 18px; }
+  .fv-tools-fab::after,
+  .fv-tools-up::after { display: none; }
+
+  .fv-dictionary-panel {
+    inset: 8px;
+    width: auto;
+    border-radius: 18px;
+  }
+
+  .fv-dictionary-head { padding: 16px 15px 12px; }
+  .fv-dictionary-content { padding: 12px 12px 18px; }
+  .fv-dictionary-overview { grid-template-columns: 1fr; }
+  .fv-dictionary-tabs button { font-size: 9.5px; }
+  .fv-shortcuts-panel { margin-top: 4vh; padding: 18px; }
+  .fv-shortcuts-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fv-tools-fab,
+  .fv-tools-up,
+  .fv-dictionary-panel,
+  .fv-shortcuts-panel,
+  .fv-student-panel {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* =========================
+   Aide raccourcis · groupes
+   ========================= */
+.fv-shortcuts-section + .fv-shortcuts-section { margin-top: 16px; }
+.fv-shortcuts-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 2px 8px;
+}
+.fv-shortcuts-section-head span {
+  color: #8d8997;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.fv-shortcuts-section-head h3 {
+  margin: 0;
+  color: #4d4958;
+  font-size: 11px;
+  font-weight: 750;
+}
+.fv-shortcuts-section.is-compasses {
+  margin-top: 17px;
+  padding: 12px;
+  border: 1px solid rgba(67,119,106,.16);
+  border-radius: 14px;
+  background: rgba(67,119,106,.055);
+}
+.fv-shortcuts-section.is-compasses .fv-shortcuts-section-head { margin: 0 1px 8px; }
+.fv-shortcuts-section.is-compasses .fv-shortcuts-section-head span,
+.fv-shortcuts-section.is-compasses .fv-shortcuts-section-head h3 { color: #3e7166; }
+.fv-shortcuts-section.is-compasses .fv-shortcut-row {
+  border-color: rgba(67,119,106,.15);
+  background: rgba(255,255,255,.82);
+}
+.fv-shortcuts-section.is-compasses .fv-shortcut-row kbd {
+  border-color: rgba(67,119,106,.2);
+  background: rgba(67,119,106,.08);
+  color: #35645a;
+}

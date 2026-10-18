@@ -1,16 +1,16 @@
 # [[fmt:red-text]]Le boom de la psychologie[[/fmt]]
 
-## [[fmt:red-text]]Révélateur de nos sociétés[[/fmt]][[fmt:red-text]] ?[[/fmt]]
+## [[fmt:red-text]]Révélateur de nos sociétés[[/fmt]][[fmt:red-text]] ?[[/fmt]]
 
 ## [[fmt:underline,red-text]]L’essor de la Ψ[[/fmt]]
 
-Personnes attendent beaucoup de la Ψ : comment vivre dans une [[fmt:yellow]]société déboussolée[[/fmt]].
+Personnes attendent beaucoup de la Ψ : comment vivre dans une [[fmt:yellow]]société déboussolée[[/fmt]].
 
-La « [[fmt:green]]psychologisation[[/fmt]] » de la société s’observe à travers :
+La « [[fmt:green]]psychologisation[[/fmt]] » de la société s’observe à travers :
 
 - [[fmt:green]]Magazine [[/fmt]](Cerveau & Psycho, Le Journal des psychologues, Psychomédia…)
 
-Le magazine Psychologies : diffusé en 2 formats en France & étranger (300k exemplaires mensuels)
+Le magazine Psychologies : diffusé en 2 formats en France & étranger (300k exemplaires mensuels)
 
 - [[fmt:green]]Librairie[[/fmt]]
 
@@ -24,17 +24,17 @@ Les [[fmt:yellow]]psychologues[[/fmt]] sont [[fmt:yellow]]présent[[/fmt]] à l�
 
 ## [[fmt:underline,red-text]]L’incessante interrogation sur soi et le sens de la vie[[/fmt]]
 
-Nombre [[fmt:yellow]]d’étudiant en Ψ augmente[[/fmt]] (+65 000 en Fr) qui sont pas en accord avec débouchés (directeurs d’UFR tente de dissuader étudiants pour s’inscrire). Mais pourquoi ?
+Nombre [[fmt:yellow]]d’étudiant en Ψ augmente[[/fmt]] (+65 000 en Fr) qui sont pas en accord avec débouchés (directeurs d’UFR tente de dissuader étudiants pour s’inscrire). Mais pourquoi ?
 
-Mal-être dans la société ? Souffrance au travail ? Solitude urbaine ? Crise du milieu de vie ?
+Mal-être dans la société ? Souffrance au travail ? Solitude urbaine ? Crise du milieu de vie ?
 
 [[fmt:yellow]]Sociologue[[/fmt]] pense que c’est en [[fmt:yellow]]accord avec déclin[[/fmt]] des institutions, autorités, dispositifs d’intégrations… Question sur le sens de soi et le sens de la vie (en cohésion avec méthode de dvlp personnel & psychothérapies).
 
 La Ψ va écouter & apporter conseil (à défaut de solution toute faite).
 
-Plusieurs liens : psychanalyse → révolution sexuel | Ψ de l’enfant → baby-boom | boom de Ψ → aspirations & tourment de l’individu ?
+Plusieurs liens : psychanalyse → révolution sexuel | Ψ de l’enfant → baby-boom | boom de Ψ → aspirations & tourment de l’individu ?
 
-[[fmt:underline,green-text]]La psychologie révolutionne-t-elle l’économie [[/fmt]][[fmt:underline,green-text]]?[[/fmt]][[fmt:underline,green-text]]:[[/fmt]]
+[[fmt:underline,green-text]]La psychologie révolutionne-t-elle l’économie [[/fmt]][[fmt:underline,green-text]]?[[/fmt]][[fmt:underline,green-text]]:[[/fmt]]
 
 [[fmt:pink]]Daniel [[/fmt]][[fmt:pink]]Kahneman[[/fmt]][[fmt:pink]] [[/fmt]](économiste) reçoit prix Nobel d’économie en 2002.
 

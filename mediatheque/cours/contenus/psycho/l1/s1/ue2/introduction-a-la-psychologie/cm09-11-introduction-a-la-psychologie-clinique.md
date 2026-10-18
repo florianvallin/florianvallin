@@ -2,29 +2,29 @@
 
 ## [[fmt:underline,red-text]]Réflexion sur la clinique[[/fmt]]
 
-Le terme de clinique vient du grec Klinikos que l’on pourrait traduire par : « [[fmt:yellow]]être au lit du malade[[/fmt]] ».
+Le terme de clinique vient du grec Klinikos que l’on pourrait traduire par : « [[fmt:yellow]]être au lit du malade[[/fmt]] ».
 
-Une définition récente en fait une :
+Une définition récente en fait une :
 
-« branche de la psychologie qui vise [[fmt:yellow]]l’étude[[/fmt]] des [[fmt:green]]problèmes psychiques[[/fmt]] qui se manifestent dans des [[fmt:yellow]]conduites normales et pathologiques[[/fmt]] & l’intervention dans ces conduites » - [[fmt:pink]]Huber[[/fmt]], [[fmt:red]]1993[[/fmt]]
+« branche de la psychologie qui vise [[fmt:yellow]]l’étude[[/fmt]] des [[fmt:green]]problèmes psychiques[[/fmt]] qui se manifestent dans des [[fmt:yellow]]conduites normales et pathologiques[[/fmt]] & l’intervention dans ces conduites » - [[fmt:pink]]Huber[[/fmt]], [[fmt:red]]1993[[/fmt]]
 
-C’est l’objet de la pratique des « psys », mais pas tous !
+C’est l’objet de la pratique des « psys », mais pas tous !
 
 Souvent, la [[fmt:yellow]]clinique[[/fmt]] précède [[fmt:yellow]]l’expérience[[/fmt]]. Elle est [[fmt:green]]compréhensive [[/fmt]]et [[fmt:green]]réflexive [[/fmt]]et s’inscrit de ce qu’on appelle le [[fmt:green]]temps long[[/fmt]]. Le clinicien prend le temps, essaie de trouver ce que la personne a. La clinique se trompe plus souvent qu’elle n’a raison.
 
-Le terme de « psy » ne veut pas dire grand-chose. On va trouver [[fmt:yellow]]différent psychologue clinicien[[/fmt]]. L’objectif est de [[fmt:green]]rencontrer[[/fmt]] d’autres personnes, d’autres individus vivant.
+Le terme de « psy » ne veut pas dire grand-chose. On va trouver [[fmt:yellow]]différent psychologue clinicien[[/fmt]]. L’objectif est de [[fmt:green]]rencontrer[[/fmt]] d’autres personnes, d’autres individus vivant.
 
-« Un marteau voit des clous »
+« Un marteau voit des clous »
 
 Le psychologue va [[fmt:yellow]]adapter sa manière de penser[[/fmt]] pour comprendre et voir du sens dans les difficultés qu’il va rencontrer. A démarche clinique ne sait rien au départ. Il faut travailler sur soi et ne pas être un marteau. Il ne faut [[fmt:yellow]]pas tirer des conclusions hâtives[[/fmt]] sur des conclusions évidentes.
 
 La [[fmt:green]]psychologie clinique[[/fmt]] ne se [[fmt:yellow]]limite pas[[/fmt]] à ce qui est possible. La seule chose problématique est le fait qu’on n’y a pas pensé mais pourtant elle est bel et bien là. La psychologie clinique va partir de se déraisonnable et va répondre aux difficultés de la personne.
 
-Pour qu’il y est un travail clinique, il faut qu’il y es une [[fmt:green]]demande[[/fmt]]. Parfois les personnes qui sont sollicités ne savent pas qu’elles ont un problème, mais pour autant, elles ne font pas semblant et ne mentent pas. Le [[fmt:green]]travail clinique[[/fmt]] par du : « [[fmt:yellow]]je ne sais pas[[/fmt]] ». Le travail clinique est un [[fmt:yellow]]travail de collaboration[[/fmt]] et [[fmt:yellow]]subjectif[[/fmt]].
+Pour qu’il y est un travail clinique, il faut qu’il y es une [[fmt:green]]demande[[/fmt]]. Parfois les personnes qui sont sollicités ne savent pas qu’elles ont un problème, mais pour autant, elles ne font pas semblant et ne mentent pas. Le [[fmt:green]]travail clinique[[/fmt]] par du : « [[fmt:yellow]]je ne sais pas[[/fmt]] ». Le travail clinique est un [[fmt:yellow]]travail de collaboration[[/fmt]] et [[fmt:yellow]]subjectif[[/fmt]].
 
 L’objectivité n’existe pas réellement. On reconstruit la réalité et ainsi on le rend subjectif.
 
-« la carte n’est pas le territoire »
+« la carte n’est pas le territoire »
 
 Les personnes qui disent des choses aux cliniciens ne [[fmt:yellow]]représentent pas la personne[[/fmt]]. La représentation de l’autre se représentera sous forme d’une carte mais ne [[fmt:yellow]]représentera pas totalement la personne[[/fmt]] que l’on va rencontrer.
 
@@ -32,7 +32,7 @@ Les personnes qui disent des choses aux cliniciens ne [[fmt:yellow]]représenten
 
 Notre théorie va [[fmt:yellow]]influencer[[/fmt]] notre regard sur les choses. Etre clinicien nous fait réfléchir sur les difficultés qu’on les autres, sur nos propres réactions, sur notre propre ressentis.
 
-« le tout est plus que la somme de ses parties »
+« le tout est plus que la somme de ses parties »
 
 On ne sait pas ce que la rencontre des sujets va produire. La [[fmt:yellow]]rencontre[[/fmt]] de deux individus va [[fmt:yellow]]produire plus[[/fmt]] que la simple présence de ces personnes séparées. L’une des qualités du système vivant est que ce seront toujours des choses différentes. Joindre deux éléments ensemble [[fmt:yellow]]produire autre chose[[/fmt]] (1+1=3).
 
@@ -40,7 +40,7 @@ Ce qui intéresse le clinicien est la relation qui se construit. On va trouver d
 
 ## [[fmt:underline,red-text]]Naissance de la psychologie clinique[[/fmt]]
 
-« La psychologie a un long passé, mais seulement une courte histoire » - Ebbinghaus, 1910
+« La psychologie a un long passé, mais seulement une courte histoire » - Ebbinghaus, 1910
 
 Les [[fmt:yellow]]origines[[/fmt]] de la [[fmt:yellow]]clinique[[/fmt]] sont [[fmt:green]]psychiatriques[[/fmt]]. Il a fallu attendre fin XVIIIe siècle pour modifier le regard des μ sur les fous.
 
@@ -48,7 +48,7 @@ Les [[fmt:yellow]]origines[[/fmt]] de la [[fmt:yellow]]clinique[[/fmt]] sont [[f
 
 [[fmt:pink]]Pinel [[/fmt]]est le premier [[fmt:yellow]]aliéniste[[/fmt]] de l’histoire. Il a bouleversé l’existence des fous en les libérant de leurs chaines. Il vivait dans l’hôpital et il est réellement aller vers le [[fmt:yellow]]contact[[/fmt]] des fous. Il s’est rendu compte qu’on pouvait [[fmt:green]]modifier des choses[[/fmt]] en parlant avec des personnes.
 
-Pour la clinique, il a surtout mis en œuvre « [[fmt:green]]le traitement moral[[/fmt]] ». Ces traitements ont libéré les personnes considérées de « déviante ». La condition du fou a changé à l’hôpital et dans la société.
+Pour la clinique, il a surtout mis en œuvre « [[fmt:green]]le traitement moral[[/fmt]] ». Ces traitements ont libéré les personnes considérées de « déviante ». La condition du fou a changé à l’hôpital et dans la société.
 
 [[fmt:pink]]Jean-Etienne Esquirol [[/fmt]]a prolongé le travail de [[fmt:pink]]Pinel [[/fmt]](ce sont les deux premiers psychiatres de l’histoire). La psychiatrie a donc trouvé la naissance en France. La condition des personnes qui souffraient de folie a donc changé avec les [[fmt:yellow]]premières classifications modernes[[/fmt]] de maladie mentales. C’est à partir de ces travaux là qu’on a commencé de différencier les différentes pathologies qu’avaient les fous.
 
@@ -58,29 +58,29 @@ Le problème est qu’il avait des limites.
 
 ### [[fmt:underline,green-text]]Pères fondateurs[[/fmt]]
 
-- Lightner Witmer (1867-1956 ; USA)
+- Lightner Witmer (1867-1956 ; USA)
 
-C’est l’un des premiers à avoir initié à la création de la première « psychological clinic » (USA)([[fmt:red]]1896[[/fmt]]). Les psychologues ne sont jamais chef de service. Il y a eu un intérêt pour les enfants avec les difficultés d’apprentissage / comportementaliste avec un instituion de service public et social. On va avoir dedans de la recherche et de la formation.
+C’est l’un des premiers à avoir initié à la création de la première « psychological clinic » (USA)([[fmt:red]]1896[[/fmt]]). Les psychologues ne sont jamais chef de service. Il y a eu un intérêt pour les enfants avec les difficultés d’apprentissage / comportementaliste avec un instituion de service public et social. On va avoir dedans de la recherche et de la formation.
 
-En [[fmt:red]]1896[[/fmt]], il va faire la conférence à l’American Psychological Association (APA, fondée en [[fmt:red]]1892[[/fmt]]) et il introduit le terme « psychologie clinique » et « [[fmt:green]]méthode clinique en psychologie[[/fmt]] ».
+En [[fmt:red]]1896[[/fmt]], il va faire la conférence à l’American Psychological Association (APA, fondée en [[fmt:red]]1892[[/fmt]]) et il introduit le terme « psychologie clinique » et « [[fmt:green]]méthode clinique en psychologie[[/fmt]] ».
 
-- Emil Kraepelin (1856-1926 ; Allemagne)
+- Emil Kraepelin (1856-1926 ; Allemagne)
 
 C’est la première personne qui a valorisé l’étude sérieuse.
 
-« il est grand temps qu’également chez nous en matière de questions psychologiques, l’étude de cas sérieuse et conscienciense prenne la place des affirmations spirituelles et des inventions au sens profond, l’improuvable et le non-documentable ne nous avancent pas. Nous avons besoin de faits, pas de théories… Nous voulons tenter d’y donner une réponse, non pas à la table verte, mais au laboratoire, non pas avec des idées brillantes… A RAJOUTER »
+« il est grand temps qu’également chez nous en matière de questions psychologiques, l’étude de cas sérieuse et conscienciense prenne la place des affirmations spirituelles et des inventions au sens profond, l’improuvable et le non-documentable ne nous avancent pas. Nous avons besoin de faits, pas de théories… Nous voulons tenter d’y donner une réponse, non pas à la table verte, mais au laboratoire, non pas avec des idées brillantes… A RAJOUTER »
 
-C’est l’auteur du premier [[fmt:italic]]grand traité de psychiatrie[[/fmt]] (1883-1906). Il va définir des [[fmt:green]]catégories[[/fmt]] avec les [[fmt:yellow]]psychoses maniaco-dépressives[[/fmt]] (actuellement « troubles bipolaires ») ainsi que les [[fmt:yellow]]démences précoces[[/fmt]] (avec les « schizophrénie » (Bleuer est le premier à avoir décrit ce phénomène)).
+C’est l’auteur du premier [[fmt:italic]]grand traité de psychiatrie[[/fmt]] (1883-1906). Il va définir des [[fmt:green]]catégories[[/fmt]] avec les [[fmt:yellow]]psychoses maniaco-dépressives[[/fmt]] (actuellement « troubles bipolaires ») ainsi que les [[fmt:yellow]]démences précoces[[/fmt]] (avec les « schizophrénie » (Bleuer est le premier à avoir décrit ce phénomène)).
 
 C’est vraiment lui qui a mis en idée le fait que l’hypothèse doit être mise sur le long terme pour pouvoir faire un diagnostic sérieux et réel.
 
-- Pierre Janet (1856-1947 ; France)
+- Pierre Janet (1856-1947 ; France)
 
-Janet est un φ, Ψ et μ français. Il montre un intérêt pour la [[fmt:yellow]]réalité subjective[[/fmt]] à travers une compréhension globale. Son œuvre est constituée de [[fmt:green]]travaux de psychologie clinique[[/fmt]] avec un intérêt pour le particulier (compréhension individuelle globale). Il va axée sa démarche sur l’écoute et l’observation.
+Janet est un φ, Ψ et μ français. Il montre un intérêt pour la [[fmt:yellow]]réalité subjective[[/fmt]] à travers une compréhension globale. Son œuvre est constituée de [[fmt:green]]travaux de psychologie clinique[[/fmt]] avec un intérêt pour le particulier (compréhension individuelle globale). Il va axée sa démarche sur l’écoute et l’observation.
 
 Il va également [[fmt:yellow]]critiquer les recherches[[/fmt]] (rationalité, statistiques et approche expérimentales).
 
-- Sigmund Freud (1856-1939 ; Autriche)
+- Sigmund Freud (1856-1939 ; Autriche)
 
 Il a développé des théories à partir de cas individuels. Il a essayé de [[fmt:yellow]]développer des travaux particuliers[[/fmt]] sur l’hystérie à partie de très peu de cas.
 
@@ -90,7 +90,7 @@ Il n’a jamais essayé de prouver ces approches.
 
 Il va apporter des théories thérapeutiques et des techniques associées avec la [[fmt:green]]libre association[[/fmt]] et [[fmt:green]]l’attention flottante.[[/fmt]]
 
-Il a ainsi mis en évidence des particularités de la relation entre le sujet et l’observateur (« transfert »). Il a basé plusieurs de ces théories sur des analyses de cas, avec 5 psychanalystes :
+Il a ainsi mis en évidence des particularités de la relation entre le sujet et l’observateur (« transfert »). Il a basé plusieurs de ces théories sur des analyses de cas, avec 5 psychanalystes :
 
 - Dora (hystérie)
 
@@ -106,35 +106,35 @@ Il a ainsi mis en évidence des particularités de la relation entre le sujet et
 
 - [[fmt:bold,underline]]Développement en France[[/fmt]]
 
-1ere GM : 1919 : Ouverture d’une section clinique au sein de l’APA (American Psychological Association). On va avoir des études de cas individuels, des contributions au diagnostic, la réalisation de bilans, les thérapies individuelles et de groupes..
+1ere GM : 1919 : Ouverture d’une section clinique au sein de l’APA (American Psychological Association). On va avoir des études de cas individuels, des contributions au diagnostic, la réalisation de bilans, les thérapies individuelles et de groupes..
 
-2nd GM : 1947 : Commission nommée par l’APA (recommandation pour l’enseignement de psychologie clinique).
+2nd GM : 1947 : Commission nommée par l’APA (recommandation pour l’enseignement de psychologie clinique).
 
 En 1949, Daniel Lagache a fait une conférence [[fmt:italic]]Psychologie clinique et méthode clinique.[[/fmt]]
 
-« On entend par psychologie clinique une discipline psychologique basée sur [[fmt:yellow]]l’étude approfondie des cas individuels. [[/fmt]]En termes plus précis, la psychologie clinique a pour objet l’étude de la [[fmt:yellow]]conduite [[/fmt]]humaine individuelle et de ses conditions (hérédité, maturation, conditions physiologique et pathologiques, histoire de la vie, en un mot l’étude de la personne totale « [[fmt:yellow]]en situation [[/fmt]]».
+« On entend par psychologie clinique une discipline psychologique basée sur [[fmt:yellow]]l’étude approfondie des cas individuels. [[/fmt]]En termes plus précis, la psychologie clinique a pour objet l’étude de la [[fmt:yellow]]conduite [[/fmt]]humaine individuelle et de ses conditions (hérédité, maturation, conditions physiologique et pathologiques, histoire de la vie, en un mot l’étude de la personne totale « [[fmt:yellow]]en situation [[/fmt]]».
 
 - [[fmt:bold,underline]]Approches & buts en Ψ clinique[[/fmt]]
 
 Lagache pose la question de [[fmt:green]]l’étude approfondie[[/fmt]]. On doit extraire de l’individu son contexte de vie & toutes les autres choses qui font que la personne est comme cela.
 
-Pour Lagache, il y a [[fmt:yellow]]3 approches en psychologie[[/fmt]] :
+Pour Lagache, il y a [[fmt:yellow]]3 approches en psychologie[[/fmt]] :
 
-- [[fmt:green]]Expérimentale[[/fmt]] : a permis l’élaboration de protocole de soin. On peut avoir la psychologie clinique dans un cadre scientifique déterminé.
+- [[fmt:green]]Expérimentale[[/fmt]] : a permis l’élaboration de protocole de soin. On peut avoir la psychologie clinique dans un cadre scientifique déterminé.
 
-- [[fmt:green]]Psychanalytique [[/fmt]]: formation au temps de Lagache exclusivement psychanalytique. Il n’existe pas d’autre modèle de prise en charge que le modèle de la psychanalyse (doit se référer à un modèle théorique identifiable). Approche aujourd’hui dans une certaines normes.
+- [[fmt:green]]Psychanalytique [[/fmt]]: formation au temps de Lagache exclusivement psychanalytique. Il n’existe pas d’autre modèle de prise en charge que le modèle de la psychanalyse (doit se référer à un modèle théorique identifiable). Approche aujourd’hui dans une certaines normes.
 
 - [[fmt:green]]Clinique[[/fmt]]
 
-L’activité clinique à 3 buts concret et appliquée :
+L’activité clinique à 3 buts concret et appliquée :
 
-- [[fmt:green]]Conseiller [[/fmt]]: garer une forme de discernement par rapport à la demande des personnes. L’être humain est autoréférencé.  Ce qu’on va travailler avec la personne est co-construit. La personne va trouver peut-être pertinent les conseils qu’on va lui faire.
+- [[fmt:green]]Conseiller [[/fmt]]: garer une forme de discernement par rapport à la demande des personnes. L’être humain est autoréférencé.  Ce qu’on va travailler avec la personne est co-construit. La personne va trouver peut-être pertinent les conseils qu’on va lui faire.
 
-- [[fmt:green]]Guérir[[/fmt]][[fmt:green]] [[/fmt]]: les troubles psychologiques ne sont pas une maladie. C’est la question de réaménager  les choses pour changer la personne en rapport avec la demande spécifique de la personne.
+- [[fmt:green]]Guérir[[/fmt]][[fmt:green]] [[/fmt]]: les troubles psychologiques ne sont pas une maladie. C’est la question de réaménager  les choses pour changer la personne en rapport avec la demande spécifique de la personne.
 
-- [[fmt:green]]Eduquer[[/fmt]][[fmt:green]] [[/fmt]]: on va construire différemment selon la personne. Travailler à la construction d’habitude de vie, de pensée de comportements pour lui permettre de sortir de cet état de souffrance.
+- [[fmt:green]]Eduquer[[/fmt]][[fmt:green]] [[/fmt]]: on va construire différemment selon la personne. Travailler à la construction d’habitude de vie, de pensée de comportements pour lui permettre de sortir de cet état de souffrance.
 
-[[fmt:green]]La compulsion de répétition[[/fmt]] : c’est le fait de faire [[fmt:yellow]]répéter les choses[[/fmt]] sans faire attention. Par exemple, tomber sur les personnes (amoureux) à cause d’une autoréférence. « tu ne devrais pas te remettre avec une personne comme cela ». « oui oui », la personne va refaire la même chose avec une autre personne. On ne fait pas changer les personnes malgré eux.
+[[fmt:green]]La compulsion de répétition[[/fmt]] : c’est le fait de faire [[fmt:yellow]]répéter les choses[[/fmt]] sans faire attention. Par exemple, tomber sur les personnes (amoureux) à cause d’une autoréférence. « tu ne devrais pas te remettre avec une personne comme cela ». « oui oui », la personne va refaire la même chose avec une autre personne. On ne fait pas changer les personnes malgré eux.
 
 ### [[fmt:underline,green-text]]La démarche en psychologie clinique[[/fmt]]
 
@@ -158,7 +158,7 @@ Cette observation cherche à [[fmt:yellow]]mettre en évidence les symptômes[[/
 
 ### [[fmt:underline,green-text]]Le symptôme[[/fmt]]
 
-On peut définir le symptôme comme « la [[fmt:yellow]]manifestation spontanée[[/fmt]] d’une [[fmt:green]]maladie[[/fmt]] » qui exprime un état pathologique. Il est perçu en fonction des modèles théoriques comme l’expression de la difficulté psychique :
+On peut définir le symptôme comme « la [[fmt:yellow]]manifestation spontanée[[/fmt]] d’une [[fmt:green]]maladie[[/fmt]] » qui exprime un état pathologique. Il est perçu en fonction des modèles théoriques comme l’expression de la difficulté psychique :
 
 - Du système (patient – thérapie familiale)
 
@@ -172,7 +172,7 @@ La notion de mesure renvoie à un ensemble de méthodes utilisées pour donner u
 
 On va essayer de définir les [[fmt:green]]caractéristiques[[/fmt]] des [[fmt:yellow]]comportements[[/fmt]] des individus.
 
-En psychologie, elle sert à :
+En psychologie, elle sert à :
 
 - Définir les caractéristiques du comportement des individus ([[fmt:green]]évaluer[[/fmt]])
 
@@ -182,7 +182,7 @@ En psychologie, elle sert à :
 
 ### [[fmt:underline,green-text]]L’objectif de l’évaluation clinique[[/fmt]]
 
-[[fmt:green]]L’évaluation[[/fmt]] a pour objectif de dégager [[fmt:yellow]]l’histoire[[/fmt]] de personnelle du patient pouvant éclairer les raisons de ses difficultés ([[fmt:green]]anamnèse [[/fmt]]= Ensemble des renseignements fournis au médecin par le malade ou par son entourage sur l'histoire d'une maladie ou les circonstances qui l'ont précédée). Elle constitue la [[fmt:green]]psychogénèse [[/fmt]]de [[fmt:yellow]]l’état pathologique[[/fmt]] et repose sur une démarche en plusieurs étapes :
+[[fmt:green]]L’évaluation[[/fmt]] a pour objectif de dégager [[fmt:yellow]]l’histoire[[/fmt]] de personnelle du patient pouvant éclairer les raisons de ses difficultés ([[fmt:green]]anamnèse [[/fmt]]= Ensemble des renseignements fournis au médecin par le malade ou par son entourage sur l'histoire d'une maladie ou les circonstances qui l'ont précédée). Elle constitue la [[fmt:green]]psychogénèse [[/fmt]]de [[fmt:yellow]]l’état pathologique[[/fmt]] et repose sur une démarche en plusieurs étapes :
 
 - Repérer le tableau clinique
 
@@ -194,9 +194,9 @@ En psychologie, elle sert à :
 
 ### [[fmt:underline,green-text]]Le diagnostic[[/fmt]]
 
-Le diagnostic est l’élément essentiel de la future orientation de la prise en charge de la personne. Il est avant tout une [[fmt:green]]hypothèse [[/fmt]]et non, une [[fmt:yellow]]affirmation irréversible[[/fmt]] ou un [[fmt:yellow]]étiquetage définitif[[/fmt]]. C’est : « de quoi on est en train de parler ? ». C’est la manière de nommer une difficulté qui reste une hypothèse.
+Le diagnostic est l’élément essentiel de la future orientation de la prise en charge de la personne. Il est avant tout une [[fmt:green]]hypothèse [[/fmt]]et non, une [[fmt:yellow]]affirmation irréversible[[/fmt]] ou un [[fmt:yellow]]étiquetage définitif[[/fmt]]. C’est : « de quoi on est en train de parler ? ». C’est la manière de nommer une difficulté qui reste une hypothèse.
 
-Le diagnostic vise le « [[fmt:green]]comment [[/fmt]]? » et non le « [[fmt:green]]pourquoi [[/fmt]]? » et constitue un élément de la recherche de sens.
+Le diagnostic vise le « [[fmt:green]]comment [[/fmt]]? » et non le « [[fmt:green]]pourquoi [[/fmt]]? » et constitue un élément de la recherche de sens.
 
 Il s’élabore sur une recherche de spécificité (diagnostic différentiel).
 
@@ -238,9 +238,9 @@ Il faut [[fmt:yellow]]définir le cadre[[/fmt]] de compréhension en particulier
 
 Dans le cadre de ce que l’on nomme la [[fmt:green]]normalité statistique[[/fmt]], sont considérés comme [[fmt:yellow]]normaux les comportements[[/fmt]] qui correspondent à la moyenne des comportements généralement observés dans une population donnée, à une époque.
 
-Les chiffres produisent uniquement ce que l’on demande. La [[fmt:green]]norme statistique[[/fmt]] est une norme figée. On va avoir des « scores », mais [[fmt:yellow]]le score ne veut rien dire[[/fmt]]. La norme statistique va juste montrer une personne à une époque donnée c’est juste une moyenne (on ne peut voir se balader un QI de 100 comme cela).
+Les chiffres produisent uniquement ce que l’on demande. La [[fmt:green]]norme statistique[[/fmt]] est une norme figée. On va avoir des « scores », mais [[fmt:yellow]]le score ne veut rien dire[[/fmt]]. La norme statistique va juste montrer une personne à une époque donnée c’est juste une moyenne (on ne peut voir se balader un QI de 100 comme cela).
 
-La [[fmt:green]]normalité statistique[[/fmt]] correspond à la norme des résultats observés à un test psychométriques (ex : WISC).
+La [[fmt:green]]normalité statistique[[/fmt]] correspond à la norme des résultats observés à un test psychométriques (ex : WISC).
 
 Cette [[fmt:yellow]]norme[[/fmt]] correspond alors à un cadre de référence accepté par une majorité, et qui définit aux extrémités les comportements déviants. Les [[fmt:yellow]]statistiques[[/fmt]] ne sont qu’une [[fmt:yellow]]norme standardisée du monde[[/fmt]] qui nous entoure.
 
@@ -258,35 +258,35 @@ Le [[fmt:yellow]]repère[[/fmt]] entre le normal et le pathologique est le [[fmt
 
 Tous les états qui pourrait être [[fmt:yellow]]pathologique[[/fmt]] ne sont peut-être pas là si il y a un équilibre. On doit à [[fmt:pink]]G.Ganguilhem[[/fmt]] (1966) la définition de la [[fmt:green]]notion de normativité[[/fmt]].
 
-Pour lui, « un individu sain est celui qui peut tomber malade et de se rétablir ; c’est un individu capable d’instaurer de nouvelle normes de fonctionnement dans des contextes différents ».
+Pour lui, « un individu sain est celui qui peut tomber malade et de se rétablir ; c’est un individu capable d’instaurer de nouvelle normes de fonctionnement dans des contextes différents ».
 
 Il introduit par cette idée la notion [[fmt:green]]d’[[/fmt]][[fmt:green]]équilibre psychique[[/fmt]].
 
 La [[fmt:green]]normativité [[/fmt]]existe à partir du moment où l’individu instaure de nouvelles normes.
 
-[[fmt:bold]]Normalité idéale :[[/fmt]] comparaison à la majorité
+[[fmt:bold]]Normalité idéale :[[/fmt]] comparaison à la majorité
 
-[[fmt:bold]]Normalité statistique :[[/fmt]] comparaison aux normes
+[[fmt:bold]]Normalité statistique :[[/fmt]] comparaison aux normes
 
-[[fmt:bold]]Normalité fonctionnelle[[/fmt]] : comparaison intra-individuelle
+[[fmt:bold]]Normalité fonctionnelle[[/fmt]] : comparaison intra-individuelle
 
-[[fmt:bold]]Normativité :[[/fmt]] adaptation au contexte
+[[fmt:bold]]Normativité :[[/fmt]] adaptation au contexte
 
-→ La clinique de « La Borde » (Jean Oury)
+→ La clinique de « La Borde » (Jean Oury)
 
 ### [[fmt:underline,green-text]]La santé mentale[[/fmt]]
 
-[[fmt:green]]L’OMS[[/fmt]] (Organisation Mondiale de la Santé) définit la santé mentale comme : (…) une composante essentielle de la santé, c’est-à-dire : un état de complet [[fmt:yellow]]bien-être physique[[/fmt]], [[fmt:yellow]]mental [[/fmt]]et [[fmt:yellow]]social[[/fmt]], et ne consiste pas seulement en une absence de maladie et d’infirmité.
+[[fmt:green]]L’OMS[[/fmt]] (Organisation Mondiale de la Santé) définit la santé mentale comme : (…) une composante essentielle de la santé, c’est-à-dire : un état de complet [[fmt:yellow]]bien-être physique[[/fmt]], [[fmt:yellow]]mental [[/fmt]]et [[fmt:yellow]]social[[/fmt]], et ne consiste pas seulement en une absence de maladie et d’infirmité.
 
-« La santé mentale est un état de bien-être dans lequel un individu peut se réaliser, surmonter ces tensions normales de la vie, accomplir un travail productif et contribuer à la vie de sa communauté. Dans ce sens positif, la santé mentale est le fondement du bien-être d’un individu et du bon fonctionnement d’une communauté ».
+« La santé mentale est un état de bien-être dans lequel un individu peut se réaliser, surmonter ces tensions normales de la vie, accomplir un travail productif et contribuer à la vie de sa communauté. Dans ce sens positif, la santé mentale est le fondement du bien-être d’un individu et du bon fonctionnement d’une communauté ».
 
-Cette définition de l’OMS est une [[fmt:green]]quête impossible d’absolu[[/fmt]] (relativité de l’équilibre psychique). On a une définition [[fmt:yellow]]normalisante [[/fmt]](excentricité ?) et [[fmt:yellow]]productivitiste[[/fmt]][[fmt:yellow]] [[/fmt]](avec un rapport au travail).
+Cette définition de l’OMS est une [[fmt:green]]quête impossible d’absolu[[/fmt]] (relativité de l’équilibre psychique). On a une définition [[fmt:yellow]]normalisante [[/fmt]](excentricité ?) et [[fmt:yellow]]productivitiste[[/fmt]][[fmt:yellow]] [[/fmt]](avec un rapport au travail).
 
 On ne peut avoir un être parfait au travail. Selon les moments de la journée, les jours… C’est une [[fmt:yellow]]définition globale[[/fmt]] (sur des domaines de vie).
 
-### [[fmt:underline,green-text]]Les différentes classifications[[/fmt]][[fmt:underline,green-text]] : [[/fmt]][[fmt:underline,green-text]]Les classifications psychiatriques[[/fmt]]
+### [[fmt:underline,green-text]]Les différentes classifications[[/fmt]][[fmt:underline,green-text]] : [[/fmt]][[fmt:underline,green-text]]Les classifications psychiatriques[[/fmt]]
 
-On a [[fmt:green]]différents buts de classifications[[/fmt]] qui sont :
+On a [[fmt:green]]différents buts de classifications[[/fmt]] qui sont :
 
 - De fournir des [[fmt:yellow]]repères nosographiques [[/fmt]](=classement des individus)
 
@@ -304,7 +304,7 @@ Le [[fmt:green]]DSM [[/fmt]](Diagnostical and Statistical Manual of Mental Disor
 
 - [[fmt:bold,underline]]La classification française[[/fmt]]
 
-La [[fmt:yellow]]classification française de troubles mentaux[[/fmt]][[fmt:yellow]] de l’enfant et de l’adolescent[[/fmt]] (CFTMEA R – 2012) :
+La [[fmt:yellow]]classification française de troubles mentaux[[/fmt]][[fmt:yellow]] de l’enfant et de l’adolescent[[/fmt]] (CFTMEA R – 2012) :
 
 - Proposer un système de recueil de données cliniques facilement utilisable par les cliniciens
 
@@ -314,4 +314,4 @@ La [[fmt:yellow]]classification française de troubles mentaux[[/fmt]][[fmt:yell
 
 ### [[fmt:underline,green-text]]Conclusion[[/fmt]]
 
-La [[fmt:green]]démarche clinique[[/fmt]] est une démarche de [[fmt:yellow]]bon s[[/fmt]]ens, une démarche [[fmt:yellow]]humaine [[/fmt]]et « humanisante ». C’est aussi une [[fmt:yellow]]discipline en constante évolution [[/fmt]]qui propose une démarche rigoureuse étayée par la théorie et la pratique.
+La [[fmt:green]]démarche clinique[[/fmt]] est une démarche de [[fmt:yellow]]bon s[[/fmt]]ens, une démarche [[fmt:yellow]]humaine [[/fmt]]et « humanisante ». C’est aussi une [[fmt:yellow]]discipline en constante évolution [[/fmt]]qui propose une démarche rigoureuse étayée par la théorie et la pratique.

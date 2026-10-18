@@ -34,11 +34,11 @@ Une autre règle de [[fmt:pink]]D.Hebb[[/fmt]] (1904-1985, psychologue et neurop
 
 [[fmt:pink]]Geoffrey Hinton[[/fmt]] (psychologie et réseaux de neurones artificiels), [[fmt:pink]]James [[/fmt]][[fmt:pink]]McClelland[[/fmt]] (Parallel Distributed Processing Group) et [[fmt:pink]]David Everett [[/fmt]][[fmt:pink]]Rumelhart[[/fmt]] ont proposé une amélioration de la [[fmt:green]]loi de [[/fmt]][[fmt:green]]Hebb[[/fmt]] en proposant plus de [[fmt:yellow]]2 couches de neurones[[/fmt]] (plus précis). Avec cela, l’I.A. s’est améliorer avec un algorithme de rétro propagation du gradient d’erreur (deep neural network).
 
-« Le terme cognition concerne tous le processus par lesquels l’information sensorielle d’entrée est transformée, réduite, élaborée, stockée, récupérée et utilisée » - U.Neisser
+« Le terme cognition concerne tous le processus par lesquels l’information sensorielle d’entrée est transformée, réduite, élaborée, stockée, récupérée et utilisée » - U.Neisser
 
 Stimulus → esprit / processus mentaux → Réponse
 
-## [[fmt:underline,red-text]]Qu’est-ce que la psychologie cognitive ?[[/fmt]]
+## [[fmt:underline,red-text]]Qu’est-ce que la psychologie cognitive ?[[/fmt]]
 
 La [[fmt:green]]psychologie [[/fmt]]et les [[fmt:green]]sciences cognitives [[/fmt]]sont d’une richesse de [[fmt:yellow]]l’interdisciplinaire[[/fmt]] et parfois rivalités interdisciplinaires.
 
@@ -62,7 +62,7 @@ Elles s’expliquent à travers des [[fmt:yellow]]recherches expérimentales[[/f
 
 Il y a par exemple le cas de [[fmt:pink]]Phineas[[/fmt]][[fmt:pink]] Gage[[/fmt]] qu’a beaucoup entendu parler la psychologie.
 
-Autre exemple : Hémianopsie ou héminégligence
+Autre exemple : Hémianopsie ou héminégligence
 
 ## [[fmt:underline,red-text]]Des approches de la conscience[[/fmt]]
 

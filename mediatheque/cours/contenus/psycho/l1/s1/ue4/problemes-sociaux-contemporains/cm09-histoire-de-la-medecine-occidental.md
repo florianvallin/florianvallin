@@ -4,7 +4,7 @@
 
 Selon [[fmt:pink]]Bruno Latour[[/fmt]], il n’y a pas de [[fmt:yellow]]découverte scientifique[[/fmt]] mais seulement des [[fmt:yellow]]créations[[/fmt]] & [[fmt:yellow]]constructions scientifiques[[/fmt]]. Il y a une part de [[fmt:green]]croyance[[/fmt]] & de [[fmt:green]]culture[[/fmt]]. C’est une sous branche de l’histoire qui étudie les pratiques médicales dans le temps.
 
-On est souvent obligé de se pencher sur les [[fmt:green]]contextes socio-historiques[[/fmt]] pour mieux comprendre certaines connaissances (pourquoi cette pratique est apparu ? pourquoi on est retissant face à cette pratique ?)
+On est souvent obligé de se pencher sur les [[fmt:green]]contextes socio-historiques[[/fmt]] pour mieux comprendre certaines connaissances (pourquoi cette pratique est apparu ? pourquoi on est retissant face à cette pratique ?)
 
 Notre connaissance face à la santé provient d’une accumulation de savoir. Cela va nous permettre de mieux connaitre notre corps et notre santé.
 

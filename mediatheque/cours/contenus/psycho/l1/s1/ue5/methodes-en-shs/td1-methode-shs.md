@@ -4,11 +4,11 @@ On sait → directionnelle
 
 On ne sait pas → non-directionnelle
 
-Variable dépendante / indépendante
+Variable dépendante / indépendante
 
-PARTIE I : PROBLEME ET HYPOTHESE DE RECHERCHE
+PARTIE I : PROBLEME ET HYPOTHESE DE RECHERCHE
 
-Exercice 1 :
+Exercice 1 :
 
 - La quantité de poisson augmente les scores à un test d’intelligence
 
@@ -42,11 +42,11 @@ Exercice 1 :
 
 ### [[fmt:bold]]HYPOTHESE[[/fmt]]
 
-[[fmt:bold]]Conceptuel [[/fmt]]: général
+[[fmt:bold]]Conceptuel [[/fmt]]: général
 
-[[fmt:bold]]Opérationnelle [[/fmt]]: on précise le test qu’on utilise
+[[fmt:bold]]Opérationnelle [[/fmt]]: on précise le test qu’on utilise
 
-Exercice 2 :
+Exercice 2 :
 
 - Les enfants préfèrent manger du chocolat que des choux
 
@@ -68,9 +68,9 @@ Exercice 2 :
 
 - Non-directionnel /
 
-- PARTIE II : IDENTIFICATION DES VARIABLES
+- PARTIE II : IDENTIFICATION DES VARIABLES
 
-Exercice 1 :
+Exercice 1 :
 
 - Les [[fmt:bold]]attitudes[[/fmt]] peuvent être influencées par des [[fmt:underline]]messages de propagande[[/fmt]]
 
@@ -92,13 +92,13 @@ Exercice 1 :
 
 B. Opérationnalisation
 
-ITEM 2 : « buit », « efficacité du travail »
+ITEM 2 : « buit », « efficacité du travail »
 
-Un puzzle fait par la même personne dans une salle vide et du  brouahah dans la salle d’a côté . Mesure du temps qu’il met.
+Un puzzle fait par la même personne dans une salle vide et du  brouahah dans la salle d’a côté . Mesure du temps qu’il met.
 
-ITEM 3 : cours fait quand il fait beau ou pas beau, d’une durée de une heure et mêmes questions à la fin aux deux groupes.
+ITEM 3 : cours fait quand il fait beau ou pas beau, d’une durée de une heure et mêmes questions à la fin aux deux groupes.
 
-Exercice 2 :
+Exercice 2 :
 
 A.
 

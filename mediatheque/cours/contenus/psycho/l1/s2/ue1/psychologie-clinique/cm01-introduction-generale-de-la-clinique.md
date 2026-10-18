@@ -30,7 +30,7 @@ Pour rappel, on l’appelle aussi la symptomalogie ou le tableau clinique.
 
 Le [[fmt:yellow]]temps T2[[/fmt]] correspond à la structure.
 
-L’homme va avoir des [[fmt:green]]phases de vulnérabilité[[/fmt]] durant son évolution avec des phases plus « dangereuse » pour la personne avec des symptômes qui surviennent. Par exemple, la personne peut avoir une dépression dans des phases de développement (ce qui ne veut pas dire qu’il n’y a pas de dépression ailleurs).
+L’homme va avoir des [[fmt:green]]phases de vulnérabilité[[/fmt]] durant son évolution avec des phases plus « dangereuse » pour la personne avec des symptômes qui surviennent. Par exemple, la personne peut avoir une dépression dans des phases de développement (ce qui ne veut pas dire qu’il n’y a pas de dépression ailleurs).
 
 On va donc étudier [[fmt:green]]l’anamnèse[[/fmt]] qui va rechercher l’histoire de la personne et de la maladie.
 
@@ -40,7 +40,7 @@ La [[fmt:green]]symptomatologie[[/fmt]] a donc une [[fmt:yellow]]histoire[[/fmt]
 
 Le psychologue va donc s’adapter à l’individualité par rapport aux [[fmt:yellow]]temps 1[[/fmt]].
 
-Les [[fmt:green]]processus[[/fmt]] vont être [[fmt:yellow]]individuels[[/fmt]] et aussi [[fmt:yellow]]collectif[[/fmt]] en tenant compte de la famille du patient (seul ?), de sa culture (familiale ? social ? sociétal ?).
+Les [[fmt:green]]processus[[/fmt]] vont être [[fmt:yellow]]individuels[[/fmt]] et aussi [[fmt:yellow]]collectif[[/fmt]] en tenant compte de la famille du patient (seul ?), de sa culture (familiale ? social ? sociétal ?).
 
 Il faut être vigilant au niveau de l’interprétation de la personne. Le patient va remettre en cause les choses.
 
@@ -54,7 +54,7 @@ On va avoir le [[fmt:yellow]]DSM [[/fmt]]et la [[fmt:yellow]]CIM[[/fmt]]
 
 Le [[fmt:yellow]]DSM[[/fmt]] a été créé par le [[fmt:yellow]]syndicat des psychiatres américains[[/fmt]]. Le principal [[fmt:green]]problème[[/fmt]] est que la [[fmt:green]]description des pathologies[[/fmt]] a été mal définit. Par exemple pour le deuil, le fait d’être triste après 15 jours voudrait dire qu’on est en phase dépressif majeur et on va donc nous prescrire des antidépresseurs.
 
-[[fmt:green]]Question[[/fmt]] qu’on peut se poser :
+[[fmt:green]]Question[[/fmt]] qu’on peut se poser :
 
 - La notion du [[fmt:yellow]]normal[[/fmt]] & du [[fmt:yellow]]pathologique[[/fmt]]
 
@@ -66,11 +66,11 @@ Le [[fmt:yellow]]DSM[[/fmt]] a été créé par le [[fmt:yellow]]syndicat des ps
 
 - [[fmt:yellow]]Déplacement[[/fmt]] du symptôme et évolution
 
-- Disparition du symptôme et guérison. La question [[fmt:yellow]]pharmacologique[[/fmt]] (les médicaments sont une aide et non une obligation. [[fmt:yellow]]Chimiothérapie [[/fmt]]et [[fmt:yellow]]psychothérapie [[/fmt]]sont très efficace ensemble mais il ne faut pas surenchérir les choses (ex : certains patients vont dans plusieurs pharmacie pour doubler / tripler leurs doses).
+- Disparition du symptôme et guérison. La question [[fmt:yellow]]pharmacologique[[/fmt]] (les médicaments sont une aide et non une obligation. [[fmt:yellow]]Chimiothérapie [[/fmt]]et [[fmt:yellow]]psychothérapie [[/fmt]]sont très efficace ensemble mais il ne faut pas surenchérir les choses (ex : certains patients vont dans plusieurs pharmacie pour doubler / tripler leurs doses).
 
-Il est tout à fait normal d’être triste pour certains phénomènes (pourquoi doit-on être classé dépressif). Un père déprimé peut influencer les autres et aura un effet logiques, il faut le prendre en compte. On ne peut pas regarder la maladie mentale sans le contexte où la maladie s’exprime. Ce n’est pas parce qu’on n’a pas les symptômes au niveau sémiologique que le symptôme n’existe pas (ex : le psychopathe, pervers narcissique, serial killer peut être très intelligent, envouteurs …).
+Il est tout à fait normal d’être triste pour certains phénomènes (pourquoi doit-on être classé dépressif). Un père déprimé peut influencer les autres et aura un effet logiques, il faut le prendre en compte. On ne peut pas regarder la maladie mentale sans le contexte où la maladie s’exprime. Ce n’est pas parce qu’on n’a pas les symptômes au niveau sémiologique que le symptôme n’existe pas (ex : le psychopathe, pervers narcissique, serial killer peut être très intelligent, envouteurs …).
 
-Nous ne sommes [[fmt:yellow]]pas habitués à voir des choses[[/fmt]]. Ainsi, on va avoir des choses qui vont se produire alors que notre passé n’a pas émis (pas de passé psychotiques). Par exemple, un tsunami à tuer beaucoup de gens en arrachant des parasols et bout de bois. Un excellent nageur à récupérer les corps et, bien qu’il n’ait aucun passé psychotique, se protégeait de flèches avec ces bras. Pourquoi ? Parce que cela dépasse leur spectre de représentabilité.
+Nous ne sommes [[fmt:yellow]]pas habitués à voir des choses[[/fmt]]. Ainsi, on va avoir des choses qui vont se produire alors que notre passé n’a pas émis (pas de passé psychotiques). Par exemple, un tsunami à tuer beaucoup de gens en arrachant des parasols et bout de bois. Un excellent nageur à récupérer les corps et, bien qu’il n’ait aucun passé psychotique, se protégeait de flèches avec ces bras. Pourquoi ? Parce que cela dépasse leur spectre de représentabilité.
 
 Au-delà
 

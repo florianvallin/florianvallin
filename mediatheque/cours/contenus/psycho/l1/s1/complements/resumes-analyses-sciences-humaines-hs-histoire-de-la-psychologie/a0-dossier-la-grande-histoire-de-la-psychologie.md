@@ -20,7 +20,7 @@ De Vienne à Moscou, de Paris à Genève, de Harvard à Leipzig, chercheurs [[fm
 
 [[fmt:pink]]Milgram [[/fmt]]→ manipule avec électricité
 
-Antipsychiatre → veulent révolution pour la psychose
+Antipsychiatre → veulent révolution pour la psychose
 
 Ψ toujours agités par [[fmt:green]]coup de [[/fmt]][[fmt:green]]théâtre[[/fmt]]. Etude de la [[fmt:yellow]]conscience[[/fmt]], [[fmt:yellow]]émotions[[/fmt]], [[fmt:yellow]]neurobiologie[[/fmt]].
 

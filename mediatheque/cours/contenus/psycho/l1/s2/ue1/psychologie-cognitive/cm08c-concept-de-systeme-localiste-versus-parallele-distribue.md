@@ -6,7 +6,7 @@ On va avoir des critiques sur les systèmes de neurones et théories
 
 ## [[fmt:underline,red-text]]La caricature du neurone grand-mère[[/fmt]]
 
-Plusieurs données plaident en faveur d’un [[fmt:green]]traitement parallèle [[/fmt]]et [[fmt:green]]distribué [[/fmt]]dans le cerveau humain. On va parler du concept de neurones « grand-mère » (Bowers, 2010)
+Plusieurs données plaident en faveur d’un [[fmt:green]]traitement parallèle [[/fmt]]et [[fmt:green]]distribué [[/fmt]]dans le cerveau humain. On va parler du concept de neurones « grand-mère » (Bowers, 2010)
 
 Une personne va prendre des [[fmt:yellow]]personnes épileptiques[[/fmt]] (avec des électrodes dans la zone impliquée dans la mémoire). Ils ont impliqué des sujets avec des stimulis et ils se sont aperçu que en présentant des milliers de stimulis, les neurones vont répondre a [[fmt:yellow]]Jennifer Anniston[[/fmt]].
 
@@ -14,7 +14,7 @@ Ils ont donc exposé les personnes à des [[fmt:yellow]]personnes blonde[[/fmt]]
 
 Ils ont reproduit avec un autre patient cette fois-ci qui répondait à Hall Berry (même quand il était dessiner, avec son costume de catwoman…) Il faut qu’il y est une reconnaissance consciente du personnage (découverte récente). Le neurone est [[fmt:yellow]]conceptuel[[/fmt]] (il répond à une connaissance, rien qu’avec le nom de la connaissance).
 
-Les personnes ont dont dit qu’il avait la preuve d’un neurone grand-mère : un neurone qui répond pour Hall Berry. Celui qui a fait la découverte dit que dans un [[fmt:yellow]]système distribué[[/fmt]], ça [[fmt:yellow]]n’empêche pas[[/fmt]] qu’il y a des neurones qui codent de façon spécifique. Même si l’on détruit le neurone, la personne va encore reconnaitre la chose car elle est toujours présente et toujours aussi efficace.
+Les personnes ont dont dit qu’il avait la preuve d’un neurone grand-mère : un neurone qui répond pour Hall Berry. Celui qui a fait la découverte dit que dans un [[fmt:yellow]]système distribué[[/fmt]], ça [[fmt:yellow]]n’empêche pas[[/fmt]] qu’il y a des neurones qui codent de façon spécifique. Même si l’on détruit le neurone, la personne va encore reconnaitre la chose car elle est toujours présente et toujours aussi efficace.
 
 ## [[fmt:underline,red-text]]Résistance à l’altération physique[[/fmt]]
 
@@ -24,7 +24,7 @@ D’abord, c’est très efficace, très résistant à la dégradation.
 
 Nous avons des systèmes parallèles distribués [[fmt:yellow]]moins sensibles à la destruction[[/fmt]] de neurones. Ces systèmes distribués vont avoir donc une forte [[fmt:green]]résistance à la dégradation[[/fmt]].
 
-On va avoir cela sur les maladies neurodégénératives : exemple pour le patient [[fmt:yellow]]d’Alzheimer[[/fmt]]. 60-70% des neurones sont détruit avant qu’on puisse voir les effets pour ce type de patient. Le cerveau va compenser, on peut le reproduire avec un réseau de neurone artificiel (on détruit des neurones aux hasards et on observe les conséquences autour des 65%).
+On va avoir cela sur les maladies neurodégénératives : exemple pour le patient [[fmt:yellow]]d’Alzheimer[[/fmt]]. 60-70% des neurones sont détruit avant qu’on puisse voir les effets pour ce type de patient. Le cerveau va compenser, on peut le reproduire avec un réseau de neurone artificiel (on détruit des neurones aux hasards et on observe les conséquences autour des 65%).
 
 ## [[fmt:underline,red-text]]Résistance à la dégradation et à l’incertitude[[/fmt]]
 
@@ -46,11 +46,11 @@ Le cerveau n’est pas figé, il va donc se développer. [[fmt:yellow]]Plus on f
 
 Des chercheurs se sont demandé si on pouvait avoir cela au niveau des processus sociaux et politiques. Il est montré que plus le QI est fort et moins il y a de préjugés (en moyenne). Pour les QI faible, cela dépend de l’éducation. Ces résultats ont été obtenus au niveau psychologique. Ils se sont demandé si on pouvait avoir des conséquences au niveau cérébral.
 
-En haut, les personnes [[fmt:yellow]]progressistes[[/fmt]], ceux qui sont plus conservateurs (réellement ?). Ce sont des corrélations où il faut montrer une réelle causalité (génétique ? apprentissage ?)
+En haut, les personnes [[fmt:yellow]]progressistes[[/fmt]], ceux qui sont plus conservateurs (réellement ?). Ce sont des corrélations où il faut montrer une réelle causalité (génétique ? apprentissage ?)
 
 ## [[fmt:underline,red-text]]Permet de comprendre comment passer du neurone à la psyché[[/fmt]]
 
-Comment peut-on passer à la boite noire ?
+Comment peut-on passer à la boite noire ?
 
 Depuis le départ, beaucoup de travaux ont été fait pour montrer qu’est-ce qu’il se passe au [[fmt:green]]niveau de la boite noire[[/fmt]].
 
@@ -64,9 +64,9 @@ On va avoir une discussion entre connexionnisme, psychologie et neurologie.
 
 S’il faut [[fmt:yellow]]un neurone par connaissance[[/fmt]], il faudrait un nombre de [[fmt:yellow]]neurone [[/fmt]][[fmt:yellow]]infini[[/fmt]].
 
-- Modèle [[fmt:yellow]]localiste [[/fmt]]: 1 neurone = 1 connaissance
+- Modèle [[fmt:yellow]]localiste [[/fmt]]: 1 neurone = 1 connaissance
 
-- Modèle [[fmt:yellow]]distribué [[/fmt]]: 7000 connexions synaptiques en moyenne par neurones pour environ 100 Milliards de neurones (grosses capacités)
+- Modèle [[fmt:yellow]]distribué [[/fmt]]: 7000 connexions synaptiques en moyenne par neurones pour environ 100 Milliards de neurones (grosses capacités)
 
 Avec un système connexionniste, dans la même structure, on peut [[fmt:green]]stocker énormément de connaissance[[/fmt]]. Ce qui compte est le nombre de connexion synaptiques. Nous en avons une énorme quantité (plus de connexions et combinaisons possibles que d’atomes dans l’univers, dépasse très largement 10^80).
 
@@ -86,13 +86,13 @@ Cependant, nous a remarqués que le cerveau humain ne faisait pas forcément les
 
 Il ne faudrait surtout pas faire les mêmes choses que l’homme. Il y a des erreurs et on essai avec une vision archaïque [[fmt:yellow]]d’imposer des règles[[/fmt]]. Si on veut un système conscient non dangereux, il faudrait retirer toutes les choses qui ne sont pas bonne (certaines émotions, la peur…). Il faudrait se focaliser peut-être sur des fonctions comme [[fmt:yellow]]l’apathie[[/fmt]].
 
-Les lois d’Asimov :
+Les lois d’Asimov :
 
-- « un robot ne peut porter atteinte à un être humain ni, restant passif, laisser cet être humain exposé au danger. »
+- « un robot ne peut porter atteinte à un être humain ni, restant passif, laisser cet être humain exposé au danger. »
 
-- « un robot doit obéir aux ordres données par les êtres humains, sauf si de tels ordres sont en contradiction avec la première loi »
+- « un robot doit obéir aux ordres données par les êtres humains, sauf si de tels ordres sont en contradiction avec la première loi »
 
-- « un robot doit protéger son existence dans la mesure où cette protection n’entre pas en contradiction avec la première ou le deuxième loi »
+- « un robot doit protéger son existence dans la mesure où cette protection n’entre pas en contradiction avec la première ou le deuxième loi »
 
 ## Encadrés et annotations du document
 

@@ -20,14 +20,14 @@ Dans les Maladie de la volonté (1883) & Les Maladie de la personnalité (1885) 
 
 ## [[fmt:underline,red-text]]L’étude d’une fonction par sa pathologie[[/fmt]]
 
-On peut suivre l’évolution à travers l’étude de la maladie dans leur dissolution (involution). Selon Ribot, c’est en étudiant la pathologie d’une fonction qu’on peut savoir sa structure é son fonctionnement. Il formule une loi de dégénérescence de la mémoire (ojd : loi de Ribot).
+On peut suivre l’évolution à travers l’étude de la maladie dans leur dissolution (involution). Selon Ribot, c’est en étudiant la pathologie d’une fonction qu’on peut savoir sa structure é son fonctionnement. Il formule une loi de dégénérescence de la mémoire (ojd : loi de Ribot).
 
-Devient personnage incontournable de la psychologie (1880’). D’abord nommé chargé de cours expérimentale à la Sorbonne (1885), 1er enseignant de psychologie à l’université. Accède à une chaire de psychologie exp (successeur : P.Janet). Encourage dvlp de nouveau enseignement & du 1er labo Fr de Ψ exp (cf H.Beaunis & A.Binet).
+Devient personnage incontournable de la psychologie (1880’). D’abord nommé chargé de cours expérimentale à la Sorbonne (1885), 1er enseignant de psychologie à l’université. Accède à une chaire de psychologie exp (successeur : P.Janet). Encourage dvlp de nouveau enseignement & du 1er labo Fr de Ψ exp (cf H.Beaunis & A.Binet).
 
-Ecrira de nombreux ouvrage jusqu’à sa mort (1916) : [[fmt:italic]]Imagination création, Psychologie des sentiments, Essai sur les passions[[/fmt]] …
+Ecrira de nombreux ouvrage jusqu’à sa mort (1916) : [[fmt:italic]]Imagination création, Psychologie des sentiments, Essai sur les passions[[/fmt]] …
 
-[[fmt:underline,green-text]]Sege[[/fmt]][[fmt:underline,green-text]] Nicolas :[[/fmt]][[fmt:green-text]] [[/fmt]]prof Paris-V. [[fmt:italic]]La Mémoire et ses maladies selon Théodule Ribot.[[/fmt]]
+[[fmt:underline,green-text]]Sege[[/fmt]][[fmt:underline,green-text]] Nicolas :[[/fmt]][[fmt:green-text]] [[/fmt]]prof Paris-V. [[fmt:italic]]La Mémoire et ses maladies selon Théodule Ribot.[[/fmt]]
 
-[[fmt:underline,green-text]]La loi de régression de la mémoire[[/fmt]][[fmt:green-text]] [[/fmt]]: Ribot est le 1er à étudier mémoire sous forme bio et en étudier la nature. Mémoire organique → mémoire psychique = simple → supérieur. Loi de la régression (souvenirs récents plus vulnérables que les anciens).
+[[fmt:underline,green-text]]La loi de régression de la mémoire[[/fmt]][[fmt:green-text]] [[/fmt]]: Ribot est le 1er à étudier mémoire sous forme bio et en étudier la nature. Mémoire organique → mémoire psychique = simple → supérieur. Loi de la régression (souvenirs récents plus vulnérables que les anciens).
 
-[[fmt:underline,green-text]]Hermann Ebbinghaus (1850-1909) :[[/fmt]][[fmt:green-text]] [[/fmt]]crée méthodes pour étudier l’apprentissage d’un matériel verbal indépendamment de sa signification (grâce à groupes de lettres aléatoires). Défini une « courbe d’oubli » (matériel appris se dégrade en quelque jour).[[fmt:red-text]] [[/fmt]]
+[[fmt:underline,green-text]]Hermann Ebbinghaus (1850-1909) :[[/fmt]][[fmt:green-text]] [[/fmt]]crée méthodes pour étudier l’apprentissage d’un matériel verbal indépendamment de sa signification (grâce à groupes de lettres aléatoires). Défini une « courbe d’oubli » (matériel appris se dégrade en quelque jour).[[fmt:red-text]] [[/fmt]]

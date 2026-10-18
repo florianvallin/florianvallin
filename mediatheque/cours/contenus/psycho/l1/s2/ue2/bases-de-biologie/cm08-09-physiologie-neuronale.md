@@ -2,7 +2,7 @@
 
 ## [[fmt:red-text]]Physiologie neuronale[[/fmt]]
 
-## [[fmt:underline,red-text]]Potentiel membranaire au repos : potentiel de repos[[/fmt]]
+## [[fmt:underline,red-text]]Potentiel membranaire au repos : potentiel de repos[[/fmt]]
 
 Pour mesurer l’état électrique, on va prendre des mesures avec une différences de charge électriques entre l’intérieur et l’extérieur de la cellule.
 
@@ -14,7 +14,7 @@ Ce potentiel est aussi un [[fmt:green]]équilibre électrique[[/fmt]]. Malgré u
 
 Si on considère l’ensemble, il va être électro-neutre.
 
-On va avoir deux forces qui sont les forces électro-chimiques. Cette force va combiner deux forces : la [[fmt:yellow]]force de concentration[[/fmt]] qui va être lié au gradient de concentration & la [[fmt:yellow]]force électrique[[/fmt]] qui va être lié au gradient électrique.
+On va avoir deux forces qui sont les forces électro-chimiques. Cette force va combiner deux forces : la [[fmt:yellow]]force de concentration[[/fmt]] qui va être lié au gradient de concentration & la [[fmt:yellow]]force électrique[[/fmt]] qui va être lié au gradient électrique.
 
 On va donc avoir un ensemble de force qui vont s’opposer et s’annuler mutuellement.
 
@@ -34,7 +34,7 @@ Le potentiel de repos est lié à la nature des ions et différence de concentra
 
 Certains ions vont passer la membrane. Les protéines vont pomper et permettre une répartition entre les ions à l’intérieur et l’extérieur. Les pompes vont maintenir les différences entre l’intérieur & extérieur.
 
-Que se passe-t-il quand on simule le neurone ?
+Que se passe-t-il quand on simule le neurone ?
 
 ## [[fmt:underline,red-text]]Potentiel générateur et potentiel d’action[[/fmt]]
 
@@ -44,7 +44,7 @@ On va stimuler le site récepteur qu’on appelle aussi [[fmt:green]]site transd
 
 On va avoir une ouverture des protéines dite canals.
 
-On peut avoir deux cas :
+On peut avoir deux cas :
 
 A l’issu du potentiel local générateur, on va voir apparait un autre type de message qu’on appelle un potentiel d’action (PA).
 
@@ -62,19 +62,19 @@ On va avoir une conduction de l’information nerveuse. Elle est émis en un poi
 
 Plus le diamètre va être important et plus la vitesse va être importante
 
-[[fmt:green]]Fibre amyélinique[[/fmt]] : conduction de proche en proche
+[[fmt:green]]Fibre amyélinique[[/fmt]] : conduction de proche en proche
 
-[[fmt:green]]Fibre myélinisée[[/fmt]] : conduction altatoire (nœud de Ranvier)
+[[fmt:green]]Fibre myélinisée[[/fmt]] : conduction altatoire (nœud de Ranvier)
 
-[[fmt:green]]Gaine de myéline[[/fmt]] : gaine de substance blanche (lipides) issue de l’enroulement des cellules de Schawnn ou Oligodendrocytes myélinisées autour de l’axone des neurones)
+[[fmt:green]]Gaine de myéline[[/fmt]] : gaine de substance blanche (lipides) issue de l’enroulement des cellules de Schawnn ou Oligodendrocytes myélinisées autour de l’axone des neurones)
 
 ## [[fmt:underline,red-text]]Intégration de l’information en message nerveux[[/fmt]]
 
-On va avoir 4 caractéristiques au niveau du système nerveux :
+On va avoir 4 caractéristiques au niveau du système nerveux :
 
-- [[fmt:yellow]] La modalité / qualité[[/fmt]]. : la nature de l’information chimique (information olfactive, auditive…). Au sein d’une modalité, on va avoir différentes qualité (au niveau de la vision → couleur, brillance…)
+- [[fmt:yellow]] La modalité / qualité[[/fmt]]. : la nature de l’information chimique (information olfactive, auditive…). Au sein d’une modalité, on va avoir différentes qualité (au niveau de la vision → couleur, brillance…)
 
-- [[fmt:yellow]]Localisation [[/fmt]]: savoir localiser un objet, sa taille, sa forme… Le cerveau a une représentation de notre corps. Le fait de se toucher la jambe et le bras vont impliquer des neurones différents. On va avoir un traitement de l’information associé à la partie. Nous avons une association topique.
+- [[fmt:yellow]]Localisation [[/fmt]]: savoir localiser un objet, sa taille, sa forme… Le cerveau a une représentation de notre corps. Le fait de se toucher la jambe et le bras vont impliquer des neurones différents. On va avoir un traitement de l’information associé à la partie. Nous avons une association topique.
 
 - L’intensité
 
@@ -86,31 +86,31 @@ On va avoir une variation d’amplitude de potentiel local. Ce lien est linéair
 
 Quel que soit l’amplitude du potentiel générateur, on va directement atteindre le seuil maximum. La codification de l’amplitude va être définit par la fréquence des potentiels d’actions. Plus l’intensité
 
-## [[fmt:underline,red-text]]Transmission de l’information nerveuse : transmission synaptique[[/fmt]]
+## [[fmt:underline,red-text]]Transmission de l’information nerveuse : transmission synaptique[[/fmt]]
 
 Le [[fmt:yellow]]bouton synaptique[[/fmt]] est là que va être transmis l’information à d’autres cellules grâce à la synapse.
 
-[[fmt:green]]SYNAPSE[[/fmt]] : jonction entre 2 cellules nerveuses. C’est un lien de transfert entre 2 neurones.
+[[fmt:green]]SYNAPSE[[/fmt]] : jonction entre 2 cellules nerveuses. C’est un lien de transfert entre 2 neurones.
 
 Le [[fmt:yellow]]neurone[[/fmt]] qui [[fmt:yellow]]émet[[/fmt]] va être [[fmt:green]]présynaptique[[/fmt]] et le neurone qui [[fmt:yellow]]reçoit[[/fmt]] va être le neurone [[fmt:green]]postsynaptique[[/fmt]]. Le neurone présynaptique va devenir postsynaptique. 1 envoi à 2 qui envoi à 3 ect…
 
-On va distinguer 4 grands types de connexions synaptiques :
+On va distinguer 4 grands types de connexions synaptiques :
 
-- Connexion [[fmt:green]]AXOSOMATIQUE [[/fmt]]: connexion entre l’axone du neurone 1 (présynaptique) et dendrites du neurone 2 (postsynaptique)
+- Connexion [[fmt:green]]AXOSOMATIQUE [[/fmt]]: connexion entre l’axone du neurone 1 (présynaptique) et dendrites du neurone 2 (postsynaptique)
 
-- Connexion [[fmt:green]]AXODENDRITIQUES [[/fmt]]: relie l’axone du neurone 1 (présynaptique) et le soma (aussi appelé corps cellulaire) du neurone 2 (postsynaptique)
+- Connexion [[fmt:green]]AXODENDRITIQUES [[/fmt]]: relie l’axone du neurone 1 (présynaptique) et le soma (aussi appelé corps cellulaire) du neurone 2 (postsynaptique)
 
-- Connexion [[fmt:green]]AXO-AXONALES [[/fmt]]: connexion entre les [[fmt:yellow]]axones[[/fmt]]
+- Connexion [[fmt:green]]AXO-AXONALES [[/fmt]]: connexion entre les [[fmt:yellow]]axones[[/fmt]]
 
-- Connexion [[fmt:green]]DENDRODENTRITIQUES [[/fmt]]: connexion entre une [[fmt:yellow]]dendrite[[/fmt]] du neurone 1 et une dendrite du neurone 2. Ce type de connexion ne va pas envoyer le même type de message électrique (le type de message électrique va être principalement des potentiels locaux alors que pour les autres connexions, on va avoir des potentiels d’actions). Elle diffère également dans le sens ou les directions peuvent être bidirectionnel (1→2, 2→1) (c’est systématique).
+- Connexion [[fmt:green]]DENDRODENTRITIQUES [[/fmt]]: connexion entre une [[fmt:yellow]]dendrite[[/fmt]] du neurone 1 et une dendrite du neurone 2. Ce type de connexion ne va pas envoyer le même type de message électrique (le type de message électrique va être principalement des potentiels locaux alors que pour les autres connexions, on va avoir des potentiels d’actions). Elle diffère également dans le sens ou les directions peuvent être bidirectionnel (1→2, 2→1) (c’est systématique).
 
 Il y a différent modes de transfert qui donne [[fmt:green]]3 types de synapses[[/fmt]].
 
-- Synapse [[fmt:yellow]]électrique [[/fmt]]: transmission direct entre les 2 cellules se fait pas voit électrique
+- Synapse [[fmt:yellow]]électrique [[/fmt]]: transmission direct entre les 2 cellules se fait pas voit électrique
 
-- Synapse [[fmt:yellow]]chimique [[/fmt]]: va impliquer un intermédiaire (implication d’un messager chimique qui va stimuler la 2° simule qui elle-même génère un message chimique). Ce type de synapse est la plus répandu.
+- Synapse [[fmt:yellow]]chimique [[/fmt]]: va impliquer un intermédiaire (implication d’un messager chimique qui va stimuler la 2° simule qui elle-même génère un message chimique). Ce type de synapse est la plus répandu.
 
-- Synapse [[fmt:yellow]]mixte [[/fmt]]: elle va combiner une synapse électrique et une synapse chimique.
+- Synapse [[fmt:yellow]]mixte [[/fmt]]: elle va combiner une synapse électrique et une synapse chimique.
 
 En réalité, les [[fmt:yellow]]connexions[[/fmt]][[fmt:yellow]] dendrodentritiques[[/fmt]] sont purement électriques. Les synapses axo-axonales peuvent être chimiques ou électrique mais sont plutôt d’ordre électrique. Les synapses mixtes sont surtout dans les deux premières connexions.
 
@@ -122,37 +122,37 @@ La [[fmt:green]]synapse chimique[[/fmt]] va se différencier de l’électrique 
 
 Quand le message va arriver au niveau du bouton, les courants locaux vont activer les [[fmt:yellow]]canaux voltage dépendant du type Ca2+,[[/fmt]] suite à cette activation, ceux-ci vont s’ouvrir. Ainsi on va avoir une entrer d’ions Ca2+. Ces ions vont permettre de favoriser la fusion des vésicules synaptiques avec la membrane plasmique du bouton. Une fois qu’on a libérer ces neurones transmetteurs, ceux-là vont se fixer sur des neurones transmetteurs spécifiques présent dans la membrane. L’ouverture des canaux va se traduire par des flux entrant ou sortant d’ions qui peut être soit positif soit négatif.
 
-Selon le type de flux et selon le type d’ion, on n’aura pas la même conséquence électrique au niveau de la région stimulé. On va avoir différent cas de figure :
+Selon le type de flux et selon le type d’ion, on n’aura pas la même conséquence électrique au niveau de la région stimulé. On va avoir différent cas de figure :
 
-- [[fmt:yellow]]Dépolarisation[[/fmt]] du potentiel local post synaptique excitateur : entré ion + ou entré ion –
+- [[fmt:yellow]]Dépolarisation[[/fmt]] du potentiel local post synaptique excitateur : entré ion + ou entré ion –
 
-- [[fmt:yellow]]Hyperpolarisation[[/fmt]] PPS inhibiteur : entré ion -, sortie ion +
+- [[fmt:yellow]]Hyperpolarisation[[/fmt]] PPS inhibiteur : entré ion -, sortie ion +
 
 Une même cellule peut avoir plusieurs polarisations, à la fois une forme de dépolarisation et une forme de hyperpolarisation.
 
-Tous ces potentiels vont diffuser vers le segment initial (début de l’axone) ou l’on trouvera la [[fmt:yellow]]zone gâchette[[/fmt]] qui va somer l’ensemble des PPS que cette zone reçoit.  On va avoir une [[fmt:yellow]]sommation de type synaptique[[/fmt]]. On va avoir deux types de somation :
+Tous ces potentiels vont diffuser vers le segment initial (début de l’axone) ou l’on trouvera la [[fmt:yellow]]zone gâchette[[/fmt]] qui va somer l’ensemble des PPS que cette zone reçoit.  On va avoir une [[fmt:yellow]]sommation de type synaptique[[/fmt]]. On va avoir deux types de somation :
 
-- Somation [[fmt:green]]temporel [[/fmt]]: le fait de stimuler des potentiels locaux proche temporellement. Ces potentiels locaux peuvent être issus sur différents potentiel (inhibiteur ou excitateur) ou d’un seul. C’est le principe de somer les potentiels qui arrive proche.
+- Somation [[fmt:green]]temporel [[/fmt]]: le fait de stimuler des potentiels locaux proche temporellement. Ces potentiels locaux peuvent être issus sur différents potentiel (inhibiteur ou excitateur) ou d’un seul. C’est le principe de somer les potentiels qui arrive proche.
 
-- Somation [[fmt:green]]spatial [[/fmt]]: on va somer des potentiels qui sont issues de différentes régions du neurone. Ici, les potentiels ne vont pas forcément être de même nature, ainsi on peut sommer des potentiel différent (inhibiteur ou excitateur). L’inhibiteur va atténuer l’excitateur. C’est une [[fmt:yellow]]sommation synaptique[[/fmt]].
+- Somation [[fmt:green]]spatial [[/fmt]]: on va somer des potentiels qui sont issues de différentes régions du neurone. Ici, les potentiels ne vont pas forcément être de même nature, ainsi on peut sommer des potentiel différent (inhibiteur ou excitateur). L’inhibiteur va atténuer l’excitateur. C’est une [[fmt:yellow]]sommation synaptique[[/fmt]].
 
 On va observer le [[fmt:green]]potentiel local générateur[[/fmt]] qui est le potentiel total. Si on atteint le seuil d’excitabilité du neurone, le message va pouvoir être transmis à travers l’axone, soit le seuil n’est pas atteint et ainsi la diffusion est progressive et la transmission ne se fera pas.
 
-Les neurones transmetteurs vont être vite effacé pour éviter la surexcitation (car quand on stimule trop, il n’y a plus de réaction). On peut entrainer des modifications dans la quantité protéique de canaux (plus important) qui va favoriser les sensibilisations & dépendance. Il y a différents types de dégradation :
+Les neurones transmetteurs vont être vite effacé pour éviter la surexcitation (car quand on stimule trop, il n’y a plus de réaction). On peut entrainer des modifications dans la quantité protéique de canaux (plus important) qui va favoriser les sensibilisations & dépendance. Il y a différents types de dégradation :
 
-- Elimination pas [[fmt:yellow]]dégradation totale [[/fmt]]: les enzymes vont éliminer directement les neurones transmetteurs (les déchets sont éliminer dans le sang)
+- Elimination pas [[fmt:yellow]]dégradation totale [[/fmt]]: les enzymes vont éliminer directement les neurones transmetteurs (les déchets sont éliminer dans le sang)
 
-- Elimination pas [[fmt:yellow]]dégradation partielle [[/fmt]]: les enzymes vont partiellement dégradé les neurones transmetteurs.
+- Elimination pas [[fmt:yellow]]dégradation partielle [[/fmt]]: les enzymes vont partiellement dégradé les neurones transmetteurs.
 
-- [[fmt:yellow]]Recapture complète [[/fmt]]: peut-être fait par le neurone lui-même (forme de recyclage) soit les cellules gliales
+- [[fmt:yellow]]Recapture complète [[/fmt]]: peut-être fait par le neurone lui-même (forme de recyclage) soit les cellules gliales
 
-Ils existent plein de famille aux niveaux des neurones transmetteurs : acétycholine, monoamines, acides aminées excitateurs, acides aminées inhibiteurs, peptides, sérotonine…
+Ils existent plein de famille aux niveaux des neurones transmetteurs : acétycholine, monoamines, acides aminées excitateurs, acides aminées inhibiteurs, peptides, sérotonine…
 
-On va avoir des [[fmt:green]]substances psychoactive[[/fmt]] car ce sont des substances qui vont agir deux manière :
+On va avoir des [[fmt:green]]substances psychoactive[[/fmt]] car ce sont des substances qui vont agir deux manière :
 
-- Famille [[fmt:yellow]]agoniste[[/fmt]] : molécule interagissant sur un récepteur membranaire et mimant l’action du neuro-modulateur se liant habituellement sur ce récepteur
+- Famille [[fmt:yellow]]agoniste[[/fmt]] : molécule interagissant sur un récepteur membranaire et mimant l’action du neuro-modulateur se liant habituellement sur ce récepteur
 
-- Famille [[fmt:yellow]]antagoniste[[/fmt]] : molécule interagissant sur un récepteur membranaire et bloquant ou diminuant l’action du neuro-modulateur se liant habituellement sur ce récepteur (interaction avec le même récepteur qu’un agoniste de ce récepteur mais provoque un effet pharmacologique opposé)
+- Famille [[fmt:yellow]]antagoniste[[/fmt]] : molécule interagissant sur un récepteur membranaire et bloquant ou diminuant l’action du neuro-modulateur se liant habituellement sur ce récepteur (interaction avec le même récepteur qu’un agoniste de ce récepteur mais provoque un effet pharmacologique opposé)
 
 ## Encadrés et annotations du document
 

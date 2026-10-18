@@ -1,14 +1,14 @@
 # [[fmt:red-text]]L’épanouissement avec le travail[[/fmt]]
 
-Au XIX°, le travail acquiert une [[fmt:yellow]]autre valeur[[/fmt]] : celle [[fmt:green]]d’épanouissement personnel[[/fmt]]. On va le définir comme un moyen de [[fmt:green]]réalisation de soi[[/fmt]]. Tout se passe comme si le travail est la nature de la personne et donc qu’en travaillant, il est lui-même. [[fmt:pink]]D.Méda[[/fmt]] à travailler sur le travail.
+Au XIX°, le travail acquiert une [[fmt:yellow]]autre valeur[[/fmt]] : celle [[fmt:green]]d’épanouissement personnel[[/fmt]]. On va le définir comme un moyen de [[fmt:green]]réalisation de soi[[/fmt]]. Tout se passe comme si le travail est la nature de la personne et donc qu’en travaillant, il est lui-même. [[fmt:pink]]D.Méda[[/fmt]] à travailler sur le travail.
 
 ## [[fmt:underline,red-text]]Le travail par la maitrise[[/fmt]]
 
 Chez [[fmt:pink]]Hegel[[/fmt]], on va rechercher la [[fmt:yellow]]maitrise par le travail[[/fmt]]. Le travail industriel va mettre le [[fmt:yellow]]monde en valeurs[[/fmt]] et de faire avancer la civilisation. Pour lui le vrai travail est le travail libéré par la [[fmt:green]]pensée capitaliste[[/fmt]] (= seul manière d’être humain, besoin vital pour s’exprimer). Pour [[fmt:pink]]Marx[[/fmt]], le travail est choisi et va permettre d’exprimer les choses. D’après Marx, la personne devient un outil de la machine (+aliénation –réalisation de soi).
 
-Dans son ouvrage [[fmt:italic]]condition de l’Homme moderne[[/fmt]] (1958) [[fmt:pink]]H.Arendt[[/fmt]] développe [[fmt:green]]3 modules[[/fmt]] d’activités :
+Dans son ouvrage [[fmt:italic]]condition de l’Homme moderne[[/fmt]] (1958) [[fmt:pink]]H.Arendt[[/fmt]] développe [[fmt:green]]3 modules[[/fmt]] d’activités :
 
-- Le travail synonyme de nécessité physiologique : l’Homme aurait besoin de bouger (est-ce qu’on a vraiment besoin de bouger ?).
+- Le travail synonyme de nécessité physiologique : l’Homme aurait besoin de bouger (est-ce qu’on a vraiment besoin de bouger ?).
 
 - L’action nécessaire à l’Homme
 
@@ -16,7 +16,7 @@ Dans son ouvrage [[fmt:italic]]condition de l’Homme moderne[[/fmt]] (1958) [[f
 
 Le travail est ce qui tue le plus. Ces modules veulent ignorer l’Homme du commun. Elle nous donne son sens de la vie. (cf. Fernando Pessoa).
 
-[[fmt:pink]]Lallive[[/fmt]] présente dans la réalisation de soi l’Homo faber marxiste est essentiel pour comprendre les prolétaires (vs. Bourgeois).L’ethos du travail se dédouble :
+[[fmt:pink]]Lallive[[/fmt]] présente dans la réalisation de soi l’Homo faber marxiste est essentiel pour comprendre les prolétaires (vs. Bourgeois).L’ethos du travail se dédouble :
 
 - [[fmt:green]]Morale instrumentale[[/fmt]] dont le bourgeois fait la machine de guerre de son ascension social et de sa conquête du pouvoir
 
@@ -26,7 +26,7 @@ L’activité humaine n’est [[fmt:yellow]]pas forcément une bonne chose[[/fmt
 
 Le travail en termes de richesse comme [[fmt:yellow]]mode d’échange sociale[[/fmt]] pour avoir un minimum de sécurité (cf. [[fmt:pink]]R.Castel[[/fmt]] [[fmt:italic]]Chronique du salariat[[/fmt]]). La question sociale du travail va être questionnée comme contribution à la richesse collective. A travers des conflits, les travailleurs vont exprimer le [[fmt:yellow]]paradoxe à la richesse collective[[/fmt]] mais aussi leur mécontentement face aux aléas de la vie.
 
-Le travail est généralement perçu comme un [[fmt:green]]droit[[/fmt]]. La société va devoir donner des réponses pour els travailleurs pour tous les types de personnes (chômeurs, travailleurs, malade, handicapés…). On va penser « j’ai besoin d’un travail ». On a déjà une [[fmt:yellow]]mise à distance des motivations primaires[[/fmt]] des individus.
+Le travail est généralement perçu comme un [[fmt:green]]droit[[/fmt]]. La société va devoir donner des réponses pour els travailleurs pour tous les types de personnes (chômeurs, travailleurs, malade, handicapés…). On va penser « j’ai besoin d’un travail ». On a déjà une [[fmt:yellow]]mise à distance des motivations primaires[[/fmt]] des individus.
 
 Les handicapés, prisonniers… n’ont [[fmt:yellow]]plus accès aux marchés du travail[[/fmt]] et ne peuvent plus travailler. Ensuite, on va avoir des luttes et des débats (après la 2nd GM) qui vont contribuer à la création d’un Etat social.
 
@@ -48,13 +48,13 @@ La question du [[fmt:yellow]]travail[[/fmt]] sera toujours au [[fmt:green]]cœur
 
 La façon [[fmt:yellow]]d’analyser[[/fmt]] la fin (ou pas) du travail serait d’étudier minutieusement le terrain (exigences patronal, aspiration individuel, famille, loisirs, carrière).
 
-Certaines vont vouloir travailler plus (7 jours par semaine) mais pourquoi ? Gagner plus et pourquoi ? Le riche n’est pas celui qui va beaucoup [[fmt:yellow]]travailler[[/fmt]]. On va avoir différents [[fmt:green]]problèmes[[/fmt]] à travers le travail (collectif, individuel, obsession, dépression…). Les personnes vont être enfermées dans un processus habituel : les personnes vont dépendre d’un matériel comme l’ordinateur (qui peut être un facteur d’aliénation) (cf. [[fmt:italic]]L’établi[[/fmt]]).
+Certaines vont vouloir travailler plus (7 jours par semaine) mais pourquoi ? Gagner plus et pourquoi ? Le riche n’est pas celui qui va beaucoup [[fmt:yellow]]travailler[[/fmt]]. On va avoir différents [[fmt:green]]problèmes[[/fmt]] à travers le travail (collectif, individuel, obsession, dépression…). Les personnes vont être enfermées dans un processus habituel : les personnes vont dépendre d’un matériel comme l’ordinateur (qui peut être un facteur d’aliénation) (cf. [[fmt:italic]]L’établi[[/fmt]]).
 
 Cf [[fmt:italic]]Le meilleur du monde & 1995[[/fmt]].
 
 L’esclavage n’est pas vraiment quelque chose qu’on a confiance.
 
-Chez [[fmt:pink]]Marx[[/fmt]], il y a [[fmt:yellow]]3 aspects de la marchandise[[/fmt]] :
+Chez [[fmt:pink]]Marx[[/fmt]], il y a [[fmt:yellow]]3 aspects de la marchandise[[/fmt]] :
 
 - Valeur d’usage
 
@@ -64,15 +64,15 @@ Chez [[fmt:pink]]Marx[[/fmt]], il y a [[fmt:yellow]]3 aspects de la marchandise[
 
 La [[fmt:green]]division [[/fmt]][[fmt:green]]sexuelle[[/fmt]][[fmt:green]] du travail[[/fmt]] est le fait de ne pas donner les mêmes tâches aux hommes qu’à la femme.
 
-Quel rapport d’être au travail ? En quoi je suis spécifié par mon travail ou non ? Qu’est-ce qui s’échange dans la relation au travail ? Qu’est-ce que les individus donnent / reçoivent.
+Quel rapport d’être au travail ? En quoi je suis spécifié par mon travail ou non ? Qu’est-ce qui s’échange dans la relation au travail ? Qu’est-ce que les individus donnent / reçoivent.
 
 Dans la division du travail, on peut fabriquer un site de production des objets ([[fmt:italic]]le [[/fmt]][[fmt:italic]]clint[[/fmt]]), on peut fabriquer différentes pièces dans différents pays (assemblage, fabrication, production…). C’est la [[fmt:green]]division internationale du travail[[/fmt]]. Il ne faut [[fmt:yellow]]pa[[/fmt]][[fmt:yellow]]s nier[[/fmt]] la division internationale du travail (on exploite des hommes dans certains pays que nous ne faisons pas dans d’autres).
 
-Est-ce que le progrès technique & l’accroissement de productivité sont synonymes de progrès social ? Pas toujours.
+Est-ce que le progrès technique & l’accroissement de productivité sont synonymes de progrès social ? Pas toujours.
 
-Comment a évolué le travail et la population active sur le long terme ?
+Comment a évolué le travail et la population active sur le long terme ?
 
-On va avoir [[fmt:green]]3 secteurs[[/fmt]] :
+On va avoir [[fmt:green]]3 secteurs[[/fmt]] :
 
 - [[fmt:yellow]]Le secteur tertiaire [[/fmt]][[fmt:yellow]](60% au Japon / Allemagne)[[/fmt]]
 

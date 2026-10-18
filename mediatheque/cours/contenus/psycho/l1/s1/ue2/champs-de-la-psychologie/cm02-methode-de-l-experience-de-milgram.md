@@ -28,13 +28,13 @@ Dans la mise en place de l’élève, le chercheur met de la [[fmt:yellow]]pomma
 
 ## [[fmt:bold,underline]]Pendant le test[[/fmt]]
 
-- Protestation de l’élève : 75V gémissement, 120V dit que le choc est douloureux 150V crie de douleur et implore la personne, 180v il dit qu’il ne peut plus continuer, 300v il dit qu’il ne fournira plus de réponses, 330v il ne dit plus rien
+- Protestation de l’élève : 75V gémissement, 120V dit que le choc est douloureux 150V crie de douleur et implore la personne, 180v il dit qu’il ne peut plus continuer, 300v il dit qu’il ne fournira plus de réponses, 330v il ne dit plus rien
 
-- Incitation verbale de l’expérimentateur : malheureusement il ne peut toujours être pareille et dire les mêmes choses. Il exprimer 4 chose : « continuer s’il vous plait », « L’expérience exige que vous continuiez », « il est absolument indispensable que vous continuiez », « vous n’avez pas le choix, vous devez continuer ». Ces types d’incitations verbales ne sont pas choisis au hasard. Elles sont dites d’un ton ferme et courtois.
+- Incitation verbale de l’expérimentateur : malheureusement il ne peut toujours être pareille et dire les mêmes choses. Il exprimer 4 chose : « continuer s’il vous plait », « L’expérience exige que vous continuiez », « il est absolument indispensable que vous continuiez », « vous n’avez pas le choix, vous devez continuer ». Ces types d’incitations verbales ne sont pas choisis au hasard. Elles sont dites d’un ton ferme et courtois.
 
 L’expérience s’arrête quand le 4e argument est dépassé.
 
-L’expérimentateur va dire 3 incitations particulières quand la personne veut essayer de dépasser l’expérience en voulant s’arrêter :
+L’expérimentateur va dire 3 incitations particulières quand la personne veut essayer de dépasser l’expérience en voulant s’arrêter :
 
 - Même si c’est douloureux, les chocs n’auront pas d’impact sur le long terme.
 
@@ -48,10 +48,10 @@ Il y a un [[fmt:yellow]]effort de réalisme expérimental[[/fmt]] et externe pou
 
 Il y a un scénario de couverture pour assurer le [[fmt:yellow]]réalisme de l’expérience[[/fmt]].
 
-Réalisme externe de l’expérience : les gens pensent que ce que l’expérience fait n’est pas vraiment réaliste. Elle ne ressemble pas beaucoup à la vraie situation de la vie sociale.
+Réalisme externe de l’expérience : les gens pensent que ce que l’expérience fait n’est pas vraiment réaliste. Elle ne ressemble pas beaucoup à la vraie situation de la vie sociale.
 
-Validité écologique : Un loup devrait être étudié dans son milieu naturel.
+Validité écologique : Un loup devrait être étudié dans son milieu naturel.
 
 ## [[fmt:bold,underline]]Après le test[[/fmt]]
 
-Il va y avoir un débriefing et ont va donc leur expliquer, leur révéler la vérité de l’expérience. Le chercheur en plus de dire la vérité va demander au participant comment il a vécu l’expérience. L’intérêt des participants doit être pris en compte. Après le test, Milgram envoie les résultats aux participants  (un rapport) et on a un suivi individuel avec un questionnaire (comment l’avez-vous vécu ?...) et un rendez-vous avec un psychiatre pour remettre en considération le fait que certains peuvent être choqué.
+Il va y avoir un débriefing et ont va donc leur expliquer, leur révéler la vérité de l’expérience. Le chercheur en plus de dire la vérité va demander au participant comment il a vécu l’expérience. L’intérêt des participants doit être pris en compte. Après le test, Milgram envoie les résultats aux participants  (un rapport) et on a un suivi individuel avec un questionnaire (comment l’avez-vous vécu ?...) et un rendez-vous avec un psychiatre pour remettre en considération le fait que certains peuvent être choqué.

@@ -14,7 +14,7 @@ L’éducation est au dévouement absolu
 
 Le [[fmt:green]]père est propriétaire[[/fmt]] de l’enfant: il peut le battre, le vendre ou le tuer.
 
-## [[fmt:underline,red-text]]L’ENSEIGNEMENT MEDIEVAL : LES FONDEMENTS[[/fmt]]
+## [[fmt:underline,red-text]]L’ENSEIGNEMENT MEDIEVAL : LES FONDEMENTS[[/fmt]]
 
 En réaction au modèle Germain, certains romains souhaitent [[fmt:yellow]]préserver l’héritage éducatif[[/fmt]] de Rome et de la Grèce:
 
@@ -128,7 +128,7 @@ Il conseilla les princes et les puissants sur des questions politiques et pédag
 
 Charlemagne initia 3 grandes réformes: celle de la liturgie pour unifier l’église, celle de l’instruction du clergé et celle de l’administration par diffusion de l’écrit.
 
-1 er acte: capitulaire de 789 qui contient un chapitre sur l’école: « que les prêtres attirent vers eux, non seulement les enfants de condition servile mais aussi les fils d’hommes libres. Nous voulons que des écoles soient créées pour apprendre à lire aux enfants. Dans tous les monastères et les évêchés, enseignez les psaumes, les notes, le chant, le comput, la grammaire »
+1 er acte: capitulaire de 789 qui contient un chapitre sur l’école: « que les prêtres attirent vers eux, non seulement les enfants de condition servile mais aussi les fils d’hommes libres. Nous voulons que des écoles soient créées pour apprendre à lire aux enfants. Dans tous les monastères et les évêchés, enseignez les psaumes, les notes, le chant, le comput, la grammaire »
 
 L’application de cet enseignement élémentaire d’alphabétisation religieuse n’est pas immédiat et Charlemagne renouvelle son ordre à plusieurs reprises (794, 797) et le fait reprendre par les conciles.
 
@@ -150,7 +150,7 @@ Là où il le peut l’enseignement continue, on fait appel à des maîtres étr
 
 La réintroduction de la rhétorique et de la dialectique permet à nouveau le dialogue philosophique: l’élève va pouvoir contester la parole du maître avec des arguments logiques. L’utilisation de l’abaque permet la généralisation l’enseignement de l’arithmétique (complexe car chiffres romains).
 
-## [[fmt:underline,red-text]]L’ENSEIGNEMENT MEDIEVAL (XI-XIIIe siècle)[[/fmt]]
+## [[fmt:underline,red-text]]L’ENSEIGNEMENT MEDIEVAL (XI-XIIIe siècle)[[/fmt]]
 
 L’accroissement des richesses dû au développement de l’agriculture et des villes (commerce, artisanat), la faiblesse du pouvoir politique, la remise en cause d’une église qui s’est enrichie, le temps de loisir dont disposent les plus riches...demande un enseignement et une pédagogie adaptés au temps.
 

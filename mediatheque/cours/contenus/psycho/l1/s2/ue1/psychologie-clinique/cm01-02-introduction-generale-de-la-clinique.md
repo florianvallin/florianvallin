@@ -30,7 +30,7 @@ Pour rappel, on l’appelle aussi la symptomalogie ou le tableau clinique.
 
 Le [[fmt:yellow]]temps T2[[/fmt]] correspond à la structure.
 
-L’homme va avoir des [[fmt:green]]phases de vulnérabilité[[/fmt]] durant son évolution avec des phases plus « dangereuse » pour la personne avec des symptômes qui surviennent. Par exemple, la personne peut avoir une dépression dans des phases de développement (ce qui ne veut pas dire qu’il n’y a pas de dépression ailleurs).
+L’homme va avoir des [[fmt:green]]phases de vulnérabilité[[/fmt]] durant son évolution avec des phases plus « dangereuse » pour la personne avec des symptômes qui surviennent. Par exemple, la personne peut avoir une dépression dans des phases de développement (ce qui ne veut pas dire qu’il n’y a pas de dépression ailleurs).
 
 On va donc étudier [[fmt:green]]l’anamnèse[[/fmt]] qui va rechercher l’histoire de la personne et de la maladie.
 
@@ -40,7 +40,7 @@ La [[fmt:green]]symptomatologie[[/fmt]] a donc une [[fmt:yellow]]histoire[[/fmt]
 
 Le psychologue va donc s’adapter à l’individualité par rapport aux [[fmt:yellow]]temps 1[[/fmt]].
 
-Les [[fmt:green]]processus[[/fmt]] vont être [[fmt:yellow]]individuels[[/fmt]] et aussi [[fmt:yellow]]collectif[[/fmt]] en tenant compte de la famille du patient (seul ?), de sa culture (familiale ? social ? sociétal ?).
+Les [[fmt:green]]processus[[/fmt]] vont être [[fmt:yellow]]individuels[[/fmt]] et aussi [[fmt:yellow]]collectif[[/fmt]] en tenant compte de la famille du patient (seul ?), de sa culture (familiale ? social ? sociétal ?).
 
 Il faut être vigilant au niveau de l’interprétation de la personne. Le patient va remettre en cause les choses.
 
@@ -54,7 +54,7 @@ On va avoir le [[fmt:yellow]]DSM [[/fmt]]et la [[fmt:yellow]]CIM[[/fmt]]
 
 Le [[fmt:yellow]]DSM[[/fmt]] a été créé par le [[fmt:yellow]]syndicat des psychiatres américains[[/fmt]]. Le principal [[fmt:green]]problème[[/fmt]] est que la [[fmt:green]]description des pathologies[[/fmt]] a été mal définit. Par exemple pour le deuil, le fait d’être triste après 15 jours voudrait dire qu’on est en phase dépressif majeur et on va donc nous prescrire des antidépresseurs.
 
-[[fmt:green]]Question[[/fmt]] qu’on peut se poser :
+[[fmt:green]]Question[[/fmt]] qu’on peut se poser :
 
 - La notion du [[fmt:yellow]]normal[[/fmt]] & du [[fmt:yellow]]pathologique[[/fmt]]
 
@@ -66,11 +66,11 @@ Le [[fmt:yellow]]DSM[[/fmt]] a été créé par le [[fmt:yellow]]syndicat des ps
 
 - [[fmt:yellow]]Déplacement[[/fmt]] du symptôme et évolution
 
-- Disparition du symptôme et guérison. La question [[fmt:yellow]]pharmacologique[[/fmt]] (les médicaments sont une aide et non une obligation. [[fmt:yellow]]Chimiothérapie [[/fmt]]et [[fmt:yellow]]psychothérapie [[/fmt]]sont très efficace ensemble mais il ne faut pas surenchérir les choses (ex : certains patients vont dans plusieurs pharmacie pour doubler / tripler leurs doses).
+- Disparition du symptôme et guérison. La question [[fmt:yellow]]pharmacologique[[/fmt]] (les médicaments sont une aide et non une obligation. [[fmt:yellow]]Chimiothérapie [[/fmt]]et [[fmt:yellow]]psychothérapie [[/fmt]]sont très efficace ensemble mais il ne faut pas surenchérir les choses (ex : certains patients vont dans plusieurs pharmacie pour doubler / tripler leurs doses).
 
-Il est tout à fait normal d’être triste pour certains phénomènes (pourquoi doit-on être classé dépressif). Un père déprimé peut influencer les autres et aura un effet logiques, il faut le prendre en compte. On ne peut pas regarder la maladie mentale sans le contexte où la maladie s’exprime. Ce n’est pas parce qu’on n’a pas les symptômes au niveau sémiologique que le symptôme n’existe pas (ex : le psychopathe, pervers narcissique, serial killer peut être très intelligent, envouteurs …).
+Il est tout à fait normal d’être triste pour certains phénomènes (pourquoi doit-on être classé dépressif). Un père déprimé peut influencer les autres et aura un effet logiques, il faut le prendre en compte. On ne peut pas regarder la maladie mentale sans le contexte où la maladie s’exprime. Ce n’est pas parce qu’on n’a pas les symptômes au niveau sémiologique que le symptôme n’existe pas (ex : le psychopathe, pervers narcissique, serial killer peut être très intelligent, envouteurs …).
 
-Nous ne sommes [[fmt:yellow]]pas habitués à voir des choses[[/fmt]]. Ainsi, on va avoir des choses qui vont se produire alors que notre passé n’a pas émis (pas de passé psychotiques). Par exemple, un tsunami à tuer beaucoup de gens en arrachant des parasols et bout de bois. Un excellent nageur à récupérer les corps et, bien qu’il n’ait aucun passé psychotique, se protégeait de flèches avec ces bras. Pourquoi ? Parce que cela dépasse leur spectre de représentabilité.
+Nous ne sommes [[fmt:yellow]]pas habitués à voir des choses[[/fmt]]. Ainsi, on va avoir des choses qui vont se produire alors que notre passé n’a pas émis (pas de passé psychotiques). Par exemple, un tsunami à tuer beaucoup de gens en arrachant des parasols et bout de bois. Un excellent nageur à récupérer les corps et, bien qu’il n’ait aucun passé psychotique, se protégeait de flèches avec ces bras. Pourquoi ? Parce que cela dépasse leur spectre de représentabilité.
 
 Au-delà
 
@@ -88,7 +88,7 @@ Il faut aussi faire la différence entre le [[fmt:green]]normal[[/fmt]] & le [[f
 
 On a une clinique de [[fmt:green]]l’objet[[/fmt]] & une clinique du [[fmt:green]]sujet[[/fmt]]. Il faut avoir des preuves et étudier la genèse pour le patient. Son sens n’est pas le même que le nôtre. On va avoir une notion de causalité psychique.
 
-On va avoir [[fmt:green]]trois registres[[/fmt]] : la dimension [[fmt:yellow]]réel[[/fmt]], [[fmt:yellow]]imaginaire [[/fmt]]et [[fmt:yellow]]symbolique [[/fmt]](= la pathologie a du sens pour lui). Il faut faire une analyse entre ces 3 registres.
+On va avoir [[fmt:green]]trois registres[[/fmt]] : la dimension [[fmt:yellow]]réel[[/fmt]], [[fmt:yellow]]imaginaire [[/fmt]]et [[fmt:yellow]]symbolique [[/fmt]](= la pathologie a du sens pour lui). Il faut faire une analyse entre ces 3 registres.
 
 Les [[fmt:green]]normes[[/fmt]] en clinique sont complexes. Le QI ne veut rien dire.
 
@@ -98,7 +98,7 @@ D.Winnicott crédibilise ces recherches. Il parle [[fmt:green]]d’objet biface[
 
 Il parle de [[fmt:green]]face objectale[[/fmt]] (=relation que tu entretiens à ta pathologie).
 
-Tableau biface : mi imaginaire / mi réel
+Tableau biface : mi imaginaire / mi réel
 
 ## [[fmt:underline,red-text]]La méthode clinique[[/fmt]]
 
@@ -112,17 +112,17 @@ Ce modèle associe l’analyse interactive [[fmt:yellow]]quantitative [[/fmt]]& 
 
 Il analyse le [[fmt:yellow]]tableau clinique[[/fmt]] comme la résultante d’un [[fmt:green]]processus[[/fmt]] de la formation du symptôme (le pourquoi du comment).
 
-Il intègre la [[fmt:yellow]]recherche fondamentale[[/fmt]] en matière de présentation [[fmt:green]]mentale[[/fmt]] en distinguant le champ de la représentation (processus de cognition) et le champ du [[fmt:green]]psychique[[/fmt]] (gestion des affects) au même titre que le domaine de la psychosomatique (organique et fonctionnel). (ex : depuis 2005 ; l’application du [[fmt:green]]spectre de représentabilité[[/fmt]] en matière de trauma à partir des travaux de P.Aulagnier de 1975.)
+Il intègre la [[fmt:yellow]]recherche fondamentale[[/fmt]] en matière de présentation [[fmt:green]]mentale[[/fmt]] en distinguant le champ de la représentation (processus de cognition) et le champ du [[fmt:green]]psychique[[/fmt]] (gestion des affects) au même titre que le domaine de la psychosomatique (organique et fonctionnel). (ex : depuis 2005 ; l’application du [[fmt:green]]spectre de représentabilité[[/fmt]] en matière de trauma à partir des travaux de P.Aulagnier de 1975.)
 
-Une méthode a été mis en place (établit à la base par un biologiste) :
+Une méthode a été mis en place (établit à la base par un biologiste) :
 
-- [[fmt:green]]Analyse sémiologique[[/fmt]] : récolter tous les signes cliniques (cognitiviste = recueil des données
+- [[fmt:green]]Analyse sémiologique[[/fmt]] : récolter tous les signes cliniques (cognitiviste = recueil des données
 
-- [[fmt:green]]Analyse syndromique[[/fmt]] : classe de symptômes (une fois que le patient est partie). On va resserrer pour arriver au 3)
+- [[fmt:green]]Analyse syndromique[[/fmt]] : classe de symptômes (une fois que le patient est partie). On va resserrer pour arriver au 3)
 
-- [[fmt:green]]Diagnostic général[[/fmt]] : l’ensemble des symptômes va nous emmener à aller dans des familles pathologiques (c’est une méthode entonnoir, on va commencer à cerner la pathologie).
+- [[fmt:green]]Diagnostic général[[/fmt]] : l’ensemble des symptômes va nous emmener à aller dans des familles pathologiques (c’est une méthode entonnoir, on va commencer à cerner la pathologie).
 
-- [[fmt:green]]Diagnostic différentiel[[/fmt]] : On va chercher au fond des symptômes pour voir dans quelle section il est ([[fmt:yellow]]carrefour très important[[/fmt]]). Des symptômes vont émarger au niveau des pathologies. On va avoir des dominant. Par exemple, pour un cas d’angoisse, on peut avoir :
+- [[fmt:green]]Diagnostic différentiel[[/fmt]] : On va chercher au fond des symptômes pour voir dans quelle section il est ([[fmt:yellow]]carrefour très important[[/fmt]]). Des symptômes vont émarger au niveau des pathologies. On va avoir des dominant. Par exemple, pour un cas d’angoisse, on peut avoir :
 
 - Angoisse réactionnel
 
@@ -132,19 +132,19 @@ Une méthode a été mis en place (établit à la base par un biologiste) :
 
 - Il faut donc arriver à savoir quel type d’angoisse et ainsi traiter la personne en conséquences (chercher si qu’est-ce qu’il s’est passé, comment, …). On n’en va pas traiter les personnes de la même façon. On va ainsi faire un pronostic
 
-- [[fmt:green]]Pronostic[[/fmt]] : une personne qui a fait une tentative de suicide et plusieurs, ce n’est pas la même chose. On va adopter les protocoles en fonctions du patient. C’est l’évolution de la pathologie.
+- [[fmt:green]]Pronostic[[/fmt]] : une personne qui a fait une tentative de suicide et plusieurs, ce n’est pas la même chose. On va adopter les protocoles en fonctions du patient. C’est l’évolution de la pathologie.
 
-- [[fmt:green]]Perlaboration[[/fmt]] : rendre compte des effets de sédation des symptômes face aux processus thérapeutique set aux traitements en général
+- [[fmt:green]]Perlaboration[[/fmt]] : rendre compte des effets de sédation des symptômes face aux processus thérapeutique set aux traitements en général
 
-- [[fmt:green]]Résilience[[/fmt]] : comment va-t-il tourner la page ? Qu’elles en sont les séquelles ?
+- [[fmt:green]]Résilience[[/fmt]] : comment va-t-il tourner la page ? Qu’elles en sont les séquelles ?
 
 Ce tableau est transversal aux matières.
 
-Exemple : le [[fmt:yellow]]paradigme de la dépression[[/fmt]] ? La nécessité du diagnostic différentiel
+Exemple : le [[fmt:yellow]]paradigme de la dépression[[/fmt]] ? La nécessité du diagnostic différentiel
 
 Une personne peut être atteinte de dépression. Une fois qu’on s’est qu’il est dans la case de la dépression, on va chercher à savoir dans quel type de dépression il est en faisant une analyse.
 
-On va avoir la [[fmt:yellow]]dépression secondaire[[/fmt]] à un [[fmt:yellow]]trauma[[/fmt]]. On va chercher dans l’histoire de al personne et voir à quel moment il y a eu un trauma et ainsi avoir des bases pour pouvoir reconstruire. (ex : une femme peut avoir une dépression suite aux décès de son mari et de sa fille). C’est une [[fmt:green]]dépression classique[[/fmt]].
+On va avoir la [[fmt:yellow]]dépression secondaire[[/fmt]] à un [[fmt:yellow]]trauma[[/fmt]]. On va chercher dans l’histoire de al personne et voir à quel moment il y a eu un trauma et ainsi avoir des bases pour pouvoir reconstruire. (ex : une femme peut avoir une dépression suite aux décès de son mari et de sa fille). C’est une [[fmt:green]]dépression classique[[/fmt]].
 
 En regardant l’anamnèse, on peut voir si elle a fait d’autres dépressions. Elle peut avoir fait d’autre dépression. Dans ce cas, nous sommes dans une [[fmt:yellow]]dépression primaire[[/fmt]]. Celle-ci peut donc se répéter et s’amplifier. Il ne faut pas traiter la dépression primaire comme la dépression secondaire. C’est lié à la [[fmt:green]]mélancolie[[/fmt]].
 
@@ -152,11 +152,11 @@ Il existe aussi la [[fmt:yellow]]dépression essentielle[[/fmt]] (aussi appelé 
 
 Les [[fmt:yellow]]antidépresseurs[[/fmt]] sont efficaces dans un certain temps (biologiquement mais aussi par effet placebo). On va avoir des résultats alors que scientifiquement, ce n’est pas efficace.
 
-Exemple 2 : [[fmt:yellow]]paradigme de la criminologie [[/fmt]]?
+Exemple 2 : [[fmt:yellow]]paradigme de la criminologie [[/fmt]]?
 
-Comment reconnaitre le criminel avant qu’il soit criminel ? Il n’existe pas de criminel né. On le devient. (Cf. [[fmt:italic]]I comme Icare, Portier de nuit[[/fmt]][[fmt:italic]])[[/fmt]]
+Comment reconnaitre le criminel avant qu’il soit criminel ? Il n’existe pas de criminel né. On le devient. (Cf. [[fmt:italic]]I comme Icare, Portier de nuit[[/fmt]][[fmt:italic]])[[/fmt]]
 
-Exemple 3 : [[fmt:yellow]]paradigme de la [[/fmt]][[fmt:yellow]]rechute[[/fmt]][[fmt:yellow]] [[/fmt]]et la récidive ?
+Exemple 3 : [[fmt:yellow]]paradigme de la [[/fmt]][[fmt:yellow]]rechute[[/fmt]][[fmt:yellow]] [[/fmt]]et la récidive ?
 
 L’odeur de l’alcool peut dégouter la personne qui a eu une mauvaise expérience avec l’alcool. Aujourd’hui, des médicaments existent pour contrer cela.
 

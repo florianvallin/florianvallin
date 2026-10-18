@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta content="no-cache, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<script>
+    (() => {
+      if (!("serviceWorker" in navigator) || location.pathname.startsWith("/lecture/")) return;
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (refreshing) return;
+        refreshing = true;
+        location.reload();
+      });
+      navigator.serviceWorker
+        .register("/sw.js?v=20260919-publish2", { scope: "/", updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch(() => {});
+    })();
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<title>10 expériences de pensée et dilemmes pour entrer en philosophie — Florian Vallin</title>
+<meta content="Dix expériences de pensée, dilemmes et situations classiques pour découvrir simplement la justice, la liberté, la vérité, la conscience, le bonheur et d’autres notions de Terminale." name="description"/>
+<link href="https://florianvallin.fr/blog/experiences-de-pensee-philosophie/" rel="canonical"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/css/style.css?v=20260919-publish2" rel="stylesheet"/>
+<link href="/css/blog.css?v=20260919-publish2" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<meta content="article" property="og:type"/>
+<meta content="fr_FR" property="og:locale"/>
+<meta content="10 expériences de pensée et dilemmes pour entrer en philosophie" property="og:title"/>
+<meta content="Dix situations classiques pour mettre à l’épreuve nos intuitions et entrer dans les grandes questions de la philosophie." property="og:description"/>
+<meta content="https://florianvallin.fr/blog/experiences-de-pensee-philosophie/" property="og:url"/>
+<meta content="2026-09-18" property="article:published_time"/>
+<meta content="2026-09-18" property="article:modified_time"/>
+<style>
+.thought-page{--thought-accent:#6c63ff;--thought-ink:#20202b;--thought-soft:#f4f2ff;--thought-rule:rgba(42,39,78,.14);}
+.thought-hero .blog-article-lead{max-width:880px;line-height:1.7}.thought-hero .blog-article-lead strong{color:#343141;font-weight:720}.thought-hero .blog-article-lead br{display:block;content:"";margin-top:.55rem}
+.thought-intro{font-size:1.05rem}.thought-toc{margin:2rem 0 3rem;padding:1.2rem 1.25rem;border:1px solid var(--thought-rule);border-radius:15px;background:#fff}.thought-toc>span{display:block;margin-bottom:.75rem;color:var(--thought-accent);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.thought-toc ol{margin:0;padding-left:1.25rem;columns:2;column-gap:2rem}.thought-toc li{break-inside:avoid;margin:.38rem 0}.thought-toc a{text-decoration:none}
+.thought-section{scroll-margin-top:102px;margin:0 0 54px;padding:0 0 54px;border-bottom:1px solid var(--thought-rule)}.thought-section:last-of-type{margin-bottom:62px}.thought-section>.blog-section-eyebrow{margin-bottom:10px}.blog-prose .thought-heading{display:block;margin:0 0 22px!important;color:var(--thought-ink);font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(2rem,4.1vw,2.85rem)!important;font-weight:500!important;line-height:1.04!important;letter-spacing:-.035em!important;text-wrap:balance}.thought-heading .thought-themes{display:block;margin-top:9px;color:#786f8a;font-family:Inter,Arial,sans-serif;font-size:.74rem;font-weight:750;letter-spacing:.035em;line-height:1.35}
+.thought-scenario{margin:1.3rem 0 1.55rem;padding:1.2rem 1.3rem;border-left:3px solid var(--thought-accent);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(108,99,255,.07),rgba(108,99,255,.025))}.thought-scenario>strong:first-child{display:block;margin-bottom:.48rem;color:#655cae;font-family:Inter,Arial,sans-serif;font-size:.72rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.thought-question{margin:1.6rem 0 1.25rem;padding:1.08rem 1.18rem;border:1px solid rgba(108,99,255,.13);border-radius:12px;background:var(--thought-soft)}.thought-question span,.thought-source>span,.thought-site-link>span,.thought-cultural>span,.thought-concept-label{display:block;margin-bottom:.35rem;color:#6e65ad;font-family:Inter,Arial,sans-serif;font-size:.69rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.thought-question p{margin:.2rem 0!important}
+.thought-source{position:relative;margin:1.05rem 0 0;padding:1.05rem 1.15rem 1.08rem 1.25rem;border:1px solid rgba(42,39,78,.13);border-left:3px solid #8c85a5;border-radius:10px;background:#fff}.thought-source p{margin:.2rem 0!important;color:#45424d!important;font-size:.94rem!important;line-height:1.65!important}.thought-source::before{content:"SOURCE";position:absolute;right:10px;top:9px;color:rgba(66,61,82,.18);font:800 8px/1 Inter,Arial,sans-serif;letter-spacing:.1em}
+.thought-cultural{margin:.7rem 0 0;padding:.95rem 1.05rem;border:1px solid rgba(173,122,60,.16);border-radius:10px;background:#fffcf7}.thought-cultural>span{color:#9a6d39}.thought-cultural>strong{display:block;color:#433b33;font-family:Georgia,"Times New Roman",serif;font-size:1.03rem;font-weight:600}.thought-cultural p{margin:.38rem 0 0!important;color:#62584e!important;font-size:.87rem!important;line-height:1.58!important}
+.thought-site-link{margin:.72rem 0 0;padding:.92rem 1rem;border:1px solid rgba(108,99,255,.15);border-radius:10px;background:#faf9ff}.thought-site-button{display:inline-flex!important;align-items:center;gap:.42rem;min-height:38px;padding:8px 11px;border-radius:8px;background:var(--thought-accent);color:#fff!important;font-family:Inter,Arial,sans-serif;font-size:.78rem;font-weight:750;text-decoration:none!important}.thought-site-button:hover{background:#574fd0}.thought-site-button i{font-style:normal}
+.thought-distinction{margin:1.15rem 0 1.45rem;padding:1.1rem 1.2rem;border:1px solid var(--thought-rule);border-radius:12px;background:#fff}.thought-distinction>strong{display:block;margin-bottom:.62rem}.thought-distinction ul{margin:.35rem 0 0;padding-left:1.2rem}.thought-distinction li{margin:.42rem 0}
+.thought-concept-pair{margin:1.15rem 0 1.55rem;padding-top:.25rem}.thought-concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.thought-concept-grid article{padding:1rem;border:1px solid var(--thought-rule);border-radius:10px;background:#fff}.thought-concept-grid strong{display:block;color:#393643;font-family:Georgia,"Times New Roman",serif;font-size:1rem;font-weight:600}.thought-concept-grid p{margin:.38rem 0 0!important;color:#6a6572!important;font-size:.83rem!important;line-height:1.52!important}
+.thought-reference-list{padding-left:1.15rem}.thought-reference-list li{margin:.78rem 0;line-height:1.58}.thought-end{margin-top:62px!important;padding:30px!important;border:1px solid rgba(108,99,255,.16)!important;border-radius:14px!important;background:linear-gradient(145deg,#f4f2ff,#fff 72%)!important;color:#272533!important}.thought-end>span{color:#6c63ff!important}.thought-end h2{color:#272533!important}.thought-end p{color:#686272!important}.thought-end .blog-end-actions a{border-color:rgba(108,99,255,.22)!important;color:#5148cf!important;background:#fff!important}.thought-end .blog-end-actions a:first-child{border-color:#6c63ff!important;background:#6c63ff!important;color:#fff!important}
+.thought-aside{max-height:calc(100vh - 140px);overflow:auto;padding-bottom:10px}.thought-aside ol{margin-bottom:13px}.thought-aside li{margin-bottom:9px}.thought-aside a{line-height:1.32}.thought-aside a.is-active{color:var(--blog-warm);font-weight:750}.thought-aside-sources{display:block;margin-top:14px;padding-top:13px;border-top:1px solid var(--blog-rule);color:#6c63ff!important;font-size:10px!important;font-weight:750;text-decoration:none!important}
+@media(min-width:981px){.thought-toc{display:none}}
+@media(max-width:980px){.thought-toc{display:block}.thought-section{scroll-margin-top:92px}.thought-concept-grid{grid-template-columns:1fr}.blog-prose .thought-heading{font-size:clamp(1.9rem,7vw,2.5rem)!important}}
+@media(max-width:600px){.thought-toc ol{columns:1}.thought-scenario{padding:1rem}.thought-end{padding:22px!important}.thought-site-button{width:100%;justify-content:space-between}}
+
+.thought-hero .blog-article-title .thought-title-accent{color:var(--thought-accent);font-weight:400}
+.thought-concept-list{margin:1.15rem 0 1.55rem}.thought-concept-list>.thought-concept-label{display:block;margin:0 0 .48rem;color:#6e65ad;font-family:Inter,Arial,sans-serif;font-size:.7rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.thought-concept-list ul{margin:.25rem 0 0!important;padding:0 0 0 1.15rem!important;list-style:disc!important}.thought-concept-list li{margin:.4rem 0!important;padding:0!important;color:#4f4b57;font-size:.94rem;line-height:1.58}.thought-concept-list li::marker{color:var(--thought-accent)}.thought-concept-list li strong{color:#302d37;font-weight:700}.thought-concept-note{margin:.65rem 0 0!important;color:#777180!important;font-family:Inter,Arial,sans-serif!important;font-size:.77rem!important;line-height:1.55!important}.thought-intro-distinction{margin:1.45rem 0 1.65rem;padding:0}
+.thought-reference-table{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin:1.3rem 0 .15rem;border-top:1px solid var(--thought-rule);border-bottom:1px solid var(--thought-rule)}.thought-reference-cell{min-width:0;padding:1.05rem 1.1rem}.thought-reference-cell+ .thought-reference-cell{border-left:1px solid var(--thought-rule)}.thought-reference-cell>span{display:block;margin-bottom:.42rem;color:#6e65ad;font-family:Inter,Arial,sans-serif;font-size:.68rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.thought-reference-source{color:#4b4752;font-size:.91rem;line-height:1.63}.thought-reference-source>strong:first-of-type{color:#302d37}.thought-reference-cultural>span{color:#916638}.thought-reference-cultural>strong{display:block;color:#3e3831;font-family:Georgia,"Times New Roman",serif;font-size:1rem;font-weight:600;line-height:1.3}.thought-reference-cultural p{margin:.35rem 0 0!important;color:#62594f!important;font-size:.85rem!important;line-height:1.56!important}.thought-reference-table--single .thought-reference-cell{grid-column:1 / -1;padding-left:0;padding-right:0}.thought-reference-table--single .thought-reference-cell+ .thought-reference-cell{border-left:0}
+@media(max-width:650px){.thought-reference-table{grid-template-columns:1fr}.thought-reference-cell{padding:1rem 0}.thought-reference-cell+ .thought-reference-cell{border-left:0;border-top:1px solid var(--thought-rule)}.thought-reference-table--single .thought-reference-cell{grid-column:1}}
+</style>
+</head>
+<body class="blog-page thought-page" id="top">
+<header class="navbar" id="site-header">
+<div class="nav-container">
+<a aria-label="Accueil — Florian Vallin" class="nav-brand" href="/">Florian <strong>Vallin</strong></a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Ouvrir le menu" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Navigation principale" class="nav-links" id="primary-navigation">
+<a class="nav-texts-link" href="/textes/">Textes</a>
+<a aria-current="page" class="nav-blog-link" href="/blog/">Blog</a>
+<a href="/#philosophie">Prestations</a>
+<a href="/#quisuisje">Qui suis-je ?</a>
+<a href="/#faq">FAQ</a>
+<a href="/#contact">Contactez-moi</a>
+</nav>
+</div>
+</header>
+<main class="blog-article-main">
+<header class="blog-article-header thought-hero">
+<div class="blog-article-header-inner">
+<nav aria-label="Fil d’Ariane" class="blog-breadcrumb"><a href="/">Accueil</a><span>·</span><a href="/blog/">Blog</a><span>·</span><span>Expériences de pensée</span></nav>
+<p class="blog-article-kicker">Philosophie · Découverte · Terminale</p>
+<h1 class="blog-article-title">10 <span class="thought-title-accent">expériences de pensée et dilemmes</span> pour <em>entrer en philosophie</em></h1>
+<p class="blog-article-lead">Et si vous deveniez <strong>invisible</strong> ? Si toute votre vie était une <strong>simulation</strong> ? Si une machine pouvait vous rendre <strong>parfaitement heureux</strong> ?</p>
+<p class="blog-article-meta"><strong>Florian Vallin</strong><i aria-hidden="true"></i><time datetime="2026-09-18">18 septembre 2026</time><i aria-hidden="true"></i><span>Lecture · 16 min</span></p>
+</div>
+</header>
+<div class="blog-article-layout">
+<article class="blog-prose">
+<p class="thought-intro">La philosophie ne commence pas forcément par une théorie difficile. Elle peut commencer par une situation très simple : on modifie un élément de notre vie ordinaire, puis on regarde ce que deviennent nos certitudes.</p>
+<p>Une <strong>expérience de pensée</strong> consiste précisément à imaginer une situation afin de mettre une idée à l’épreuve. Certaines situations ci-dessous sont plutôt des dilemmes ou des modèles : leur point commun est de nous obliger à préciser ce que nous pensons — et pourquoi.</p><div class="thought-concept-list thought-intro-distinction"><strong class="thought-concept-label">Deux mots à distinguer</strong><ul><li><strong>Expérience de pensée</strong> — situation imaginaire construite pour tester une idée, une intuition ou un concept. Elle n’est pas forcément morale.</li><li><strong>Dilemme moral</strong> — situation où plusieurs choix ont un coût moral et où la question devient : que faut-il faire ?</li></ul><p class="thought-concept-note">Un dilemme moral peut être formulé comme une expérience de pensée, mais les deux notions ne se confondent pas.</p></div>
+<div class="blog-callout">
+<span>L’idée directrice</span>
+<p>Ne cherchez pas d’abord « la bonne réponse ». Choisissez une réponse, puis demandez-vous : <strong>qu’est-ce qui la justifie ?</strong> Et résiste-t-elle si l’on modifie légèrement la situation ?</p>
+</div>
+<nav aria-label="Sommaire" class="thought-toc">
+<span>Aller à une expérience</span>
+<ol>
+<li><a href="#gyges">L’anneau de Gygès</a></li>
+<li><a href="#thesee">Le bateau de Thésée</a></li>
+<li><a href="#cerveau-cuve">Le cerveau dans une cuve</a></li>
+<li><a href="#machine-experiences">La machine à expériences</a></li>
+<li><a href="#tramway">Le problème du tramway</a></li>
+<li><a href="#laplace">Le démon de Laplace</a></li>
+<li><a href="#rawls">Le voile d’ignorance</a></li>
+<li><a href="#prisonnier">Le dilemme du prisonnier</a></li>
+<li><a href="#mary">Mary et la connaissance</a></li>
+<li><a href="#chambre-chinoise">La chambre chinoise</a></li>
+</ol>
+</nav>
+<section aria-labelledby="gyges-title" class="thought-section" id="gyges">
+<span class="blog-section-eyebrow blog-section-title">01 · La morale sans témoin</span>
+<h2 class="thought-heading" id="gyges-title">L’anneau de Gygès <span class="thought-themes">(Justice · Devoir)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Vous possédez un anneau qui vous rend invisible. Personne ne peut savoir où vous êtes ni ce que vous faites. Vous pourriez mentir, voler ou profiter d’une situation sans jamais être découvert. <strong>Que feriez-vous ?</strong></div>
+<p>Dans <em>La République</em>, Glaucon raconte l’histoire de Gygès pour mettre à l’épreuve une idée : sommes-nous justes parce que nous voulons réellement l’être, ou surtout parce que nous craignons les sanctions et le regard des autres ?</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Il est relativement facile de respecter une règle lorsqu’on risque d’être découvert. Le problème devient plus net lorsque toute sanction disparaît. L’expérience oblige ainsi à distinguer <strong>paraître juste</strong> et <strong>être juste</strong>.</p><div class="thought-concept-list"><strong class="thought-concept-label">À distinguer</strong><ul><li><strong>Paraître juste</strong> — Respecter la règle parce que l’on est vu, jugé ou susceptible d’être puni.</li><li><strong>Être juste</strong> — Respecter ce que l’on tient pour juste même lorsque personne ne peut nous sanctionner.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>On rencontre de petits « anneaux de Gygès » lorsqu’on peut tricher sans risque, profiter d’une erreur en notre faveur ou mentir en pensant que personne ne le saura. Une question simple peut alors révéler nos motivations : <strong>est-ce que je ferais encore cela si personne ne pouvait jamais le savoir ?</strong></p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Qu’est-ce qui resterait de votre morale si disparaissaient la réputation, le regard des autres et la peur de la sanction ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Platon, <em>La République</em>, livre II, 359c–360d.</strong> Glaucon y raconte l’histoire de l’anneau de Gygès et imagine ce que feraient un homme juste et un homme injuste s’ils pouvaient agir impunément.</article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>Le Seigneur des anneaux</strong><p>L’Anneau unique rend son porteur invisible et met en scène la tentation liée à un pouvoir exercé hors du regard ordinaire. Le rapprochement est éclairant, sans faire de Tolkien une reprise directe de l’argument de Platon.</p></article></div>
+<div class="thought-site-link"><span>À lire sur le site</span><a class="thought-site-button" href="/textes/platon-glaucon-devoir-contrainte/">Lire la fiche · Gygès : devoir ou contrainte ? <i aria-hidden="true">→</i></a></div>
+</section>
+<section aria-labelledby="thesee-title" class="thought-section" id="thesee">
+<span class="blog-section-eyebrow blog-section-title">02 · Rester le même</span>
+<h2 class="thought-heading" id="thesee-title">Le bateau de Thésée <span class="thought-themes">(Conscience · Temps)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Un vieux bateau est conservé pendant des siècles. Une planche abîmée est remplacée, puis une autre, jusqu’à ce qu’aucune pièce d’origine ne subsiste. <strong>Est-ce toujours le même bateau ?</strong></div>
+<p>Plutarque rapporte que les Athéniens conservaient le navire de Thésée en remplaçant progressivement ses pièces. Le cas devient un problème classique de l’identité à travers le changement.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Notre corps, nos pensées, nos goûts et nos souvenirs changent. Pourtant, nous continuons à dire : « c’est moi ». Qu’est-ce qui assure cette continuité : le corps, la mémoire, la conscience, l’histoire personnelle ?</p>
+<h3>Dans la vie</h3>
+<p>Nous disons parfois « je ne suis plus la même personne » ou, au contraire, « malgré tout, je suis toujours moi ». Ces phrases supposent déjà une certaine idée de ce qui fait notre identité dans le temps.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Qu’est-ce qui pourrait changer chez vous sans que vous cessiez d’être vous ?</strong></p></div>
+<div class="thought-reference-table thought-reference-table--single"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Plutarque, <em>Vie de Thésée</em>, 23, 1.</strong> Le passage rapporte la conservation du navire et le remplacement progressif de ses pièces.</article></div>
+</section>
+<section aria-labelledby="cerveau-cuve-title" class="thought-section" id="cerveau-cuve">
+<span class="blog-section-eyebrow blog-section-title">03 · Douter du monde</span>
+<h2 class="thought-heading" id="cerveau-cuve-title">Le cerveau dans une cuve <span class="thought-themes">(Vérité · Raison)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Votre cerveau est maintenu en vie dans une cuve. Un ordinateur lui envoie exactement les signaux qu’il recevrait normalement. Vous croyez marcher, parler et toucher des objets, mais tout est artificiellement produit. <strong>Comment pourriez-vous le savoir ?</strong></div>
+<p>Hilary Putnam reprend cette hypothèse sceptique au début de <em>Reason, Truth and History</em>. Son objectif n’est pas simplement de dire que « tout pourrait être faux » : il s’en sert pour examiner les conditions mêmes de la pensée et de la référence.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Le cas force à distinguer une impression de certitude et une justification. « Je le vois » ne suffit pas toujours à établir « c’est vrai ».</p><div class="thought-concept-list"><strong class="thought-concept-label">À distinguer</strong><ul><li><strong>Certitude</strong> — Le fait de ne pas douter subjectivement de ce que l’on croit.</li><li><strong>Vérité</strong> — Le fait que ce que l’on affirme corresponde effectivement à ce qui est.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>Sans vivre dans une simulation, nous rencontrons déjà ce problème avec les souvenirs trompeurs, les images manipulées ou les informations fausses. La question devient pratique : <strong>quelles raisons ai-je de croire ce que je crois ?</strong></p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Quelle est la chose dont vous êtes le plus certain — et qu’est-ce qui justifie cette certitude ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Hilary Putnam, <em>Reason, Truth and History</em>, chap. 1, « Brains in a Vat », Cambridge University Press, 1981, p. 1–21.</strong></article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>Matrix — Lana et Lilly Wachowski, 1999</strong><p>La vie de Neo est produite par un système qui lui fait prendre une simulation cohérente pour le monde réel : une porte d’entrée très directe vers le problème sceptique.</p></article></div>
+</section>
+<section aria-labelledby="machine-experiences-title" class="thought-section" id="machine-experiences">
+<span class="blog-section-eyebrow blog-section-title">04 · Être heureux ou vivre réellement</span>
+<h2 class="thought-heading" id="machine-experiences-title">La machine à expériences de Nozick <span class="thought-themes">(Bonheur · Vérité)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Une machine peut vous faire vivre toutes les expériences que vous désirez : être aimé, réussir, voyager, créer, être parfaitement heureux. Une fois branché, vous ne sauriez plus que tout est artificiel. <strong>Accepteriez-vous d’y passer votre vie ?</strong></div>
+<p>Robert Nozick imagine cette machine pour tester l’idée selon laquelle une bonne vie se réduirait à la somme de nos expériences agréables.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Si le plaisir était tout ce qui compte, entrer dans la machine semblerait évident. Pourtant, beaucoup hésitent : nous voulons peut-être non seulement <em>ressentir</em> l’amour ou la réussite, mais réellement aimer, agir et accomplir.</p><div class="thought-concept-list"><strong class="thought-concept-label">À distinguer</strong><ul><li><strong>Ressentir</strong> — Éprouver réellement le plaisir, la réussite ou l’amour comme expérience vécue.</li><li><strong>Accomplir</strong> — Faire réellement quelque chose, entrer en relation avec le monde et produire une histoire qui ne soit pas seulement simulée.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>Réseaux sociaux, jeux, séries, mondes virtuels ou rêveries peuvent produire des expériences gratifiantes. La bonne question n’est pas de les condamner, mais de se demander : <strong>est-ce que cette expérience enrichit ma vie ou commence à la remplacer ?</strong></p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Préféreriez-vous vivre une vie heureuse, ou avoir parfaitement l’impression d’avoir vécu une vie heureuse ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Robert Nozick, <em>Anarchy, State, and Utopia</em>, 1974, p. 42–45, « The Experience Machine ».</strong></article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>Black Mirror — « San Junipero », 2016</strong><p>L’épisode permet de demander si une expérience entièrement virtuelle peut compter comme une vie authentique — et ce que l’on perd ou gagne lorsque le support de l’expérience change.</p></article></div>
+</section>
+<section aria-labelledby="tramway-title" class="thought-section" id="tramway">
+<span class="blog-section-eyebrow blog-section-title">05 · Choisir entre deux maux</span>
+<h2 class="thought-heading" id="tramway-title">Le problème du tramway <span class="thought-themes">(Devoir · Justice)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Un tramway hors de contrôle fonce vers cinq personnes. Vous pouvez actionner un levier pour le détourner sur une autre voie, mais une personne s’y trouve. <strong>Actionnez-vous le levier ?</strong></div>
+
+<p>Philippa Foot introduit le cas du tramway pour réfléchir notamment à la différence entre ce que nous faisons et ce que nous laissons arriver. Judith Jarvis Thomson développera ensuite plusieurs variantes devenues célèbres.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>« Sauver cinq personnes plutôt qu’une » semble d’abord évident. Mais la question change lorsque sauver les cinq exige une intervention directe de notre part. Les conséquences suffisent-elles pour juger une action ? L’intention compte-t-elle ?</p>
+<h3>Dans la vie</h3>
+<p>Les vrais choix moraux ne prennent presque jamais la forme d’un tramway. Mais leur structure revient dès qu’aucune solution n’est sans coût : faut-il accepter un mal limité pour en éviter un plus grand ?</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Y a-t-il une différence morale entre provoquer un mal et laisser ce même mal arriver ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Philippa Foot, « The Problem of Abortion and the Doctrine of the Double Effect », <em>Oxford Review</em>, no 5, 1967, p. 5–15.</strong><br/>Pour les variantes : <strong>Judith Jarvis Thomson, « Killing, Letting Die, and the Trolley Problem », <em>The Monist</em>, 59(2), 1976.</strong></article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>The Good Place — « The Trolley Problem », 2017</strong><p>L’épisode met littéralement en scène le problème du tramway et joue sur l’écart entre une réponse abstraite et le fait d’avoir à décider concrètement.</p></article></div>
+</section>
+<section aria-labelledby="laplace-title" class="thought-section" id="laplace">
+<span class="blog-section-eyebrow blog-section-title">06 · Tout est-il déterminé ?</span>
+<h2 class="thought-heading" id="laplace-title">L’intelligence de Laplace, dite « démon de Laplace » <span class="thought-themes">(Liberté · Science)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Une intelligence connaît, à un instant donné, toutes les forces de la nature, la position de tous les éléments de l’univers et toutes les lois qui les gouvernent. Elle peut effectuer tous les calculs nécessaires. <strong>Pourrait-elle connaître tout le futur ?</strong></div>
+<p>Laplace imagine une telle « intelligence » pour exprimer de manière radicale un univers intégralement déterminé par des lois. Le nom « démon de Laplace » est postérieur : Laplace lui-même ne parle pas de démon.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Si nos décisions ont elles aussi des causes — cerveau, caractère, éducation, histoire — avons-nous réellement pu agir autrement ? Le déterminisme semble alors entrer en tension avec une certaine idée de la liberté.</p><div class="thought-concept-list"><strong class="thought-concept-label">À ne pas confondre</strong><ul><li><strong>Déterminisme</strong> — Les événements ont des causes qui permettent, en principe, de les expliquer.</li><li><strong>Fatalisme</strong> — Ce qui doit arriver arriverait quoi que nous fassions. Ce n’est pas ce que soutient le déterminisme.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>Lorsque nous expliquons un comportement par ses causes, nous hésitons parfois : <strong>comprendre pourquoi quelqu’un a agi ainsi diminue-t-il sa responsabilité ?</strong> Le même problème se pose pour nos propres habitudes.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Pour être libre, faut-il pouvoir agir autrement, ou suffit-il d’agir conformément à ce que nous voulons ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Pierre-Simon Laplace, <em>Essai philosophique sur les probabilités</em>, 1814, introduction / « Principes généraux du calcul des probabilités ».</strong></article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>Devs — Alex Garland, 2020</strong><p>La série explore de manière frontale l’idée d’un univers intégralement déterminé et la possibilité de calculer le passé comme le futur.</p></article></div>
+</section>
+<section aria-labelledby="rawls-title" class="thought-section" id="rawls">
+<span class="blog-section-eyebrow blog-section-title">07 · Choisir des règles sans connaître sa place</span>
+<h2 class="thought-heading" id="rawls-title">La position originelle et le voile d’ignorance <span class="thought-themes">(Justice · État)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Vous devez choisir les principes fondamentaux d’une société, mais vous ignorez la place que vous y occuperez : richesse, talents, position sociale, conception du bien. <strong>Quelles règles accepteriez-vous ?</strong></div>
+<p>John Rawls appelle cette situation la <strong>position originelle</strong>. Le <strong>voile d’ignorance</strong> empêche les participants de choisir les principes de justice en fonction de leur intérêt particulier.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Nous jugeons habituellement la société depuis une position que nous connaissons déjà. Rawls nous demande temporairement de neutraliser cette information afin de réfléchir plus impartialement.</p>
+<h3>Dans la vie</h3>
+<p>Le test fonctionne à petite échelle : avant de défendre une règle, demandez-vous si vous la trouveriez toujours juste <strong>sans savoir à l’avance de quel côté de la règle vous vous trouverez</strong>.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Quelle société construiriez-vous si vous ignoriez complètement quelle place vous y occuperez ?</strong></p></div>
+<div class="thought-reference-table thought-reference-table--single"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>John Rawls, <em>A Theory of Justice</em> (<em>Théorie de la justice</em>), 1971.</strong> La position originelle et le voile d’ignorance structurent sa construction des principes de justice.</article></div>
+<div class="thought-site-link"><span>À lire sur le site</span><a class="thought-site-button" href="/textes/rawls-justice-equite-inegalites/">Lire la fiche · Rawls et la justice comme équité <i aria-hidden="true">→</i></a></div>
+</section>
+<section aria-labelledby="prisonnier-title" class="thought-section" id="prisonnier">
+<span class="blog-section-eyebrow blog-section-title">08 · Quand l’intérêt individuel produit un mauvais résultat</span>
+<h2 class="thought-heading" id="prisonnier-title">Le dilemme du prisonnier <span class="thought-themes">(Raison · État)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Deux personnes doivent choisir séparément entre coopérer et trahir l’autre. Pour chacune, trahir semble être le choix le plus avantageux. Pourtant, si toutes les deux raisonnent ainsi, elles obtiennent un résultat moins bon que si elles avaient coopéré.</div>
+<p>Le dilemme du prisonnier n’est pas, à l’origine, une expérience de pensée philosophique classique : c’est un <strong>modèle de théorie des jeux</strong>. Merrill Flood et Melvin Dresher en étudient la structure à la RAND Corporation ; Albert W. Tucker popularise ensuite sa présentation sous la forme de deux prisonniers.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Le modèle fait apparaître un paradoxe pratique : <strong>ce qui semble rationnel pour chacun séparément peut produire un résultat mauvais pour tous</strong>.</p>
+<h3>Dans la vie</h3>
+<p>Pollution, partage des tâches, usage d’un bien commun, respect de règles collectives : chacun peut être tenté de laisser les autres supporter le coût de la coopération. Cela aide à comprendre pourquoi nous créons des engagements et des institutions.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Dans quelles situations votre intérêt immédiat entre-t-il en conflit avec une coopération qui serait meilleure pour tous ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>R. Duncan Luce et Howard Raiffa, <em>Games and Decisions</em>, 1957.</strong> Pour l’histoire du modèle : travaux de Merrill Flood et Melvin Dresher à la RAND au début des années 1950 ; formulation narrative associée à Albert W. Tucker.</article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>The Dark Knight — Christopher Nolan, 2008</strong><p>La scène des deux ferries repose sur une structure proche : chacun doit décider en anticipant la décision de l’autre. Ce n’est pas le modèle exact du dilemme du prisonnier, mais c’est un bon écho culturel à la confiance et à la coopération.</p></article></div>
+</section>
+<section aria-labelledby="mary-title" class="thought-section" id="mary">
+<span class="blog-section-eyebrow blog-section-title">09 · Savoir et avoir vécu</span>
+<h2 class="thought-heading" id="mary-title">Mary et l’argument de la connaissance <span class="thought-themes">(Conscience · Science)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Mary connaît tout ce que la science physique peut expliquer sur la vision des couleurs, mais elle a toujours vécu dans un environnement noir et blanc. Un jour, elle voit du rouge pour la première fois. <strong>Apprend-elle quelque chose de nouveau ?</strong></div>
+<p>Frank Jackson construit ce cas pour défendre ce qu’on appelle l’<strong>argument de la connaissance</strong> : connaître tous les faits physiques suffit-il à connaître entièrement une expérience consciente ?</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Mary semble déjà tout savoir scientifiquement sur le rouge, mais elle découvre peut-être encore <em>ce que cela fait</em> de voir du rouge. L’expérience interroge ainsi le rapport entre description objective et vécu subjectif.</p><div class="thought-concept-list"><strong class="thought-concept-label">Deux formes de connaissance</strong><ul><li><strong>Savoir que…</strong> — Connaître des faits et des explications à propos d’une expérience.</li><li><strong>Savoir ce que cela fait</strong> — Connaître une expérience depuis le point de vue de celui qui la vit.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>On peut étudier la douleur, l’amour, le deuil ou la musique sans les vivre de la même manière que celui qui en fait l’expérience. Cela invite à distinguer <strong>comprendre une description</strong> et <strong>connaître par expérience</strong>.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Existe-t-il des choses que l’on ne peut pleinement connaître qu’en les vivant ?</strong></p></div>
+<div class="thought-reference-table thought-reference-table--single"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>Frank Jackson, « Epiphenomenal Qualia », <em>The Philosophical Quarterly</em>, vol. 32, no 127, 1982, p. 127–136.</strong><br/>Jackson reprend explicitement le cas de Mary dans <strong>« What Mary Didn’t Know », <em>The Journal of Philosophy</em>, vol. 83, 1986, p. 291–295.</strong></article></div>
+</section>
+<section aria-labelledby="chambre-chinoise-title" class="thought-section" id="chambre-chinoise">
+<span class="blog-section-eyebrow blog-section-title">10 · Répondre juste sans comprendre</span>
+<h2 class="thought-heading" id="chambre-chinoise-title">La chambre chinoise de Searle <span class="thought-themes">(Conscience · Langage)</span></h2>
+<div class="thought-scenario"><strong>Imaginez.</strong> Vous êtes enfermé dans une pièce sans connaître le chinois. Un manuel vous indique comment manipuler des symboles chinois selon des règles précises. Vos réponses sont si bonnes qu’une personne à l’extérieur croit discuter avec quelqu’un qui comprend la langue. <strong>Comprenez-vous pourtant le chinois ?</strong></div>
+<p>John Searle utilise la chambre chinoise contre l’idée qu’exécuter correctement un programme informatique suffirait, à lui seul, à produire une véritable compréhension.</p>
+<h3>Pourquoi c’est intéressant</h3>
+<p>Le cas distingue la manipulation correcte de symboles et leur signification : on peut produire une bonne réponse sans que cela suffise nécessairement à établir une compréhension.</p><div class="thought-concept-list"><strong class="thought-concept-label">À distinguer</strong><ul><li><strong>Syntaxe</strong> — Manipuler des signes selon des règles.</li><li><strong>Sémantique</strong> — Comprendre ce que les signes veulent dire.</li></ul></div>
+<h3>Dans la vie</h3>
+<p>La question concerne aujourd’hui les machines, mais aussi nos propres apprentissages : réciter une formule, un cours ou un argument n’est pas encore comprendre ce que l’on dit.</p>
+<div class="thought-question"><span>Question à emporter</span><p><strong>Comment pourriez-vous savoir qu’un humain ou une machine comprend réellement ce qu’il dit ?</strong></p></div>
+<div class="thought-reference-table"><article class="thought-reference-cell thought-reference-source"><span>Lire et approfondir</span><strong>John R. Searle, « Minds, Brains, and Programs », <em>Behavioral and Brain Sciences</em>, vol. 3, no 3, 1980, p. 417–457</strong> (article principal p. 417–424, suivi des commentaires et de la réponse).</article><article class="thought-reference-cell thought-reference-cultural"><span>Écho culturel</span><strong>Ex Machina — Alex Garland, 2014</strong><p>Le film pose une question voisine : un comportement linguistique convaincant suffit-il à établir qu’une machine comprend, pense ou est consciente ?</p></article></div>
+</section>
+<section aria-labelledby="references-title" id="sources">
+<span class="blog-section-eyebrow blog-section-title">Pour retrouver les sources</span>
+<h2 id="references-title">Les 10 expériences, dilemmes et problèmes</h2>
+<ul class="thought-reference-list">
+<li><strong>L’anneau de Gygès</strong> — Platon, <em>La République</em>, II, 359c–360d.</li>
+<li><strong>Le bateau de Thésée</strong> — Plutarque, <em>Vie de Thésée</em>, 23, 1.</li>
+<li><strong>Le cerveau dans une cuve</strong> — Hilary Putnam, <em>Reason, Truth and History</em>, chap. 1, « Brains in a Vat », 1981.</li>
+<li><strong>La machine à expériences</strong> — Robert Nozick, <em>Anarchy, State, and Utopia</em>, « The Experience Machine », 1974, p. 42–45.</li>
+<li><strong>Le problème du tramway</strong> — Philippa Foot, « The Problem of Abortion and the Doctrine of the Double Effect », <em>Oxford Review</em>, no 5, 1967 ; prolongé notamment par Judith Jarvis Thomson.</li>
+<li><strong>L’intelligence de Laplace / « démon de Laplace »</strong> — Pierre-Simon Laplace, <em>Essai philosophique sur les probabilités</em>, 1814.</li>
+<li><strong>La position originelle et le voile d’ignorance</strong> — John Rawls, <em>A Theory of Justice</em>, 1971.</li>
+<li><strong>Le dilemme du prisonnier</strong> — Flood et Dresher ; présentation narrative associée à Albert W. Tucker ; voir Luce et Raiffa, <em>Games and Decisions</em>, 1957.</li>
+<li><strong>Mary / l’argument de la connaissance</strong> — Frank Jackson, « Epiphenomenal Qualia », 1982 ; « What Mary Didn’t Know », 1986.</li>
+<li><strong>La chambre chinoise</strong> — John R. Searle, « Minds, Brains, and Programs », <em>Behavioral and Brain Sciences</em>, 1980.</li>
+</ul>
+</section>
+<div aria-labelledby="thought-cta-title" class="blog-end-cta thought-end"><span>Pour continuer</span><h2 id="thought-cta-title">Passer de l’expérience au texte</h2><p>Explorez les textes de la bibliothèque pour retrouver les auteurs et les problèmes dans leurs formulations originales, ou contactez-moi pour les travailler ensemble et apprendre à les mobiliser en philosophie.</p><div class="blog-end-actions"><a href="/textes/">Explorer les textes</a><a href="/#contact">Approfondir avec moi</a></div></div>
+</article>
+<aside aria-label="Dans ce billet" class="blog-article-aside thought-aside"><span>Les 10 expériences</span><ol><li><a href="#gyges">Gygès</a></li><li><a href="#thesee">Bateau de Thésée</a></li><li><a href="#cerveau-cuve">Cerveau dans une cuve</a></li><li><a href="#machine-experiences">Machine à expériences</a></li><li><a href="#tramway">Problème du tramway</a></li><li><a href="#laplace">Démon de Laplace</a></li><li><a href="#rawls">Voile d’ignorance</a></li><li><a href="#prisonnier">Dilemme du prisonnier</a></li><li><a href="#mary">Mary</a></li><li><a href="#chambre-chinoise">Chambre chinoise</a></li></ol><a class="thought-aside-sources" href="#sources">Sources &amp; références ↓</a></aside></div>
+</main>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-column footer-prestations"><p class="footer-title"><a href="/#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/#philosophie">Cours de Philosophie</a></li><li><a href="/#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p></div>
+<div class="footer-column"><p class="footer-title"><a href="/#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/#quisuisje">Qui suis-je ?</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/#contact">Contactez-moi</a></li></ul></div>
+<div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p><p class="footer-title footer-blog-link"><a href="/blog/">Blog</a></p></div>
+<div class="footer-column footer-right"><a class="footer-copyright" href="#top">© 2026 Florian Vallin</a></div>
+</div>
+<div class="footer-bottom"><hr class="footer-divider"/><p class="footer-legal">Tous droits réservés.</p></div>
+</footer>
+<button aria-label="Retour en haut" class="back-to-top" id="backToTop"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></button>
+<script defer="" src="/js/script.js?v=20260919-publish2"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"10 expériences de pensée et dilemmes pour entrer en philosophie","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@type":"Person","name":"Florian Vallin"},"mainEntityOfPage":"https://florianvallin.fr/blog/experiences-de-pensee-philosophie/","description":"Dix expériences de pensée, dilemmes et situations classiques pour découvrir simplement de grandes questions de philosophie."}
+</script>
+<script>
+(() => {
+  const links = [...document.querySelectorAll('.thought-aside a[href^="#"]')].filter(a => a.getAttribute('href') !== '#sources');
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
+    if (!visible) return;
+    links.forEach(a => a.classList.remove('is-active'));
+    map.get(visible.target.id)?.classList.add('is-active');
+  }, {rootMargin:'-18% 0px -68% 0px', threshold:0});
+  document.querySelectorAll('.thought-section').forEach(s => observer.observe(s));
+})();
+</script></body>
+</html>

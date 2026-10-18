@@ -1,6 +1,6 @@
 # [[fmt:red-text]]Introduction à la Psychologie différentielle et à la Psychométrie[[/fmt]]
 
-Comment mesurer certaines facettes de l’Homme ? Comment mesurer l’intelligence et la personnalité ?
+Comment mesurer certaines facettes de l’Homme ? Comment mesurer l’intelligence et la personnalité ?
 
 ## [[fmt:underline,red-text]]Pourquoi une psychologie différentielle[[/fmt]]
 
@@ -10,7 +10,7 @@ On va avoir une question sur les [[fmt:yellow]]différences entre les individus[
 
 Platon va parler des appétits, la passion, la raison.
 
-Hippocrate va voir plusieurs types : les types colériques, mélancolique, flegmatique, sanguin.
+Hippocrate va voir plusieurs types : les types colériques, mélancolique, flegmatique, sanguin.
 
 On trouvera toujours la question sur la [[fmt:yellow]]nature des autres[[/fmt]] et les [[fmt:green]]différences[[/fmt]] qu’ils sont par rapport à nous-mêmes (on retrouve ces débats dans les discours innée & acquis – Descartes & Hobbes).
 
@@ -24,15 +24,15 @@ La [[fmt:green]]psychologie différentielle[[/fmt]] est une sous-discipline de l
 
 Nous ne percevons pas tous la couleur et le son de la même façon.
 
-- [[fmt:yellow]]Variabilité [[/fmt]][[fmt:yellow]]inter[[/fmt]][[fmt:yellow]]-[[/fmt]][[fmt:yellow]]groupe[[/fmt]][[fmt:yellow]] [[/fmt]]: entre des groupes différents → sexe, milieu social, âge
+- [[fmt:yellow]]Variabilité [[/fmt]][[fmt:yellow]]inter[[/fmt]][[fmt:yellow]]-[[/fmt]][[fmt:yellow]]groupe[[/fmt]][[fmt:yellow]] [[/fmt]]: entre des groupes différents → sexe, milieu social, âge
 
-- [[fmt:yellow]]Variabilité [[/fmt]][[fmt:yellow]]inter[[/fmt]][[fmt:yellow]]-[[/fmt]][[fmt:yellow]]individuelle[[/fmt]][[fmt:yellow]] [[/fmt]]: entre les individus au sein d’un groupe
+- [[fmt:yellow]]Variabilité [[/fmt]][[fmt:yellow]]inter[[/fmt]][[fmt:yellow]]-[[/fmt]][[fmt:yellow]]individuelle[[/fmt]][[fmt:yellow]] [[/fmt]]: entre les individus au sein d’un groupe
 
-- [[fmt:yellow]]Variabilité intra-individuelle [[/fmt]]: pour un même individu dans des contextes ou a des moments différents.
+- [[fmt:yellow]]Variabilité intra-individuelle [[/fmt]]: pour un même individu dans des contextes ou a des moments différents.
 
-« la psychologie différentielle se propose de décrire et d’expliquer au moyen de méthode objectives les différences psychologiques des individus » - Huteau
+« la psychologie différentielle se propose de décrire et d’expliquer au moyen de méthode objectives les différences psychologiques des individus » - Huteau
 
-« C’est une branche de la psychologie qui étudie en quoi et pourquoi les individus différent d’un point de vue psychologique. Elle comprend la mise au point d’outils et l’utilisation de méthodes particulières »
+« C’est une branche de la psychologie qui étudie en quoi et pourquoi les individus différent d’un point de vue psychologique. Elle comprend la mise au point d’outils et l’utilisation de méthodes particulières »
 
 La psychologie différentielle s’appuie sur un constat des différences dans des domaines psychologique. Elle se construit en réaction à une psychologie générale pour laquelle les différences sont de l’erreur de mesure. Elle se développe en réponse à une demande sociale. Elle s’intègre ainsi aujourd’hui avec la psychologie générale afin de développer des modèles de la variabilité.
 
@@ -42,17 +42,17 @@ C’est un [[fmt:yellow]]test étalonné[[/fmt]] au sein d’une population pour
 
 Aux US on centre cette discipline sur les enfants.
 
-S’il y a des différences, le [[fmt:yellow]]système tolère[[/fmt]] un certain niveau de liberté. La psychologie différentielle s’est développée à une [[fmt:green]]demande sociale[[/fmt]]. On va avoir des questions comme : « est-ce que cette personne est apte à faire ce type de travail ? » (Orientation scolaire, professionnelle, dépistage, caractérisation des troubles mentaux …)
+S’il y a des différences, le [[fmt:yellow]]système tolère[[/fmt]] un certain niveau de liberté. La psychologie différentielle s’est développée à une [[fmt:green]]demande sociale[[/fmt]]. On va avoir des questions comme : « est-ce que cette personne est apte à faire ce type de travail ? » (Orientation scolaire, professionnelle, dépistage, caractérisation des troubles mentaux …)
 
 On va étudier les [[fmt:yellow]]poin[[/fmt]][[fmt:yellow]]ts communs [[/fmt]]et les [[fmt:yellow]]différences [[/fmt]]pour mieux comprendre les comportements et les processus mentaux.
 
-Aujourd’hui, on va formuler des lois pour qu’il y est des modèles avec une part aléatoire ; Les individus peuvent avoir des comportements déviant, des comportements par comme les autres.
+Aujourd’hui, on va formuler des lois pour qu’il y est des modèles avec une part aléatoire ; Les individus peuvent avoir des comportements déviant, des comportements par comme les autres.
 
-« Les tests sont des instruments d’observation : ils [[fmt:bold]]définissent avec précision les condition[[/fmt]]s dans lesquelles sont observés successivement ou simultanément des individus différents ; ils fournissent les moyens d’exprimer ces observations sous une forme telle que soient possibles [[fmt:bold]]la comparaison[[/fmt]] de ces individus entre eux et la comparaison de chacun avec les « normes » (descriptives) de la population à laquelle ils appartiennent «  - Maurice Reuchlin (1969)
+« Les tests sont des instruments d’observation : ils [[fmt:bold]]définissent avec précision les condition[[/fmt]]s dans lesquelles sont observés successivement ou simultanément des individus différents ; ils fournissent les moyens d’exprimer ces observations sous une forme telle que soient possibles [[fmt:bold]]la comparaison[[/fmt]] de ces individus entre eux et la comparaison de chacun avec les « normes » (descriptives) de la population à laquelle ils appartiennent «  - Maurice Reuchlin (1969)
 
 ## [[fmt:underline,red-text]]Les outils de la psychologie différentielle[[/fmt]]
 
-Il y a [[fmt:green]]différents type de tests[[/fmt]] :
+Il y a [[fmt:green]]différents type de tests[[/fmt]] :
 
 - Tests [[fmt:yellow]]d’efficience [[/fmt]](intelligence, aptitudes). Une bonne réponse (NEMI, WISC, MMSE)
 
@@ -62,9 +62,9 @@ Un test peut ne comporter qu’une seule épreuve (e.g., figure de Rey), plusieu
 
 Les qualités métriques des tests.
 
-Un test est un dispositif d’observation des individus qui présente plusieurs propriétés :
+Un test est un dispositif d’observation des individus qui présente plusieurs propriétés :
 
-- Il est standardisé pour permettre une évaluation « objective »
+- Il est standardisé pour permettre une évaluation « objective »
 
 - Sa consistance interne est évalué (homogénéité)
 
@@ -74,7 +74,7 @@ Un test est un dispositif d’observation des individus qui présente plusieurs 
 
 - la signification théorique ou pratique de la mesure est précisée (validité)
 
-En résumé qu’est-ce que la [[fmt:green]]psychométrie[[/fmt]] ?
+En résumé qu’est-ce que la [[fmt:green]]psychométrie[[/fmt]] ?
 
 Afin d’évaluer le plus objectivement possible les conduites, les états ou les processus mentaux des individus, la psychologie différentielle s’appuie sur des méthodes objectives.
 
@@ -94,7 +94,7 @@ Qu’est-ce-que l’intelligence? (en 1921)
 
 - Un individu est intelligent en proportion de sa capacité à élaborer une pensée abstraite (L.M. Terman)
 
-Qu’elles sont les points communs des définitions de 1921 ? C’est la capacité à s’adapter à son environnement, à résoudre des problèmes nouveaux, à apprendre, à abstraire.
+Qu’elles sont les points communs des définitions de 1921 ? C’est la capacité à s’adapter à son environnement, à résoudre des problèmes nouveaux, à apprendre, à abstraire.
 
 « L’adaptation dans un but précis, la sélection de, et la modification des environnements relatifs à sa vie et ses habiletés » - Sternberg
 
@@ -102,23 +102,23 @@ Il y a aussi une certaine permanence dans les points de désaccord, notamment su
 
 Par exemple, il existe comme test le WISC-IV (6 ans – 16 ans & 11 mois).
 
-On a des échelles composite :
+On a des échelles composite :
 
 - 15 sous-tests, dans chacun, des items de difficulté croissante.
 
 - 10 sous-test (obligatoires) pour le calcul du QIT (total), 5 optionnels
 
-Le sous-test 1 : « cubes » du WISC-IV (IRP) : reproduire en temps limité, à l’aide cubes bicolores, des configurations de 4 ou 9 cubes.
+Le sous-test 1 : « cubes » du WISC-IV (IRP) : reproduire en temps limité, à l’aide cubes bicolores, des configurations de 4 ou 9 cubes.
 
-Le sous test 4 : « identification de concepts » du WISC-IV (IRP) : des images sur plusieurs rangées : en choisir une dans chaque rangée relevant d’un concept commun au troi rangées
+Le sous test 4 : « identification de concepts » du WISC-IV (IRP) : des images sur plusieurs rangées : en choisir une dans chaque rangée relevant d’un concept commun au troi rangées
 
-Le sous test 8 : « Matrices » du WISC-IV (IRP) :
+Le sous test 8 : « Matrices » du WISC-IV (IRP) :
 
-Le sous test 11 : « complètement d’images » du WISC IV
+Le sous test 11 : « complètement d’images » du WISC IV
 
-Le sous test 5 : « code » du WISC-IV (IVT 6-7 ans) :
+Le sous test 5 : « code » du WISC-IV (IVT 6-7 ans) :
 
-Mais il y a des [[fmt:green]]limites[[/fmt]] à l’interprétation :
+Mais il y a des [[fmt:green]]limites[[/fmt]] à l’interprétation :
 
 - Ne pas calculer de QIT si les scores d’indice sont très hétérogènes
 
@@ -128,7 +128,7 @@ Mais il y a des [[fmt:green]]limites[[/fmt]] à l’interprétation :
 
 - D’une manière générale, le résultat d’un test s’interprète toujours en fonction des observations recueillies lors d’entretiens et au cours de la passation.
 
-Exemples [[fmt:yellow]]d’observations cliniques[[/fmt]] à recueillir durant un examen intellectuel :
+Exemples [[fmt:yellow]]d’observations cliniques[[/fmt]] à recueillir durant un examen intellectuel :
 
 - Intérêt et motivation pour la tâche : face aux obstacles, aux échecs, aux items du même type
 
@@ -138,7 +138,7 @@ Exemples [[fmt:yellow]]d’observations cliniques[[/fmt]] à recueillir durant u
 
 - Réactions motrices : manifestations faciales, tics, instabilité, réponses rapides ou lentes
 
-La personnalité :
+La personnalité :
 
 Caractéristique relativement stable et générale de la manière d’être d’une personne dans sa façon de réagir aux situations dans laquelle elle se trouve (M. Reuchlin).
 
@@ -158,7 +158,7 @@ Dès 1930, McDougall et Thurstone proposent un modèle en 5 facteurs. Ce modèle
 
 Le [[fmt:green]]quotient émotionnel[[/fmt]] est ce qui peut être vu comme une mesure composite prenant en compte, selon les cas, une sous-partie des facettes du bug-five. (Ouverture aux sentiments, sensibilités, grégarisme…)
 
-Il y a cependant quelques [[fmt:yellow]]critiques[[/fmt]] de [[fmt:green]]l’approche différentielle de la personnalité[[/fmt]] :
+Il y a cependant quelques [[fmt:yellow]]critiques[[/fmt]] de [[fmt:green]]l’approche différentielle de la personnalité[[/fmt]] :
 
 - Contrairement aux mesures d’efficience intellectuelle moins d’objectivité (justesse) de la réponse
 

@@ -2,19 +2,19 @@
 
 ## Atome et règle de l’octet
 
-## Formation des molécules : les liaisons chimiques
+## Formation des molécules : les liaisons chimiques
 
 ## Molécule organiques
 
 ## [[fmt:underline,red-text]]Atome et règle de l’octet[[/fmt]]
 
-[[fmt:green]]L’atome[[/fmt]] vient du grec « atomos », l’on ne peut le diviser.
+[[fmt:green]]L’atome[[/fmt]] vient du grec « atomos », l’on ne peut le diviser.
 
-C’est la plus petite unité de matière pouvant se combiner chimiquement avec une autre (taille : ordre du dixième de nanomètre : 10-10m).
+C’est la plus petite unité de matière pouvant se combiner chimiquement avec une autre (taille : ordre du dixième de nanomètre : 10-10m).
 
 [[fmt:yellow]]Tout est constitué d’atomes[[/fmt]]. Les atomes vont s’assembler et vont former des molécules.
 
-L’atome possède un [[fmt:green]]noyau atomique[[/fmt]] constitué de [[fmt:yellow]]charge électrique[[/fmt]] qu’on appelle les [[fmt:green]]nucléons[[/fmt]] :
+L’atome possède un [[fmt:green]]noyau atomique[[/fmt]] constitué de [[fmt:yellow]]charge électrique[[/fmt]] qu’on appelle les [[fmt:green]]nucléons[[/fmt]] :
 
 - [[fmt:yellow]]Protons [[/fmt]](positifs)
 
@@ -32,39 +32,39 @@ Les [[fmt:green]]électrons[[/fmt]] vont être organisés en [[fmt:yellow]]couch
 
 La [[fmt:green]]première couche[[/fmt]] va posséder maximum 2 électrons. Au-dessus de 2 électrons, on va passer à une deuxième couche (composer au max de 8), puis d’une troisième. On peut avoir une quatrième couche mais la troisième couche peut se remplir en même temps que la quatrième.
 
-Des plus proches au plus éloignées du noyau : couche K L M N O P Q
+Des plus proches au plus éloignées du noyau : couche K L M N O P Q
 
-Nombre maximal d’électrons par couche : K2 L8 M18 O32 P18 Q8
+Nombre maximal d’électrons par couche : K2 L8 M18 O32 P18 Q8
 
 Les électrons occupent couche K jusqu’à saturation puis L, ect…
 
 Un [[fmt:yellow]]atome[[/fmt]] a pour objectif d’être [[fmt:green]]neutre[[/fmt]] et [[fmt:green]]stable d’un point de vue énergétique[[/fmt]] (s’il n’est pas stable, il va avoir un comportement instable). Pour que le [[fmt:yellow]]système soit stable[[/fmt]], sa couche [[fmt:yellow]]la plus externe[[/fmt]] doit être [[fmt:yellow]]saturée[[/fmt]]. Pour qu’une couche soit saturée, elle doit se stabiliser avec d’autres éléments en récupérant des électrons. Cette règle s’appelle la [[fmt:green]]règle de l’octet[[/fmt]] (=comportement de l’atome pour devenir stable en saturant sa couche la plus externe).
 
-On peut avoir [[fmt:yellow]]plusieurs phénomènes[[/fmt]] :
+On peut avoir [[fmt:yellow]]plusieurs phénomènes[[/fmt]] :
 
-- [[fmt:green]]Phénomènes de ionisation[[/fmt]] : l’atome va perdre ou gagner 1 ou plusieurs électrons. Ce sont des ions. L’atome va devenir stable mais il va aussi devenir chargé en ion positif (cation) ou ion négatif (anion).
+- [[fmt:green]]Phénomènes de ionisation[[/fmt]] : l’atome va perdre ou gagner 1 ou plusieurs électrons. Ce sont des ions. L’atome va devenir stable mais il va aussi devenir chargé en ion positif (cation) ou ion négatif (anion).
 
-- [[fmt:green]]Génération de molécules[[/fmt]] par liaisons chimiques entres les atomes
+- [[fmt:green]]Génération de molécules[[/fmt]] par liaisons chimiques entres les atomes
 
-## [[fmt:underline,red-text]]Formation des molécules : les liaisons chimiques[[/fmt]]
+## [[fmt:underline,red-text]]Formation des molécules : les liaisons chimiques[[/fmt]]
 
-On va avoir des [[fmt:green]]corps simples [[/fmt]]et des [[fmt:green]]corps composés [[/fmt]]:
+On va avoir des [[fmt:green]]corps simples [[/fmt]]et des [[fmt:green]]corps composés [[/fmt]]:
 
-- [[fmt:yellow]]Corps simples [[/fmt]]: molécules de plusieurs atomes identiques
+- [[fmt:yellow]]Corps simples [[/fmt]]: molécules de plusieurs atomes identiques
 
-- [[fmt:yellow]]Composées [[/fmt]]: molécules constituées d’atomes différents
+- [[fmt:yellow]]Composées [[/fmt]]: molécules constituées d’atomes différents
 
 Les corps simples et composées sont stables & neutres.
 
 On peut avoir une liaison covalente ou une liaison ionique.
 
-- La [[fmt:green]]liaison ionique [[/fmt]]est due à l’attraction électrostatique entre deux ions de charge opposée : deux ions de charge contraire s’attirent.
+- La [[fmt:green]]liaison ionique [[/fmt]]est due à l’attraction électrostatique entre deux ions de charge opposée : deux ions de charge contraire s’attirent.
 
 - La [[fmt:green]]liaison covalente [[/fmt]](plus courante) est des mises en commun des électrons de valence de deux atomes pour arriver à un état stable, la molécule. $
 
 ## [[fmt:underline,red-text]]Molécule organiques[[/fmt]]
 
-La majorité des molécules sont formé grâce des [[fmt:green]]liaisons covalentes[[/fmt]]. On a 4 différentes classes de molécules organiques :
+La majorité des molécules sont formé grâce des [[fmt:green]]liaisons covalentes[[/fmt]]. On a 4 différentes classes de molécules organiques :
 
 - Les [[fmt:green]]Glucides[[/fmt]] ou sucres
 
@@ -78,7 +78,7 @@ On va retrouver des [[fmt:yellow]]petites molécules [[/fmt]](constituer de quel
 
 ### [[fmt:underline,green-text]]Les glucides ou sucres[[/fmt]]
 
-Le rôle des glucides sont que c’est la [[fmt:yellow]]source & la réserve énergétique[[/fmt]] en plus d’être un [[fmt:yellow]]élément constituant l’ADN & l’ARN[[/fmt]]. Elles sont constituées des atomes C, H & O en nombre variables. On va avoir [[fmt:green]]3 familles[[/fmt]] dans cette catégorie :
+Le rôle des glucides sont que c’est la [[fmt:yellow]]source & la réserve énergétique[[/fmt]] en plus d’être un [[fmt:yellow]]élément constituant l’ADN & l’ARN[[/fmt]]. Elles sont constituées des atomes C, H & O en nombre variables. On va avoir [[fmt:green]]3 familles[[/fmt]] dans cette catégorie :
 
 ### [[fmt:underline,green-text]]Les lipides ou acides gras[[/fmt]]
 
@@ -96,17 +96,17 @@ Les [[fmt:green]]protéines transmembranaires[[/fmt]] vont traverser complèteme
 
 On a aussi des [[fmt:green]]protéines semi intégré[[/fmt]] qui sont soient en contact avec le milieu intra cellulaires ou extra cellulaires. Les protéines périphériques ….
 
-Ce sont les protides qui vont avoir beaucoup de fonctions dans l’organisme :
+Ce sont les protides qui vont avoir beaucoup de fonctions dans l’organisme :
 
 Ce sont des constituants important des membranes & des effecteurs biologiques de la cellule.
 
-On va avoir différentes sous catégories :
+On va avoir différentes sous catégories :
 
-- Les [[fmt:green]]acides aminés[[/fmt]] : on aura au moins 1 acide aminé dans un milieu. Il existe 20 acides aminés dans la nature. Grâce à ces acides aminées, on va pouvoir crée les peptides & les protéines.
+- Les [[fmt:green]]acides aminés[[/fmt]] : on aura au moins 1 acide aminé dans un milieu. Il existe 20 acides aminés dans la nature. Grâce à ces acides aminées, on va pouvoir crée les peptides & les protéines.
 
-Une protéine va donc avoir une propriété qui dépend : 1) du nombre total d’AA 2) du nombre de chacun des AA 3) de la séquence (ordre) des AA. Chaque protéine est spécifique.
+Une protéine va donc avoir une propriété qui dépend : 1) du nombre total d’AA 2) du nombre de chacun des AA 3) de la séquence (ordre) des AA. Chaque protéine est spécifique.
 
-On a également [[fmt:green]]plusieurs niveaux de structures[[/fmt]] des protéines :
+On a également [[fmt:green]]plusieurs niveaux de structures[[/fmt]] des protéines :
 
 Les [[fmt:green]]protides[[/fmt]] viennent de notre [[fmt:yellow]]alimentation[[/fmt]]. Il va casser (le système digestif) notre alimentation et produire des acides aminés. Les protéines contenues dans nos aliments sont digérées et on va avoir un apport d’acide aminé (cela à ces limites).
 
@@ -120,13 +120,13 @@ Le [[fmt:green]]rôle des nucléotides[[/fmt]] est d’être le [[fmt:yellow]]su
 
 Le [[fmt:green]]niveau de base[[/fmt]] est le nucléotide. Celui-ci est constitué d’une [[fmt:yellow]]base [[/fmt]](nom d’une molécule) ou l’on va associer un [[fmt:yellow]]sucre [[/fmt]]et un atome de [[fmt:yellow]]phosphate[[/fmt]]. On va avoir plusieurs bases. Une base est une seule base (on ne peut en avoir les 4 en même temps).
 
-Les molécules d’ATP est un nucléotide de base auquel on a associé deux phosphate de avec une liaison covalente :
+Les molécules d’ATP est un nucléotide de base auquel on a associé deux phosphate de avec une liaison covalente :
 
 L’enzyme va couper une liaison et libérer de l’énergie.
 
 ### [[fmt:underline]]L’acide nucléique[[/fmt]]
 
-On va avoir une plus grosse famille : [[fmt:green]]l’acide nucléique[[/fmt]]. Elles vont être le support du code pour permettre de coder les fonctions nécessaire au vivant. C’est ce qui caractérise l’organisme vivant (la présence de ce génome).
+On va avoir une plus grosse famille : [[fmt:green]]l’acide nucléique[[/fmt]]. Elles vont être le support du code pour permettre de coder les fonctions nécessaire au vivant. C’est ce qui caractérise l’organisme vivant (la présence de ce génome).
 
 [[fmt:green]]L’ADN[[/fmt]] est juste une [[fmt:yellow]]liaison & succession de nucléotide[[/fmt]] associé entre eux par des liaisons covalente. Il va avoir [[fmt:yellow]]deux bruns[[/fmt]] qui agissent entre eux (ligne bleu sur le schéma de l’ADN). Ce double brun va interagir avec l’autre brun. On aura toujours les associations lié à la structuration des bases chimiques (par exemple, C être avec G, T avec A…). L’ADN est très fragile, il faut le protéger (grâce à un noyau).
 
@@ -136,13 +136,13 @@ L’ARN est une copie d’une [[fmt:yellow]]portion d’ADN[[/fmt]] (copie d’u
 
 ARN = [[fmt:green]]Acide Ribonucléique Nucléique[[/fmt]] (= [[fmt:yellow]]POLYNUCLEOTIDES[[/fmt]])
 
-On va avoir 3 types d’ARN qui vont être synthétisé pour permettre la synthèse de l’ADN :
+On va avoir 3 types d’ARN qui vont être synthétisé pour permettre la synthèse de l’ADN :
 
-- [[fmt:green]]ARN MESSAGER [[/fmt]](ARNm) : c’est la [[fmt:yellow]]partie de l’information génétique[[/fmt]], transcrite. Elle le traduit en protéine au niveau ribosomes. Elles a besoin des deux autres ARN.
+- [[fmt:green]]ARN MESSAGER [[/fmt]](ARNm) : c’est la [[fmt:yellow]]partie de l’information génétique[[/fmt]], transcrite. Elle le traduit en protéine au niveau ribosomes. Elles a besoin des deux autres ARN.
 
-- [[fmt:green]]ARN RIBOSOMAL [[/fmt]](ARNr) : les ARN ribosomal avec les protéines spécifiques vont créer les ribosomes qui sont des [[fmt:yellow]]lieu[[/fmt]][[fmt:yellow]] de synthèse des protéines[[/fmt]].
+- [[fmt:green]]ARN RIBOSOMAL [[/fmt]](ARNr) : les ARN ribosomal avec les protéines spécifiques vont créer les ribosomes qui sont des [[fmt:yellow]]lieu[[/fmt]][[fmt:yellow]] de synthèse des protéines[[/fmt]].
 
-- [[fmt:green]]ARN DE TRANSFERT [[/fmt]](ARNt) : elles sont [[fmt:yellow]]fixe [[/fmt]]et [[fmt:yellow]]transporte [[/fmt]]vers les ribosomes les acides aminés (qui sont nécessaires à la synthèse des protéines).
+- [[fmt:green]]ARN DE TRANSFERT [[/fmt]](ARNt) : elles sont [[fmt:yellow]]fixe [[/fmt]]et [[fmt:yellow]]transporte [[/fmt]]vers les ribosomes les acides aminés (qui sont nécessaires à la synthèse des protéines).
 
 A la fin de tout cela qui agit, on va avoir le protide de créer.
 

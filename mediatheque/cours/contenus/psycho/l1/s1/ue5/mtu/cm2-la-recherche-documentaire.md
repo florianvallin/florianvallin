@@ -18,9 +18,9 @@ La [[fmt:yellow]]maitrise[[/fmt]] de la recherche documentaire améliore la réu
 
 ## [[fmt:underline,green-text]]Préparer la recherche documentaire[[/fmt]]
 
-Pour préparer la recherche documentaire, il faut développer d’abord trouver les mots clés. Ensuite il faut trouver des stratégies (comment je dois faire ?) puis identifier les documents (un livre n’est pas noté pareille qu’un article…).  On va ensuite voir comment référencer les documents pour les cités et les référencé en évitant le plagiat.
+Pour préparer la recherche documentaire, il faut développer d’abord trouver les mots clés. Ensuite il faut trouver des stratégies (comment je dois faire ?) puis identifier les documents (un livre n’est pas noté pareille qu’un article…).  On va ensuite voir comment référencer les documents pour les cités et les référencé en évitant le plagiat.
 
-La démarche se fait en [[fmt:yellow]]plusieurs étapes[[/fmt]] :
+La démarche se fait en [[fmt:yellow]]plusieurs étapes[[/fmt]] :
 
 - Comprendre et cerner le sujet, dégager les concepts
 
@@ -50,17 +50,17 @@ Il y a toujours deux informations dans un document. Il y a le [[fmt:green]]conte
 
 Ce sont des [[fmt:green]]livres[[/fmt]] qui sont écrit par un ou plusieurs auteurs ([[fmt:yellow]]collectif[[/fmt]]). Un auteur peut écrire un chapitre d’un livre. On peut le trouver dans les premières de couverture, la deuxième de couverture (avec informations sur la maison d’édition), la troisième de couverture (information sur l’imprimeur).
 
-Il y a [[fmt:yellow]]5 information[[/fmt]] qu’on est capable de trouver ; les auteurs, l’année d’édition du livre, le titre, la localisation de l’éditeur ou l’éditeur.
+Il y a [[fmt:yellow]]5 information[[/fmt]] qu’on est capable de trouver ; les auteurs, l’année d’édition du livre, le titre, la localisation de l’éditeur ou l’éditeur.
 
-- Auteurs : Il y a un ordre des auteurs. Il faut vraiment savoir si c’est un ouvrage collectif ou non. C’est l’éditeur qui supervise l’ouvrage collectif.
+- Auteurs : Il y a un ordre des auteurs. Il faut vraiment savoir si c’est un ouvrage collectif ou non. C’est l’éditeur qui supervise l’ouvrage collectif.
 
-- Année d’édition : le plus souvent dans la 2e de couverture.
+- Année d’édition : le plus souvent dans la 2e de couverture.
 
-- Editeur : A côté du copyright
+- Editeur : A côté du copyright
 
-- Maison d’édition : il faut trouver ou est le siège social
+- Maison d’édition : il faut trouver ou est le siège social
 
-- Chapitre d’ouvrage : il faut noter les titres de chapitre, l’auteur et les pages extrêmes.
+- Chapitre d’ouvrage : il faut noter les titres de chapitre, l’auteur et les pages extrêmes.
 
 ## [[fmt:underline,green-text]]Ouvrage particulier[[/fmt]]
 
@@ -70,7 +70,7 @@ Le [[fmt:green]]traité[[/fmt]] est beaucoup plus spécialiser que le manuel. C�
 
 Le dictionnaire donne la définition des notions et des concepts de la discipline. Il y a une développement théorique à chaque élément ainsi que quelques éléments bibliographique.
 
-Les revus scientifique ont comme objectif de diffuser les nouveautés scientifique et techniques. Il y aura des actualités scientifiques avec des thèmes spécialisé très pointus. Ils sont à jour des informations / des recherches. Les auteurs vont faire des révisions de tout ce qui existe. Le périodique contient de fascicules, des articles … Ils sont écrit par des auteurs différents.
+Les revus scientifique ont comme objectif de diffuser les nouveautés scientifique et techniques. Il y aura des actualités scientifiques avec des thèmes spécialisé très pointus. Ils sont à jour des informations / des recherches. Les auteurs vont faire des révisions de tout ce qui existe. Le périodique contient de fascicules, des articles … Ils sont écrit par des auteurs différents.
 
 Les périodiques scientifique diffuse l’actualisation mais les périodique non scientifique (type science et vie) ne sont pas recensée dans les bases de données scientifiques. Leurs objectifs est de distraire le lecteur et de vendre. Ce sont des périodiques de vulgarisation scientifique. Il y a une absence de validation par la communauté scientifique.
 
@@ -80,23 +80,23 @@ Il existe un [[fmt:yellow]]classement[[/fmt]] des références bibliographique (
 
 - [[fmt:underline,green-text]]Référence pour une monographie[[/fmt]]
 
-Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
+Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
 
-Si l’auteur a plusieurs prénoms, alors : Dupont, J.R
+Si l’auteur a plusieurs prénoms, alors : Dupont, J.R
 
 Si il y a plusieurs auteurs, on fiti par &. (Dupont, J.R & …)
 
 - [[fmt:underline,green-text]]Chapitre d’ouvrage[[/fmt]]
 
-Auteurs, X. (année). Titre du chapitre. In E. Editeur (Ed). Titre de l’ouvrage. (pp.x-y). Ville de l’éditeur : Editeur.
+Auteurs, X. (année). Titre du chapitre. In E. Editeur (Ed). Titre de l’ouvrage. (pp.x-y). Ville de l’éditeur : Editeur.
 
 - [[fmt:underline,green-text]]Manuel[[/fmt]]
 
-Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
+Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
 
 - [[fmt:underline,green-text]]Dictionnaire[[/fmt]]
 
-Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
+Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. Ville de l’éditeur : Editeur.
 
 Si l’entré n’est pas signé par un auteur, il faut mettre tous les auteurs.
 
@@ -108,11 +108,11 @@ Auteurs, X. (année). [[fmt:italic]]Titre de l’ouvrage[[/fmt]]. L’universit�
 
 ## [[fmt:underline,red-text]]Citation et référencement (selon APA style)[[/fmt]]
 
-Il y a deux types d’emprunt l’emprunt direct et l’emprunt indirect :
+Il y a deux types d’emprunt l’emprunt direct et l’emprunt indirect :
 
-- Emprunt direct : copier mot à mot une portion du texte (on l’utilise quand l’idée est très forte, on cite entre guillemet avec après la citation (Nom, année, page).
+- Emprunt direct : copier mot à mot une portion du texte (on l’utilise quand l’idée est très forte, on cite entre guillemet avec après la citation (Nom, année, page).
 
-- Emprunt indirect : exploiter les idées, paraphraser les choses.
+- Emprunt indirect : exploiter les idées, paraphraser les choses.
 
 ## [[fmt:underline,red-text]]Le plagiat[[/fmt]]
 

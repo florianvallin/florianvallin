@@ -30,7 +30,7 @@ Les deux principaux plans:
 
 - Condorcet (1792): projet d’une école laïque, gratuite (mais non obligatoire)
 
-1791: inscription de l’instruction publique dans la constitution: « Il sera créé et organisé une Instruction publique commune à tous les citoyens, gratuite à l’égard des parties d’enseignement indispensables pour tous les hommes et dont les établissements seront distribués graduellement, dans un rapport combiné avec la division du royaume. »
+1791: inscription de l’instruction publique dans la constitution: « Il sera créé et organisé une Instruction publique commune à tous les citoyens, gratuite à l’égard des parties d’enseignement indispensables pour tous les hommes et dont les établissements seront distribués graduellement, dans un rapport combiné avec la division du royaume. »
 
 07/1793: Robespierre défend à la Convention un plan d’éducation nationale élaboré par Félix Le Peletier de Saint-Fargeau : l’instruction ne saurait suffire à la "régénération" de l’espèce humaine ; l’État doit se charger d’inculquer une morale, en prenant en charge l’éducation en commun des enfants entre 5 et 12 ans. "A cinq ans, la patrie recevra donc l’enfant des mains de la nature ; à douze ans, elle le rendra à la société".
 
@@ -102,7 +102,7 @@ une division commode, pour une école où l'on ne peut placer qu'un seul maître
 
 répond aussi assez exactement à l'espace de temps qui s'écoule entre l'époque où les enfants des familles les plus pauvres commencent à être capables d'apprendre, et celle où ils peuvent être employés à un travail utile...
 
-« Chaque dimanche l'instituteur ouvrira une conférence publique à laquelle assisteront les citoyens de tous les âges : nous avons vu dans cette institution un moyen de donner aux jeunes gens celles des connaissances nécessaires qui n'ont pu cependant faire partie de leur première éducation. On y développera les principes et les règles de la morale avec plus d'étendue, ainsi que cette partie des lois nationales dont l'ignorance empêcherait un citoyen de connaître ses droits et de les exercer. »
+« Chaque dimanche l'instituteur ouvrira une conférence publique à laquelle assisteront les citoyens de tous les âges : nous avons vu dans cette institution un moyen de donner aux jeunes gens celles des connaissances nécessaires qui n'ont pu cependant faire partie de leur première éducation. On y développera les principes et les règles de la morale avec plus d'étendue, ainsi que cette partie des lois nationales dont l'ignorance empêcherait un citoyen de connaître ses droits et de les exercer. »
 
 ### [[fmt:underline,green-text]]LES ECOLES SECONDAIRES (CONDORCET)[[/fmt]]
 
@@ -126,13 +126,13 @@ Le nombre des instituts a été porté à cent dix, et il en sera établi dans c
 
 On y enseignera non seulement ce qu'il est utile de savoir comme homme, comme citoyen, à quelque profession qu'on se destine ; mais aussi tout ce qui peut l'être pour chaque grande division de ces professions, comme l'agriculture, les arts mécaniques, l'art militaire ; et même on y a joint les connaissances médicales, nécessaires aux simples praticiens, aux sages-femmes, aux artistes vétérinaires.
 
-### [[fmt:underline,green-text]]CONDORCET : MOINS DE LATIN ![[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : MOINS DE LATIN ![[/fmt]]
 
-« On pourra encore trouver la langue latine trop négligée. Mais sous quel point de vue une langue doit-elle être considérée dans une éducation générale ? Ne suffit-il pas de mettre les élèves en état de lire les livres vraiment utiles écrits dans cette langue, et de pouvoir, sans maîtres, faire de nouveaux progrès ? Peut-on regarder la connaissance approfondie d'un idiome étranger, celle des beautés de style qu'offrent les ouvrages des hommes de génie qui l'ont employé, comme une de ces connaissances générales que tout homme éclairé, tout citoyen qui se destine aux emplois de la société les plus importants, ne puisse ignorer. »
+« On pourra encore trouver la langue latine trop négligée. Mais sous quel point de vue une langue doit-elle être considérée dans une éducation générale ? Ne suffit-il pas de mettre les élèves en état de lire les livres vraiment utiles écrits dans cette langue, et de pouvoir, sans maîtres, faire de nouveaux progrès ? Peut-on regarder la connaissance approfondie d'un idiome étranger, celle des beautés de style qu'offrent les ouvrages des hommes de génie qui l'ont employé, comme une de ces connaissances générales que tout homme éclairé, tout citoyen qui se destine aux emplois de la société les plus importants, ne puisse ignorer. »
 
-« Par quel privilège singulier, lorsque le temps destiné pour l'instruction, lorsque l'objet même de l'enseignement force de se borner dans tous les genres à des connaissances élémentaires, et de laisser ensuite le goût des jeunes gens se porter librement vers celles qu'ils veulent cultiver, le latin seul serait-il l'objet d'une instruction plus étendue ? Le considère-t-on comme la langue générale des savants, quoiqu'il perde tous les jours cet avantage ? Mais une connaissance élémentaire du latin suffit pour lire leurs livres ; mais il ne se trouve aucun ouvrage de science, de philosophie, de politique vraiment important, qui n'ait été traduit ; mais toutes les vérités que renferment ces livres existent, et mieux développées, et réunies à des vérités nouvelles, dans des livres écrits en langue vulgaire »
+« Par quel privilège singulier, lorsque le temps destiné pour l'instruction, lorsque l'objet même de l'enseignement force de se borner dans tous les genres à des connaissances élémentaires, et de laisser ensuite le goût des jeunes gens se porter librement vers celles qu'ils veulent cultiver, le latin seul serait-il l'objet d'une instruction plus étendue ? Le considère-t-on comme la langue générale des savants, quoiqu'il perde tous les jours cet avantage ? Mais une connaissance élémentaire du latin suffit pour lire leurs livres ; mais il ne se trouve aucun ouvrage de science, de philosophie, de politique vraiment important, qui n'ait été traduit ; mais toutes les vérités que renferment ces livres existent, et mieux développées, et réunies à des vérités nouvelles, dans des livres écrits en langue vulgaire »
 
-### [[fmt:underline,green-text]]CONDORCET : PLUS DE SCIENCES ![[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : PLUS DE SCIENCES ![[/fmt]]
 
 Les sciences physiques et mathématiques y occupent une très grande place, tandis que les connaissances qui dominaient dans l'ancien enseignement y paraissent négligées.
 
@@ -140,7 +140,7 @@ Pour les hommes qui ne se dévouent point à de longues méditations, qui n'appr
 
 Ces sciences sont contre les préjugés, contre la petitesse d'esprit, un remède sinon plus sûr, du moins plus universel que la philosophie même. Elles sont utiles dans toutes les professions ; et il est aisé de voir combien elles le seraient davantage, si elles étaient plus uniformément répandues.
 
-### [[fmt:underline,green-text]]CONDORCET : UNE ORGANISATION PEDAGOGIQUE NOVATRICE[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : UNE ORGANISATION PEDAGOGIQUE NOVATRICE[[/fmt]]
 
 L'enseignement sera partagé par cours, les uns liés entre eux, les autres séparés, quoique faits par le même professeur. La distribution en sera telle, qu'un élève pourra suivre à la fois quatre cours, ou n'en suivre qu'un seul ; embrasser, dans l'espace de cinq ans environ, la totalité de l'instruction, s'il a une grande facilité ; se borner à une seule partie dans le même espace de temps, s'il a des dispositions moins heureuses. On pourra même, pour chaque science, s'arrêter à tel ou tel terme, y consacrer plus ou moins de temps ; en sorte que ces diverses combinaisons se prêtent à toute les variations de talents, à toutes les positions personnelles.
 
@@ -150,29 +150,29 @@ Elles auront pour objet principal les découvertes dans les sciences, les expér
 
 Auprès de chaque collège on trouvera une bibliothèque, un cabinet, un jardin de botanique, un jardin d'agriculture.
 
-### [[fmt:underline,green-text]]CONDORCET : LAICITE[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : LAICITE[[/fmt]]
 
 Les principes de la morale enseignés dans les écoles et dans les instituts, seront ceux qui, fondés sur nos sentiments naturels et sur la raison, appartiennent également à tous les hommes. La Constitution, en reconnaissant le droit qu'a chaque individu de choisir son culte, en établissant une entière égalité entre tous les habitants de la France, ne permet point d'admettre, dans l'instruction publique, un enseignement qui, en repoussant les enfants d'une partie des citoyens, détruirait l'égalité des avantages sociaux, et donnerait à des dogmes particuliers un avantage contraire à la liberté des opinions. Il était donc rigoureusement nécessaire de séparer de la morale les principes de toute religion particulière, et de n'admettre dans l'instruction publique l'enseignement d'aucun culte religieux.
 
-### [[fmt:underline,green-text]]CONDORCET : LES LYCEES[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : LES LYCEES[[/fmt]]
 
 Toutes les sciences y sont enseignées dans toute leur étendue. C'est là que se forment les savants, ceux qui font de la culture de leur esprit, du perfectionnement de leurs propres facultés une des occupations de leur vie, ceux qui se destinent à des professions où l'on ne peut obtenir de grands succès que par une étude approfondie d'une ou plusieurs sciences. C'est là aussi que doivent se former les professeurs.
 
 C'est au moyen de ces établissements que chaque génération peut transmettre à la génération suivante ce qu'elle a reçu de celle qui l'a précédée, et ce qu'elle a pu y ajouter.
 
-### [[fmt:underline,green-text]]CONDORCET : GRATUITE[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : GRATUITE[[/fmt]]
 
 Dans ces quatre degrés d'instruction, l'enseignement sera totalement gratuit. L'Acte constitutionnel le prononce pour le premier degré et le second, ce qui peut aussi être regardé comme général, ne pourrait cesser d'être gratuit sans établir une inégalité favorable à la classe la plus riche, qui paye les contributions à proportion de ses facultés, et ne paierait l'enseignement qu'à raison du nombre d'enfants qu'elle fournirait aux écoles secondaires.
 
 Quant aux autres degrés, il importe à la prospérité publique de donner aux enfants des classes les plus pauvres, qui sont les plus nombreuses, la possibilité de développer leurs talents : c'est un moyen non seulement d'assurer à la patrie plus de citoyens en état de servir, aux sciences plus d'hommes capables de contribuer à leurs progrès, mais encore de diminuer cette inégalité qui naît de la différence des fortunes... L'ordre de la nature n'établit dans la société d'autre inégalité que celle de l'instruction et de la richesse, et en étendant l'instruction, vous affaiblirez à la fois les effets de ces deux causes de distinction
 
-### [[fmt:underline,green-text]]CONDORCET : UNIVERSALITE[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : UNIVERSALITE[[/fmt]]
 
 Au-delà des écoles primaires, l'instruction cesse d'être rigoureusement universelle. Mais nous avons cru que nous remplirions le double objet, et d'assurer à la patrie tous les talents qui peuvent la servir, et de ne priver aucun individu. de l'avantage de développer ceux qu'il a reçus, si les enfants qui en avaient annoncé le plus dans un degré d'instruction, étaient appelés à en parcourir le degré supérieur, et entretenus aux dépens du trésor national, sous le nom d'élèves de la patrie.
 
 3850 enfants, ou environ, recevraient une somme suffisante pour leur entretien ; 1000 suivraient l'instruction des instituts, 600 celle des lycées ; environ 400 en sortiraient chaque année pour remplir dans la société des emplois utiles, ou pour se livrer aux sciences ; et jamais dans aucun pays la puissance publique n'aurait ouvert à la partie pauvre du peuple une source si abondante de prospérité et d'instruction ; jamais elle n'aurait employé de plus puissants moyens de maintenir l'égalité naturelle.
 
-### [[fmt:underline,green-text]]CONDORCET : LES LYCEES 2[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : LES LYCEES 2[[/fmt]]
 
 Nous proposons d'établir en France neuf lycées. Les lumières, en partant de plusieurs foyers à la fois, seront répandues avec plus d'égalité, et se distribueront dans une plus grande masse de citoyens.
 
@@ -180,7 +180,7 @@ un homme sur 1 600 pourra suivre un cours d'études dans les lycées ; et cette 
 
 Le lycée de Paris ne différera des autres que par un enseignement plus complet des langues anciennes et modernes, et peut-être par quelques institutions consacrées aux arts agréables.
 
-### [[fmt:underline,green-text]]CONDORCET : SOCIETE NATIONALE DES SCIENCES ET DES ARTS[[/fmt]]
+### [[fmt:underline,green-text]]CONDORCET : SOCIETE NATIONALE DES SCIENCES ET DES ARTS[[/fmt]]
 
 Enfin, le dernier degré d'instruction est une société nationale des sciences et des arts, instituée pour surveiller et diriger les établissements d'instruction, pour s'occuper du perfectionnement des sciences et des arts, pour recueillir, encourager, appliquer et répandre les découvertes utiles
 
@@ -280,9 +280,9 @@ Par là aucun talent véritable ne se trouvera perdu ou négligé, et la sociét
 
 Création des écoles centrales en 1795 (Lakanal et Daunou) pour prendre la palce des collèges d’Ancien Régime après 2 ans de disparition de l’enseignement secondaire.
 
-1 école centrale pour 300 000 habitants.
+1 école centrale pour 300 000 habitants.
 
-Bouleversent la structure pédagogique, les matières enseignées et l’organisation générale :
+Bouleversent la structure pédagogique, les matières enseignées et l’organisation générale :
 
 - Rupture avec les humanités classique & introduction des sciences, des langues vivantes
 
@@ -306,7 +306,7 @@ Très rapidement perçue comme la voie d’accès à l’élite militaire et adm
 
 ### [[fmt:underline,green-text]]LE CONSULAT (1800-1814)[[/fmt]]
 
-1801 : abolition la loi de 1795 séparant l’Église de l’État.
+1801 : abolition la loi de 1795 séparant l’Église de l’État.
 
 Projet Chaptal, ministre de l’intérieur, sur l’instruction publique: Des écoles municipales doivent être créées dans toutes les communes. Les instituteurs doivent être payés et logés par les municipalités. (Il n’est pas donné suite à ce plan.)
 
@@ -328,15 +328,15 @@ Création d’un enseignement secondaire d’état, avec une administration cent
 
 Faire concurrence à l’enseignement privé sous la tutelle de l’Église
 
-1801 : Suppression des écoles centrales
+1801 : Suppression des écoles centrales
 
-1802 : Création des lycées et des écoles communales secondaires
+1802 : Création des lycées et des écoles communales secondaires
 
-1806 : Création de l’université impériale
+1806 : Création de l’université impériale
 
 Peu d’intérêt pour l’enseignement primaire qui reste aux mains de l’Église
 
-### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : LES LYCEES[[/fmt]]
+### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : LES LYCEES[[/fmt]]
 
 - [[fmt:bold,underline]]Organisation administrative[[/fmt]]
 
@@ -364,7 +364,7 @@ Apprentissages des exercices militaires (+de 12 ans)
 
 Un aumônier, 1/4h prières / jour, offices religieux le dimanche
 
-### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : LES ECOLES COMMUNALES SECONDAIRES[[/fmt]]
+### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : LES ECOLES COMMUNALES SECONDAIRES[[/fmt]]
 
 Premiers principes de latin, de français, géographie, histoire et mathématiques
 
@@ -376,7 +376,7 @@ Des contenus définis par la loi
 
 Un plan d’études calqué sur celui des lycées lorsque cela est possible
 
-### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : L’UNIVERSITE IMPERIALE[[/fmt]]
+### [[fmt:underline,green-text]]LE CONSULAT & L’EMPIRE : L’UNIVERSITE IMPERIALE[[/fmt]]
 
 Fondement de l’éducation nationale actuelle
 

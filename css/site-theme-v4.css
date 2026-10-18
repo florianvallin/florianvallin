@@ -1,0 +1,295 @@
+/* Philosophal – Dark V4. Palette cohérente, portée uniquement par le thème sombre.
+   La feuille est chargée EN DERNIER par js/site-theme.js.
+   Elle ne recolore jamais une page d'impression ou une zone d'édition papier. */
+@media screen {
+html[data-site-theme="dark"] {
+  --primary:#b3a5ff; --primary-dark:#c6baff;
+  --text:#ede9f4; --text-dark:#f5f1fb; --text-medium:#ccc6d9; --text-light:#bcb5cf;
+  --border:rgba(210,202,235,.18); --accent-bg:#222033; --soft-bg:#191925;
+  --ph-bg:#171720; --ph-panel:#252431; --ph-ink:#f3eff9; --ph-muted:#c7c1d4;
+  --ph-line:#524c66; --ph-focus:#b7a5fa;
+  --night-bg:#171720; --night-hero:#1e1d2b; --night-card:#272633;
+  --night-card-hover:#302e3d; --night-line:#514b64; --night-title:#f5f2fb;
+  --night-text:#d9d3e6; --night-muted:#bbb4cd; --night-accent:#c3b3ff;
+  background:#171720!important; color-scheme:dark;
+}
+html[data-site-theme="dark"] body {
+  background-color:var(--night-bg)!important; color:var(--night-text);
+}
+html[data-site-theme="dark"] :is(.site-footer,.navbar) {background-color:#15151f!important;}
+html[data-site-theme="dark"] .navbar .nav-brand-wordmark,
+html[data-site-theme="dark"] .navbar .nav-links a:not(.nav-contact-link) {color:var(--night-title);}
+html[data-site-theme="dark"] .navbar .nav-links a[aria-current],
+html[data-site-theme="dark"] .navbar .nav-links a:hover {color:var(--night-accent);}
+html[data-site-theme="dark"] :is(.site-search-panel,.site-search-field,.site-search-result,.student-access-panel,.fv-dictionary-panel) {
+  background:var(--night-card)!important; color:var(--night-title)!important;
+  border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.site-search-field input,.site-search-panel input,.student-access-panel input,.fv-dictionary-panel input) {
+  background:#1c1c28!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(input,textarea,select)::placeholder {color:#c2bbd2!important;opacity:1;}
+html[data-site-theme="dark"] :is(.site-search-status,.site-search-result small,.site-search-result p,.student-access-panel label) {color:var(--night-muted)!important;}
+
+/* ACCUEIL : sections, cartes, tarifs, étapes et accordéons. */
+html[data-site-theme="dark"] :is(.hero,.reviews-block,.home-blog-preview,.bloc-5,.bloc-faq,.contact-section,#philosophie,#methodologie) {
+  background-color:var(--night-bg)!important;color:var(--night-text);
+}
+html[data-site-theme="dark"] :is(.hero,.contact-section,#methodologie) {
+  background-image:linear-gradient(145deg,#1c1c2a,#161720)!important;
+}
+html[data-site-theme="dark"] :is(.hero-description,.bloc3-intro-strong,.bloc-4-text,.methodologie-intro,.faq-answer p,.about-text p) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.pricing-card,.philo-card,.methodo-card,.philo-pack-card,.collective-pricing,.collective-option,.about-card,.faq-item,.faq-answer,.review-card,.home-blog-card,.contact-card,.contact-method) {
+  background:var(--night-card)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.pricing-card,.about-card,.home-blog-card,.contact-card) {box-shadow:0 18px 55px rgba(0,0,0,.16)!important;}
+html[data-site-theme="dark"] :is(.pricing-plan,.philo-card h3,.philo-card-title,.methodo-card-title,.pricing-card h3,.about-card h2,.faq-question,.review-name,.home-blog-card h3,.contact-card h3,.contact-method h3,.price-row,.price-integer,.bloc-3-title,.bloc-4-title,.bloc-5-title,.faq-title) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.pricing-card p,.pricing-right li,.pricing-note,.price-unit,.collective-option p,.collective-pricing-intro,.philo-pack-description,.philo-pack-list li,.philo-card-text,.methodo-card-text,.review-card p,.review-date,.home-blog-card p,.contact-method p,.contact-intro) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.price-currency,.title-accent,.faq-title span,.philo-pack-price-currency,.philo-pack-check,.philo-card-icon,.home-blog-card-open) {color:var(--night-accent)!important;}
+html[data-site-theme="dark"] :is(.faq-item.active .faq-question,.collective-option--best,.contact-card-header) {background:#323044!important;}
+html[data-site-theme="dark"] :is(.contact-field input,.contact-field textarea,.contact-field select,.contact-reveal-btn,.contact-direct-link) {
+  background:#1c1d29!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.stepper-step,.methodologie-steps-grid .stepper-step) {background:var(--night-card)!important;border-color:var(--night-line)!important;color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.stepper-time,.stepper-status) {color:var(--night-text)!important;}
+html[data-site-theme="dark"] .stepper-circle {background:#38304e!important;color:var(--night-accent)!important;border-color:#9584d6!important;}
+
+/* BLOG : page index, grilles de cartes et articles longs. */
+html[data-site-theme="dark"] body.blog-page,
+html[data-site-theme="dark"] :is(.blog-index,.blog-index-main,.blog-network,.blog-index-content,.blog-index-list,.blog-article,.blog-article-body,.blog-article-main) {
+  background:var(--night-bg)!important;color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.blog-index-hero,.blog-article-header) {
+  background:linear-gradient(145deg,#222030,#171720 76%)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.blog-index-hero h1,.blog-article-header h1,.blog-hero-title,.blog-article-title,.blog-card h2,.blog-prose h2,.blog-prose h3) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.blog-index-hero p,.blog-hero-description,.blog-hero-copy,.blog-article-lead,.blog-card-summary,.blog-card-date,.blog-card-audience,.blog-network p,.blog-card-description) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.blog-card,.blog-card--compact,.blog-network-links a,.blog-type-key,.blog-category-filters,.blog-filter-bar,.blog-filters,.blog-search-field) {
+  background:var(--night-card)!important;border-color:var(--night-line)!important;color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] .blog-card--featured {background:linear-gradient(145deg,#302b46,#242534 80%)!important;}
+html[data-site-theme="dark"] :is(.blog-card h2 strong,.blog-card-number,.blog-card-category,.blog-network-links a,.blog-card-read,.blog-type-chip) {
+  color:var(--night-accent)!important;
+}
+html[data-site-theme="dark"] :is(.blog-card h2,.blog-card h3,.blog-card-footer,.blog-network h2) {color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.blog-card-summary,.blog-card--compact .blog-card-summary,.blog-card-date,.blog-card-footer small) {color:var(--night-muted)!important;}
+html[data-site-theme="dark"] :is(.blog-card-category,.blog-card-date,.blog-card-featured-label) {background:#373047!important;border-color:var(--night-line)!important;}
+html[data-site-theme="dark"] :is(.blog-prose,.blog-prose p,.blog-prose li,.blog-prose em,.blog-prose blockquote) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.blog-prose strong,.blog-prose b,.blog-prose h2,.blog-prose h3) {color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.blog-prose a,.blog-prose a:visited) {color:var(--night-accent)!important;}
+html[data-site-theme="dark"] :is(.blog-repere,.blog-repere-theme,.blog-repere-search,.blog-method-card,.blog-training,.blog-training-card,.blog-definition,.blog-position,.blog-example,.blog-source-links a,.blog-callout,.blog-end-cta,.blog-repere-browser,.blog-repere-browser-header,.blog-confusion-grid article,.blog-training-answer) {
+  background:var(--night-card)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.blog-repere p,.blog-repere-theme p,.blog-method-card p,.blog-training p,.blog-callout p,.blog-example p,.blog-end-cta p,.blog-repere-example,.blog-training-example) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.blog-type-key button,.blog-repere-switcher button,.blog-training-switcher button,.blog-repere-search input,.blog-index-search input) {
+  background:#201f2d!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.blog-type-key button.is-active,.blog-repere-switcher button.is-active,.blog-training-switcher button.is-active) {background:#40375e!important;color:#fff!important;}
+
+/* BIBLIOTHÈQUE DES TEXTES : héros, filtres, regroupements et cartes. */
+html[data-site-theme="dark"] body.texts-page,
+html[data-site-theme="dark"] :is(.texts-catalog,.texts-page,.texts-results,.texts-main,.texts-list,.texts-body) {
+  background:var(--night-bg)!important;color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] .texts-hero {
+  background:linear-gradient(135deg,#242234,#1b1a29 75%)!important;
+  border-color:var(--night-line)!important;color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.texts-hero h1,.texts-hero-title,.texts-intro,.texts-hero-description,.texts-course-cta,.texts-stats,.texts-section-label) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.texts-tools,.texts-theme-multi-menu,.texts-filters,.texts-filter-panel,.texts-select,.texts-search,.texts-theme-multi-trigger,.texts-theme-multi-option,.texts-page-number,.texts-section-tab) {
+  background:var(--night-card)!important;color:var(--night-text)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.texts-tools label,.texts-tools small,.texts-tools p,.texts-count,.texts-search-icon,.texts-theme-multi-label,.texts-catalog-intro) {color:var(--night-muted)!important;}
+html[data-site-theme="dark"] :is(.texts-page-number.is-current,.texts-section-tab[aria-current],.texts-theme-multi-option.is-selected) {background:#453b68!important;color:#fff!important;}
+html[data-site-theme="dark"] :is(.text-linked-set,.text-card,.texts-empty,.texts-pagination) {
+  background:var(--night-card)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] .text-linked-set-heading {background:linear-gradient(90deg,#35304a,#272633)!important;border-color:var(--night-line)!important;}
+html[data-site-theme="dark"] .text-linked-set-cards {background:var(--night-line)!important;}
+html[data-site-theme="dark"] :is(.text-card:hover,.text-linked-set .text-card:hover) {background:var(--night-card-hover)!important;}
+html[data-site-theme="dark"] :is(.text-card h2,.text-card h2 strong,.text-linked-set-copy strong,.text-card-title,.text-card-familiar-idea) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.text-card-author,.text-card-excerpt,.text-card-question,.text-card-subtitle,.text-card-description,.text-linked-set-description,.text-card-section,.text-card-meta,.text-card p) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.text-tag,.text-tag--program,.text-card-tag) {
+  background:#39324e!important;color:var(--night-accent)!important;border-color:#564b71!important;
+}
+html[data-site-theme="dark"] :is(.text-card-section-symbol,.text-card-arrow,.text-detail-section) {color:var(--night-accent)!important;}
+
+/* FICHES : jamais de titre pâle sur une feuille blanche. */
+html[data-site-theme="dark"] :is(.text-detail,.text-detail--mythologie,.text-detail--theologie,.text-detail--autres) {
+  background:linear-gradient(125deg,#1b1b27,#13151e)!important;color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.text-detail-inner,.text-detail-main,.text-detail-panel) {
+  background:#242330!important;color:var(--night-text)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.text-detail h1,.text-detail-title,.text-reading h2,.text-reading h3,.text-detail h2,.text-detail h3,.text-detail-work) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.text-detail-author,.text-detail-author-meta,.text-detail-introduction,.text-detail-reference,.text-detail-breadcrumb,.text-detail p,.text-detail li,.text-reading,.text-reading p,.text-reading li,.text-reading-content,.text-reading-content p,.text-scripture-heading) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.text-detail-work-reference,.text-detail-tag,.text-detail-tags .text-tag,.text-detail-badge) {
+  background:#3a3251!important;color:var(--night-accent)!important;border-color:#5c507a!important;
+}
+html[data-site-theme="dark"] :is(.text-context,.text-reading-notes,.text-note-poles,.text-note-comparison-wrap,.text-relation-group,.text-reading-notes-content,.text-detail-cta,.text-path-navigation,.text-detail-related,.text-context-thought-link,.text-detail-hlp-path,.text-glossary-tooltip) {
+  background:#2e2b3e!important;color:var(--night-text)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.text-context strong,.text-reading-notes strong,.text-path-navigation strong,.text-detail-cta strong,.text-context-thought-link strong,.text-context-label,.text-glossary-term) {
+  color:var(--night-title)!important;
+}
+html[data-site-theme="dark"] :is(.text-context p,.text-context li,.text-reading-notes p,.text-relation-group p,.text-detail-cta p,.text-detail-related p,.text-note-term-link) {
+  color:var(--night-text)!important;
+}
+html[data-site-theme="dark"] :is(.text-detail a,.text-reading a,.text-detail-cta a) {color:var(--night-accent);}
+html[data-site-theme="dark"] :is(.text-note-comparison-wrap th,.text-note-comparison-wrap td) {
+  background:#2b2937!important;color:var(--night-text)!important;border-color:var(--night-line)!important;
+}
+/* Le mode Focus dispose de son propre thème de lecture : ne pas lui imposer le thème du site. */
+html[data-site-theme="dark"] body.text-focus-mode .text-reading { color:inherit!important; }
+
+/* OUTILS : accueil et composants d'interface, pas la feuille des documents exportables. */
+html[data-site-theme="dark"] body.tools-page {background:var(--night-bg)!important;--tools-ink:var(--night-title);--tools-muted:var(--night-text);--tools-purple:var(--night-accent);}
+html[data-site-theme="dark"] .tools-directory {background:linear-gradient(140deg,#211e30,#171720)!important;color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.tools-hero h1,.tool-tile h2,.tools-backup h2) {color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.tools-intro,.tool-tile p,.tools-backup p) {color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.tool-tile,.tool-tile--books,.tool-tile--text,.tool-tile--image,.tool-tile--pdf,.tool-tile--pomodoro,.tools-backup) {
+  background:var(--night-card)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;
+}
+html[data-site-theme="dark"] :is(.tool-art,.tool-tile--featured .tool-art) {background:transparent!important;}
+html[data-site-theme="dark"] :is(.tool-category,.tool-action,.tools-kicker,.tools-backup-link) {color:var(--night-accent)!important;}
+html[data-site-theme="dark"] :is(.tool-action-arrow,.tools-backup-icon) {background:#393347!important;border-color:#5c5273!important;color:var(--night-accent)!important;}
+html[data-site-theme="dark"] .tool-tile:hover {background:var(--night-card-hover)!important;}
+html[data-site-theme="dark"] :is(.tool-hub,.public-tool-back,.tool-hub-card,.tool-hub-title) {color:var(--night-title)!important;}
+
+/* Autres pages publiques : préserver les choix de typographie, apporter les contrastes minimaux. */
+html[data-site-theme="dark"] :is(.legal-page,.cgu-page,.privacy-page,.legal-content) {background:var(--night-bg)!important;color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.legal-title,.legal-content h1,.legal-content h2,.legal-content h3) {color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.legal-content p,.legal-content li,.legal-content td) {color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.legal-content th,.legal-content td,.legal-toc a) {background:#272532!important;border-color:var(--night-line)!important;}
+html[data-site-theme="dark"] :is(.site-search-panel,.student-access-panel,.fv-dictionary-panel) :is(button,input,select) {color:var(--night-title);}
+html[data-site-theme="dark"] :is(.site-search-hints button,.site-search-close,.student-access-close) {background:#393246!important;color:var(--night-title)!important;}
+/* Éléments modaux chargés dynamiquement. */
+html[data-site-theme="dark"] :is(.fv-shortcuts-panel,.fv-dictionary-dialog,.fv-student-panel,.student-access-shell section) {background:var(--night-card)!important;color:var(--night-title)!important;border-color:var(--night-line)!important;}
+html[data-site-theme="dark"] :is(.fv-shortcuts-panel p,.fv-dictionary-dialog p,.fv-student-panel p) {color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.blog-card,.text-card,.tool-tile,.pricing-card) {box-shadow:0 16px 44px rgba(0,0,0,.18)!important;}
+}
+@media print {
+  html[data-site-theme="dark"] {color-scheme:light!important;}
+  html[data-site-theme="dark"] :is(.text-detail,.text-detail-inner,.text-reading,.blog-prose,.legal-page,body) {
+    color:#101018!important;background:#fff!important;box-shadow:none!important;
+  }
+}
+
+/* Grille « Cours de Méthodologie » : restauration light + dark. */
+/* Correctif V4 : rétablissement de la grille de méthodologie. */
+.methodologie-steps-grid { max-width:920px; margin:48px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:30px 52px; position:relative; }
+.methodologie-steps-grid::before { content:""; position:absolute; top:8px; bottom:8px; left:50%; width:1px; background:linear-gradient(transparent,rgba(28,28,40,.08),transparent); }
+.stepper-step { display:flex; gap:18px; padding:8px; border-radius:15px; opacity:0; transform:translateY(10px); transition:.5s ease; }
+.stepper-step.is-visible { opacity:1; transform:none; }
+.stepper-step:hover { background:rgba(108,99,255,.04); }
+.stepper-circle { flex:0 0 40px; width:40px; height:40px; display:grid; place-items:center; border:1px solid rgba(108,99,255,.55); border-radius:50%; color:var(--primary); background:#fff; box-shadow:0 8px 18px rgba(108,99,255,.1); font-size:13px; font-weight:700; }
+.stepper-title { font-weight:700; line-height:1.3; }
+.stepper-status { display:inline-flex; margin:5px 0 7px; padding:2px 9px; border-radius:999px; color:var(--primary); background:rgba(108,99,255,.06); border:1px solid rgba(108,99,255,.13); font-size:11px; font-weight:600; }
+.stepper-time { color:var(--text-medium); font-size:13px; line-height:1.6; }
+
+
+/* Les quatre étapes doivent rester des cartes lisibles avec/sans animations. */
+.methodologie-steps-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.methodologie-steps-grid .stepper-step { min-width:0; align-items:flex-start; padding:17px 14px; border:1px solid rgba(108,99,255,.10); background:rgba(255,255,255,.50); }
+.methodologie-steps-grid .stepper-step.is-visible { opacity:1; transform:none; }
+.methodologie-steps-grid .stepper-content { min-width:0; }
+.methodologie-steps-grid .stepper-circle { flex-shrink:0; }
+@media (max-width:800px) {
+ .methodologie-steps-grid { grid-template-columns:minmax(0,1fr); max-width:650px; gap:14px; margin-top:30px; }
+ .methodologie-steps-grid::before { display:none; }
+}
+@media (prefers-reduced-motion:reduce){.methodologie-steps-grid .stepper-step{opacity:1;transform:none;transition:none}}
+html[data-site-theme="dark"] .methodologie-steps-grid .stepper-step { background:#262634; border-color:#47435b; color:#f1edf9; }
+html[data-site-theme="dark"] .methodologie-steps-grid .stepper-circle { background:#332d47; color:#c5b4ff; border-color:#8170c6; box-shadow:none; }
+html[data-site-theme="dark"] .methodologie-steps-grid .stepper-title { color:#f1edf9; }
+html[data-site-theme="dark"] .methodologie-steps-grid .stepper-status { background:#3b3450; color:#d1c4ff; border-color:#554873; }
+html[data-site-theme="dark"] .methodologie-steps-grid .stepper-time { color:#cac4d6; }
+html[data-site-theme="dark"] .methodologie-steps-grid::before { background:linear-gradient(transparent,#514869,transparent); }
+/* Toujours rendre la progression lisible, y compris avant les scripts. */
+.methodologie-steps-grid .stepper-step,
+.methodologie-steps-grid .stepper-step:not(.is-visible) {
+  opacity:1!important; transform:none!important;
+}
+
+/* V5 – Méthodologie : cartes consistantes et structure 2 colonnes. */
+.methodologie-steps-grid {max-width:920px;margin:40px auto 48px!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;}
+.methodologie-steps-grid::before {display:none!important;}
+.methodologie-steps-grid .stepper-step {display:flex!important;align-items:flex-start!important;gap:16px!important;opacity:1!important;transform:none!important;min-width:0!important;padding:23px!important;border-radius:17px!important;}
+.methodologie-steps-grid .stepper-content {min-width:0!important;}
+.methodologie-steps-grid .stepper-title {font-size:16px!important;font-weight:750!important;line-height:1.35!important;}
+.methodologie-steps-grid .stepper-status {margin:6px 0 8px!important;display:inline-block!important;padding:3px 9px!important;}
+.methodologie-steps-grid .stepper-time {font-size:13px!important;line-height:1.65!important;}
+@media(max-width:800px){.methodologie-steps-grid{grid-template-columns:minmax(0,1fr)!important;gap:13px!important;}}
+@media(max-width:460px){.methodologie-steps-grid .stepper-step{padding:16px!important;gap:12px!important;}}
+@media screen {
+/* Fondations de contraste globales, appliquées après les feuilles spécialisées. */
+html[data-site-theme="dark"] body {--text-light:#bcb5cf;--blog-ink:#f6f2fb;--blog-paper:#181820;--blog-warm:#b6a7ff;--blog-warm-dark:#cbc1ff;--catalog-philo:#b5a5ff;}
+html[data-site-theme="dark"] :is(.texts-hero,.blog-index-hero,.blog-article-header,.blog-article-intro,.text-detail,.text-detail-inner,.blog-index,.texts-catalog){color:var(--night-text);}
+html[data-site-theme="dark"] :is(.texts-hero h1,.texts-title,.text-detail-title,.text-card-title,.blog-index-title,.blog-index-title span,.blog-article-title,.blog-card h2,.blog-card h3){color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.texts-hero p,.texts-intro,.texts-eyebrow,.text-detail-introduction,.text-detail-lead,.blog-index-intro,.blog-index-hero p,.blog-article-lead){color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.text-card,.text-linked-set,.text-linked-set-heading,.text-card--dual,.blog-card--compact,.text-detail-inner,.text-detail-main,.blog-card){color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.texts-tools,.texts-search,.texts-select,.texts-theme-multi-trigger,.texts-theme-multi-menu,.blog-filter-bar,.blog-filters,.blog-index-filters){background-color:#282735!important;border-color:var(--night-line)!important;color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.texts-select option,.texts-select optgroup){background:#282735;color:#f5f2fb;}
+html[data-site-theme="dark"] :is(.texts-search,.blog-search-field,.blog-search-field input){color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.text-card h2,.text-card h3,.text-card-title,.text-linked-set-copy strong,.text-detail h1,.text-detail h2,.text-detail h3,.text-reading h2,.text-reading h3){color:var(--night-title)!important;}
+html[data-site-theme="dark"] :is(.text-card p,.text-card-author,.text-card-subtitle,.text-card-description,.text-card-excerpt,.text-card-question,.blog-card p,.blog-card-summary,.blog-card-date,.text-reading,.text-reading p){color:var(--night-text)!important;}
+html[data-site-theme="dark"] :is(.texts-section-tab,.text-tag,.blog-index-filters button,.blog-filter-bar button){color:var(--night-title)!important;border-color:#5c526f;}
+html[data-site-theme="dark"] :is(.texts-section-tab[aria-current="page"],.texts-reset:hover,.blog-index-filters button.is-active){color:#fff!important;}
+html[data-site-theme="dark"] :is(.text-linked-set-heading,.blog-card-top,.blog-card-date){border-color:var(--night-line)!important;}
+/* N'inverse jamais les pages de lecture exportables / blocs conservant du papier. */
+html[data-site-theme="dark"] :is(.editor-page,.editor-paper,.pdf-page,.epub-page,.ql-editor) {color-scheme:light;}
+}
+
+/* V5 – Finitions ergonomiques du blog : recherche et filtres lisibles. */
+@media screen {
+html[data-site-theme="dark"] .blog-index-tools {
+  background:#252431!important;
+  color:#eae5f4!important;
+  border-color:#514b64!important;
+}
+html[data-site-theme="dark"] .blog-index-filters [data-blog-filter] {
+  background:transparent!important;color:#dad3ea!important;border:1px solid transparent!important;
+}
+html[data-site-theme="dark"] .blog-index-filters [data-blog-filter]:hover,
+html[data-site-theme="dark"] .blog-index-filters [data-blog-filter].is-active {
+  background:#403857!important;color:#f7f3ff!important;border-color:#786a9e!important;
+}
+html[data-site-theme="dark"] .blog-index-search {
+  background:#1d1c28!important;border-color:#565069!important;
+}
+html[data-site-theme="dark"] .blog-index-search input {
+  background:transparent!important;color:#f3effa!important;
+}
+html[data-site-theme="dark"] .blog-index-search input::placeholder {color:#bfb8d1!important;opacity:1;}
+html[data-site-theme="dark"] .blog-index-count {color:#c8c1d8!important;}
+html[data-site-theme="dark"] .blog-hero-secondary {
+  background:#2d293b!important;color:#dcd1ff!important;border-color:#665c8e!important;
+}
+html[data-site-theme="dark"] .blog-hero-secondary :is(strong,small) {color:#e4dcff!important;opacity:1;}
+html[data-site-theme="dark"] .blog-hero-secondary i {background:#46395f!important;color:#ded1ff!important;}
+html[data-site-theme="dark"] .blog-hero-primary :is(strong,small) {color:#fff!important;}
+}

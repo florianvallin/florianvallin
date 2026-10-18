@@ -1,11 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20261014-audit1";
-  const sourceScript = document.currentScript || document.querySelector('script[src*="/js/site-tools.js"]');
-  const sitePrefix = sourceScript?.src
-    ? new URL("../", sourceScript.src).pathname.replace(/\/$/, "")
-    : (["localhost", "127.0.0.1", "::1"].includes(window.location.hostname) && /^\/main(?:\/|$)/.test(window.location.pathname) ? "/main" : "");
+  const VERSION = "20260928-editor1";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -45,7 +41,7 @@
           const scopePath = new URL(registration.scope).pathname;
           const worker = registration.active || registration.waiting || registration.installing;
           const scriptPath = worker ? new URL(worker.scriptURL).pathname : "";
-          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || (scopePath === "/" && !scriptPath.endsWith("/sw-atelier.js"));
+          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || scopePath === "/" || scopePath === "/main/";
           const isReaderScope = scopePath === "/lecture/" || scopePath === "/main/lecture/";
           if (isPhilosophalWorker && !isReaderScope) await registration.unregister();
         }));
@@ -53,8 +49,10 @@
         // Live Server doit lire directement les fichiers du disque.
         if (localHost) return;
 
-        // La bibliothèque privée est déchiffrée en mémoire ; elle n’est jamais mise en cache en clair.
-
+        await navigator.serviceWorker.register("/sw.js?v=20260928-editor1", {
+          scope: "/lecture/",
+          updateViaCache: "none"
+        });
       } catch (_) {}
     };
 
@@ -91,8 +89,12 @@
     const value = String(path || "");
     if (!value.startsWith("/")) return value;
 
-    // Les raccourcis suivent la racine de leur script, même dans un sous-dossier.
-    if (sitePrefix && !value.startsWith("//") && value !== sitePrefix && !value.startsWith(`${sitePrefix}/`)) return `${sitePrefix}${value}`;
+    // Quand Live Server sert le dossier parent et que le site se trouve dans /main/,
+    // on conserve les mêmes routes logiques tout en ajoutant le préfixe local.
+    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+    if (localHost && /^\/main(?:\/|$)/.test(window.location.pathname) && !value.startsWith("/main/")) {
+      return `/main${value}`;
+    }
     return value;
   }
 
@@ -100,7 +102,28 @@
     window.location.assign(resolveSitePath(path));
   }
 
-  function openBlogHub() {
+  async function openBlogHub() {
+    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+
+    // En local, d'anciens service workers / caches de Live Server peuvent servir
+    // une ancienne copie de /blog/index.html. On nettoie uniquement l'environnement
+    // de développement avant d'ouvrir une route dédiée, non ambiguë.
+    if (localHost) {
+      try {
+        if ("serviceWorker" in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map((registration) => registration.unregister()));
+        }
+        if ("caches" in window) {
+          const keys = await caches.keys();
+          await Promise.all(keys.map((key) => caches.delete(key)));
+        }
+      } catch (_) {}
+
+      window.location.assign(resolveSitePath("/blog/tous-les-billets.html?v=20260923-github-refresh1"));
+      return;
+    }
+
     go("/blog/");
   }
 
@@ -137,13 +160,13 @@
         return;
       }
 
-      if (event.repeat || event.isComposing || isTypingTarget(event.target)) return;
+      if (isTypingTarget(event.target)) return;
       if (event.metaKey) return;
 
       const questionMark = event.key === "?" || (event.shiftKey && ["Slash", "Comma"].includes(event.code));
 
       // Aide complète : Alt + Maj + ?
-      if (event.altKey && !event.ctrlKey && event.shiftKey && questionMark) {
+      if (event.altKey && event.shiftKey && questionMark) {
         consumeShortcut(event);
         openShortcutHelp("complete");
         return;
@@ -162,7 +185,6 @@
           ["KeyA", "a", "/art/"],
           ["KeyL", "l", "__library__"],
           ["KeyC", "c", "/mediatheque/"],
-          ["KeyH", "h", "/index.html"],
           ["KeyB", "b", "/textes/theologie/boussole/"],
           ["KeyM", "m", "/textes/mythologie/boussole/"],
           ["KeyP", "p", "/textes/philosophie/boussole/"]
@@ -209,16 +231,10 @@
         openBlogHub();
         return;
       }
-      if (codeMatches(event, "KeyP", "p")) {
-        consumeShortcut(event);
-        closeShortcutHelp();
-        go("/pomodoro/");
-        return;
-      }
       if (codeMatches(event, "KeyH", "h")) {
         consumeShortcut(event);
         closeShortcutHelp();
-        go("/index.html");
+        go("/");
         return;
       }
       if (codeMatches(event, "KeyC", "c")) {
@@ -238,7 +254,7 @@
   }
 
   function openMediatheque() {
-    if ([resolveSitePath("/mediatheque/"), resolveSitePath("/mediatheque/index.html")].includes(window.location.pathname)) {
+    if (window.location.pathname.startsWith("/mediatheque/")) {
       const input = document.querySelector("[data-media-search]");
       if (input) {
         input.focus({ preventScroll: true });
@@ -733,7 +749,6 @@
       shortcutRow("D", "Dictionnaires"),
       shortcutRow("T", "Textes"),
       shortcutRow("B", "Blog"),
-      shortcutRow("P", "Pomodoro"),
       shortcutRow("C", "Contact"),
       shortcutRow("S", "Espace élève · S’identifier"),
       shortcutRow(keyLabel("shift"), "?", "Afficher cette aide")
@@ -823,7 +838,7 @@
     if (fallbackStudentShell) return fallbackStudentShell;
 
     const portals = {
-      didier: "https://app.notion.com/p/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
+      didier: "https://bold-beanie-f93.notion.site/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link",
       art: "/art/",
       livre: "/lecture/",
       livres: "/lecture/",
@@ -842,7 +857,7 @@
         <span>Espace élève</span>
         <h2 id="fv-student-title">S’identifier</h2>
         <form data-fv-student-form>
-          <label for="fv-student-password">Identifiant ou mot de passe</label>
+          <label for="fv-student-password">Mot de passe</label>
           <div><input id="fv-student-password" type="password" autocomplete="current-password" placeholder="Mot de passe" data-fv-student-password><button type="submit">Accéder <span aria-hidden="true">→</span></button></div>
           <p data-fv-student-feedback aria-live="polite"></p>
         </form>
@@ -867,15 +882,8 @@
       window.location.href = resolveSitePath(destination);
     });
 
-    input.addEventListener("input", () => {
-      const key = normalize(input.value).replace(/\s+/g, "");
-      if (key === "didier") { feedback.textContent = ""; return; }
-      if (!portals[key]) {
-        feedback.textContent = "";
-        return;
-      }
-      window.location.href = resolveSitePath(portals[key]);
-    });
+    // Attendre explicitement la validation du formulaire.
+    input.addEventListener("input", () => { feedback.textContent = ""; });
 
     return fallbackStudentShell;
   }

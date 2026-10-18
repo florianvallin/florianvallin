@@ -10,7 +10,7 @@ Ces informations vont être transformées en une [[fmt:yellow]]information élec
 
 Le [[fmt:green]]corps cellulaire[[/fmt]] est aussi appelé le soma.
 
-On peut avoir des [[fmt:yellow]]prolongements[[/fmt]] de deux types :
+On peut avoir des [[fmt:yellow]]prolongements[[/fmt]] de deux types :
 
 - Dendrites
 
@@ -32,19 +32,19 @@ Le neurone qui reçoit = post synaptique
 
 sss
 
-On va avoir des [[fmt:yellow]]caractéristiques communes[[/fmt]] à d’autres cellules. Dans le corps cellulaire, on va retrouver tous les organites communes à toutes les cellules : le noyau, les ribosomes, l’appareil de golgi, le cytosquelette, des mitochondries…
+On va avoir des [[fmt:yellow]]caractéristiques communes[[/fmt]] à d’autres cellules. Dans le corps cellulaire, on va retrouver tous les organites communes à toutes les cellules : le noyau, les ribosomes, l’appareil de golgi, le cytosquelette, des mitochondries…
 
-Au niveau du neurone, on va avoir la [[fmt:yellow]]synthèse de différentes molécules[[/fmt]] : les protéines pour assurer la réception / intégration d’information, synthèse de lipide… La synthèse va principalement se faire au niveau du corps cellulaire (aucune au niveau de [[fmt:green]]l’axone[[/fmt]]). On va avoir des [[fmt:green]]flux[[/fmt]] qui vont être utilisé (pour génération des messages, transmission…) et assurer par le cytosquelette. Le flux va partir du corps cellulaire et va partir vers l’arborisation terminale. On appelle cela le [[fmt:green]]flux antérograde[[/fmt]].
+Au niveau du neurone, on va avoir la [[fmt:yellow]]synthèse de différentes molécules[[/fmt]] : les protéines pour assurer la réception / intégration d’information, synthèse de lipide… La synthèse va principalement se faire au niveau du corps cellulaire (aucune au niveau de [[fmt:green]]l’axone[[/fmt]]). On va avoir des [[fmt:green]]flux[[/fmt]] qui vont être utilisé (pour génération des messages, transmission…) et assurer par le cytosquelette. Le flux va partir du corps cellulaire et va partir vers l’arborisation terminale. On appelle cela le [[fmt:green]]flux antérograde[[/fmt]].
 
 Il existe aussi un [[fmt:yellow]]flux rétrograde[[/fmt]] (dans le sens inverse du antérograde) avec la présence de molécule usager.
 
-[[fmt:green]]Corps cellulaire [[/fmt]]: Synthèse protéique
+[[fmt:green]]Corps cellulaire [[/fmt]]: Synthèse protéique
 
-[[fmt:green]]Axone [[/fmt]]: Flux [[fmt:yellow]]antérograde [[/fmt]]et [[fmt:yellow]]rétrograde [[/fmt]]des macromolécules issues de la synthèse protéique dans le corps cellulaire (flux antérograde) et du bouton terminal (flux rétrograde)
+[[fmt:green]]Axone [[/fmt]]: Flux [[fmt:yellow]]antérograde [[/fmt]]et [[fmt:yellow]]rétrograde [[/fmt]]des macromolécules issues de la synthèse protéique dans le corps cellulaire (flux antérograde) et du bouton terminal (flux rétrograde)
 
-Flux rétrograde :
+Flux rétrograde :
 
-La [[fmt:green]]matière blanche[[/fmt]] concerne les [[fmt:yellow]]axones[[/fmt]] et la [[fmt:green]]matière grise[[/fmt]] concerne [[fmt:yellow]]tout le reste[[/fmt]]. Comment est répartie cette matière blanche / grise ?
+La [[fmt:green]]matière blanche[[/fmt]] concerne les [[fmt:yellow]]axones[[/fmt]] et la [[fmt:green]]matière grise[[/fmt]] concerne [[fmt:yellow]]tout le reste[[/fmt]]. Comment est répartie cette matière blanche / grise ?
 
 Au niveau de la moelle épinière, on a une matière grise (papillon) puis autour de la matière blanche. La matière blanche est en fait que constituer de fibre axonale myélinisé. La matière grise va être constituée de dendrite, corps cellulaire, neurones.
 
@@ -64,13 +64,13 @@ A remplir
 
 On va distinguer deux familles de [[fmt:green]]cellules gliales[[/fmt]]
 
-- [[fmt:yellow]]Glie centrale[[/fmt]] : avec dedans astrocytes, épendymocytes, olygodendrocites..
+- [[fmt:yellow]]Glie centrale[[/fmt]] : avec dedans astrocytes, épendymocytes, olygodendrocites..
 
-- [[fmt:yellow]]Glie périphérique[[/fmt]] : composer de cellule satellites (=fonction comme astrocyte) & cellule de Schawnn (=comme olidendrocytes)
+- [[fmt:yellow]]Glie périphérique[[/fmt]] : composer de cellule satellites (=fonction comme astrocyte) & cellule de Schawnn (=comme olidendrocytes)
 
-[[fmt:green]]L’astrocyte[[/fmt]] va avoir plusieurs rôles :
+[[fmt:green]]L’astrocyte[[/fmt]] va avoir plusieurs rôles :
 
-- Soutien : forme de ciment autour des neurones, cicatrisation
+- Soutien : forme de ciment autour des neurones, cicatrisation
 
 - Nutritif
 
@@ -84,15 +84,15 @@ On va distinguer deux familles de [[fmt:green]]cellules gliales[[/fmt]]
 
 Les cellules gliales assurent l'homéostasie du milieu neuronal. Elles isolent également physiquement les neurones, en formant la [[fmt:green]]barrière hémato-encéphalique[[/fmt]]. Toutes substances vont devoir [[fmt:yellow]]traverser cette barrière[[/fmt]] pour pouvoir atteindre les neurones.
 
-[[fmt:green]]ASTROCYTES[[/fmt]] : plus grosses cellules du système nerveux de 2 types (type I : contact avec système capillaire / type II : entoure neurone et fente synaptique pour empêcher dispersion des neurotransmetteurs). Maintien de l’équilibre de la composition du liquide extracellulaire. Lien fonctionnel entre vaisseaux & neurones.
+[[fmt:green]]ASTROCYTES[[/fmt]] : plus grosses cellules du système nerveux de 2 types (type I : contact avec système capillaire / type II : entoure neurone et fente synaptique pour empêcher dispersion des neurotransmetteurs). Maintien de l’équilibre de la composition du liquide extracellulaire. Lien fonctionnel entre vaisseaux & neurones.
 
-[[fmt:green]]OLIGODENDROCITES[[/fmt]] : plus petit qu’ASTROCYTES. C’est l’origine des gaines de myéline entourant les axones des fibres nerveuses. Il existe des petites portions d’axones sans myéline qui sont les nœuds de Ranvier.
+[[fmt:green]]OLIGODENDROCITES[[/fmt]] : plus petit qu’ASTROCYTES. C’est l’origine des gaines de myéline entourant les axones des fibres nerveuses. Il existe des petites portions d’axones sans myéline qui sont les nœuds de Ranvier.
 
-[[fmt:green]]MIGROGLYOCITES[[/fmt]] : protection immunitaire
+[[fmt:green]]MIGROGLYOCITES[[/fmt]] : protection immunitaire
 
-CELLULE SATELLITES :
+CELLULE SATELLITES :
 
-CELLULE DE SCHAWNN :
+CELLULE DE SCHAWNN :
 
 ### [[fmt:underline,red-text]]Le système ventriculaire & le liquide [[/fmt]][[fmt:underline,red-text]]cephalorachidien[[/fmt]]
 

@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="fr">
 <head>
+<script src="/js/theme-prepaint.js?v=20261018-v9"></script>
+
   <meta charset="utf-8">
   <script src="/js/site-quality.js?v=20261014-audit1"></script>
-  <script src="../../js/site-theme.js?v=20261014-audit1"></script>
-  <link rel="stylesheet" href="../../css/site-theme.css?v=20261014-audit1">
+  <script src="../../../js/site-theme.js?v=20261018-v9"></script>
+  <link rel="stylesheet" href="../../../css/site-theme.css?v=20261014-audit1">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#152235"><link rel="stylesheet" href="./teleprompteur/teleprompteur.css?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="48x48" href="../../favicon-48.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon-192.png?v=20261014-audit1">
-  <link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=20261014-audit1">
-  <link rel="shortcut icon" href="../../favicon.ico?v=20261014-audit1">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png?v=20261014-audit1">
-  <link rel="manifest" href="../../site.webmanifest?v=20261014-audit1">
+  <meta name="theme-color" content="#152235"><link rel="stylesheet" href="./teleprompteur.css?v=20261014-audit1">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16.png?v=20261014-audit1">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32.png?v=20261014-audit1">
+  <link rel="icon" type="image/png" sizes="48x48" href="../../../favicon-48.png?v=20261014-audit1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon-192.png?v=20261014-audit1">
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=20261014-audit1">
+  <link rel="shortcut icon" href="../../../favicon.ico?v=20261014-audit1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=20261014-audit1">
+  <link rel="manifest" href="../../../site.webmanifest?v=20261014-audit1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="stylesheet" href="/css/site-quality.css?v=20261014-audit1">
 
@@ -24,12 +26,13 @@
 
 <title>Téléprompteur — Philosophal</title>
 <meta name="description" content="Préparez un script et lisez-le avec un défilement réglable, un mode miroir et des repères de lecture. Tout reste sur votre appareil.">
-<link rel="canonical" href="https://philosophal.fr/apprendre/creation/">
+<link rel="canonical" href="https://philosophal.fr/apprendre/creation/teleprompteur/">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:title" content="Téléprompteur — Philosophal">
 <meta property="og:description" content="Préparez un script et lisez-le avec un défilement réglable, un mode miroir et des repères de lecture. Tout reste sur votre appareil.">
-<meta property="og:url" content="https://philosophal.fr/apprendre/creation/">
+<meta property="og:url" content="https://philosophal.fr/apprendre/creation/teleprompteur/">
 <meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/site-theme-v4.css?v=20261018-v9" data-ph-dark-v4>
 </head>
 <body>
   <header class="prompt-header">
@@ -50,7 +53,12 @@
         <div class="prompt-panel-title"><span>02</span><h2>Régler la lecture</h2></div>
         <label class="prompt-range"><span>Vitesse du défilement <output data-speed-value>40 px/s</output></span><input type="range" min="5" max="180" step="1" value="40" data-speed></label>
         <button type="button" class="prompt-calibrate" data-calibrate>Caler la vitesse sur le débit estimé</button>
-        <div class="prompt-settings-grid"><label>Départ différé<select data-countdown><option value="0">Immédiat</option><option value="3" selected>3 secondes</option><option value="5">5 secondes</option><option value="10">10 secondes</option></select></label><label>Thème<select data-theme><option value="dark">Sombre</option><option value="light">Clair</option><option value="sepia">Papier</option></select></label></div>
+        <div class="prompt-settings-grid"><label>Départ différé<select data-countdown><option value="0">Immédiat</option><option value="3" selected>3 secondes</option><option value="5">5 secondes</option><option value="10">10 secondes</option></select></label><label>Thème<select data-theme><option value="dark">Sombre</option><option value="light">Clair</option><option value="sepia">Papier</option><option value="custom">Personnalisé</option></select></label></div>
+        <fieldset class="prompt-moods"><legend>Choisir une ambiance</legend><p>10 associations de couleurs prêtes à lire.</p><div class="prompt-mood-grid" data-color-presets aria-label="Ambiances du téléprompteur"></div></fieldset>
+        <fieldset class="prompt-colors"><legend>Couleurs de lecture</legend><div class="prompt-color-grid">
+          <div class="prompt-color-field"><label for="prompt-text-color">Texte</label><div class="prompt-color-inputs"><input type="color" id="prompt-text-color" data-text-color value="#f2f5fa"><label class="sr-only" for="prompt-text-hex">Code hexadécimal de la couleur du texte</label><input type="text" id="prompt-text-hex" data-color-hex="textColor" value="#F2F5FA" maxlength="7" autocomplete="off" spellcheck="false" inputmode="text" aria-describedby="prompt-color-help"></div></div>
+          <div class="prompt-color-field"><label for="prompt-background-color">Fond</label><div class="prompt-color-inputs"><input type="color" id="prompt-background-color" data-background-color value="#111a28"><label class="sr-only" for="prompt-background-hex">Code hexadécimal de la couleur du fond</label><input type="text" id="prompt-background-hex" data-color-hex="backgroundColor" value="#111A28" maxlength="7" autocomplete="off" spellcheck="false" inputmode="text" aria-describedby="prompt-color-help"></div></div>
+        </div><p id="prompt-color-help">Choisissez une teinte ou saisissez son code #RRGGBB.</p><output class="prompt-color-contrast" data-color-contrast aria-live="polite"></output><button type="button" data-reset-colors>Couleurs par défaut</button></fieldset>
         <details open><summary>Confort de lecture</summary><div class="prompt-detail-content">
           <label class="prompt-range"><span>Taille du texte <output data-size-value>48 px</output></span><input type="range" min="24" max="100" value="48" data-size></label>
           <label class="prompt-range"><span>Interligne <output data-line-value>1,6</output></span><input type="range" min="1.2" max="2.4" step=".1" value="1.6" data-line></label>
@@ -78,7 +86,7 @@
     </section>
   </main>
   <div class="prompt-toast" data-toast role="status" hidden></div>
-  <script src="/js/tool-icons.js?v=20261014-audit1"></script><script src="./teleprompteur/teleprompteur.js?v=20261014-audit1"></script>
+  <script src="/js/tool-icons.js?v=20261014-audit1"></script><script src="./teleprompteur.js?v=20261014-audit1"></script>
   <script src="/js/global-backup.js?v=20261014-audit1" defer></script>
 </body>
 </html>

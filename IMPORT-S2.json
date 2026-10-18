@@ -1,0 +1,17 @@
+{
+  "newResources": 64,
+  "images": 0,
+  "imageExtensions": {},
+  "conversionErrors": [],
+  "byUE": {
+    "UE1 — Psychologie cognitive & clinique": 18,
+    "UE2 — Psychologie sociale & bases biologiques": 9,
+    "UE3 — Psychologie de l’adolescent & questions actuelles": 16,
+    "UE4 — Sociologie": 10,
+    "UE5 — Méthodologie": 7,
+    "UE6 — Zététique & défense intellectuelle": 4
+  },
+  "excluded": 31,
+  "policy": "Version texte uniquement : aucune illustration embarquée.",
+  "illustrationsRemoved": 550
+}

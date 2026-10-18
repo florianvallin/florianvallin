@@ -1,8 +1,8 @@
-Nom, Prénom :
+Nom, Prénom :
 
 VALLIN Florian
 
-N°etudiant :
+N°etudiant :
 
 [n° étudiant masqué]
 
@@ -12,7 +12,7 @@ Séparer blanc du jaune, conduire…
 
 Chacun son [[fmt:red-text]]PIM[[/fmt]]
 
-En voiture : téléphone, radio…
+En voiture : téléphone, radio…
 
 Dangereux en voiture…
 

@@ -189,3 +189,13 @@ html[data-site-theme="dark"] .link-card--leboncoin .link-card__icon{background:#
 :root[data-site-theme="dark"][data-links-view="perso"] .link-card--podcast:hover{border-color:#876645}
 html[data-site-theme="dark"] .link-card--featured:hover{border-color:#4a4587}}
 }
+
+/* Contraste de la carte Apocalypnose : texte lisible sur le fond aubergine. */
+html:not([data-site-theme="dark"]) .link-card--podcast,
+html[data-site-theme="light"] .link-card--podcast {
+  background:#332934; border-color:#9b7897; color:#f6edf3;
+}
+html:not([data-site-theme="dark"]) .link-card--podcast :is(.link-card__title,.link-card__subtitle,.link-card__arrow),
+html[data-site-theme="light"] .link-card--podcast :is(.link-card__title,.link-card__subtitle,.link-card__arrow) {color:#f6edf3;opacity:1}
+html:not([data-site-theme="dark"]) .link-card--podcast .link-card__icon,
+html[data-site-theme="light"] .link-card--podcast .link-card__icon {background:#5b424d;color:#f7d5af}

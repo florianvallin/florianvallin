@@ -12,17 +12,17 @@ Apparition et extension de Ψ en occident de XVIIIe à XXIe. La relation pédago
 
 - [[fmt:underline,green-text]]De la nature humaine[[/fmt]]
 
-[[fmt:pink]]Freud / Darwin [[/fmt]]prenne en compte l’animal en nous (repenser sa place). Le problème est triple :
+[[fmt:pink]]Freud / Darwin [[/fmt]]prenne en compte l’animal en nous (repenser sa place). Le problème est triple :
 
 - Déterminer ce qu’est l’[[fmt:green]]état de l’enfant mis au monde[[/fmt]]
 
-- Fixer des [[fmt:green]]objectifs[[/fmt]] : attitudes, comportements, convictions, connaissances
+- Fixer des [[fmt:green]]objectifs[[/fmt]] : attitudes, comportements, convictions, connaissances
 
 - Envisager des [[fmt:green]]trajectoires[[/fmt]] et la manière de les infléchir
 
 Problème posé socialement aux XVIIIe et XIXe. Certains le voient comme [[fmt:yellow]]égoïste[[/fmt]] ([[fmt:pink]]Durkheim[[/fmt]]), [[fmt:yellow]]bon[[/fmt]] ([[fmt:pink]]Rousseau[[/fmt]], [[fmt:pink]]Claparède[[/fmt]]), [[fmt:yellow]]réservoir de pulsion[[/fmt]] ([[fmt:pink]]Freud[[/fmt]]). Pour ceux qui le considèrent [[fmt:yellow]]bon[[/fmt]], il faut veiller à l’exemple en mettant en place un mode d’éducation. Pour ceux qui le voit [[fmt:yellow]]égoïste[[/fmt]], l’éducation doit établir une [[fmt:green]]prophylaxie[[/fmt]] ([[fmt:pink]]Freud[[/fmt]]) ou l’emmener au principe de réalité ([[fmt:pink]]Bettelheim[[/fmt]]) ou l’emmener à s’adapter ([[fmt:pink]]Durkheim[[/fmt]]).
 
-[[fmt:yellow]]Débat actuel[[/fmt]] : capacités cognitive du bébé (celle-ci peuvent être très général). Les perspective ce sont déplacé (social / moral → domaine cognitif (sans négliger les questions social / émotion).
+[[fmt:yellow]]Débat actuel[[/fmt]] : capacités cognitive du bébé (celle-ci peuvent être très général). Les perspective ce sont déplacé (social / moral → domaine cognitif (sans négliger les questions social / émotion).
 
 ### [[fmt:underline,red-text]]LA PSYCHOLOGIE DE L’ÉDUCATION AUJOURD’HUI[[/fmt]]
 
@@ -36,7 +36,7 @@ Concerne individu dont on postule qu’ils ont [[fmt:yellow]]capacités généra
 
 - [[fmt:underline,green-text]]Les médiations sociales et les interactions[[/fmt]]
 
-Éducation s’appuie sur [[fmt:green]]médiation sociales[[/fmt]] (avec pairs ou adultes)(1960). Deux théories exemple présentent ce courant :
+Éducation s’appuie sur [[fmt:green]]médiation sociales[[/fmt]] (avec pairs ou adultes)(1960). Deux théories exemple présentent ce courant :
 
 - [[fmt:pink]]Bandura [[/fmt]]dit que les représentations cognitives, le comportement et l’environnement joue sur l’apprentissage de la personne
 
@@ -48,7 +48,7 @@ Théorie peuvent être [[fmt:yellow]]abordé ensemble ou isolé[[/fmt]].
 
 - [[fmt:underline,green-text]]Les tests d’évaluation[[/fmt]]
 
-L’objet est de voir si l’enfant ne peut pas [[fmt:yellow]]suivre une éducation « normale »[[/fmt]] (pour formation spécifique). [[fmt:green]]Binet-Simon[[/fmt]] → premier test au monde. Les échelles de description permettent de [[fmt:yellow]]le situer[[/fmt]] par rapport aux [[fmt:yellow]]autres[[/fmt]] ou par rapport à son [[fmt:yellow]]niveau de dvlp[[/fmt]]. L’évaluation diagnostique estime le nv de l’enfant / ado qu’il pourra atteindre.
+L’objet est de voir si l’enfant ne peut pas [[fmt:yellow]]suivre une éducation « normale »[[/fmt]] (pour formation spécifique). [[fmt:green]]Binet-Simon[[/fmt]] → premier test au monde. Les échelles de description permettent de [[fmt:yellow]]le situer[[/fmt]] par rapport aux [[fmt:yellow]]autres[[/fmt]] ou par rapport à son [[fmt:yellow]]niveau de dvlp[[/fmt]]. L’évaluation diagnostique estime le nv de l’enfant / ado qu’il pourra atteindre.
 
 - [[fmt:underline,green-text]]A chaque âge son enseignement[[/fmt]]
 
@@ -56,9 +56,9 @@ L’objet est de voir si l’enfant ne peut pas [[fmt:yellow]]suivre une éducat
 
 - [[fmt:underline,green-text]]Les apports de la psychologie cognitive[[/fmt]]
 
-La [[fmt:green]]recherche & pratique[[/fmt]] ont mis en évidence :
+La [[fmt:green]]recherche & pratique[[/fmt]] ont mis en évidence :
 
-- [[fmt:yellow]]Echelle de développement[[/fmt]] fait appel a connaissance culturelles, n’évalue pas maturation indépendantes des influences du milieu
+- [[fmt:yellow]]Echelle de développement[[/fmt]] fait appel a connaissance culturelles, n’évalue pas maturation indépendantes des influences du milieu
 
 - Certaines activités scolaires ont des [[fmt:yellow]]difficultés spécifiques[[/fmt]] (pas intellectuel) (dyslexique échoue à l’apprentissage de la lecture).
 
@@ -66,11 +66,11 @@ La [[fmt:green]]recherche & pratique[[/fmt]] ont mis en évidence :
 
 Ψ cognitive à étudier donc [[fmt:yellow]]lecture[[/fmt]], [[fmt:yellow]]composition écrite[[/fmt]], [[fmt:yellow]]numération[[/fmt]], [[fmt:yellow]]résolution de problème[[/fmt]], [[fmt:yellow]]musique[[/fmt]], [[fmt:yellow]]dessin[[/fmt]]. Apparition de nv façon d’apprendre (avec son, graphique…). Permet de mieux évaluer performances et prévenir échecs.
 
-### [[fmt:underline,red-text]]LA PSYCHOLOGIE ET LES APPRENTISSAGES[[/fmt]][[fmt:underline,red-text]] [[/fmt]]
+### [[fmt:underline,red-text]]LA PSYCHOLOGIE ET LES APPRENTISSAGES[[/fmt]][[fmt:underline,red-text]] [[/fmt]]
 
-Déterminants, formes et [[fmt:green]]évolutions de l’apprentissage[[/fmt]] sont étudiés avec 2 approches :
+Déterminants, formes et [[fmt:green]]évolutions de l’apprentissage[[/fmt]] sont étudiés avec 2 approches :
 
-- [[fmt:yellow]]Perspective de recherche fondamentale[[/fmt]] ou ils vont isoler et décrire les processus élémentaires (avec relations, apprentissages…)
+- [[fmt:yellow]]Perspective de recherche fondamentale[[/fmt]] ou ils vont isoler et décrire les processus élémentaires (avec relations, apprentissages…)
 
 - [[fmt:yellow]]Changement[[/fmt]] dans l’agriculture, scolarisation, industrie…
 
@@ -102,15 +102,15 @@ Les [[fmt:green]]apprentissages[[/fmt]] (scolaire) génèrent des [[fmt:yellow]]
 
 Dans années [[fmt:red]]1970[[/fmt]] à Genève → concept de [[fmt:green]]conflit sociocognitif[[/fmt]]. [[fmt:pink]]Doise[[/fmt]], [[fmt:pink]]Mugny [[/fmt]]et [[fmt:pink]]Perret-Clermont[[/fmt]] disent que élèves apprennent mieux avec pairs en situations d’apprentissage.
 
-D’autre forme apparaissent bénéfiques comme :
+D’autre forme apparaissent bénéfiques comme :
 
-- [[fmt:green]]La coélaboration acquiesçante[[/fmt]] : l’un donne solution à l’autre et l’autre contrôle et donne l’accord.
+- [[fmt:green]]La coélaboration acquiesçante[[/fmt]] : l’un donne solution à l’autre et l’autre contrôle et donne l’accord.
 
-- [[fmt:green]]La coconstruction[[/fmt]] : prises de paroles entre les deux s’alterne pour construire solution commune (l’un peut très bien changer la finalité de l’autre)
+- [[fmt:green]]La coconstruction[[/fmt]] : prises de paroles entre les deux s’alterne pour construire solution commune (l’un peut très bien changer la finalité de l’autre)
 
-Condition d’un [[fmt:yellow]]apprentissage collectif réussi[[/fmt]] : stimulation, percevoir qu’ils ont besoin les uns des autres, chaque membre doit avoir un rôle…
+Condition d’un [[fmt:yellow]]apprentissage collectif réussi[[/fmt]] : stimulation, percevoir qu’ils ont besoin les uns des autres, chaque membre doit avoir un rôle…
 
-[[fmt:pink]]Pressley et al.[[/fmt]] (2001) ont pris 20 enseignant de CP et ont regardé les élèves. Les + : managers (alternance d’activité, travail technique …). Ψ peu intéressé à ce domaine.
+[[fmt:pink]]Pressley et al.[[/fmt]] (2001) ont pris 20 enseignant de CP et ont regardé les élèves. Les + : managers (alternance d’activité, travail technique …). Ψ peu intéressé à ce domaine.
 
 - [[fmt:underline,green-text]]Des situations aux effets néfastes sur les apprentissages[[/fmt]]
 
@@ -120,6 +120,6 @@ Performance des élèves [[fmt:yellow]]dépendent des interactions[[/fmt]] dans 
 
 Si la [[fmt:green]]diversité des connaissances[[/fmt]] grandit, il va falloir [[fmt:yellow]]favoriser apprentissage[[/fmt]] et adaptation à un monde de mutation rapide. La question sera de [[fmt:yellow]]formé des nouveaux citoyens[[/fmt]] en boucle.
 
-Comment pourrons-nous faire face à [[fmt:green]]l’individualisme[[/fmt]] (avec comportements qui favorise sociale) ?
+Comment pourrons-nous faire face à [[fmt:green]]l’individualisme[[/fmt]] (avec comportements qui favorise sociale) ?
 
 [[fmt:yellow]]Ψ de l’éducation augmentera[[/fmt]] et sa crédibilité dépendra du savoir et savoir-faire susceptible de répondre à la demande.

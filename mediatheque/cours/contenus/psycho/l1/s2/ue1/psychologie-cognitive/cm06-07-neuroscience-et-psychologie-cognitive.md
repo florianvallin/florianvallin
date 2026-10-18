@@ -1,22 +1,22 @@
-# [[fmt:red-text]]CHAPITRE IV : neuroscience et psychologie cognitive[[/fmt]]
+# [[fmt:red-text]]CHAPITRE IV : neuroscience et psychologie cognitive[[/fmt]]
 
-Quel sont les méthodes pour aller étudier les questions lié à la psychologie cognitive ?
+Quel sont les méthodes pour aller étudier les questions lié à la psychologie cognitive ?
 
 ## [[fmt:underline,red-text]]L’électro-encéphalographie (EEG) ou ERP (Event [[/fmt]][[fmt:underline,red-text]]Related[[/fmt]][[fmt:underline,red-text]] [[/fmt]][[fmt:underline,red-text]]Potential[[/fmt]][[fmt:underline,red-text]])[[/fmt]]
 
 Cela va mesurer les [[fmt:green]]différences de potentiel électrique[[/fmt]] à la surface du scalp. A chaque fois que nos neurones envoie des [[fmt:yellow]]impulsions électriques[[/fmt]], cela va générer un champ électrique (et magnétique) qu’on peut mesurer grâce à cet outil.
 
-Exemple : influence de la langue native sur la perception de la parole. On a fait cette méthode sur un bébé pour voir si le bébé discrimine les sons.
+Exemple : influence de la langue native sur la perception de la parole. On a fait cette méthode sur un bébé pour voir si le bébé discrimine les sons.
 
 Grâce à cette méthode, on va pouvoir [[fmt:green]]observer[[/fmt]] plusieurs choses dans le [[fmt:yellow]]cerveau[[/fmt]]. On va pouvoir voir les [[fmt:green]]différences[[/fmt]] entre les différentes cultures / langues …
 
-### [[fmt:underline,red-text]]AVANTAGES[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGES[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
 
 - Très bonne résolution temporelle (de l’ordre de quelques ms)
 
 - Matériel peu onéreux et relativement facile à mettre en œuvre
 
-### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
+### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
 
 - Les mesures des différences de potentiel électrique à la surface du scalp uniquement, donc très mauvais résolution spatiale (on mesure la somme de tout ce qui se passe en dessous).
 
@@ -26,13 +26,13 @@ C’est la mesure des [[fmt:green]]champs magnétiques[[/fmt]] à la surface du 
 
 On va créer un [[fmt:yellow]]champ magnétiques[[/fmt]] et on va pouvoir avoir une vidéo et on va ainsi voir comment évoluer [[fmt:yellow]]l’activité cérébrale[[/fmt]].
 
-### [[fmt:underline,red-text]]AVANTAGE :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGE :[[/fmt]]
 
 - Meilleure résolution spatiale de surface que
 
 - Très bonne résolution temporelle
 
-### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
+### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
 
 - Problème de résolution spatiale (activité de surface)
 
@@ -46,13 +46,13 @@ C’est une technique d’imagerie tomographique 3D.
 
 On va faire un [[fmt:green]]scan anatomique[[/fmt]], il va ensuite injecter un traceur. La personne va pendant qu’il est dans la machine va faire une activité cognitive (comme des jeux de mémoires). On va ensuite avoir un scan fonctionnel. Ceux qui vont être appliqué sont ceux qui vont être à plus de 100 (donc plus de traceur). Ce sont les zones où il va y avoir plus d’activités.
 
-### [[fmt:underline,red-text]]AVANTAGE[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGE[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
 
 - Bonne résolution spatiale (quelque mm3)
 
 - Imagerie fonctionnelle 3D
 
-### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
+### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
 
 - Mesure indirecte de l’activité cérébrale (dilatation des vaisseaux sanguins)(réponse lente de plusieurs secondes)
 
@@ -66,9 +66,9 @@ On va faire un [[fmt:green]]scan anatomique[[/fmt]], il va ensuite injecter un t
 
 A une époque, le mot s’appelaient était EMN.
 
-C’est la mesure de la [[fmt:yellow]]réponse hémodynamique du cerveau[[/fmt]] via les caractéristiques électromagnétiques du flux sanguin (réponse BOLD). Il faut enlever ce qui perturbe le champ magnétique (l’eau… Même le sang perturbe ce champ). Qu’est-ce que l’effet BOLD (Blood Oxygen Level Dependant) ?:
+C’est la mesure de la [[fmt:yellow]]réponse hémodynamique du cerveau[[/fmt]] via les caractéristiques électromagnétiques du flux sanguin (réponse BOLD). Il faut enlever ce qui perturbe le champ magnétique (l’eau… Même le sang perturbe ce champ). Qu’est-ce que l’effet BOLD (Blood Oxygen Level Dependant) ?:
 
-Hémoglobine → propriétés magnétiques :
+Hémoglobine → propriétés magnétiques :
 
 - L’oxyhémoglobine (HbO2) est diamagnétique (ne perturbe pas le champ)
 
@@ -76,13 +76,13 @@ Hémoglobine → propriétés magnétiques :
 
 On va donc pouvoir mesurer la quantité de sang à différents endroits du cerveau.
 
-### [[fmt:underline,red-text]]AVANTAGE :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGE :[[/fmt]]
 
 - Bonne résolution spatiale (meilleure que la TEP)
 
 - Imagerie fonctionnelle 3D
 
-### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
+### [[fmt:underline,red-text]]DESAVANTAGES :[[/fmt]]
 
 - Mesure indirecte de l’activité cérébrale
 
@@ -98,7 +98,7 @@ On va donc faire une application de la TMS et ensuite faire une [[fmt:yellow]]cr
 
 Ainsi, on va avoir une [[fmt:green]]activité neuronale artificielle et réversible[[/fmt]].
 
-### [[fmt:underline,red-text]]AVANTAGES[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGES[[/fmt]][[fmt:underline,red-text]] :[[/fmt]]
 
 - Possibilité de créer une activité cérébrale non-invasive et réversible
 
@@ -108,7 +108,7 @@ Ainsi, on va avoir une [[fmt:green]]activité neuronale artificielle et réversi
 
 - Application thérapeutiques (dépressions graves, test sur des syndromes bipolaire)
 
-### [[fmt:underline,red-text]]INCONVENIENTS :[[/fmt]]
+### [[fmt:underline,red-text]]INCONVENIENTS :[[/fmt]]
 
 - Induction en surface uniquement (la TMS ne peut pas viser les zones en profondeur. On ne peut viser des zones sous-corticales comme les émotions).
 
@@ -116,9 +116,9 @@ Ainsi, on va avoir une [[fmt:green]]activité neuronale artificielle et réversi
 
 Cette méthode consiste à appliquer dans les [[fmt:green]]tissus neuronaux[[/fmt]] des [[fmt:green]]capteurs de l’activité cérébrale[[/fmt]] du sujet. Ces études sont essentiellement faites sur [[fmt:yellow]]l’animal[[/fmt]]. C’est souvent à viser médical.
 
-Exemple : théorie d’apprentissage verbale et de production verbale. On va implanter des électrodes sur un rat (ou un chat / singe…) et voir l’activité qui se produise.
+Exemple : théorie d’apprentissage verbale et de production verbale. On va implanter des électrodes sur un rat (ou un chat / singe…) et voir l’activité qui se produise.
 
-### [[fmt:underline,red-text]]AVANTAGES :[[/fmt]]
+### [[fmt:underline,red-text]]AVANTAGES :[[/fmt]]
 
 - Très bonne résolution spatiale
 
@@ -126,7 +126,7 @@ Exemple : théorie d’apprentissage verbale et de production verbale. On va imp
 
 - Technique relativement peu couteuse en matériel (mais couteux en animaux)
 
-### [[fmt:underline,red-text]]INCONVENIENTS :[[/fmt]]
+### [[fmt:underline,red-text]]INCONVENIENTS :[[/fmt]]
 
 - Méthode invasive. Non applicable à des sujets humains.
 
@@ -134,7 +134,7 @@ Exemple : théorie d’apprentissage verbale et de production verbale. On va imp
 
 Cette technique est utilisé chez les patients épileptiques avant la chirurgie Cette technique consiste à implanter sur des sujets humains un [[fmt:green]]ensemble d’électrodes[[/fmt]] à des [[fmt:yellow]]fins[[/fmt]] thérapeutiques. Parfois, cela ne fonctionne pas à cause d’une zone épilèptogène. Grâce à l’implant d’électrode, on va pouvoir faire des enregistrements pour enregistrer la zone épiléptogène (ensuite, le neurochirurgien va pouvoir travailler).
 
-### [[fmt:underline,red-text]]AVANTAGE[[/fmt]] :
+### [[fmt:underline,red-text]]AVANTAGE[[/fmt]] :
 
 - Très bonne résolution spatiale
 
@@ -142,7 +142,7 @@ Cette technique est utilisé chez les patients épileptiques avant la chirurgie 
 
 - Technique relativement peu couteuse en matériel
 
-### [[fmt:underline,red-text]]DESAVANTAGES[[/fmt]] :
+### [[fmt:underline,red-text]]DESAVANTAGES[[/fmt]] :
 
 - Méthode invasive qui nécessite le recours à une population expérimentale particulière (variable invoquées)
 
@@ -156,19 +156,19 @@ La [[fmt:yellow]]spectroscopie proche infrarouge[[/fmt]] mesure la [[fmt:green]]
 
 Il réfléchit la lumière en fonction de sa saturation en O2
 
-Hb saturé : 810nm
+Hb saturé : 810nm
 
-Hb insaturée : 780nm
+Hb insaturée : 780nm
 
 La lumière passe mieux chez le bébé (car le crâne est mou et ils ont moins de cheveux).
 
-### [[fmt:underline,red-text]]AVANTAGE[[/fmt]] :
+### [[fmt:underline,red-text]]AVANTAGE[[/fmt]] :
 
 - Equivalent à un IRMf mais transportable
 
 - Cout raisonnable
 
-### [[fmt:underline,red-text]]DESAVANTAGES[[/fmt]] :
+### [[fmt:underline,red-text]]DESAVANTAGES[[/fmt]] :
 
 - Mesure indirecte de l’activité cérébrale
 

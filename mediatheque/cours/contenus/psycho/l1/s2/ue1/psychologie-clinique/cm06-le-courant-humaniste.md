@@ -18,7 +18,7 @@ On peut en voir un rapport avec le [[fmt:yellow]]coaching[[/fmt]] (/la guidance)
 
 Sans les attitudes du courant humaniste, il est impossible d’aider réellement une personne en difficulté.
 
-Ce courant n’est [[fmt:green]]pas homogène,[[/fmt]] puisqu’il existe d’autres approches que l’approche Rogérienne, mais on peut citer certaines caractéristiques communes :
+Ce courant n’est [[fmt:green]]pas homogène,[[/fmt]] puisqu’il existe d’autres approches que l’approche Rogérienne, mais on peut citer certaines caractéristiques communes :
 
 - Une conception de l’être humain [[fmt:yellow]]respectueuse[[/fmt]]
 
@@ -26,7 +26,7 @@ Ce courant n’est [[fmt:green]]pas homogène,[[/fmt]] puisqu’il existe d’au
 
 - L’accent mis sur l’expérience présente
 
-- Une place importante donnée aux approches [[fmt:yellow]]corporelles[[/fmt]] (ex : psychodrame)
+- Une place importante donnée aux approches [[fmt:yellow]]corporelles[[/fmt]] (ex : psychodrame)
 
 - Des objectifs de développement, de croissance, [[fmt:yellow]]d’épanouissement[[/fmt]] personnel (cela permettrait d’accéder à un autre état psychologique)
 
@@ -34,7 +34,7 @@ Ce courant n’est [[fmt:green]]pas homogène,[[/fmt]] puisqu’il existe d’au
 
 En France, la référence est le psychiatre. Ce n’est pas vraiment le cas en Amérique du Nord ([[fmt:pink]]C.Rogers[[/fmt]] a beaucoup influencé les psychologues clinique).
 
-## [[fmt:underline,red-text]]Qui est Carl Rogers[[/fmt]][[fmt:underline,red-text]] ?[[/fmt]]
+## [[fmt:underline,red-text]]Qui est Carl Rogers[[/fmt]][[fmt:underline,red-text]] ?[[/fmt]]
 
 Il valorise une approche centré sur le [[fmt:green]]client[[/fmt]] (le client est roi).
 
@@ -42,13 +42,13 @@ Il valorise une approche centré sur le [[fmt:green]]client[[/fmt]] (le client e
 
 Son approche a eu pendant très longtemps peu de retentissement en France à cause de l’omniprésence de la psychanalyse, mais elle est aujourd’hui au cœur de beaucoup de réflexion sur la posture du psychologue.
 
-Il élabore une [[fmt:green]]approche[[/fmt]] très personnelle. Ses deux ouvrages de références :
+Il élabore une [[fmt:green]]approche[[/fmt]] très personnelle. Ses deux ouvrages de références :
 
 - Le développement de la personne 1961
 
 - Liberté pour apprendre 1969
 
-Il a créé l’approche [[fmt:green]]humaniste[[/fmt]] (c’est après que les choses se sont développer). Il travailler de manière [[fmt:yellow]]expérimentale[[/fmt]] et à constituer un [[fmt:yellow]]esprit scientifique[[/fmt]]. Il enregistrait ces entretiens. Il s’est constitué une croyance fondamentale en l’existence du « [[fmt:yellow]]noyau authentiquement positif du Moi[[/fmt]] ». C’est ce qui l’a conduit vers la psychanalyse.
+Il a créé l’approche [[fmt:green]]humaniste[[/fmt]] (c’est après que les choses se sont développer). Il travailler de manière [[fmt:yellow]]expérimentale[[/fmt]] et à constituer un [[fmt:yellow]]esprit scientifique[[/fmt]]. Il enregistrait ces entretiens. Il s’est constitué une croyance fondamentale en l’existence du « [[fmt:yellow]]noyau authentiquement positif du Moi[[/fmt]] ». C’est ce qui l’a conduit vers la psychanalyse.
 
 Il est à l’inverse de l’approche psychanalytique (qui a une visée destructrice). Il n’était dans le vision freudienne (avec la notion de refoulement de pulsions). Pour Rogers, il n’y a pas de négatif dans la nature de l’Homme.
 
@@ -62,11 +62,11 @@ Pour lui, tout individu possède une capacité [[fmt:green]]d’auto développem
 
 Pour [[fmt:pink]]Rogers[[/fmt]], le psychologue ne livre pas son avis. Son approche est l’inverse d’un formatage.
 
-[[fmt:pink]]Rogers[[/fmt]] formule lui-même l’hypothèse sur laquelle repose son approche :
+[[fmt:pink]]Rogers[[/fmt]] formule lui-même l’hypothèse sur laquelle repose son approche :
 
-« L’être humain a en lui d’immenses ressources, qui lui permettent de se comprendre lui-même, comme de modifier sa propre image, ses attitudes et son comportement volontaire, et ses ressources peuvent être exploitées pour peu qu’on leur offre un climat caractérisé par des attitudes psychologiques facilitatrices. »
+« L’être humain a en lui d’immenses ressources, qui lui permettent de se comprendre lui-même, comme de modifier sa propre image, ses attitudes et son comportement volontaire, et ses ressources peuvent être exploitées pour peu qu’on leur offre un climat caractérisé par des attitudes psychologiques facilitatrices. »
 
-Dans ce cadre psychologique, l’ACP est fondée sur la [[fmt:yellow]]confiance[[/fmt]] dans la personne accueillie par le psychologue. Pour [[fmt:pink]]Rogers[[/fmt]], l’ACP s’appuie sur l’ « instinct d’accomplissement, ou tendance à l’actualisation, que possède tout organisme vivant et qui fait qu’il tend à croitre, à se développer, à réaliser tout potentiel ». Pour lui, il n’y a pas de négativité.
+Dans ce cadre psychologique, l’ACP est fondée sur la [[fmt:yellow]]confiance[[/fmt]] dans la personne accueillie par le psychologue. Pour [[fmt:pink]]Rogers[[/fmt]], l’ACP s’appuie sur l’ « instinct d’accomplissement, ou tendance à l’actualisation, que possède tout organisme vivant et qui fait qu’il tend à croitre, à se développer, à réaliser tout potentiel ». Pour lui, il n’y a pas de négativité.
 
 Le facteur le plus [[fmt:yellow]]puissant[[/fmt]] en [[fmt:yellow]]thérapie[[/fmt]] est [[fmt:green]]l’alliance thérapeutique[[/fmt]].
 
@@ -80,13 +80,13 @@ Il doit être en capacité d’accueillir une [[fmt:yellow]]forme de demande[[/f
 
 Son [[fmt:green]]Approche Centrée sur la Personne[[/fmt]] (ACP) met l’accent sur la [[fmt:yellow]]qualité de la relation[[/fmt]] entre le thérapeute et le client. Ce sont essentiellement les qualités d’être du thérapeute qui sont sollicitées pour [[fmt:yellow]]favoriser le processus thérapeutique[[/fmt]].
 
-L’ACP repose donc sur deux grands [[fmt:yellow]]principes généraux[[/fmt]] qui ont pour but « l’efficacité thérapeutique » : la [[fmt:green]]non-directivité[[/fmt]] (c’est la personne qui oriente la thérapie), qui permet à la personne d’orienter la thérapie, et la [[fmt:green]]centration sur la personne[[/fmt]], qui rend compte des attitudes du thérapeute permettant cette liberté pour la personne.
+L’ACP repose donc sur deux grands [[fmt:yellow]]principes généraux[[/fmt]] qui ont pour but « l’efficacité thérapeutique » : la [[fmt:green]]non-directivité[[/fmt]] (c’est la personne qui oriente la thérapie), qui permet à la personne d’orienter la thérapie, et la [[fmt:green]]centration sur la personne[[/fmt]], qui rend compte des attitudes du thérapeute permettant cette liberté pour la personne.
 
 - La non-directivité
 
 La [[fmt:green]]non-directivité[[/fmt]] correspond à l’absence des diverses formes de direction dans l’entretien. Elle vise à la création d‘une relation immédiate et authentique qui s’appuie sur un climat d’acceptation chaleureux.
 
-Pour cela, le thérapeute doit avoir confiance dans les capacités [[fmt:green]]d’auto développement[[/fmt]] et [[fmt:green]]d’auto direction[[/fmt]] du sujet. La [[fmt:green]]non-directivité[[/fmt]] se traduit par certaines techniques d’entretien :
+Pour cela, le thérapeute doit avoir confiance dans les capacités [[fmt:green]]d’auto développement[[/fmt]] et [[fmt:green]]d’auto direction[[/fmt]] du sujet. La [[fmt:green]]non-directivité[[/fmt]] se traduit par certaines techniques d’entretien :
 
 - La [[fmt:yellow]]reformulation[[/fmt]] des [[fmt:yellow]]sentiments[[/fmt]] et des contenus exprimés. La reformulation joue un rôle de miroir renvoyant à ce dernier le reflet de son propre discours.
 
@@ -96,31 +96,31 @@ Pour cela, le thérapeute doit avoir confiance dans les capacités [[fmt:green]]
 
 Ce principe met l’accent sur une [[fmt:yellow]]manière d’être[[/fmt]] plutôt que sur une manière d’agir. Pour Rogers, le comportement du thérapeute doit reposer sur des convictions profondément enracinées dans sa personnalité. On peut relever [[fmt:yellow]]3 sous-principes[[/fmt]] que Rogers qualifies d’attitudes psychologique facilitatrices.
 
-Non-directivité > Centration sur la personne :
+Non-directivité > Centration sur la personne :
 
 - [[fmt:green]]A[[/fmt]][[fmt:green]]ut[[/fmt]][[fmt:green]]henticité / Vérité / Congruence[[/fmt]] (=lucidité du thérapeute sur ce qu’il ressent lui-même consciemment, être à l’écoute de ces émotions. Le thérapeute peut se livrer et se permettre de dire la manière dont il pense la manière des choses, si il est contrarier..)
 
-- [[fmt:italic]]«  Plus le thérapeute est lui-même dans la relation, moins il s’abrite derrière une façade professionnel ou personnelle, et plus grandes sont, pour son client, les chances de changement et d’épanouissement. »[[/fmt]]
+- [[fmt:italic]]«  Plus le thérapeute est lui-même dans la relation, moins il s’abrite derrière une façade professionnel ou personnelle, et plus grandes sont, pour son client, les chances de changement et d’épanouissement. »[[/fmt]]
 
 - [[fmt:green]]Regard inconditionnellement positif[[/fmt]] / [[fmt:yellow]]Positif[[/fmt]] (le thérapeute doit avoir une compréhension inconditionnel du sujet)
 
-- [[fmt:italic]]«  Accepter, pour le thérapeute, signifie s’ouvrir à tout ce que peut, sur le moment, ressentir son client : confusion, mécontentement, peur, colère, courage, amour, fierté. C’est une affection sans possessivité »[[/fmt]]
+- [[fmt:italic]]«  Accepter, pour le thérapeute, signifie s’ouvrir à tout ce que peut, sur le moment, ressentir son client : confusion, mécontentement, peur, colère, courage, amour, fierté. C’est une affection sans possessivité »[[/fmt]]
 
 - Compréhension / [[fmt:yellow]]Empathique[[/fmt]] (l’empathie n’est pas innée, c’est une aptitude qui se construit. C’est le moyen principal d’initier chez la personne le début d’un changement car il lui permet de se sentir en sécurité dans sa relation au thérapeute. C’est une condition primordiale).
 
-- [[fmt:italic]]« Cela signifie que le thérapeute perçoit avec exactitude les sentiments qu’éprouve son client, les significations intimes qu’il construit, et qui lui fait partager son intelligence faite d’ouverture et de disponibilité ».[[/fmt]]
+- [[fmt:italic]]« Cela signifie que le thérapeute perçoit avec exactitude les sentiments qu’éprouve son client, les significations intimes qu’il construit, et qui lui fait partager son intelligence faite d’ouverture et de disponibilité ».[[/fmt]]
 
 ## [[fmt:underline,red-text]]Regard critique[[/fmt]]
 
 Les thérapeutes de [[fmt:pink]]Rogers[[/fmt]] ont des [[fmt:green]]manières spécifiques[[/fmt]] de traiter les sujets. Même dans les manières de traiter de l’humain. C’est une forme d’accompagnement qui nécessite une certaine [[fmt:yellow]]forme d’expérience[[/fmt]]. Cela demande un vrai [[fmt:yellow]]travail sur soi[[/fmt]]. Les attitudes (empathie, congruence…) sont difficilement objectivable et se construise que dans la relation immédiate, elle ne constitue pas un modèle clinique.
 
-[[fmt:pink]]Rogers[[/fmt]] a profondément critiqué la technique psychanalytique et les techniques d’entretien. Il a donc tenté d’instaurer une sorte « [[fmt:green]]d’[[/fmt]][[fmt:green]]antitechnique[[/fmt]] ». Or, l’absence de structuration de la situation, la non-directivité, les reformulations sont également des [[fmt:yellow]]techniques particulières à sa thérapie[[/fmt]].
+[[fmt:pink]]Rogers[[/fmt]] a profondément critiqué la technique psychanalytique et les techniques d’entretien. Il a donc tenté d’instaurer une sorte « [[fmt:green]]d’[[/fmt]][[fmt:green]]antitechnique[[/fmt]] ». Or, l’absence de structuration de la situation, la non-directivité, les reformulations sont également des [[fmt:yellow]]techniques particulières à sa thérapie[[/fmt]].
 
 Il pose implicitement son fonctionnement en [[fmt:green]]modèle[[/fmt]]. Donc ce type de psychothérapie nécessite une certaine [[fmt:yellow]]expérience[[/fmt]], un certain développement de sa propre personnalité et une maturation qui ne convient pas forcément à tous les psychologues.
 
-Les attitudes décrites (empathie, authenticité, congruence…) sont difficilement « objectivables ». Certes ces attitudes sont à valoriser dans un contexte clinique mais ne constitue [[fmt:green]]pas un modèle clinique[[/fmt]].
+Les attitudes décrites (empathie, authenticité, congruence…) sont difficilement « objectivables ». Certes ces attitudes sont à valoriser dans un contexte clinique mais ne constitue [[fmt:green]]pas un modèle clinique[[/fmt]].
 
-[[fmt:underline]]Bibliographie :[[/fmt]]
+[[fmt:underline]]Bibliographie :[[/fmt]]
 
 - Rogers, C. R., L’Approche Centrée sur la Personne. Anthologie de textes présentés par Kirschenbaum, H. et Land Henderson, V., éditions Randin (2001).
 

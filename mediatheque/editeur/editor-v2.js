@@ -896,10 +896,19 @@
     API.toast("Bibliothèque sauvegardée.");
   }
 
-  function toggleTheme() { window.PHILOSOPHAL_THEME?.toggle(); }
+  function toggleTheme() {
+    const active = !document.body.classList.contains("editor-dark");
+    document.body.classList.toggle("editor-dark", active);
+    $(`[data-theme-toggle]`).setAttribute("aria-pressed", String(active));
+    try { localStorage.setItem(THEME_KEY, active ? "dark" : "light"); } catch (_) {}
+  }
+
   function initTheme() {
-    const sync = () => document.body.classList.toggle("editor-dark", window.PHILOSOPHAL_THEME?.get() === "dark");
-    sync();window.addEventListener("philosophal:themechange", sync);
+    let theme = "";
+    try { theme = localStorage.getItem(THEME_KEY) || ""; } catch (_) {}
+    const dark = theme === "dark";
+    document.body.classList.toggle("editor-dark", dark);
+    $(`[data-theme-toggle]`).setAttribute("aria-pressed", String(dark));
   }
 
   function syncDocumentUi() {
@@ -1064,7 +1073,7 @@
     });
 
     $(`[data-backup-library]`).addEventListener("click", backupLibrary);
-    $(`[data-theme-toggle]`)?.addEventListener("click", toggleTheme);
+    $(`[data-theme-toggle]`).addEventListener("click", toggleTheme);
 
     window.addEventListener("philosophal:documentloaded", () => syncDocumentUi());
     window.addEventListener("philosophal:documentsaved", () => {

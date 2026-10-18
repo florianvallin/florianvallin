@@ -1,10 +1,10 @@
-# [[fmt:red-text]]Psychologie clinique :[[/fmt]][[fmt:red-text]] [[/fmt]][[fmt:red-text]]Méthodes, théories et pratiques[[/fmt]]
+# [[fmt:red-text]]Psychologie clinique :[[/fmt]][[fmt:red-text]] [[/fmt]][[fmt:red-text]]Méthodes, théories et pratiques[[/fmt]]
 
 - [[fmt:underline,red-text]]Histoire de la psychologie clinique et définition[[/fmt]]
 
 - [[fmt:underline,green-text]]Origines de la psychologie clinique[[/fmt]]
 
-Le terme « [[fmt:green]]clinique[[/fmt]] » prend sa source dans μ (XVIIe). [[fmt:yellow]]Trois auteurs[[/fmt]] fondamentaux :
+Le terme « [[fmt:green]]clinique[[/fmt]] » prend sa source dans μ (XVIIe). [[fmt:yellow]]Trois auteurs[[/fmt]] fondamentaux :
 
 - [[fmt:pink]]Lighter[[/fmt]][[fmt:pink]] [[/fmt]][[fmt:pink]]Witmer[[/fmt]][[fmt:pink]] [[/fmt]]([[fmt:red]]1867-1956[[/fmt]])(USA) crée la Psychological Clinic ([[fmt:red]]1896[[/fmt]]) ou il [[fmt:yellow]]soigne des enfants[[/fmt]] (troubles Ψchiques), il présente sa discipline a APA (American Ψ Association) et parle de Ψ clinique
 
@@ -24,7 +24,7 @@ Le [[fmt:green]]Ψclinique[[/fmt]] confronte [[fmt:yellow]]deux subjectivité[[/
 
 - [[fmt:yellow]]Pathologie du psychologi[[/fmt]][[fmt:yellow]]qu[[/fmt]][[fmt:yellow]]e[[/fmt]]: pathologie mentale ou l’on peut interprétez des aspectsΨ
 
-- [[fmt:yellow]]Psychologie de la[[/fmt]][[fmt:yellow]] pathologie[[/fmt]] (Ψpathologie) : analyse Ψ d’un élément patho.
+- [[fmt:yellow]]Psychologie de la[[/fmt]][[fmt:yellow]] pathologie[[/fmt]] (Ψpathologie) : analyse Ψ d’un élément patho.
 
 Certains auteurs pensent que [[fmt:green]]Ψclinique[[/fmt]](objet moins sévères) et [[fmt:green]]Ψpathologie[[/fmt]](objets plus sévères) sont [[fmt:yellow]]complémentaire[[/fmt]]. [[fmt:green]]Ψpatho[[/fmt]] est un [[fmt:yellow]]domaine[[/fmt]] et [[fmt:green]]Ψ clinique[[/fmt]] est une [[fmt:yellow]]méthode[[/fmt]].
 
@@ -36,7 +36,7 @@ Certains auteurs pensent que [[fmt:green]]Ψclinique[[/fmt]](objet moins sévèr
 
 La clin. est une [[fmt:green]]méthode[[/fmt]] et les outils sont la Ψ. [[fmt:green]]Outils[[/fmt]] permettent de [[fmt:yellow]]montrer éléments de la [[/fmt]][[fmt:yellow]]probléma[[/fmt]][[fmt:yellow]]. [[/fmt]][[fmt:yellow]]i[[/fmt]][[fmt:yellow]]ndividuelle[[/fmt]] (dans thérapie). Elle présente les [[fmt:yellow]]difficultés de l’individu[[/fmt]] ([[fmt:green]]clinique armée[[/fmt]]) [[fmt:yellow]]ou écoute le discours[[/fmt]] ([[fmt:green]]clinique à mains nues[[/fmt]]).
 
-Cette [[fmt:green]]méthode[[/fmt]] prend en [[fmt:yellow]]intégralité[[/fmt]] l’individu (origines du troubles, observations…). Les données reçus sont de [[fmt:yellow]]situations « naturelles »[[/fmt]] (homme en conflit avec les autres et lui-même). [[fmt:green]]L’être[[/fmt]] est une [[fmt:green]]totalité inachevé[[/fmt]] qui ne [[fmt:yellow]]fait qu’avancé[[/fmt]] (ainsi ; il faut [[fmt:yellow]]prend en compte l’histoire et les contextes[[/fmt]]). Ces données ont pour but de [[fmt:yellow]]comprendre l’individu[[/fmt]] et de trouver une [[fmt:yellow]]thérapie[[/fmt]].
+Cette [[fmt:green]]méthode[[/fmt]] prend en [[fmt:yellow]]intégralité[[/fmt]] l’individu (origines du troubles, observations…). Les données reçus sont de [[fmt:yellow]]situations « naturelles »[[/fmt]] (homme en conflit avec les autres et lui-même). [[fmt:green]]L’être[[/fmt]] est une [[fmt:green]]totalité inachevé[[/fmt]] qui ne [[fmt:yellow]]fait qu’avancé[[/fmt]] (ainsi ; il faut [[fmt:yellow]]prend en compte l’histoire et les contextes[[/fmt]]). Ces données ont pour but de [[fmt:yellow]]comprendre l’individu[[/fmt]] et de trouver une [[fmt:yellow]]thérapie[[/fmt]].
 
 - [[fmt:underline]]Positionnement théorique et psychique du clinicien[[/fmt]]
 
@@ -54,7 +54,7 @@ EDC au centre avec [[fmt:green]]principes de singularité[[/fmt]], [[fmt:green]]
 
 L’EDC repose sur [[fmt:green]]méthode clinique[[/fmt]] (entretien, observation) qui prend des infos et peut amener et permet de [[fmt:yellow]]repenser le cas[[/fmt]] (chaque patient est unique).
 
-EDC permet une [[fmt:yellow]]production de document[[/fmt]] issue d’une [[fmt:yellow]]interprétation[[/fmt]] et de [[fmt:yellow]]l’intégration de toute la Ψ clinique[[/fmt]]. Peut-on théoriser avec des cas individuels ? Certains cas sont considérés comme « [[fmt:green]]cas exemplaire[[/fmt]] » car représentant typiques d’un problème.
+EDC permet une [[fmt:yellow]]production de document[[/fmt]] issue d’une [[fmt:yellow]]interprétation[[/fmt]] et de [[fmt:yellow]]l’intégration de toute la Ψ clinique[[/fmt]]. Peut-on théoriser avec des cas individuels ? Certains cas sont considérés comme « [[fmt:green]]cas exemplaire[[/fmt]] » car représentant typiques d’un problème.
 
 - [[fmt:underline,green-text]]L’observation clinique[[/fmt]]
 
@@ -70,31 +70,31 @@ L’observation cli. peut-être [[fmt:green]]naturelle[[/fmt]] ou [[fmt:green]]t
 
 [[fmt:green]]L’entretien clinique[[/fmt]] permet d’avoir des [[fmt:green]]éléments interne[[/fmt]] (=affects, représentations…) et le discours du patient peut être d’une [[fmt:green]]dimension référentielle[[/fmt]] (ce que dit le sujet des faits), [[fmt:green]]modale[[/fmt]] (ce qu’il dit de ce qu’il pense) et [[fmt:green]]illocutoire[[/fmt]] (ce qu’il accomplit comme acte en parlant).
 
-[[fmt:green]]Intervention[[/fmt]] peuvent avoir effet différents : Blanchet (1985) retient la réitération (répétition du discours du patient pour un dvlp informatif), la déclaration (permet au Ψ de donner un point de vue) et l’interrogation (stimuler l’énonciation)
+[[fmt:green]]Intervention[[/fmt]] peuvent avoir effet différents : Blanchet (1985) retient la réitération (répétition du discours du patient pour un dvlp informatif), la déclaration (permet au Ψ de donner un point de vue) et l’interrogation (stimuler l’énonciation)
 
-Certains [[fmt:yellow]]principes[[/fmt]] sont [[fmt:yellow]]propres à l’entretien clinique[[/fmt]] :
+Certains [[fmt:yellow]]principes[[/fmt]] sont [[fmt:yellow]]propres à l’entretien clinique[[/fmt]] :
 
-- [[fmt:green]]Neutralité bienveillante[[/fmt]] : disponibilité affective ou l’on doit être dans une position proche sans jugement et assez en retrait (s’associe à considération positive inconditionnelle (=dvlp attitude réceptive)
+- [[fmt:green]]Neutralité bienveillante[[/fmt]] : disponibilité affective ou l’on doit être dans une position proche sans jugement et assez en retrait (s’associe à considération positive inconditionnelle (=dvlp attitude réceptive)
 
-- [[fmt:green]]Respect des défenses et résistances du sujet[[/fmt]] : doit prendre en compte le temps Ψchiques et ne doit pas intervenir de manière préjudiciable
+- [[fmt:green]]Respect des défenses et résistances du sujet[[/fmt]] : doit prendre en compte le temps Ψchiques et ne doit pas intervenir de manière préjudiciable
 
-- Le [[fmt:green]]transfert[[/fmt]] (réactualisation du thérapeute de représentation/désirs inconscients) et [[fmt:green]]contre-transfert[[/fmt]] (désirs/représentation orientant l’écoute du thérapeute)
+- Le [[fmt:green]]transfert[[/fmt]] (réactualisation du thérapeute de représentation/désirs inconscients) et [[fmt:green]]contre-transfert[[/fmt]] (désirs/représentation orientant l’écoute du thérapeute)
 
-- [[fmt:green]]L’empathie[[/fmt]] : ressentir le monde du patient comme le sien (Rogers (1963))
+- [[fmt:green]]L’empathie[[/fmt]] : ressentir le monde du patient comme le sien (Rogers (1963))
 
-- [[fmt:green]]Fonction contenante[[/fmt]] : accueillir angoisse du patient et le détoxiquée
+- [[fmt:green]]Fonction contenante[[/fmt]] : accueillir angoisse du patient et le détoxiquée
 
-Certaines choses sont du côté du patient et du clinicien :
+Certaines choses sont du côté du patient et du clinicien :
 
-- [[fmt:green]]Identification[[/fmt]] : un des deux interlocuteurs peut se transformer en modèle
+- [[fmt:green]]Identification[[/fmt]] : un des deux interlocuteurs peut se transformer en modèle
 
-- [[fmt:green]]Projection[[/fmt]] : l’un des deux peut imputer les attributs qui lui appartiennent
+- [[fmt:green]]Projection[[/fmt]] : l’un des deux peut imputer les attributs qui lui appartiennent
 
-- [[fmt:green]]Clivage[[/fmt]] : principe ou deux choses sont inverse ([[fmt:blue]]expérience bonne / désagréable[[/fmt]])
+- [[fmt:green]]Clivage[[/fmt]] : principe ou deux choses sont inverse ([[fmt:blue]]expérience bonne / désagréable[[/fmt]])
 
-- [[fmt:green]]Restriction[[/fmt]] : discours censurés, faibles avec des oublis
+- [[fmt:green]]Restriction[[/fmt]] : discours censurés, faibles avec des oublis
 
-- [[fmt:green]]Recours au factuel[[/fmt]] : discours centré sur faits et met à distance le ressenti
+- [[fmt:green]]Recours au factuel[[/fmt]] : discours centré sur faits et met à distance le ressenti
 
 - [[fmt:underline,green-text]]Les tests et échelles[[/fmt]]
 
@@ -102,7 +102,7 @@ Ils permettent de [[fmt:green]]mesurer les phénomènes psychiques[[/fmt]] et de
 
 Les Ψ utilisent [[fmt:yellow]]test [[/fmt]][[fmt:yellow]]cognitivo[[/fmt]][[fmt:yellow]]-intellectuels[[/fmt]] ou neuroΨ (WISC, WAIS, WCST) pour [[fmt:yellow]]mesurer l’intelligence[[/fmt]] d’un sujet mais aussi de [[fmt:yellow]]repérer le trouble de fonction cognitives[[/fmt]] (mémoire, attention, perception…).
 
-[[fmt:green]]Test projectifs[[/fmt]] : sujet [[fmt:yellow]]injecte du sens dans matériel peu structuré[[/fmt]], cela permet une appréhension de la réalité, un aménagement défensif/affectif, nature de l’angoisse…
+[[fmt:green]]Test projectifs[[/fmt]] : sujet [[fmt:yellow]]injecte du sens dans matériel peu structuré[[/fmt]], cela permet une appréhension de la réalité, un aménagement défensif/affectif, nature de l’angoisse…
 
 Il existe aussi des inventaires de personnalité (souvent pour le cadre de la recherche)
 
@@ -134,19 +134,19 @@ La [[fmt:green]]phénoménologie[[/fmt]] tente de comprendre [[fmt:yellow]]l’�
 
 - [[fmt:underline,green-text]]Le courant systémique[[/fmt]]
 
-Courant issue de la [[fmt:green]]théorie des systèmes[[/fmt]] ([[fmt:pink]]Bertalanffy[[/fmt]]) : le système a une [[fmt:yellow]]tension entre la cohésion et l’équilibre dynamique.[[/fmt]] Il prend en compte [[fmt:yellow]]l’individu dans son environnement relationnel[[/fmt]] et la [[fmt:yellow]]communication[[/fmt]] et fonctionne sur les actions qui entrainent des réactions. Il y a un [[fmt:yellow]]disfonctionnement de la communication[[/fmt]]. Le symptôme permet de [[fmt:yellow]]trouver un équilibre[[/fmt]] et l’analyse un changement dans la communication.
+Courant issue de la [[fmt:green]]théorie des systèmes[[/fmt]] ([[fmt:pink]]Bertalanffy[[/fmt]]) : le système a une [[fmt:yellow]]tension entre la cohésion et l’équilibre dynamique.[[/fmt]] Il prend en compte [[fmt:yellow]]l’individu dans son environnement relationnel[[/fmt]] et la [[fmt:yellow]]communication[[/fmt]] et fonctionne sur les actions qui entrainent des réactions. Il y a un [[fmt:yellow]]disfonctionnement de la communication[[/fmt]]. Le symptôme permet de [[fmt:yellow]]trouver un équilibre[[/fmt]] et l’analyse un changement dans la communication.
 
 - [[fmt:underline,red-text]]Interventions du psychologue clinicien[[/fmt]]
 
 - [[fmt:underline,green-text]]L’identité professionnelle[[/fmt]]
 
-[[fmt:green]]L’identité pro. [[/fmt]][[fmt:green]]du[[/fmt]][[fmt:green]] Ψ[[/fmt]] se fonde sur la [[fmt:yellow]]loi 85-772[[/fmt]] du [[fmt:yellow]]25/06/1985[[/fmt]] protégeant le titre à travers [[fmt:yellow]]l’obtention du master[[/fmt]]. Le Ψ clinicien a plusieurs missions :
+[[fmt:green]]L’identité pro. [[/fmt]][[fmt:green]]du[[/fmt]][[fmt:green]] Ψ[[/fmt]] se fonde sur la [[fmt:yellow]]loi 85-772[[/fmt]] du [[fmt:yellow]]25/06/1985[[/fmt]] protégeant le titre à travers [[fmt:yellow]]l’obtention du master[[/fmt]]. Le Ψ clinicien a plusieurs missions :
 
-- [[fmt:green]]Mission clinique[[/fmt]] auprès des patients : [[fmt:yellow]]observer, écouter, analyser[[/fmt]] et [[fmt:yellow]]construire[[/fmt]] dispositifs adapté aux problèmes
+- [[fmt:green]]Mission clinique[[/fmt]] auprès des patients : [[fmt:yellow]]observer, écouter, analyser[[/fmt]] et [[fmt:yellow]]construire[[/fmt]] dispositifs adapté aux problèmes
 
-- [[fmt:green]]Mission institutionnelle[[/fmt]] auprès des équipes [[fmt:yellow]]: travailler en équipe, participer aux réunions[[/fmt]]…
+- [[fmt:green]]Mission institutionnelle[[/fmt]] auprès des équipes [[fmt:yellow]]: travailler en équipe, participer aux réunions[[/fmt]]…
 
-- [[fmt:green]]Mission formation-information-recherche[[/fmt]] : se [[fmt:yellow]]documenter[[/fmt]], [[fmt:yellow]]s’inscrire dans formation complémentaires, participé à la formation[[/fmt]] des étudiants…
+- [[fmt:green]]Mission formation-information-recherche[[/fmt]] : se [[fmt:yellow]]documenter[[/fmt]], [[fmt:yellow]]s’inscrire dans formation complémentaires, participé à la formation[[/fmt]] des étudiants…
 
 Le Ψ clinicien doit [[fmt:yellow]]respecter la vie[[/fmt]] Ψchique et [[fmt:yellow]]souffrance[[/fmt]] du patient, doit [[fmt:yellow]]connaitre la loi[[/fmt]], respecter les règles de la Ψ…
 
@@ -156,7 +156,7 @@ Le Ψ clinicien doit [[fmt:yellow]]respecter la vie[[/fmt]] Ψchique et [[fmt:ye
 
 - [[fmt:underline,green-text]]Types d’intervention[[/fmt]]
 
-- [[fmt:underline]]Le diagnostic et l’évaluation : le bilan psychologique[[/fmt]]
+- [[fmt:underline]]Le diagnostic et l’évaluation : le bilan psychologique[[/fmt]]
 
 Il y a une [[fmt:yellow]]sélection / traitement des données [[/fmt]][[fmt:yellow]]indivi[[/fmt]]. pour faire évoluer le patient. Elle [[fmt:yellow]]décrit le patient[[/fmt]] (maladie, histoire, trouble) en l’évaluant quels que soient les moyens mis en œuvre (EDC)
 
@@ -178,7 +178,7 @@ Majorité des Ψ travaillent en [[fmt:yellow]]institution[[/fmt]]. Il peut [[fmt
 
 - [[fmt:underline]]La recherche[[/fmt]]
 
-Production de [[fmt:yellow]]problèmes/recherche[[/fmt]] nouvelle. Deux conceptions s’opposent en se complétant :
+Production de [[fmt:yellow]]problèmes/recherche[[/fmt]] nouvelle. Deux conceptions s’opposent en se complétant :
 
 - L’une est fondée sur [[fmt:yellow]]modèle traditionnel[[/fmt]] de la recherche (validation des hypothèses)
 

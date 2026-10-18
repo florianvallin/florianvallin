@@ -146,7 +146,7 @@
           if(path.endsWith("/sw.js")||path.endsWith("/english-offline.js"))await registration.unregister();
         }
         if(window.caches)for(const name of await caches.keys())if(/^(fv-reader|philosophal-reader|philosophal-english|philosophal-atelier)/.test(name))await caches.delete(name);
-        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261014-audit1",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
+        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261018-v9",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
       }
     }catch{}
 

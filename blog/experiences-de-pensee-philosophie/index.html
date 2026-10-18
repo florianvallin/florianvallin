@@ -2,14 +2,16 @@
 
 <html lang="fr">
 <head>
+<script src="/js/theme-prepaint.js?v=20261018-v9"></script>
+
 <meta charset="utf-8"/>
   <script src="/js/site-quality.js?v=20261014-audit1"></script>
-  <script src="../../js/site-theme.js?v=20261014-audit1"></script>
+  <script src="../../js/site-theme.js?v=20261018-v9"></script>
   <link rel="stylesheet" href="../../css/site-theme.css?v=20261014-audit1">
 
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link rel="preload" href="/assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="/css/style.css?v=20261014-audit1" rel="stylesheet"/>
+  <link href="/css/style.css?v=20261018-v9" rel="stylesheet"/>
 <link href="/css/blog.css?v=20261014-audit1" rel="stylesheet"/>
 
 
@@ -124,27 +126,30 @@ html[data-site-theme="dark"] .thought-hero-symbol .thought-symbol-caption{fill:#
 <meta property="og:description" content="Dix expériences de pensée, dilemmes et situations classiques pour découvrir simplement la justice, la liberté, la vérité, la conscience, le bonheur et d’autres…">
 <meta property="og:url" content="https://philosophal.fr/blog/experiences-de-pensee-philosophie/">
 <meta property="og:type" content="article">
+<link rel="stylesheet" href="/css/site-theme-v4.css?v=20261018-v9" data-ph-dark-v4>
 </head>
 <body class="blog-page thought-page" id="top">
-<header class="navbar ph-header-organised" id="site-header">
+<header class="navbar ph-minimal-ready" id="site-header">
   <div class="nav-container">
-    <a class="nav-brand" href="../../index.html" aria-label="Accueil — Philosophal" title="Accueil"><img class="nav-brand-logo" src="../../images/logo-philosophal.png?v=20261014-audit1" alt="" width="40" height="40" decoding="async"></a>
-    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale">
-      <a class="nav-texts-link" href="../../textes/" aria-label="Textes — raccourci clavier T" title="Raccourci clavier : T"><span class="nav-shortcut-letter" aria-hidden="true">T</span>extes</a>
-      <a class="nav-blog-link" href="../../blog/" aria-label="Blog — raccourci clavier B" title="Raccourci clavier : B" aria-current="location"><span class="nav-shortcut-letter" aria-hidden="true">B</span>log</a>
-      <a class="nav-tools-link" href="../../outils/">Outils</a>
-      <button class="nav-search-trigger nav-search-desktop" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
-      <a class="nav-services-link" href="../../index.html#philosophie">Prestations</a>
-      <details class="nav-group nav-group-about">
-        <summary>À propos<span class="nav-group-chevron" aria-hidden="true"></span></summary>
-        <div class="nav-group-links"><a class="nav-about-link" href="../../index.html#quisuisje">Qui suis-je ?</a><a class="nav-faq-link" href="../../index.html#faq">FAQ</a></div>
-      </details>
-      <a class="nav-contact-link nav-contact-mobile" href="../../index.html#contact">Contactez-moi</a>
+    <a class="nav-brand" href="/" aria-label="Accueil — Philosophal" title="Accueil">
+      <img class="nav-brand-logo" src="/images/logo-philosophal.png?v=20261018-v9" alt="" width="74" height="45" decoding="async">
+      <span class="nav-brand-wordmark" aria-hidden="true">Philosophal<span class="nav-brand-wordmark-dot">.</span></span>
+    </a>
+    <nav class="nav-links" id="primary-navigation" aria-label="Navigation principale" data-minimal-ready="1">
+      <a class="nav-texts-link" href="/textes/">Textes</a>
+      <a class="nav-blog-link" href="/blog/" aria-current="page">Blog</a>
+      <a class="nav-tools-link" href="/outils/">Outils</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-services-link" href="/#philosophie">Prestations</a>
+      <a class="nav-about-link" href="/#quisuisje">Qui suis-je ?</a>
+      <a class="nav-faq-link" href="/#faq">FAQ</a>
+      <a class="nav-contact-link nav-contact-mobile" href="/#contact">Contactez-moi</a>
     </nav>
     <div class="nav-header-actions">
-      <button class="nav-search-trigger nav-search-mobile" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site — raccourci R"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"></circle><path d="m16 16 4 4"></path></svg></button>
-      <a class="nav-contact-link nav-contact-desktop" href="../../index.html#contact">Contactez-moi</a>
-      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span class="nav-menu-word">Menu</span></button>
+      <button class="nav-search-trigger" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site (R)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4 4"/></svg></button>
+      <button class="nav-theme-toggle" type="button" data-site-theme-toggle aria-label="Activer le mode sombre" aria-pressed="false" title="Changer le thème"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.5 13.1A8.5 8.5 0 0 1 10.9 3.5a8.5 8.5 0 1 0 9.6 9.6Z"/></svg></button>
+      <a class="nav-contact-link nav-contact-desktop" href="/#contact">Contactez-moi</a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -350,7 +355,7 @@ html[data-site-theme="dark"] .thought-hero-symbol .thought-symbol-caption{fill:#
 <div class="footer-bottom"><hr class="footer-divider"/><p class="footer-legal">Tous droits réservés.</p></div>
 </footer>
 <button aria-label="Retour en haut" class="back-to-top" id="backToTop"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5M12 5 6 11M12 5l6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></button>
-<script defer="" src="/js/script.js?v=20261014-audit1"></script>
+<script defer="" src="/js/script.js?v=20261018-v9"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"10 expériences de pensée et dilemmes pour entrer en philosophie","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@type":"Organization","name":"Philosophal"},"mainEntityOfPage":"https://philosophal.fr/blog/experiences-de-pensee-philosophie/","description":"Dix expériences de pensée, dilemmes et situations classiques pour découvrir simplement de grandes questions de philosophie."}
 </script>
