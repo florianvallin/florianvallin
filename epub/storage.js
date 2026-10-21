@@ -4,7 +4,7 @@
   const DB_NAME = "philosophal-local-books";
   const DB_VERSION = 1;
   const STORE = "books";
-  const SUPPORTED_EXTENSIONS = ["epub", "azw", "azw3", "mobi", "cbz", "txt", "text", "html", "htm", "xhtml", "md", "markdown", "fb2", "docx", "odt"];
+  const SUPPORTED_EXTENSIONS = ["epub", "azw", "azw3", "mobi", "cbz", "cbr", "zip", "rar", "djvu", "djv", "pdf", "txt", "text", "html", "htm", "xhtml", "md", "markdown", "fb2", "docx", "odt"];
 
   function extensionOf(name = "") {
     const part = String(name).toLowerCase().split(".").pop();
@@ -13,6 +13,7 @@
 
   function formatOf(file) {
     const ext = extensionOf(file?.name || "");
+    if (ext === "djv") return "djvu";
     if (ext === "text") return "txt";
     if (ext === "htm" || ext === "xhtml") return "html";
     if (ext === "markdown") return "md";
@@ -22,7 +23,6 @@
   function isSupported(file) {
     if (!file || typeof file.name !== "string") return false;
     const ext = extensionOf(file.name);
-    if (ext === "pdf") return false;
     return SUPPORTED_EXTENSIONS.includes(ext);
   }
 
@@ -91,7 +91,7 @@
 
   async function saveFile(file) {
     if (!isSupported(file)) {
-      throw new Error("Format non pris en charge. Utilisez EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown, FB2, DOCX ou ODT.");
+      throw new Error("Format non pris en charge. Utilisez PDF, EPUB, FB2, MOBI, AZW3, DjVu, CBZ, CBR, RAR, ZIP, TXT, HTML, Markdown, DOCX ou ODT.");
     }
 
     const id = idForFile(file);

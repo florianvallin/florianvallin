@@ -1,0 +1,558 @@
+[
+  {
+    "path": "apprendre/creation/teleprompteur/index.html",
+    "sha256": "b000f7d9747d2ca053f013137a45cb47d1424e45aa1ef541816c3f489e2f443d"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/telecommande/index.html",
+    "sha256": "eef47973b9402813b8f5cbb59a7ef1df88bcc4c4a38110dba7d12030fde58640"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/telecommande/telecommande.js",
+    "sha256": "209a0ea528bbda3af8b170e544db92c16340334c1b7377c8daf169b4a94002a4"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-camera.css",
+    "sha256": "4c00706cbb7aeee3e89be2b0949c70b8ab192ddac9b49fb78bd2347880238a8f"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-camera.js",
+    "sha256": "9f9414453c343795010d5f161dfd7221a8d77d2ab5ca0203f1a4b07bc0cd4339"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-connect.js",
+    "sha256": "f44ca448597084bb21d9275c3422cc019204268d743caf4f6b182c6719e79a69"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-core.js",
+    "sha256": "7cc8f577adaa67dab16bc0d077ce9d7235a93330cf8ffc55c45cea0634240cfd"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-floating.js",
+    "sha256": "df235cd1262f2238a212911fe22dc238953e0a0b479a9bb48e57ce9b406943c0"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-library.js",
+    "sha256": "0c27ca403c6e9966c8a5a47d752afa2dd0d45ec4953ae3280bb37823325c3223"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-media.js",
+    "sha256": "063b1ba25eb46b3c03902354da2d672c4bab2e4dc3e82dc0c91371602df195db"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-production.js",
+    "sha256": "d3103cdd2f7a8723a88e72a405b72bb234d38150e9429f215166cdef7e204d9b"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-remote.css",
+    "sha256": "2a4d2778024a5873b55fc81bc1bd479fd09c9975647c094be3eb0bd35bdb2c7a"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-remote.js",
+    "sha256": "79ce0aa862fbcbaf31e7820afb897a3c84fafef207dfd2b3955c16b0c02ea624"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-takes.js",
+    "sha256": "f086c97651bb231010eec49c0d50c4d98cad515a91f5043feb5709ba1fda5494"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur-workspace.js",
+    "sha256": "45cf3309e6e0c0f9a500471aec08df30f89971397df55b59f4121734b3b9c8a2"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur.css",
+    "sha256": "4b72d7d6e6862f45cc0954fd04de730a54cc12869a3232b3fa0d7b306485d98a"
+  },
+  {
+    "path": "apprendre/creation/teleprompteur/teleprompteur.js",
+    "sha256": "37eb1d716422cbd2ce7e5c10945ccbc0aede91aba9532525ae81260fe963e67b"
+  },
+  {
+    "path": "blog/cinema/index.html",
+    "sha256": "cfe45bffa6bb6d8963f988377cc6ba560331e0dc3b0d61a8ef3b47d7b8bb3306"
+  },
+  {
+    "path": "blog/index.html",
+    "sha256": "bc7337aa274fef022dce9263f56714dd511032d512ae5d404b0a90a689073fff"
+  },
+  {
+    "path": "blog/tous-les-billets.html",
+    "sha256": "bc7337aa274fef022dce9263f56714dd511032d512ae5d404b0a90a689073fff"
+  },
+  {
+    "path": "blog/utiliser-cinema-philosophie/index.html",
+    "sha256": "780071ef96c475014c52d7f0e0b68bb8cb93368d582764a3c26f80611bfd0150"
+  },
+  {
+    "path": "css/blog.css",
+    "sha256": "4c45fda2d818438ec3f3b3618975142014073aeaa1af2534e0ca2843c5ec4e92"
+  },
+  {
+    "path": "css/outils-hub.css",
+    "sha256": "e5afcd1aa184f7ecd38795345f7a9ab9ccee5db71c5c407de1819f7ffe56532c"
+  },
+  {
+    "path": "css/public-tools.css",
+    "sha256": "44273a1a9f2426b4955c7e35a7095ba8cadc8f40c5d4322e1e1c53696d8fb224"
+  },
+  {
+    "path": "css/site-quality.css",
+    "sha256": "4b0c0acf8179155ced2749ea3097a6a8ef61e1a847b4cb455047fc99eba3de21"
+  },
+  {
+    "path": "css/site-theme-v4.css",
+    "sha256": "377a168ff01e2b02496ed939d8c28c92d9cdc0261540e6519dd29dab033d2da1"
+  },
+  {
+    "path": "css/site-theme.css",
+    "sha256": "bcc1f97924c0e225663f7cf6ef88a6722c75be84a676496a87810b5b652566dd"
+  },
+  {
+    "path": "css/style.css",
+    "sha256": "eb0d6779db539737ef2d33c651b26449500c17d9f2bd9ee4dd66fda333cd7240"
+  },
+  {
+    "path": "css/textes.css",
+    "sha256": "bc7f28196f09af5c5c2b0fa51067995a3a3d80efcebb6b64e20fea276980d2f4"
+  },
+  {
+    "path": "epub/accueil.css",
+    "sha256": "6528134c380338758c65db2148fdda4c844f4705ba370386f85eb0ae04efba57"
+  },
+  {
+    "path": "epub/boot.js",
+    "sha256": "8a9efbcbb291834b968e698be0c0096830599221efe9794056e7a54f54dd5cea"
+  },
+  {
+    "path": "epub/documents.js",
+    "sha256": "3dda6ea68cb8b36cb9145beaa4c6dd3a37136dded4089bd9d774a01405eaf14e"
+  },
+  {
+    "path": "epub/drop-entry.js",
+    "sha256": "db0ec8987c43b78688786da25e2dc2cbe045266f9feda5223cd0882e1881801a"
+  },
+  {
+    "path": "epub/entry.css",
+    "sha256": "4375bc94e6da27c1a94f0d93097efff8db2b2823345048ab6c7f5eca96515db0"
+  },
+  {
+    "path": "epub/extra-formats.js",
+    "sha256": "3e94299b59695446b4b5558e05b5229ff164191227cdb09db2b8c66957c99302"
+  },
+  {
+    "path": "epub/index.html",
+    "sha256": "5ad37616755c0701c976af2a414ec8367432e2d7c87f459980ef12db807ed975"
+  },
+  {
+    "path": "epub/local-formats.js",
+    "sha256": "ca3d9aa1879ae8cb5882f2057e7a7632209935ad6d8c75d6fa2b208c2e8077c0"
+  },
+  {
+    "path": "epub/pagination.js",
+    "sha256": "6cca14aa70876204b096eed95bf0668616a42b58a9aaa3bf5e262e811eeb94d2"
+  },
+  {
+    "path": "epub/reader.css",
+    "sha256": "849bd744995bb8e1cdfa459b9c7417f38604608ac0b888249029894db8001321"
+  },
+  {
+    "path": "epub/reader.js",
+    "sha256": "157514ffd626d7a8f45532a6812126d047badcc6473267a5279504fb518b7453"
+  },
+  {
+    "path": "epub/storage.js",
+    "sha256": "4e5df027ceeeaa7a617effd6339840496bc2e3a3e19ccb8613fcd483fd93b1fe"
+  },
+  {
+    "path": "epub/vendor/EPUBJS-LICENSE",
+    "sha256": "8663e726f4194e1a34913b223c2e4745ed06f3ec645a66a41ab70b735070b692"
+  },
+  {
+    "path": "epub/vendor/FFLATE-LICENSE",
+    "sha256": "766daa9b2ab0ab2698c769f334a6d72c42437b0a7d0d0dfd5c13c64b3120117b"
+  },
+  {
+    "path": "epub/vendor/JSZIP-LICENSE",
+    "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+  },
+  {
+    "path": "epub/vendor/LICENSE-EPUBJS.txt",
+    "sha256": "8663e726f4194e1a34913b223c2e4745ed06f3ec645a66a41ab70b735070b692"
+  },
+  {
+    "path": "epub/vendor/LICENSE-JSZIP.txt",
+    "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+  },
+  {
+    "path": "epub/vendor/THIRD-PARTY.txt",
+    "sha256": "6de65181c40a3b1c6912ef09045f274f08360b9be022ecf1c26843e5fa56c066"
+  },
+  {
+    "path": "epub/vendor/VERSIONS.txt",
+    "sha256": "2844aad2fda771cc3a02624741289b9fc059525a94549d4ea3a07a5f3a99f832"
+  },
+  {
+    "path": "epub/vendor/ZIPJS-LICENSE",
+    "sha256": "1b7ebc8d7889ed25491484ab2b102370742ca6c0b26650a0c62cc2269b579b84"
+  },
+  {
+    "path": "epub/vendor/djvu/GNU_GPL_v2",
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+    "path": "epub/vendor/djvu/LICENSE.md",
+    "sha256": "5b2baaa4c209fb62dc5fc90270a1ac8935ea88e1c554fbe11e1e52dd3560420e"
+  },
+  {
+    "path": "epub/vendor/djvu/SOURCE.md",
+    "sha256": "98b61736862906bfaaad130db158f5525d664cf1d6710325e44310220cec9d61"
+  },
+  {
+    "path": "epub/vendor/djvu/THE_UNLICENSE",
+    "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+  },
+  {
+    "path": "epub/vendor/djvu/djvu.js",
+    "sha256": "10a831d62cc7ced39c30c7350a11410402d082a0f0a5b073a88d3d7ca662add3"
+  },
+  {
+    "path": "epub/vendor/epub.min.js",
+    "sha256": "98c7c3889461b3e34aa7515dea487cf1279be51f9d521d8b7456208d72930998"
+  },
+  {
+    "path": "epub/vendor/foliate/LICENSE",
+    "sha256": "b621ffc351fe263bc9b09dd0bc1c9332fda9c462a3904c1e4f0b4d3236b9c28c"
+  },
+  {
+    "path": "epub/vendor/foliate/comic-book.js",
+    "sha256": "7f3bf77561ca77300d5244015fcb1f73805787db246928074dc49fb56c88762e"
+  },
+  {
+    "path": "epub/vendor/foliate/epub.js",
+    "sha256": "dfe347495039e9b5991478986ec6b7713cf9efbcd8f475a77ef7b967c5176298"
+  },
+  {
+    "path": "epub/vendor/foliate/epubcfi.js",
+    "sha256": "e1a688ad5c84bf31f33cef467f92c7a6d060a0f17ec37c1d3c048e9c7b1cf645"
+  },
+  {
+    "path": "epub/vendor/foliate/fb2.js",
+    "sha256": "09a7890bf191f1b6c6dd435fae2868b86c75e73e00731b0051c02f2a998a180a"
+  },
+  {
+    "path": "epub/vendor/foliate/fixed-layout.js",
+    "sha256": "7aee1d15d8e0479b8a6c59a20304b250dafc4c7dc158147a2b2c6bed9e180b4c"
+  },
+  {
+    "path": "epub/vendor/foliate/footnotes.js",
+    "sha256": "d377b45d2ac05290c42873612ec0a92e640938e8be8ed850a467133a883388de"
+  },
+  {
+    "path": "epub/vendor/foliate/mobi.js",
+    "sha256": "016526df13a9f11ee6671a8c74346e1cf41fe6bdfe50165fdcbf744f015694f3"
+  },
+  {
+    "path": "epub/vendor/foliate/overlayer.js",
+    "sha256": "d3d3396e3083277ccbd4f17c407621159b22a407107e43ce75ca3014578094fb"
+  },
+  {
+    "path": "epub/vendor/foliate/paginator.js",
+    "sha256": "317f09569146d5d89cf35dc54be79bd56c45f1653625aafed74c193a5e605519"
+  },
+  {
+    "path": "epub/vendor/foliate/pdf.js",
+    "sha256": "684da69d4366f2fee1e08423d02e727c32c553f2487bba661c6a1870b0508475"
+  },
+  {
+    "path": "epub/vendor/foliate/progress.js",
+    "sha256": "544f5e90babc0cb31c5caf971a5f06dd6249ec06600cb62f672fa7179811fde1"
+  },
+  {
+    "path": "epub/vendor/foliate/search.js",
+    "sha256": "31e846bdc095a645de0e94f7baa2c9e136561a363a2f774d4032e72cfa1fb0ef"
+  },
+  {
+    "path": "epub/vendor/foliate/text-walker.js",
+    "sha256": "4ad740ab6142b5be428700ef4d270253cef6649cf6e047ae7d2698a7aec65e92"
+  },
+  {
+    "path": "epub/vendor/foliate/tts.js",
+    "sha256": "530d34605b758a5e2260438964a85bb9909bcb49e8848e303fe22cac63859026"
+  },
+  {
+    "path": "epub/vendor/foliate/vendor/fflate.js",
+    "sha256": "e63bcc21f83a43e5f71d5cbefd351ff4d4dbd57bef8b29ad65c8bd65752f6e6b"
+  },
+  {
+    "path": "epub/vendor/foliate/vendor/zip.js",
+    "sha256": "2a0d43157e4a447c6e43351225758795b75a33e8dfec10c6767248df2182949a"
+  },
+  {
+    "path": "epub/vendor/foliate/view.js",
+    "sha256": "e0093af921feb03bb58fb51aeedc321fa108a4158d215f6913ecf7925415c945"
+  },
+  {
+    "path": "epub/vendor/jszip.min.js",
+    "sha256": "7f839b2d4688b845c105ebf5d2f9803075f91ea0fe72bdaac176c3a04dd3d2c1"
+  },
+  {
+    "path": "epub/vendor/pdfjs/LICENSE",
+    "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+  },
+  {
+    "path": "epub/vendor/pdfjs/pdf.min.js",
+    "sha256": "5b5799e6f8c680663207ac5b42ee14eed2a406fa7af48f50c154f0c0b1566946"
+  },
+  {
+    "path": "epub/vendor/pdfjs/pdf.worker.min.js",
+    "sha256": "feabdf309770ed24bba31a5467836cdc8cf639c705af27d52b585b041bb8527b"
+  },
+  {
+    "path": "epub/vendor/unrar/LICENSE.md",
+    "sha256": "263ab8403cf8651aeff39ce72202a2d8a07eb29e3c37a7190cc6e2e3c0e8da36"
+  },
+  {
+    "path": "epub/vendor/unrar/PHILOSOPHAL-NOTICE.md",
+    "sha256": "21e03981b973c4022b44bc2dbd9de41ac04bb73456df9223f1f6f81a4ddc5099"
+  },
+  {
+    "path": "epub/vendor/unrar/index.esm.js",
+    "sha256": "d17eca77420a66a364274c5356c8369fe021231cf5be4a2258ab36fa3493d230"
+  },
+  {
+    "path": "epub/vendor/unrar/index.js",
+    "sha256": "17a749ee558e3feeeaf561da95a6b84d21a4aee8e62a850e443372f565db41d6"
+  },
+  {
+    "path": "epub/vendor/unrar/js/Extractor.js",
+    "sha256": "3bd8863be6fad77898e1ae2c8f8d21e1d1f4bde8d53c6ddd269de24e4b79dac5"
+  },
+  {
+    "path": "epub/vendor/unrar/js/ExtractorData.helper.js",
+    "sha256": "1e3c951e0338bec7c1f76f90bcdf2bc26e27d7ccdabd62f66f4e6744d84f1971"
+  },
+  {
+    "path": "epub/vendor/unrar/js/ExtractorData.js",
+    "sha256": "03367648ae2070c9f8c18cbb270f91808d6cd7c2f573249ff1ff485781f4750f"
+  },
+  {
+    "path": "epub/vendor/unrar/js/ExtractorFile.js",
+    "sha256": "ba5d6d439448787233b05228b27c8601065087abc08487fce32fa846d37a4dd1"
+  },
+  {
+    "path": "epub/vendor/unrar/js/unrar.js",
+    "sha256": "043b57fbe2137b32210ff80fb5823950520d503dc930ebbda0824a2a77e8119a"
+  },
+  {
+    "path": "epub/vendor/unrar/js/unrar.singleton.js",
+    "sha256": "a4a4d25f80e4de5c7859904cfd212c36c2c5b79ed6dbbad4f2a71bd0e60ff11b"
+  },
+  {
+    "path": "epub/vendor/unrar/js/unrar.wasm",
+    "sha256": "c7d79f869196e3c79c053ba74a8f629116de8293a94f60cc851bbcd7977d0c2b"
+  },
+  {
+    "path": "index.html",
+    "sha256": "3ce9604cf327c0367fa4d0e3fa30a6ab665cf9f02b98b142b76b25bf00888fa2"
+  },
+  {
+    "path": "js/blog-films.js",
+    "sha256": "d0755ee06091a7e66ee4c5f7aab0facc691dde588b762435a21b7c193a909aea"
+  },
+  {
+    "path": "js/contact-form.js",
+    "sha256": "53aa4ef165ea25cef2287c2510fc4c371da14fe1450fdfe2c1ae18bad7f1d97e"
+  },
+  {
+    "path": "js/contact-offers.js",
+    "sha256": "4ef1fd409b7ba4fa8906a316b793d98a43e0de09c240c2c2b7e880ac978ce753"
+  },
+  {
+    "path": "js/global-backup.js",
+    "sha256": "ffcc676ca2f51da3473bda5f71d52517eedf1eb6ec0aab980840c3868ba9c150"
+  },
+  {
+    "path": "js/mediatheque-entry.js",
+    "sha256": "e978a8072ad05903535fddce9954438173dd6bac0f281923ec762477f5fcf50d"
+  },
+  {
+    "path": "js/navigation-redirect.js",
+    "sha256": "2bb233d6fd07e3682e5db250da33a211bb2c60b5da51a5270f8523d06152e22f"
+  },
+  {
+    "path": "js/navigation-shortcuts.js",
+    "sha256": "296f4f7229206bc30862a9617c1c0c1fa84976cd925d7933bd08b1d31f024f47"
+  },
+  {
+    "path": "js/private-access.js",
+    "sha256": "b97a595740776936e0d2619d1ab0c35395775258eecdef8b42efc8ef1714a513"
+  },
+  {
+    "path": "js/private-session.js",
+    "sha256": "d425abbd106389c8dbbbec1fb84c7989499e9e0189b59f43d63af44dae082256"
+  },
+  {
+    "path": "js/protected-phone.js",
+    "sha256": "265b8d48d5cfc3ab46c0806603cdf8c3d5c416b4d02c1ae1326fbcd6dabfb2cb"
+  },
+  {
+    "path": "js/script.js",
+    "sha256": "f96b06b2feefca6e5f1aeddb15a1c5856fa6dab1eaf8dc315acaac3866da786f"
+  },
+  {
+    "path": "js/site-quality.js",
+    "sha256": "c0fb535dd8d46842cfbeb1466757ac80e616eaeb632ecc00258fe5a612ffe8df"
+  },
+  {
+    "path": "js/site-search-data.js",
+    "sha256": "5192bddcc0ce3f1d8c4a10d3418f309d08d4f7c57abfa2985c17618b77d1d345"
+  },
+  {
+    "path": "js/site-search-index.json",
+    "sha256": "1090b3d22849ae1b75426e23b9d82d2845aa4ab9ca2232c54f2e06b0b396b31c"
+  },
+  {
+    "path": "js/site-theme.js",
+    "sha256": "7d9d91ac0f61a4c2b195068265894bc3775c5619663cfe3b09de481f3ce1051f"
+  },
+  {
+    "path": "js/site-tools.js",
+    "sha256": "2e4f41196fb774b77f7b660cb46b76f83664ece66cadfe24a9b171af9d949bba"
+  },
+  {
+    "path": "js/texte-detail.js",
+    "sha256": "df6988a9261ecfcacd22584b9955c85f9e928953e5f120c4571a56febb5ef93c"
+  },
+  {
+    "path": "js/textes-hlp-index.js",
+    "sha256": "74b4eb71d65be799f15eb16e4328d90f929d2e69e369f7c480c89013978ecad3"
+  },
+  {
+    "path": "js/textes-index.js",
+    "sha256": "6f814c8eca938255ab5eea35dcf7078e1feb119f5d8cfec6a2a3c61d81eb5116"
+  },
+  {
+    "path": "js/theme-prepaint.js",
+    "sha256": "0115f69ee61f83cd47642330cf66096dec158f1a4b4352fc7dc56c6c618f53e9"
+  },
+  {
+    "path": "main/blog/index.html",
+    "sha256": "c2aecd109c86ca03dca1b225707c64a1813f40b8dd40f6ac16ee8574a90e9fcf"
+  },
+  {
+    "path": "main/mediatheque/index.html",
+    "sha256": "efd14df79e7215e740fbe1e64c445019e57fb9d7ed832faa72913a18631c64e1"
+  },
+  {
+    "path": "main/outils/index.html",
+    "sha256": "ff51a59cece6abb4b4180ba3845cb683c83c027b73d13fbf0b736b0fdecbdee2"
+  },
+  {
+    "path": "main/textes/index.html",
+    "sha256": "e6d7a3163b0cb2f506c743e614de01d0b16a45c048bdf942796898ebdbf062fe"
+  },
+  {
+    "path": "mediatheque/accueil.html",
+    "sha256": "e3374004dbde021d4521e8eb0db8125e4e51fde851761dba9d3d073e5ad0529e"
+  },
+  {
+    "path": "mediatheque/bibliotheque-ui.js",
+    "sha256": "879201d7d93030d89ebff62b72844c8cbf048e69d9114046c199f406c5d81435"
+  },
+  {
+    "path": "mediatheque/bibliotheque.css",
+    "sha256": "be2d7e37cef06f7b72e3a619df3a76d3ae71854eab82f5e2e3f87a95e45ae379"
+  },
+  {
+    "path": "mediatheque/course-browser.js",
+    "sha256": "69cb98de402dd59f3e3d9e5b11c48137f0be993c8feda66261aaa826202b8990"
+  },
+  {
+    "path": "mediatheque/data-public.js",
+    "sha256": "ec427491f3d149149e1938596e43786c4bce61d21bfb4b37b0433c918eddbf23"
+  },
+  {
+    "path": "mediatheque/fonts/Manrope-Variable.woff2",
+    "sha256": "799f5cc4452ca49a05cfcb36a833b820ef26aa173b1971712c3c0abdf6834d67"
+  },
+  {
+    "path": "mediatheque/index.html",
+    "sha256": "e3374004dbde021d4521e8eb0db8125e4e51fde851761dba9d3d073e5ad0529e"
+  },
+  {
+    "path": "mediatheque/mediatheque.css",
+    "sha256": "32020bf68eca7a603158ba231f891f4e903cb07513076f9c77f58e6a396e814c"
+  },
+  {
+    "path": "mediatheque/mediatheque.js",
+    "sha256": "1a236150ad2d9dbdd22edf4d886504e3f45222d6c50c44ecd5bfd56334855799"
+  },
+  {
+    "path": "mediatheque/textes-sync.js",
+    "sha256": "ab683c134f8e2dcb9c5e327f74568c2bf0dd5f181f4866328d4dcce2a33684d3"
+  },
+  {
+    "path": "outil/index.html",
+    "sha256": "ff51a59cece6abb4b4180ba3845cb683c83c027b73d13fbf0b736b0fdecbdee2"
+  },
+  {
+    "path": "outils/index.html",
+    "sha256": "82e15f77fe19a9902171faa3b9b3ee5f047662f40df66b410ebbba9867e69259"
+  },
+  {
+    "path": "outils/tous-les-outils.html",
+    "sha256": "82e15f77fe19a9902171faa3b9b3ee5f047662f40df66b410ebbba9867e69259"
+  },
+  {
+    "path": "scripts/test-navigation.cjs",
+    "sha256": "5ed78712ce61f04530d33daec912da7bbcea312f78f1ed8568ed7c59f88c54c6"
+  },
+  {
+    "path": "scripts/test-reader-formats.cjs",
+    "sha256": "3df8a4828680271fd8f18c15f7f1a588fd4e90a051b1fbdc511b45a47b07c8e7"
+  },
+  {
+    "path": "scripts/test-teleprompteur-v2.cjs",
+    "sha256": "2090a012792160563eaeb1e014287a00efac4fe03a4c9d103e4b1302cbb22d9d"
+  },
+  {
+    "path": "scripts/test-teleprompteur-v3.cjs",
+    "sha256": "4501fb89e6af1ec4cd21fd4674dbb337b51fd3c75a5f079e1ab0131dd4cf15e5"
+  },
+  {
+    "path": "scripts/test-teleprompteur-v4.cjs",
+    "sha256": "4ca68d1abed5bdb48e873b17a4a33581167131a6a722c301f93112305b698558"
+  },
+  {
+    "path": "scripts/test-teleprompteur-v5.cjs",
+    "sha256": "74111b3985e24df48ac59aede6f0be7a4bce743a89c2beff870af8d06669b3f9"
+  },
+  {
+    "path": "scripts/test-teleprompteur-v6.cjs",
+    "sha256": "432f68060504ec683a2a4fdbdd4c927a5580ef347d66239d27ceb8c21320a5c3"
+  },
+  {
+    "path": "scripts/tests_quality.mjs",
+    "sha256": "d548f34d0575e74b0114b32633f73cd31275f964e8dff63149551ddb494074b9"
+  },
+  {
+    "path": "scripts/verifier_navigation.py",
+    "sha256": "b7d48d01bfe8809c4bd81f8274716e6b5212fd93533d6e777ad1ca47cc188c8d"
+  },
+  {
+    "path": "sitemap.xml",
+    "sha256": "434d787ff70597e09394b7b4864c821c0e60a79380740d892f907abf0083f118"
+  },
+  {
+    "path": "sw-atelier.js",
+    "sha256": "9cb738fd590704bb8c6334ff1b6c5661d390fdc7d8c730db6ff91dfcd25a2984"
+  },
+  {
+    "path": "textes/catalogue.html",
+    "sha256": "0ce8db7d4046d53e4f7145c58a3d0750c37c693ad8c8ee4ce303e53809afd464"
+  },
+  {
+    "path": "textes/index.html",
+    "sha256": "0ce8db7d4046d53e4f7145c58a3d0750c37c693ad8c8ee4ce303e53809afd464"
+  }
+]

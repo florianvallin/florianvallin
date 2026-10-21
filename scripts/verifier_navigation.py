@@ -38,7 +38,7 @@ def run_checks(root):
     origin = 'https://philosophal.fr'
     menu = {
         'nav-brand': '/', 'nav-texts-link': '/textes/',
-        'nav-blog-link': '/blog/', 'nav-tools-link': '/outils/',
+        'nav-blog-link': '/blog/', 'nav-tools-link': '/outils/', 'nav-videos-link': '/series/',
         'nav-services-link': '/#philosophie', 'nav-about-link': '/#quisuisje',
         'nav-faq-link': '/#faq', 'nav-contact-link': '/#contact',
     }
@@ -72,7 +72,7 @@ def run_checks(root):
         'blog/index.html': ('Blog — Tous les billets', 'data-blog-card'),
         'outils/index.html': ('Outils gratuits', 'tools-grid'),
         'mediatheque/index.html': ('Médiathèque — Philosophal', 'data-media-search'),
-        'textes/index.html': ('Textes de philosophie, mythologie, théologie', 'textes/philosophie/'),
+        'textes/index.html': ('Textes de philosophie, mythologie, théologie', 'data-text-catalog'),
         'pomodoro/index.html': ('Pomodoro — Philosophal', 'pomo-'),
     }
     for name, (title, marker) in hubs.items():
@@ -89,7 +89,8 @@ def run_checks(root):
     blog = pages.get(root / 'blog/index.html')
     if blog:
         expected = {f'/blog/{p.name}/' for p in (root / 'blog').iterdir()
-                    if p.is_dir() and (p / 'index.html').is_file()}
+                    if p.is_dir() and (p / 'index.html').is_file()
+                    and 'data-navigation-destination' not in (p / 'index.html').read_text()}
         found = set(blog.cards)
         for url in sorted(expected - found):
             errors.append(f'Billet absent de la liste du blog : {url}.')

@@ -1,0 +1,12 @@
+Moteurs de lecture et de décompression fournis localement :
+
+EPUB.js : https://github.com/futurepress/epub.js — licence BSD (EPUBJS-LICENSE).
+JSZip : https://github.com/Stuk/jszip — licence MIT (JSZIP-LICENSE).
+Foliate : https://github.com/johnfactotum/foliate-js — licence MIT (foliate/LICENSE).
+fflate : https://github.com/101arrowz/fflate — licence MIT (FFLATE-LICENSE).
+zip.js : https://github.com/gildas-lormeau/zip.js — licence BSD (ZIPJS-LICENSE).
+
+Les fichiers Foliate proviennent du moteur déjà présent dans le dépôt Philosophal.
+Dans foliate/paginator.js, des gardes ont été ajoutées pour annuler les rendus,
+les observateurs et les rappels différés après la fermeture d'un livre. Ces
+changements évitent des erreurs lors du passage rapide d'un livre à un autre.

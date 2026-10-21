@@ -924,6 +924,7 @@
     persist();
   });
   function appPath(path) {
+    if (window.PHILOSOPHAL_NAVIGATION) return window.PHILOSOPHAL_NAVIGATION.resolve(path);
     const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
     const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
     return `${localMain ? "/main" : ""}${path}`;
@@ -935,9 +936,7 @@
     const dialogOpen=$$("dialog").some(dialog=>dialog.open);
     if (typing || dialogOpen || e.defaultPrevented || e.target.closest?.("button,a,summary,[data-task-id]")) return;
     let handled=true;
-    if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyC"||key==="c")) window.location.assign(appPath("/mediatheque/"));
-    else if (e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && (code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
-    else if (!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
+    if (!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==="KeyH"||key==="h")) window.location.assign(appPath("/"));
     else if (e.code==="Space") startTimer();
     else if (e.key==="ArrowRight") skipPhase();
     else if (key==="r") resetTimer();

@@ -1288,3 +1288,16 @@ html[data-site-theme="dark"] .reader-pair-select{background:rgba(38,33,22,0.95)}
 html[data-site-theme="dark"] .reader-pair-select input{accent-color:#cfbcaa}
 html[data-site-theme="dark"] .reader-page-thumb.is-pair-locked .reader-thumb-caption::after{color:#cfbcaa}
 }
+
+/* PDF intégré : la visionneuse native garde ses propres commandes et sa recherche. */
+.reader-native-pdf .reader-render{display:block;width:100%;height:100%;min-height:55vh;padding:0!important;overflow:hidden;}
+.reader-native-pdf .reader-native-pdf-frame{width:100%;height:100%;min-height:55vh;border:0;background:#f4f4f4;display:block;}
+.reader-native-pdf :is(.reader-page-nav,.reader-stage-tools,.reader-progressbar,.reader-plain){display:none!important;}
+.reader-native-pdf .reader-stage{min-height:65vh;}
+@media(max-width:700px){.reader-native-pdf .reader-stage{min-height:calc(100dvh - 130px)}.reader-native-pdf .reader-render,.reader-native-pdf .reader-native-pdf-frame{min-height:calc(100dvh - 130px)}}
+
+.reader-native-pdf .reader-render{position:relative;}
+.reader-native-pdf .reader-native-pdf-open{position:absolute;bottom:16px;right:16px;z-index:2;background:#fff;color:#46338b;border:1px solid #dcd3f6;padding:9px 14px;border-radius:10px;font:600 13px/1.3 Inter,sans-serif;text-decoration:none;box-shadow:0 5px 18px #0002;}
+.reader-native-pdf .reader-native-pdf-open:focus-visible{outline:3px solid #6c63ff;outline-offset:3px}
+.reader-archive-dialog{width:min(560px,calc(100vw - 36px));max-height:80vh;border:1px solid #d6cde4;border-radius:18px;padding:24px;color:#2c2239;background:#fff;font-family:system-ui,sans-serif}
+.reader-archive-dialog::backdrop{background:#21182b99}.reader-archive-dialog h2{margin:0 0 10px;font-size:1.35rem}.reader-archive-dialog p{line-height:1.5;color:#655e70}.reader-archive-choices{display:grid;gap:8px;max-height:50vh;overflow:auto;margin:18px 0}.reader-archive-dialog button{padding:12px;border:1px solid #d9d0e4;border-radius:8px;background:#f7f4fb;color:#513674;text-align:left;overflow-wrap:anywhere;cursor:pointer}.reader-archive-dialog button:focus-visible{outline:3px solid #8b66bc;outline-offset:2px}

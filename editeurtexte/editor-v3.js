@@ -38,6 +38,7 @@
   function updateMetaNested(key, patch, id = currentId()) { const m = getMeta(id); setMeta({ [key]: { ...(m[key] || {}), ...patch } }, id); }
   function toast(msg) { API.toast(msg); }
   function appPath(path) {
+    if (window.PHILOSOPHAL_NAVIGATION) return window.PHILOSOPHAL_NAVIGATION.resolve(path);
     const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
     const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
     return `${localMain ? "/main" : ""}${path}`;
@@ -363,8 +364,6 @@
     window.addEventListener('keydown',e=>{
       const key=String(e.key||'').toLowerCase();
       const code=e.code||'';
-      if(e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyC'||key==='c')){e.preventDefault();e.stopImmediatePropagation();goApp('/mediatheque/');return;}
-      if(e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyH'||key==='h')){e.preventDefault();e.stopImmediatePropagation();goApp('/');return;}
       const typing=e.target instanceof HTMLElement&&(e.target.matches('input,textarea,select,[role="textbox"]')||e.target.isContentEditable);
       if(!typing&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&(code==='KeyP'||key==='p')){e.preventDefault();e.stopImmediatePropagation();goApp('/pomodoro/');return;}
       const mod=e.ctrlKey||e.metaKey;

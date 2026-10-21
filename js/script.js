@@ -1,9 +1,14 @@
+// Les pages anciennes reçoivent aussi les destinations et raccourcis communs.
 (() => {
-  const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+  if (window.PHILOSOPHAL_NAVIGATION?.version === '20261021-routes5') return;
+  const script = document.createElement('script');
+  script.src = new URL('navigation-shortcuts.js?v=20261021-routes5', document.currentScript.src).href;
+  script.async = false; document.head.append(script);
+})();
+(() => {
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
-  const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-  script.src = `${localMain ? "/main" : ""}/js/site-tools.js?v=20260928-editor1`;
+  script.src = new URL("site-tools.js?v=20261021-routes5", document.currentScript.src).href;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -48,6 +53,7 @@
   ready(() => {
     ensureBlogLinks();
     buildMinimalHeader();
+    initVideosNavigation();
     enhanceNavigationShortcuts();
     initNavigation();
     initThemeToggle();
@@ -63,9 +69,7 @@
   });
 
   function getSiteRootPath() {
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-    const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-    return localMain ? "/main/" : "/";
+    return window.PHILOSOPHAL_NAVIGATION?.resolve('/') || '/';
   }
 
   function isCurrentPath(prefix) {
@@ -107,11 +111,12 @@
     brand.setAttribute('aria-label', 'Accueil — Philosophal');
     brand.href = root;
 
-    // Six liens : trois de chaque côté du trait central.
+    // Les ressources, dont les séries, précèdent le trait central.
     // Les actions de recherche, thème et contact sont indépendantes de la nav centrée.
     nav.innerHTML = `
       <a class="nav-texts-link" href="${root}textes/">Textes</a>
       <a class="nav-blog-link" href="${root}blog/">Blog</a>
+      <a class="nav-videos-link" href="${root}series/">Vidéos</a>
       <a class="nav-tools-link" href="${root}outils/">Outils</a>
       <span class="nav-divider" aria-hidden="true"></span>
       <a class="nav-services-link" href="${homeAnchor('#philosophie')}">Prestations</a>
@@ -169,6 +174,21 @@
     window.addEventListener('hashchange', updateHashLinks);
     nav.dataset.minimalReady = '1';
     navbar.classList.add('ph-minimal-ready');
+  }
+
+  function initVideosNavigation() {
+    const nav = document.querySelector('.navbar .nav-links');
+    if (!nav) return;
+    nav.querySelectorAll('[data-nav-series]').forEach(menu => menu.remove());
+    let link = nav.querySelector('.nav-videos-link');
+    if (!link) {
+      link = document.createElement('a');
+      link.className = 'nav-videos-link';
+      link.textContent = 'Vidéos';
+      nav.querySelector('.nav-blog-link')?.insertAdjacentElement('afterend', link);
+    }
+    link.href = getSiteRootPath() + 'series/';
+    if (isCurrentPath(getSiteRootPath() + 'series')) link.setAttribute('aria-current', 'page');
   }
 
   function initThemeToggle() {
@@ -241,7 +261,7 @@
     const navbar = document.querySelector('.navbar');
     const toggle = document.querySelector('.nav-toggle');
     if (!navbar || !toggle) return;
-    const mq = window.matchMedia('(max-width: 1100px)');
+    const mq = window.matchMedia('(max-width: 1180px)');
     const closeMenu = () => {
       navbar.classList.remove('nav-open');
       toggle.setAttribute('aria-expanded', 'false');
@@ -566,7 +586,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20260923-github-refresh1";
+        script.src = "/js/site-search-data.js?v=20261021-routes5";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = reject;
         document.head.append(script);
@@ -722,7 +742,7 @@
       if (!destination?.startsWith("/")) return destination;
       const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
       const localMain = localHost && /^\/main(?:\/|$)/.test(window.location.pathname);
-      return `${localMain ? "/main" : ""}${destination}`;
+      return window.PHILOSOPHAL_NAVIGATION?.resolve(destination) || `${localMain ? "/main" : ""}${destination}`;
     };
 
     if (!document.querySelector("[data-student-dialog]")) {

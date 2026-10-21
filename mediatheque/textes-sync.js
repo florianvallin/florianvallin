@@ -181,15 +181,5 @@
     document.documentElement.dataset.textSync="fallback";
     return window.FV_MEDIATHEQUE_TEXT_SYNC_STATUS;
   });
-  window.FV_MEDIATHEQUE_TEXT_SYNC = Promise.all([
-    textSync,
-    loadS1Courses().catch((error) => { console.warn("[Médiathèque] Import S1 impossible :", error); return { ok:false }; }),
-    loadS2Courses().catch((error) => { console.warn("[Médiathèque] Import S2 impossible :", error); return { ok:false }; }),
-    loadS3Courses().catch((error) => { console.warn("[Médiathèque] Import S3 impossible :", error); return { ok:false }; }),
-    loadS4Courses().catch((error) => { console.warn("[Médiathèque] Import S4 impossible :", error); return { ok:false }; }),
-    loadResearchCourses().catch((error) => { console.warn("[Médiathèque] Import Études & recherches impossible :", error); return { ok:false }; })
-  ]).then(async ([status]) => {
-    try { await loadCourseBrowser(); } catch (error) { console.warn("[Médiathèque] Navigateur des cours impossible :", error); }
-    return status;
-  });
+  window.FV_MEDIATHEQUE_TEXT_SYNC = textSync;
 })();

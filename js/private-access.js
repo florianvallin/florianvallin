@@ -68,7 +68,7 @@
     return objectURLs.get(path);
   }
   // Une page publique peut afficher l’état d’accès sans retélécharger les cours privés.
-  const isPublicPage=()=>/^(?:\/(?:index\.html)?$|\/(?:blog|textes|outils|links|cgu|confidentialite)(?:\/|$)|\/cgv\.html$)/.test(pathOf(location.href));
+  const isPublicPage=()=>/^(?:\/(?:index\.html)?$|\/(?:blog|textes|outils|series|links|cgu|confidentialite|mediatheque)(?:\/|$)|\/cgv\.html$)/.test(pathOf(location.href));
   let deferredRestore;
   async function ensureDecrypted(){
     await ready;if(files.size||!currentRole)return;
@@ -118,6 +118,7 @@
     for(const style of doc.querySelectorAll('style'))style.textContent=style.textContent.replace(/@import\s+[^;]*fonts\.(?:googleapis|gstatic)\.com[^;]*;/gi,'');
     for(const link of doc.querySelectorAll('link[rel="preload"][as="font"]'))if(/Manrope-Variable\.(?:ttf|woff2)/.test(link.href)){link.href=prefix+'/assets/fonts/Manrope-Variable.woff2';link.type='font/woff2';}
     // Les sources chiffrées gardent leur identité ; les règles communes sont injectées à l’ouverture.
+    if(!doc.querySelector('script[src*="navigation-shortcuts.js"]')){const navScript=doc.createElement('script');navScript.src=prefix+'/js/navigation-shortcuts.js?v=20261021-routes5';doc.head.prepend(navScript);}
     const qualityScript=doc.createElement('script');qualityScript.src=prefix+'/js/site-quality.js?v=20261014-audit1';doc.head.prepend(qualityScript);
     const qualityStyle=doc.createElement('link');qualityStyle.rel='stylesheet';qualityStyle.href=prefix+'/css/site-quality.css?v=20261014-audit1';doc.head.append(qualityStyle);
     for(const frame of doc.querySelectorAll('iframe[src]')){
@@ -130,7 +131,7 @@
       const entry=doc.createElement("div");entry.innerHTML='<nav class="creator-tools-entry" aria-label="Outils de création"><div><strong>Préparer et lire un script</strong><small>Téléprompteur, vitesse réglable, mode miroir et estimation de durée.</small></div><a href="/apprendre/creation/teleprompteur/">Ouvrir le téléprompteur →</a></nav>';doc.body.prepend(entry.firstElementChild);
     }
     for(const n of doc.querySelectorAll('script[src],link[rel="stylesheet"][href],img[src],source[src]')){
-      const attr=n.hasAttribute('src')?'src':'href';const url=new URL(n.getAttribute(attr),location.href).href;n.setAttribute(attr,assetURL(url));
+      const attr=n.hasAttribute('src')?'src':'href';const url=new URL(n.getAttribute(attr),location.href);if(/\/js\/(?:script|site-tools|navigation-shortcuts)\.js$/.test(url.pathname))url.searchParams.set('v','20261021-routes5');n.setAttribute(attr,assetURL(url.href));
     }
     delete window.PHILOSOPHAL_BACKUP;
     document.open();document.write('<!doctype html>'+doc.documentElement.outerHTML);document.close();
@@ -146,7 +147,7 @@
           if(path.endsWith("/sw.js")||path.endsWith("/english-offline.js"))await registration.unregister();
         }
         if(window.caches)for(const name of await caches.keys())if(/^(fv-reader|philosophal-reader|philosophal-english|philosophal-atelier)/.test(name))await caches.delete(name);
-        navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261018-v9",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
+        if(!['localhost','127.0.0.1','::1'].includes(location.hostname)) navigator.serviceWorker.register(prefix+"/sw-atelier.js?v=20261021-routes5",{scope:prefix+"/",updateViaCache:"none"}).catch(()=>{});
       }
     }catch{}
 

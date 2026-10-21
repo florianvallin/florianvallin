@@ -98,9 +98,11 @@
     settingsVersion: 2
   };
 
-  const FOLIATE_FORMATS = new Set(["azw", "azw3", "mobi", "cbz"]);
+  const FOLIATE_FORMATS = new Set(["azw", "azw3", "mobi", "cbz", "cbr"]);
   const KINDLE_FORMATS = new Set(["azw", "azw3", "mobi"]);
   const FOLIATE_MODULE_URL = "/epub/vendor/foliate/view.js?v=20261005-v32";
+
+  function isComicFormat(format) { return format === "cbz" || format === "cbr"; }
 
   function isFoliateFormat(format) {
     return FOLIATE_FORMATS.has(String(format || "").toLowerCase());
@@ -268,7 +270,7 @@
     if (quickPageView) quickPageView.value = readerSettings.pageView;
     if (spreadStartInput) spreadStartInput.value = currentReaderData().spreadStart === "first" ? "first" : "cover";
     if (settingsInputs.comicDirection) settingsInputs.comicDirection.value = readerSettings.comicDirection;
-    const comic = currentFormat === "cbz";
+    const comic = isComicFormat(currentFormat);
     const fixedVisual = comic || epubFoliateMode || visualReaderActive;
     if (settingsInputs.fontSize) settingsInputs.fontSize.disabled = fixedVisual;
     if (settingsInputs.lineHeight) settingsInputs.lineHeight.disabled = fixedVisual;
@@ -278,7 +280,7 @@
     if (settingsInputs.textWidth) settingsInputs.textWidth.disabled = fixedVisual;
     if (settingsInputs.flow) settingsInputs.flow.disabled = visualReaderActive || fixedVisual || (currentFormat && currentFormat !== "epub");
     if (settingsInputs.pageView) settingsInputs.pageView.disabled = !visualReaderActive && (fixedVisual || (currentFormat && currentFormat !== "epub"));
-    if (settingsInputs.comicDirection) settingsInputs.comicDirection.disabled = !visualReaderActive && currentFormat !== "cbz";
+    if (settingsInputs.comicDirection) settingsInputs.comicDirection.disabled = !visualReaderActive && !isComicFormat(currentFormat);
     document.body.dataset.theme = readerSettings.theme;
   }
 
@@ -301,7 +303,7 @@
   }
 
   function applyDocumentAdvancedSettings(doc, { paginated = false } = {}) {
-    if (!doc?.documentElement || !doc?.body || currentFormat === "cbz" || epubFoliateMode) return;
+    if (!doc?.documentElement || !doc?.body || isComicFormat(currentFormat) || epubFoliateMode) return;
     const styleId = "philosophal-reader-advanced";
     let style = doc.getElementById(styleId);
     if (!style) {
@@ -328,7 +330,7 @@
   }
 
   function applyFoliateDocumentSettings(doc) {
-    if (!doc || currentFormat === "cbz" || epubFoliateMode) return;
+    if (!doc || isComicFormat(currentFormat) || epubFoliateMode) return;
     const family = readerSettings.fontFamily === "sans"
       ? 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
       : 'Georgia, "Times New Roman", serif';
@@ -397,7 +399,7 @@
     // Foliate (AZW/AZW3/MOBI/CBZ): zoom du composant complet.
     if (foliateView) {
       scaleElementToViewport(foliateView, factor);
-      render.classList.toggle("is-comic", currentFormat === "cbz");
+      render.classList.toggle("is-comic", isComicFormat(currentFormat));
     }
 
     // Formats texte/HTML/Markdown/FB2.
@@ -527,7 +529,7 @@
   }
 
   function formatLabel(format) {
-    return ({ epub: "EPUB", azw: "AZW", azw3: "AZW3", mobi: "MOBI", cbz: "CBZ", txt: "TXT", html: "HTML", md: "Markdown", fb2: "FB2", docx: "Word · DOCX", odt: "OpenDocument · ODT" })[format] || String(format || "Livre").toUpperCase();
+    return ({ epub: "EPUB", azw: "AZW", azw3: "AZW3", mobi: "MOBI", cbz: "CBZ", cbr: "CBR", pdf: "PDF", txt: "TXT", html: "HTML", md: "Markdown", fb2: "FB2", djvu: "DjVu", zip: "ZIP", rar: "RAR", docx: "Word · DOCX", odt: "OpenDocument · ODT" })[format] || String(format || "Livre").toUpperCase();
   }
 
   function bookCard(book) {
@@ -592,6 +594,7 @@
   }
 
   function closeCurrentBook() {
+    releaseNativePdf();
     bookGeneration += 1;
     visualRenderRun += 1;
     invalidatePageModels();
@@ -654,12 +657,14 @@
 
   async function importFile(file) {
     if (!Books.isSupported(file)) {
-       showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown, FB2, DOCX ou ODT.", 3600);
+       showToast("Format non pris en charge : PDF, EPUB, FB2, MOBI, AZW3, DjVu, CBZ, CBR, RAR, ZIP, TXT, HTML, Markdown, DOCX ou ODT.", 3600);
       return;
     }
     try {
       setLoading(true, "Import du livre…");
-      const record = await Books.saveFile(file);
+      const processed = await window.PhilosophalFormats.prepareImport(file, message => setLoading(Boolean(message), message));
+      if (!processed) { setLoading(false); return; }
+      const record = await Books.saveFile(processed);
       await refreshLibrary();
       await openBook(record.id, true);
     } catch (error) {
@@ -669,10 +674,20 @@
   }
 
   async function openBook(id, fresh = false) {
-    const record = await Books.getBook(id).catch(() => null);
+    releaseNativePdf();
+    let record = await Books.getBook(id).catch(() => null);
     if (!record) {
       showToast("Ce livre n’est plus disponible dans ce navigateur.");
       return;
+    }
+    if (['zip','rar','cbr'].includes(record.format)) {
+      try {
+        setLoading(true, 'Préparation de l’archive…');
+        const file = await window.PhilosophalFormats.prepareImport(new File([record.blob], record.name), message => setLoading(Boolean(message), message));
+        if (!file) { setLoading(false); return; }
+        const patch={blob:file,name:file.name,format:Books.formatOf(file)};
+        await Books.updateBook(record.id,patch);record={...record,...patch};
+      } catch(error) { setLoading(false);showToast(error.message,4500);return; }
     }
     const generation = ++bookGeneration;
     visualRenderRun += 1;
@@ -730,8 +745,10 @@
     headAuthor.textContent = record.author || formatLabel(record.format);
 
     try {
-      if (record.format === "epub") await openEpub(record, fresh);
-      else if (record.format === "cbz") await openVisualBook(record, fresh);
+      if (record.format === "pdf") await openPDF(record, fresh);
+      else if (record.format === "djvu") await openVisualBook(record, fresh, await window.PhilosophalFormats.makeDjvuBook(record.blob));
+      else if (record.format === "epub") await openEpub(record, fresh);
+      else if (isComicFormat(record.format)) await openVisualBook(record, fresh);
       else if (isFoliateFormat(record.format)) await openFoliate(record, fresh);
       else await openPlain(record, fresh);
       if (generation !== bookGeneration) return;
@@ -750,7 +767,7 @@
       const kindleProtected = KINDLE_FORMATS.has(record.format);
       const documentFormat=["docx","odt"].includes(record.format);
       showToast(
-        documentFormat ? error?.message || "Impossible de lire ce document." : kindleProtected
+        ["pdf", "cbr"].includes(record.format) ? error?.message || "Impossible de lire ce fichier." : documentFormat ? error?.message || "Impossible de lire ce document." : kindleProtected
           ? "Impossible d’ouvrir ce livre Kindle. Les fichiers AZW/AZW3/MOBI sans DRM sont pris en charge ; les fichiers protégés ne peuvent pas être lus."
           : "Impossible d’ouvrir ce livre. Le fichier est peut-être endommagé ou protégé.",
         5200
@@ -801,7 +818,7 @@
     ratio = Math.max(0, Math.min(1, ratio));
     const tocLabel = detail.tocItem?.label || detail.chapter?.label || detail.heading || "";
     if (tocLabel) currentChapterLabel = String(tocLabel);
-    const fixedVisual = currentFormat === "cbz" || epubFoliateMode;
+    const fixedVisual = isComicFormat(currentFormat) || epubFoliateMode;
     const page = fixedVisual && Number.isFinite(index) ? index + 1 : null;
     const total = fixedVisual ? count : (pageModels.length || null);
     updateReaderPosition({ ratio, chapter: currentChapterLabel, page: page || (total ? Math.round(ratio * Math.max(0,total-1))+1 : null), total });
@@ -1190,7 +1207,7 @@
     const total = book?.sections?.length || 0;
     for (let i = 0; i < total; i += 1) {
       const section = book.sections[i];
-      const info = currentFormat === "cbz" ? { visual: true } : await inspectVisualSection(section);
+      const info = (isComicFormat(currentFormat) || ["pdf", "djvu"].includes(currentFormat)) ? { visual: true } : await inspectVisualSection(section);
       const size = info.size || section?.philosophalSize || (info.visual ? await sectionImageDimensions(section) : null);
       visualPages.push({
         index: i,
@@ -1333,9 +1350,9 @@
   }
 
   async function openVisualBook(record, fresh, preparedBook = null, preparedFile = null) {
-    setLoading(true, record.format === "cbz" ? "Préparation des pages de la BD…" : "Préparation des pages illustrées…");
+    setLoading(true, isComicFormat(record.format) ? "Préparation des pages de la BD…" : "Préparation des pages illustrées…");
     const foliateModule = await getFoliateModule();
-    const type = record.blob?.type || (record.format === "cbz" ? "application/vnd.comicbook+zip" : "application/epub+zip");
+    const type = record.blob?.type || (isComicFormat(record.format) ? "application/vnd.comicbook+zip" : "application/epub+zip");
     const file = preparedFile || (record.blob instanceof File
       ? record.blob
       : new File([record.blob], record.name || `livre.${record.format}`, { type }));
@@ -1344,7 +1361,7 @@
     if (!foliateBook?.sections?.length) throw new Error("Livre illustré non exploitable.");
     if (record.format === "epub" && !currentReaderData().direction) readerSettings.comicDirection = foliateBook.dir === "rtl" ? "rtl" : "ltr";
 
-    if (record.format === "cbz") await prepareComicBook(foliateBook);
+    if (isComicFormat(record.format)) await prepareComicBook(foliateBook);
     else await prepareFixedVisualBook(foliateBook, { comic: false });
 
     visualReaderActive = true;
@@ -1479,7 +1496,7 @@
   }
 
   async function openFoliate(record, fresh, preparedBook = null, preparedFile = null) {
-    setLoading(true, record.format === "cbz" ? "Ouverture de la bande dessinée…" : epubFoliateMode ? "Ouverture de l’EPUB illustré…" : "Ouverture du livre Kindle…");
+    setLoading(true, isComicFormat(record.format) ? "Ouverture de la bande dessinée…" : epubFoliateMode ? "Ouverture de l’EPUB illustré…" : "Ouverture du livre Kindle…");
     const foliateModule = await getFoliateModule();
 
     try { foliateView?.close?.(); } catch (_) {}
@@ -1489,7 +1506,7 @@
     plain.hidden = true;
     locationsReady = false;
 
-    const type = record.blob?.type || (record.format === "cbz" ? "application/vnd.comicbook+zip" : record.format === "epub" ? "application/epub+zip" : "application/octet-stream");
+    const type = record.blob?.type || (isComicFormat(record.format) ? "application/vnd.comicbook+zip" : record.format === "epub" ? "application/epub+zip" : "application/octet-stream");
     const file = preparedFile || (record.blob instanceof File
       ? record.blob
       : new File([record.blob], record.name || `livre.${record.format}`, { type }));
@@ -1517,7 +1534,7 @@
     if (preparedBook) {
       foliateBook = preparedBook;
       await foliateView.open(foliateBook);
-    } else if (record.format === "cbz" && typeof foliateModule?.makeBook === "function") {
+    } else if (isComicFormat(record.format) && typeof foliateModule?.makeBook === "function") {
       foliateBook = await foliateModule.makeBook(file);
       await prepareComicBook(foliateBook);
       await foliateView.open(foliateBook);
@@ -1550,6 +1567,47 @@
     applyReadingSettings();
     updateFoliateProgress(foliateView.lastLocation || {});
     setLoading(false);
+  }
+
+  let nativePdfUrl = null;
+  function releaseNativePdf() {
+    if (nativePdfUrl) { URL.revokeObjectURL(nativePdfUrl); nativePdfUrl = null; }
+    document.body.classList.remove("reader-native-pdf");
+  }
+
+  async function openPDF(record, fresh) {
+    const magic = new Uint8Array(await record.blob.slice(0, 5).arrayBuffer());
+    if (String.fromCharCode(...magic) !== "%PDF-") throw new Error("Ce fichier n’est pas un PDF valide.");
+    setLoading(true, "Préparation du document PDF…");
+    try {
+      const book = await window.PhilosophalFormats.makePdfBook(record.blob);
+      // Utilise la même visionneuse de pages, doubles pages et miniatures que les BD.
+      await openVisualBook(record, fresh, book);
+    } catch (error) {
+      console.warn("Moteur PDF avancé non disponible ; utilisation du lecteur PDF intégré au navigateur.", error);
+      releaseNativePdf();
+      nativePdfUrl = URL.createObjectURL(new Blob([record.blob], { type: "application/pdf" }));
+      render.replaceChildren();
+      render.hidden = false;
+      plain.hidden = true;
+      const frame = document.createElement("iframe");
+      frame.className = "reader-native-pdf-frame";
+      frame.title = `PDF : ${record.title || record.name}`;
+      frame.src = `${nativePdfUrl}#toolbar=1&navpanes=0`;
+      render.appendChild(frame);
+      const openLink = document.createElement("a");
+      openLink.className = "reader-native-pdf-open";
+      openLink.href = nativePdfUrl;
+      openLink.target = "_blank";
+      openLink.rel = "noopener noreferrer";
+      openLink.textContent = "Ouvrir le PDF dans un nouvel onglet";
+      render.appendChild(openLink);
+      document.body.classList.add("reader-native-pdf");
+      headTitle.textContent = record.title || Books.titleFromName(record.name);
+      headAuthor.textContent = "PDF · visionneuse du navigateur";
+      setLoading(false);
+      showToast("PDF ouvert avec la visionneuse du navigateur. Zoom et pages sont accessibles dans le document.", 4400);
+    }
   }
 
   async function openEpub(record, fresh) {
@@ -2452,7 +2510,7 @@
   async function searchInCurrentBook(query) {
     const q = String(query || "").trim();
     if (q.length < 2 || !currentRecord) return [];
-    if (currentFormat === "cbz") return [];
+    if (isComicFormat(currentFormat)) return [];
     const runId = ++searchRunId;
     const results = [];
     const lowerQ = q.toLocaleLowerCase("fr");
@@ -2474,6 +2532,19 @@
         } catch (_) {}
         try { section.unload(); } catch (_) {}
         if (i % 4 === 3) await new Promise((resolve) => setTimeout(resolve, 0));
+      }
+    } else if (currentFormat === "pdf" && typeof foliateBook?.getTextPage === "function") {
+      for (let i = 0; i < foliateBook.sections.length && results.length < 150; i += 1) {
+        if (runId !== searchRunId) return [];
+        const text = await foliateBook.getTextPage(i).catch(() => "");
+        const lower = text.toLocaleLowerCase("fr");
+        let at = 0, local = 0;
+        while ((at = lower.indexOf(lowerQ, at)) >= 0 && local < 12 && results.length < 150) {
+          push({ label: `Page ${i + 1}`, excerpt: searchExcerpt(text, at, q),
+            locator: { type: "visual", pageIndex: i } });
+          at += Math.max(1, q.length); local++;
+        }
+        if (i % 5 === 4) await new Promise(resolve => setTimeout(resolve, 0));
       }
     } else if (isFoliateActive() && foliateBook?.sections) {
       const sections = foliateBook.sections;
@@ -2520,8 +2591,10 @@
     searchStatus.textContent = "Recherche en cours…";
     searchResults.innerHTML = "";
     const results = await searchInCurrentBook(query);
-    searchStatus.textContent = currentFormat === "cbz"
-      ? "Un CBZ contient principalement des images : aucune recherche textuelle n’est possible sans OCR."
+    searchStatus.textContent = isComicFormat(currentFormat)
+      ? "Une BD CBR/CBZ contient des images : la recherche dans le texte nécessite un OCR."
+      : (currentFormat === "pdf" && !results.length)
+        ? "Aucun texte sélectionnable trouvé. Un PDF scanné nécessite un OCR pour permettre la recherche."
       : (epubFoliateMode && !results.length)
         ? "Aucun texte exploitable trouvé dans cet EPUB illustré. Les pages constituées uniquement d’images nécessitent un OCR pour être recherchées."
         : `${results.length} résultat${results.length > 1 ? "s" : ""}${results.length >= 150 ? " (limite atteinte)" : ""}.`;
@@ -2916,7 +2989,7 @@
       globalDrop.hidden = true;
       const file = Array.from(event.dataTransfer?.files || []).find((candidate) => Books.isSupported(candidate));
       if (file) importFile(file);
-      else showToast("Format non pris en charge : EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown, FB2, DOCX ou ODT.");
+      else showToast("Format non pris en charge : PDF, EPUB, FB2, MOBI, AZW3, DjVu, CBZ, CBR, RAR, ZIP, TXT, HTML, Markdown, DOCX ou ODT.");
     });
   }
 
@@ -3030,7 +3103,7 @@
           await applyFlowSetting(value); refreshTextLayout();
         }
         else if (key === "pageView") await applyPageViewSetting(value);
-        else if (key === "comicDirection" && currentFormat === "cbz") {
+        else if (key === "comicDirection" && isComicFormat(currentFormat)) {
           showToast("Sens de lecture mis à jour.");
         } else if (rendition && affectsLayout) refreshTextLayout();
         else applyReadingSettings();

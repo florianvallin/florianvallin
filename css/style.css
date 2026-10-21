@@ -44,6 +44,7 @@ a { color: inherit; }
 button, input, textarea, select { font: inherit; }
 button { color: inherit; }
 .container { width: min(1100px, calc(100% - 40px)); margin-inline: auto; }
+
 #philosophie, #methodologie, #quisuisje, #faq, #contact { scroll-margin-top: 90px; }
 .title-accent { color: var(--primary); font-weight: 700; }
 
@@ -2256,7 +2257,7 @@ body.site-search-open { overflow:hidden; }
 .navbar.ph-minimal-ready .nav-header-actions .nav-toggle { display:none; }
 
 /* Le nouveau logo est un dessin horizontal ; surtout ne pas le recadrer. */
-@media (max-width:1210px) and (min-width:1101px) {
+@media (max-width:1210px) and (min-width:1181px) {
   .navbar.ph-minimal-ready .nav-brand-logo { width:62px; flex-basis:62px; height:40px; }
   .navbar.ph-minimal-ready .nav-brand-wordmark { font-size:2.1rem; }
   .navbar.ph-minimal-ready .nav-links { gap:2px; }
@@ -2266,7 +2267,7 @@ body.site-search-open { overflow:hidden; }
   .navbar.ph-minimal-ready .nav-contact-desktop { padding-inline:10px !important; }
 }
 
-@media (max-width:1100px) {
+@media (max-width:1180px) {
   .navbar.ph-minimal-ready {
     padding:9px clamp(12px,2vw,22px);
   }
@@ -2375,7 +2376,7 @@ body.site-search-open { overflow:hidden; }
 }
 
 /* Empêche le menu mobile (enfant de grille) de se rétrécir au contenu. */
-@media (max-width:1100px) {
+@media (max-width:1180px) {
   .navbar.ph-minimal-ready .nav-links {
     justify-self:stretch;
     width:calc(100% - 24px);
@@ -2511,7 +2512,7 @@ body.site-search-open { overflow:hidden; }
 .navbar.ph-minimal-ready .nav-brand-wordmark { display:inline-block; }
 .navbar.ph-minimal-ready .nav-links > a[aria-current="page"],
 .navbar.ph-minimal-ready .nav-links > a[aria-current="location"] { color:var(--primary); }
-@media (max-width:1100px) {
+@media (max-width:1180px) {
   .navbar.ph-minimal-ready .nav-brand-logo {width:60px;max-width:60px;flex-basis:60px;}
 }
 @media (max-width:420px) {

@@ -68,13 +68,14 @@ async function restoreAt(route) {
   await window.FV_PRIVATE_ACCESS.ready;
   return {requests,api:window.FV_PRIVATE_ACCESS};
 }
-for(const route of ['/','/blog/','/textes/','/textes/hume-causalite-experience-induction/','/cgu/','/confidentialite/']) {
+for(const route of ['/','/blog/','/textes/','/textes/hume-causalite-experience-induction/','/cgu/','/confidentialite/','/mediatheque/']) {
   const restored=await restoreAt(route);
   check(restored.requests.length,0,'Aucune archive demandée sur '+route);
   check(restored.api.role(),'private','Le rôle mémorisé est conservé sur '+route);
 }
 {
   const restored=await restoreAt('/mediatheque/');
+  await assert.rejects(() => restored.api.execute('/mediatheque/data.js'));
   check(restored.requests.some(url=>url.includes('/private/manifest.json')),true,'La médiathèque vérifie les archives avant de restaurer un accès');
   check(restored.api.role(),'','Une session dont les archives ne sont pas vérifiées ne donne pas accès aux fichiers');
 }
@@ -87,7 +88,7 @@ for(const route of ['/','/blog/','/textes/','/textes/hume-causalite-experience-i
     caches:{open:async()=>cache},fetch:async(req,opts)=>{requests.push([req.url,opts.cache]);return {ok:true,url:req.url,clone(){return this;}};}};
   vm.runInContext(fs.readFileSync(path.join(root,'sw-atelier.js'),'utf8'),vm.createContext(ctx));
   async function get(url){let response;events.fetch({request:{url:'https://philosophal.fr'+url,method:'GET'},respondWith:p=>{response=p;}});return response;}
-  await get('/js/site-theme.js?v=20261014-audit1');await get('/js/site-theme.js?v=20261014-audit1');
+  await get('/js/site-theme.js?v=20261021-routes5');await get('/js/site-theme.js?v=20261021-routes5');
   check(requests.length,1,'Un script versionné n’est téléchargé qu’une fois');
   await get('/blog/');await get('/blog/');
   check(requests.filter(([url])=>url.endsWith('/blog/')).length,2,'Une navigation vérifie la page demandée sur le réseau');

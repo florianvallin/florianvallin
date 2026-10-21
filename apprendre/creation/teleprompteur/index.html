@@ -1,92 +1,224 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<script src="/js/theme-prepaint.js?v=20261018-v9"></script>
-
   <meta charset="utf-8">
+  <script src="/js/navigation-shortcuts.js?v=20261021-routes5"></script>
+  <script src="/js/theme-prepaint.js?v=20261018-v9"></script>
   <script src="/js/site-quality.js?v=20261014-audit1"></script>
-  <script src="../../../js/site-theme.js?v=20261018-v9"></script>
-  <link rel="stylesheet" href="../../../css/site-theme.css?v=20261014-audit1">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#152235"><link rel="stylesheet" href="./teleprompteur.css?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="48x48" href="../../../favicon-48.png?v=20261014-audit1">
-  <link rel="icon" type="image/png" sizes="192x192" href="../../../favicon-192.png?v=20261014-audit1">
-  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=20261014-audit1">
-  <link rel="shortcut icon" href="../../../favicon.ico?v=20261014-audit1">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=20261014-audit1">
-  <link rel="manifest" href="../../../site.webmanifest?v=20261014-audit1">
+  <script src="/js/site-theme.js?v=20261018-v9"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#161a22">
   <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Téléprompteur — Philosophal</title>
+  <meta name="description" content="Retrouvez vos scripts, organisez vos séries et gardez le fil avec un téléprompteur réglable et un historique de versions, des reprises de phrases et un journal de prises local. Détachez le lecteur, pilotez-le depuis votre téléphone et enregistrez vos vidéos avec des repères pour le montage.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://philosophal.fr/apprendre/creation/teleprompteur/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/site-theme.css?v=20261014-audit1">
   <link rel="stylesheet" href="/css/site-quality.css?v=20261014-audit1">
-
-
-
-
-
-<title>Téléprompteur — Philosophal</title>
-<meta name="description" content="Préparez un script et lisez-le avec un défilement réglable, un mode miroir et des repères de lecture. Tout reste sur votre appareil.">
-<link rel="canonical" href="https://philosophal.fr/apprendre/creation/teleprompteur/">
-<meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Téléprompteur — Philosophal">
-<meta property="og:description" content="Préparez un script et lisez-le avec un défilement réglable, un mode miroir et des repères de lecture. Tout reste sur votre appareil.">
-<meta property="og:url" content="https://philosophal.fr/apprendre/creation/teleprompteur/">
-<meta property="og:type" content="website">
-<link rel="stylesheet" href="/css/site-theme-v4.css?v=20261018-v9" data-ph-dark-v4>
+  <link rel="stylesheet" href="/css/site-theme-v4.css?v=20261018-v9" data-ph-dark-v4>
+  <link rel="stylesheet" href="/apprendre/creation/teleprompteur/teleprompteur.css?v=20261021-prompt6fix">
+  <link rel="stylesheet" href="/apprendre/creation/teleprompteur/teleprompteur-remote.css?v=20261021-prompt6fix">
+  <link rel="stylesheet" href="/apprendre/creation/teleprompteur/teleprompteur-camera.css?v=20261021-prompt6fix">
 </head>
-<body>
+<body class="teleprompteur-v2 teleprompteur-v3 teleprompteur-v4 teleprompteur-v5 teleprompteur-v6">
   <header class="prompt-header">
-    <div><nav aria-label="Fil d’Ariane"><a href="/mediatheque/">Médiathèque</a><span>/</span><a href="/apprendre/creation/">Création de contenu</a></nav><h1><span class="prompt-mark" data-icon="play"></span>Téléprompteur <span class="prompt-local">Sur votre appareil</span></h1></div>
-    <div class="prompt-header-actions"><button type="button" data-focus-mode aria-pressed="false">Mode lecture</button><button type="button" data-fullscreen><span data-icon="fullscreen"></span>Plein écran</button></div>
+    <div class="prompt-heading">
+      <nav aria-label="Fil d’Ariane"><a href="/mediatheque/">Médiathèque</a><span>/</span><a href="/apprendre/creation/">Création de contenu</a></nav>
+      <h1>Téléprompteur <span class="prompt-version">V6</span><span class="prompt-local">Sur votre appareil</span></h1>
+    </div>
+    <div class="prompt-header-actions prompt-actions">
+      <button type="button" data-focus-mode aria-label="Mode lecture" aria-pressed="false" aria-controls="prompt-panel"><span data-icon="eye" aria-hidden="true"></span><span data-focus-label>Mode lecture</span></button>
+      <button type="button" data-fullscreen aria-label="Plein écran" aria-pressed="false"><span data-icon="fullscreen" aria-hidden="true"></span><span>Plein écran</span></button>
+      <button type="button" data-floating aria-label="Fenêtre flottante" aria-pressed="false" disabled><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="11" y="11" width="8" height="7" rx="1"/></svg><span data-floating-label>Fenêtre flottante</span></button>
+      <button type="button" data-remote-open aria-label="Télécommande sur téléphone" aria-haspopup="dialog" data-connected="false" disabled><svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg><span data-remote-label>Télécommande</span><span class="prompt-remote-dot" aria-hidden="true"></span></button>
+    </div>
   </header>
+
   <main class="prompt-workspace">
-    <aside class="prompt-panel" aria-label="Script et réglages">
-      <section class="prompt-script">
-        <div class="prompt-panel-title"><span>01</span><h2>Préparer le script</h2><span data-save-state role="status">Prêt</span></div>
-        <label class="sr-only" for="script">Texte à faire défiler</label>
-        <textarea id="script" data-script maxlength="250000" placeholder="Collez ou écrivez votre texte ici…&#10;&#10;Séparez les paragraphes par une ligne vide pour créer des repères."></textarea>
-        <div class="prompt-script-actions"><button type="button" data-import>Importer .txt / .md</button><button type="button" data-download>Exporter</button><button type="button" data-copy>Copier</button></div>
-        <input type="file" accept=".txt,.md,text/plain,text/markdown" data-script-file hidden>
-        <div class="prompt-metrics"><div><strong data-word-count>0</strong><span>mots</span></div><div><strong data-reading-duration>0:00</strong><span>de lecture estimée</span></div><label>Débit estimé<select data-rate aria-label="Débit estimé en mots par minute"><option value="120">120 mots/min</option><option value="150" selected>150 mots/min</option><option value="180">180 mots/min</option></select></label></div>
-      </section>
-      <section class="prompt-settings">
-        <div class="prompt-panel-title"><span>02</span><h2>Régler la lecture</h2></div>
-        <label class="prompt-range"><span>Vitesse du défilement <output data-speed-value>40 px/s</output></span><input type="range" min="5" max="180" step="1" value="40" data-speed></label>
-        <button type="button" class="prompt-calibrate" data-calibrate>Caler la vitesse sur le débit estimé</button>
-        <div class="prompt-settings-grid"><label>Départ différé<select data-countdown><option value="0">Immédiat</option><option value="3" selected>3 secondes</option><option value="5">5 secondes</option><option value="10">10 secondes</option></select></label><label>Thème<select data-theme><option value="dark">Sombre</option><option value="light">Clair</option><option value="sepia">Papier</option><option value="custom">Personnalisé</option></select></label></div>
-        <fieldset class="prompt-moods"><legend>Choisir une ambiance</legend><p>10 associations de couleurs prêtes à lire.</p><div class="prompt-mood-grid" data-color-presets aria-label="Ambiances du téléprompteur"></div></fieldset>
-        <fieldset class="prompt-colors"><legend>Couleurs de lecture</legend><div class="prompt-color-grid">
-          <div class="prompt-color-field"><label for="prompt-text-color">Texte</label><div class="prompt-color-inputs"><input type="color" id="prompt-text-color" data-text-color value="#f2f5fa"><label class="sr-only" for="prompt-text-hex">Code hexadécimal de la couleur du texte</label><input type="text" id="prompt-text-hex" data-color-hex="textColor" value="#F2F5FA" maxlength="7" autocomplete="off" spellcheck="false" inputmode="text" aria-describedby="prompt-color-help"></div></div>
-          <div class="prompt-color-field"><label for="prompt-background-color">Fond</label><div class="prompt-color-inputs"><input type="color" id="prompt-background-color" data-background-color value="#111a28"><label class="sr-only" for="prompt-background-hex">Code hexadécimal de la couleur du fond</label><input type="text" id="prompt-background-hex" data-color-hex="backgroundColor" value="#111A28" maxlength="7" autocomplete="off" spellcheck="false" inputmode="text" aria-describedby="prompt-color-help"></div></div>
-        </div><p id="prompt-color-help">Choisissez une teinte ou saisissez son code #RRGGBB.</p><output class="prompt-color-contrast" data-color-contrast aria-live="polite"></output><button type="button" data-reset-colors>Couleurs par défaut</button></fieldset>
-        <details open><summary>Confort de lecture</summary><div class="prompt-detail-content">
-          <label class="prompt-range"><span>Taille du texte <output data-size-value>48 px</output></span><input type="range" min="24" max="100" value="48" data-size></label>
-          <label class="prompt-range"><span>Interligne <output data-line-value>1,6</output></span><input type="range" min="1.2" max="2.4" step=".1" value="1.6" data-line></label>
-          <label class="prompt-range"><span>Largeur du texte <output data-width-value>80 %</output></span><input type="range" min="45" max="95" value="80" data-width></label>
-          <label>Police<select data-font><option value="sans">Sans empattement</option><option value="serif">Avec empattement</option></select></label>
-          <label class="prompt-check"><input type="checkbox" data-mirror>Mode miroir horizontal</label>
-          <label class="prompt-check"><input type="checkbox" data-guide checked>Afficher le repère de lecture</label>
-          <label class="prompt-check"><input type="checkbox" data-loop>Recommencer à la fin</label>
-        </div></details>
-        <label>Aller à un paragraphe<select data-paragraph><option value="">Repères du script…</option></select></label>
-      </section>
-      <details class="prompt-preparation"><summary>Préparer une prise</summary><div class="prompt-detail-content"><p>Un outil rapide pour structurer vos vidéos.</p><button type="button" data-template>Insérer un plan à la position du curseur</button><ul><li>Une accroche claire dans les premières secondes.</li><li>Une idée par paragraphe, avec des phrases faciles à dire.</li><li>Une pause entre les parties, puis une conclusion précise.</li></ul><p><kbd>Espace</kbd> lecture/pause · <kbd>↑</kbd> / <kbd>↓</kbd> vitesse · <kbd>←</kbd> / <kbd>→</kbd> avancer/reculer · <kbd>Début</kbd> revenir au début · <kbd>F</kbd> plein écran.</p></div></details>
-    </aside>
-    <section class="prompt-player" aria-label="Téléprompteur" data-player data-theme="dark">
-      <div class="prompt-player-meta"><span class="prompt-status" data-play-status role="status">À votre rythme</span><div><span data-elapsed>0:00</span><span class="prompt-meta-divider">/</span><span data-remaining>0:00</span><span>restant</span></div></div>
-      <div class="prompt-reader" data-reader tabindex="0" aria-label="Zone de lecture, défilable au clavier">
-        <div class="prompt-spacer" data-top-spacer></div><div class="prompt-text" data-prompt-text><p class="prompt-placeholder">Votre prochaine idée mérite d’être bien racontée.</p><p class="prompt-placeholder-small">Ajoutez un script à gauche, réglez votre rythme, puis lancez la lecture.</p></div><div class="prompt-spacer" data-bottom-spacer></div>
+    <aside class="prompt-panel" id="prompt-panel" aria-label="Préparation du téléprompteur">
+      <div class="prompt-tabs" role="tablist" aria-label="Préparation">
+        <button type="button" id="tab-library" role="tab" aria-selected="false" aria-controls="panel-library" tabindex="-1" data-tab="library">Bibliothèque</button>
+        <button type="button" id="tab-script" role="tab" aria-selected="true" aria-controls="panel-script" data-tab="script">Script</button>
+        <button type="button" id="tab-takes" role="tab" aria-selected="false" aria-controls="panel-takes" tabindex="-1" data-tab="takes">Prises</button>
+        <button type="button" id="tab-camera" role="tab" aria-selected="false" aria-controls="panel-camera" tabindex="-1" data-tab="camera">Caméra</button>
+        <button type="button" id="tab-settings" role="tab" aria-selected="false" aria-controls="panel-settings" tabindex="-1" data-tab="settings">Réglages</button>
       </div>
-      <div class="prompt-reading-guide" data-reading-guide aria-hidden="true"><span></span></div>
+
+      <p class="prompt-library-warning" data-library-warning role="status" hidden></p>
+      <section id="panel-library" class="prompt-tab-content prompt-library" role="tabpanel" aria-labelledby="tab-library" hidden>
+        <div class="prompt-library-heading"><div><h2>Vos scripts</h2><p data-library-count>Ouverture…</p></div><button type="button" class="prompt-new" data-new-script data-workspace-action="new">+ Nouveau</button></div>
+        <label class="sr-only" for="library-search">Rechercher un script</label><input id="library-search" type="search" data-library-search placeholder="Titre, série ou passage…" autocomplete="off">
+        <label class="sr-only" for="library-collection">Filtrer par série</label><select id="library-collection" data-library-collection><option value="">Toutes les séries</option></select>
+        <div class="prompt-library-toolbar"><div class="prompt-library-views" role="group" aria-label="Afficher les scripts"><button type="button" data-active-view aria-pressed="true">En cours</button><button type="button" data-archive-view aria-pressed="false">Archives</button></div><label class="sr-only" for="library-sort">Trier les scripts</label><select id="library-sort" data-library-sort><option value="recent">Récents</option><option value="title">A → Z</option></select></div>
+        <ul class="prompt-library-list" data-library-list aria-label="Scripts enregistrés"></ul><p class="prompt-library-empty" data-library-empty hidden></p>
+        <div class="prompt-library-footer"><button type="button" data-import data-workspace-action="import">Importer des scripts</button><button type="button" data-library-export data-workspace-action="export">Exporter la bibliothèque</button><p>.txt, .md ou sauvegarde .json · Sur cet appareil.</p></div>
+      </section>
+
+      <section id="panel-script" class="prompt-tab-content prompt-script" role="tabpanel" aria-labelledby="tab-script">
+        <div class="prompt-section-heading"><h2>Votre texte</h2><span data-save-state role="status">Ouverture…</span></div>
+        <div class="prompt-script-identity"><label class="sr-only" for="script-title">Titre du script</label><input type="text" id="script-title" data-script-title maxlength="120" placeholder="Titre du script" autocomplete="off"><label class="sr-only" for="script-collection">Série ou projet</label><input type="text" id="script-collection" data-script-collection list="prompt-collections" maxlength="90" placeholder="Série ou projet (facultatif)" autocomplete="off"><datalist id="prompt-collections" data-collections></datalist></div>
+        <label class="sr-only" for="script">Texte à faire défiler</label>
+        <textarea id="script" data-script maxlength="250000" spellcheck="true" disabled placeholder="Une idée, votre voix.&#10;&#10;Collez ou écrivez votre script ici. Une ligne vide entre les paragraphes crée un repère de lecture."></textarea>
+        <div class="prompt-script-actions"><button type="button" data-history data-workspace-action="history">Historique</button><button type="button" data-download>Exporter .txt</button><button type="button" data-copy>Copier</button></div>
+        <input type="file" accept=".txt,.md,.json,text/plain,text/markdown,application/json" data-script-file multiple hidden>
+        <div class="prompt-metrics"><span><strong data-word-count>0</strong> mots</span><span><strong data-reading-duration>0:00</strong> estimées</span></div>
+        <label class="prompt-field">Aller à un passage<select data-paragraph><option value="">Repères du script…</option></select></label>
+        <button type="button" class="prompt-text-button prompt-selection-button" data-use-selection>Travailler une sélection du texte</button>
+        <p class="prompt-note">Corrigez votre texte à tout moment. La lecture se met en pause et garde votre passage.</p>
+        <details class="prompt-script-options"><summary>Options du script</summary><div class="prompt-script-options-row"><button type="button" data-duplicate-script data-workspace-action="duplicate">Dupliquer</button><button type="button" data-archive-script data-workspace-action="archive">Archiver</button><button type="button" data-new-script data-workspace-action="new">Nouveau</button></div></details>
+        <details class="prompt-preparation"><summary>Aide et raccourcis</summary><div class="prompt-detail-content">
+          <p>Créez ou importez vos scripts dans Bibliothèque. Chaque script garde sa position de lecture. Exportez la bibliothèque pour emporter aussi les archives et les versions.</p>
+          <button type="button" data-template>Insérer un plan au curseur</button>
+          <dl class="prompt-shortcuts"><div><dt><kbd>Espace</kbd></dt><dd>Lire / pause</dd></div><div><dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd>Régler la vitesse</dd></div><div><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Reculer / avancer</dd></div><div><dt><kbd>R</kbd> · <kbd>P</kbd></dt><dd>Reprendre · phrase précédente</dd></div><div><dt><kbd>N</kbd> · <kbd>G</kbd></dt><dd>Nouvelle prise · à garder</dd></div><div><dt><kbd>F</kbd> · <kbd>L</kbd></dt><dd>Plein écran · mode lecture</dd></div><div><dt><kbd>Échap</kbd></dt><dd>Pause et commandes visibles</dd></div></dl>
+          <p>Les raccourcis de lecture restent inactifs pendant la saisie.</p>
+        </div></details>
+      </section>
+
+      <section id="panel-takes" class="prompt-tab-content prompt-takes" role="tabpanel" aria-labelledby="tab-takes" hidden>
+        <div class="prompt-section-heading"><h2>Préparer une prise</h2><span class="prompt-take-count" data-take-count>0 prise</span></div>
+        <label class="prompt-field">Passage à travailler<select data-take-passage><option value="all">Tout le script</option></select></label>
+        <p class="prompt-passage-preview" data-passage-preview>Une ligne vide entre deux paragraphes crée un passage.</p>
+        <label class="prompt-check"><input type="checkbox" data-passage-loop disabled>Répéter ce passage en boucle</label>
+        <p class="prompt-note">Le départ différé des réglages s’applique à chaque reprise.</p>
+        <button type="button" class="prompt-new" data-new-take>Nouvelle prise <kbd>N</kbd></button>
+        <div class="prompt-take-verdict"><button type="button" data-keep-take disabled>À garder <kbd>G</kbd></button><button type="button" data-retry-take disabled>À refaire</button></div>
+        <div class="prompt-take-journal-heading"><h3>Journal pour le montage</h3><button type="button" class="prompt-text-button" data-export-takes disabled>Exporter .txt</button></div>
+        <p class="prompt-note" data-takes-empty>Vos prises apparaîtront ici, avec leur passage et vos notes.</p>
+        <ol class="prompt-take-list" data-take-list aria-label="Journal de prises"></ol>
+      </section>
+
+      <section id="panel-camera" class="prompt-tab-content prompt-camera" role="tabpanel" aria-labelledby="tab-camera" hidden>
+        <div class="prompt-section-heading"><h2>Tourner, puis monter.</h2><span class="prompt-camera-local">En local</span></div>
+        <p class="prompt-note">Une vidéo continue, des repères pour chaque prise.</p>
+        <div class="prompt-camera-live" data-camera-live>
+          <video data-camera-preview autoplay muted playsinline hidden aria-label="Retour de la caméra"></video>
+          <div class="prompt-camera-placeholder" data-camera-placeholder><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="6" y="13" width="25" height="23" rx="4"/><path d="m31 20 10-5v20l-10-5"/><path d="m8 6 32 36"/></svg><span>Votre caméra, quand vous le décidez.</span></div>
+        </div>
+        <p class="prompt-camera-format" data-camera-format>720p ou 1080p · format selon la caméra</p>
+        <div class="prompt-camera-settings">
+          <label class="prompt-field">Caméra<select data-camera-source data-camera-setting><option value="">Caméra par défaut</option></select></label>
+          <label class="prompt-field">Micro<select data-mic-source data-camera-setting><option value="">Micro par défaut</option><option value="none">Sans micro · vidéo muette</option></select></label>
+          <div class="prompt-settings-grid"><label class="prompt-field">Définition souhaitée<select data-camera-quality data-camera-setting><option value="720">720p · léger</option><option value="1080">1080p</option></select></label><label class="prompt-field">Cadre souhaité<select data-camera-orientation data-camera-setting><option value="horizontal">Horizontal · 16:9</option><option value="vertical">Vertical · 9:16</option></select></label></div>
+        </div>
+        <label class="prompt-check"><input type="checkbox" data-camera-mirror>Miroir du retour caméra seulement</label>
+        <div class="prompt-mic-check"><meter min="0" max="1" value="0" data-mic-meter aria-label="Niveau du micro"></meter><span data-mic-level>Micro inactif</span></div>
+        <p class="prompt-camera-status" data-camera-status role="status">Caméra éteinte</p>
+        <div class="prompt-camera-actions"><button type="button" data-camera-activate disabled>Activer la caméra et le micro</button><button type="button" data-camera-cancel hidden>Annuler la demande</button><button type="button" data-camera-close hidden>Éteindre la caméra</button><button type="button" class="prompt-new" data-camera-record disabled>Enregistrer et lire</button><button type="button" class="prompt-camera-stop" data-camera-stop hidden>Arrêter l’enregistrement</button></div>
+        <p class="prompt-camera-message" data-camera-message role="status" hidden></p>
+        <p class="prompt-note" data-camera-format-note>Le fichier conserve le cadre réel de la caméra. Le texte et le miroir du prompteur ne sont pas enregistrés.</p>
+        <div class="prompt-media-heading"><h3>Vos enregistrements</h3><span data-media-storage>Vidéos conservées ici · téléchargez une copie pour le montage.</span></div>
+        <p class="prompt-note" data-media-empty>Arrêtez une capture pour retrouver la vidéo et ses repères ici.</p>
+        <label class="sr-only" for="media-sessions">Choisir un enregistrement</label><select id="media-sessions" data-media-sessions disabled></select>
+        <p class="prompt-media-summary" data-media-summary>Vos vidéos et leurs repères apparaîtront ici.</p>
+        <video class="prompt-media-playback" data-media-playback controls playsinline preload="metadata" hidden aria-label="Relire l’enregistrement"></video>
+        <p class="prompt-note prompt-media-recovery" data-media-recovery hidden>Session interrompue ou encore ouverte ailleurs : les dernières données peuvent manquer. Vérifiez la lecture du fichier récupéré.</p>
+        <button type="button" class="prompt-new" data-media-export="video" disabled>Télécharger la vidéo</button>
+        <label class="prompt-check"><input type="checkbox" data-media-kept>Exporter seulement les repères « À garder »</label>
+        <button type="button" data-media-export="zip" disabled>Pack montage .zip</button>
+        <p class="prompt-note">Repères CSV/SRT, script filmé et notes. Vidéo à télécharger séparément.</p>
+        <details class="prompt-media-separate"><summary>Exports séparés</summary><div class="prompt-detail-content"><div class="prompt-media-exports"><button type="button" data-media-export="csv" disabled>Repères .csv</button><button type="button" data-media-export="srt" disabled>Repères .srt</button></div><button type="button" class="prompt-text-button" data-media-export="json" disabled>Dossier de tournage .json</button></div></details>
+        <div class="prompt-media-footer"><button type="button" class="prompt-text-button" data-media-delete disabled>Retirer cette vidéo de cet appareil</button></div>
+        <details><summary>Du tournage au montage</summary><div class="prompt-detail-content">
+          <p>« Enregistrer et lire » crée une prise et lance votre départ différé. La vidéo enregistre aussi ce départ, les pauses et les reprises. Le bouton rouge reste accessible en mode lecture et dans la fenêtre détachée.</p>
+          <p>Les repères suivent les temps de lecture de chaque prise. Ils gardent vos mentions « À garder », « À refaire » et vos notes de montage. Ce ne sont pas des sous-titres transcrits.</p>
+          <p>Dans Premiere, importez la vidéo et les repères SRT, puis placez-les au même début dans la séquence. Utilisez cette piste temporaire pour retrouver les prises et retirez-la avant l’export final.</p>
+          <p>MP4 si votre navigateur le permet, sinon WebM. Le fichier garde son format réel. Selon le codec choisi par le navigateur, une conversion peut être nécessaire pour votre logiciel de montage.</p>
+          <p>La caméra et le micro restent sur cet appareil. Les vidéos sont enregistrées dans ce navigateur, séparément de la sauvegarde des scripts. Téléchargez-les avant d’effacer les données du site. Limite par session : 20 minutes ou 256 Mo.</p>
+        </div></details>
+      </section>
+
+      <section id="panel-settings" class="prompt-tab-content prompt-settings" role="tabpanel" aria-labelledby="tab-settings" hidden>
+        <div class="prompt-section-heading"><h2>À votre rythme</h2><button type="button" class="prompt-text-button" data-reset-layout>Recentrer</button></div>
+        <label class="prompt-range"><span>Vitesse <output aria-live="off" data-speed-value>40 px/s</output></span><input type="range" min="5" max="180" step="1" value="40" data-speed aria-label="Vitesse du défilement"></label>
+        <div class="prompt-settings-grid"><label class="prompt-field">Débit estimé<select data-rate><option value="120">120 mots/min</option><option value="150" selected>150 mots/min</option><option value="180">180 mots/min</option></select></label><label class="prompt-field">Départ différé<select data-countdown><option value="0">Immédiat</option><option value="3" selected>3 secondes</option><option value="5">5 secondes</option><option value="10">10 secondes</option></select></label></div>
+        <button type="button" class="prompt-calibrate" data-calibrate>Adapter la vitesse au débit estimé</button>
+
+        <details open><summary>Texte et position</summary><div class="prompt-detail-content">
+          <label class="prompt-range"><span>Taille du texte <output aria-live="off" data-size-value>48 px</output></span><input type="range" min="24" max="100" value="48" data-size aria-label="Taille du texte"></label>
+          <label class="prompt-range"><span>Largeur de la colonne <output aria-live="off" data-width-value>64 %</output></span><input type="range" min="30" max="95" value="64" data-width aria-label="Largeur de la colonne"></label>
+          <label class="prompt-range"><span>Position horizontale <output aria-live="off" data-offset-value>Centre</output></span><input type="range" min="0" max="100" value="50" data-offset aria-label="Position horizontale"></label>
+          <div class="prompt-align" role="group" aria-label="Placer le texte près de la caméra"><button type="button" data-align="0">Gauche</button><button type="button" data-align="50">Centre</button><button type="button" data-align="100">Droite</button></div>
+          <label class="prompt-range"><span>Interligne <output aria-live="off" data-line-value>1,6</output></span><input type="range" min="1.2" max="2.4" step=".1" value="1.6" data-line aria-label="Interligne"></label>
+          <label class="prompt-field">Police<select data-font><option value="sans">Sans empattement</option><option value="serif">Avec empattement</option></select></label>
+          <label class="prompt-check"><input type="checkbox" data-mirror>Mode miroir horizontal</label>
+        </div></details>
+
+        <details open><summary>Repère de lecture</summary><div class="prompt-detail-content">
+          <label class="prompt-check"><input type="checkbox" data-guide checked>Afficher le repère</label>
+          <label class="prompt-range"><span>Hauteur du repère <output aria-live="off" data-guide-position-value>35 %</output></span><input type="range" min="15" max="75" value="35" data-guide-position aria-label="Hauteur du repère"></label>
+          <label class="prompt-field">Apparence<select data-guide-style><option value="line">Ligne discrète</option><option value="band">Bande de lecture</option></select></label>
+          <p class="prompt-note">Vous pouvez aussi faire glisser le repère dans la zone de lecture. Rapprochez-le de votre objectif.</p>
+        </div></details>
+
+        <details><summary>Couleurs de lecture</summary><div class="prompt-detail-content">
+          <label class="prompt-field">Thème<select data-theme><option value="dark">Sombre</option><option value="light">Clair</option><option value="sepia">Papier</option><option value="custom">Personnalisé</option></select></label>
+          <div class="prompt-mood-grid" data-color-presets aria-label="Ambiances du téléprompteur"></div>
+          <div class="prompt-color-grid">
+            <label class="prompt-color-field">Texte<span><input type="color" data-text-color value="#f2f5fa" aria-label="Couleur du texte"><input type="text" data-color-hex="textColor" value="#F2F5FA" maxlength="7" autocomplete="off" spellcheck="false" aria-label="Code hexadécimal du texte"></span></label>
+            <label class="prompt-color-field">Fond<span><input type="color" data-background-color value="#111a28" aria-label="Couleur du fond"><input type="text" data-color-hex="backgroundColor" value="#111A28" maxlength="7" autocomplete="off" spellcheck="false" aria-label="Code hexadécimal du fond"></span></label>
+          </div>
+          <output class="prompt-color-contrast" data-color-contrast aria-live="polite"></output><button type="button" data-reset-colors>Couleurs par défaut</button>
+        </div></details>
+        <label class="prompt-check"><input type="checkbox" data-loop>Recommencer à la fin du script</label>
+      </section>
+    </aside>
+
+    <section class="prompt-player" aria-label="Téléprompteur" data-player data-theme="dark">
+      <div class="prompt-player-meta"><span class="prompt-session"><span class="prompt-current-title" data-current-title>Mon script</span><span class="prompt-status" data-play-status role="status">Prêt à vous suivre</span></span><span class="prompt-time"><span data-elapsed>0:00</span><span class="prompt-meta-divider">·</span><span data-remaining>0:00</span> restantes</span></div>
+      <div class="prompt-reader" data-reader tabindex="0" aria-label="Zone de lecture, défilable au clavier">
+        <div class="prompt-spacer" data-top-spacer></div><div class="prompt-text" data-prompt-text></div><div class="prompt-spacer" data-bottom-spacer></div>
+      </div>
+      <div class="prompt-reading-guide" data-reading-guide data-style="line"><span class="prompt-guide-line" aria-hidden="true"></span><button type="button" class="prompt-guide-handle" data-guide-handle aria-label="Déplacer le repère de lecture" aria-describedby="guide-help"><span aria-hidden="true">›</span></button></div>
+      <span class="sr-only" id="guide-help">Faites glisser verticalement, ou utilisez les flèches haut et bas lorsque le repère est sélectionné.</span>
       <div class="prompt-countdown" data-countdown-overlay hidden aria-hidden="true"></div>
       <footer class="prompt-transport">
-        <label class="prompt-progress"><span class="sr-only">Position dans le script</span><input type="range" min="0" max="100" step=".1" value="0" data-position><output data-position-value>0 %</output></label>
-        <div class="prompt-transport-row"><button type="button" class="prompt-reset" data-reset aria-label="Revenir au début"><span data-icon="undo"></span></button><button type="button" class="prompt-play" data-play><span data-icon="play"></span><span data-play-label>Lancer la lecture</span></button><div class="prompt-speed-mini"><button type="button" data-slower aria-label="Ralentir le défilement">−</button><span data-mini-speed>40 px/s</span><button type="button" data-faster aria-label="Accélérer le défilement">+</button></div></div>
+        <div class="prompt-retake-bar"><span class="prompt-scope" data-scope-label>Tout le script</span><span class="prompt-attempt" data-attempt-label></span><div><button type="button" data-previous-phrase aria-label="Revenir à la phrase précédente" title="Phrase précédente · P">← Phrase</button><button type="button" data-retake aria-label="Reprendre la phrase actuelle" title="Nouvelle prise depuis cette phrase · R">Reprendre <kbd>R</kbd></button></div></div>
+        <label class="prompt-progress"><span class="sr-only">Position dans le script</span><input type="range" min="0" max="100" step=".1" value="0" data-position><output aria-live="off" data-position-value>0 %</output></label>
+        <div class="prompt-transport-row">
+          <button type="button" class="prompt-icon-button" data-reset aria-label="Revenir au début" title="Revenir au début"><span data-icon="undo" aria-hidden="true"></span></button>
+          <button type="button" class="prompt-play" data-play aria-pressed="false"><span data-icon="play" aria-hidden="true"></span><span data-play-label>Lire le script</span></button>
+          <div class="prompt-speed-mini"><button type="button" data-slower aria-label="Ralentir le défilement">−</button><span data-mini-speed>40 px/s</span><button type="button" data-faster aria-label="Accélérer le défilement">+</button></div>
+        </div>
       </footer>
+      <button type="button" class="prompt-record-stop" data-record-stop hidden aria-label="Arrêter l’enregistrement vidéo">● REC · Arrêter</button>
+      <button type="button" class="prompt-quiet-button" data-quiet-mode aria-pressed="false" aria-label="Masquer les commandes" title="Masquer les commandes"><span data-icon="hidden" aria-hidden="true"></span><span data-quiet-label>Commandes</span></button>
     </section>
   </main>
+  <dialog class="prompt-history-dialog prompt-remote-dialog" data-remote-dialog aria-labelledby="remote-title">
+    <div class="prompt-dialog-heading"><div><p>À portée de main</p><h2 id="remote-title">Votre téléphone, votre télécommande.</h2></div><button type="button" data-remote-close aria-label="Fermer la télécommande">×</button></div>
+    <p class="prompt-remote-intro">Lecture, reprises et prises depuis votre téléphone. Gardez les deux appareils sur le même Wi-Fi et le lecteur ouvert.</p>
+    <div class="prompt-remote-steps" data-remote-steps>
+      <div><h3>1. Créez un lien pour votre téléphone</h3><button type="button" class="prompt-new" data-remote-create>Créer un lien de connexion</button></div>
+      <div data-remote-invite hidden><label>Lien à ouvrir sur le téléphone<textarea data-remote-link rows="2" readonly spellcheck="false" autocapitalize="none"></textarea></label><div class="prompt-remote-copy-row"><button type="button" data-remote-copy>Copier le lien</button><button type="button" data-remote-share hidden>Partager le lien</button></div><p class="prompt-remote-local" data-remote-local-note hidden>En local, ce lien utilise l’adresse publique du site. Mettez d’abord cette version en ligne pour l’ouvrir sur votre téléphone.</p><p class="prompt-note">Le lien reste valable 10 minutes. Sur le téléphone, cliquez sur « Préparer la réponse ».</p></div>
+      <div><h3>2. Récupérez la réponse du téléphone</h3><label>Réponse du téléphone<textarea data-remote-answer rows="2" maxlength="50000" spellcheck="false" autocomplete="off" autocapitalize="none" placeholder="Collez ici le code PH5.… fourni par le téléphone"></textarea></label><button type="button" data-remote-accept disabled>Connecter</button></div>
+    </div>
+    <div class="prompt-remote-connected" data-remote-connected hidden><p>Le téléphone est connecté. Vous pouvez fermer cette fenêtre et lancer une prise depuis la télécommande.</p></div>
+    <p class="prompt-remote-message" data-remote-message role="status">Prêt à créer une connexion.</p>
+    <div class="prompt-dialog-footer"><p class="prompt-note">Une coupure de la connexion met la lecture en pause.</p><button type="button" data-remote-disconnect disabled>Déconnecter le téléphone</button></div>
+  </dialog>
+  <dialog class="prompt-history-dialog prompt-media-delete-dialog" data-media-delete-dialog aria-labelledby="media-delete-title"><h2 id="media-delete-title">Retirer cette vidéo de cet appareil ?</h2><p data-media-delete-name></p><p>Vérifiez que vous avez téléchargé et ouvert une copie du fichier. Cette action retire la vidéo et ses repères du navigateur.</p><div class="prompt-dialog-footer"><button type="button" data-media-delete-cancel>Annuler</button><button type="button" data-media-delete-confirm>Retirer la vidéo</button></div></dialog>
+  <dialog class="prompt-history-dialog" data-history-dialog aria-labelledby="history-title">
+    <div class="prompt-dialog-heading"><div><p>Vos versions</p><h2 id="history-title" data-history-title>Historique</h2></div><button type="button" data-history-close aria-label="Fermer l’historique">×</button></div>
+    <p class="prompt-history-note">Les 30 dernières versions sont conservées. Une restauration garde aussi votre texte actuel.</p>
+    <div class="prompt-history-layout"><div class="prompt-history-sidebar"><ol data-history-list aria-label="Versions du script"></ol><p data-history-empty>Aucune version pour le moment. Écrivez votre script, puis conservez une version.</p></div><div class="prompt-history-preview"><p data-version-info></p><label class="sr-only" for="version-preview">Texte de la version</label><textarea id="version-preview" data-version-preview readonly spellcheck="false"></textarea></div></div>
+    <div class="prompt-dialog-footer"><button type="button" data-version-save data-workspace-action="version">Garder une version</button><button type="button" class="prompt-new" data-version-restore data-workspace-action="restore" disabled>Restaurer cette version</button></div>
+  </dialog>
   <div class="prompt-toast" data-toast role="status" hidden></div>
-  <script src="/js/tool-icons.js?v=20261014-audit1"></script><script src="./teleprompteur.js?v=20261014-audit1"></script>
-  <script src="/js/global-backup.js?v=20261014-audit1" defer></script>
+  <script src="/js/tool-icons.js?v=20261014-audit1"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-core.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-takes.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-library.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-workspace.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-production.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-remote.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-floating.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-connect.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-media.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur-camera.js?v=20261021-prompt6fix"></script>
+  <script src="/apprendre/creation/teleprompteur/teleprompteur.js?v=20261021-prompt6fix"></script>
+  <script src="/js/global-backup.js?v=20261021-prompt6fix" defer></script>
 </body>
 </html>

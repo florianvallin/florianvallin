@@ -8,6 +8,14 @@
   const cleanPathId = cleanPathMatch && !reservedPaths.has(cleanPathMatch[1]) ? decodeURIComponent(cleanPathMatch[1]) : null;
   const id = params.get("id") || cleanPathId;
 
+  // Compatibilité avec les anciennes copies qui utilisaient /textes/ comme lecteur.
+  if (!id && /(?:^|\/)textes(?:\/index\.html)?\/?$/.test(window.location.pathname)) {
+    const url = new URL(window.PHILOSOPHAL_NAVIGATION?.resolve('/textes/catalogue.html') || '/textes/catalogue.html', window.location.href);
+    url.search = window.location.search;
+    url.searchParams.delete('catalogue');
+    window.location.replace(url.pathname + url.search + window.location.hash);
+    return;
+  }
   const text = (window.FV_TEXT_CATALOG || []).find((item) => item.id === id);
   if (!text) {
     target.innerHTML = `<div class="text-detail-inner"><p class="text-breadcrumb"><a href="/textes/">Textes</a></p><h1>Texte introuvable</h1><div class="text-placeholder"><p>Cette référence n’existe pas ou n’est plus disponible.</p></div></div>`;

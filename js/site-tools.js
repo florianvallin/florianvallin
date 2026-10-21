@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "20260928-editor1";
+  const VERSION = "20261021-routes5";
   const ready = (fn) => document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", fn, { once: true })
     : fn();
@@ -41,7 +41,7 @@
           const scopePath = new URL(registration.scope).pathname;
           const worker = registration.active || registration.waiting || registration.installing;
           const scriptPath = worker ? new URL(worker.scriptURL).pathname : "";
-          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || scopePath === "/" || scopePath === "/main/";
+          const isPhilosophalWorker = scriptPath.endsWith("/sw.js") || localHost && scriptPath.endsWith("/sw-atelier.js");
           const isReaderScope = scopePath === "/lecture/" || scopePath === "/main/lecture/";
           if (isPhilosophalWorker && !isReaderScope) await registration.unregister();
         }));
@@ -87,6 +87,7 @@
 
   function resolveSitePath(path) {
     const value = String(path || "");
+    if (window.PHILOSOPHAL_NAVIGATION) return window.PHILOSOPHAL_NAVIGATION.resolve(value);
     if (!value.startsWith("/")) return value;
 
     // Quand Live Server sert le dossier parent et que le site se trouve dans /main/,
@@ -99,32 +100,12 @@
   }
 
   function go(path) {
+    if (window.PHILOSOPHAL_NAVIGATION) { window.PHILOSOPHAL_NAVIGATION.go(path); return; }
     window.location.assign(resolveSitePath(path));
   }
 
-  async function openBlogHub() {
-    const localHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-
-    // En local, d'anciens service workers / caches de Live Server peuvent servir
-    // une ancienne copie de /blog/index.html. On nettoie uniquement l'environnement
-    // de développement avant d'ouvrir une route dédiée, non ambiguë.
-    if (localHost) {
-      try {
-        if ("serviceWorker" in navigator) {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(registrations.map((registration) => registration.unregister()));
-        }
-        if ("caches" in window) {
-          const keys = await caches.keys();
-          await Promise.all(keys.map((key) => caches.delete(key)));
-        }
-      } catch (_) {}
-
-      window.location.assign(resolveSitePath("/blog/tous-les-billets.html?v=20260923-github-refresh1"));
-      return;
-    }
-
-    go("/blog/");
+  function openBlogHub() {
+    go('/blog/');
   }
 
   function openPrivateLibrary() {
@@ -145,8 +126,8 @@
     // Raccourcis globaux : uniquement sur keydown. event.code reste fiable
     // avec un clavier AZERTY, y compris lorsque Alt modifie event.key.
     const codeMatches = (event, code, fallbackKey = "") => {
-      if (event.code === code) return true;
-      return fallbackKey && normalizeKey(event) === fallbackKey;
+      const key = normalizeKey(event);
+      return /^[a-z]$/.test(key) ? key === fallbackKey : event.code === code;
     };
 
     const shortcutHelpIsOpen = () => Boolean(shortcutShell && !shortcutShell.hidden);
@@ -160,7 +141,7 @@
         return;
       }
 
-      if (isTypingTarget(event.target)) return;
+      if (event.defaultPrevented || event.repeat || event.isComposing || isTypingTarget(event.target)) return;
       if (event.metaKey) return;
 
       const questionMark = event.key === "?" || (event.shiftKey && ["Slash", "Comma"].includes(event.code));
@@ -179,27 +160,8 @@
         return;
       }
 
-      // Accès privés : Alt uniquement. Toute combinaison contenant Ctrl est ignorée.
-      if (event.altKey && !event.ctrlKey && !event.shiftKey) {
-        const destinations = [
-          ["KeyA", "a", "/art/"],
-          ["KeyL", "l", "__library__"],
-          ["KeyC", "c", "/mediatheque/"],
-          ["KeyB", "b", "/textes/theologie/boussole/"],
-          ["KeyM", "m", "/textes/mythologie/boussole/"],
-          ["KeyP", "p", "/textes/philosophie/boussole/"]
-        ];
-
-        for (const [code, key, path] of destinations) {
-          if (!codeMatches(event, code, key)) continue;
-          consumeShortcut(event);
-          closeShortcutHelp();
-          if (path === "__library__") openPrivateLibrary();
-          else go(path);
-          return;
-        }
-        return;
-      }
+      // Les combinaisons Alt sont communes à tous les outils et pages.
+      if (event.altKey) return;
 
       if (event.ctrlKey) return;
 
@@ -235,6 +197,13 @@
         consumeShortcut(event);
         closeShortcutHelp();
         go("/");
+        return;
+      }
+      // P conserve ses commandes de pagination dans les lecteurs de livres.
+      if (codeMatches(event, "KeyP", "p") && !/\/(?:epub|lecture)(?:\/|$)/.test(window.location.pathname)) {
+        consumeShortcut(event);
+        closeShortcutHelp();
+        go('/pomodoro/');
         return;
       }
       if (codeMatches(event, "KeyC", "c")) {
@@ -749,6 +718,7 @@
       shortcutRow("D", "Dictionnaires"),
       shortcutRow("T", "Textes"),
       shortcutRow("B", "Blog"),
+      shortcutRow("P", "Pomodoro · hors lecteurs"),
       shortcutRow("C", "Contact"),
       shortcutRow("S", "Espace élève · S’identifier"),
       shortcutRow(keyLabel("shift"), "?", "Afficher cette aide")

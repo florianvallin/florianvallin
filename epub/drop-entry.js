@@ -49,14 +49,16 @@
     const files = Array.from(event.dataTransfer?.files || []);
     const file = files.find((candidate) => Books.isSupported(candidate));
     if (!file) {
-      show("Format non pris en charge — EPUB, AZW3, MOBI, CBZ, TXT, HTML, Markdown ou FB2");
+      show("Format non pris en charge — PDF, EPUB, FB2, MOBI, AZW3, DjVu, CBZ, CBR, RAR ou ZIP");
       setTimeout(hide, 1700);
       return;
     }
 
     try {
       show("Import du livre…");
-      const record = await Books.saveFile(file);
+      const processed = await window.PhilosophalFormats.prepareImport(file, text => text ? show(text) : hide());
+      if (!processed) { hide(); return; }
+      const record = await Books.saveFile(processed);
       const base = new URL("/epub/", location.origin);
       base.searchParams.set("book", record.id);
       base.searchParams.set("fresh", "1");

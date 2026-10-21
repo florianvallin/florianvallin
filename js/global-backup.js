@@ -2,7 +2,7 @@
   'use strict';
   if (window.PHILOSOPHAL_BACKUP) return;
   const FORMAT = 'philosophal-global-backup';
-  const DB_NAMES = ['philosophal-editor-v1', 'philosophal-local-books'];
+  const DB_NAMES = ['philosophal-editor-v1', 'philosophal-local-books', 'philosophal-teleprompteur'];
   const excluded = /(access|private-library|owner-access|vault|password|token|auth|handoff|open-site-search)/i;
   const allowedKey = k => typeof k === 'string' && /^(philosophal[-.]|fv-|fvReader)/.test(k) && !excluded.test(k) && k.length < 250;
   const esc = v => String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

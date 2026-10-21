@@ -1880,12 +1880,17 @@
 
     const pinned = scopedResources().filter((item) => state.pinned.has(item.id)).slice(0, 5);
 
+    const svg = kind => window.PhilosophalLibraryIcons?.svg(kind) || icon(kind);
+    const tools = [
+      ['editor', 'Éditeur de texte', '/editeurtexte/'], ['epub', 'Lecteur de livres', '/epub/'],
+      ['image', 'Éditeur d’image', '/editeurimage/'], ['pdf', 'Outils PDF', '/pdf/'],
+      ['clock', 'Pomodoro', '/pomodoro/'], ['prompter', 'Téléprompteur', '/apprendre/creation/teleprompteur/']
+    ];
     home.innerHTML = `
-      ${pinned.length ? `<section class="media-resume"><div class="media-resume-head"><span>Favoris</span><small>${pinned.length} ressource${pinned.length > 1 ? "s" : ""}</small></div><div class="media-resume-list">${pinned.map((item) => resourceRow(item, { showKind: true })).join("")}</div></section>` : ""}
-      ${renderProfileHub()}
-      <div class="media-shelves">
-        ${availableFilters().filter((meta) => meta.key !== "all").map(({ key: kind }) => kind === "video" ? videoHomeShelf(grouped.get(kind)) : kind === "cours" ? courseHomeShelf(grouped.get(kind)) : homeShelf(kind, grouped.get(kind))).join("")}
-      </div>`;
+      <div class="library-rayons">${availableFilters().filter(meta => meta.key !== 'all').map(meta => `<button class="library-rayon" type="button" data-kind-focus="${esc(meta.key)}"><span class="library-rayon-icon">${svg(meta.key)}</span><span class="library-rayon-copy"><strong>${esc(meta.label)}</strong><small>${grouped.get(meta.key)?.length || 0} ressources</small></span><span class="library-rayon-arrow">${svg('arrow')}</span></button>`).join('')}</div>
+      <section class="library-favorites"><header><h3>Mes favoris</h3><button type="button" data-library-nav="favorites">Tout voir ${svg('arrow')}</button></header>${pinned.length ? `<div class="media-resource-list">${pinned.map(item => resourceRow(item, {showKind:true})).join('')}</div>` : `<div class="library-favorites-empty">${svg('bookmark')}<p>Vos ressources à portée de main.<span>Ajoutez un favori depuis une ressource pour le retrouver ici.</span></p></div>`}</section>
+      <section class="library-worktools"><header><h3>Mes outils de travail</h3></header><div class="library-tools-grid">${tools.map(([glyph,label,url]) => `<a class="library-worktool" href="${url}">${svg(glyph)}<strong>${label}</strong></a>`).join('')}</div></section>
+      ${peopleProfiles.length ? `<details class="library-figures"><summary><span>${svg('explorer')}Personnes et connexions</span><span>Explorer les ressources</span></summary>${renderProfileHub()}</details>` : ''}`;
   }
 
   function renderGroupedSections(list) {
@@ -2013,6 +2018,11 @@
   function renderResults() {
     const list = filteredResources();
     const homeView = isHomeView();
+    document.body.dataset.libraryView = homeView ? 'home' : state.pinnedOnly ? 'favorites' : 'resources';
+    document.querySelectorAll('[data-library-nav]').forEach(button => {
+      const current = button.dataset.libraryNav === (homeView ? 'home' : state.pinnedOnly ? 'favorites' : '');
+      if (current) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
+    });
     home.hidden = !homeView;
     const courseEmptyView = !homeView && state.kind === "cours" && !state.query && !state.courseQuery && !state.person && !state.theme && !state.dossier && !state.pinnedOnly && !state.author && !state.concept && !state.level && !state.difficulty && !state.duration && !state.usage;
     const mindmapView = !homeView && state.kind === "mindmap" && Boolean(state.mindmapId);
@@ -2092,6 +2102,14 @@
     pinnedToggle.querySelector("span").textContent = state.pinnedOnly ? "★" : "☆";
     updateUrl();
   }
+
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-library-nav]');
+    if (!button) return;
+    resetAccessFilters();
+    state.pinnedOnly = button.dataset.libraryNav === 'favorites';
+    render();
+  });
 
   function resetFilters() {
     state.kind = "all";
@@ -2383,21 +2401,18 @@
 
   privateGateForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(privatePassword?.value || "");
-    if (!role) {
-      // Compatibilité si le module d'accès ancien est encore en cache.
-      const ownerValid = await window.FV_PRIVATE_ACCESS?.unlock?.(privatePassword?.value || "");
-      if (!ownerValid) {
-        if (privateError) privateError.hidden = false;
-        privatePassword?.select();
-        return;
+    const feedback = privateError;
+    try {
+      const password = privatePassword?.value || '';
+      if (password.trim().toLocaleLowerCase('fr-FR') === 'didier') {
+        window.location.assign('https://app.notion.com/p/Cours-Philosophie-Didier-35781643740b80b28dc8cd07c1e59ea7?source=copy_link'); return;
       }
-      closePrivateGate();
-      setAccessMode("private");
-      return;
-    }
-    closePrivateGate();
-    setAccessMode(role);
+      const role = await window.FV_PRIVATE_ACCESS?.unlockRole?.(password);
+      if (!role) { if (feedback) { feedback.textContent = 'Mot de passe incorrect.'; feedback.hidden = false; } privatePassword?.select(); return; }
+      // Recharger la même médiathèque après validation pour charger uniquement les données autorisées.
+      window.location.reload();
+    } catch (error) { if (feedback) { feedback.textContent = error.message || 'Ouverture impossible. Réessayez.'; feedback.hidden = false; } }
+
   });
 
   search.addEventListener("input", () => {
@@ -2983,7 +2998,9 @@
     }
   });
 
-  document.body.dataset.mediaAccess = "public";
+  state.access = window.FV_PRIVATE_ACCESS?.role?.() || "public";
+  document.body.dataset.mediaAccess = state.access;
+  setAccessMode(state.access);
   initFromUrl();
   render();
 })();

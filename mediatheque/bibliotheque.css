@@ -611,3 +611,13 @@ html[data-site-theme="dark"] .library-search-progress p{color:#bbb5c5}
 html[data-site-theme="dark"] .library-redesign .library-search-progress button{border:1px solid #644587;background:#1f1628;color:#c0a5d4}
 html[data-site-theme="dark"] .library-redesign .library-search-progress button:hover{background:#21182a}
 }
+/* Accueil rétabli : mêmes composants sur l'entrée directe et l'accueil de secours. */
+.library-useful-groups{display:grid;gap:20px}
+.library-useful-groups a{display:block;padding:9px 0;color:var(--library-violet);text-decoration:none}
+.library-useful-groups a:hover strong{text-decoration:underline}
+.library-useful-groups small{display:block;margin-top:4px;color:var(--muted);font-size:.8rem}
+.library-useful-groups h3{margin:8px 0;font-size:1rem}
+.library-redesign .media-heading-line{display:block}
+.library-redesign .media-topbar>.media-access-switch{margin-right:auto}
+.library-dialog [data-library-close]{border:0;background:transparent;color:inherit;min-width:44px;min-height:44px;font-size:1.6rem;border-radius:8px}
+.library-redesign .library-favorites .media-resource-list{margin-top:0}

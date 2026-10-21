@@ -1,0 +1,63 @@
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/InterVariable-latin.woff2') format('woff2')}
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:swap;src:url('../assets/fonts/Manrope-Variable.woff2') format('woff2')}
+/* Palette lisible et garde-fous de mise en page communs. */
+.footer-legal-links{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:.82rem;line-height:1.6}
+.footer-legal-links a{text-decoration:underline;text-underline-offset:3px}
+.legal-content a,.legal-content p{overflow-wrap:anywhere}
+.legal-toc{display:flex;flex-wrap:wrap;gap:10px 18px;margin:20px 0 30px}
+.legal-content table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:.92rem}
+.legal-content th,.legal-content td{padding:12px;text-align:left;border:1px solid #d9d3e2;vertical-align:top}
+.legal-content th{background:#f2eef8}
+.legal-table-scroll{max-width:100%;overflow:auto}
+.ph-media-consent{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;min-height:220px;width:100%;background:#f4f0f9;color:#30283d;text-align:center;border:1px solid #d8cce8;border-radius:12px}
+.ph-media-consent p{margin:0;max-width:52ch;font-size:.9rem;line-height:1.55;overflow-wrap:anywhere}
+.ph-media-consent button{padding:12px 18px;border:1px solid #62508d;border-radius:9px;background:#62508d;color:#fff;font:inherit;cursor:pointer}
+.ph-media-consent a{color:#58407f;font-size:.86rem;overflow-wrap:anywhere;text-underline-offset:3px}
+iframe[data-external-src]:not([data-external-approved="true"]){display:none!important}
+.ph-media-pending{position:relative;min-height:240px}
+.ph-media-pending>.ph-media-consent{position:absolute;inset:0;min-height:0;overflow:auto}
+.ph-media-consent button:focus-visible,.footer-legal-links a:focus-visible{outline:3px solid #6c50a1;outline-offset:4px}
+
+@media screen{
+html[data-site-theme="dark"]{--ph-bg:#19171f;--ph-panel:#24212c;--ph-ink:#eee9f3;--ph-muted:#c3bace;--ph-line:#887797;--ph-focus:#cfb3ff;--ph-action-bg:#62508d}
+html[data-site-theme="dark"] :is(.texts-page,.blog-page,.tools-page,.library-redesign,.pdf-app){--muted:#c3bace;--ink:#eee9f3;--tools-muted:#c3bace;--tools-ink:#eee9f3;--library-violet:#cfb3ff;--library-violet-dark:#cfb3ff;--purple:#cfb3ff}
+html[data-site-theme="dark"] :is(.legal-content,.legal-title,.legal-content h2,.legal-content h3,.tools-hero h1,.text-detail-title,.blog-card h2,.library-result-title,.pdf-crop-title){color:#eee9f3}
+html[data-site-theme="dark"] :is(.legal-update,.tools-intro,.tool-category,.tool-copy p,.blog-card-summary,.blog-card-date,.texts-intro,.text-card-meta,.text-card-description,.library-result-description,.library-result-meta,.media-count,.pdf-crop-controls label,.pdf-crop-note,.footer-legal-links){color:#c3bace}
+html[data-site-theme="dark"] :is(input,textarea)::placeholder{color:#c3bace;opacity:1}
+html[data-site-theme="dark"] :is(.legal-content a,.footer-legal-links a,.text-context-thought-link strong,.text-context-thought-link){color:#cfb3ff!important}
+html[data-site-theme="dark"] .text-context-thought-link{background:#292333!important;border-color:#887797!important}
+html[data-site-theme="dark"] .text-context-thought-link small{color:#c3bace!important}
+html[data-site-theme="dark"] :is(.tool-tile,.blog-card,.library-result-card,.pdf-crop-dialog,.legal-content th,.ph-media-consent){background-color:#24212c;color:#eee9f3}
+html[data-site-theme="dark"] :is(.legal-content th,.legal-content td){border-color:#887797}
+html[data-site-theme="dark"] :is(.tool-action,.tools-backup-link,.ph-media-consent a){color:#cfb3ff}
+html[data-site-theme="dark"] .ph-media-consent{background:#24212c;border-color:#887797}
+html[data-site-theme="dark"] .ph-media-consent button{background:#62508d;color:#fff;border-color:#cfb3ff}
+html[data-site-theme="dark"] :is(a,button,summary,input,select,textarea):focus-visible{outline-color:#cfb3ff!important;outline-width:3px;outline-offset:3px}
+html[data-site-theme="dark"] :is(.nav-contact-link,.pdf-primary,.pomo-start,.tool-primary){color:#fff;background-color:#62508d}
+html[data-site-theme="dark"] .form-popup--success{background:#18332b;color:#d6f4e7;border-color:#8aceab}
+html[data-site-theme="dark"] .form-popup--error{background:#3c232d;color:#ffe0e7;border-color:#e9a4b8}
+}
+
+:is(.blog-container,.tools-shell,.library-shell,.library-main,.philo-compass-shell,.myth-compass-shell,.bible-compass-shell,.text-detail-inner,.pdf-workspace){min-width:0;max-width:100%}
+:is(.blog-card,.tool-copy,.text-card,.library-result-card,.legal-content,.dictionary-entry){min-width:0;overflow-wrap:break-word}
+:is(.blog-content,.legal-content,.text-detail-inner) :is(img,video,svg){max-width:100%}
+:is(.site-search-panel,.fv-dictionary-panel,.student-access-panel,.fv-shortcuts-panel,.pdf-crop-dialog){box-sizing:border-box;max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain}
+.legal-content :is(pre,code){overflow-wrap:normal}
+@media(max-width:600px){
+  .legal-page .container{padding-left:18px;padding-right:18px}
+  .legal-title{font-size:clamp(1.6rem,8vw,2.3rem);overflow-wrap:break-word}
+  .legal-content :is(th,td){padding:9px;min-width:120px}
+  .footer-legal-links{gap:8px 14px;font-size:.85rem}
+  .footer-legal-links a{padding:5px 0}
+  .ph-media-consent{padding:18px;min-height:200px}
+  :is(.texts-tools,.library-search-controls,.library-filter-actions,.pdf-crop-actions,.philo-compass-jump,.myth-compass-jump){flex-wrap:wrap;min-width:0}
+  :is(.pdf-crop-dialog,.site-search-panel,.fv-dictionary-panel){width:calc(100vw - 24px);margin-left:auto;margin-right:auto}
+  .pdf-crop-controls{min-width:0}
+  .pdf-crop-controls input[type="range"]{max-width:100%;min-width:0;touch-action:pan-y}
+  .pdf-crop-controls input[type="number"]{max-width:76px;min-width:0}
+  .blog-content :is(table,pre){max-width:100%;overflow-x:auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+@media print{.ph-media-consent,.footer-legal-links{display:none!important}.legal-content{color:#111!important;background:#fff!important}}
+
+.contact-privacy-note{font-size:.8rem;line-height:1.6;color:#696273;margin:12px 0 0}.contact-privacy-note a{text-decoration:underline;text-underline-offset:3px}html[data-site-theme="dark"] .contact-privacy-note{color:#c3bace}html[data-site-theme="dark"] .contact-privacy-note a{color:#cfb3ff}
