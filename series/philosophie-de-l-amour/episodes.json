@@ -1,0 +1,55 @@
+{
+  "asOf": "2026-10-22",
+  "timezone": "Europe/Paris",
+  "episodes": [
+    {
+      "number": 1,
+      "id": "episode-1-empedocle",
+      "title": "L’Amour et la Discorde",
+      "available": true,
+      "author": "Empédocle",
+      "question": "Et si l’amour était une force qui fait tenir le monde ensemble ?",
+      "description": "Chez Empédocle, l’Amour réunit et la Discorde sépare les quatre éléments : l’eau, la terre, l’air et le feu. Le monde se transforme au rythme de leur alternance. Une première façon de penser l’union et la séparation, à l’échelle du cosmos.",
+      "videos": [
+        {
+          "label": "Voir sur TikTok",
+          "url": "https://www.tiktok.com/@lephilosophal/video/7698049350693391638"
+        },
+        {
+          "label": "Voir sur YouTube",
+          "url": "https://www.youtube.com/shorts/kuaWfnsxw3w"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lire les fragments d’Empédocle",
+          "reference": "De la nature · fragments 17 et 26 (Diels-Kranz)",
+          "url": "https://fr.wikisource.org/wiki/Fragments_(Emp%C3%A9docle)",
+          "note": "Texte des fragments dans la traduction d’Auguste Reymond, 1919, publiée dans L’Aurore de la philosophie grecque de John Burnet."
+        }
+      ],
+      "excerpts": []
+    },
+    {
+      "number": 2,
+      "id": "episode-2-androgyne",
+      "title": "Le mythe de l’androgyne",
+      "plannedDate": "2026-10-23",
+      "available": false
+    },
+    {
+      "number": 3,
+      "id": "episode-3-bien",
+      "title": "Aimer, une attirance vers le bien",
+      "plannedDate": "2026-10-25",
+      "available": false
+    },
+    {
+      "number": 4,
+      "id": "episode-4",
+      "title": "L’amour, entre manque et fécondité",
+      "plannedDate": "2026-10-27",
+      "available": false
+    }
+  ]
+}

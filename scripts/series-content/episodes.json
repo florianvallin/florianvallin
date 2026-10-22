@@ -1,0 +1,129 @@
+{
+  "title": "Philosophie de l’amour",
+  "description": "Que veut dire aimer ? Un parcours à travers les philosophes, leurs textes et les questions qu’ils nous laissent.",
+  "episodes": [
+    {
+      "number": 1,
+      "id": "episode-1-empedocle",
+      "author": "Empédocle",
+      "title": "L’Amour et la Discorde",
+      "question": "Et si l’amour était une force qui fait tenir le monde ensemble ?",
+      "description": "Chez Empédocle, l’Amour réunit et la Discorde sépare les quatre éléments : l’eau, la terre, l’air et le feu. Le monde se transforme au rythme de leur alternance. Une première façon de penser l’union et la séparation, à l’échelle du cosmos.",
+      "tags": [
+        "Union",
+        "Séparation",
+        "Cosmos"
+      ],
+      "videos": [
+        {
+          "label": "Voir sur TikTok",
+          "url": "https://www.tiktok.com/@lephilosophal/video/7698049350693391638"
+        },
+        {
+          "label": "Voir sur YouTube",
+          "url": "https://www.youtube.com/shorts/kuaWfnsxw3w"
+        }
+      ],
+      "quote": "A un moment donné, l’Un se forma du Multiple ; en un autre moment, il se divisa et de l’Un sortit le Multiple.",
+      "quoteCredit": "Empédocle, fragment 17 — traduction Auguste Reymond, 1919.",
+      "readingNote": "L’Amour et la Discorde sont ici des principes cosmiques. Leurs rapports ne se réduisent pas à une opposition morale entre un amour toujours bon et une séparation toujours mauvaise.",
+      "questions": [
+        "Qu’est-ce qui permet à des éléments distincts de former un ensemble ?",
+        "Pourquoi l’union et la séparation sont-elles toutes deux nécessaires pour penser les transformations du monde ?"
+      ],
+      "sources": [
+        {
+          "title": "Lire les fragments d’Empédocle",
+          "reference": "De la nature · fragments 17 et 26 (Diels-Kranz)",
+          "url": "https://fr.wikisource.org/wiki/Fragments_(Emp%C3%A9docle)",
+          "note": "Texte des fragments dans la traduction d’Auguste Reymond, 1919, publiée dans L’Aurore de la philosophie grecque de John Burnet."
+        }
+      ],
+      "releaseDate": "2026-10-19"
+    },
+    {
+      "number": 2,
+      "id": "episode-2-androgyne",
+      "author": "Platon · Le Banquet",
+      "title": "Le mythe de l’androgyne",
+      "question": "Quand on tombe amoureux, cherche-t-on sa moitié ?",
+      "description": "Dans Le Banquet, Aristophane raconte que les humains formaient autrefois des êtres doubles, que Zeus a séparés. Depuis, chacun recherche l’unité perdue. Ce récit donne une forme saisissante au désir de ne faire qu’un avec la personne aimée.",
+      "tags": [
+        "Mythe",
+        "Désir",
+        "La moitié"
+      ],
+      "videos": [],
+      "readingNote": "Ce mythe est le discours d’Aristophane, l’un des personnages du Banquet. Il ne résume pas à lui seul la pensée de Platon sur l’amour. Le récit évoque trois types d’êtres originels, dont un seul est androgyne.",
+      "questions": [
+        "Que cherche-t-on dans le désir de fusion avec une autre personne ?",
+        "L’autre doit-il nécessairement nous compléter pour que nous puissions l’aimer ?"
+      ],
+      "sources": [
+        {
+          "title": "Lire Le Banquet — traduction Chambry",
+          "reference": "Le Banquet · 189d–191d",
+          "url": "https://fr.wikisource.org/wiki/Banquet",
+          "note": "Traduction d’Émile Chambry, dans le domaine public."
+        }
+      ],
+      "plannedDate": "2026-10-23",
+      "excerptIds": [
+        "banquet-189d-191d"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "episode-3-bien",
+      "author": "Platon · Lysis",
+      "title": "Aimer, une attirance vers le bien",
+      "question": "Aime-t-on seulement parce que quelque chose nous manque ?",
+      "description": "Dans le Lysis, Socrate demande en vue de quoi nous aimons. On recherche la médecine pour la santé ; mais jusqu’où remonter dans cette chaîne ? Le passage ouvre la question d’un objet aimé pour lui-même, qui donne leur sens aux autres attachements.",
+      "tags": [
+        "Le bien",
+        "Finalité",
+        "Amitié"
+      ],
+      "videos": [],
+      "readingNote": "Le Lysis examine la philia, l’amitié et l’attachement, et se termine sans définition définitive. Le passage distingue ce à cause de quoi l’on aime et ce en vue de quoi l’on aime ; il n’identifie pas explicitement ce premier objet à l’Idée du Bien.",
+      "questions": [
+        "Quelle différence y a-t-il entre aimer quelque chose comme un moyen et l’aimer pour lui-même ?",
+        "Ce qui déclenche un désir est-il toujours ce qui en constitue la fin ?"
+      ],
+      "sources": [
+        {
+          "title": "Lire le Lysis — traduction Chambry",
+          "reference": "Lysis · 216d–220b",
+          "url": "https://fr.wikisource.org/wiki/Lysis_(trad._Chambry)",
+          "note": "Traduction d’Émile Chambry, dans le domaine public."
+        }
+      ],
+      "plannedDate": "2026-10-25",
+      "excerptIds": [
+        "lysis-216d-220b"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "episode-4",
+      "title": "L’amour, entre manque et fécondité",
+      "plannedDate": "2026-10-27",
+      "videos": [],
+      "excerptIds": [
+        "banquet-203b-204b",
+        "banquet-205c-206e"
+      ],
+      "author": "Platon · Le Banquet",
+      "question": "Que cherchons-nous quand nous aimons ?",
+      "description": "Diotime raconte la naissance d’Éros, fils de Pénia et de Poros : l’amour porte à la fois la marque du manque et celle de la ressource. Elle examine ensuite ce que nous cherchons en aimant : posséder toujours le bien, et engendrer dans la beauté, selon le corps comme selon l’esprit.",
+      "sources": [
+        {
+          "title": "Lire les deux passages — traduction Chambry",
+          "reference": "Le Banquet · 203b–204b et 205c–206e",
+          "url": "https://fr.wikisource.org/wiki/Banquet",
+          "note": "Traduction d’Émile Chambry, dans le domaine public."
+        }
+      ]
+    }
+  ]
+}

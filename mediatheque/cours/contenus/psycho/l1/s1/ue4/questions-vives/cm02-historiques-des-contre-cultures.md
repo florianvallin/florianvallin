@@ -1,0 +1,43 @@
+# [[fmt:bold,red-text]]Historique des contres cultures[[/fmt]]
+
+## [[fmt:bold,underline,red-text]]La société occidentale au milieu du XXème siècle[[/fmt]]
+
+## [[fmt:bold,underline,green-text]] Une volonté de rébellion[[/fmt]]
+
+La [[fmt:yellow]]2[[/fmt]][[fmt:yellow]]nd[[/fmt]][[fmt:yellow]] GM[[/fmt]] a montré que la [[fmt:green]]technique [[/fmt]]et le [[fmt:green]]progrès [[/fmt]]peut mener à une [[fmt:yellow]]grande destruction[[/fmt]]. Le progrès a toujours été vécu comme quelque chose de très bénéfique. Ce n’est qu’au XXe qu’on se rend compte que [[fmt:yellow]]le progrès peut emmener à des choses dangereuses[[/fmt]]. Au XIX, le progrès et la technique devait [[fmt:yellow]]s’orienter vers le monde entier[[/fmt]] avant l’effondrement de ces représentations.
+
+La [[fmt:green]]croyance[[/fmt]] en des [[fmt:yellow]]révolutions[[/fmt]] ont provoqué un autre changement profond ce qui crée et développa ces contreculture. Il n’y aura grâce à cela [[fmt:yellow]]pas d’espoir pour la vie actuel[[/fmt]] mais un espoir pour autre chose. C’est donc un déplacement par rapport à la réalité du monde. Les contre cultures vont se décaler, essayer d’être en dehors de tout ça. Elles sont donc [[fmt:yellow]]contre en se déplaçant légèrement[[/fmt]]. On va essayer de faire muter la société mais plus comme avant. On va donc essayer de vivre autrement (tous les aspects de la vie sociale) que ce que nous propose le monde unidimensionnel.
+
+## [[fmt:bold,underline,green-text]]L’[[/fmt]][[fmt:bold,underline,green-text]]Amérique[[/fmt]][[fmt:bold,underline,green-text]], la beat [[/fmt]][[fmt:bold,underline,green-text]]generation[[/fmt]]
+
+Une [[fmt:green]]beat [[/fmt]][[fmt:green]]generation[[/fmt]] apparait. Celle-ci est très ciblée sur la [[fmt:yellow]]musique[[/fmt]], les [[fmt:yellow]]livres[[/fmt]], les [[fmt:yellow]]poèmes[[/fmt]] … [[fmt:pink]]T.Roznok[[/fmt]] va donc étudier ce mouvement. Celui-ci vit en [[fmt:yellow]]Californie[[/fmt]] et a voulu comprendre ce nouveau mouvement de jeunesse des années 50’. Il a pris ces [[fmt:yellow]]mouvements dissidents[[/fmt]] au sérieux (par rapport aux autres) et il a défini ces mouvements comme des « [[fmt:yellow]]enfants d[[/fmt]][[fmt:yellow]]e la révolte de la technocrat[[/fmt]][[fmt:yellow]]ie[[/fmt]] ». Il se [[fmt:yellow]]révolte contre la rationalité excessive[[/fmt]] du monde moderne. Il s’oppose au totalitariste technocratique.
+
+Les contre-cultures apparaissent aussi dans un [[fmt:yellow]]la [[/fmt]][[fmt:yellow]]contexte de [[/fmt]][[fmt:yellow]]Guerre Froide[[/fmt]]. Les USA ont très peur d’une catastrophe nucléaire. C’est donc dans ce contexte qu’on va voir apparaitre des jeunes qui sont contre cette [[fmt:yellow]]société technologique[[/fmt]]. Mais il n’y a [[fmt:yellow]]pas de slogan ni d’organisation[[/fmt]]. Ce sont des jeunes de la classe moyenne qui vont refuser cette culture de leur père.
+
+Aux USA, ce sont des [[fmt:yellow]]mouvement[[/fmt]][[fmt:yellow]]s[[/fmt]][[fmt:yellow]] d’intellectuel[[/fmt]]s qui [[fmt:yellow]]ne rêve pas d’évolution[[/fmt]] mais d’autre chose (ce n’est pas comme la lutte des classe de K.Marx). C’est le mouvement des [[fmt:yellow]]droits civils et des étudiants[[/fmt]]. [[fmt:pink]]Marcuse[[/fmt]] a écrit « la fin des utopies » qui étudie ces nouveaux mouvements de contestations. Il pense que ces mouvements [[fmt:yellow]]remettent l’humain au centre de la vie[[/fmt]]. On remet l’homme au centre des préoccupations (comme un nouvel humanisme). Il va définir cela comme des révoltes politiques (qui propose d’autre façon de vivre ensemble). Il les définit comme une nouvelle forme [[fmt:yellow]]d’éthico-sexuel[[/fmt]]. Ces contre cultures pensent donc un avenir différent. Pourtant, ce sont des groupes [[fmt:yellow]]très fragiles[[/fmt]] et ainsi, elles vont très vite être récupérées par les [[fmt:yellow]]médias[[/fmt]]. [[fmt:pink]]Marcuse[[/fmt]] va les définir comme des [[fmt:yellow]]mouvements [[/fmt]][[fmt:yellow]]adolescentisé[[/fmt]] (qui vient de la jeunesse) parce qu’ils se présentent comme des formes de marginalisation inoffensif.
+
+Néanmoins, ces contre cultures montrent un défaut ([[fmt:yellow]]faille[[/fmt]]) du système. La génération de ces enfants du progrès vont contester, se révolter.
+
+## [[fmt:bold,underline,green-text]]Les Avant-gardes VS [[/fmt]][[fmt:bold,underline,green-text]]contre[[/fmt]][[fmt:bold,underline,green-text]]s[[/fmt]][[fmt:bold,underline,green-text]] cultures[[/fmt]]
+
+Les [[fmt:green]]Avant-gardes[[/fmt]] sont des [[fmt:yellow]]mouvements de contestations plus organisés[[/fmt]] que les contre cultures.  C’est un phénomène culturel qui a des programmes, des manifestes. Elle propose un futur avec une recherche d’un autre temps.
+
+[[fmt:pink]]Roznak[[/fmt]] définit les contre cultures comme un [[fmt:yellow]]phénomène social :[[/fmt]] c’est toutes une génération de jeunes qui vont s’opposé contre ces parents. Il va les définir comme un mouvement [[fmt:green]]d’antagoniste générationnelle.[[/fmt]] L’industrialisation conduit au développement de la [[fmt:yellow]]technocratie[[/fmt]]. Dans cette technocratie, tous les [[fmt:yellow]]besoins du[[/fmt]][[fmt:yellow]] monde[[/fmt]] peuvent être [[fmt:yellow]]satisfaits[[/fmt]] avec une [[fmt:yellow]]organisation rationnelle et efficace[[/fmt]]. La façon d’organiser la cité va se définir en terme technocratique. Dans ce contexte, les idéologies [[fmt:yellow]]politiques[[/fmt]] ne seront plus que des projets pour [[fmt:yellow]]manager la technocratie[[/fmt]]. Les hommes politiques ne nous propose plus des façons d’être ensemble un peu près satisfaisante, ils sont des technocrates qui organise la rationalité mais pas la « vie bonne » (-[[fmt:pink]]Aristote[[/fmt]])
+
+Dans les années 60’, les jeunes veulent proposer une [[fmt:yellow]]alternative[[/fmt]].
+
+## [[fmt:bold,underline,red-text]]Edgar Morin[[/fmt]][[fmt:bold,underline,red-text]] et le journal de [[/fmt]][[fmt:bold,underline,red-text]]Califonie[[/fmt]]
+
+En Californie, on voit dans les années 70’ de [[fmt:yellow]]nouveaux mouvements[[/fmt]] de contre-cultures pour [[fmt:pink]]Edgar Morin[[/fmt]]. Il va souligner le caractère enfantin de ces contre cultures. Il y a également un [[fmt:yellow]]refus des églises[[/fmt]] (catholiques, protestantes …), des institutions. Il y a aussi une très forte volonté d’être en groupe, d’être dans du commun et de faire dans la communauté.
+
+Il y a une volonté [[fmt:green]]d’hédonisme[[/fmt]] (recherche du bonheur) qui ne passe pas par la consommation (modèle de la génération d’avant). Il met en évidence le [[fmt:green]]communiste existentielles[[/fmt]] : communisme qui met la personne au centre et qui rêve d’une vie bonne (pas dans le sens technocratique (forme libertaire, vivre ensemble). On va donc se tourner vers l’Inde pour trouver [[fmt:green]]l’extatisme[[/fmt]]. On va explorer une forme de [[fmt:yellow]]mysticisme[[/fmt]] avec la recherche d’une [[fmt:yellow]]forme de vie différente[[/fmt]] (avec l’utilisation de drogue, d’extase …). (Tout cela selon [[fmt:pink]]E.Morin[[/fmt]]).
+
+Ces contre-cultures vont [[fmt:yellow]]entrainer des changements importants[[/fmt]] avec des changements de [[fmt:yellow]]mentalités[[/fmt]] (qui s’éloignent de la mentalité du XIX). Ce n’est pas que les contre cultures qui ont permis ce développement mais elles sont tout de même [[fmt:yellow]]un élément important de la transformation[[/fmt]]. Toutes les formes de contestations vont s’essouffler.
+
+Elles vont intéresser les intellectuels :
+
+- « là-bas les [[fmt:yellow]]révoltes[[/fmt]] jaillissent dans [[fmt:yellow]]l’innocence idéologique[[/fmt]], et selon des ligne de clivage qui sont [[fmt:yellow]]moins sociologiques qu’existentielles[[/fmt]]. Marx n’y retrouverait pas ses petits. Difficile de théoriser. On est à la fois dans l’ordre de l’existence brute et dans celui du religieux c’est-à-dire entre le témoignage vécu et la mystification » [[fmt:pink]]- [[/fmt]][[fmt:pink]]JL [[/fmt]][[fmt:pink]]Domenach[[/fmt]]
+
+En Europe, ces mouvements de jeunes sont [[fmt:yellow]]politisés en France[[/fmt]] avec des [[fmt:yellow]]nouvelles contestations[[/fmt]] (qui réclame l’émancipation sexuelle). Mais toutes la jeunesse n’est pas comme cela et une partie de la jeunesse rêve de consommer, de se marier … Le [[fmt:yellow]]cinéma[[/fmt]] de [[fmt:pink]]Godar[[/fmt]] va influencer les jeunes (comme son film « Pierrot le fou » qui a été censuré) tout comme les [[fmt:yellow]]écrivains[[/fmt]] qui nous vient de la Beat generation et la [[fmt:yellow]]musique[[/fmt]].
+
+Ce mouvement de jeunes va se manifester comme une forme de culture (style de vie particulière, façon de faire particulière). La revue Rock & Folk va marquer cette période-là. Le phénomène va devenir international.
