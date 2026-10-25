@@ -1,0 +1,91 @@
+/* Philosophal V54.11 — Studio Cut, confort et lisibilité des espaces.
+   Le modèle de disposition et la persistance restent ceux de Cut V25/V27.
+   Aucun clip, fichier ou moteur de traitement n'est modifié ici. */
+body.v12-pro-mode:not(.v11-creative-mode){overflow:hidden!important;height:100dvh!important;overscroll-behavior:none}
+body.v12-pro-mode #v12ProRoot.v12-pro-root{
+  min-height:0!important;max-height:none!important;
+  /* Éviter les débordements dus aux minima cumulés de trois lignes. */
+  grid-template-rows:42px minmax(0,var(--v25-upper,49%)) minmax(0,1fr)!important;
+  gap:5px!important;padding:5px!important;
+}
+body.v12-pro-mode #v12ProRoot .v12-pro-monitor,
+body.v12-pro-mode #v12ProRoot .v12-pro-inspector,
+body.v12-pro-mode #v12ProRoot .v12-pro-timeline{min-width:0!important;min-height:0!important;overflow:hidden!important}
+/* Suppression des rangées de présélections dupliquées par les versions anciennes.
+   Les cinq préréglages restent disponibles via Affichage et le sélecteur rapide. */
+body.v12-pro-mode #v30ProLayouts,
+body.v12-pro-mode #v547ViewShortcuts,
+body.v12-pro-mode #v547LayoutStatus{display:none!important}
+body.v12-pro-mode #v25Deck{
+  gap:5px!important;z-index:38!important;padding:4px 6px!important;
+  border-color:#3a516e;background:linear-gradient(180deg,#182338,#121c2c);
+}
+body.v12-pro-mode #v25Deck .v25-mark{display:none!important}
+body.v12-pro-mode #v25Deck #v13Toolbar{
+  flex:1 1 0!important;min-width:95px!important;max-width:none!important;
+  scrollbar-width:thin;scrollbar-color:#5d7897 transparent;
+}
+body.v12-pro-mode #v25Deck #v25Actions{flex:0 1 auto!important;min-width:0!important;gap:4px!important}
+body.v12-pro-mode #v25Deck .v25-tools-btn{
+  min-height:29px!important;padding:5px 7px!important;
+  font-size:10.5px!important;line-height:1.2!important;
+}
+/* Des outils visibles et un sélecteur court à la place de 2 barres répétées. */
+#v5411QuickViews{display:none;align-items:center;gap:3px;flex:0 0 auto;min-width:0}
+body.v12-pro-mode #v5411QuickViews{display:inline-flex}
+#v5411QuickViews label{font-size:10px;font-weight:700;color:#b7cbdf;white-space:nowrap}
+#v5411QuickViews select{font-size:10.5px;min-height:29px;max-width:116px;width:116px;
+ background:#202e42;border:1px solid #445d7c;border-radius:6px;color:#e6eefc;padding:4px 18px 4px 7px;cursor:pointer}
+#v5411LayoutStatus{display:none;white-space:nowrap;font-size:10px;font-variant-numeric:tabular-nums;color:#afc7e5;flex:none}
+body.v12-pro-mode #v5411LayoutStatus{display:inline-block}
+#v5411Reset{display:none;background:#1c2b41;border:1px solid #435d7c;color:#d6e6fa;border-radius:6px;min-height:28px;padding:4px 7px;flex:none;font-size:11px;cursor:pointer}
+body.v12-pro-mode #v5411Reset{display:block}
+#v5411Reset:focus-visible,#v5411QuickViews select:focus-visible{outline:2px solid #bbd8ff;outline-offset:2px}
+#v5411Reset:hover{border-color:#bdd5fd;background:#2a4262}
+/* Moniteur : priorité au cadre et contrôles immédiatement accessibles. */
+body.v12-pro-mode #v12ProMonitor #videoSection{padding:5px 8px!important;gap:3px!important}
+body.v12-pro-mode #v12ProMonitor #videoWrap:not(:fullscreen){
+ width:min(100%,var(--v27-stage-width,100%))!important;max-width:100%!important;
+ min-width:0!important;min-height:0!important;flex:1 1 0!important;
+}
+body.v12-pro-mode #v12ProMonitor .player-bar{min-height:26px!important;max-height:32px!important}
+body.v12-pro-mode #v12ProInspector #v25InspectorTabs{gap:2px;padding:4px!important;min-height:33px!important}
+body.v12-pro-mode #v12ProInspector #v25InspectorTabs button{padding:5px 7px!important}
+body.v12-pro-mode #v12ProInspector #v25InspectorContent{overscroll-behavior:contain;scrollbar-width:thin}
+/* La timeline n'est plus comprimée par les contraintes historiques de hauteur. */
+body.v12-pro-mode #v12ProTimeline #v7Workspace{min-height:0!important;flex:1 1 0!important;overflow:hidden!important}
+body.v12-pro-mode #v12ProTimeline #v7Tracks{min-height:0!important;flex:1 1 0!important;overflow:auto!important}
+/* Poignées visibles (et utilisables au clavier via V54.11). */
+body.v12-pro-mode #v25Divider{height:15px!important;margin-bottom:-9px!important;z-index:32!important}
+body.v12-pro-mode #v25Divider::after{width:100px!important;height:5px!important;margin:5px auto!important;background:#6b91be!important;box-shadow:0 0 0 1px #0b1422}
+body.v12-pro-mode #v25Divider:hover::after,
+body.v12-pro-mode #v25Divider:focus-visible::after,
+body.v12-pro-mode #v25Divider.v5411-grabbing::after{background:#bed8ff!important;box-shadow:0 0 0 3px #88b9fd33}
+body.v12-pro-mode #v25InspectorGrip{width:14px!important;left:-9px!important;z-index:37!important;outline-offset:-1px}
+body.v12-pro-mode #v25InspectorGrip::after{left:5px!important;height:50%!important;top:25%!important;background:#86a7cc!important;opacity:.8!important}
+body.v12-pro-mode #v25InspectorGrip:hover::after,
+body.v12-pro-mode #v25InspectorGrip:focus-visible::after,
+body.v12-pro-mode #v25InspectorGrip.v5411-grabbing::after{background:#cee0ff!important;opacity:1!important}
+/* Tous les menus contextuels gardent leur débordement visible. */
+body.v12-pro-mode #v25Deck details[open]{z-index:75}
+body.v12-pro-mode #v27LayoutMenu[open] #v27LayoutPop{z-index:80}
+@media(max-width:1420px){body.v12-pro-mode #v5411LayoutStatus{display:none!important}}
+@media(max-width:1210px){
+ body.v12-pro-mode #v5411QuickViews label{display:none!important}
+}
+@media(max-width:990px){
+ body.v12-pro-mode #v12ProRoot.v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr) clamp(210px,var(--v25-inspector,270px),35vw)!important}
+ #v5411QuickViews select{max-width:95px;width:95px}
+ body.v12-pro-mode #v25Deck #v13Toolbar{min-width:70px!important}
+}
+@media(max-width:680px){
+ body.v12-pro-mode #v12ProRoot.v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr)!important;grid-template-areas:'deck deck' 'monitor monitor' 'timeline timeline'!important}
+ body.v12-pro-mode #v12ProInspector{display:none!important}
+ #v5411QuickViews select{width:92px}
+}
+@media(max-height:700px){
+ body.v12-pro-mode #v12ProRoot.v12-pro-root{grid-template-rows:38px minmax(0,var(--v25-upper,45%)) minmax(0,1fr)!important;padding:3px!important;gap:3px!important}
+ body.v12-pro-mode #v12ProMonitor #videoSection{padding:3px 5px!important}
+ body.v12-pro-mode #videoSection .sec-heading{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){body.v12-pro-mode #v5411Reset{transition:none!important}}

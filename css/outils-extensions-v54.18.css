@@ -1,0 +1,10 @@
+/* Philosophal V54.18 — nouvelles cartes publiques */
+.tools-page .tool-tile--kanban{--tool-tint:#e4f2e8;--tool-accent:#31745f}
+.tools-page .tool-tile--mindmap{--tool-tint:#e1f1ef;--tool-accent:#246b72}
+.tools-page .tool-tile--ocr{--tool-tint:#e8edfa;--tool-accent:#667db2}
+.tools-page .tool-tile--kanban .tool-art{background:linear-gradient(125deg,#f3faf5,#e0f0e8)}
+.tools-page .tool-tile--mindmap .tool-art{background:linear-gradient(125deg,#f4faf8,#e0f2ee)}
+.tools-page .tool-tile--ocr .tool-art{background:linear-gradient(125deg,#f4f6fc,#e4ebf8)}
+html[data-site-theme="dark"] .tools-page .tool-tile--kanban .tool-art,
+html[data-site-theme="dark"] .tools-page .tool-tile--mindmap .tool-art,
+html[data-site-theme="dark"] .tools-page .tool-tile--ocr .tool-art{background:#222932}

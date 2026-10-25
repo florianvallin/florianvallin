@@ -1,6 +1,6 @@
 // Cache technique de fichiers publics ; aucun document importé ni compteur de visites.
-const RELEASE='20261022-v39';
-const CACHE='philosophal-public-20261022-v39';
+const RELEASE='54.15';
+const CACHE='philosophal-public-54.15';
 const CORE=['/outils/','/js/site-theme.js?v='+RELEASE,'/css/site-theme.css?v='+RELEASE,'/js/site-quality.js?v='+RELEASE,'/css/site-quality.css?v='+RELEASE];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>Promise.allSettled(CORE.map(url=>cache.add(url)))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{for(const name of await caches.keys())if(name!==CACHE&&/^(philosophal-|fv-reader)/.test(name))await caches.delete(name);await self.clients.claim()})())});

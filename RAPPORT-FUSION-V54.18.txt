@@ -1,0 +1,19 @@
+PHILOSOPHAL V54.18 — RAPPORT DE FUSION
+
+• Cut V62: outils/philosophal-cut/editeur.html (1,434,911 octets)
+• Kanban V15: outils/kanban/index.html (314,366 octets)
+• Pilotage V12.3: outils/pilotage/editeur.html (472,164 octets)
+• Mind Maps V12: outils/mindmap/index.html (263,682 octets)
+• OCR V12: outils/ocr/index.html (227,640 octets)
+• Accès professionnel Pilotage : wrapper de session existant et éditeur isolé
+• Pilotage ajouté aux cartes natives de l’espace professionnel
+• Pilotage ajouté au sélecteur global pro (Studio, Cut, Pilotage, Factures)
+• Cartes publiques Kanban, Mind Maps et OCR intégrées à outils/index.html
+• Cartes publiques Kanban, Mind Maps et OCR intégrées à outils/tous-les-outils.html
+• Recherche du site mise à jour (3 publics + Pilotage affiché uniquement si propriétaire)
+• Ponts V54.17 conservés dans Cut V62 : transferts Studio, bibliothèque média, sauvegardes pro, contrôle qualité
+• Accès direct aux éditeurs Cut et Pilotage soumis au même contrôle client que la V54.17
+
+Base fournie : Philosophal_V54.17_Importations_Progressives_Sessions_Volumineuses.zip
+
+Voir LIRE-PHILOSOPHAL-V54.18.md pour les précautions.

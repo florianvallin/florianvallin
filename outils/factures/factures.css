@@ -404,3 +404,6 @@ body.office-has-conflict .office-conflict,body.office-has-conflict .office-confl
 @media(max-width:1050px){.archive-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.archive-filters{grid-template-columns:1fr!important}.archive-controls{align-items:stretch}.archive-controls>button{width:100%;margin:0}.archive-workspace{padding:14px}.archive-group>summary{padding:11px}.archive-group-body{padding:4px}}
 @media print{.archive-workspace{display:none!important}}
+
+/* V54.6 : le sélecteur pro ne doit pas se retrouver sous les autres panneaux. */
+#app>.top{position:relative;z-index:10005;overflow:visible}#app .ph-pro-switcher{z-index:10007}

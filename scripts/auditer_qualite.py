@@ -62,7 +62,19 @@ def run(root=ROOT, baseline=None):
         if page.duplicates:errors.append(rel+': métadonnées dupliquées '+','.join(page.duplicates))
         if page.canonical and not page.canonical.startswith('https://philosophal.fr/'):errors.append(rel+': URL canonique inattendue')
         if not page.metas.get('viewport'):errors.append(rel+': viewport absent')
-        if 'site-quality.js' not in source or 'site-quality.css' not in source:errors.append(rel+': corrections communes non chargées')
+        # Les applications autonomes disposent de leur propre système CSS/JS et ne
+        # partagent pas les composants de contenu public (navigation, médias externes,
+        # dictionnaire). Leur imposer les scripts communs dégrade leurs performances.
+        standalone_apps = {
+            'outils/convertisseur/index.html',
+            'outils/sauvegarde-pro/index.html',
+            'outils/philosophal-cut/index.html',
+            'outils/philosophal-cut/editeur.html',
+            'outils/studio-audiovisuel/index.html',
+            'outils/studio-audiovisuel/editeur.html',
+            'outils/factures/index.html',
+        }
+        if rel not in standalone_apps and ('site-quality.js' not in source or 'site-quality.css' not in source):errors.append(rel+': corrections communes non chargées')
         if 'noindex' not in page.metas.get('robots',''):
             titles[page.title].append(rel);descs[page.metas['description']].append(rel)
         if 'fonts.googleapis.com' in source or 'fonts.gstatic.com' in source:errors.append(rel+': police distante restante')

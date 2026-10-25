@@ -2611,3 +2611,13 @@ body.site-search-open { overflow:hidden; }
   color: #1877f2;
   box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
 }
+
+/* Philosophal V54.5 — Outils dans les actions, juste à droite du thème */
+.navbar.ph-minimal-ready .nav-header-actions .nav-tools-icon,
+.navbar .nav-header-actions .nav-tools-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;min-width:38px;min-height:38px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--text-dark,#332e3b);text-decoration:none;transition:background .2s,color .2s}
+.navbar .nav-header-actions .nav-tools-icon svg{width:19px;height:19px;display:block}
+.navbar .nav-header-actions .nav-tools-icon:hover,.navbar .nav-header-actions .nav-tools-icon[aria-current]{background:var(--header-hover,#ede7f7);color:var(--primary,#6753a4)}
+.navbar .nav-header-actions .nav-tools-icon:focus-visible{outline:2px solid var(--primary,#6753a4);outline-offset:2px}
+:root[data-site-theme="dark"] .navbar .nav-header-actions .nav-tools-icon{color:#eeeaf6}
+@media(max-width:420px){.navbar.ph-minimal-ready .nav-header-actions .nav-tools-icon{width:32px;min-width:32px;flex-basis:32px;height:36px;min-height:36px}}
+@media(max-width:360px){.navbar.ph-minimal-ready .nav-header-actions .nav-tools-icon{width:30px;min-width:30px;flex-basis:30px}}

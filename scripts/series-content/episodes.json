@@ -57,21 +57,27 @@
         "Désir",
         "La moitié"
       ],
-      "videos": [],
+      "videos": [
+        {
+          "label": "Voir sur TikTok",
+          "url": "https://www.tiktok.com/@lephilosophal/video/7700588303644396833"
+        },
+        {
+          "label": "Voir sur Instagram",
+          "url": "https://www.instagram.com/p/De6w-dUTtrg/"
+        },
+        {
+          "label": "Voir sur YouTube",
+          "url": "https://youtube.com/shorts/9if5OrUYJFU"
+        }
+      ],
       "readingNote": "Ce mythe est le discours d’Aristophane, l’un des personnages du Banquet. Il ne résume pas à lui seul la pensée de Platon sur l’amour. Le récit évoque trois types d’êtres originels, dont un seul est androgyne.",
       "questions": [
         "Que cherche-t-on dans le désir de fusion avec une autre personne ?",
         "L’autre doit-il nécessairement nous compléter pour que nous puissions l’aimer ?"
       ],
-      "sources": [
-        {
-          "title": "Lire Le Banquet — traduction Chambry",
-          "reference": "Le Banquet · 189d–191d",
-          "url": "https://fr.wikisource.org/wiki/Banquet",
-          "note": "Traduction d’Émile Chambry, dans le domaine public."
-        }
-      ],
-      "plannedDate": "2026-10-23",
+      "sources": [],
+      "plannedDate": "2026-10-25",
       "excerptIds": [
         "banquet-189d-191d"
       ]
@@ -102,7 +108,7 @@
           "note": "Traduction d’Émile Chambry, dans le domaine public."
         }
       ],
-      "plannedDate": "2026-10-25",
+      "plannedDate": "2026-10-27",
       "excerptIds": [
         "lysis-216d-220b"
       ]
@@ -111,7 +117,7 @@
       "number": 4,
       "id": "episode-4",
       "title": "L’amour, entre manque et fécondité",
-      "plannedDate": "2026-10-27",
+      "plannedDate": "2026-10-29",
       "videos": [],
       "excerptIds": [
         "banquet-203b-204b",

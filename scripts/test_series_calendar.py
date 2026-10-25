@@ -21,10 +21,10 @@ class Publication(unittest.TestCase):
         for instant, day in [
             ('2026-10-22T21:59:59Z', '2026-10-22'),
             ('2026-10-22T22:00:00Z', '2026-10-23'),
-            ('2026-10-24T21:59:59Z', '2026-10-24'),
-            ('2026-10-24T22:00:00Z', '2026-10-25'),
             ('2026-10-26T22:59:59Z', '2026-10-26'),
             ('2026-10-26T23:00:00Z', '2026-10-27'),
+            ('2026-10-28T22:59:59Z', '2026-10-28'),
+            ('2026-10-28T23:00:00Z', '2026-10-29'),
         ]:
             with self.subTest(instant=instant):
                 self.assertEqual(paris_day(instant).isoformat(), day)
@@ -46,9 +46,9 @@ class Publication(unittest.TestCase):
 
     def test_html_and_manifest_at_the_actual_boundaries(self):
         for instant, available in [
-            ('2026-10-22T21:59:59Z',1),('2026-10-22T22:00:00Z',2),
-            ('2026-10-24T21:59:59Z',2),('2026-10-24T22:00:00Z',3),
-            ('2026-10-26T22:59:59Z',3),('2026-10-26T23:00:00Z',4),
+            ('2026-10-24T21:59:59Z',1),('2026-10-24T22:00:00Z',2),
+            ('2026-10-26T22:59:59Z',2),('2026-10-26T23:00:00Z',3),
+            ('2026-10-28T22:59:59Z',3),('2026-10-28T23:00:00Z',4),
         ]:
             with self.subTest(instant=instant), TemporaryDirectory() as tmp:
                 subprocess.run([sys.executable,str(ROOT/'scripts/generer_series.py'),
@@ -72,8 +72,21 @@ class Publication(unittest.TestCase):
                         expected = [EXCERPTS[key] for key in source.get('excerptIds', [])
                                     if EXCERPTS[key].get('approved') is True]
                         self.assertEqual(public['excerpts'], expected)
-                        self.assertEqual(card.count('<details class="episode-excerpt">'), len(expected))
+                        self.assertEqual(len(re.findall(r'<details class="episode-excerpt"(?: open)?>',card)), len(expected))
                 self.assertNotIn('approved',page)
+
+    def test_social_links_and_course_location_copy(self):
+        with TemporaryDirectory() as tmp:
+            subprocess.run([sys.executable,str(ROOT/'scripts/generer_series.py'),
+                            '--as-of','2026-10-25','--output-root',tmp],check=True,capture_output=True)
+            pages=[Path(tmp)/'series/index.html',
+                   Path(tmp)/'series/philosophie-de-l-amour/index.html']
+            for path in pages:
+                with self.subTest(path=path):
+                    text=path.read_text()
+                    self.assertIn('https://www.instagram.com/lephilosophal/',text)
+                    self.assertIn('https://www.facebook.com/people/Philosophal/61595862237018/?locale=fr_FR',text)
+                    self.assertNotIn('à Montpellier ou à distance.',text)
 
     def test_future_simulation_cannot_overwrite_the_site(self):
         result = subprocess.run([sys.executable,str(ROOT/'scripts/generer_series.py'),
@@ -93,10 +106,10 @@ class Publication(unittest.TestCase):
             (clone/'scripts/series-content/excerpts.json').write_text(json.dumps(fixture))
             output = Path(tmp)/'output'
             result = subprocess.run([sys.executable,str(clone/'scripts/generer_series.py'),
-                            '--as-of','2026-10-23','--output-root',str(output)],capture_output=True,text=True)
+                            '--as-of','2026-10-25','--output-root',str(output)],capture_output=True,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
             page = (output/'series/philosophie-de-l-amour/index.html').read_text()
-            self.assertIn('<details class="episode-excerpt">',page)
+            self.assertIn('<details class="episode-excerpt" open>',page)
             self.assertIn('« Extrait témoin &lt;vérifié&gt;. »',page)
             self.assertIn('trad. Émile Chambry.',page)
 

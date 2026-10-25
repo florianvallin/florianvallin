@@ -1,0 +1,36 @@
+/* Philosophal V54.1 — navigation commune aux outils professionnels. */
+.ph-pro-switcher{position:relative;isolation:isolate;flex:0 0 auto;font:inherit}
+.ph-pro-switcher[hidden]{display:none!important}
+.ph-pro-switcher summary{list-style:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:34px;padding:7px 11px;border:1px solid var(--ph-pro-border,#40515d);border-radius:9px;background:var(--ph-pro-fill,#26343c);color:var(--ph-pro-ink,#f1f5f7);font-size:11px;font-weight:710;white-space:nowrap;cursor:pointer;user-select:none;transition:background .17s ease,border-color .17s ease}
+.ph-pro-switcher summary::-webkit-details-marker{display:none}
+.ph-pro-switcher summary:hover,.ph-pro-switcher[open] summary{background:var(--ph-pro-hover,#334450);border-color:var(--ph-pro-focus,#94b6c0)}
+.ph-pro-switcher summary:focus-visible,.ph-pro-switcher a:focus-visible{outline:2px solid var(--ph-pro-focus,#add8cf);outline-offset:3px}
+.ph-pro-switcher .ph-pro-chevron{font-size:10px;opacity:.75;transition:transform .18s}
+.ph-pro-switcher[open] .ph-pro-chevron{transform:rotate(180deg)}
+.ph-pro-switcher .ph-pro-dot{height:7px;width:7px;border-radius:50%;flex:none;background:#9ddac0;box-shadow:0 0 0 3px #9ddac021}
+.ph-pro-menu{position:absolute;z-index:2147483000;right:0;top:calc(100% + 9px);width:min(315px,calc(100vw - 28px));border:1px solid #455666;background:#1a232d;border-radius:13px;padding:8px;box-shadow:0 24px 75px #0009;color:#edf2f5;text-align:left}
+.ph-pro-menu-title{padding:9px 10px 11px;font-size:10px;letter-spacing:.12em;color:#9caebc;text-transform:uppercase;font-weight:750}
+.ph-pro-menu a{display:flex;align-items:center;gap:12px;border-radius:9px;padding:11px 10px;text-decoration:none!important;color:#e5ecf0!important;border:1px solid transparent;white-space:normal}
+.ph-pro-menu a:hover{background:#293947;border-color:#3c5261}
+.ph-pro-menu a[aria-current="page"]{background:#293d3b;border-color:#4f796e;color:#c2f1e3!important;cursor:default}
+.ph-pro-menu a .ph-pro-symbol{display:grid;place-items:center;flex:none;width:32px;height:32px;background:#30404c;border:1px solid #465562;border-radius:9px;font-size:15px}
+.ph-pro-menu a .ph-pro-name{font-size:12px;font-weight:760;display:block;line-height:1.35}
+.ph-pro-menu a .ph-pro-desc{font-size:10px;display:block;color:#a4b3bf;line-height:1.45;margin-top:2px}
+.ph-pro-menu .ph-pro-divider{height:1px;background:#394955;margin:6px 4px}
+.ph-pro-menu .ph-pro-foot{padding:9px 10px 6px;font-size:10px;color:#9cabb7;line-height:1.55}
+.ph-pro-switcher--invoices{--ph-pro-border:#8f7ea4;--ph-pro-fill:#554169;--ph-pro-ink:#fff;--ph-pro-hover:#644e7b;--ph-pro-focus:#e6d4ff}
+@media(max-width:800px){.ph-pro-switcher summary{font-size:0;gap:6px;padding:8px 9px;min-width:35px}.ph-pro-switcher summary::before{content:'Outils';font-size:11px}.ph-pro-switcher .ph-pro-dot{display:none}.ph-pro-switcher .ph-pro-chevron{font-size:10px}}
+@media(max-width:420px){.ph-pro-switcher summary::before{content:'Pro'}}
+@media(prefers-reduced-motion:reduce){.ph-pro-switcher summary,.ph-pro-switcher .ph-pro-chevron{transition:none}}
+
+/* V54.6 — Le menu professionnel doit se superposer réellement aux iframes des studios. */
+body:has(.ph-pro-switcher) > .top,
+body:has(.ph-pro-switcher) > header.top,
+body:has(.ph-pro-switcher) #app > .top{position:relative;z-index:10005;isolation:isolate;overflow:visible!important}
+.ph-pro-switcher{z-index:10006;isolation:auto}
+.ph-pro-switcher[open]{z-index:10007}
+.ph-pro-switcher .ph-pro-menu{z-index:10008;max-height:min(74dvh,610px);overflow-y:auto;overscroll-behavior:contain}
+.ph-pro-switcher .ph-pro-menu a{min-height:46px}
+.ph-pro-switcher summary{touch-action:manipulation}
+/* Droit de passage visible sur les petits écrans sans écraser l'éditeur. */
+@media(max-width:710px){.ph-pro-menu{position:fixed!important;right:12px;top:58px;width:min(345px,calc(100vw - 24px));max-height:calc(100dvh - 75px)}}

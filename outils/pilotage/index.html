@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Accès au logiciel de montage vidéo Philosophal Pilotage pour les outils professionnels.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#10151e">
+<title>Philosophal Pilotage — Espace professionnel</title>
+<link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="stylesheet" href="/css/pro-workspace-nav.css?v=20261025-v54.6">
+<script defer src="/js/pro-workspace-nav.js?v=20261025-v54.9"></script>
+
+<script src="/js/private-access.js?v=20261022-v39"></script>
+<style>
+:root{color-scheme:dark;font-family:Inter,system-ui,Arial,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#0d1119;color:#e8edf5}
+body{display:flex;flex-direction:column;overflow:hidden}
+a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}
+.top{height:44px;min-height:44px;border-bottom:1px solid #303846;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:7px clamp(10px,2.1vw,25px);background:#111722}
+.brand{display:flex;gap:10px;align-items:center;font-size:13px;font-weight:750;min-width:0}.brand img{width:30px;height:30px;object-fit:contain}.brand small{font-size:10px;color:#b6c5e0;margin-left:9px;font-weight:600}.actions{display:flex;gap:9px;align-items:center}
+.action{border:1px solid #37465b;border-radius:8px;padding:8px 11px;background:#202a3b;font-size:11px;font-weight:700;color:#e6edfc}.action:hover{border-color:#a7c2fa}.action.outline{background:transparent}
+.status{font-size:11px;color:#b6d5b9;white-space:nowrap}.app-shell{flex:1;min-height:0;position:relative}.app-shell iframe{display:block;border:0;width:100%;height:100%;background:#0d1015}
+.gate{display:grid;place-items:center;min-height:0;flex:1;padding:24px}.gate[hidden],.app-shell[hidden]{display:none!important}.gate-card{width:min(450px,100%);background:#171e2a;border:1px solid #354154;border-radius:18px;padding:30px;box-shadow:0 24px 80px #0005}.kicker{color:#b2c7ed;font-size:11px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}.gate-card h1{font-size:26px;line-height:1.18;margin:12px 0}.gate-card p{font-size:13px;color:#b1bccd;line-height:1.65}.gate-card label{display:block;font-size:12px;font-weight:750;margin-top:18px}.gate-card input{width:100%;border:1px solid #50617d;background:#0f1621;color:white;padding:12px;border-radius:9px;margin-top:7px}.gate-card button{background:#bcd1fb;border:0;border-radius:9px;color:#192b48;font-weight:800;padding:11px 15px;margin-top:12px}.gate-card a{color:#c5d7fd;text-decoration:underline;text-underline-offset:3px}.gate-card .error{color:#f6adab;font-size:12px;min-height:20px}.gate-card .fine{font-size:11px;margin-top:16px;color:#8e9cb1}
+@media(max-width:650px){.top{padding:7px 9px;gap:7px}.brand small,.status{display:none}.action{padding:8px}.gate-card{padding:22px}}
+</style>
+</head><body>
+<header class="top"><a class="brand" href="/outils/" aria-label="Retour à mes outils"><img src="/images/logo-philosophal.png" alt=""><span>Philosophal Pilotage <small>TABLEAU DE BORD · V12.3 · SITE V54.18</small></span></a><nav class="actions" aria-label="Navigation professionnelle"><span class="status" id="status" hidden>● Accès professionnel</span><a class="action outline" href="/outils/">← Mes outils</a><button class="action" id="exit" hidden type="button">Quitter le mode pro</button></nav></header>
+<main class="gate" id="gate" hidden><section class="gate-card" aria-labelledby="gate-title"><div class="kicker">Philosophal · Accès privé</div><h1 id="gate-title">Ouvrir Philosophal Pilotage</h1><p>Ce tableau de bord fait partie de tes outils professionnels. Identifie-toi avec ton accès propriétaire pour retrouver l'éditeur.</p><form id="login"><label for="password">Mot de passe propriétaire</label><input id="password" type="password" autocomplete="current-password" required><button id="submit" type="submit">Accéder à Pilotage</button><p class="error" id="error" role="alert" aria-live="polite"></p></form><p class="fine">Vos données de suivi restent dans ce navigateur, sauf exportation volontaire. Sauvegardez régulièrement votre travail.</p><a href="/outils/">Retour à la boîte à outils</a></section></main>
+<section class="app-shell" id="studio" hidden aria-label="Éditeur vidéo Philosophal Pilotage"></section>
+<script>
+(()=>{'use strict';
+const api=window.FV_PRIVATE_ACCESS;
+const gate=document.getElementById('gate'),studio=document.getElementById('studio'),status=document.getElementById('status');
+const isOwner=()=>{try{return api?.role()==='private'||sessionStorage.getItem('philosophal-invoice-entry-v1')==='alo-2026';}catch{return false;}};
+function display(){
+  if(!api){gate.hidden=false;studio.hidden=true;document.getElementById('error').textContent='Service d’identification indisponible. Rechargez la page.';return;}
+  const ok=isOwner();gate.hidden=ok;studio.hidden=!ok;status.hidden=!ok;document.getElementById('exit').hidden=!ok;
+  if(ok&&!studio.querySelector('iframe')){
+    const frame=document.createElement('iframe');frame.title='Philosophal Pilotage V12.3 — Tableau de bord';const params=new URLSearchParams(location.search);const transfer=params.get('av-transfer');const batch=params.get('av-batch');
+    frame.src='./editeur.html';frame.setAttribute('allow','fullscreen; clipboard-read; clipboard-write');frame.setAttribute('allowfullscreen','');studio.append(frame);
+    frame.addEventListener('error',()=>{const error=document.createElement('p');error.textContent='Le studio ne s’est pas chargé. Vérifiez les autorisations ou rechargez la page.';error.style.cssText='position:absolute;left:15px;bottom:15px;background:#223044;color:#fff;padding:15px;z-index:8';studio.append(error);});
+  }
+  if(!ok)studio.replaceChildren();
+}
+const login=document.getElementById('login');
+login.addEventListener('submit',async event=>{event.preventDefault();const btn=document.getElementById('submit'),error=document.getElementById('error');error.textContent='';btn.disabled=true;
+try{const role=await api.unlockRole(document.getElementById('password').value, true);if(role==='private')display();else error.textContent='Cet accès ne permet pas d’ouvrir les outils professionnels.';}
+catch(err){error.textContent=err.message||'Identification impossible.'}finally{btn.disabled=false;document.getElementById('password').value='';}});
+document.getElementById('exit').addEventListener('click',()=>{
+ sessionStorage.removeItem('philosophal-invoice-entry-v1');
+ if(api?.role())api.lock();else location.assign('/outils/');
+});
+try{if(sessionStorage.getItem('philosophal-invoice-entry-v1')==='alo-2026')display();}catch{}
+Promise.resolve(api?.ready).then(display).catch(()=>{gate.hidden=false;document.getElementById('error').textContent='L’accès privé n’a pas pu être initialisé.'});
+window.addEventListener('philosophal:unlocked',display);
+window.addEventListener('pageshow',()=>Promise.resolve(api?.ready).then(display).catch(()=>{}));
+})();
+</script></body></html>

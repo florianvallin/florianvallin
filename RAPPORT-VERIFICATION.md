@@ -36,3 +36,21 @@ Les contenus futurs ont été vérifiés dans une simulation isolée au 27 octob
 ## Livraison
 
 Archive complète Philosophal-V39.zip, générée pour le 22 octobre 2026. La sortie publique exclut les scripts, les sources éditoriales et les simulations. Les corrections précédentes et les quatre validations d’extraits sont conservées. Aucun déploiement distant effectué. Le guide de la série décrit l’activation du workflow quotidien GitHub et les limites de ses horaires d’exécution.
+
+## Ajout V54.15
+- Contrôles statiques : 372 pages, zéro erreur.
+- Tests de la passerelle en mémoire (simulant IndexedDB) : transfert simple et groupé, sous-titres, marqueurs, texte, fiches sans copie du média, suppression de transfert sans effacement de fiche.
+- Scripts JavaScript nouveaux et inline des deux éditeurs analysés sans erreur de syntaxe.
+- Tests publics exécutés.
+- **Limite de la vérification :** le navigateur Chromium de cet environnement bloque les navigations locales et HTTP (ERR_BLOCKED_BY_ADMINISTRATOR), donc l’interface réelle et les médias volumineux doivent être validés dans Brave avant publication.
+
+## V54.16 — Exports et contrôles de transfert
+- Scripts modifiés vérifiés par Node.js. Diagnostics de formats WAV/MP4/WebM et SRT testés avec un fichier WAV synthétique dans Chromium (sans navigation réseau).
+- La lecture et le téléchargement d’un rapport JSON ont été exercés avec une page de test isolée. Les tests de bout en bout sous Brave restent nécessaires.
+
+## V54.17 — Bibliothèque / lots volumineux
+- `node --check` réussi pour `js/pro-media-library-v549.js` et `js/pro-media-library-ui-v549.js`.
+- Toutes les références de scripts des deux éditeurs professionnels ont été retrouvées sur disque.
+- Test Chromium isolé réussi (sans navigation réseau) : panneau ouvert, contrôles de dossier / progression / persistance affichés, import simulé déclenché et interface de statut mise à jour, sans erreur JavaScript.
+- Contrôle de l'archive et des fichiers effectué après création.
+- Limitations : l’environnement empêche de naviguer sur localhost (`ERR_BLOCKED_BY_ADMINISTRATOR`), donc les transactions IndexedDB et les lots de plusieurs centaines de Go ne sont pas testés en situation réelle. La lecture et l’encodage de rushs dans Brave restent à vérifier.

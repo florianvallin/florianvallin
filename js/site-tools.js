@@ -181,6 +181,12 @@
         openSiteSearch();
         return;
       }
+      if (codeMatches(event, "KeyO", "o")) {
+        consumeShortcut(event);
+        closeShortcutHelp();
+        go("/outils/");
+        return;
+      }
       if (codeMatches(event, "KeyT", "t")) {
         consumeShortcut(event);
         closeShortcutHelp();
@@ -715,6 +721,7 @@
     const standardRows = [
       shortcutRow("H", "Accueil"),
       shortcutRow("R", "Recherche du site"),
+      shortcutRow("O", "Outils"),
       shortcutRow("D", "Dictionnaires"),
       shortcutRow("T", "Textes"),
       shortcutRow("B", "Blog"),

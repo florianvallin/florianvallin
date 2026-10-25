@@ -131,7 +131,7 @@
       const entry=doc.createElement("div");entry.innerHTML='<nav class="creator-tools-entry" aria-label="Outils de création"><div><strong>Préparer et lire un script</strong><small>Téléprompteur, vitesse réglable, mode miroir et estimation de durée.</small></div><a href="/apprendre/creation/teleprompteur/">Ouvrir le téléprompteur →</a></nav>';doc.body.prepend(entry.firstElementChild);
     }
     for(const n of doc.querySelectorAll('script[src],link[rel="stylesheet"][href],img[src],source[src]')){
-      const attr=n.hasAttribute('src')?'src':'href';const url=new URL(n.getAttribute(attr),location.href);if(/\/js\/(?:script|site-tools|navigation-shortcuts)\.js$/.test(url.pathname))url.searchParams.set('v','20261022-v39');n.setAttribute(attr,assetURL(url.href));
+      const attr=n.hasAttribute('src')?'src':'href';const url=new URL(n.getAttribute(attr),location.href);if(/\/js\/(?:script|site-tools|navigation-shortcuts)\.js$/.test(url.pathname))url.searchParams.set('v','20261025-v54.5');n.setAttribute(attr,assetURL(url.href));
     }
     delete window.PHILOSOPHAL_BACKUP;
     document.open();document.write('<!doctype html>'+doc.documentElement.outerHTML);document.close();

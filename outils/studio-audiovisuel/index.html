@@ -6,6 +6,9 @@
 <meta name="theme-color" content="#10151b">
 <title>Studio audiovisuel — Philosophal · Espace professionnel</title>
 <link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="stylesheet" href="/css/pro-workspace-nav.css?v=20261025-v54.6">
+<script defer src="/js/pro-workspace-nav.js?v=20261025-v54.9"></script>
+
 <script src="/js/private-access.js?v=20261022-v39"></script>
 <style>
 :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -28,7 +31,7 @@ a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:poi
 @media(max-width:680px){.top{padding:7px 9px;gap:7px}.brand small,.status{display:none}.action{padding:8px}.gate-card{padding:22px}}
 </style>
 </head><body>
-<header class="top"><a class="brand" href="/outils/" aria-label="Retour à mes outils"><img src="/images/logo-philosophal.png" alt=""><span>Studio audiovisuel <small>PHILOSOPHAL · V11</small></span></a><nav class="actions" aria-label="Navigation professionnelle"><span class="status" id="status" hidden>● Espace professionnel</span><a class="action outline" href="/outils/">← Mes outils</a><button class="action" id="exit" hidden type="button">Quitter le mode pro</button></nav></header>
+<header class="top"><a class="brand" href="/outils/" aria-label="Retour à mes outils"><img src="/images/logo-philosophal.png" alt=""><span>Studio audiovisuel <small>PHILOSOPHAL · V54.16</small></span></a><nav class="actions" aria-label="Navigation professionnelle"><span class="status" id="status" hidden>● Espace professionnel</span><a class="action outline" href="/outils/">← Mes outils</a><button class="action" id="exit" hidden type="button">Quitter le mode pro</button></nav></header>
 <main class="gate" id="gate" hidden><section class="gate-card" aria-labelledby="gate-title"><div class="kicker">Philosophal · Accès privé</div><h1 id="gate-title">Ouvrir le Studio audiovisuel</h1><p>Cet outil est réservé à ton espace professionnel. Identifie-toi pour enregistrer, capturer, analyser et transcrire tes contenus.</p><form id="login"><label for="password">Mot de passe propriétaire</label><input id="password" type="password" autocomplete="current-password" required><button id="submit" type="submit">Déverrouiller le studio</button><p class="error" id="error" role="alert" aria-live="polite"></p></form><p class="fine">Les enregistrements et projets sont conservés localement dans ce navigateur, sauf exportation volontaire. Pense à garder des sauvegardes de tes projets.</p><a href="/outils/">Retour à la boîte à outils</a></section></main>
 <section class="app-shell" id="studio" hidden aria-label="Studio audiovisuel professionnel"></section>
 <script>
@@ -38,14 +41,17 @@ const gate=document.getElementById('gate'),studio=document.getElementById('studi
 // Alignement sur les accès déjà utilisés par Factures et Philosophal Cut.
 const isOwner=()=>{try{return api?.role()==='private'||sessionStorage.getItem('philosophal-invoice-entry-v1')==='alo-2026';}catch{return false;}};
 function display(){
+  if(!api){gate.hidden=false;studio.hidden=true;document.getElementById('error').textContent='Service d’identification indisponible. Rechargez la page.';return;}
   const ok=isOwner();gate.hidden=ok;studio.hidden=!ok;status.hidden=!ok;exit.hidden=!ok;
   if(ok&&!studio.querySelector('iframe')){
     const frame=document.createElement('iframe');
-    frame.title='Philosophal — Studio audiovisuel V11';
-    frame.src='./editeur.html';
+    frame.title='Philosophal — Studio audiovisuel V54.16';
+    frame.src='./editeur.html?v=54.16';
     frame.setAttribute('allow','camera; microphone; display-capture; fullscreen; clipboard-read; clipboard-write');
+    frame.setAttribute('loading','eager');
     frame.setAttribute('allowfullscreen','');
     studio.append(frame);
+    frame.addEventListener('error',()=>{const error=document.createElement('p');error.textContent='Le studio ne s’est pas chargé. Vérifiez les autorisations ou rechargez la page.';error.style.cssText='position:absolute;left:15px;bottom:15px;background:#223044;color:#fff;padding:15px;z-index:8';studio.append(error);});
   }
   if(!ok)studio.replaceChildren();
 }
@@ -61,8 +67,10 @@ exit.addEventListener('click',()=>{
   sessionStorage.removeItem('philosophal-invoice-entry-v1');
   if(api?.role())api.lock();else location.assign('/outils/');
 });
+try{if(sessionStorage.getItem('philosophal-invoice-entry-v1')==='alo-2026')display();}catch{}
 Promise.resolve(api?.ready).then(display).catch(()=>{gate.hidden=false;document.getElementById('error').textContent='L’accès privé n’a pas pu être initialisé.';});
 window.addEventListener('philosophal:unlocked',display);
+window.addEventListener('pageshow',()=>Promise.resolve(api?.ready).then(display).catch(()=>{}));
 })();
 </script>
 </body></html>

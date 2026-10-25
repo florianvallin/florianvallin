@@ -369,3 +369,24 @@ html[data-site-theme="dark"] .tools-skip-link{background:#1d1921;color:#a69bde}
 /* V54 : troisième outil, visible seulement dans le panneau professionnel. */
 .pro-tool-card--audiovisuel .pro-card-icon{background:#e5f3ef;color:#35776a}
 .pro-tool-card--audiovisuel:hover{border-color:#76a999}
+
+/* V54.1 : présentation plus homogène de l'espace professionnel et workflow. */
+@media(min-width:1120px){.pro-tools-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.pro-tool-card{padding:17px;gap:12px;align-items:flex-start;min-height:163px}.pro-card-icon{width:47px;height:47px;border-radius:12px}.pro-card-icon svg{width:28px;height:28px}.pro-tool-card h3{font-size:17px}.pro-tool-arrow{margin-left:auto}}
+.pro-tool-card:focus-visible{outline:3px solid #a180cc;outline-offset:4px}
+.pro-workflow{margin-top:17px;border:1px solid #ded4e8;background:#ffffffaf;border-radius:13px;padding:15px 17px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.pro-workflow-label{font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#806298}.pro-workflow-text{font-size:12px;line-height:1.5;color:#655b70;margin:3px 0 0}
+.pro-workflow-steps{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.pro-workflow-steps a{display:inline-flex;text-decoration:none;align-items:center;border:1px solid #d8c6e5;border-radius:9px;background:#fff;color:#513568;font-weight:720;font-size:11px;padding:9px 12px}
+.pro-workflow-steps a:hover{border-color:#9271b6;background:#f9f5fd}.pro-workflow-steps a:focus-visible{outline:3px solid #a180cc;outline-offset:3px}
+.pro-workflow-separator{font-size:17px;color:#8e81a1}
+html[data-site-theme="dark"] .pro-workspace{background:linear-gradient(130deg,#272033,#1f1b27);border-color:#584569}
+html[data-site-theme="dark"] .pro-workspace-head h2{color:#f1eafa}
+html[data-site-theme="dark"] .pro-workspace-head p,html[data-site-theme="dark"] .pro-public-head p{color:#c3b5d2}
+html[data-site-theme="dark"] .pro-tool-card{background:#302a38;color:#f4eefa;border-color:#635272}
+html[data-site-theme="dark"] .pro-tool-card p{color:#ccbed5}
+html[data-site-theme="dark"] .pro-tool-label{color:#cdb4e9}
+html[data-site-theme="dark"] .pro-tool-arrow{color:#e2c8f9}
+html[data-site-theme="dark"] .pro-workflow{background:#302a38;border-color:#635272}
+html[data-site-theme="dark"] .pro-workflow-text{color:#c7b9d0}
+html[data-site-theme="dark"] .pro-workflow-label{color:#d6b5f2}
+html[data-site-theme="dark"] .pro-workflow-steps a{background:#42334d;border-color:#745b84;color:#f0e5fa}

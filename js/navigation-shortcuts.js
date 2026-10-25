@@ -1,15 +1,20 @@
 /* Destinations communes aux pages, lecteurs et éditeurs de Philosophal. */
 (() => {
   'use strict';
-  const VERSION = '20261022-v39';
+  const VERSION = '20261025-v54.8';
   const previous = window.PHILOSOPHAL_NAVIGATION;
   if (previous?.version === VERSION) {
     // document.write, utilisé par les espaces privés, réinitialise les écouteurs.
     window.removeEventListener('keydown', previous.handleAlt, true);
     window.addEventListener('keydown', previous.handleAlt, true);
+    if (previous.handlePlainToolsShortcut) {
+      window.removeEventListener('keydown', previous.handlePlainToolsShortcut, true);
+      window.addEventListener('keydown', previous.handlePlainToolsShortcut, true);
+    }
     return;
   }
   if (previous?.handleAlt) window.removeEventListener('keydown', previous.handleAlt, true);
+  if (previous?.handlePlainToolsShortcut) window.removeEventListener('keydown', previous.handlePlainToolsShortcut, true);
   const script = document.currentScript?.src;
   const prefix = script ? new URL('../', script).pathname.replace(/\/$/, '') : '';
   const routes = Object.freeze({
@@ -44,8 +49,17 @@
     event.stopImmediatePropagation();
     go(routes[letter]);
   }
-  window.PHILOSOPHAL_NAVIGATION = Object.freeze({version:VERSION,routes,resolve,go,handleAlt});
+  function handlePlainToolsShortcut(event) {
+    if (event.defaultPrevented || event.repeat || event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    if (/\/outils\/(?:philosophal-cut|studio-audiovisuel|factures)(?:\/|$)/.test(location.pathname)) return;
+    const target = event.target;
+    if (target instanceof HTMLElement && (target.matches('input,textarea,select,[role="textbox"]') || target.isContentEditable)) return;
+    if (String(event.key || '').toLocaleLowerCase('fr') !== 'o' && event.code !== 'KeyO') return;
+    event.preventDefault();event.stopPropagation();event.stopImmediatePropagation();go('/outils/');
+  }
+  window.PHILOSOPHAL_NAVIGATION = Object.freeze({version:VERSION,routes,resolve,go,handleAlt,handlePlainToolsShortcut});
   window.addEventListener('keydown', handleAlt, true);
+  window.addEventListener('keydown', handlePlainToolsShortcut, true);
 })();
 
 /* Une ancienne copie d'index ne doit pas afficher le dernier article ou outil du dossier. */

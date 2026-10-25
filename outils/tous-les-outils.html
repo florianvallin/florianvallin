@@ -1,15 +1,15 @@
 <!doctype html><html lang="fr"><head>
-<script src="/js/navigation-shortcuts.js?v=20261022-v39"></script>
+<script src="/js/navigation-shortcuts.js?v=20261025-v54.8"></script>
   <!-- Page de rubrique restaurée ; contrôle : philosophal-routes-v10-20261018 -->
   <meta name="philosophal-route-version" content="20261022-v39">
 <script src="/js/theme-prepaint.js?v=20261022-v39"></script>
 <meta charset="utf-8">
   <script src="/js/site-quality.js?v=20261022-v39"></script>
-  <script src="../js/site-theme.js?v=20261022-v39"></script>
+  <script src="../js/site-theme.js?v=20261025-v54.5"></script>
   <link rel="stylesheet" href="../css/site-theme.css?v=20261022-v39">
 <meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preload" href="/assets/fonts/InterVariable-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20261022-v39"><link rel="stylesheet" href="/css/public-tools.css?v=20261022-v39">
-<link rel="stylesheet" href="/css/outils-hub.css?v=20261022-v39"><script src="/js/private-access.js?v=20261022-v39"></script>  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png?v=20261022-v39">
+  <link rel="stylesheet" href="/css/style.css?v=20261025-v54.5"><link rel="stylesheet" href="/css/public-tools.css?v=20261022-v39">
+<link rel="stylesheet" href="/css/outils-hub.css?v=20261022-v39"><link rel="stylesheet" href="/css/outils-hub-v54.5.css?v=20261025-v54.5"><script src="/js/private-access.js?v=20261022-v39"></script>  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png?v=20261022-v39">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png?v=20261022-v39">
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png?v=20261022-v39">
   <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png?v=20261022-v39">
@@ -25,15 +25,16 @@
 
 
 <title>Outils gratuits — Philosophal</title>
-<meta name="description" content="Des outils gratuits pour lire, écrire et travailler : éditeur de texte, lecteur EPUB, image, PDF et Pomodoro.">
+<meta name="description" content="Outils gratuits pour écrire, lire, organiser : PDF, Kanban, Mind Maps, OCR, livres et Pomodoro.">
 <link rel="canonical" href="https://philosophal.fr/outils/">
 <meta property="og:title" content="Outils gratuits — Philosophal">
-<meta property="og:description" content="Des outils gratuits pour lire, écrire et travailler : éditeur de texte, lecteur EPUB, image, PDF et Pomodoro.">
+<meta property="og:description" content="Outils gratuits pour écrire, lire, organiser : PDF, Kanban, Mind Maps, OCR, livres et Pomodoro.">
 <meta property="og:url" content="https://philosophal.fr/outils/">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="/css/site-theme-v4.css?v=20261022-v39" data-ph-dark-v4>
 
 <meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="/css/outils-extensions-v54.18.css?v=20261025-v54.18">
 </head>
 <body class="tools-page" id="top">
 <a class="tools-skip-link" href="#tools-content">Aller aux outils</a>
@@ -47,7 +48,6 @@
       <a class="nav-texts-link" href="/textes/">Textes</a>
       <a class="nav-blog-link" href="/blog/">Blog</a>
       <a class="nav-videos-link" href="/series/">Vidéos</a>
-      <a class="nav-tools-link" href="/outils/" aria-current="page">Outils</a>
       <span class="nav-divider" aria-hidden="true"></span>
       <a class="nav-services-link" href="/#philosophie">Prestations</a>
       <a class="nav-about-link" href="/#quisuisje">Qui suis-je ?</a>
@@ -57,6 +57,7 @@
     <div class="nav-header-actions">
       <button class="nav-search-trigger" type="button" data-site-search-open aria-label="Rechercher sur le site" aria-keyshortcuts="R" title="Rechercher sur le site (R)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4 4"/></svg></button>
       <button class="nav-theme-toggle" type="button" data-site-theme-toggle aria-label="Activer le mode sombre" aria-pressed="false" title="Changer le thème"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.5 13.1A8.5 8.5 0 0 1 10.9 3.5a8.5 8.5 0 1 0 9.6 9.6Z"/></svg></button>
+      <a class="nav-tools-icon" href="/outils/" aria-label="Outils" title="Outils" data-nav-tools-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 6.6a5.5 5.5 0 0 1-7.4 6.5L6 20.2a2.2 2.2 0 0 1-3.1-3.1l7.1-7.1a5.5 5.5 0 0 1 7.4-7.4L14 6l.9 3.1 3.1.9z"/></svg></a>
       <a class="nav-contact-link nav-contact-desktop" href="/#contact">Contactez-moi</a>
       <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
@@ -201,7 +202,25 @@
           <span class="tool-action"><span id="prompter-action">Préparer une prise de parole</span><span class="tool-action-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
         </a>
       </li>
-</ul>
+<li class="tool-item tool-item--kanban">
+    <a class="tool-tile tool-tile--kanban" href="/outils/kanban/" aria-labelledby="ph-kanban-title" aria-describedby="ph-kanban-description">
+      <div class="tool-copy"><span class="tool-category">Organiser</span><h2 id="ph-kanban-title">Kanban</h2><p id="ph-kanban-description">Organisez vos tâches, vos projets et vos révisions sous forme de tableaux.</p></div>
+      <div class="tool-art" aria-hidden="true"><svg viewBox="0 0 220 166" fill="none" focusable="false"><rect x="22" y="27" width="176" height="105" rx="13" fill="#e7f1e9" stroke="#8eb5a4" stroke-width="1.6"/><rect x="35" y="42" width="47" height="73" rx="7" fill="#fff" stroke="#b4d0c0"/><rect x="89" y="42" width="47" height="73" rx="7" fill="#fff" stroke="#b4d0c0"/><rect x="143" y="42" width="43" height="73" rx="7" fill="#fff" stroke="#b4d0c0"/><rect x="41" y="50" width="35" height="5" rx="2.5" fill="#699984"/><rect x="95" y="50" width="35" height="5" rx="2.5" fill="#699984"/><rect x="149" y="50" width="30" height="5" rx="2.5" fill="#699984"/><rect x="42" y="65" width="33" height="19" rx="4" fill="#d5e7db"/><rect x="96" y="65" width="33" height="28" rx="4" fill="#c5dacc"/><rect x="149" y="65" width="30" height="14" rx="4" fill="#d5e7db"/><rect x="42" y="90" width="33" height="14" rx="4" fill="#e9f1e8"/><path d="M36 144h102" stroke="#9dbdab" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <span class="tool-action"><span>Organiser un tableau</span><span class="tool-action-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+    </a>
+  </li><li class="tool-item tool-item--mindmap">
+    <a class="tool-tile tool-tile--mindmap" href="/outils/mindmap/" aria-labelledby="ph-mindmap-title" aria-describedby="ph-mindmap-description">
+      <div class="tool-copy"><span class="tool-category">Structurer</span><h2 id="ph-mindmap-title">Mind Maps</h2><p id="ph-mindmap-description">Reliez vos idées et construisez des cartes mentales pour apprendre et réfléchir.</p></div>
+      <div class="tool-art" aria-hidden="true"><svg viewBox="0 0 220 166" fill="none" focusable="false"><path d="M108 77L59 44M108 77l54-33M108 77l57 56M108 77l-51 55" stroke="#80aaac" stroke-width="3" stroke-linecap="round"/><rect x="80" y="58" width="58" height="40" rx="12" fill="#e1f1ee" stroke="#629b9c" stroke-width="1.5"/><circle cx="51" cy="42" r="21" fill="#e8f5f0" stroke="#8fbcb3" stroke-width="1.5"/><circle cx="173" cy="42" r="21" fill="#fff" stroke="#a3c8c4" stroke-width="1.5"/><circle cx="55" cy="135" r="18" fill="#fff" stroke="#8fbcb3" stroke-width="1.5"/><circle cx="173" cy="134" r="21" fill="#e8f5f0" stroke="#a3c8c4" stroke-width="1.5"/><circle cx="109" cy="77" r="6" fill="#558b86"/><path d="M96 112h28" stroke="#9cbbb6" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <span class="tool-action"><span>Créer une carte</span><span class="tool-action-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+    </a>
+  </li><li class="tool-item tool-item--ocr">
+    <a class="tool-tile tool-tile--ocr" href="/outils/ocr/" aria-labelledby="ph-ocr-title" aria-describedby="ph-ocr-description">
+      <div class="tool-copy"><span class="tool-category">Extraire</span><h2 id="ph-ocr-title">Reconnaissance de texte (OCR)</h2><p id="ph-ocr-description">Récupérez du texte à partir de vos images et PDF pour le corriger ou le réutiliser.</p></div>
+      <div class="tool-art" aria-hidden="true"><svg viewBox="0 0 220 166" fill="none" focusable="false"><rect x="58" y="17" width="111" height="132" rx="12" fill="#fff" stroke="#b1b5c2" stroke-width="1.8"/><path d="M81 48h65M81 61h58M81 74h63M81 87h38" stroke="#bdc6d6" stroke-width="4" stroke-linecap="round"/><path d="M55 42H38v20m0 34v19h17m121-73h17v20m0 34v19h-17" stroke="#788dba" stroke-width="3" stroke-linecap="round"/><rect x="74" y="104" width="76" height="25" rx="6" fill="#e7ebf8"/><text x="112" y="121" text-anchor="middle" font-size="14" font-family="Arial" font-weight="700" fill="#52699c">ABC</text><circle cx="182" cy="27" r="5" fill="#c5d2e9"/></svg></div>
+      <span class="tool-action"><span>Extraire du texte</span><span class="tool-action-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+    </a>
+  </li></ul>
     <aside class="tools-backup" aria-labelledby="tools-backup-title">
       <span class="tools-backup-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 8h16v12H4V8Zm-1-4h18v4H3V4Zm6 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       <div class="tools-backup-copy"><h2 id="tools-backup-title">Gardez une copie de votre travail</h2><p>Vos documents et votre progression sont enregistrés sur cet appareil.</p></div>
@@ -210,4 +229,4 @@
   </div>
 </main>
 <footer class="site-footer"><div class="footer-container"><div class="footer-column footer-prestations"><p class="footer-title"><a href="/index.html#philosophie">Prestations</a></p><ul class="footer-list"><li><a href="/index.html#philosophie">Cours de Philosophie</a></li><li><a href="/index.html#methodologie">Cours de méthodologie</a></li></ul><p class="footer-title footer-cgv"><a href="/cgv.html">Conditions générales de vente</a></p><nav class="footer-legal-links" aria-label="Informations légales"><a href="/cgu/">CGU</a><a href="/confidentialite/">Confidentialité</a></nav></div><div class="footer-column"><p class="footer-title"><a href="/index.html#quisuisje">Informations</a></p><ul class="footer-list"><li><a href="/index.html#quisuisje">Qui suis-je ?</a></li><li><a href="/index.html#faq">FAQ</a></li><li><a href="/index.html#contact">Contactez-moi</a></li></ul></div><div class="footer-column footer-textes"><p class="footer-title"><a href="/textes/">Textes</a></p></div><div class="footer-column footer-right"><a href="#top" class="footer-copyright">© 2026 Philosophal</a></div></div><div class="footer-bottom"><hr class="footer-divider"><p class="footer-legal">Tous droits réservés.</p></div></footer>
-<script src="/js/script.js?v=20261022-v39" defer></script><script src="/js/global-backup.js?v=20261022-v39" defer></script></body></html>
+<script src="/js/script.js?v=20261025-v54.8" defer></script><script src="/js/global-backup.js?v=20261022-v39" defer></script></body></html>
