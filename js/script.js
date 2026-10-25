@@ -66,6 +66,7 @@
     initBlogIndexFilters();
     initGlobalSearch();
     initStudentAccess();
+    initProfessionalIndicator();
   });
 
   function getSiteRootPath() {
@@ -770,6 +771,39 @@
     });
   }
 
+  // Statut discret mais explicite, uniquement après une ouverture de session professionnelle.
+  // Les visiteurs non identifiés ne voient aucun élément indiquant que cet espace existe.
+  function initProfessionalIndicator() {
+    if (/\/outils\/factures\/?$/.test(location.pathname) || /\/outils\/?$/.test(location.pathname)) return;
+    const api = window.FV_PRIVATE_ACCESS;
+    const sessionActive = () => {
+      try {
+        if (sessionStorage.getItem('philosophal-invoice-entry-v1') === 'alo-2026') return true;
+        if (api?.role() === 'private') return true;
+        const saved = JSON.parse(sessionStorage.getItem('philosophal-vault-session-v31') || 'null');
+        return saved?.role === 'private';
+      } catch { return false; }
+    };
+    const route = path => window.PHILOSOPHAL_NAVIGATION?.resolve(path) || path;
+    const show = () => {
+      if (!sessionActive() || document.querySelector('[data-fv-professional-status]')) return;
+      const bar = document.createElement('div');
+      bar.dataset.fvProfessionalStatus = '';
+      bar.setAttribute('role', 'status');
+      bar.innerHTML = '<span class="fv-pro-presence-dot" aria-hidden="true"></span><span><strong>Mode pro actif</strong><small>Session personnelle</small></span><a href="' + route('/outils/') + '">Mes outils</a><button type="button" aria-label="Quitter le mode professionnel">×</button>';
+      const style = document.createElement('style');
+      style.textContent = '[data-fv-professional-status]{position:fixed;bottom:18px;right:18px;z-index:9900;display:flex;align-items:center;gap:12px;background:#322543;color:#fff;border:1px solid #69577b;border-radius:14px;padding:11px 13px;box-shadow:0 12px 35px #21182d30;font:13px/1.3 Inter,system-ui,sans-serif}[data-fv-professional-status]>span:nth-child(2){display:flex;flex-direction:column;gap:1px}[data-fv-professional-status] small{font-size:10px;color:#cec1dc}[data-fv-professional-status] a{color:#fff;text-decoration:none;font-weight:650;border:1px solid #827091;padding:7px 9px;border-radius:7px}[data-fv-professional-status] button{cursor:pointer;color:#e8d9ef;background:transparent;border:0;font-size:20px;padding:3px}[data-fv-professional-status] .fv-pro-presence-dot{height:8px;width:8px;border-radius:50%;background:#b8e6ce;box-shadow:0 0 0 4px #b8e6ce20}@media(max-width:500px){[data-fv-professional-status]{bottom:9px;right:9px;left:9px;justify-content:center}}@media print{[data-fv-professional-status]{display:none!important}}';
+      document.head.append(style);document.body.append(bar);
+      bar.querySelector('button').addEventListener('click', () => {
+        sessionStorage.removeItem('philosophal-invoice-entry-v1');
+        if (api?.role() === 'private') api.lock();
+        else {sessionStorage.removeItem('philosophal-vault-session-v31');location.reload();}
+      });
+    };
+    show();api?.ready?.then(show).catch(() => {});
+    window.addEventListener('philosophal:unlocked', show);
+  }
+
   function initStudentAccess() {
     const nav = document.querySelector('.navbar .nav-links');
     if (nav && !nav.querySelector('[data-student-access]')) {
@@ -801,7 +835,7 @@
 
           <section class="student-access-panel" role="dialog" aria-modal="true" aria-labelledby="student-access-title">
             <button class="student-access-close" type="button" data-student-close aria-label="Fermer">×</button>
-            <span>Espace élève</span>
+            <span>Accès personnel</span>
             <h2 id="student-access-title">S’identifier</h2>
 
             <form data-student-form>
@@ -855,12 +889,42 @@
       if (navigating) return false;
 
       const key = normalizeSearch(input?.value).replace(/\s+/g, "");
+      const invoiceHash = '173860e3a8ade87129e459be6bbab552cdccbb0db8b545f1d76db8821636c45b';
+      const tryInvoice = async () => {
+        const source = new TextEncoder().encode('philosophal-v40-invoice:' + key);
+        const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', source))).map(b => b.toString(16).padStart(2, '0')).join('');
+        if (hash !== invoiceHash) return false;
+        sessionStorage.setItem('philosophal-invoice-entry-v1', 'alo-2026');
+        window.location.href = resolveStudentDestination('/outils/');
+        return true;
+      };
+      if (key.length >= 8 && !STUDENT_PORTALS[key]) {
+        tryInvoice().then(found => {
+          if (!found) {
+            const api = window.FV_PRIVATE_ACCESS;
+            if (api?.unlockRole) api.unlockRole(input.value).then(role => {
+              if (role === 'private' || role === 'student') location.href = resolveStudentDestination('/outils/');
+              else if (feedback) feedback.textContent = 'Mot de passe non reconnu.';
+            }).catch(() => { if(feedback) feedback.textContent='Impossible de vérifier cet accès.'; });
+            else if(feedback) feedback.textContent='Mot de passe non reconnu.';
+          }
+        }).catch(() => {if(feedback) feedback.textContent='Identification indisponible.'});
+        return true;
+      }
       const destination = STUDENT_PORTALS[key];
 
       if (!destination) {
-        if (showError && feedback) {
-          feedback.textContent = "Mot de passe non reconnu.";
+        const api = window.FV_PRIVATE_ACCESS;
+        if (api?.unlockRole) {
+          if (feedback) feedback.textContent = 'Vérification de l’accès…';
+          api.unlockRole(input.value).then(role => {
+            if (role === 'private' || role === 'student') {
+              location.href = resolveStudentDestination('/outils/');
+            } else if (feedback) feedback.textContent = 'Mot de passe non reconnu.';
+          }).catch(() => { if(feedback) feedback.textContent='Impossible de vérifier cet accès.'; });
+          return true;
         }
+        if (showError && feedback) feedback.textContent = 'Mot de passe non reconnu.';
         return false;
       }
 

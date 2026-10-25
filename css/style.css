@@ -2604,3 +2604,10 @@ body.site-search-open { overflow:hidden; }
 @media (max-width:760px) {
   .contact-background-portrait {left:calc(50% - 140px);}
 }
+
+/* Facebook dans la rangée de réseaux de la section Qui suis-je */
+.about-social-link--facebook .about-social-link__icon {
+  background: #fff;
+  color: #1877f2;
+  box-shadow: 0 5px 14px rgba(28, 28, 40, .07);
+}

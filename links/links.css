@@ -199,3 +199,10 @@ html:not([data-site-theme="dark"]) .link-card--podcast :is(.link-card__title,.li
 html[data-site-theme="light"] .link-card--podcast :is(.link-card__title,.link-card__subtitle,.link-card__arrow) {color:#f6edf3;opacity:1}
 html:not([data-site-theme="dark"]) .link-card--podcast .link-card__icon,
 html[data-site-theme="light"] .link-card--podcast .link-card__icon {background:#5b424d;color:#f7d5af}
+
+/* Nouvelle page Facebook et accès LinkedIn discret, à côté du courriel. */
+.link-card--facebook .link-card__icon { background:#ecf2ff; color:#2863be; }
+.links-contact-icons .links-linkedin-mini { color:#3574aa; }
+.links-contact-icons .links-linkedin-mini svg { width:23px; height:23px; }
+html[data-site-theme="dark"] .link-card--facebook .link-card__icon { background:#1c2638; color:#97baf2; }
+html[data-site-theme="dark"] .links-contact-icons .links-linkedin-mini { color:#97baf2; }

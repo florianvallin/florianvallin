@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#241b37">
+  <title>Factures · Philosophal</title>
+  <link rel="stylesheet" href="./factures.css?v=20261025-v52">
+  <script src="/js/private-access.js?v=20261022-v39"></script>
+</head>
+<body>
+  <div id="gate" class="gate" hidden>
+    <h1>Identification nécessaire</h1>
+    <p>Utilisez « S’identifier » sur le site pour ouvrir cet outil.</p>
+    <a href="/">Retour au site</a>
+  </div>
+  <section id="vaultGate" class="vault-gate" hidden aria-labelledby="vaultGateTitle">
+    <div class="vault-gate-card">
+      <span class="vault-lock-icon" aria-hidden="true">◆</span><small>PHILOSOPHAL · ESPACE PROFESSIONNEL</small>
+      <h1 id="vaultGateTitle">Déverrouiller mes factures</h1>
+      <p>Tes données sont chiffrées sur cet appareil. Saisis la phrase secrète de ton coffre local, distincte du code d'accès professionnel.</p>
+      <form id="vaultUnlockForm"><label>Phrase secrète<input id="vaultUnlockPassword" type="password" autocomplete="off" required autofocus></label>
+      <button id="vaultUnlockButton" type="submit">Déverrouiller le coffre</button></form>
+      <p id="vaultUnlockError" class="vault-error" role="status" aria-live="polite"></p>
+      <p class="vault-warning">Aucune récupération du mot de passe n'est possible. Si tu ne le connais plus, restaure tes données depuis une sauvegarde indépendante dans un nouvel environnement.</p>
+      <a href="/outils/">← Retour aux outils</a>
+    </div>
+  </section>
+  <div id="app" hidden>
+    <header class="top">
+      <a class="brand-link" href="/outils/" aria-label="Retour à la boîte à outils">← <span>Philosophal.</span></a>
+      <span class="top-pro"><span class="pro-pulse" aria-hidden="true"></span> Espace professionnel <small id="vaultBadge">· Stockage local</small></span>
+      <div class="top-actions"><a class="top-return" href="/outils/">Tous les outils</a><button id="lock" type="button">Quitter le mode pro</button></div>
+    </header>
+        <div id="multiTabWarning" class="office-conflict" role="alert" hidden>
+          <div><strong>Modifications détectées dans un autre onglet</strong><p>Pour éviter d'écraser des factures, l'édition est suspendue ici. Termine ton travail dans l'autre onglet, puis recharge celui-ci. Si tu avais des modifications non enregistrées ici, elles risquent d'être perdues.</p></div>
+          <button id="reloadAfterConflict" type="button">Recharger cet onglet</button>
+        </div>
+    <main>
+      <section class="work">
+        <div class="head"><span>GESTION · FACTURATION</span><h1>Créer une facture</h1><p>Quelques heures à saisir pour ta facture mensuelle. Tous les détails restent personnalisables.</p></div>
+        <nav class="office-tabs" aria-label="Gestion de facturation">
+          <div class="office-nav-group" role="group" aria-label="Chaque jour"><span class="office-group-label" aria-hidden="true">Chaque jour</span><div class="office-nav-items">
+            <button type="button" data-office="editor" class="is-active" aria-current="page">✦ Créer</button>
+            <button type="button" data-office="time">Heures <span id="timeCount">0</span></button>
+            <button type="button" data-office="history">Historique <span id="historyCount">0</span></button>
+            <button type="button" data-office="collection">Échéances <span id="collectionCount">0</span></button>
+          </div></div>
+          <div class="office-nav-group" role="group" aria-label="Gestion"><span class="office-group-label" aria-hidden="true">Gestion</span><div class="office-nav-items">
+            <button type="button" data-office="dashboard">Tableau de bord</button>
+            <button type="button" data-office="reports">Bilans</button>
+            <button type="button" data-office="automation">Automatiser <span id="automationCount">0</span></button>
+            <button type="button" data-office="credits">Avoirs <span id="creditCount">0</span></button>
+            <button type="button" data-office="clients">Clients <span id="clientCount">0</span></button>
+            <button type="button" data-office="templates">Modèles <span id="templateCount">0</span></button>
+          </div></div>
+          <div class="office-nav-group" role="group" aria-label="Données"><span class="office-group-label" aria-hidden="true">Données</span><div class="office-nav-items">
+            <button type="button" data-office="backup">Sauvegardes</button>
+          </div></div>
+        </nav>
+        <div class="office-mobile-nav">
+          <label for="officeMobileSelect">Dans mon espace professionnel</label>
+          <select id="officeMobileSelect" aria-label="Choisir une rubrique">
+            <optgroup label="Chaque jour"><option value="editor">Créer une facture</option><option value="time">Heures</option><option value="history">Historique</option><option value="collection">Échéances</option></optgroup>
+            <optgroup label="Gestion"><option value="dashboard">Tableau de bord</option><option value="reports">Bilans</option><option value="automation">Automatiser</option><option value="credits">Avoirs</option><option value="clients">Clients</option><option value="templates">Modèles</option></optgroup>
+            <optgroup label="Données"><option value="backup">Sauvegardes et sécurité</option></optgroup>
+          </select>
+        </div>
+        <div class="office-shortcuts" role="group" aria-label="Accès rapides">
+          <span>Accès rapides</span>
+          <button type="button" data-quick-office="editor">Créer</button>
+          <button type="button" data-quick-office="time">Mes heures</button>
+          <button type="button" data-quick-office="history">Mes factures</button>
+          <button type="button" data-quick-office="backup">Sauvegarder</button>
+        </div>
+        <div class="office-location" aria-live="polite"><span id="officeCurrentLabel">Création de facture</span><span id="officeSaveIndicator">Brouillon local</span></div>
+        <div id="editorWorkspace">
+        <nav class="invoice-modes" aria-label="Mode de facturation"><button id="modeExpress" type="button" class="mode-choice is-active" aria-pressed="true">⚡ Facture express</button><button id="modeAdvanced" type="button" class="mode-choice" aria-pressed="false">Personnalisation avancée</button></nav>
+        <div class="actions"><label>Modèle
+          <select id="preset"><option value="sejer">Profs en ligne · SEJER</option><option value="private">Cours particuliers</option><option value="blank">Personnalisé</option></select>
+        </label><button id="save" type="button">Enregistrer mon modèle</button><button id="load" type="button">Charger mon modèle</button></div>
+        <section id="expressPanel" class="express-panel" aria-label="Facture express">
+          <div class="express-intro"><div><strong>Le nécessaire, rien de plus</strong><p>Choisis le mois, renseigne les heures et vérifie le total. L’aperçu se met à jour aussitôt.</p></div><button id="cloneLast" type="button" class="secondary">↺ Reprendre la dernière facture</button></div>
+          <p id="lastInfo" class="last-info" role="status">Aucune facture récente enregistrée sur cet appareil.</p>
+          <div class="quick-fields">
+            <label>Mois de prestation <input id="quickPeriod" type="month"></label>
+            <label>Date de la facture <input id="quickDate" type="date"></label>
+            <label>Référence <input id="quickNumber" type="text" autocomplete="off"></label>
+            <label>Nom du valideur <input id="quickValidator" type="text" autocomplete="off" placeholder="Facultatif"></label>
+          </div>
+          <div class="quick-table-head"><strong>Prestations</strong><span>Accepte aussi 1h30, 1:30, 2,5…</span></div>
+          <div id="quickLines" class="quick-lines"></div>
+          <div class="quick-total"><span>Total HT calculé</span><strong id="quickTotal">0,00 €</strong></div>
+          <div id="validationMessage" class="validation-message" role="alert" hidden></div>
+          <button id="openAdvanced" type="button" class="advanced-link">Modifier d'autres éléments de la facture →</button>
+        </section>
+        <section id="advancedPanel" class="editor" aria-label="Modifier la facture" hidden>
+          <h2>Informations générales</h2>
+          <div class="fields">
+            <label>Référence<input id="number"></label><label>Date de la facture<input id="date" type="date"></label>
+            <label>Mois de prestation<input id="period" type="month"></label>
+            <div class="due-setting"><label class="checkbox-row"><input id="showDue" type="checkbox"> Afficher une échéance sur la facture</label><label id="dueWrap" hidden>Échéance<input id="due" type="date"></label></div>
+          </div>
+          <h2>Prestations <small class="subheading">Modifiables ligne par ligne</small></h2>
+          <div id="lines"></div><button id="add" class="secondary" type="button">+ Ajouter une prestation</button>
+          <h2>Mise en forme du document</h2>
+          <div class="format-controls"><label class="checkbox-row"><input id="italicAmounts" type="checkbox" checked> Prix unitaires et montants en italique</label><p>Comme sur tes modèles, les désignations peuvent avoir une partie en italique sans modifier les autres mots.</p></div>
+          <div class="doc-custom">
+            <p class="doc-custom-tip">L'aperçu de droite est interactif : clique sur un texte pour retrouver son réglage. Les couleurs et le titre s'appliquent aussi au PDF et au Word.</p>
+            <div class="doc-custom-grid">
+              <label class="wide">Titre du document<input id="docTitle" type="text" maxlength="48" value="FACTURE"></label>
+              <label>Taille du titre<select id="docTitleSize"><option value="13">Discrète</option><option value="15" selected>Normale</option><option value="18">Grande</option></select></label>
+              <label class="checkbox-row"><input id="docTitleBold" type="checkbox" checked> Titre en gras</label>
+              <label class="checkbox-row"><input id="docProjectBold" type="checkbox" checked> Commanditaire en gras</label>
+              <label>Couleur du commanditaire<input id="docAccent" type="color" value="#8243a8"></label>
+              <label>Fond des encadrés<input id="docSoft" type="color" value="#f9eff0"></label>
+              <label>Couleur du titre<input id="docTitleColor" type="color" value="#5d292b"></label>
+              <label>Fond des en-têtes du tableau<input id="docTable" type="color" value="#ededed"></label>
+            </div>
+          </div>
+          <h2>Coordonnées et mentions</h2>
+          <details><summary>Personnaliser les informations de la facture</summary>
+            <div class="fields">
+              <label>Nom émetteur<input id="issuer"></label><label>Numéro SIRET<input id="siret"></label>
+              <label>Adresse émetteur<textarea id="address"></textarea></label><label>Contact<textarea id="contact"></textarea></label>
+              <label>Destinataire / entreprise<input id="client"></label><label>Adresse destinataire<textarea id="clientAddress"></textarea></label>
+              <label>Commanditaire / objet<input id="project"></label><label>Valideur (modifiable)<input id="validator" placeholder="Nom du valideur"></label>
+              <label>Code ou référence du commanditaire<input id="projectCode"></label>
+              <label>Déclaration RCS (facultatif)<textarea id="rcs"></textarea></label>
+              <label>Conditions de règlement<textarea id="terms"></textarea></label><label>Mentions fiscales<textarea id="tax"></textarea></label>
+              <label>RIB / coordonnées bancaires<input id="rib"></label><label>Phrase de clôture<textarea id="closing"></textarea></label>
+            </div>
+          </details>
+        </section>
+        <div class="bottom"><div><small>Total HT</small><strong id="total">0,00 €</strong></div><div class="export"><button id="archiveInvoice" type="button" class="secondary">Enregistrer</button><button id="pdf" type="button">Télécharger le PDF</button><button id="word" type="button">Télécharger le Word (.docx)</button></div></div>
+        <p id="draftSaveState" class="draft-save-state" role="status">Brouillon prêt pour la sauvegarde automatique.</p>
+        <p id="activeInvoiceNotice" class="active-invoice-notice" role="status">Nouvelle facture · Référence proposée, non encore enregistrée.</p>
+        <p class="note">Le PDF et le document Word sont générés localement, sans envoi de données. Les données restent sur cet appareil ; active le coffre local depuis « Sauvegardes » pour chiffrer leur stockage. Utilise une sauvegarde chiffrée pour les transférer. Aucune synchronisation automatique entre appareils. Pense à conserver séparément les factures exportées ; la sauvegarde du navigateur ne remplace pas une archive comptable.</p>
+        </div>
+        <section class="manager-panel dashboard-panel" id="dashboardPanel" hidden aria-labelledby="dashboardHeading">
+          <div class="manager-heading"><div><small>V45 · SUIVI FINANCIER</small><h2 id="dashboardHeading">Mon activité en un regard</h2><p>Factures émises, encaissements réellement datés et sommes restant à percevoir. Les brouillons ne sont jamais comptabilisés.</p></div></div>
+          <div class="dashboard-filters"><label>Année de référence<select id="dashboardYear"><option value="2026">2026</option></select></label><label>Client<select id="dashboardClient"><option value="">Tous les clients</option></select></label></div>
+          <div class="dashboard-stats"><article><span>Facturé sur l’année</span><strong id="dashboardBilled">0,00 €</strong><small id="dashboardInvoiceCount">0 facture émise</small></article><article><span>Encaissé sur l’année</span><strong id="dashboardReceived">0,00 €</strong><small>Selon les dates réelles des règlements saisis</small></article><article><span>Reste à percevoir</span><strong id="dashboardRemaining">0,00 €</strong><small>Sur les factures émises dans l’année sélectionnée</small></article><article><span>Factures partiellement payées</span><strong id="dashboardPartial">0</strong><small>Au moins un règlement, solde positif</small></article></div>
+          <p class="dashboard-legacy" id="dashboardLegacy" hidden></p>
+          <div class="dashboard-section"><div class="dashboard-section-head"><h3>Évolution mensuelle</h3><div class="dashboard-legend"><span class="dashboard-legend-billed">Facturé</span><span class="dashboard-legend-received">Encaissé</span></div></div><div id="dashboardBars" class="dashboard-chart" role="group" aria-label="Graphique comparatif des montants mensuels"></div><p id="dashboardChartDesc" class="helper"></p></div>
+          <div class="dashboard-columns"><section class="dashboard-section"><h3>Par client</h3><div id="dashboardBreakdown"></div></section><section class="dashboard-section"><h3>Derniers encaissements</h3><div id="dashboardRecent"></div></section></div>
+          <div class="dashboard-export"><div><h3>Exporter mon suivi</h3><p>Deux fichiers CSV indépendants : les factures selon leur date d’émission et les règlements selon leur date d’encaissement. Export filtré par l’année et le client affichés.</p></div><div class="dashboard-export-buttons"><button id="dashboardCsvInvoices" type="button" class="secondary">CSV · Factures</button><button id="dashboardCsvPayments" type="button">CSV · Encaissements</button><button id="dashboardCsvCredits" type="button" class="secondary">CSV · Avoirs</button></div></div>
+          <div class="dashboard-credit-note" id="dashboardCreditsNote"></div><p id="dashboardCsvInfo" class="helper" role="status"></p><p class="dashboard-disclaimer">Ces chiffres reposent sur les données enregistrées sur cet appareil : ils ne vérifient pas les virements bancaires et ne constituent ni une déclaration de chiffre d’affaires, ni une facture électronique réglementaire. Les montants sont exprimés en euros HT selon les factures.</p>
+        </section>
+        <section class="manager-panel reports-panel" id="reportsPanel" hidden aria-labelledby="reportsHeading">
+          <div class="manager-heading"><div><small>V49 · PILOTAGE DE L’ACTIVITÉ</small><h2 id="reportsHeading">Mes bilans</h2><p>Rapproche les heures enregistrées, les factures, les avoirs et les règlements. Chaque chiffre est associé à sa date réelle : les événements d’un même mois ne correspondent pas nécessairement à une seule facture.</p></div></div>
+          <div class="reports-filters">
+            <label>Année<select id="reportsYear" aria-label="Année du bilan"></select></label>
+            <label>Période<select id="reportsMonth" aria-label="Mois du bilan"><option value="">Toute l’année</option><option value="01">Janvier</option><option value="02">Février</option><option value="03">Mars</option><option value="04">Avril</option><option value="05">Mai</option><option value="06">Juin</option><option value="07">Juillet</option><option value="08">Août</option><option value="09">Septembre</option><option value="10">Octobre</option><option value="11">Novembre</option><option value="12">Décembre</option></select></label>
+            <label>Client<select id="reportsClient"><option value="">Tous les clients</option></select></label>
+          </div>
+          <div class="reports-totals" aria-live="polite">
+            <article><span>Heures travaillées</span><strong id="reportsHours">0 h</strong><small id="reportsSessions">0 séance</small></article>
+            <article><span>Heures à facturer</span><strong id="reportsOpenHours">0 h</strong><small id="reportsOpenValue">0,00 € estimé</small></article>
+            <article><span>Factures émises (brut)</span><strong id="reportsIssued">0,00 €</strong><small>Selon la date des factures</small></article>
+            <article><span>Avoirs émis</span><strong id="reportsCredits">0,00 €</strong><small>Selon la date des avoirs</small></article>
+            <article><span>Émissions nettes</span><strong id="reportsNet">0,00 €</strong><small>Factures moins avoirs émis sur la période</small></article>
+            <article><span>Encaissements datés</span><strong id="reportsPaid">0,00 €</strong><small>Selon la date de chaque règlement</small></article>
+          </div>
+          <div class="reports-comparison" id="reportsComparison" aria-live="polite"></div>
+          <section class="reports-block" aria-labelledby="reportsMonthlyHeading">
+            <div class="reports-block-head"><div><h3 id="reportsMonthlyHeading">Les douze mois</h3><p>Séances par date de travail · factures par émission · avoirs par émission · encaissements par règlement.</p></div></div>
+            <div class="reports-table-wrap"><table class="reports-table"><thead><tr><th>Mois</th><th>Heures</th><th>Non facturées</th><th>Facturé</th><th>Avoirs</th><th>Encaissé</th></tr></thead><tbody id="reportsMonthlyRows"></tbody><tfoot id="reportsMonthlyFoot"></tfoot></table></div>
+            <p class="helper">Clique sur un mois pour afficher son détail. Sur téléphone, fais glisser le tableau horizontalement pour consulter toutes les colonnes. Les événements suivent leurs dates réelles.</p>
+          </section>
+          <section class="reports-block" aria-labelledby="reportsAuditHeading"><div class="reports-block-head"><div><h3 id="reportsAuditHeading">Points à vérifier</h3><p>Des indications pour repérer des saisies manquantes et des divergences ; ce n’est pas un contrôle comptable certifié.</p></div></div><div id="reportsAlerts" class="reports-alerts" aria-live="polite"></div></section>
+          <section class="reports-block" aria-labelledby="reportsDetailHeading"><div class="reports-block-head"><div><h3 id="reportsDetailHeading">Détail de la période</h3><p>Prestations, factures, avoirs et règlements datés.</p></div></div><div id="reportsDetail" class="reports-detail" aria-live="polite"></div></section>
+          <div class="reports-export"><div><strong>Conserver mon bilan</strong><p>CSV récapitulatif ou journal détaillé (séparateur « ; »). Le rapport imprimable s’ouvre dans une nouvelle fenêtre pour l’impression ou l’enregistrement en PDF.</p></div><div class="reports-export-actions"><button id="reportsCsvSummary" type="button" class="secondary">CSV · 12 mois</button><button id="reportsCsvDetailed" type="button" class="secondary">CSV · Journal</button><button id="reportsPrint" type="button">Imprimer / PDF</button></div></div>
+          <p id="reportsMessage" class="manager-message" role="status"></p>
+          <p class="dashboard-disclaimer">Bilan indicatif fondé uniquement sur les données locales et sur leur date enregistrée. « Émissions nettes » n’est pas le chiffre d’affaires encaissé ; les encaissements ne sont pas des bénéfices. Les heures facturées ne sont reconnues comme telles que si la facture comporte un lien explicite vers le registre. Les factures créées manuellement peuvent donc ne pas être rapprochables. Aucun rapprochement bancaire n’est effectué.</p>
+        </section>
+        <section class="manager-panel time-panel" id="timePanel" hidden aria-labelledby="timeHeading">
+          <div class="manager-heading"><div><small>V46 · SUIVI DES PRESTATIONS</small><h2 id="timeHeading">Mes heures de travail</h2><p>Ajoute chaque séance ou permanence. Les heures enregistrées et non encore facturées peuvent être transformées en facture mensuelle, sans ressaisie.</p></div></div>
+          <div class="time-form-shell">
+            <div class="time-form-head"><strong id="timeFormTitle">Nouvelle séance</strong><span>Enregistrement local · sur cet appareil</span></div>
+            <form id="timeForm" class="time-fields">
+              <label>Date de la séance <input id="timeDate" type="date" required></label>
+              <label>Client / commanditaire <select id="timeClient" required><option value="sejer">SEJER · Profs en ligne</option></select></label>
+              <label>Prestation <select id="timeKind"><option value="with">Avec élève / en appel</option><option value="without">Sans élève / sans appel</option><option value="custom">Autre prestation</option></select></label>
+              <label>Durée <input id="timeDuration" type="text" inputmode="decimal" required placeholder="1h30, 1:30, 2,5, 90min…"></label>
+              <label>Tarif horaire (€) <input id="timeRate" type="number" min="0" step="0.01" required value="30"></label>
+              <label class="time-description">Description (facultative) <input id="timeDescription" maxlength="240" placeholder="Ex. permanence en appel, cours de philosophie…"></label>
+              <label class="time-description">Note interne (jamais sur la facture) <input id="timeNote" maxlength="400" placeholder="Ex. horaires, préparation, commentaire…"></label>
+              <div class="time-form-actions"><button id="timeSave" type="submit">Enregistrer la séance</button><button id="timeCancel" type="button" class="secondary" hidden>Annuler la modification</button></div>
+            </form>
+            <p class="time-message" id="timeMessage" role="status"></p>
+          </div>
+          <div class="time-ledger">
+            <div class="time-ledger-head"><div><h3>Registre mensuel</h3><p>Une ligne enregistrée ne peut être intégrée qu’à une facture émise.</p></div></div>
+            <div class="time-filter-row"><label>Mois <input id="timeMonth" type="month"></label><label>Client <select id="timeFilterClient"><option value="">Tous les clients</option></select></label><label>État <select id="timeStatus"><option value="all">Toutes les heures</option><option value="unbilled">Non facturées</option><option value="billed">Facturées</option></select></label></div>
+            <div class="time-summary"><div><span>Heures enregistrées</span><strong id="timeHours">0 h</strong></div><div><span>Non facturées</span><strong id="timeOpenHours">0 h</strong></div><div><span>Montant non facturé</span><strong id="timeOpenTotal">0,00 €</strong></div></div>
+            <div class="time-ledger-actions"><button id="timeGenerate" type="button">Créer la facture du mois →</button><button id="timeExportCsv" type="button" class="secondary">Exporter les heures (CSV)</button></div>
+            <p class="time-hint" id="timeGenerateHint" role="status">Sélectionne un client pour générer sa facture.</p>
+            <div id="timeList" class="time-list" aria-live="polite"></div>
+          </div>
+          <p class="dashboard-disclaimer">Le registre n'est pas un calendrier synchronisé. Les durées sont calculées en heures décimales et les tarifs sont ceux de chaque séance enregistrée. Les PDF/Word restent préparés dans l’onglet « Créer » avant émission. Les heures associées à une facture émise sont verrouillées pour éviter les doublons.</p>
+        </section>
+        <section class="manager-panel collection-panel" id="collectionPanel" hidden aria-labelledby="collectionHeading">
+          <div class="manager-heading"><div><small>V47 · PAIEMENTS ET RELANCES</small><h2 id="collectionHeading">Suivi des échéances</h2><p>Retrouve les factures à encaisser et prépare tes relances. Les messages ne sont jamais envoyés automatiquement.</p></div></div>
+          <div class="collection-stats"><article><span>En retard</span><strong id="collectionLateCount">0</strong></article><article><span>Montant en retard</span><strong id="collectionLateTotal">0,00 €</strong></article><article><span>À encaisser</span><strong id="collectionOpenTotal">0,00 €</strong></article></div>
+          <div class="collection-filters"><label>Afficher <select id="collectionFilter"><option value="open">À encaisser</option><option value="late">En retard</option><option value="soon">À échéance sous 7 jours</option><option value="unknown">Échéance à renseigner</option><option value="all">Toutes les factures émises</option></select></label><label>Rechercher <input id="collectionSearch" type="search" placeholder="Client, référence…"></label></div>
+          <div id="collectionList" class="record-list" aria-live="polite"></div>
+          <p id="collectionMessage" class="manager-message" role="status"></p>
+          <p class="collection-disclaimer">La date de suivi peut être différente de l'affichage de l'échéance sur la facture. À défaut d'une date renseignée, seuls les délais simples exprimés en jours dans les conditions de règlement sont proposés automatiquement. Vérifie les conditions convenues avant toute relance.</p>
+        </section>
+        <section class="manager-panel credits-panel" id="creditsPanel" hidden aria-labelledby="creditsHeading">
+          <div class="manager-heading"><div><small>V47 · DOCUMENTS RECTIFICATIFS</small><h2 id="creditsHeading">Avoirs</h2><p>Un avoir est un document distinct, lié à une facture déjà émise. L'original reste archivé et ne peut pas être réécrit.</p></div></div>
+          <div class="credit-summary"><span>Avoirs enregistrés</span><strong id="creditsTotal">0,00 €</strong><small id="creditsHelp">Les avoirs diminuent le montant à percevoir, mais n'enregistrent pas de remboursement bancaire.</small></div>
+          <div id="creditsList" class="record-list" aria-live="polite"></div>
+          <p class="manager-message" id="creditsMessage" role="status"></p>
+          <p class="collection-disclaimer">Pour corriger une facture déjà émise, conserve la facture initiale, émet un avoir adapté, puis prépare une nouvelle facture avec un numéro distinct. Un avoir ne rembourse pas automatiquement un encaissement déjà reçu. Vérifie aussi les mentions nécessaires à ton cas avant son envoi.</p>
+        </section>
+        <section class="manager-panel automation-panel" id="automationPanel" hidden aria-labelledby="automationHeading">
+          <div class="manager-heading"><div><small>V50 · AUTOMATISATION ASSISTÉE</small><h2 id="automationHeading">Facturation mensuelle, sans ressaisie</h2><p>Prépare des règles par client, retrouve automatiquement les heures non facturées et crée plusieurs brouillons d’un seul geste. Tu vérifies et émets chaque facture toi-même.</p></div></div>
+          <div class="automation-period">
+            <label>Mois à préparer<input id="autoMonth" type="month"></label>
+            <label>Date des factures<input id="autoDate" type="date"></label>
+            <button type="button" class="secondary" id="autoRefresh">Actualiser le mois</button>
+          </div>
+          <section class="automation-card" aria-labelledby="autoRulesHeading">
+            <div class="automation-card-head"><div><h3 id="autoRulesHeading">Mes règles récurrentes</h3><p>Les règles enregistrées servent à préparer les mois suivants, sans émission automatique.</p></div><button id="autoNewRule" type="button" class="secondary">Nouvelle règle</button></div>
+            <div class="automation-rule-form" id="autoRuleForm">
+              <label>Nom de la règle<input id="autoName" maxlength="100" placeholder="Ex. SEJER · permanence mensuelle"></label>
+              <label>Client<select id="autoClient"></select></label>
+              <label>Source des prestations<select id="autoSource"><option value="hours">Heures non facturées du registre</option><option value="fixed">Montants et quantités d’un modèle</option></select></label>
+              <label>Modèle de document<select id="autoTemplate"></select></label>
+              <div class="automation-rule-actions"><button type="button" id="autoSaveRule">Enregistrer cette règle</button><button type="button" id="autoCancelRule" class="secondary" hidden>Annuler la modification</button></div>
+            </div>
+            <p class="helper">Pour les heures : les tarifs enregistrés lors de chaque séance font foi. Pour les prestations fixes : définis d’abord les quantités et prix dans l’onglet « Modèles ». Aucun total nul n’est émis.</p>
+            <div id="autoRuleList" class="automation-rule-list" aria-live="polite"></div>
+          </section>
+          <section class="automation-card" aria-labelledby="autoBatchHeading">
+            <div class="automation-card-head"><div><h3 id="autoBatchHeading">Préparer les factures du mois</h3><p>Une facture par client et par mois : les doublons et les prestations déjà facturées sont écartés.</p></div></div>
+            <div class="automation-metrics"><div><small>Prêtes</small><strong id="autoReadyCount">0</strong></div><div><small>Montant estimé</small><strong id="autoTotalAmount">0,00 €</strong></div><div><small>À vérifier</small><strong id="autoBlockedCount">0</strong></div></div>
+            <div id="autoCandidates" class="automation-candidates" aria-live="polite"></div>
+            <div class="manager-actions"><button type="button" id="autoGenerate" disabled>Créer les brouillons du mois</button><button id="autoHistory" type="button" class="secondary">Consulter les factures</button></div>
+            <p id="autoMessage" class="manager-message" role="status"></p>
+          </section>
+          <section class="automation-card" aria-labelledby="autoCloseHeading">
+            <div class="automation-card-head"><div><h3 id="autoCloseHeading">Clôture mensuelle guidée</h3><p>Un contrôle local de fin de mois ; il ne constitue ni une déclaration fiscale ni une clôture comptable réglementaire.</p></div></div>
+            <div id="autoCloseChecks" class="automation-checks" aria-live="polite"></div>
+            <label class="automation-note">Note personnelle de clôture<textarea id="autoCloseNote" rows="2" maxlength="500" placeholder="Points à revoir, justificatifs envoyés…"></textarea></label>
+            <div class="manager-actions"><button id="autoCloseSave" type="button" class="secondary">Enregistrer le contrôle du mois</button><button id="autoCloseDownload" type="button" class="secondary">Récapitulatif CSV</button></div>
+            <p id="autoCloseMessage" class="manager-message" role="status"></p>
+          </section>
+        </section>
+        <section class="manager-panel" id="clientsPanel" hidden aria-labelledby="clientsHeading">
+          <div class="manager-heading"><div><small>CARNET D'ADRESSES</small><h2 id="clientsHeading">Mes clients</h2><p>Enregistre les destinataires, les valideurs et les tarifs habituels. Chaque client pourra ensuite être réutilisé.</p></div><button id="clientNew" class="secondary" type="button">+ Nouveau</button></div>
+          <label class="manager-select">Profil existant<select id="clientProfileList"><option value="">Nouveau profil</option></select></label>
+          <div class="manager-fields">
+            <label>Nom du profil<input id="clientProfileName" placeholder="Ex. SEJER · Profs en ligne"></label>
+            <label>Destinataire<input id="clientProfileClient" placeholder="Nom de l'entreprise ou du client"></label>
+            <label class="wide">Adresse du destinataire<textarea id="clientProfileAddress" rows="3"></textarea></label>
+            <label class="wide">Commanditaire / objet<input id="clientProfileProject"></label>
+            <label>Valideur<input id="clientProfileValidator" placeholder="Facultatif"></label>
+            <label>Référence interne<input id="clientProfileCode" placeholder="Facultatif"></label>
+            <label class="wide">Conditions de paiement<textarea id="clientProfileTerms" rows="2"></textarea></label>
+            <label class="wide">Mentions fiscales<textarea id="clientProfileTax" rows="2"></textarea></label>
+          </div>
+          <div class="manager-fields client-prices" aria-label="Tarifs habituels de ce client">
+            <label>Tarif avec élève (€/h)<input id="clientProfileRateWith" type="number" min="0" max="1000000" step="0.01" placeholder="Ex. 40"></label>
+            <label>Tarif sans élève (€/h)<input id="clientProfileRateWithout" type="number" min="0" max="1000000" step="0.01" placeholder="Ex. 10"></label>
+            <label>Tarif autre prestation (€/h)<input id="clientProfileRateCustom" type="number" min="0" max="1000000" step="0.01" placeholder="Facultatif"></label>
+            <p class="helper wide">Ces tarifs seront proposés pour les nouvelles séances du registre. Ils ne modifient jamais les heures déjà enregistrées ni les anciennes factures.</p>
+          </div>
+          <label class="checkbox-row manager-checkbox"><input id="clientProfileKeepLines" type="checkbox" checked> Mémoriser aussi les lignes de prestations et les tarifs actuels</label>
+          <div class="manager-actions"><button id="clientSave" type="button">Enregistrer le profil</button><button id="clientUse" class="secondary" type="button">Utiliser dans la facture</button><button id="clientRemove" class="danger" type="button" disabled>Supprimer</button></div>
+          <p id="clientMessage" class="manager-message" role="status"></p>
+          <p class="helper">Pour créer un profil à partir de ta facture en cours, clique sur « Nouveau », puis sur « Récupérer les champs de la facture ».</p>
+          <button id="clientCapture" class="quiet" type="button">↳ Récupérer les champs de la facture</button>
+        </section>
+        <section class="manager-panel" id="templatesPanel" hidden aria-labelledby="templatesHeading">
+          <div class="manager-heading"><div><small>MISES EN PAGE RÉUTILISABLES</small><h2 id="templatesHeading">Mes modèles</h2><p>Un modèle reprend les textes, l'italique, les prestations et les tarifs. Les dates et numéros se renouvellent automatiquement.</p></div></div>
+          <div class="manager-new-template"><label>Nom de mon nouveau modèle<input id="templateName" placeholder="Ex. SEJER sans permanence en appel"></label><button id="templateSave" type="button">Enregistrer la facture actuelle comme modèle</button></div>
+          <div id="templateList" class="record-list" aria-live="polite"></div>
+          <p id="templateMessage" class="manager-message" role="status"></p>
+        </section>
+        <section class="manager-panel" id="historyPanel" hidden aria-labelledby="historyHeading">
+          <div class="manager-heading"><div><small>ARCHIVES LOCALES</small><h2 id="historyHeading">Historique des factures</h2><p>Retrouve, consulte, réexporte ou duplique une facture. Un document déjà émis reste inchangé dans l'historique.</p></div><button id="historyNew" type="button">+ Nouvelle facture</button></div>
+          <div id="historyStats" class="history-stats" aria-live="polite"></div>
+          <div class="history-filters archive-filters"><label>Rechercher<input id="historySearch" type="search" placeholder="Référence, client, désignation, valideur…"></label><label>Année<select id="historyYear"><option value="">Toutes les années</option></select></label><label>Client<select id="historyClient"><option value="">Tous les clients</option></select></label><label>État<select id="historyStatus"><option value="">Tous les états</option><option value="draft">Brouillons</option><option value="issued">Émises</option><option value="sent">Envoyées</option><option value="paid">Payées</option></select></label></div>
+          <div id="historyFilteredCount" class="archive-filter-summary" aria-live="polite"></div>
+          <div id="historyList" class="record-list archive-list" aria-live="polite"></div>
+          <section class="archive-workspace" aria-labelledby="archiveWorkspaceTitle"><div class="archive-workspace-head"><div><small>V52 · CLASSEMENT ET EXPORT</small><h3 id="archiveWorkspaceTitle">Mon dossier annuel</h3><p>Retrouve les documents émis par année et par client. Exporte leurs PDF, leurs avoirs et un tableau récapitulatif dans un seul ZIP, sans service extérieur.</p></div></div>
+            <div class="archive-controls"><label>Année à archiver<select id="archiveYear"><option value="">Choisir une année</option></select></label><label class="archive-word-check"><input id="archiveIncludeWord" type="checkbox"> Ajouter les fichiers Word (.docx)</label><button id="archiveExport" type="button">Télécharger le dossier ZIP</button></div>
+            <div id="archiveYearSummary" class="archive-year-summary" aria-live="polite"></div>
+            <div class="archive-checks"><div class="archive-checks-head"><strong>Vérification des documents</strong><span>Indications à contrôler, sans modification des factures déjà émises</span></div><div id="archiveAlerts" class="archive-alert-list" aria-live="polite"></div></div>
+            <p id="archiveMessage" class="manager-message" role="status" aria-live="polite"></p>
+            <p class="archive-privacy"><strong>Confidentialité :</strong> le ZIP annuel n’est pas chiffré et contient les coordonnées de tes clients et tes documents. Conserve-le dans un emplacement protégé. Il ne remplace pas une sauvegarde chiffrée complète dans « Sauvegardes ». Les factures exportées sont générées à partir des données archivées dans ce navigateur.</p>
+          </section>
+          <p id="historyMessage" class="manager-message" role="status"></p>
+        </section>
+        <section class="manager-panel" id="backupPanel" hidden aria-labelledby="backupHeading">
+          <div class="manager-heading"><div><small>V50 · DONNÉES ET CONFIDENTIALITÉ</small><h2 id="backupHeading">Mes sauvegardes</h2><p>Transfère tes clients, factures, heures de travail, modèles et ton brouillon entre ordinateurs. Le fichier de sauvegarde est chiffré avec un mot de passe que tu choisis.</p></div></div>
+          <section class="vault-settings" aria-labelledby="vaultHeading">
+            <div class="vault-settings-head"><span aria-hidden="true">◈</span><div><strong id="vaultHeading">Mon coffre local</strong><p id="vaultSetup">État du chiffrement local…</p></div></div>
+            <p>Protège sur cet appareil l'historique des factures, les clients, les heures, les modèles et les brouillons avec une phrase secrète indépendante. Tu la ressaisiras à chaque ouverture de l'outil. Cette protection n'est pas une connexion sécurisée au serveur. Utilise ce coffre dans un seul onglet à la fois.</p>
+            <div class="manager-fields"><label>Nouvelle phrase secrète (12 caractères minimum)<input id="vaultNewPassword" type="password" autocomplete="new-password" minlength="12" placeholder="Phrase secrète longue, différente d'alohomora"></label><label>Confirmer la phrase secrète<input id="vaultNewConfirm" type="password" autocomplete="new-password" minlength="12" placeholder="Répéter à l'identique"></label></div>
+            <div class="vault-actions"><button id="vaultEnable" type="button">Activer le chiffrement local</button><button id="vaultRotate" type="button" hidden>Changer la phrase secrète</button><button id="vaultLock" class="secondary" type="button" hidden>Verrouiller le coffre maintenant</button></div>
+            <p id="vaultStatus" class="manager-message" role="status" aria-live="polite"></p>
+            <p class="vault-note"><strong>Important :</strong> conserve également une sauvegarde externe chiffrée. Sans la phrase secrète, les données du coffre sont irrécupérables. Les PDF et Word déjà téléchargés ne sont pas chiffrés, et les informations présentes dans le code public du site ne le sont pas non plus.</p>
+          </section>
+          <div class="backup-security">🔒 <strong>Protection AES-GCM</strong><p>Un mot de passe de 10 caractères minimum est requis. Il ne sera pas enregistré sur le site. Sans ce mot de passe, impossible de restaurer le fichier.</p></div>
+          <div class="manager-fields">
+            <label>Mot de passe de sauvegarde<input id="backupPassword" type="password" autocomplete="new-password" minlength="10" placeholder="10 caractères minimum"></label>
+            <label>Confirmer le mot de passe (pour exporter)<input id="backupConfirm" type="password" autocomplete="new-password" placeholder="Répéter le mot de passe"></label>
+          </div>
+          <div class="backup-actions"><div><strong>1. Exporter mes données</strong><p>Une copie chiffrée de tes factures, avoirs, relances, heures, clients, modèles et brouillon.</p></div><button id="backupExport" type="button">Télécharger la sauvegarde</button></div>
+          <div class="backup-actions"><div><strong>2. Restaurer une sauvegarde</strong><p>Choisis un fichier <code>.philosophal</code> et saisis le mot de passe utilisé lors de son export.</p><input id="backupFile" type="file" accept=".philosophal,application/json" aria-label="Fichier de sauvegarde chiffrée"><label class="checkbox-row backup-replace"><input id="backupReplace" type="checkbox"> Remplacer mes données locales au lieu de fusionner</label></div><div class="backup-import-actions"><button id="backupCheck" type="button" class="secondary">Vérifier le fichier sans importer</button><button id="backupImport" type="button" class="secondary">Importer la sauvegarde</button></div></div>
+          <p id="backupMessage" class="manager-message" role="status" aria-live="polite"></p>
+          <div id="backupCheckSummary" class="backup-check-summary" hidden aria-live="polite"></div>
+          <p class="helper">Le fichier exporté est chiffré indépendamment du coffre local, avec le mot de passe saisi ci-dessus. Lorsque le coffre local est activé, les données courantes du navigateur y sont enregistrées sous forme chiffrée. Sans coffre, elles restent enregistrées en clair. Le code d’accès au site n'est pas une authentification serveur.</p>
+          <section class="exchange-panel" aria-labelledby="exchangeHeading"><div><small>PRÉPARATION 2027 · INTEROPÉRABILITÉ</small><h3 id="exchangeHeading">Préparer les données pour une plateforme agréée</h3><p>Vérifie quelques informations utiles à une facture structurée et exporte un fichier JSON de travail. <strong>Ce fichier n'est pas un format fiscal conforme, ni Factur-X, et il n'est envoyé à aucune plateforme.</strong></p></div>
+            <div class="exchange-stats"><strong id="exchangeScore">—</strong><button id="exchangeCheck" type="button" class="secondary">Vérifier la facture en cours</button></div><div id="exchangeChecks" class="exchange-checks"></div>
+            <button id="exchangeExport" type="button" class="secondary">Télécharger les données de préparation (JSON)</button><p id="exchangeMessage" class="manager-message" role="status"></p>
+            <p class="helper">Calendrier : réception de factures électroniques depuis le 1er septembre 2026, émission pour les microentreprises à partir du 1er septembre 2027, selon les opérations concernées. L’envoi réglementaire nécessitera une plateforme agréée. Vérifie les conditions exactes sur <a href="https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees" target="_blank" rel="noopener noreferrer">impots.gouv.fr</a>.</p>
+          </section>
+        </section>
+      </section>
+      <section class="preview-wrap"><div class="preview-label"><span>APERÇU A4 · CLIQUE SUR UN TEXTE POUR LE MODIFIER</span><span class="preview-live">● Actualisé automatiquement</span></div><article id="preview" class="paper"></article></section>
+    </main>
+  </div>
+  <dialog id="receiptDialog" class="receipt-dialog" aria-labelledby="receiptTitle"><div class="receipt-header"><div><small>ENCAISSEMENT</small><h2 id="receiptTitle">Enregistrer un règlement</h2><p id="receiptCaption"></p></div><button id="receiptClose" class="secondary" type="button" aria-label="Fermer">×</button></div>
+    <p id="receiptLegacyNote" class="dashboard-legacy" hidden>Cette ancienne facture est déjà marquée payée, mais sa date réelle de règlement est inconnue. Saisis cette date pour l'intégrer aux statistiques.</p>
+    <div id="receiptFormFields" class="receipt-fields"><label>Date réelle de règlement<input id="receiptDate" type="date" required></label><label>Montant encaissé (€)<input id="receiptAmount" type="number" min="0.01" step="0.01" required></label><label>Mode de règlement<select id="receiptMethod"><option value="bank">Virement</option><option value="cash">Espèces</option><option value="cheque">Chèque</option><option value="card">Carte</option><option value="other">Autre</option></select></label><label>Note facultative<input id="receiptNote" type="text" maxlength="500" placeholder="Référence du virement, précision…"></label></div>
+    <p id="receiptBalance" class="receipt-balance"></p><p id="receiptError" class="receipt-error" role="status"></p><h3>Règlements enregistrés</h3><div id="receiptList"></div>
+    <div class="receipt-actions"><button id="receiptCancel" class="secondary" type="button">Fermer</button><button id="receiptSave" type="button">Enregistrer le règlement</button></div>
+  </dialog>
+  <dialog id="collectionDialog" class="receipt-dialog" aria-labelledby="collectionDialogTitle">
+    <div class="receipt-header"><div><small>SUIVI DU RÈGLEMENT</small><h2 id="collectionDialogTitle">Date et contact</h2><p id="collectionDialogCaption"></p></div><button id="collectionClose" type="button" class="secondary" aria-label="Fermer">×</button></div>
+    <div class="receipt-fields"><label>Date limite de paiement <input id="collectionDue" type="date"></label><label>E-mail du destinataire (facultatif) <input id="collectionEmail" type="email" placeholder="contact@entreprise.fr" autocomplete="off"></label></div>
+    <p class="helper">La date sert au suivi et n'ajoute pas d'échéance sur le document PDF/Word. Vide la date pour la laisser indéterminée ; un délai explicite indiqué dans les conditions de règlement pourra être proposé.</p>
+    <p id="collectionDialogError" class="receipt-error" role="status"></p>
+    <div class="receipt-actions"><button id="collectionCancel" type="button" class="secondary">Annuler</button><button id="collectionSave" type="button">Enregistrer</button></div>
+  </dialog>
+  <dialog id="reminderDialog" class="receipt-dialog reminder-dialog" aria-labelledby="reminderTitle">
+    <div class="receipt-header"><div><small>RELANCE MANUELLE</small><h2 id="reminderTitle">Préparer un message</h2><p id="reminderCaption"></p></div><button id="reminderClose" type="button" class="secondary" aria-label="Fermer">×</button></div>
+    <div class="reminder-fields"><label>Style du message<select id="reminderTone"><option value="friendly">Courtois</option><option value="followup">Deuxième rappel</option><option value="formal">Plus formel</option></select></label><label>Adresse du destinataire<input id="reminderEmail" type="email" placeholder="Facultatif, à renseigner pour ouvrir un e-mail"></label><label>Objet<input id="reminderSubject" maxlength="180"></label><label>Corps du message<textarea id="reminderBody" rows="10" maxlength="9000"></textarea></label></div>
+    <p class="helper">Le bouton « Ouvrir dans ma messagerie » prépare seulement un e-mail ; il ne l'envoie pas. Tu peux modifier librement l'objet et le texte.</p>
+    <div id="reminderLog" class="reminder-log"></div><p id="reminderMessage" class="manager-message" role="status"></p>
+    <div class="receipt-actions"><button id="reminderCopy" type="button" class="secondary">Copier</button><button id="reminderMail" type="button" class="secondary">Ouvrir dans ma messagerie</button><button id="reminderMark" type="button">Noter la relance comme envoyée</button></div>
+  </dialog>
+  <dialog id="creditDialog" class="receipt-dialog credit-dialog" aria-labelledby="creditTitle">
+    <div class="receipt-header"><div><small>CRÉATION D'UN AVOIR</small><h2 id="creditTitle">Créer un avoir</h2><p id="creditCaption"></p></div><button id="creditClose" type="button" class="secondary" aria-label="Fermer">×</button></div>
+    <div class="receipt-fields"><label>Date d'émission <input id="creditDate" type="date" required></label><label>Montant à créditer (€) <input id="creditAmount" type="number" min="0.01" step="0.01" required></label><label class="credit-wide">Motif de l'avoir <textarea id="creditReason" rows="3" maxlength="550" placeholder="Ex. régularisation d'heures facturées en trop"></textarea></label></div>
+    <div class="credit-preview" id="creditPreview">Vérifie les informations avant création.</div><p id="creditError" class="receipt-error" role="status"></p>
+    <p class="helper">Un avoir émis est conservé dans l'historique et possède sa propre référence. La création est définitive. Le montant ne peut pas dépasser le solde restant à créditer sur la facture d'origine.</p>
+    <div class="receipt-actions"><button id="creditCancel" type="button" class="secondary">Annuler</button><button id="creditIssue" type="button">Créer et télécharger le PDF</button></div>
+  </dialog>
+  <script src="./factures-pdf.js?v=20261025-v52"></script>
+  <script src="./factures.js?v=20261025-v52"></script>
+</body>
+</html>

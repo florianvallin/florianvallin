@@ -349,3 +349,23 @@ html[data-site-theme="dark"] .tools-skip-link{background:#1d1921;color:#a69bde}
 @media screen {
   html[data-site-theme="dark"] .tool-tile--prompter {--tool-accent:#b1dbe0;--tool-tint:#1a2b30;--tool-edge:#4e727a;}
 }
+
+/* V41 : la zone de gestion n'apparaît qu'après authentification. */
+.has-professional-workspace .tools-hero{margin-top:36px}
+.pro-status-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 21px;background:#302642;border:1px solid #5e4c76;border-radius:15px;color:#fff;box-shadow:0 13px 30px #3026421c}
+.pro-status-copy{display:flex;align-items:center;gap:15px}.pro-status-copy>div{display:flex;flex-direction:column;gap:1px}.pro-status-copy strong{font-size:14px;font-weight:720}.pro-status-copy span:not(.pro-status-dot){font-size:12px;color:#c9bfd5}.pro-status-dot{flex:none;width:9px;height:9px;border-radius:50%;background:#b8e1cb;box-shadow:0 0 0 5px #b8e1cb25}
+.pro-logout{border:1px solid #7a698d;color:#f1eafa;background:#ffffff0b;padding:10px 14px;border-radius:9px;font-weight:650;font-size:12px;white-space:nowrap;cursor:pointer}.pro-logout:hover{background:#ffffff25}
+.pro-public-head{display:flex;align-items:baseline;gap:14px;margin-bottom:15px}.pro-public-head>span{color:#6f61a5;font-size:10px;font-weight:800;letter-spacing:.16em}.pro-public-head>p{font-size:12px;color:#7a7384;margin:0}
+.pro-workspace{margin:43px 0 15px;border:1px solid #d8c9e4;border-radius:22px;padding:26px;background:linear-gradient(130deg,#f2ecf9 0%,#fdfbff 75%);box-shadow:0 14px 45px #4130520c}
+.pro-workspace-head{display:flex;align-items:center;justify-content:space-between;gap:20px}.pro-workspace-kicker{color:#71518e;font-size:10px;letter-spacing:.13em;font-weight:800}.pro-workspace-kicker span{font-size:14px;letter-spacing:0}.pro-workspace-head h2{color:#2b223e;margin:5px 0 4px;font-weight:730;letter-spacing:-.03em;font-size:27px}.pro-workspace-head p{color:#746983;margin:0;font-size:13px}.pro-workspace-indicator{display:inline-flex;align-items:center;gap:8px;color:#4a785f;font-size:12px;font-weight:730;border-radius:30px;background:#e6f2eb;border:1px solid #cde4d6;padding:6px 11px;white-space:nowrap}.pro-workspace-indicator span{font-size:10px}
+.pro-tools-list{margin-top:23px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.pro-tool-card{display:flex;align-items:center;gap:17px;min-height:137px;text-decoration:none;color:#352744;border:1px solid #d8cce5;border-radius:15px;padding:20px;background:white;transition:transform .2s,border-color .2s,box-shadow .2s}.pro-tool-card:hover{transform:translateY(-2px);border-color:#9474b5;box-shadow:0 10px 30px #45355712}.pro-tool-card h3{font-size:19px;letter-spacing:-.02em;margin:3px 0}.pro-tool-card p{margin:0;font-size:12px;color:#72677c;line-height:1.55}.pro-tool-label{font-size:9px;letter-spacing:.14em;font-weight:800;color:#8460a8}.pro-card-icon{width:57px;height:57px;display:grid;place-items:center;flex:none;border-radius:14px;background:#efe7f6;color:#8261a6}.pro-card-icon svg{width:36px;height:36px}.pro-tool-arrow{align-self:start;margin-left:auto;color:#7e6796;font-size:18px}
+@media(max-width:740px){.pro-status-banner{flex-wrap:wrap}.pro-public-head{display:block}.pro-tools-list{grid-template-columns:1fr}.pro-workspace{padding:20px}.pro-workspace-indicator{display:none}}
+@media(prefers-reduced-motion:reduce){.pro-tool-card{transition:none}}
+
+/* Convertisseur universel : carte dédiée dans la grille publique. */
+.tool-tile--converter{--tool-accent:#367d86;--tool-tint:#e9f5f5;--tool-edge:#d5e9e9;background:linear-gradient(120deg,#fff 38%,#f2fbfa)}
+@media(max-width:860px){.tool-item--converter{grid-column:1/-1}}
+
+/* V54 : troisième outil, visible seulement dans le panneau professionnel. */
+.pro-tool-card--audiovisuel .pro-card-icon{background:#e5f3ef;color:#35776a}
+.pro-tool-card--audiovisuel:hover{border-color:#76a999}
