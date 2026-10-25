@@ -1,14 +1,14 @@
 // Les pages anciennes reçoivent aussi les destinations et raccourcis communs.
 (() => {
-  if (window.PHILOSOPHAL_NAVIGATION?.version === '20261022-v39') return;
+  if (window.PHILOSOPHAL_NAVIGATION?.version === '20261025-v54.8') return;
   const script = document.createElement('script');
-  script.src = new URL('navigation-shortcuts.js?v=20261022-v39', document.currentScript.src).href;
+  script.src = new URL('navigation-shortcuts.js?v=20261025-v54.8', document.currentScript.src).href;
   script.async = false; document.head.append(script);
 })();
 (() => {
   if (document.querySelector('script[data-fv-site-tools], script[src*="/js/site-tools.js"]')) return;
   const script = document.createElement("script");
-  script.src = new URL("site-tools.js?v=20261022-v39", document.currentScript.src).href;
+  script.src = new URL("site-tools.js?v=20261025-v54.8", document.currentScript.src).href;
   script.defer = true;
   script.dataset.fvSiteTools = "";
   document.head.append(script);
@@ -118,7 +118,6 @@
       <a class="nav-texts-link" href="${root}textes/">Textes</a>
       <a class="nav-blog-link" href="${root}blog/">Blog</a>
       <a class="nav-videos-link" href="${root}series/">Vidéos</a>
-      <a class="nav-tools-link" href="${root}outils/">Outils</a>
       <span class="nav-divider" aria-hidden="true"></span>
       <a class="nav-services-link" href="${homeAnchor('#philosophie')}">Prestations</a>
       <a class="nav-about-link" href="${homeAnchor('#quisuisje')}">Qui suis-je ?</a>
@@ -136,6 +135,7 @@
       <button type="button" class="nav-theme-toggle" data-site-theme-toggle aria-label="Activer le mode sombre" aria-pressed="false" title="Changer le thème">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2.75v2.1M12 19.15v2.1M4.75 12h2.1M17.15 12h2.1M5.8 5.8l1.48 1.48M16.72 16.72l1.48 1.48M18.2 5.8l-1.48 1.48M7.28 16.72 5.8 18.2"></path></svg>
       </button>
+      <a class="nav-tools-icon" href="${root}outils/" aria-label="Outils" title="Outils" data-nav-tools-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.3 6.1a5 5 0 0 0-6.4 6.4L3 17.4a2.1 2.1 0 0 0 3 3l4.9-4.9a5 5 0 0 0 6.4-6.4l-3 3-3.4-.6-.7-3.4z"/><path d="M19 3l2 2-2.9 2.9"/></svg></a>
       <a class="nav-contact-link nav-contact-desktop" href="${homeAnchor('#contact')}">Contactez-moi</a>
     `;
     const toggle = document.createElement('button');
@@ -158,7 +158,7 @@
     const currentMap = [
       ['.nav-texts-link', `${root}textes`],
       ['.nav-blog-link', `${root}blog`],
-      ['.nav-tools-link', `${root}outils`]
+      ['.nav-tools-icon', `${root}outils`]
     ];
     currentMap.forEach(([selector, target]) => {
       const link = nav.querySelector(selector);
@@ -581,7 +581,7 @@
               <kbd>Esc</kbd>
             </label>
             <div class="site-search-hints" data-site-search-hints><button type="button" data-site-search-example="liberté">Liberté</button><button type="button" data-site-search-example="Kant">Kant</button><button type="button" data-site-search-example="PDF">PDF</button><button type="button" data-site-search-example="téléprompteur">Téléprompteur</button><button type="button" data-site-search-example="media">Médiathèque</button></div>
-            <div class="site-search-status" data-site-search-status role="status" aria-live="polite">Commencez à écrire pour chercher dans les outils, la médiathèque publique, les parcours, les textes, le blog et les dictionnaires.</div>
+            <div class="site-search-status" data-site-search-status role="status" aria-live="polite">Commencez à écrire pour chercher dans les outils, la médiathèque, les parcours, les textes, le blog et les dictionnaires.</div>
             <div class="site-search-results" data-site-search-results></div>
           </section>
         </div>`);
@@ -599,7 +599,7 @@
       if (dataPromise) return dataPromise;
       dataPromise = new Promise((resolve, reject) => {
         const script = document.createElement("script");
-        script.src = "/js/site-search-data.js?v=20261022-v39";
+        script.src = "/js/site-search-data.js?v=20261025-v54.8";
         script.onload = () => resolve(window.FV_SITE_SEARCH_DATA || []);
         script.onerror = reject;
         document.head.append(script);
@@ -607,6 +607,19 @@
       return dataPromise;
     };
 
+    // Les accès professionnels ne figurent JAMAIS dans le catalogue public téléchargé.
+    // On ajoute uniquement leurs liens à l'affichage après l'identification existante.
+    const professionalSessionActive = () => {
+      try {
+        if (window.FV_PRIVATE_ACCESS?.role() === 'private') return true;
+        return sessionStorage.getItem('philosophal-invoice-entry-v1') === 'alo-2026';
+      } catch (_) { return false; }
+    };
+    const professionalSearchEntries = Object.freeze([
+      {type:'Outil',title:'Philosophal Cut',meta:'Montage vidéo · Timeline · Dérushage',excerpt:'Éditeur de montage vidéo professionnel',keywords:'cut professionnel pro vidéo montage timeline découpage rush premiere',url:'/outils/philosophal-cut/',boost:145},
+      {type:'Outil',title:'Studio audiovisuel',meta:'Capture · Microphone · Webcam · Transcription',excerpt:'Enregistrer et transcrire la voix, la caméra et l’écran',keywords:'studio audiovisuel professionnel pro microphone webcam transcription sous titres capture écran audio',url:'/outils/studio-audiovisuel/',boost:145},
+      {type:'Outil',title:'Factures',meta:'Facturation · Documents PDF',excerpt:'Gestion des factures professionnelles',keywords:'facture factures professionnel pro facturation devis paiement pdf',url:'/outils/factures/',boost:140}
+    ]);
     const escapeHtml = (value) => String(value || "").replace(/[&<>\"]/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
     const highlight = (value, query) => {
       const tokens = normalizeSearch(query).split(" ").filter((token) => token.length > 1);
@@ -696,14 +709,15 @@
       const request = ++searchRequest;
       if (query.length < 2) {
         results.innerHTML = "";
-        status.textContent = "Commencez à écrire pour chercher dans les outils, la médiathèque publique, les parcours, les textes, le blog et les dictionnaires.";
+        status.textContent = "Commencez à écrire pour chercher dans les outils, la médiathèque, les parcours, les textes, le blog et les dictionnaires.";
         return;
       }
       status.textContent = "Recherche…";
       try {
         const data = await ensureData();
         if (request !== searchRequest) return;
-        const found = data.map((item) => ({ item, score:scoreItem(item, query) })).filter((entry) => entry.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
+        const searchable = professionalSessionActive() ? data.concat(professionalSearchEntries) : data;
+        const found = searchable.map((item) => ({ item, score:scoreItem(item, query) })).filter((entry) => entry.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
         status.textContent = found.length ? `${found.length} résultat${found.length > 1 ? "s" : ""} parmi les plus pertinents.` : "Aucun résultat. Essayez un auteur, une notion ou un mot voisin.";
         results.innerHTML = renderGroup(found.filter(({item})=>navigationKind(item)),query,'Accès directs','navigation')
           + renderGroup(found.filter(({item})=>!navigationKind(item)),query,'Textes et ressources','content');
@@ -725,6 +739,8 @@
       shell.hidden = true;
       document.body.classList.remove("site-search-open");
     };
+
+    window.FV_PRIVATE_ACCESS?.ready?.then(() => { if (shell && !shell.hidden && input?.value.trim()) renderResults(); }).catch(() => {});
 
     window.FVSiteSearch = { open, close };
 

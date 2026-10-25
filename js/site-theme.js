@@ -86,6 +86,16 @@
         group.append(button); toolbar.append(group);
       } else { button.classList.add('ph-theme-floating'); document.body.append(button); }
     }
+    // Navigation d’outils compacte pour les pages qui ne reconstruisent pas le header.
+    const navLinks=document.querySelector('.navbar .nav-links');
+    const headerActions=document.querySelector('.navbar .nav-header-actions');
+    navLinks?.querySelectorAll('.nav-tools-link').forEach(link=>link.remove());
+    if(headerActions && !headerActions.querySelector('[data-nav-tools-icon]')){
+      const link=document.createElement('a');link.className='nav-tools-icon';link.href='/outils/';
+      link.dataset.navToolsIcon='';link.title='Outils';link.setAttribute('aria-label','Outils');
+      link.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.3 6.1a5 5 0 0 0-6.4 6.4L3 17.4a2.1 2.1 0 0 0 3 3l4.9-4.9a5 5 0 0 0 6.4-6.4l-3 3-3.4-.6-.7-3.4z"/><path d="M19 3l2 2-2.9 2.9"/></svg>';
+      button.insertAdjacentElement('afterend',link);
+    }
     apply(current);
     // Délégation globale : le header peut être reconstruit après le montage.
     document.addEventListener('click', (event) => {

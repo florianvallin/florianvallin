@@ -15,7 +15,7 @@ import argparse
 from series_calendar import paris_day, public_episode
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = '20261022-v39'
+RELEASE = '20261025-v54.8'
 SERIES_URL = '/series/philosophie-de-l-amour/'
 parser = argparse.ArgumentParser(description='Générer les pages selon le jour de publication à Paris.')
 parser.add_argument('--as-of', help='Date/instant simulé, uniquement vers un répertoire de test.')
@@ -117,7 +117,8 @@ def excerpt_panels(ep):
         if not paragraphs:
             continue
         quoted = ''.join('<p>' + ('« ' if i == 0 else '') + E(text) + (' »' if i == len(paragraphs)-1 else '') + '</p>' for i, text in enumerate(paragraphs))
-        panels.append(f'<details class="episode-excerpt"><summary>Lire l’extrait · {E(source["work"])} {E(source["range"])}</summary><div class="episode-excerpt-body"><blockquote cite="{E(source["sourceUrl"], quote=True)}">{quoted}</blockquote><p class="episode-excerpt-reference"><cite>{E(source["reference"])}</cite></p>{link("Consulter la source publique", source["sourceUrl"])}</div></details>')
+        open_by_default = ' open' if ep.get('number') == 2 else ''
+        panels.append(f'<details class="episode-excerpt"{open_by_default}><summary>Lire l’extrait · {E(source["work"])} {E(source["range"])}</summary><div class="episode-excerpt-body"><blockquote cite="{E(source["sourceUrl"], quote=True)}">{quoted}</blockquote><p class="episode-excerpt-reference"><cite>{E(source["reference"])}</cite></p>{link("Consulter la source publique de l’ouvrage", source["sourceUrl"])}</div></details>')
     return ''.join(panels)
 
 
@@ -154,7 +155,7 @@ def episode(ep):
             <h3 id="titre-{E(ep['id'])}">{E(ep['title'])}</h3>
             <p class="episode-question">{E(ep['question'])}</p>
             <p class="episode-description">{E(ep['description'])}</p>
-            <div class="episode-reading">{reading}</div>
+            {f'<div class="episode-reading">{reading}</div>' if reading else ''}
             {excerpt_panels(ep)}
           </div>
         </article>
@@ -163,14 +164,14 @@ def episode(ep):
 def course_cta(minimal=False):
     if minimal:
         return '''<aside class="series-course-minimal" aria-label="Cours particuliers"><p>Envie d’approfondir en cours ?</p><a href="/#contact">Prendre un cours <span aria-hidden="true">→</span></a></aside>'''
-    return '''<section class="series-course-cta" aria-labelledby="cours-title"><div><span class="series-kicker">Cours particuliers</span><h2 id="cours-title">Aller plus loin, ensemble.</h2><p>Philosophie et méthodologie, à Montpellier ou à distance.</p></div><a class="series-primary" href="/#contact">Prendre un cours <span aria-hidden="true">→</span></a></section>'''
+    return '''<section class="series-course-cta" aria-labelledby="cours-title"><div><span class="series-kicker">Cours particuliers</span><h2 id="cours-title">Aller plus loin, ensemble.</h2><p>Philosophie et méthodologie.</p></div><a class="series-primary" href="/#contact">Prendre un cours <span aria-hidden="true">→</span></a></section>'''
 
 def view_control(label):
     return f'''<div class="series-view-control" data-series-view-control hidden><span>Affichage</span><div class="series-view-options" role="group" aria-label="{E(label)}"><button type="button" data-series-view-choice="detailed" aria-pressed="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="3" width="14" height="6" rx="1.5"/><rect x="3" y="12" width="14" height="5" rx="1.5"/></svg>Détaillé</button><button type="button" data-series-view-choice="compact" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 4h10M7 10h10M7 16h10M3 4h1M3 10h1M3 16h1"/></svg>Compact</button></div></div>'''
 
 follow = f'''<section class="series-follow" aria-labelledby="suivre-la-serie">
         <h2 id="suivre-la-serie">Les vidéos sur les réseaux</h2>
-        <nav aria-label="Suivre Philosophal">{link('TikTok', 'https://www.tiktok.com/@lephilosophal')}{link('YouTube', 'https://www.youtube.com/channel/UClfhjKJbbtW0HJPcxDdTwyg')}</nav>
+        <nav aria-label="Suivre Philosophal">{link('TikTok', 'https://www.tiktok.com/@lephilosophal')}{link('Instagram', 'https://www.instagram.com/lephilosophal/')}{link('YouTube', 'https://www.youtube.com/channel/UClfhjKJbbtW0HJPcxDdTwyg')}{link('Facebook', 'https://www.facebook.com/people/Philosophal/61595862237018/?locale=fr_FR')}</nav>
       </section>'''
 
 index_content = f'''<nav class="series-breadcrumb" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><span aria-current="page">Vidéos</span></nav>
@@ -185,6 +186,7 @@ index_content = f'''<nav class="series-breadcrumb" aria-label="Fil d’Ariane"><
           <div class="series-collection-copy"><h2>Philosophie de l’<em>amour</em></h2><span class="series-episode-count">{len(EPISODES)} épisodes</span><span class="series-card-arrow" aria-hidden="true">→</span></div>
         </a>
       </section>
+      {follow}
       {course_cta(minimal=True)}'''
 
 jumps = ''.join(f'<a href="#{E(e["id"])}"><span>{e["number"]:02}</span>{E((e["author"].split(" · ")[0]+" · ") if e.get("author") else "")}{E(e["title"])}</a>' for e in EPISODES)

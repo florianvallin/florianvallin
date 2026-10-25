@@ -264,7 +264,7 @@
       const active = wantsPrivate ? state.access !== "public" : state.access === "public";
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
-      if (wantsPrivate) button.textContent = state.access === "student" ? "Élève" : "Privé";
+      if (wantsPrivate) button.textContent = "Élève";
     });
     document.body.dataset.mediaAccess = state.access;
     render();

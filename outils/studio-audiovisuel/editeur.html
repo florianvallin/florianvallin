@@ -23,8 +23,8 @@
     Promise.resolve(api?.ready).then(allow).catch(function(){location.replace('/outils/studio-audiovisuel/');});
   })();
   </script>
-  <meta name="description" content="Philosophal Studio audiovisuel V11 — enregistrement, capture, analyse, traitement, transcription et exports multimédia.">
-  <title>Studio audiovisuel — Philosophal · V11</title>
+  <meta name="description" content="Philosophal Studio audiovisuel V54.2 — enregistrement, capture, analyse, traitement, transcription et exports multimédia.">
+  <title>Studio audiovisuel — Philosophal · V54.4</title>
   <style>
     :root { color-scheme: dark; --bg:#10151b;--panel:#181f27;--panel2:#1d252f;--panel3:#222c37;--line:#2c3743;--text:#e9eef2;--muted:#9caab7;--soft:#718293;--accent:#a8d3c7;--accent-strong:#8dbfb0;--accent-dim:rgba(168,211,199,.10);--red:#dc6d6c;--red-dim:rgba(220,109,108,.12);--amber:#e3bd7d;--shadow:0 14px 35px rgba(0,0,0,.13);--radius:17px; }
     :root[data-theme="light"] {color-scheme:light; --bg:#f4f6f7;--panel:#fff;--panel2:#f7f9fa;--panel3:#edf1f2;--line:#e0e7e9;--text:#1e2d35;--muted:#687783;--soft:#8796a1;--accent:#236c60;--accent-strong:#185849;--accent-dim:rgba(35,108,96,.08);--red:#b94243;--red-dim:rgba(185,66,67,.09);--amber:#a26c20;--shadow:0 15px 45px rgba(30,46,54,.055);}
@@ -181,6 +181,15 @@
 @media(max-width:630px){.sidebar{max-width:100vw;overflow:hidden}.sidebar nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none;overscroll-behavior-inline:contain}.sidebar nav::-webkit-scrollbar{display:none}.nav-list{width:max-content}.v8-strip{grid-template-columns:minmax(0,1fr) auto;min-width:0}.v8-source-text{overflow:hidden}.v8-source-meta{overflow:hidden;text-overflow:ellipsis;max-width:100%}.v8-strip-actions{gap:4px}.v8-strip-actions .v8-btn{padding:7px 6px;min-width:30px;justify-content:center}}
 @media(max-width:650px){.v11-topbtn{padding:0 9px}.v11-topbtn span:not(.v11-alert-dot){display:none}.v11-dialog-header{padding:19px}.v11-dialog-body{padding:17px}.v11-check-grid{grid-template-columns:1fr}.v11-settings{grid-template-columns:1fr}.v11-dialog-header h2{font-size:20px}}
 </style>
+<style id="v544-longtakes-styles">
+.v544-disk-mode{display:flex;align-items:flex-start;gap:10px;padding:12px 15px;margin-top:12px;border-radius:11px;background:var(--panel,#1c2830);border:1px solid var(--line,#35424e);color:var(--text,#e5edf1);max-width:100%;font-size:12px;line-height:1.55;cursor:pointer}
+.v544-disk-mode input{accent-color:var(--accent,#97cdbb);width:17px;height:17px;flex:0 0 17px;margin:2px 0 0}
+.v544-disk-mode strong{display:block;font-size:12px;margin-bottom:2px}.v544-disk-mode small{display:block;font-size:11px;color:var(--muted,#98aebc);line-height:1.6}
+.v544-meterline{font-size:11px;color:var(--muted,#98aebc);margin:7px 3px 0;min-height:16px;font-variant-numeric:tabular-nums}
+.v544-meterline strong{color:var(--text,#e8f1f3)}
+@media(max-width:680px){.v544-disk-mode{padding:11px;font-size:11px}}
+</style>
+<script src="/js/pro-av-streaming-v54.4.js?v=20261025-v54.4"></script>
 </head>
 <body>
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs>
@@ -216,7 +225,7 @@
       <button class="nav-button" id="navProjects" title="Bibliothèque des projets"><svg><use href="#ic-file"/></svg><span>Projets</span></button>
       <button class="nav-button" id="navExports" title="Exports avancés"><svg><use href="#ic-download"/></svg><span>Exporter</span></button>
     </div></nav>
-    <div class="sidebar-bottom"><div class="small-version"><span>STUDIO AUDIOVISUEL</span><span>V11.0</span></div><p>Un environnement de création, local et sans compte.</p><div class="brand-footer">Chercher. Discerner. Transmettre.</div></div>
+    <div class="sidebar-bottom"><div class="small-version"><span>STUDIO AUDIOVISUEL</span><span>V54.4</span></div><p>Un environnement de création, local et sans compte.</p><div class="brand-footer">Chercher. Discerner. Transmettre.</div></div>
   </aside>
   <main class="content">
     <header class="topbar"><div class="crumb">Studio audiovisuel <span style="color:var(--soft)">/</span> <strong id="sectionBreadcrumb">Enregistrement vocal</strong></div><div class="top-actions"><span class="local-chip"><i class="dot"></i> Traitement local</span><button class="v11-topbtn" type="button" id="v11Open" title="Tester la compatibilité et les performances du studio"><svg><use href="#ic-chart"/></svg><span>Diagnostic</span><span id="v11TopBadge" class="v11-alert-dot" hidden>!</span></button><button class="icon-btn" id="themeBtn" title="Changer le thème" aria-label="Changer le thème"><svg><use href="#ic-sun"/></svg></button></div></header>
@@ -244,7 +253,7 @@
 </dialog>
 <dialog class="v8-dialog" id="v8HelpDialog" aria-labelledby="v8HelpTitle" style="width:min(520px,calc(100vw - 28px))"><div class="v8-dialog-head"><div><h2 class="v8-dialog-title" id="v8HelpTitle">Raccourcis du studio</h2><div class="v8-dialog-subtitle">Les touches ne prennent pas la main pendant la saisie d’un texte. Ctrl+, ouvre le diagnostic.</div></div><button id="v8HelpClose" type="button" class="v8-icon-btn" aria-label="Fermer"><svg><use href="#ic-stop"/></svg></button></div><div class="v8-dialog-content"><div class="v8-shortcut-layout"><div class="v8-shortcut-line"><span>Ajouter un marqueur</span><kbd>Ctrl + M</kbd></div><div class="v8-shortcut-line"><span>Ouvrir le flux de travail</span><kbd>F2</kbd></div><div class="v8-shortcut-line"><span>Ouvrir un module</span><kbd>Alt + 1 … 6</kbd></div><div class="v8-shortcut-line"><span>Reculer d'une seconde</span><kbd>Alt + ←</kbd></div><div class="v8-shortcut-line"><span>Avancer d'une seconde</span><kbd>Alt + →</kbd></div><div class="v8-shortcut-line"><span>Fermer cette fenêtre</span><kbd>Échap</kbd></div></div><p class="v8-note">Les raccourcis internes aux modules (R dans l’enregistreur, espace pendant certaines lectures) restent disponibles. Certaines combinaisons peuvent être réservées par le navigateur ou le système.</p></div></dialog>
 
-    <div id="voiceView"><section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Enregistrement vocal</h1><p>Capturez votre voix, réécoutez vos prises et exportez en WAV. Aucun compte ni serveur.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Session locale · non sauvegardée</div></section>
+    <div id="voiceView"><section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Enregistrement vocal</h1><p>Capturez votre voix, réécoutez vos prises et exportez en WAV. Aucun compte ni serveur.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Session locale · non sauvegardée</div></section>
     <section class="workspace">
       <div class="main-stack">
         <section class="panel" aria-label="Enregistreur vocal">
@@ -256,6 +265,7 @@
           <div class="stats"><div class="stat"><div class="stat-label">Durée de la prise</div><div class="stat-value" id="duration">00:00</div></div><div class="stat"><div class="stat-label">Niveau en direct</div><div class="stat-value" id="rms">— <small>dBFS</small></div></div><div class="stat"><div class="stat-label">Crête en direct</div><div class="stat-value" id="peak">— <small>dBFS</small></div></div></div>
           <div class="meter-wrap"><div class="meter-track" aria-label="Vumètre"><div class="meter-fill" id="meterFill"></div></div><div class="meter-scale"><span>−60</span><span>−48</span><span>−36</span><span>−24</span><span>−12</span><span>0 dBFS</span></div></div>
           <div class="transport"><button class="record-btn" id="recordBtn"><span class="record-disc"></span><span id="recordLabel">Commencer l'enregistrement</span></button><button class="secondary-btn" id="pauseBtn" disabled><svg><use href="#ic-pause"/></svg><span>Pause</span></button><button class="secondary-btn" id="stopBtn" disabled><svg><use href="#ic-stop"/></svg><span>Terminer</span></button><div class="transport-note" id="transportNote">WAV · Mono · PCM 16 bits</div></div>
+<label class="v544-disk-mode" for="v544VoiceDisk"><input id="v544VoiceDisk" type="checkbox"><span><strong>Longue prise · enregistrer directement sur mon disque</strong><small>Mode recommandé pour les podcasts et narrations longues. Demande où créer le WAV au démarrage. Aucune accumulation de la prise entière en RAM.</small></span></label><div class="v544-meterline" id="v544VoiceSize" role="status">Mode standard · conseillé pour les prises courtes</div>
         </section>
         <section class="panel" aria-label="Réglages du microphone"><div class="panel-head"><div class="panel-title">Niveau d'entrée</div><span class="live-badge" id="levelBadge"><i></i><span>Micro inactif</span></span></div><div class="setting-body">
           <label class="form-label" for="micSelect">Source audio</label><div class="micro-row"><select class="select" id="micSelect"><option value="">Microphone par défaut</option></select><button class="mini-button" id="micBtn" title="Activer ou désactiver l'écoute du micro">Activer le micro</button></div>
@@ -277,7 +287,7 @@
 <div id="captureView" hidden>
   <section class="hero cap-hero">
     <div>
-      <div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div>
+      <div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div>
       <h1>Capture audiovisuelle</h1>
       <p>Enregistrez votre écran, votre caméra ou les deux, et composez vos vidéos aux formats 16:9 et 9:16.</p>
     </div>
@@ -316,6 +326,7 @@
           <span class="cap-clock" id="capClock">00:00</span>
         </div>
       </section>
+<label class="v544-disk-mode" for="v544VideoDisk"><input id="v544VideoDisk" type="checkbox"><span><strong>Longue capture · écrire directement sur mon disque</strong><small>WebM/MP4 selon le codec disponible. Les fragments sont écrits au fur et à mesure, sans les conserver en mémoire.</small></span></label><div class="v544-meterline" id="v544VideoSize" role="status">Mode standard · conseillé pour les vidéos courtes</div>
       <div class="cap-status" id="capStatus" role="status" aria-live="polite">Choisissez « Écran », « Webcam » ou « Écran + webcam » puis activez les sources nécessaires.</div>
       <section class="panel cap-library" aria-label="Enregistrements vidéo de la session">
         <div class="library-head"><div class="panel-title">Mes captures</div><span class="count" id="capCount">0 capture</span></div>
@@ -402,12 +413,12 @@
       <div class="notice"><svg><use href="#ic-info"/></svg><div><strong>Capture privée.</strong><br>Votre navigateur vous demande ce que vous souhaitez partager. Le son système n'est pas toujours accessible ; partagez un <strong>onglet avec son</strong> pour maximiser la compatibilité. <strong>Exportez les vidéos avant de quitter :</strong> elles sont conservées uniquement durant cette session.</div></div>
     </div>
   </section>
-  <footer class="footer"><span>Philosophal — Studio audiovisuel V10.0 · Capture locale</span><div class="shortcuts"><span><span class="kbd">Espace</span> Pause / reprise</span><span><span class="kbd">Échap</span> Arrêter la capture</span></div></footer>
+  <footer class="footer"><span>Philosophal — Studio audiovisuel V54.2 · Capture locale</span><div class="shortcuts"><span><span class="kbd">Espace</span> Pause / reprise</span><span><span class="kbd">Échap</span> Arrêter la capture</span></div></footer>
 </div>
 <dialog id="capRenameDialog" class="rename-dialog"><form method="dialog" id="capRenameForm"><h2>Renommer la capture</h2><p>Ce nom sera utilisé pour le téléchargement du fichier vidéo.</p><label class="form-label" for="capRenameInput">Nom</label><input class="input" id="capRenameInput" required maxlength="110"><div class="dialog-actions"><button type="button" class="secondary-btn" id="capRenameCancel">Annuler</button><button type="submit" class="record-btn">Enregistrer le nom</button></div></form></dialog>
 
 <div id="analysisView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Analyse audio</h1><p>Comprenez la dynamique, les fréquences et les silences de vos enregistrements. Toutes les analyses sont locales.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Aucun envoi de fichier</div></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Analyse audio</h1><p>Comprenez la dynamique, les fréquences et les silences de vos enregistrements. Toutes les analyses sont locales.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Aucun envoi de fichier</div></section>
   <section class="panel an-import an-drop" id="anDrop" aria-label="Importer un fichier audio">
     <div class="an-import-copy"><div class="an-import-icon"><svg><use href="#ic-chart"/></svg></div><div><strong id="anSourceLabel">Choisir un enregistrement à analyser</strong><small>Glissez un fichier audio ici, importez depuis votre ordinateur ou sélectionnez une prise de voix enregistrée dans le studio.</small></div></div>
     <div class="an-import-actions"><select id="anTakes" class="select" aria-label="Choisir une prise enregistrée"><option value="">Prises du studio…</option></select><button class="secondary-btn" type="button" id="anToProcess" disabled><svg><use href="#ic-sliders"/></svg> Traiter cet audio</button><button class="secondary-btn" type="button" id="anImportBtn"><svg><use href="#ic-file"/></svg> Importer un audio</button><input id="anFileInput" class="an-upload" type="file" accept="audio/*,.wav,.mp3,.m4a,.flac,.ogg,.opus,.aac,.webm" aria-label="Fichier audio à analyser"></div>
@@ -442,12 +453,12 @@
       <div class="notice"><svg><use href="#ic-info"/></svg><div><strong>Mesures indicatives.</strong><br>Le RMS est une mesure numérique globale, <strong>pas une mesure LUFS</strong>. Les valeurs de crête sont calculées sur les échantillons et non en « true peak ». L'analyse des silences ne coupe ni ne modifie votre audio.</div></div>
     </aside>
   </section>
-  <footer class="footer"><span>Philosophal — Studio audiovisuel V10.0 · Analyse locale, non destructive</span><div class="shortcuts"><span><span class="kbd">Espace</span> Lecture / pause</span><span><span class="kbd">← →</span> Avancer / reculer</span></div></footer>
+  <footer class="footer"><span>Philosophal — Studio audiovisuel V54.4 · Analyse locale, non destructive</span><div class="shortcuts"><span><span class="kbd">Espace</span> Lecture / pause</span><span><span class="kbd">← →</span> Avancer / reculer</span></div></footer>
 </div>
 
 
 <div id="processView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Traitement audio</h1><p>Égalisez, compressez, atténuez les bruits entre les phrases et exportez un master WAV, sans toucher à l'original.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Traitement local · non destructif</div></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Traitement audio</h1><p>Égalisez, compressez, atténuez les bruits entre les phrases et exportez un master WAV, sans toucher à l'original.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Traitement local · non destructif</div></section>
   <section class="panel pr-import" id="prDrop">
     <div class="pr-import-left"><svg><use href="#ic-file"/></svg><div><strong id="prFilename">Sélectionnez un enregistrement</strong><small>Importez un audio ou récupérez une prise de voix du studio. WAV, MP3, FLAC, M4A… selon le navigateur.</small></div></div>
     <div class="pr-import-actions"><select id="prTakes" class="select" aria-label="Prises vocales du studio"><option value="">Prises du studio…</option></select><button class="secondary-btn" type="button" id="prImport"><svg><use href="#ic-file"/></svg> Importer un audio</button><input id="prFile" type="file" accept="audio/*,.wav,.mp3,.m4a,.flac,.ogg,.opus,.aac,.webm" hidden></div>
@@ -492,7 +503,7 @@
 
 
 <div id="transcribeView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Transcription automatique</h1><p>Transformez une voix off, un podcast ou une vidéo en texte éditable, avec repères temporels. Reconnaissance locale avec Whisper.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Audio traité sur votre appareil</div></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Transcription automatique</h1><p>Transformez une voix off, un podcast ou une vidéo en texte éditable, avec repères temporels. Reconnaissance locale avec Whisper.</p></div><div class="session-pill"><svg><use href="#ic-lock"/></svg> Audio traité sur votre appareil</div></section>
   <section class="tr-workspace" aria-label="Espace de transcription">
     <div class="tr-primary">
       <section class="panel tr-drop" id="trDrop">
@@ -534,7 +545,7 @@
 
 
 <div id="subtitlesView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Studio de sous-titres</h1><p>Découpez les phrases, synchronisez le texte avec l’audio ou la vidéo, personnalisez le rendu et exportez des sous-titres prêts à importer.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Édition locale · aucune publication</div></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Studio de sous-titres</h1><p>Découpez les phrases, synchronisez le texte avec l’audio ou la vidéo, personnalisez le rendu et exportez des sous-titres prêts à importer.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Édition locale · aucune publication</div></section>
   <div class="sb-workspace">
     <div class="sb-main">
       <section class="panel" aria-label="Source des sous-titres">
@@ -580,7 +591,7 @@
 </div>
 
 <div id="exportsView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Atelier d'export</h1><p>Préparez une sortie adaptée à votre usage : voix off, podcast, archive, vidéo horizontale ou verticale. Formats disponibles vérifiés dans votre navigateur.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Encodage local</div></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Atelier d'export</h1><p>Préparez une sortie adaptée à votre usage : voix off, podcast, archive, vidéo horizontale ou verticale. Formats disponibles vérifiés dans votre navigateur.</p></div><div class="session-pill"><svg style="width:14px;height:14px"><use href="#ic-lock"/></svg> Encodage local</div></section>
   <div class="v9-workspace">
     <div class="v9-main">
       <section class="panel"><div class="v9-sectionhead"><div><h2>01 <span>·</span> Source</h2><p>Réutilisez une prise ou importez un média.</p></div><span id="v9SourceBadge" class="v9-chip">AUCUN MÉDIA</span></div>
@@ -612,7 +623,7 @@
 </div>
 
 <section id="projectsView" hidden>
-  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V11.0</div><h1>Mes projets</h1><p>Retrouvez vos prises, vidéos, transcriptions, sous-titres, réglages et repères. Vos projets sont enregistrés dans ce navigateur, sans serveur.</p></div><span class="hero-badge" id="v10HeroBadge">STOCKAGE LOCAL</span></section>
+  <section class="hero"><div><div class="eyebrow">PHILOSOPHAL STUDIO · V54.4</div><h1>Mes projets</h1><p>Retrouvez vos prises, vidéos, transcriptions, sous-titres, réglages et repères. Vos projets sont enregistrés dans ce navigateur, sans serveur.</p></div><span class="hero-badge" id="v10HeroBadge">STOCKAGE LOCAL</span></section>
   <div class="v10-workspace">
     <div class="v10-main">
       <section class="panel v10-banner"><div class="v10-icon"><svg><use href="#ic-file"/></svg></div><div><strong id="v10CurrentName">Initialisation des projets…</strong><small id="v10CurrentMeta">La sauvegarde des médias est incluse dans chaque projet.</small></div><span class="v10-state" id="v10State">…</span></section>
@@ -653,7 +664,7 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   const $ = (id) => document.getElementById(id);
   const ui = Object.fromEntries(['themeBtn','recordBtn','recordLabel','pauseBtn','stopBtn','micSelect','micBtn','noise','echo','agc','waveCanvas','waveOverlay','wavePlayhead','waveFrame','waveTitle','waveSubtitle','liveBadge','levelBadge','duration','rms','peak','meterFill','timeLeft','timeRight','transportNote','statusMessage','takeList','takeCount','playback','playbackName','playBtn','seek','playbackTime','renameBtn','exportBtn','renameDialog','renameForm','renameInput','renameCancel','audio'].map(k=>[k,$(k)]));
   const icons = (id) => `<svg><use href="#ic-${id}"/></svg>`;
-  const state = { status:'idle', micStream:null, ctx:null, source:null, analyser:null, monitorOut:null, captureNode:null, processor:'none', workerUrl:null, workletUrl:null, chunks:[], samples:0, rate:48000, startTime:0, elapsed:0, recordFrames:0, processing:false, takes:[], selected:null, counter:0, flushResolver:null, flushToken:0, actualDevice:'', liveBuffer:[], livePeaks:[], drawFrame:0, lastDataAt:0, emptyMic:false };
+  const state = { direct:null,autoStopped:false,diskPeaks:[],recordedDirect:false,status:'idle', micStream:null, ctx:null, source:null, analyser:null, monitorOut:null, captureNode:null, processor:'none', workerUrl:null, workletUrl:null, chunks:[], samples:0, rate:48000, startTime:0, elapsed:0, recordFrames:0, processing:false, takes:[], selected:null, counter:0, flushResolver:null, flushToken:0, actualDevice:'', liveBuffer:[], livePeaks:[], drawFrame:0, lastDataAt:0, emptyMic:false };
   const esc = (t) => String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fmt = (s) => {s=Math.max(0, Math.floor(Number(s)||0));return s>=3600?`${String(Math.floor(s/3600)).padStart(2,'0')}:${String(Math.floor((s%3600)/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`:`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;};
   const fmtClock = () => new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
@@ -661,6 +672,8 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   let toastTimer=0;
   const toast = (txt) => {let node=document.querySelector('.toast');if(!node){node=document.createElement('div');node.className='toast';document.body.appendChild(node);}node.textContent=txt;node.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{node.hidden=true;},3600);};
   const isBusy = () => state.status==='recording'||state.status==='paused'||state.processing;
+  const voiceDisk=$('v544VoiceDisk'),voiceSize=$('v544VoiceSize'),streamer=window.PhilosophalV544Streaming;
+  voiceDisk.disabled=!streamer?.supported();if(voiceDisk.disabled)voiceSize.textContent='Mode disque : disponible dans Brave/Chrome sur HTTPS uniquement.';
   const setBadge=(el,mode,text)=>{el.className='live-badge'+(mode?' '+mode:'');el.querySelector('span').textContent=text;};
   function updateUI(){
     const {status,processing,micStream}=state;const busy=status==='recording'||status==='paused';
@@ -675,7 +688,7 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
     else if(micStream){setBadge(ui.liveBadge,'ready','MICRO ACTIF');ui.waveTitle.textContent=state.selected?'Moniteur / Écoute':'Moniteur audio';ui.waveSubtitle.textContent=state.selected?'Micro actif · choisissez une prise pour la réécouter':'Le microphone est prêt à enregistrer';}
     else {setBadge(ui.liveBadge,'','INACTIF');ui.waveTitle.textContent=state.selected?'Écoute de la prise':'Moniteur audio';ui.waveSubtitle.textContent=state.selected?'Prise sélectionnée · lecture disponible':'En attente du microphone';}
     setBadge(ui.levelBadge,micStream?'ready':'',micStream?'Micro connecté':'Micro inactif');
-    ui.transportNote.textContent=processing?'Conversion locale…':`WAV · Mono · PCM 16 bits${state.ctx?' · '+(state.rate/1000).toFixed(1)+' kHz':''}`;
+    ui.transportNote.textContent=processing?'Finalisation du WAV…':`WAV · Mono · PCM 16 bits${state.ctx?' · '+(state.rate/1000).toFixed(1)+' kHz':''}`;voiceDisk.disabled=busy||processing||!streamer?.supported();
     ui.playback.hidden=!state.selected;
     ui.waveOverlay.classList.toggle('hidden',Boolean(micStream||state.selected));
     if(!micStream&&!state.selected)ui.waveOverlay.querySelector('.wave-intro').innerHTML=icons('wave')+'Activez votre microphone pour afficher le signal sonore en direct.';
@@ -697,18 +710,42 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   }catch(e){if(stream)stream.getTracks().forEach(t=>t.stop());state.micStream=null;cleanupGraph();showStatus(friendlyError(e),'error');updateUI();return false;}finally{ui.micBtn.disabled=false;}}
   async function restartMic(){if(isBusy())return;const wasOn=!!state.micStream;if(wasOn){releaseMic();await enableMic();}}
   function onWorkletMessage(e){if(e.data.type==='chunk'){if(state.status==='recording'||state.status==='paused'||state.processing)collectChunk(new Float32Array(e.data.buffer));}else if(e.data.type==='flushed'){if(state.flushResolver&&e.data.token===state.flushToken){const r=state.flushResolver;state.flushResolver=null;r();}}}
-  function collectChunk(copy){state.chunks.push(copy);state.samples+=copy.length;}
+  function collectChunk(copy){
+    if(state.status!=='recording'&&state.status!=='paused'&&!state.processing)return;
+    state.samples+=copy.length;
+    if(state.direct){
+      if(!state.direct.appendAudio(copy)&&!state.autoStopped){state.autoStopped=true;showStatus('Le débit de votre disque est insuffisant. Arrêt pour protéger l’enregistrement.','error');queueMicrotask(stopRecording);}
+      let peak=0;for(let i=0;i<copy.length;i++)peak=Math.max(peak,Math.abs(copy[i]));state.diskPeaks.push(peak);
+      if(state.diskPeaks.length>2400){const packed=[];for(let i=0;i<state.diskPeaks.length;i+=2)packed.push(Math.max(state.diskPeaks[i],state.diskPeaks[i+1]||0));state.diskPeaks=packed;}
+    }else{
+      state.chunks.push(copy);
+      if(state.samples*4>180*1024*1024&&!state.autoStopped){state.autoStopped=true;showStatus('Limite du mode standard atteinte (180 Mo de données audio). Finalisation automatique pour éviter une saturation de mémoire. Utilisez le mode disque pour une longue prise.','error');queueMicrotask(stopRecording);}
+    }
+    if(state.samples*2>0xffffffff-36&&!state.autoStopped){state.autoStopped=true;showStatus('Limite WAV atteinte. Finalisation automatique.','error');queueMicrotask(stopRecording);}
+  }
   function audioReset(){ui.audio.pause();ui.audio.removeAttribute('src');ui.audio.load();ui.playBtn.innerHTML=icons('play');ui.playBtn.setAttribute('aria-label','Lire la prise');ui.seek.value=0;ui.playbackTime.textContent='00:00';}
-  async function startRecording(){if(isBusy())return;if(!state.micStream){const ok=await enableMic();if(!ok)return;}if(state.ctx.state==='suspended')await state.ctx.resume();audioReset();state.selected=null;renderTakes();state.chunks=[];state.samples=0;state.livePeaks=[];state.recordFrames=0;state.startTime=performance.now();state.elapsed=0;state.status='recording';if(state.processor==='worklet')state.captureNode.port.postMessage({type:'record',enabled:true});ui.duration.textContent='00:00';ui.timeRight.textContent='00:00';ui.timeLeft.textContent='00:00';ui.wavePlayhead.style.display='none';updateUI();showStatus('Enregistrement en cours. Parlez à un niveau régulier, sans atteindre 0 dBFS.','success');}
+  async function startRecording(){
+   if(isBusy())return;
+   let direct=null;
+   if(voiceDisk.checked){try{direct=await streamer.open('wav','Philosophal-Voix-'+new Date().toISOString().slice(0,16).replace(':','h'));}catch(e){showStatus(e.name==='AbortError'?'Sélection de fichier annulée.':'Enregistrement direct impossible : '+e.message,'error');return;}}
+   try{
+     if(!state.micStream){const ok=await enableMic();if(!ok){await direct?.abort();return;}}
+     if(state.ctx.state==='suspended')await state.ctx.resume();
+     if(direct)await direct.initVoice(state.rate);
+     audioReset();state.selected=null;renderTakes();state.direct=direct;state.diskPeaks=[];state.autoStopped=false;state.chunks=[];state.samples=0;state.livePeaks=[];state.recordFrames=0;state.startTime=performance.now();state.elapsed=0;state.status='recording';
+     if(state.processor==='worklet')state.captureNode.port.postMessage({type:'record',enabled:true});ui.duration.textContent='00:00';ui.timeRight.textContent='00:00';ui.timeLeft.textContent='00:00';ui.wavePlayhead.style.display='none';updateUI();
+     showStatus(direct?'Enregistrement direct sur disque. Le fichier sera finalisé en cliquant sur Terminer.':'Enregistrement en mémoire. Pour les longues prises, privilégiez le mode disque.','success');
+   }catch(e){await direct?.abort();state.direct=null;showStatus('Démarrage impossible : '+e.message,'error');updateUI();}
+  }
   function pauseRecording(){if(state.status!=='recording')return;state.elapsed+=(performance.now()-state.startTime)/1000;state.status='paused';if(state.processor==='worklet')state.captureNode.port.postMessage({type:'record',enabled:false});updateUI();showStatus('Prise en pause. Appuyez sur Reprendre pour continuer.');}
   function resumeRecording(){if(state.status!=='paused')return;state.startTime=performance.now();state.status='recording';if(state.processor==='worklet')state.captureNode.port.postMessage({type:'record',enabled:true});updateUI();showStatus('Enregistrement repris.','success');}
   function toWav(chunks,rate){return new Promise((resolve,reject)=>{let done=false;try{const code=$('worker-code').textContent;const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));const worker=new Worker(url);let timeout=setTimeout(()=>{if(done)return;done=true;worker.terminate();URL.revokeObjectURL(url);reject(Error('Encodage interrompu (durée excessive).'));},240000);worker.onmessage=(e)=>{if(done)return;done=true;clearTimeout(timeout);worker.terminate();URL.revokeObjectURL(url);if(e.data.ok)resolve(e.data);else reject(Error(e.data.error));};worker.onerror=(e)=>{if(done)return;done=true;clearTimeout(timeout);worker.terminate();URL.revokeObjectURL(url);reject(Error('Échec de création du WAV.'));};worker.postMessage({chunks,rate},chunks.map(c=>c.buffer));}catch(e){reject(e);}});}
   function buildPeaks(chunks,max=1200){const total=chunks.reduce((n,c)=>n+c.length,0);const out=new Float32Array(Math.min(max,Math.max(1,Math.ceil(total/64))));const stride=total/out.length;let index=0,bucket=0,maximum=0,next=stride;for(const chunk of chunks){for(let i=0;i<chunk.length;i++){const a=Math.abs(chunk[i]);if(a>maximum)maximum=a;index++;if(index>=next&&bucket<out.length){out[bucket++]=maximum;maximum=0;next=(bucket+1)*stride;}}}if(bucket<out.length)out[bucket]=maximum;return out;}
   async function stopRecording(){if(state.status!=='recording'&&state.status!=='paused')return;const wasRecording=state.status==='recording';if(wasRecording)state.elapsed+=(performance.now()-state.startTime)/1000;state.processing=true;state.status='idle';updateUI();ui.stopBtn.disabled=true;showStatus('Finalisation du fichier audio…');try{
     if(state.processor==='worklet'){await Promise.race([new Promise(resolve=>{state.flushResolver=resolve;state.flushToken+=1;state.captureNode.port.postMessage({type:'flush',token:state.flushToken});}),new Promise(resolve=>setTimeout(resolve,700))]);state.flushResolver=null;}
-    const chunks=state.chunks;state.chunks=[];const sampleCount=chunks.reduce((n,ch)=>n+ch.length,0);if(sampleCount<1000){showStatus('Prise trop courte : aucun fichier créé.','error');return;}
-    const peaks=buildPeaks(chunks);const {blob,rate}=await toWav(chunks,state.rate);const id=++state.counter;const date=new Date();const name=`Prise ${String(id).padStart(2,'0')} — ${date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}`;const take={id,name,blob,url:URL.createObjectURL(blob),duration:sampleCount/rate,peaks,rate,date};state.takes.unshift(take);selectTake(id);window.PhilosophalV8MediaChange?.(take.blob,take.name+'.wav','voice');showStatus(`Prise enregistrée : ${name} · ${humanSize(blob.size)} · WAV PCM. Pensez à l’exporter.`,'success');toast('Prise ajoutée à la bibliothèque');
-  }catch(e){showStatus(`Erreur lors de l’export WAV : ${e.message}. Essayez une prise plus courte.`, 'error');console.error(e);}finally{state.processing=false;state.elapsed=0;updateUI();}}
+    const chunks=state.chunks;state.chunks=[];const sampleCount=state.direct?state.samples:chunks.reduce((n,ch)=>n+ch.length,0);if(sampleCount<1000){await state.direct?.abort();state.direct=null;showStatus('Prise trop courte : aucun fichier créé.','error');return;}
+    const peaks=state.direct?Float32Array.from(state.diskPeaks):buildPeaks(chunks);const disk=state.direct;const rate=state.rate;const blob=disk?await disk.finish(rate):(await toWav(chunks,rate)).blob;state.direct=null;const id=++state.counter;const date=new Date();const name=`Prise ${String(id).padStart(2,'0')} — ${date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}`;const take={id,name,blob,url:URL.createObjectURL(blob),duration:sampleCount/rate,peaks,rate,date,diskSaved:!!disk};state.takes.unshift(take);selectTake(id);window.PhilosophalV8MediaChange?.(take.blob,take.name+'.wav','voice');showStatus(`Prise enregistrée : ${name} · ${humanSize(blob.size)} · WAV PCM.${disk?' Fichier déjà sauvegardé sur votre disque.':' Pensez à l’exporter.'}`,'success');toast('Prise ajoutée à la bibliothèque');
+  }catch(e){showStatus(`Finalisation WAV impossible : ${e.message}. Vérifiez le fichier enregistré sur disque, ou essayez une prise plus courte.`, 'error');console.error(e);}finally{state.direct=null;state.processing=false;state.elapsed=0;updateUI();}}
   function humanSize(n){return n<1048576?`${Math.max(1,Math.round(n/1024))} Ko`:`${(n/1048576).toFixed(1)} Mo`;}
   function safeName(name){return String(name).normalize('NFKC').replace(/[\\/:*?"<>|\x00-\x1F]/g,'-').trim().replace(/[. ]+$/,'').slice(0,110)||'Prise-philosophal';}
   function exportTake(t){if(!t)return;const a=document.createElement('a');a.href=t.url;a.download=safeName(t.name)+'.wav';document.body.appendChild(a);a.click();a.remove();showStatus('Téléchargement WAV demandé : '+a.download,'success');}
@@ -752,6 +789,11 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
     }
   };
 
+  voiceDisk.addEventListener('change',()=>{voiceSize.textContent=voiceDisk.checked?'Destination demandée au démarrage · WAV PCM 16 bits':'Mode standard · limite de sécurité : 180 Mo de mémoire audio';});
+  setInterval(()=>{if(state.status==='recording'||state.status==='paused'){
+   const disk=state.direct,mb=(disk?disk.bytes:state.samples*4)/1048576;
+   voiceSize.innerHTML=`<strong>${mb.toFixed(1)} Mo</strong> ${disk?'écrits sur disque':'en mémoire vive'} · WAV final estimé ${(state.samples*2/1048576).toFixed(1)} Mo${disk?' · tampon '+(disk.pending/1048576).toFixed(1)+' Mo':''}`;
+  }},1500);
   updateUI();listMics();requestAnimationFrame(waveDraw);
 })();
 </script>
@@ -766,7 +808,7 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fname = s => String(s).normalize('NFKC').replace(/[\\/:*?"<>|\x00-\x1F]/g,'-').trim().replace(/[. ]+$/,'').slice(0,100)||'Capture-Philosophal';
   const bytes = n => n<1024*1024?`${(n/1024).toFixed(0)} Ko`:`${(n/(1024*1024)).toFixed(1)} Mo`;
-  const state = {screen:null,mic:null,recorder:null,recordStream:null,mixCtx:null,mixSourceNodes:[],dest:null,micGain:null,systemGain:null,mixAnalyser:null,meterBuffer:null,paused:false,stopping:false,busySelect:false,startedAt:0,elapsed:0,clockFrame:0,chosenMime:'',chunks:[],videos:[],selected:null,nextId:1,micRequesting:false,camera:null,cameraRequesting:false,composite:null,compositeSize:{width:1920,height:1080},camRect:{x:.64,y:.63,w:.30,h:.30},drag:null};
+  const state = {direct:null,recordBytes:0,limitWarned:false,autoStopped:false,screen:null,mic:null,recorder:null,recordStream:null,mixCtx:null,mixSourceNodes:[],dest:null,micGain:null,systemGain:null,mixAnalyser:null,meterBuffer:null,paused:false,stopping:false,busySelect:false,startedAt:0,elapsed:0,clockFrame:0,chosenMime:'',chunks:[],videos:[],selected:null,nextId:1,micRequesting:false,camera:null,cameraRequesting:false,composite:null,compositeSize:{width:1920,height:1080},camRect:{x:.64,y:.63,w:.30,h:.30},drag:null};
   window.PhilosophalV8Capture={media:()=>state.selected?.blob||null,position:()=>u.capPlaybackVideo.currentTime||0,seek:t=>{if(state.selected)u.capPlaybackVideo.currentTime=Math.max(0,Math.min(state.selected.duration,t));}};
   window.PhilosophalV6Videos=()=>state.videos.slice();
   window.PhilosophalV10Capture={
@@ -784,6 +826,8 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
     }
   };
 
+  const videoDisk=$('v544VideoDisk'),videoSize=$('v544VideoSize'),streamer=window.PhilosophalV544Streaming;videoDisk.disabled=!streamer?.supported();if(videoDisk.disabled)videoSize.textContent='Mode disque : Brave/Chrome récent en HTTPS uniquement.';
+  videoDisk.addEventListener('change',()=>{videoSize.textContent=videoDisk.checked?'Destination demandée au démarrage · écriture progressive':'Mode standard · limite de sécurité : 350 Mo en mémoire';});
   const recording = () => Boolean(state.recorder && state.recorder.state!=='inactive');
   const playingRecord = () => Boolean(state.recorder||state.stopping);
   const label = (text,level='') => {u.capStatus.textContent=text;u.capStatus.className='cap-status'+(level?' '+level:'');};
@@ -899,6 +943,7 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
       next=await navigator.mediaDevices.getDisplayMedia({video:{frameRate:{ideal:Number(u.capFps.value)}},audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false},systemAudio:'include',surfaceSwitching:'include'});
       const track=next.getVideoTracks()[0];
       if(!track)throw Error('Le navigateur n’a pas fourni de vidéo.');
+      if(u.captureView.hidden){next.getTracks().forEach(t=>t.stop());label('Partage autorisé, mais le module a été quitté : source libérée.');return;}
       stopScreen();state.screen=next;
       u.capPreview.srcObject=next;
       u.capPreview.muted=true;
@@ -925,7 +970,7 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
       if([...u.capMicSelect.options].some(o=>o.value===value))u.capMicSelect.value=value;
     }catch(e){console.warn('Microphones non accessibles',e);}
   }
-  function stopMic(){const old=state.mic;state.mic=null;if(old)old.getTracks().forEach(t=>t.stop());update();}
+  function stopMic(){const old=state.mic;state.mic=null;if(old)old.getTracks().forEach(t=>{try{t.stop();}catch{}});update();}
   async function ensureMic(){
     if(state.mic?.getAudioTracks().some(t=>t.readyState==='live'))return true;
     if(!navigator.mediaDevices?.getUserMedia){label('L’accès au microphone n’est pas disponible dans ce contexte.','error');return false;}
@@ -934,10 +979,16 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
     let stream=null;
     try{
       stream=await navigator.mediaDevices.getUserMedia({video:false,audio:{deviceId:u.capMicSelect.value?{ideal:u.capMicSelect.value}:undefined,echoCancellation:true,noiseSuppression:true,autoGainControl:false}});
+      if(u.captureView.hidden){stream.getTracks().forEach(t=>t.stop());return false;}
       state.mic=stream;
-      stream.getAudioTracks()[0]?.addEventListener('ended',()=>{if(state.mic===stream){state.mic=null;update();if(recording())label('Microphone débranché : la capture vidéo continue.','error');}});
+      stream.getAudioTracks()[0]?.addEventListener('ended',()=>{if(state.mic===stream){state.mic=null;update();if(recording())label('Microphone débranché : la capture vidéo continue.','error');else label('Microphone déconnecté : reconnectez la source.','error');}});
       await listMicrophones();return true;
-    }catch(e){if(stream)stream.getTracks().forEach(t=>t.stop());label(e?.name==='NotAllowedError'?'Microphone non autorisé. Autorisez-le dans Brave ou Chrome, ou désactivez « Inclure le microphone ».':`Microphone indisponible : ${e?.message||'erreur inconnue'}`,'error');return false;}
+    }catch(e){if(stream)stream.getTracks().forEach(t=>t.stop());
+      const tip=['NotAllowedError','PermissionDeniedError'].includes(e?.name)?'Microphone refusé : vérifiez les autorisations du site et de Windows, ou décochez « Inclure le microphone ».':
+      e?.name==='NotFoundError'?'Aucun microphone détecté. Vérifiez la connexion USB / Bluetooth.':
+      e?.name==='NotReadableError'?'Microphone occupé par une autre application ou bloqué par Windows.':
+      `Microphone indisponible : ${e?.message||'erreur inconnue'}`;
+      label(tip,'error');return false;}
     finally{state.micRequesting=false;update();}
   }
   u.capTestMic.addEventListener('click',async()=>{if(state.mic){stopMic();label('Microphone désactivé.');}else{if(await ensureMic())label('Microphone actif : il pourra être ajouté à l’enregistrement.','success');}});
@@ -986,10 +1037,14 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   }
   async function startCapture(){
     if(!hasVideo()||playingRecord())return;
+    let direct=null;
+    if(videoDisk.checked){try{const fmt=/mp4/i.test(defaultFormat.mime)?'mp4':'webm';direct=await streamer.open(fmt,'Philosophal-Capture-'+new Date().toISOString().slice(0,16).replace(':','h'));}
+      catch(e){label(e.name==='AbortError'?'Choix de fichier annulé.':'Écriture directe impossible : '+e.message,'error');return;}}
+    state.direct=direct;
     if(!window.MediaRecorder){label('Enregistrement vidéo non pris en charge par ce navigateur.','error');return;}
     u.capRecord.disabled=true;
     try{
-      if(u.capUseMic.checked&&!await ensureMic()){label('Microphone indisponible. Désactivez « Inclure le microphone » pour enregistrer sans micro.','error');return;}
+      if(u.capUseMic.checked&&!await ensureMic()){await state.direct?.abort();state.direct=null;label('Microphone indisponible. Désactivez « Inclure le microphone » pour enregistrer sans micro.','error');return;}
       const stream=await makeCombinedStream();state.recordStream=stream;
       const opts={videoBitsPerSecond:Number(u.capBitrate.value),audioBitsPerSecond:160000};
       if(defaultFormat.mime)opts.mimeType=defaultFormat.mime;
@@ -998,14 +1053,20 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
         if(e?.name!=='NotSupportedError')throw e;
         delete opts.mimeType;recorder=new MediaRecorder(stream,opts);
       }
-      state.recorder=recorder;state.chosenMime=recorder.mimeType||opts.mimeType||'video/webm';state.chunks=[];state.startedAt=performance.now();state.elapsed=0;state.paused=false;state.stopping=false;
-      recorder.addEventListener('dataavailable',e=>{if(e.data?.size)state.chunks.push(e.data);});
+      state.recorder=recorder;state.chosenMime=recorder.mimeType||opts.mimeType||'video/webm';state.chunks=[];state.recordBytes=0;state.autoStopped=false;state.limitWarned=false;state.startedAt=performance.now();state.elapsed=0;state.paused=false;state.stopping=false;
+      recorder.addEventListener('dataavailable',e=>{
+        if(!e.data?.size)return;
+        state.recordBytes+=e.data.size;
+        if(state.direct){if(!state.direct.appendVideo(e.data)&&!state.autoStopped){state.autoStopped=true;label('Le disque ne suit pas la capture. Arrêt automatique pour limiter les pertes.','error');queueMicrotask(stopCapture);}}
+        else{state.chunks.push(e.data);if(state.recordBytes>350*1024*1024&&!state.autoStopped){state.autoStopped=true;label('Limite mémoire du mode standard atteinte. Finalisation automatique. Pour une longue capture, choisissez le mode disque.','error');queueMicrotask(stopCapture);}}
+        if(state.recordBytes>200*1024*1024&&!state.limitWarned&&!state.direct){state.limitWarned=true;label('Capture volumineuse : pensez à terminer bientôt ou à utiliser le mode disque pour votre prochain enregistrement.','error');}
+      });
       recorder.addEventListener('error',e=>{label('Erreur de l’encodeur vidéo : '+(e.error?.message||'erreur inconnue')+'. La capture va être arrêtée.','error');stopCapture();});
       recorder.addEventListener('stop',finalize);
       recorder.start(1000);
       if(!recorder.state||recorder.state==='inactive')throw Error('Enregistrement non démarré.');
       update();label('Enregistrement vidéo actif. Pensez à terminer avant de fermer cette page.','success');
-    }catch(e){label('Démarrage impossible : '+(e.message||'erreur inconnue'),'error');state.recorder=null;state.stopping=false;dropAudioGraph();update();}
+    }catch(e){await state.direct?.abort();state.direct=null;label('Démarrage impossible : '+(e.message||'erreur inconnue'),'error');state.recorder=null;state.stopping=false;dropAudioGraph();update();}
     finally{update();}
   }
   function pauseCapture(){
@@ -1027,19 +1088,19 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
       catch(e){state.stopping=false;label('Impossible de terminer : '+e.message,'error');resolve();}
     });
   }
-  function finalize(){
-    const mime=state.chosenMime||'video/webm';
-    const blob=new Blob(state.chunks,{type:mime});
-    const seconds=Math.max(.1,state.elapsed);
-    const ext=/mp4/i.test(mime)?'mp4':'webm';
-    state.recorder=null;state.paused=false;state.stopping=false;state.chunks=[];
+  async function finalize(){
+    const mime=state.chosenMime||'video/webm',disk=state.direct,seconds=Math.max(.1,state.elapsed),ext=/mp4/i.test(mime)?'mp4':'webm';
+    state.stopping=true;state.recorder=null;state.paused=false;state.chunks=state.chunks||[];
     dropAudioGraph();u.capClock.textContent=fmt(0);u.capOverlayTime.textContent=fmt(0);
-    if(blob.size){
-      const date=new Date();const stamp=date.toLocaleDateString('fr-FR')+' · '+date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
-      const v={id:state.nextId++,name:`Capture ${date.toLocaleDateString('fr-FR').replaceAll('/','-')} ${date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}).replace(':','h')}`,date:stamp,duration:seconds,blob,url:URL.createObjectURL(blob),ext};
-      state.videos.unshift(v);selectVideo(v.id);label('Capture enregistrée. Elle sera sauvegardée dans votre projet local.','success');
-    }else label('Aucune donnée enregistrée. Vérifiez les autorisations ou allongez la capture.','error');
-    update();
+    try{
+      const blob=disk?await disk.finish():new Blob(state.chunks,{type:mime});
+      if(blob.size){
+        const date=new Date();const stamp=date.toLocaleDateString('fr-FR')+' · '+date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+        const v={id:state.nextId++,name:`Capture ${date.toLocaleDateString('fr-FR').replaceAll('/','-')} ${date.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}).replace(':','h')}`,date:stamp,duration:seconds,blob,url:URL.createObjectURL(blob),ext,diskSaved:!!disk};
+        state.videos.unshift(v);selectVideo(v.id);label(disk?'Capture enregistrée directement sur disque, également disponible dans la session.':'Capture enregistrée. Pensez à l’exporter ou à sauvegarder votre projet.','success');
+      }else label('Aucune donnée enregistrée. Vérifiez les autorisations ou allongez la capture.','error');
+    }catch(e){label('Erreur de finalisation : '+e.message+'. Vérifiez le fichier sur disque.','error');}
+    finally{state.direct=null;state.stopping=false;state.chunks=[];state.recordBytes=0;videoDisk.disabled=!streamer?.supported();update();}
   }
   const download = v => {if(!v)return;const a=document.createElement('a');a.href=v.url;a.download=`${fname(v.name)}.${v.ext}`;document.body.appendChild(a);a.click();a.remove();label('Téléchargement demandé : '+a.download,'success');};
   function renderVideos(){
@@ -1112,6 +1173,8 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
     state.cameraRequesting=true;update();let stream=null;
     try{
       stream=await navigator.mediaDevices.getUserMedia({audio:false,video:{deviceId:u.capCameraSelect.value?{ideal:u.capCameraSelect.value}:undefined,width:{ideal:1920},height:{ideal:1080},frameRate:{ideal:Number(u.capFps.value)}}});
+      // V54.2 : ne jamais garder un flux reçu après un changement de module.
+      if(u.captureView.hidden){stream.getTracks().forEach(t=>t.stop());label('Caméra autorisée, mais l’onglet Capture a été quitté : source libérée.');return;}
       if(state.camera)stopCamera();
       state.camera=stream;u.capCameraVideo.srcObject=stream;
       await u.capCameraVideo.play();
@@ -1125,7 +1188,15 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
       });
       await listCameras();
       label('Caméra connectée. Vous pouvez composer l’image ou lancer l’enregistrement.','success');
-    }catch(e){if(stream)stream.getTracks().forEach(t=>t.stop());label(e?.name==='NotAllowedError'?'Accès à la webcam refusé. Autorisez la caméra dans les paramètres du navigateur.':'Impossible d’activer la webcam : '+(e?.message||'erreur inconnue'),'error');}
+    }catch(e){
+      if(stream){stream.getTracks().forEach(t=>t.stop());if(state.camera===stream)state.camera=null;if(u.capCameraVideo.srcObject===stream){u.capCameraVideo.pause();u.capCameraVideo.srcObject=null;}}
+      const tip=['NotAllowedError','PermissionDeniedError'].includes(e?.name)?'Autorisation caméra refusée : vérifiez le cadenas à gauche de l’adresse et les autorisations Windows.':
+        e?.name==='NotFoundError'?'Aucune webcam détectée. Vérifiez son branchement.':
+        e?.name==='NotReadableError'?'Webcam déjà utilisée ou bloquée par Windows : fermez les autres applications vidéo.':
+        e?.name==='OverconstrainedError'?'La caméra ne prend pas en charge ce réglage ; essayez la caméra par défaut.':
+        'Impossible d’activer la webcam : '+(e?.message||'erreur inconnue');
+      label(tip,'error');
+    }
     finally{state.cameraRequesting=false;update();}
   }
   u.capCameraToggle.addEventListener('click',()=>{if(hasCamera()){stopCamera();label('Webcam désactivée.');}else startCamera();});
@@ -1220,12 +1291,15 @@ self.onmessage=(ev)=>{const {chunks,rate}=ev.data;try{let frames=0;for(const ch 
   function animation(ts){
     if(!recording()&&(document.hidden||u.captureView.hidden)){state.clockFrame=requestAnimationFrame(animation);return;}
     const v11fps=window.PhilosophalV11Settings?.visualFps?.()||30;
-    if(!recording()&&state.v11LastPaint&&ts-state.v11LastPaint<1000/v11fps){state.clockFrame=requestAnimationFrame(animation);return;}
+    const fps=recording()?Math.max(10,Math.min(60,Number(u.capFps.value)||30)):v11fps;
+    if(state.v11LastPaint&&ts-state.v11LastPaint<1000/fps){state.clockFrame=requestAnimationFrame(animation);return;}
     state.v11LastPaint=ts;
     renderComposite();
     if(recording()){
       const elapsed=state.elapsed+(!state.paused?(performance.now()-state.startedAt)/1000:0);
       u.capClock.textContent=fmt(elapsed);u.capOverlayTime.textContent=fmt(elapsed);
+      if(!state.v544StatsAt||ts-state.v544StatsAt>1200){state.v544StatsAt=ts;const mb=state.recordBytes/1048576;videoSize.innerHTML=`<strong>${mb.toFixed(1)} Mo</strong> ${state.direct?'écrits sur disque':'en mémoire vive'}${state.direct?' · tampon '+(state.direct.pending/1048576).toFixed(1)+' Mo':''} · ${fmt(elapsed)}`;}
+      videoDisk.disabled=true;
     }
     if(state.mixAnalyser&&state.mixCtx?.state==='running'){
       const a=state.mixAnalyser;const data=state.meterBuffer&&state.meterBuffer.length===a.fftSize?state.meterBuffer:(state.meterBuffer=new Float32Array(a.fftSize));
@@ -2034,7 +2108,7 @@ self.onmessage=async e=>{
  window.addEventListener('resize',()=>{if(!state.buffer||$('transcribeView').hidden)return;clearTimeout(state.resizeTimer);state.resizeTimer=setTimeout(drawWave,100);});
  new MutationObserver(()=>{if(!$('transcribeView').hidden)drawWave();}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
  window.addEventListener('pagehide',()=>{stopWorker();pause();if(state.url)URL.revokeObjectURL(state.url);});
- u.trDeviceInfo.textContent='Whisper fonctionne localement. Le premier lancement télécharge la bibliothèque et le modèle depuis Internet ; la vitesse dépend du matériel.';
+  u.trDeviceInfo.textContent='Whisper transcrit localement après téléchargement initial via Internet. Si le chargement échoue : contrôlez la connexion, les bloqueurs de scripts ou essayez le mode Processeur. Ne fermez pas la page pendant la reconnaissance.';
  toggleButtons();refresh();render();
 })();
 
@@ -2586,9 +2660,15 @@ self.onmessage=async e=>{
 </script>
 
 <dialog id="v11Dialog" class="v11-dialog" aria-labelledby="v11Title">
-  <div class="v11-dialog-header"><div><small>PHILOSOPHAL · V11.0</small><h2 id="v11Title">Diagnostic & performances</h2><p>Vérifiez les fonctionnalités disponibles sur cet appareil et choisissez la fluidité de l’interface. Ces tests n’activent pas votre microphone ou votre caméra.</p></div><button class="v11-close" id="v11Close" type="button" aria-label="Fermer le diagnostic">×</button></div>
+  <div class="v11-dialog-header"><div><small>PHILOSOPHAL · V54.2</small><h2 id="v11Title">Diagnostic & performances</h2><p>Vérifiez les fonctionnalités disponibles sur cet appareil et choisissez la fluidité de l’interface. Les vérifications automatiques n’activent pas les appareils ; des essais réels facultatifs sont proposés plus bas.</p></div><button class="v11-close" id="v11Close" type="button" aria-label="Fermer le diagnostic">×</button></div>
   <div class="v11-dialog-body">
     <section><div class="v11-section-title">Compatibilité du navigateur <small id="v11Checked">Non vérifié</small></div><div class="v11-check-grid" id="v11Checks"><div class="v11-check">Tests en préparation…</div></div></section>
+    <section class="v542-hardware" aria-label="Tests réels du matériel"><div class="v11-section-title">Tester réellement mes appareils <small>V54.2</small></div>
+      <p class="v11-footnote">Les contrôles ci-dessus vérifient les fonctions du navigateur. Les trois tests ci-dessous demandent une autorisation, ouvrent brièvement une source puis la ferment automatiquement. Aucun fichier n’est enregistré.</p>
+      <div class="v542-actions"><button type="button" id="v542TestMicro">Tester le microphone</button><button type="button" id="v542TestCamera">Tester la webcam</button><button type="button" id="v542TestScreen">Tester le partage d’écran</button></div>
+      <div id="v542Results" class="v542-results" role="status" aria-live="polite">Aucun test réel effectué.</div>
+      <p id="v542PermissionSummary" class="v11-footnote">Vérification des permissions et des périphériques…</p>
+    </section>
     <section><div class="v11-section-title">Performances de l’affichage</div><div class="v11-settings"><div><strong>Fluidité du studio</strong><p>Le réglage ne modifie ni la fréquence d’enregistrement ni la qualité des médias exportés. Il limite seulement les rafraîchissements visuels lorsqu’aucune capture n’est en cours.</p></div><select id="v11Mode" aria-label="Fluidité de l’affichage"><option value="eco">Économie · 15 i/s</option><option value="balanced" selected>Équilibré · 30 i/s</option><option value="fluid">Fluide · 60 i/s</option></select></div></section>
     <section><div class="v11-section-title">Stockage et sécurité</div><div class="v11-actions"><button type="button" id="v11RequestPersist">Demander la conservation du stockage</button><button type="button" id="v11QuickSave">Sauvegarder le projet</button><button type="button" id="v11QuickRescue">Exporter une copie de secours</button></div><p class="v11-footnote" id="v11SafeStatus">Le stockage local et les projets peuvent être effacés lors d’un nettoyage du navigateur. Conservez des sauvegardes .phstudio.</p></section>
     <section><div class="v11-eventbar"><div class="v11-section-title" style="margin:0">Journal d’erreurs <small id="v11ErrorCount">0</small></div><button class="v11-close" id="v11ClearErrors" type="button" aria-label="Effacer le journal" style="font-size:15px">↻</button></div><div id="v11Errors" class="v11-errors" role="status" aria-live="polite">Aucune erreur détectée pendant cette session.</div></section>
@@ -2623,11 +2703,12 @@ self.onmessage=async e=>{
   ['Contexte sécurisé',()=>[isSecureContext,'HTTPS ou localhost est requis pour de nombreuses autorisations.']],
   ['Microphone / webcam',()=>[!!navigator.mediaDevices?.getUserMedia,'API de capture accessible ; appareil et autorisation non encore testés.']],
   ['Partage d’écran',()=>[!!navigator.mediaDevices?.getDisplayMedia,'La capture d’écran peut aussi dépendre de la fenêtre partagée.']],
+  ['Périphériques détectables',()=>[!!navigator.mediaDevices?.enumerateDevices,'La liste des appareils peut être masquée avant toute autorisation.']],
   ['Enregistrement vidéo WebM',()=>[supported('video/webm;codecs=vp8,opus')||supported('video/webm'),'Encodeur annoncé par MediaRecorder ; export réel à vérifier.']],
   ['Enregistrement vidéo MP4',()=>[supported('video/mp4;codecs=avc1.42E01E,mp4a.40.2')||supported('video/mp4'),'Codec optionnel, disponibilité variable selon le système.']],
   ['Traitement audio',()=>[!!(window.AudioContext||window.webkitAudioContext)&&!!window.OfflineAudioContext,'Web Audio API et rendu audio hors ligne.']],
   ['AudioWorklet',()=>[!!window.AudioWorkletNode,'Utilisé pour certaines fonctions d’enregistrement vocal.']],
-  ['Whisper local · WebAssembly',()=>[typeof WebAssembly==='object'&&typeof Worker==='function','Le modèle doit être téléchargé au premier usage ; non testé par ce diagnostic.']],
+  ['Whisper local · WebAssembly',()=>[typeof WebAssembly==='object'&&typeof Worker==='function'&&isSecureContext,'Bibliothèque et modèle téléchargés au premier usage depuis Internet ; reconnaissance réelle non testée ici.']],
   ['Accélération WebGPU',()=>[!!navigator.gpu,'Optionnel : l’absence de WebGPU ne bloque pas nécessairement Whisper.']],
   ['Export par capture Canvas',()=>[!!HTMLCanvasElement.prototype.captureStream,'Nécessaire aux compositions écran + webcam.']],
   ['Sauvegarde des projets',()=>[!!window.indexedDB&&!!window.PhilosophalV10Projects?.active?.(),'Projet local ouvert et API IndexedDB détectée.']],
@@ -2649,11 +2730,147 @@ self.onmessage=async e=>{
  $('v11QuickSave').addEventListener('click',()=>window.PhilosophalV10Projects?.save?.());
  $('v11QuickRescue').addEventListener('click',()=>window.PhilosophalV10Projects?.emergency?.());
  e.report.addEventListener('click',()=>{
-   const result={app:'Philosophal Studio audiovisuel',version:11,createdAt:new Date().toISOString(),browser:navigator.userAgent,secureContext:isSecureContext,performanceMode:mode,checks:tests,errors:issues};
-   const blob=new Blob([JSON.stringify(result,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='diagnostic-philosophal-v11.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+   const result={app:'Philosophal Studio audiovisuel',version:11,createdAt:new Date().toISOString(),browser:navigator.userAgent,secureContext:isSecureContext,performanceMode:mode,checks:tests,physicalTests:window.PhilosophalV542Diagnostics?.results?.()||[],errors:issues};
+   const blob=new Blob([JSON.stringify(result,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='diagnostic-philosophal-v54.2.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
  });
  document.addEventListener('keydown',ev=>{if(ev.ctrlKey&&!ev.altKey&&!ev.shiftKey&&!ev.metaKey&&ev.code==='Comma'){ev.preventDefault();open();}});
  renderErrors();
+})();
+</script>
+<style>
+/* Philosophal V54.2 : contrôle matériel réel depuis le diagnostic existant */
+.v542-actions{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 12px}
+.v542-actions button{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:10px 12px;font-size:11px;font-weight:660}
+.v542-actions button:hover{border-color:var(--accent);color:var(--accent)}
+.v542-actions button:disabled{opacity:.45;cursor:wait}
+.v542-results{border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:var(--muted);padding:12px;min-height:44px;font-size:11px;line-height:1.7;white-space:pre-line}
+.v542-results.ok{border-color:var(--accent);color:var(--accent)}
+.v542-results.error{border-color:var(--red);color:var(--red)}
+.v542-results.pending{border-color:var(--amber);color:var(--amber)}
+.v542-hardware .v11-footnote{margin:7px 0 9px}
+</style>
+
+<script>
+/* Philosophal V54.2 — vérification réelle et ponctuelle des périphériques, sans enregistrement. */
+(()=>{'use strict';
+const $=id=>document.getElementById(id);
+const buttons=[$('v542TestMicro'),$('v542TestCamera'),$('v542TestScreen')];
+const output=$('v542Results'),permissions=$('v542PermissionSummary'),dialog=$('v11Dialog');
+let testing=false;
+const report=[];
+const busy=()=>Boolean(window.PhilosophalV10Voice?.busy?.()||window.PhilosophalV10Capture?.busy?.());
+const time=()=>new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+function message(text,status=''){output.textContent=text;output.className='v542-results '+status;}
+function errorText(e,device){
+ switch(e?.name){
+ case 'NotAllowedError':case 'PermissionDeniedError':return 'Accès refusé ou sélection annulée. Autorisez '+device+' dans Brave/Chrome et dans Windows, puis recommencez.';
+ case 'NotFoundError':return 'Périphérique absent : vérifiez le branchement et les réglages Windows.';
+ case 'NotReadableError':return 'Périphérique déjà utilisé ou bloqué : fermez les applications pouvant l’utiliser.';
+ case 'OverconstrainedError':return 'Contraintes non compatibles avec le périphérique.';
+ case 'SecurityError':return 'Autorisation bloquée par le contexte. Ouvrez le studio depuis HTTPS ou localhost.';
+ case 'InvalidStateError':return 'Impossible de demander l’accès maintenant : donnez le focus à cet onglet, puis réessayez.';
+ default:return String(e?.message||e||'Échec inconnu.');
+ }
+}
+const stop=stream=>{if(stream)for(const track of stream.getTracks())try{track.stop();}catch{}};
+async function permissionsSummary(){
+ if(!navigator.mediaDevices?.enumerateDevices){permissions.textContent='Liste des périphériques inaccessible. Utilisez un contexte HTTPS ou localhost.';return;}
+ const parts=[];
+ try{const list=await navigator.mediaDevices.enumerateDevices();const audio=list.filter(d=>d.kind==='audioinput').length,video=list.filter(d=>d.kind==='videoinput').length;parts.push(audio+' entrée(s) microphone · '+video+' caméra(s) détectée(s) (la liste peut être incomplète avant autorisation).');}
+ catch(e){parts.push('Dénombrement des périphériques impossible : '+errorText(e,'les périphériques'));}
+ if(navigator.permissions?.query){for(const [label,name] of [['Microphone','microphone'],['Caméra','camera']]){
+  try{const p=await navigator.permissions.query({name});parts.push(label+' : '+({granted:'autorisé',denied:'refusé',prompt:'autorisation à demander'}[p.state]||p.state)+'.');}
+  catch{parts.push(label+' : statut non fourni par ce navigateur.');}
+ }}
+ permissions.textContent=parts.join(' ');
+}
+async function run(kind){
+ if(testing)return;
+ if(busy()){message('Terminez d’abord tout enregistrement ou traitement actif : un test matériel ne doit pas interrompre vos prises.','error');return;}
+ if(!isSecureContext){message('Un contexte sécurisé (HTTPS ou localhost) est requis pour les tests réels.','error');return;}
+ const md=navigator.mediaDevices;
+ if(!md?.getUserMedia||(kind==='screen'&&!md.getDisplayMedia)){message('Cette fonction n’est pas proposée par ce navigateur.','error');return;}
+ testing=true;buttons.forEach(b=>b.disabled=true);
+ const name=kind==='mic'?'microphone':kind==='camera'?'webcam':'partage d’écran';
+ message('Demande d’autorisation : '+name+'…','pending');let stream=null;
+ try{
+  // L’appel à getDisplayMedia doit rester directement lié au clic utilisateur.
+  stream=kind==='screen'?await md.getDisplayMedia({video:true,audio:false}):
+    await md.getUserMedia(kind==='mic'?{audio:true,video:false}:{video:true,audio:false});
+  const tracks=kind==='mic'?stream.getAudioTracks():stream.getVideoTracks();
+  if(!tracks.length||tracks.every(t=>t.readyState!=='live'))throw Error('Aucune piste active renvoyée par le navigateur.');
+  const t=tracks[0],cfg=t.getSettings?.()||{},desc=[t.label||'Source active'];
+  if(cfg.width&&cfg.height)desc.push(cfg.width+' × '+cfg.height);
+  if(cfg.sampleRate)desc.push(cfg.sampleRate+' Hz');
+  message('Test réussi : '+name+' disponible. '+desc.join(' · ')+'. Source libérée immédiatement.','ok');
+  report.push({kind,ok:true,at:new Date().toISOString(),label:t.label||'',width:cfg.width||null,height:cfg.height||null});
+ }catch(e){const msg=errorText(e,name);message('Test non validé : '+msg,'error');report.push({kind,ok:false,at:new Date().toISOString(),error:e?.name||'Error',detail:msg});}
+ finally{stop(stream);testing=false;buttons.forEach(b=>b.disabled=false);permissionsSummary();}
+}
+buttons[0].addEventListener('click',()=>run('mic'));
+buttons[1].addEventListener('click',()=>run('camera'));
+buttons[2].addEventListener('click',()=>run('screen'));
+dialog.addEventListener('close',()=>{if(testing)message('Test matériel en cours : la source sera libérée immédiatement après l’autorisation ou le refus.','pending');});
+$('v11Open').addEventListener('click',permissionsSummary);
+$('v11Recheck').addEventListener('click',permissionsSummary);
+window.PhilosophalV542Diagnostics={results:()=>report.map(x=>({...x})),refresh:permissionsSummary};
+})();
+</script>
+<style id="v543-studio-styles">
+.v543-trigger{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--accent,#9bcfc1);background:var(--panel2,#20323a);color:var(--text,#f3f6f8);border-radius:9px;padding:9px 12px;font-size:12px;font-weight:760;cursor:pointer;white-space:nowrap}
+.v543-trigger:hover{border-color:var(--accent,#b9e1d6);background:var(--panel,#293b43)}
+.v543-dialog{border:1px solid var(--line,#374b56);color:var(--text,#edf3f6);background:var(--panel,#18232c);border-radius:16px;max-width:min(570px,calc(100vw - 26px));width:570px;max-height:calc(100dvh - 32px);overflow:auto;padding:0;box-shadow:0 25px 100px #0009}
+.v543-dialog::backdrop{background:#070e14bc;backdrop-filter:blur(5px)}
+.v543-wrap{padding:24px;display:grid;gap:15px;font-size:13px}
+.v543-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.v543-head h2{font-size:19px;margin:2px 0 5px;letter-spacing:-.3px}.v543-head p,.v543-help{font-size:12px;color:var(--muted,#a8b9c2);margin:0;line-height:1.65}
+.v543-field{display:grid;gap:6px;font-size:12px;font-weight:660}.v543-field select,.v543-field input[type=file]{color:var(--text,#eee);background:var(--panel2,#12202a);border:1px solid var(--line,#42515c);border-radius:8px;padding:10px;min-width:0;width:100%;font:inherit}
+.v543-line{display:flex;align-items:center;gap:8px;line-height:1.5;font-size:12px}.v543-line input{accent-color:#8fc7b5;width:16px;height:16px}
+.v543-meta{font-size:11px;color:var(--muted,#adc1cf);background:var(--panel2,#101820);border:1px solid var(--line,#354552);border-radius:8px;padding:12px;line-height:1.55}
+.v543-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.v543-action{padding:10px 13px;border:1px solid var(--line,#46596b);border-radius:9px;background:var(--panel2,#263440);color:var(--text,#f5f7fa);font-weight:720;cursor:pointer}
+.v543-action.primary{background:var(--accent,#9bcfc1);border-color:var(--accent,#9bcfc1);color:#12251f}
+.v543-action:disabled{opacity:.5;cursor:wait}.v543-result{font-size:11px;color:var(--muted,#a9c1d0);min-height:24px;line-height:1.5}
+@media(max-width:600px){.v543-wrap{padding:17px}.v543-trigger{padding:7px 9px;font-size:11px}}
+</style>
+<dialog id="v543StudioDialog" class="v543-dialog" aria-labelledby="v543StudioTitle">
+ <div class="v543-wrap">
+  <div class="v543-head"><div><div class="v543-help">PHILOSOPHAL · V54.3 · PASSERELLE LOCALE</div><h2 id="v543StudioTitle">Envoyer vers Philosophal Cut</h2><p>Prépare le média et, si disponible, sa transcription synchronisée. Rien n'est envoyé sur Internet.</p></div><button type="button" id="v543StudioClose" class="v543-action" aria-label="Fermer">×</button></div>
+  <label class="v543-field">Média à transmettre<select id="v543StudioSource"></select></label>
+  <label class="v543-field">Ou choisir un fichier audio/vidéo<input type="file" id="v543StudioFile" accept="audio/*,video/*,.wav,.webm,.mp4,.mov,.mp3,.m4a,.flac"></label>
+  <div class="v543-meta" id="v543StudioMeta">Choisissez une source.</div>
+  <label class="v543-line"><input type="checkbox" id="v543StudioCues" checked> Ajouter les sous-titres ou la transcription synchronisée disponible</label>
+  <div class="v543-help" id="v543StudioCuesHelp">Les repères temporels correspondent au média source. Ils pourront être corrigés dans Cut.</div>
+  <div class="v543-actions"><button type="button" id="v543StudioCancel" class="v543-action">Annuler</button><button type="button" id="v543StudioSend" class="v543-action primary">Préparer et ouvrir Cut →</button></div>
+  <div class="v543-result" id="v543StudioStatus" role="status" aria-live="polite"></div>
+ </div>
+</dialog>
+<script src="../../js/pro-av-cut-bridge.js?v=20261025-v54.5"></script>
+<script src="../../js/pro-av-cut-studio.js?v=20261025-v54.3"></script>
+
+
+<style id="v545-batch-styles">
+.v545-batch{padding:12px;border:1px solid var(--line,#52617a);border-radius:11px;display:grid;gap:10px;background:var(--panel2,#1e2938)}
+.v545-batch h3{margin:0;font-size:13px}.v545-batch p{margin:0;color:var(--muted,#aab);font-size:11px;line-height:1.5}
+.v545-batch input{width:100%;min-width:0;border:1px solid var(--line,#596b7a);background:var(--panel,#151d27);color:var(--text,#eef);border-radius:7px;padding:9px;font:inherit}
+.v545-batch label{font-size:11px;display:grid;gap:4px}.v545-batch button{min-height:36px}
+.v545-batch small{font-size:10px;line-height:1.5;color:var(--muted,#aab)}
+</style>
+<script src="../../js/pro-av-cut-batch-studio.js?v=20261025-v54.5"></script>
+
+<script id="v546-session-guard">
+/* V54.6 : un état descriptif (aucun média) pour éviter une fermeture involontaire. */
+(()=>{'use strict';if(window.top===window.self)return;
+ let last='';
+ function check(){
+  const voice=!!document.querySelector('#recordBtn.active');
+  const video=!!document.querySelector('#capRecord.active');
+  const saving=!!window.PhilosophalV10Projects?.dirty?.();
+  const state=voice?'voice':video?'video':saving?'saving':'idle';
+  if(state===last)return;last=state;
+  try{window.parent.postMessage({type:'philosophal-studio-state',state,version:'54.6'},location.origin)}catch{}
+ }
+ setInterval(check,600);window.addEventListener('pagehide',check);document.addEventListener('visibilitychange',check);
 })();
 </script>
 </body>

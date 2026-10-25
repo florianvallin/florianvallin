@@ -516,6 +516,37 @@ body.v12-pro-mode #v25Paneltools #v12Right .rightbody[style*="none"]{display:non
 body.v12-pro-mode #v25Paneltools{padding:7px!important}
 @media(max-width:600px){.v34-exp-row{grid-template-columns:1fr}.v34-exp-head{padding:12px}.v34-exp-panel{margin:0 12px 12px}}
 </style>
+<style id="v545-cut-room">
+/* V54.5 : espace de travail Pro réellement extensible dans l'iframe plein écran. */
+html,body{min-width:0;width:100%;max-width:100%;}
+body.v12-pro-mode .v12-pro-root{width:100%!important;max-width:none!important;min-width:0!important;
+ grid-template-columns:minmax(0,1fr) minmax(255px,clamp(255px,22vw,345px))!important;
+ grid-template-rows: minmax(39px,auto) minmax(220px,var(--v25-upper,52%)) minmax(245px,1fr)!important;
+ height:calc(100dvh - var(--v25-top,97px))!important;gap:6px!important;padding:6px 9px!important;}
+body.v12-pro-mode .v12-pro-monitor,body.v12-pro-mode .v12-pro-inspector,body.v12-pro-mode .v12-pro-timeline{min-width:0!important}
+body.v12-pro-mode #videoWrap{width:100%!important;max-width:100%!important;min-width:0!important}
+body.v12-pro-mode #videoSection{padding:6px 8px!important}
+body.v12-pro-mode #v25Deck{max-width:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;min-width:0;}
+body.v12-pro-mode header{padding-left:14px;padding-right:14px;gap:8px}
+body.v12-pro-mode .v12-pro-root.v25-inspector-collapsed{grid-template-columns:minmax(0,1fr)!important}
+body.v12-pro-mode .v12-pro-root.v25-inspector-collapsed #videoWrap{width:100%!important}
+@media(max-width:1150px){body.v12-pro-mode .v12-pro-root{grid-template-columns:minmax(0,1fr) 255px!important}}
+@media(max-width:680px){body.v12-pro-mode .v12-pro-root{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:'deck' 'monitor' 'timeline' 'inspector'!important;grid-template-rows:45px minmax(220px,35vh) minmax(240px,1fr) 0!important}body.v12-pro-mode .v12-pro-inspector{display:none!important}}
+</style>
+
+<style id="v546-cut-surface">
+/* V54.6 : rendre la timeline et le moniteur visibles sur une hauteur normale. */
+body.v12-pro-mode .v12-pro-root{max-width:100%!important;min-width:0!important;width:100%!important}
+body.v12-pro-mode .v12-pro-monitor,body.v12-pro-mode .v12-pro-inspector,body.v12-pro-mode .v12-pro-timeline{max-width:100%;min-width:0!important}
+body.v12-pro-mode .v12-pro-monitor{overflow:hidden!important}
+body.v12-pro-mode .v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr) minmax(232px,clamp(232px,20vw,315px))!important}
+body.v12-pro-mode .v12-pro-root{grid-template-rows: minmax(36px,auto) minmax(185px, min(48%,425px)) minmax(195px,1fr)!important}
+body.v12-pro-mode .v12-pro-timeline{min-height:0!important;overflow:hidden!important}
+body.v12-pro-mode .v12-pro-root.v25-inspector-collapsed{grid-template-columns:minmax(0,1fr)!important}
+body.v12-pro-mode #v25Deck{max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden}
+@media(max-height:680px){body.v12-pro-mode .v12-pro-root{grid-template-rows:35px minmax(160px,41%) minmax(150px,1fr)!important}}
+@media(max-width:720px){body.v12-pro-mode .v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr) 190px!important}}
+</style>
 </head>
 <body>
 <header>
@@ -5496,6 +5527,94 @@ try{const saved=JSON.parse(localStorage.getItem('philosophal-cut-v35-export-pref
 for(const id of settings)$(id)?.addEventListener('change',()=>{const save={};for(const key of settings)save[key]=$(key)?.value;try{localStorage.setItem('philosophal-cut-v35-export-pref',JSON.stringify(save))}catch(e){}});
 // No false promise of guaranteed MP3/M4A support until the actual conversion completes.
 const format=$('v34AudioFormat');format.setAttribute('aria-label','Format audio, disponibilité selon les codecs');
+})();
+</script>
+<style id="v543-cut-styles">
+.v543-cut-open{display:inline-flex;align-items:center;gap:6px;background:#203951;border:1px solid #6785ab;border-radius:8px;padding:8px 11px;color:#e9f3ff;font-size:11px;font-weight:750;cursor:pointer}
+.v543-cut-open:hover{background:#315070}
+.v543-cut-dialog{border:1px solid #526a86;border-radius:15px;padding:0;max-width:min(580px,calc(100vw - 24px));width:580px;max-height:calc(100dvh - 30px);overflow:auto;background:#142132;color:#e8effb;box-shadow:0 25px 85px #000c;font-family:inherit}
+.v543-cut-dialog::backdrop{background:#07101bd0;backdrop-filter:blur(4px)}
+.v543-cut-body{display:grid;gap:14px;padding:23px;font-size:12px}.v543-cut-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.v543-cut-head h2{font-size:19px;margin:3px 0 5px;color:#f3f7ff}.v543-cut-sub{font-size:11px;color:#acbfd8;line-height:1.65;margin:0}
+.v543-cut-field{display:grid;gap:7px;color:#d9e4f5;font-size:12px;font-weight:700}.v543-cut-field select{width:100%;background:#1c2d42;color:#e8effb;border:1px solid #48627e;border-radius:8px;padding:10px;font:inherit;min-width:0}
+.v543-cut-check{display:flex;gap:9px;align-items:center;font-size:12px}.v543-cut-check input{accent-color:#a9cbfb}
+.v543-cut-info{border:1px solid #3c5875;border-radius:8px;padding:12px;background:#1b2b3e;line-height:1.6;font-size:11px;color:#c3d1e5}
+.v543-cut-btns{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}.v543-cut-btn{border:1px solid #516681;border-radius:8px;padding:10px 13px;background:#28374d;color:#edf4fc;font-size:12px;font-weight:750;cursor:pointer}.v543-cut-btn.primary{background:#b8cef0;border-color:#b8cef0;color:#16263c}.v543-cut-btn:disabled{opacity:.45;cursor:wait}
+.v543-cut-status{font-size:11px;min-height:20px;line-height:1.6;color:#cadbf0}
+@media(max-width:520px){.v543-cut-body{padding:16px}}
+</style>
+<dialog id="v543CutDialog" class="v543-cut-dialog" aria-labelledby="v543CutTitle"><div class="v543-cut-body">
+ <div class="v543-cut-head"><div><div class="v543-cut-sub">PHILOSOPHAL · V54.3 · RÉCEPTION LOCALE</div><h2 id="v543CutTitle">Importer depuis le Studio audiovisuel</h2><p class="v543-cut-sub">Vérifiez ce que vous souhaitez ajouter à votre montage. Les projets existants ne sont jamais écrasés silencieusement.</p></div><button id="v543CutClose" type="button" class="v543-cut-btn" aria-label="Fermer">×</button></div>
+ <label class="v543-cut-field">Transfert disponible<select id="v543CutSelect"></select></label>
+ <div class="v543-cut-info" id="v543CutInfo">Recherche des transferts…</div>
+ <label class="v543-cut-field">Destination du média<select id="v543CutTarget"><option value="main">Ouvrir comme rush principal (remplace le rush courant)</option><option value="library">Ajouter à la médiathèque du montage (sans placer)</option><option value="only-cues">Importer seulement les sous-titres (garder le rush courant)</option></select></label>
+ <label class="v543-cut-check"><input type="checkbox" id="v543CutCues" checked> Importer aussi les sous-titres synchronisés (SRT)</label>
+ <p class="v543-cut-sub" id="v543CutHint">Les sous-titres sont liés au temps original du rush. En mode médiathèque, ils ne sont pas ajoutés automatiquement au montage.</p>
+ <div class="v543-cut-btns"><button id="v543CutDelete" type="button" class="v543-cut-btn">Supprimer ce transfert</button><button id="v543CutCancel" type="button" class="v543-cut-btn">Fermer</button><button id="v543CutImport" type="button" class="v543-cut-btn primary">Importer dans Cut</button></div>
+ <div class="v543-cut-status" id="v543CutStatus" role="status" aria-live="polite"></div>
+</div></dialog>
+<script src="../../js/pro-av-cut-bridge.js?v=20261025-v54.5"></script>
+<script src="../../js/pro-av-cut-receiver.js?v=20261025-v54.3"></script>
+
+<script src="../../js/pro-av-cut-batch-receiver.js?v=20261025-v54.5"></script>
+<style id="v547-cut-adjustable">
+/* V54.7 — Le V25 est l'unique moteur de tailles, les surcharges V54.5/V54.6
+   ne doivent plus neutraliser les curseurs, la poignée ou les préréglages. */
+body.v12-pro-mode #v12ProRoot.v12-pro-root:not(.v25-inspector-collapsed){
+ grid-template-columns:minmax(0,1fr) clamp(215px,var(--v25-inspector,300px),min(500px,42vw))!important;
+}
+body.v12-pro-mode #v12ProRoot.v12-pro-root{
+ grid-template-rows:43px minmax(180px,var(--v25-upper,49%)) minmax(150px,1fr)!important;
+ gap:6px!important; padding:6px!important;
+}
+body.v12-pro-mode #v12ProRoot.v25-inspector-collapsed{grid-template-columns:minmax(0,1fr)!important}
+body.v12-pro-mode #v12ProMonitor #videoWrap:not(:fullscreen){width:min(100%,var(--v27-stage-width,100%))!important;max-width:100%!important}
+body.v12-pro-mode #v25InspectorGrip{width:12px!important;left:-8px!important;z-index:18!important}
+body.v12-pro-mode #v25InspectorGrip::after{content:'';position:absolute;left:4px;top:38%;height:24%;width:3px;background:#7694b7;border-radius:3px;opacity:.55;pointer-events:none}
+body.v12-pro-mode #v25InspectorGrip:hover::after{opacity:1;background:#b9d2ff}
+body.v12-pro-mode #v25Divider{height:12px;margin-bottom:-8px}
+body.v12-pro-mode #v25Divider::after{width:92px;height:4px;margin:4px auto}
+body.v12-pro-mode .v12-pro-monitor,body.v12-pro-mode .v12-pro-inspector,body.v12-pro-mode .v12-pro-timeline{min-width:0;min-height:0}
+#v547ViewShortcuts{display:none;align-items:center;gap:3px;flex:0 0 auto}
+body.v12-pro-mode #v547ViewShortcuts{display:flex}
+#v547ViewShortcuts button{border:1px solid #354c69;background:#1d2d43;color:#c1d5ed;font-size:10px;font-weight:700;line-height:1.2;padding:7px 8px;border-radius:6px;white-space:nowrap}
+#v547ViewShortcuts button:hover,#v547ViewShortcuts button[aria-pressed="true"]{color:#0e1e33;background:#b9d2ff;border-color:#b9d2ff}
+#v547LayoutStatus{font-size:10px;line-height:1.4;color:#aac0df;white-space:nowrap;margin:0 6px;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:1260px){#v547ViewShortcuts button{padding:7px 6px}#v547LayoutStatus{display:none}}
+@media(max-width:980px){#v547ViewShortcuts{display:none!important}}
+@media(max-width:720px){body.v12-pro-mode #v12ProRoot.v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr) clamp(215px,var(--v25-inspector,230px),40vw)!important}}
+@media(max-height:720px){body.v12-pro-mode #v12ProRoot.v12-pro-root{grid-template-rows:39px minmax(150px,var(--v25-upper,42%)) minmax(100px,1fr)!important}body.v12-pro-mode #v12ProMonitor #videoSection{padding:4px 6px!important}}
+@media(max-width:550px){body.v12-pro-mode #v12ProRoot.v12-pro-root:not(.v25-inspector-collapsed){grid-template-columns:minmax(0,1fr)!important;grid-template-areas:'deck deck' 'monitor monitor' 'timeline timeline'!important}body.v12-pro-mode #v12ProRoot .v12-pro-inspector{display:none!important}}
+@media(prefers-reduced-motion:reduce){#v547ViewShortcuts button{transition:none}}
+</style>
+<script id="v547-cut-controls">
+(() => {
+ 'use strict';
+ const deck=document.getElementById('v25Deck'), menu=document.getElementById('v27LayoutMenu');
+ if(!deck || !menu || !window.v25ApplyLayout) return;
+ // Les préréglages natifs V27 et les poignées V25 restent la source de vérité.
+ const bar=document.createElement('div');bar.id='v547ViewShortcuts';bar.setAttribute('role','group');bar.setAttribute('aria-label','Dispositions rapides de l’éditeur');
+ const options=[['montage','Équilibré'],['preview','Moniteur'],['timeline','Timeline']];
+ for(const [key,label] of options){const btn=document.createElement('button');btn.type='button';btn.textContent=label;btn.dataset.v547Preset=key;btn.title='Mode '+label+' — aperçu et timeline toujours visibles';btn.addEventListener('click',()=>{
+   const select=document.getElementById('v27LayoutPreset');
+   if(select){select.value=key;select.dispatchEvent(new Event('change',{bubbles:true}))}
+   refresh();
+ });bar.append(btn)}
+ deck.insertBefore(bar,menu);
+ const state=document.createElement('span');state.id='v547LayoutStatus';state.setAttribute('role','status');state.setAttribute('aria-live','off');
+ deck.insertBefore(state,menu);
+ function refresh(){const values=window.v25ReadLayout?.();if(!values)return;
+   const current=document.getElementById('v27LayoutPreset')?.value;
+   for(const button of bar.querySelectorAll('button'))button.setAttribute('aria-pressed',String(button.dataset.v547Preset===current));
+   state.textContent=Math.round(values.upper)+' % · '+Math.round(values.inspector)+' px';
+ }
+ const refreshLater=()=>requestAnimationFrame(refresh);
+ deck.addEventListener('pointerup',refreshLater);deck.addEventListener('input',refreshLater);deck.addEventListener('change',refreshLater);
+ document.getElementById('v25Divider')?.addEventListener('pointerup',refreshLater);
+ document.getElementById('v25InspectorGrip')?.addEventListener('pointerup',refreshLater);
+ window.addEventListener('pageshow',refreshLater);
+ document.getElementById('v12ProBtn')?.addEventListener('click',()=>setTimeout(refresh,0));
+ new ResizeObserver(()=>{if(document.body.classList.contains('v12-pro-mode'))refresh()}).observe(document.getElementById('v12ProRoot'));
+ refresh();
 })();
 </script>
 </body>
